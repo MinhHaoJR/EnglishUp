@@ -12,3 +12,5 @@ export type ReadingLesson=z.infer<typeof readingSchema>;
 export const listeningSchema=z.object({id:z.string(),title:z.string(),level:levelSchema,topic:z.string(),lines:z.array(z.object({speaker:z.string(),text:z.string()})).min(1),questions:z.array(questionSchema).min(4).max(5)});
 export type ListeningLesson=z.infer<typeof listeningSchema>;
 export const dictationSchema=z.object({id:z.string(),text:z.string(),level:levelSchema,topic:z.string()});
+export const speakingSchema=z.object({id:z.string(),title:z.string(),level:levelSchema,topic:z.string(),mode:z.enum(['read','talk']),text:z.string(),cues:z.array(z.string()).min(1)});
+export type SpeakingPrompt=z.infer<typeof speakingSchema>;
