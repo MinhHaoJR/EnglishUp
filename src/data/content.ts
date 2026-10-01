@@ -1,6 +1,10 @@
 import { z } from 'zod';
 import rawWords from './vocabulary.json';
-import { wordSchema,readingSchema } from './schema';
+import { wordSchema,readingSchema,listeningSchema,dictationSchema } from './schema';
+import rawListening from './listening.json';
+import rawDictation from './dictation.json';
+export const listenings=z.array(listeningSchema).min(6).parse(rawListening);
+export const dictations=z.array(dictationSchema).min(10).parse(rawDictation);
 import rawReading from './reading.json';
 export const readings=z.array(readingSchema).min(6).parse(rawReading);
 export const vocabulary=z.array(wordSchema).min(150).parse(rawWords);

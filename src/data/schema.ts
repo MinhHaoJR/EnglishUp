@@ -9,3 +9,6 @@ export const questionSchema=z.object({id:z.string(),type:z.enum(['choice','tfng'
 export type Question=z.infer<typeof questionSchema>;
 export const readingSchema=z.object({id:z.string(),title:z.string(),level:levelSchema,topic:z.string(),text:z.string(),questions:z.array(questionSchema).length(5)});
 export type ReadingLesson=z.infer<typeof readingSchema>;
+export const listeningSchema=z.object({id:z.string(),title:z.string(),level:levelSchema,topic:z.string(),lines:z.array(z.object({speaker:z.string(),text:z.string()})).min(1),questions:z.array(questionSchema).min(4).max(5)});
+export type ListeningLesson=z.infer<typeof listeningSchema>;
+export const dictationSchema=z.object({id:z.string(),text:z.string(),level:levelSchema,topic:z.string()});

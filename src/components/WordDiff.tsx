@@ -1,0 +1,3 @@
+import { alignWords } from '../services/diff';
+import { useBi,useT } from '../i18n';
+export function WordDiff({target,actual}:{target:string;actual:string}){const diff=alignWords(target,actual);const t=useT();const bi=useBi();const labels={correct:t('correct'),wrong:bi('Sai','Wrong'),missing:bi('Thiếu','Missing'),extra:bi('Thừa','Extra')};return <div className="notice"><strong>{t('accuracy')}: {diff.score}%</strong><div className="word-diff">{diff.tokens.map((token,i)=><span key={i} className={`diff-${token.kind}`} title={labels[token.kind]}><small>{labels[token.kind]}</small>{token.kind==='wrong'?<><s>{token.actual}</s> → {token.expected}</>:token.kind==='missing'?`+ ${token.expected}`:token.kind==='extra'?<s>{token.actual}</s>:token.actual}</span>)}</div></div>}

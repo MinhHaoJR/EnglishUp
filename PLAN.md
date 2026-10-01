@@ -22,3 +22,4 @@ After every milestone run lint, typecheck, tests and production build, fix failu
 - Milestone 1 completed: lint, typecheck, storage round-trip test and production build passed. Dependencies audited: zero findings.
 - Milestone 2 completed: 160 validated words, four practice modes, SM-2, custom words and CSV. All four checks passed (6 tests).
 - Milestone 3 completed: six original reading passages, 30 questions, evidence, reading timer/WPM, dictionary and custom-word save. All four checks passed (7 tests).
+- Milestone 4 completed: six listening scripts, 24 questions, 12 dictations, sentence replay, transcript gates and word alignment. All four checks passed (10 tests).
