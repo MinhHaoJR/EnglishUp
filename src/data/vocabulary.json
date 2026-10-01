@@ -1,0 +1,2082 @@
+[
+  {
+    "id": "v-1-1",
+    "word": "routine",
+    "ipa": "/ruːˈtiːn/",
+    "pos": "noun",
+    "meaning": "thói quen hằng ngày",
+    "definition": "the usual order in which you do things",
+    "examples": [
+      "A short walk is part of my morning routine."
+    ],
+    "level": "A2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-2",
+    "word": "neighbor",
+    "ipa": "/ˈneɪbɚ/",
+    "pos": "noun",
+    "meaning": "người hàng xóm",
+    "definition": "a person who lives near you",
+    "examples": [
+      "Our neighbor waters our plants when we travel."
+    ],
+    "level": "A2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-3",
+    "word": "laundry",
+    "ipa": "/ˈlɔːndri/",
+    "pos": "noun",
+    "meaning": "quần áo cần giặt; việc giặt giũ",
+    "definition": "clothes that need washing or have been washed",
+    "examples": [
+      "I do the laundry on Sunday morning."
+    ],
+    "level": "A2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-4",
+    "word": "tidy",
+    "ipa": "/ˈtaɪdi/",
+    "pos": "adjective",
+    "meaning": "gọn gàng",
+    "definition": "neat and arranged in the right place",
+    "examples": [
+      "A tidy desk helps me concentrate."
+    ],
+    "level": "A2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-5",
+    "word": "errand",
+    "ipa": "/ˈɛrənd/",
+    "pos": "noun",
+    "meaning": "việc vặt cần đi làm",
+    "definition": "a short trip to do a small job",
+    "examples": [
+      "Buying stamps was my last errand today."
+    ],
+    "level": "B1",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-6",
+    "word": "budget",
+    "ipa": "/ˈbʌdʒɪt/",
+    "pos": "noun",
+    "meaning": "ngân sách; khoản chi dự tính",
+    "definition": "a plan for how much money you can spend",
+    "examples": [
+      "We set a weekly budget for groceries."
+    ],
+    "level": "B1",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-7",
+    "word": "appointment",
+    "ipa": "/əˈpɔɪntmənt/",
+    "pos": "noun",
+    "meaning": "cuộc hẹn",
+    "definition": "an arrangement to meet someone at a set time",
+    "examples": [
+      "My dental appointment is at nine tomorrow."
+    ],
+    "level": "A2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-8",
+    "word": "habit",
+    "ipa": "/ˈhæbɪt/",
+    "pos": "noun",
+    "meaning": "thói quen",
+    "definition": "something you do regularly without much thought",
+    "examples": [
+      "Reading before bed is a useful habit."
+    ],
+    "level": "A2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-9",
+    "word": "household",
+    "ipa": "/ˈhaʊshoʊld/",
+    "pos": "noun",
+    "meaning": "hộ gia đình",
+    "definition": "the people who live together in one home",
+    "examples": [
+      "Everyone in our household helps with cooking."
+    ],
+    "level": "B1",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-10",
+    "word": "convenient",
+    "ipa": "/kənˈviːniənt/",
+    "pos": "adjective",
+    "meaning": "thuận tiện",
+    "definition": "easy to use or suitable for your needs",
+    "examples": [
+      "The nearby bus stop is convenient for work."
+    ],
+    "level": "B1",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-11",
+    "word": "chore",
+    "ipa": "/tʃɔːr/",
+    "pos": "noun",
+    "meaning": "việc nhà",
+    "definition": "a small regular task at home",
+    "examples": [
+      "Washing the dishes is my evening chore."
+    ],
+    "level": "B1",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-12",
+    "word": "borrow",
+    "ipa": "/ˈbɑːroʊ/",
+    "pos": "verb",
+    "meaning": "mượn",
+    "definition": "to use something and return it later",
+    "examples": [
+      "May I borrow your umbrella until tomorrow?"
+    ],
+    "level": "A2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-13",
+    "word": "lend",
+    "ipa": "/lɛnd/",
+    "pos": "verb",
+    "meaning": "cho mượn",
+    "definition": "to let someone use something temporarily",
+    "examples": [
+      "I can lend you my bicycle this afternoon."
+    ],
+    "level": "A2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-14",
+    "word": "repair",
+    "ipa": "/rɪˈpɛr/",
+    "pos": "verb",
+    "meaning": "sửa chữa",
+    "definition": "to make a broken thing work again",
+    "examples": [
+      "We repair old chairs instead of replacing them."
+    ],
+    "level": "A2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-15",
+    "word": "receipt",
+    "ipa": "/rɪˈsiːt/",
+    "pos": "noun",
+    "meaning": "hóa đơn; biên nhận",
+    "definition": "a document showing that you paid",
+    "examples": [
+      "Keep the receipt in case the lamp breaks."
+    ],
+    "level": "A2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-16",
+    "word": "occasionally",
+    "ipa": "/əˈkeɪʒənəli/",
+    "pos": "adverb",
+    "meaning": "thỉnh thoảng",
+    "definition": "sometimes but not often",
+    "examples": [
+      "I occasionally take a different route home."
+    ],
+    "level": "B1",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-17",
+    "word": "prioritize",
+    "ipa": "/praɪˈɔːrətaɪz/",
+    "pos": "verb",
+    "meaning": "ưu tiên",
+    "definition": "to decide which tasks matter most",
+    "examples": [
+      "I prioritize urgent tasks before checking messages."
+    ],
+    "level": "B2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-18",
+    "word": "efficient",
+    "ipa": "/ɪˈfɪʃənt/",
+    "pos": "adjective",
+    "meaning": "hiệu quả, ít lãng phí",
+    "definition": "working well without wasting time or energy",
+    "examples": [
+      "Planning meals makes shopping more efficient."
+    ],
+    "level": "B2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-19",
+    "word": "balance",
+    "ipa": "/ˈbæləns/",
+    "pos": "noun",
+    "meaning": "sự cân bằng",
+    "definition": "a fair or useful mixture of different things",
+    "examples": [
+      "She wants a better balance between work and rest."
+    ],
+    "level": "B1",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-1-20",
+    "word": "commitment",
+    "ipa": "/kəˈmɪtmənt/",
+    "pos": "noun",
+    "meaning": "sự cam kết; trách nhiệm đã nhận",
+    "definition": "a promise or responsibility that requires time",
+    "examples": [
+      "Caring for a garden is a long-term commitment."
+    ],
+    "level": "B2",
+    "topic": "Daily life"
+  },
+  {
+    "id": "v-2-1",
+    "word": "journey",
+    "ipa": "/ˈdʒɝːni/",
+    "pos": "noun",
+    "meaning": "hành trình",
+    "definition": "travel from one place to another",
+    "examples": [
+      "The train journey took three hours."
+    ],
+    "level": "A2",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-2",
+    "word": "platform",
+    "ipa": "/ˈplætfɔːrm/",
+    "pos": "noun",
+    "meaning": "sân ga",
+    "definition": "the area beside a railway track for passengers",
+    "examples": [
+      "Our train leaves from platform four."
+    ],
+    "level": "A2",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-3",
+    "word": "luggage",
+    "ipa": "/ˈlʌɡɪdʒ/",
+    "pos": "noun",
+    "meaning": "hành lý",
+    "definition": "bags and cases used when traveling",
+    "examples": [
+      "Please keep your luggage beside your seat."
+    ],
+    "level": "A2",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-4",
+    "word": "destination",
+    "ipa": "/ˌdɛstəˈneɪʃən/",
+    "pos": "noun",
+    "meaning": "điểm đến",
+    "definition": "the place you are traveling to",
+    "examples": [
+      "A quiet coastal town is our final destination."
+    ],
+    "level": "B1",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-5",
+    "word": "itinerary",
+    "ipa": "/aɪˈtɪnəˌrɛri/",
+    "pos": "noun",
+    "meaning": "lịch trình chuyến đi",
+    "definition": "a detailed plan for a trip",
+    "examples": [
+      "Our itinerary includes a morning at the museum."
+    ],
+    "level": "B2",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-6",
+    "word": "departure",
+    "ipa": "/dɪˈpɑːrtʃɚ/",
+    "pos": "noun",
+    "meaning": "sự khởi hành",
+    "definition": "the act or time of leaving",
+    "examples": [
+      "Check the departure time before booking a taxi."
+    ],
+    "level": "B1",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-7",
+    "word": "arrival",
+    "ipa": "/əˈraɪvəl/",
+    "pos": "noun",
+    "meaning": "sự đến nơi",
+    "definition": "the act or time of reaching a place",
+    "examples": [
+      "We called the hotel after our arrival."
+    ],
+    "level": "A2",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-8",
+    "word": "reservation",
+    "ipa": "/ˌrɛzɚˈveɪʃən/",
+    "pos": "noun",
+    "meaning": "việc đặt chỗ",
+    "definition": "an arrangement to keep a room or seat for you",
+    "examples": [
+      "I made a reservation for two nights."
+    ],
+    "level": "B1",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-9",
+    "word": "fare",
+    "ipa": "/fɛr/",
+    "pos": "noun",
+    "meaning": "giá vé đi lại",
+    "definition": "the price of a trip on public transport",
+    "examples": [
+      "The bus fare includes one large bag."
+    ],
+    "level": "B1",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-10",
+    "word": "route",
+    "ipa": "/ruːt/",
+    "pos": "noun",
+    "meaning": "tuyến đường",
+    "definition": "a way from one place to another",
+    "examples": [
+      "This route follows the river through town."
+    ],
+    "level": "B1",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-11",
+    "word": "passport",
+    "ipa": "/ˈpæspɔːrt/",
+    "pos": "noun",
+    "meaning": "hộ chiếu",
+    "definition": "an official document for international travel",
+    "examples": [
+      "Keep a copy of your passport in a separate bag."
+    ],
+    "level": "A2",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-12",
+    "word": "souvenir",
+    "ipa": "/ˌsuːvəˈnɪr/",
+    "pos": "noun",
+    "meaning": "quà lưu niệm",
+    "definition": "an object kept to remember a place",
+    "examples": [
+      "I bought a small wooden bird as a souvenir."
+    ],
+    "level": "A2",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-13",
+    "word": "landmark",
+    "ipa": "/ˈlændmɑːrk/",
+    "pos": "noun",
+    "meaning": "địa danh nổi bật",
+    "definition": "a recognizable building or feature of a place",
+    "examples": [
+      "The old clock tower is a local landmark."
+    ],
+    "level": "B1",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-14",
+    "word": "accommodation",
+    "ipa": "/əˌkɑːməˈdeɪʃən/",
+    "pos": "noun",
+    "meaning": "chỗ ở khi đi xa",
+    "definition": "a place where travelers can stay",
+    "examples": [
+      "We found affordable accommodation near the station."
+    ],
+    "level": "B2",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-15",
+    "word": "explore",
+    "ipa": "/ɪkˈsplɔːr/",
+    "pos": "verb",
+    "meaning": "khám phá",
+    "definition": "to travel around a place to learn about it",
+    "examples": [
+      "We plan to explore the island on foot."
+    ],
+    "level": "B1",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-16",
+    "word": "delay",
+    "ipa": "/dɪˈleɪ/",
+    "pos": "noun",
+    "meaning": "sự chậm trễ",
+    "definition": "a period when something happens later than planned",
+    "examples": [
+      "Heavy rain caused a short delay."
+    ],
+    "level": "B1",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-17",
+    "word": "transfer",
+    "ipa": "/ˈtrænsfɝː/",
+    "pos": "noun",
+    "meaning": "việc chuyển tuyến",
+    "definition": "a change from one vehicle or service to another",
+    "examples": [
+      "The airport transfer takes forty minutes."
+    ],
+    "level": "B1",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-18",
+    "word": "scenic",
+    "ipa": "/ˈsiːnɪk/",
+    "pos": "adjective",
+    "meaning": "có phong cảnh đẹp",
+    "definition": "having attractive natural views",
+    "examples": [
+      "We chose the scenic road along the coast."
+    ],
+    "level": "B2",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-19",
+    "word": "flexible",
+    "ipa": "/ˈflɛksəbəl/",
+    "pos": "adjective",
+    "meaning": "linh hoạt",
+    "definition": "able to change when circumstances change",
+    "examples": [
+      "A flexible ticket lets us leave a day later."
+    ],
+    "level": "B2",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-2-20",
+    "word": "crowded",
+    "ipa": "/ˈkraʊdɪd/",
+    "pos": "adjective",
+    "meaning": "đông đúc",
+    "definition": "full of people with little free space",
+    "examples": [
+      "The market is crowded on Saturday evenings."
+    ],
+    "level": "A2",
+    "topic": "Travel"
+  },
+  {
+    "id": "v-3-1",
+    "word": "colleague",
+    "ipa": "/ˈkɑːliːɡ/",
+    "pos": "noun",
+    "meaning": "đồng nghiệp",
+    "definition": "a person you work with",
+    "examples": [
+      "A colleague helped me prepare the presentation."
+    ],
+    "level": "B1",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-2",
+    "word": "deadline",
+    "ipa": "/ˈdɛdlaɪn/",
+    "pos": "noun",
+    "meaning": "hạn chót",
+    "definition": "the latest time by which work must be finished",
+    "examples": [
+      "Our deadline is Friday afternoon."
+    ],
+    "level": "B1",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-3",
+    "word": "meeting",
+    "ipa": "/ˈmiːtɪŋ/",
+    "pos": "noun",
+    "meaning": "cuộc họp",
+    "definition": "an event where people discuss something",
+    "examples": [
+      "The team meeting starts after lunch."
+    ],
+    "level": "A2",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-4",
+    "word": "schedule",
+    "ipa": "/ˈskɛdʒuːl/",
+    "pos": "noun",
+    "meaning": "lịch làm việc",
+    "definition": "a plan of activities and their times",
+    "examples": [
+      "I keep my work schedule on the wall."
+    ],
+    "level": "A2",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-5",
+    "word": "salary",
+    "ipa": "/ˈsæləri/",
+    "pos": "noun",
+    "meaning": "lương",
+    "definition": "regular payment for a job",
+    "examples": [
+      "The job offers training and a fair salary."
+    ],
+    "level": "B1",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-6",
+    "word": "interview",
+    "ipa": "/ˈɪntɚvjuː/",
+    "pos": "noun",
+    "meaning": "buổi phỏng vấn",
+    "definition": "a meeting to assess someone for a job",
+    "examples": [
+      "She practiced answering questions before her interview."
+    ],
+    "level": "A2",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-7",
+    "word": "task",
+    "ipa": "/tæsk/",
+    "pos": "noun",
+    "meaning": "nhiệm vụ",
+    "definition": "a piece of work that must be done",
+    "examples": [
+      "My first task is to check the orders."
+    ],
+    "level": "A2",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-8",
+    "word": "skill",
+    "ipa": "/skɪl/",
+    "pos": "noun",
+    "meaning": "kỹ năng",
+    "definition": "an ability developed through learning and practice",
+    "examples": [
+      "Listening carefully is an important workplace skill."
+    ],
+    "level": "A2",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-9",
+    "word": "feedback",
+    "ipa": "/ˈfiːdbæk/",
+    "pos": "noun",
+    "meaning": "ý kiến phản hồi",
+    "definition": "comments that help someone improve",
+    "examples": [
+      "The manager gave specific feedback on my report."
+    ],
+    "level": "B1",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-10",
+    "word": "promotion",
+    "ipa": "/prəˈmoʊʃən/",
+    "pos": "noun",
+    "meaning": "sự thăng chức",
+    "definition": "a move to a more senior job",
+    "examples": [
+      "His promotion brought new responsibilities."
+    ],
+    "level": "B1",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-11",
+    "word": "responsibility",
+    "ipa": "/rɪˌspɑːnsəˈbɪləti/",
+    "pos": "noun",
+    "meaning": "trách nhiệm",
+    "definition": "something you are expected to take care of",
+    "examples": [
+      "Keeping customer records safe is our responsibility."
+    ],
+    "level": "B1",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-12",
+    "word": "collaborate",
+    "ipa": "/kəˈlæbəreɪt/",
+    "pos": "verb",
+    "meaning": "cộng tác",
+    "definition": "to work together on a shared goal",
+    "examples": [
+      "Two teams will collaborate on the new service."
+    ],
+    "level": "B2",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-13",
+    "word": "negotiate",
+    "ipa": "/nɪˈɡoʊʃieɪt/",
+    "pos": "verb",
+    "meaning": "đàm phán",
+    "definition": "to discuss terms in order to reach agreement",
+    "examples": [
+      "We need to negotiate a realistic delivery date."
+    ],
+    "level": "B2",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-14",
+    "word": "proposal",
+    "ipa": "/prəˈpoʊzəl/",
+    "pos": "noun",
+    "meaning": "bản đề xuất",
+    "definition": "a formal suggestion for a plan",
+    "examples": [
+      "Her proposal explains how to reduce waiting times."
+    ],
+    "level": "B2",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-15",
+    "word": "remote",
+    "ipa": "/rɪˈmoʊt/",
+    "pos": "adjective",
+    "meaning": "từ xa",
+    "definition": "done away from a central workplace",
+    "examples": [
+      "Remote work saves me an hour of travel."
+    ],
+    "level": "B1",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-16",
+    "word": "productive",
+    "ipa": "/prəˈdʌktɪv/",
+    "pos": "adjective",
+    "meaning": "có năng suất",
+    "definition": "producing useful results",
+    "examples": [
+      "A quiet morning is my most productive time."
+    ],
+    "level": "B2",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-17",
+    "word": "training",
+    "ipa": "/ˈtreɪnɪŋ/",
+    "pos": "noun",
+    "meaning": "đào tạo",
+    "definition": "learning the skills needed for a job",
+    "examples": [
+      "New staff receive two days of safety training."
+    ],
+    "level": "A2",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-18",
+    "word": "client",
+    "ipa": "/ˈklaɪənt/",
+    "pos": "noun",
+    "meaning": "khách hàng sử dụng dịch vụ",
+    "definition": "a person or organization buying professional services",
+    "examples": [
+      "The client asked for a simpler design."
+    ],
+    "level": "B1",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-19",
+    "word": "strategy",
+    "ipa": "/ˈstrætədʒi/",
+    "pos": "noun",
+    "meaning": "chiến lược",
+    "definition": "a plan for achieving a long-term goal",
+    "examples": [
+      "Our strategy is to improve service before expanding."
+    ],
+    "level": "B2",
+    "topic": "Work"
+  },
+  {
+    "id": "v-3-20",
+    "word": "initiative",
+    "ipa": "/ɪˈnɪʃətɪv/",
+    "pos": "noun",
+    "meaning": "sự chủ động; sáng kiến",
+    "definition": "an action started to solve a problem",
+    "examples": [
+      "The recycling initiative began with one employee."
+    ],
+    "level": "B2",
+    "topic": "Work"
+  },
+  {
+    "id": "v-4-1",
+    "word": "ingredient",
+    "ipa": "/ɪnˈɡriːdiənt/",
+    "pos": "noun",
+    "meaning": "nguyên liệu",
+    "definition": "one of the foods used to make a dish",
+    "examples": [
+      "Fresh ginger is the main ingredient in this sauce."
+    ],
+    "level": "A2",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-2",
+    "word": "recipe",
+    "ipa": "/ˈrɛsəpi/",
+    "pos": "noun",
+    "meaning": "công thức nấu ăn",
+    "definition": "instructions for preparing a dish",
+    "examples": [
+      "My aunt shared her soup recipe with me."
+    ],
+    "level": "A2",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-3",
+    "word": "portion",
+    "ipa": "/ˈpɔːrʃən/",
+    "pos": "noun",
+    "meaning": "khẩu phần",
+    "definition": "an amount of food served to one person",
+    "examples": [
+      "A small portion is enough for a light lunch."
+    ],
+    "level": "B1",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-4",
+    "word": "flavor",
+    "ipa": "/ˈfleɪvɚ/",
+    "pos": "noun",
+    "meaning": "hương vị",
+    "definition": "the taste of food or drink",
+    "examples": [
+      "Lemon gives the rice a fresh flavor."
+    ],
+    "level": "B1",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-5",
+    "word": "boil",
+    "ipa": "/bɔɪl/",
+    "pos": "verb",
+    "meaning": "luộc; đun sôi",
+    "definition": "to heat liquid until it bubbles",
+    "examples": [
+      "Boil the water before adding the noodles."
+    ],
+    "level": "A2",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-6",
+    "word": "stir",
+    "ipa": "/stɝː/",
+    "pos": "verb",
+    "meaning": "khuấy",
+    "definition": "to mix food with a spoon or similar tool",
+    "examples": [
+      "Stir the sauce slowly for one minute."
+    ],
+    "level": "A2",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-7",
+    "word": "slice",
+    "ipa": "/slaɪs/",
+    "pos": "verb",
+    "meaning": "thái lát",
+    "definition": "to cut something into thin flat pieces",
+    "examples": [
+      "Slice the tomatoes just before serving."
+    ],
+    "level": "A2",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-8",
+    "word": "ripe",
+    "ipa": "/raɪp/",
+    "pos": "adjective",
+    "meaning": "chín (trái cây)",
+    "definition": "ready to eat after growing fully",
+    "examples": [
+      "A ripe mango smells sweet."
+    ],
+    "level": "B1",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-9",
+    "word": "fresh",
+    "ipa": "/frɛʃ/",
+    "pos": "adjective",
+    "meaning": "tươi",
+    "definition": "recently produced and still in good condition",
+    "examples": [
+      "We buy fresh vegetables at the morning market."
+    ],
+    "level": "A2",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-10",
+    "word": "spicy",
+    "ipa": "/ˈspaɪsi/",
+    "pos": "adjective",
+    "meaning": "cay; nhiều gia vị",
+    "definition": "having a strong hot taste",
+    "examples": [
+      "This spicy soup warms me on rainy days."
+    ],
+    "level": "A2",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-11",
+    "word": "nutritious",
+    "ipa": "/nuːˈtrɪʃəs/",
+    "pos": "adjective",
+    "meaning": "bổ dưỡng",
+    "definition": "containing substances that support good health",
+    "examples": [
+      "Beans can be part of a nutritious meal."
+    ],
+    "level": "B2",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-12",
+    "word": "appetite",
+    "ipa": "/ˈæpətaɪt/",
+    "pos": "noun",
+    "meaning": "cảm giác thèm ăn",
+    "definition": "the desire to eat",
+    "examples": [
+      "A long walk gave us a good appetite."
+    ],
+    "level": "B1",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-13",
+    "word": "leftovers",
+    "ipa": "/ˈlɛftoʊvɚz/",
+    "pos": "noun",
+    "meaning": "thức ăn còn thừa",
+    "definition": "food remaining after a meal",
+    "examples": [
+      "We packed the leftovers for tomorrow's lunch."
+    ],
+    "level": "B1",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-14",
+    "word": "homemade",
+    "ipa": "/ˌhoʊmˈmeɪd/",
+    "pos": "adjective",
+    "meaning": "làm tại nhà",
+    "definition": "made at home instead of bought ready-made",
+    "examples": [
+      "She brought homemade bread to the picnic."
+    ],
+    "level": "B1",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-15",
+    "word": "seasonal",
+    "ipa": "/ˈsiːzənəl/",
+    "pos": "adjective",
+    "meaning": "theo mùa",
+    "definition": "available or happening at a particular time of year",
+    "examples": [
+      "Seasonal fruit often costs less."
+    ],
+    "level": "B2",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-16",
+    "word": "crunchy",
+    "ipa": "/ˈkrʌntʃi/",
+    "pos": "adjective",
+    "meaning": "giòn",
+    "definition": "firm and making a sound when bitten",
+    "examples": [
+      "The salad needs something crunchy."
+    ],
+    "level": "B1",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-17",
+    "word": "steam",
+    "ipa": "/stiːm/",
+    "pos": "verb",
+    "meaning": "hấp",
+    "definition": "to cook food using hot water vapor",
+    "examples": [
+      "Steam the vegetables until they are just tender."
+    ],
+    "level": "B1",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-18",
+    "word": "allergy",
+    "ipa": "/ˈælɚdʒi/",
+    "pos": "noun",
+    "meaning": "dị ứng",
+    "definition": "a harmful body reaction to a particular substance",
+    "examples": [
+      "Tell the restaurant about your peanut allergy."
+    ],
+    "level": "B1",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-19",
+    "word": "sustainable",
+    "ipa": "/səˈsteɪnəbəl/",
+    "pos": "adjective",
+    "meaning": "bền vững",
+    "definition": "able to continue without using up resources",
+    "examples": [
+      "The cafe buys fish from sustainable sources."
+    ],
+    "level": "B2",
+    "topic": "Food"
+  },
+  {
+    "id": "v-4-20",
+    "word": "beverage",
+    "ipa": "/ˈbɛvərɪdʒ/",
+    "pos": "noun",
+    "meaning": "đồ uống",
+    "definition": "a drink, especially one served with a meal",
+    "examples": [
+      "Choose a hot beverage from the menu."
+    ],
+    "level": "B2",
+    "topic": "Food"
+  },
+  {
+    "id": "v-5-1",
+    "word": "exercise",
+    "ipa": "/ˈɛksɚsaɪz/",
+    "pos": "noun",
+    "meaning": "việc tập thể dục",
+    "definition": "physical activity to keep the body fit",
+    "examples": [
+      "Gentle exercise helps me feel more awake."
+    ],
+    "level": "A2",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-2",
+    "word": "sleep",
+    "ipa": "/sliːp/",
+    "pos": "noun",
+    "meaning": "giấc ngủ",
+    "definition": "the natural resting state of the body and mind",
+    "examples": [
+      "A regular bedtime can improve sleep."
+    ],
+    "level": "A2",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-3",
+    "word": "symptom",
+    "ipa": "/ˈsɪmptəm/",
+    "pos": "noun",
+    "meaning": "triệu chứng",
+    "definition": "a change in the body that may indicate illness",
+    "examples": [
+      "A persistent cough can be a symptom worth discussing."
+    ],
+    "level": "B1",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-4",
+    "word": "recover",
+    "ipa": "/rɪˈkʌvɚ/",
+    "pos": "verb",
+    "meaning": "hồi phục",
+    "definition": "to become well again",
+    "examples": [
+      "She took time off to recover from the flu."
+    ],
+    "level": "B1",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-5",
+    "word": "stretch",
+    "ipa": "/strɛtʃ/",
+    "pos": "verb",
+    "meaning": "duỗi; giãn cơ",
+    "definition": "to gently extend a part of the body",
+    "examples": [
+      "I stretch my legs after sitting for a long time."
+    ],
+    "level": "A2",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-6",
+    "word": "balanced",
+    "ipa": "/ˈbælənst/",
+    "pos": "adjective",
+    "meaning": "cân đối",
+    "definition": "including a suitable mixture of different things",
+    "examples": [
+      "He tries to eat a balanced selection of foods."
+    ],
+    "level": "B1",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-7",
+    "word": "hydration",
+    "ipa": "/haɪˈdreɪʃən/",
+    "pos": "noun",
+    "meaning": "sự bổ sung nước cho cơ thể",
+    "definition": "the process of providing enough water to the body",
+    "examples": [
+      "We discussed hydration before the summer walk."
+    ],
+    "level": "B2",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-8",
+    "word": "wellbeing",
+    "ipa": "/ˌwɛlˈbiːɪŋ/",
+    "pos": "noun",
+    "meaning": "trạng thái khỏe mạnh và thoải mái",
+    "definition": "the state of feeling healthy and comfortable",
+    "examples": [
+      "Time with friends supports her wellbeing."
+    ],
+    "level": "B2",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-9",
+    "word": "stress",
+    "ipa": "/strɛs/",
+    "pos": "noun",
+    "meaning": "sự căng thẳng",
+    "definition": "mental pressure caused by difficult situations",
+    "examples": [
+      "Short breaks help me manage everyday stress."
+    ],
+    "level": "B1",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-10",
+    "word": "rest",
+    "ipa": "/rɛst/",
+    "pos": "noun",
+    "meaning": "sự nghỉ ngơi",
+    "definition": "time spent relaxing instead of working",
+    "examples": [
+      "We stopped for a rest halfway up the hill."
+    ],
+    "level": "A2",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-11",
+    "word": "clinic",
+    "ipa": "/ˈklɪnɪk/",
+    "pos": "noun",
+    "meaning": "phòng khám",
+    "definition": "a place where people receive medical care",
+    "examples": [
+      "The clinic is beside the library."
+    ],
+    "level": "A2",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-12",
+    "word": "checkup",
+    "ipa": "/ˈtʃɛkʌp/",
+    "pos": "noun",
+    "meaning": "buổi khám sức khỏe",
+    "definition": "an examination to check general health",
+    "examples": [
+      "I booked a routine checkup for next week."
+    ],
+    "level": "B1",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-13",
+    "word": "energy",
+    "ipa": "/ˈɛnɚdʒi/",
+    "pos": "noun",
+    "meaning": "năng lượng; sức lực",
+    "definition": "the strength needed to do activities",
+    "examples": [
+      "I have more energy after a good night's sleep."
+    ],
+    "level": "A2",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-14",
+    "word": "posture",
+    "ipa": "/ˈpɑːstʃɚ/",
+    "pos": "noun",
+    "meaning": "tư thế cơ thể",
+    "definition": "the way you hold your body",
+    "examples": [
+      "She adjusted her chair to improve her posture."
+    ],
+    "level": "B2",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-15",
+    "word": "prevent",
+    "ipa": "/prɪˈvɛnt/",
+    "pos": "verb",
+    "meaning": "ngăn ngừa",
+    "definition": "to stop something from happening",
+    "examples": [
+      "A clear path can help prevent falls."
+    ],
+    "level": "B1",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-16",
+    "word": "mental",
+    "ipa": "/ˈmɛntəl/",
+    "pos": "adjective",
+    "meaning": "thuộc tinh thần",
+    "definition": "relating to the mind",
+    "examples": [
+      "The workshop focuses on mental wellbeing."
+    ],
+    "level": "B1",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-17",
+    "word": "gradual",
+    "ipa": "/ˈɡrædʒuəl/",
+    "pos": "adjective",
+    "meaning": "dần dần",
+    "definition": "happening slowly in small stages",
+    "examples": [
+      "His return to regular exercise was gradual."
+    ],
+    "level": "B2",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-18",
+    "word": "endurance",
+    "ipa": "/ɪnˈdʊrəns/",
+    "pos": "noun",
+    "meaning": "sức bền",
+    "definition": "the ability to continue an activity for a long time",
+    "examples": [
+      "The gentle training plan builds endurance over months."
+    ],
+    "level": "B2",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-19",
+    "word": "breath",
+    "ipa": "/brɛθ/",
+    "pos": "noun",
+    "meaning": "hơi thở",
+    "definition": "air taken into or released from the lungs",
+    "examples": [
+      "Take a slow breath before your presentation."
+    ],
+    "level": "B1",
+    "topic": "Health"
+  },
+  {
+    "id": "v-5-20",
+    "word": "routine care",
+    "ipa": "/ruːˈtiːn kɛr/",
+    "pos": "noun",
+    "meaning": "chăm sóc định kỳ",
+    "definition": "regular attention to maintain health",
+    "examples": [
+      "Routine care includes discussing concerns with a professional."
+    ],
+    "level": "B2",
+    "topic": "Health"
+  },
+  {
+    "id": "v-6-1",
+    "word": "device",
+    "ipa": "/dɪˈvaɪs/",
+    "pos": "noun",
+    "meaning": "thiết bị",
+    "definition": "a piece of equipment made for a purpose",
+    "examples": [
+      "This device measures the temperature in the room."
+    ],
+    "level": "A2",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-2",
+    "word": "screen",
+    "ipa": "/skriːn/",
+    "pos": "noun",
+    "meaning": "màn hình",
+    "definition": "the surface that displays digital information",
+    "examples": [
+      "The screen is easier to read in shade."
+    ],
+    "level": "A2",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-3",
+    "word": "password",
+    "ipa": "/ˈpæswɝːd/",
+    "pos": "noun",
+    "meaning": "mật khẩu",
+    "definition": "a secret string used to access an account",
+    "examples": [
+      "Use a different password for each account."
+    ],
+    "level": "A2",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-4",
+    "word": "update",
+    "ipa": "/ˈʌpdeɪt/",
+    "pos": "noun",
+    "meaning": "bản cập nhật",
+    "definition": "a newer version with changes or fixes",
+    "examples": [
+      "The update adds larger text options."
+    ],
+    "level": "A2",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-5",
+    "word": "download",
+    "ipa": "/ˈdaʊnloʊd/",
+    "pos": "verb",
+    "meaning": "tải xuống",
+    "definition": "to copy data from a network to a device",
+    "examples": [
+      "Download the map before leaving the hotel."
+    ],
+    "level": "A2",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-6",
+    "word": "upload",
+    "ipa": "/ˈʌploʊd/",
+    "pos": "verb",
+    "meaning": "tải lên",
+    "definition": "to send data from a device to a network",
+    "examples": [
+      "Please upload the report by noon."
+    ],
+    "level": "B1",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-7",
+    "word": "backup",
+    "ipa": "/ˈbækʌp/",
+    "pos": "noun",
+    "meaning": "bản sao lưu",
+    "definition": "a copy kept in case the original is lost",
+    "examples": [
+      "Make a backup before changing the files."
+    ],
+    "level": "B1",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-8",
+    "word": "privacy",
+    "ipa": "/ˈpraɪvəsi/",
+    "pos": "noun",
+    "meaning": "quyền riêng tư",
+    "definition": "control over access to personal information",
+    "examples": [
+      "The app explains its privacy settings clearly."
+    ],
+    "level": "B1",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-9",
+    "word": "network",
+    "ipa": "/ˈnɛtwɝːk/",
+    "pos": "noun",
+    "meaning": "mạng kết nối",
+    "definition": "a group of connected devices or systems",
+    "examples": [
+      "The library network is temporarily unavailable."
+    ],
+    "level": "B1",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-10",
+    "word": "storage",
+    "ipa": "/ˈstɔːrɪdʒ/",
+    "pos": "noun",
+    "meaning": "khả năng; nơi lưu trữ",
+    "definition": "space used to keep data or objects",
+    "examples": [
+      "Video files use a lot of storage."
+    ],
+    "level": "B1",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-11",
+    "word": "reliable",
+    "ipa": "/rɪˈlaɪəbəl/",
+    "pos": "adjective",
+    "meaning": "đáng tin cậy",
+    "definition": "working well consistently",
+    "examples": [
+      "We need a reliable connection for the call."
+    ],
+    "level": "B1",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-12",
+    "word": "accessible",
+    "ipa": "/əkˈsɛsəbəl/",
+    "pos": "adjective",
+    "meaning": "dễ tiếp cận, sử dụng",
+    "definition": "usable by people with different needs",
+    "examples": [
+      "Clear labels make the website more accessible."
+    ],
+    "level": "B2",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-13",
+    "word": "interface",
+    "ipa": "/ˈɪntɚfeɪs/",
+    "pos": "noun",
+    "meaning": "giao diện",
+    "definition": "the controls through which a person uses software",
+    "examples": [
+      "The interface has only three main buttons."
+    ],
+    "level": "B2",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-14",
+    "word": "innovation",
+    "ipa": "/ˌɪnəˈveɪʃən/",
+    "pos": "noun",
+    "meaning": "sự đổi mới",
+    "definition": "a new useful idea or method",
+    "examples": [
+      "The sensor is a small but practical innovation."
+    ],
+    "level": "B2",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-15",
+    "word": "automate",
+    "ipa": "/ˈɔːtəmeɪt/",
+    "pos": "verb",
+    "meaning": "tự động hóa",
+    "definition": "to make a process run with little human effort",
+    "examples": [
+      "We automate simple reminders to save time."
+    ],
+    "level": "B2",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-16",
+    "word": "notification",
+    "ipa": "/ˌnoʊtəfəˈkeɪʃən/",
+    "pos": "noun",
+    "meaning": "thông báo",
+    "definition": "a message telling you that something has happened",
+    "examples": [
+      "I turned off notifications during the lesson."
+    ],
+    "level": "B1",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-17",
+    "word": "attachment",
+    "ipa": "/əˈtætʃmənt/",
+    "pos": "noun",
+    "meaning": "tệp đính kèm",
+    "definition": "a file sent with a message",
+    "examples": [
+      "The attachment contains the meeting notes."
+    ],
+    "level": "B1",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-18",
+    "word": "wireless",
+    "ipa": "/ˈwaɪɚləs/",
+    "pos": "adjective",
+    "meaning": "không dây",
+    "definition": "working without a physical cable",
+    "examples": [
+      "My wireless keyboard needs new batteries."
+    ],
+    "level": "B1",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-19",
+    "word": "troubleshoot",
+    "ipa": "/ˈtrʌbəlʃuːt/",
+    "pos": "verb",
+    "meaning": "tìm và khắc phục lỗi",
+    "definition": "to identify and solve a technical problem",
+    "examples": [
+      "The guide helps users troubleshoot sound problems."
+    ],
+    "level": "B2",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-6-20",
+    "word": "permission",
+    "ipa": "/pɚˈmɪʃən/",
+    "pos": "noun",
+    "meaning": "quyền cho phép",
+    "definition": "approval to perform an action",
+    "examples": [
+      "The browser asks for microphone permission."
+    ],
+    "level": "B1",
+    "topic": "Technology"
+  },
+  {
+    "id": "v-7-1",
+    "word": "recycle",
+    "ipa": "/riːˈsaɪkəl/",
+    "pos": "verb",
+    "meaning": "tái chế",
+    "definition": "to process used materials so they can be used again",
+    "examples": [
+      "We recycle clean paper at the community center."
+    ],
+    "level": "A2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-2",
+    "word": "reuse",
+    "ipa": "/riːˈjuːz/",
+    "pos": "verb",
+    "meaning": "tái sử dụng",
+    "definition": "to use something again",
+    "examples": [
+      "You can reuse this glass jar for rice."
+    ],
+    "level": "A2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-3",
+    "word": "waste",
+    "ipa": "/weɪst/",
+    "pos": "noun",
+    "meaning": "chất thải; sự lãng phí",
+    "definition": "unwanted material or unnecessary use of resources",
+    "examples": [
+      "The school measures food waste each week."
+    ],
+    "level": "A2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-4",
+    "word": "pollution",
+    "ipa": "/pəˈluːʃən/",
+    "pos": "noun",
+    "meaning": "ô nhiễm",
+    "definition": "harmful substances added to air, water or land",
+    "examples": [
+      "The project studies pollution in the river."
+    ],
+    "level": "B1",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-5",
+    "word": "climate",
+    "ipa": "/ˈklaɪmət/",
+    "pos": "noun",
+    "meaning": "khí hậu",
+    "definition": "the usual weather conditions of a region",
+    "examples": [
+      "The region has a warm and wet climate."
+    ],
+    "level": "B1",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-6",
+    "word": "resource",
+    "ipa": "/ˈriːsɔːrs/",
+    "pos": "noun",
+    "meaning": "tài nguyên",
+    "definition": "something useful that people can draw on",
+    "examples": [
+      "Clean water is a valuable resource."
+    ],
+    "level": "B1",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-7",
+    "word": "renewable",
+    "ipa": "/rɪˈnuːəbəl/",
+    "pos": "adjective",
+    "meaning": "có thể tái tạo",
+    "definition": "naturally replaced as it is used",
+    "examples": [
+      "The building gets power from renewable sources."
+    ],
+    "level": "B2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-8",
+    "word": "habitat",
+    "ipa": "/ˈhæbəˌtæt/",
+    "pos": "noun",
+    "meaning": "môi trường sống tự nhiên",
+    "definition": "the natural home of an animal or plant",
+    "examples": [
+      "The wetland is an important bird habitat."
+    ],
+    "level": "B2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-9",
+    "word": "wildlife",
+    "ipa": "/ˈwaɪldlaɪf/",
+    "pos": "noun",
+    "meaning": "động vật hoang dã",
+    "definition": "animals living in their natural surroundings",
+    "examples": [
+      "Visitors should watch wildlife from a distance."
+    ],
+    "level": "B1",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-10",
+    "word": "conserve",
+    "ipa": "/kənˈsɝːv/",
+    "pos": "verb",
+    "meaning": "bảo tồn; tiết kiệm",
+    "definition": "to protect something from loss or waste",
+    "examples": [
+      "Simple repairs can conserve water at home."
+    ],
+    "level": "B2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-11",
+    "word": "emission",
+    "ipa": "/ɪˈmɪʃən/",
+    "pos": "noun",
+    "meaning": "sự phát thải",
+    "definition": "the release of gas or other substances",
+    "examples": [
+      "The report compares emission levels from different buses."
+    ],
+    "level": "B2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-12",
+    "word": "compost",
+    "ipa": "/ˈkɑːmpoʊst/",
+    "pos": "noun",
+    "meaning": "phân hữu cơ từ rác phân hủy",
+    "definition": "decayed organic material used to improve soil",
+    "examples": [
+      "Dry leaves become compost for the garden."
+    ],
+    "level": "B2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-13",
+    "word": "reduce",
+    "ipa": "/rɪˈduːs/",
+    "pos": "verb",
+    "meaning": "giảm bớt",
+    "definition": "to make something smaller in amount",
+    "examples": [
+      "We reduce packaging by buying larger refill bags."
+    ],
+    "level": "A2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-14",
+    "word": "protect",
+    "ipa": "/prəˈtɛkt/",
+    "pos": "verb",
+    "meaning": "bảo vệ",
+    "definition": "to keep something safe from harm",
+    "examples": [
+      "The fence helps protect young trees."
+    ],
+    "level": "A2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-15",
+    "word": "forest",
+    "ipa": "/ˈfɔːrɪst/",
+    "pos": "noun",
+    "meaning": "rừng",
+    "definition": "a large area covered mainly with trees",
+    "examples": [
+      "A narrow path leads into the forest."
+    ],
+    "level": "A2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-16",
+    "word": "drought",
+    "ipa": "/draʊt/",
+    "pos": "noun",
+    "meaning": "hạn hán",
+    "definition": "a long period with very little rain",
+    "examples": [
+      "The drought changed how farmers used water."
+    ],
+    "level": "B2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-17",
+    "word": "flood",
+    "ipa": "/flʌd/",
+    "pos": "noun",
+    "meaning": "lũ lụt",
+    "definition": "water covering land that is normally dry",
+    "examples": [
+      "The flood closed the road for two days."
+    ],
+    "level": "B1",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-18",
+    "word": "community",
+    "ipa": "/kəˈmjuːnəti/",
+    "pos": "noun",
+    "meaning": "cộng đồng",
+    "definition": "people connected by a place or shared interest",
+    "examples": [
+      "Our community planted trees beside the playground."
+    ],
+    "level": "B1",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-19",
+    "word": "awareness",
+    "ipa": "/əˈwɛrnəs/",
+    "pos": "noun",
+    "meaning": "nhận thức",
+    "definition": "knowledge that something exists or matters",
+    "examples": [
+      "The exhibition raises awareness of local river life."
+    ],
+    "level": "B2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-7-20",
+    "word": "impact",
+    "ipa": "/ˈɪmpækt/",
+    "pos": "noun",
+    "meaning": "tác động",
+    "definition": "a strong effect on something",
+    "examples": [
+      "We considered the environmental impact of our trip."
+    ],
+    "level": "B2",
+    "topic": "Environment"
+  },
+  {
+    "id": "v-8-1",
+    "word": "lesson",
+    "ipa": "/ˈlɛsən/",
+    "pos": "noun",
+    "meaning": "bài học; buổi học",
+    "definition": "a period of teaching or learning",
+    "examples": [
+      "Today's lesson includes a short conversation."
+    ],
+    "level": "A2",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-2",
+    "word": "practice",
+    "ipa": "/ˈpræktɪs/",
+    "pos": "noun",
+    "meaning": "sự luyện tập",
+    "definition": "repeated activity to improve a skill",
+    "examples": [
+      "Daily practice makes new words easier to remember."
+    ],
+    "level": "A2",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-3",
+    "word": "revise",
+    "ipa": "/rɪˈvaɪz/",
+    "pos": "verb",
+    "meaning": "ôn tập; chỉnh sửa",
+    "definition": "to study again or improve an earlier version",
+    "examples": [
+      "I revise my notes before the weekly quiz."
+    ],
+    "level": "B1",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-4",
+    "word": "explain",
+    "ipa": "/ɪkˈspleɪn/",
+    "pos": "verb",
+    "meaning": "giải thích",
+    "definition": "to make an idea easier to understand",
+    "examples": [
+      "Can you explain this step with an example?"
+    ],
+    "level": "A2",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-5",
+    "word": "knowledge",
+    "ipa": "/ˈnɑːlɪdʒ/",
+    "pos": "noun",
+    "meaning": "kiến thức",
+    "definition": "information and understanding gained through learning",
+    "examples": [
+      "The project connects classroom knowledge with daily life."
+    ],
+    "level": "B1",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-6",
+    "word": "curious",
+    "ipa": "/ˈkjʊriəs/",
+    "pos": "adjective",
+    "meaning": "tò mò, ham tìm hiểu",
+    "definition": "wanting to learn or know more",
+    "examples": [
+      "Curious students often ask unexpected questions."
+    ],
+    "level": "B1",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-7",
+    "word": "confidence",
+    "ipa": "/ˈkɑːnfədəns/",
+    "pos": "noun",
+    "meaning": "sự tự tin",
+    "definition": "belief in your ability to do something",
+    "examples": [
+      "Small speaking tasks helped build her confidence."
+    ],
+    "level": "B1",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-8",
+    "word": "progress",
+    "ipa": "/ˈprɑːɡrɛs/",
+    "pos": "noun",
+    "meaning": "sự tiến bộ",
+    "definition": "movement toward a better or more developed state",
+    "examples": [
+      "Keep old drafts so you can see your progress."
+    ],
+    "level": "A2",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-9",
+    "word": "assignment",
+    "ipa": "/əˈsaɪnmənt/",
+    "pos": "noun",
+    "meaning": "bài tập được giao",
+    "definition": "a piece of work given to a learner",
+    "examples": [
+      "The assignment asks us to interview a neighbor."
+    ],
+    "level": "B1",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-10",
+    "word": "research",
+    "ipa": "/ˈriːsɝːtʃ/",
+    "pos": "noun",
+    "meaning": "nghiên cứu",
+    "definition": "careful study to discover or check information",
+    "examples": [
+      "Our research compares three ways of taking notes."
+    ],
+    "level": "B1",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-11",
+    "word": "evidence",
+    "ipa": "/ˈɛvədəns/",
+    "pos": "noun",
+    "meaning": "bằng chứng",
+    "definition": "information that supports a claim or conclusion",
+    "examples": [
+      "Find evidence in the passage before answering."
+    ],
+    "level": "B2",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-12",
+    "word": "evaluate",
+    "ipa": "/ɪˈvæljueɪt/",
+    "pos": "verb",
+    "meaning": "đánh giá",
+    "definition": "to judge the quality or value of something",
+    "examples": [
+      "We evaluate each source before using it."
+    ],
+    "level": "B2",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-13",
+    "word": "curriculum",
+    "ipa": "/kəˈrɪkjələm/",
+    "pos": "noun",
+    "meaning": "chương trình học",
+    "definition": "the subjects and content taught in a course",
+    "examples": [
+      "The curriculum includes practical communication tasks."
+    ],
+    "level": "B2",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-14",
+    "word": "scholarship",
+    "ipa": "/ˈskɑːlɚʃɪp/",
+    "pos": "noun",
+    "meaning": "học bổng",
+    "definition": "money awarded to help someone study",
+    "examples": [
+      "The scholarship covers books and travel costs."
+    ],
+    "level": "B2",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-15",
+    "word": "independent",
+    "ipa": "/ˌɪndɪˈpɛndənt/",
+    "pos": "adjective",
+    "meaning": "độc lập; tự chủ",
+    "definition": "able to act or learn without constant help",
+    "examples": [
+      "An independent learner knows when to ask for support."
+    ],
+    "level": "B1",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-16",
+    "word": "concentrate",
+    "ipa": "/ˈkɑːnsəntreɪt/",
+    "pos": "verb",
+    "meaning": "tập trung",
+    "definition": "to give all your attention to something",
+    "examples": [
+      "I concentrate better when my phone is silent."
+    ],
+    "level": "B1",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-17",
+    "word": "memorize",
+    "ipa": "/ˈmɛməraɪz/",
+    "pos": "verb",
+    "meaning": "ghi nhớ, học thuộc",
+    "definition": "to learn something so it can be recalled",
+    "examples": [
+      "It helps to memorize words in useful phrases."
+    ],
+    "level": "B1",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-18",
+    "word": "reflect",
+    "ipa": "/rɪˈflɛkt/",
+    "pos": "verb",
+    "meaning": "suy ngẫm",
+    "definition": "to think carefully about an experience or idea",
+    "examples": [
+      "We reflect on one useful thing after each lesson."
+    ],
+    "level": "B2",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-19",
+    "word": "achievement",
+    "ipa": "/əˈtʃiːvmənt/",
+    "pos": "noun",
+    "meaning": "thành tựu",
+    "definition": "something successfully completed through effort",
+    "examples": [
+      "Finishing her first English book was an achievement."
+    ],
+    "level": "B2",
+    "topic": "Education"
+  },
+  {
+    "id": "v-8-20",
+    "word": "lifelong",
+    "ipa": "/ˈlaɪflɔːŋ/",
+    "pos": "adjective",
+    "meaning": "suốt đời",
+    "definition": "continuing throughout a person's life",
+    "examples": [
+      "Curiosity is at the heart of lifelong learning."
+    ],
+    "level": "B2",
+    "topic": "Education"
+  }
+]

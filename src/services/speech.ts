@@ -1,0 +1,3 @@
+import type { Settings } from './storage';
+export function stopSpeech(){if('speechSynthesis' in window)window.speechSynthesis.cancel();}
+export function speak(text:string,settings:Pick<Settings,'accent'|'rate'>,speaker=0){if(!('speechSynthesis' in window))return false;stopSpeech();const utterance=new SpeechSynthesisUtterance(text);utterance.lang=settings.accent;utterance.rate=settings.rate;const voices=speechSynthesis.getVoices().filter(v=>v.lang===settings.accent);if(voices.length)utterance.voice=voices[speaker%voices.length];utterance.pitch=voices.length<2?(speaker%2?1.12:.94):1;speechSynthesis.speak(utterance);return true;}

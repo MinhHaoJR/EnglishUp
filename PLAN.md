@@ -20,3 +20,4 @@
 After every milestone run lint, typecheck, tests and production build, fix failures, then create a conventional commit when Git is available. Final checks include persistent attempts and export/reset/import round trip. Verify browser UI when a browser automation surface is available. Microphone/audio require a real device and permission; report any unverified hardware behavior honestly.
 
 - Milestone 1 completed: lint, typecheck, storage round-trip test and production build passed. Dependencies audited: zero findings.
+- Milestone 2 completed: 160 validated words, four practice modes, SM-2, custom words and CSV. All four checks passed (6 tests).
