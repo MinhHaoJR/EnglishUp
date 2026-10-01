@@ -5,3 +5,7 @@ export const wordSchema = z.object({id:z.string().min(1),word:z.string().min(1),
 export type Word = z.infer<typeof wordSchema>;
 export type Skill = z.infer<typeof skillSchema>;
 export type Level = z.infer<typeof levelSchema>;
+export const questionSchema=z.object({id:z.string(),type:z.enum(['choice','tfng','short','blank']),prompt:z.string(),options:z.array(z.string()).optional(),answers:z.array(z.string()).min(1),explanation:z.string(),evidence:z.string()});
+export type Question=z.infer<typeof questionSchema>;
+export const readingSchema=z.object({id:z.string(),title:z.string(),level:levelSchema,topic:z.string(),text:z.string(),questions:z.array(questionSchema).length(5)});
+export type ReadingLesson=z.infer<typeof readingSchema>;
