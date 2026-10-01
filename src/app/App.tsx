@@ -1,0 +1,11 @@
+import { useEffect } from 'react';
+import { NavLink, Outlet, createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { useApp } from './store';
+import { useT } from '../i18n';
+import Settings from '../features/settings/Settings';
+import { PageTitle } from '../components/shared';
+export const APP_NAME='EnglishUp';
+export function Layout(){const t=useT();const {settings,load,ready,error}=useApp();useEffect(()=>{void load();},[load]);useEffect(()=>{document.documentElement.lang=settings.language;document.documentElement.classList.toggle('dark',settings.theme==='dark');},[settings]);return <><a className="skip" href="#main">Skip to content / Đến nội dung</a><aside className="sidebar"><NavLink className="brand" to="/"><span className="brand-mark">e<span>↗</span></span>{APP_NAME}<span className="brand-dot">.</span></NavLink><p className="sidebar-caption">{t('practice')}</p><nav aria-label={t('practice')}>{([['/','dashboard','▦'],['/vocabulary','vocabulary','▧'],['/listening','listening','◉'],['/speaking','speaking','♧'],['/reading','reading','▤'],['/writing','writing','✎'],['/settings','settings','⚙']] as const).map(([path,label,icon])=><NavLink key={path} to={path} end={path==='/'}><span aria-hidden="true">{icon}</span>{t(label)}</NavLink>)}</nav><div className="sidebar-note"><span className="plant" aria-hidden="true">✳</span><strong>{t('tagline')}</strong><p>{t('local')}</p></div></aside><div className="workspace"><div className="topbar"><span>{t('tagline')}</span><div className="flex items-center gap-3"><span className="online-dot"/><span>{settings.language==='vi'?'Không gian học cá nhân':'Personal learning space'}</span><span className="avatar">U</span></div></div><main id="main" tabIndex={-1}>{!ready?<p>{t('loading')}</p>:error?<p role="alert">{error}</p>:<Outlet/>}</main><footer>{APP_NAME} · {t('local')}</footer></div></>}
+function Welcome(){const t=useT();return <PageTitle eyebrow={t('homeEyebrow')} title={t('welcome')} description={t('welcomeSub')}/>}
+const router=createBrowserRouter([{element:<Layout/>,children:[{index:true,element:<Welcome/>},{path:'settings',element:<Settings/>},{path:'*',element:<Welcome/>}]}]);
+export default function App(){return <RouterProvider router={router}/>}

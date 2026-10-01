@@ -1,0 +1,3 @@
+import { db,defaults,exportData,importData,resetData } from './storage';
+beforeEach(resetData);
+test('backup reset restore is atomic and preserves settings and attempts',async()=>{await db.settings.put({...defaults,language:'en'});await db.attempts.add({id:'a',skill:'reading',score:80,duration:60,timestamp:1,label:'test'});const backup=await exportData();await resetData();expect(await db.attempts.count()).toBe(0);await importData(backup);expect(await db.settings.get('main')).toEqual({...defaults,language:'en'});expect(await db.attempts.count()).toBe(1);await expect(importData({version:9})).rejects.toThrow();expect(await db.attempts.count()).toBe(1);});
