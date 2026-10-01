@@ -24,3 +24,4 @@ After every milestone run lint, typecheck, tests and production build, fix failu
 - Milestone 3 completed: six original reading passages, 30 questions, evidence, reading timer/WPM, dictionary and custom-word save. All four checks passed (7 tests).
 - Milestone 4 completed: six listening scripts, 24 questions, 12 dictations, sentence replay, transcript gates and word alignment. All four checks passed (10 tests).
 - Milestone 5 completed: 8 read-aloud and 8 topic prompts, opt-in recognition, in-memory recording, timers, metrics and explicit self-assessment fallback. All four checks passed (11 tests); real microphone hardware remains unverified.
+- Milestone 6 completed: 10 writing prompts, autosaved drafts, rule-based FeedbackProvider, persistent history and draft comparisons. All four checks passed (14 tests).

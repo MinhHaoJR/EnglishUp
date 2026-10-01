@@ -14,3 +14,5 @@ export type ListeningLesson=z.infer<typeof listeningSchema>;
 export const dictationSchema=z.object({id:z.string(),text:z.string(),level:levelSchema,topic:z.string()});
 export const speakingSchema=z.object({id:z.string(),title:z.string(),level:levelSchema,topic:z.string(),mode:z.enum(['read','talk']),text:z.string(),cues:z.array(z.string()).min(1)});
 export type SpeakingPrompt=z.infer<typeof speakingSchema>;
+export const writingSchema=z.object({id:z.string(),title:z.string(),level:levelSchema,topic:z.string(),genre:z.enum(['email','opinion','description','story']),prompt:z.string(),minWords:z.number().int().positive(),maxWords:z.number().int().positive(),checklist:z.array(z.string()).min(3)}).refine(p=>p.maxWords>=p.minWords,'Invalid word range');
+export type WritingPrompt=z.infer<typeof writingSchema>;
