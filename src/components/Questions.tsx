@@ -1,5 +1,75 @@
 import { useT } from '../i18n';
 import type { Question } from '../data/schema';
-export function normalizeAnswer(text:string){return text.toLowerCase().trim().replace(/[.,!?;:]+$/g,'').replace(/\s+/g,' ');}
-export function isCorrect(q:Question,answer:string){return q.answers.some(a=>normalizeAnswer(a)===normalizeAnswer(answer));}
-export function Questions({questions,answers,onChange,submitted}:{questions:Question[];answers:Record<string,string>;onChange:(id:string,value:string)=>void;submitted:boolean}){const t=useT();return <>{questions.map((q,i)=><fieldset className="question" key={q.id}><legend className="font-semibold">{i+1}. {q.prompt}</legend>{q.type==='choice'||q.type==='tfng'?(q.type==='tfng'?['True','False','Not Given']:q.options??[]).map(option=><label key={option}><input type="radio" name={q.id} value={option} checked={answers[q.id]===option} disabled={submitted} onChange={()=>onChange(q.id,option)}/>{option}</label>):<label>{t('answer')}<input disabled={submitted} value={answers[q.id]??''} onChange={e=>onChange(q.id,e.target.value)}/></label>}{submitted&&<div className="notice"><strong>{isCorrect(q,answers[q.id]??'')?'✓':'✕'} {q.answers[0]}</strong><p>{t('explanation')}: {q.explanation}</p><p className="muted">{t('evidence')}: “{q.evidence}”</p></div>}</fieldset>)}</>}
+export function normalizeAnswer(text: string) {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[.,!?;:]+$/g, '')
+    .replace(/\s+/g, ' ');
+}
+export function isCorrect(q: Question, answer: string) {
+  return q.answers.some((a) => normalizeAnswer(a) === normalizeAnswer(answer));
+}
+export function Questions({
+  questions,
+  answers,
+  onChange,
+  submitted,
+}: {
+  questions: Question[];
+  answers: Record<string, string>;
+  onChange: (id: string, value: string) => void;
+  submitted: boolean;
+}) {
+  const t = useT();
+  return (
+    <>
+      {questions.map((q, i) => (
+        <fieldset className="question" key={q.id}>
+          <legend className="font-semibold">
+            {i + 1}. {q.prompt}
+          </legend>
+          {q.type === 'choice' || q.type === 'tfng' ? (
+            (q.type === 'tfng' ? ['True', 'False', 'Not Given'] : (q.options ?? [])).map(
+              (option) => (
+                <label key={option}>
+                  <input
+                    type="radio"
+                    name={q.id}
+                    value={option}
+                    checked={answers[q.id] === option}
+                    disabled={submitted}
+                    onChange={() => onChange(q.id, option)}
+                  />
+                  {option}
+                </label>
+              ),
+            )
+          ) : (
+            <label>
+              {t('answer')}
+              <input
+                disabled={submitted}
+                value={answers[q.id] ?? ''}
+                onChange={(e) => onChange(q.id, e.target.value)}
+              />
+            </label>
+          )}
+          {submitted && (
+            <div className="notice">
+              <strong>
+                {isCorrect(q, answers[q.id] ?? '') ? '✓' : '✕'} {q.answers[0]}
+              </strong>
+              <p>
+                {t('explanation')}: {q.explanation}
+              </p>
+              <p className="muted">
+                {t('evidence')}: “{q.evidence}”
+              </p>
+            </div>
+          )}
+        </fieldset>
+      ))}
+    </>
+  );
+}

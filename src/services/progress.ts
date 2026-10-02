@@ -1,5 +1,45 @@
 import type { Attempt } from './storage';
 import { dayKey } from './srs';
 import type { Skill } from '../data/schema';
-export const skills:Skill[]=['vocabulary','listening','speaking','reading','writing'];
-export function getProgress(attempts:Attempt[],now=Date.now()){const today=dayKey(now);const days=new Set(attempts.map(a=>dayKey(a.timestamp)));const cursor=new Date(now);if(!days.has(today))cursor.setDate(cursor.getDate()-1);let streak=0;while(days.has(dayKey(+cursor))){streak++;cursor.setDate(cursor.getDate()-1);}const todayAttempts=attempts.filter(a=>dayKey(a.timestamp)===today);const week=Array.from({length:7},(_,i)=>{const day=new Date(now);day.setDate(day.getDate()-6+i);const key=dayKey(+day);const entries=attempts.filter(a=>dayKey(a.timestamp)===key);return {key,time:+day,seconds:entries.reduce((sum,a)=>sum+a.duration,0),count:entries.length};});const perSkill=skills.map(skill=>{const entries=attempts.filter(a=>a.skill===skill);return {skill,count:entries.length,average:entries.length?Math.round(entries.reduce((sum,a)=>sum+a.score,0)/entries.length):0};});return {streak,todaySeconds:todayAttempts.reduce((sum,a)=>sum+a.duration,0),todaySkills:new Set(todayAttempts.map(a=>a.skill)),week,perSkill};}
+export const skills: Skill[] = ['vocabulary', 'listening', 'speaking', 'reading', 'writing'];
+export function getProgress(attempts: Attempt[], now = Date.now()) {
+  const today = dayKey(now);
+  const days = new Set(attempts.map((a) => dayKey(a.timestamp)));
+  const cursor = new Date(now);
+  if (!days.has(today)) cursor.setDate(cursor.getDate() - 1);
+  let streak = 0;
+  while (days.has(dayKey(+cursor))) {
+    streak++;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+  const todayAttempts = attempts.filter((a) => dayKey(a.timestamp) === today);
+  const week = Array.from({ length: 7 }, (_, i) => {
+    const day = new Date(now);
+    day.setDate(day.getDate() - 6 + i);
+    const key = dayKey(+day);
+    const entries = attempts.filter((a) => dayKey(a.timestamp) === key);
+    return {
+      key,
+      time: +day,
+      seconds: entries.reduce((sum, a) => sum + a.duration, 0),
+      count: entries.length,
+    };
+  });
+  const perSkill = skills.map((skill) => {
+    const entries = attempts.filter((a) => a.skill === skill);
+    return {
+      skill,
+      count: entries.length,
+      average: entries.length
+        ? Math.round(entries.reduce((sum, a) => sum + a.score, 0) / entries.length)
+        : 0,
+    };
+  });
+  return {
+    streak,
+    todaySeconds: todayAttempts.reduce((sum, a) => sum + a.duration, 0),
+    todaySkills: new Set(todayAttempts.map((a) => a.skill)),
+    week,
+    perSkill,
+  };
+}

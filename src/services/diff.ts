@@ -1,4 +1,90 @@
-const contractions:Record<string,string>={"i'm":'i am',"you're":'you are',"we're":'we are',"they're":'they are',"he's":'he is',"she's":'she is',"it's":'it is',"that's":'that is',"there's":'there is',"don't":'do not',"doesn't":'does not',"didn't":'did not',"can't":'cannot',"won't":'will not',"isn't":'is not',"aren't":'are not',"wasn't":'was not',"weren't":'were not',"haven't":'have not',"hasn't":'has not',"hadn't":'had not',"shouldn't":'should not',"wouldn't":'would not',"couldn't":'could not',"i've":'i have',"we've":'we have',"they've":'they have',"you've":'you have',"i'll":'i will',"you'll":'you will',"we'll":'we will',"they'll":'they will',"i'd":'i would',"let's":'let us'};
-export function normalize(text:string){return text.toLowerCase().replaceAll('’',"'").replace(/\b[a-z]+'[a-z]+\b/g,w=>contractions[w]??w).replace(/[^a-z0-9'\s]/g,' ').trim().split(/\s+/).filter(Boolean);}
-export type Token={kind:'correct'|'wrong'|'missing'|'extra';expected?:string;actual?:string};
-export function alignWords(target:string,spoken:string){const a=normalize(target).slice(0,1000),b=normalize(spoken).slice(0,1000);const dp=Array.from({length:a.length+1},()=>Array<number>(b.length+1).fill(0));for(let i=0;i<=a.length;i++)dp[i][0]=i;for(let j=0;j<=b.length;j++)dp[0][j]=j;for(let i=1;i<=a.length;i++)for(let j=1;j<=b.length;j++)dp[i][j]=Math.min(dp[i-1][j]+1,dp[i][j-1]+1,dp[i-1][j-1]+(a[i-1]===b[j-1]?0:1));const tokens:Token[]=[];let i=a.length,j=b.length;while(i||j){if(i&&j&&dp[i][j]===dp[i-1][j-1]+(a[i-1]===b[j-1]?0:1)){tokens.push({kind:a[i-1]===b[j-1]?'correct':'wrong',expected:a[--i],actual:b[--j]});}else if(i&&dp[i][j]===dp[i-1][j]+1){tokens.push({kind:'missing',expected:a[--i]});}else{tokens.push({kind:'extra',actual:b[--j]});}}return {tokens:tokens.reverse(),errors:dp[a.length][b.length],score:a.length?Math.max(0,Math.round((1-dp[a.length][b.length]/a.length)*100)):b.length?0:100};}
+const contractions: Record<string, string> = {
+  "i'm": 'i am',
+  "you're": 'you are',
+  "we're": 'we are',
+  "they're": 'they are',
+  "he's": 'he is',
+  "she's": 'she is',
+  "it's": 'it is',
+  "that's": 'that is',
+  "there's": 'there is',
+  "don't": 'do not',
+  "doesn't": 'does not',
+  "didn't": 'did not',
+  "can't": 'cannot',
+  "won't": 'will not',
+  "isn't": 'is not',
+  "aren't": 'are not',
+  "wasn't": 'was not',
+  "weren't": 'were not',
+  "haven't": 'have not',
+  "hasn't": 'has not',
+  "hadn't": 'had not',
+  "shouldn't": 'should not',
+  "wouldn't": 'would not',
+  "couldn't": 'could not',
+  "i've": 'i have',
+  "we've": 'we have',
+  "they've": 'they have',
+  "you've": 'you have',
+  "i'll": 'i will',
+  "you'll": 'you will',
+  "we'll": 'we will',
+  "they'll": 'they will',
+  "i'd": 'i would',
+  "let's": 'let us',
+};
+export function normalize(text: string) {
+  return text
+    .toLowerCase()
+    .replaceAll('’', "'")
+    .replace(/\b[a-z]+'[a-z]+\b/g, (w) => contractions[w] ?? w)
+    .replace(/[^a-z0-9'\s]/g, ' ')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+}
+export type Token = {
+  kind: 'correct' | 'wrong' | 'missing' | 'extra';
+  expected?: string;
+  actual?: string;
+};
+export function alignWords(target: string, spoken: string) {
+  const a = normalize(target).slice(0, 1000),
+    b = normalize(spoken).slice(0, 1000);
+  const dp = Array.from({ length: a.length + 1 }, () => Array<number>(b.length + 1).fill(0));
+  for (let i = 0; i <= a.length; i++) dp[i][0] = i;
+  for (let j = 0; j <= b.length; j++) dp[0][j] = j;
+  for (let i = 1; i <= a.length; i++)
+    for (let j = 1; j <= b.length; j++)
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,
+        dp[i][j - 1] + 1,
+        dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1),
+      );
+  const tokens: Token[] = [];
+  let i = a.length,
+    j = b.length;
+  while (i || j) {
+    if (i && j && dp[i][j] === dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)) {
+      tokens.push({
+        kind: a[i - 1] === b[j - 1] ? 'correct' : 'wrong',
+        expected: a[--i],
+        actual: b[--j],
+      });
+    } else if (i && dp[i][j] === dp[i - 1][j] + 1) {
+      tokens.push({ kind: 'missing', expected: a[--i] });
+    } else {
+      tokens.push({ kind: 'extra', actual: b[--j] });
+    }
+  }
+  return {
+    tokens: tokens.reverse(),
+    errors: dp[a.length][b.length],
+    score: a.length
+      ? Math.max(0, Math.round((1 - dp[a.length][b.length] / a.length) * 100))
+      : b.length
+        ? 0
+        : 100,
+  };
+}

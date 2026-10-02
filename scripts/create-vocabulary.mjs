@@ -1,7 +1,7 @@
 import { writeFileSync } from 'node:fs';
 // Original authoring source. Each row: word | General American IPA | POS | vi | definition | example | CEFR.
 const groups = {
-'Daily life': `routine|ruːˈtiːn|noun|thói quen hằng ngày|the usual order in which you do things|A short walk is part of my morning routine.|A2
+  'Daily life': `routine|ruːˈtiːn|noun|thói quen hằng ngày|the usual order in which you do things|A short walk is part of my morning routine.|A2
 neighbor|ˈneɪbɚ|noun|người hàng xóm|a person who lives near you|Our neighbor waters our plants when we travel.|A2
 laundry|ˈlɔːndri|noun|quần áo cần giặt; việc giặt giũ|clothes that need washing or have been washed|I do the laundry on Sunday morning.|A2
 tidy|ˈtaɪdi|adjective|gọn gàng|neat and arranged in the right place|A tidy desk helps me concentrate.|A2
@@ -21,7 +21,7 @@ prioritize|praɪˈɔːrətaɪz|verb|ưu tiên|to decide which tasks matter most|
 efficient|ɪˈfɪʃənt|adjective|hiệu quả, ít lãng phí|working well without wasting time or energy|Planning meals makes shopping more efficient.|B2
 balance|ˈbæləns|noun|sự cân bằng|a fair or useful mixture of different things|She wants a better balance between work and rest.|B1
 commitment|kəˈmɪtmənt|noun|sự cam kết; trách nhiệm đã nhận|a promise or responsibility that requires time|Caring for a garden is a long-term commitment.|B2`,
-'Travel': `journey|ˈdʒɝːni|noun|hành trình|travel from one place to another|The train journey took three hours.|A2
+  Travel: `journey|ˈdʒɝːni|noun|hành trình|travel from one place to another|The train journey took three hours.|A2
 platform|ˈplætfɔːrm|noun|sân ga|the area beside a railway track for passengers|Our train leaves from platform four.|A2
 luggage|ˈlʌɡɪdʒ|noun|hành lý|bags and cases used when traveling|Please keep your luggage beside your seat.|A2
 destination|ˌdɛstəˈneɪʃən|noun|điểm đến|the place you are traveling to|A quiet coastal town is our final destination.|B1
@@ -41,7 +41,7 @@ transfer|ˈtrænsfɝː|noun|việc chuyển tuyến|a change from one vehicle or
 scenic|ˈsiːnɪk|adjective|có phong cảnh đẹp|having attractive natural views|We chose the scenic road along the coast.|B2
 flexible|ˈflɛksəbəl|adjective|linh hoạt|able to change when circumstances change|A flexible ticket lets us leave a day later.|B2
 crowded|ˈkraʊdɪd|adjective|đông đúc|full of people with little free space|The market is crowded on Saturday evenings.|A2`,
-'Work': `colleague|ˈkɑːliːɡ|noun|đồng nghiệp|a person you work with|A colleague helped me prepare the presentation.|B1
+  Work: `colleague|ˈkɑːliːɡ|noun|đồng nghiệp|a person you work with|A colleague helped me prepare the presentation.|B1
 deadline|ˈdɛdlaɪn|noun|hạn chót|the latest time by which work must be finished|Our deadline is Friday afternoon.|B1
 meeting|ˈmiːtɪŋ|noun|cuộc họp|an event where people discuss something|The team meeting starts after lunch.|A2
 schedule|ˈskɛdʒuːl|noun|lịch làm việc|a plan of activities and their times|I keep my work schedule on the wall.|A2
@@ -61,7 +61,7 @@ training|ˈtreɪnɪŋ|noun|đào tạo|learning the skills needed for a job|New 
 client|ˈklaɪənt|noun|khách hàng sử dụng dịch vụ|a person or organization buying professional services|The client asked for a simpler design.|B1
 strategy|ˈstrætədʒi|noun|chiến lược|a plan for achieving a long-term goal|Our strategy is to improve service before expanding.|B2
 initiative|ɪˈnɪʃətɪv|noun|sự chủ động; sáng kiến|an action started to solve a problem|The recycling initiative began with one employee.|B2`,
-'Food': `ingredient|ɪnˈɡriːdiənt|noun|nguyên liệu|one of the foods used to make a dish|Fresh ginger is the main ingredient in this sauce.|A2
+  Food: `ingredient|ɪnˈɡriːdiənt|noun|nguyên liệu|one of the foods used to make a dish|Fresh ginger is the main ingredient in this sauce.|A2
 recipe|ˈrɛsəpi|noun|công thức nấu ăn|instructions for preparing a dish|My aunt shared her soup recipe with me.|A2
 portion|ˈpɔːrʃən|noun|khẩu phần|an amount of food served to one person|A small portion is enough for a light lunch.|B1
 flavor|ˈfleɪvɚ|noun|hương vị|the taste of food or drink|Lemon gives the rice a fresh flavor.|B1
@@ -81,7 +81,7 @@ steam|stiːm|verb|hấp|to cook food using hot water vapor|Steam the vegetables 
 allergy|ˈælɚdʒi|noun|dị ứng|a harmful body reaction to a particular substance|Tell the restaurant about your peanut allergy.|B1
 sustainable|səˈsteɪnəbəl|adjective|bền vững|able to continue without using up resources|The cafe buys fish from sustainable sources.|B2
 beverage|ˈbɛvərɪdʒ|noun|đồ uống|a drink, especially one served with a meal|Choose a hot beverage from the menu.|B2`,
-'Health': `exercise|ˈɛksɚsaɪz|noun|việc tập thể dục|physical activity to keep the body fit|Gentle exercise helps me feel more awake.|A2
+  Health: `exercise|ˈɛksɚsaɪz|noun|việc tập thể dục|physical activity to keep the body fit|Gentle exercise helps me feel more awake.|A2
 sleep|sliːp|noun|giấc ngủ|the natural resting state of the body and mind|A regular bedtime can improve sleep.|A2
 symptom|ˈsɪmptəm|noun|triệu chứng|a change in the body that may indicate illness|A persistent cough can be a symptom worth discussing.|B1
 recover|rɪˈkʌvɚ|verb|hồi phục|to become well again|She took time off to recover from the flu.|B1
@@ -101,7 +101,7 @@ gradual|ˈɡrædʒuəl|adjective|dần dần|happening slowly in small stages|Hi
 endurance|ɪnˈdʊrəns|noun|sức bền|the ability to continue an activity for a long time|The gentle training plan builds endurance over months.|B2
 breath|brɛθ|noun|hơi thở|air taken into or released from the lungs|Take a slow breath before your presentation.|B1
 routine care|ruːˈtiːn kɛr|noun|chăm sóc định kỳ|regular attention to maintain health|Routine care includes discussing concerns with a professional.|B2`,
-'Technology': `device|dɪˈvaɪs|noun|thiết bị|a piece of equipment made for a purpose|This device measures the temperature in the room.|A2
+  Technology: `device|dɪˈvaɪs|noun|thiết bị|a piece of equipment made for a purpose|This device measures the temperature in the room.|A2
 screen|skriːn|noun|màn hình|the surface that displays digital information|The screen is easier to read in shade.|A2
 password|ˈpæswɝːd|noun|mật khẩu|a secret string used to access an account|Use a different password for each account.|A2
 update|ˈʌpdeɪt|noun|bản cập nhật|a newer version with changes or fixes|The update adds larger text options.|A2
@@ -121,7 +121,7 @@ attachment|əˈtætʃmənt|noun|tệp đính kèm|a file sent with a message|The
 wireless|ˈwaɪɚləs|adjective|không dây|working without a physical cable|My wireless keyboard needs new batteries.|B1
 troubleshoot|ˈtrʌbəlʃuːt|verb|tìm và khắc phục lỗi|to identify and solve a technical problem|The guide helps users troubleshoot sound problems.|B2
 permission|pɚˈmɪʃən|noun|quyền cho phép|approval to perform an action|The browser asks for microphone permission.|B1`,
-'Environment': `recycle|riːˈsaɪkəl|verb|tái chế|to process used materials so they can be used again|We recycle clean paper at the community center.|A2
+  Environment: `recycle|riːˈsaɪkəl|verb|tái chế|to process used materials so they can be used again|We recycle clean paper at the community center.|A2
 reuse|riːˈjuːz|verb|tái sử dụng|to use something again|You can reuse this glass jar for rice.|A2
 waste|weɪst|noun|chất thải; sự lãng phí|unwanted material or unnecessary use of resources|The school measures food waste each week.|A2
 pollution|pəˈluːʃən|noun|ô nhiễm|harmful substances added to air, water or land|The project studies pollution in the river.|B1
@@ -141,7 +141,7 @@ flood|flʌd|noun|lũ lụt|water covering land that is normally dry|The flood cl
 community|kəˈmjuːnəti|noun|cộng đồng|people connected by a place or shared interest|Our community planted trees beside the playground.|B1
 awareness|əˈwɛrnəs|noun|nhận thức|knowledge that something exists or matters|The exhibition raises awareness of local river life.|B2
 impact|ˈɪmpækt|noun|tác động|a strong effect on something|We considered the environmental impact of our trip.|B2`,
-'Education': `lesson|ˈlɛsən|noun|bài học; buổi học|a period of teaching or learning|Today's lesson includes a short conversation.|A2
+  Education: `lesson|ˈlɛsən|noun|bài học; buổi học|a period of teaching or learning|Today's lesson includes a short conversation.|A2
 practice|ˈpræktɪs|noun|sự luyện tập|repeated activity to improve a skill|Daily practice makes new words easier to remember.|A2
 revise|rɪˈvaɪz|verb|ôn tập; chỉnh sửa|to study again or improve an earlier version|I revise my notes before the weekly quiz.|B1
 explain|ɪkˈspleɪn|verb|giải thích|to make an idea easier to understand|Can you explain this step with an example?|A2
@@ -160,8 +160,22 @@ concentrate|ˈkɑːnsəntreɪt|verb|tập trung|to give all your attention to so
 memorize|ˈmɛməraɪz|verb|ghi nhớ, học thuộc|to learn something so it can be recalled|It helps to memorize words in useful phrases.|B1
 reflect|rɪˈflɛkt|verb|suy ngẫm|to think carefully about an experience or idea|We reflect on one useful thing after each lesson.|B2
 achievement|əˈtʃiːvmənt|noun|thành tựu|something successfully completed through effort|Finishing her first English book was an achievement.|B2
-lifelong|ˈlaɪflɔːŋ|adjective|suốt đời|continuing throughout a person's life|Curiosity is at the heart of lifelong learning.|B2`
+lifelong|ˈlaɪflɔːŋ|adjective|suốt đời|continuing throughout a person's life|Curiosity is at the heart of lifelong learning.|B2`,
 };
-const words=Object.entries(groups).flatMap(([topic,rows],g)=>rows.split('\n').map((line,i)=>{const [word,ipa,pos,meaning,definition,example,level]=line.split('|');return {id:`v-${g+1}-${i+1}`,word,ipa:`/${ipa}/`,pos,meaning,definition,examples:[example],level,topic};}));
-writeFileSync('src/data/vocabulary.json',JSON.stringify(words,null,2)+'\n');
-
+const words = Object.entries(groups).flatMap(([topic, rows], g) =>
+  rows.split('\n').map((line, i) => {
+    const [word, ipa, pos, meaning, definition, example, level] = line.split('|');
+    return {
+      id: `v-${g + 1}-${i + 1}`,
+      word,
+      ipa: `/${ipa}/`,
+      pos,
+      meaning,
+      definition,
+      examples: [example],
+      level,
+      topic,
+    };
+  }),
+);
+writeFileSync('src/data/vocabulary.json', JSON.stringify(words, null, 2) + '\n');

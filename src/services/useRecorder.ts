@@ -1,11 +1,148 @@
-import { useCallback,useEffect,useRef,useState } from 'react';
-type RecognitionResult={isFinal:boolean;0:{transcript:string}};
-type RecognitionEvent={resultIndex:number;results:{length:number;[index:number]:RecognitionResult}};
-interface Recognition {lang:string;continuous:boolean;interimResults:boolean;onresult:((e:RecognitionEvent)=>void)|null;onerror:((e:{error:string})=>void)|null;onend:(()=>void)|null;start:()=>void;stop:()=>void;abort:()=>void;}
-type RecognitionConstructor=new()=>Recognition;
-function recognitionConstructor(){const w=window as unknown as {SpeechRecognition?:RecognitionConstructor;webkitSpeechRecognition?:RecognitionConstructor};return w.SpeechRecognition??w.webkitSpeechRecognition;}
-export function useRecorder(accent:string){const [recording,setRecording]=useState(false);const [pending,setPending]=useState(false);const [audio,setAudio]=useState('');const [transcript,setTranscript]=useState('');const [error,setError]=useState('');const [duration,setDuration]=useState(0);const recorder=useRef<MediaRecorder>();const stream=useRef<MediaStream>();const recognition=useRef<Recognition>();const url=useRef('');const startTime=useRef(0);const mounted=useRef(true);const timer=useRef<ReturnType<typeof setInterval>>();const recordSupported=typeof MediaRecorder!=='undefined'&&!!navigator.mediaDevices?.getUserMedia;const recognitionSupported=!!recognitionConstructor();
-const stop=useCallback(()=>{if(recorder.current?.state==='recording')recorder.current.stop();try{recognition.current?.stop();}catch{/* Already ended. */}stream.current?.getTracks().forEach(track=>track.stop());clearInterval(timer.current);if(mounted.current){setRecording(false);setDuration(Math.max(1,Math.round((Date.now()-startTime.current)/1000)));}},[]);
-useEffect(()=>{mounted.current=true;return()=>{mounted.current=false;clearInterval(timer.current);recognition.current?.abort();if(recorder.current?.state==='recording')recorder.current.stop();stream.current?.getTracks().forEach(track=>track.stop());if(url.current)URL.revokeObjectURL(url.current);};},[]);
-async function start(transcribe:boolean){setError('');setPending(true);try{if(!recordSupported)throw new Error('unsupported');const media=await navigator.mediaDevices.getUserMedia({audio:true});if(!mounted.current){media.getTracks().forEach(t=>t.stop());return;}stream.current=media;const rec=new MediaRecorder(media);recorder.current=rec;const chunks:Blob[]=[];rec.ondataavailable=e=>{if(e.data.size)chunks.push(e.data);};rec.onstop=()=>{if(!mounted.current)return;if(url.current)URL.revokeObjectURL(url.current);url.current=URL.createObjectURL(new Blob(chunks,{type:rec.mimeType||'audio/webm'}));setAudio(url.current);};rec.onerror=()=>{setError('recording');stop();};setAudio('');if(url.current){URL.revokeObjectURL(url.current);url.current='';}setTranscript('');setDuration(0);startTime.current=Date.now();rec.start();setRecording(true);timer.current=setInterval(()=>{if(mounted.current)setDuration(Math.floor((Date.now()-startTime.current)/1000));},250);const Constructor=recognitionConstructor();if(transcribe&&Constructor){try{const sr=new Constructor();recognition.current=sr;sr.lang=accent;sr.continuous=true;sr.interimResults=true;sr.onresult=e=>{let text='';for(let i=0;i<e.results.length;i++)text+=e.results[i][0].transcript+' ';if(mounted.current)setTranscript(text.trim());};sr.onerror=e=>{if(mounted.current&&e.error!=='aborted')setError(`recognition:${e.error}`);};sr.start();}catch{setError('recognition:unsupported');}}}catch(e){stream.current?.getTracks().forEach(t=>t.stop());if(mounted.current)setError(e instanceof DOMException?e.name:'unsupported');}finally{if(mounted.current)setPending(false);}}
-return {recording,pending,audio,transcript,error,duration,recordSupported,recognitionSupported,start,stop};}
+import { useCallback, useEffect, useRef, useState } from 'react';
+type RecognitionResult = { isFinal: boolean; 0: { transcript: string } };
+type RecognitionEvent = {
+  resultIndex: number;
+  results: { length: number; [index: number]: RecognitionResult };
+};
+interface Recognition {
+  lang: string;
+  continuous: boolean;
+  interimResults: boolean;
+  onresult: ((e: RecognitionEvent) => void) | null;
+  onerror: ((e: { error: string }) => void) | null;
+  onend: (() => void) | null;
+  start: () => void;
+  stop: () => void;
+  abort: () => void;
+}
+type RecognitionConstructor = new () => Recognition;
+function recognitionConstructor() {
+  const w = window as unknown as {
+    SpeechRecognition?: RecognitionConstructor;
+    webkitSpeechRecognition?: RecognitionConstructor;
+  };
+  return w.SpeechRecognition ?? w.webkitSpeechRecognition;
+}
+export function useRecorder(accent: string) {
+  const [recording, setRecording] = useState(false);
+  const [pending, setPending] = useState(false);
+  const [audio, setAudio] = useState('');
+  const [transcript, setTranscript] = useState('');
+  const [error, setError] = useState('');
+  const [duration, setDuration] = useState(0);
+  const recorder = useRef<MediaRecorder>();
+  const stream = useRef<MediaStream>();
+  const recognition = useRef<Recognition>();
+  const url = useRef('');
+  const startTime = useRef(0);
+  const mounted = useRef(true);
+  const timer = useRef<ReturnType<typeof setInterval>>();
+  const recordSupported =
+    typeof MediaRecorder !== 'undefined' && !!navigator.mediaDevices?.getUserMedia;
+  const recognitionSupported = !!recognitionConstructor();
+  const stop = useCallback(() => {
+    if (recorder.current?.state === 'recording') recorder.current.stop();
+    try {
+      recognition.current?.stop();
+    } catch {
+      /* Already ended. */
+    }
+    stream.current?.getTracks().forEach((track) => track.stop());
+    clearInterval(timer.current);
+    if (mounted.current) {
+      setRecording(false);
+      setDuration(Math.max(1, Math.round((Date.now() - startTime.current) / 1000)));
+    }
+  }, []);
+  useEffect(() => {
+    mounted.current = true;
+    return () => {
+      mounted.current = false;
+      clearInterval(timer.current);
+      recognition.current?.abort();
+      if (recorder.current?.state === 'recording') recorder.current.stop();
+      stream.current?.getTracks().forEach((track) => track.stop());
+      if (url.current) URL.revokeObjectURL(url.current);
+    };
+  }, []);
+  async function start(transcribe: boolean) {
+    setError('');
+    setPending(true);
+    try {
+      if (!recordSupported) throw new Error('unsupported');
+      const media = await navigator.mediaDevices.getUserMedia({ audio: true });
+      if (!mounted.current) {
+        media.getTracks().forEach((t) => t.stop());
+        return;
+      }
+      stream.current = media;
+      const rec = new MediaRecorder(media);
+      recorder.current = rec;
+      const chunks: Blob[] = [];
+      rec.ondataavailable = (e) => {
+        if (e.data.size) chunks.push(e.data);
+      };
+      rec.onstop = () => {
+        if (!mounted.current) return;
+        if (url.current) URL.revokeObjectURL(url.current);
+        url.current = URL.createObjectURL(new Blob(chunks, { type: rec.mimeType || 'audio/webm' }));
+        setAudio(url.current);
+      };
+      rec.onerror = () => {
+        setError('recording');
+        stop();
+      };
+      setAudio('');
+      if (url.current) {
+        URL.revokeObjectURL(url.current);
+        url.current = '';
+      }
+      setTranscript('');
+      setDuration(0);
+      startTime.current = Date.now();
+      rec.start();
+      setRecording(true);
+      timer.current = setInterval(() => {
+        if (mounted.current) setDuration(Math.floor((Date.now() - startTime.current) / 1000));
+      }, 250);
+      const Constructor = recognitionConstructor();
+      if (transcribe && Constructor) {
+        try {
+          const sr = new Constructor();
+          recognition.current = sr;
+          sr.lang = accent;
+          sr.continuous = true;
+          sr.interimResults = true;
+          sr.onresult = (e) => {
+            let text = '';
+            for (let i = 0; i < e.results.length; i++) text += e.results[i][0].transcript + ' ';
+            if (mounted.current) setTranscript(text.trim());
+          };
+          sr.onerror = (e) => {
+            if (mounted.current && e.error !== 'aborted') setError(`recognition:${e.error}`);
+          };
+          sr.start();
+        } catch {
+          setError('recognition:unsupported');
+        }
+      }
+    } catch (e) {
+      stream.current?.getTracks().forEach((t) => t.stop());
+      if (mounted.current) setError(e instanceof DOMException ? e.name : 'unsupported');
+    } finally {
+      if (mounted.current) setPending(false);
+    }
+  }
+  return {
+    recording,
+    pending,
+    audio,
+    transcript,
+    error,
+    duration,
+    recordSupported,
+    recognitionSupported,
+    start,
+    stop,
+  };
+}

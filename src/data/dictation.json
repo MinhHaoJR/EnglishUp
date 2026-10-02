@@ -1,14 +1,74 @@
 [
-{"id":"d1","level":"A2","topic":"Daily life","text":"I usually walk to the market on Sunday morning."},
-{"id":"d2","level":"A2","topic":"Travel","text":"Please keep your ticket until the end of the journey."},
-{"id":"d3","level":"A2","topic":"Food","text":"Could I have a small bowl of vegetable soup?"},
-{"id":"d4","level":"A2","topic":"Health","text":"A short break helps me feel ready to work again."},
-{"id":"d5","level":"B1","topic":"Work","text":"We need to finish the report before the meeting starts."},
-{"id":"d6","level":"B1","topic":"Technology","text":"Remember to make a backup before updating your device."},
-{"id":"d7","level":"B1","topic":"Education","text":"I've learned that regular practice is more useful than a perfect plan."},
-{"id":"d8","level":"B1","topic":"Environment","text":"Our neighbors reuse glass jars to store rice and beans."},
-{"id":"d9","level":"B2","topic":"Technology","text":"An accessible interface should give everyone a clear way to participate."},
-{"id":"d10","level":"B2","topic":"Environment","text":"The evidence suggests that small changes can have a lasting impact."},
-{"id":"d11","level":"B2","topic":"Work","text":"We shouldn't confuse a busy schedule with meaningful progress."},
-{"id":"d12","level":"B2","topic":"Education","text":"Reflecting on mistakes helps independent learners choose their next challenge."}
+  {
+    "id": "d1",
+    "level": "A2",
+    "topic": "Daily life",
+    "text": "I usually walk to the market on Sunday morning."
+  },
+  {
+    "id": "d2",
+    "level": "A2",
+    "topic": "Travel",
+    "text": "Please keep your ticket until the end of the journey."
+  },
+  {
+    "id": "d3",
+    "level": "A2",
+    "topic": "Food",
+    "text": "Could I have a small bowl of vegetable soup?"
+  },
+  {
+    "id": "d4",
+    "level": "A2",
+    "topic": "Health",
+    "text": "A short break helps me feel ready to work again."
+  },
+  {
+    "id": "d5",
+    "level": "B1",
+    "topic": "Work",
+    "text": "We need to finish the report before the meeting starts."
+  },
+  {
+    "id": "d6",
+    "level": "B1",
+    "topic": "Technology",
+    "text": "Remember to make a backup before updating your device."
+  },
+  {
+    "id": "d7",
+    "level": "B1",
+    "topic": "Education",
+    "text": "I've learned that regular practice is more useful than a perfect plan."
+  },
+  {
+    "id": "d8",
+    "level": "B1",
+    "topic": "Environment",
+    "text": "Our neighbors reuse glass jars to store rice and beans."
+  },
+  {
+    "id": "d9",
+    "level": "B2",
+    "topic": "Technology",
+    "text": "An accessible interface should give everyone a clear way to participate."
+  },
+  {
+    "id": "d10",
+    "level": "B2",
+    "topic": "Environment",
+    "text": "The evidence suggests that small changes can have a lasting impact."
+  },
+  {
+    "id": "d11",
+    "level": "B2",
+    "topic": "Work",
+    "text": "We shouldn't confuse a busy schedule with meaningful progress."
+  },
+  {
+    "id": "d12",
+    "level": "B2",
+    "topic": "Education",
+    "text": "Reflecting on mistakes helps independent learners choose their next challenge."
+  }
 ]

@@ -1,8 +1,384 @@
 [
-{"id":"l1","title":"Plans for Saturday","level":"A2","topic":"Daily life","lines":[{"speaker":"Mai","text":"Are you free on Saturday morning? I need to buy a birthday gift for my brother."},{"speaker":"Ben","text":"I have a dental appointment at nine, but I can meet you at eleven."},{"speaker":"Mai","text":"Great. Let's meet outside the bookshop near the park. He enjoys stories about travel."},{"speaker":"Ben","text":"We could have lunch at the market afterward. Bring an umbrella; it might rain."}],"questions":[{"id":"l1q1","type":"choice","prompt":"Who is the gift for?","options":["Mai's brother","Ben's sister","Mai's neighbor"],"answers":["Mai's brother"],"explanation":"Mai names the person at the start.","evidence":"a birthday gift for my brother"},{"id":"l1q2","type":"blank","prompt":"Ben can meet Mai at ____.","answers":["eleven","11","11 am","11:00"],"explanation":"His appointment is earlier, at nine.","evidence":"I can meet you at eleven"},{"id":"l1q3","type":"choice","prompt":"Where will they meet?","options":["Outside the bookshop","Inside the market","At the dental clinic"],"answers":["Outside the bookshop"],"explanation":"Mai suggests this meeting place.","evidence":"outside the bookshop near the park"},{"id":"l1q4","type":"blank","prompt":"Ben suggests bringing an ____.","answers":["umbrella"],"explanation":"Rain is possible.","evidence":"Bring an umbrella; it might rain."}]},
-{"id":"l2","title":"A change of platform","level":"A2","topic":"Travel","lines":[{"speaker":"Announcer","text":"Good afternoon, passengers. The train to Green Bay will now leave from platform six, not platform three."},{"speaker":"Announcer","text":"Departure is delayed by twenty minutes because of a signal problem. The new departure time is two forty."},{"speaker":"Announcer","text":"Please keep your luggage with you. Passengers who need help should speak to the staff beside the ticket office."},{"speaker":"Announcer","text":"Your original tickets are still valid. We apologize for the delay and thank you for your patience."}],"questions":[{"id":"l2q1","type":"blank","prompt":"The new platform number is ____.","answers":["six","6"],"explanation":"Platform three is the old platform.","evidence":"platform six, not platform three"},{"id":"l2q2","type":"choice","prompt":"Why is the train delayed?","options":["A signal problem","Heavy snow","Missing luggage"],"answers":["A signal problem"],"explanation":"The announcement gives the technical reason.","evidence":"because of a signal problem"},{"id":"l2q3","type":"blank","prompt":"The delay is ____ minutes.","answers":["twenty","20"],"explanation":"The new time is twenty minutes later.","evidence":"delayed by twenty minutes"},{"id":"l2q4","type":"choice","prompt":"What should passengers do with their tickets?","options":["Keep their original tickets","Buy new tickets","Exchange them at the cafe"],"answers":["Keep their original tickets"],"explanation":"The original tickets remain valid.","evidence":"Your original tickets are still valid."}]},
-{"id":"l3","title":"The lunch order","level":"B1","topic":"Food","lines":[{"speaker":"Customer","text":"I'd like the vegetable noodles, please. Do they contain peanuts? I have an allergy."},{"speaker":"Server","text":"The regular sauce does contain peanuts. We can prepare a separate portion with ginger sauce, using clean equipment."},{"speaker":"Customer","text":"Thank you. Could I have a small portion and a glass of warm water?"},{"speaker":"Server","text":"Of course. It will take about fifteen minutes. Please tell us if you have any other allergies."},{"speaker":"Customer","text":"No others. I appreciate you checking rather than guessing."}],"questions":[{"id":"l3q1","type":"choice","prompt":"What is the customer's concern?","options":["A peanut allergy","The price of water","A late bus"],"answers":["A peanut allergy"],"explanation":"The customer asks about peanuts because of an allergy.","evidence":"Do they contain peanuts? I have an allergy."},{"id":"l3q2","type":"blank","prompt":"The alternative sauce contains ____.","answers":["ginger"],"explanation":"The server offers ginger sauce.","evidence":"a separate portion with ginger sauce"},{"id":"l3q3","type":"choice","prompt":"What portion size does the customer choose?","options":["Small","Large","Two regular portions"],"answers":["Small"],"explanation":"The customer explicitly requests a small portion.","evidence":"Could I have a small portion"},{"id":"l3q4","type":"blank","prompt":"Preparation takes about ____ minutes.","answers":["fifteen","15"],"explanation":"The server estimates the waiting time.","evidence":"It will take about fifteen minutes."}]},
-{"id":"l4","title":"Moving the project deadline","level":"B1","topic":"Work","lines":[{"speaker":"Lan","text":"The client has asked us to add a second language to the website. Can we still deliver on Thursday?"},{"speaker":"Alex","text":"The translation will be ready, but testing needs another two days. I don't want to release a version we haven't checked."},{"speaker":"Lan","text":"Let's send the English version on Thursday and the complete version on Monday. I'll explain the reason to the client today."},{"speaker":"Alex","text":"That works. I'll update the schedule and ask Mina to review the translated buttons."}],"questions":[{"id":"l4q1","type":"choice","prompt":"What change did the client request?","options":["A second language","A new logo only","A printed report"],"answers":["A second language"],"explanation":"The new requirement concerns language support.","evidence":"add a second language to the website"},{"id":"l4q2","type":"blank","prompt":"Testing needs another ____ days.","answers":["two","2"],"explanation":"Translation itself will be ready; testing needs time.","evidence":"testing needs another two days"},{"id":"l4q3","type":"choice","prompt":"When will the complete version be sent?","options":["Monday","Thursday","Wednesday"],"answers":["Monday"],"explanation":"Only the English version is planned for Thursday.","evidence":"the complete version on Monday"},{"id":"l4q4","type":"blank","prompt":"____ will review the translated buttons.","answers":["Mina"],"explanation":"Alex plans to ask Mina.","evidence":"ask Mina to review the translated buttons"}]},
-{"id":"l5","title":"What the sensor cannot tell us","level":"B2","topic":"Environment","lines":[{"speaker":"Presenter","text":"Our river project installed water sensors at three locations. They record temperature every hour, giving us a much clearer picture of daily changes."},{"speaker":"Presenter","text":"However, a sensor reading alone cannot explain why a change happened. A warmer reading might reflect sunlight, lower water levels, or a technical fault."},{"speaker":"Presenter","text":"Volunteers therefore visit the sites every Saturday. They photograph the area and record observations, such as recent rain or nearby construction."},{"speaker":"Presenter","text":"Combining these notes with the measurements helps us ask better questions. We publish the raw data, but we clearly distinguish observations from conclusions."}],"questions":[{"id":"l5q1","type":"blank","prompt":"The sensors record temperature every ____.","answers":["hour"],"explanation":"The measurements are hourly.","evidence":"They record temperature every hour"},{"id":"l5q2","type":"choice","prompt":"Why are sensor readings alone insufficient?","options":["They do not explain the cause of a change.","They never show any changes.","They cannot record temperature."],"answers":["They do not explain the cause of a change."],"explanation":"Several different causes could explain one reading.","evidence":"a sensor reading alone cannot explain why a change happened"},{"id":"l5q3","type":"blank","prompt":"Volunteers visit every ____.","answers":["Saturday"],"explanation":"Visits happen weekly on Saturday.","evidence":"visit the sites every Saturday"},{"id":"l5q4","type":"choice","prompt":"What does the project distinguish in its reports?","options":["Observations and conclusions","Cheap and expensive tickets","Morning and evening classes"],"answers":["Observations and conclusions"],"explanation":"The presenter emphasizes careful interpretation.","evidence":"we clearly distinguish observations from conclusions"}]},
-{"id":"l6","title":"Learning without a perfect plan","level":"B2","topic":"Education","lines":[{"speaker":"Host","text":"You used to spend more time planning your study than actually studying. What changed?"},{"speaker":"Guest","text":"I stopped trying to design a perfect timetable. Now I choose one small task each evening and connect it to something I already do, like making tea."},{"speaker":"Host","text":"How do you know whether the method is working?"},{"speaker":"Guest","text":"Every Sunday, I review an old recording or draft. I look for one improvement and one thing to practice next. I don't expect progress to be identical every week."},{"speaker":"Host","text":"So consistency matters more than a complicated system?"},{"speaker":"Guest","text":"For me, yes. A plan should make starting easier. If it becomes another task to avoid, it needs to be simpler."}],"questions":[{"id":"l6q1","type":"choice","prompt":"What was the guest's earlier problem?","options":["Too much planning and too little practice","Never owning a timetable","Studying only with a teacher"],"answers":["Too much planning and too little practice"],"explanation":"The host describes the imbalance.","evidence":"more time planning your study than actually studying"},{"id":"l6q2","type":"blank","prompt":"The guest connects study to a habit such as making ____.","answers":["tea"],"explanation":"Tea-making is the example of an existing routine.","evidence":"like making tea"},{"id":"l6q3","type":"blank","prompt":"Old work is reviewed every ____.","answers":["Sunday"],"explanation":"The guest reviews weekly.","evidence":"Every Sunday, I review an old recording or draft."},{"id":"l6q4","type":"choice","prompt":"What should a good plan do, according to the guest?","options":["Make starting easier","Guarantee equal progress every week","Include more and more tasks"],"answers":["Make starting easier"],"explanation":"A useful plan reduces the difficulty of beginning.","evidence":"A plan should make starting easier."}]}
+  {
+    "id": "l1",
+    "title": "Plans for Saturday",
+    "level": "A2",
+    "topic": "Daily life",
+    "lines": [
+      {
+        "speaker": "Mai",
+        "text": "Are you free on Saturday morning? I need to buy a birthday gift for my brother."
+      },
+      {
+        "speaker": "Ben",
+        "text": "I have a dental appointment at nine, but I can meet you at eleven."
+      },
+      {
+        "speaker": "Mai",
+        "text": "Great. Let's meet outside the bookshop near the park. He enjoys stories about travel."
+      },
+      {
+        "speaker": "Ben",
+        "text": "We could have lunch at the market afterward. Bring an umbrella; it might rain."
+      }
+    ],
+    "questions": [
+      {
+        "id": "l1q1",
+        "type": "choice",
+        "prompt": "Who is the gift for?",
+        "options": ["Mai's brother", "Ben's sister", "Mai's neighbor"],
+        "answers": ["Mai's brother"],
+        "explanation": "Mai names the person at the start.",
+        "evidence": "a birthday gift for my brother"
+      },
+      {
+        "id": "l1q2",
+        "type": "blank",
+        "prompt": "Ben can meet Mai at ____.",
+        "answers": ["eleven", "11", "11 am", "11:00"],
+        "explanation": "His appointment is earlier, at nine.",
+        "evidence": "I can meet you at eleven"
+      },
+      {
+        "id": "l1q3",
+        "type": "choice",
+        "prompt": "Where will they meet?",
+        "options": ["Outside the bookshop", "Inside the market", "At the dental clinic"],
+        "answers": ["Outside the bookshop"],
+        "explanation": "Mai suggests this meeting place.",
+        "evidence": "outside the bookshop near the park"
+      },
+      {
+        "id": "l1q4",
+        "type": "blank",
+        "prompt": "Ben suggests bringing an ____.",
+        "answers": ["umbrella"],
+        "explanation": "Rain is possible.",
+        "evidence": "Bring an umbrella; it might rain."
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "title": "A change of platform",
+    "level": "A2",
+    "topic": "Travel",
+    "lines": [
+      {
+        "speaker": "Announcer",
+        "text": "Good afternoon, passengers. The train to Green Bay will now leave from platform six, not platform three."
+      },
+      {
+        "speaker": "Announcer",
+        "text": "Departure is delayed by twenty minutes because of a signal problem. The new departure time is two forty."
+      },
+      {
+        "speaker": "Announcer",
+        "text": "Please keep your luggage with you. Passengers who need help should speak to the staff beside the ticket office."
+      },
+      {
+        "speaker": "Announcer",
+        "text": "Your original tickets are still valid. We apologize for the delay and thank you for your patience."
+      }
+    ],
+    "questions": [
+      {
+        "id": "l2q1",
+        "type": "blank",
+        "prompt": "The new platform number is ____.",
+        "answers": ["six", "6"],
+        "explanation": "Platform three is the old platform.",
+        "evidence": "platform six, not platform three"
+      },
+      {
+        "id": "l2q2",
+        "type": "choice",
+        "prompt": "Why is the train delayed?",
+        "options": ["A signal problem", "Heavy snow", "Missing luggage"],
+        "answers": ["A signal problem"],
+        "explanation": "The announcement gives the technical reason.",
+        "evidence": "because of a signal problem"
+      },
+      {
+        "id": "l2q3",
+        "type": "blank",
+        "prompt": "The delay is ____ minutes.",
+        "answers": ["twenty", "20"],
+        "explanation": "The new time is twenty minutes later.",
+        "evidence": "delayed by twenty minutes"
+      },
+      {
+        "id": "l2q4",
+        "type": "choice",
+        "prompt": "What should passengers do with their tickets?",
+        "options": ["Keep their original tickets", "Buy new tickets", "Exchange them at the cafe"],
+        "answers": ["Keep their original tickets"],
+        "explanation": "The original tickets remain valid.",
+        "evidence": "Your original tickets are still valid."
+      }
+    ]
+  },
+  {
+    "id": "l3",
+    "title": "The lunch order",
+    "level": "B1",
+    "topic": "Food",
+    "lines": [
+      {
+        "speaker": "Customer",
+        "text": "I'd like the vegetable noodles, please. Do they contain peanuts? I have an allergy."
+      },
+      {
+        "speaker": "Server",
+        "text": "The regular sauce does contain peanuts. We can prepare a separate portion with ginger sauce, using clean equipment."
+      },
+      {
+        "speaker": "Customer",
+        "text": "Thank you. Could I have a small portion and a glass of warm water?"
+      },
+      {
+        "speaker": "Server",
+        "text": "Of course. It will take about fifteen minutes. Please tell us if you have any other allergies."
+      },
+      {
+        "speaker": "Customer",
+        "text": "No others. I appreciate you checking rather than guessing."
+      }
+    ],
+    "questions": [
+      {
+        "id": "l3q1",
+        "type": "choice",
+        "prompt": "What is the customer's concern?",
+        "options": ["A peanut allergy", "The price of water", "A late bus"],
+        "answers": ["A peanut allergy"],
+        "explanation": "The customer asks about peanuts because of an allergy.",
+        "evidence": "Do they contain peanuts? I have an allergy."
+      },
+      {
+        "id": "l3q2",
+        "type": "blank",
+        "prompt": "The alternative sauce contains ____.",
+        "answers": ["ginger"],
+        "explanation": "The server offers ginger sauce.",
+        "evidence": "a separate portion with ginger sauce"
+      },
+      {
+        "id": "l3q3",
+        "type": "choice",
+        "prompt": "What portion size does the customer choose?",
+        "options": ["Small", "Large", "Two regular portions"],
+        "answers": ["Small"],
+        "explanation": "The customer explicitly requests a small portion.",
+        "evidence": "Could I have a small portion"
+      },
+      {
+        "id": "l3q4",
+        "type": "blank",
+        "prompt": "Preparation takes about ____ minutes.",
+        "answers": ["fifteen", "15"],
+        "explanation": "The server estimates the waiting time.",
+        "evidence": "It will take about fifteen minutes."
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "title": "Moving the project deadline",
+    "level": "B1",
+    "topic": "Work",
+    "lines": [
+      {
+        "speaker": "Lan",
+        "text": "The client has asked us to add a second language to the website. Can we still deliver on Thursday?"
+      },
+      {
+        "speaker": "Alex",
+        "text": "The translation will be ready, but testing needs another two days. I don't want to release a version we haven't checked."
+      },
+      {
+        "speaker": "Lan",
+        "text": "Let's send the English version on Thursday and the complete version on Monday. I'll explain the reason to the client today."
+      },
+      {
+        "speaker": "Alex",
+        "text": "That works. I'll update the schedule and ask Mina to review the translated buttons."
+      }
+    ],
+    "questions": [
+      {
+        "id": "l4q1",
+        "type": "choice",
+        "prompt": "What change did the client request?",
+        "options": ["A second language", "A new logo only", "A printed report"],
+        "answers": ["A second language"],
+        "explanation": "The new requirement concerns language support.",
+        "evidence": "add a second language to the website"
+      },
+      {
+        "id": "l4q2",
+        "type": "blank",
+        "prompt": "Testing needs another ____ days.",
+        "answers": ["two", "2"],
+        "explanation": "Translation itself will be ready; testing needs time.",
+        "evidence": "testing needs another two days"
+      },
+      {
+        "id": "l4q3",
+        "type": "choice",
+        "prompt": "When will the complete version be sent?",
+        "options": ["Monday", "Thursday", "Wednesday"],
+        "answers": ["Monday"],
+        "explanation": "Only the English version is planned for Thursday.",
+        "evidence": "the complete version on Monday"
+      },
+      {
+        "id": "l4q4",
+        "type": "blank",
+        "prompt": "____ will review the translated buttons.",
+        "answers": ["Mina"],
+        "explanation": "Alex plans to ask Mina.",
+        "evidence": "ask Mina to review the translated buttons"
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "title": "What the sensor cannot tell us",
+    "level": "B2",
+    "topic": "Environment",
+    "lines": [
+      {
+        "speaker": "Presenter",
+        "text": "Our river project installed water sensors at three locations. They record temperature every hour, giving us a much clearer picture of daily changes."
+      },
+      {
+        "speaker": "Presenter",
+        "text": "However, a sensor reading alone cannot explain why a change happened. A warmer reading might reflect sunlight, lower water levels, or a technical fault."
+      },
+      {
+        "speaker": "Presenter",
+        "text": "Volunteers therefore visit the sites every Saturday. They photograph the area and record observations, such as recent rain or nearby construction."
+      },
+      {
+        "speaker": "Presenter",
+        "text": "Combining these notes with the measurements helps us ask better questions. We publish the raw data, but we clearly distinguish observations from conclusions."
+      }
+    ],
+    "questions": [
+      {
+        "id": "l5q1",
+        "type": "blank",
+        "prompt": "The sensors record temperature every ____.",
+        "answers": ["hour"],
+        "explanation": "The measurements are hourly.",
+        "evidence": "They record temperature every hour"
+      },
+      {
+        "id": "l5q2",
+        "type": "choice",
+        "prompt": "Why are sensor readings alone insufficient?",
+        "options": [
+          "They do not explain the cause of a change.",
+          "They never show any changes.",
+          "They cannot record temperature."
+        ],
+        "answers": ["They do not explain the cause of a change."],
+        "explanation": "Several different causes could explain one reading.",
+        "evidence": "a sensor reading alone cannot explain why a change happened"
+      },
+      {
+        "id": "l5q3",
+        "type": "blank",
+        "prompt": "Volunteers visit every ____.",
+        "answers": ["Saturday"],
+        "explanation": "Visits happen weekly on Saturday.",
+        "evidence": "visit the sites every Saturday"
+      },
+      {
+        "id": "l5q4",
+        "type": "choice",
+        "prompt": "What does the project distinguish in its reports?",
+        "options": [
+          "Observations and conclusions",
+          "Cheap and expensive tickets",
+          "Morning and evening classes"
+        ],
+        "answers": ["Observations and conclusions"],
+        "explanation": "The presenter emphasizes careful interpretation.",
+        "evidence": "we clearly distinguish observations from conclusions"
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "title": "Learning without a perfect plan",
+    "level": "B2",
+    "topic": "Education",
+    "lines": [
+      {
+        "speaker": "Host",
+        "text": "You used to spend more time planning your study than actually studying. What changed?"
+      },
+      {
+        "speaker": "Guest",
+        "text": "I stopped trying to design a perfect timetable. Now I choose one small task each evening and connect it to something I already do, like making tea."
+      },
+      { "speaker": "Host", "text": "How do you know whether the method is working?" },
+      {
+        "speaker": "Guest",
+        "text": "Every Sunday, I review an old recording or draft. I look for one improvement and one thing to practice next. I don't expect progress to be identical every week."
+      },
+      { "speaker": "Host", "text": "So consistency matters more than a complicated system?" },
+      {
+        "speaker": "Guest",
+        "text": "For me, yes. A plan should make starting easier. If it becomes another task to avoid, it needs to be simpler."
+      }
+    ],
+    "questions": [
+      {
+        "id": "l6q1",
+        "type": "choice",
+        "prompt": "What was the guest's earlier problem?",
+        "options": [
+          "Too much planning and too little practice",
+          "Never owning a timetable",
+          "Studying only with a teacher"
+        ],
+        "answers": ["Too much planning and too little practice"],
+        "explanation": "The host describes the imbalance.",
+        "evidence": "more time planning your study than actually studying"
+      },
+      {
+        "id": "l6q2",
+        "type": "blank",
+        "prompt": "The guest connects study to a habit such as making ____.",
+        "answers": ["tea"],
+        "explanation": "Tea-making is the example of an existing routine.",
+        "evidence": "like making tea"
+      },
+      {
+        "id": "l6q3",
+        "type": "blank",
+        "prompt": "Old work is reviewed every ____.",
+        "answers": ["Sunday"],
+        "explanation": "The guest reviews weekly.",
+        "evidence": "Every Sunday, I review an old recording or draft."
+      },
+      {
+        "id": "l6q4",
+        "type": "choice",
+        "prompt": "What should a good plan do, according to the guest?",
+        "options": [
+          "Make starting easier",
+          "Guarantee equal progress every week",
+          "Include more and more tasks"
+        ],
+        "answers": ["Make starting easier"],
+        "explanation": "A useful plan reduces the difficulty of beginning.",
+        "evidence": "A plan should make starting easier."
+      }
+    ]
+  }
 ]

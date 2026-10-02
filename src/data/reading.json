@@ -1,8 +1,358 @@
 [
-{"id":"r1","title":"A quieter start to the day","level":"A2","topic":"Daily life","text":"Every morning, Linh used to check her phone before getting out of bed. Messages from work made her feel busy before the day had even started. Last month, she decided to try a different routine. She put her phone on a shelf in the living room and bought a small alarm clock.\n\nNow she opens the window, drinks a glass of water, and makes breakfast. On three mornings each week, she walks to a nearby park. The walk takes fifteen minutes. She often sees the same neighbor watering plants outside a yellow house. They wave and sometimes talk about the weather.\n\nThe change was not easy at first. Linh worried that she might miss an important message. However, her colleagues usually contact her after nine, so she checks her phone at breakfast instead. She still has difficult days, but she feels less rushed. On rainy mornings, she stays inside and reads a few pages of a book. She does not follow a strict plan. For her, the important thing is to begin the day with an activity she chooses herself.","questions":[{"id":"r1q1","type":"choice","prompt":"Why did Linh change her routine?","options":["Work messages made her feel busy too early.","Her alarm clock broke.","She moved away from the park."],"answers":["Work messages made her feel busy too early."],"explanation":"Her old phone habit created pressure before the day began.","evidence":"Messages from work made her feel busy before the day had even started."},{"id":"r1q2","type":"tfng","prompt":"Linh walks to the park every morning.","answers":["False"],"explanation":"She walks on three mornings, not every morning.","evidence":"On three mornings each week, she walks to a nearby park."},{"id":"r1q3","type":"short","prompt":"How many minutes does the walk take?","answers":["15","fifteen","15 minutes","fifteen minutes"],"explanation":"The passage states the length of the walk directly.","evidence":"The walk takes fifteen minutes."},{"id":"r1q4","type":"tfng","prompt":"The neighbor has lived in the yellow house for ten years.","answers":["Not Given"],"explanation":"We see the neighbor's activity, but no information about how long they have lived there.","evidence":"She often sees the same neighbor watering plants outside a yellow house."},{"id":"r1q5","type":"choice","prompt":"What matters most to Linh about her new routine?","options":["Choosing her own first activity","Following an exact timetable","Never using her phone"],"answers":["Choosing her own first activity"],"explanation":"The final sentence explains her main priority.","evidence":"the important thing is to begin the day with an activity she chooses herself"}]},
-{"id":"r2","title":"The long way to the coast","level":"A2","topic":"Travel","text":"Minh and his sister planned a weekend trip to a coastal town. The fastest bus left at six in the morning, but they chose a later train. It cost a little more and took an extra hour. Their friends thought this was a strange choice, yet Minh wanted the journey to be part of the holiday.\n\nThey reserved seats beside a window and packed sandwiches in reusable boxes. During the first hour, the train passed small farms and a wide river. Minh took photographs while his sister drew pictures in a notebook. At a small station, a family joined them and recommended a quiet beach north of the town.\n\nWhen they arrived, the weather was cloudy. They left their luggage at a guesthouse and walked to the harbor. The owner gave them a map and explained the local bus route. The beach was too far to reach on foot, so they visited it the following morning by bus.\n\nOn the way home, Minh looked through his photographs. His favorite picture was not of the sea. It showed his sister laughing on the train. He decided that a slower journey could sometimes make a better memory.","questions":[{"id":"r2q1","type":"choice","prompt":"Why did Minh choose the train?","options":["He wanted to enjoy the journey.","It was the cheapest option.","The bus was fully booked."],"answers":["He wanted to enjoy the journey."],"explanation":"The journey itself was part of his holiday plan.","evidence":"Minh wanted the journey to be part of the holiday."},{"id":"r2q2","type":"tfng","prompt":"The train was faster than the bus.","answers":["False"],"explanation":"The train took one more hour.","evidence":"It cost a little more and took an extra hour."},{"id":"r2q3","type":"short","prompt":"Who recommended a quiet beach?","answers":["a family","family","a family on the train"],"explanation":"They received this suggestion from other passengers.","evidence":"a family joined them and recommended a quiet beach"},{"id":"r2q4","type":"tfng","prompt":"The guesthouse had ten rooms.","answers":["Not Given"],"explanation":"The passage does not describe the guesthouse's size.","evidence":"They left their luggage at a guesthouse"},{"id":"r2q5","type":"choice","prompt":"What did Minh's favorite photograph show?","options":["His sister on the train","The quiet beach","The guesthouse owner"],"answers":["His sister on the train"],"explanation":"His favorite memory came from the journey.","evidence":"It showed his sister laughing on the train."}]},
-{"id":"r3","title":"A different kind of team meeting","level":"B1","topic":"Work","text":"The design team at a small furniture company met every Monday for an hour. Most weeks, two confident colleagues did nearly all the talking. Other members stayed quiet, even when they had useful ideas. Their manager, Hoa, noticed that several good suggestions arrived by email after the meeting had finished.\n\nHoa introduced a simple experiment. Before each meeting, she sent one clear question to the team. Everyone had two days to think and could add notes to a shared document. During the meeting, the group first read the notes in silence for five minutes. Then each person could explain an idea without interruption.\n\nSome colleagues disliked the silence at first. They felt that reading together was a waste of time. After three weeks, however, the discussions became more focused. The team made decisions in forty minutes instead of sixty, and quieter members contributed more often.\n\nThe new approach did not solve every problem. Sometimes a difficult decision still needed a longer conversation. Hoa also learned that not every question deserved a meeting; a short written update was sometimes enough. She kept the experiment because it gave people different ways to participate. The goal was not to make everyone speak equally, but to make useful ideas easier to hear.","questions":[{"id":"r3q1","type":"choice","prompt":"What problem did Hoa notice?","options":["Useful ideas were not being heard in meetings.","The team refused to use email.","Nobody prepared furniture designs."],"answers":["Useful ideas were not being heard in meetings."],"explanation":"Good suggestions often came only after the meeting.","evidence":"several good suggestions arrived by email after the meeting had finished"},{"id":"r3q2","type":"short","prompt":"How many days did people have to think about the question?","answers":["two","2","two days","2 days"],"explanation":"The advance question gave everyone preparation time.","evidence":"Everyone had two days to think"},{"id":"r3q3","type":"tfng","prompt":"Every colleague immediately liked the silent reading period.","answers":["False"],"explanation":"Some people initially thought it wasted time.","evidence":"Some colleagues disliked the silence at first."},{"id":"r3q4","type":"tfng","prompt":"The company increased everyone's salary after the experiment.","answers":["Not Given"],"explanation":"No salary changes are mentioned.","evidence":"The team made decisions in forty minutes instead of sixty"},{"id":"r3q5","type":"choice","prompt":"What was the main purpose of the experiment?","options":["To create more ways to contribute useful ideas","To force equal speaking time","To remove all meetings"],"answers":["To create more ways to contribute useful ideas"],"explanation":"Participation was valuable because it revealed ideas.","evidence":"it gave people different ways to participate"}]},
-{"id":"r4","title":"The cafe's second menu","level":"B1","topic":"Food","text":"A neighborhood cafe used to prepare the same number of lunch portions every day. On busy days, popular dishes sold out early. On quiet days, several trays of food remained in the kitchen. The owner, An, wanted to reduce waste without giving customers fewer choices.\n\nFirst, she asked staff to record which dishes were left over and how much. They discovered that rainy Tuesdays were especially quiet, while Fridays were usually busy. After a month, An began preparing smaller batches and cooking more when needed. Customers sometimes waited a few extra minutes, but their food was fresher.\n\nThe cafe also introduced a second menu on a board near the counter. It offered small portions of dishes made with ingredients that needed using soon. A vegetable soup changed from day to day, and ripe fruit became a simple dessert. Staff clearly explained ingredients to customers with allergies.\n\nAn was careful not to describe every leftover ingredient as a bargain. Food safety remained the first rule, and unsuitable ingredients were never served. The new system required more planning, but the weekly waste became smaller. Customers enjoyed asking what was on the board. For An, the biggest surprise was that reducing waste encouraged the kitchen to become more creative.","questions":[{"id":"r4q1","type":"choice","prompt":"What did staff do before An changed food preparation?","options":["Recorded leftover dishes and amounts","Removed every unpopular dish","Raised all prices"],"answers":["Recorded leftover dishes and amounts"],"explanation":"They collected evidence before changing the quantities.","evidence":"record which dishes were left over and how much"},{"id":"r4q2","type":"short","prompt":"Which weekday was especially quiet when it rained?","answers":["Tuesday","Tuesdays"],"explanation":"Rainy Tuesdays had lower demand.","evidence":"rainy Tuesdays were especially quiet"},{"id":"r4q3","type":"tfng","prompt":"The vegetable soup was always the same.","answers":["False"],"explanation":"It changed according to available ingredients.","evidence":"A vegetable soup changed from day to day"},{"id":"r4q4","type":"tfng","prompt":"An hired a new chef to design the second menu.","answers":["Not Given"],"explanation":"The passage does not mention hiring anyone.","evidence":"The cafe also introduced a second menu"},{"id":"r4q5","type":"choice","prompt":"What unexpected benefit did An notice?","options":["The kitchen became more creative.","Planning was no longer necessary.","Customers stopped asking questions."],"answers":["The kitchen became more creative."],"explanation":"The final sentence identifies her biggest surprise.","evidence":"reducing waste encouraged the kitchen to become more creative"}]},
-{"id":"r5","title":"Who gets to use a smart city?","level":"B2","topic":"Technology","text":"When a city library replaced paper room bookings with an app, the change looked like an obvious improvement. Regular smartphone users could reserve a study room in seconds, and staff no longer needed to manage a crowded calendar. Yet within weeks, the library received complaints from visitors who had previously used the rooms without difficulty.\n\nOne visitor owned an older phone that could not run the app. Another used a screen reader and found that several buttons had no meaningful labels. A third simply preferred not to create an account for a service she used twice a year. None of these people objected to technology itself. They objected to losing access.\n\nThe library invited a small group of visitors to test an alternative design. Developers added clear labels, improved keyboard navigation, and created a lightweight booking website. Staff also kept a telephone booking option. These changes cost time, but they reduced the number of people needing help at the desk.\n\nThe experience challenged the assumption that a digital service is automatically convenient. A service can be fast for its designers while remaining difficult for other users. The library now includes accessibility checks at the beginning of new projects. Its goal is not to avoid innovation, but to measure success by how many people can actually benefit from it.","questions":[{"id":"r5q1","type":"choice","prompt":"What is the central concern of the passage?","options":["Digital improvements can exclude some users.","Libraries should stop using technology.","Smartphone users dislike booking apps."],"answers":["Digital improvements can exclude some users."],"explanation":"The app helped some people but created barriers for others.","evidence":"They objected to losing access."},{"id":"r5q2","type":"short","prompt":"What booking option did staff keep besides digital services?","answers":["telephone","telephone booking","a telephone booking option","phone","phone booking"],"explanation":"A non-digital alternative remained available.","evidence":"Staff also kept a telephone booking option."},{"id":"r5q3","type":"tfng","prompt":"All three visitors were opposed to technology itself.","answers":["False"],"explanation":"Their objection was exclusion, not technology.","evidence":"None of these people objected to technology itself."},{"id":"r5q4","type":"tfng","prompt":"The alternative design cost exactly twice as much as the first app.","answers":["Not Given"],"explanation":"Time costs are mentioned, but no financial comparison is given.","evidence":"These changes cost time"},{"id":"r5q5","type":"choice","prompt":"How does the library now approach accessibility?","options":["It checks accessibility early in projects.","It waits for complaints before acting.","It offers only telephone services."],"answers":["It checks accessibility early in projects."],"explanation":"Accessibility became part of initial planning.","evidence":"includes accessibility checks at the beginning of new projects"}]},
-{"id":"r6","title":"A garden beyond the harvest","level":"B2","topic":"Environment","text":"An unused piece of land between two apartment blocks had collected rubbish for years. When residents proposed turning it into a community garden, they initially focused on producing inexpensive vegetables. They measured the soil, discussed water access, and divided the space into small plots. Each household agreed to contribute a few hours of work every month.\n\nThe first harvest was disappointing. Heavy rain damaged seedlings, and some plants received too little sunlight. A few residents questioned whether the project was worth the effort. However, a survey at the end of the season revealed benefits that the original plan had not considered. People who had rarely spoken now exchanged tools and advice. Older residents taught children how to recognize different leaves, while newcomers practiced the local language during weekend work sessions.\n\nIn the second year, the group changed its definition of success. They still recorded the vegetables they grew, but also counted shared activities and asked participants how welcome they felt. A shaded corner became a place to sit, and one plot was reserved for experiments that might fail.\n\nThe garden did not replace anyone's weekly shopping. Its value was less visible: it created regular opportunities for cooperation. The project suggests that community spaces should be judged by more than their immediate physical output. Sometimes the relationships built around an activity are its most durable result.","questions":[{"id":"r6q1","type":"choice","prompt":"What was the residents' initial priority?","options":["Growing inexpensive vegetables","Creating a language school","Selling apartments"],"answers":["Growing inexpensive vegetables"],"explanation":"The first plan focused on affordable produce.","evidence":"they initially focused on producing inexpensive vegetables"},{"id":"r6q2","type":"short","prompt":"What did residents exchange besides advice?","answers":["tools"],"explanation":"Sharing equipment helped people connect.","evidence":"People who had rarely spoken now exchanged tools and advice."},{"id":"r6q3","type":"tfng","prompt":"The first harvest met all the residents' expectations.","answers":["False"],"explanation":"Weather and shade caused a disappointing result.","evidence":"The first harvest was disappointing."},{"id":"r6q4","type":"tfng","prompt":"The city government paid for all the gardening tools.","answers":["Not Given"],"explanation":"The source of funding is not stated.","evidence":"They measured the soil, discussed water access, and divided the space into small plots."},{"id":"r6q5","type":"choice","prompt":"Why did the group change its definition of success?","options":["It recognized social benefits beyond food production.","It stopped caring about participants.","It wanted to remove shared spaces."],"answers":["It recognized social benefits beyond food production."],"explanation":"Cooperation and belonging were valuable results.","evidence":"Sometimes the relationships built around an activity are its most durable result."}]}
+  {
+    "id": "r1",
+    "title": "A quieter start to the day",
+    "level": "A2",
+    "topic": "Daily life",
+    "text": "Every morning, Linh used to check her phone before getting out of bed. Messages from work made her feel busy before the day had even started. Last month, she decided to try a different routine. She put her phone on a shelf in the living room and bought a small alarm clock.\n\nNow she opens the window, drinks a glass of water, and makes breakfast. On three mornings each week, she walks to a nearby park. The walk takes fifteen minutes. She often sees the same neighbor watering plants outside a yellow house. They wave and sometimes talk about the weather.\n\nThe change was not easy at first. Linh worried that she might miss an important message. However, her colleagues usually contact her after nine, so she checks her phone at breakfast instead. She still has difficult days, but she feels less rushed. On rainy mornings, she stays inside and reads a few pages of a book. She does not follow a strict plan. For her, the important thing is to begin the day with an activity she chooses herself.",
+    "questions": [
+      {
+        "id": "r1q1",
+        "type": "choice",
+        "prompt": "Why did Linh change her routine?",
+        "options": [
+          "Work messages made her feel busy too early.",
+          "Her alarm clock broke.",
+          "She moved away from the park."
+        ],
+        "answers": ["Work messages made her feel busy too early."],
+        "explanation": "Her old phone habit created pressure before the day began.",
+        "evidence": "Messages from work made her feel busy before the day had even started."
+      },
+      {
+        "id": "r1q2",
+        "type": "tfng",
+        "prompt": "Linh walks to the park every morning.",
+        "answers": ["False"],
+        "explanation": "She walks on three mornings, not every morning.",
+        "evidence": "On three mornings each week, she walks to a nearby park."
+      },
+      {
+        "id": "r1q3",
+        "type": "short",
+        "prompt": "How many minutes does the walk take?",
+        "answers": ["15", "fifteen", "15 minutes", "fifteen minutes"],
+        "explanation": "The passage states the length of the walk directly.",
+        "evidence": "The walk takes fifteen minutes."
+      },
+      {
+        "id": "r1q4",
+        "type": "tfng",
+        "prompt": "The neighbor has lived in the yellow house for ten years.",
+        "answers": ["Not Given"],
+        "explanation": "We see the neighbor's activity, but no information about how long they have lived there.",
+        "evidence": "She often sees the same neighbor watering plants outside a yellow house."
+      },
+      {
+        "id": "r1q5",
+        "type": "choice",
+        "prompt": "What matters most to Linh about her new routine?",
+        "options": [
+          "Choosing her own first activity",
+          "Following an exact timetable",
+          "Never using her phone"
+        ],
+        "answers": ["Choosing her own first activity"],
+        "explanation": "The final sentence explains her main priority.",
+        "evidence": "the important thing is to begin the day with an activity she chooses herself"
+      }
+    ]
+  },
+  {
+    "id": "r2",
+    "title": "The long way to the coast",
+    "level": "A2",
+    "topic": "Travel",
+    "text": "Minh and his sister planned a weekend trip to a coastal town. The fastest bus left at six in the morning, but they chose a later train. It cost a little more and took an extra hour. Their friends thought this was a strange choice, yet Minh wanted the journey to be part of the holiday.\n\nThey reserved seats beside a window and packed sandwiches in reusable boxes. During the first hour, the train passed small farms and a wide river. Minh took photographs while his sister drew pictures in a notebook. At a small station, a family joined them and recommended a quiet beach north of the town.\n\nWhen they arrived, the weather was cloudy. They left their luggage at a guesthouse and walked to the harbor. The owner gave them a map and explained the local bus route. The beach was too far to reach on foot, so they visited it the following morning by bus.\n\nOn the way home, Minh looked through his photographs. His favorite picture was not of the sea. It showed his sister laughing on the train. He decided that a slower journey could sometimes make a better memory.",
+    "questions": [
+      {
+        "id": "r2q1",
+        "type": "choice",
+        "prompt": "Why did Minh choose the train?",
+        "options": [
+          "He wanted to enjoy the journey.",
+          "It was the cheapest option.",
+          "The bus was fully booked."
+        ],
+        "answers": ["He wanted to enjoy the journey."],
+        "explanation": "The journey itself was part of his holiday plan.",
+        "evidence": "Minh wanted the journey to be part of the holiday."
+      },
+      {
+        "id": "r2q2",
+        "type": "tfng",
+        "prompt": "The train was faster than the bus.",
+        "answers": ["False"],
+        "explanation": "The train took one more hour.",
+        "evidence": "It cost a little more and took an extra hour."
+      },
+      {
+        "id": "r2q3",
+        "type": "short",
+        "prompt": "Who recommended a quiet beach?",
+        "answers": ["a family", "family", "a family on the train"],
+        "explanation": "They received this suggestion from other passengers.",
+        "evidence": "a family joined them and recommended a quiet beach"
+      },
+      {
+        "id": "r2q4",
+        "type": "tfng",
+        "prompt": "The guesthouse had ten rooms.",
+        "answers": ["Not Given"],
+        "explanation": "The passage does not describe the guesthouse's size.",
+        "evidence": "They left their luggage at a guesthouse"
+      },
+      {
+        "id": "r2q5",
+        "type": "choice",
+        "prompt": "What did Minh's favorite photograph show?",
+        "options": ["His sister on the train", "The quiet beach", "The guesthouse owner"],
+        "answers": ["His sister on the train"],
+        "explanation": "His favorite memory came from the journey.",
+        "evidence": "It showed his sister laughing on the train."
+      }
+    ]
+  },
+  {
+    "id": "r3",
+    "title": "A different kind of team meeting",
+    "level": "B1",
+    "topic": "Work",
+    "text": "The design team at a small furniture company met every Monday for an hour. Most weeks, two confident colleagues did nearly all the talking. Other members stayed quiet, even when they had useful ideas. Their manager, Hoa, noticed that several good suggestions arrived by email after the meeting had finished.\n\nHoa introduced a simple experiment. Before each meeting, she sent one clear question to the team. Everyone had two days to think and could add notes to a shared document. During the meeting, the group first read the notes in silence for five minutes. Then each person could explain an idea without interruption.\n\nSome colleagues disliked the silence at first. They felt that reading together was a waste of time. After three weeks, however, the discussions became more focused. The team made decisions in forty minutes instead of sixty, and quieter members contributed more often.\n\nThe new approach did not solve every problem. Sometimes a difficult decision still needed a longer conversation. Hoa also learned that not every question deserved a meeting; a short written update was sometimes enough. She kept the experiment because it gave people different ways to participate. The goal was not to make everyone speak equally, but to make useful ideas easier to hear.",
+    "questions": [
+      {
+        "id": "r3q1",
+        "type": "choice",
+        "prompt": "What problem did Hoa notice?",
+        "options": [
+          "Useful ideas were not being heard in meetings.",
+          "The team refused to use email.",
+          "Nobody prepared furniture designs."
+        ],
+        "answers": ["Useful ideas were not being heard in meetings."],
+        "explanation": "Good suggestions often came only after the meeting.",
+        "evidence": "several good suggestions arrived by email after the meeting had finished"
+      },
+      {
+        "id": "r3q2",
+        "type": "short",
+        "prompt": "How many days did people have to think about the question?",
+        "answers": ["two", "2", "two days", "2 days"],
+        "explanation": "The advance question gave everyone preparation time.",
+        "evidence": "Everyone had two days to think"
+      },
+      {
+        "id": "r3q3",
+        "type": "tfng",
+        "prompt": "Every colleague immediately liked the silent reading period.",
+        "answers": ["False"],
+        "explanation": "Some people initially thought it wasted time.",
+        "evidence": "Some colleagues disliked the silence at first."
+      },
+      {
+        "id": "r3q4",
+        "type": "tfng",
+        "prompt": "The company increased everyone's salary after the experiment.",
+        "answers": ["Not Given"],
+        "explanation": "No salary changes are mentioned.",
+        "evidence": "The team made decisions in forty minutes instead of sixty"
+      },
+      {
+        "id": "r3q5",
+        "type": "choice",
+        "prompt": "What was the main purpose of the experiment?",
+        "options": [
+          "To create more ways to contribute useful ideas",
+          "To force equal speaking time",
+          "To remove all meetings"
+        ],
+        "answers": ["To create more ways to contribute useful ideas"],
+        "explanation": "Participation was valuable because it revealed ideas.",
+        "evidence": "it gave people different ways to participate"
+      }
+    ]
+  },
+  {
+    "id": "r4",
+    "title": "The cafe's second menu",
+    "level": "B1",
+    "topic": "Food",
+    "text": "A neighborhood cafe used to prepare the same number of lunch portions every day. On busy days, popular dishes sold out early. On quiet days, several trays of food remained in the kitchen. The owner, An, wanted to reduce waste without giving customers fewer choices.\n\nFirst, she asked staff to record which dishes were left over and how much. They discovered that rainy Tuesdays were especially quiet, while Fridays were usually busy. After a month, An began preparing smaller batches and cooking more when needed. Customers sometimes waited a few extra minutes, but their food was fresher.\n\nThe cafe also introduced a second menu on a board near the counter. It offered small portions of dishes made with ingredients that needed using soon. A vegetable soup changed from day to day, and ripe fruit became a simple dessert. Staff clearly explained ingredients to customers with allergies.\n\nAn was careful not to describe every leftover ingredient as a bargain. Food safety remained the first rule, and unsuitable ingredients were never served. The new system required more planning, but the weekly waste became smaller. Customers enjoyed asking what was on the board. For An, the biggest surprise was that reducing waste encouraged the kitchen to become more creative.",
+    "questions": [
+      {
+        "id": "r4q1",
+        "type": "choice",
+        "prompt": "What did staff do before An changed food preparation?",
+        "options": [
+          "Recorded leftover dishes and amounts",
+          "Removed every unpopular dish",
+          "Raised all prices"
+        ],
+        "answers": ["Recorded leftover dishes and amounts"],
+        "explanation": "They collected evidence before changing the quantities.",
+        "evidence": "record which dishes were left over and how much"
+      },
+      {
+        "id": "r4q2",
+        "type": "short",
+        "prompt": "Which weekday was especially quiet when it rained?",
+        "answers": ["Tuesday", "Tuesdays"],
+        "explanation": "Rainy Tuesdays had lower demand.",
+        "evidence": "rainy Tuesdays were especially quiet"
+      },
+      {
+        "id": "r4q3",
+        "type": "tfng",
+        "prompt": "The vegetable soup was always the same.",
+        "answers": ["False"],
+        "explanation": "It changed according to available ingredients.",
+        "evidence": "A vegetable soup changed from day to day"
+      },
+      {
+        "id": "r4q4",
+        "type": "tfng",
+        "prompt": "An hired a new chef to design the second menu.",
+        "answers": ["Not Given"],
+        "explanation": "The passage does not mention hiring anyone.",
+        "evidence": "The cafe also introduced a second menu"
+      },
+      {
+        "id": "r4q5",
+        "type": "choice",
+        "prompt": "What unexpected benefit did An notice?",
+        "options": [
+          "The kitchen became more creative.",
+          "Planning was no longer necessary.",
+          "Customers stopped asking questions."
+        ],
+        "answers": ["The kitchen became more creative."],
+        "explanation": "The final sentence identifies her biggest surprise.",
+        "evidence": "reducing waste encouraged the kitchen to become more creative"
+      }
+    ]
+  },
+  {
+    "id": "r5",
+    "title": "Who gets to use a smart city?",
+    "level": "B2",
+    "topic": "Technology",
+    "text": "When a city library replaced paper room bookings with an app, the change looked like an obvious improvement. Regular smartphone users could reserve a study room in seconds, and staff no longer needed to manage a crowded calendar. Yet within weeks, the library received complaints from visitors who had previously used the rooms without difficulty.\n\nOne visitor owned an older phone that could not run the app. Another used a screen reader and found that several buttons had no meaningful labels. A third simply preferred not to create an account for a service she used twice a year. None of these people objected to technology itself. They objected to losing access.\n\nThe library invited a small group of visitors to test an alternative design. Developers added clear labels, improved keyboard navigation, and created a lightweight booking website. Staff also kept a telephone booking option. These changes cost time, but they reduced the number of people needing help at the desk.\n\nThe experience challenged the assumption that a digital service is automatically convenient. A service can be fast for its designers while remaining difficult for other users. The library now includes accessibility checks at the beginning of new projects. Its goal is not to avoid innovation, but to measure success by how many people can actually benefit from it.",
+    "questions": [
+      {
+        "id": "r5q1",
+        "type": "choice",
+        "prompt": "What is the central concern of the passage?",
+        "options": [
+          "Digital improvements can exclude some users.",
+          "Libraries should stop using technology.",
+          "Smartphone users dislike booking apps."
+        ],
+        "answers": ["Digital improvements can exclude some users."],
+        "explanation": "The app helped some people but created barriers for others.",
+        "evidence": "They objected to losing access."
+      },
+      {
+        "id": "r5q2",
+        "type": "short",
+        "prompt": "What booking option did staff keep besides digital services?",
+        "answers": [
+          "telephone",
+          "telephone booking",
+          "a telephone booking option",
+          "phone",
+          "phone booking"
+        ],
+        "explanation": "A non-digital alternative remained available.",
+        "evidence": "Staff also kept a telephone booking option."
+      },
+      {
+        "id": "r5q3",
+        "type": "tfng",
+        "prompt": "All three visitors were opposed to technology itself.",
+        "answers": ["False"],
+        "explanation": "Their objection was exclusion, not technology.",
+        "evidence": "None of these people objected to technology itself."
+      },
+      {
+        "id": "r5q4",
+        "type": "tfng",
+        "prompt": "The alternative design cost exactly twice as much as the first app.",
+        "answers": ["Not Given"],
+        "explanation": "Time costs are mentioned, but no financial comparison is given.",
+        "evidence": "These changes cost time"
+      },
+      {
+        "id": "r5q5",
+        "type": "choice",
+        "prompt": "How does the library now approach accessibility?",
+        "options": [
+          "It checks accessibility early in projects.",
+          "It waits for complaints before acting.",
+          "It offers only telephone services."
+        ],
+        "answers": ["It checks accessibility early in projects."],
+        "explanation": "Accessibility became part of initial planning.",
+        "evidence": "includes accessibility checks at the beginning of new projects"
+      }
+    ]
+  },
+  {
+    "id": "r6",
+    "title": "A garden beyond the harvest",
+    "level": "B2",
+    "topic": "Environment",
+    "text": "An unused piece of land between two apartment blocks had collected rubbish for years. When residents proposed turning it into a community garden, they initially focused on producing inexpensive vegetables. They measured the soil, discussed water access, and divided the space into small plots. Each household agreed to contribute a few hours of work every month.\n\nThe first harvest was disappointing. Heavy rain damaged seedlings, and some plants received too little sunlight. A few residents questioned whether the project was worth the effort. However, a survey at the end of the season revealed benefits that the original plan had not considered. People who had rarely spoken now exchanged tools and advice. Older residents taught children how to recognize different leaves, while newcomers practiced the local language during weekend work sessions.\n\nIn the second year, the group changed its definition of success. They still recorded the vegetables they grew, but also counted shared activities and asked participants how welcome they felt. A shaded corner became a place to sit, and one plot was reserved for experiments that might fail.\n\nThe garden did not replace anyone's weekly shopping. Its value was less visible: it created regular opportunities for cooperation. The project suggests that community spaces should be judged by more than their immediate physical output. Sometimes the relationships built around an activity are its most durable result.",
+    "questions": [
+      {
+        "id": "r6q1",
+        "type": "choice",
+        "prompt": "What was the residents' initial priority?",
+        "options": [
+          "Growing inexpensive vegetables",
+          "Creating a language school",
+          "Selling apartments"
+        ],
+        "answers": ["Growing inexpensive vegetables"],
+        "explanation": "The first plan focused on affordable produce.",
+        "evidence": "they initially focused on producing inexpensive vegetables"
+      },
+      {
+        "id": "r6q2",
+        "type": "short",
+        "prompt": "What did residents exchange besides advice?",
+        "answers": ["tools"],
+        "explanation": "Sharing equipment helped people connect.",
+        "evidence": "People who had rarely spoken now exchanged tools and advice."
+      },
+      {
+        "id": "r6q3",
+        "type": "tfng",
+        "prompt": "The first harvest met all the residents' expectations.",
+        "answers": ["False"],
+        "explanation": "Weather and shade caused a disappointing result.",
+        "evidence": "The first harvest was disappointing."
+      },
+      {
+        "id": "r6q4",
+        "type": "tfng",
+        "prompt": "The city government paid for all the gardening tools.",
+        "answers": ["Not Given"],
+        "explanation": "The source of funding is not stated.",
+        "evidence": "They measured the soil, discussed water access, and divided the space into small plots."
+      },
+      {
+        "id": "r6q5",
+        "type": "choice",
+        "prompt": "Why did the group change its definition of success?",
+        "options": [
+          "It recognized social benefits beyond food production.",
+          "It stopped caring about participants.",
+          "It wanted to remove shared spaces."
+        ],
+        "answers": ["It recognized social benefits beyond food production."],
+        "explanation": "Cooperation and belonging were valuable results.",
+        "evidence": "Sometimes the relationships built around an activity are its most durable result."
+      }
+    ]
+  }
 ]

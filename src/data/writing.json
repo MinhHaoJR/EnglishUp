@@ -1,12 +1,152 @@
 [
-{"id":"w1","title":"An invitation for the weekend","level":"A2","topic":"Daily life","genre":"email","prompt":"Write an email inviting a friend to spend Saturday afternoon with you. Suggest an activity, explain where to meet, and ask whether the time is convenient.","minWords":60,"maxWords":100,"checklist":["Greet your friend.","Explain the activity, place and time.","Ask a question and end politely."]},
-{"id":"w2","title":"Your favorite corner","level":"A2","topic":"Daily life","genre":"description","prompt":"Describe a place at home where you feel comfortable. Include what it looks like, what you do there, and why you enjoy it.","minWords":60,"maxWords":100,"checklist":["Introduce the place.","Include two concrete details.","Explain how the place makes you feel."]},
-{"id":"w3","title":"A recipe for a friend","level":"A2","topic":"Food","genre":"email","prompt":"A friend wants to try a simple dish from your home. Write an email explaining the ingredients and the main cooking steps. Include one useful tip.","minWords":70,"maxWords":110,"checklist":["Name the dish and main ingredients.","Put the steps in a clear order.","Add a practical tip and a friendly ending."]},
-{"id":"w4","title":"The unexpected bus stop","level":"B1","topic":"Travel","genre":"story","prompt":"Write a short story beginning with: I got off the bus and realized I was in the wrong place. Describe what happened and how the situation ended.","minWords":100,"maxWords":160,"checklist":["Set the scene using the opening sentence.","Describe a problem and an action.","Give the story a clear ending."]},
-{"id":"w5","title":"A better team routine","level":"B1","topic":"Work","genre":"email","prompt":"Write to your team leader suggesting one change to your weekly meetings. Explain the current problem, your proposal, and one likely benefit.","minWords":100,"maxWords":160,"checklist":["Use a polite opening.","Explain the problem and proposal.","End with a clear request for feedback."]},
-{"id":"w6","title":"Small habits, better days","level":"B1","topic":"Health","genre":"opinion","prompt":"Some people think improving daily wellbeing requires a major lifestyle change. Write a paragraph giving your view and two examples of manageable habits.","minWords":100,"maxWords":160,"checklist":["State your opinion clearly.","Support it with two everyday examples.","Connect the examples to a concluding idea."]},
-{"id":"w7","title":"A tool worth keeping","level":"B1","topic":"Technology","genre":"description","prompt":"Describe a digital tool you find useful. Explain how you use it, who else might benefit, and one limitation people should know about.","minWords":100,"maxWords":170,"checklist":["Introduce the tool and its purpose.","Describe a realistic use case.","Mention a limitation without losing focus."]},
-{"id":"w8","title":"A neighborhood with less waste","level":"B2","topic":"Environment","genre":"opinion","prompt":"Should local communities focus more on reusing items than on recycling them? Explain your position, consider a counterargument, and suggest a practical action.","minWords":160,"maxWords":240,"checklist":["Present a clear position.","Develop a reason and address a counterargument.","Conclude with a realistic local action."]},
-{"id":"w9","title":"Learning by doing","level":"B2","topic":"Education","genre":"opinion","prompt":"Compare structured courses and independent projects as ways to learn a new skill. Argue for an approach or combination, using specific examples.","minWords":160,"maxWords":240,"checklist":["Define the two approaches.","Compare their strengths with examples.","Give a balanced recommendation."]},
-{"id":"w10","title":"The message in the old notebook","level":"B2","topic":"Education","genre":"story","prompt":"Write a story about someone who finds a note they wrote years earlier. Show how their understanding of success has changed through an encounter or decision.","minWords":160,"maxWords":250,"checklist":["Introduce the notebook and its owner.","Develop a meaningful encounter or decision.","Show the change through actions or details."]}
+  {
+    "id": "w1",
+    "title": "An invitation for the weekend",
+    "level": "A2",
+    "topic": "Daily life",
+    "genre": "email",
+    "prompt": "Write an email inviting a friend to spend Saturday afternoon with you. Suggest an activity, explain where to meet, and ask whether the time is convenient.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Greet your friend.",
+      "Explain the activity, place and time.",
+      "Ask a question and end politely."
+    ]
+  },
+  {
+    "id": "w2",
+    "title": "Your favorite corner",
+    "level": "A2",
+    "topic": "Daily life",
+    "genre": "description",
+    "prompt": "Describe a place at home where you feel comfortable. Include what it looks like, what you do there, and why you enjoy it.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Introduce the place.",
+      "Include two concrete details.",
+      "Explain how the place makes you feel."
+    ]
+  },
+  {
+    "id": "w3",
+    "title": "A recipe for a friend",
+    "level": "A2",
+    "topic": "Food",
+    "genre": "email",
+    "prompt": "A friend wants to try a simple dish from your home. Write an email explaining the ingredients and the main cooking steps. Include one useful tip.",
+    "minWords": 70,
+    "maxWords": 110,
+    "checklist": [
+      "Name the dish and main ingredients.",
+      "Put the steps in a clear order.",
+      "Add a practical tip and a friendly ending."
+    ]
+  },
+  {
+    "id": "w4",
+    "title": "The unexpected bus stop",
+    "level": "B1",
+    "topic": "Travel",
+    "genre": "story",
+    "prompt": "Write a short story beginning with: I got off the bus and realized I was in the wrong place. Describe what happened and how the situation ended.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Set the scene using the opening sentence.",
+      "Describe a problem and an action.",
+      "Give the story a clear ending."
+    ]
+  },
+  {
+    "id": "w5",
+    "title": "A better team routine",
+    "level": "B1",
+    "topic": "Work",
+    "genre": "email",
+    "prompt": "Write to your team leader suggesting one change to your weekly meetings. Explain the current problem, your proposal, and one likely benefit.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Use a polite opening.",
+      "Explain the problem and proposal.",
+      "End with a clear request for feedback."
+    ]
+  },
+  {
+    "id": "w6",
+    "title": "Small habits, better days",
+    "level": "B1",
+    "topic": "Health",
+    "genre": "opinion",
+    "prompt": "Some people think improving daily wellbeing requires a major lifestyle change. Write a paragraph giving your view and two examples of manageable habits.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "State your opinion clearly.",
+      "Support it with two everyday examples.",
+      "Connect the examples to a concluding idea."
+    ]
+  },
+  {
+    "id": "w7",
+    "title": "A tool worth keeping",
+    "level": "B1",
+    "topic": "Technology",
+    "genre": "description",
+    "prompt": "Describe a digital tool you find useful. Explain how you use it, who else might benefit, and one limitation people should know about.",
+    "minWords": 100,
+    "maxWords": 170,
+    "checklist": [
+      "Introduce the tool and its purpose.",
+      "Describe a realistic use case.",
+      "Mention a limitation without losing focus."
+    ]
+  },
+  {
+    "id": "w8",
+    "title": "A neighborhood with less waste",
+    "level": "B2",
+    "topic": "Environment",
+    "genre": "opinion",
+    "prompt": "Should local communities focus more on reusing items than on recycling them? Explain your position, consider a counterargument, and suggest a practical action.",
+    "minWords": 160,
+    "maxWords": 240,
+    "checklist": [
+      "Present a clear position.",
+      "Develop a reason and address a counterargument.",
+      "Conclude with a realistic local action."
+    ]
+  },
+  {
+    "id": "w9",
+    "title": "Learning by doing",
+    "level": "B2",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "Compare structured courses and independent projects as ways to learn a new skill. Argue for an approach or combination, using specific examples.",
+    "minWords": 160,
+    "maxWords": 240,
+    "checklist": [
+      "Define the two approaches.",
+      "Compare their strengths with examples.",
+      "Give a balanced recommendation."
+    ]
+  },
+  {
+    "id": "w10",
+    "title": "The message in the old notebook",
+    "level": "B2",
+    "topic": "Education",
+    "genre": "story",
+    "prompt": "Write a story about someone who finds a note they wrote years earlier. Show how their understanding of success has changed through an encounter or decision.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Introduce the notebook and its owner.",
+      "Develop a meaningful encounter or decision.",
+      "Show the change through actions or details."
+    ]
+  }
 ]

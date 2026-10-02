@@ -1,12 +1,14 @@
 # EnglishUp implementation plan
 
 ## Assumptions
+
 - Build a local-first single-user MVP in this empty repository using the requested stack.
 - Original bundled learning content covers A2–B2; A1/C1 filters show an honest empty state.
 - Speech availability depends on the browser; recording and self-assessment remain available independently of recognition.
 - Offline rule-based writing feedback is the MVP; the optional LLM provider and stretch features are out of scope.
 
 ## Milestones
+
 1. Scaffold React 18, strict TypeScript, Vite, Tailwind, routing, bilingual shell, Dexie and settings.
 2. Vocabulary content, custom decks/CSV, four practice modes and SM-2 scheduling.
 3. Reading passages, questions, evidence and dictionary/save flow.
@@ -17,6 +19,7 @@
 8. Accessibility and error-state polish, smoke tests, content documentation and README.
 
 ## Verification
+
 After every milestone run lint, typecheck, tests and production build, fix failures, then create a conventional commit when Git is available. Final checks include persistent attempts and export/reset/import round trip. Verify browser UI when a browser automation surface is available. Microphone/audio require a real device and permission; report any unverified hardware behavior honestly.
 
 - Milestone 1 completed: lint, typecheck, storage round-trip test and production build passed. Dependencies audited: zero findings.
@@ -26,3 +29,4 @@ After every milestone run lint, typecheck, tests and production build, fix failu
 - Milestone 5 completed: 8 read-aloud and 8 topic prompts, opt-in recognition, in-memory recording, timers, metrics and explicit self-assessment fallback. All four checks passed (11 tests); real microphone hardware remains unverified.
 - Milestone 6 completed: 10 writing prompts, autosaved drafts, rule-based FeedbackProvider, persistent history and draft comparisons. All four checks passed (14 tests).
 - Milestone 7 completed: dashboard with daily plan, streaks, goal minutes, due cards, per-skill averages, week chart and persisted activity. Backup/reset/restore tested across all six stores. All four checks passed (17 tests).
+- Milestone 8 completed: bilingual accessibility/error-state polish, lazy route loading, recorder cleanup and permission tests, five-skill integration flows, content authoring guide and full README. All four checks passed (26 tests). Browser checks covered every skill, reload persistence, narrow and dark layouts, and downloaded-backup/reset/restore. Physical audio hardware remains unverified; see docs/TESTING.md.

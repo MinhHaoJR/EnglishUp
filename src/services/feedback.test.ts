@@ -1,5 +1,29 @@
-import { RuleBasedProvider,countWords } from './feedback';
-const provider=new RuleBasedProvider();
-test('flags Vietnamese learner errors, spacing and capitalization',async()=>{const report=await provider.evaluate("i am agree. he don't discuss about this. It is more better  now",{minWords:30,maxWords:60},'vi');expect(report.notes.some(x=>x.includes('I agree'))).toBe(true);expect(report.notes.some(x=>x.includes('doesn’t'))).toBe(true);expect(report.notes.some(x=>x.includes('Better')||x.includes('Better'.toLowerCase())||x.includes('“Better”'))).toBe(true);expect(report.scores.grammar).toBeLessThan(50);expect(report.scores.task).toBeLessThan(100);});
-test('checks repetition, linking and sentence variety without external calls',async()=>{const report=await provider.evaluate('Gardens help people. Gardens give food. Gardens bring friends.',{minWords:5,maxWords:30},'en');expect(report.notes.some(x=>x.includes('gardens'))).toBe(true);expect(report.notes.some(x=>x.includes('linking'))).toBe(true);expect(report.notes.some(x=>x.includes('lengths'))).toBe(true);expect(report.scores.task).toBe(100);expect(countWords("I've made progress.")).toBe(3);});
-test('empty writing never receives a positive score',async()=>{expect((await provider.evaluate('',{minWords:60,maxWords:100},'en')).score).toBe(0);});
+import { RuleBasedProvider, countWords } from './feedback';
+const provider = new RuleBasedProvider();
+test('flags Vietnamese learner errors, spacing and capitalization', async () => {
+  const report = await provider.evaluate(
+    "i am agree. he don't discuss about this. It is more better  now",
+    { minWords: 30, maxWords: 60 },
+    'vi',
+  );
+  expect(report.notes.some((x) => x.includes('I agree'))).toBe(true);
+  expect(report.notes.some((x) => x.includes('doesn’t'))).toBe(true);
+  expect(report.notes.some((x) => x.includes('“Better”'))).toBe(true);
+  expect(report.scores.grammar).toBeLessThan(50);
+  expect(report.scores.task).toBeLessThan(100);
+});
+test('checks repetition, linking and sentence variety without external calls', async () => {
+  const report = await provider.evaluate(
+    'Gardens help people. Gardens give food. Gardens bring friends.',
+    { minWords: 5, maxWords: 30 },
+    'en',
+  );
+  expect(report.notes.some((x) => x.includes('gardens'))).toBe(true);
+  expect(report.notes.some((x) => x.includes('linking'))).toBe(true);
+  expect(report.notes.some((x) => x.includes('lengths'))).toBe(true);
+  expect(report.scores.task).toBe(100);
+  expect(countWords("I've made progress.")).toBe(3);
+});
+test('empty writing never receives a positive score', async () => {
+  expect((await provider.evaluate('', { minWords: 60, maxWords: 100 }, 'en')).score).toBe(0);
+});

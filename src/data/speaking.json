@@ -1,18 +1,170 @@
 [
-{"id":"s1","title":"A fresh morning","level":"A2","topic":"Daily life","mode":"read","text":"I open the window and make a cup of tea. A quiet morning helps me start the day with a clear mind.","cues":["Pause after each sentence.","Stress the words quiet and clear."]},
-{"id":"s2","title":"Asking for directions","level":"A2","topic":"Travel","mode":"read","text":"Excuse me, could you tell me the way to the station? I'm looking for the entrance near the river.","cues":["Keep your question polite.","Link the words looking for."]},
-{"id":"s3","title":"A lunch invitation","level":"A2","topic":"Food","mode":"read","text":"Would you like to have lunch with us? We're making vegetable noodles, and there's enough for everyone.","cues":["Pause after the question.","Say the final sound in noodles."]},
-{"id":"s4","title":"Time for a break","level":"B1","topic":"Health","mode":"read","text":"I've been sitting at this desk for a long time. I think a short walk would help me return with more energy.","cues":["Stress short walk.","Keep a steady pace."]},
-{"id":"s5","title":"A practical proposal","level":"B1","topic":"Work","mode":"read","text":"We should review the feedback before changing the design. A small improvement could make the service much easier to use.","cues":["Pause between the two ideas.","Pronounce the ending of changing."]},
-{"id":"s6","title":"Technology for everyone","level":"B2","topic":"Technology","mode":"read","text":"An accessible website should offer clear instructions and predictable navigation. Convenience means little if some people cannot participate.","cues":["Break the first sentence into sense groups.","Emphasize cannot participate."]},
-{"id":"s7","title":"Our shared environment","level":"B2","topic":"Environment","mode":"read","text":"Protecting a local habitat requires patience and cooperation. The results may be gradual, but consistent effort can create lasting change.","cues":["Pause naturally at the comma.","Stress consistent effort."]},
-{"id":"s8","title":"Learning with curiosity","level":"B1","topic":"Education","mode":"read","text":"I don't need to understand every word immediately. When I stay curious and ask questions, difficult ideas become easier to explore.","cues":["Expand don't to do not if needed.","Finish the final consonant in questions."]},
-{"id":"s9","title":"A routine that works for you","level":"A2","topic":"Daily life","mode":"talk","text":"Describe a daily routine that helps you feel organized.","cues":["When do you do it?","What are the main steps?","Why does it help you?"]},
-{"id":"s10","title":"A memorable journey","level":"A2","topic":"Travel","mode":"talk","text":"Talk about a journey you enjoyed, even if it was close to home.","cues":["Where did you go and with whom?","What happened on the way?","What would you do differently next time?"]},
-{"id":"s11","title":"A dish to share","level":"A2","topic":"Food","mode":"talk","text":"Describe a dish you would prepare for a visiting friend.","cues":["What ingredients do you need?","How do you prepare it?","Why is it special to you?"]},
-{"id":"s12","title":"Making space for rest","level":"B1","topic":"Health","mode":"talk","text":"Explain how people can make time for rest in a busy week.","cues":["Describe one common difficulty.","Suggest two practical changes.","Give an example from everyday life."]},
-{"id":"s13","title":"Your ideal team","level":"B1","topic":"Work","mode":"talk","text":"Describe what makes a team pleasant and effective to work with.","cues":["How should people communicate?","How can a team handle disagreement?","Share a real or imagined example."]},
-{"id":"s14","title":"One useful digital tool","level":"B1","topic":"Technology","mode":"talk","text":"Discuss a digital tool that saves you time and one limitation it has.","cues":["What problem does it solve?","How often do you use it?","When would another approach be better?"]},
-{"id":"s15","title":"A greener neighborhood","level":"B2","topic":"Environment","mode":"talk","text":"Propose a realistic environmental project for your neighborhood.","cues":["What local problem would it address?","Who should participate?","How would you measure progress?"]},
-{"id":"s16","title":"Learning beyond the classroom","level":"B2","topic":"Education","mode":"talk","text":"Compare learning from a course with learning through personal projects.","cues":["Explain one advantage of each approach.","Discuss how motivation affects progress.","Recommend a combination for a beginner."]}
+  {
+    "id": "s1",
+    "title": "A fresh morning",
+    "level": "A2",
+    "topic": "Daily life",
+    "mode": "read",
+    "text": "I open the window and make a cup of tea. A quiet morning helps me start the day with a clear mind.",
+    "cues": ["Pause after each sentence.", "Stress the words quiet and clear."]
+  },
+  {
+    "id": "s2",
+    "title": "Asking for directions",
+    "level": "A2",
+    "topic": "Travel",
+    "mode": "read",
+    "text": "Excuse me, could you tell me the way to the station? I'm looking for the entrance near the river.",
+    "cues": ["Keep your question polite.", "Link the words looking for."]
+  },
+  {
+    "id": "s3",
+    "title": "A lunch invitation",
+    "level": "A2",
+    "topic": "Food",
+    "mode": "read",
+    "text": "Would you like to have lunch with us? We're making vegetable noodles, and there's enough for everyone.",
+    "cues": ["Pause after the question.", "Say the final sound in noodles."]
+  },
+  {
+    "id": "s4",
+    "title": "Time for a break",
+    "level": "B1",
+    "topic": "Health",
+    "mode": "read",
+    "text": "I've been sitting at this desk for a long time. I think a short walk would help me return with more energy.",
+    "cues": ["Stress short walk.", "Keep a steady pace."]
+  },
+  {
+    "id": "s5",
+    "title": "A practical proposal",
+    "level": "B1",
+    "topic": "Work",
+    "mode": "read",
+    "text": "We should review the feedback before changing the design. A small improvement could make the service much easier to use.",
+    "cues": ["Pause between the two ideas.", "Pronounce the ending of changing."]
+  },
+  {
+    "id": "s6",
+    "title": "Technology for everyone",
+    "level": "B2",
+    "topic": "Technology",
+    "mode": "read",
+    "text": "An accessible website should offer clear instructions and predictable navigation. Convenience means little if some people cannot participate.",
+    "cues": ["Break the first sentence into sense groups.", "Emphasize cannot participate."]
+  },
+  {
+    "id": "s7",
+    "title": "Our shared environment",
+    "level": "B2",
+    "topic": "Environment",
+    "mode": "read",
+    "text": "Protecting a local habitat requires patience and cooperation. The results may be gradual, but consistent effort can create lasting change.",
+    "cues": ["Pause naturally at the comma.", "Stress consistent effort."]
+  },
+  {
+    "id": "s8",
+    "title": "Learning with curiosity",
+    "level": "B1",
+    "topic": "Education",
+    "mode": "read",
+    "text": "I don't need to understand every word immediately. When I stay curious and ask questions, difficult ideas become easier to explore.",
+    "cues": ["Expand don't to do not if needed.", "Finish the final consonant in questions."]
+  },
+  {
+    "id": "s9",
+    "title": "A routine that works for you",
+    "level": "A2",
+    "topic": "Daily life",
+    "mode": "talk",
+    "text": "Describe a daily routine that helps you feel organized.",
+    "cues": ["When do you do it?", "What are the main steps?", "Why does it help you?"]
+  },
+  {
+    "id": "s10",
+    "title": "A memorable journey",
+    "level": "A2",
+    "topic": "Travel",
+    "mode": "talk",
+    "text": "Talk about a journey you enjoyed, even if it was close to home.",
+    "cues": [
+      "Where did you go and with whom?",
+      "What happened on the way?",
+      "What would you do differently next time?"
+    ]
+  },
+  {
+    "id": "s11",
+    "title": "A dish to share",
+    "level": "A2",
+    "topic": "Food",
+    "mode": "talk",
+    "text": "Describe a dish you would prepare for a visiting friend.",
+    "cues": ["What ingredients do you need?", "How do you prepare it?", "Why is it special to you?"]
+  },
+  {
+    "id": "s12",
+    "title": "Making space for rest",
+    "level": "B1",
+    "topic": "Health",
+    "mode": "talk",
+    "text": "Explain how people can make time for rest in a busy week.",
+    "cues": [
+      "Describe one common difficulty.",
+      "Suggest two practical changes.",
+      "Give an example from everyday life."
+    ]
+  },
+  {
+    "id": "s13",
+    "title": "Your ideal team",
+    "level": "B1",
+    "topic": "Work",
+    "mode": "talk",
+    "text": "Describe what makes a team pleasant and effective to work with.",
+    "cues": [
+      "How should people communicate?",
+      "How can a team handle disagreement?",
+      "Share a real or imagined example."
+    ]
+  },
+  {
+    "id": "s14",
+    "title": "One useful digital tool",
+    "level": "B1",
+    "topic": "Technology",
+    "mode": "talk",
+    "text": "Discuss a digital tool that saves you time and one limitation it has.",
+    "cues": [
+      "What problem does it solve?",
+      "How often do you use it?",
+      "When would another approach be better?"
+    ]
+  },
+  {
+    "id": "s15",
+    "title": "A greener neighborhood",
+    "level": "B2",
+    "topic": "Environment",
+    "mode": "talk",
+    "text": "Propose a realistic environmental project for your neighborhood.",
+    "cues": [
+      "What local problem would it address?",
+      "Who should participate?",
+      "How would you measure progress?"
+    ]
+  },
+  {
+    "id": "s16",
+    "title": "Learning beyond the classroom",
+    "level": "B2",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Compare learning from a course with learning through personal projects.",
+    "cues": [
+      "Explain one advantage of each approach.",
+      "Discuss how motivation affects progress.",
+      "Recommend a combination for a beginner."
+    ]
+  }
 ]

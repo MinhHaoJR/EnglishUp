@@ -1,15 +1,23 @@
 import { z } from 'zod';
 import rawWords from './vocabulary.json';
-import { wordSchema,readingSchema,listeningSchema,dictationSchema,speakingSchema,writingSchema } from './schema';
+import {
+  wordSchema,
+  readingSchema,
+  listeningSchema,
+  dictationSchema,
+  speakingSchema,
+  writingSchema,
+} from './schema';
 import rawWriting from './writing.json';
-export const writingPrompts=z.array(writingSchema).min(10).parse(rawWriting);
+export const writingPrompts = z.array(writingSchema).min(10).parse(rawWriting);
 import rawSpeaking from './speaking.json';
-export const speakingPrompts=z.array(speakingSchema).min(16).parse(rawSpeaking);
+export const speakingPrompts = z.array(speakingSchema).min(16).parse(rawSpeaking);
 import rawListening from './listening.json';
 import rawDictation from './dictation.json';
-export const listenings=z.array(listeningSchema).min(6).parse(rawListening);
-export const dictations=z.array(dictationSchema).min(10).parse(rawDictation);
+export const listenings = z.array(listeningSchema).min(6).parse(rawListening);
+export const dictations = z.array(dictationSchema).min(10).parse(rawDictation);
 import rawReading from './reading.json';
-export const readings=z.array(readingSchema).min(6).parse(rawReading);
-export const vocabulary=z.array(wordSchema).min(150).parse(rawWords);
-if(new Set(vocabulary.map(x=>x.id)).size!==vocabulary.length)throw new Error('Duplicate content IDs');
+export const readings = z.array(readingSchema).min(6).parse(rawReading);
+export const vocabulary = z.array(wordSchema).min(150).parse(rawWords);
+if (new Set(vocabulary.map((x) => x.id)).size !== vocabulary.length)
+  throw new Error('Duplicate content IDs');
