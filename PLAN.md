@@ -30,3 +30,7 @@ After every milestone run lint, typecheck, tests and production build, fix failu
 - Milestone 6 completed: 10 writing prompts, autosaved drafts, rule-based FeedbackProvider, persistent history and draft comparisons. All four checks passed (14 tests).
 - Milestone 7 completed: dashboard with daily plan, streaks, goal minutes, due cards, per-skill averages, week chart and persisted activity. Backup/reset/restore tested across all six stores. All four checks passed (17 tests).
 - Milestone 8 completed: bilingual accessibility/error-state polish, lazy route loading, recorder cleanup and permission tests, five-skill integration flows, content authoring guide and full README. All four checks passed (26 tests). Browser checks covered every skill, reload persistence, narrow and dark layouts, and downloaded-backup/reset/restore. Physical audio hardware remains unverified; see docs/TESTING.md.
+
+## Translation extension
+
+Added bidirectional word/sentence writing inside Vocabulary, 16 original bilingual sentences, reference matching with explicit equivalent-answer self-assessment, and persisted vocabulary attempts independent of SRS. All four checks passed (34 tests). Browser verification completed and saved a sentence in both directions.

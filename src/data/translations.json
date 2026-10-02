@@ -1,0 +1,120 @@
+[
+  {
+    "id": "tr1",
+    "level": "A2",
+    "topic": "Daily life",
+    "en": ["I make breakfast every morning."],
+    "vi": ["Tôi làm bữa sáng mỗi buổi sáng.", "Tôi chuẩn bị bữa sáng mỗi sáng."]
+  },
+  {
+    "id": "tr2",
+    "level": "A2",
+    "topic": "Daily life",
+    "en": ["She usually walks to work."],
+    "vi": ["Cô ấy thường đi bộ đi làm.", "Cô ấy thường đi bộ đến chỗ làm."]
+  },
+  {
+    "id": "tr3",
+    "level": "A2",
+    "topic": "Travel",
+    "en": ["Where can I buy a bus ticket?"],
+    "vi": ["Tôi có thể mua vé xe buýt ở đâu?"]
+  },
+  {
+    "id": "tr4",
+    "level": "B1",
+    "topic": "Travel",
+    "en": ["We missed the train because we left home late."],
+    "vi": ["Chúng tôi lỡ tàu vì rời nhà muộn.", "Chúng tôi đã lỡ chuyến tàu vì ra khỏi nhà muộn."]
+  },
+  {
+    "id": "tr5",
+    "level": "A2",
+    "topic": "Work",
+    "en": ["The meeting starts at nine."],
+    "vi": ["Cuộc họp bắt đầu lúc chín giờ.", "Cuộc họp bắt đầu lúc 9 giờ."]
+  },
+  {
+    "id": "tr6",
+    "level": "B1",
+    "topic": "Work",
+    "en": ["Could you send me the report before Friday?"],
+    "vi": ["Bạn có thể gửi cho tôi báo cáo trước thứ Sáu không?"]
+  },
+  {
+    "id": "tr7",
+    "level": "A2",
+    "topic": "Food",
+    "en": ["I would like a bowl of soup.", "I'd like a bowl of soup."],
+    "vi": ["Tôi muốn một bát súp.", "Tôi muốn một tô súp."]
+  },
+  {
+    "id": "tr8",
+    "level": "B1",
+    "topic": "Food",
+    "en": ["This restaurant serves fresh vegetables from local farms."],
+    "vi": ["Nhà hàng này phục vụ rau tươi từ các trang trại địa phương."]
+  },
+  {
+    "id": "tr9",
+    "level": "A2",
+    "topic": "Health",
+    "en": ["You should drink more water."],
+    "vi": ["Bạn nên uống nhiều nước hơn."]
+  },
+  {
+    "id": "tr10",
+    "level": "B1",
+    "topic": "Health",
+    "en": ["I feel better after a short walk."],
+    "vi": [
+      "Tôi cảm thấy khỏe hơn sau một cuộc đi bộ ngắn.",
+      "Tôi thấy khỏe hơn sau khi đi bộ một lát."
+    ]
+  },
+  {
+    "id": "tr11",
+    "level": "A2",
+    "topic": "Technology",
+    "en": ["My phone needs a new battery."],
+    "vi": ["Điện thoại của tôi cần pin mới.", "Điện thoại của tôi cần một viên pin mới."]
+  },
+  {
+    "id": "tr12",
+    "level": "B2",
+    "topic": "Technology",
+    "en": ["Although the software is useful, it still needs improvement."],
+    "vi": ["Mặc dù phần mềm hữu ích, nó vẫn cần được cải thiện."]
+  },
+  {
+    "id": "tr13",
+    "level": "B1",
+    "topic": "Environment",
+    "en": ["We can reduce waste by reusing bags."],
+    "vi": ["Chúng ta có thể giảm rác thải bằng cách tái sử dụng túi."]
+  },
+  {
+    "id": "tr14",
+    "level": "B2",
+    "topic": "Environment",
+    "en": ["Protecting local forests requires cooperation between communities."],
+    "vi": ["Bảo vệ rừng địa phương đòi hỏi sự hợp tác giữa các cộng đồng."]
+  },
+  {
+    "id": "tr15",
+    "level": "A2",
+    "topic": "Education",
+    "en": ["I learn five new words every day."],
+    "vi": ["Tôi học năm từ mới mỗi ngày.", "Tôi học 5 từ mới mỗi ngày."]
+  },
+  {
+    "id": "tr16",
+    "level": "B2",
+    "topic": "Education",
+    "en": ["Students learn more effectively when they receive regular feedback."],
+    "vi": [
+      "Học sinh học hiệu quả hơn khi nhận được phản hồi thường xuyên.",
+      "Sinh viên học hiệu quả hơn khi nhận được phản hồi thường xuyên."
+    ]
+  }
+]

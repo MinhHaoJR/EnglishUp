@@ -1,5 +1,21 @@
 import { z } from 'zod';
 import rawWords from './vocabulary.json';
+import rawTranslations from './translations.json';
+import { levelSchema } from './schema';
+export const translations = z
+  .array(
+    z.object({
+      id: z.string().min(1),
+      level: levelSchema,
+      topic: z.string().min(1),
+      en: z.array(z.string().trim().min(1)).min(1),
+      vi: z.array(z.string().trim().min(1)).min(1),
+    }),
+  )
+  .min(16)
+  .parse(rawTranslations);
+if (new Set(translations.map((item) => item.id)).size !== translations.length)
+  throw new Error('Duplicate translation IDs');
 import {
   wordSchema,
   readingSchema,

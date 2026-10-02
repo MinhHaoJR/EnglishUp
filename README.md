@@ -79,3 +79,9 @@ See [AGENTS.md](AGENTS.md) for structure/conventions and [docs/CONTENT.md](docs/
 The app uses semantic form controls, explicit labels, keyboard focus, a skip link, textual diff labels alongside colors, responsive layouts and light/dark palettes. It uses system fonts and CSS illustrations without external asset requests. Feature routes load lazily. No stack deviation was necessary.
 
 Recommended follow-ups after MVP acceptance: test physical microphones and OS voices on your target devices, have an English teacher review CEFR/IPA/content, then consider an offline service worker, more A1/C1 content and optional LLM feedback. Real-device voice quality and a formal WCAG audit remain outside automated verification.
+
+## Translation practice
+
+Vocabulary → Translation practice supports words and sentences in both Vietnamese → English and English → Vietnamese directions. It uses bundled/custom words and 16 original bilingual sentences across eight topics. Filters apply to the next session of up to ten randomly selected items, independently of due-card limits. Check, compare references, then save each result. Saved vocabulary attempts are included in backups and dashboard averages without changing SRS; leaving the tab discards only the unsaved exercise.
+
+Matching ignores case, punctuation and whitespace while preserving Vietnamese accents. It is not semantic grading: equivalent alternatives require explicit self-assessment and are labelled in history. Matches/self-assessed equivalents score 100; other answers score 0.

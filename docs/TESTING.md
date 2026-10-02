@@ -23,3 +23,7 @@ Use a separate test profile for manual resets. The app never uploads backups or 
 - Inspected desktop light/dark layouts and a 390 × 844 viewport. No page-level horizontal overflow was observed; mobile navigation scrolls intentionally. Browser console checks showed no warnings or errors during the tested flows.
 - Returned the preview to Vietnamese/light settings. The preview profile contains synthetic practice activity from these checks.
 - Physical microphone capture, audible TTS quality and vendor speech recognition remain unverified. Follow the device checklist above before relying on them.
+
+## Translation extension verification
+
+The suite now contains 34 passing tests in 12 files. New coverage includes Unicode normalization with Vietnamese accents preserved, alternative word meanings, bounded random sessions, both directions for words and sentences, filter selection, empty-answer prevention, incorrect score persistence, unchanged SRS and explicit self-assessed labels. Browser checks also completed the Health/A2 sentence in both directions and verified saved-session feedback. See translation-preview.jpg for the reference-answer screen.

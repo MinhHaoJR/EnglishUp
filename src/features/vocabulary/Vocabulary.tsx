@@ -9,6 +9,7 @@ import { SpeakButton } from '../../components/SpeakButton';
 import { db, download } from '../../services/storage';
 import { dueQueue, schedule, type Rating } from '../../services/srs';
 import { importCSV, exportCSV } from '../../services/csv';
+import TranslationPractice from './TranslationPractice';
 type Mode = 'flashcards' | 'choice' | 'type' | 'spell';
 export default function Vocabulary() {
   const t = useT();
@@ -18,7 +19,7 @@ export default function Vocabulary() {
   const { value: reviews = [] } = useLive(() => db.reviews.toArray());
   const all = [...vocabulary, ...custom];
   const filtered = useFiltered(all);
-  const [tab, setTab] = useState<'practice' | 'library'>('practice');
+  const [tab, setTab] = useState<'practice' | 'library' | 'translation'>('practice');
   const [mode, setMode] = useState<Mode>('flashcards');
   const [queue, setQueue] = useState<Word[]>([]);
   const [index, setIndex] = useState(0);
@@ -112,11 +113,16 @@ export default function Vocabulary() {
         <button aria-pressed={tab === 'library'} onClick={() => setTab('library')}>
           {t('library')} · {all.length}
         </button>
+        <button aria-pressed={tab === 'translation'} onClick={() => setTab('translation')}>
+          {bi('Luyện viết và dịch', 'Translation practice')}
+        </button>
       </div>
-      {!card && <Filters />}
+      {(!card || tab === 'translation') && <Filters />}
       {error && <Notice error>{error}</Notice>}
       {message && <Notice>{message}</Notice>}
-      {tab === 'library' ? (
+      {tab === 'translation' ? (
+        <TranslationPractice words={filtered} />
+      ) : tab === 'library' ? (
         <>
           <div className="panel space-y-4">
             <label>
