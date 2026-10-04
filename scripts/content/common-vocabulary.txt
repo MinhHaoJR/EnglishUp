@@ -1,0 +1,1362 @@
+# Original common vocabulary for EnglishUp. Format: word|Vietnamese meaning|English definition|original example.
+# @Topic|part of speech|estimated CEFR level. IPA is intentionally omitted pending editorial review.
+@People and family|noun|A1
+person|người|an individual human|One person is waiting outside.
+people|mọi người|human beings as a group|Many people use this park.
+man|người đàn ông|an adult male person|The man is carrying a bag.
+woman|người phụ nữ|an adult female person|A woman opened the door.
+child|đứa trẻ|a young human being|The child drew a star.
+baby|em bé|a very young child|The baby is sleeping now.
+boy|bé trai|a male child|That boy is my brother.
+girl|bé gái|a female child|The girl waved at us.
+teenager|thanh thiếu niên|a person aged thirteen to nineteen|My cousin is a teenager.
+adult|người trưởng thành|a fully grown person|Each child needs an adult nearby.
+family|gia đình|a group of related people|My family eats together each evening.
+parent|cha hoặc mẹ|a mother or father|A parent signed the school form.
+mother|mẹ|a female parent|My mother grows tomatoes.
+father|bố|a male parent|My father fixes bicycles.
+son|con trai|a male child of a parent|Their son studies in Hue.
+daughter|con gái|a female child of a parent|Her daughter plays the piano.
+brother|anh hoặc em trai|a male sibling|My brother likes drawing maps.
+sister|chị hoặc em gái|a female sibling|My sister made this cake.
+grandmother|bà|the mother of a parent|My grandmother tells funny stories.
+grandfather|ông|the father of a parent|My grandfather walks every morning.
+grandparent|ông hoặc bà|a parent of your parent|One grandparent lives near our school.
+grandson|cháu trai của ông bà|a son of your child|Their grandson visits on Sundays.
+granddaughter|cháu gái của ông bà|a daughter of your child|Her granddaughter brought some flowers.
+uncle|chú; bác; cậu|a parent's brother or an aunt's husband|My uncle drives a bus.
+aunt|cô; dì; bác gái|a parent's sister or an uncle's wife|My aunt lives by the sea.
+cousin|anh chị em họ|a child of your aunt or uncle|My cousin is the same age.
+husband|chồng|a married woman's or man's male spouse|Her husband teaches music.
+wife|vợ|a married person's female spouse|His wife works at the museum.
+friend|bạn bè|someone you know and like|A friend lent me this book.
+name|tên|a word used to identify someone|Write your name at the top.
+age|tuổi|the number of years lived|Children of every age joined in.
+student|học sinh; sinh viên|a person who studies|Each student has a notebook.
+teacher|giáo viên|a person who helps others learn|Our teacher speaks slowly.
+classmate|bạn cùng lớp|a student in your class|My classmate saved me a seat.
+partner|người đồng hành; bạn đời|someone who shares an activity or life|My dance partner knows every step.
+guest|khách được mời|a person invited to visit|Each guest received a small gift.
+visitor|khách đến thăm|someone visiting a place|The visitor asked for a map.
+member|thành viên|someone belonging to a group|Every member can suggest a book.
+team|đội; nhóm|people working or playing together|Our team practices on Saturdays.
+group|nhóm|several people or things together|A small group entered the hall.
+@People and family|noun|A2
+relative|người họ hàng|a person connected by family|A relative sent us these photos.
+nephew|cháu trai gọi bằng cô chú|a son of your sibling|My nephew starts school tomorrow.
+niece|cháu gái gọi bằng cô chú|a daughter of your sibling|My niece loves this picture book.
+twins|cặp song sinh|two children born together|The twins wear different colors.
+couple|cặp đôi|two people in a relationship|The couple moved here last year.
+generation|thế hệ|people born in a similar period|Each generation has its favorite songs.
+stranger|người lạ|someone you do not know|A stranger helped carry my suitcase.
+crowd|đám đông|a large gathering of people|The crowd cheered for the runners.
+citizen|công dân|a legal member of a country|Every citizen has responsibilities.
+resident|cư dân|someone living in a place|A resident showed us the entrance.
+@Home and furniture|noun|A1
+home|nhà; tổ ấm|the place where you live|We arrived home before dinner.
+house|ngôi nhà|a building for people to live in|Their house has a red door.
+apartment|căn hộ|a home within a larger building|Our apartment is on the third floor.
+room|phòng|a space enclosed by walls|This room gets morning sunlight.
+bedroom|phòng ngủ|a room for sleeping|My bedroom faces the garden.
+bathroom|phòng tắm|a room for washing yourself|The bathroom is upstairs.
+kitchen|nhà bếp|a room for preparing food|Dad is in the kitchen.
+living room|phòng khách|a room for relaxing together|We read in the living room.
+dining room|phòng ăn|a room for eating meals|The dining room seats six people.
+floor|sàn nhà; tầng|the surface you walk on indoors|Your keys are on the floor.
+wall|tường|a vertical part enclosing a room|We painted the wall yellow.
+ceiling|trần nhà|the upper surface inside a room|A lamp hangs from the ceiling.
+roof|mái nhà|the covering on top of a building|Rain tapped on the roof.
+door|cửa ra vào|a movable entrance barrier|Please close the door quietly.
+window|cửa sổ|an opening fitted with glass|Open the window for fresh air.
+stairs|cầu thang|steps connecting different floors|Take the stairs to the library.
+garden|vườn|land used for growing plants|We grow beans in the garden.
+yard|sân|an open area beside a house|The children play in the yard.
+garage|nhà để xe|a building for keeping a vehicle|The bikes are in the garage.
+gate|cổng|a movable entrance in a fence|Meet me at the school gate.
+fence|hàng rào|a barrier surrounding an area|A wooden fence surrounds the garden.
+key|chìa khóa|an object used to open a lock|I keep a spare key here.
+lock|ổ khóa|a device securing a door|The lock needs a new key.
+chair|ghế|a seat for one person|Pull up a chair beside me.
+desk|bàn học; bàn làm việc|a table for reading or working|My desk is near the window.
+bed|giường|furniture used for sleeping|The cat is under the bed.
+sofa|ghế dài có đệm|a soft seat for several people|Three friends sat on the sofa.
+shelf|kệ|a flat surface for storing objects|Put the cups on that shelf.
+cupboard|tủ có cánh|furniture with enclosed storage space|The plates are in the cupboard.
+wardrobe|tủ quần áo|a tall cupboard for clothes|My coat is in the wardrobe.
+drawer|ngăn kéo|a sliding storage compartment|The scissors are in this drawer.
+mirror|gương|a surface that reflects images|She checked her hat in the mirror.
+lamp|đèn|a device that produces light|This lamp makes reading easier.
+light|ánh sáng; đèn|brightness that lets you see|Morning light fills the room.
+clock|đồng hồ|a device showing the time|The clock above the door stopped.
+carpet|thảm trải sàn|a thick floor covering|The carpet feels soft underfoot.
+curtain|rèm cửa|fabric covering a window|Pull the curtain before changing.
+pillow|gối|a soft support for your head|I need a smaller pillow.
+blanket|chăn|a warm covering for a bed|Take a blanket for the journey.
+towel|khăn|cloth used for drying|Hang the wet towel outside.
+soap|xà phòng|a substance used for washing|There is soap beside the sink.
+sink|bồn rửa|a bowl connected to a drain|Leave the dishes in the sink.
+shower|vòi sen; việc tắm vòi sen|a spray of water for washing|I take a shower after running.
+toilet|bồn cầu; nhà vệ sinh|a fixture for human waste|The toilet is beside the bathroom.
+fridge|tủ lạnh|an appliance that keeps food cold|Put the milk in the fridge.
+oven|lò nướng|an enclosed space for baking|The bread is in the oven.
+stove|bếp nấu|an appliance used for cooking|Turn off the stove after cooking.
+washing machine|máy giặt|a machine that washes clothes|The washing machine is nearly full.
+fan|quạt|a device that moves air|Switch on the fan near the door.
+air conditioner|máy điều hòa|a machine that cools indoor air|The air conditioner has a timer.
+@Food|noun|A1
+food|thức ăn|things people eat|We brought food for the trip.
+meal|bữa ăn|food eaten at one time|We shared a simple meal.
+breakfast|bữa sáng|the first meal of the day|I eat breakfast at seven.
+lunch|bữa trưa|a meal eaten around midday|Lunch is ready in the kitchen.
+dinner|bữa tối|the main evening meal|We invited them to dinner.
+snack|đồ ăn nhẹ|a small amount eaten between meals|Pack a snack for the bus ride.
+bread|bánh mì|food baked from flour and water|This bread is still warm.
+rice|gạo; cơm|small grains cooked as food|We serve rice with vegetables.
+noodle|sợi mì|a long thin strip of dough|One noodle fell from the bowl.
+pasta|mì Ý|dried dough cooked in boiling water|The pasta needs another minute.
+soup|súp; canh|a liquid dish with other ingredients|This soup contains beans and carrots.
+salad|món rau trộn|a dish of mixed vegetables|I made a salad for lunch.
+sandwich|bánh mì kẹp|food placed between bread slices|She packed a cheese sandwich.
+pizza|bánh pizza|flat bread baked with toppings|We shared a vegetable pizza.
+egg|trứng|a round food laid by birds|Crack one egg into the bowl.
+meat|thịt|animal flesh eaten as food|He cut the meat into pieces.
+beef|thịt bò|meat from cattle|We cooked beef with onions.
+pork|thịt lợn|meat from pigs|The menu includes grilled pork.
+chicken|gà; thịt gà|a common farm bird and its meat|The chicken is ready to serve.
+fish|cá|a water animal with fins|We watched a fish swim past.
+seafood|hải sản|edible animals from the sea|The market sells fresh seafood.
+shrimp|tôm|a small shellfish with a curved body|Add the shrimp near the end.
+crab|cua|a shellfish with claws|A crab hid under the rock.
+milk|sữa|a white liquid produced by mammals|I add milk to my tea.
+cheese|phô mai|a food made from milk|Cut the cheese into small cubes.
+butter|bơ sữa|a solid fat made from cream|Spread some butter on the bread.
+yogurt|sữa chua|milk thickened by helpful bacteria|She eats yogurt with fruit.
+cream|kem sữa|the thick fatty part of milk|Add a spoonful of cream.
+flour|bột mì|finely ground grain for baking|Dust the board with flour.
+sugar|đường|a sweet substance added to food|This recipe needs little sugar.
+salt|muối|a mineral used to season food|Add a small pinch of salt.
+pepper|hạt tiêu|a spice used to add heat|Grind some pepper over the soup.
+oil|dầu|a liquid fat used in cooking|Heat a little oil in the pan.
+vinegar|giấm|a sour liquid used in food|Mix vinegar with oil for dressing.
+sauce|nước xốt|a liquid served with food|The sauce tastes slightly sweet.
+honey|mật ong|a sweet substance made by bees|Stir honey into the warm tea.
+jam|mứt|fruit cooked with sugar|We spread strawberry jam on toast.
+cake|bánh ngọt|a sweet baked food|The cake has three layers.
+biscuit|bánh quy|a small flat baked snack|Have a biscuit with your tea.
+chocolate|sô cô la|a sweet food made from cocoa|I bought a small chocolate bar.
+candy|kẹo|a small sweet food|The jar contains colorful candy.
+ice cream|kem lạnh|a frozen sweet milk dessert|The ice cream melted quickly.
+dessert|món tráng miệng|sweet food served after a meal|Fruit is our dessert tonight.
+fruit|trái cây|the seed-bearing food of plants|We buy fruit every morning.
+vegetable|rau củ|an edible plant or plant part|Choose a vegetable for the soup.
+bean|hạt đậu|an edible seed in a pod|A bean plant climbed the pole.
+pea|đậu Hà Lan|a small round green seed|A single pea rolled off the plate.
+nut|hạt có vỏ cứng|an edible seed with a hard shell|This nut has a thick shell.
+peanut|đậu phộng|an edible seed growing underground|A peanut fell out of the bag.
+tofu|đậu phụ|a soft food made from soybeans|We fried tofu with green onions.
+@Fruit and vegetables|noun|A1
+apple|táo|a round fruit with firm flesh|I sliced an apple for you.
+banana|chuối|a long curved yellow fruit|She ate a banana after class.
+orange|cam|a round citrus fruit|Peel the orange over a plate.
+lemon|chanh vàng|a sour yellow citrus fruit|Add a slice of lemon.
+lime|chanh xanh|a small green citrus fruit|Squeeze a lime over the noodles.
+mango|xoài|a sweet tropical stone fruit|This mango is soft and sweet.
+pineapple|dứa|a tropical fruit with rough skin|We cut the pineapple into rings.
+watermelon|dưa hấu|a large fruit with watery flesh|The watermelon is in the fridge.
+grape|nho|a small fruit growing in bunches|One grape rolled across the table.
+strawberry|dâu tây|a red berry with outer seeds|A strawberry decorated each small cake.
+blueberry|việt quất|a small round blue berry|A blueberry stained my fingers.
+raspberry|mâm xôi|a soft red clustered berry|She placed a raspberry on the yogurt.
+cherry|anh đào|a small stone fruit|Each dessert has a cherry on top.
+peach|đào|a stone fruit with fuzzy skin|The peach smells sweet.
+pear|lê|a fruit with a narrow upper end|Slice the pear into thin pieces.
+plum|mận|a smooth-skinned stone fruit|This plum tastes quite sour.
+apricot|mơ|a small orange stone fruit|I packed an apricot with my lunch.
+coconut|dừa|a large tropical fruit with a hard shell|We drank water from a coconut.
+papaya|đu đủ|a tropical fruit with orange flesh|Cut the papaya in half.
+guava|ổi|a tropical fruit with many seeds|The guava tree grows near our gate.
+avocado|bơ quả|a fruit with soft green flesh|Mash the avocado with a fork.
+kiwi|kiwi|a brown fruit with green flesh|Peel the kiwi before slicing it.
+dragon fruit|thanh long|a tropical fruit with speckled flesh|We shared a chilled dragon fruit.
+lychee|vải|a small fruit with rough red skin|Remove the seed from the lychee.
+longan|nhãn|a small brown fruit with pale flesh|This longan came from our garden.
+passion fruit|chanh dây|a fruit with fragrant seedy pulp|We added passion fruit to the drink.
+grapefruit|bưởi chùm|a large slightly bitter citrus fruit|Half a grapefruit filled the bowl.
+pomegranate|lựu|a fruit containing many juicy seeds|We sprinkled pomegranate seeds on the salad.
+tomato|cà chua|a soft red fruit used in cooking|Add a tomato to the sandwich.
+potato|khoai tây|an edible underground stem|Bake the potato until soft.
+sweet potato|khoai lang|a sweet edible root|We roasted a sweet potato.
+carrot|cà rốt|a long orange root vegetable|Grate a carrot for the salad.
+onion|hành tây|a layered vegetable with a strong smell|Chop the onion into small pieces.
+garlic|tỏi|a strong-flavored bulb used in cooking|Crush the garlic before frying it.
+ginger|gừng|a spicy root used in cooking|Fresh ginger adds warmth to this soup.
+cabbage|bắp cải|a vegetable with tightly packed leaves|Cut the cabbage into thin strips.
+lettuce|xà lách|a leafy vegetable eaten raw|Wash the lettuce before serving it.
+spinach|rau bina|a vegetable with dark green leaves|The spinach cooks very quickly.
+broccoli|bông cải xanh|a vegetable with green flower heads|Steam the broccoli for a few minutes.
+cauliflower|bông cải trắng|a vegetable with a white flower head|The cauliflower fills the whole bowl.
+cucumber|dưa chuột|a long vegetable with watery flesh|Slice the cucumber for the salad.
+pumpkin|bí đỏ|a large squash with orange flesh|We made soup from the pumpkin.
+eggplant|cà tím|a purple vegetable with soft flesh|Grill the eggplant on both sides.
+mushroom|nấm|an edible fungus with a cap|A mushroom grew beside the tree.
+corn|ngô|a plant with yellow edible kernels|We bought corn at the market.
+chili|ớt|a small hot pepper|One chili makes the soup spicy.
+celery|cần tây|a vegetable with crisp green stalks|Chop the celery into small pieces.
+radish|củ cải|a small crisp edible root|Slice the radish very thinly.
+bamboo shoot|măng|a young edible bamboo stem|Cut the bamboo shoot into strips.
+herb|rau thơm; thảo mộc|a plant used for flavoring|This herb smells like lemon.
+@Drinks and cooking|noun|A1
+water|nước|a clear liquid essential for life|Please bring a glass of water.
+tea|trà|a drink made from dried leaves|The tea is too hot now.
+coffee|cà phê|a drink made from roasted beans|He drinks coffee after breakfast.
+juice|nước ép|liquid pressed from fruit or vegetables|We made juice from fresh oranges.
+lemonade|nước chanh|a sweet drink made with lemons|Cold lemonade filled the glass.
+soda|nước ngọt có ga|a sweet fizzy drink|She chose water instead of soda.
+smoothie|sinh tố|a thick drink of blended fruit|I made a banana smoothie.
+ice|đá lạnh|water frozen solid|Add two pieces of ice.
+cup|tách; cốc|a small drinking container|Your cup is beside the kettle.
+glass|ly; cốc thủy tinh|a drinking container made of glass|Fill the glass halfway.
+bottle|chai|a narrow-necked container for liquids|This bottle holds one liter.
+bowl|bát; tô|a deep round food container|Put the rice in a bowl.
+plate|đĩa|a flat dish for serving food|Leave an empty plate for Mai.
+spoon|thìa|a tool with a small bowl|Stir it with a spoon.
+fork|nĩa|an eating tool with pointed ends|Use a fork for the salad.
+knife|dao|a tool with a cutting blade|This knife is very sharp.
+chopsticks|đũa|two sticks used for eating|I eat noodles with chopsticks.
+pan|chảo|a shallow cooking container|Heat the pan before adding oil.
+pot|nồi|a deep container for cooking|Cover the pot with a lid.
+kettle|ấm đun nước|a container for heating water|The kettle is almost empty.
+lid|nắp|a removable container cover|Put the lid back on.
+tray|khay|a flat object for carrying dishes|Carry the cups on a tray.
+napkin|khăn ăn|a cloth for wiping while eating|Place a napkin beside each plate.
+menu|thực đơn|a list of available dishes|The menu includes vegetarian meals.
+bill|hóa đơn|a statement of money owed|Could we have the bill, please?
+@Drinks and cooking|verb|A2
+cook|nấu ăn|to prepare food using heat|I cook dinner on Fridays.
+bake|nướng bằng lò|to cook with dry oven heat|We bake bread every Sunday.
+fry|chiên; rán|to cook in hot fat|Fry the onions until golden.
+grill|nướng trên vỉ|to cook over strong direct heat|We grill vegetables outside.
+roast|nướng thực phẩm|to cook uncovered with dry heat|Roast the potatoes until crisp.
+chop|băm; thái nhỏ|to cut into small pieces|Chop the carrots for the soup.
+peel|gọt vỏ|to remove an outer skin|Peel the banana before eating it.
+pour|rót; đổ|to make liquid flow out|Pour the milk slowly.
+mix|trộn|to combine different things|Mix the flour with water.
+taste|nếm|to try a little food|Taste the sauce before adding salt.
+serve|phục vụ món ăn|to give food or drink|We serve lunch at noon.
+heat|làm nóng|to make something warmer|Heat the soup gently.
+cool|làm nguội|to make something less hot|Cool the cake before cutting it.
+freeze|đông lạnh|to make something become frozen|Freeze the extra soup for later.
+melt|tan chảy|to become liquid through warmth|The butter will melt quickly.
+weigh|cân|to measure how heavy something is|Weigh the flour before mixing it.
+measure|đo|to find a quantity or size|Measure two cups of rice.
+add|thêm|to put something with another thing|Add the beans to the soup.
+remove|lấy ra; loại bỏ|to take something away|Remove the seeds before cooking.
+cover|đậy; che|to put something over another thing|Cover the bowl with a plate.
+@Drinks and cooking|adjective|A2
+raw|sống; chưa nấu|not cooked|This dish contains raw vegetables.
+cooked|đã nấu chín|prepared by heating|Keep the cooked rice covered.
+salty|mặn|tasting strongly of salt|The soup is slightly salty.
+sour|chua|having an acidic taste|These green apples are sour.
+bitter|đắng|having a sharp unsweet taste|The coffee tastes bitter without milk.
+@Clothes and accessories|noun|A1
+clothes|quần áo|items worn on the body|Pack warm clothes for the trip.
+shirt|áo sơ mi|an upper-body garment with sleeves|My shirt has a small pocket.
+T-shirt|áo phông|a casual short-sleeved shirt|She bought a green T-shirt.
+blouse|áo kiểu nữ|a light upper-body garment|This blouse matches the skirt.
+sweater|áo len|a knitted upper-body garment|Take a sweater for the evening.
+jacket|áo khoác ngắn|a short outer garment|His jacket is on the chair.
+coat|áo khoác|an outer garment for warmth|Hang your coat by the door.
+dress|váy liền|a one-piece garment with a skirt|She wore a blue dress.
+skirt|chân váy|a garment hanging from the waist|This skirt has two pockets.
+trousers|quần dài|a garment covering both legs separately|These trousers are too long.
+jeans|quần bò|trousers made from denim|My jeans are drying outside.
+shorts|quần đùi|short trousers ending above the knees|He wears shorts in summer.
+sock|tất|a fabric covering for the foot|One sock is missing again.
+shoe|giày|a covering for the foot|There is a stone in my shoe.
+boot|ủng; giày cao cổ|footwear covering the ankle or higher|My boot got stuck in mud.
+sandal|dép có quai|open footwear held by straps|The strap on my sandal broke.
+slipper|dép đi trong nhà|soft footwear worn indoors|A slipper was under the bed.
+hat|mũ|a shaped covering for the head|Wear a hat in the sun.
+cap|mũ lưỡi trai|a soft hat with a front shade|His cap fell into the water.
+scarf|khăn quàng|a strip worn around the neck|This scarf keeps me warm.
+glove|găng tay|a covering with separate finger sections|I found your glove outside.
+belt|thắt lưng|a band worn around the waist|The belt is made of leather.
+tie|cà vạt|a narrow cloth worn around the neck|He chose a dark blue tie.
+uniform|đồng phục|standard clothing for a group|Our school uniform is simple.
+suit|bộ com lê|matching formal jacket and trousers|He wore a suit to the interview.
+pajamas|đồ ngủ|loose clothes worn for sleeping|My pajamas have little stars.
+underwear|đồ lót|clothes worn beneath outer clothes|Pack clean underwear for each day.
+swimsuit|đồ bơi|clothing designed for swimming|Her swimsuit is in the bag.
+pocket|túi áo; túi quần|a small sewn storage space|Keep your ticket in your pocket.
+button|cúc áo|a small clothing fastener|A button came off my shirt.
+zipper|khóa kéo|a fastener with interlocking teeth|The zipper on my bag is stuck.
+bag|túi|a container for carrying things|Put your shoes in this bag.
+backpack|ba lô|a bag carried on the back|My backpack holds all my books.
+handbag|túi xách|a small bag for personal items|She left her handbag on the bus.
+wallet|ví|a small holder for money and cards|My wallet is in my jacket.
+purse|ví nhỏ đựng tiền|a small bag for money|She opened her purse for coins.
+umbrella|ô; dù|a folding cover against rain|We shared an umbrella on the way.
+watch|đồng hồ đeo tay|a timepiece worn on the wrist|My watch is five minutes slow.
+ring|nhẫn|a circular piece of finger jewelry|This ring belonged to my grandmother.
+necklace|vòng cổ|jewelry worn around the neck|The necklace has a small heart.
+earring|khuyên tai|jewelry worn on an ear|She found an earring near the mirror.
+bracelet|vòng tay|jewelry worn around the wrist|I made a bracelet from beads.
+glasses|kính mắt|lenses worn to improve sight|My glasses are on the desk.
+sunglasses|kính râm|dark glasses protecting the eyes|Bring sunglasses for the beach.
+size|kích cỡ|how large something is|Do you have a smaller size?
+@Clothes and accessories|noun|A2
+cotton|vải bông|fiber obtained from a cotton plant|This shirt is made of cotton.
+wool|len|soft fiber from sheep|Wool keeps you warm in winter.
+silk|lụa|smooth thread produced by silkworms|The scarf is made of silk.
+leather|da thuộc|animal skin prepared as a material|These shoes are made of leather.
+fabric|vải|material made from fibers|Choose a light fabric for summer.
+@Body and health|noun|A1
+body|cơ thể|the physical structure of a person|Your body needs time to rest.
+head|đầu|the body part containing the brain|He nodded his head slowly.
+face|khuôn mặt|the front part of the head|Rain fell on my face.
+hair|tóc|strands growing on the head|Her hair is still wet.
+eye|mắt|an organ used for seeing|Dust got into my eye.
+ear|tai|an organ used for hearing|My left ear feels cold.
+nose|mũi|the part used for smelling|The puppy touched my nose.
+mouth|miệng|the opening used for eating|Cover your mouth when you cough.
+tooth|răng|a hard structure used for biting|My first tooth fell out early.
+tongue|lưỡi|the mouth organ used for tasting|Hot soup burned my tongue.
+lip|môi|one edge of the mouth|She put balm on her lip.
+cheek|má|the side of the face|There is paint on your cheek.
+chin|cằm|the lower front of the face|Rest your chin on your hand.
+neck|cổ|the part joining head and body|His scarf covers his neck.
+shoulder|vai|the joint between arm and body|Carry the bag on one shoulder.
+arm|cánh tay|an upper limb of the body|She raised her arm to wave.
+elbow|khuỷu tay|the joint in the middle of an arm|My elbow bumped the door.
+hand|bàn tay|the body part beyond the wrist|Raise your hand to ask a question.
+finger|ngón tay|one of the digits on a hand|Point with your index finger.
+thumb|ngón tay cái|the short thick hand digit|He pressed the button with his thumb.
+chest|ngực|the upper front of the body|The badge is on his chest.
+back|lưng|the rear of the torso|This chair supports my back.
+stomach|dạ dày; bụng|an organ where food is digested|My stomach feels full after lunch.
+leg|chân|a lower limb used for walking|The dog hurt its front leg.
+knee|đầu gối|the joint in the middle of a leg|Mud covered her knee.
+foot|bàn chân|the lower end of a leg|My foot slipped on the step.
+toe|ngón chân|one of the digits on a foot|I hurt my toe on the chair.
+skin|da|the outer covering of the body|This soap feels gentle on my skin.
+blood|máu|the red liquid circulating in the body|The nurse took a blood sample.
+heart|tim|the organ that pumps blood|Her heart beat faster after running.
+brain|não|the organ controlling thought and movement|The brain processes information from our senses.
+bone|xương|a hard part of the skeleton|The diagram shows a bone in the arm.
+muscle|cơ bắp|body tissue that produces movement|This exercise uses a large leg muscle.
+doctor|bác sĩ|a professional who treats illness|The doctor listened carefully.
+nurse|y tá; điều dưỡng|a professional who cares for patients|The nurse checked the appointment list.
+dentist|nha sĩ|a professional who treats teeth|My dentist works near the station.
+patient|bệnh nhân|a person receiving medical care|The patient waited in a quiet room.
+hospital|bệnh viện|a place providing medical treatment|The hospital is across the road.
+medicine|thuốc|a substance used to treat illness|Keep medicine in its original packaging.
+pain|cơn đau|an unpleasant physical sensation|She described the pain to the doctor.
+headache|đau đầu|pain in the head|A headache kept him from reading.
+fever|sốt|an unusually high body temperature|The nurse asked about the fever.
+cough|cơn ho|a sudden forceful release of air|His cough interrupted the conversation.
+cold|cảm lạnh|a common infection of the nose and throat|She stayed home with a cold.
+flu|cúm|an illness caused by influenza viruses|He missed the trip because of flu.
+@Body and health|noun|A2
+wound|vết thương|an injury that breaks the skin|The nurse examined the wound.
+injury|chấn thương|physical damage to the body|The injury kept her off the team.
+treatment|việc điều trị|care given for a health problem|The doctor explained the treatment options.
+bandage|băng gạc|a strip used to cover an injury|The nurse changed the bandage.
+wheelchair|xe lăn|a chair with wheels for mobility|The entrance has space for a wheelchair.
+@Everyday verbs|verb|A1
+be|là; thì; ở|to exist or have a state|Please be quiet in the library.
+have|có|to possess or hold|We have two spare chairs.
+do|làm|to perform an action|I do my homework after dinner.
+go|đi|to move to another place|We go to school together.
+come|đến|to move toward a place|Come inside before it rains.
+get|nhận; lấy|to receive or obtain|I get a letter every week.
+make|làm; tạo ra|to create or produce|We make paper flowers in class.
+take|lấy; mang theo|to carry or bring something|Take your bag with you.
+give|cho; đưa|to hand something to someone|Give the key to your sister.
+put|đặt; để|to place something somewhere|Put the book on the desk.
+see|nhìn thấy|to notice with your eyes|I can see the mountains.
+look|nhìn|to direct your eyes|Look at the bird outside.
+hear|nghe thấy|to notice a sound|I can hear the rain.
+listen|lắng nghe|to pay attention to sound|Listen to the whole sentence.
+say|nói|to express something in words|Please say your name slowly.
+tell|kể; nói cho biết|to give information using words|Tell me about your weekend.
+speak|nói|to use your voice for words|We speak English during this game.
+talk|nói chuyện|to have a spoken conversation|We talk on the way home.
+ask|hỏi|to request information|Ask the teacher if you are unsure.
+answer|trả lời|to respond to a question|Please answer in a full sentence.
+read|đọc|to understand written words|I read before going to bed.
+write|viết|to form words in writing|Write your address on the envelope.
+spell|đánh vần|to name the letters of a word|Can you spell your surname?
+learn|học|to gain knowledge or ability|We learn five new words daily.
+teach|dạy|to help someone learn|They teach children to swim.
+study|học; nghiên cứu|to spend time learning|I study in the quiet room.
+know|biết|to have information about something|Do you know the bus number?
+think|nghĩ|to use your mind|Think about your answer first.
+understand|hiểu|to grasp the meaning|I understand the first question.
+remember|nhớ|to keep something in your memory|Remember to bring your notebook.
+forget|quên|to fail to remember|Do not forget your umbrella.
+want|muốn|to wish to have or do|I want a seat near the window.
+need|cần|to require something|We need more time to finish.
+like|thích|to enjoy or feel positive about|I like walking after dinner.
+love|yêu; rất thích|to feel deep affection or enjoyment|I love spending time with family.
+hate|ghét|to dislike very strongly|I hate wasting good food.
+prefer|thích hơn|to like one option more|I prefer tea without sugar.
+eat|ăn|to take food into your body|We eat lunch at school.
+drink|uống|to take liquid into your body|I drink water with every meal.
+buy|mua|to obtain something by paying|We buy fruit at the market.
+sell|bán|to exchange something for money|They sell bread near the station.
+pay|trả tiền|to give money for something|You can pay at the counter.
+spend|tiêu; dành thời gian|to use money or time|We spend weekends with our cousins.
+cost|có giá|to require an amount of money|These tickets cost twenty dollars each.
+open|mở|to make something no longer closed|Open your book to page ten.
+close|đóng|to shut an opening|Close the window before leaving.
+start|bắt đầu|to begin doing something|We start class at eight.
+finish|hoàn thành|to bring something to an end|Finish this sentence in your notebook.
+stop|dừng|to end an action or movement|Stop at the next corner.
+wait|chờ|to stay until something happens|Wait here for your brother.
+stay|ở lại|to remain in a place|We stay with friends in Hue.
+leave|rời đi; để lại|to go away from somewhere|We leave home at seven.
+live|sống|to have your home somewhere|I live near a small lake.
+work|làm việc|to do a job or task|They work in the same office.
+play|chơi|to take part in a game|We play chess after school.
+walk|đi bộ|to move on foot|I walk to the shop.
+run|chạy|to move quickly on foot|The children run across the field.
+jump|nhảy|to push your body into the air|Jump over the small puddle.
+sit|ngồi|to rest with your weight on a seat|Sit beside me on the bench.
+stand|đứng|to be upright on your feet|Please stand behind the line.
+lie|nằm|to rest in a flat position|I lie on the grass and read.
+wake|thức dậy|to stop sleeping|I wake before the alarm rings.
+wash|rửa; giặt|to clean using water|Wash the cups after breakfast.
+clean|làm sạch|to remove dirt|We clean the kitchen together.
+brush|chải; đánh bằng bàn chải|to clean or arrange with a brush|Brush your shoes before going inside.
+wear|mặc; đeo|to have clothing on your body|We wear uniforms at school.
+change|thay đổi; thay|to make or become different|Change your wet clothes first.
+carry|mang; vác|to hold something while moving|I carry my lunch in this bag.
+bring|mang đến|to take something to a place|Bring a pen to the meeting.
+hold|cầm; giữ|to keep something in your hands|Hold the bowl with both hands.
+keep|giữ|to continue to have something|Keep the ticket until you arrive.
+find|tìm thấy|to discover where something is|I cannot find my glasses.
+lose|mất; đánh mất|to no longer have something|It is easy to lose small keys.
+help|giúp|to make a task easier for someone|Can you help me carry this?
+use|sử dụng|to do something with an object|Use this pencil for the drawing.
+try|thử; cố gắng|to make an effort|Try reading the sentence aloud.
+move|di chuyển|to change position|Move your chair closer to the table.
+turn|xoay; rẽ|to change direction|Turn left after the bridge.
+follow|đi theo; làm theo|to go after or obey|Follow the signs to the exit.
+meet|gặp|to come together with someone|We meet outside the library.
+visit|thăm|to go somewhere for a short time|We visit our grandparents on Sundays.
+call|gọi|to contact someone by phone|Call me when you arrive.
+smile|mỉm cười|to show happiness with your face|The children smile for the photo.
+laugh|cười|to make sounds of amusement|His story made everyone laugh.
+cry|khóc|to produce tears from emotion|The baby began to cry.
+sing|hát|to make musical sounds with your voice|We sing a song before class.
+dance|nhảy múa|to move your body to music|They dance together every Friday.
+draw|vẽ|to make a picture with lines|Draw a map of your street.
+paint|sơn; vẽ màu|to cover a surface with color|We paint the boxes blue.
+swim|bơi|to move through water|We swim in the local pool.
+ride|đi xe; cưỡi|to travel on a bike or animal|I ride my bike to school.
+drive|lái xe|to control a motor vehicle|My aunt can drive a truck.
+fly|bay|to travel through the air|Birds fly above the lake.
+travel|đi du lịch; di chuyển|to go from place to place|We travel by train each summer.
+send|gửi|to arrange for something to go somewhere|Send the file before lunch.
+receive|nhận|to get something sent or given|We receive fresh bread each morning.
+show|cho xem; chỉ|to let someone see something|Show me your drawing.
+choose|chọn|to select from available options|Choose one picture to describe.
+cut|cắt|to divide with a sharp tool|Cut the paper along this line.
+break|làm vỡ; làm hỏng|to damage or separate into pieces|A fall could break the glass.
+@Everyday verbs|verb|A2
+build|xây dựng|to make by joining parts|We build a small model bridge.
+grow|lớn lên; trồng|to increase in size or cultivate|We grow herbs by the window.
+plant|trồng cây|to put seeds or plants in soil|They plant trees every spring.
+pick|hái; chọn|to select or remove by hand|Pick the ripe tomatoes first.
+drop|làm rơi|to let something fall|Do not drop the glass jar.
+throw|ném|to send through the air by hand|Throw the ball to me.
+catch|bắt; chụp lấy|to stop and hold something moving|Can you catch the red ball?
+pull|kéo|to move something toward yourself|Pull the door toward you.
+push|đẩy|to move something away by pressure|Push the cart slowly.
+lift|nhấc|to raise something upward|Lift the box with both hands.
+climb|leo|to move upward using hands or feet|We climb the hill before sunrise.
+fall|ngã; rơi|to move downward without support|Leaves fall from the trees.
+reach|đến; với tới|to arrive at or stretch toward|We reach the village before dark.
+return|trở lại; trả lại|to go back or give back|Return the library books tomorrow.
+enter|đi vào|to go inside a place|Enter through the side door.
+cross|băng qua|to go from one side to another|Cross the road at the lights.
+pass|đi qua; đưa qua|to go past or hand over|Please pass the salt.
+join|tham gia|to become part of a group|Join our reading club this term.
+win|thắng|to be successful in a contest|Our team hopes to win today.
+beat|đánh bại|to defeat an opponent|We could beat the other team.
+share|chia sẻ|to let others use or have part|We share a desk at home.
+save|tiết kiệm; lưu|to keep for later use|Save a copy of your work.
+collect|thu thập|to gather things together|We collect stamps from different countries.
+count|đếm|to find the number of things|Count the chairs before the guests arrive.
+check|kiểm tra|to examine whether something is correct|Check the address before sending it.
+plan|lên kế hoạch|to decide what to do ahead of time|We plan our meals on Sundays.
+decide|quyết định|to choose after thinking|Decide which route you prefer.
+agree|đồng ý|to have the same opinion|I agree with your suggestion.
+believe|tin|to accept something as true|I believe the train leaves at six.
+hope|hy vọng|to want something good to happen|We hope to see you soon.
+wish|ước|to want something that may not happen|I wish I could stay longer.
+enjoy|thích thú|to take pleasure in something|We enjoy cooking together.
+feel|cảm thấy|to experience an emotion or sensation|I feel ready for the lesson.
+seem|có vẻ|to give a particular impression|The instructions seem clear to me.
+become|trở thành|to begin to be something|The sky will become darker soon.
+begin|bắt đầu|to start an action|Begin with the easiest question.
+continue|tiếp tục|to keep doing something|Continue reading the next paragraph.
+happen|xảy ra|to take place|What will happen after the meeting?
+arrive|đến nơi|to reach a destination|Please arrive ten minutes early.
+invite|mời|to ask someone to attend|We invite our neighbors every year.
+thank|cảm ơn|to express appreciation|Remember to thank the volunteers.
+welcome|chào đón|to greet someone warmly|We welcome new students on Monday.
+offer|đề nghị; cung cấp|to make something available|They offer free evening classes.
+accept|chấp nhận|to agree to receive something|I am happy to accept your help.
+refuse|từ chối|to say no to something|You may refuse the invitation politely.
+promise|hứa|to say you will certainly do something|I promise to return your book.
+allow|cho phép|to give permission|They allow bicycles on this path.
+let|để; cho phép|to permit something to happen|Let me open the door.
+examine|xem xét kỹ|to inspect something closely|Examine the picture before answering.
+describe|miêu tả|to say what something is like|Describe your favorite place in town.
+@Common adjectives|adjective|A1
+good|tốt|of a pleasing or suitable standard|That is a good idea.
+bad|xấu; tệ|unpleasant or of poor quality|The fruit has a bad smell.
+great|rất tốt; tuyệt vời|very good or impressive|We had a great afternoon.
+nice|dễ chịu; tốt đẹp|pleasant or kind|This is a nice place to sit.
+beautiful|đẹp|very pleasing to look at|The garden is beautiful in spring.
+pretty|xinh đẹp|attractive in a delicate way|She has a pretty blue scarf.
+ugly|xấu xí|unpleasant to look at|The old wall has an ugly stain.
+big|to; lớn|large in size|They live in a big house.
+small|nhỏ|not large in size|I need a small bowl.
+large|lớn|greater than usual in size|We ordered a large pizza.
+little|nhỏ bé|small in size or amount|A little bird landed nearby.
+long|dài|covering a great distance|We followed a long path home.
+short|ngắn; thấp|not long or tall|The film is quite short.
+tall|cao|having great height|A tall tree shades the house.
+high|cao|far above the ground|The shelf is too high.
+low|thấp|near the ground or bottom|The ceiling is low here.
+wide|rộng|measuring a lot across|The river is wide at this point.
+narrow|hẹp|measuring little from side to side|We walked down a narrow street.
+thick|dày|measuring a lot between surfaces|This book has thick pages.
+thin|mỏng; gầy|having little thickness|Cut the bread into thin slices.
+heavy|nặng|weighing a lot|This suitcase is very heavy.
+young|trẻ|having lived for a short time|A young tree needs support.
+old|già; cũ|having existed for a long time|This old photo shows our street.
+new|mới|made or obtained recently|I bought a new notebook.
+early|sớm|before the expected time|The early train is less crowded.
+late|muộn|after the expected time|We had a late lunch.
+hot|nóng|having a high temperature|The soup is still hot.
+warm|ấm|pleasantly above a cool temperature|The blanket keeps my feet warm.
+wet|ướt|covered with liquid|Leave the wet shoes outside.
+dry|khô|without water or moisture|The towels are finally dry.
+dirty|bẩn|covered with unwanted material|These plates are dirty.
+full|đầy|containing as much as possible|The bus is already full.
+empty|trống; rỗng|containing nothing|The box is empty now.
+easy|dễ|requiring little effort|The first question is easy.
+difficult|khó|requiring much effort|This word is difficult to pronounce.
+hard|cứng; khó|firm or difficult to do|The ground is hard after the frost.
+soft|mềm|giving way when pressed|This pillow is very soft.
+fast|nhanh|moving at high speed|We took a fast train.
+slow|chậm|moving at a low speed|The traffic is slow today.
+strong|khỏe; chắc|having much power or strength|We need a strong rope.
+weak|yếu|having little strength|The old chair has a weak leg.
+rich|giàu|having a lot of money|The story follows a rich merchant.
+poor|nghèo|having little money|The project supports poor families.
+cheap|rẻ|costing little money|These notebooks are cheap but useful.
+expensive|đắt|costing a lot of money|That hotel is too expensive.
+free|miễn phí|costing no money|The museum is free on Sundays.
+busy|bận rộn|having many things to do|The kitchen is busy at noon.
+quiet|yên tĩnh|making little noise|Find a quiet place to read.
+loud|to; ồn|making a strong sound|The music is too loud.
+safe|an toàn|unlikely to cause harm|This path is safe for walking.
+@Common adjectives|adjective|A2
+dangerous|nguy hiểm|likely to cause harm|That broken step is dangerous.
+healthy|khỏe mạnh|in good physical condition|The young plants look healthy.
+sick|ốm|unwell or ill|My brother is sick today.
+tired|mệt|needing rest|I feel tired after the journey.
+hungry|đói|wanting food|The children are hungry after swimming.
+thirsty|khát|wanting something to drink|I am thirsty after the walk.
+happy|vui vẻ|feeling pleasure or joy|We are happy to see you.
+sad|buồn|feeling sorrow|The ending of the story is sad.
+angry|tức giận|feeling strong displeasure|He was angry about the broken window.
+afraid|sợ|feeling fear|The puppy is afraid of thunder.
+worried|lo lắng|thinking anxiously about a problem|She is worried about the delay.
+excited|hào hứng|very eager and enthusiastic|We are excited about the trip.
+bored|chán|uninterested in what is happening|The children became bored during the wait.
+interested|quan tâm; thích thú|wanting to know more|I am interested in local history.
+interesting|thú vị|holding your attention|This is an interesting question.
+funny|buồn cười|causing amusement|Your story is really funny.
+friendly|thân thiện|behaving warmly toward others|The staff are friendly and helpful.
+kind|tử tế|caring about other people|It was kind of you to help.
+rude|thô lỗ|showing little respect|Interrupting every sentence is rude.
+clever|thông minh|quick at understanding things|That is a clever solution.
+smart|thông minh; sáng dạ|able to think and learn well|She made a smart choice.
+careful|cẩn thận|paying attention to avoid mistakes|Be careful with the glass bowl.
+careless|bất cẩn|not paying enough attention|A careless mistake changed the answer.
+lazy|lười biếng|unwilling to make an effort|We spent a lazy afternoon indoors.
+brave|dũng cảm|willing to face fear|The brave child asked for help.
+honest|trung thực|telling the truth|Please give me an honest answer.
+tolerant|khoan dung|accepting differences in other people|Our teacher is tolerant of different opinions.
+proud|tự hào|pleased by an achievement|She is proud of her progress.
+shy|nhút nhát|nervous around other people|The shy student spoke very softly.
+calm|bình tĩnh|not excited or upset|His calm voice helped everyone relax.
+nervous|hồi hộp; lo lắng|feeling worried about what may happen|I feel nervous before speaking.
+surprised|ngạc nhiên|reacting to something unexpected|We were surprised by the snow.
+ready|sẵn sàng|prepared for an action|Dinner is ready now.
+sure|chắc chắn|confident that something is true|Are you sure about the date?
+right|đúng|correct or suitable|That is the right answer.
+wrong|sai|not correct|We took the wrong bus.
+true|đúng sự thật|matching the facts|The story is completely true.
+false|sai sự thật|not matching the facts|That statement is false.
+real|thật|actually existing|This is a real shell.
+same|giống nhau|not different|We chose the same color.
+different|khác nhau|not the same|Try a different route tomorrow.
+important|quan trọng|having great significance|Water is important for every plant.
+useful|hữu ích|helping you do something|This map is useful for visitors.
+possible|có thể|able to happen or be done|An earlier meeting is possible.
+impossible|không thể|unable to happen or be done|That task is impossible without tools.
+special|đặc biệt|different in a valued way|We saved this for a special day.
+normal|bình thường|usual and expected|The noise is normal for this machine.
+strange|lạ|unusual or unexpected|There is a strange sound outside.
+famous|nổi tiếng|known by many people|The town has a famous bridge.
+popular|được ưa chuộng|liked by many people|This cafe is popular with students.
+@Places in town|noun|A1
+place|địa điểm|a particular location|This is a good place to rest.
+city|thành phố|a large urban settlement|The city has a new library.
+town|thị trấn|a settlement smaller than a city|Our town is near the coast.
+village|làng|a small rural settlement|The village has one main street.
+street|phố|a road lined with buildings|Our street is quiet at night.
+road|đường|a route for vehicles|The road follows the river.
+avenue|đại lộ|a wide urban street|Trees line the avenue.
+corner|góc|a place where two sides meet|The shop is on the corner.
+square|quảng trường|an open public area|People gather in the square.
+park|công viên|public land for relaxation|We walk in the park daily.
+playground|sân chơi|an outdoor area for children|The playground has a new slide.
+school|trường học|a place where children learn|The school opens at seven.
+university|trường đại học|an institution of higher education|She studies at a local university.
+library|thư viện|a place for borrowing books|The library closes at six.
+museum|bảo tàng|a place displaying important objects|The museum has an old boat.
+cinema|rạp chiếu phim|a place for watching films|Meet us outside the cinema.
+theater|nhà hát|a place for live performances|The theater is beside the river.
+restaurant|nhà hàng|a place serving meals|This restaurant serves local dishes.
+cafe|quán cà phê|a small place serving drinks and snacks|We met at a quiet cafe.
+bakery|tiệm bánh|a place making or selling bread|The bakery smells wonderful.
+market|chợ|a place where sellers offer goods|The market opens before sunrise.
+supermarket|siêu thị|a large self-service food shop|The supermarket is open late.
+shop|cửa hàng|a place selling goods|This shop sells school supplies.
+store|cửa tiệm|a business selling products|The store closes on Mondays.
+mall|trung tâm mua sắm|a building containing many shops|The mall has a large bookstore.
+bank|ngân hàng|a business handling money|The bank is opposite the station.
+post office|bưu điện|a place providing postal services|I sent it from the post office.
+police station|đồn cảnh sát|a local office for police|The police station is nearby.
+fire station|trạm cứu hỏa|a base for firefighters|A truck left the fire station.
+pharmacy|hiệu thuốc|a place selling medicines|The pharmacy is next to the clinic.
+hotel|khách sạn|a building offering paid accommodation|Our hotel overlooks the river.
+hostel|nhà trọ du lịch|inexpensive accommodation often with shared rooms|The hostel has a shared kitchen.
+station|nhà ga; trạm|a stopping place for public transport|The station is a short walk away.
+airport|sân bay|a place where aircraft arrive and depart|We reached the airport early.
+bus stop|trạm xe buýt|a place where buses pick up passengers|Wait at the bus stop outside.
+bridge|cầu|a structure crossing an obstacle|The bridge connects two villages.
+tunnel|đường hầm|a passage through or under something|The train entered a long tunnel.
+parking lot|bãi đỗ xe|an area for leaving vehicles|The parking lot is behind the shop.
+factory|nhà máy|a building where goods are produced|The factory makes glass bottles.
+office|văn phòng|a place for administrative work|Our office is on the second floor.
+farm|nông trại|land used for crops or animals|We visited a small dairy farm.
+church|nhà thờ|a Christian place of worship|The church has a tall tower.
+temple|đền|a building used for religious worship|We walked quietly around the temple.
+pagoda|chùa; tháp chùa|a Buddhist religious building or tower|The pagoda stands on a hill.
+mosque|nhà thờ Hồi giáo|a Muslim place of worship|The mosque has a peaceful courtyard.
+stadium|sân vận động|a large venue for sports|The stadium filled before the match.
+gym|phòng tập thể dục|a place for physical training|The gym opens early in the morning.
+pool|bể bơi|a structure filled with swimming water|The pool is closed for cleaning.
+zoo|vườn thú|a place where animals are displayed|The children visited the zoo.
+bookstore|hiệu sách|a shop selling books|This bookstore has a reading corner.
+@Time and calendar|noun|A1
+time|thời gian|the passing of moments|We have time for one more game.
+second|giây|one sixtieth of a minute|Wait one second before pressing again.
+minute|phút|a period of sixty seconds|The next bus comes in one minute.
+hour|giờ|a period of sixty minutes|The journey takes an hour.
+day|ngày|a period of twenty-four hours|We stayed there for one day.
+week|tuần|a period of seven days|I visit the library every week.
+month|tháng|one of twelve divisions of a year|Our course begins next month.
+year|năm|a period of twelve months|We moved here last year.
+morning|buổi sáng|the early part of the day|The market is busy in the morning.
+afternoon|buổi chiều|the time between noon and evening|We play outside in the afternoon.
+evening|buổi tối|the time between afternoon and night|I read in the evening.
+night|ban đêm|the dark part of the day|The street is quiet at night.
+noon|giữa trưa|twelve o'clock in the daytime|The meeting ends at noon.
+midnight|nửa đêm|twelve o'clock at night|The last train leaves at midnight.
+weekend|cuối tuần|Saturday and Sunday|We visit family at the weekend.
+weekday|ngày trong tuần|a day from Monday through Friday|The shop opens every weekday.
+Monday|thứ Hai|the day after Sunday|Our new class starts on Monday.
+Tuesday|thứ Ba|the day after Monday|I have music lessons on Tuesday.
+Wednesday|thứ Tư|the day after Tuesday|The club meets every Wednesday.
+Thursday|thứ Năm|the day after Wednesday|We return home on Thursday.
+Friday|thứ Sáu|the day after Thursday|The library stays open late on Friday.
+Saturday|thứ Bảy|the day after Friday|We clean the garden on Saturday.
+Sunday|Chủ nhật|the day after Saturday|The family eats together on Sunday.
+January|tháng Một|the first month of the year|The new term begins in January.
+February|tháng Hai|the second month of the year|Her birthday is in February.
+March|tháng Ba|the third month of the year|The flowers appear in March.
+April|tháng Tư|the fourth month of the year|We plan to travel in April.
+May|tháng Năm|the fifth month of the year|The exhibition opens in May.
+June|tháng Sáu|the sixth month of the year|Our exams finish in June.
+July|tháng Bảy|the seventh month of the year|We visited the coast in July.
+August|tháng Tám|the eighth month of the year|My cousin arrives in August.
+September|tháng Chín|the ninth month of the year|School begins again in September.
+October|tháng Mười|the tenth month of the year|The festival takes place in October.
+November|tháng Mười một|the eleventh month of the year|We moved into this house in November.
+December|tháng Mười hai|the twelfth month of the year|The year ends in December.
+spring|mùa xuân|the season between winter and summer|The garden is green in spring.
+summer|mùa hè|the warmest season of the year|We swim often in summer.
+autumn|mùa thu|the season between summer and winter|Leaves change color in autumn.
+winter|mùa đông|the coldest season of the year|We wear warm coats in winter.
+season|mùa|a major division of the year|Summer is my favorite season.
+calendar|lịch|a chart showing days and dates|Mark the meeting on your calendar.
+date|ngày tháng|a numbered day in a month|Write the date above your answer.
+birthday|sinh nhật|the anniversary of someone's birth|My birthday is next week.
+holiday|ngày nghỉ; kỳ nghỉ|a day or period without usual work|We are planning a short holiday.
+festival|lễ hội|an organized celebration or cultural event|The festival brings everyone together.
+@Time and calendar|noun|A2
+past|quá khứ|the time before now|This museum tells stories about the past.
+present|hiện tại|the time happening now|Focus on the present for a moment.
+future|tương lai|the time that has not happened yet|We talked about our plans for the future.
+moment|khoảnh khắc|a very short period|Wait a moment while I check.
+period|giai đoạn|a length of time|It was a busy period for us.
+@Nature and weather|noun|A1
+world|thế giới|the earth and its people|People around the world enjoy music.
+earth|trái đất; đất|the planet where we live|The earth looks blue from space.
+sky|bầu trời|the space visible above the earth|The sky turned pink at sunset.
+sun|mặt trời|the star that lights our planet|The sun appeared behind the clouds.
+moon|mặt trăng|the natural satellite of earth|The moon is bright tonight.
+star|ngôi sao|a distant glowing body in space|One star appeared above the hill.
+cloud|đám mây|a mass of water droplets in the sky|A dark cloud covered the sun.
+rain|mưa|water falling from clouds|The rain stopped before lunch.
+wind|gió|moving air|The wind shook the branches.
+snow|tuyết|frozen flakes falling from clouds|Snow covered the mountain road.
+storm|bão; giông|severe weather with strong wind|The storm passed during the night.
+thunder|sấm|the loud sound following lightning|We heard thunder in the distance.
+lightning|chớp; sét|a bright electrical flash in the sky|Lightning lit up the dark clouds.
+rainbow|cầu vồng|an arc of colors after rain|A rainbow appeared above the fields.
+weather|thời tiết|the outdoor conditions at a time|The weather changed quickly today.
+temperature|nhiệt độ|a measure of how hot something is|The temperature dropped after sunset.
+air|không khí|the gases surrounding the earth|The air feels fresh this morning.
+sea|biển|a large body of salt water|We could see the sea from here.
+ocean|đại dương|a vast body of salt water|The ship crossed the ocean.
+river|sông|a large natural flowing watercourse|A river runs through our town.
+lake|hồ|a large inland body of water|We walked around the lake.
+pond|ao|a small still body of water|Frogs live in the garden pond.
+stream|suối|a small flowing watercourse|We crossed a shallow stream.
+waterfall|thác nước|water dropping from a height|The waterfall was loud after the rain.
+beach|bãi biển|land beside water covered in sand|We collected shells on the beach.
+sand|cát|tiny loose grains of rock|Sand got into my shoes.
+island|đảo|land completely surrounded by water|A small boat reached the island.
+mountain|núi|a very high natural landform|The mountain is hidden by clouds.
+hill|đồi|a raised area lower than a mountain|We climbed the hill at sunrise.
+valley|thung lũng|low land between hills or mountains|A river flows through the valley.
+field|cánh đồng|an open area of land|The field is full of flowers.
+grass|cỏ|a low plant with narrow leaves|The grass is wet this morning.
+tree|cây|a tall plant with a woody trunk|We rested under a large tree.
+leaf|lá|a flat green part of a plant|A yellow leaf fell into the water.
+flower|hoa|the colorful reproductive part of a plant|This flower opens in the morning.
+root|rễ|the underground part absorbing water|The root grew around a stone.
+seed|hạt giống|a plant part that can grow anew|Put one seed in each hole.
+soil|đất trồng|the upper layer where plants grow|The soil feels dry today.
+stone|hòn đá|a small piece of rock|A smooth stone lay on the path.
+rock|đá; tảng đá|hard natural mineral material|We sat on a flat rock.
+@Nature and weather|noun|A2
+cave|hang động|a natural underground chamber|The cave entrance is narrow.
+desert|sa mạc|land with very little rain|The desert is cold at night.
+coast|bờ biển|land next to the sea|The road follows the coast.
+wave|sóng|a moving ridge of water|A wave washed over our feet.
+tide|thủy triều|the regular rise and fall of sea level|The tide covered the lower beach.
+fog|sương mù|a thick cloud near the ground|Fog hid the far end of the bridge.
+breeze|gió nhẹ|a gentle wind|A cool breeze entered the room.
+sunrise|bình minh|the time when the sun appears|We left the house before sunrise.
+sunset|hoàng hôn|the time when the sun disappears|The lake looked golden at sunset.
+shade|bóng râm|an area sheltered from sunlight|We sat in the shade.
+@Animals|noun|A1
+animal|động vật|a living creature that eats and moves|Which animal left these tracks?
+pet|thú cưng|an animal kept for companionship|Our pet sleeps by the window.
+dog|chó|a common domestic canine|The dog waited by the gate.
+cat|mèo|a small domestic feline|The cat jumped onto the sofa.
+bird|chim|an animal with feathers and wings|A bird sang outside my window.
+rabbit|thỏ|a small mammal with long ears|The rabbit hid behind the box.
+hamster|chuột hamster|a small rodent often kept as a pet|The hamster filled its cheeks with food.
+mouse|chuột nhắt|a small rodent with a long tail|A mouse ran behind the cupboard.
+rat|chuột cống|a rodent larger than a mouse|A rat disappeared into the drain.
+horse|ngựa|a large riding or working animal|The horse walked across the field.
+cow|bò cái|a female bovine animal|The cow stood beside the fence.
+pig|lợn|a farm animal with a flat snout|The pig rolled in the mud.
+sheep|cừu|a farm animal raised for wool|One sheep stood apart from the flock.
+goat|dê|a horned animal related to sheep|The goat climbed onto a rock.
+duck|vịt|a water bird with a broad bill|A duck swam across the pond.
+goose|ngỗng|a large water bird with a long neck|The goose stood near the water.
+turkey|gà tây|a large bird with a fan-shaped tail|The turkey walked around the farmyard.
+rooster|gà trống|an adult male chicken|The rooster woke us before sunrise.
+hen|gà mái|an adult female chicken|The hen sat beside her chicks.
+donkey|lừa|a long-eared working animal|The donkey carried bags up the path.
+elephant|voi|a large mammal with a trunk|The elephant used its trunk to drink.
+tiger|hổ|a large striped wild cat|The tiger rested in the shade.
+lion|sư tử|a large wild cat with a mane in males|The lion slept under a tree.
+bear|gấu|a large heavy mammal with thick fur|The bear searched for berries.
+monkey|khỉ|a primate with a long tail in many species|The monkey climbed a branch.
+giraffe|hươu cao cổ|a tall African mammal with a long neck|The giraffe reached the highest leaves.
+zebra|ngựa vằn|an African animal with striped fur|The zebra walked across the grass.
+kangaroo|chuột túi|a hopping mammal that carries young in a pouch|The kangaroo moved in long jumps.
+panda|gấu trúc|a black-and-white bear that eats bamboo|The panda held a bamboo stalk.
+deer|hươu; nai|a hoofed animal often with antlers|A deer crossed the woodland path.
+fox|cáo|a wild canine with a bushy tail|The fox vanished into the bushes.
+wolf|sói|a wild canine living in packs|A wolf howled in the distance.
+squirrel|sóc|a small rodent with a bushy tail|The squirrel carried a nut away.
+hedgehog|nhím nhỏ|a small mammal covered in spines|A hedgehog curled into a ball.
+bat|dơi|a mammal capable of powered flight|A bat flew above the garden.
+snake|rắn|a long reptile without legs|The snake moved through the grass.
+lizard|thằn lằn|a scaly reptile usually with four legs|A lizard rested on the warm wall.
+turtle|rùa|a reptile with a protective shell|The turtle moved toward the water.
+crocodile|cá sấu|a large aquatic reptile with strong jaws|The crocodile lay beside the river.
+frog|ếch|an amphibian with long jumping legs|A frog jumped into the pond.
+whale|cá voi|a very large marine mammal|The whale surfaced near the boat.
+dolphin|cá heo|a marine mammal with a curved mouth|A dolphin swam alongside us.
+shark|cá mập|a predatory fish with a cartilaginous skeleton|The shark moved through deep water.
+octopus|bạch tuộc|a sea animal with eight arms|The octopus hid among the rocks.
+jellyfish|sứa|a soft sea animal with trailing tentacles|A jellyfish floated near the surface.
+butterfly|bướm|an insect with large colorful wings|A butterfly landed on the flower.
+bee|ong|a flying insect that gathers nectar|A bee moved between the blossoms.
+ant|kiến|a small social insect|An ant carried a tiny seed.
+mosquito|muỗi|a small flying insect that may bite|A mosquito buzzed near my ear.
+spider|nhện|a small animal with eight legs|The spider built a web overnight.
+@Transport|noun|A1
+car|ô tô|a road vehicle for a few people|Our car is parked outside.
+bus|xe buýt|a large passenger road vehicle|The bus stops near my house.
+train|tàu hỏa|a linked vehicle running on rails|The train leaves in ten minutes.
+plane|máy bay|a powered aircraft with wings|Our plane landed before noon.
+boat|thuyền|a small vessel traveling on water|We crossed the river by boat.
+ship|tàu thủy|a large vessel for sea travel|The ship carried goods to the island.
+bicycle|xe đạp|a two-wheeled vehicle powered by pedals|My bicycle has a basket.
+bike|xe đạp; xe máy|an informal name for a bicycle or motorcycle|I locked my bike outside.
+motorcycle|xe máy|a motor-powered two-wheeled vehicle|His motorcycle needs fuel.
+taxi|xe taxi|a car hired with a driver|We took a taxi to the hotel.
+truck|xe tải|a large vehicle carrying goods|The truck delivered new chairs.
+van|xe tải nhỏ|a covered vehicle for goods or passengers|The van is full of boxes.
+tram|xe điện|a passenger vehicle running on street rails|The tram stops outside the museum.
+subway|tàu điện ngầm|an underground urban railway|We take the subway to work.
+ferry|phà|a boat carrying people across water|The ferry leaves every hour.
+helicopter|trực thăng|an aircraft lifted by rotating blades|A helicopter flew over the harbor.
+scooter|xe tay ga|a small motor vehicle with a foot platform|She parked her scooter by the shop.
+vehicle|phương tiện giao thông|something used to transport people or goods|Only one vehicle can cross at once.
+wheel|bánh xe|a round part enabling movement|The front wheel needs air.
+tire|lốp xe|a rubber covering around a wheel|The tire is completely flat.
+engine|động cơ|a machine producing movement|The engine started on the first try.
+seat|chỗ ngồi|a place designed for sitting|There is a seat near the door.
+seat belt|dây an toàn|a strap securing a vehicle passenger|Fasten your seat belt before departure.
+helmet|mũ bảo hiểm|a hard protective head covering|Wear a helmet when riding.
+ticket|vé|proof of permission to travel or enter|Keep your ticket until the exit.
+driver|tài xế|a person controlling a vehicle|The driver waited for us.
+passenger|hành khách|someone traveling without controlling the vehicle|Each passenger has a numbered seat.
+pilot|phi công|a person controlling an aircraft|The pilot announced our arrival time.
+traffic|giao thông; xe cộ|vehicles moving along roads|Traffic is heavy this morning.
+traffic light|đèn giao thông|a signal controlling road movement|Stop when the traffic light is red.
+sign|biển báo|a notice giving information|The sign points toward the station.
+map|bản đồ|a drawing showing locations|Find our village on the map.
+direction|hướng|the course something moves toward|The bus went in the opposite direction.
+distance|khoảng cách|the space between two places|The distance is about five kilometers.
+speed|tốc độ|how fast something moves|Reduce your speed near the school.
+trip|chuyến đi|a visit involving travel|Our trip lasted three days.
+tour|chuyến tham quan|a planned visit around places|The tour starts at the main gate.
+flight|chuyến bay|a journey through the air|Our flight arrives this evening.
+journey time|thời gian hành trình|the duration of a trip|The journey time is two hours.
+fuel|nhiên liệu|material used to produce energy|The truck needs more fuel.
+@Transport|noun|A2
+brake|phanh|a device that slows movement|The rear brake needs adjusting.
+steering wheel|vô lăng|the wheel used to direct a vehicle|Keep both hands on the steering wheel.
+license|giấy phép|official permission for an activity|He applied for a driving license.
+intersection|giao lộ|a place where roads meet|Turn right at the next intersection.
+roundabout|vòng xuyến|a circular road junction|Take the second exit at the roundabout.
+sidewalk|vỉa hè|a path for pedestrians beside a road|Walk on the sidewalk here.
+pedestrian|người đi bộ|a person traveling on foot|A pedestrian waited at the crossing.
+highway|đường cao tốc; quốc lộ|a major road for long-distance travel|The highway connects the two cities.
+harbor|cảng|a sheltered place for ships|Fishing boats returned to the harbor.
+traffic jam|tắc đường|a long queue of slow vehicles|We missed lunch because of a traffic jam.
+@Hobbies and sport|noun|A1
+hobby|sở thích|an activity enjoyed in spare time|Photography is my favorite hobby.
+game|trò chơi|an activity with rules for enjoyment|This game needs four players.
+toy|đồ chơi|an object children play with|The toy is made of wood.
+ball|quả bóng|a round object used in games|Kick the ball toward the goal.
+football|bóng đá|a sport played by kicking a ball|We play football after school.
+basketball|bóng rổ|a sport of throwing into raised hoops|She plays basketball every weekend.
+volleyball|bóng chuyền|a sport of hitting a ball over a net|Our class enjoys volleyball.
+tennis|quần vợt|a racket sport played across a net|They play tennis on Sundays.
+badminton|cầu lông|a racket sport using a shuttlecock|We play badminton in the yard.
+baseball|bóng chày|a bat-and-ball team sport|He learned baseball from his cousin.
+golf|gôn|a sport of hitting balls into holes|The club offers golf lessons.
+chess|cờ vua|a strategy game with thirty-two pieces|My grandfather taught me chess.
+puzzle|trò đố; trò ghép hình|a problem solved for enjoyment|We finished the puzzle together.
+card|lá bài; thẻ|a small stiff piece of paper|Choose a card from the pack.
+music|âm nhạc|organized sounds with rhythm or melody|Soft music filled the cafe.
+song|bài hát|words performed to a melody|This song reminds me of home.
+piano|đàn piano|a large keyboard instrument|She plays the piano beautifully.
+guitar|đàn ghi ta|a string instrument usually with six strings|He practices guitar after dinner.
+violin|đàn vĩ cầm|a small string instrument played with a bow|The violin has a clear sound.
+drum|trống|an instrument struck to make rhythm|The drum kept a steady beat.
+flute|sáo|a wind instrument held across the mouth|A flute played the opening melody.
+concert|buổi hòa nhạc|a public musical performance|The concert begins at seven.
+band|ban nhạc|a group playing music together|The band performed three new songs.
+singer|ca sĩ|a person who sings|The singer thanked the audience.
+actor|diễn viên|a person performing a dramatic role|The actor spoke to the students.
+film|phim|a recorded moving-picture story|The film lasts ninety minutes.
+movie|bộ phim|a story shown in moving pictures|We watched a movie together.
+photo|ảnh|an image captured by a camera|This photo shows our old house.
+camera|máy ảnh|a device for taking pictures|Her camera fits in one hand.
+art|nghệ thuật|creative work expressing ideas or beauty|The school displays student art.
+picture|bức tranh; bức ảnh|a visual image|Hang the picture above the desk.
+painting|tranh vẽ|a picture made with paint|The painting shows a quiet village.
+drawing|bản vẽ|a picture made with lines|Your drawing has many details.
+book|sách|bound pages of written material|This book has short chapters.
+story|câu chuyện|an account of events|Tell us a story about your childhood.
+novel|tiểu thuyết|a long fictional story|I borrowed a novel yesterday.
+poem|bài thơ|a piece of expressive patterned writing|She wrote a poem about rain.
+magazine|tạp chí|a regular publication with articles|This magazine includes travel stories.
+comic|truyện tranh|a story told through illustrated panels|My brother draws a comic every week.
+sport|thể thao|a physical activity with rules|Swimming is my favorite sport.
+match|trận đấu|a contest between players or teams|The match ended before sunset.
+race|cuộc đua|a contest of speed|The race starts at the bridge.
+player|người chơi; cầu thủ|someone taking part in a game|Each player wears a number.
+coach|huấn luyện viên|a person training a sports team|The coach explained the new exercise.
+goal|mục tiêu; bàn thắng|an aim or a score in sport|Our goal is to practice daily.
+score|điểm số|the number of points earned|The final score was very close.
+winner|người thắng cuộc|the person who wins|The winner received a small trophy.
+medal|huy chương|an award worn or displayed|She won a medal for swimming.
+camping|việc cắm trại|staying outdoors in a tent|We went camping beside the lake.
+picnic|buổi dã ngoại ăn uống|a meal eaten outdoors|We packed sandwiches for the picnic.
+@School and language|noun|A1
+class|lớp học|a group taught together|Our class has twenty students.
+classroom|phòng học|a room where lessons take place|The classroom has large windows.
+course|khóa học|a planned series of lessons|This course lasts eight weeks.
+subject|môn học|an area studied at school|History is her favorite subject.
+math|toán học|the study of numbers and shapes|We have math after lunch.
+science|khoa học|the systematic study of the natural world|Our science lesson uses simple experiments.
+history|lịch sử|the study of past events|This book explains the town's history.
+geography|địa lý|the study of places and the earth|We use maps in geography class.
+language|ngôn ngữ|a system of words for communication|Learning a language takes practice.
+English|tiếng Anh|the language used in this course|We practice English for ten minutes.
+Vietnamese|tiếng Việt|the main language of Vietnam|The instructions are also in Vietnamese.
+word|từ|a unit of language with meaning|Use the new word in a sentence.
+sentence|câu|words forming a complete statement|Read the sentence one more time.
+letter|chữ cái; lá thư|a written character or message|The first letter of my name is M.
+alphabet|bảng chữ cái|the ordered letters of a language|The children sing the alphabet.
+sound|âm thanh|something you can hear|Listen to the sound at the end.
+meaning|nghĩa|what a word or message expresses|Check the meaning in the dictionary.
+example|ví dụ|something showing how an idea works|Give one example of a healthy snack.
+question|câu hỏi|words asking for information|Write a question about the picture.
+homework|bài tập về nhà|school work completed outside class|I finished my homework before dinner.
+test|bài kiểm tra|a task measuring knowledge or ability|The test has ten questions.
+exam|kỳ thi|a formal assessment of learning|Our final exam is next week.
+grade|điểm; cấp lớp|a mark showing work quality|She received a good grade.
+mark|điểm đánh giá|a score given for work|This question is worth one mark.
+mistake|lỗi sai|something done incorrectly|Correct the mistake in this sentence.
+rule|quy tắc|an instruction governing behavior|Read the rule before playing.
+page|trang|one side of a sheet|Turn to the next page.
+chapter|chương|a main division of a book|The first chapter is very short.
+notebook|vở|a book of blank writing pages|Keep new words in a notebook.
+textbook|sách giáo khoa|a book used for formal study|Our textbook includes audio exercises.
+dictionary|từ điển|a reference explaining words|Look up the spelling in a dictionary.
+pen|bút mực|a writing tool using ink|May I borrow your pen?
+pencil|bút chì|a writing tool with a graphite core|Draw the outline with a pencil.
+eraser|cục tẩy|a tool for removing pencil marks|My eraser is in the blue box.
+ruler|thước kẻ|a straight tool for measuring|Use a ruler to draw the line.
+scissors|kéo|a cutting tool with two blades|Pass me the scissors, please.
+paper|giấy|a thin material for writing|Fold the paper in half.
+board|bảng|a surface used for displaying writing|Copy the sentence from the board.
+chalk|phấn|a soft material used for writing|The teacher picked up white chalk.
+glue|keo dán|a substance that sticks things together|Use glue to attach the picture.
+@School and language|noun|A2
+grammar|ngữ pháp|rules for combining words|This exercise practices basic grammar.
+vocabulary|từ vựng|the words known or used|Reading helps build your vocabulary.
+pronunciation|cách phát âm|the way a word is spoken|Listen carefully to the pronunciation.
+spelling|chính tả|the correct letters of a word|Check the spelling of this name.
+translation|bản dịch; việc dịch|meaning expressed in another language|Compare your translation with the example.
+paragraph|đoạn văn|a group of related written sentences|Write a paragraph about your family.
+essay|bài luận|a short piece of structured writing|Her essay describes life in the village.
+presentation|bài thuyết trình|a prepared talk for an audience|Our presentation includes three pictures.
+certificate|chứng chỉ|an official document confirming achievement|They received a certificate after the course.
+degree|bằng đại học|a qualification awarded by a university|She completed a degree in education.
+@Work|noun|A2
+job|công việc|paid work done regularly|She found a job near home.
+career|sự nghiệp|a person's working life|He began his career as a teacher.
+company|công ty|an organization selling goods or services|The company makes school furniture.
+business|doanh nghiệp; kinh doanh|an organization or activity selling things|Their business started in a small room.
+employee|nhân viên|a person paid to work for someone|Each employee has a name badge.
+employer|người sử dụng lao động|a person or organization hiring workers|The employer provides safety training.
+manager|người quản lý|someone responsible for directing work|The manager answered our questions.
+boss|sếp|the person directing your work|My boss approved the new schedule.
+staff|đội ngũ nhân viên|the people working in an organization|The staff are preparing the room.
+worker|người lao động|someone who does a job|A worker repaired the broken gate.
+assistant|trợ lý|someone helping another person work|The assistant organized the documents.
+secretary|thư ký|someone handling an office's administrative tasks|The secretary arranged the meeting.
+receptionist|nhân viên lễ tân|someone welcoming visitors at a desk|The receptionist gave us directions.
+engineer|kỹ sư|a person designing technical structures or systems|The engineer inspected the bridge.
+architect|kiến trúc sư|a person who designs buildings|The architect showed us the drawings.
+accountant|kế toán viên|a person managing financial records|Our accountant checks the monthly totals.
+lawyer|luật sư|a professional advising on the law|The lawyer read the agreement carefully.
+chef|đầu bếp|a professional who prepares food|The chef created a new dish.
+waiter|nhân viên phục vụ bàn|a person serving restaurant customers|The waiter brought our drinks.
+farmer|nông dân|a person growing crops or raising animals|The farmer planted rice this week.
+mechanic|thợ máy|someone who repairs machines or vehicles|The mechanic checked the engine.
+electrician|thợ điện|someone who installs electrical systems|An electrician repaired the kitchen light.
+plumber|thợ sửa ống nước|someone who installs or repairs pipes|The plumber fixed the leaking tap.
+carpenter|thợ mộc|someone making things from wood|The carpenter built a bookshelf.
+cleaner|nhân viên vệ sinh|someone paid to clean places|The cleaner starts before the office opens.
+guard|bảo vệ|someone protecting a place|The guard checked the entrance.
+firefighter|lính cứu hỏa|a person trained to put out fires|A firefighter spoke at our school.
+police officer|cảnh sát|a person enforcing the law|The police officer directed traffic.
+reporter|phóng viên|someone gathering and presenting news|The reporter interviewed the volunteers.
+photographer|nhiếp ảnh gia|a person taking photographs professionally|The photographer adjusted the light.
+designer|nhà thiết kế|a person planning how things look or work|The designer chose a simpler layout.
+developer|lập trình viên; nhà phát triển|someone who creates software|The developer fixed the search feature.
+technician|kỹ thuật viên|someone maintaining specialist equipment|The technician tested the microphone.
+scientist|nhà khoa học|someone investigating the natural world|The scientist recorded the results.
+artist|nghệ sĩ|someone creating works of art|The artist painted the market scene.
+writer|nhà văn; người viết|a person who writes books or texts|The writer visited our reading club.
+translator|biên dịch viên|someone converting text between languages|The translator checked each sentence.
+volunteer|tình nguyện viên|someone working without pay by choice|A volunteer showed us the way.
+application|đơn ứng tuyển|a formal request for a position|Submit your application before Friday.
+resume|sơ yếu lý lịch nghề nghiệp|a summary of skills and work experience|Update your resume with your latest role.
+contract|hợp đồng|a formal agreement between parties|Both sides signed the contract.
+shift|ca làm việc|a scheduled period of work|Her shift starts at six.
+overtime|giờ làm thêm|work beyond normal working hours|We worked overtime to finish the order.
+report|báo cáo|an organized account of information|The report explains the survey results.
+project|dự án|a planned piece of work|Our project lasts three months.
+department|phòng ban|a division of an organization|The sales department moved upstairs.
+position|vị trí công việc|a role within an organization|She applied for a teaching position.
+profession|nghề chuyên môn|work requiring particular training|Nursing is a demanding profession.
+experience|kinh nghiệm|knowledge gained by doing things|This role gives you useful experience.
+qualification|bằng cấp; năng lực đạt chuẩn|evidence of training or ability|The course provides a recognized qualification.
+@Ideas and relationships|noun|A2
+idea|ý tưởng|a thought or possible plan|Your idea could save time.
+thought|suy nghĩ|something formed in the mind|Write one thought about the story.
+opinion|ý kiến|a personal belief or judgment|Everyone can share an opinion.
+fact|sự thật|something known to be true|Check each fact before publishing.
+reason|lý do|an explanation for an action|What is the reason for the change?
+cause|nguyên nhân|something that makes an event happen|We discussed the cause of the delay.
+effect|tác động; kết quả|a change produced by something|The new rule had a positive effect.
+result|kết quả|what happens because of an action|The result surprised the whole team.
+problem|vấn đề|a difficulty needing attention|We found a problem with the door.
+solution|giải pháp|a way to deal with a problem|This solution works for both groups.
+choice|lựa chọn|an act or option of choosing|You have a choice of three meals.
+decision|quyết định|a choice made after thinking|We made the decision together.
+chance|cơ hội; khả năng|an opportunity or possibility|This is your chance to practice.
+opportunity|cơ hội|a favorable situation for action|The trip offers an opportunity to learn.
+risk|rủi ro|the possibility of an unwanted outcome|The team discussed the risk of delay.
+success|thành công|the achievement of a desired outcome|The event was a great success.
+failure|thất bại|an unsuccessful result|We learned from our first failure.
+effort|nỗ lực|energy used to achieve something|Your effort is making a difference.
+purpose|mục đích|the reason something is done|What is the purpose of this exercise?
+benefit|lợi ích|a helpful or positive effect|One benefit is the shorter journey.
+advantage|lợi thế|something making success more likely|Local knowledge gives us an advantage.
+disadvantage|bất lợi|something making success harder|The main disadvantage is the cost.
+difference|sự khác biệt|a way things are not alike|Notice the difference between these sounds.
+similarity|sự tương đồng|a way things are alike|There is a similarity between the patterns.
+relationship|mối quan hệ|a connection between people or things|They have a close working relationship.
+friendship|tình bạn|a bond between friends|Their friendship began at school.
+trust|sự tin tưởng|confidence in someone's reliability|Trust grows through honest conversation.
+respect|sự tôn trọng|regard for someone's feelings or value|We treat each other with respect.
+support|sự hỗ trợ|help given to someone|Thank you for your support.
+advice|lời khuyên|suggestions about what to do|Her advice helped me prepare.
+information|thông tin|facts about a subject|More information is available at reception.
+news|tin tức|information about recent events|She shared the good news with us.
+message|tin nhắn; thông điệp|information sent to someone|I left a message for you.
+conversation|cuộc trò chuyện|an exchange of spoken ideas|We had a short conversation outside.
+discussion|cuộc thảo luận|a talk examining a topic|The discussion lasted twenty minutes.
+argument|cuộc tranh luận|a disagreement expressed in words|The argument ended with an apology.
+agreement|sự đồng thuận; thỏa thuận|a shared decision or arrangement|We reached an agreement on the date.
+apology|lời xin lỗi|words expressing regret|She sent a written apology.
+invitation|lời mời|a request for someone to attend|We received an invitation to the concert.
+greeting|lời chào|words used when meeting someone|He gave us a cheerful greeting.
+feeling|cảm xúc|an emotional experience|Describe the feeling in one word.
+emotion|xúc cảm|a strong inner feeling|The music expresses a powerful emotion.
+happiness|niềm hạnh phúc|a state of joy or satisfaction|Her face showed real happiness.
+fear|nỗi sợ|an emotion caused by possible danger|He spoke openly about his fear.
+anger|sự tức giận|a strong feeling of displeasure|She expressed her anger calmly.
+surprise|sự bất ngờ|a reaction to the unexpected|The gift was a lovely surprise.
+memory|ký ức; trí nhớ|something remembered or the ability to remember|This photo brings back a happy memory.
+dream|giấc mơ; ước mơ|an imagined experience or desired future|My dream is to open a bakery.
+attention|sự chú ý|focused thought or observation|Pay attention to the final sound.
+interest|sự quan tâm|a desire to know about something|She has an interest in science.
+@Common adjectives|adjective|A2
+simple|đơn giản|easy to understand or do|The instructions are simple and clear.
+complex|phức tạp|having many connected parts|This is a complex problem.
+clear|rõ ràng|easy to see or understand|Please give clear directions.
+dark|tối|having little or no light|The room became dark after sunset.
+bright|sáng|giving or reflecting much light|The kitchen has bright morning light.
+colorful|nhiều màu sắc|having many colors|The market sells colorful fabrics.
+plain|trơn; giản dị|without decoration or extra detail|I chose a plain white shirt.
+round|tròn|shaped like a circle or ball|We sat at a round table.
+flat|phẳng|level and even|Place the box on a flat surface.
+deep|sâu|extending far below a surface|The water is deep near the bridge.
+shallow|nông|not extending far below a surface|The children played in shallow water.
+smooth|nhẵn; mịn|having an even surface|The stone feels smooth in my hand.
+rough|thô ráp|having an uneven surface|The wall feels rough to touch.
+sharp|sắc; nhọn|having a fine cutting edge|Be careful with the sharp knife.
+blunt|cùn|not having a sharp edge|This blunt pencil needs sharpening.
+loose|lỏng|not firmly attached or tight|The handle is a little loose.
+tight|chật; chặt|fitting closely or held firmly|These shoes are too tight.
+comfortable|thoải mái|giving physical ease|The chair is very comfortable.
+uncomfortable|không thoải mái|causing physical unease|The hard seat was uncomfortable.
+modern|hiện đại|using recent ideas or design|The library has a modern reading room.
+traditional|truyền thống|following long-established customs|They served a traditional meal.
+ancient|cổ xưa|belonging to a very distant past|We visited an ancient temple.
+local|địa phương|belonging to a nearby area|We buy food from local farmers.
+foreign|nước ngoài|from another country|She enjoys learning foreign languages.
+public|công cộng|available to people generally|The town needs more public spaces.
+private|riêng tư; tư nhân|intended for particular people only|This is a private meeting.
+personal|cá nhân|belonging to one person|Keep your personal notes separate.
+common|phổ biến|happening or found often|This is a common spelling mistake.
+rare|hiếm|not often found or seen|The garden has a rare flower.
+usual|thường lệ|normal for a person or situation|We met at the usual time.
+unusual|khác thường|different from what is expected|That bird has unusual markings.
+regular|đều đặn|happening at consistent intervals|Regular practice helps me remember.
+daily|hằng ngày|happening every day|Reading is part of my daily routine.
+weekly|hằng tuần|happening every week|Our weekly meeting is short.
+monthly|hằng tháng|happening every month|The club sends a monthly newsletter.
+annual|hằng năm|happening once each year|The village holds an annual festival.
+available|có sẵn|ready to be used or obtained|A smaller room is available.
+necessary|cần thiết|needed for a purpose|A ticket is necessary for entry.
+extra|thêm|more than the usual amount|Bring an extra pair of socks.
+basic|cơ bản|forming the simplest starting level|The course teaches basic cooking skills.
+complete|hoàn chỉnh|having all required parts|The complete list is on the board.
+correct|chính xác|free from errors|Choose the correct word.
+perfect|hoàn hảo|without faults|This corner is perfect for reading.
+excellent|xuất sắc|extremely good|You gave an excellent presentation.
+terrible|rất tệ|extremely unpleasant or bad|The storm caused terrible damage.
+awful|tồi tệ|very unpleasant|The old bin has an awful smell.
+wonderful|tuyệt vời|very pleasing or impressive|We had a wonderful trip.
+amazing|đáng kinh ngạc|causing great surprise or admiration|The view from here is amazing.
+boring|nhàm chán|not interesting|The long wait was boring.
+delicious|ngon|very pleasant to taste|The homemade soup is delicious.
+@Money and shopping|noun|A1
+money|tiền|what people use to buy things|I saved money for a new bike.
+cash|tiền mặt|money in notes and coins|This stall accepts cash only.
+coin|đồng xu|a small metal piece of money|A coin fell from my pocket.
+price|giá|the amount charged for something|The price includes breakfast.
+sale|đợt giảm giá; việc bán|an event offering goods at lower prices|I bought this coat in a sale.
+order|đơn hàng|a request to buy something|Our order arrived this morning.
+product|sản phẩm|something made to be sold|The label describes the product.
+item|món; mục|one thing in a collection|One item is missing from the bag.
+package|gói hàng|a wrapped object for delivery|The package arrived before noon.
+box|hộp|a container with flat sides|Keep the spare parts in this box.
+basket|giỏ|a container used for carrying things|Put the apples in the basket.
+cart|xe đẩy|a wheeled container for carrying goods|The cart is full of vegetables.
+counter|quầy|a long surface for serving customers|Please pay at the counter.
+label|nhãn|a tag giving information|Read the label before washing.
+brand|nhãn hiệu|a name identifying a company's products|This brand makes sturdy backpacks.
+gift|quà tặng|something given without payment|We brought a small gift.
+cashier|thu ngân|a person receiving customer payments|The cashier counted the change.
+seller|người bán|a person offering goods for payment|The seller answered our questions.
+buyer|người mua|a person purchasing something|The buyer inspected the bicycle.
+payment|khoản thanh toán|money given for goods or services|Your payment was received today.
+@Money and shopping|noun|A2
+account|tài khoản|a record holding money or transactions|I opened a savings account.
+deposit|tiền gửi; tiền đặt cọc|money paid in or left as security|We paid a deposit for the room.
+loan|khoản vay|money borrowed for later repayment|The family discussed the loan terms.
+debt|khoản nợ|money owed to someone|They recorded the remaining debt.
+income|thu nhập|money received from work or other sources|Her income changes each month.
+expense|chi phí|money spent on a need|Transport is our largest monthly expense.
+savings|tiền tiết kiệm|money kept for future use|We used our savings to buy tools.
+profit|lợi nhuận|money remaining after costs|The shop made a small profit.
+loss|khoản lỗ; sự mất mát|money lost in an activity|The event ended with a small loss.
+tax|thuế|money collected by a government|The price shown includes tax.
+fee|lệ phí|a payment for a service|The course fee includes materials.
+rent|tiền thuê|regular payment for using property|The rent is due next week.
+tip|tiền boa|extra money for service|They left a tip on the table.
+currency|tiền tệ|the money used in a country|Which currency does this country use?
+exchange rate|tỷ giá|the value of one currency in another|The board shows the exchange rate.
+credit card|thẻ tín dụng|a payment card using borrowed funds|She paid with a credit card.
+debit card|thẻ ghi nợ|a card drawing money from an account|I used my debit card at the store.
+banknote|tờ tiền|a paper piece of currency|The banknote was folded in half.
+cent|xu|one hundredth of certain currencies|The total ends in one cent.
+dollar|đô la|a currency unit in several countries|This postcard costs one dollar.
+euro|đồng euro|a currency used by many European countries|The machine accepts a one-euro coin.
+receipt number|số biên lai|an identifier printed on a receipt|Write the receipt number on the form.
+coupon|phiếu giảm giá|a voucher offering a price reduction|This coupon is valid until Friday.
+voucher|phiếu mua hàng|a document redeemable for goods or services|She received a book voucher.
+invoice|hóa đơn thanh toán|a document requesting payment|The invoice lists each item separately.
+subscription|gói đăng ký định kỳ|an arrangement for regular paid access|My magazine subscription ends in June.
+purchase|món hàng mua; việc mua|something obtained by paying|Keep proof of your purchase.
+return policy|chính sách đổi trả|rules for bringing purchases back|Read the return policy before buying.
+quality|chất lượng|how good something is|The fabric is of good quality.
+value|giá trị|the worth or usefulness of something|This repair adds value to the bike.
+@Everyday verbs|verb|A2
+prepare|chuẩn bị|to get ready for something|We prepare lunch before the guests arrive.
+organize|sắp xếp; tổ chức|to arrange things in order|Organize your notes by topic.
+arrange|sắp đặt|to put things in a planned order|Arrange the chairs in a circle.
+develop|phát triển|to grow or improve over time|Reading helps develop language skills.
+improve|cải thiện|to make something better|Practice can improve your pronunciation.
+create|tạo ra|to bring something new into existence|Create a short story from these pictures.
+design|thiết kế|to plan how something will work or look|We design posters for the festival.
+produce|sản xuất; tạo ra|to make something|These trees produce sweet fruit.
+provide|cung cấp|to make something available|The school will provide all materials.
+include|bao gồm|to have something as a part|Include your phone number on the form.
+contain|chứa|to hold something inside|These boxes contain old photographs.
+belong|thuộc về|to be owned by someone|Does this bag belong to you?
+depend|phụ thuộc|to be determined by something else|Our plans depend on the weather.
+matter|quan trọng|to be important|Small details matter in this drawing.
+mean|có nghĩa là|to express a particular idea|What does this sign mean?
+recommend|khuyên dùng; đề xuất|to suggest something as a good choice|I recommend this book for beginners.
+notice|nhận thấy|to become aware of something|Did you notice the new sign?
+recognize|nhận ra|to identify something seen before|I recognize that voice.
+realize|nhận ra; hiểu ra|to become aware of a fact|I realize we need more time.
+imagine|tưởng tượng|to form an idea in your mind|Imagine a house beside the sea.
+expect|mong đợi; dự kiến|to think something will happen|We expect the guests at six.
+suppose|cho rằng|to think something is probably true|I suppose the shop is still open.
+consider|cân nhắc|to think about carefully|Consider both options before choosing.
+compare|so sánh|to examine similarities and differences|Compare the two pictures carefully.
+discover|khám phá; phát hiện|to find something previously unknown|We discover new paths on our walks.
+solve|giải quyết|to find an answer to a problem|Work together to solve the puzzle.
+manage|xoay xở; quản lý|to handle something successfully|We manage our time with a simple list.
+handle|xử lý|to deal with something|She can handle the next order.
+avoid|tránh|to keep away from something|Avoid the busy road at noon.
+impress|gây ấn tượng|to make someone admire something|Your careful work will impress the team.
+encourage|khuyến khích|to give someone confidence|We encourage everyone to ask questions.
+remind|nhắc nhở|to help someone remember|Please remind me about the meeting.
+require|yêu cầu; đòi hỏi|to need something|Some plants require very little water.
+demand|đòi hỏi|to ask firmly for something|Customers demand clear information about prices.
+respond|phản hồi|to give an answer|Please respond before Friday.
+reply|trả lời|to answer a message or question|I will reply after class.
+repeat|lặp lại|to say or do again|Repeat the sentence after the recording.
+review|ôn lại; xem xét lại|to examine or study again|Review yesterday's words before starting.
+translate|dịch|to express in another language|Translate the message into English.
+pronounce|phát âm|to make the sounds of a word|How do you pronounce this name?
+connect|kết nối|to join things together|Connect the dots with straight lines.
+separate|tách ra|to keep things apart|Separate the clean towels from the wet ones.
+divide|chia|to split into parts|Divide the paper into four sections.
+replace|thay thế|to put something new in place|Replace the broken handle with this one.
+increase|tăng|to make or become greater|We will increase the number of seats.
+decrease|giảm|to make or become smaller|The noise will decrease after the doors close.
+disappear|biến mất|to stop being visible|The hills disappear behind the clouds.
+appear|xuất hiện|to become visible|The first stars appear after sunset.
+survive|sống sót|to remain alive through difficulty|Some plants survive in very dry soil.
+celebrate|ăn mừng|to mark a happy occasion|We celebrate the end of the course.
+@Essential expressions|pronoun|A1
+I|tôi|the speaker referring to themself|I live near the school.
+you|bạn; các bạn|the person or people being addressed|You can sit beside me.
+he|anh ấy; ông ấy|a male person already mentioned|My brother is here; he brought lunch.
+she|cô ấy; bà ấy|a female person already mentioned|Mai is ready; she has her bag.
+it|nó|a thing or animal already mentioned|The box is small; it fits here.
+we|chúng tôi; chúng ta|the speaker and other people|We study together every evening.
+they|họ; chúng|people or things already mentioned|The children are here; they want to play.
+me|tôi (tân ngữ)|the speaker as the object|Please wait for me.
+him|anh ấy (tân ngữ)|a male person as the object|I gave him the notebook.
+her|cô ấy (tân ngữ)|a female person as the object|We invited her to lunch.
+us|chúng tôi (tân ngữ)|the speaker's group as the object|The teacher helped us finish.
+them|họ; chúng (tân ngữ)|mentioned people or things as the object|The cups are clean; put them away.
+someone|ai đó|an unspecified person|Someone left a bag here.
+everyone|mọi người|all the people in a group|Everyone brought something to share.
+nobody|không ai|not a single person|Nobody was waiting outside.
+@Essential expressions|preposition|A1
+in|trong|inside a place or period|The keys are in my bag.
+on|trên|resting against a surface|The book is on the desk.
+at|ở; tại|indicating a particular place or time|Meet me at the main gate.
+under|dưới|in a lower position than|The cat is under the chair.
+above|ở phía trên|in a higher position than|A lamp hangs above the table.
+below|ở phía dưới|at a lower level than|Write your name below the picture.
+between|giữa hai bên|in the space separating things|The cafe is between two shops.
+behind|phía sau|at the back of something|The garden is behind the house.
+beside|bên cạnh|at the side of something|Sit beside your partner.
+near|gần|a short distance from|The bank is near the station.
+with|với|together with another person or thing|I walk home with my sister.
+without|không có|not having or using something|He drinks tea without sugar.
+for|cho; trong khoảng|indicating purpose or duration|This gift is for you.
+from|từ|indicating a starting place or source|The bus comes from the airport.
+to|đến|indicating a destination|We walked to the park.
+@Essential expressions|conjunction|A1
+and|và|joining related words or ideas|We bought bread and milk.
+but|nhưng|joining contrasting ideas|The room is small but comfortable.
+or|hoặc|introducing an alternative|Would you like tea or juice?
+because|bởi vì|introducing a reason|We stayed inside because it rained.
+so|vì vậy|introducing a result|It was late, so we left.
+if|nếu|introducing a condition|Call me if you need help.
+although|mặc dù|introducing a contrasting fact|Although it rained, we enjoyed the trip.
+while|trong khi|during the time that|I read while my brother cooked.
+until|cho đến khi|up to the time that|Wait until the bus stops.
+unless|trừ khi|except if a condition holds|We will walk unless it rains.
+@Essential expressions|adverb|A1
+always|luôn luôn|on every occasion|I always check my bag before leaving.
+usually|thường xuyên|on most occasions|We usually eat at home.
+often|thường|many times|I often visit the library.
+sometimes|đôi khi|on some occasions|We sometimes walk by the river.
+never|không bao giờ|not at any time|I never leave my keys outside.
+now|bây giờ|at the present moment|You can open the box now.
+then|sau đó|at the next point in time|Wash the rice, then add water.
+today|hôm nay|on the current day|We have a new lesson today.
+yesterday|hôm qua|on the day before today|I finished the book yesterday.
+tomorrow|ngày mai|on the day after today|The shop will open tomorrow.
+here|ở đây|in this place|Please leave your shoes here.
+there|ở đó|in that place|The bus stop is over there.
+very|rất|to a high degree|The water is very cold.
+really|thật sự|to a genuine or strong degree|I really enjoyed the story.
+quite|khá|to a noticeable degree|The exercise is quite easy.
+almost|gần như|nearly but not completely|We are almost ready to leave.
+already|đã rồi|before the present or expected time|I have already packed my bag.
+still|vẫn|continuing up to now|The children are still playing.
+again|lại; lần nữa|one more time|Please read the sentence again.
+together|cùng nhau|with one another|We prepared the meal together.
+@Numbers and colors|number|A1
+zero|số không|the number representing none|The temperature fell to zero.
+one|số một|the number after zero|I need one more chair.
+two|số hai|the number after one|We have two tickets.
+three|số ba|the number after two|The room has three windows.
+four|số bốn|the number after three|Place four cups on the table.
+five|số năm|the number after four|The walk takes five minutes.
+six|số sáu|the number after five|There are six eggs left.
+seven|số bảy|the number after six|I wake up at seven.
+eight|số tám|the number after seven|The box holds eight books.
+nine|số chín|the number after eight|Nine students joined the club.
+ten|số mười|the number after nine|Count slowly from one to ten.
+eleven|số mười một|the number after ten|The bus arrives at eleven.
+twelve|số mười hai|the number after eleven|A year has twelve months.
+thirteen|số mười ba|the number after twelve|There are thirteen names on the list.
+fourteen|số mười bốn|the number after thirteen|We planted fourteen small trees.
+fifteen|số mười lăm|the number after fourteen|The break lasts fifteen minutes.
+sixteen|số mười sáu|the number after fifteen|The room has sixteen seats.
+seventeen|số mười bảy|the number after sixteen|Seventeen people came to the meeting.
+eighteen|số mười tám|the number after seventeen|The team collected eighteen bags of waste.
+nineteen|số mười chín|the number after eighteen|Nineteen letters arrived this morning.
+twenty|số hai mươi|the number equal to two tens|The class has twenty students.
+thirty|số ba mươi|the number equal to three tens|The lesson lasts thirty minutes.
+forty|số bốn mươi|the number equal to four tens|The bus carries forty passengers.
+fifty|số năm mươi|the number equal to five tens|We printed fifty copies.
+sixty|số sáu mươi|the number equal to six tens|An hour has sixty minutes.
+seventy|số bảy mươi|the number equal to seven tens|The library received seventy new books.
+eighty|số tám mươi|the number equal to eight tens|Eighty guests attended the event.
+ninety|số chín mươi|the number equal to nine tens|Count by tens until you reach ninety.
+hundred|một trăm|the number equal to ten tens|A hundred people joined the walk.
+thousand|một nghìn|the number equal to ten hundreds|The hall holds a thousand people.
+million|một triệu|the number equal to a thousand thousands|The city has over a million residents.
+first|thứ nhất|coming before all others|Read the first sentence aloud.
+third|thứ ba|coming after the second|Our classroom is on the third floor.
+fourth|thứ tư|coming after the third|Turn at the fourth street.
+fifth|thứ năm|coming after the fourth|The fifth question is quite easy.
+sixth|thứ sáu|coming after the fifth|My name is sixth on the list.
+seventh|thứ bảy|coming after the sixth|The seventh page has a map.
+eighth|thứ tám|coming after the seventh|She finished the race in eighth place.
+ninth|thứ chín|coming after the eighth|The ninth chapter explains the mystery.
+tenth|thứ mười|coming after the ninth|This is our tenth visit here.
+@Numbers and colors|adjective|A1
+black|màu đen|having the darkest color|I bought a black backpack.
+white|màu trắng|having the color of fresh snow|The walls are white.
+red|màu đỏ|having the color of ripe tomatoes|She wore a red hat.
+yellow|màu vàng|having the color of a ripe lemon|The kitchen has yellow curtains.
+blue|màu xanh dương|having the color of a clear sky|My notebook has a blue cover.
+green|màu xanh lá|having the color of grass|The door is painted green.
+brown|màu nâu|having the color of dark wood|He chose a brown jacket.
+pink|màu hồng|having a pale red color|The garden has pink flowers.
+purple|màu tím|having a color mixing red and blue|She carried a purple umbrella.
+gray|màu xám|having a color between black and white|Gray clouds covered the sky.
+golden|màu vàng óng|having the warm color of gold|The bread has a golden crust.
+@Numbers and colors|noun|A2
+circle|hình tròn|a round flat shape|Draw a circle around the answer.
+triangle|hình tam giác|a shape with three straight sides|Cut the paper into a triangle.
+rectangle|hình chữ nhật|a four-sided shape with right angles|The garden forms a long rectangle.
+oval|hình bầu dục|an elongated rounded shape|The mirror is shaped like an oval.
+cube|hình lập phương|a solid with six equal square faces|We built a cube from cardboard.
+sphere|hình cầu|a solid perfectly round in every direction|The model shows a smooth sphere.
+cone|hình nón|a solid narrowing to a point|Roll the paper into a cone.
+cylinder|hình trụ|a solid with two circular ends|The can is shaped like a cylinder.
+pyramid|hình chóp|a solid with triangular sides meeting above a base|Build a pyramid with these blocks.

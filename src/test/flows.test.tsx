@@ -1,14 +1,15 @@
 import { render, screen, waitFor, fireEvent, within } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { useApp } from '../app/store';
-import { db, defaults, resetData } from '../services/storage';
+import { db, defaults, resetData, exportData, importData } from '../services/storage';
 import Vocabulary from '../features/vocabulary/Vocabulary';
 import Reading from '../features/reading/Reading';
 import Listening from '../features/listening/Listening';
 import Speaking from '../features/speaking/Speaking';
 import Writing from '../features/writing/Writing';
 import Dashboard from '../features/dashboard/Dashboard';
-import { readings, listenings } from '../data/content';
+import { readings, listenings, vocabulary } from '../data/content';
+import { exportCSV, importCSV } from '../services/csv';
 beforeEach(async () => {
   await resetData();
   useApp.setState({
@@ -32,6 +33,48 @@ test('vocabulary completes a card, schedules it and persists the attempt', async
   await screen.findByRole('heading', { name: 'Session complete' });
   await verifyAttempt('vocabulary');
   expect(await db.reviews.count()).toBe(1);
+});
+
+test('large library pages are bounded and search and topic changes return to page one', () => {
+  show(<Vocabulary />);
+  fireEvent.click(screen.getByRole('button', { name: /Word library/ }));
+  expect(screen.getAllByRole('article')).toHaveLength(30);
+  fireEvent.click(screen.getByRole('button', { name: 'Next page' }));
+  expect(screen.getByText('Page 2/52 · 1560 matching words')).toBeInTheDocument();
+  fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'pineapple' } });
+  expect(screen.getAllByRole('article')).toHaveLength(1);
+  expect(screen.getByRole('heading', { name: /pineapple/ })).toBeInTheDocument();
+  expect(screen.getByRole('button', { name: 'Previous page' })).toBeDisabled();
+  fireEvent.change(screen.getByRole('searchbox'), { target: { value: '' } });
+  expect(screen.getByText('Page 1/52 · 1560 matching words')).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'People and family · 50' }));
+  expect(screen.getByText('Page 1/2 · 50 matching words')).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Next page' }));
+  expect(screen.getAllByRole('article')).toHaveLength(20);
+  expect(screen.getByRole('button', { name: 'Next page' })).toBeDisabled();
+  fireEvent.change(screen.getByRole('combobox', { name: 'Level' }), { target: { value: 'A2' } });
+  expect(screen.getAllByRole('article')).toHaveLength(10);
+  expect(screen.getByRole('button', { name: 'Previous page' })).toBeDisabled();
+});
+
+test('a new A1 card persists through backup, reset and restore; CSV includes a whole topic', async () => {
+  useApp.setState({ level: 'A1', topic: 'People and family' });
+  const view = show(<Vocabulary />);
+  fireEvent.click(screen.getByRole('button', { name: /Start practice/ }));
+  expect(screen.getByRole('heading', { name: 'person' })).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Reveal answer' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Good' }));
+  await verifyAttempt('vocabulary');
+  view.unmount();
+  const snapshot = await exportData();
+  await resetData();
+  await importData(snapshot);
+  expect(await db.reviews.get('v-common-person')).toMatchObject({ total: 1, correct: 1 });
+  expect((await db.attempts.toArray())[0].label).toBe('person');
+  const topic = vocabulary.filter((word) => word.topic === 'People and family');
+  const imported = importCSV(exportCSV(topic));
+  expect(imported).toHaveLength(50);
+  expect(imported.map((word) => word.word)).toEqual(topic.map((word) => word.word));
 });
 
 test('IT topics filter the library and practice, and persist a review across remount', async () => {

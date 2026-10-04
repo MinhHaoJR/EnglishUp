@@ -34,6 +34,6 @@ export const listenings = z.array(listeningSchema).min(6).parse(rawListening);
 export const dictations = z.array(dictationSchema).min(10).parse(rawDictation);
 import rawReading from './reading.json';
 export const readings = z.array(readingSchema).min(6).parse(rawReading);
-export const vocabulary = z.array(wordSchema).min(150).parse(rawWords);
+export const vocabulary = z.array(wordSchema).min(1500).parse(rawWords);
 if (new Set(vocabulary.map((x) => x.id)).size !== vocabulary.length)
   throw new Error('Duplicate content IDs');

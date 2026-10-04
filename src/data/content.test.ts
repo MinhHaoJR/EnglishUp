@@ -9,8 +9,9 @@ import {
 import { wordSchema, questionSchema } from './schema';
 import { topics, topicVi } from '../i18n';
 test('expanded catalog has translated topics, complete IT entries and stable original IDs', () => {
-  expect(vocabulary).toHaveLength(240);
-  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(16);
+  expect(vocabulary).toHaveLength(1560);
+  expect(vocabulary.filter((word) => !word.topic.startsWith('IT:'))).toHaveLength(1500);
+  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(35);
   for (const topic of topics) {
     expect(topicVi[topic]).toBeTruthy();
     expect(vocabulary.some((word) => word.topic === topic)).toBe(true);
@@ -27,12 +28,38 @@ test('expanded catalog has translated topics, complete IT entries and stable ori
   }
   expect(vocabulary.find((word) => word.id === 'v-1-1')?.word).toBe('routine');
   expect(vocabulary.filter((word) => /^v-\d+-\d+$/.test(word.id))).toHaveLength(160);
+  expect(vocabulary.filter((word) => word.id.startsWith('v-extra-'))).toHaveLength(80);
 });
 test('original vocabulary meets quantity, topic and schema requirements', () => {
-  expect(vocabulary.length).toBeGreaterThanOrEqual(150);
-  expect(new Set(vocabulary.map((w) => w.topic)).size).toBeGreaterThanOrEqual(8);
-  expect(new Set(vocabulary.map((w) => w.word)).size).toBe(vocabulary.length);
-  expect(vocabulary.every((w) => ['A2', 'B1', 'B2'].includes(w.level))).toBe(true);
+  expect(vocabulary.length).toBeGreaterThanOrEqual(1500);
+  expect(new Set(vocabulary.map((w) => w.word.trim().toLowerCase())).size).toBe(vocabulary.length);
+  expect(vocabulary.every((w) => ['A1', 'A2', 'B1', 'B2'].includes(w.level))).toBe(true);
+  expect(vocabulary.filter((word) => word.level === 'A1').length).toBeGreaterThanOrEqual(900);
+});
+
+test('common expansion contains complete, original examples and registered topics', () => {
+  const common = vocabulary.filter((word) => word.id.startsWith('v-common-'));
+  expect(common).toHaveLength(1320);
+  expect(new Set(common.map((word) => word.examples[0])).size).toBe(common.length);
+  for (const word of common) {
+    expect(topics).toContain(word.topic);
+    expect(word.meaning).not.toContain('\uFFFD');
+    expect(word.meaning.trim().length).toBeGreaterThan(1);
+    expect(word.definition.split(/\s+/).length).toBeGreaterThanOrEqual(2);
+    expect(word.examples[0].toLowerCase()).toContain(word.word.toLowerCase());
+    expect(word.examples[0].split(/\s+/).length).toBeGreaterThanOrEqual(4);
+    expect([
+      'noun',
+      'verb',
+      'adjective',
+      'adverb',
+      'pronoun',
+      'preposition',
+      'conjunction',
+      'number',
+    ]).toContain(word.pos);
+    expect(word.ipa).toBe(''); // New transcriptions await editorial review, rather than being invented.
+  }
 });
 test('all original content meets counts and has unique IDs and valid answer choices', () => {
   expect(listenings.length).toBeGreaterThanOrEqual(6);

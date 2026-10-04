@@ -6,13 +6,15 @@ Use original writing. Do not paste textbook, examination, news or copyrighted ex
 
 ## Shared fields
 
-Every item has a stable unique `id`, a `level` (`A1`, `A2`, `B1`, `B2`, `C1`) and a `topic`. The original topics are `Daily life`, `Travel`, `Work`, `Food`, `Health`, `Technology`, `Environment`, `Education`; the vocabulary expansion adds the eight topics listed below. Update `topics` and `topicVi` in `src/i18n/index.ts` when adding another topic. Keep IDs stable so saved reviews and drafts retain their meaning.
+Every item has a stable unique `id`, a `level` (`A1`, `A2`, `B1`, `B2`, `C1`) and a `topic`. The topic registry and Vietnamese display names live in `topics` and `topicVi` in `src/i18n/index.ts`; update both when adding a topic. Keep IDs stable so saved reviews and drafts retain their meaning.
 
 ## Vocabulary — vocabulary.json
 
-The catalog now contains 240 words across 16 topics. In addition to the original eight topics, `Shopping` and `Communication` contain 10 words each. Six specialist groups contain 10 words each: `IT: Programming`, `IT: Web development`, `IT: Databases`, `IT: Networking`, `IT: Security`, and `IT: Testing and deployment`. These original examples describe common technical concepts; specialist terms carry estimated B1–B2 reading levels, not certified CEFR ratings.
+The catalog contains **1,560 distinct entries across 35 topics: 1,500 general vocabulary entries and 60 IT terms**. The expansion adds 1,320 original entries to the previous 240, including 901 A1 entries. New topics cover family, home, food, clothes, the body, common verbs and adjectives, places, time, nature, animals, transport, hobbies, school, relationships, money, function words, numbers and colors. Counts include useful multiword expressions and calendar names; this is an editorial selection for everyday learning, not a corpus-ranked top-1,500 frequency list.
 
-The vocabulary page separates everyday topics from IT, displays counts for the selected level, and groups library results by topic. Topic selection applies to practice, translation practice, and CSV export through the existing shared filters. Search accepts Vietnamese with or without accents and filters the visible library only. Imported/custom topics are included automatically. New topics add vocabulary exercises; they do not add reading, listening, or sentence-translation lessons, so those filters can return no lessons. Existing bundled IDs and stored reviews remain unchanged; the 80 additions use stable `v-extra-` IDs. All words remain bundled for offline use.
+Six specialist groups retain 10 terms each: `IT: Programming`, `IT: Web development`, `IT: Databases`, `IT: Networking`, `IT: Security`, and `IT: Testing and deployment`. CEFR labels are approximate teaching levels. Each general entry includes a Vietnamese meaning, part of speech, short English definition and original contextual example. Only a selected sense is taught for words with multiple meanings. New IPA fields are intentionally empty pending pronunciation review; existing IPA is preserved and browser speech remains available where supported.
+
+The vocabulary page separates everyday topics from IT, displays counts for the selected level, and groups library results by topic. The library renders at most 30 word cards per page, with previous/next buttons and a page selector. Search or level/topic changes return to page one; disappearing custom words cannot leave the library on a nonexistent page. Topic selection applies to practice, translation practice, and CSV export through the existing shared filters. Search accepts Vietnamese with or without accents and filters the visible library only. CSV exports the entire level/topic selection, not just the visible page. Imported/custom topics are included automatically. New topics add vocabulary exercises; they do not add reading, listening, or sentence-translation lessons, so those filters can return no lessons. All previous 240 records and IDs remain unchanged. New entries use stable `v-common-<term>` IDs. Content remains bundled for offline use; no database migration or reset is required.
 
 ```json
 {
@@ -28,7 +30,11 @@ The vocabulary page separates everyday topics from IT, displays counts for the s
 }
 ```
 
-`examples` must contain one or two nonempty strings. Keep General American IPA between slashes. `custom: true` is used for user-created/imported entries, not bundled entries. The original 160 words were authored in `scripts/create-vocabulary.mjs`; it is retained as provenance. Edit the JSON directly for new content; rerunning that script overwrites the JSON with its original authored set.
+`examples` must contain one or two nonempty strings. Verified General American IPA belongs between slashes; leave `ipa` empty when no reviewed transcription is available. `custom: true` is used for user-created/imported entries, not bundled entries.
+
+The common expansion is authored in `scripts/content/common-vocabulary.txt`: a header `@Topic|part of speech|level` followed by `word|Vietnamese meaning|English definition|example` rows. Run `node scripts/expand-vocabulary.mjs` after editing it to regenerate the `v-common-` entries in `vocabulary.json`. The generator preserves every other record, rejects duplicate words/IDs and malformed rows, and writes only after validation. Repeated runs are deterministic. Edit this source rather than its generated JSON records. Keep headwords stable to preserve review IDs.
+
+The original 160 words were authored in `scripts/create-vocabulary.mjs`, retained as historical provenance only. Do not run that older script to update the current catalog: it overwrites the expanded JSON with its original set. Content tests check quantity, topic labels, unique headwords and contextual examples; flow tests cover pagination, A1 practice, CSV and backup/restore of new-card progress.
 
 ## Questions
 

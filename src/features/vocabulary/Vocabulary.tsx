@@ -10,7 +10,7 @@ import { db, download } from '../../services/storage';
 import { dueQueue, schedule, type Rating } from '../../services/srs';
 import { importCSV, exportCSV } from '../../services/csv';
 import TranslationPractice from './TranslationPractice';
-import { groupWords, searchWords } from '../../services/vocabulary';
+import { groupWords, searchWords, paginateWords } from '../../services/vocabulary';
 type Mode = 'flashcards' | 'choice' | 'type' | 'spell';
 export default function Vocabulary() {
   const t = useT();
@@ -32,8 +32,15 @@ export default function Vocabulary() {
   const [message, setMessage] = useState('');
   const [busy, setBusy] = useState(false);
   const [finished, setFinished] = useState(false);
+  const [pagination, setPagination] = useState({ key: '', page: 0 });
   const topicGroups = groupWords(all);
-  const libraryGroups = groupWords(searchWords(filtered, search));
+  const searchResults = searchWords(filtered, search);
+  const pageKey = JSON.stringify([level, topic, search]);
+  // Reset the stored cursor too, so returning to a previous search cannot restore a stale page.
+  if (pagination.key !== pageKey) setPagination({ key: pageKey, page: 0 });
+  const pageData = paginateWords(searchResults, pagination.key === pageKey ? pagination.page : 0);
+  const libraryGroups = groupWords(pageData.words);
+  const changePage = (page: number) => setPagination({ key: pageKey, page });
   const topicLabel = (name: string) => bi(topicVi[name] ?? name, name);
   const due = dueQueue(filtered, reviews, settings.newCards);
   const card = queue[index];
@@ -219,10 +226,46 @@ export default function Vocabulary() {
               </label>
             </div>
           </div>
+          {searchResults.length > 0 && (
+            <nav
+              className="panel actions"
+              aria-label={bi('Phân trang từ vựng', 'Vocabulary pages')}
+            >
+              <button disabled={pageData.page === 0} onClick={() => changePage(pageData.page - 1)}>
+                {bi('Trang trước', 'Previous page')}
+              </button>
+              <label>
+                {bi('Trang', 'Page')}
+                <select
+                  value={pageData.page}
+                  onChange={(event) => changePage(Number(event.target.value))}
+                >
+                  {Array.from({ length: pageData.pageCount }, (_, page) => (
+                    <option key={page} value={page}>
+                      {page + 1} / {pageData.pageCount}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <button
+                disabled={pageData.page + 1 === pageData.pageCount}
+                onClick={() => changePage(pageData.page + 1)}
+              >
+                {bi('Trang sau', 'Next page')}
+              </button>
+              <span role="status">
+                {bi(
+                  `Trang ${pageData.page + 1}/${pageData.pageCount} · ${searchResults.length} từ phù hợp`,
+                  `Page ${pageData.page + 1}/${pageData.pageCount} · ${searchResults.length} matching words`,
+                )}
+              </span>
+            </nav>
+          )}
           {libraryGroups.map((group) => (
             <section key={group.topic} aria-label={topicLabel(group.topic)} className="space-y-4">
               <h2>
-                {topicLabel(group.topic)} · {group.words.length} {t('words')}
+                {topicLabel(group.topic)} ·{' '}
+                {searchResults.filter((word) => word.topic === group.topic).length} {t('words')}
               </h2>
               <div className="lesson-grid">
                 {group.words.map((w) => (
@@ -236,7 +279,8 @@ export default function Vocabulary() {
                     <h2>
                       {w.word}{' '}
                       <small className="muted">
-                        {w.ipa} · {w.pos}
+                        {w.ipa ? `${w.ipa} · ` : ''}
+                        {w.pos}
                       </small>
                     </h2>
                     <strong>{w.meaning}</strong>
@@ -305,7 +349,8 @@ export default function Vocabulary() {
               <>
                 <h2>{card.word}</h2>
                 <p className="muted">
-                  {card.ipa} · {card.pos}
+                  {card.ipa ? `${card.ipa} · ` : ''}
+                  {card.pos}
                 </p>
                 <SpeakButton text={card.word} />
               </>

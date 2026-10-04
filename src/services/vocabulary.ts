@@ -1,5 +1,17 @@
 import type { Word } from '../data/schema';
 
+export const WORDS_PER_PAGE = 30;
+
+export function paginateWords(words: Word[], requestedPage: number) {
+  const pageCount = Math.max(1, Math.ceil(words.length / WORDS_PER_PAGE));
+  const page = Math.max(0, Math.min(requestedPage, pageCount - 1));
+  return {
+    page,
+    pageCount,
+    words: words.slice(page * WORDS_PER_PAGE, (page + 1) * WORDS_PER_PAGE),
+  };
+}
+
 export function groupWords(words: Word[]) {
   const groups = new Map<string, Word[]>();
   for (const word of words) {
