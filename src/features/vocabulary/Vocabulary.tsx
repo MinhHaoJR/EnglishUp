@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useApp } from '../../app/store';
 import { vocabulary } from '../../data/content';
 import type { Word } from '../../data/schema';
-import { useT, useBi } from '../../i18n';
+import { useT, useBi, topicVi } from '../../i18n';
 import { PageTitle, Filters, Empty, Notice, useLive, useFiltered } from '../../components/shared';
 import { WordEditor } from '../../components/WordEditor';
 import { SpeakButton } from '../../components/SpeakButton';
@@ -10,11 +10,12 @@ import { db, download } from '../../services/storage';
 import { dueQueue, schedule, type Rating } from '../../services/srs';
 import { importCSV, exportCSV } from '../../services/csv';
 import TranslationPractice from './TranslationPractice';
+import { groupWords, searchWords } from '../../services/vocabulary';
 type Mode = 'flashcards' | 'choice' | 'type' | 'spell';
 export default function Vocabulary() {
   const t = useT();
   const bi = useBi();
-  const { settings } = useApp();
+  const { settings, level, topic, filter } = useApp();
   const { value: custom = [], error } = useLive(() => db.words.toArray());
   const { value: reviews = [] } = useLive(() => db.reviews.toArray());
   const all = [...vocabulary, ...custom];
@@ -31,6 +32,9 @@ export default function Vocabulary() {
   const [message, setMessage] = useState('');
   const [busy, setBusy] = useState(false);
   const [finished, setFinished] = useState(false);
+  const topicGroups = groupWords(all);
+  const libraryGroups = groupWords(searchWords(filtered, search));
+  const topicLabel = (name: string) => bi(topicVi[name] ?? name, name);
   const due = dueQueue(filtered, reviews, settings.newCards);
   const card = queue[index];
   const total = reviews.reduce((n, r) => n + r.total, 0);
@@ -117,7 +121,56 @@ export default function Vocabulary() {
           {bi('Luyện viết và dịch', 'Translation practice')}
         </button>
       </div>
-      {(!card || tab === 'translation') && <Filters />}
+      {(!card || tab !== 'practice') && (
+        <>
+          <Filters availableTopics={topicGroups.map((group) => group.topic)} />
+          <section
+            className="panel space-y-4"
+            aria-label={bi('Chọn chủ đề từ vựng', 'Choose a vocabulary topic')}
+          >
+            <div className="actions">
+              <h2>{bi('Học theo chủ đề', 'Learn by topic')}</h2>
+              <button aria-pressed={topic === 'all'} onClick={() => filter(level, 'all')}>
+                {t('allTopics')} ·{' '}
+                {all.filter((word) => level === 'all' || word.level === level).length}
+              </button>
+            </div>
+            {[false, true].map((it) => (
+              <div key={String(it)}>
+                <h3>
+                  {it
+                    ? bi('Tiếng Anh chuyên ngành IT', 'English for IT')
+                    : bi('Đời sống và công việc', 'Everyday life and work')}
+                </h3>
+                <div className="actions mt-2">
+                  {topicGroups
+                    .filter((group) => group.topic.startsWith('IT:') === it)
+                    .map((group) => (
+                      <button
+                        key={group.topic}
+                        aria-pressed={topic === group.topic}
+                        className={topic === group.topic ? 'primary' : ''}
+                        onClick={() => filter(level, group.topic)}
+                      >
+                        {topicLabel(group.topic)} ·{' '}
+                        {
+                          group.words.filter((word) => level === 'all' || word.level === level)
+                            .length
+                        }
+                      </button>
+                    ))}
+                </div>
+              </div>
+            ))}
+            <p className="muted">
+              {bi(
+                'Số từ theo trình độ đang chọn. Chọn chủ đề để xem từ và luyện tập.',
+                'Counts reflect the selected level. Choose a topic to browse and practice.',
+              )}
+            </p>
+          </section>
+        </>
+      )}
       {error && <Notice error>{error}</Notice>}
       {message && <Notice>{message}</Notice>}
       {tab === 'translation' ? (
@@ -166,61 +219,73 @@ export default function Vocabulary() {
               </label>
             </div>
           </div>
-          <div className="lesson-grid">
-            {filtered
-              .filter((w) => `${w.word} ${w.meaning}`.toLowerCase().includes(search.toLowerCase()))
-              .map((w) => (
-                <article className="panel lesson-card" key={w.id}>
-                  <div className="flex justify-between w-full">
-                    <span className="badge">
-                      {w.level} · {w.topic}
-                    </span>
-                    {w.custom && <span className="badge">{t('custom')}</span>}
-                  </div>
-                  <h2>
-                    {w.word}{' '}
-                    <small className="muted">
-                      {w.ipa} · {w.pos}
-                    </small>
-                  </h2>
-                  <strong>{w.meaning}</strong>
-                  <p className="muted">
-                    {w.definition}
-                    <br />
-                    <em>{w.examples[0]}</em>
-                  </p>
-                  <div className="actions">
-                    <SpeakButton text={w.word} />
-                    {w.custom && (
-                      <>
-                        <button onClick={() => setEditing(w)}>{t('edit')}</button>
-                        <button
-                          className="danger"
-                          onClick={() => {
-                            if (window.confirm(bi(`Xóa từ “${w.word}”?`, `Delete “${w.word}”?`)))
-                              void db
-                                .transaction('rw', db.words, db.reviews, async () => {
-                                  await db.words.delete(w.id);
-                                  await db.reviews.delete(w.id);
-                                })
-                                .catch(() => setMessage(t('error')));
-                          }}
-                        >
-                          {t('delete')}
-                        </button>
-                      </>
-                    )}
-                  </div>
-                </article>
-              ))}
-          </div>
-          {!filtered.length && <Empty />}
+          {libraryGroups.map((group) => (
+            <section key={group.topic} aria-label={topicLabel(group.topic)} className="space-y-4">
+              <h2>
+                {topicLabel(group.topic)} · {group.words.length} {t('words')}
+              </h2>
+              <div className="lesson-grid">
+                {group.words.map((w) => (
+                  <article className="panel lesson-card" key={w.id}>
+                    <div className="flex justify-between w-full">
+                      <span className="badge">
+                        {w.level} · {topicLabel(w.topic)}
+                      </span>
+                      {w.custom && <span className="badge">{t('custom')}</span>}
+                    </div>
+                    <h2>
+                      {w.word}{' '}
+                      <small className="muted">
+                        {w.ipa} · {w.pos}
+                      </small>
+                    </h2>
+                    <strong>{w.meaning}</strong>
+                    <p className="muted">
+                      {w.definition}
+                      <br />
+                      <em>{w.examples[0]}</em>
+                    </p>
+                    <div className="actions">
+                      <SpeakButton text={w.word} />
+                      {w.custom && (
+                        <>
+                          <button onClick={() => setEditing(w)}>{t('edit')}</button>
+                          <button
+                            className="danger"
+                            onClick={() => {
+                              if (window.confirm(bi(`Xóa từ “${w.word}”?`, `Delete “${w.word}”?`)))
+                                void db
+                                  .transaction('rw', db.words, db.reviews, async () => {
+                                    await db.words.delete(w.id);
+                                    await db.reviews.delete(w.id);
+                                  })
+                                  .catch(() => setMessage(t('error')));
+                            }}
+                          >
+                            {t('delete')}
+                          </button>
+                        </>
+                      )}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          ))}
+          {!libraryGroups.length && (
+            <>
+              <Empty />
+              {search && (
+                <button onClick={() => setSearch('')}>{bi('Xóa tìm kiếm', 'Clear search')}</button>
+              )}
+            </>
+          )}
         </>
       ) : card ? (
         <section className="panel flashcard">
           <div className="flex justify-between">
             <span className="badge">
-              {card.level} · {card.topic}
+              {card.level} · {topicLabel(card.topic)}
             </span>
             <span className="muted">
               {index + 1} / {queue.length}

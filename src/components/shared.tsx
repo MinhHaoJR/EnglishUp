@@ -16,7 +16,7 @@ export function useLive<T>(query: () => Promise<T>, deps: unknown[] = []) {
   }, deps);
   return { value, error };
 }
-export function Filters() {
+export function Filters({ availableTopics = topics }: { availableTopics?: string[] }) {
   const t = useT();
   const { level, topic, filter, settings } = useApp();
   return (
@@ -34,9 +34,9 @@ export function Filters() {
         {t('topic')}
         <select value={topic} onChange={(e) => filter(level, e.target.value)}>
           <option value="all">{t('allTopics')}</option>
-          {topics.map((x) => (
+          {[...new Set([...availableTopics, ...(topic === 'all' ? [] : [topic])])].map((x) => (
             <option key={x} value={x}>
-              {settings.language === 'vi' ? topicVi[x] : x}
+              {settings.language === 'vi' ? (topicVi[x] ?? x) : x}
             </option>
           ))}
         </select>

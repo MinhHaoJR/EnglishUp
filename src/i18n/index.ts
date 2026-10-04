@@ -218,6 +218,14 @@ export const topics = [
   'Technology',
   'Environment',
   'Education',
+  'Shopping',
+  'Communication',
+  'IT: Programming',
+  'IT: Web development',
+  'IT: Databases',
+  'IT: Networking',
+  'IT: Security',
+  'IT: Testing and deployment',
 ];
 export const topicVi: Record<string, string> = {
   'Daily life': 'Đời sống',
@@ -228,4 +236,12 @@ export const topicVi: Record<string, string> = {
   Technology: 'Công nghệ',
   Environment: 'Môi trường',
   Education: 'Giáo dục',
+  Shopping: 'Mua sắm',
+  Communication: 'Giao tiếp',
+  'IT: Programming': 'IT: Lập trình',
+  'IT: Web development': 'IT: Phát triển web',
+  'IT: Databases': 'IT: Cơ sở dữ liệu',
+  'IT: Networking': 'IT: Mạng máy tính',
+  'IT: Security': 'IT: Bảo mật',
+  'IT: Testing and deployment': 'IT: Kiểm thử và triển khai',
 };

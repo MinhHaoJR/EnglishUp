@@ -33,6 +33,62 @@ test('vocabulary completes a card, schedules it and persists the attempt', async
   await verifyAttempt('vocabulary');
   expect(await db.reviews.count()).toBe(1);
 });
+
+test('IT topics filter the library and practice, and persist a review across remount', async () => {
+  let view = show(<Vocabulary />);
+  fireEvent.click(screen.getByRole('button', { name: 'IT: Programming · 10' }));
+  fireEvent.click(screen.getByRole('button', { name: /Word library/ }));
+  const group = screen.getByRole('region', { name: 'IT: Programming' });
+  expect(within(group).getAllByRole('article')).toHaveLength(10);
+  expect(screen.queryByRole('region', { name: 'Daily life' })).not.toBeInTheDocument();
+  fireEvent.change(screen.getByRole('combobox', { name: 'Level' }), { target: { value: 'B1' } });
+  expect(within(group).getAllByRole('article')).toHaveLength(5);
+  fireEvent.click(screen.getByRole('button', { name: 'Practice' }));
+  fireEvent.click(screen.getByRole('button', { name: /Start practice/ }));
+  expect(screen.getByRole('heading', { name: 'variable' })).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Reveal answer' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Good' }));
+  await verifyAttempt('vocabulary');
+  expect(await db.reviews.get('v-extra-variable')).toMatchObject({ total: 1 });
+  view.unmount();
+  view = show(<Vocabulary />);
+  await waitFor(() =>
+    expect(screen.getByRole('button', { name: /Start practice/ })).toBeDisabled(),
+  );
+  expect((await db.attempts.toArray())[0].label).toBe('variable');
+  view.unmount();
+});
+
+test('Vietnamese topics and accent-free search include custom imported topics', async () => {
+  useApp.setState({ settings: { ...defaults, language: 'vi' } });
+  await db.words.add({
+    id: 'custom-topic',
+    word: 'widget',
+    ipa: '',
+    pos: 'noun',
+    meaning: 'tiện ích',
+    definition: 'a small interface element',
+    examples: ['Add a widget to the page.'],
+    level: 'B1',
+    topic: 'My project',
+    custom: true,
+  });
+  show(<Vocabulary />);
+  expect(await screen.findByRole('button', { name: 'My project · 1' })).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'IT: Cơ sở dữ liệu · 10' }));
+  fireEvent.click(screen.getByRole('button', { name: /Sổ từ vựng/ }));
+  fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'co so du lieu' } });
+  expect(screen.getByRole('heading', { name: /database/ })).toBeInTheDocument();
+  fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'not-a-word' } });
+  expect(screen.queryAllByRole('article')).toHaveLength(0);
+  fireEvent.click(screen.getByRole('button', { name: 'Xóa tìm kiếm' }));
+  expect(screen.getAllByRole('article')).toHaveLength(10);
+  fireEvent.change(screen.getByRole('combobox', { name: 'Chủ đề' }), {
+    target: { value: 'My project' },
+  });
+  expect(screen.getAllByRole('article')).toHaveLength(1);
+  expect(screen.getByRole('heading', { name: /widget/ })).toBeInTheDocument();
+});
 test('reading completes all question types, shows evidence and logs score', async () => {
   show(<Reading />);
   fireEvent.click(screen.getAllByRole('button', { name: /Start practice/ })[0]);

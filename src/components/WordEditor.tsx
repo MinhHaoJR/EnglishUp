@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { wordSchema, type Word, type Level } from '../data/schema';
-import { topics, useT, useBi } from '../i18n';
+import { topics, topicVi, useT, useBi } from '../i18n';
 import { db } from '../services/storage';
 import { Notice } from './shared';
 export function WordEditor({ word, onClose }: { word?: Partial<Word>; onClose: () => void }) {
@@ -89,7 +89,9 @@ export function WordEditor({ word, onClose }: { word?: Partial<Word>; onClose: (
         {t('topic')}
         <select value={form.topic} onChange={(e) => setForm({ ...form, topic: e.target.value })}>
           {[...new Set([...topics, form.topic])].map((topic) => (
-            <option key={topic}>{topic}</option>
+            <option key={topic} value={topic}>
+              {bi(topicVi[topic] ?? topic, topic)}
+            </option>
           ))}
         </select>
       </label>

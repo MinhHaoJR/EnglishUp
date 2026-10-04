@@ -211,8 +211,8 @@ export default function Dashboard() {
               <h3>{bi('Gom từng từ, mở rộng thế giới.', 'A bigger world, one word at a time.')}</h3>
               <p>
                 {bi(
-                  '160 từ vựng · 8 chủ đề · Ôn tập thông minh',
-                  '160 words · 8 topics · Spaced repetition',
+                  `${vocabulary.length} từ vựng · ${new Set(vocabulary.map((word) => word.topic)).size} chủ đề · Ôn tập thông minh`,
+                  `${vocabulary.length} words · ${new Set(vocabulary.map((word) => word.topic)).size} topics · Spaced repetition`,
                 )}
               </p>
             </div>

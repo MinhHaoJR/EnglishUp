@@ -7,6 +7,27 @@ import {
   writingPrompts,
 } from './content';
 import { wordSchema, questionSchema } from './schema';
+import { topics, topicVi } from '../i18n';
+test('expanded catalog has translated topics, complete IT entries and stable original IDs', () => {
+  expect(vocabulary).toHaveLength(240);
+  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(16);
+  for (const topic of topics) {
+    expect(topicVi[topic]).toBeTruthy();
+    expect(vocabulary.some((word) => word.topic === topic)).toBe(true);
+  }
+  const itTopics = topics.filter((topic) => topic.startsWith('IT:'));
+  expect(itTopics).toHaveLength(6);
+  for (const topic of itTopics) {
+    const words = vocabulary.filter((word) => word.topic === topic);
+    expect(words).toHaveLength(10);
+    for (const word of words) {
+      expect(word.ipa).toMatch(/^\/.+\/$/);
+      expect(word.examples[0].toLowerCase()).toContain(word.word.toLowerCase());
+    }
+  }
+  expect(vocabulary.find((word) => word.id === 'v-1-1')?.word).toBe('routine');
+  expect(vocabulary.filter((word) => /^v-\d+-\d+$/.test(word.id))).toHaveLength(160);
+});
 test('original vocabulary meets quantity, topic and schema requirements', () => {
   expect(vocabulary.length).toBeGreaterThanOrEqual(150);
   expect(new Set(vocabulary.map((w) => w.topic)).size).toBeGreaterThanOrEqual(8);

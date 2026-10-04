@@ -6,9 +6,13 @@ Use original writing. Do not paste textbook, examination, news or copyrighted ex
 
 ## Shared fields
 
-Every item has a stable unique `id`, a `level` (`A1`, `A2`, `B1`, `B2`, `C1`) and a `topic`. Built-in topics are `Daily life`, `Travel`, `Work`, `Food`, `Health`, `Technology`, `Environment`, `Education`. Update `topics` and `topicVi` in `src/i18n/index.ts` when adding another topic. Keep IDs stable so saved reviews and drafts retain their meaning.
+Every item has a stable unique `id`, a `level` (`A1`, `A2`, `B1`, `B2`, `C1`) and a `topic`. The original topics are `Daily life`, `Travel`, `Work`, `Food`, `Health`, `Technology`, `Environment`, `Education`; the vocabulary expansion adds the eight topics listed below. Update `topics` and `topicVi` in `src/i18n/index.ts` when adding another topic. Keep IDs stable so saved reviews and drafts retain their meaning.
 
 ## Vocabulary — vocabulary.json
+
+The catalog now contains 240 words across 16 topics. In addition to the original eight topics, `Shopping` and `Communication` contain 10 words each. Six specialist groups contain 10 words each: `IT: Programming`, `IT: Web development`, `IT: Databases`, `IT: Networking`, `IT: Security`, and `IT: Testing and deployment`. These original examples describe common technical concepts; specialist terms carry estimated B1–B2 reading levels, not certified CEFR ratings.
+
+The vocabulary page separates everyday topics from IT, displays counts for the selected level, and groups library results by topic. Topic selection applies to practice, translation practice, and CSV export through the existing shared filters. Search accepts Vietnamese with or without accents and filters the visible library only. Imported/custom topics are included automatically. New topics add vocabulary exercises; they do not add reading, listening, or sentence-translation lessons, so those filters can return no lessons. Existing bundled IDs and stored reviews remain unchanged; the 80 additions use stable `v-extra-` IDs. All words remain bundled for offline use.
 
 ```json
 {
