@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ja-greetings",
+    "language": "ja",
+    "title": { "vi": "Chào hỏi", "en": "Greetings" },
+    "text": "こんにちは",
+    "romanization": "konnichiwa",
+    "meaning": { "vi": "Xin chào", "en": "Hello" },
+    "passage": "こんにちは。わたしはハナです。学生です。",
+    "question": { "vi": "Hana làm gì?", "en": "What does Hana do?" },
+    "options": [
+      { "vi": "Học sinh / sinh viên", "en": "Student" },
+      { "vi": "Giáo viên", "en": "Teacher" }
+    ],
+    "answer": 0
+  },
+  {
+    "id": "ja-thanks",
+    "language": "ja",
+    "title": { "vi": "Cảm ơn", "en": "Giving thanks" },
+    "text": "ありがとうございます",
+    "romanization": "arigatō gozaimasu",
+    "meaning": { "vi": "Cảm ơn (lịch sự)", "en": "Thank you (polite)" },
+    "passage": "これは本です。ありがとうございます。",
+    "question": { "vi": "Đồ vật được nhắc đến là gì?", "en": "Which object is mentioned?" },
+    "options": [
+      { "vi": "Nước", "en": "Water" },
+      { "vi": "Quyển sách", "en": "Book" }
+    ],
+    "answer": 1
+  },
+  {
+    "id": "ja-water",
+    "language": "ja",
+    "title": { "vi": "Gọi đồ uống", "en": "Ordering a drink" },
+    "text": "水をください",
+    "romanization": "mizu o kudasai",
+    "meaning": { "vi": "Cho tôi nước, làm ơn", "en": "Water, please" },
+    "passage": "水をください。ありがとうございます。",
+    "question": { "vi": "Người nói muốn gì?", "en": "What does the speaker want?" },
+    "options": [
+      { "vi": "Trà", "en": "Tea" },
+      { "vi": "Nước", "en": "Water" }
+    ],
+    "answer": 1
+  },
+  {
+    "id": "zh-greetings",
+    "language": "zh",
+    "title": { "vi": "Chào hỏi", "en": "Greetings" },
+    "text": "你好",
+    "romanization": "nǐ hǎo",
+    "meaning": { "vi": "Xin chào", "en": "Hello" },
+    "passage": "你好。我叫小明。我是学生。",
+    "question": { "vi": "Tiểu Minh làm gì?", "en": "What does Xiaoming do?" },
+    "options": [
+      { "vi": "Học sinh / sinh viên", "en": "Student" },
+      { "vi": "Giáo viên", "en": "Teacher" }
+    ],
+    "answer": 0
+  },
+  {
+    "id": "zh-thanks",
+    "language": "zh",
+    "title": { "vi": "Cảm ơn", "en": "Giving thanks" },
+    "text": "谢谢",
+    "romanization": "xièxie",
+    "meaning": { "vi": "Cảm ơn", "en": "Thank you" },
+    "passage": "这是我的书。谢谢你。",
+    "question": { "vi": "Đồ vật được nhắc đến là gì?", "en": "Which object is mentioned?" },
+    "options": [
+      { "vi": "Nước", "en": "Water" },
+      { "vi": "Quyển sách", "en": "Book" }
+    ],
+    "answer": 1
+  },
+  {
+    "id": "zh-water",
+    "language": "zh",
+    "title": { "vi": "Gọi đồ uống", "en": "Ordering a drink" },
+    "text": "请给我水",
+    "romanization": "qǐng gěi wǒ shuǐ",
+    "meaning": { "vi": "Cho tôi nước, làm ơn", "en": "Water, please" },
+    "passage": "请给我水。谢谢。",
+    "question": { "vi": "Người nói muốn gì?", "en": "What does the speaker want?" },
+    "options": [
+      { "vi": "Trà", "en": "Tea" },
+      { "vi": "Nước", "en": "Water" }
+    ],
+    "answer": 1
+  }
+]

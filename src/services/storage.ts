@@ -1,9 +1,12 @@
 import Dexie, { type Table } from 'dexie';
 import { z } from 'zod';
 import { skillSchema, wordSchema, type Word, type Skill } from '../data/schema';
+export const learningLanguageSchema = z.enum(['en', 'ja', 'zh']);
+export type LearningLanguage = z.infer<typeof learningLanguageSchema>;
 export const settingsSchema = z.object({
   id: z.literal('main'),
   language: z.enum(['vi', 'en']),
+  learningLanguage: learningLanguageSchema.default('en'),
   accent: z.enum(['en-US', 'en-GB']),
   rate: z.number().min(0.5).max(1.5),
   theme: z.enum(['light', 'dark']),
@@ -15,6 +18,7 @@ export type Settings = z.infer<typeof settingsSchema>;
 export const defaults: Settings = {
   id: 'main',
   language: 'vi',
+  learningLanguage: 'en',
   accent: 'en-US',
   rate: 1,
   theme: 'light',
@@ -29,6 +33,7 @@ export const attemptSchema = z.object({
   duration: z.number().min(0),
   timestamp: z.number().nonnegative(),
   label: z.string(),
+  learningLanguage: learningLanguageSchema.optional(),
 });
 export type Attempt = z.infer<typeof attemptSchema>;
 export const reviewSchema = z.object({
@@ -74,7 +79,13 @@ export class EnglishDB extends Dexie {
   }
 }
 export const db = new EnglishDB();
-export async function logAttempt(skill: Skill, score: number, started: number, label: string) {
+export async function logAttempt(
+  skill: Skill,
+  score: number,
+  started: number,
+  label: string,
+  learningLanguage: LearningLanguage = 'en',
+) {
   await db.attempts.add({
     id: crypto.randomUUID(),
     skill,
@@ -82,6 +93,7 @@ export async function logAttempt(skill: Skill, score: number, started: number, l
     duration: Math.max(1, Math.round((Date.now() - started) / 1000)),
     timestamp: Date.now(),
     label,
+    learningLanguage,
   });
 }
 export const backupSchema = z.object({

@@ -12,7 +12,11 @@ export default function Dashboard() {
   const bi = useBi();
   const { settings } = useApp();
   const { value: attempts = [], error } = useLive(() =>
-    db.attempts.orderBy('timestamp').reverse().toArray(),
+    db.attempts
+      .orderBy('timestamp')
+      .reverse()
+      .filter((a) => (a.learningLanguage ?? 'en') === 'en')
+      .toArray(),
   );
   const { value: reviews = [] } = useLive(() => db.reviews.toArray());
   const { value: custom = [] } = useLive(() => db.words.toArray());

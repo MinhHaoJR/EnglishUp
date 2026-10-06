@@ -10,6 +10,10 @@ import {
 import { useApp } from './store';
 import { useT } from '../i18n';
 import Dashboard from '../features/dashboard/Dashboard';
+import LanguagePicker from '../features/languages/LanguagePicker';
+import LanguageWorkspace from '../features/languages/LanguageWorkspace';
+import { languageNames } from '../data/languages';
+import { skillSchema } from '../data/schema';
 const Settings = lazy(() => import('../features/settings/Settings'));
 const Vocabulary = lazy(() => import('../features/vocabulary/Vocabulary'));
 const Reading = lazy(() => import('../features/reading/Reading'));
@@ -21,6 +25,7 @@ export function Layout() {
   const t = useT();
   const { settings, load, ready, error } = useApp();
   const { pathname } = useLocation();
+  const selectedSkill = skillSchema.safeParse(pathname.split('/')[1]);
   useEffect(() => {
     document.getElementById('main')?.focus();
     window.scrollTo(0, 0);
@@ -45,6 +50,7 @@ export function Layout() {
           {APP_NAME}
           <span className="brand-dot">.</span>
         </NavLink>
+        {ready && <LanguagePicker />}
         <p className="sidebar-caption">{t('practice')}</p>
         <nav aria-label={t('practice')}>
           {(
@@ -74,7 +80,9 @@ export function Layout() {
       </aside>
       <div className="workspace">
         <div className="topbar">
-          <span>{t('tagline')}</span>
+          <span>
+            {languageNames[settings.learningLanguage][settings.language]} · {t('tagline')}
+          </span>
           <div className="flex items-center gap-3">
             <span className="online-dot" />
             <span>
@@ -90,7 +98,14 @@ export function Layout() {
             <p role="alert">{error}</p>
           ) : (
             <Suspense fallback={<p role="status">{t('loading')}</p>}>
-              <Outlet />
+              {settings.learningLanguage !== 'en' && (pathname === '/' || selectedSkill.success) ? (
+                <LanguageWorkspace
+                  key={`${settings.learningLanguage}-${pathname}`}
+                  skill={selectedSkill.success ? selectedSkill.data : undefined}
+                />
+              ) : (
+                <Outlet key={settings.learningLanguage} />
+              )}
             </Suspense>
           )}
         </main>

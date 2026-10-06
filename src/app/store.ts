@@ -22,7 +22,11 @@ export const useApp = create<State>((set, get) => ({
   refresh: 0,
   load: async () => {
     try {
-      set({ settings: (await db.settings.get('main')) ?? defaults, ready: true, error: '' });
+      set({
+        settings: settingsSchema.parse((await db.settings.get('main')) ?? defaults),
+        ready: true,
+        error: '',
+      });
     } catch {
       set({
         ready: true,

@@ -4,7 +4,7 @@ export function stopSpeech() {
 }
 export function speak(
   text: string,
-  settings: Pick<Settings, 'accent' | 'rate'>,
+  settings: { accent: string; rate: number },
   speaker = 0,
   onError?: () => void,
 ) {
