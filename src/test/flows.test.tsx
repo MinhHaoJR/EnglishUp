@@ -8,7 +8,14 @@ import Listening from '../features/listening/Listening';
 import Speaking from '../features/speaking/Speaking';
 import Writing from '../features/writing/Writing';
 import Dashboard from '../features/dashboard/Dashboard';
-import { readings, listenings, vocabulary } from '../data/content';
+import {
+  readings,
+  listenings,
+  vocabulary,
+  speakingPrompts,
+  writingPrompts,
+  dictations,
+} from '../data/content';
 import { exportCSV, importCSV } from '../services/csv';
 beforeEach(async () => {
   await resetData();
@@ -151,6 +158,11 @@ test('reading completes all question types, shows evidence and logs score', asyn
   await verifyAttempt('reading');
   expect((await db.attempts.toArray())[0].score).toBe(100);
   expect(await screen.findByText(/Session complete · 100/)).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Continue →' }));
+  expect(screen.getByRole('heading', { name: readings[1].title })).toBeInTheDocument();
+  expect(screen.queryByText(/Session complete/)).not.toBeInTheDocument();
+  expect(screen.getByRole('button', { name: 'Check answer' })).toBeDisabled();
+  expect(await db.attempts.count()).toBe(1);
 });
 test('listening gates transcript until answers are submitted', async () => {
   show(<Listening />);
@@ -165,6 +177,9 @@ test('listening gates transcript until answers are submitted', async () => {
   fireEvent.click(screen.getByRole('button', { name: 'Check answer' }));
   await verifyAttempt('listening');
   expect(await screen.findByRole('heading', { name: 'Transcript' })).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Continue →' }));
+  expect(screen.getByRole('heading', { name: listenings[1].title })).toBeInTheDocument();
+  expect(screen.queryByRole('heading', { name: 'Transcript' })).not.toBeInTheDocument();
 });
 test('speaking unsupported-API flow completes with explicit self-assessment', async () => {
   show(<Speaking />);
@@ -175,6 +190,15 @@ test('speaking unsupported-API flow completes with explicit self-assessment', as
   fireEvent.click(screen.getByRole('button', { name: 'Finish session' }));
   await verifyAttempt('speaking');
   expect((await db.attempts.toArray())[0].label).toContain('self-assessed');
+  fireEvent.click(await screen.findByRole('button', { name: 'Continue →' }));
+  expect(
+    screen.getByRole('heading', {
+      name: speakingPrompts.filter((p) => p.mode === 'read')[1].title,
+    }),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByLabelText('I practiced aloud and completed my self-assessment.'),
+  ).not.toBeChecked();
 });
 test('writing autosaves, submits feedback, and restores a draft after remount', async () => {
   const view = show(<Writing />);
@@ -210,4 +234,65 @@ test('dashboard reconstructs progress from persisted attempts after remount', as
   expect(await screen.findByText('Persisted reading')).toBeInTheDocument();
   expect(screen.getByRole('progressbar', { name: 'Daily goal' })).toHaveAttribute('value', '20');
   view.unmount();
+});
+
+test('continue writing opens the next prompt and keeps the saved draft and attempt', async () => {
+  show(<Writing />);
+  fireEvent.click(screen.getAllByRole('button', { name: /Start practice/ })[0]);
+  const editor = screen.getByRole('textbox', { name: 'Draft' });
+  await waitFor(() => expect(editor).toBeEnabled());
+  fireEvent.change(editor, { target: { value: 'Dear Mai, let us meet in the park tomorrow.' } });
+  expect(screen.queryByRole('button', { name: 'Continue →' })).not.toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Get feedback & save' }));
+  fireEvent.click(await screen.findByRole('button', { name: 'Continue →' }));
+  expect(screen.getByRole('heading', { name: writingPrompts[1].title })).toBeInTheDocument();
+  await waitFor(() => expect(screen.getByRole('textbox', { name: 'Draft' })).toBeEnabled());
+  expect(screen.getByRole('textbox', { name: 'Draft' })).toHaveValue('');
+  expect(await db.attempts.count()).toBe(1);
+  expect((await db.drafts.get(writingPrompts[0].id))?.text).toContain('Dear Mai');
+});
+
+test('dictation continues with an empty answer and the previous attempt saved', async () => {
+  show(<Listening />);
+  fireEvent.click(screen.getByRole('button', { name: 'Dictation' }));
+  fireEvent.click(screen.getAllByRole('button', { name: /Start practice/ })[0]);
+  fireEvent.change(screen.getByRole('textbox'), { target: { value: dictations[0].text } });
+  fireEvent.click(screen.getByRole('button', { name: 'Check answer' }));
+  fireEvent.click(await screen.findByRole('button', { name: 'Continue →' }));
+  expect(screen.getByRole('textbox')).toHaveValue('');
+  fireEvent.change(screen.getByRole('textbox'), { target: { value: dictations[1].text } });
+  fireEvent.click(screen.getByRole('button', { name: 'Check answer' }));
+  await waitFor(async () => expect(await db.attempts.count()).toBe(2));
+  expect((await db.attempts.toArray()).map((a) => a.label)).toEqual(
+    expect.arrayContaining([`Dictation ${dictations[0].id}`, `Dictation ${dictations[1].id}`]),
+  );
+});
+
+test('the last filtered reading returns to lessons without starting an unrelated lesson', async () => {
+  useApp.setState({
+    level: readings[0].level,
+    topic: readings[0].topic,
+    settings: { ...defaults, language: 'vi' },
+  });
+  const filtered = readings.filter(
+    (r) => r.level === readings[0].level && r.topic === readings[0].topic,
+  );
+  const last = filtered[filtered.length - 1];
+  show(<Reading />);
+  fireEvent.click(screen.getAllByRole('button', { name: /Bắt đầu luyện tập/ }).at(-1)!);
+  expect(screen.queryByRole('button', { name: 'Tiếp tục →' })).not.toBeInTheDocument();
+  for (const q of last.questions) {
+    const group = screen.getByRole('group', {
+      name: `${last.questions.indexOf(q) + 1}. ${q.prompt}`,
+    });
+    if (q.type === 'short' || q.type === 'blank')
+      fireEvent.change(within(group).getByRole('textbox'), { target: { value: q.answers[0] } });
+    else fireEvent.click(within(group).getByRole('radio', { name: q.answers[0] }));
+  }
+  fireEvent.click(screen.getByRole('button', { name: 'Kiểm tra' }));
+  fireEvent.click(await screen.findByRole('button', { name: 'Về danh sách bài học →' }));
+  expect(screen.getAllByRole('button', { name: /Bắt đầu luyện tập/ })).toHaveLength(
+    filtered.length,
+  );
+  expect(await db.attempts.count()).toBe(1);
 });

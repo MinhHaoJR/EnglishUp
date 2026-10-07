@@ -1,3 +1,5 @@
+import { LessonContinue } from '../../components/LessonContinue';
+import { nextLesson } from '../../services/lessonNavigation';
 import { useEffect, useState } from 'react';
 import { speakingPrompts } from '../../data/content';
 import type { SpeakingPrompt } from '../../data/schema';
@@ -11,7 +13,17 @@ import { logAttempt } from '../../services/storage';
 import { useRecorder } from '../../services/useRecorder';
 import { speakingMetrics } from '../../services/speaking';
 import { stopSpeech } from '../../services/speech';
-function SpeakingSession({ prompt, onBack }: { prompt: SpeakingPrompt; onBack: () => void }) {
+function SpeakingSession({
+  prompt,
+  onBack,
+  onContinue,
+  hasNext,
+}: {
+  prompt: SpeakingPrompt;
+  onBack: () => void;
+  onContinue: () => void;
+  hasNext: boolean;
+}) {
   const t = useT();
   const bi = useBi();
   const settings = useApp((s) => s.settings);
@@ -263,6 +275,7 @@ function SpeakingSession({ prompt, onBack }: { prompt: SpeakingPrompt; onBack: (
               {t('finish')}
             </button>
           )}
+          {done && <LessonContinue onContinue={onContinue} hasNext={hasNext} />}
           {error && <Notice error>{error}</Notice>}
         </section>
       </div>
@@ -275,9 +288,17 @@ export default function Speaking() {
   const prompts = useFiltered(speakingPrompts);
   const [mode, setMode] = useState('read');
   const [active, setActive] = useState<SpeakingPrompt>();
-  if (active)
-    return <SpeakingSession key={active.id} prompt={active} onBack={() => setActive(undefined)} />;
   const filtered = prompts.filter((p) => p.mode === mode);
+  if (active)
+    return (
+      <SpeakingSession
+        key={active.id}
+        prompt={active}
+        onBack={() => setActive(undefined)}
+        onContinue={() => setActive(nextLesson(filtered, active))}
+        hasNext={!!nextLesson(filtered, active)}
+      />
+    );
   return (
     <>
       <PageTitle

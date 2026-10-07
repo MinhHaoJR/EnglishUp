@@ -27,3 +27,13 @@ Use a separate test profile for manual resets. The app never uploads backups or 
 ## Translation extension verification
 
 The suite now contains 34 passing tests in 12 files. New coverage includes Unicode normalization with Vietnamese accents preserved, alternative word meanings, bounded random sessions, both directions for words and sentences, filter selection, empty-answer prevention, incorrect score persistence, unchanged SRS and explicit self-assessed labels. Browser checks also completed the Health/A2 sentence in both directions and verified saved-session feedback. See translation-preview.jpg for the reference-answer screen.
+
+## Continue learning
+
+Reading, listening, dictation, speaking and writing show Continue after the current
+attempt is saved successfully. It opens the next lesson in the current level/topic
+filter (and speaking mode); the final lesson returns to the lesson list. Session
+answers, feedback and timers reset on the next lesson. Writing drafts remain stored
+per prompt. Editing a submitted writing draft requires saving the updated work
+before continuing. Unfinished exercises must be completed or left with Back.
+Microphone hardware was not verified for this navigation change.

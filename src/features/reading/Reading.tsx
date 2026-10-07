@@ -1,3 +1,5 @@
+import { LessonContinue } from '../../components/LessonContinue';
+import { nextLesson } from '../../services/lessonNavigation';
 import { useState } from 'react';
 import { readings } from '../../data/content';
 import type { ReadingLesson } from '../../data/schema';
@@ -6,7 +8,17 @@ import { Empty, Filters, Notice, PageTitle, useFiltered, useTimer } from '../../
 import { DictionaryText } from '../../components/DictionaryText';
 import { Questions, isCorrect } from '../../components/Questions';
 import { logAttempt } from '../../services/storage';
-function ReadingSession({ lesson, onBack }: { lesson: ReadingLesson; onBack: () => void }) {
+function ReadingSession({
+  lesson,
+  onBack,
+  onContinue,
+  hasNext,
+}: {
+  lesson: ReadingLesson;
+  onBack: () => void;
+  onContinue: () => void;
+  hasNext: boolean;
+}) {
   const t = useT();
   const bi = useBi();
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -80,6 +92,7 @@ function ReadingSession({ lesson, onBack }: { lesson: ReadingLesson; onBack: () 
               {t('check')}
             </button>
           )}
+          {submitted && <LessonContinue onContinue={onContinue} hasNext={hasNext} />}
           {error && <Notice error>{error}</Notice>}
         </section>
       </div>
@@ -92,7 +105,15 @@ export default function Reading() {
   const filtered = useFiltered(readings);
   const [active, setActive] = useState<ReadingLesson>();
   if (active)
-    return <ReadingSession key={active.id} lesson={active} onBack={() => setActive(undefined)} />;
+    return (
+      <ReadingSession
+        key={active.id}
+        lesson={active}
+        onBack={() => setActive(undefined)}
+        onContinue={() => setActive(nextLesson(filtered, active))}
+        hasNext={!!nextLesson(filtered, active)}
+      />
+    );
   return (
     <>
       <PageTitle

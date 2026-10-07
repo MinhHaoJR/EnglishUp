@@ -1,3 +1,5 @@
+import { LessonContinue } from '../../components/LessonContinue';
+import { nextLesson } from '../../services/lessonNavigation';
 import { useEffect, useRef, useState } from 'react';
 import { writingPrompts } from '../../data/content';
 import type { WritingPrompt } from '../../data/schema';
@@ -15,7 +17,17 @@ import {
 import { WordDiff } from '../../components/WordDiff';
 import { db, type Submission } from '../../services/storage';
 import { feedbackProvider, countWords, type Feedback } from '../../services/feedback';
-function WritingSession({ prompt, onBack }: { prompt: WritingPrompt; onBack: () => void }) {
+function WritingSession({
+  prompt,
+  onBack,
+  onContinue,
+  hasNext,
+}: {
+  prompt: WritingPrompt;
+  onBack: () => void;
+  onContinue: () => void;
+  hasNext: boolean;
+}) {
   const t = useT();
   const bi = useBi();
   const language = useApp((s) => s.settings.language);
@@ -145,6 +157,9 @@ function WritingSession({ prompt, onBack }: { prompt: WritingPrompt; onBack: () 
               {busy ? t('loading') : bi('Nhận phản hồi & lưu bài', 'Get feedback & save')}
             </button>
           </div>
+          {!!feedback && text === submittedText && !busy && !saving && (
+            <LessonContinue onContinue={onContinue} hasNext={hasNext} />
+          )}
           {error && <Notice error>{error}</Notice>}
         </section>
         <section className="panel">
@@ -279,7 +294,15 @@ export default function Writing() {
   const prompts = useFiltered(writingPrompts);
   const [active, setActive] = useState<WritingPrompt>();
   if (active)
-    return <WritingSession key={active.id} prompt={active} onBack={() => setActive(undefined)} />;
+    return (
+      <WritingSession
+        key={active.id}
+        prompt={active}
+        onBack={() => setActive(undefined)}
+        onContinue={() => setActive(nextLesson(prompts, active))}
+        hasNext={!!nextLesson(prompts, active)}
+      />
+    );
   return (
     <>
       <PageTitle

@@ -1,3 +1,5 @@
+import { LessonContinue } from '../../components/LessonContinue';
+import { nextLesson } from '../../services/lessonNavigation';
 import { useEffect, useState } from 'react';
 import { listenings, dictations } from '../../data/content';
 import type { ListeningLesson } from '../../data/schema';
@@ -89,7 +91,17 @@ function AudioPlayer({
     </section>
   );
 }
-function ListeningSession({ lesson, onBack }: { lesson: ListeningLesson; onBack: () => void }) {
+function ListeningSession({
+  lesson,
+  onBack,
+  onContinue,
+  hasNext,
+}: {
+  lesson: ListeningLesson;
+  onBack: () => void;
+  onContinue: () => void;
+  hasNext: boolean;
+}) {
   const t = useT();
   const bi = useBi();
   const settings = useApp((s) => s.settings);
@@ -157,6 +169,7 @@ function ListeningSession({ lesson, onBack }: { lesson: ListeningLesson; onBack:
               {t('check')}
             </button>
           )}
+          {submitted && <LessonContinue onContinue={onContinue} hasNext={hasNext} />}
           {error && <Notice error>{error}</Notice>}
         </section>
       </div>
@@ -166,9 +179,13 @@ function ListeningSession({ lesson, onBack }: { lesson: ListeningLesson; onBack:
 function DictationSession({
   item,
   onBack,
+  onContinue,
+  hasNext,
 }: {
   item: (typeof dictations)[number];
   onBack: () => void;
+  onContinue: () => void;
+  hasNext: boolean;
 }) {
   const t = useT();
   const bi = useBi();
@@ -224,6 +241,7 @@ function DictationSession({
             <WordDiff target={item.text} actual={answer} />
             <DictionaryText text={item.text} />
             <Notice>{t('result')}</Notice>
+            <LessonContinue onContinue={onContinue} hasNext={hasNext} />
           </>
         )}
         {error && <Notice error>{error}</Notice>}
@@ -240,13 +258,23 @@ export default function Listening() {
   const [active, setActive] = useState<ListeningLesson>();
   const [dictation, setDictation] = useState<(typeof dictations)[number]>();
   if (active)
-    return <ListeningSession key={active.id} lesson={active} onBack={() => setActive(undefined)} />;
+    return (
+      <ListeningSession
+        key={active.id}
+        lesson={active}
+        onBack={() => setActive(undefined)}
+        onContinue={() => setActive(nextLesson(lessons, active))}
+        hasNext={!!nextLesson(lessons, active)}
+      />
+    );
   if (dictation)
     return (
       <DictationSession
         key={dictation.id}
         item={dictation}
         onBack={() => setDictation(undefined)}
+        onContinue={() => setDictation(nextLesson(sentences, dictation))}
+        hasNext={!!nextLesson(sentences, dictation)}
       />
     );
   return (
