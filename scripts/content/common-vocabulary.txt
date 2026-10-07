@@ -1360,3 +1360,149 @@ sphere|hình cầu|a solid perfectly round in every direction|The model shows a 
 cone|hình nón|a solid narrowing to a point|Roll the paper into a cone.
 cylinder|hình trụ|a solid with two circular ends|The can is shaped like a cylinder.
 pyramid|hình chóp|a solid with triangular sides meeting above a base|Build a pyramid with these blocks.
+
+# Advanced expansion: original B2/C1 learning content. Levels are editorial estimates.
+@Work|noun|B2
+workload|khối lượng công việc|the amount of work a person is expected to do|The new assistant helped reduce my workload.
+recruitment|việc tuyển dụng|the process of finding people to fill jobs|Our recruitment process includes a practical task.
+turnover|tỷ lệ nhân viên nghỉ việc|the rate at which employees leave and are replaced|Better working conditions helped reduce staff turnover.
+incentive|động lực khuyến khích|something that encourages a person to act|Flexible hours are an incentive to stay with the company.
+stakeholder|bên liên quan|a person or group affected by an organization or project|Each stakeholder received a copy of the revised plan.
+@Work|verb|B2
+delegate|giao việc|to give someone responsibility for a task|Managers should delegate routine tasks to trained staff.
+coordinate|phối hợp|to organize people or activities so they work together|Two nurses coordinate the daily appointments.
+implement|triển khai|to put a plan or decision into action|The team will implement the new schedule next month.
+allocate|phân bổ|to give resources to a particular person or purpose|We must allocate enough time for testing.
+resign|từ chức|to formally leave a job or position|She decided to resign after accepting another job.
+@Education|noun|B2
+hypothesis|giả thuyết|an idea that can be tested through research|The students designed an experiment to test their hypothesis.
+methodology|phương pháp nghiên cứu|the system of methods used in a study|The report explains the methodology behind the survey.
+citation|trích dẫn nguồn|a reference that identifies the source of information|Include a citation whenever you use another writer's idea.
+assessment|việc đánh giá|the process of judging knowledge or performance|The final assessment includes a short presentation.
+plagiarism|đạo văn|using another person's work as if it were your own|Copying a paragraph without credit can be plagiarism.
+@Education|verb|B2
+analyze|phân tích|to examine something carefully to understand its parts|We will analyze the survey responses in class.
+interpret|diễn giải|to explain the meaning of information or events|Different readers may interpret the ending differently.
+justify|đưa ra lý do thuyết phục|to give reasons that support a choice or claim|Use evidence to justify your answer.
+formulate|xây dựng ý tưởng rõ ràng|to develop and express an idea or plan carefully|The students will formulate a research question together.
+integrate|kết hợp thành một thể thống nhất|to combine parts so that they work together|The course will integrate reading with discussion.
+@Environment|noun|B2
+biodiversity|đa dạng sinh học|the variety of living things in an area|The wetland supports remarkable biodiversity.
+ecosystem|hệ sinh thái|living things and their physical environment interacting together|Removing one species can affect the whole ecosystem.
+landfill|bãi chôn lấp rác|a place where waste is buried in the ground|The town sends less waste to landfill each year.
+deforestation|nạn phá rừng|the large-scale removal of trees from an area|Satellite images reveal the extent of deforestation.
+conservation|việc bảo tồn|the protection of nature and natural resources|Local volunteers support the conservation of sea turtles.
+@Environment|verb|B2
+restore|khôi phục|to return something damaged to a better condition|Volunteers planted native trees to restore the hillside.
+preserve|gìn giữ|to keep something safe from damage or loss|The new rules aim to preserve the coastal forest.
+contaminate|làm ô nhiễm|to make something impure or unsafe by adding harmful substances|Leaking tanks can contaminate the soil nearby.
+deplete|làm cạn kiệt|to use up much or all of a supply|Excessive irrigation can deplete underground water reserves.
+regulate|quản lý bằng quy định|to control an activity through rules|The council will regulate waste disposal near the river.
+@Technology|noun|B2
+compatibility|khả năng tương thích|the ability of things to work together|Check device compatibility before installing the software.
+reliability|độ tin cậy|the ability to work correctly and consistently|We tested the reliability of the system under heavy use.
+backup copy|bản sao dự phòng|an extra copy kept in case the original is lost|Keep a backup copy on a separate drive.
+prototype|nguyên mẫu|an early model used to test a design|We tested the prototype with five volunteers.
+storage capacity|dung lượng lưu trữ|the amount of information a device can hold|Video files quickly filled the phone's storage capacity.
+@Technology|verb|B2
+configure|cấu hình|to arrange settings so a system works as needed|The technician will configure the router this afternoon.
+synchronize|đồng bộ hóa|to make information agree across different devices or systems|Connect to the network to synchronize your notes.
+retrieve|truy xuất|to find and bring back stored information|You can retrieve the document from the archive.
+monitor|theo dõi|to check something regularly for changes or problems|The dashboard helps us monitor server performance.
+upgrade|nâng cấp|to replace or improve something with a better version|We plan to upgrade the computers in the lab.
+@Communication|noun|B2
+misinterpretation|sự hiểu sai|an incorrect understanding of a message or event|The unclear wording led to a misinterpretation of the rule.
+clarification|sự làm rõ|an explanation that makes something easier to understand|I asked for clarification before signing the agreement.
+viewpoint|quan điểm|a particular way of thinking about an issue|The discussion helped me understand a different viewpoint.
+consensus|sự đồng thuận|general agreement within a group|The committee reached a consensus after a long discussion.
+assertion|lời khẳng định|a statement presented as true|The article offers no evidence for that assertion.
+@Communication|verb|B2
+acknowledge|thừa nhận|to accept or recognize that something is true|We should acknowledge the limits of our research.
+convey|truyền đạt|to communicate an idea or feeling|A simple diagram can convey a complex idea.
+persuade|thuyết phục|to cause someone to agree or act by giving reasons|The evidence may persuade the council to reconsider.
+rephrase|diễn đạt lại|to express the same idea using different words|Could you rephrase the question in simpler language?
+contradict|mâu thuẫn với|to state or show the opposite of something|These results contradict our earlier prediction.
+@Ideas and relationships|noun|B2
+empathy|sự đồng cảm|the ability to understand another person's feelings|Listening without interrupting can show empathy.
+compromise|sự thỏa hiệp|an agreement in which each side gives up something|We found a compromise that suited both families.
+boundary|ranh giới|a limit on what is acceptable in a relationship or situation|Declining late-night calls helped her set a clear boundary.
+bias|thiên kiến|a preference that can prevent fair judgment|The interviewer tried to avoid personal bias.
+mutual respect|sự tôn trọng lẫn nhau|consideration that people show toward one another|Their friendship is based on mutual respect.
+@Ideas and relationships|verb|B2
+cooperate|hợp tác|to work with others toward a shared goal|Neighbors agreed to cooperate on the garden project.
+reconcile|hòa giải|to restore a friendly relationship after disagreement|The sisters hope to reconcile after their argument.
+resent|cảm thấy bực bội vì|to feel angry about something considered unfair|Employees may resent rules that apply only to them.
+misjudge|đánh giá sai|to form an incorrect opinion about someone or something|It is easy to misjudge someone after one brief meeting.
+withstand|chịu đựng được|to remain strong despite pressure or difficulty|Their friendship could withstand an honest disagreement.
+@Work|noun|C1
+accountability|trách nhiệm giải trình|the duty to explain decisions and accept responsibility for them|Clear reporting lines improve accountability within the organization.
+autonomy|quyền tự chủ|the freedom to make decisions independently|The role offers considerable autonomy over daily priorities.
+restructuring|sự tái cơ cấu|the process of changing how an organization is arranged|The restructuring brought the design and research teams together.
+remuneration|thù lao|payment received for work or services|The contract clearly states the total remuneration for the role.
+viability|tính khả thi lâu dài|the ability of a plan or business to succeed and continue|The team questioned the financial viability of the proposal.
+@Work|verb|C1
+streamline|tinh gọn|to simplify a process so it works more efficiently|The new form will streamline expense approvals.
+consolidate|hợp nhất để củng cố|to combine separate things into a stronger whole|We plan to consolidate the regional teams into one division.
+benchmark|đánh giá theo chuẩn đối chiếu|to compare performance against a chosen standard|We benchmark our delivery times against industry averages.
+outsource|thuê ngoài|to arrange for another organization to perform work|The company may outsource some administrative tasks.
+restructure|tái cơ cấu|to change the organization or arrangement of something|They will restructure the department around smaller project teams.
+@Education|noun|C1
+inference|suy luận|a conclusion drawn from evidence rather than directly stated facts|Her inference was plausible but needed further evidence.
+rigor|tính chặt chẽ|great care and precision in a method or argument|The reviewers praised the methodological rigor of the study.
+dissertation|luận án|a long research paper written for an academic qualification|Her dissertation examines language use in online classrooms.
+validity|tính hợp lệ|the extent to which a method or argument supports its intended conclusion|The small sample raised questions about the validity of the findings.
+replication|sự lặp lại nghiên cứu|repeating a study to check whether similar results occur|Independent replication increased confidence in the finding.
+@Education|verb|C1
+substantiate|chứng minh bằng bằng chứng|to provide evidence that supports a claim|The author uses interview data to substantiate her argument.
+synthesize|tổng hợp|to combine information into a coherent new account|The review will synthesize findings from several small studies.
+scrutinize|xem xét kỹ lưỡng|to examine something closely and critically|Reviewers will scrutinize the methods before accepting the paper.
+corroborate|củng cố bằng chứng cho|to support a statement with additional evidence|The laboratory results corroborate the field observations.
+elucidate|làm sáng tỏ|to make a difficult idea easier to understand|The diagram helps elucidate the relationship between the variables.
+@Environment|noun|C1
+resilience|khả năng phục hồi|the ability to recover after damage or disturbance|Plant diversity can strengthen a forest's resilience to disease.
+mitigation|sự giảm nhẹ tác động|action that reduces the seriousness of a problem|The plan combines flood mitigation with wetland restoration.
+sequestration|sự thu giữ|the capture and storage of a substance|The project studies carbon sequestration in restored grasslands.
+degradation|sự suy thoái|a decline in quality or condition|Heavy grazing contributed to soil degradation.
+stewardship|sự quản lý có trách nhiệm|the responsible care and management of something|Community stewardship helped protect the woodland for future generations.
+@Environment|verb|C1
+exacerbate|làm trầm trọng thêm|to make an existing problem worse|Poor drainage can exacerbate flooding during heavy rain.
+rehabilitate|phục hồi chức năng|to restore something damaged so it can function again|The program aims to rehabilitate land damaged by mining.
+curb|kiềm chế|to limit or control something harmful|The city introduced measures to curb illegal dumping.
+phase out|loại bỏ dần|to stop using something in gradual stages|The factory will phase out its oldest diesel vehicles.
+safeguard|bảo vệ khỏi nguy cơ|to protect something valuable from harm or loss|The agreement aims to safeguard fragile coastal habitats.
+@Technology|noun|C1
+interoperability|khả năng liên thông|the ability of different systems to exchange and use information|Shared formats improve interoperability between the two platforms.
+scalability|khả năng mở rộng|the ability of a system to handle increasing demand|The engineers tested the service's scalability before launch.
+redundancy|sự dự phòng|extra components that keep a system working if another part fails|A second power supply provides redundancy during equipment failure.
+obsolescence|sự lỗi thời|the process of becoming outdated or no longer useful|The company budgets for the gradual obsolescence of its hardware.
+traceability|khả năng truy vết|the ability to follow the history or origin of something|Version records improve the traceability of software changes.
+@Technology|verb|C1
+orchestrate|điều phối|to organize several processes so they work together|The platform can orchestrate tasks across multiple machines.
+decommission|ngừng vận hành|to formally remove a system or device from service|We will decommission the old server after transferring the records.
+anonymize|ẩn danh hóa|to remove identifying details from information|Researchers anonymize interview transcripts before sharing them.
+intercept|chặn bắt|to capture something before it reaches its destination|Attackers may try to intercept messages on an insecure network.
+propagate|lan truyền|to spread information or a change through a system|The update may take a few minutes to propagate across all servers.
+@Communication|noun|C1
+ambiguity|sự mơ hồ|the possibility of more than one interpretation|The revised instructions remove ambiguity about the deadline.
+nuance|sắc thái tinh tế|a small but meaningful difference in meaning or feeling|A literal translation can miss an important nuance.
+rhetoric|nghệ thuật dùng lời thuyết phục|language chosen to influence an audience|The speech used emotional rhetoric to win public support.
+connotation|nghĩa liên tưởng|an idea or feeling suggested by a word beyond its basic meaning|The word carries a negative connotation in this context.
+discrepancy|sự không nhất quán|a difference between things that should agree|We noticed a discrepancy between the two accounts.
+@Communication|verb|C1
+articulate|diễn đạt rõ ràng|to express an idea clearly in words|She can articulate complex concerns without technical jargon.
+reiterate|nhắc lại để nhấn mạnh|to say something again for emphasis or clarity|The chair will reiterate the main conditions at the end.
+qualify|giới hạn phạm vi phát biểu|to make a statement less absolute by adding conditions|I should qualify that claim because our sample was small.
+refute|bác bỏ bằng lý lẽ hoặc bằng chứng|to show that a claim is false through argument or evidence|The new documents refute the allegation of missing funds.
+concede|thừa nhận dù không muốn|to accept that a point is true after initially resisting it|I concede that the first proposal was too expensive.
+@Ideas and relationships|noun|C1
+reciprocity|sự có đi có lại|the practice of responding to an action with a similar action|Their partnership depends on trust and reciprocity.
+alienation|cảm giác xa cách|a feeling of being disconnected from people or a group|Frequent exclusion deepened his sense of alienation.
+solidarity|tinh thần đoàn kết|unity based on shared interests or support|The neighbors showed solidarity with families affected by the fire.
+ambivalence|tâm trạng giằng co|the experience of opposing feelings about the same thing|She felt ambivalence about leaving her hometown.
+integrity|sự chính trực|the quality of acting honestly according to moral principles|He showed integrity by admitting the mistake immediately.
+@Ideas and relationships|verb|C1
+empathize|đồng cảm|to understand and share another person's feelings|Her own experience helped her empathize with new arrivals.
+alienate|khiến xa lánh|to make someone feel excluded or less friendly|Dismissing every suggestion can alienate your colleagues.
+reciprocate|đáp lại tương xứng|to respond to an action with a similar action|We hope to reciprocate their hospitality next summer.
+undermine|làm suy yếu|to gradually weaken confidence or effectiveness|Repeated broken promises can undermine trust.
+perpetuate|kéo dài tình trạng|to cause a situation or belief to continue|Unchallenged assumptions can perpetuate unfair treatment.

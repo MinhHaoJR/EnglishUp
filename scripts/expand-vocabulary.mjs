@@ -23,7 +23,7 @@ for (const [index, raw] of readFileSync(source, 'utf8').split(/\r?\n/).entries()
   if (
     !topic ||
     !pos ||
-    !['A1', 'A2', 'B1', 'B2'].includes(level) ||
+    !['A1', 'A2', 'B1', 'B2', 'C1'].includes(level) ||
     fields.length !== 4 ||
     fields.some((field) => !field.trim())
   )

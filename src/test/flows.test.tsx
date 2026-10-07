@@ -47,13 +47,13 @@ test('large library pages are bounded and search and topic changes return to pag
   fireEvent.click(screen.getByRole('button', { name: /Word library/ }));
   expect(screen.getAllByRole('article')).toHaveLength(30);
   fireEvent.click(screen.getByRole('button', { name: 'Next page' }));
-  expect(screen.getByText('Page 2/52 · 1560 matching words')).toBeInTheDocument();
+  expect(screen.getByText('Page 2/56 · 1680 matching words')).toBeInTheDocument();
   fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'pineapple' } });
   expect(screen.getAllByRole('article')).toHaveLength(1);
   expect(screen.getByRole('heading', { name: /pineapple/ })).toBeInTheDocument();
   expect(screen.getByRole('button', { name: 'Previous page' })).toBeDisabled();
   fireEvent.change(screen.getByRole('searchbox'), { target: { value: '' } });
-  expect(screen.getByText('Page 1/52 · 1560 matching words')).toBeInTheDocument();
+  expect(screen.getByText('Page 1/56 · 1680 matching words')).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'People and family · 50' }));
   expect(screen.getByText('Page 1/2 · 50 matching words')).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Next page' }));
@@ -295,4 +295,31 @@ test('the last filtered reading returns to lessons without starting an unrelated
     filtered.length,
   );
   expect(await db.attempts.count()).toBe(1);
+});
+
+test('C1 vocabulary filters, exports and persists a review through backup and restore', async () => {
+  const view = show(<Vocabulary />);
+  fireEvent.change(screen.getByRole('combobox', { name: 'Level' }), { target: { value: 'C1' } });
+  fireEvent.change(screen.getByRole('combobox', { name: 'Topic' }), { target: { value: 'Work' } });
+  fireEvent.click(screen.getByRole('button', { name: /Word library/ }));
+  expect(screen.getAllByRole('article')).toHaveLength(10);
+  expect(screen.getByRole('heading', { name: /accountability/ })).toBeInTheDocument();
+  expect(screen.queryByRole('heading', { name: /workload/ })).not.toBeInTheDocument();
+  const exported = importCSV(
+    exportCSV(vocabulary.filter((w) => w.level === 'C1' && w.topic === 'Work')),
+  );
+  expect(exported).toHaveLength(10);
+  expect(exported.every((word) => word.level === 'C1')).toBe(true);
+  fireEvent.click(screen.getByRole('button', { name: 'Practice' }));
+  fireEvent.click(screen.getByRole('button', { name: /Start practice/ }));
+  expect(screen.getByRole('heading', { name: 'accountability' })).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Reveal answer' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Good' }));
+  await verifyAttempt('vocabulary');
+  view.unmount();
+  const backup = await exportData();
+  await resetData();
+  await importData(backup);
+  expect(await db.reviews.get('v-common-accountability')).toMatchObject({ total: 1, correct: 1 });
+  expect((await db.attempts.toArray())[0].label).toBe('accountability');
 });

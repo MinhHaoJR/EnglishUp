@@ -9,8 +9,8 @@ import {
 import { wordSchema, questionSchema } from './schema';
 import { topics, topicVi } from '../i18n';
 test('expanded catalog has translated topics, complete IT entries and stable original IDs', () => {
-  expect(vocabulary).toHaveLength(1560);
-  expect(vocabulary.filter((word) => !word.topic.startsWith('IT:'))).toHaveLength(1500);
+  expect(vocabulary).toHaveLength(1680);
+  expect(vocabulary.filter((word) => !word.topic.startsWith('IT:'))).toHaveLength(1620);
   expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(35);
   for (const topic of topics) {
     expect(topicVi[topic]).toBeTruthy();
@@ -33,13 +33,13 @@ test('expanded catalog has translated topics, complete IT entries and stable ori
 test('original vocabulary meets quantity, topic and schema requirements', () => {
   expect(vocabulary.length).toBeGreaterThanOrEqual(1500);
   expect(new Set(vocabulary.map((w) => w.word.trim().toLowerCase())).size).toBe(vocabulary.length);
-  expect(vocabulary.every((w) => ['A1', 'A2', 'B1', 'B2'].includes(w.level))).toBe(true);
+  expect(vocabulary.every((w) => ['A1', 'A2', 'B1', 'B2', 'C1'].includes(w.level))).toBe(true);
   expect(vocabulary.filter((word) => word.level === 'A1').length).toBeGreaterThanOrEqual(900);
 });
 
 test('common expansion contains complete, original examples and registered topics', () => {
   const common = vocabulary.filter((word) => word.id.startsWith('v-common-'));
-  expect(common).toHaveLength(1320);
+  expect(common).toHaveLength(1440);
   expect(new Set(common.map((word) => word.examples[0])).size).toBe(common.length);
   for (const word of common) {
     expect(topics).toContain(word.topic);
@@ -95,5 +95,24 @@ test('reading passages have 150–350 words, five questions and exact evidence',
     expect(count).toBeLessThanOrEqual(350);
     expect(r.questions).toHaveLength(5);
     for (const q of r.questions) expect(r.text).toContain(q.evidence);
+  }
+});
+
+test('advanced vocabulary covers B2 and C1 across six learning topics', () => {
+  expect(vocabulary.filter((word) => word.level === 'B2')).toHaveLength(146);
+  expect(vocabulary.filter((word) => word.level === 'C1')).toHaveLength(60);
+  for (const topic of [
+    'Work',
+    'Education',
+    'Environment',
+    'Technology',
+    'Communication',
+    'Ideas and relationships',
+  ]) {
+    for (const level of ['B2', 'C1']) {
+      const words = vocabulary.filter((word) => word.topic === topic && word.level === level);
+      expect(words.length).toBeGreaterThanOrEqual(10);
+      for (const word of words) expect(wordSchema.safeParse(word).success).toBe(true);
+    }
   }
 });
