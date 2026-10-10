@@ -11,6 +11,7 @@ import { useApp } from './store';
 import { useT } from '../i18n';
 import Dashboard from '../features/dashboard/Dashboard';
 import LanguagePicker from '../features/languages/LanguagePicker';
+import SkillIcon from '../components/SkillIcon';
 const LanguageWorkspace = lazy(() => import('../features/languages/LanguageWorkspace'));
 import { languageNames } from '../data/languages';
 import { skillSchema } from '../data/schema';
@@ -55,17 +56,19 @@ export function Layout() {
         <nav aria-label={t('practice')}>
           {(
             [
-              ['/', 'dashboard', '▦'],
-              ['/vocabulary', 'vocabulary', '▧'],
-              ['/listening', 'listening', '◉'],
-              ['/speaking', 'speaking', '♧'],
-              ['/reading', 'reading', '▤'],
-              ['/writing', 'writing', '✎'],
-              ['/settings', 'settings', '⚙'],
+              ['/', 'dashboard'],
+              ['/vocabulary', 'vocabulary'],
+              ['/listening', 'listening'],
+              ['/speaking', 'speaking'],
+              ['/reading', 'reading'],
+              ['/writing', 'writing'],
+              ['/settings', 'settings'],
             ] as const
-          ).map(([path, label, icon]) => (
-            <NavLink key={path} to={path} end={path === '/'}>
-              <span aria-hidden="true">{icon}</span>
+          ).map(([path, label]) => (
+            <NavLink key={path} to={path} end={path === '/'} data-skill={label}>
+              <span aria-hidden="true">
+                <SkillIcon skill={label} />
+              </span>
               {t(label)}
             </NavLink>
           ))}
@@ -78,7 +81,7 @@ export function Layout() {
           <p>{t('local')}</p>
         </div>
       </aside>
-      <div className="workspace">
+      <div className="workspace" data-skill={pathname.split('/')[1] || 'dashboard'}>
         <div className="topbar">
           <span>
             {languageNames[settings.learningLanguage][settings.language]} · {t('tagline')}

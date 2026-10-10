@@ -145,6 +145,7 @@ export default function LanguageVocabulary({ language }: { language: VocabularyL
             <button
               key={item.id}
               className="lexicon-topic"
+              data-topic={item.id}
               aria-pressed={topic === item.id}
               onClick={() => selectTopic(item.id)}
             >
@@ -195,7 +196,7 @@ export default function LanguageVocabulary({ language }: { language: VocabularyL
       {displayed.length ? (
         <div className="lexicon-grid">
           {displayed.map((word) => (
-            <article className="lexicon-card" key={word.id}>
+            <article className="lexicon-card" key={word.id} data-topic={word.topic}>
               <div className="lexicon-card-top">
                 <span>{vocabularyTopics.find((item) => item.id === word.topic)![locale]}</span>
                 <button onClick={() => listen(word)} aria-label={`${t('listen')}: ${word.text}`}>
@@ -381,7 +382,7 @@ function VocabularySession({ queue, onBack }: { queue: WordQuestion[]; onBack: (
             </span>
           </div>
           <progress value={index + Number(saved)} max={queue.length} aria-label={t('progress')} />
-          <div className="lexicon-practice-card panel">
+          <div className="lexicon-practice-card panel" data-topic={card.word.topic}>
             <p className="lexicon-eyebrow">
               {vocabularyTopics.find((item) => item.id === card.word.topic)![settings.language]}
             </p>

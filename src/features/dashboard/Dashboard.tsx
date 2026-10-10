@@ -5,8 +5,16 @@ import { Filters, Notice, PageTitle, useLive } from '../../components/shared';
 import { db } from '../../services/storage';
 import { dueQueue } from '../../services/srs';
 import { getProgress } from '../../services/progress';
-import { vocabulary } from '../../data/content';
-const icons = { vocabulary: 'Aa', listening: '◖))', speaking: '♧', reading: '▤', writing: '✎' };
+import {
+  vocabulary,
+  listenings,
+  dictations,
+  readings,
+  speakingPrompts,
+  writingPrompts,
+} from '../../data/content';
+import '../../styles/vibrant-dashboard.css';
+const icons = { vocabulary: 'Aa', listening: '♫', speaking: '✦', reading: '▤', writing: '✎' };
 export default function Dashboard() {
   const t = useT();
   const bi = useBi();
@@ -40,7 +48,10 @@ export default function Dashboard() {
       en: 'Tune in to the world',
       descVi: 'Hội thoại đời thường & chép chính tả',
       descEn: 'Everyday conversations & dictation',
-      meta: '6 lessons · 12 dictations',
+      meta: bi(
+        `${listenings.length} bài nghe · ${dictations.length} câu chép`,
+        `${listenings.length} lessons · ${dictations.length} dictations`,
+      ),
       cls: 'peach',
     },
     {
@@ -49,8 +60,11 @@ export default function Dashboard() {
       en: 'Find your own voice',
       descVi: 'Đọc theo mẫu & nói theo chủ đề',
       descEn: 'Read aloud & explore a topic',
-      meta: '16 prompts · 60–120s',
-      cls: 'lavender',
+      meta: bi(
+        `${speakingPrompts.length} đề luyện nói`,
+        `${speakingPrompts.length} speaking prompts`,
+      ),
+      cls: 'rose',
     },
     {
       skill: 'reading' as const,
@@ -58,7 +72,7 @@ export default function Dashboard() {
       en: 'Open a new perspective',
       descVi: 'Bài đọc ngắn, ý tưởng đáng nhớ',
       descEn: 'Short reads, memorable ideas',
-      meta: '6 stories · A2–B2',
+      meta: bi(`${readings.length} bài đọc`, `${readings.length} stories`),
       cls: 'blue',
     },
     {
@@ -67,58 +81,68 @@ export default function Dashboard() {
       en: 'Put ideas into words',
       descVi: 'Viết, nhận xét & tiến bộ từng bản nháp',
       descEn: 'Write, reflect & improve each draft',
-      meta: '10 prompts · Offline feedback',
-      cls: 'sand',
+      meta: bi(
+        `${writingPrompts.length} đề · Nhận xét offline`,
+        `${writingPrompts.length} prompts · Offline feedback`,
+      ),
+      cls: 'mint',
     },
   ];
   return (
-    <>
+    <div className="joy-dashboard">
       <PageTitle
         eyebrow={t('homeEyebrow')}
-        title={bi('Chào bạn, cùng học nhé.', 'Hello, let’s make progress.')}
+        title={bi('Hôm nay, học điều mới!', 'A new day. A new discovery!')}
         description={date}
       />
       <section className="hero">
         <div className="hero-copy">
-          <span className="hero-chip">✦ {bi('MỖI NGÀY MỘT CHÚT', 'A LITTLE, EVERY DAY')}</span>
+          <span className="hero-chip">
+            ✦{' '}
+            {bi('MỘT CHÚT MỖI NGÀY. TIẾN XA MỖI TUẦN.', 'A LITTLE EVERY DAY. FURTHER EVERY WEEK.')}
+          </span>
           <h2>
-            {bi('Tiếng Anh tốt hơn,', 'Better English,')}
+            {bi('Mở lời hôm nay.', 'Say hello today.')}
             <br />
-            <em>{bi('bắt đầu từ hôm nay.', 'starting today.')}</em>
+            <em>{bi('Mở cả thế giới.', 'Open up your world.')}</em>
           </h2>
           <p>
-            {t('welcomeSub')}
-            <br />
-            {bi('Chỉ 5–10 phút, theo nhịp của bạn.', 'Just 5–10 minutes, at your own pace.')}
+            {bi(
+              'Từ một từ mới đến một câu chuyện hay. Dành 5–10 phút khám phá tiếng Anh theo cách của bạn.',
+              'From a new word to a great story. Take 5–10 minutes to explore English your way.',
+            )}
           </p>
           <Link className="button primary" to={due ? '/vocabulary' : '/reading'}>
-            {t('continue')} <span>↗</span>
+            {t('continue')} <span aria-hidden="true">→</span>
           </Link>
           <span className="hero-foot">
             {bi('Không áp lực. Chỉ cần đều đặn.', 'No pressure. Just a little consistency.')}
           </span>
         </div>
-        <div className="hero-art" aria-hidden="true">
-          <div className="art-orbit" />
-          <div className="art-star star-one">✳</div>
-          <div className="art-star star-two">✧</div>
-          <div className="art-note">
-            Hello,
-            <br />
-            <em>possibility.</em>
-            <span>↗</span>
+        <div className="joy-hero-art" aria-hidden="true">
+          <div className="joy-art-orbit" />
+          <div className="joy-art-spark">✳</div>
+          <div className="joy-word-card">
+            <span>ONE WORD, A NEW WORLD</span>
+            <strong>
+              Hello<span>.</span>
+            </strong>
+            <div>
+              <i /> <i /> <i /> <span>↗</span>
+            </div>
           </div>
-          <div className="book book-back" />
-          <div className="book book-front">
-            <span>
-              ONE WORD
-              <br />
-              AT A TIME
-            </span>
-            <i>e.</i>
-            <div />
+          <div className="joy-speech-sticker">You got this!</div>
+          <div className="joy-audio-sticker">
+            <i />
+            <i />
+            <i />
+            <i />
+            <i />
+            <i />
+            <i />
           </div>
-          <div className="art-pill">✓ Small steps, big dreams</div>
+          <div className="joy-art-star">✦</div>
+          <div className="joy-art-note">A little better, every day.</div>
         </div>
       </section>
       <div className="stats dashboard-stats">
@@ -197,15 +221,7 @@ export default function Dashboard() {
                 <span className="skill-label">{t(c.skill)}</span>
                 <h3>{bi(c.vi, c.en)}</h3>
                 <p>{bi(c.descVi, c.descEn)}</p>
-                <div className="skill-meta">
-                  {c.skill === 'listening'
-                    ? bi('6 bài nghe · 12 câu chép', '6 lessons · 12 dictations')
-                    : c.skill === 'speaking'
-                      ? bi('16 đề · 60–120 giây', '16 prompts · 60–120 seconds')
-                      : c.skill === 'reading'
-                        ? bi('6 bài đọc · A2–B2', '6 stories · A2–B2')
-                        : bi('10 đề · Nhận xét offline', '10 prompts · Offline feedback')}
-                </div>
+                <div className="skill-meta">{c.meta}</div>
               </Link>
             ))}
           </div>
@@ -374,6 +390,6 @@ export default function Dashboard() {
         )}
         {error && <Notice error>{error}</Notice>}
       </section>
-    </>
+    </div>
   );
 }

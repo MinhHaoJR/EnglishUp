@@ -13,6 +13,7 @@ import { languageVocabulary, vocabularyTopics } from '../../data/languageVocabul
 import { LessonContinue } from '../../components/LessonContinue';
 import { nextLesson } from '../../services/lessonNavigation';
 import LanguageVocabulary from './LanguageVocabulary';
+import '../../styles/vibrant-languages.css';
 
 const skillMarks: Record<Skill, string> = {
   vocabulary: 'Aa',
@@ -145,6 +146,7 @@ export default function LanguageWorkspace({ skill }: { skill?: Skill }) {
               {vocabularyTopics.slice(0, 6).map((topic) => (
                 <Link
                   className="language-topic-card"
+                  data-topic={topic.id}
                   key={topic.id}
                   to={`/vocabulary?topic=${encodeURIComponent(topic.id)}`}
                 >
@@ -172,7 +174,7 @@ export default function LanguageWorkspace({ skill }: { skill?: Skill }) {
               {skills
                 .filter((item) => item !== 'vocabulary')
                 .map((item) => (
-                  <Link className="language-card" key={item} to={`/${item}`}>
+                  <Link className="language-card" data-skill={item} key={item} to={`/${item}`}>
                     <span className="language-skill-mark" aria-hidden="true">
                       {skillMarks[item]}
                     </span>

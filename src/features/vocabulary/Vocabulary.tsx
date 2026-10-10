@@ -132,7 +132,7 @@ export default function Vocabulary() {
         <>
           <Filters availableTopics={topicGroups.map((group) => group.topic)} />
           <section
-            className="panel space-y-4"
+            className="vocabulary-topics panel space-y-4"
             aria-label={bi('Chọn chủ đề từ vựng', 'Choose a vocabulary topic')}
           >
             <div className="actions">
@@ -149,7 +149,7 @@ export default function Vocabulary() {
                     ? bi('Tiếng Anh chuyên ngành IT', 'English for IT')
                     : bi('Đời sống và công việc', 'Everyday life and work')}
                 </h3>
-                <div className="actions mt-2">
+                <div className="topic-choices actions mt-2">
                   {topicGroups
                     .filter((group) => group.topic.startsWith('IT:') === it)
                     .map((group) => (
