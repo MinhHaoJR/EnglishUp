@@ -1,5 +1,7 @@
 # Adding original learning content
 
+This guide covers English learning content. See [Japanese and Chinese learning spaces](languages.md) for the separate 2,000-entry catalogs, source format and vocabulary practice.
+
 All six UTF-8 JSON files in `src/data/` are parsed with Zod when the application module loads. TypeScript types are inferred from `schema.ts`; validation is not a type assertion. `npm test` verifies quantities, passage lengths, unique IDs, accepted choices and evidence. Invalid content must be fixed before shipping.
 
 Use original writing. Do not paste textbook, examination, news or copyrighted exercise material. The supplied content was authored for EnglishUp; CEFR labels are editorial estimates, not exam certification. Vietnamese meanings and General American IPA are teaching aids and can be refined by an educator.

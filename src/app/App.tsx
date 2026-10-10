@@ -11,7 +11,7 @@ import { useApp } from './store';
 import { useT } from '../i18n';
 import Dashboard from '../features/dashboard/Dashboard';
 import LanguagePicker from '../features/languages/LanguagePicker';
-import LanguageWorkspace from '../features/languages/LanguageWorkspace';
+const LanguageWorkspace = lazy(() => import('../features/languages/LanguageWorkspace'));
 import { languageNames } from '../data/languages';
 import { skillSchema } from '../data/schema';
 const Settings = lazy(() => import('../features/settings/Settings'));

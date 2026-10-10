@@ -1,0 +1,2000 @@
+zh-vocab-0001|greetings|你好|nǐ hǎo|nǐ hǎo|xin chào|hello
+zh-vocab-0002|greetings|您好|nín hǎo|nín hǎo|kính chào|hello politely
+zh-vocab-0003|greetings|早上好|zǎoshang hǎo|zǎoshang hǎo|chào buổi sáng|good morning
+zh-vocab-0004|greetings|晚上好|wǎnshang hǎo|wǎnshang hǎo|chào buổi tối|good evening
+zh-vocab-0005|greetings|再见|zàijiàn|zàijiàn|tạm biệt|goodbye
+zh-vocab-0006|greetings|谢谢|xièxie|xièxie|cảm ơn|thank you
+zh-vocab-0007|greetings|不客气|bú kèqi|bú kèqi|không có gì|you are welcome
+zh-vocab-0008|greetings|对不起|duìbuqǐ|duìbuqǐ|xin lỗi|sorry
+zh-vocab-0009|greetings|没关系|méi guānxi|méi guānxi|không sao|never mind
+zh-vocab-0010|greetings|请问|qǐngwèn|qǐngwèn|xin hỏi|may I ask
+zh-vocab-0011|greetings|欢迎|huānyíng|huānyíng|hoan nghênh|welcome
+zh-vocab-0012|greetings|请进|qǐng jìn|qǐng jìn|mời vào|please enter
+zh-vocab-0013|greetings|请坐|qǐng zuò|qǐng zuò|mời ngồi|please sit
+zh-vocab-0014|greetings|晚安|wǎn'ān|wǎn'ān|chúc ngủ ngon|good night
+zh-vocab-0015|greetings|祝贺|zhùhè|zhùhè|chúc mừng|congratulate
+zh-vocab-0016|greetings|恭喜|gōngxǐ|gōngxǐ|chúc mừng|congratulations
+zh-vocab-0017|greetings|保重|bǎozhòng|bǎozhòng|giữ gìn sức khỏe|take care
+zh-vocab-0018|greetings|打扰|dǎrǎo|dǎrǎo|làm phiền|disturb
+zh-vocab-0019|greetings|麻烦|máfan|máfan|phiền phức|trouble
+zh-vocab-0020|greetings|抱歉|bàoqiàn|bàoqiàn|xin lỗi|apologetic
+zh-vocab-0021|greetings|幸会|xìnghuì|xìnghuì|hân hạnh gặp|pleased to meet
+zh-vocab-0022|greetings|久仰|jiǔyǎng|jiǔyǎng|ngưỡng mộ từ lâu|long admired
+zh-vocab-0023|greetings|好久不见|hǎojiǔ bú jiàn|hǎojiǔ bú jiàn|lâu rồi không gặp|long time no see
+zh-vocab-0024|greetings|一路平安|yílù píng'ān|yílù píng'ān|thượng lộ bình an|have a safe journey
+zh-vocab-0025|greetings|生日快乐|shēngrì kuàilè|shēngrì kuàilè|chúc mừng sinh nhật|happy birthday
+zh-vocab-0026|greetings|新年快乐|xīnnián kuàilè|xīnnián kuàilè|chúc mừng năm mới|happy new year
+zh-vocab-0027|greetings|加油|jiāyóu|jiāyóu|cố lên|keep going
+zh-vocab-0028|greetings|干杯|gānbēi|gānbēi|cạn ly|cheers
+zh-vocab-0029|greetings|慢走|màn zǒu|màn zǒu|đi thong thả nhé|take care leaving
+zh-vocab-0030|greetings|回头见|huítóu jiàn|huítóu jiàn|gặp lại sau|see you later
+zh-vocab-0031|greetings|我|wǒ|wǒ|tôi|I
+zh-vocab-0032|greetings|你|nǐ|nǐ|bạn|you
+zh-vocab-0033|greetings|您|nín|nín|ngài|you politely
+zh-vocab-0034|greetings|他|tā|tā|anh ấy|he
+zh-vocab-0035|greetings|她|tā|tā|cô ấy|she
+zh-vocab-0036|greetings|它|tā|tā|nó|it
+zh-vocab-0037|greetings|我们|wǒmen|wǒmen|chúng tôi|we
+zh-vocab-0038|greetings|咱们|zánmen|zánmen|chúng ta|we including you
+zh-vocab-0039|greetings|你们|nǐmen|nǐmen|các bạn|you plural
+zh-vocab-0040|greetings|他们|tāmen|tāmen|họ|they
+zh-vocab-0041|greetings|大家|dàjiā|dàjiā|mọi người|everyone
+zh-vocab-0042|greetings|自己|zìjǐ|zìjǐ|bản thân|oneself
+zh-vocab-0043|greetings|别人|biérén|biérén|người khác|others
+zh-vocab-0044|greetings|谁|shéi|shéi|ai|who
+zh-vocab-0045|greetings|什么|shénme|shénme|cái gì|what
+zh-vocab-0046|greetings|哪里|nǎlǐ|nǎlǐ|ở đâu|where
+zh-vocab-0047|greetings|哪儿|nǎr|nǎr|ở đâu|where
+zh-vocab-0048|greetings|哪|nǎ|nǎ|nào|which
+zh-vocab-0049|greetings|为什么|wèishénme|wèishénme|tại sao|why
+zh-vocab-0050|greetings|怎么|zěnme|zěnme|thế nào|how
+zh-vocab-0051|greetings|怎么样|zěnmeyàng|zěnmeyàng|ra sao|how about
+zh-vocab-0052|greetings|多少|duōshao|duōshao|bao nhiêu|how many
+zh-vocab-0053|greetings|几|jǐ|jǐ|mấy|how many
+zh-vocab-0054|greetings|这|zhè|zhè|này|this
+zh-vocab-0055|greetings|那|nà|nà|kia|that
+zh-vocab-0056|greetings|这里|zhèlǐ|zhèlǐ|ở đây|here
+zh-vocab-0057|greetings|那里|nàlǐ|nàlǐ|ở đó|there
+zh-vocab-0058|greetings|这些|zhèxiē|zhèxiē|những cái này|these
+zh-vocab-0059|greetings|那些|nàxiē|nàxiē|những cái kia|those
+zh-vocab-0060|greetings|每|měi|měi|mỗi|each
+zh-vocab-0061|greetings|各|gè|gè|từng|each respective
+zh-vocab-0062|greetings|所有|suǒyǒu|suǒyǒu|tất cả|all
+zh-vocab-0063|greetings|别的|biéde|biéde|khác|other
+zh-vocab-0064|greetings|其他|qítā|qítā|những thứ khác|other things
+zh-vocab-0065|greetings|一起|yìqǐ|yìqǐ|cùng nhau|together
+zh-vocab-0066|greetings|互相|hùxiāng|hùxiāng|lẫn nhau|each other
+zh-vocab-0067|greetings|彼此|bǐcǐ|bǐcǐ|nhau|one another
+zh-vocab-0068|greetings|是|shì|shì|là|be
+zh-vocab-0069|greetings|不是|bú shì|bú shì|không phải|is not
+zh-vocab-0070|greetings|有|yǒu|yǒu|có|have
+zh-vocab-0071|greetings|没有|méiyǒu|méiyǒu|không có|do not have
+zh-vocab-0072|greetings|不|bù|bù|không|not
+zh-vocab-0073|greetings|没|méi|méi|chưa|not yet
+zh-vocab-0074|greetings|也|yě|yě|cũng|also
+zh-vocab-0075|greetings|都|dōu|dōu|đều|all together
+zh-vocab-0076|greetings|很|hěn|hěn|rất|very
+zh-vocab-0077|greetings|太|tài|tài|quá|too
+zh-vocab-0078|greetings|最|zuì|zuì|nhất|most
+zh-vocab-0079|greetings|更|gèng|gèng|hơn nữa|even more
+zh-vocab-0080|greetings|还|hái|hái|vẫn|still
+zh-vocab-0081|greetings|又|yòu|yòu|lại|again
+zh-vocab-0082|greetings|再|zài|zài|lại nữa|again later
+zh-vocab-0083|greetings|只|zhǐ|zhǐ|chỉ|only
+zh-vocab-0084|greetings|才|cái|cái|mới|only then
+zh-vocab-0085|greetings|就|jiù|jiù|liền|then immediately
+zh-vocab-0086|greetings|已经|yǐjīng|yǐjīng|đã|already
+zh-vocab-0087|greetings|正在|zhèngzài|zhèngzài|đang|currently
+zh-vocab-0088|greetings|可能|kěnéng|kěnéng|có thể|possibly
+zh-vocab-0089|greetings|一定|yídìng|yídìng|nhất định|certainly
+zh-vocab-0090|greetings|当然|dāngrán|dāngrán|đương nhiên|of course
+zh-vocab-0091|greetings|大概|dàgài|dàgài|có lẽ|probably
+zh-vocab-0092|greetings|也许|yěxǔ|yěxǔ|có lẽ|perhaps
+zh-vocab-0093|greetings|必须|bìxū|bìxū|phải|must
+zh-vocab-0094|greetings|应该|yīnggāi|yīnggāi|nên|should
+zh-vocab-0095|greetings|可以|kěyǐ|kěyǐ|có thể|may
+zh-vocab-0096|greetings|不要|bú yào|bú yào|đừng|do not
+zh-vocab-0097|greetings|请|qǐng|qǐng|xin mời|please
+zh-vocab-0098|greetings|好的|hǎode|hǎode|được thôi|okay
+zh-vocab-0099|greetings|行|xíng|xíng|được|all right
+zh-vocab-0100|greetings|没问题|méi wèntí|méi wèntí|không vấn đề|no problem
+zh-vocab-0101|people|人|rén|rén|người|person
+zh-vocab-0102|people|男人|nánrén|nánrén|đàn ông|man
+zh-vocab-0103|people|女人|nǚrén|nǚrén|phụ nữ|woman
+zh-vocab-0104|people|孩子|háizi|háizi|trẻ em|child
+zh-vocab-0105|people|男孩|nánhái|nánhái|bé trai|boy
+zh-vocab-0106|people|女孩|nǚhái|nǚhái|bé gái|girl
+zh-vocab-0107|people|婴儿|yīng'ér|yīng'ér|trẻ sơ sinh|infant
+zh-vocab-0108|people|宝宝|bǎobao|bǎobao|em bé|baby
+zh-vocab-0109|people|少年|shàonián|shàonián|thiếu niên|young teenager
+zh-vocab-0110|people|青年|qīngnián|qīngnián|thanh niên|young adult
+zh-vocab-0111|people|成年人|chéngniánrén|chéngniánrén|người trưởng thành|adult
+zh-vocab-0112|people|老人|lǎorén|lǎorén|người già|elderly person
+zh-vocab-0113|people|父亲|fùqīn|fùqīn|cha|father
+zh-vocab-0114|people|母亲|mǔqīn|mǔqīn|mẹ|mother
+zh-vocab-0115|people|爸爸|bàba|bàba|bố|dad
+zh-vocab-0116|people|妈妈|māma|māma|mẹ|mom
+zh-vocab-0117|people|父母|fùmǔ|fùmǔ|cha mẹ|parents
+zh-vocab-0118|people|儿子|érzi|érzi|con trai|son
+zh-vocab-0119|people|女儿|nǚ'ér|nǚ'ér|con gái|daughter
+zh-vocab-0120|people|哥哥|gēge|gēge|anh trai|older brother
+zh-vocab-0121|people|弟弟|dìdi|dìdi|em trai|younger brother
+zh-vocab-0122|people|姐姐|jiějie|jiějie|chị gái|older sister
+zh-vocab-0123|people|妹妹|mèimei|mèimei|em gái|younger sister
+zh-vocab-0124|people|兄弟|xiōngdì|xiōngdì|anh em trai|brothers
+zh-vocab-0125|people|姐妹|jiěmèi|jiěmèi|chị em gái|sisters
+zh-vocab-0126|people|爷爷|yéye|yéye|ông nội|paternal grandfather
+zh-vocab-0127|people|奶奶|nǎinai|nǎinai|bà nội|paternal grandmother
+zh-vocab-0128|people|外公|wàigōng|wàigōng|ông ngoại|maternal grandfather
+zh-vocab-0129|people|外婆|wàipó|wàipó|bà ngoại|maternal grandmother
+zh-vocab-0130|people|祖父|zǔfù|zǔfù|ông nội|grandfather
+zh-vocab-0131|people|祖母|zǔmǔ|zǔmǔ|bà nội|grandmother
+zh-vocab-0132|people|孙子|sūnzi|sūnzi|cháu trai nội|grandson
+zh-vocab-0133|people|孙女|sūnnǚ|sūnnǚ|cháu gái nội|granddaughter
+zh-vocab-0134|people|叔叔|shūshu|shūshu|chú|uncle
+zh-vocab-0135|people|阿姨|āyí|āyí|dì|aunt
+zh-vocab-0136|people|伯伯|bóbo|bóbo|bác trai|father's older brother
+zh-vocab-0137|people|姑姑|gūgu|gūgu|cô ruột|father's sister
+zh-vocab-0138|people|舅舅|jiùjiu|jiùjiu|cậu|mother's brother
+zh-vocab-0139|people|舅妈|jiùmā|jiùmā|mợ|maternal uncle's wife
+zh-vocab-0140|people|姨妈|yímā|yímā|dì ruột|mother's sister
+zh-vocab-0141|people|侄子|zhízi|zhízi|cháu trai gọi chú|brother's son
+zh-vocab-0142|people|侄女|zhínǚ|zhínǚ|cháu gái gọi chú|brother's daughter
+zh-vocab-0143|people|外甥|wàisheng|wàisheng|cháu trai gọi cậu|sister's son
+zh-vocab-0144|people|外甥女|wàishengnǚ|wàishengnǚ|cháu gái gọi cậu|sister's daughter
+zh-vocab-0145|people|表哥|biǎogē|biǎogē|anh họ|older male cousin
+zh-vocab-0146|people|表姐|biǎojiě|biǎojiě|chị họ|older female cousin
+zh-vocab-0147|people|堂弟|tángdì|tángdì|em họ nội nam|younger paternal male cousin
+zh-vocab-0148|people|堂妹|tángmèi|tángmèi|em họ nội nữ|younger paternal female cousin
+zh-vocab-0149|people|丈夫|zhàngfu|zhàngfu|chồng|husband
+zh-vocab-0150|people|妻子|qīzi|qīzi|vợ|wife
+zh-vocab-0151|people|老公|lǎogōng|lǎogōng|ông xã|husband informally
+zh-vocab-0152|people|老婆|lǎopo|lǎopo|bà xã|wife informally
+zh-vocab-0153|people|夫妻|fūqī|fūqī|vợ chồng|married couple
+zh-vocab-0154|people|爱人|àiren|àiren|người bạn đời|spouse
+zh-vocab-0155|people|亲戚|qīnqi|qīnqi|họ hàng|relative
+zh-vocab-0156|people|家人|jiārén|jiārén|người nhà|family member
+zh-vocab-0157|people|家庭|jiātíng|jiātíng|gia đình|family
+zh-vocab-0158|people|朋友|péngyou|péngyou|bạn bè|friend
+zh-vocab-0159|people|同学|tóngxué|tóngxué|bạn học|classmate
+zh-vocab-0160|people|同事|tóngshì|tóngshì|đồng nghiệp|coworker
+zh-vocab-0161|people|邻居|línjū|línjū|hàng xóm|neighbor
+zh-vocab-0162|people|室友|shìyǒu|shìyǒu|bạn cùng phòng|roommate
+zh-vocab-0163|people|伙伴|huǒbàn|huǒbàn|bạn đồng hành|companion
+zh-vocab-0164|people|男朋友|nánpéngyou|nánpéngyou|bạn trai|boyfriend
+zh-vocab-0165|people|女朋友|nǚpéngyou|nǚpéngyou|bạn gái|girlfriend
+zh-vocab-0166|people|客人|kèrén|kèrén|khách|guest
+zh-vocab-0167|people|主人|zhǔrén|zhǔrén|chủ nhà|host
+zh-vocab-0168|people|陌生人|mòshēngrén|mòshēngrén|người lạ|stranger
+zh-vocab-0169|people|熟人|shúrén|shúrén|người quen|acquaintance
+zh-vocab-0170|people|同胞|tóngbāo|tóngbāo|đồng bào|compatriot
+zh-vocab-0171|people|外国人|wàiguórén|wàiguórén|người nước ngoài|foreigner
+zh-vocab-0172|people|本地人|běndìrén|běndìrén|người địa phương|local person
+zh-vocab-0173|people|游客|yóukè|yóukè|du khách|tourist
+zh-vocab-0174|people|居民|jūmín|jūmín|cư dân|resident
+zh-vocab-0175|people|公民|gōngmín|gōngmín|công dân|citizen
+zh-vocab-0176|people|群众|qúnzhòng|qúnzhòng|quần chúng|the public
+zh-vocab-0177|people|观众|guānzhòng|guānzhòng|khán giả|audience
+zh-vocab-0178|people|听众|tīngzhòng|tīngzhòng|thính giả|listeners
+zh-vocab-0179|people|读者|dúzhě|dúzhě|độc giả|reader
+zh-vocab-0180|people|用户|yònghù|yònghù|người dùng|user
+zh-vocab-0181|people|客户|kèhù|kèhù|khách hàng|client
+zh-vocab-0182|people|顾客|gùkè|gùkè|người mua hàng|customer
+zh-vocab-0183|people|乘客|chéngkè|chéngkè|hành khách|passenger
+zh-vocab-0184|people|病人|bìngrén|bìngrén|bệnh nhân|patient
+zh-vocab-0185|people|志愿者|zhìyuànzhě|zhìyuànzhě|tình nguyện viên|volunteer
+zh-vocab-0186|people|领导|lǐngdǎo|lǐngdǎo|lãnh đạo|leader
+zh-vocab-0187|people|成员|chéngyuán|chéngyuán|thành viên|member
+zh-vocab-0188|people|代表|dàibiǎo|dàibiǎo|đại diện|representative
+zh-vocab-0189|people|队友|duìyǒu|duìyǒu|đồng đội|teammate
+zh-vocab-0190|people|对手|duìshǒu|duìshǒu|đối thủ|opponent
+zh-vocab-0191|people|选手|xuǎnshǒu|xuǎnshǒu|thí sinh|contestant
+zh-vocab-0192|people|明星|míngxīng|míngxīng|ngôi sao|celebrity
+zh-vocab-0193|people|粉丝|fěnsī|fěnsī|người hâm mộ|fan
+zh-vocab-0194|people|英雄|yīngxióng|yīngxióng|anh hùng|hero
+zh-vocab-0195|people|天才|tiāncái|tiāncái|thiên tài|genius
+zh-vocab-0196|people|人才|réncái|réncái|nhân tài|talented person
+zh-vocab-0197|people|新手|xīnshǒu|xīnshǒu|người mới|beginner
+zh-vocab-0198|people|专家|zhuānjiā|zhuānjiā|chuyên gia|expert
+zh-vocab-0199|people|个人|gèrén|gèrén|cá nhân|individual
+zh-vocab-0200|people|人类|rénlèi|rénlèi|loài người|humanity
+zh-vocab-0201|home|家|jiā|jiā|nhà|home
+zh-vocab-0202|home|房子|fángzi|fángzi|ngôi nhà|house
+zh-vocab-0203|home|公寓|gōngyù|gōngyù|căn hộ|apartment
+zh-vocab-0204|home|宿舍|sùshè|sùshè|ký túc xá|dormitory
+zh-vocab-0205|home|别墅|biéshù|biéshù|biệt thự|villa
+zh-vocab-0206|home|楼|lóu|lóu|tòa nhà|building
+zh-vocab-0207|home|楼层|lóucéng|lóucéng|tầng nhà|floor level
+zh-vocab-0208|home|楼梯|lóutī|lóutī|cầu thang|stairs
+zh-vocab-0209|home|电梯|diàntī|diàntī|thang máy|elevator
+zh-vocab-0210|home|走廊|zǒuláng|zǒuláng|hành lang|corridor
+zh-vocab-0211|home|房间|fángjiān|fángjiān|phòng|room
+zh-vocab-0212|home|客厅|kètīng|kètīng|phòng khách|living room
+zh-vocab-0213|home|卧室|wòshì|wòshì|phòng ngủ|bedroom
+zh-vocab-0214|home|厨房|chúfáng|chúfáng|nhà bếp|kitchen
+zh-vocab-0215|home|浴室|yùshì|yùshì|phòng tắm|bathroom
+zh-vocab-0216|home|卫生间|wèishēngjiān|wèishēngjiān|nhà vệ sinh|restroom
+zh-vocab-0217|home|阳台|yángtái|yángtái|ban công|balcony
+zh-vocab-0218|home|书房|shūfáng|shūfáng|phòng đọc sách|study room
+zh-vocab-0219|home|餐厅|cāntīng|cāntīng|phòng ăn|dining room
+zh-vocab-0220|home|地下室|dìxiàshì|dìxiàshì|tầng hầm|basement
+zh-vocab-0221|home|车库|chēkù|chēkù|nhà để xe|garage
+zh-vocab-0222|home|院子|yuànzi|yuànzi|sân nhà|courtyard
+zh-vocab-0223|home|花园|huāyuán|huāyuán|vườn hoa|garden
+zh-vocab-0224|home|屋顶|wūdǐng|wūdǐng|mái nhà|roof
+zh-vocab-0225|home|天花板|tiānhuābǎn|tiānhuābǎn|trần nhà|ceiling
+zh-vocab-0226|home|墙|qiáng|qiáng|tường|wall
+zh-vocab-0227|home|地板|dìbǎn|dìbǎn|sàn nhà|floor
+zh-vocab-0228|home|门|mén|mén|cửa|door
+zh-vocab-0229|home|窗户|chuānghu|chuānghu|cửa sổ|window
+zh-vocab-0230|home|窗帘|chuānglián|chuānglián|rèm cửa|curtain
+zh-vocab-0231|home|门锁|ménsuǒ|ménsuǒ|khóa cửa|door lock
+zh-vocab-0232|home|钥匙|yàoshi|yàoshi|chìa khóa|key
+zh-vocab-0233|home|门铃|ménlíng|ménlíng|chuông cửa|doorbell
+zh-vocab-0234|home|家具|jiājù|jiājù|đồ nội thất|furniture
+zh-vocab-0235|home|桌子|zhuōzi|zhuōzi|bàn|table
+zh-vocab-0236|home|椅子|yǐzi|yǐzi|ghế|chair
+zh-vocab-0237|home|沙发|shāfā|shāfā|ghế sofa|sofa
+zh-vocab-0238|home|床|chuáng|chuáng|giường|bed
+zh-vocab-0239|home|床单|chuángdān|chuángdān|ga giường|bedsheet
+zh-vocab-0240|home|被子|bèizi|bèizi|chăn|quilt
+zh-vocab-0241|home|枕头|zhěntou|zhěntou|gối|pillow
+zh-vocab-0242|home|毯子|tǎnzi|tǎnzi|chăn mỏng|blanket
+zh-vocab-0243|home|床垫|chuángdiàn|chuángdiàn|nệm|mattress
+zh-vocab-0244|home|衣柜|yīguì|yīguì|tủ quần áo|wardrobe
+zh-vocab-0245|home|书架|shūjià|shūjià|kệ sách|bookshelf
+zh-vocab-0246|home|抽屉|chōuti|chōuti|ngăn kéo|drawer
+zh-vocab-0247|home|柜子|guìzi|guìzi|tủ|cabinet
+zh-vocab-0248|home|镜子|jìngzi|jìngzi|gương|mirror
+zh-vocab-0249|home|地毯|dìtǎn|dìtǎn|thảm|carpet
+zh-vocab-0250|home|灯|dēng|dēng|đèn|lamp
+zh-vocab-0251|home|台灯|táidēng|táidēng|đèn bàn|desk lamp
+zh-vocab-0252|home|灯泡|dēngpào|dēngpào|bóng đèn|light bulb
+zh-vocab-0253|home|开关|kāiguān|kāiguān|công tắc|switch
+zh-vocab-0254|home|插座|chāzuò|chāzuò|ổ cắm|socket
+zh-vocab-0255|home|插头|chātóu|chātóu|phích cắm|plug
+zh-vocab-0256|home|电线|diànxiàn|diànxiàn|dây điện|wire
+zh-vocab-0257|home|空调|kōngtiáo|kōngtiáo|điều hòa|air conditioner
+zh-vocab-0258|home|风扇|fēngshàn|fēngshàn|quạt|fan
+zh-vocab-0259|home|冰箱|bīngxiāng|bīngxiāng|tủ lạnh|refrigerator
+zh-vocab-0260|home|洗衣机|xǐyījī|xǐyījī|máy giặt|washing machine
+zh-vocab-0261|home|烘干机|hōnggānjī|hōnggānjī|máy sấy|dryer
+zh-vocab-0262|home|吸尘器|xīchénqì|xīchénqì|máy hút bụi|vacuum cleaner
+zh-vocab-0263|home|微波炉|wēibōlú|wēibōlú|lò vi sóng|microwave oven
+zh-vocab-0264|home|烤箱|kǎoxiāng|kǎoxiāng|lò nướng|oven
+zh-vocab-0265|home|炉子|lúzi|lúzi|bếp lò|stove
+zh-vocab-0266|home|电饭锅|diànfànguō|diànfànguō|nồi cơm điện|rice cooker
+zh-vocab-0267|home|热水器|rèshuǐqì|rèshuǐqì|máy nước nóng|water heater
+zh-vocab-0268|home|水龙头|shuǐlóngtóu|shuǐlóngtóu|vòi nước|faucet
+zh-vocab-0269|home|水槽|shuǐcáo|shuǐcáo|bồn rửa|sink
+zh-vocab-0270|home|浴缸|yùgāng|yùgāng|bồn tắm|bathtub
+zh-vocab-0271|home|淋浴|línyù|línyù|tắm vòi sen|shower
+zh-vocab-0272|home|马桶|mǎtǒng|mǎtǒng|bồn cầu|toilet
+zh-vocab-0273|home|毛巾|máojīn|máojīn|khăn mặt|towel
+zh-vocab-0274|home|浴巾|yùjīn|yùjīn|khăn tắm|bath towel
+zh-vocab-0275|home|肥皂|féizào|féizào|xà phòng|soap
+zh-vocab-0276|home|洗发水|xǐfàshuǐ|xǐfàshuǐ|dầu gội|shampoo
+zh-vocab-0277|home|牙刷|yáshuā|yáshuā|bàn chải răng|toothbrush
+zh-vocab-0278|home|牙膏|yágāo|yágāo|kem đánh răng|toothpaste
+zh-vocab-0279|home|梳子|shūzi|shūzi|lược|comb
+zh-vocab-0280|home|纸巾|zhǐjīn|zhǐjīn|khăn giấy|tissue
+zh-vocab-0281|home|卫生纸|wèishēngzhǐ|wèishēngzhǐ|giấy vệ sinh|toilet paper
+zh-vocab-0282|home|垃圾桶|lājītǒng|lājītǒng|thùng rác|trash can
+zh-vocab-0283|home|扫帚|sàozhou|sàozhou|chổi|broom
+zh-vocab-0284|home|拖把|tuōbǎ|tuōbǎ|cây lau nhà|mop
+zh-vocab-0285|home|抹布|mābù|mābù|giẻ lau|cleaning cloth
+zh-vocab-0286|home|洗衣液|xǐyīyè|xǐyīyè|nước giặt|laundry detergent
+zh-vocab-0287|home|盆|pén|pén|chậu|basin
+zh-vocab-0288|home|桶|tǒng|tǒng|xô|bucket
+zh-vocab-0289|home|衣架|yījià|yījià|móc áo|clothes hanger
+zh-vocab-0290|home|夹子|jiāzi|jiāzi|kẹp|clip
+zh-vocab-0291|home|绳子|shéngzi|shéngzi|dây thừng|rope
+zh-vocab-0292|home|箱子|xiāngzi|xiāngzi|hộp lớn|box
+zh-vocab-0293|home|盒子|hézi|hézi|hộp nhỏ|small box
+zh-vocab-0294|home|袋子|dàizi|dàizi|túi|bag
+zh-vocab-0295|home|篮子|lánzi|lánzi|giỏ|basket
+zh-vocab-0296|home|工具|gōngjù|gōngjù|dụng cụ|tool
+zh-vocab-0297|home|锤子|chuízi|chuízi|búa|hammer
+zh-vocab-0298|home|钉子|dīngzi|dīngzi|đinh|nail
+zh-vocab-0299|home|螺丝|luósī|luósī|ốc vít|screw
+zh-vocab-0300|home|胶带|jiāodài|jiāodài|băng keo|adhesive tape
+zh-vocab-0301|food|食物|shíwù|shíwù|thức ăn|food
+zh-vocab-0302|food|饭|fàn|fàn|cơm|cooked rice
+zh-vocab-0303|food|米|mǐ|mǐ|gạo|uncooked rice
+zh-vocab-0304|food|大米|dàmǐ|dàmǐ|gạo tẻ|rice grain
+zh-vocab-0305|food|面条|miàntiáo|miàntiáo|mì sợi|noodles
+zh-vocab-0306|food|面包|miànbāo|miànbāo|bánh mì|bread
+zh-vocab-0307|food|馒头|mántou|mántou|bánh bao chay|steamed bun
+zh-vocab-0308|food|包子|bāozi|bāozi|bánh bao nhân|stuffed bun
+zh-vocab-0309|food|饺子|jiǎozi|jiǎozi|sủi cảo|dumpling
+zh-vocab-0310|food|馄饨|húntun|húntun|hoành thánh|wonton
+zh-vocab-0311|food|粥|zhōu|zhōu|cháo|porridge
+zh-vocab-0312|food|炒饭|chǎofàn|chǎofàn|cơm chiên|fried rice
+zh-vocab-0313|food|米粉|mǐfěn|mǐfěn|bún gạo|rice noodles
+zh-vocab-0314|food|粉条|fěntiáo|fěntiáo|miến|starch noodles
+zh-vocab-0315|food|煎饼|jiānbǐng|jiānbǐng|bánh áp chảo|pancake
+zh-vocab-0316|food|春卷|chūnjuǎn|chūnjuǎn|nem rán|spring roll
+zh-vocab-0317|food|年糕|niángāo|niángāo|bánh gạo|rice cake
+zh-vocab-0318|food|粽子|zòngzi|zòngzi|bánh ú|wrapped rice dumpling
+zh-vocab-0319|food|汤圆|tāngyuán|tāngyuán|bánh trôi|rice balls
+zh-vocab-0320|food|豆腐|dòufu|dòufu|đậu phụ|tofu
+zh-vocab-0321|food|豆浆|dòujiāng|dòujiāng|sữa đậu nành|soy milk
+zh-vocab-0322|food|鸡蛋|jīdàn|jīdàn|trứng gà|egg
+zh-vocab-0323|food|鸭蛋|yādàn|yādàn|trứng vịt|duck egg
+zh-vocab-0324|food|皮蛋|pídàn|pídàn|trứng bắc thảo|preserved egg
+zh-vocab-0325|food|蛋黄|dànhuáng|dànhuáng|lòng đỏ|egg yolk
+zh-vocab-0326|food|蛋白|dànbái|dànbái|lòng trắng|egg white
+zh-vocab-0327|food|肉|ròu|ròu|thịt|meat
+zh-vocab-0328|food|猪肉|zhūròu|zhūròu|thịt lợn|pork
+zh-vocab-0329|food|牛肉|niúròu|niúròu|thịt bò|beef
+zh-vocab-0330|food|羊肉|yángròu|yángròu|thịt cừu|mutton
+zh-vocab-0331|food|鸡肉|jīròu|jīròu|thịt gà|chicken meat
+zh-vocab-0332|food|鸭肉|yāròu|yāròu|thịt vịt|duck meat
+zh-vocab-0333|food|火腿|huǒtuǐ|huǒtuǐ|giăm bông|ham
+zh-vocab-0334|food|香肠|xiāngcháng|xiāngcháng|xúc xích|sausage
+zh-vocab-0335|food|培根|péigēn|péigēn|thịt xông khói|bacon
+zh-vocab-0336|food|排骨|páigǔ|páigǔ|sườn|ribs
+zh-vocab-0337|food|肉丸|ròuwán|ròuwán|thịt viên|meatball
+zh-vocab-0338|food|海鲜|hǎixiān|hǎixiān|hải sản|seafood
+zh-vocab-0339|food|虾|xiā|xiā|tôm|shrimp
+zh-vocab-0340|food|蟹|xiè|xiè|cua|crab
+zh-vocab-0341|food|贝类|bèilèi|bèilèi|động vật có vỏ|shellfish
+zh-vocab-0342|food|牡蛎|mǔlì|mǔlì|hàu|oyster
+zh-vocab-0343|food|鱿鱼|yóuyú|yóuyú|mực|squid
+zh-vocab-0344|food|三文鱼|sānwényú|sānwényú|cá hồi|salmon
+zh-vocab-0345|food|金枪鱼|jīnqiāngyú|jīnqiāngyú|cá ngừ|tuna
+zh-vocab-0346|food|蔬菜|shūcài|shūcài|rau|vegetables
+zh-vocab-0347|food|白菜|báicài|báicài|cải thảo|Chinese cabbage
+zh-vocab-0348|food|青菜|qīngcài|qīngcài|rau xanh|leafy greens
+zh-vocab-0349|food|菠菜|bōcài|bōcài|rau chân vịt|spinach
+zh-vocab-0350|food|生菜|shēngcài|shēngcài|xà lách|lettuce
+zh-vocab-0351|food|卷心菜|juǎnxīncài|juǎnxīncài|bắp cải|cabbage
+zh-vocab-0352|food|西兰花|xīlánhuā|xīlánhuā|súp lơ xanh|broccoli
+zh-vocab-0353|food|花菜|huācài|huācài|súp lơ trắng|cauliflower
+zh-vocab-0354|food|芹菜|qíncài|qíncài|cần tây|celery
+zh-vocab-0355|food|韭菜|jiǔcài|jiǔcài|hẹ|Chinese chives
+zh-vocab-0356|food|香菜|xiāngcài|xiāngcài|rau mùi|coriander
+zh-vocab-0357|food|葱|cōng|cōng|hành lá|scallion
+zh-vocab-0358|food|洋葱|yángcōng|yángcōng|hành tây|onion
+zh-vocab-0359|food|大蒜|dàsuàn|dàsuàn|tỏi|garlic
+zh-vocab-0360|food|姜|jiāng|jiāng|gừng|ginger
+zh-vocab-0361|food|土豆|tǔdòu|tǔdòu|khoai tây|potato
+zh-vocab-0362|food|红薯|hóngshǔ|hóngshǔ|khoai lang|sweet potato
+zh-vocab-0363|food|胡萝卜|húluóbo|húluóbo|cà rốt|carrot
+zh-vocab-0364|food|萝卜|luóbo|luóbo|củ cải|radish
+zh-vocab-0365|food|西红柿|xīhóngshì|xīhóngshì|cà chua|tomato
+zh-vocab-0366|food|黄瓜|huángguā|huángguā|dưa chuột|cucumber
+zh-vocab-0367|food|茄子|qiézi|qiézi|cà tím|eggplant
+zh-vocab-0368|food|南瓜|nánguā|nánguā|bí ngô|pumpkin
+zh-vocab-0369|food|冬瓜|dōngguā|dōngguā|bí đao|winter melon
+zh-vocab-0370|food|苦瓜|kǔguā|kǔguā|mướp đắng|bitter melon
+zh-vocab-0371|food|辣椒|làjiāo|làjiāo|ớt|chili pepper
+zh-vocab-0372|food|青椒|qīngjiāo|qīngjiāo|ớt xanh|green pepper
+zh-vocab-0373|food|蘑菇|mógu|mógu|nấm|mushroom
+zh-vocab-0374|food|香菇|xiānggū|xiānggū|nấm hương|shiitake
+zh-vocab-0375|food|木耳|mù'ěr|mù'ěr|mộc nhĩ|wood ear fungus
+zh-vocab-0376|food|竹笋|zhúsǔn|zhúsǔn|măng|bamboo shoot
+zh-vocab-0377|food|豆芽|dòuyá|dòuyá|giá đỗ|bean sprouts
+zh-vocab-0378|food|豌豆|wāndòu|wāndòu|đậu Hà Lan|peas
+zh-vocab-0379|food|绿豆|lǜdòu|lǜdòu|đậu xanh|mung beans
+zh-vocab-0380|food|红豆|hóngdòu|hóngdòu|đậu đỏ|red beans
+zh-vocab-0381|food|黄豆|huángdòu|huángdòu|đậu nành|soybeans
+zh-vocab-0382|food|玉米|yùmǐ|yùmǐ|ngô|corn
+zh-vocab-0383|food|花生|huāshēng|huāshēng|lạc|peanut
+zh-vocab-0384|food|芝麻|zhīma|zhīma|vừng|sesame
+zh-vocab-0385|food|核桃|hétao|hétao|óc chó|walnut
+zh-vocab-0386|food|杏仁|xìngrén|xìngrén|hạnh nhân|almond
+zh-vocab-0387|food|腰果|yāoguǒ|yāoguǒ|hạt điều|cashew
+zh-vocab-0388|food|栗子|lìzi|lìzi|hạt dẻ|chestnut
+zh-vocab-0389|food|水果|shuǐguǒ|shuǐguǒ|trái cây|fruit
+zh-vocab-0390|food|苹果|píngguǒ|píngguǒ|táo|apple
+zh-vocab-0391|food|香蕉|xiāngjiāo|xiāngjiāo|chuối|banana
+zh-vocab-0392|food|橙子|chéngzi|chéngzi|cam|orange
+zh-vocab-0393|food|橘子|júzi|júzi|quýt|mandarin orange
+zh-vocab-0394|food|柠檬|níngméng|níngméng|chanh vàng|lemon
+zh-vocab-0395|food|柚子|yòuzi|yòuzi|bưởi|pomelo
+zh-vocab-0396|food|葡萄|pútao|pútao|nho|grape
+zh-vocab-0397|food|西瓜|xīguā|xīguā|dưa hấu|watermelon
+zh-vocab-0398|food|哈密瓜|hāmìguā|hāmìguā|dưa lưới|Hami melon
+zh-vocab-0399|food|梨|lí|lí|lê|pear
+zh-vocab-0400|food|桃子|táozi|táozi|đào|peach
+zh-vocab-0401|food|李子|lǐzi|lǐzi|mận|plum
+zh-vocab-0402|food|杏|xìng|xìng|mơ|apricot
+zh-vocab-0403|food|樱桃|yīngtáo|yīngtáo|anh đào|cherry
+zh-vocab-0404|food|草莓|cǎoméi|cǎoméi|dâu tây|strawberry
+zh-vocab-0405|food|蓝莓|lánméi|lánméi|việt quất|blueberry
+zh-vocab-0406|food|芒果|mángguǒ|mángguǒ|xoài|mango
+zh-vocab-0407|food|菠萝|bōluó|bōluó|dứa|pineapple
+zh-vocab-0408|food|木瓜|mùguā|mùguā|đu đủ|papaya
+zh-vocab-0409|food|椰子|yēzi|yēzi|dừa|coconut
+zh-vocab-0410|food|荔枝|lìzhī|lìzhī|vải|lychee
+zh-vocab-0411|food|龙眼|lóngyǎn|lóngyǎn|nhãn|longan
+zh-vocab-0412|food|榴莲|liúlián|liúlián|sầu riêng|durian
+zh-vocab-0413|food|火龙果|huǒlóngguǒ|huǒlóngguǒ|thanh long|dragon fruit
+zh-vocab-0414|food|猕猴桃|míhóutáo|míhóutáo|kiwi|kiwifruit
+zh-vocab-0415|food|石榴|shíliu|shíliu|lựu|pomegranate
+zh-vocab-0416|food|柿子|shìzi|shìzi|hồng|persimmon
+zh-vocab-0417|food|枣|zǎo|zǎo|táo tàu|jujube
+zh-vocab-0418|food|牛油果|niúyóuguǒ|niúyóuguǒ|bơ|avocado
+zh-vocab-0419|food|盐|yán|yán|muối|salt
+zh-vocab-0420|food|糖|táng|táng|đường|sugar
+zh-vocab-0421|food|醋|cù|cù|giấm|vinegar
+zh-vocab-0422|food|酱油|jiàngyóu|jiàngyóu|nước tương|soy sauce
+zh-vocab-0423|food|油|yóu|yóu|dầu|oil
+zh-vocab-0424|food|胡椒|hújiāo|hújiāo|hạt tiêu|pepper
+zh-vocab-0425|food|蜂蜜|fēngmì|fēngmì|mật ong|honey
+zh-vocab-0426|food|果酱|guǒjiàng|guǒjiàng|mứt trái cây|jam
+zh-vocab-0427|food|黄油|huángyóu|huángyóu|bơ sữa|butter
+zh-vocab-0428|food|奶酪|nǎilào|nǎilào|phô mai|cheese
+zh-vocab-0429|food|奶油|nǎiyóu|nǎiyóu|kem sữa|cream
+zh-vocab-0430|food|面粉|miànfěn|miànfěn|bột mì|flour
+zh-vocab-0431|food|酵母|jiàomǔ|jiàomǔ|men|yeast
+zh-vocab-0432|food|燕麦|yànmài|yànmài|yến mạch|oats
+zh-vocab-0433|food|饼干|bǐnggān|bǐnggān|bánh quy|biscuit
+zh-vocab-0434|food|蛋糕|dàngāo|dàngāo|bánh ngọt|cake
+zh-vocab-0435|food|巧克力|qiǎokèlì|qiǎokèlì|sô cô la|chocolate
+zh-vocab-0436|food|糖果|tángguǒ|tángguǒ|kẹo|candy
+zh-vocab-0437|food|冰淇淋|bīngqílín|bīngqílín|kem lạnh|ice cream
+zh-vocab-0438|food|布丁|bùdīng|bùdīng|bánh pudding|pudding
+zh-vocab-0439|food|甜点|tiándiǎn|tiándiǎn|món tráng miệng|dessert
+zh-vocab-0440|food|零食|língshí|língshí|đồ ăn vặt|snack
+zh-vocab-0441|food|薯条|shǔtiáo|shǔtiáo|khoai tây chiên|fries
+zh-vocab-0442|food|薯片|shǔpiàn|shǔpiàn|khoai tây lát chiên|potato chips
+zh-vocab-0443|food|汉堡|hànbǎo|hànbǎo|bánh burger|hamburger
+zh-vocab-0444|food|披萨|pīsà|pīsà|bánh pizza|pizza
+zh-vocab-0445|food|三明治|sānmíngzhì|sānmíngzhì|bánh sandwich|sandwich
+zh-vocab-0446|food|沙拉|shālā|shālā|rau trộn|salad
+zh-vocab-0447|food|寿司|shòusī|shòusī|sushi|sushi
+zh-vocab-0448|food|火锅|huǒguō|huǒguō|lẩu|hotpot
+zh-vocab-0449|food|烧烤|shāokǎo|shāokǎo|đồ nướng|barbecue
+zh-vocab-0450|food|汤|tāng|tāng|canh|soup
+zh-vocab-0451|drinks|水|shuǐ|shuǐ|nước|water
+zh-vocab-0452|drinks|饮料|yǐnliào|yǐnliào|đồ uống|beverage
+zh-vocab-0453|drinks|茶|chá|chá|trà|tea
+zh-vocab-0454|drinks|咖啡|kāfēi|kāfēi|cà phê|coffee
+zh-vocab-0455|drinks|牛奶|niúnǎi|niúnǎi|sữa bò|milk
+zh-vocab-0456|drinks|酸奶|suānnǎi|suānnǎi|sữa chua|yogurt
+zh-vocab-0457|drinks|果汁|guǒzhī|guǒzhī|nước trái cây|fruit juice
+zh-vocab-0458|drinks|啤酒|píjiǔ|píjiǔ|bia|beer
+zh-vocab-0459|drinks|葡萄酒|pútáojiǔ|pútáojiǔ|rượu vang|wine
+zh-vocab-0460|drinks|白酒|báijiǔ|báijiǔ|rượu trắng|Chinese liquor
+zh-vocab-0461|drinks|红酒|hóngjiǔ|hóngjiǔ|vang đỏ|red wine
+zh-vocab-0462|drinks|汽水|qìshuǐ|qìshuǐ|nước có ga|soda
+zh-vocab-0463|drinks|可乐|kělè|kělè|cô la|cola
+zh-vocab-0464|drinks|矿泉水|kuàngquánshuǐ|kuàngquánshuǐ|nước khoáng|mineral water
+zh-vocab-0465|drinks|白开水|báikāishuǐ|báikāishuǐ|nước đun sôi|plain boiled water
+zh-vocab-0466|drinks|温水|wēnshuǐ|wēnshuǐ|nước ấm|warm water
+zh-vocab-0467|drinks|热水|rèshuǐ|rèshuǐ|nước nóng|hot water
+zh-vocab-0468|drinks|冰水|bīngshuǐ|bīngshuǐ|nước đá|ice water
+zh-vocab-0469|drinks|绿茶|lǜchá|lǜchá|trà xanh|green tea
+zh-vocab-0470|drinks|红茶|hóngchá|hóngchá|trà đen|black tea
+zh-vocab-0471|drinks|乌龙茶|wūlóngchá|wūlóngchá|trà ô long|oolong tea
+zh-vocab-0472|drinks|花茶|huāchá|huāchá|trà hoa|flower tea
+zh-vocab-0473|drinks|奶茶|nǎichá|nǎichá|trà sữa|milk tea
+zh-vocab-0474|drinks|珍珠奶茶|zhēnzhū nǎichá|zhēnzhū nǎichá|trà sữa trân châu|bubble tea
+zh-vocab-0475|drinks|柠檬水|níngméngshuǐ|níngméngshuǐ|nước chanh|lemon water
+zh-vocab-0476|drinks|椰奶|yēnǎi|yēnǎi|sữa dừa|coconut milk
+zh-vocab-0477|drinks|椰汁|yēzhī|yēzhī|nước dừa|coconut juice
+zh-vocab-0478|drinks|橙汁|chéngzhī|chéngzhī|nước cam|orange juice
+zh-vocab-0479|drinks|拿铁|nátiě|nátiě|cà phê latte|latte
+zh-vocab-0480|drinks|浓缩咖啡|nóngsuō kāfēi|nóngsuō kāfēi|cà phê espresso|espresso
+zh-vocab-0481|drinks|卡布奇诺|kǎbùqínuò|kǎbùqínuò|cà phê cappuccino|cappuccino
+zh-vocab-0482|drinks|热巧克力|rè qiǎokèlì|rè qiǎokèlì|sô cô la nóng|hot chocolate
+zh-vocab-0483|drinks|奶昔|nǎixī|nǎixī|sữa lắc|milkshake
+zh-vocab-0484|drinks|冰沙|bīngshā|bīngshā|sinh tố đá xay|slush drink
+zh-vocab-0485|drinks|鸡尾酒|jīwěijiǔ|jīwěijiǔ|cốc tai|cocktail
+zh-vocab-0486|drinks|香槟|xiāngbīn|xiāngbīn|sâm panh|champagne
+zh-vocab-0487|drinks|威士忌|wēishìjì|wēishìjì|rượu whisky|whisky
+zh-vocab-0488|drinks|酒精|jiǔjīng|jiǔjīng|cồn|alcohol
+zh-vocab-0489|drinks|杯子|bēizi|bēizi|cốc|cup
+zh-vocab-0490|drinks|茶杯|chábēi|chábēi|chén trà|teacup
+zh-vocab-0491|drinks|玻璃杯|bōlibēi|bōlibēi|cốc thủy tinh|drinking glass
+zh-vocab-0492|drinks|瓶子|píngzi|píngzi|chai|bottle
+zh-vocab-0493|drinks|水壶|shuǐhú|shuǐhú|ấm nước|kettle
+zh-vocab-0494|drinks|茶壶|cháhú|cháhú|ấm trà|teapot
+zh-vocab-0495|drinks|保温杯|bǎowēnbēi|bǎowēnbēi|cốc giữ nhiệt|insulated cup
+zh-vocab-0496|drinks|吸管|xīguǎn|xīguǎn|ống hút|straw
+zh-vocab-0497|drinks|冰块|bīngkuài|bīngkuài|viên đá|ice cube
+zh-vocab-0498|drinks|茶叶|cháyè|cháyè|lá trà|tea leaves
+zh-vocab-0499|drinks|咖啡豆|kāfēidòu|kāfēidòu|hạt cà phê|coffee beans
+zh-vocab-0500|drinks|口渴|kǒukě|kǒukě|khát|thirsty
+zh-vocab-0501|shopping|商店|shāngdiàn|shāngdiàn|cửa hàng|shop
+zh-vocab-0502|shopping|超市|chāoshì|chāoshì|siêu thị|supermarket
+zh-vocab-0503|shopping|商场|shāngchǎng|shāngchǎng|trung tâm mua sắm|shopping mall
+zh-vocab-0504|shopping|市场|shìchǎng|shìchǎng|chợ|market
+zh-vocab-0505|shopping|便利店|biànlìdiàn|biànlìdiàn|cửa hàng tiện lợi|convenience store
+zh-vocab-0506|shopping|百货公司|bǎihuò gōngsī|bǎihuò gōngsī|bách hóa|department store
+zh-vocab-0507|shopping|书店|shūdiàn|shūdiàn|hiệu sách|bookstore
+zh-vocab-0508|shopping|药店|yàodiàn|yàodiàn|hiệu thuốc|pharmacy
+zh-vocab-0509|shopping|花店|huādiàn|huādiàn|tiệm hoa|flower shop
+zh-vocab-0510|shopping|面包店|miànbāodiàn|miànbāodiàn|tiệm bánh mì|bakery
+zh-vocab-0511|shopping|服装店|fúzhuāngdiàn|fúzhuāngdiàn|cửa hàng quần áo|clothing shop
+zh-vocab-0512|shopping|网店|wǎngdiàn|wǎngdiàn|cửa hàng trực tuyến|online shop
+zh-vocab-0513|shopping|购物|gòuwù|gòuwù|mua sắm|shopping
+zh-vocab-0514|shopping|买|mǎi|mǎi|mua|buy
+zh-vocab-0515|shopping|卖|mài|mài|bán|sell
+zh-vocab-0516|shopping|价格|jiàgé|jiàgé|giá cả|price
+zh-vocab-0517|shopping|价钱|jiàqian|jiàqian|giá tiền|cost
+zh-vocab-0518|shopping|便宜|piányi|piányi|rẻ|cheap
+zh-vocab-0519|shopping|贵|guì|guì|đắt|expensive
+zh-vocab-0520|shopping|打折|dǎzhé|dǎzhé|giảm giá|discount
+zh-vocab-0521|shopping|折扣|zhékòu|zhékòu|mức giảm giá|discount rate
+zh-vocab-0522|shopping|优惠|yōuhuì|yōuhuì|ưu đãi|special offer
+zh-vocab-0523|shopping|促销|cùxiāo|cùxiāo|khuyến mãi|sales promotion
+zh-vocab-0524|shopping|特价|tèjià|tèjià|giá đặc biệt|special price
+zh-vocab-0525|shopping|原价|yuánjià|yuánjià|giá gốc|original price
+zh-vocab-0526|shopping|免费|miǎnfèi|miǎnfèi|miễn phí|free of charge
+zh-vocab-0527|shopping|付款|fùkuǎn|fùkuǎn|thanh toán|pay
+zh-vocab-0528|shopping|结账|jiézhàng|jiézhàng|tính tiền|settle the bill
+zh-vocab-0529|shopping|现金|xiànjīn|xiànjīn|tiền mặt|cash
+zh-vocab-0530|shopping|零钱|língqián|língqián|tiền lẻ|small change
+zh-vocab-0531|shopping|硬币|yìngbì|yìngbì|tiền xu|coin
+zh-vocab-0532|shopping|纸币|zhǐbì|zhǐbì|tiền giấy|banknote
+zh-vocab-0533|shopping|银行卡|yínhángkǎ|yínhángkǎ|thẻ ngân hàng|bank card
+zh-vocab-0534|shopping|信用卡|xìnyòngkǎ|xìnyòngkǎ|thẻ tín dụng|credit card
+zh-vocab-0535|shopping|收据|shōujù|shōujù|biên nhận|receipt
+zh-vocab-0536|shopping|发票|fāpiào|fāpiào|hóa đơn|invoice
+zh-vocab-0537|shopping|账单|zhàngdān|zhàngdān|hóa đơn thanh toán|bill
+zh-vocab-0538|shopping|收银台|shōuyíntái|shōuyíntái|quầy thu ngân|checkout counter
+zh-vocab-0539|shopping|购物车|gòuwùchē|gòuwùchē|xe đẩy mua hàng|shopping cart
+zh-vocab-0540|shopping|购物袋|gòuwùdài|gòuwùdài|túi mua sắm|shopping bag
+zh-vocab-0541|shopping|商品|shāngpǐn|shāngpǐn|hàng hóa|goods
+zh-vocab-0542|shopping|产品|chǎnpǐn|chǎnpǐn|sản phẩm|product
+zh-vocab-0543|shopping|品牌|pǐnpái|pǐnpái|thương hiệu|brand
+zh-vocab-0544|shopping|质量|zhìliàng|zhìliàng|chất lượng|quality
+zh-vocab-0545|shopping|数量|shùliàng|shùliàng|số lượng|quantity
+zh-vocab-0546|shopping|款式|kuǎnshì|kuǎnshì|kiểu dáng|style
+zh-vocab-0547|shopping|型号|xínghào|xínghào|mẫu mã|model number
+zh-vocab-0548|shopping|尺寸|chǐcùn|chǐcùn|kích thước|size
+zh-vocab-0549|shopping|尺码|chǐmǎ|chǐmǎ|cỡ quần áo|clothing size
+zh-vocab-0550|shopping|颜色|yánsè|yánsè|màu sắc|color
+zh-vocab-0551|shopping|试穿|shìchuān|shìchuān|mặc thử|try on
+zh-vocab-0552|shopping|试衣间|shìyījiān|shìyījiān|phòng thử đồ|fitting room
+zh-vocab-0553|shopping|退货|tuìhuò|tuìhuò|trả hàng|return goods
+zh-vocab-0554|shopping|换货|huànhuò|huànhuò|đổi hàng|exchange goods
+zh-vocab-0555|shopping|退款|tuìkuǎn|tuìkuǎn|hoàn tiền|refund
+zh-vocab-0556|shopping|售后|shòuhòu|shòuhòu|hậu mãi|after sales
+zh-vocab-0557|shopping|保修|bǎoxiū|bǎoxiū|bảo hành|warranty repair
+zh-vocab-0558|shopping|包装|bāozhuāng|bāozhuāng|bao bì|packaging
+zh-vocab-0559|shopping|礼物|lǐwù|lǐwù|quà tặng|gift
+zh-vocab-0560|shopping|订单|dìngdān|dìngdān|đơn hàng|order
+zh-vocab-0561|shopping|快递|kuàidì|kuàidì|chuyển phát nhanh|express delivery
+zh-vocab-0562|shopping|邮费|yóufèi|yóufèi|cước bưu điện|postage
+zh-vocab-0563|shopping|运费|yùnfèi|yùnfèi|phí vận chuyển|shipping fee
+zh-vocab-0564|shopping|收货|shōuhuò|shōuhuò|nhận hàng|receive goods
+zh-vocab-0565|shopping|库存|kùcún|kùcún|hàng tồn kho|stock
+zh-vocab-0566|shopping|缺货|quēhuò|quēhuò|hết hàng|out of stock
+zh-vocab-0567|shopping|预订|yùdìng|yùdìng|đặt trước|reserve
+zh-vocab-0568|shopping|预约|yùyuē|yùyuē|đặt lịch|make an appointment
+zh-vocab-0569|shopping|会员|huìyuán|huìyuán|hội viên|member customer
+zh-vocab-0570|shopping|积分|jīfēn|jīfēn|điểm tích lũy|reward points
+zh-vocab-0571|shopping|衣服|yīfu|yīfu|quần áo|clothes
+zh-vocab-0572|shopping|衬衫|chènshān|chènshān|áo sơ mi|shirt
+zh-vocab-0573|shopping|T恤|tīxù|tīxù|áo phông|T-shirt
+zh-vocab-0574|shopping|外套|wàitào|wàitào|áo khoác|coat
+zh-vocab-0575|shopping|大衣|dàyī|dàyī|áo măng tô|overcoat
+zh-vocab-0576|shopping|毛衣|máoyī|máoyī|áo len|sweater
+zh-vocab-0577|shopping|夹克|jiákè|jiákè|áo khoác ngắn|jacket
+zh-vocab-0578|shopping|裙子|qúnzi|qúnzi|váy|skirt
+zh-vocab-0579|shopping|连衣裙|liányīqún|liányīqún|váy liền|dress
+zh-vocab-0580|shopping|裤子|kùzi|kùzi|quần|trousers
+zh-vocab-0581|shopping|牛仔裤|niúzǎikù|niúzǎikù|quần bò|jeans
+zh-vocab-0582|shopping|短裤|duǎnkù|duǎnkù|quần đùi|shorts
+zh-vocab-0583|shopping|内衣|nèiyī|nèiyī|đồ lót|underwear
+zh-vocab-0584|shopping|袜子|wàzi|wàzi|tất|socks
+zh-vocab-0585|shopping|鞋|xié|xié|giày|shoes
+zh-vocab-0586|shopping|运动鞋|yùndòngxié|yùndòngxié|giày thể thao|sneakers
+zh-vocab-0587|shopping|皮鞋|píxié|píxié|giày da|leather shoes
+zh-vocab-0588|shopping|拖鞋|tuōxié|tuōxié|dép lê|slippers
+zh-vocab-0589|shopping|靴子|xuēzi|xuēzi|ủng|boots
+zh-vocab-0590|shopping|帽子|màozi|màozi|mũ|hat
+zh-vocab-0591|shopping|围巾|wéijīn|wéijīn|khăn quàng|scarf
+zh-vocab-0592|shopping|手套|shǒutào|shǒutào|găng tay|gloves
+zh-vocab-0593|shopping|腰带|yāodài|yāodài|thắt lưng|belt
+zh-vocab-0594|shopping|领带|lǐngdài|lǐngdài|cà vạt|necktie
+zh-vocab-0595|shopping|眼镜|yǎnjìng|yǎnjìng|kính|glasses
+zh-vocab-0596|shopping|太阳镜|tàiyángjìng|tàiyángjìng|kính râm|sunglasses
+zh-vocab-0597|shopping|手表|shǒubiǎo|shǒubiǎo|đồng hồ đeo tay|wristwatch
+zh-vocab-0598|shopping|项链|xiàngliàn|xiàngliàn|vòng cổ|necklace
+zh-vocab-0599|shopping|戒指|jièzhi|jièzhi|nhẫn|ring
+zh-vocab-0600|shopping|耳环|ěrhuán|ěrhuán|hoa tai|earrings
+zh-vocab-0601|travel|旅行|lǚxíng|lǚxíng|du lịch|travel
+zh-vocab-0602|travel|旅游|lǚyóu|lǚyóu|đi du lịch|tourism
+zh-vocab-0603|travel|行李|xíngli|xíngli|hành lý|luggage
+zh-vocab-0604|travel|行李箱|xínglixiāng|xínglixiāng|va li|suitcase
+zh-vocab-0605|travel|护照|hùzhào|hùzhào|hộ chiếu|passport
+zh-vocab-0606|travel|签证|qiānzhèng|qiānzhèng|thị thực|visa
+zh-vocab-0607|travel|机票|jīpiào|jīpiào|vé máy bay|flight ticket
+zh-vocab-0608|travel|登机牌|dēngjīpái|dēngjīpái|thẻ lên máy bay|boarding pass
+zh-vocab-0609|travel|海关|hǎiguān|hǎiguān|hải quan|customs
+zh-vocab-0610|travel|入境|rùjìng|rùjìng|nhập cảnh|enter a country
+zh-vocab-0611|travel|出境|chūjìng|chūjìng|xuất cảnh|leave a country
+zh-vocab-0612|travel|边境|biānjìng|biānjìng|biên giới|border
+zh-vocab-0613|travel|目的地|mùdìdì|mùdìdì|điểm đến|destination
+zh-vocab-0614|travel|路线|lùxiàn|lùxiàn|tuyến đường|route
+zh-vocab-0615|travel|地图|dìtú|dìtú|bản đồ|map
+zh-vocab-0616|travel|导航|dǎoháng|dǎoháng|chỉ đường|navigation
+zh-vocab-0617|travel|方向|fāngxiàng|fāngxiàng|phương hướng|direction
+zh-vocab-0618|travel|指南|zhǐnán|zhǐnán|sách hướng dẫn|guide
+zh-vocab-0619|travel|导游|dǎoyóu|dǎoyóu|hướng dẫn viên|tour guide
+zh-vocab-0620|travel|景点|jǐngdiǎn|jǐngdiǎn|điểm tham quan|attraction
+zh-vocab-0621|travel|风景|fēngjǐng|fēngjǐng|phong cảnh|scenery
+zh-vocab-0622|travel|名胜|míngshèng|míngshèng|danh lam thắng cảnh|scenic site
+zh-vocab-0623|travel|古迹|gǔjì|gǔjì|di tích cổ|historic site
+zh-vocab-0624|travel|博物馆|bówùguǎn|bówùguǎn|bảo tàng|museum
+zh-vocab-0625|travel|美术馆|měishùguǎn|měishùguǎn|bảo tàng mỹ thuật|art museum
+zh-vocab-0626|travel|寺庙|sìmiào|sìmiào|đền chùa|temple
+zh-vocab-0627|travel|教堂|jiàotáng|jiàotáng|nhà thờ|church
+zh-vocab-0628|travel|广场|guǎngchǎng|guǎngchǎng|quảng trường|square
+zh-vocab-0629|travel|公园|gōngyuán|gōngyuán|công viên|park
+zh-vocab-0630|travel|动物园|dòngwùyuán|dòngwùyuán|vườn thú|zoo
+zh-vocab-0631|travel|植物园|zhíwùyuán|zhíwùyuán|vườn thực vật|botanical garden
+zh-vocab-0632|travel|游乐园|yóulèyuán|yóulèyuán|công viên giải trí|amusement park
+zh-vocab-0633|travel|海滩|hǎitān|hǎitān|bãi biển|beach
+zh-vocab-0634|travel|温泉|wēnquán|wēnquán|suối nước nóng|hot spring
+zh-vocab-0635|travel|纪念品|jìniànpǐn|jìniànpǐn|quà lưu niệm|souvenir
+zh-vocab-0636|travel|明信片|míngxìnpiàn|míngxìnpiàn|bưu thiếp|postcard
+zh-vocab-0637|travel|酒店|jiǔdiàn|jiǔdiàn|khách sạn|hotel
+zh-vocab-0638|travel|旅馆|lǚguǎn|lǚguǎn|nhà trọ|inn
+zh-vocab-0639|travel|民宿|mínsù|mínsù|nhà nghỉ địa phương|guesthouse
+zh-vocab-0640|travel|前台|qiántái|qiántái|quầy lễ tân|reception desk
+zh-vocab-0641|travel|入住|rùzhù|rùzhù|nhận phòng|check in
+zh-vocab-0642|travel|退房|tuìfáng|tuìfáng|trả phòng|check out
+zh-vocab-0643|travel|房卡|fángkǎ|fángkǎ|thẻ phòng|room key card
+zh-vocab-0644|travel|单人间|dānrénjiān|dānrénjiān|phòng đơn|single room
+zh-vocab-0645|travel|双人间|shuāngrénjiān|shuāngrénjiān|phòng đôi|double room
+zh-vocab-0646|travel|空房|kōngfáng|kōngfáng|phòng trống|vacant room
+zh-vocab-0647|travel|住宿|zhùsù|zhùsù|chỗ ở khi đi xa|accommodation
+zh-vocab-0648|travel|旅费|lǚfèi|lǚfèi|chi phí đi lại|travel expenses
+zh-vocab-0649|travel|旅程|lǚchéng|lǚchéng|chuyến đi|journey
+zh-vocab-0650|travel|行程|xíngchéng|xíngchéng|lịch trình|itinerary
+zh-vocab-0651|travel|自由行|zìyóuxíng|zìyóuxíng|du lịch tự túc|independent travel
+zh-vocab-0652|travel|跟团|gēntuán|gēntuán|đi theo đoàn|join a tour
+zh-vocab-0653|travel|参观|cānguān|cānguān|tham quan|visit a site
+zh-vocab-0654|travel|游览|yóulǎn|yóulǎn|đi ngắm cảnh|go sightseeing
+zh-vocab-0655|travel|观光|guānguāng|guānguāng|tham quan du lịch|sightsee
+zh-vocab-0656|travel|度假|dùjià|dùjià|đi nghỉ dưỡng|take a vacation
+zh-vocab-0657|travel|露营|lùyíng|lùyíng|cắm trại|camp
+zh-vocab-0658|travel|帐篷|zhàngpeng|zhàngpeng|lều|tent
+zh-vocab-0659|travel|背包|bēibāo|bēibāo|ba lô|backpack
+zh-vocab-0660|travel|睡袋|shuìdài|shuìdài|túi ngủ|sleeping bag
+zh-vocab-0661|travel|手电筒|shǒudiàntǒng|shǒudiàntǒng|đèn pin|flashlight
+zh-vocab-0662|travel|指南针|zhǐnánzhēn|zhǐnánzhēn|la bàn|compass
+zh-vocab-0663|travel|迷路|mílù|mílù|lạc đường|get lost
+zh-vocab-0664|travel|问路|wènlù|wènlù|hỏi đường|ask for directions
+zh-vocab-0665|travel|入口|rùkǒu|rùkǒu|lối vào|entrance
+zh-vocab-0666|travel|出口|chūkǒu|chūkǒu|lối ra|exit
+zh-vocab-0667|travel|门票|ménpiào|ménpiào|vé vào cửa|admission ticket
+zh-vocab-0668|travel|售票处|shòupiàochù|shòupiàochù|quầy bán vé|ticket office
+zh-vocab-0669|travel|游客中心|yóukè zhōngxīn|yóukè zhōngxīn|trung tâm hỗ trợ du khách|visitor center
+zh-vocab-0670|travel|旅行社|lǚxíngshè|lǚxíngshè|công ty lữ hành|travel agency
+zh-vocab-0671|travel|时差|shíchā|shíchā|chênh lệch múi giờ|time difference
+zh-vocab-0672|travel|汇率|huìlǜ|huìlǜ|tỷ giá|exchange rate
+zh-vocab-0673|travel|兑换|duìhuàn|duìhuàn|đổi tiền|exchange currency
+zh-vocab-0674|travel|外币|wàibì|wàibì|ngoại tệ|foreign currency
+zh-vocab-0675|travel|当地|dāngdì|dāngdì|địa phương|local area
+zh-vocab-0676|travel|特产|tèchǎn|tèchǎn|đặc sản|local specialty
+zh-vocab-0677|travel|风俗|fēngsú|fēngsú|phong tục|customs and traditions
+zh-vocab-0678|travel|文化|wénhuà|wénhuà|văn hóa|culture
+zh-vocab-0679|travel|旺季|wàngjì|wàngjì|mùa cao điểm|peak season
+zh-vocab-0680|travel|淡季|dànjì|dànjì|mùa thấp điểm|off season
+zh-vocab-0681|transport|交通|jiāotōng|jiāotōng|giao thông|traffic
+zh-vocab-0682|transport|车|chē|chē|xe|vehicle
+zh-vocab-0683|transport|汽车|qìchē|qìchē|ô tô|car
+zh-vocab-0684|transport|公交车|gōngjiāochē|gōngjiāochē|xe buýt|bus
+zh-vocab-0685|transport|地铁|dìtiě|dìtiě|tàu điện ngầm|subway
+zh-vocab-0686|transport|火车|huǒchē|huǒchē|tàu hỏa|train
+zh-vocab-0687|transport|高铁|gāotiě|gāotiě|đường sắt cao tốc|high-speed rail
+zh-vocab-0688|transport|出租车|chūzūchē|chūzūchē|taxi|taxi
+zh-vocab-0689|transport|网约车|wǎngyuēchē|wǎngyuēchē|xe đặt qua ứng dụng|ride-hailing car
+zh-vocab-0690|transport|自行车|zìxíngchē|zìxíngchē|xe đạp|bicycle
+zh-vocab-0691|transport|摩托车|mótuōchē|mótuōchē|xe máy|motorcycle
+zh-vocab-0692|transport|电动车|diàndòngchē|diàndòngchē|xe điện|electric vehicle
+zh-vocab-0693|transport|卡车|kǎchē|kǎchē|xe tải|truck
+zh-vocab-0694|transport|货车|huòchē|huòchē|xe chở hàng|goods vehicle
+zh-vocab-0695|transport|救护车|jiùhùchē|jiùhùchē|xe cứu thương|ambulance
+zh-vocab-0696|transport|消防车|xiāofángchē|xiāofángchē|xe cứu hỏa|fire engine
+zh-vocab-0697|transport|警车|jǐngchē|jǐngchē|xe cảnh sát|police car
+zh-vocab-0698|transport|飞机|fēijī|fēijī|máy bay|airplane
+zh-vocab-0699|transport|直升机|zhíshēngjī|zhíshēngjī|trực thăng|helicopter
+zh-vocab-0700|transport|船|chuán|chuán|thuyền|boat
+zh-vocab-0701|transport|轮船|lúnchuán|lúnchuán|tàu thủy|ship
+zh-vocab-0702|transport|渡轮|dùlún|dùlún|phà|ferry
+zh-vocab-0703|transport|机场|jīchǎng|jīchǎng|sân bay|airport
+zh-vocab-0704|transport|车站|chēzhàn|chēzhàn|nhà ga|station
+zh-vocab-0705|transport|站台|zhàntái|zhàntái|sân ga|platform
+zh-vocab-0706|transport|码头|mǎtóu|mǎtóu|bến tàu|pier
+zh-vocab-0707|transport|港口|gǎngkǒu|gǎngkǒu|cảng|port
+zh-vocab-0708|transport|停车场|tíngchēchǎng|tíngchēchǎng|bãi đỗ xe|parking lot
+zh-vocab-0709|transport|加油站|jiāyóuzhàn|jiāyóuzhàn|trạm xăng|gas station
+zh-vocab-0710|transport|马路|mǎlù|mǎlù|đường phố|road
+zh-vocab-0711|transport|公路|gōnglù|gōnglù|đường bộ|highway
+zh-vocab-0712|transport|高速公路|gāosù gōnglù|gāosù gōnglù|đường cao tốc|expressway
+zh-vocab-0713|transport|铁路|tiělù|tiělù|đường sắt|railway
+zh-vocab-0714|transport|桥|qiáo|qiáo|cầu|bridge
+zh-vocab-0715|transport|隧道|suìdào|suìdào|đường hầm|tunnel
+zh-vocab-0716|transport|路口|lùkǒu|lùkǒu|giao lộ|intersection
+zh-vocab-0717|transport|红绿灯|hónglǜdēng|hónglǜdēng|đèn giao thông|traffic lights
+zh-vocab-0718|transport|人行道|rénxíngdào|rénxíngdào|vỉa hè|sidewalk
+zh-vocab-0719|transport|斑马线|bānmǎxiàn|bānmǎxiàn|vạch qua đường|pedestrian crossing
+zh-vocab-0720|transport|车道|chēdào|chēdào|làn xe|traffic lane
+zh-vocab-0721|transport|司机|sījī|sījī|tài xế|driver
+zh-vocab-0722|transport|驾驶|jiàshǐ|jiàshǐ|điều khiển xe|drive a vehicle
+zh-vocab-0723|transport|开车|kāichē|kāichē|lái xe|drive
+zh-vocab-0724|transport|骑车|qíchē|qíchē|đi xe đạp hoặc xe máy|ride a bike
+zh-vocab-0725|transport|步行|bùxíng|bùxíng|đi bộ|go on foot
+zh-vocab-0726|transport|上车|shàngchē|shàngchē|lên xe|board a vehicle
+zh-vocab-0727|transport|下车|xiàchē|xiàchē|xuống xe|get off
+zh-vocab-0728|transport|换乘|huànchéng|huànchéng|chuyển tuyến|transfer between services
+zh-vocab-0729|transport|出发|chūfā|chūfā|khởi hành|depart
+zh-vocab-0730|transport|到达|dàodá|dàodá|đến nơi|arrive
+zh-vocab-0731|transport|起飞|qǐfēi|qǐfēi|cất cánh|take off
+zh-vocab-0732|transport|降落|jiàngluò|jiàngluò|hạ cánh|land
+zh-vocab-0733|transport|航班|hángbān|hángbān|chuyến bay|flight
+zh-vocab-0734|transport|延误|yánwù|yánwù|bị chậm trễ|be delayed
+zh-vocab-0735|transport|堵车|dǔchē|dǔchē|kẹt xe|traffic jam
+zh-vocab-0736|transport|停车|tíngchē|tíngchē|đỗ xe|park
+zh-vocab-0737|transport|刹车|shāchē|shāchē|phanh xe|brake
+zh-vocab-0738|transport|转弯|zhuǎnwān|zhuǎnwān|rẽ|turn a corner
+zh-vocab-0739|transport|掉头|diàotóu|diàotóu|quay đầu xe|make a U-turn
+zh-vocab-0740|transport|超车|chāochē|chāochē|vượt xe|overtake
+zh-vocab-0741|transport|安全带|ānquándài|ānquándài|dây an toàn|seat belt
+zh-vocab-0742|transport|头盔|tóukuī|tóukuī|mũ bảo hiểm|helmet
+zh-vocab-0743|transport|方向盘|fāngxiàngpán|fāngxiàngpán|vô lăng|steering wheel
+zh-vocab-0744|transport|轮胎|lúntāi|lúntāi|lốp xe|tire
+zh-vocab-0745|transport|车牌|chēpái|chēpái|biển số xe|license plate
+zh-vocab-0746|transport|驾照|jiàzhào|jiàzhào|bằng lái xe|driving license
+zh-vocab-0747|transport|汽油|qìyóu|qìyóu|xăng|gasoline
+zh-vocab-0748|transport|车票|chēpiào|chēpiào|vé tàu xe|travel ticket
+zh-vocab-0749|transport|单程|dānchéng|dānchéng|một chiều|one-way trip
+zh-vocab-0750|transport|往返|wǎngfǎn|wǎngfǎn|khứ hồi|round trip
+zh-vocab-0751|time|时间|shíjiān|shíjiān|thời gian|time
+zh-vocab-0752|time|时候|shíhou|shíhou|lúc|a point in time
+zh-vocab-0753|time|现在|xiànzài|xiànzài|bây giờ|now
+zh-vocab-0754|time|过去|guòqù|guòqù|quá khứ|the past
+zh-vocab-0755|time|将来|jiānglái|jiānglái|tương lai|the future
+zh-vocab-0756|time|以前|yǐqián|yǐqián|trước đây|before
+zh-vocab-0757|time|以后|yǐhòu|yǐhòu|sau này|afterward
+zh-vocab-0758|time|今天|jīntiān|jīntiān|hôm nay|today
+zh-vocab-0759|time|昨天|zuótiān|zuótiān|hôm qua|yesterday
+zh-vocab-0760|time|明天|míngtiān|míngtiān|ngày mai|tomorrow
+zh-vocab-0761|time|前天|qiántiān|qiántiān|hôm kia|the day before yesterday
+zh-vocab-0762|time|后天|hòutiān|hòutiān|ngày kia|the day after tomorrow
+zh-vocab-0763|time|早上|zǎoshang|zǎoshang|buổi sáng sớm|early morning
+zh-vocab-0764|time|上午|shàngwǔ|shàngwǔ|buổi sáng|morning
+zh-vocab-0765|time|中午|zhōngwǔ|zhōngwǔ|buổi trưa|noon
+zh-vocab-0766|time|下午|xiàwǔ|xiàwǔ|buổi chiều|afternoon
+zh-vocab-0767|time|晚上|wǎnshang|wǎnshang|buổi tối|evening
+zh-vocab-0768|time|夜里|yèli|yèli|ban đêm|at night
+zh-vocab-0769|time|半夜|bànyè|bànyè|nửa đêm|midnight
+zh-vocab-0770|time|凌晨|língchén|língchén|rạng sáng|early hours
+zh-vocab-0771|time|清晨|qīngchén|qīngchén|sáng sớm|daybreak
+zh-vocab-0772|time|傍晚|bàngwǎn|bàngwǎn|chiều tối|dusk
+zh-vocab-0773|time|白天|báitiān|báitiān|ban ngày|daytime
+zh-vocab-0774|time|日出|rìchū|rìchū|bình minh|sunrise
+zh-vocab-0775|time|日落|rìluò|rìluò|hoàng hôn|sunset
+zh-vocab-0776|time|年|nián|nián|năm|year
+zh-vocab-0777|time|月|yuè|yuè|tháng|month
+zh-vocab-0778|time|日|rì|rì|ngày|day
+zh-vocab-0779|time|星期|xīngqī|xīngqī|tuần|week
+zh-vocab-0780|time|周末|zhōumò|zhōumò|cuối tuần|weekend
+zh-vocab-0781|time|工作日|gōngzuòrì|gōngzuòrì|ngày làm việc|working day
+zh-vocab-0782|time|小时|xiǎoshí|xiǎoshí|giờ|hour
+zh-vocab-0783|time|分钟|fēnzhōng|fēnzhōng|phút|minute
+zh-vocab-0784|time|秒|miǎo|miǎo|giây|second
+zh-vocab-0785|time|世纪|shìjì|shìjì|thế kỷ|century
+zh-vocab-0786|time|年代|niándài|niándài|thập niên|decade
+zh-vocab-0787|time|季度|jìdù|jìdù|quý trong năm|quarter of a year
+zh-vocab-0788|time|季节|jìjié|jìjié|mùa|season
+zh-vocab-0789|time|春天|chūntiān|chūntiān|mùa xuân|spring
+zh-vocab-0790|time|夏天|xiàtiān|xiàtiān|mùa hè|summer
+zh-vocab-0791|time|秋天|qiūtiān|qiūtiān|mùa thu|autumn
+zh-vocab-0792|time|冬天|dōngtiān|dōngtiān|mùa đông|winter
+zh-vocab-0793|time|今年|jīnnián|jīnnián|năm nay|this year
+zh-vocab-0794|time|去年|qùnián|qùnián|năm ngoái|last year
+zh-vocab-0795|time|明年|míngnián|míngnián|năm sau|next year
+zh-vocab-0796|time|日期|rìqī|rìqī|ngày tháng|date
+zh-vocab-0797|time|日历|rìlì|rìlì|lịch|calendar
+zh-vocab-0798|time|生日|shēngrì|shēngrì|sinh nhật|birthday
+zh-vocab-0799|time|节日|jiérì|jiérì|ngày lễ|festival
+zh-vocab-0800|time|假期|jiàqī|jiàqī|kỳ nghỉ|holiday period
+zh-vocab-0801|time|暑假|shǔjià|shǔjià|nghỉ hè|summer vacation
+zh-vocab-0802|time|寒假|hánjià|hánjià|nghỉ đông|winter vacation
+zh-vocab-0803|time|春节|chūnjié|chūnjié|Tết Nguyên đán|Spring Festival
+zh-vocab-0804|time|中秋节|zhōngqiūjié|zhōngqiūjié|Tết Trung thu|Mid-Autumn Festival
+zh-vocab-0805|time|国庆节|guóqìngjié|guóqìngjié|ngày quốc khánh|National Day
+zh-vocab-0806|time|周一|zhōuyī|zhōuyī|thứ hai|Monday
+zh-vocab-0807|time|周二|zhōuèr|zhōuèr|thứ ba|Tuesday
+zh-vocab-0808|time|周三|zhōusān|zhōusān|thứ tư|Wednesday
+zh-vocab-0809|time|周四|zhōusì|zhōusì|thứ năm|Thursday
+zh-vocab-0810|time|周五|zhōuwǔ|zhōuwǔ|thứ sáu|Friday
+zh-vocab-0811|time|周六|zhōuliù|zhōuliù|thứ bảy|Saturday
+zh-vocab-0812|time|周日|zhōurì|zhōurì|chủ nhật|Sunday
+zh-vocab-0813|time|刚才|gāngcái|gāngcái|vừa nãy|just now
+zh-vocab-0814|time|最近|zuìjìn|zuìjìn|gần đây|recently
+zh-vocab-0815|time|目前|mùqián|mùqián|hiện tại|at present
+zh-vocab-0816|time|马上|mǎshàng|mǎshàng|ngay lập tức|right away
+zh-vocab-0817|time|立刻|lìkè|lìkè|lập tức|immediately
+zh-vocab-0818|time|暂时|zànshí|zànshí|tạm thời|temporarily
+zh-vocab-0819|time|终于|zhōngyú|zhōngyú|cuối cùng thì|finally
+zh-vocab-0820|time|从来|cónglái|cónglái|từ trước đến giờ|ever
+zh-vocab-0821|time|经常|jīngcháng|jīngcháng|thường xuyên|often
+zh-vocab-0822|time|偶尔|ǒu'ěr|ǒu'ěr|thỉnh thoảng|occasionally
+zh-vocab-0823|time|总是|zǒngshì|zǒngshì|luôn luôn|always
+zh-vocab-0824|time|从不|cóngbù|cóngbù|không bao giờ|never
+zh-vocab-0825|time|及时|jíshí|jíshí|kịp thời|in time
+zh-vocab-0826|time|准时|zhǔnshí|zhǔnshí|đúng giờ|on time
+zh-vocab-0827|time|提前|tíqián|tíqián|sớm hơn dự định|ahead of time
+zh-vocab-0828|time|推迟|tuīchí|tuīchí|hoãn lại|postpone
+zh-vocab-0829|time|迟到|chídào|chídào|đến muộn|be late
+zh-vocab-0830|time|期限|qīxiàn|qīxiàn|thời hạn|time limit
+zh-vocab-0831|nature|自然|zìrán|zìrán|thiên nhiên|nature
+zh-vocab-0832|nature|天空|tiānkōng|tiānkōng|bầu trời|sky
+zh-vocab-0833|nature|太阳|tàiyáng|tàiyáng|mặt trời|sun
+zh-vocab-0834|nature|月亮|yuèliang|yuèliang|mặt trăng|moon
+zh-vocab-0835|nature|星星|xīngxing|xīngxing|ngôi sao|star
+zh-vocab-0836|nature|地球|dìqiú|dìqiú|Trái Đất|Earth
+zh-vocab-0837|nature|宇宙|yǔzhòu|yǔzhòu|vũ trụ|universe
+zh-vocab-0838|nature|空气|kōngqì|kōngqì|không khí|air
+zh-vocab-0839|nature|天气|tiānqì|tiānqì|thời tiết|weather
+zh-vocab-0840|nature|气候|qìhòu|qìhòu|khí hậu|climate
+zh-vocab-0841|nature|温度|wēndù|wēndù|nhiệt độ|temperature
+zh-vocab-0842|nature|阳光|yángguāng|yángguāng|ánh nắng|sunshine
+zh-vocab-0843|nature|云|yún|yún|mây|cloud
+zh-vocab-0844|nature|风|fēng|fēng|gió|wind
+zh-vocab-0845|nature|雨|yǔ|yǔ|mưa|rain
+zh-vocab-0846|nature|雪|xuě|xuě|tuyết|snow
+zh-vocab-0847|nature|雾|wù|wù|sương mù|fog
+zh-vocab-0848|nature|霜|shuāng|shuāng|sương giá|frost
+zh-vocab-0849|nature|露水|lùshuǐ|lùshuǐ|sương đọng|dew
+zh-vocab-0850|nature|冰|bīng|bīng|băng|ice
+zh-vocab-0851|nature|雷|léi|léi|sấm|thunder
+zh-vocab-0852|nature|闪电|shǎndiàn|shǎndiàn|chớp|lightning
+zh-vocab-0853|nature|彩虹|cǎihóng|cǎihóng|cầu vồng|rainbow
+zh-vocab-0854|nature|台风|táifēng|táifēng|bão nhiệt đới|typhoon
+zh-vocab-0855|nature|暴雨|bàoyǔ|bàoyǔ|mưa lớn|rainstorm
+zh-vocab-0856|nature|洪水|hóngshuǐ|hóngshuǐ|lũ lụt|flood
+zh-vocab-0857|nature|干旱|gānhàn|gānhàn|hạn hán|drought
+zh-vocab-0858|nature|地震|dìzhèn|dìzhèn|động đất|earthquake
+zh-vocab-0859|nature|火山|huǒshān|huǒshān|núi lửa|volcano
+zh-vocab-0860|nature|晴天|qíngtiān|qíngtiān|ngày nắng|sunny day
+zh-vocab-0861|nature|阴天|yīntiān|yīntiān|ngày âm u|overcast day
+zh-vocab-0862|nature|多云|duōyún|duōyún|nhiều mây|cloudy
+zh-vocab-0863|nature|山|shān|shān|núi|mountain
+zh-vocab-0864|nature|山顶|shāndǐng|shāndǐng|đỉnh núi|mountaintop
+zh-vocab-0865|nature|山谷|shāngǔ|shāngǔ|thung lũng|valley
+zh-vocab-0866|nature|森林|sēnlín|sēnlín|rừng|forest
+zh-vocab-0867|nature|树林|shùlín|shùlín|rừng cây nhỏ|woods
+zh-vocab-0868|nature|草原|cǎoyuán|cǎoyuán|thảo nguyên|grassland
+zh-vocab-0869|nature|沙漠|shāmò|shāmò|sa mạc|desert
+zh-vocab-0870|nature|平原|píngyuán|píngyuán|đồng bằng|plain
+zh-vocab-0871|nature|田野|tiányě|tiányě|cánh đồng|fields
+zh-vocab-0872|nature|土地|tǔdì|tǔdì|đất đai|land
+zh-vocab-0873|nature|土壤|tǔrǎng|tǔrǎng|đất trồng|soil
+zh-vocab-0874|nature|沙子|shāzi|shāzi|cát|sand
+zh-vocab-0875|nature|石头|shítou|shítou|đá|stone
+zh-vocab-0876|nature|岩石|yánshí|yánshí|đá khối|rock
+zh-vocab-0877|nature|河|hé|hé|sông|river
+zh-vocab-0878|nature|小溪|xiǎoxī|xiǎoxī|suối nhỏ|stream
+zh-vocab-0879|nature|湖|hú|hú|hồ|lake
+zh-vocab-0880|nature|海|hǎi|hǎi|biển|sea
+zh-vocab-0881|nature|海洋|hǎiyáng|hǎiyáng|đại dương|ocean
+zh-vocab-0882|nature|岛|dǎo|dǎo|đảo|island
+zh-vocab-0883|nature|海岸|hǎi'àn|hǎi'àn|bờ biển|coast
+zh-vocab-0884|nature|瀑布|pùbù|pùbù|thác nước|waterfall
+zh-vocab-0885|nature|波浪|bōlàng|bōlàng|sóng|wave
+zh-vocab-0886|nature|潮水|cháoshuǐ|cháoshuǐ|nước thủy triều|tide
+zh-vocab-0887|nature|洞穴|dòngxué|dòngxué|hang động|cave
+zh-vocab-0888|nature|树|shù|shù|cây|tree
+zh-vocab-0889|nature|树枝|shùzhī|shùzhī|cành cây|branch
+zh-vocab-0890|nature|树叶|shùyè|shùyè|lá cây|leaf
+zh-vocab-0891|nature|树根|shùgēn|shùgēn|rễ cây|tree root
+zh-vocab-0892|nature|树干|shùgàn|shùgàn|thân cây|tree trunk
+zh-vocab-0893|nature|花|huā|huā|hoa|flower
+zh-vocab-0894|nature|草|cǎo|cǎo|cỏ|grass
+zh-vocab-0895|nature|种子|zhǒngzi|zhǒngzi|hạt giống|seed
+zh-vocab-0896|nature|果实|guǒshí|guǒshí|quả của cây|fruit of a plant
+zh-vocab-0897|nature|植物|zhíwù|zhíwù|thực vật|plant
+zh-vocab-0898|nature|竹子|zhúzi|zhúzi|tre|bamboo
+zh-vocab-0899|nature|松树|sōngshù|sōngshù|cây thông|pine tree
+zh-vocab-0900|nature|柳树|liǔshù|liǔshù|cây liễu|willow
+zh-vocab-0901|nature|玫瑰|méigui|méigui|hoa hồng|rose
+zh-vocab-0902|nature|荷花|héhuā|héhuā|hoa sen|lotus flower
+zh-vocab-0903|nature|菊花|júhuā|júhuā|hoa cúc|chrysanthemum
+zh-vocab-0904|nature|向日葵|xiàngrìkuí|xiàngrìkuí|hoa hướng dương|sunflower
+zh-vocab-0905|nature|环境|huánjìng|huánjìng|môi trường|environment
+zh-vocab-0906|nature|污染|wūrǎn|wūrǎn|ô nhiễm|pollution
+zh-vocab-0907|nature|垃圾|lājī|lājī|rác|rubbish
+zh-vocab-0908|nature|回收|huíshōu|huíshōu|thu gom tái chế|recycle
+zh-vocab-0909|nature|资源|zīyuán|zīyuán|tài nguyên|resources
+zh-vocab-0910|nature|能源|néngyuán|néngyuán|nguồn năng lượng|energy resources
+zh-vocab-0911|animals|动物|dòngwù|dòngwù|động vật|animal
+zh-vocab-0912|animals|宠物|chǒngwù|chǒngwù|thú cưng|pet
+zh-vocab-0913|animals|狗|gǒu|gǒu|chó|dog
+zh-vocab-0914|animals|猫|māo|māo|mèo|cat
+zh-vocab-0915|animals|兔子|tùzi|tùzi|thỏ|rabbit
+zh-vocab-0916|animals|老鼠|lǎoshǔ|lǎoshǔ|chuột|mouse
+zh-vocab-0917|animals|仓鼠|cāngshǔ|cāngshǔ|chuột hamster|hamster
+zh-vocab-0918|animals|牛|niú|niú|bò|cattle
+zh-vocab-0919|animals|马|mǎ|mǎ|ngựa|horse
+zh-vocab-0920|animals|羊|yáng|yáng|cừu hoặc dê|sheep or goat
+zh-vocab-0921|animals|山羊|shānyáng|shānyáng|dê|goat
+zh-vocab-0922|animals|绵羊|miányáng|miányáng|cừu|sheep
+zh-vocab-0923|animals|猪|zhū|zhū|lợn|pig
+zh-vocab-0924|animals|驴|lǘ|lǘ|lừa|donkey
+zh-vocab-0925|animals|鸡|jī|jī|gà|chicken
+zh-vocab-0926|animals|鸭|yā|yā|vịt|duck
+zh-vocab-0927|animals|鹅|é|é|ngỗng|goose
+zh-vocab-0928|animals|鸟|niǎo|niǎo|chim|bird
+zh-vocab-0929|animals|鸽子|gēzi|gēzi|bồ câu|pigeon
+zh-vocab-0930|animals|麻雀|máquè|máquè|chim sẻ|sparrow
+zh-vocab-0931|animals|燕子|yànzi|yànzi|chim én|swallow
+zh-vocab-0932|animals|乌鸦|wūyā|wūyā|quạ|crow
+zh-vocab-0933|animals|鹦鹉|yīngwǔ|yīngwǔ|vẹt|parrot
+zh-vocab-0934|animals|猫头鹰|māotóuyīng|māotóuyīng|cú mèo|owl
+zh-vocab-0935|animals|鹰|yīng|yīng|đại bàng|eagle
+zh-vocab-0936|animals|孔雀|kǒngquè|kǒngquè|công|peacock
+zh-vocab-0937|animals|企鹅|qǐ'é|qǐ'é|chim cánh cụt|penguin
+zh-vocab-0938|animals|鸵鸟|tuóniǎo|tuóniǎo|đà điểu|ostrich
+zh-vocab-0939|animals|老虎|lǎohǔ|lǎohǔ|hổ|tiger
+zh-vocab-0940|animals|狮子|shīzi|shīzi|sư tử|lion
+zh-vocab-0941|animals|大象|dàxiàng|dàxiàng|voi|elephant
+zh-vocab-0942|animals|长颈鹿|chángjǐnglù|chángjǐnglù|hươu cao cổ|giraffe
+zh-vocab-0943|animals|斑马|bānmǎ|bānmǎ|ngựa vằn|zebra
+zh-vocab-0944|animals|猴子|hóuzi|hóuzi|khỉ|monkey
+zh-vocab-0945|animals|熊|xióng|xióng|gấu|bear
+zh-vocab-0946|animals|熊猫|xióngmāo|xióngmāo|gấu trúc|panda
+zh-vocab-0947|animals|狼|láng|láng|sói|wolf
+zh-vocab-0948|animals|狐狸|húli|húli|cáo|fox
+zh-vocab-0949|animals|鹿|lù|lù|hươu|deer
+zh-vocab-0950|animals|松鼠|sōngshǔ|sōngshǔ|sóc|squirrel
+zh-vocab-0951|animals|骆驼|luòtuo|luòtuo|lạc đà|camel
+zh-vocab-0952|animals|袋鼠|dàishǔ|dàishǔ|chuột túi|kangaroo
+zh-vocab-0953|animals|蝙蝠|biānfú|biānfú|dơi|bat
+zh-vocab-0954|animals|蛇|shé|shé|rắn|snake
+zh-vocab-0955|animals|乌龟|wūguī|wūguī|rùa|turtle
+zh-vocab-0956|animals|鳄鱼|èyú|èyú|cá sấu|crocodile
+zh-vocab-0957|animals|青蛙|qīngwā|qīngwā|ếch|frog
+zh-vocab-0958|animals|鱼|yú|yú|cá|fish
+zh-vocab-0959|animals|鲨鱼|shāyú|shāyú|cá mập|shark
+zh-vocab-0960|animals|鲸鱼|jīngyú|jīngyú|cá voi|whale
+zh-vocab-0961|animals|海豚|hǎitún|hǎitún|cá heo|dolphin
+zh-vocab-0962|animals|昆虫|kūnchóng|kūnchóng|côn trùng|insect
+zh-vocab-0963|animals|蚂蚁|mǎyǐ|mǎyǐ|kiến|ant
+zh-vocab-0964|animals|蜜蜂|mìfēng|mìfēng|ong mật|honeybee
+zh-vocab-0965|animals|蝴蝶|húdié|húdié|bướm|butterfly
+zh-vocab-0966|animals|蚊子|wénzi|wénzi|muỗi|mosquito
+zh-vocab-0967|animals|苍蝇|cāngying|cāngying|ruồi|fly
+zh-vocab-0968|animals|蜘蛛|zhīzhū|zhīzhū|nhện|spider
+zh-vocab-0969|animals|蜻蜓|qīngtíng|qīngtíng|chuồn chuồn|dragonfly
+zh-vocab-0970|animals|蟑螂|zhāngláng|zhāngláng|gián|cockroach
+zh-vocab-0971|body|身体|shēntǐ|shēntǐ|cơ thể|body
+zh-vocab-0972|body|头|tóu|tóu|đầu|head
+zh-vocab-0973|body|头发|tóufa|tóufa|tóc|hair
+zh-vocab-0974|body|脸|liǎn|liǎn|mặt|face
+zh-vocab-0975|body|额头|étóu|étóu|trán|forehead
+zh-vocab-0976|body|眉毛|méimao|méimao|lông mày|eyebrow
+zh-vocab-0977|body|眼睛|yǎnjing|yǎnjing|mắt|eye
+zh-vocab-0978|body|眼皮|yǎnpí|yǎnpí|mí mắt|eyelid
+zh-vocab-0979|body|睫毛|jiémáo|jiémáo|lông mi|eyelash
+zh-vocab-0980|body|耳朵|ěrduo|ěrduo|tai|ear
+zh-vocab-0981|body|鼻子|bízi|bízi|mũi|nose
+zh-vocab-0982|body|嘴|zuǐ|zuǐ|miệng|mouth
+zh-vocab-0983|body|嘴唇|zuǐchún|zuǐchún|môi|lip
+zh-vocab-0984|body|牙齿|yáchǐ|yáchǐ|răng|tooth
+zh-vocab-0985|body|舌头|shétou|shétou|lưỡi|tongue
+zh-vocab-0986|body|下巴|xiàba|xiàba|cằm|chin
+zh-vocab-0987|body|脖子|bózi|bózi|cổ|neck
+zh-vocab-0988|body|喉咙|hóulóng|hóulóng|cổ họng|throat
+zh-vocab-0989|body|肩膀|jiānbǎng|jiānbǎng|vai|shoulder
+zh-vocab-0990|body|胳膊|gēbo|gēbo|cánh tay|arm
+zh-vocab-0991|body|手臂|shǒubì|shǒubì|cánh tay|arm
+zh-vocab-0992|body|肘|zhǒu|zhǒu|khuỷu tay|elbow
+zh-vocab-0993|body|手|shǒu|shǒu|tay|hand
+zh-vocab-0994|body|手掌|shǒuzhǎng|shǒuzhǎng|lòng bàn tay|palm
+zh-vocab-0995|body|手指|shǒuzhǐ|shǒuzhǐ|ngón tay|finger
+zh-vocab-0996|body|拇指|mǔzhǐ|mǔzhǐ|ngón cái|thumb
+zh-vocab-0997|body|指甲|zhǐjia|zhǐjia|móng tay|fingernail
+zh-vocab-0998|body|手腕|shǒuwàn|shǒuwàn|cổ tay|wrist
+zh-vocab-0999|body|胸部|xiōngbù|xiōngbù|ngực|chest
+zh-vocab-1000|body|背|bèi|bèi|lưng|back
+zh-vocab-1001|body|腰|yāo|yāo|eo|waist
+zh-vocab-1002|body|肚子|dùzi|dùzi|bụng|belly
+zh-vocab-1003|body|肚脐|dùqí|dùqí|rốn|navel
+zh-vocab-1004|body|臀部|túnbù|túnbù|mông|buttocks
+zh-vocab-1005|body|腿|tuǐ|tuǐ|chân|leg
+zh-vocab-1006|body|大腿|dàtuǐ|dàtuǐ|đùi|thigh
+zh-vocab-1007|body|膝盖|xīgài|xīgài|đầu gối|knee
+zh-vocab-1008|body|脚|jiǎo|jiǎo|bàn chân|foot
+zh-vocab-1009|body|脚趾|jiǎozhǐ|jiǎozhǐ|ngón chân|toe
+zh-vocab-1010|body|脚踝|jiǎohuái|jiǎohuái|mắt cá chân|ankle
+zh-vocab-1011|body|脚后跟|jiǎohòugēn|jiǎohòugēn|gót chân|heel
+zh-vocab-1012|body|皮肤|pífū|pífū|da|skin
+zh-vocab-1013|body|骨头|gǔtou|gǔtou|xương|bone
+zh-vocab-1014|body|肌肉|jīròu|jīròu|cơ bắp|muscle
+zh-vocab-1015|body|关节|guānjié|guānjié|khớp|joint
+zh-vocab-1016|body|血|xuè|xuè|máu|blood
+zh-vocab-1017|body|心脏|xīnzàng|xīnzàng|tim|heart
+zh-vocab-1018|body|肺|fèi|fèi|phổi|lung
+zh-vocab-1019|body|胃|wèi|wèi|dạ dày|stomach
+zh-vocab-1020|body|肝|gān|gān|gan|liver
+zh-vocab-1021|body|肾|shèn|shèn|thận|kidney
+zh-vocab-1022|body|大脑|dànǎo|dànǎo|não|brain
+zh-vocab-1023|body|神经|shénjīng|shénjīng|dây thần kinh|nerve
+zh-vocab-1024|body|呼吸|hūxī|hūxī|hơi thở; thở|breathing
+zh-vocab-1025|body|脉搏|màibó|màibó|mạch đập|pulse
+zh-vocab-1026|body|眼泪|yǎnlèi|yǎnlèi|nước mắt|tears
+zh-vocab-1027|body|汗|hàn|hàn|mồ hôi|sweat
+zh-vocab-1028|body|唾液|tuòyè|tuòyè|nước bọt|saliva
+zh-vocab-1029|body|胡子|húzi|húzi|râu|beard
+zh-vocab-1030|body|身高|shēngāo|shēngāo|chiều cao cơ thể|height
+zh-vocab-1031|health|健康|jiànkāng|jiànkāng|sức khỏe; khỏe mạnh|health; healthy
+zh-vocab-1032|health|生病|shēngbìng|shēngbìng|bị bệnh|become ill
+zh-vocab-1033|health|疾病|jíbìng|jíbìng|bệnh tật|disease
+zh-vocab-1034|health|医院|yīyuàn|yīyuàn|bệnh viện|hospital
+zh-vocab-1035|health|诊所|zhěnsuǒ|zhěnsuǒ|phòng khám|clinic
+zh-vocab-1036|health|医生|yīshēng|yīshēng|bác sĩ|doctor
+zh-vocab-1037|health|护士|hùshi|hùshi|y tá|nurse
+zh-vocab-1038|health|牙医|yáyī|yáyī|nha sĩ|dentist
+zh-vocab-1039|health|外科|wàikē|wàikē|khoa ngoại|surgery department
+zh-vocab-1040|health|内科|nèikē|nèikē|khoa nội|internal medicine
+zh-vocab-1041|health|儿科|érkē|érkē|khoa nhi|pediatrics
+zh-vocab-1042|health|眼科|yǎnkē|yǎnkē|khoa mắt|ophthalmology
+zh-vocab-1043|health|急诊|jízhěn|jízhěn|cấp cứu|emergency care
+zh-vocab-1044|health|门诊|ménzhěn|ménzhěn|khám ngoại trú|outpatient care
+zh-vocab-1045|health|挂号|guàhào|guàhào|đăng ký khám|register for a medical visit
+zh-vocab-1046|health|体检|tǐjiǎn|tǐjiǎn|khám sức khỏe|health examination
+zh-vocab-1047|health|检查|jiǎnchá|jiǎnchá|kiểm tra|examine
+zh-vocab-1048|health|诊断|zhěnduàn|zhěnduàn|chẩn đoán|diagnose
+zh-vocab-1049|health|治疗|zhìliáo|zhìliáo|điều trị|treat an illness
+zh-vocab-1050|health|手术|shǒushù|shǒushù|phẫu thuật|surgery
+zh-vocab-1051|health|住院|zhùyuàn|zhùyuàn|nhập viện điều trị|stay in hospital
+zh-vocab-1052|health|出院|chūyuàn|chūyuàn|xuất viện|leave hospital
+zh-vocab-1053|health|病房|bìngfáng|bìngfáng|phòng bệnh|hospital ward
+zh-vocab-1054|health|病历|bìnglì|bìnglì|bệnh án|medical record
+zh-vocab-1055|health|症状|zhèngzhuàng|zhèngzhuàng|triệu chứng|symptom
+zh-vocab-1056|health|发烧|fāshāo|fāshāo|sốt|have a fever
+zh-vocab-1057|health|感冒|gǎnmào|gǎnmào|cảm lạnh|common cold
+zh-vocab-1058|health|咳嗽|késou|késou|ho|cough
+zh-vocab-1059|health|头痛|tóutòng|tóutòng|đau đầu|headache
+zh-vocab-1060|health|胃痛|wèitòng|wèitòng|đau dạ dày|stomachache
+zh-vocab-1061|health|牙痛|yátòng|yátòng|đau răng|toothache
+zh-vocab-1062|health|腹泻|fùxiè|fùxiè|tiêu chảy|diarrhea
+zh-vocab-1063|health|便秘|biànmì|biànmì|táo bón|constipation
+zh-vocab-1064|health|恶心|ěxin|ěxin|buồn nôn|nauseous
+zh-vocab-1065|health|呕吐|ǒutù|ǒutù|nôn|vomit
+zh-vocab-1066|health|头晕|tóuyūn|tóuyūn|chóng mặt|dizzy
+zh-vocab-1067|health|过敏|guòmǐn|guòmǐn|dị ứng|allergy
+zh-vocab-1068|health|感染|gǎnrǎn|gǎnrǎn|nhiễm trùng|infection
+zh-vocab-1069|health|发炎|fāyán|fāyán|viêm|become inflamed
+zh-vocab-1070|health|伤口|shāngkǒu|shāngkǒu|vết thương|wound
+zh-vocab-1071|health|受伤|shòushāng|shòushāng|bị thương|be injured
+zh-vocab-1072|health|流血|liúxuè|liúxuè|chảy máu|bleed
+zh-vocab-1073|health|骨折|gǔzhé|gǔzhé|gãy xương|bone fracture
+zh-vocab-1074|health|扭伤|niǔshāng|niǔshāng|bong gân|sprain
+zh-vocab-1075|health|烫伤|tàngshāng|tàngshāng|bỏng do nóng|scald
+zh-vocab-1076|health|肿|zhǒng|zhǒng|sưng|swollen
+zh-vocab-1077|health|疼|téng|téng|đau|hurt
+zh-vocab-1078|health|疼痛|téngtòng|téngtòng|cơn đau|pain
+zh-vocab-1079|health|瘙痒|sàoyǎng|sàoyǎng|ngứa|itching
+zh-vocab-1080|health|流鼻涕|liú bítì|liú bítì|sổ mũi|have a runny nose
+zh-vocab-1081|health|打喷嚏|dǎ pēntì|dǎ pēntì|hắt hơi|sneeze
+zh-vocab-1082|health|失眠|shīmián|shīmián|mất ngủ|insomnia
+zh-vocab-1083|health|疲劳|píláo|píláo|mệt mỏi|fatigue
+zh-vocab-1084|health|药|yào|yào|thuốc|medicine
+zh-vocab-1085|health|药片|yàopiàn|yàopiàn|viên thuốc|tablet
+zh-vocab-1086|health|药水|yàoshuǐ|yàoshuǐ|thuốc dạng nước|liquid medicine
+zh-vocab-1087|health|药膏|yàogāo|yàogāo|thuốc mỡ|ointment
+zh-vocab-1088|health|处方|chǔfāng|chǔfāng|đơn thuốc|prescription
+zh-vocab-1089|health|剂量|jìliàng|jìliàng|liều lượng|dosage
+zh-vocab-1090|health|副作用|fùzuòyòng|fùzuòyòng|tác dụng phụ|side effect
+zh-vocab-1091|health|止痛药|zhǐtòngyào|zhǐtòngyào|thuốc giảm đau|painkiller
+zh-vocab-1092|health|抗生素|kàngshēngsù|kàngshēngsù|kháng sinh|antibiotic
+zh-vocab-1093|health|疫苗|yìmiáo|yìmiáo|vắc xin|vaccine
+zh-vocab-1094|health|打针|dǎzhēn|dǎzhēn|tiêm|give an injection
+zh-vocab-1095|health|输液|shūyè|shūyè|truyền dịch|receive an intravenous drip
+zh-vocab-1096|health|消毒|xiāodú|xiāodú|khử trùng|disinfect
+zh-vocab-1097|health|绷带|bēngdài|bēngdài|băng cuộn|bandage
+zh-vocab-1098|health|创可贴|chuāngkětiē|chuāngkětiē|băng cá nhân|adhesive bandage
+zh-vocab-1099|health|口罩|kǒuzhào|kǒuzhào|khẩu trang|face mask
+zh-vocab-1100|health|体温计|tǐwēnjì|tǐwēnjì|nhiệt kế y tế|clinical thermometer
+zh-vocab-1101|health|体温|tǐwēn|tǐwēn|thân nhiệt|body temperature
+zh-vocab-1102|health|血压|xuèyā|xuèyā|huyết áp|blood pressure
+zh-vocab-1103|health|血糖|xuètáng|xuètáng|đường huyết|blood sugar
+zh-vocab-1104|health|视力|shìlì|shìlì|thị lực|eyesight
+zh-vocab-1105|health|听力|tīnglì|tīnglì|thính lực|hearing ability
+zh-vocab-1106|health|近视|jìnshì|jìnshì|cận thị|short-sightedness
+zh-vocab-1107|health|营养|yíngyǎng|yíngyǎng|dinh dưỡng|nutrition
+zh-vocab-1108|health|维生素|wéishēngsù|wéishēngsù|vitamin|vitamin
+zh-vocab-1109|health|蛋白质|dànbáizhì|dànbáizhì|chất đạm|protein
+zh-vocab-1110|health|脂肪|zhīfáng|zhīfáng|chất béo|fat
+zh-vocab-1111|health|热量|rèliàng|rèliàng|năng lượng từ thức ăn|caloric energy
+zh-vocab-1112|health|饮食|yǐnshí|yǐnshí|chế độ ăn uống|diet
+zh-vocab-1113|health|食欲|shíyù|shíyù|sự thèm ăn|appetite
+zh-vocab-1114|health|消化|xiāohuà|xiāohuà|tiêu hóa|digest
+zh-vocab-1115|health|免疫力|miǎnyìlì|miǎnyìlì|khả năng miễn dịch|immunity
+zh-vocab-1116|health|预防|yùfáng|yùfáng|phòng ngừa|prevent
+zh-vocab-1117|health|恢复|huīfù|huīfù|phục hồi|recover
+zh-vocab-1118|health|康复|kāngfù|kāngfù|hồi phục sức khỏe|rehabilitation
+zh-vocab-1119|health|休息|xiūxi|xiūxi|nghỉ ngơi|rest
+zh-vocab-1120|health|睡眠|shuìmián|shuìmián|giấc ngủ|sleep
+zh-vocab-1121|health|锻炼|duànliàn|duànliàn|rèn luyện thể chất|exercise
+zh-vocab-1122|health|减肥|jiǎnféi|jiǎnféi|giảm cân|lose weight
+zh-vocab-1123|health|体重|tǐzhòng|tǐzhòng|cân nặng|body weight
+zh-vocab-1124|health|怀孕|huáiyùn|huáiyùn|mang thai|be pregnant
+zh-vocab-1125|health|出生|chūshēng|chūshēng|chào đời|be born
+zh-vocab-1126|health|心理|xīnlǐ|xīnlǐ|tâm lý|mental state
+zh-vocab-1127|health|压力|yālì|yālì|áp lực|pressure
+zh-vocab-1128|health|急救|jíjiù|jíjiù|sơ cứu|first aid
+zh-vocab-1129|health|轮椅|lúnyǐ|lúnyǐ|xe lăn|wheelchair
+zh-vocab-1130|health|拐杖|guǎizhàng|guǎizhàng|gậy chống|walking stick
+zh-vocab-1131|school|学校|xuéxiào|xuéxiào|trường học|school
+zh-vocab-1132|school|幼儿园|yòu'éryuán|yòu'éryuán|trường mẫu giáo|kindergarten
+zh-vocab-1133|school|小学|xiǎoxué|xiǎoxué|trường tiểu học|primary school
+zh-vocab-1134|school|中学|zhōngxué|zhōngxué|trường trung học|secondary school
+zh-vocab-1135|school|高中|gāozhōng|gāozhōng|trường trung học phổ thông|senior high school
+zh-vocab-1136|school|大学|dàxué|dàxué|đại học|university
+zh-vocab-1137|school|学院|xuéyuàn|xuéyuàn|học viện|college
+zh-vocab-1138|school|校园|xiàoyuán|xiàoyuán|khuôn viên trường|campus
+zh-vocab-1139|school|教室|jiàoshì|jiàoshì|phòng học|classroom
+zh-vocab-1140|school|图书馆|túshūguǎn|túshūguǎn|thư viện|library
+zh-vocab-1141|school|实验室|shíyànshì|shíyànshì|phòng thí nghiệm|laboratory
+zh-vocab-1142|school|操场|cāochǎng|cāochǎng|sân trường|school sports ground
+zh-vocab-1143|school|食堂|shítáng|shítáng|nhà ăn|canteen
+zh-vocab-1144|school|学生|xuésheng|xuésheng|học sinh; sinh viên|student
+zh-vocab-1145|school|老师|lǎoshī|lǎoshī|giáo viên|teacher
+zh-vocab-1146|school|教师|jiàoshī|jiàoshī|nhà giáo|educator
+zh-vocab-1147|school|教授|jiàoshòu|jiàoshòu|giáo sư|professor
+zh-vocab-1148|school|校长|xiàozhǎng|xiàozhǎng|hiệu trưởng|school principal
+zh-vocab-1149|school|班长|bānzhǎng|bānzhǎng|lớp trưởng|class monitor
+zh-vocab-1150|school|班级|bānjí|bānjí|lớp học|class group
+zh-vocab-1151|school|年级|niánjí|niánjí|khối lớp|school grade
+zh-vocab-1152|school|课程|kèchéng|kèchéng|khóa học; môn học|course
+zh-vocab-1153|school|课|kè|kè|tiết học|lesson
+zh-vocab-1154|school|课表|kèbiǎo|kèbiǎo|thời khóa biểu|class timetable
+zh-vocab-1155|school|学期|xuéqī|xuéqī|học kỳ|semester
+zh-vocab-1156|school|开学|kāixué|kāixué|bắt đầu năm học|start school term
+zh-vocab-1157|school|毕业|bìyè|bìyè|tốt nghiệp|graduate
+zh-vocab-1158|school|上课|shàngkè|shàngkè|vào học|attend class
+zh-vocab-1159|school|下课|xiàkè|xiàkè|kết thúc tiết học|finish class
+zh-vocab-1160|school|请假|qǐngjià|qǐngjià|xin nghỉ phép|ask for leave
+zh-vocab-1161|school|缺席|quēxí|quēxí|vắng mặt|be absent
+zh-vocab-1162|school|出勤|chūqín|chūqín|có mặt theo lịch|attendance
+zh-vocab-1163|school|学习|xuéxí|xuéxí|học tập|learn
+zh-vocab-1164|school|复习|fùxí|fùxí|ôn tập|review a lesson
+zh-vocab-1165|school|预习|yùxí|yùxí|chuẩn bị bài trước|prepare a lesson in advance
+zh-vocab-1166|school|练习|liànxí|liànxí|luyện tập|practice
+zh-vocab-1167|school|作业|zuòyè|zuòyè|bài tập về nhà|homework
+zh-vocab-1168|school|考试|kǎoshì|kǎoshì|kỳ thi|examination
+zh-vocab-1169|school|测验|cèyàn|cèyàn|bài kiểm tra ngắn|quiz
+zh-vocab-1170|school|试卷|shìjuàn|shìjuàn|đề thi|exam paper
+zh-vocab-1171|school|题目|tímù|tímù|câu hỏi bài tập|exercise question
+zh-vocab-1172|school|答案|dá'àn|dá'àn|đáp án|answer
+zh-vocab-1173|school|成绩|chéngjì|chéngjì|kết quả học tập|academic results
+zh-vocab-1174|school|分数|fēnshù|fēnshù|điểm số|score
+zh-vocab-1175|school|及格|jígé|jígé|đạt điểm đỗ|pass an exam
+zh-vocab-1176|school|补考|bǔkǎo|bǔkǎo|thi lại|retake an exam
+zh-vocab-1177|school|奖学金|jiǎngxuéjīn|jiǎngxuéjīn|học bổng|scholarship
+zh-vocab-1178|school|学费|xuéfèi|xuéfèi|học phí|tuition fee
+zh-vocab-1179|school|学历|xuélì|xuélì|trình độ học vấn|educational qualification
+zh-vocab-1180|school|学位|xuéwèi|xuéwèi|học vị|academic degree
+zh-vocab-1181|school|专业|zhuānyè|zhuānyè|chuyên ngành|major subject
+zh-vocab-1182|school|科目|kēmù|kēmù|môn học|subject
+zh-vocab-1183|school|语文|yǔwén|yǔwén|môn ngôn ngữ và văn học|language and literature
+zh-vocab-1184|school|数学|shùxué|shùxué|toán học|mathematics
+zh-vocab-1185|school|英语|yīngyǔ|yīngyǔ|tiếng Anh|English language
+zh-vocab-1186|school|汉语|hànyǔ|hànyǔ|tiếng Trung|Chinese language
+zh-vocab-1187|school|日语|rìyǔ|rìyǔ|tiếng Nhật|Japanese language
+zh-vocab-1188|school|越南语|yuènányǔ|yuènányǔ|tiếng Việt|Vietnamese language
+zh-vocab-1189|school|外语|wàiyǔ|wàiyǔ|ngoại ngữ|foreign language
+zh-vocab-1190|school|历史|lìshǐ|lìshǐ|lịch sử|history
+zh-vocab-1191|school|地理|dìlǐ|dìlǐ|địa lý|geography
+zh-vocab-1192|school|物理|wùlǐ|wùlǐ|vật lý|physics
+zh-vocab-1193|school|化学|huàxué|huàxué|hóa học|chemistry
+zh-vocab-1194|school|生物|shēngwù|shēngwù|sinh vật; sinh học|organism; biology
+zh-vocab-1195|school|科学|kēxué|kēxué|khoa học|science
+zh-vocab-1196|school|美术|měishù|měishù|mỹ thuật|fine arts
+zh-vocab-1197|school|体育|tǐyù|tǐyù|thể dục thể thao|physical education
+zh-vocab-1198|school|知识|zhīshi|zhīshi|kiến thức|knowledge
+zh-vocab-1199|school|教育|jiàoyù|jiàoyù|giáo dục|education
+zh-vocab-1200|school|教材|jiàocái|jiàocái|tài liệu giảng dạy|teaching material
+zh-vocab-1201|school|课本|kèběn|kèběn|sách giáo khoa|textbook
+zh-vocab-1202|school|字典|zìdiǎn|zìdiǎn|từ điển chữ|character dictionary
+zh-vocab-1203|school|词典|cídiǎn|cídiǎn|từ điển từ ngữ|dictionary
+zh-vocab-1204|school|笔记|bǐjì|bǐjì|ghi chép|notes
+zh-vocab-1205|school|笔记本|bǐjìběn|bǐjìběn|vở ghi|notebook
+zh-vocab-1206|school|书包|shūbāo|shūbāo|cặp sách|schoolbag
+zh-vocab-1207|school|文具|wénjù|wénjù|văn phòng phẩm|stationery
+zh-vocab-1208|school|铅笔|qiānbǐ|qiānbǐ|bút chì|pencil
+zh-vocab-1209|school|钢笔|gāngbǐ|gāngbǐ|bút máy|fountain pen
+zh-vocab-1210|school|圆珠笔|yuánzhūbǐ|yuánzhūbǐ|bút bi|ballpoint pen
+zh-vocab-1211|school|橡皮|xiàngpí|xiàngpí|cục tẩy|eraser
+zh-vocab-1212|school|尺子|chǐzi|chǐzi|thước kẻ|ruler
+zh-vocab-1213|school|剪刀|jiǎndāo|jiǎndāo|kéo|scissors
+zh-vocab-1214|school|胶水|jiāoshuǐ|jiāoshuǐ|keo dán|glue
+zh-vocab-1215|school|黑板|hēibǎn|hēibǎn|bảng đen|blackboard
+zh-vocab-1216|school|粉笔|fěnbǐ|fěnbǐ|phấn viết|chalk
+zh-vocab-1217|school|白板|báibǎn|báibǎn|bảng trắng|whiteboard
+zh-vocab-1218|school|汉字|hànzì|hànzì|chữ Hán|Chinese character
+zh-vocab-1219|school|拼音|pīnyīn|pīnyīn|phiên âm pinyin|pinyin
+zh-vocab-1220|school|字母|zìmǔ|zìmǔ|chữ cái|letter of the alphabet
+zh-vocab-1221|school|单词|dāncí|dāncí|từ đơn|word
+zh-vocab-1222|school|词汇|cíhuì|cíhuì|từ vựng|vocabulary
+zh-vocab-1223|school|句子|jùzi|jùzi|câu|sentence
+zh-vocab-1224|school|语法|yǔfǎ|yǔfǎ|ngữ pháp|grammar
+zh-vocab-1225|school|发音|fāyīn|fāyīn|phát âm|pronunciation
+zh-vocab-1226|school|声调|shēngdiào|shēngdiào|thanh điệu|tone
+zh-vocab-1227|school|口语|kǒuyǔ|kǒuyǔ|khẩu ngữ|spoken language
+zh-vocab-1228|school|阅读|yuèdú|yuèdú|đọc hiểu|reading
+zh-vocab-1229|school|写作|xiězuò|xiězuò|viết bài|writing
+zh-vocab-1230|school|翻译|fānyì|fānyì|dịch|translate
+zh-vocab-1231|school|作文|zuòwén|zuòwén|bài tập làm văn|composition
+zh-vocab-1232|school|段落|duànluò|duànluò|đoạn văn|paragraph
+zh-vocab-1233|school|标点|biāodiǎn|biāodiǎn|dấu câu|punctuation
+zh-vocab-1234|school|研究|yánjiū|yánjiū|nghiên cứu|research
+zh-vocab-1235|school|实验|shíyàn|shíyàn|thí nghiệm|experiment
+zh-vocab-1236|school|论文|lùnwén|lùnwén|bài luận học thuật|academic paper
+zh-vocab-1237|school|报告|bàogào|bàogào|báo cáo|report
+zh-vocab-1238|school|讨论|tǎolùn|tǎolùn|thảo luận|discuss
+zh-vocab-1239|school|提问|tíwèn|tíwèn|đặt câu hỏi|ask a question
+zh-vocab-1240|school|回答|huídá|huídá|trả lời|answer a question
+zh-vocab-1241|work|工作|gōngzuò|gōngzuò|công việc|work
+zh-vocab-1242|work|职业|zhíyè|zhíyè|nghề nghiệp|occupation
+zh-vocab-1243|work|事业|shìyè|shìyè|sự nghiệp|career
+zh-vocab-1244|work|公司|gōngsī|gōngsī|công ty|company
+zh-vocab-1245|work|企业|qǐyè|qǐyè|doanh nghiệp|enterprise
+zh-vocab-1246|work|工厂|gōngchǎng|gōngchǎng|nhà máy|factory
+zh-vocab-1247|work|办公室|bàngōngshì|bàngōngshì|văn phòng|office
+zh-vocab-1248|work|部门|bùmén|bùmén|bộ phận|department
+zh-vocab-1249|work|团队|tuánduì|tuánduì|đội nhóm|team
+zh-vocab-1250|work|员工|yuángōng|yuángōng|nhân viên|employee
+zh-vocab-1251|work|职员|zhíyuán|zhíyuán|nhân viên văn phòng|office worker
+zh-vocab-1252|work|工人|gōngrén|gōngrén|công nhân|worker
+zh-vocab-1253|work|老板|lǎobǎn|lǎobǎn|ông chủ; bà chủ|boss
+zh-vocab-1254|work|经理|jīnglǐ|jīnglǐ|quản lý|manager
+zh-vocab-1255|work|主管|zhǔguǎn|zhǔguǎn|người phụ trách|supervisor
+zh-vocab-1256|work|秘书|mìshū|mìshū|thư ký|secretary
+zh-vocab-1257|work|助理|zhùlǐ|zhùlǐ|trợ lý|assistant
+zh-vocab-1258|work|会计|kuàijì|kuàijì|kế toán|accountant
+zh-vocab-1259|work|工程师|gōngchéngshī|gōngchéngshī|kỹ sư|engineer
+zh-vocab-1260|work|程序员|chéngxùyuán|chéngxùyuán|lập trình viên|programmer
+zh-vocab-1261|work|设计师|shèjìshī|shèjìshī|nhà thiết kế|designer
+zh-vocab-1262|work|律师|lǜshī|lǜshī|luật sư|lawyer
+zh-vocab-1263|work|记者|jìzhě|jìzhě|phóng viên|reporter
+zh-vocab-1264|work|编辑|biānjí|biānjí|biên tập viên|editor
+zh-vocab-1265|work|作家|zuòjiā|zuòjiā|nhà văn|writer
+zh-vocab-1266|work|演员|yǎnyuán|yǎnyuán|diễn viên|actor
+zh-vocab-1267|work|歌手|gēshǒu|gēshǒu|ca sĩ|singer
+zh-vocab-1268|work|厨师|chúshī|chúshī|đầu bếp|chef
+zh-vocab-1269|work|服务员|fúwùyuán|fúwùyuán|nhân viên phục vụ|server
+zh-vocab-1270|work|售货员|shòuhuòyuán|shòuhuòyuán|nhân viên bán hàng|shop assistant
+zh-vocab-1271|work|保安|bǎo'ān|bǎo'ān|nhân viên bảo vệ|security guard
+zh-vocab-1272|work|清洁工|qīngjiégōng|qīngjiégōng|nhân viên vệ sinh|cleaner
+zh-vocab-1273|work|农民|nóngmín|nóngmín|nông dân|farmer
+zh-vocab-1274|work|木匠|mùjiang|mùjiang|thợ mộc|carpenter
+zh-vocab-1275|work|电工|diàngōng|diàngōng|thợ điện|electrician
+zh-vocab-1276|work|水管工|shuǐguǎngōng|shuǐguǎngōng|thợ sửa ống nước|plumber
+zh-vocab-1277|work|理发师|lǐfàshī|lǐfàshī|thợ cắt tóc|hairdresser
+zh-vocab-1278|work|摄影师|shèyǐngshī|shèyǐngshī|nhiếp ảnh gia|photographer
+zh-vocab-1279|work|消防员|xiāofángyuán|xiāofángyuán|lính cứu hỏa|firefighter
+zh-vocab-1280|work|警察|jǐngchá|jǐngchá|cảnh sát|police officer
+zh-vocab-1281|work|邮递员|yóudìyuán|yóudìyuán|nhân viên bưu điện|postal worker
+zh-vocab-1282|work|快递员|kuàidìyuán|kuàidìyuán|nhân viên giao hàng|courier
+zh-vocab-1283|work|飞行员|fēixíngyuán|fēixíngyuán|phi công|pilot
+zh-vocab-1284|work|导购|dǎogòu|dǎogòu|nhân viên tư vấn mua hàng|sales adviser
+zh-vocab-1285|work|顾问|gùwèn|gùwèn|cố vấn|consultant
+zh-vocab-1286|work|人事|rénshì|rénshì|nhân sự|personnel affairs
+zh-vocab-1287|work|招聘|zhāopìn|zhāopìn|tuyển dụng|recruit
+zh-vocab-1288|work|应聘|yìngpìn|yìngpìn|ứng tuyển|apply for a job
+zh-vocab-1289|work|简历|jiǎnlì|jiǎnlì|sơ yếu lý lịch|résumé
+zh-vocab-1290|work|面试|miànshì|miànshì|phỏng vấn|interview
+zh-vocab-1291|work|职位|zhíwèi|zhíwèi|vị trí công việc|job position
+zh-vocab-1292|work|经验|jīngyàn|jīngyàn|kinh nghiệm|experience
+zh-vocab-1293|work|技能|jìnéng|jìnéng|kỹ năng|skill
+zh-vocab-1294|work|能力|nénglì|nénglì|năng lực|ability
+zh-vocab-1295|work|资格|zīgé|zīgé|đủ điều kiện; tư cách|qualification
+zh-vocab-1296|work|培训|péixùn|péixùn|đào tạo|training
+zh-vocab-1297|work|实习|shíxí|shíxí|thực tập|internship
+zh-vocab-1298|work|试用期|shìyòngqī|shìyòngqī|thời gian thử việc|probation period
+zh-vocab-1299|work|录用|lùyòng|lùyòng|tuyển vào làm|hire
+zh-vocab-1300|work|入职|rùzhí|rùzhí|bắt đầu công việc mới|join a company
+zh-vocab-1301|work|辞职|cízhí|cízhí|xin thôi việc|resign
+zh-vocab-1302|work|离职|lízhí|lízhí|rời công việc|leave a job
+zh-vocab-1303|work|退休|tuìxiū|tuìxiū|nghỉ hưu|retire
+zh-vocab-1304|work|失业|shīyè|shīyè|thất nghiệp|unemployment
+zh-vocab-1305|work|升职|shēngzhí|shēngzhí|thăng chức|get promoted
+zh-vocab-1306|work|工资|gōngzī|gōngzī|tiền lương|salary
+zh-vocab-1307|work|奖金|jiǎngjīn|jiǎngjīn|tiền thưởng|bonus
+zh-vocab-1308|work|福利|fúlì|fúlì|phúc lợi|employee benefits
+zh-vocab-1309|work|收入|shōurù|shōurù|thu nhập|income
+zh-vocab-1310|work|加班|jiābān|jiābān|làm thêm giờ|work overtime
+zh-vocab-1311|work|上班|shàngbān|shàngbān|đi làm|go to work
+zh-vocab-1312|work|下班|xiàbān|xiàbān|tan làm|finish work
+zh-vocab-1313|work|出差|chūchāi|chūchāi|đi công tác|go on a business trip
+zh-vocab-1314|work|值班|zhíbān|zhíbān|trực|be on duty
+zh-vocab-1315|work|轮班|lúnbān|lúnbān|làm việc theo ca|work shifts
+zh-vocab-1316|work|兼职|jiānzhí|jiānzhí|việc làm bán thời gian|part-time work
+zh-vocab-1317|work|全职|quánzhí|quánzhí|việc làm toàn thời gian|full-time work
+zh-vocab-1318|work|合同|hétong|hétong|hợp đồng|contract
+zh-vocab-1319|work|协议|xiéyì|xiéyì|thỏa thuận|agreement
+zh-vocab-1320|work|签字|qiānzì|qiānzì|ký tên|sign one's name
+zh-vocab-1321|work|盖章|gàizhāng|gàizhāng|đóng dấu|stamp a document
+zh-vocab-1322|work|文件|wénjiàn|wénjiàn|tài liệu|document
+zh-vocab-1323|work|档案|dàng'àn|dàng'àn|hồ sơ lưu trữ|archive record
+zh-vocab-1324|work|资料|zīliào|zīliào|tư liệu|reference material
+zh-vocab-1325|work|表格|biǎogé|biǎogé|biểu mẫu|form
+zh-vocab-1326|work|会议|huìyì|huìyì|cuộc họp|meeting
+zh-vocab-1327|work|开会|kāihuì|kāihuì|họp|hold a meeting
+zh-vocab-1328|work|议程|yìchéng|yìchéng|chương trình nghị sự|agenda
+zh-vocab-1329|work|项目|xiàngmù|xiàngmù|dự án|project
+zh-vocab-1330|work|任务|rènwu|rènwu|nhiệm vụ|task
+zh-vocab-1331|work|计划|jìhuà|jìhuà|kế hoạch|plan
+zh-vocab-1332|work|目标|mùbiāo|mùbiāo|mục tiêu|goal
+zh-vocab-1333|work|进度|jìndù|jìndù|tiến độ|progress
+zh-vocab-1334|work|效率|xiàolǜ|xiàolǜ|hiệu suất|efficiency
+zh-vocab-1335|work|责任|zérèn|zérèn|trách nhiệm|responsibility
+zh-vocab-1336|work|合作|hézuò|hézuò|hợp tác|cooperate
+zh-vocab-1337|work|沟通|gōutōng|gōutōng|trao đổi thông tin|communicate
+zh-vocab-1338|work|联系|liánxì|liánxì|liên hệ|contact
+zh-vocab-1339|work|反馈|fǎnkuì|fǎnkuì|phản hồi|feedback
+zh-vocab-1340|work|建议|jiànyì|jiànyì|đề xuất|suggestion
+zh-vocab-1341|work|意见|yìjiàn|yìjiàn|ý kiến|opinion
+zh-vocab-1342|work|安排|ānpái|ānpái|sắp xếp|arrange
+zh-vocab-1343|work|管理|guǎnlǐ|guǎnlǐ|quản lý|manage
+zh-vocab-1344|work|负责|fùzé|fùzé|chịu trách nhiệm|be responsible for
+zh-vocab-1345|work|执行|zhíxíng|zhíxíng|thực hiện|carry out
+zh-vocab-1346|work|完成|wánchéng|wánchéng|hoàn thành|complete
+zh-vocab-1347|work|提交|tíjiāo|tíjiāo|nộp|submit
+zh-vocab-1348|work|审核|shěnhé|shěnhé|xét duyệt|review for approval
+zh-vocab-1349|work|批准|pīzhǔn|pīzhǔn|phê duyệt|approve
+zh-vocab-1350|work|预算|yùsuàn|yùsuàn|ngân sách|budget
+zh-vocab-1351|work|成本|chéngběn|chéngběn|chi phí sản xuất|cost
+zh-vocab-1352|work|利润|lìrùn|lìrùn|lợi nhuận|profit
+zh-vocab-1353|work|销售|xiāoshòu|xiāoshòu|bán hàng|sales
+zh-vocab-1354|work|采购|cǎigòu|cǎigòu|thu mua|purchasing
+zh-vocab-1355|work|生产|shēngchǎn|shēngchǎn|sản xuất|produce
+zh-vocab-1356|work|经营|jīngyíng|jīngyíng|kinh doanh|operate a business
+zh-vocab-1357|work|投资|tóuzī|tóuzī|đầu tư|invest
+zh-vocab-1358|work|创业|chuàngyè|chuàngyè|khởi nghiệp|start a business
+zh-vocab-1359|work|竞争|jìngzhēng|jìngzhēng|cạnh tranh|compete
+zh-vocab-1360|work|发展|fāzhǎn|fāzhǎn|phát triển|develop
+zh-vocab-1361|technology|技术|jìshù|jìshù|kỹ thuật|technology
+zh-vocab-1362|technology|科技|kējì|kējì|khoa học công nghệ|science and technology
+zh-vocab-1363|technology|电脑|diànnǎo|diànnǎo|máy tính|computer
+zh-vocab-1364|technology|笔记本电脑|bǐjìběn diànnǎo|bǐjìběn diànnǎo|máy tính xách tay|laptop
+zh-vocab-1365|technology|平板电脑|píngbǎn diànnǎo|píngbǎn diànnǎo|máy tính bảng|tablet computer
+zh-vocab-1366|technology|手机|shǒujī|shǒujī|điện thoại di động|mobile phone
+zh-vocab-1367|technology|电话|diànhuà|diànhuà|điện thoại|telephone
+zh-vocab-1368|technology|智能手机|zhìnéng shǒujī|zhìnéng shǒujī|điện thoại thông minh|smartphone
+zh-vocab-1369|technology|屏幕|píngmù|píngmù|màn hình|screen
+zh-vocab-1370|technology|键盘|jiànpán|jiànpán|bàn phím|keyboard
+zh-vocab-1371|technology|鼠标|shǔbiāo|shǔbiāo|chuột máy tính|computer mouse
+zh-vocab-1372|technology|耳机|ěrjī|ěrjī|tai nghe|headphones
+zh-vocab-1373|technology|音箱|yīnxiāng|yīnxiāng|loa|speaker
+zh-vocab-1374|technology|麦克风|màikèfēng|màikèfēng|micrô|microphone
+zh-vocab-1375|technology|摄像头|shèxiàngtóu|shèxiàngtóu|camera máy tính|webcam
+zh-vocab-1376|technology|相机|xiàngjī|xiàngjī|máy ảnh|camera
+zh-vocab-1377|technology|打印机|dǎyìnjī|dǎyìnjī|máy in|printer
+zh-vocab-1378|technology|扫描仪|sǎomiáoyí|sǎomiáoyí|máy quét|scanner
+zh-vocab-1379|technology|投影仪|tóuyǐngyí|tóuyǐngyí|máy chiếu|projector
+zh-vocab-1380|technology|充电器|chōngdiànqì|chōngdiànqì|bộ sạc|charger
+zh-vocab-1381|technology|电池|diànchí|diànchí|pin|battery
+zh-vocab-1382|technology|充电宝|chōngdiànbǎo|chōngdiànbǎo|pin sạc dự phòng|power bank
+zh-vocab-1383|technology|数据线|shùjùxiàn|shùjùxiàn|cáp dữ liệu|data cable
+zh-vocab-1384|technology|硬盘|yìngpán|yìngpán|ổ cứng|hard drive
+zh-vocab-1385|technology|内存|nèicún|nèicún|bộ nhớ máy tính|computer memory
+zh-vocab-1386|technology|存储|cúnchǔ|cúnchǔ|lưu trữ|storage
+zh-vocab-1387|technology|软件|ruǎnjiàn|ruǎnjiàn|phần mềm|software
+zh-vocab-1388|technology|硬件|yìngjiàn|yìngjiàn|phần cứng|hardware
+zh-vocab-1389|technology|系统|xìtǒng|xìtǒng|hệ thống|system
+zh-vocab-1390|technology|程序|chéngxù|chéngxù|chương trình|program
+zh-vocab-1391|technology|应用|yìngyòng|yìngyòng|ứng dụng|application
+zh-vocab-1392|technology|网络|wǎngluò|wǎngluò|mạng|network
+zh-vocab-1393|technology|互联网|hùliánwǎng|hùliánwǎng|Internet|internet
+zh-vocab-1394|technology|网站|wǎngzhàn|wǎngzhàn|trang web|website
+zh-vocab-1395|technology|网页|wǎngyè|wǎngyè|trang trên web|webpage
+zh-vocab-1396|technology|网址|wǎngzhǐ|wǎngzhǐ|địa chỉ web|web address
+zh-vocab-1397|technology|浏览器|liúlǎnqì|liúlǎnqì|trình duyệt|browser
+zh-vocab-1398|technology|搜索|sōusuǒ|sōusuǒ|tìm kiếm|search
+zh-vocab-1399|technology|链接|liànjiē|liànjiē|liên kết|link
+zh-vocab-1400|technology|账号|zhànghào|zhànghào|tài khoản|account
+zh-vocab-1401|technology|密码|mìmǎ|mìmǎ|mật khẩu|password
+zh-vocab-1402|technology|验证码|yànzhèngmǎ|yànzhèngmǎ|mã xác minh|verification code
+zh-vocab-1403|technology|登录|dēnglù|dēnglù|đăng nhập|log in
+zh-vocab-1404|technology|注册|zhùcè|zhùcè|đăng ký|register
+zh-vocab-1405|technology|退出|tuìchū|tuìchū|thoát|exit
+zh-vocab-1406|technology|下载|xiàzài|xiàzài|tải xuống|download
+zh-vocab-1407|technology|上传|shàngchuán|shàngchuán|tải lên|upload
+zh-vocab-1408|technology|安装|ānzhuāng|ānzhuāng|cài đặt|install
+zh-vocab-1409|technology|卸载|xièzài|xièzài|gỡ cài đặt|uninstall
+zh-vocab-1410|technology|更新|gēngxīn|gēngxīn|cập nhật|update
+zh-vocab-1411|technology|设置|shèzhì|shèzhì|thiết lập|settings
+zh-vocab-1412|technology|保存|bǎocún|bǎocún|lưu|save
+zh-vocab-1413|technology|删除|shānchú|shānchú|xóa|delete
+zh-vocab-1414|technology|复制|fùzhì|fùzhì|sao chép|copy
+zh-vocab-1415|technology|粘贴|zhāntiē|zhāntiē|dán|paste
+zh-vocab-1416|technology|剪切|jiǎnqiē|jiǎnqiē|cắt dữ liệu|cut
+zh-vocab-1417|technology|撤销|chèxiāo|chèxiāo|hoàn tác|undo
+zh-vocab-1418|technology|备份|bèifèn|bèifèn|sao lưu|back up
+zh-vocab-1419|technology|文件夹|wénjiànjiā|wénjiànjiā|thư mục|folder
+zh-vocab-1420|technology|桌面|zhuōmiàn|zhuōmiàn|màn hình làm việc|desktop
+zh-vocab-1421|technology|图标|túbiāo|túbiāo|biểu tượng|icon
+zh-vocab-1422|technology|按钮|ànniǔ|ànniǔ|nút bấm|button
+zh-vocab-1423|technology|菜单|càidān|càidān|trình đơn|menu
+zh-vocab-1424|technology|窗口|chuāngkǒu|chuāngkǒu|cửa sổ ứng dụng|window
+zh-vocab-1425|technology|通知|tōngzhī|tōngzhī|thông báo|notification
+zh-vocab-1426|technology|消息|xiāoxi|xiāoxi|tin nhắn; tin tức|message; news
+zh-vocab-1427|technology|短信|duǎnxìn|duǎnxìn|tin nhắn SMS|text message
+zh-vocab-1428|technology|邮件|yóujiàn|yóujiàn|thư điện tử|email
+zh-vocab-1429|technology|附件|fùjiàn|fùjiàn|tệp đính kèm|attachment
+zh-vocab-1430|technology|收件箱|shōujiànxiāng|shōujiànxiāng|hộp thư đến|inbox
+zh-vocab-1431|technology|视频|shìpín|shìpín|video|video
+zh-vocab-1432|technology|音频|yīnpín|yīnpín|âm thanh số|audio
+zh-vocab-1433|technology|图片|túpiàn|túpiàn|hình ảnh|image
+zh-vocab-1434|technology|照片|zhàopiàn|zhàopiàn|ảnh chụp|photograph
+zh-vocab-1435|technology|直播|zhíbō|zhíbō|phát trực tiếp|live broadcast
+zh-vocab-1436|technology|频道|píndào|píndào|kênh|channel
+zh-vocab-1437|technology|信号|xìnhào|xìnhào|tín hiệu|signal
+zh-vocab-1438|technology|蓝牙|lányá|lányá|Bluetooth|Bluetooth
+zh-vocab-1439|technology|无线|wúxiàn|wúxiàn|không dây|wireless
+zh-vocab-1440|technology|流量|liúliàng|liúliàng|lưu lượng dữ liệu|data traffic
+zh-vocab-1441|technology|数据|shùjù|shùjù|dữ liệu|data
+zh-vocab-1442|technology|隐私|yǐnsī|yǐnsī|quyền riêng tư|privacy
+zh-vocab-1443|technology|权限|quánxiàn|quánxiàn|quyền truy cập|access permission
+zh-vocab-1444|technology|病毒|bìngdú|bìngdú|vi rút|virus
+zh-vocab-1445|technology|故障|gùzhàng|gùzhàng|trục trặc|malfunction
+zh-vocab-1446|technology|重启|chóngqǐ|chóngqǐ|khởi động lại|restart
+zh-vocab-1447|technology|关机|guānjī|guānjī|tắt máy|shut down
+zh-vocab-1448|technology|开机|kāijī|kāijī|bật máy|turn on a device
+zh-vocab-1449|technology|人工智能|réngōng zhìnéng|réngōng zhìnéng|trí tuệ nhân tạo|artificial intelligence
+zh-vocab-1450|technology|机器人|jīqìrén|jīqìrén|rô bốt|robot
+zh-vocab-1451|activities|活动|huódòng|huódòng|hoạt động|activity
+zh-vocab-1452|activities|爱好|àihào|àihào|sở thích|hobby
+zh-vocab-1453|activities|兴趣|xìngqù|xìngqù|hứng thú|interest
+zh-vocab-1454|activities|娱乐|yúlè|yúlè|giải trí|entertainment
+zh-vocab-1455|activities|游戏|yóuxì|yóuxì|trò chơi|game
+zh-vocab-1456|activities|玩具|wánjù|wánjù|đồ chơi|toy
+zh-vocab-1457|activities|运动|yùndòng|yùndòng|vận động; thể thao|exercise; sport
+zh-vocab-1458|activities|比赛|bǐsài|bǐsài|cuộc thi|competition
+zh-vocab-1459|activities|球|qiú|qiú|quả bóng|ball
+zh-vocab-1460|activities|足球|zúqiú|zúqiú|bóng đá|football
+zh-vocab-1461|activities|篮球|lánqiú|lánqiú|bóng rổ|basketball
+zh-vocab-1462|activities|排球|páiqiú|páiqiú|bóng chuyền|volleyball
+zh-vocab-1463|activities|网球|wǎngqiú|wǎngqiú|quần vợt|tennis
+zh-vocab-1464|activities|乒乓球|pīngpāngqiú|pīngpāngqiú|bóng bàn|table tennis
+zh-vocab-1465|activities|羽毛球|yǔmáoqiú|yǔmáoqiú|cầu lông|badminton
+zh-vocab-1466|activities|棒球|bàngqiú|bàngqiú|bóng chày|baseball
+zh-vocab-1467|activities|高尔夫|gāo'ěrfū|gāo'ěrfū|gôn|golf
+zh-vocab-1468|activities|游泳|yóuyǒng|yóuyǒng|bơi lội|swimming
+zh-vocab-1469|activities|跑步|pǎobù|pǎobù|chạy bộ|jogging
+zh-vocab-1470|activities|散步|sànbù|sànbù|đi dạo|take a walk
+zh-vocab-1471|activities|爬山|páshān|páshān|leo núi|climb a mountain
+zh-vocab-1472|activities|徒步|túbù|túbù|đi bộ đường dài|hike
+zh-vocab-1473|activities|骑行|qíxíng|qíxíng|đạp xe đường dài|cycling
+zh-vocab-1474|activities|滑雪|huáxuě|huáxuě|trượt tuyết|skiing
+zh-vocab-1475|activities|滑冰|huábīng|huábīng|trượt băng|ice skating
+zh-vocab-1476|activities|滑板|huábǎn|huábǎn|ván trượt|skateboard
+zh-vocab-1477|activities|冲浪|chōnglàng|chōnglàng|lướt sóng|surfing
+zh-vocab-1478|activities|潜水|qiánshuǐ|qiánshuǐ|lặn|diving
+zh-vocab-1479|activities|钓鱼|diàoyú|diàoyú|câu cá|fishing
+zh-vocab-1480|activities|划船|huáchuán|huáchuán|chèo thuyền|rowing
+zh-vocab-1481|activities|跳绳|tiàoshéng|tiàoshéng|nhảy dây|skip rope
+zh-vocab-1482|activities|瑜伽|yújiā|yújiā|yoga|yoga
+zh-vocab-1483|activities|太极拳|tàijíquán|tàijíquán|thái cực quyền|tai chi
+zh-vocab-1484|activities|武术|wǔshù|wǔshù|võ thuật|martial arts
+zh-vocab-1485|activities|健身|jiànshēn|jiànshēn|tập thể hình|fitness training
+zh-vocab-1486|activities|健身房|jiànshēnfáng|jiànshēnfáng|phòng tập thể hình|gym
+zh-vocab-1487|activities|游泳池|yóuyǒngchí|yóuyǒngchí|bể bơi|swimming pool
+zh-vocab-1488|activities|体育馆|tǐyùguǎn|tǐyùguǎn|nhà thi đấu|sports hall
+zh-vocab-1489|activities|球场|qiúchǎng|qiúchǎng|sân bóng|ball court
+zh-vocab-1490|activities|教练|jiàoliàn|jiàoliàn|huấn luyện viên|coach
+zh-vocab-1491|activities|裁判|cáipàn|cáipàn|trọng tài|referee
+zh-vocab-1492|activities|冠军|guànjūn|guànjūn|nhà vô địch|champion
+zh-vocab-1493|activities|奖牌|jiǎngpái|jiǎngpái|huy chương|medal
+zh-vocab-1494|activities|纪录|jìlù|jìlù|kỷ lục|record achievement
+zh-vocab-1495|activities|音乐|yīnyuè|yīnyuè|âm nhạc|music
+zh-vocab-1496|activities|歌曲|gēqǔ|gēqǔ|bài hát|song
+zh-vocab-1497|activities|唱歌|chànggē|chànggē|hát|sing
+zh-vocab-1498|activities|跳舞|tiàowǔ|tiàowǔ|nhảy múa|dance
+zh-vocab-1499|activities|舞蹈|wǔdǎo|wǔdǎo|điệu múa|dance form
+zh-vocab-1500|activities|乐器|yuèqì|yuèqì|nhạc cụ|musical instrument
+zh-vocab-1501|activities|钢琴|gāngqín|gāngqín|đàn piano|piano
+zh-vocab-1502|activities|吉他|jítā|jítā|đàn ghi ta|guitar
+zh-vocab-1503|activities|小提琴|xiǎotíqín|xiǎotíqín|đàn vi ô lông|violin
+zh-vocab-1504|activities|鼓|gǔ|gǔ|trống|drum
+zh-vocab-1505|activities|笛子|dízi|dízi|sáo|bamboo flute
+zh-vocab-1506|activities|乐队|yuèduì|yuèduì|ban nhạc|band
+zh-vocab-1507|activities|演唱会|yǎnchànghuì|yǎnchànghuì|buổi hòa nhạc ca sĩ|concert
+zh-vocab-1508|activities|演出|yǎnchū|yǎnchū|buổi biểu diễn|performance
+zh-vocab-1509|activities|舞台|wǔtái|wǔtái|sân khấu|stage
+zh-vocab-1510|activities|戏剧|xìjù|xìjù|kịch|drama
+zh-vocab-1511|activities|电影|diànyǐng|diànyǐng|phim|film
+zh-vocab-1512|activities|电影院|diànyǐngyuàn|diànyǐngyuàn|rạp chiếu phim|cinema
+zh-vocab-1513|activities|电视剧|diànshìjù|diànshìjù|phim truyền hình|television series
+zh-vocab-1514|activities|动画|dònghuà|dònghuà|hoạt hình|animation
+zh-vocab-1515|activities|漫画|mànhuà|mànhuà|truyện tranh|comics
+zh-vocab-1516|activities|小说|xiǎoshuō|xiǎoshuō|tiểu thuyết|novel
+zh-vocab-1517|activities|故事|gùshi|gùshi|câu chuyện|story
+zh-vocab-1518|activities|诗|shī|shī|thơ|poem
+zh-vocab-1519|activities|杂志|zázhì|zázhì|tạp chí|magazine
+zh-vocab-1520|activities|报纸|bàozhǐ|bàozhǐ|báo giấy|newspaper
+zh-vocab-1521|activities|书|shū|shū|sách|book
+zh-vocab-1522|activities|画画|huàhuà|huàhuà|vẽ tranh|draw pictures
+zh-vocab-1523|activities|绘画|huìhuà|huìhuà|hội họa|painting
+zh-vocab-1524|activities|书法|shūfǎ|shūfǎ|thư pháp|calligraphy
+zh-vocab-1525|activities|摄影|shèyǐng|shèyǐng|nghệ thuật nhiếp ảnh|photography
+zh-vocab-1526|activities|手工|shǒugōng|shǒugōng|thủ công|handicraft
+zh-vocab-1527|activities|折纸|zhézhǐ|zhézhǐ|gấp giấy|paper folding
+zh-vocab-1528|activities|刺绣|cìxiù|cìxiù|thêu|embroidery
+zh-vocab-1529|activities|编织|biānzhī|biānzhī|đan|knitting
+zh-vocab-1530|activities|园艺|yuányì|yuányì|làm vườn|gardening
+zh-vocab-1531|activities|烹饪|pēngrèn|pēngrèn|nấu nướng|cooking
+zh-vocab-1532|activities|烘焙|hōngbèi|hōngbèi|nướng bánh|baking
+zh-vocab-1533|activities|收藏|shōucáng|shōucáng|sưu tầm|collect
+zh-vocab-1534|activities|象棋|xiàngqí|xiàngqí|cờ tướng|Chinese chess
+zh-vocab-1535|activities|围棋|wéiqí|wéiqí|cờ vây|Go
+zh-vocab-1536|activities|国际象棋|guójì xiàngqí|guójì xiàngqí|cờ vua|chess
+zh-vocab-1537|activities|扑克|pūkè|pūkè|bài tây|playing cards
+zh-vocab-1538|activities|拼图|pīntú|pīntú|trò ghép hình|jigsaw puzzle
+zh-vocab-1539|activities|聚会|jùhuì|jùhuì|buổi tụ họp|gathering
+zh-vocab-1540|activities|野餐|yěcān|yěcān|dã ngoại ăn ngoài trời|picnic
+zh-vocab-1541|activities|派对|pàiduì|pàiduì|bữa tiệc|party
+zh-vocab-1542|activities|约会|yuēhuì|yuēhuì|hẹn hò|date
+zh-vocab-1543|activities|聊天|liáotiān|liáotiān|trò chuyện|chat
+zh-vocab-1544|activities|拍照|pāizhào|pāizhào|chụp ảnh|take photos
+zh-vocab-1545|activities|看书|kànshū|kànshū|đọc sách|read a book
+zh-vocab-1546|activities|听歌|tīnggē|tīnggē|nghe nhạc|listen to songs
+zh-vocab-1547|activities|逛街|guàngjiē|guàngjiē|dạo phố mua sắm|browse shops
+zh-vocab-1548|activities|放风筝|fàng fēngzheng|fàng fēngzheng|thả diều|fly a kite
+zh-vocab-1549|activities|遛狗|liùgǒu|liùgǒu|dắt chó đi dạo|walk a dog
+zh-vocab-1550|activities|晒太阳|shài tàiyáng|shài tàiyáng|tắm nắng|bask in the sun
+zh-vocab-1551|verbs|吃|chī|chī|ăn|eat
+zh-vocab-1552|verbs|喝|hē|hē|uống|drink
+zh-vocab-1553|verbs|看|kàn|kàn|nhìn; xem|look; watch
+zh-vocab-1554|verbs|听|tīng|tīng|nghe|listen
+zh-vocab-1555|verbs|说|shuō|shuō|nói|speak
+zh-vocab-1556|verbs|读|dú|dú|đọc|read
+zh-vocab-1557|verbs|写|xiě|xiě|viết|write
+zh-vocab-1558|verbs|学|xué|xué|học|study
+zh-vocab-1559|verbs|教|jiāo|jiāo|dạy|teach
+zh-vocab-1560|verbs|做|zuò|zuò|làm|do
+zh-vocab-1561|verbs|干|gàn|gàn|làm việc|work on
+zh-vocab-1562|verbs|走|zǒu|zǒu|đi bộ; rời đi|walk; leave
+zh-vocab-1563|verbs|跑|pǎo|pǎo|chạy|run
+zh-vocab-1564|verbs|跳|tiào|tiào|nhảy|jump
+zh-vocab-1565|verbs|坐|zuò|zuò|ngồi|sit
+zh-vocab-1566|verbs|站|zhàn|zhàn|đứng|stand
+zh-vocab-1567|verbs|睡|shuì|shuì|ngủ|sleep
+zh-vocab-1568|verbs|醒|xǐng|xǐng|tỉnh giấc|wake up
+zh-vocab-1569|verbs|起床|qǐchuáng|qǐchuáng|thức dậy|get out of bed
+zh-vocab-1570|verbs|洗漱|xǐshù|xǐshù|rửa mặt và súc miệng|wash up
+zh-vocab-1571|verbs|洗脸|xǐliǎn|xǐliǎn|rửa mặt|wash one's face
+zh-vocab-1572|verbs|刷牙|shuāyá|shuāyá|đánh răng|brush one's teeth
+zh-vocab-1573|verbs|洗澡|xǐzǎo|xǐzǎo|tắm|bathe
+zh-vocab-1574|verbs|穿|chuān|chuān|mặc|put on clothes
+zh-vocab-1575|verbs|脱|tuō|tuō|cởi|take off clothes
+zh-vocab-1576|verbs|戴|dài|dài|đeo; đội|wear an accessory
+zh-vocab-1577|verbs|洗|xǐ|xǐ|rửa; giặt|wash
+zh-vocab-1578|verbs|擦|cā|cā|lau|wipe
+zh-vocab-1579|verbs|扫|sǎo|sǎo|quét|sweep
+zh-vocab-1580|verbs|打扫|dǎsǎo|dǎsǎo|dọn vệ sinh|clean up
+zh-vocab-1581|verbs|整理|zhěnglǐ|zhěnglǐ|sắp xếp gọn|tidy up
+zh-vocab-1582|verbs|收拾|shōushi|shōushi|thu dọn|put things in order
+zh-vocab-1583|verbs|煮|zhǔ|zhǔ|luộc; nấu|boil
+zh-vocab-1584|verbs|炒|chǎo|chǎo|xào|stir-fry
+zh-vocab-1585|verbs|煎|jiān|jiān|rán ít dầu|pan-fry
+zh-vocab-1586|verbs|炸|zhá|zhá|chiên ngập dầu|deep-fry
+zh-vocab-1587|verbs|蒸|zhēng|zhēng|hấp|steam
+zh-vocab-1588|verbs|烤|kǎo|kǎo|nướng|bake; roast
+zh-vocab-1589|verbs|切|qiē|qiē|cắt|cut
+zh-vocab-1590|verbs|剥|bāo|bāo|bóc vỏ|peel
+zh-vocab-1591|verbs|尝|cháng|cháng|nếm|taste
+zh-vocab-1592|verbs|咬|yǎo|yǎo|cắn|bite
+zh-vocab-1593|verbs|嚼|jiáo|jiáo|nhai|chew
+zh-vocab-1594|verbs|吞|tūn|tūn|nuốt|swallow
+zh-vocab-1595|verbs|喂|wèi|wèi|cho ăn|feed
+zh-vocab-1596|verbs|养|yǎng|yǎng|nuôi|raise
+zh-vocab-1597|verbs|种|zhòng|zhòng|trồng|plant
+zh-vocab-1598|verbs|浇水|jiāoshuǐ|jiāoshuǐ|tưới nước|water plants
+zh-vocab-1599|verbs|来|lái|lái|đến|come
+zh-vocab-1600|verbs|去|qù|qù|đi|go
+zh-vocab-1601|verbs|回|huí|huí|trở về|return
+zh-vocab-1602|verbs|进|jìn|jìn|vào|enter
+zh-vocab-1603|verbs|出|chū|chū|ra|go out
+zh-vocab-1604|verbs|上|shàng|shàng|lên|go up
+zh-vocab-1605|verbs|下|xià|xià|xuống|go down
+zh-vocab-1606|verbs|过|guò|guò|đi qua|pass
+zh-vocab-1607|verbs|到|dào|dào|đến nơi|reach
+zh-vocab-1608|verbs|离开|líkāi|líkāi|rời khỏi|leave
+zh-vocab-1609|verbs|进入|jìnrù|jìnrù|đi vào|enter into
+zh-vocab-1610|verbs|经过|jīngguò|jīngguò|đi ngang qua|pass by
+zh-vocab-1611|verbs|停|tíng|tíng|dừng|stop
+zh-vocab-1612|verbs|等|děng|děng|đợi|wait
+zh-vocab-1613|verbs|跟|gēn|gēn|đi theo|follow
+zh-vocab-1614|verbs|追|zhuī|zhuī|đuổi theo|chase
+zh-vocab-1615|verbs|赶|gǎn|gǎn|vội đi cho kịp|hurry to catch
+zh-vocab-1616|verbs|爬|pá|pá|leo; bò|climb; crawl
+zh-vocab-1617|verbs|躺|tǎng|tǎng|nằm|lie down
+zh-vocab-1618|verbs|蹲|dūn|dūn|ngồi xổm|squat
+zh-vocab-1619|verbs|弯|wān|wān|uốn cong|bend
+zh-vocab-1620|verbs|伸|shēn|shēn|duỗi|stretch out
+zh-vocab-1621|verbs|抬|tái|tái|nâng lên|lift
+zh-vocab-1622|verbs|举|jǔ|jǔ|giơ lên|raise
+zh-vocab-1623|verbs|拉|lā|lā|kéo|pull
+zh-vocab-1624|verbs|推|tuī|tuī|đẩy|push
+zh-vocab-1625|verbs|拿|ná|ná|cầm|take; hold
+zh-vocab-1626|verbs|放|fàng|fàng|đặt|put
+zh-vocab-1627|verbs|带|dài|dài|mang theo|bring along
+zh-vocab-1628|verbs|送|sòng|sòng|tặng; đưa|give; deliver
+zh-vocab-1629|verbs|接|jiē|jiē|đón; nhận|pick up; receive
+zh-vocab-1630|verbs|扔|rēng|rēng|ném bỏ|throw away
+zh-vocab-1631|verbs|丢|diū|diū|đánh mất|lose
+zh-vocab-1632|verbs|捡|jiǎn|jiǎn|nhặt|pick up
+zh-vocab-1633|verbs|找|zhǎo|zhǎo|tìm|look for
+zh-vocab-1634|verbs|藏|cáng|cáng|giấu|hide
+zh-vocab-1635|verbs|借|jiè|jiè|mượn; cho mượn|borrow; lend
+zh-vocab-1636|verbs|归还|guīhuán|guīhuán|trả lại|give back
+zh-vocab-1637|verbs|租|zū|zū|thuê|rent
+zh-vocab-1638|verbs|换|huàn|huàn|đổi|exchange
+zh-vocab-1639|verbs|选|xuǎn|xuǎn|chọn|choose
+zh-vocab-1640|verbs|开|kāi|kāi|mở|open
+zh-vocab-1641|verbs|关|guān|guān|đóng|close
+zh-vocab-1642|verbs|锁|suǒ|suǒ|khóa|lock
+zh-vocab-1643|verbs|按|àn|àn|ấn|press
+zh-vocab-1644|verbs|敲|qiāo|qiāo|gõ|knock
+zh-vocab-1645|verbs|摸|mō|mō|sờ|touch
+zh-vocab-1646|verbs|抓|zhuā|zhuā|nắm; bắt|grab; catch
+zh-vocab-1647|verbs|抱|bào|bào|ôm|hug
+zh-vocab-1648|verbs|牵|qiān|qiān|dắt; nắm tay|lead by the hand
+zh-vocab-1649|verbs|亲|qīn|qīn|hôn|kiss
+zh-vocab-1650|verbs|笑|xiào|xiào|cười|laugh
+zh-vocab-1651|verbs|哭|kū|kū|khóc|cry
+zh-vocab-1652|verbs|喊|hǎn|hǎn|hét; gọi to|shout
+zh-vocab-1653|verbs|叫|jiào|jiào|gọi|call
+zh-vocab-1654|verbs|问|wèn|wèn|hỏi|ask
+zh-vocab-1655|verbs|告诉|gàosu|gàosu|nói cho biết|tell
+zh-vocab-1656|verbs|解释|jiěshì|jiěshì|giải thích|explain
+zh-vocab-1657|verbs|介绍|jièshào|jièshào|giới thiệu|introduce
+zh-vocab-1658|verbs|表达|biǎodá|biǎodá|bày tỏ|express
+zh-vocab-1659|verbs|表示|biǎoshì|biǎoshì|biểu thị|indicate
+zh-vocab-1660|verbs|提醒|tíxǐng|tíxǐng|nhắc nhở|remind
+zh-vocab-1661|verbs|邀请|yāoqǐng|yāoqǐng|mời|invite
+zh-vocab-1662|verbs|答应|dāying|dāying|đồng ý; nhận lời|agree; promise
+zh-vocab-1663|verbs|承诺|chéngnuò|chéngnuò|cam kết|commit
+zh-vocab-1664|verbs|拒绝|jùjué|jùjué|từ chối|refuse
+zh-vocab-1665|verbs|同意|tóngyì|tóngyì|đồng ý|agree
+zh-vocab-1666|verbs|反对|fǎnduì|fǎnduì|phản đối|oppose
+zh-vocab-1667|verbs|支持|zhīchí|zhīchí|ủng hộ|support
+zh-vocab-1668|verbs|表扬|biǎoyáng|biǎoyáng|khen ngợi|praise
+zh-vocab-1669|verbs|批评|pīpíng|pīpíng|phê bình|criticize
+zh-vocab-1670|verbs|道歉|dàoqiàn|dàoqiàn|xin lỗi|apologize
+zh-vocab-1671|verbs|原谅|yuánliàng|yuánliàng|tha thứ|forgive
+zh-vocab-1672|verbs|感谢|gǎnxiè|gǎnxiè|cảm ơn|thank
+zh-vocab-1673|verbs|祝福|zhùfú|zhùfú|chúc phúc|wish someone well
+zh-vocab-1674|verbs|鼓励|gǔlì|gǔlì|khích lệ|encourage
+zh-vocab-1675|verbs|安慰|ānwèi|ānwèi|an ủi|comfort
+zh-vocab-1676|verbs|抱怨|bàoyuàn|bàoyuàn|than phiền|complain
+zh-vocab-1677|verbs|争论|zhēnglùn|zhēnglùn|tranh luận|argue
+zh-vocab-1678|verbs|吵架|chǎojià|chǎojià|cãi nhau|quarrel
+zh-vocab-1679|verbs|开玩笑|kāi wánxiào|kāi wánxiào|nói đùa|joke
+zh-vocab-1680|verbs|想|xiǎng|xiǎng|nghĩ; muốn|think; want
+zh-vocab-1681|verbs|思考|sīkǎo|sīkǎo|suy nghĩ|reflect
+zh-vocab-1682|verbs|考虑|kǎolǜ|kǎolǜ|cân nhắc|consider
+zh-vocab-1683|verbs|知道|zhīdào|zhīdào|biết|know
+zh-vocab-1684|verbs|认识|rènshi|rènshi|quen biết; nhận ra|know; recognize
+zh-vocab-1685|verbs|了解|liǎojiě|liǎojiě|tìm hiểu; hiểu biết|understand; learn about
+zh-vocab-1686|verbs|理解|lǐjiě|lǐjiě|hiểu|comprehend
+zh-vocab-1687|verbs|明白|míngbai|míngbai|hiểu rõ|understand clearly
+zh-vocab-1688|verbs|懂|dǒng|dǒng|hiểu được|understand
+zh-vocab-1689|verbs|记得|jìde|jìde|nhớ|remember
+zh-vocab-1690|verbs|忘记|wàngjì|wàngjì|quên|forget
+zh-vocab-1691|verbs|记住|jìzhù|jìzhù|ghi nhớ|keep in mind
+zh-vocab-1692|verbs|回忆|huíyì|huíyì|hồi tưởng|recall
+zh-vocab-1693|verbs|相信|xiāngxìn|xiāngxìn|tin tưởng|believe
+zh-vocab-1694|verbs|怀疑|huáiyí|huáiyí|nghi ngờ|doubt
+zh-vocab-1695|verbs|觉得|juéde|juéde|cảm thấy; cho rằng|feel; think
+zh-vocab-1696|verbs|认为|rènwéi|rènwéi|cho rằng|consider to be
+zh-vocab-1697|verbs|猜|cāi|cāi|đoán|guess
+zh-vocab-1698|verbs|发现|fāxiàn|fāxiàn|phát hiện|discover
+zh-vocab-1699|verbs|注意|zhùyì|zhùyì|chú ý|pay attention
+zh-vocab-1700|verbs|观察|guānchá|guānchá|quan sát|observe
+zh-vocab-1701|verbs|比较|bǐjiào|bǐjiào|so sánh|compare
+zh-vocab-1702|verbs|分析|fēnxī|fēnxī|phân tích|analyze
+zh-vocab-1703|verbs|判断|pànduàn|pànduàn|phán đoán|judge
+zh-vocab-1704|verbs|决定|juédìng|juédìng|quyết định|decide
+zh-vocab-1705|verbs|选择|xuǎnzé|xuǎnzé|lựa chọn|select
+zh-vocab-1706|verbs|希望|xīwàng|xīwàng|hy vọng|hope
+zh-vocab-1707|verbs|期待|qīdài|qīdài|mong đợi|look forward to
+zh-vocab-1708|verbs|需要|xūyào|xūyào|cần|need
+zh-vocab-1709|verbs|想念|xiǎngniàn|xiǎngniàn|nhớ nhung|miss someone
+zh-vocab-1710|verbs|喜欢|xǐhuan|xǐhuan|thích|like
+zh-vocab-1711|verbs|爱|ài|ài|yêu|love
+zh-vocab-1712|verbs|讨厌|tǎoyàn|tǎoyàn|ghét|dislike
+zh-vocab-1713|verbs|害怕|hàipà|hàipà|sợ hãi|be afraid
+zh-vocab-1714|verbs|担心|dānxīn|dānxīn|lo lắng|worry
+zh-vocab-1715|verbs|后悔|hòuhuǐ|hòuhuǐ|hối hận|regret
+zh-vocab-1716|verbs|羡慕|xiànmù|xiànmù|ngưỡng mộ|envy admiringly
+zh-vocab-1717|verbs|尊重|zūnzhòng|zūnzhòng|tôn trọng|respect
+zh-vocab-1718|verbs|关心|guānxīn|guānxīn|quan tâm|care about
+zh-vocab-1719|verbs|照顾|zhàogu|zhàogu|chăm sóc|look after
+zh-vocab-1720|verbs|帮助|bāngzhù|bāngzhù|giúp đỡ|help
+zh-vocab-1721|verbs|保护|bǎohù|bǎohù|bảo vệ|protect
+zh-vocab-1722|verbs|陪|péi|péi|ở bên; đi cùng|accompany
+zh-vocab-1723|verbs|参加|cānjiā|cānjiā|tham gia|participate
+zh-vocab-1724|verbs|加入|jiārù|jiārù|gia nhập|join
+zh-vocab-1725|verbs|开始|kāishǐ|kāishǐ|bắt đầu|begin
+zh-vocab-1726|verbs|结束|jiéshù|jiéshù|kết thúc|end
+zh-vocab-1727|verbs|继续|jìxù|jìxù|tiếp tục|continue
+zh-vocab-1728|verbs|停止|tíngzhǐ|tíngzhǐ|ngừng|cease
+zh-vocab-1729|verbs|坚持|jiānchí|jiānchí|kiên trì|persist
+zh-vocab-1730|verbs|放弃|fàngqì|fàngqì|từ bỏ|give up
+zh-vocab-1731|verbs|尝试|chángshì|chángshì|thử|try
+zh-vocab-1732|verbs|准备|zhǔnbèi|zhǔnbèi|chuẩn bị|prepare
+zh-vocab-1733|verbs|等待|děngdài|děngdài|chờ đợi|wait for
+zh-vocab-1734|verbs|接受|jiēshòu|jiēshòu|tiếp nhận|accept
+zh-vocab-1735|verbs|获得|huòdé|huòdé|đạt được|obtain
+zh-vocab-1736|verbs|失去|shīqù|shīqù|mất đi|lose
+zh-vocab-1737|verbs|保留|bǎoliú|bǎoliú|giữ lại|retain
+zh-vocab-1738|verbs|改变|gǎibiàn|gǎibiàn|thay đổi|change
+zh-vocab-1739|verbs|提高|tígāo|tígāo|nâng cao|improve
+zh-vocab-1740|verbs|降低|jiàngdī|jiàngdī|hạ thấp|reduce
+zh-vocab-1741|verbs|增加|zēngjiā|zēngjiā|tăng thêm|increase
+zh-vocab-1742|verbs|减少|jiǎnshǎo|jiǎnshǎo|giảm bớt|decrease
+zh-vocab-1743|verbs|解决|jiějué|jiějué|giải quyết|solve
+zh-vocab-1744|verbs|处理|chǔlǐ|chǔlǐ|xử lý|handle
+zh-vocab-1745|verbs|使用|shǐyòng|shǐyòng|sử dụng|use
+zh-vocab-1746|verbs|修理|xiūlǐ|xiūlǐ|sửa chữa|repair
+zh-vocab-1747|verbs|建立|jiànlì|jiànlì|thiết lập|establish
+zh-vocab-1748|verbs|创造|chuàngzào|chuàngzào|sáng tạo|create
+zh-vocab-1749|verbs|发生|fāshēng|fāshēng|xảy ra|happen
+zh-vocab-1750|verbs|存在|cúnzài|cúnzài|tồn tại|exist
+zh-vocab-1751|adjectives|好|hǎo|hǎo|tốt|good
+zh-vocab-1752|adjectives|坏|huài|huài|xấu; hỏng|bad; broken
+zh-vocab-1753|adjectives|大|dà|dà|to; lớn|big
+zh-vocab-1754|adjectives|小|xiǎo|xiǎo|nhỏ|small
+zh-vocab-1755|adjectives|高|gāo|gāo|cao|high; tall
+zh-vocab-1756|adjectives|矮|ǎi|ǎi|thấp người|short in height
+zh-vocab-1757|adjectives|长|cháng|cháng|dài|long
+zh-vocab-1758|adjectives|短|duǎn|duǎn|ngắn|short in length
+zh-vocab-1759|adjectives|宽|kuān|kuān|rộng|wide
+zh-vocab-1760|adjectives|窄|zhǎi|zhǎi|hẹp|narrow
+zh-vocab-1761|adjectives|厚|hòu|hòu|dày|thick
+zh-vocab-1762|adjectives|薄|báo|báo|mỏng|thin
+zh-vocab-1763|adjectives|深|shēn|shēn|sâu|deep
+zh-vocab-1764|adjectives|浅|qiǎn|qiǎn|nông|shallow
+zh-vocab-1765|adjectives|远|yuǎn|yuǎn|xa|far
+zh-vocab-1766|adjectives|近|jìn|jìn|gần|near
+zh-vocab-1767|adjectives|重|zhòng|zhòng|nặng|heavy
+zh-vocab-1768|adjectives|轻|qīng|qīng|nhẹ|light in weight
+zh-vocab-1769|adjectives|快|kuài|kuài|nhanh|fast
+zh-vocab-1770|adjectives|慢|màn|màn|chậm|slow
+zh-vocab-1771|adjectives|早|zǎo|zǎo|sớm|early
+zh-vocab-1772|adjectives|晚|wǎn|wǎn|muộn|late
+zh-vocab-1773|adjectives|新|xīn|xīn|mới|new
+zh-vocab-1774|adjectives|旧|jiù|jiù|cũ|old; used
+zh-vocab-1775|adjectives|老|lǎo|lǎo|già|old in age
+zh-vocab-1776|adjectives|年轻|niánqīng|niánqīng|trẻ tuổi|young
+zh-vocab-1777|adjectives|热|rè|rè|nóng|hot
+zh-vocab-1778|adjectives|冷|lěng|lěng|lạnh|cold
+zh-vocab-1779|adjectives|暖和|nuǎnhuo|nuǎnhuo|ấm áp|warm
+zh-vocab-1780|adjectives|凉快|liángkuai|liángkuai|mát mẻ|cool
+zh-vocab-1781|adjectives|干燥|gānzào|gānzào|khô ráo|dry
+zh-vocab-1782|adjectives|湿|shī|shī|ướt|wet
+zh-vocab-1783|adjectives|硬|yìng|yìng|cứng|hard
+zh-vocab-1784|adjectives|软|ruǎn|ruǎn|mềm|soft
+zh-vocab-1785|adjectives|粗|cū|cū|thô; to|coarse; thick
+zh-vocab-1786|adjectives|细|xì|xì|mảnh; mịn|fine; thin
+zh-vocab-1787|adjectives|直|zhí|zhí|thẳng|straight
+zh-vocab-1788|adjectives|圆|yuán|yuán|tròn|round
+zh-vocab-1789|adjectives|方|fāng|fāng|vuông|square
+zh-vocab-1790|adjectives|平|píng|píng|phẳng|flat
+zh-vocab-1791|adjectives|满|mǎn|mǎn|đầy|full
+zh-vocab-1792|adjectives|空|kōng|kōng|trống|empty
+zh-vocab-1793|adjectives|松|sōng|sōng|lỏng|loose
+zh-vocab-1794|adjectives|紧|jǐn|jǐn|chặt|tight
+zh-vocab-1795|adjectives|亮|liàng|liàng|sáng|bright
+zh-vocab-1796|adjectives|暗|àn|àn|tối|dark
+zh-vocab-1797|adjectives|干净|gānjìng|gānjìng|sạch|clean
+zh-vocab-1798|adjectives|脏|zāng|zāng|bẩn|dirty
+zh-vocab-1799|adjectives|整齐|zhěngqí|zhěngqí|ngăn nắp|neat
+zh-vocab-1800|adjectives|乱|luàn|luàn|bừa bộn|messy
+zh-vocab-1801|adjectives|漂亮|piàoliang|piàoliang|đẹp|beautiful
+zh-vocab-1802|adjectives|美丽|měilì|měilì|xinh đẹp|beautiful in appearance
+zh-vocab-1803|adjectives|丑|chǒu|chǒu|xấu xí|ugly
+zh-vocab-1804|adjectives|可爱|kě'ài|kě'ài|đáng yêu|cute
+zh-vocab-1805|adjectives|帅|shuài|shuài|đẹp trai|handsome
+zh-vocab-1806|adjectives|好看|hǎokàn|hǎokàn|ưa nhìn|good-looking
+zh-vocab-1807|adjectives|舒服|shūfu|shūfu|thoải mái|comfortable
+zh-vocab-1808|adjectives|难受|nánshòu|nánshòu|khó chịu|uncomfortable
+zh-vocab-1809|adjectives|方便|fāngbiàn|fāngbiàn|thuận tiện|convenient
+zh-vocab-1810|adjectives|麻烦的|máfan de|máfan de|phiền phức|troublesome
+zh-vocab-1811|adjectives|简单|jiǎndān|jiǎndān|đơn giản|simple
+zh-vocab-1812|adjectives|复杂|fùzá|fùzá|phức tạp|complex
+zh-vocab-1813|adjectives|容易|róngyì|róngyì|dễ|easy
+zh-vocab-1814|adjectives|困难|kùnnan|kùnnan|khó khăn|difficult
+zh-vocab-1815|adjectives|难|nán|nán|khó|hard to do
+zh-vocab-1816|adjectives|重要|zhòngyào|zhòngyào|quan trọng|important
+zh-vocab-1817|adjectives|必要|bìyào|bìyào|cần thiết|necessary
+zh-vocab-1818|adjectives|普通|pǔtōng|pǔtōng|thông thường|ordinary
+zh-vocab-1819|adjectives|特别|tèbié|tèbié|đặc biệt|special
+zh-vocab-1820|adjectives|正常|zhèngcháng|zhèngcháng|bình thường|normal
+zh-vocab-1821|adjectives|奇怪|qíguài|qíguài|kỳ lạ|strange
+zh-vocab-1822|adjectives|有趣|yǒuqù|yǒuqù|thú vị|interesting
+zh-vocab-1823|adjectives|无聊|wúliáo|wúliáo|nhàm chán|boring
+zh-vocab-1824|adjectives|清楚|qīngchu|qīngchu|rõ ràng|clear
+zh-vocab-1825|adjectives|模糊|móhu|móhu|mờ|blurry
+zh-vocab-1826|adjectives|正确|zhèngquè|zhèngquè|đúng|correct
+zh-vocab-1827|adjectives|错误|cuòwù|cuòwù|sai|incorrect
+zh-vocab-1828|adjectives|准确|zhǔnquè|zhǔnquè|chính xác|accurate
+zh-vocab-1829|adjectives|合适|héshì|héshì|phù hợp|suitable
+zh-vocab-1830|adjectives|安全|ānquán|ānquán|an toàn|safe
+zh-vocab-1831|adjectives|危险|wēixiǎn|wēixiǎn|nguy hiểm|dangerous
+zh-vocab-1832|adjectives|安静|ānjìng|ānjìng|yên tĩnh|quiet
+zh-vocab-1833|adjectives|吵|chǎo|chǎo|ồn ào|noisy
+zh-vocab-1834|adjectives|热闹|rènao|rènao|nhộn nhịp|lively
+zh-vocab-1835|adjectives|忙|máng|máng|bận|busy
+zh-vocab-1836|adjectives|闲|xián|xián|rảnh|free from work
+zh-vocab-1837|adjectives|饱|bǎo|bǎo|no|full after eating
+zh-vocab-1838|adjectives|饿|è|è|đói|hungry
+zh-vocab-1839|adjectives|渴|kě|kě|khát|thirsty
+zh-vocab-1840|adjectives|累|lèi|lèi|mệt|tired
+zh-vocab-1841|adjectives|困|kùn|kùn|buồn ngủ|sleepy
+zh-vocab-1842|adjectives|胖|pàng|pàng|béo|fat in body size
+zh-vocab-1843|adjectives|瘦|shòu|shòu|gầy|thin in body size
+zh-vocab-1844|adjectives|强|qiáng|qiáng|mạnh|strong
+zh-vocab-1845|adjectives|弱|ruò|ruò|yếu|weak
+zh-vocab-1846|adjectives|甜|tián|tián|ngọt|sweet
+zh-vocab-1847|adjectives|酸|suān|suān|chua|sour
+zh-vocab-1848|adjectives|苦|kǔ|kǔ|đắng|bitter
+zh-vocab-1849|adjectives|辣|là|là|cay|spicy
+zh-vocab-1850|adjectives|咸|xián|xián|mặn|salty
+zh-vocab-1851|adjectives|高兴|gāoxìng|gāoxìng|vui mừng|glad
+zh-vocab-1852|adjectives|开心|kāixīn|kāixīn|vui vẻ|happy
+zh-vocab-1853|adjectives|快乐|kuàilè|kuàilè|vui sướng|joyful
+zh-vocab-1854|adjectives|幸福|xìngfú|xìngfú|hạnh phúc|happy and fulfilled
+zh-vocab-1855|adjectives|满意|mǎnyì|mǎnyì|hài lòng|satisfied
+zh-vocab-1856|adjectives|兴奋|xīngfèn|xīngfèn|hào hứng|excited
+zh-vocab-1857|adjectives|激动|jīdòng|jīdòng|xúc động|emotionally moved
+zh-vocab-1858|adjectives|紧张|jǐnzhāng|jǐnzhāng|căng thẳng|nervous
+zh-vocab-1859|adjectives|焦虑|jiāolǜ|jiāolǜ|lo âu|anxious
+zh-vocab-1860|adjectives|难过|nánguò|nánguò|buồn|sad
+zh-vocab-1861|adjectives|伤心|shāngxīn|shāngxīn|đau lòng|heartbroken
+zh-vocab-1862|adjectives|失望|shīwàng|shīwàng|thất vọng|disappointed
+zh-vocab-1863|adjectives|生气|shēngqì|shēngqì|tức giận|angry
+zh-vocab-1864|adjectives|愤怒|fènnù|fènnù|phẫn nộ|furious
+zh-vocab-1865|adjectives|孤独|gūdú|gūdú|cô đơn|lonely
+zh-vocab-1866|adjectives|害羞|hàixiū|hàixiū|ngượng ngùng|shy
+zh-vocab-1867|adjectives|惊讶|jīngyà|jīngyà|ngạc nhiên|surprised
+zh-vocab-1868|adjectives|平静|píngjìng|píngjìng|bình tĩnh|calm
+zh-vocab-1869|adjectives|放松|fàngsōng|fàngsōng|thư giãn|relaxed
+zh-vocab-1870|adjectives|自信|zìxìn|zìxìn|tự tin|confident
+zh-vocab-1871|adjectives|勇敢|yǒnggǎn|yǒnggǎn|dũng cảm|brave
+zh-vocab-1872|adjectives|诚实|chéngshí|chéngshí|trung thực|honest
+zh-vocab-1873|adjectives|善良|shànliáng|shànliáng|tốt bụng|kind-hearted
+zh-vocab-1874|adjectives|友好|yǒuhǎo|yǒuhǎo|thân thiện|friendly
+zh-vocab-1875|adjectives|礼貌|lǐmào|lǐmào|lễ phép|polite
+zh-vocab-1876|adjectives|耐心|nàixīn|nàixīn|kiên nhẫn|patient
+zh-vocab-1877|adjectives|细心|xìxīn|xìxīn|cẩn thận|attentive
+zh-vocab-1878|adjectives|粗心|cūxīn|cūxīn|bất cẩn|careless
+zh-vocab-1879|adjectives|认真|rènzhēn|rènzhēn|nghiêm túc|earnest
+zh-vocab-1880|adjectives|努力|nǔlì|nǔlì|chăm chỉ; nỗ lực|hard-working; strive
+zh-vocab-1881|adjectives|勤奋|qínfèn|qínfèn|cần cù|diligent
+zh-vocab-1882|adjectives|懒|lǎn|lǎn|lười|lazy
+zh-vocab-1883|adjectives|聪明|cōngming|cōngming|thông minh|clever
+zh-vocab-1884|adjectives|笨|bèn|bèn|vụng; chậm hiểu|clumsy; slow to learn
+zh-vocab-1885|adjectives|温柔|wēnróu|wēnróu|dịu dàng|gentle
+zh-vocab-1886|adjectives|热情|rèqíng|rèqíng|nhiệt tình|enthusiastic
+zh-vocab-1887|adjectives|冷淡|lěngdàn|lěngdàn|lạnh nhạt|indifferent
+zh-vocab-1888|adjectives|严格|yángé|yángé|nghiêm khắc|strict
+zh-vocab-1889|adjectives|严肃|yánsù|yánsù|nghiêm nghị|serious
+zh-vocab-1890|adjectives|活泼|huópo|huópo|hoạt bát|lively in personality
+zh-vocab-1891|adjectives|成熟|chéngshú|chéngshú|trưởng thành|mature
+zh-vocab-1892|adjectives|独立|dúlì|dúlì|độc lập|independent
+zh-vocab-1893|adjectives|积极|jījí|jījí|tích cực|positive; proactive
+zh-vocab-1894|adjectives|消极|xiāojí|xiāojí|tiêu cực|negative; passive
+zh-vocab-1895|adjectives|乐观|lèguān|lèguān|lạc quan|optimistic
+zh-vocab-1896|adjectives|悲观|bēiguān|bēiguān|bi quan|pessimistic
+zh-vocab-1897|adjectives|公平|gōngpíng|gōngpíng|công bằng|fair
+zh-vocab-1898|adjectives|自私|zìsī|zìsī|ích kỷ|selfish
+zh-vocab-1899|adjectives|谦虚|qiānxū|qiānxū|khiêm tốn|modest
+zh-vocab-1900|adjectives|骄傲|jiāo'ào|jiāo'ào|tự hào; kiêu ngạo|proud; arrogant
+zh-vocab-1901|society|社会|shèhuì|shèhuì|xã hội|society
+zh-vocab-1902|society|社区|shèqū|shèqū|cộng đồng dân cư|community
+zh-vocab-1903|society|人口|rénkǒu|rénkǒu|dân số|population
+zh-vocab-1904|society|国家|guójiā|guójiā|quốc gia|country
+zh-vocab-1905|society|政府|zhèngfǔ|zhèngfǔ|chính phủ|government
+zh-vocab-1906|society|城市|chéngshì|chéngshì|thành phố|city
+zh-vocab-1907|society|农村|nóngcūn|nóngcūn|nông thôn|countryside
+zh-vocab-1908|society|村庄|cūnzhuāng|cūnzhuāng|làng|village
+zh-vocab-1909|society|地区|dìqū|dìqū|khu vực|region
+zh-vocab-1910|society|世界|shìjiè|shìjiè|thế giới|world
+zh-vocab-1911|society|国际|guójì|guójì|quốc tế|international
+zh-vocab-1912|society|国内|guónèi|guónèi|trong nước|domestic
+zh-vocab-1913|society|国外|guówài|guówài|ở nước ngoài|abroad
+zh-vocab-1914|society|首都|shǒudū|shǒudū|thủ đô|capital city
+zh-vocab-1915|society|省|shěng|shěng|tỉnh|province
+zh-vocab-1916|society|县|xiàn|xiàn|huyện|county
+zh-vocab-1917|society|市民|shìmín|shìmín|người dân thành phố|city resident
+zh-vocab-1918|society|法律|fǎlǜ|fǎlǜ|pháp luật|law
+zh-vocab-1919|society|规定|guīdìng|guīdìng|quy định|regulation
+zh-vocab-1920|society|规则|guīzé|guīzé|quy tắc|rule
+zh-vocab-1921|society|权利|quánlì|quánlì|quyền lợi|right
+zh-vocab-1922|society|义务|yìwù|yìwù|nghĩa vụ|duty
+zh-vocab-1923|society|自由|zìyóu|zìyóu|tự do|freedom
+zh-vocab-1924|society|平等|píngděng|píngděng|bình đẳng|equal
+zh-vocab-1925|society|政策|zhèngcè|zhèngcè|chính sách|policy
+zh-vocab-1926|society|制度|zhìdù|zhìdù|chế độ; hệ thống quy định|institutional system
+zh-vocab-1927|society|手续|shǒuxù|shǒuxù|thủ tục|formalities
+zh-vocab-1928|society|证明|zhèngmíng|zhèngmíng|giấy chứng nhận; chứng minh|proof
+zh-vocab-1929|society|证件|zhèngjiàn|zhèngjiàn|giấy tờ tùy thân|identity document
+zh-vocab-1930|society|申请|shēnqǐng|shēnqǐng|đăng ký; nộp đơn|apply
+zh-vocab-1931|society|登记|dēngjì|dēngjì|đăng ký thông tin|register
+zh-vocab-1932|society|允许|yǔnxǔ|yǔnxǔ|cho phép|allow
+zh-vocab-1933|society|禁止|jìnzhǐ|jìnzhǐ|cấm|forbid
+zh-vocab-1934|society|新闻|xīnwén|xīnwén|tin tức|news
+zh-vocab-1935|society|报道|bàodào|bàodào|bản tin; đưa tin|report the news
+zh-vocab-1936|society|媒体|méitǐ|méitǐ|truyền thông|media
+zh-vocab-1937|society|采访|cǎifǎng|cǎifǎng|phỏng vấn lấy tin|conduct an interview
+zh-vocab-1938|society|广告|guǎnggào|guǎnggào|quảng cáo|advertisement
+zh-vocab-1939|society|公告|gōnggào|gōnggào|thông cáo công khai|public announcement
+zh-vocab-1940|society|组织|zǔzhī|zǔzhī|tổ chức|organization
+zh-vocab-1941|society|团体|tuántǐ|tuántǐ|đoàn thể|group
+zh-vocab-1942|society|协会|xiéhuì|xiéhuì|hiệp hội|association
+zh-vocab-1943|society|公益|gōngyì|gōngyì|lợi ích công cộng|public welfare
+zh-vocab-1944|society|慈善|císhàn|císhàn|từ thiện|charity
+zh-vocab-1945|society|捐款|juānkuǎn|juānkuǎn|quyên góp tiền|donate money
+zh-vocab-1946|society|救援|jiùyuán|jiùyuán|cứu hộ|rescue
+zh-vocab-1947|society|和平|hépíng|hépíng|hòa bình|peace
+zh-vocab-1948|society|战争|zhànzhēng|zhànzhēng|chiến tranh|war
+zh-vocab-1949|society|犯罪|fànzuì|fànzuì|phạm tội|commit a crime
+zh-vocab-1950|society|法院|fǎyuàn|fǎyuàn|tòa án|court
+zh-vocab-1951|society|证据|zhèngjù|zhèngjù|bằng chứng|evidence
+zh-vocab-1952|society|案件|ànjiàn|ànjiàn|vụ án|legal case
+zh-vocab-1953|society|纠纷|jiūfēn|jiūfēn|tranh chấp|dispute
+zh-vocab-1954|society|投诉|tóusù|tóusù|khiếu nại|make a complaint
+zh-vocab-1955|society|传统|chuántǒng|chuántǒng|truyền thống|tradition
+zh-vocab-1956|society|习俗|xísú|xísú|phong tục|custom
+zh-vocab-1957|society|民族|mínzú|mínzú|dân tộc|ethnic group
+zh-vocab-1958|society|宗教|zōngjiào|zōngjiào|tôn giáo|religion
+zh-vocab-1959|society|信仰|xìnyǎng|xìnyǎng|tín ngưỡng|belief
+zh-vocab-1960|society|关系|guānxi|guānxi|mối quan hệ|relationship
+zh-vocab-1961|society|交流|jiāoliú|jiāoliú|trao đổi|exchange ideas
+zh-vocab-1962|society|矛盾|máodùn|máodùn|mâu thuẫn|conflict
+zh-vocab-1963|society|团结|tuánjié|tuánjié|đoàn kết|unity
+zh-vocab-1964|society|信任|xìnrèn|xìnrèn|tin tưởng|trust
+zh-vocab-1965|society|文明|wénmíng|wénmíng|văn minh|civilized
+zh-vocab-1966|society|变化|biànhuà|biànhuà|sự thay đổi|change
+zh-vocab-1967|society|进步|jìnbù|jìnbù|tiến bộ|progress
+zh-vocab-1968|society|成功|chénggōng|chénggōng|thành công|success
+zh-vocab-1969|society|失败|shībài|shībài|thất bại|failure
+zh-vocab-1970|society|未来|wèilái|wèilái|tương lai|future
+zh-vocab-1971|society|税收|shuìshōu|shuìshōu|nguồn thu thuế|tax revenue
+zh-vocab-1972|society|经济|jīngjì|jīngjì|kinh tế|economy
+zh-vocab-1973|society|民主|mínzhǔ|mínzhǔ|dân chủ|democracy
+zh-vocab-1974|society|投票|tóupiào|tóupiào|bỏ phiếu|vote
+zh-vocab-1975|society|选举|xuǎnjǔ|xuǎnjǔ|bầu cử|election
+zh-vocab-1976|society|公共|gōnggòng|gōnggòng|công cộng|public
+zh-vocab-1977|society|人权|rénquán|rénquán|nhân quyền|human rights
+zh-vocab-1978|society|民众|mínzhòng|mínzhòng|người dân|the public
+zh-vocab-1979|society|养老|yǎnglǎo|yǎnglǎo|chăm sóc người cao tuổi|care for the elderly
+zh-vocab-1980|society|贫困|pínkùn|pínkùn|nghèo khó|poverty
+zh-vocab-1981|society|富裕|fùyù|fùyù|giàu có|well-off
+zh-vocab-1982|society|住房|zhùfáng|zhùfáng|nhà ở|housing
+zh-vocab-1983|society|就业|jiùyè|jiùyè|có việc làm|employment
+zh-vocab-1984|society|保障|bǎozhàng|bǎozhàng|bảo đảm|ensure protection
+zh-vocab-1985|society|劳动|láodòng|láodòng|lao động|labor
+zh-vocab-1986|society|设施|shèshī|shèshī|cơ sở vật chất|facilities
+zh-vocab-1987|society|建设|jiànshè|jiànshè|xây dựng|construction
+zh-vocab-1988|society|改革|gǎigé|gǎigé|cải cách|reform
+zh-vocab-1989|society|开放|kāifàng|kāifàng|mở cửa|open to the public
+zh-vocab-1990|society|移民|yímín|yímín|người nhập cư|immigrant
+zh-vocab-1991|society|居民区|jūmínqū|jūmínqū|khu dân cư|residential area
+zh-vocab-1992|society|市中心|shìzhōngxīn|shìzhōngxīn|trung tâm thành phố|city center
+zh-vocab-1993|society|郊区|jiāoqū|jiāoqū|ngoại ô|suburbs
+zh-vocab-1994|society|乡镇|xiāngzhèn|xiāngzhèn|thị trấn nông thôn|rural township
+zh-vocab-1995|society|国籍|guójí|guójí|quốc tịch|nationality
+zh-vocab-1996|society|国旗|guóqí|guóqí|quốc kỳ|national flag
+zh-vocab-1997|society|边界|biānjiè|biānjiè|ranh giới|boundary
+zh-vocab-1998|society|联合|liánhé|liánhé|liên kết|join forces
+zh-vocab-1999|society|贡献|gòngxiàn|gòngxiàn|đóng góp|contribution
+zh-vocab-2000|society|荣誉|róngyù|róngyù|danh dự|honor

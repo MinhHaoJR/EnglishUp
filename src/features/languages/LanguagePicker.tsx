@@ -12,8 +12,13 @@ export default function LanguagePicker() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(false);
   return (
-    <div className="language-picker">
-      <label htmlFor="learning-language">{bi('Ngôn ngữ muốn học', 'Learning language')}</label>
+    <div className={`language-picker picker-${settings.learningLanguage}`} aria-busy={busy}>
+      <div className="language-picker-heading">
+        <label htmlFor="learning-language">{bi('Ngôn ngữ muốn học', 'Learning language')}</label>
+        <span className="language-picker-mark" aria-hidden="true">
+          {languageNames[settings.learningLanguage].mark}
+        </span>
+      </div>
       <select
         id="learning-language"
         value={settings.learningLanguage}
@@ -40,6 +45,9 @@ export default function LanguagePicker() {
           </option>
         ))}
       </select>
+      <p className="language-picker-note">
+        {bi('Một góc nhỏ, ba ngôn ngữ', 'A little space, three languages')}
+      </p>
       {error && (
         <p role="alert">
           {bi('Không lưu được lựa chọn. Hãy thử lại.', 'Could not save your choice. Please retry.')}

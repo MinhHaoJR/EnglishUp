@@ -37,3 +37,11 @@ answers, feedback and timers reset on the next lesson. Writing drafts remain sto
 per prompt. Editing a submitted writing draft requires saving the updated work
 before continuing. Unfinished exercises must be completed or left with Back.
 Microphone hardware was not verified for this navigation change.
+
+## Japanese/Chinese vocabulary and interface — 2026-10-10
+
+- Both source catalogs contain exactly 2,000 unique entries across 20 topics. Startup schemas and content tests cover IDs, language prefixes, required fields, script/readings and topic registration. Rebuilding twice produces identical output.
+- All 74 tests across 17 files pass, including accent-free search, topic deep links, bounded pagination, same-language answer options, overlapping-gloss exclusion, double-click prevention, failed-save retry, continuation, session completion and persistence across remount/backup/reset/import. Existing English skill flows remain covered.
+- Lint, strict TypeScript and production build pass. The lazily loaded multilingual catalog chunk is about 701 kB (138 kB gzip); Vite reports its default 500 kB size advisory. English does not load this chunk until the user opens a Japanese/Chinese workspace.
+- Browser checks in an isolated Edge context covered desktop and 375 px mobile layouts, Japanese dark cards/quiz, Chinese dark home, pinyin search without tone marks, saving an answer and continuing with a fresh question. No page-level horizontal overflow or browser page errors were observed. Preview: `languages-preview.jpg`.
+- First 600 entries per language received a separate editorial spot review; additional topic entries received structural checks and sampled reading/meaning review. This is not a full professional lexicographic review. Browser speech availability and audible pronunciation quality remain device-dependent; microphone hardware was not tested.

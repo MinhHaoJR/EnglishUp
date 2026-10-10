@@ -26,14 +26,13 @@ test('picker persists target language independently of interface language and re
   expect(useApp.getState().settings).toMatchObject({ language: 'en', learningLanguage: 'zh' });
 });
 for (const language of ['ja', 'zh'] as const) {
-  for (const skill of skills) {
+  for (const skill of skills.filter((item) => item !== 'vocabulary')) {
     test(`${language} ${skill} completes and persists its own attempt`, async () => {
       useApp.setState({ settings: { ...defaults, language: 'en', learningLanguage: language } });
       show(<LanguageWorkspace skill={skill} />);
       fireEvent.click(screen.getAllByRole('button', { name: 'Start practice' })[0]);
       const lesson = languageLessons.find((item) => item.language === language)!;
-      if (skill === 'reading' || skill === 'vocabulary')
-        fireEvent.click(screen.getAllByRole('radio')[0]);
+      if (skill === 'reading') fireEvent.click(screen.getAllByRole('radio')[0]);
       else if (skill === 'speaking') fireEvent.click(screen.getByRole('checkbox'));
       else fireEvent.change(screen.getByRole('textbox'), { target: { value: lesson.text } });
       fireEvent.click(screen.getByRole('button', { name: 'Finish & save' }));

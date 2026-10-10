@@ -1,0 +1,2000 @@
+ja-vocab-0001|greetings|こんにちは|こんにちは|konnichiwa|xin chào|hello
+ja-vocab-0002|greetings|おはよう|おはよう|ohayō|chào buổi sáng|good morning
+ja-vocab-0003|greetings|こんばんは|こんばんは|konbanwa|chào buổi tối|good evening
+ja-vocab-0004|greetings|おやすみなさい|おやすみなさい|oyasuminasai|chúc ngủ ngon|good night
+ja-vocab-0005|greetings|さようなら|さようなら|sayōnara|tạm biệt|goodbye
+ja-vocab-0006|greetings|ありがとう|ありがとう|arigatō|cảm ơn|thank you
+ja-vocab-0007|greetings|ありがとうございます|ありがとうございます|arigatō gozaimasu|xin cảm ơn|thank you politely
+ja-vocab-0008|greetings|どういたしまして|どういたしまして|dō itashimashite|không có gì|you are welcome
+ja-vocab-0009|greetings|すみません|すみません|sumimasen|xin lỗi; làm phiền|excuse me
+ja-vocab-0010|greetings|ごめんなさい|ごめんなさい|gomennasai|xin lỗi|I am sorry
+ja-vocab-0011|greetings|お願いします|おねがいします|onegai shimasu|xin vui lòng|please
+ja-vocab-0012|greetings|はじめまして|はじめまして|hajimemashite|rất vui được làm quen|nice to meet you
+ja-vocab-0013|greetings|よろしくお願いします|よろしくおねがいします|yoroshiku onegai shimasu|mong được giúp đỡ|please treat me kindly
+ja-vocab-0014|greetings|いってきます|いってきます|itte kimasu|tôi đi đây|I am heading out
+ja-vocab-0015|greetings|いってらっしゃい|いってらっしゃい|itterasshai|đi nhé|see you when you return
+ja-vocab-0016|greetings|ただいま|ただいま|tadaima|tôi về rồi|I am home
+ja-vocab-0017|greetings|おかえりなさい|おかえりなさい|okaerinasai|mừng bạn về nhà|welcome home
+ja-vocab-0018|greetings|いただきます|いただきます|itadakimasu|lời cảm ơn trước bữa ăn|said before eating
+ja-vocab-0019|greetings|ごちそうさまでした|ごちそうさまでした|gochisōsama deshita|cảm ơn về bữa ăn|thanks for the meal
+ja-vocab-0020|greetings|おめでとう|おめでとう|omedetō|chúc mừng|congratulations
+ja-vocab-0021|greetings|お大事に|おだいじに|odaiji ni|mau khỏe nhé|get well soon
+ja-vocab-0022|greetings|お疲れさま|おつかれさま|otsukaresama|cảm ơn đã vất vả|thanks for your hard work
+ja-vocab-0023|greetings|失礼します|しつれいします|shitsurei shimasu|xin phép|excuse my interruption
+ja-vocab-0024|greetings|お先に|おさきに|osaki ni|tôi xin đi trước|I will leave first
+ja-vocab-0025|greetings|いらっしゃいませ|いらっしゃいませ|irasshaimase|kính chào quý khách|welcome to our shop
+ja-vocab-0026|greetings|はい|はい|hai|vâng|yes
+ja-vocab-0027|greetings|いいえ|いいえ|iie|không|no
+ja-vocab-0028|greetings|うん|うん|un|ừ|yeah
+ja-vocab-0029|greetings|ううん|ううん|uun|không đâu|no informally
+ja-vocab-0030|greetings|もしもし|もしもし|moshimoshi|a lô|hello on the phone
+ja-vocab-0031|greetings|どうぞ|どうぞ|dōzo|xin mời|go ahead
+ja-vocab-0032|greetings|どうも|どうも|dōmo|cảm ơn ngắn gọn|thanks casually
+ja-vocab-0033|greetings|またね|またね|mata ne|hẹn gặp lại|see you
+ja-vocab-0034|greetings|じゃあ|じゃあ|jā|vậy thì|well then
+ja-vocab-0035|greetings|では|では|dewa|vậy thì|in that case
+ja-vocab-0036|greetings|もちろん|もちろん|mochiron|tất nhiên|of course
+ja-vocab-0037|greetings|たぶん|たぶん|tabun|có lẽ|probably
+ja-vocab-0038|greetings|きっと|きっと|kitto|chắc hẳn|surely
+ja-vocab-0039|greetings|ぜひ|ぜひ|zehi|nhất định; rất mong|by all means
+ja-vocab-0040|greetings|本当に|ほんとうに|hontō ni|thật sự|really
+ja-vocab-0041|greetings|ちょっと|ちょっと|chotto|một chút|a little
+ja-vocab-0042|greetings|とても|とても|totemo|rất|very
+ja-vocab-0043|greetings|少し|すこし|sukoshi|một ít|a small amount
+ja-vocab-0044|greetings|たくさん|たくさん|takusan|nhiều|a lot
+ja-vocab-0045|greetings|もっと|もっと|motto|thêm nữa|more
+ja-vocab-0046|greetings|一番|いちばん|ichiban|nhất|the most
+ja-vocab-0047|greetings|全部|ぜんぶ|zenbu|toàn bộ|all
+ja-vocab-0048|greetings|みんな|みんな|minna|mọi người|everyone
+ja-vocab-0049|greetings|何|なに|nani|cái gì|what
+ja-vocab-0050|greetings|誰|だれ|dare|ai|who
+ja-vocab-0051|greetings|どこ|どこ|doko|ở đâu|where
+ja-vocab-0052|greetings|いつ|いつ|itsu|khi nào|when
+ja-vocab-0053|greetings|なぜ|なぜ|naze|tại sao|why
+ja-vocab-0054|greetings|どうして|どうして|dōshite|vì sao|why
+ja-vocab-0055|greetings|どう|どう|dō|thế nào|how
+ja-vocab-0056|greetings|どれ|どれ|dore|cái nào|which one
+ja-vocab-0057|greetings|どちら|どちら|dochira|phía nào|which way
+ja-vocab-0058|greetings|いくら|いくら|ikura|bao nhiêu tiền|how much
+ja-vocab-0059|greetings|いくつ|いくつ|ikutsu|bao nhiêu cái|how many
+ja-vocab-0060|greetings|どんな|どんな|donna|loại nào|what kind of
+ja-vocab-0061|greetings|これ|これ|kore|cái này|this one
+ja-vocab-0062|greetings|それ|それ|sore|cái đó|that one
+ja-vocab-0063|greetings|あれ|あれ|are|cái kia|that one over there
+ja-vocab-0064|greetings|ここ|ここ|koko|chỗ này|here
+ja-vocab-0065|greetings|そこ|そこ|soko|chỗ đó|there
+ja-vocab-0066|greetings|あそこ|あそこ|asoko|chỗ kia|over there
+ja-vocab-0067|greetings|この|この|kono|này|this before a noun
+ja-vocab-0068|greetings|その|その|sono|đó|that before a noun
+ja-vocab-0069|greetings|あの|あの|ano|kia|that over there before a noun
+ja-vocab-0070|greetings|そして|そして|soshite|và rồi|and then
+ja-vocab-0071|greetings|でも|でも|demo|nhưng|but
+ja-vocab-0072|greetings|しかし|しかし|shikashi|tuy nhiên|however
+ja-vocab-0073|greetings|だから|だから|dakara|vì vậy|therefore
+ja-vocab-0074|greetings|それから|それから|sorekara|sau đó|after that
+ja-vocab-0075|greetings|それでは|それでは|soredewa|vậy thì|well then politely
+ja-vocab-0076|greetings|また|また|mata|lại; nữa|again
+ja-vocab-0077|greetings|まだ|まだ|mada|vẫn; chưa|still
+ja-vocab-0078|greetings|もう|もう|mō|đã; nữa|already
+ja-vocab-0079|greetings|すぐ|すぐ|sugu|ngay|right away
+ja-vocab-0080|greetings|ゆっくり|ゆっくり|yukkuri|chậm rãi|slowly
+ja-vocab-0081|greetings|一緒に|いっしょに|issho ni|cùng nhau|together
+ja-vocab-0082|greetings|別々に|べつべつに|betsubetsu ni|riêng từng phần|separately
+ja-vocab-0083|greetings|特に|とくに|toku ni|đặc biệt|especially
+ja-vocab-0084|greetings|例えば|たとえば|tatoeba|ví dụ|for example
+ja-vocab-0085|greetings|つまり|つまり|tsumari|nghĩa là|in other words
+ja-vocab-0086|greetings|実は|じつは|jitsu wa|thực ra|actually
+ja-vocab-0087|greetings|なるほど|なるほど|naruhodo|ra là vậy|I see
+ja-vocab-0088|greetings|そうですか|そうですか|sō desu ka|vậy sao|is that so
+ja-vocab-0089|greetings|大丈夫|だいじょうぶ|daijōbu|ổn; không sao|all right
+ja-vocab-0090|greetings|結構です|けっこうです|kekkō desu|không cần đâu|no thank you
+ja-vocab-0091|greetings|もし|もし|moshi|nếu|if
+ja-vocab-0092|greetings|やはり|やはり|yahari|quả nhiên|as expected
+ja-vocab-0093|greetings|ほとんど|ほとんど|hotondo|hầu hết|almost all
+ja-vocab-0094|greetings|必ず|かならず|kanarazu|nhất định|without fail
+ja-vocab-0095|greetings|たいてい|たいてい|taitei|thường thường|usually
+ja-vocab-0096|greetings|だいたい|だいたい|daitai|đại khái|roughly
+ja-vocab-0097|greetings|ちょうど|ちょうど|chōdo|vừa đúng|exactly
+ja-vocab-0098|greetings|かなり|かなり|kanari|khá|considerably
+ja-vocab-0099|greetings|ずっと|ずっと|zutto|suốt; hơn nhiều|continuously
+ja-vocab-0100|greetings|全然|ぜんぜん|zenzen|hoàn toàn không|not at all
+ja-vocab-0101|people|人|ひと|hito|người|person
+ja-vocab-0102|people|男|おとこ|otoko|đàn ông|man
+ja-vocab-0103|people|女|おんな|onna|phụ nữ|woman
+ja-vocab-0104|people|子供|こども|kodomo|trẻ em|child
+ja-vocab-0105|people|大人|おとな|otona|người lớn|adult
+ja-vocab-0106|people|赤ちゃん|あかちゃん|akachan|em bé|baby
+ja-vocab-0107|people|少年|しょうねん|shōnen|thiếu niên nam|boy
+ja-vocab-0108|people|少女|しょうじょ|shōjo|thiếu nữ|girl
+ja-vocab-0109|people|若者|わかもの|wakamono|người trẻ|young person
+ja-vocab-0110|people|高齢者|こうれいしゃ|kōreisha|người cao tuổi|older person
+ja-vocab-0111|people|家族|かぞく|kazoku|gia đình|family
+ja-vocab-0112|people|親|おや|oya|cha mẹ|parent
+ja-vocab-0113|people|父|ちち|chichi|cha của mình|my father
+ja-vocab-0114|people|母|はは|haha|mẹ của mình|my mother
+ja-vocab-0115|people|お父さん|おとうさん|otōsan|bố|father politely
+ja-vocab-0116|people|お母さん|おかあさん|okāsan|mẹ|mother politely
+ja-vocab-0117|people|息子|むすこ|musuko|con trai|son
+ja-vocab-0118|people|娘|むすめ|musume|con gái|daughter
+ja-vocab-0119|people|兄|あに|ani|anh trai của mình|my older brother
+ja-vocab-0120|people|姉|あね|ane|chị gái của mình|my older sister
+ja-vocab-0121|people|弟|おとうと|otōto|em trai|younger brother
+ja-vocab-0122|people|妹|いもうと|imōto|em gái|younger sister
+ja-vocab-0123|people|兄弟|きょうだい|kyōdai|anh chị em|siblings
+ja-vocab-0124|people|姉妹|しまい|shimai|chị em gái|sisters
+ja-vocab-0125|people|祖父|そふ|sofu|ông của mình|my grandfather
+ja-vocab-0126|people|祖母|そぼ|sobo|bà của mình|my grandmother
+ja-vocab-0127|people|孫|まご|mago|cháu nội ngoại|grandchild
+ja-vocab-0128|people|夫|おっと|otto|chồng|husband
+ja-vocab-0129|people|妻|つま|tsuma|vợ|wife
+ja-vocab-0130|people|夫婦|ふうふ|fūfu|vợ chồng|married couple
+ja-vocab-0131|people|叔父|おじ|oji|chú; cậu|younger uncle
+ja-vocab-0132|people|叔母|おば|oba|cô; dì|younger aunt
+ja-vocab-0133|people|いとこ|いとこ|itoko|anh chị em họ|cousin
+ja-vocab-0134|people|甥|おい|oi|cháu trai|nephew
+ja-vocab-0135|people|姪|めい|mei|cháu gái|niece
+ja-vocab-0136|people|親戚|しんせき|shinseki|họ hàng|relative
+ja-vocab-0137|people|友達|ともだち|tomodachi|bạn bè|friend
+ja-vocab-0138|people|親友|しんゆう|shinyū|bạn thân|close friend
+ja-vocab-0139|people|知り合い|しりあい|shiriai|người quen|acquaintance
+ja-vocab-0140|people|仲間|なかま|nakama|bạn cùng nhóm|companion
+ja-vocab-0141|people|恋人|こいびと|koibito|người yêu|romantic partner
+ja-vocab-0142|people|彼氏|かれし|kareshi|bạn trai|boyfriend
+ja-vocab-0143|people|彼女|かのじょ|kanojo|cô ấy; bạn gái|she; girlfriend
+ja-vocab-0144|people|隣人|りんじん|rinjin|hàng xóm|neighbor
+ja-vocab-0145|people|同僚|どうりょう|dōryō|đồng nghiệp|coworker
+ja-vocab-0146|people|先輩|せんぱい|senpai|người đi trước|senior colleague
+ja-vocab-0147|people|後輩|こうはい|kōhai|người vào sau|junior colleague
+ja-vocab-0148|people|上司|じょうし|jōshi|cấp trên|supervisor
+ja-vocab-0149|people|部下|ぶか|buka|cấp dưới|subordinate
+ja-vocab-0150|people|先生|せんせい|sensei|thầy cô|teacher
+ja-vocab-0151|people|学生|がくせい|gakusei|sinh viên|student
+ja-vocab-0152|people|生徒|せいと|seito|học sinh|school pupil
+ja-vocab-0153|people|医者|いしゃ|isha|bác sĩ|doctor
+ja-vocab-0154|people|看護師|かんごし|kangoshi|điều dưỡng|nurse
+ja-vocab-0155|people|店員|てんいん|ten'in|nhân viên cửa hàng|shop assistant
+ja-vocab-0156|people|客|きゃく|kyaku|khách|guest; customer
+ja-vocab-0157|people|会社員|かいしゃいん|kaishain|nhân viên công ty|company employee
+ja-vocab-0158|people|公務員|こうむいん|kōmuin|công chức|public employee
+ja-vocab-0159|people|警察官|けいさつかん|keisatsukan|cảnh sát viên|police officer
+ja-vocab-0160|people|消防士|しょうぼうし|shōbōshi|lính cứu hỏa|firefighter
+ja-vocab-0161|people|運転手|うんてんしゅ|untenshu|tài xế|driver
+ja-vocab-0162|people|料理人|りょうりにん|ryōrinin|đầu bếp|cook
+ja-vocab-0163|people|農家|のうか|nōka|nông dân; nhà nông|farmer
+ja-vocab-0164|people|漁師|りょうし|ryōshi|ngư dân|fisher
+ja-vocab-0165|people|歌手|かしゅ|kashu|ca sĩ|singer
+ja-vocab-0166|people|俳優|はいゆう|haiyū|diễn viên|actor
+ja-vocab-0167|people|作家|さっか|sakka|nhà văn|writer
+ja-vocab-0168|people|画家|がか|gaka|họa sĩ|painter
+ja-vocab-0169|people|記者|きしゃ|kisha|phóng viên|reporter
+ja-vocab-0170|people|弁護士|べんごし|bengoshi|luật sư|lawyer
+ja-vocab-0171|people|研究者|けんきゅうしゃ|kenkyūsha|nhà nghiên cứu|researcher
+ja-vocab-0172|people|通訳|つうやく|tsūyaku|phiên dịch viên|interpreter
+ja-vocab-0173|people|美容師|びようし|biyōshi|thợ làm tóc|hairdresser
+ja-vocab-0174|people|大工|だいく|daiku|thợ mộc|carpenter
+ja-vocab-0175|people|選手|せんしゅ|senshu|vận động viên|athlete
+ja-vocab-0176|people|監督|かんとく|kantoku|huấn luyện viên; đạo diễn|coach; director
+ja-vocab-0177|people|社長|しゃちょう|shachō|giám đốc công ty|company president
+ja-vocab-0178|people|部長|ぶちょう|buchō|trưởng bộ phận|department head
+ja-vocab-0179|people|私|わたし|watashi|tôi|I
+ja-vocab-0180|people|僕|ぼく|boku|tôi cách nói nam|I informally
+ja-vocab-0181|people|あなた|あなた|anata|bạn|you
+ja-vocab-0182|people|彼|かれ|kare|anh ấy|he
+ja-vocab-0183|people|自分|じぶん|jibun|bản thân|oneself
+ja-vocab-0184|people|皆さん|みなさん|minasan|mọi người lịch sự|everyone politely
+ja-vocab-0185|people|名前|なまえ|namae|tên|name
+ja-vocab-0186|people|名字|みょうじ|myōji|họ|family name
+ja-vocab-0187|people|年齢|ねんれい|nenrei|tuổi|age
+ja-vocab-0188|people|誕生日|たんじょうび|tanjōbi|sinh nhật|birthday
+ja-vocab-0189|people|国籍|こくせき|kokuseki|quốc tịch|nationality
+ja-vocab-0190|people|性格|せいかく|seikaku|tính cách|personality
+ja-vocab-0191|people|関係|かんけい|kankei|mối quan hệ|relationship
+ja-vocab-0192|people|独身|どくしん|dokushin|độc thân|single unmarried
+ja-vocab-0193|people|結婚|けっこん|kekkon|kết hôn|marriage
+ja-vocab-0194|people|離婚|りこん|rikon|ly hôn|divorce
+ja-vocab-0195|people|男性|だんせい|dansei|nam giới|male person
+ja-vocab-0196|people|女性|じょせい|josei|nữ giới|female person
+ja-vocab-0197|people|外国人|がいこくじん|gaikokujin|người nước ngoài|foreigner
+ja-vocab-0198|people|留学生|りゅうがくせい|ryūgakusei|du học sinh|international student
+ja-vocab-0199|people|住民|じゅうみん|jūmin|cư dân|resident
+ja-vocab-0200|people|訪問者|ほうもんしゃ|hōmonsha|người đến thăm|visitor
+ja-vocab-0201|home|家|いえ|ie|nhà|house
+ja-vocab-0202|home|部屋|へや|heya|phòng|room
+ja-vocab-0203|home|玄関|げんかん|genkan|lối vào nhà|entrance hall
+ja-vocab-0204|home|廊下|ろうか|rōka|hành lang|hallway
+ja-vocab-0205|home|階段|かいだん|kaidan|cầu thang|stairs
+ja-vocab-0206|home|台所|だいどころ|daidokoro|bếp|kitchen
+ja-vocab-0207|home|居間|いま|ima|phòng khách|living room
+ja-vocab-0208|home|寝室|しんしつ|shinshitsu|phòng ngủ|bedroom
+ja-vocab-0209|home|浴室|よくしつ|yokushitsu|phòng tắm|bathroom
+ja-vocab-0210|home|トイレ|といれ|toire|nhà vệ sinh|toilet
+ja-vocab-0211|home|庭|にわ|niwa|sân vườn|garden
+ja-vocab-0212|home|屋根|やね|yane|mái nhà|roof
+ja-vocab-0213|home|壁|かべ|kabe|tường|wall
+ja-vocab-0214|home|床|ゆか|yuka|sàn nhà|floor
+ja-vocab-0215|home|天井|てんじょう|tenjō|trần nhà|ceiling
+ja-vocab-0216|home|窓|まど|mado|cửa sổ|window
+ja-vocab-0217|home|戸|と|to|cửa|door
+ja-vocab-0218|home|ドア|どあ|doa|cửa có bản lề|hinged door
+ja-vocab-0219|home|鍵|かぎ|kagi|chìa khóa|key
+ja-vocab-0220|home|門|もん|mon|cổng|gate
+ja-vocab-0221|home|ベランダ|べらんだ|beranda|ban công|balcony
+ja-vocab-0222|home|家具|かぐ|kagu|đồ nội thất|furniture
+ja-vocab-0223|home|机|つくえ|tsukue|bàn làm việc|desk
+ja-vocab-0224|home|テーブル|てーぶる|tēburu|bàn|table
+ja-vocab-0225|home|椅子|いす|isu|ghế|chair
+ja-vocab-0226|home|ソファ|そふぁ|sofa|ghế sofa|sofa
+ja-vocab-0227|home|棚|たな|tana|kệ|shelf
+ja-vocab-0228|home|本棚|ほんだな|hondana|giá sách|bookshelf
+ja-vocab-0229|home|引き出し|ひきだし|hikidashi|ngăn kéo|drawer
+ja-vocab-0230|home|たんす|たんす|tansu|tủ ngăn kéo|chest of drawers
+ja-vocab-0231|home|押し入れ|おしいれ|oshiire|tủ âm tường|built-in closet
+ja-vocab-0232|home|鏡|かがみ|kagami|gương|mirror
+ja-vocab-0233|home|時計|とけい|tokei|đồng hồ|clock
+ja-vocab-0234|home|カーテン|かーてん|kāten|rèm|curtain
+ja-vocab-0235|home|じゅうたん|じゅうたん|jūtan|thảm|carpet
+ja-vocab-0236|home|畳|たたみ|tatami|chiếu tatami|tatami mat
+ja-vocab-0237|home|布団|ふとん|futon|chăn đệm kiểu Nhật|futon bedding
+ja-vocab-0238|home|ベッド|べっど|beddo|giường|bed
+ja-vocab-0239|home|枕|まくら|makura|gối|pillow
+ja-vocab-0240|home|毛布|もうふ|mōfu|chăn|blanket
+ja-vocab-0241|home|シーツ|しーつ|shītsu|ga giường|bed sheet
+ja-vocab-0242|home|照明|しょうめい|shōmei|đèn chiếu sáng|lighting
+ja-vocab-0243|home|電球|でんきゅう|denkyū|bóng đèn|light bulb
+ja-vocab-0244|home|電気|でんき|denki|điện|electricity
+ja-vocab-0245|home|コンセント|こんせんと|konsento|ổ cắm điện|power outlet
+ja-vocab-0246|home|冷蔵庫|れいぞうこ|reizōko|tủ lạnh|refrigerator
+ja-vocab-0247|home|冷凍庫|れいとうこ|reitōko|tủ đông|freezer
+ja-vocab-0248|home|電子レンジ|でんしれんじ|denshi renji|lò vi sóng|microwave oven
+ja-vocab-0249|home|オーブン|おーぶん|ōbun|lò nướng|oven
+ja-vocab-0250|home|炊飯器|すいはんき|suihanki|nồi cơm điện|rice cooker
+ja-vocab-0251|home|洗濯機|せんたくき|sentakuki|máy giặt|washing machine
+ja-vocab-0252|home|掃除機|そうじき|sōjiki|máy hút bụi|vacuum cleaner
+ja-vocab-0253|home|エアコン|えあこん|eakon|máy điều hòa|air conditioner
+ja-vocab-0254|home|扇風機|せんぷうき|senpūki|quạt điện|electric fan
+ja-vocab-0255|home|暖房|だんぼう|danbō|hệ thống sưởi|heating
+ja-vocab-0256|home|冷房|れいぼう|reibō|chế độ làm mát|air cooling
+ja-vocab-0257|home|水道|すいどう|suidō|nước máy|water supply
+ja-vocab-0258|home|蛇口|じゃぐち|jaguchi|vòi nước|tap
+ja-vocab-0259|home|流し|ながし|nagashi|bồn rửa bếp|kitchen sink
+ja-vocab-0260|home|風呂|ふろ|furo|bồn tắm; tắm|bath
+ja-vocab-0261|home|シャワー|しゃわー|shawā|vòi sen|shower
+ja-vocab-0262|home|タオル|たおる|taoru|khăn|towel
+ja-vocab-0263|home|石けん|せっけん|sekken|xà phòng|soap
+ja-vocab-0264|home|シャンプー|しゃんぷー|shanpū|dầu gội|shampoo
+ja-vocab-0265|home|歯ブラシ|はぶらし|haburashi|bàn chải răng|toothbrush
+ja-vocab-0266|home|歯磨き粉|はみがきこ|hamigakiko|kem đánh răng|toothpaste
+ja-vocab-0267|home|洗剤|せんざい|senzai|chất tẩy rửa|detergent
+ja-vocab-0268|home|スポンジ|すぽんじ|suponji|miếng bọt biển|sponge
+ja-vocab-0269|home|ほうき|ほうき|hōki|chổi|broom
+ja-vocab-0270|home|雑巾|ぞうきん|zōkin|giẻ lau|cleaning cloth
+ja-vocab-0271|home|ごみ箱|ごみばこ|gomibako|thùng rác|trash can
+ja-vocab-0272|home|ごみ|ごみ|gomi|rác|trash
+ja-vocab-0273|home|袋|ふくろ|fukuro|túi|bag
+ja-vocab-0274|home|箱|はこ|hako|hộp|box
+ja-vocab-0275|home|かご|かご|kago|giỏ|basket
+ja-vocab-0276|home|はさみ|はさみ|hasami|kéo|scissors
+ja-vocab-0277|home|針|はり|hari|kim|needle
+ja-vocab-0278|home|糸|いと|ito|sợi chỉ|thread
+ja-vocab-0279|home|ひも|ひも|himo|dây nhỏ|string
+ja-vocab-0280|home|のり|のり|nori|keo dán|glue
+ja-vocab-0281|home|テープ|てーぷ|tēpu|băng dính|adhesive tape
+ja-vocab-0282|home|道具|どうぐ|dōgu|dụng cụ|tool
+ja-vocab-0283|home|金づち|かなづち|kanazuchi|búa|hammer
+ja-vocab-0284|home|ねじ|ねじ|neji|ốc vít|screw
+ja-vocab-0285|home|くぎ|くぎ|kugi|đinh|nail
+ja-vocab-0286|home|ドライバー|どらいばー|doraibā|tua vít|screwdriver
+ja-vocab-0287|home|延長コード|えんちょうこーど|enchō kōdo|dây điện nối dài|extension cord
+ja-vocab-0288|home|電池|でんち|denchi|pin|battery
+ja-vocab-0289|home|リモコン|りもこん|rimokon|điều khiển từ xa|remote control
+ja-vocab-0290|home|洗濯物|せんたくもの|sentakumono|quần áo giặt|laundry
+ja-vocab-0291|home|物干し|ものほし|monohoshi|giá phơi đồ|drying rack
+ja-vocab-0292|home|ハンガー|はんがー|hangā|móc áo|clothes hanger
+ja-vocab-0293|home|アイロン|あいろん|airon|bàn là|iron
+ja-vocab-0294|home|スリッパ|すりっぱ|surippa|dép đi trong nhà|slippers
+ja-vocab-0295|home|郵便受け|ゆうびんうけ|yūbin'uke|hộp thư|mailbox
+ja-vocab-0296|home|物置|ものおき|monooki|kho nhỏ|storage shed
+ja-vocab-0297|home|掃除|そうじ|sōji|dọn vệ sinh|cleaning
+ja-vocab-0298|home|洗濯|せんたく|sentaku|giặt giũ|washing clothes
+ja-vocab-0299|home|家事|かじ|kaji|việc nhà|housework
+ja-vocab-0300|home|引っ越し|ひっこし|hikkoshi|chuyển nhà|moving house
+ja-vocab-0301|food|食べ物|たべもの|tabemono|đồ ăn|food
+ja-vocab-0302|food|料理|りょうり|ryōri|món ăn; nấu ăn|dish; cooking
+ja-vocab-0303|food|食事|しょくじ|shokuji|bữa ăn|meal
+ja-vocab-0304|food|朝ご飯|あさごはん|asagohan|bữa sáng|breakfast
+ja-vocab-0305|food|昼ご飯|ひるごはん|hirugohan|bữa trưa|lunch
+ja-vocab-0306|food|晩ご飯|ばんごはん|bangohan|bữa tối|dinner
+ja-vocab-0307|food|米|こめ|kome|gạo|uncooked rice
+ja-vocab-0308|food|ご飯|ごはん|gohan|cơm|cooked rice
+ja-vocab-0309|food|パン|ぱん|pan|bánh mì|bread
+ja-vocab-0310|food|麺|めん|men|mì sợi|noodles
+ja-vocab-0311|food|うどん|うどん|udon|mì udon|thick wheat noodles
+ja-vocab-0312|food|そば|そば|soba|mì kiều mạch|buckwheat noodles
+ja-vocab-0313|food|ラーメン|らーめん|rāmen|mì ramen|ramen noodles
+ja-vocab-0314|food|パスタ|ぱすた|pasuta|mì Ý|pasta
+ja-vocab-0315|food|小麦粉|こむぎこ|komugiko|bột mì|wheat flour
+ja-vocab-0316|food|卵|たまご|tamago|trứng|egg
+ja-vocab-0317|food|肉|にく|niku|thịt|meat
+ja-vocab-0318|food|牛肉|ぎゅうにく|gyūniku|thịt bò|beef
+ja-vocab-0319|food|豚肉|ぶたにく|butaniku|thịt lợn|pork
+ja-vocab-0320|food|鶏肉|とりにく|toriniku|thịt gà|chicken meat
+ja-vocab-0321|food|ひき肉|ひきにく|hikiniku|thịt xay|ground meat
+ja-vocab-0322|food|ハム|はむ|hamu|giăm bông|ham
+ja-vocab-0323|food|ソーセージ|そーせーじ|sōsēji|xúc xích|sausage
+ja-vocab-0324|food|魚|さかな|sakana|cá|fish
+ja-vocab-0325|food|鮭|さけ|sake|cá hồi|salmon
+ja-vocab-0326|food|まぐろ|まぐろ|maguro|cá ngừ|tuna
+ja-vocab-0327|food|えび|えび|ebi|tôm|shrimp
+ja-vocab-0328|food|かに|かに|kani|cua|crab
+ja-vocab-0329|food|いか|いか|ika|mực|squid
+ja-vocab-0330|food|たこ|たこ|tako|bạch tuộc|octopus
+ja-vocab-0331|food|貝|かい|kai|động vật có vỏ|shellfish
+ja-vocab-0332|food|野菜|やさい|yasai|rau|vegetables
+ja-vocab-0333|food|じゃがいも|じゃがいも|jagaimo|khoai tây|potato
+ja-vocab-0334|food|さつまいも|さつまいも|satsumaimo|khoai lang|sweet potato
+ja-vocab-0335|food|にんじん|にんじん|ninjin|cà rốt|carrot
+ja-vocab-0336|food|玉ねぎ|たまねぎ|tamanegi|hành tây|onion
+ja-vocab-0337|food|ねぎ|ねぎ|negi|hành lá|green onion
+ja-vocab-0338|food|にんにく|にんにく|ninniku|tỏi|garlic
+ja-vocab-0339|food|しょうが|しょうが|shōga|gừng|ginger
+ja-vocab-0340|food|大根|だいこん|daikon|củ cải trắng|daikon radish
+ja-vocab-0341|food|キャベツ|きゃべつ|kyabetsu|bắp cải|cabbage
+ja-vocab-0342|food|白菜|はくさい|hakusai|cải thảo|Chinese cabbage
+ja-vocab-0343|food|レタス|れたす|retasu|xà lách|lettuce
+ja-vocab-0344|food|ほうれん草|ほうれんそう|hōrensō|rau chân vịt|spinach
+ja-vocab-0345|food|きゅうり|きゅうり|kyūri|dưa chuột|cucumber
+ja-vocab-0346|food|トマト|とまと|tomato|cà chua|tomato
+ja-vocab-0347|food|なす|なす|nasu|cà tím|eggplant
+ja-vocab-0348|food|かぼちゃ|かぼちゃ|kabocha|bí đỏ|pumpkin
+ja-vocab-0349|food|ピーマン|ぴーまん|pīman|ớt chuông xanh|green pepper
+ja-vocab-0350|food|ブロッコリー|ぶろっこりー|burokkorī|bông cải xanh|broccoli
+ja-vocab-0351|food|きのこ|きのこ|kinoko|nấm|mushroom
+ja-vocab-0352|food|豆|まめ|mame|đậu|beans
+ja-vocab-0353|food|大豆|だいず|daizu|đậu nành|soybean
+ja-vocab-0354|food|豆腐|とうふ|tōfu|đậu phụ|tofu
+ja-vocab-0355|food|納豆|なっとう|nattō|đậu nành lên men|fermented soybeans
+ja-vocab-0356|food|果物|くだもの|kudamono|trái cây|fruit
+ja-vocab-0357|food|りんご|りんご|ringo|táo|apple
+ja-vocab-0358|food|みかん|みかん|mikan|quýt|mandarin orange
+ja-vocab-0359|food|オレンジ|おれんじ|orenji|cam|orange
+ja-vocab-0360|food|バナナ|ばなな|banana|chuối|banana
+ja-vocab-0361|food|ぶどう|ぶどう|budō|nho|grape
+ja-vocab-0362|food|いちご|いちご|ichigo|dâu tây|strawberry
+ja-vocab-0363|food|桃|もも|momo|đào|peach
+ja-vocab-0364|food|梨|なし|nashi|lê|pear
+ja-vocab-0365|food|柿|かき|kaki|hồng|persimmon
+ja-vocab-0366|food|すいか|すいか|suika|dưa hấu|watermelon
+ja-vocab-0367|food|メロン|めろん|meron|dưa lưới|melon
+ja-vocab-0368|food|レモン|れもん|remon|chanh vàng|lemon
+ja-vocab-0369|food|パイナップル|ぱいなっぷる|painappuru|dứa|pineapple
+ja-vocab-0370|food|マンゴー|まんごー|mangō|xoài|mango
+ja-vocab-0371|food|さくらんぼ|さくらんぼ|sakuranbo|anh đào|cherry
+ja-vocab-0372|food|梅|うめ|ume|mơ Nhật|Japanese plum
+ja-vocab-0373|food|チーズ|ちーず|chīzu|phô mai|cheese
+ja-vocab-0374|food|バター|ばたー|batā|bơ|butter
+ja-vocab-0375|food|ヨーグルト|よーぐると|yōguruto|sữa chua|yogurt
+ja-vocab-0376|food|塩|しお|shio|muối|salt
+ja-vocab-0377|food|砂糖|さとう|satō|đường|sugar
+ja-vocab-0378|food|しょうゆ|しょうゆ|shōyu|nước tương|soy sauce
+ja-vocab-0379|food|味噌|みそ|miso|tương miso|miso paste
+ja-vocab-0380|food|酢|す|su|giấm|vinegar
+ja-vocab-0381|food|油|あぶら|abura|dầu|oil
+ja-vocab-0382|food|こしょう|こしょう|koshō|hạt tiêu|pepper
+ja-vocab-0383|food|唐辛子|とうがらし|tōgarashi|ớt|chili pepper
+ja-vocab-0384|food|わさび|わさび|wasabi|mù tạt Nhật|wasabi
+ja-vocab-0385|food|マヨネーズ|まよねーず|mayonēzu|sốt mayonnaise|mayonnaise
+ja-vocab-0386|food|ケチャップ|けちゃっぷ|kechappu|tương cà|ketchup
+ja-vocab-0387|food|ソース|そーす|sōsu|nước sốt|sauce
+ja-vocab-0388|food|はちみつ|はちみつ|hachimitsu|mật ong|honey
+ja-vocab-0389|food|ジャム|じゃむ|jamu|mứt|jam
+ja-vocab-0390|food|海苔|のり|nori|rong biển khô|dried seaweed
+ja-vocab-0391|food|わかめ|わかめ|wakame|rong biển wakame|wakame seaweed
+ja-vocab-0392|food|昆布|こんぶ|konbu|tảo bẹ|kelp
+ja-vocab-0393|food|ごま|ごま|goma|vừng|sesame
+ja-vocab-0394|food|落花生|らっかせい|rakkasei|lạc|peanut
+ja-vocab-0395|food|くるみ|くるみ|kurumi|óc chó|walnut
+ja-vocab-0396|food|栗|くり|kuri|hạt dẻ|chestnut
+ja-vocab-0397|food|とうもろこし|とうもろこし|tōmorokoshi|ngô|corn
+ja-vocab-0398|food|アボカド|あぼかど|abokado|quả bơ|avocado
+ja-vocab-0399|food|もやし|もやし|moyashi|giá đỗ|bean sprouts
+ja-vocab-0400|food|れんこん|れんこん|renkon|củ sen|lotus root
+ja-vocab-0401|food|寿司|すし|sushi|sushi|sushi
+ja-vocab-0402|food|刺身|さしみ|sashimi|gỏi cá sống|sliced raw fish
+ja-vocab-0403|food|天ぷら|てんぷら|tenpura|đồ chiên bột|battered fried food
+ja-vocab-0404|food|カレー|かれー|karē|cà ri|curry
+ja-vocab-0405|food|スープ|すーぷ|sūpu|súp|soup
+ja-vocab-0406|food|サラダ|さらだ|sarada|xa lát|salad
+ja-vocab-0407|food|弁当|べんとう|bentō|cơm hộp|packed meal
+ja-vocab-0408|food|おにぎり|おにぎり|onigiri|cơm nắm|rice ball
+ja-vocab-0409|food|餃子|ぎょうざ|gyōza|bánh xếp|dumpling
+ja-vocab-0410|food|焼き鳥|やきとり|yakitori|gà xiên nướng|grilled chicken skewers
+ja-vocab-0411|food|お好み焼き|おこのみやき|okonomiyaki|bánh xèo Nhật|savory pancake
+ja-vocab-0412|food|たこ焼き|たこやき|takoyaki|bánh bạch tuộc|octopus balls
+ja-vocab-0413|food|すき焼き|すきやき|sukiyaki|lẩu sukiyaki|beef hot pot
+ja-vocab-0414|food|鍋|なべ|nabe|nồi; món lẩu|pot; hot pot
+ja-vocab-0415|food|漬物|つけもの|tsukemono|dưa muối|pickles
+ja-vocab-0416|food|味噌汁|みそしる|misoshiru|canh miso|miso soup
+ja-vocab-0417|food|チャーハン|ちゃーはん|chāhan|cơm rang|fried rice
+ja-vocab-0418|food|焼きそば|やきそば|yakisoba|mì xào|fried noodles
+ja-vocab-0419|food|ハンバーグ|はんばーぐ|hanbāgu|thịt băm áp chảo|hamburger steak
+ja-vocab-0420|food|ハンバーガー|はんばーがー|hanbāgā|bánh hamburger|hamburger
+ja-vocab-0421|food|サンドイッチ|さんどいっち|sandoitchi|bánh kẹp|sandwich
+ja-vocab-0422|food|ピザ|ぴざ|piza|bánh pizza|pizza
+ja-vocab-0423|food|ステーキ|すてーき|sutēki|bít tết|steak
+ja-vocab-0424|food|おかず|おかず|okazu|món ăn kèm cơm|side dish
+ja-vocab-0425|food|お菓子|おかし|okashi|bánh kẹo|sweets
+ja-vocab-0426|food|ケーキ|けーき|kēki|bánh ngọt|cake
+ja-vocab-0427|food|クッキー|くっきー|kukkī|bánh quy|cookie
+ja-vocab-0428|food|チョコレート|ちょこれーと|chokorēto|sô cô la|chocolate
+ja-vocab-0429|food|アイスクリーム|あいすくりーむ|aisukurīmu|kem|ice cream
+ja-vocab-0430|food|プリン|ぷりん|purin|bánh caramel|custard pudding
+ja-vocab-0431|food|飴|あめ|ame|kẹo|candy
+ja-vocab-0432|food|せんべい|せんべい|senbei|bánh gạo giòn|rice cracker
+ja-vocab-0433|food|餅|もち|mochi|bánh mochi|rice cake
+ja-vocab-0434|food|団子|だんご|dango|bánh bột nếp viên|rice-flour dumplings
+ja-vocab-0435|food|デザート|でざーと|dezāto|món tráng miệng|dessert
+ja-vocab-0436|food|箸|はし|hashi|đũa|chopsticks
+ja-vocab-0437|food|スプーン|すぷーん|supūn|thìa|spoon
+ja-vocab-0438|food|フォーク|ふぉーく|fōku|nĩa|fork
+ja-vocab-0439|food|ナイフ|ないふ|naifu|dao ăn|table knife
+ja-vocab-0440|food|包丁|ほうちょう|hōchō|dao bếp|kitchen knife
+ja-vocab-0441|food|まな板|まないた|manaita|thớt|cutting board
+ja-vocab-0442|food|フライパン|ふらいぱん|furaipan|chảo|frying pan
+ja-vocab-0443|food|皿|さら|sara|đĩa|plate
+ja-vocab-0444|food|茶碗|ちゃわん|chawan|bát cơm|rice bowl
+ja-vocab-0445|food|丼|どんぶり|donburi|bát tô|large bowl
+ja-vocab-0446|food|材料|ざいりょう|zairyō|nguyên liệu|ingredients
+ja-vocab-0447|food|味|あじ|aji|vị|taste
+ja-vocab-0448|food|香り|かおり|kaori|hương thơm|aroma
+ja-vocab-0449|food|レシピ|れしぴ|reshipi|công thức nấu ăn|recipe
+ja-vocab-0450|food|献立|こんだて|kondate|thực đơn bữa ăn|meal plan
+ja-vocab-0451|drinks|飲み物|のみもの|nomimono|đồ uống|beverage
+ja-vocab-0452|drinks|水|みず|mizu|nước|water
+ja-vocab-0453|drinks|お湯|おゆ|oyu|nước nóng|hot water
+ja-vocab-0454|drinks|お茶|おちゃ|ocha|trà|tea
+ja-vocab-0455|drinks|緑茶|りょくちゃ|ryokucha|trà xanh|green tea
+ja-vocab-0456|drinks|紅茶|こうちゃ|kōcha|trà đen|black tea
+ja-vocab-0457|drinks|麦茶|むぎちゃ|mugicha|trà lúa mạch|barley tea
+ja-vocab-0458|drinks|ウーロン茶|うーろんちゃ|ūroncha|trà ô long|oolong tea
+ja-vocab-0459|drinks|抹茶|まっちゃ|matcha|bột trà xanh|matcha
+ja-vocab-0460|drinks|ほうじ茶|ほうじちゃ|hōjicha|trà rang|roasted green tea
+ja-vocab-0461|drinks|コーヒー|こーひー|kōhī|cà phê|coffee
+ja-vocab-0462|drinks|カフェラテ|かふぇらて|kaferate|cà phê latte|caffe latte
+ja-vocab-0463|drinks|エスプレッソ|えすぷれっそ|esupuresso|cà phê espresso|espresso
+ja-vocab-0464|drinks|ココア|ここあ|kokoa|ca cao|cocoa
+ja-vocab-0465|drinks|牛乳|ぎゅうにゅう|gyūnyū|sữa bò|milk
+ja-vocab-0466|drinks|豆乳|とうにゅう|tōnyū|sữa đậu nành|soy milk
+ja-vocab-0467|drinks|ジュース|じゅーす|jūsu|nước ép|juice
+ja-vocab-0468|drinks|炭酸水|たんさんすい|tansansui|nước có ga|sparkling water
+ja-vocab-0469|drinks|コーラ|こーら|kōra|nước cola|cola
+ja-vocab-0470|drinks|サイダー|さいだー|saidā|nước ngọt có ga|clear soda
+ja-vocab-0471|drinks|スムージー|すむーじー|sumūjī|sinh tố|smoothie
+ja-vocab-0472|drinks|レモネード|れもねーど|remonēdo|nước chanh|lemonade
+ja-vocab-0473|drinks|ミルクティー|みるくてぃー|mirukutī|trà sữa|milk tea
+ja-vocab-0474|drinks|スポーツドリンク|すぽーつどりんく|supōtsu dorinku|nước uống thể thao|sports drink
+ja-vocab-0475|drinks|甘酒|あまざけ|amazake|đồ uống gạo lên men ngọt|sweet fermented rice drink
+ja-vocab-0476|drinks|酒|さけ|sake|đồ uống có cồn|alcoholic drink
+ja-vocab-0477|drinks|日本酒|にほんしゅ|nihonshu|rượu sake|Japanese rice wine
+ja-vocab-0478|drinks|ビール|びーる|bīru|bia|beer
+ja-vocab-0479|drinks|ワイン|わいん|wain|rượu vang|wine
+ja-vocab-0480|drinks|焼酎|しょうちゅう|shōchū|rượu shochu|Japanese distilled spirit
+ja-vocab-0481|drinks|ウイスキー|ういすきー|uisukī|rượu whisky|whisky
+ja-vocab-0482|drinks|カクテル|かくてる|kakuteru|cocktail|cocktail
+ja-vocab-0483|drinks|梅酒|うめしゅ|umeshu|rượu mơ|plum liqueur
+ja-vocab-0484|drinks|アルコール|あるこーる|arukōru|cồn|alcohol
+ja-vocab-0485|drinks|氷|こおり|kōri|nước đá|ice
+ja-vocab-0486|drinks|コップ|こっぷ|koppu|cốc|drinking cup
+ja-vocab-0487|drinks|グラス|ぐらす|gurasu|ly thủy tinh|drinking glass
+ja-vocab-0488|drinks|マグカップ|まぐかっぷ|magukappu|cốc có quai|mug
+ja-vocab-0489|drinks|湯のみ|ゆのみ|yunomi|chén trà|teacup
+ja-vocab-0490|drinks|急須|きゅうす|kyūsu|ấm trà|teapot
+ja-vocab-0491|drinks|やかん|やかん|yakan|ấm đun nước|kettle
+ja-vocab-0492|drinks|水筒|すいとう|suitō|bình nước cá nhân|water flask
+ja-vocab-0493|drinks|瓶|びん|bin|chai thủy tinh|glass bottle
+ja-vocab-0494|drinks|缶|かん|kan|lon|can
+ja-vocab-0495|drinks|ストロー|すとろー|sutorō|ống hút|straw
+ja-vocab-0496|drinks|栓抜き|せんぬき|sennuki|đồ mở nắp chai|bottle opener
+ja-vocab-0497|drinks|カフェイン|かふぇいん|kafein|caffeine|caffeine
+ja-vocab-0498|drinks|乾杯|かんぱい|kanpai|cạn ly|cheers
+ja-vocab-0499|drinks|おかわり|おかわり|okawari|xin thêm phần|refill
+ja-vocab-0500|drinks|飲み放題|のみほうだい|nomihōdai|uống không giới hạn|unlimited drinks
+ja-vocab-0501|shopping|買い物|かいもの|kaimono|mua sắm|shopping
+ja-vocab-0502|shopping|店|みせ|mise|cửa hàng|shop
+ja-vocab-0503|shopping|スーパー|すーぱー|sūpā|siêu thị|supermarket
+ja-vocab-0504|shopping|コンビニ|こんびに|konbini|cửa hàng tiện lợi|convenience store
+ja-vocab-0505|shopping|デパート|でぱーと|depāto|bách hóa|department store
+ja-vocab-0506|shopping|市場|いちば|ichiba|chợ|market
+ja-vocab-0507|shopping|商店街|しょうてんがい|shōtengai|phố mua sắm|shopping street
+ja-vocab-0508|shopping|売り場|うりば|uriba|quầy bán hàng|sales floor
+ja-vocab-0509|shopping|レジ|れじ|reji|quầy thu ngân|checkout
+ja-vocab-0510|shopping|会計|かいけい|kaikei|thanh toán|payment
+ja-vocab-0511|shopping|値段|ねだん|nedan|giá|price
+ja-vocab-0512|shopping|価格|かかく|kakaku|giá cả|price
+ja-vocab-0513|shopping|料金|りょうきん|ryōkin|phí|fee
+ja-vocab-0514|shopping|お金|おかね|okane|tiền|money
+ja-vocab-0515|shopping|現金|げんきん|genkin|tiền mặt|cash
+ja-vocab-0516|shopping|小銭|こぜに|kozeni|tiền lẻ|small change
+ja-vocab-0517|shopping|硬貨|こうか|kōka|tiền xu|coin
+ja-vocab-0518|shopping|紙幣|しへい|shihei|tiền giấy|banknote
+ja-vocab-0519|shopping|財布|さいふ|saifu|ví|wallet
+ja-vocab-0520|shopping|お釣り|おつり|otsuri|tiền thừa|change returned
+ja-vocab-0521|shopping|レシート|れしーと|reshīto|biên lai|receipt
+ja-vocab-0522|shopping|領収書|りょうしゅうしょ|ryōshūsho|hóa đơn xác nhận trả tiền|payment receipt
+ja-vocab-0523|shopping|クレジットカード|くれじっとかーど|kurejitto kādo|thẻ tín dụng|credit card
+ja-vocab-0524|shopping|割引|わりびき|waribiki|giảm giá|discount
+ja-vocab-0525|shopping|セール|せーる|sēru|đợt giảm giá|sale
+ja-vocab-0526|shopping|特売|とくばい|tokubai|bán giá ưu đãi|special sale
+ja-vocab-0527|shopping|無料|むりょう|muryō|miễn phí|free of charge
+ja-vocab-0528|shopping|有料|ゆうりょう|yūryō|có tính phí|paid
+ja-vocab-0529|shopping|税込み|ぜいこみ|zeikomi|đã gồm thuế|tax included
+ja-vocab-0530|shopping|税抜き|ぜいぬき|zeinuki|chưa gồm thuế|tax excluded
+ja-vocab-0531|shopping|商品|しょうひん|shōhin|hàng hóa|product
+ja-vocab-0532|shopping|品物|しなもの|shinamono|món hàng|item
+ja-vocab-0533|shopping|在庫|ざいこ|zaiko|hàng tồn kho|stock
+ja-vocab-0534|shopping|売り切れ|うりきれ|urikire|hết hàng|sold out
+ja-vocab-0535|shopping|注文|ちゅうもん|chūmon|đặt hàng|order
+ja-vocab-0536|shopping|返品|へんぴん|henpin|trả hàng|return of goods
+ja-vocab-0537|shopping|交換|こうかん|kōkan|đổi hàng|exchange
+ja-vocab-0538|shopping|返金|へんきん|henkin|hoàn tiền|refund
+ja-vocab-0539|shopping|保証|ほしょう|hoshō|bảo hành|guarantee
+ja-vocab-0540|shopping|配送|はいそう|haisō|giao hàng|delivery
+ja-vocab-0541|shopping|送料|そうりょう|sōryō|phí vận chuyển|shipping fee
+ja-vocab-0542|shopping|包装|ほうそう|hōsō|đóng gói|wrapping
+ja-vocab-0543|shopping|試着|しちゃく|shichaku|thử quần áo|trying on clothes
+ja-vocab-0544|shopping|サイズ|さいず|saizu|kích cỡ|size
+ja-vocab-0545|shopping|色|いろ|iro|màu|color
+ja-vocab-0546|shopping|柄|がら|gara|hoa văn|pattern
+ja-vocab-0547|shopping|服|ふく|fuku|quần áo|clothes
+ja-vocab-0548|shopping|洋服|ようふく|yōfuku|quần áo kiểu Tây|Western clothes
+ja-vocab-0549|shopping|和服|わふく|wafuku|trang phục Nhật|Japanese clothing
+ja-vocab-0550|shopping|着物|きもの|kimono|kimono|kimono
+ja-vocab-0551|shopping|浴衣|ゆかた|yukata|áo yukata|summer kimono
+ja-vocab-0552|shopping|シャツ|しゃつ|shatsu|áo sơ mi|shirt
+ja-vocab-0553|shopping|Tシャツ|てぃーしゃつ|tīshatsu|áo phông|T-shirt
+ja-vocab-0554|shopping|ブラウス|ぶらうす|burausu|áo kiểu nữ|blouse
+ja-vocab-0555|shopping|セーター|せーたー|sētā|áo len|sweater
+ja-vocab-0556|shopping|カーディガン|かーでぃがん|kādigan|áo len cài khuy|cardigan
+ja-vocab-0557|shopping|ジャケット|じゃけっと|jaketto|áo khoác ngắn|jacket
+ja-vocab-0558|shopping|コート|こーと|kōto|áo khoác dài|coat
+ja-vocab-0559|shopping|スーツ|すーつ|sūtsu|bộ com lê|suit
+ja-vocab-0560|shopping|ズボン|ずぼん|zubon|quần dài|trousers
+ja-vocab-0561|shopping|ジーンズ|じーんず|jīnzu|quần bò|jeans
+ja-vocab-0562|shopping|スカート|すかーと|sukāto|chân váy|skirt
+ja-vocab-0563|shopping|ワンピース|わんぴーす|wanpīsu|váy liền|dress
+ja-vocab-0564|shopping|下着|したぎ|shitagi|đồ lót|underwear
+ja-vocab-0565|shopping|靴下|くつした|kutsushita|tất|socks
+ja-vocab-0566|shopping|パジャマ|ぱじゃま|pajama|đồ ngủ|pajamas
+ja-vocab-0567|shopping|靴|くつ|kutsu|giày|shoes
+ja-vocab-0568|shopping|スニーカー|すにーかー|sunīkā|giày thể thao|sneakers
+ja-vocab-0569|shopping|ブーツ|ぶーつ|būtsu|ủng|boots
+ja-vocab-0570|shopping|サンダル|さんだる|sandaru|dép xăng đan|sandals
+ja-vocab-0571|shopping|帽子|ぼうし|bōshi|mũ|hat
+ja-vocab-0572|shopping|手袋|てぶくろ|tebukuro|găng tay|gloves
+ja-vocab-0573|shopping|マフラー|まふらー|mafurā|khăn quàng|scarf
+ja-vocab-0574|shopping|ネクタイ|ねくたい|nekutai|cà vạt|necktie
+ja-vocab-0575|shopping|ベルト|べると|beruto|thắt lưng|belt
+ja-vocab-0576|shopping|眼鏡|めがね|megane|kính mắt|glasses
+ja-vocab-0577|shopping|サングラス|さんぐらす|sangurasu|kính râm|sunglasses
+ja-vocab-0578|shopping|腕時計|うでどけい|udedokei|đồng hồ đeo tay|wristwatch
+ja-vocab-0579|shopping|指輪|ゆびわ|yubiwa|nhẫn|ring
+ja-vocab-0580|shopping|ネックレス|ねっくれす|nekkuresu|dây chuyền|necklace
+ja-vocab-0581|shopping|イヤリング|いやりんぐ|iyaringu|khuyên tai kẹp|clip-on earrings
+ja-vocab-0582|shopping|ピアス|ぴあす|piasu|khuyên tai xỏ|pierced earrings
+ja-vocab-0583|shopping|かばん|かばん|kaban|cặp; túi xách|bag
+ja-vocab-0584|shopping|リュック|りゅっく|ryukku|ba lô|backpack
+ja-vocab-0585|shopping|ハンドバッグ|はんどばっぐ|handobaggu|túi xách tay|handbag
+ja-vocab-0586|shopping|傘|かさ|kasa|ô|umbrella
+ja-vocab-0587|shopping|ハンカチ|はんかち|hankachi|khăn tay|handkerchief
+ja-vocab-0588|shopping|ポケット|ぽけっと|poketto|túi áo quần|pocket
+ja-vocab-0589|shopping|ボタン|ぼたん|botan|cúc áo|button
+ja-vocab-0590|shopping|ファスナー|ふぁすなー|fasunā|khóa kéo|zipper
+ja-vocab-0591|shopping|袖|そで|sode|tay áo|sleeve
+ja-vocab-0592|shopping|襟|えり|eri|cổ áo|collar
+ja-vocab-0593|shopping|布|ぬの|nuno|vải|cloth
+ja-vocab-0594|shopping|綿|めん|men|bông vải|cotton
+ja-vocab-0595|shopping|絹|きぬ|kinu|lụa|silk
+ja-vocab-0596|shopping|革|かわ|kawa|da thuộc|leather
+ja-vocab-0597|shopping|中古|ちゅうこ|chūko|đồ đã qua dùng|secondhand
+ja-vocab-0598|shopping|新品|しんぴん|shinpin|hàng mới|new item
+ja-vocab-0599|shopping|ブランド|ぶらんど|burando|thương hiệu|brand
+ja-vocab-0600|shopping|品質|ひんしつ|hinshitsu|chất lượng|quality
+ja-vocab-0601|travel|旅行|りょこう|ryokō|du lịch|travel
+ja-vocab-0602|travel|旅|たび|tabi|chuyến đi|journey
+ja-vocab-0603|travel|観光|かんこう|kankō|tham quan|sightseeing
+ja-vocab-0604|travel|観光客|かんこうきゃく|kankōkyaku|khách du lịch|tourist
+ja-vocab-0605|travel|目的地|もくてきち|mokutekichi|điểm đến|destination
+ja-vocab-0606|travel|出発|しゅっぱつ|shuppatsu|khởi hành|departure
+ja-vocab-0607|travel|到着|とうちゃく|tōchaku|đến nơi|arrival
+ja-vocab-0608|travel|予定|よてい|yotei|dự định|plan
+ja-vocab-0609|travel|予約|よやく|yoyaku|đặt trước|reservation
+ja-vocab-0610|travel|ホテル|ほてる|hoteru|khách sạn|hotel
+ja-vocab-0611|travel|旅館|りょかん|ryokan|nhà trọ kiểu Nhật|Japanese inn
+ja-vocab-0612|travel|宿|やど|yado|chỗ trọ|lodging
+ja-vocab-0613|travel|民宿|みんしゅく|minshuku|nhà trọ gia đình|family guesthouse
+ja-vocab-0614|travel|宿泊|しゅくはく|shukuhaku|lưu trú qua đêm|overnight stay
+ja-vocab-0615|travel|受付|うけつけ|uketsuke|quầy tiếp tân|reception
+ja-vocab-0616|travel|フロント|ふろんと|furonto|quầy lễ tân|front desk
+ja-vocab-0617|travel|チェックイン|ちぇっくいん|chekkuin|nhận phòng|check-in
+ja-vocab-0618|travel|チェックアウト|ちぇっくあうと|chekkuauto|trả phòng|check-out
+ja-vocab-0619|travel|空室|くうしつ|kūshitsu|phòng trống|vacant room
+ja-vocab-0620|travel|満室|まんしつ|manshitsu|hết phòng|no vacancy
+ja-vocab-0621|travel|一泊|いっぱく|ippaku|một đêm lưu trú|one-night stay
+ja-vocab-0622|travel|連泊|れんぱく|renpaku|lưu trú nhiều đêm|consecutive-night stay
+ja-vocab-0623|travel|朝食|ちょうしょく|chōshoku|bữa sáng|breakfast
+ja-vocab-0624|travel|夕食|ゆうしょく|yūshoku|bữa tối|dinner
+ja-vocab-0625|travel|荷物|にもつ|nimotsu|hành lý|luggage
+ja-vocab-0626|travel|スーツケース|すーつけーす|sūtsukēsu|va li|suitcase
+ja-vocab-0627|travel|手荷物|てにもつ|tenimotsu|hành lý xách tay|hand luggage
+ja-vocab-0628|travel|パスポート|ぱすぽーと|pasupōto|hộ chiếu|passport
+ja-vocab-0629|travel|ビザ|びざ|biza|thị thực|visa
+ja-vocab-0630|travel|入国|にゅうこく|nyūkoku|nhập cảnh|entry into a country
+ja-vocab-0631|travel|出国|しゅっこく|shukkoku|xuất cảnh|departure from a country
+ja-vocab-0632|travel|税関|ぜいかん|zeikan|hải quan|customs
+ja-vocab-0633|travel|検査|けんさ|kensa|kiểm tra|inspection
+ja-vocab-0634|travel|申告|しんこく|shinkoku|khai báo|declaration
+ja-vocab-0635|travel|両替|りょうがえ|ryōgae|đổi tiền|currency exchange
+ja-vocab-0636|travel|外貨|がいか|gaika|ngoại tệ|foreign currency
+ja-vocab-0637|travel|地図|ちず|chizu|bản đồ|map
+ja-vocab-0638|travel|案内|あんない|annai|hướng dẫn|guidance
+ja-vocab-0639|travel|案内所|あんないじょ|annaijo|quầy thông tin|information desk
+ja-vocab-0640|travel|ガイド|がいど|gaido|hướng dẫn viên|guide
+ja-vocab-0641|travel|道順|みちじゅん|michijun|đường đi|directions
+ja-vocab-0642|travel|住所|じゅうしょ|jūsho|địa chỉ|address
+ja-vocab-0643|travel|場所|ばしょ|basho|địa điểm|place
+ja-vocab-0644|travel|入口|いりぐち|iriguchi|lối vào|entrance
+ja-vocab-0645|travel|出口|でぐち|deguchi|lối ra|exit
+ja-vocab-0646|travel|右|みぎ|migi|bên phải|right
+ja-vocab-0647|travel|左|ひだり|hidari|bên trái|left
+ja-vocab-0648|travel|前|まえ|mae|phía trước|front
+ja-vocab-0649|travel|後ろ|うしろ|ushiro|phía sau|behind
+ja-vocab-0650|travel|横|よこ|yoko|bên cạnh|side
+ja-vocab-0651|travel|隣|となり|tonari|kế bên|next door
+ja-vocab-0652|travel|向かい|むかい|mukai|đối diện|opposite side
+ja-vocab-0653|travel|近く|ちかく|chikaku|gần đây|nearby
+ja-vocab-0654|travel|遠く|とおく|tōku|nơi xa|far away
+ja-vocab-0655|travel|周辺|しゅうへん|shūhen|khu vực xung quanh|surroundings
+ja-vocab-0656|travel|中心|ちゅうしん|chūshin|trung tâm|center
+ja-vocab-0657|travel|公園|こうえん|kōen|công viên|park
+ja-vocab-0658|travel|広場|ひろば|hiroba|quảng trường|square
+ja-vocab-0659|travel|博物館|はくぶつかん|hakubutsukan|bảo tàng|museum
+ja-vocab-0660|travel|美術館|びじゅつかん|bijutsukan|bảo tàng mỹ thuật|art museum
+ja-vocab-0661|travel|動物園|どうぶつえん|dōbutsuen|vườn thú|zoo
+ja-vocab-0662|travel|水族館|すいぞくかん|suizokukan|thủy cung|aquarium
+ja-vocab-0663|travel|遊園地|ゆうえんち|yūenchi|công viên giải trí|amusement park
+ja-vocab-0664|travel|寺|てら|tera|chùa|Buddhist temple
+ja-vocab-0665|travel|神社|じんじゃ|jinja|đền Thần đạo|Shinto shrine
+ja-vocab-0666|travel|教会|きょうかい|kyōkai|nhà thờ|church
+ja-vocab-0667|travel|城|しろ|shiro|lâu đài|castle
+ja-vocab-0668|travel|遺跡|いせき|iseki|di tích|historic ruins
+ja-vocab-0669|travel|温泉|おんせん|onsen|suối nước nóng|hot spring
+ja-vocab-0670|travel|展望台|てんぼうだい|tenbōdai|đài quan sát|observation deck
+ja-vocab-0671|travel|海岸|かいがん|kaigan|bờ biển|coast
+ja-vocab-0672|travel|砂浜|すなはま|sunahama|bãi cát|sandy beach
+ja-vocab-0673|travel|港|みなと|minato|cảng|harbor
+ja-vocab-0674|travel|島|しま|shima|đảo|island
+ja-vocab-0675|travel|土産|みやげ|miyage|quà lưu niệm|souvenir
+ja-vocab-0676|travel|名物|めいぶつ|meibutsu|đặc sản địa phương|local specialty
+ja-vocab-0677|travel|記念|きねん|kinen|kỷ niệm|commemoration
+ja-vocab-0678|travel|写真|しゃしん|shashin|ảnh chụp|photograph
+ja-vocab-0679|travel|景色|けしき|keshiki|phong cảnh|scenery
+ja-vocab-0680|travel|旅費|りょひ|ryohi|chi phí chuyến đi|travel expenses
+ja-vocab-0681|travel|日帰り|ひがえり|higaeri|đi về trong ngày|day trip
+ja-vocab-0682|travel|海外|かいがい|kaigai|nước ngoài|overseas
+ja-vocab-0683|travel|国内|こくない|kokunai|trong nước|within the country
+ja-vocab-0684|travel|時差|じさ|jisa|chênh lệch múi giờ|time difference
+ja-vocab-0685|travel|迷子|まいご|maigo|người bị lạc|lost person
+ja-vocab-0686|travel|忘れ物|わすれもの|wasuremono|đồ bỏ quên|forgotten item
+ja-vocab-0687|travel|落とし物|おとしもの|otoshimono|đồ đánh rơi|lost property
+ja-vocab-0688|travel|貴重品|きちょうひん|kichōhin|đồ có giá trị|valuables
+ja-vocab-0689|travel|安全|あんぜん|anzen|an toàn|safety
+ja-vocab-0690|travel|危険|きけん|kiken|nguy hiểm|danger
+ja-vocab-0691|travel|非常口|ひじょうぐち|hijōguchi|lối thoát hiểm|emergency exit
+ja-vocab-0692|travel|緊急|きんきゅう|kinkyū|khẩn cấp|emergency
+ja-vocab-0693|travel|連絡先|れんらくさき|renrakusaki|thông tin liên hệ|contact details
+ja-vocab-0694|transport|交通|こうつう|kōtsū|giao thông|traffic
+ja-vocab-0695|transport|乗り物|のりもの|norimono|phương tiện di chuyển|vehicle
+ja-vocab-0696|transport|車|くるま|kuruma|ô tô|car
+ja-vocab-0697|transport|自動車|じどうしゃ|jidōsha|xe hơi|car
+ja-vocab-0698|transport|電車|でんしゃ|densha|tàu điện|train
+ja-vocab-0699|transport|列車|れっしゃ|ressha|đoàn tàu|railway train
+ja-vocab-0700|transport|地下鉄|ちかてつ|chikatetsu|tàu điện ngầm|subway
+ja-vocab-0701|transport|新幹線|しんかんせん|shinkansen|tàu cao tốc Nhật|bullet train
+ja-vocab-0702|transport|バス|ばす|basu|xe buýt|bus
+ja-vocab-0703|transport|タクシー|たくしー|takushī|taxi|taxi
+ja-vocab-0704|transport|自転車|じてんしゃ|jitensha|xe đạp|bicycle
+ja-vocab-0705|transport|バイク|ばいく|baiku|xe máy|motorcycle
+ja-vocab-0706|transport|トラック|とらっく|torakku|xe tải|truck
+ja-vocab-0707|transport|救急車|きゅうきゅうしゃ|kyūkyūsha|xe cứu thương|ambulance
+ja-vocab-0708|transport|消防車|しょうぼうしゃ|shōbōsha|xe cứu hỏa|fire engine
+ja-vocab-0709|transport|パトカー|ぱとかー|patokā|xe cảnh sát|police car
+ja-vocab-0710|transport|飛行機|ひこうき|hikōki|máy bay|airplane
+ja-vocab-0711|transport|船|ふね|fune|tàu thuyền|boat
+ja-vocab-0712|transport|フェリー|ふぇりー|ferī|phà|ferry
+ja-vocab-0713|transport|ヘリコプター|へりこぷたー|herikoputā|trực thăng|helicopter
+ja-vocab-0714|transport|駅|えき|eki|nhà ga|station
+ja-vocab-0715|transport|駅前|えきまえ|ekimae|khu trước nhà ga|station frontage
+ja-vocab-0716|transport|改札|かいさつ|kaisatsu|cổng soát vé|ticket gate
+ja-vocab-0717|transport|ホーム|ほーむ|hōmu|sân ga|platform
+ja-vocab-0718|transport|線路|せんろ|senro|đường ray|railway track
+ja-vocab-0719|transport|踏切|ふみきり|fumikiri|đường ngang tàu hỏa|railroad crossing
+ja-vocab-0720|transport|路線|ろせん|rosen|tuyến đường|route
+ja-vocab-0721|transport|始発|しはつ|shihatsu|chuyến đầu tiên|first service
+ja-vocab-0722|transport|終電|しゅうでん|shūden|chuyến tàu cuối|last train
+ja-vocab-0723|transport|各駅停車|かくえきていしゃ|kakuekiteisha|tàu dừng mọi ga|local train
+ja-vocab-0724|transport|急行|きゅうこう|kyūkō|tàu nhanh|express train
+ja-vocab-0725|transport|特急|とっきゅう|tokkyū|tàu tốc hành đặc biệt|limited express
+ja-vocab-0726|transport|普通|ふつう|futsū|thông thường|ordinary
+ja-vocab-0727|transport|乗り換え|のりかえ|norikae|chuyển tuyến|transfer
+ja-vocab-0728|transport|乗車|じょうしゃ|jōsha|lên xe|boarding
+ja-vocab-0729|transport|下車|げしゃ|gesha|xuống xe|getting off
+ja-vocab-0730|transport|切符|きっぷ|kippu|vé|ticket
+ja-vocab-0731|transport|乗車券|じょうしゃけん|jōshaken|vé đi tàu xe|passenger ticket
+ja-vocab-0732|transport|定期券|ていきけん|teikiken|vé tháng|commuter pass
+ja-vocab-0733|transport|往復|おうふく|ōfuku|khứ hồi|round trip
+ja-vocab-0734|transport|片道|かたみち|katamichi|một chiều|one way
+ja-vocab-0735|transport|座席|ざせき|zaseki|ghế ngồi|seat
+ja-vocab-0736|transport|指定席|していせき|shiteiseki|ghế đặt trước|reserved seat
+ja-vocab-0737|transport|自由席|じゆうせき|jiyūseki|ghế không đặt trước|unreserved seat
+ja-vocab-0738|transport|優先席|ゆうせんせき|yūsenseki|ghế ưu tiên|priority seat
+ja-vocab-0739|transport|窓側|まどがわ|madogawa|phía cửa sổ|window side
+ja-vocab-0740|transport|通路|つうろ|tsūro|lối đi|aisle
+ja-vocab-0741|transport|時刻表|じこくひょう|jikokuhyō|bảng giờ chạy|timetable
+ja-vocab-0742|transport|遅延|ちえん|chien|chậm chuyến|delay
+ja-vocab-0743|transport|運休|うんきゅう|unkyū|tạm ngừng chạy|service cancellation
+ja-vocab-0744|transport|満員|まんいん|man'in|đầy người|full capacity
+ja-vocab-0745|transport|空港|くうこう|kūkō|sân bay|airport
+ja-vocab-0746|transport|航空券|こうくうけん|kōkūken|vé máy bay|airline ticket
+ja-vocab-0747|transport|搭乗券|とうじょうけん|tōjōken|thẻ lên máy bay|boarding pass
+ja-vocab-0748|transport|搭乗口|とうじょうぐち|tōjōguchi|cửa lên máy bay|boarding gate
+ja-vocab-0749|transport|便|びん|bin|chuyến vận chuyển|scheduled service
+ja-vocab-0750|transport|離陸|りりく|ririku|cất cánh|takeoff
+ja-vocab-0751|transport|着陸|ちゃくりく|chakuriku|hạ cánh|landing
+ja-vocab-0752|transport|滑走路|かっそうろ|kassōro|đường băng|runway
+ja-vocab-0753|transport|運転|うんてん|unten|lái xe|driving
+ja-vocab-0754|transport|免許|めんきょ|menkyo|giấy phép|license
+ja-vocab-0755|transport|道路|どうろ|dōro|đường bộ|road
+ja-vocab-0756|transport|道|みち|michi|con đường|way
+ja-vocab-0757|transport|歩道|ほどう|hodō|vỉa hè|sidewalk
+ja-vocab-0758|transport|車道|しゃどう|shadō|lòng đường|roadway
+ja-vocab-0759|transport|横断歩道|おうだんほどう|ōdanhodō|vạch sang đường|pedestrian crossing
+ja-vocab-0760|transport|交差点|こうさてん|kōsaten|ngã tư|intersection
+ja-vocab-0761|transport|信号|しんごう|shingō|đèn giao thông|traffic signal
+ja-vocab-0762|transport|標識|ひょうしき|hyōshiki|biển báo|signpost
+ja-vocab-0763|transport|橋|はし|hashi|cầu|bridge
+ja-vocab-0764|transport|トンネル|とんねる|tonneru|đường hầm|tunnel
+ja-vocab-0765|transport|高速道路|こうそくどうろ|kōsokudōro|đường cao tốc|expressway
+ja-vocab-0766|transport|駐車場|ちゅうしゃじょう|chūshajō|bãi đỗ xe|parking lot
+ja-vocab-0767|transport|駐輪場|ちゅうりんじょう|chūrinjō|bãi đỗ xe đạp|bicycle parking
+ja-vocab-0768|transport|ガソリン|がそりん|gasorin|xăng|gasoline
+ja-vocab-0769|transport|給油|きゅうゆ|kyūyu|đổ nhiên liệu|refueling
+ja-vocab-0770|transport|渋滞|じゅうたい|jūtai|ùn tắc|traffic jam
+ja-vocab-0771|transport|事故|じこ|jiko|tai nạn|accident
+ja-vocab-0772|transport|速度|そくど|sokudo|tốc độ|speed
+ja-vocab-0773|transport|方向|ほうこう|hōkō|hướng|direction
+ja-vocab-0774|transport|右折|うせつ|usetsu|rẽ phải|right turn
+ja-vocab-0775|transport|左折|させつ|sasetsu|rẽ trái|left turn
+ja-vocab-0776|transport|直進|ちょくしん|chokushin|đi thẳng|going straight
+ja-vocab-0777|transport|停車|ていしゃ|teisha|dừng xe|vehicle stop
+ja-vocab-0778|transport|停留所|ていりゅうじょ|teiryūjo|trạm dừng|bus or tram stop
+ja-vocab-0779|transport|終点|しゅうてん|shūten|điểm cuối tuyến|terminus
+ja-vocab-0780|transport|運賃|うんちん|unchin|cước đi xe|fare
+ja-vocab-0781|transport|ブレーキ|ぶれーき|burēki|phanh|brake
+ja-vocab-0782|transport|ハンドル|はんどる|handoru|vô lăng|steering wheel
+ja-vocab-0783|transport|タイヤ|たいや|taiya|lốp xe|tire
+ja-vocab-0784|transport|エンジン|えんじん|enjin|động cơ|engine
+ja-vocab-0785|transport|シートベルト|しーとべると|shītoberuto|dây an toàn|seat belt
+ja-vocab-0786|transport|ヘルメット|へるめっと|herumetto|mũ bảo hiểm|helmet
+ja-vocab-0787|time|時間|じかん|jikan|thời gian|time
+ja-vocab-0788|time|時刻|じこく|jikoku|thời điểm theo đồng hồ|clock time
+ja-vocab-0789|time|今|いま|ima|bây giờ|now
+ja-vocab-0790|time|現在|げんざい|genzai|hiện tại|present
+ja-vocab-0791|time|過去|かこ|kako|quá khứ|past
+ja-vocab-0792|time|未来|みらい|mirai|tương lai|future
+ja-vocab-0793|time|今日|きょう|kyō|hôm nay|today
+ja-vocab-0794|time|昨日|きのう|kinō|hôm qua|yesterday
+ja-vocab-0795|time|明日|あした|ashita|ngày mai|tomorrow
+ja-vocab-0796|time|一昨日|おととい|ototoi|hôm kia|day before yesterday
+ja-vocab-0797|time|明後日|あさって|asatte|ngày kia|day after tomorrow
+ja-vocab-0798|time|毎日|まいにち|mainichi|mỗi ngày|every day
+ja-vocab-0799|time|毎朝|まいあさ|maiasa|mỗi sáng|every morning
+ja-vocab-0800|time|毎晩|まいばん|maiban|mỗi tối|every evening
+ja-vocab-0801|time|朝|あさ|asa|buổi sáng|morning
+ja-vocab-0802|time|昼|ひる|hiru|buổi trưa|midday
+ja-vocab-0803|time|夕方|ゆうがた|yūgata|chiều tối|late afternoon
+ja-vocab-0804|time|夜|よる|yoru|ban đêm|night
+ja-vocab-0805|time|今朝|けさ|kesa|sáng nay|this morning
+ja-vocab-0806|time|今晩|こんばん|konban|tối nay|this evening
+ja-vocab-0807|time|昨夜|さくや|sakuya|đêm qua|last night
+ja-vocab-0808|time|正午|しょうご|shōgo|chính ngọ|noon
+ja-vocab-0809|time|真夜中|まよなか|mayonaka|nửa đêm|midnight
+ja-vocab-0810|time|夜明け|よあけ|yoake|rạng đông|dawn
+ja-vocab-0811|time|日の出|ひので|hinode|mặt trời mọc|sunrise
+ja-vocab-0812|time|日没|にちぼつ|nichibotsu|mặt trời lặn|sunset
+ja-vocab-0813|time|午前|ごぜん|gozen|buổi sáng trước trưa|a.m.
+ja-vocab-0814|time|午後|ごご|gogo|buổi chiều sau trưa|p.m.
+ja-vocab-0815|time|日付|ひづけ|hizuke|ngày tháng|date
+ja-vocab-0816|time|曜日|ようび|yōbi|ngày trong tuần|day of the week
+ja-vocab-0817|time|月曜日|げつようび|getsuyōbi|thứ hai|Monday
+ja-vocab-0818|time|火曜日|かようび|kayōbi|thứ ba|Tuesday
+ja-vocab-0819|time|水曜日|すいようび|suiyōbi|thứ tư|Wednesday
+ja-vocab-0820|time|木曜日|もくようび|mokuyōbi|thứ năm|Thursday
+ja-vocab-0821|time|金曜日|きんようび|kin'yōbi|thứ sáu|Friday
+ja-vocab-0822|time|土曜日|どようび|doyōbi|thứ bảy|Saturday
+ja-vocab-0823|time|日曜日|にちようび|nichiyōbi|chủ nhật|Sunday
+ja-vocab-0824|time|平日|へいじつ|heijitsu|ngày thường|weekday
+ja-vocab-0825|time|週末|しゅうまつ|shūmatsu|cuối tuần|weekend
+ja-vocab-0826|time|休日|きゅうじつ|kyūjitsu|ngày nghỉ|day off
+ja-vocab-0827|time|祝日|しゅくじつ|shukujitsu|ngày lễ|public holiday
+ja-vocab-0828|time|今週|こんしゅう|konshū|tuần này|this week
+ja-vocab-0829|time|先週|せんしゅう|senshū|tuần trước|last week
+ja-vocab-0830|time|来週|らいしゅう|raishū|tuần tới|next week
+ja-vocab-0831|time|毎週|まいしゅう|maishū|mỗi tuần|every week
+ja-vocab-0832|time|今月|こんげつ|kongetsu|tháng này|this month
+ja-vocab-0833|time|先月|せんげつ|sengetsu|tháng trước|last month
+ja-vocab-0834|time|来月|らいげつ|raigetsu|tháng tới|next month
+ja-vocab-0835|time|毎月|まいつき|maitsuki|mỗi tháng|every month
+ja-vocab-0836|time|今年|ことし|kotoshi|năm nay|this year
+ja-vocab-0837|time|去年|きょねん|kyonen|năm ngoái|last year
+ja-vocab-0838|time|来年|らいねん|rainen|năm tới|next year
+ja-vocab-0839|time|毎年|まいとし|maitoshi|mỗi năm|every year
+ja-vocab-0840|time|一昨年|おととし|ototoshi|năm kia|year before last
+ja-vocab-0841|time|再来年|さらいねん|sarainen|năm sau nữa|year after next
+ja-vocab-0842|time|春|はる|haru|mùa xuân|spring
+ja-vocab-0843|time|夏|なつ|natsu|mùa hè|summer
+ja-vocab-0844|time|秋|あき|aki|mùa thu|autumn
+ja-vocab-0845|time|冬|ふゆ|fuyu|mùa đông|winter
+ja-vocab-0846|time|季節|きせつ|kisetsu|mùa|season
+ja-vocab-0847|time|年末|ねんまつ|nenmatsu|cuối năm|year end
+ja-vocab-0848|time|年始|ねんし|nenshi|đầu năm|beginning of the year
+ja-vocab-0849|time|正月|しょうがつ|shōgatsu|Tết Nhật|New Year holiday
+ja-vocab-0850|time|元日|がんじつ|ganjitsu|ngày đầu năm|New Year's Day
+ja-vocab-0851|time|月末|げつまつ|getsumatsu|cuối tháng|end of the month
+ja-vocab-0852|time|上旬|じょうじゅん|jōjun|đầu tháng|first third of a month
+ja-vocab-0853|time|中旬|ちゅうじゅん|chūjun|giữa tháng|middle third of a month
+ja-vocab-0854|time|下旬|げじゅん|gejun|cuối tháng|last third of a month
+ja-vocab-0855|time|秒|びょう|byō|giây|second
+ja-vocab-0856|time|分|ふん|fun|phút|minute
+ja-vocab-0857|time|半分|はんぶん|hanbun|một nửa|half
+ja-vocab-0858|time|瞬間|しゅんかん|shunkan|khoảnh khắc|instant
+ja-vocab-0859|time|期間|きかん|kikan|khoảng thời gian|period
+ja-vocab-0860|time|期限|きげん|kigen|hạn chót|time limit
+ja-vocab-0861|time|締め切り|しめきり|shimekiri|hạn nộp|deadline
+ja-vocab-0862|time|順番|じゅんばん|junban|thứ tự|turn
+ja-vocab-0863|time|最初|さいしょ|saisho|đầu tiên|beginning
+ja-vocab-0864|time|最後|さいご|saigo|cuối cùng|end
+ja-vocab-0865|time|以前|いぜん|izen|trước đây|previously
+ja-vocab-0866|time|以後|いご|igo|sau đó trở đi|afterward
+ja-vocab-0867|time|最近|さいきん|saikin|gần đây|recently
+ja-vocab-0868|time|将来|しょうらい|shōrai|mai sau|future prospects
+ja-vocab-0869|time|昔|むかし|mukashi|ngày xưa|long ago
+ja-vocab-0870|time|途中|とちゅう|tochū|giữa chừng|on the way
+ja-vocab-0871|time|間|あいだ|aida|khoảng giữa|interval
+ja-vocab-0872|time|しばらく|しばらく|shibaraku|một lúc|a while
+ja-vocab-0873|time|そろそろ|そろそろ|sorosoro|sắp đến lúc|about time
+ja-vocab-0874|time|まもなく|まもなく|mamonaku|chẳng bao lâu|soon
+ja-vocab-0875|time|さっき|さっき|sakki|vừa nãy|a moment ago
+ja-vocab-0876|time|後で|あとで|atode|lát nữa|later
+ja-vocab-0877|time|先ほど|さきほど|sakihodo|khi nãy|a short while ago
+ja-vocab-0878|time|早速|さっそく|sassoku|ngay lập tức|without delay
+ja-vocab-0879|time|時々|ときどき|tokidoki|thỉnh thoảng|sometimes
+ja-vocab-0880|time|いつも|いつも|itsumo|luôn luôn|always
+ja-vocab-0881|time|頻繁|ひんぱん|hinpan|thường xuyên|frequent
+ja-vocab-0882|nature|自然|しぜん|shizen|thiên nhiên|nature
+ja-vocab-0883|nature|空|そら|sora|bầu trời|sky
+ja-vocab-0884|nature|太陽|たいよう|taiyō|mặt trời|sun
+ja-vocab-0885|nature|月|つき|tsuki|mặt trăng|moon
+ja-vocab-0886|nature|星|ほし|hoshi|ngôi sao|star
+ja-vocab-0887|nature|地球|ちきゅう|chikyū|Trái Đất|Earth
+ja-vocab-0888|nature|宇宙|うちゅう|uchū|vũ trụ|universe
+ja-vocab-0889|nature|世界|せかい|sekai|thế giới|world
+ja-vocab-0890|nature|天気|てんき|tenki|thời tiết|weather
+ja-vocab-0891|nature|気候|きこう|kikō|khí hậu|climate
+ja-vocab-0892|nature|気温|きおん|kion|nhiệt độ không khí|air temperature
+ja-vocab-0893|nature|温度|おんど|ondo|nhiệt độ|temperature
+ja-vocab-0894|nature|湿度|しつど|shitsudo|độ ẩm|humidity
+ja-vocab-0895|nature|晴れ|はれ|hare|trời quang|clear weather
+ja-vocab-0896|nature|曇り|くもり|kumori|trời nhiều mây|cloudy weather
+ja-vocab-0897|nature|雨|あめ|ame|mưa|rain
+ja-vocab-0898|nature|雪|ゆき|yuki|tuyết|snow
+ja-vocab-0899|nature|風|かぜ|kaze|gió|wind
+ja-vocab-0900|nature|雲|くも|kumo|mây|cloud
+ja-vocab-0901|nature|霧|きり|kiri|sương mù|fog
+ja-vocab-0902|nature|雷|かみなり|kaminari|sấm sét|thunder
+ja-vocab-0903|nature|虹|にじ|niji|cầu vồng|rainbow
+ja-vocab-0904|nature|嵐|あらし|arashi|bão|storm
+ja-vocab-0905|nature|台風|たいふう|taifū|bão nhiệt đới|typhoon
+ja-vocab-0906|nature|梅雨|つゆ|tsuyu|mùa mưa Nhật Bản|rainy season
+ja-vocab-0907|nature|大雨|おおあめ|ōame|mưa to|heavy rain
+ja-vocab-0908|nature|小雨|こさめ|kosame|mưa nhỏ|light rain
+ja-vocab-0909|nature|吹雪|ふぶき|fubuki|bão tuyết|snowstorm
+ja-vocab-0910|nature|霜|しも|shimo|sương giá|frost
+ja-vocab-0911|nature|露|つゆ|tsuyu|sương đọng|dew
+ja-vocab-0912|nature|日差し|ひざし|hizashi|ánh nắng|sunlight
+ja-vocab-0913|nature|日陰|ひかげ|hikage|bóng râm|shade
+ja-vocab-0914|nature|影|かげ|kage|bóng|shadow
+ja-vocab-0915|nature|光|ひかり|hikari|ánh sáng|light
+ja-vocab-0916|nature|闇|やみ|yami|bóng tối|darkness
+ja-vocab-0917|nature|空気|くうき|kūki|không khí|air
+ja-vocab-0918|nature|酸素|さんそ|sanso|ô xy|oxygen
+ja-vocab-0919|nature|二酸化炭素|にさんかたんそ|nisankatanso|khí cacbonic|carbon dioxide
+ja-vocab-0920|nature|山|やま|yama|núi|mountain
+ja-vocab-0921|nature|丘|おか|oka|đồi|hill
+ja-vocab-0922|nature|谷|たに|tani|thung lũng|valley
+ja-vocab-0923|nature|森|もり|mori|rừng|forest
+ja-vocab-0924|nature|林|はやし|hayashi|rừng nhỏ|woods
+ja-vocab-0925|nature|草原|そうげん|sōgen|đồng cỏ|grassland
+ja-vocab-0926|nature|平野|へいや|heiya|đồng bằng|plain
+ja-vocab-0927|nature|砂漠|さばく|sabaku|sa mạc|desert
+ja-vocab-0928|nature|川|かわ|kawa|sông|river
+ja-vocab-0929|nature|湖|みずうみ|mizūmi|hồ|lake
+ja-vocab-0930|nature|池|いけ|ike|ao|pond
+ja-vocab-0931|nature|海|うみ|umi|biển|sea
+ja-vocab-0932|nature|波|なみ|nami|sóng|wave
+ja-vocab-0933|nature|滝|たき|taki|thác nước|waterfall
+ja-vocab-0934|nature|泉|いずみ|izumi|nguồn suối|spring
+ja-vocab-0935|nature|水面|すいめん|suimen|mặt nước|water surface
+ja-vocab-0936|nature|流れ|ながれ|nagare|dòng chảy|current
+ja-vocab-0937|nature|岸|きし|kishi|bờ|shore
+ja-vocab-0938|nature|岩|いわ|iwa|tảng đá|rock
+ja-vocab-0939|nature|石|いし|ishi|đá|stone
+ja-vocab-0940|nature|砂|すな|suna|cát|sand
+ja-vocab-0941|nature|土|つち|tsuchi|đất|soil
+ja-vocab-0942|nature|泥|どろ|doro|bùn|mud
+ja-vocab-0943|nature|地面|じめん|jimen|mặt đất|ground
+ja-vocab-0944|nature|畑|はたけ|hatake|ruộng hoa màu|cultivated field
+ja-vocab-0945|nature|田んぼ|たんぼ|tanbo|ruộng lúa|rice field
+ja-vocab-0946|nature|植物|しょくぶつ|shokubutsu|thực vật|plant
+ja-vocab-0947|nature|木|き|ki|cây|tree
+ja-vocab-0948|nature|枝|えだ|eda|cành|branch
+ja-vocab-0949|nature|葉|は|ha|lá|leaf
+ja-vocab-0950|nature|根|ね|ne|rễ|root
+ja-vocab-0951|nature|幹|みき|miki|thân cây|tree trunk
+ja-vocab-0952|nature|花|はな|hana|hoa|flower
+ja-vocab-0953|nature|花びら|はなびら|hanabira|cánh hoa|petal
+ja-vocab-0954|nature|つぼみ|つぼみ|tsubomi|nụ hoa|bud
+ja-vocab-0955|nature|種|たね|tane|hạt giống|seed
+ja-vocab-0956|nature|実|み|mi|quả|fruit of a plant
+ja-vocab-0957|nature|草|くさ|kusa|cỏ|grass
+ja-vocab-0958|nature|竹|たけ|take|tre|bamboo
+ja-vocab-0959|nature|桜|さくら|sakura|hoa anh đào|cherry blossom
+ja-vocab-0960|nature|松|まつ|matsu|cây thông|pine
+ja-vocab-0961|nature|杉|すぎ|sugi|cây tuyết tùng Nhật|Japanese cedar
+ja-vocab-0962|nature|ばら|ばら|bara|hoa hồng|rose
+ja-vocab-0963|nature|ひまわり|ひまわり|himawari|hoa hướng dương|sunflower
+ja-vocab-0964|nature|チューリップ|ちゅーりっぷ|chūrippu|hoa tulip|tulip
+ja-vocab-0965|nature|紅葉|こうよう|kōyō|lá đổi màu mùa thu|autumn foliage
+ja-vocab-0966|nature|落ち葉|おちば|ochiba|lá rụng|fallen leaves
+ja-vocab-0967|nature|雑草|ざっそう|zassō|cỏ dại|weed
+ja-vocab-0968|nature|火|ひ|hi|lửa|fire
+ja-vocab-0969|nature|煙|けむり|kemuri|khói|smoke
+ja-vocab-0970|nature|灰|はい|hai|tro|ash
+ja-vocab-0971|nature|地震|じしん|jishin|động đất|earthquake
+ja-vocab-0972|nature|津波|つなみ|tsunami|sóng thần|tsunami
+ja-vocab-0973|nature|洪水|こうずい|kōzui|lũ lụt|flood
+ja-vocab-0974|nature|火山|かざん|kazan|núi lửa|volcano
+ja-vocab-0975|nature|噴火|ふんか|funka|phun trào|eruption
+ja-vocab-0976|nature|災害|さいがい|saigai|thiên tai|disaster
+ja-vocab-0977|nature|環境|かんきょう|kankyō|môi trường|environment
+ja-vocab-0978|nature|汚染|おせん|osen|ô nhiễm|pollution
+ja-vocab-0979|nature|資源|しげん|shigen|tài nguyên|resource
+ja-vocab-0980|nature|保護|ほご|hogo|bảo vệ|protection
+ja-vocab-0981|nature|省エネ|しょうえね|shōene|tiết kiệm năng lượng|energy saving
+ja-vocab-0982|nature|リサイクル|りさいくる|risaikuru|tái chế|recycling
+ja-vocab-0983|nature|燃料|ねんりょう|nenryō|nhiên liệu|fuel
+ja-vocab-0984|nature|電力|でんりょく|denryoku|điện năng|electric power
+ja-vocab-0985|nature|水力|すいりょく|suiryoku|thủy lực|water power
+ja-vocab-0986|nature|天気予報|てんきよほう|tenkiyohō|dự báo thời tiết|weather forecast
+ja-vocab-0987|animals|動物|どうぶつ|dōbutsu|động vật|animal
+ja-vocab-0988|animals|犬|いぬ|inu|chó|dog
+ja-vocab-0989|animals|猫|ねこ|neko|mèo|cat
+ja-vocab-0990|animals|鳥|とり|tori|chim|bird
+ja-vocab-0991|animals|馬|うま|uma|ngựa|horse
+ja-vocab-0992|animals|牛|うし|ushi|bò|cow
+ja-vocab-0993|animals|豚|ぶた|buta|lợn|pig
+ja-vocab-0994|animals|羊|ひつじ|hitsuji|cừu|sheep
+ja-vocab-0995|animals|山羊|やぎ|yagi|dê|goat
+ja-vocab-0996|animals|鶏|にわとり|niwatori|gà|chicken
+ja-vocab-0997|animals|ひよこ|ひよこ|hiyoko|gà con|chick
+ja-vocab-0998|animals|アヒル|あひる|ahiru|vịt|duck
+ja-vocab-0999|animals|鴨|かも|kamo|vịt trời|wild duck
+ja-vocab-1000|animals|鳩|はと|hato|bồ câu|pigeon
+ja-vocab-1001|animals|雀|すずめ|suzume|chim sẻ|sparrow
+ja-vocab-1002|animals|カラス|からす|karasu|quạ|crow
+ja-vocab-1003|animals|鷹|たか|taka|chim ưng|hawk
+ja-vocab-1004|animals|鷲|わし|washi|đại bàng|eagle
+ja-vocab-1005|animals|フクロウ|ふくろう|fukurō|cú|owl
+ja-vocab-1006|animals|ペンギン|ぺんぎん|pengin|chim cánh cụt|penguin
+ja-vocab-1007|animals|うさぎ|うさぎ|usagi|thỏ|rabbit
+ja-vocab-1008|animals|ねずみ|ねずみ|nezumi|chuột|mouse
+ja-vocab-1009|animals|リス|りす|risu|sóc|squirrel
+ja-vocab-1010|animals|ハムスター|はむすたー|hamusutā|chuột hamster|hamster
+ja-vocab-1011|animals|猿|さる|saru|khỉ|monkey
+ja-vocab-1012|animals|ゴリラ|ごりら|gorira|khỉ đột|gorilla
+ja-vocab-1013|animals|象|ぞう|zō|voi|elephant
+ja-vocab-1014|animals|キリン|きりん|kirin|hươu cao cổ|giraffe
+ja-vocab-1015|animals|ライオン|らいおん|raion|sư tử|lion
+ja-vocab-1016|animals|虎|とら|tora|hổ|tiger
+ja-vocab-1017|animals|熊|くま|kuma|gấu|bear
+ja-vocab-1018|animals|パンダ|ぱんだ|panda|gấu trúc|panda
+ja-vocab-1019|animals|狼|おおかみ|ōkami|sói|wolf
+ja-vocab-1020|animals|狐|きつね|kitsune|cáo|fox
+ja-vocab-1021|animals|鹿|しか|shika|hươu|deer
+ja-vocab-1022|animals|カンガルー|かんがるー|kangarū|chuột túi|kangaroo
+ja-vocab-1023|animals|コアラ|こあら|koara|gấu koala|koala
+ja-vocab-1024|animals|カバ|かば|kaba|hà mã|hippopotamus
+ja-vocab-1025|animals|サイ|さい|sai|tê giác|rhinoceros
+ja-vocab-1026|animals|シマウマ|しまうま|shimauma|ngựa vằn|zebra
+ja-vocab-1027|animals|ラクダ|らくだ|rakuda|lạc đà|camel
+ja-vocab-1028|animals|イルカ|いるか|iruka|cá heo|dolphin
+ja-vocab-1029|animals|鯨|くじら|kujira|cá voi|whale
+ja-vocab-1030|animals|サメ|さめ|same|cá mập|shark
+ja-vocab-1031|animals|亀|かめ|kame|rùa|turtle
+ja-vocab-1032|animals|蛇|へび|hebi|rắn|snake
+ja-vocab-1033|animals|ワニ|わに|wani|cá sấu|crocodile
+ja-vocab-1034|animals|トカゲ|とかげ|tokage|thằn lằn|lizard
+ja-vocab-1035|animals|蛙|かえる|kaeru|ếch|frog
+ja-vocab-1036|animals|虫|むし|mushi|côn trùng|insect
+ja-vocab-1037|animals|蝶|ちょう|chō|bướm|butterfly
+ja-vocab-1038|animals|蜂|はち|hachi|ong|bee
+ja-vocab-1039|animals|蟻|あり|ari|kiến|ant
+ja-vocab-1040|animals|蚊|か|ka|muỗi|mosquito
+ja-vocab-1041|animals|ハエ|はえ|hae|ruồi|fly
+ja-vocab-1042|animals|蜘蛛|くも|kumo|nhện|spider
+ja-vocab-1043|animals|セミ|せみ|semi|ve sầu|cicada
+ja-vocab-1044|animals|トンボ|とんぼ|tonbo|chuồn chuồn|dragonfly
+ja-vocab-1045|animals|ペット|ぺっと|petto|thú cưng|pet
+ja-vocab-1046|animals|餌|えさ|esa|thức ăn cho vật nuôi|animal feed
+ja-vocab-1047|body|体|からだ|karada|cơ thể|body
+ja-vocab-1048|body|頭|あたま|atama|đầu|head
+ja-vocab-1049|body|顔|かお|kao|khuôn mặt|face
+ja-vocab-1050|body|目|め|me|mắt|eye
+ja-vocab-1051|body|耳|みみ|mimi|tai|ear
+ja-vocab-1052|body|鼻|はな|hana|mũi|nose
+ja-vocab-1053|body|口|くち|kuchi|miệng|mouth
+ja-vocab-1054|body|唇|くちびる|kuchibiru|môi|lip
+ja-vocab-1055|body|歯|は|ha|răng|tooth
+ja-vocab-1056|body|舌|した|shita|lưỡi|tongue
+ja-vocab-1057|body|喉|のど|nodo|cổ họng|throat
+ja-vocab-1058|body|首|くび|kubi|cổ|neck
+ja-vocab-1059|body|肩|かた|kata|vai|shoulder
+ja-vocab-1060|body|腕|うで|ude|cánh tay|arm
+ja-vocab-1061|body|肘|ひじ|hiji|khuỷu tay|elbow
+ja-vocab-1062|body|手首|てくび|tekubi|cổ tay|wrist
+ja-vocab-1063|body|手|て|te|bàn tay|hand
+ja-vocab-1064|body|手のひら|てのひら|tenohira|lòng bàn tay|palm
+ja-vocab-1065|body|指|ゆび|yubi|ngón tay|finger
+ja-vocab-1066|body|親指|おやゆび|oyayubi|ngón cái|thumb
+ja-vocab-1067|body|人差し指|ひとさしゆび|hitosashiyubi|ngón trỏ|index finger
+ja-vocab-1068|body|中指|なかゆび|nakayubi|ngón giữa|middle finger
+ja-vocab-1069|body|薬指|くすりゆび|kusuriyubi|ngón áp út|ring finger
+ja-vocab-1070|body|小指|こゆび|koyubi|ngón út|little finger
+ja-vocab-1071|body|爪|つめ|tsume|móng|nail
+ja-vocab-1072|body|胸|むね|mune|ngực|chest
+ja-vocab-1073|body|背中|せなか|senaka|lưng|back
+ja-vocab-1074|body|腰|こし|koshi|thắt lưng|lower back
+ja-vocab-1075|body|お腹|おなか|onaka|bụng|belly
+ja-vocab-1076|body|尻|しり|shiri|mông|buttocks
+ja-vocab-1077|body|足|あし|ashi|chân|foot or leg
+ja-vocab-1078|body|膝|ひざ|hiza|đầu gối|knee
+ja-vocab-1079|body|足首|あしくび|ashikubi|cổ chân|ankle
+ja-vocab-1080|body|かかと|かかと|kakato|gót chân|heel
+ja-vocab-1081|body|つま先|つまさき|tsumasaki|đầu ngón chân|tip of the toes
+ja-vocab-1082|body|足の裏|あしのうら|ashinoura|lòng bàn chân|sole of the foot
+ja-vocab-1083|body|太もも|ふともも|futomomo|đùi|thigh
+ja-vocab-1084|body|皮膚|ひふ|hifu|da|skin
+ja-vocab-1085|body|骨|ほね|hone|xương|bone
+ja-vocab-1086|body|筋肉|きんにく|kinniku|cơ bắp|muscle
+ja-vocab-1087|body|血|ち|chi|máu|blood
+ja-vocab-1088|body|心臓|しんぞう|shinzō|tim|heart
+ja-vocab-1089|body|肺|はい|hai|phổi|lung
+ja-vocab-1090|body|胃|い|i|dạ dày|stomach
+ja-vocab-1091|body|腸|ちょう|chō|ruột|intestine
+ja-vocab-1092|body|肝臓|かんぞう|kanzō|gan|liver
+ja-vocab-1093|body|腎臓|じんぞう|jinzō|thận|kidney
+ja-vocab-1094|body|脳|のう|nō|não|brain
+ja-vocab-1095|body|内臓|ないぞう|naizō|nội tạng|internal organs
+ja-vocab-1096|body|髪|かみ|kami|tóc|hair
+ja-vocab-1097|body|ひげ|ひげ|hige|râu|beard
+ja-vocab-1098|body|眉毛|まゆげ|mayuge|lông mày|eyebrow
+ja-vocab-1099|body|まつげ|まつげ|matsuge|lông mi|eyelash
+ja-vocab-1100|body|まぶた|まぶた|mabuta|mí mắt|eyelid
+ja-vocab-1101|body|頬|ほお|hō|má|cheek
+ja-vocab-1102|body|顎|あご|ago|cằm|chin
+ja-vocab-1103|body|額|ひたい|hitai|trán|forehead
+ja-vocab-1104|body|へそ|へそ|heso|rốn|navel
+ja-vocab-1105|body|関節|かんせつ|kansetsu|khớp|joint
+ja-vocab-1106|body|背骨|せぼね|sebone|xương sống|spine
+ja-vocab-1107|body|血管|けっかん|kekkan|mạch máu|blood vessel
+ja-vocab-1108|body|神経|しんけい|shinkei|dây thần kinh|nerve
+ja-vocab-1109|body|唾液|だえき|daeki|nước bọt|saliva
+ja-vocab-1110|body|汗|あせ|ase|mồ hôi|sweat
+ja-vocab-1111|body|涙|なみだ|namida|nước mắt|tear
+ja-vocab-1112|body|息|いき|iki|hơi thở|breath
+ja-vocab-1113|body|身長|しんちょう|shinchō|chiều cao cơ thể|height
+ja-vocab-1114|body|体重|たいじゅう|taijū|cân nặng|body weight
+ja-vocab-1115|body|声|こえ|koe|giọng nói|voice
+ja-vocab-1116|body|視力|しりょく|shiryoku|thị lực|eyesight
+ja-vocab-1117|body|聴力|ちょうりょく|chōryoku|thính lực|hearing ability
+ja-vocab-1118|body|ほくろ|ほくろ|hokuro|nốt ruồi|mole on the skin
+ja-vocab-1119|body|傷跡|きずあと|kizuato|sẹo|scar
+ja-vocab-1120|body|指先|ゆびさき|yubisaki|đầu ngón tay|fingertip
+ja-vocab-1121|body|脇|わき|waki|nách|armpit
+ja-vocab-1122|health|病院|びょういん|byōin|bệnh viện|hospital
+ja-vocab-1123|health|薬局|やっきょく|yakkyoku|nhà thuốc|pharmacy
+ja-vocab-1124|health|診療所|しんりょうじょ|shinryōjo|phòng khám|clinic
+ja-vocab-1125|health|健康|けんこう|kenkō|sức khỏe|health
+ja-vocab-1126|health|病気|びょうき|byōki|bệnh|illness
+ja-vocab-1127|health|怪我|けが|kega|chấn thương|injury
+ja-vocab-1128|health|傷|きず|kizu|vết thương|wound
+ja-vocab-1129|health|痛み|いたみ|itami|cơn đau|pain
+ja-vocab-1130|health|熱|ねつ|netsu|sốt|fever
+ja-vocab-1131|health|風邪|かぜ|kaze|cảm lạnh|common cold
+ja-vocab-1132|health|咳|せき|seki|ho|cough
+ja-vocab-1133|health|くしゃみ|くしゃみ|kushami|hắt hơi|sneeze
+ja-vocab-1134|health|鼻水|はなみず|hanamizu|nước mũi|nasal discharge
+ja-vocab-1135|health|頭痛|ずつう|zutsū|đau đầu|headache
+ja-vocab-1136|health|腹痛|ふくつう|fukutsū|đau bụng|abdominal pain
+ja-vocab-1137|health|腰痛|ようつう|yōtsū|đau thắt lưng|lower back pain
+ja-vocab-1138|health|歯痛|はいた|haita|đau răng|toothache
+ja-vocab-1139|health|吐き気|はきけ|hakike|buồn nôn|nausea
+ja-vocab-1140|health|めまい|めまい|memai|chóng mặt|dizziness
+ja-vocab-1141|health|下痢|げり|geri|tiêu chảy|diarrhea
+ja-vocab-1142|health|便秘|べんぴ|benpi|táo bón|constipation
+ja-vocab-1143|health|食欲|しょくよく|shokuyoku|cảm giác thèm ăn|appetite
+ja-vocab-1144|health|疲れ|つかれ|tsukare|mệt mỏi|tiredness
+ja-vocab-1145|health|疲労|ひろう|hirō|sự kiệt sức|fatigue
+ja-vocab-1146|health|不眠|ふみん|fumin|mất ngủ|sleeplessness
+ja-vocab-1147|health|睡眠|すいみん|suimin|giấc ngủ|sleep
+ja-vocab-1148|health|休養|きゅうよう|kyūyō|nghỉ dưỡng sức|rest for recovery
+ja-vocab-1149|health|栄養|えいよう|eiyō|dinh dưỡng|nutrition
+ja-vocab-1150|health|ビタミン|びたみん|bitamin|vitamin|vitamin
+ja-vocab-1151|health|たんぱく質|たんぱくしつ|tanpakushitsu|chất đạm|protein
+ja-vocab-1152|health|脂肪|しぼう|shibō|chất béo|fat
+ja-vocab-1153|health|カロリー|かろりー|karorī|calo|calorie
+ja-vocab-1154|health|水分|すいぶん|suibun|lượng nước|moisture or fluid
+ja-vocab-1155|health|脱水|だっすい|dassui|mất nước|dehydration
+ja-vocab-1156|health|熱中症|ねっちゅうしょう|netchūshō|bệnh do nắng nóng|heat illness
+ja-vocab-1157|health|日焼け|ひやけ|hiyake|cháy nắng|sunburn
+ja-vocab-1158|health|やけど|やけど|yakedo|vết bỏng|burn injury
+ja-vocab-1159|health|骨折|こっせつ|kossetsu|gãy xương|bone fracture
+ja-vocab-1160|health|捻挫|ねんざ|nenza|bong gân|sprain
+ja-vocab-1161|health|出血|しゅっけつ|shukketsu|chảy máu|bleeding
+ja-vocab-1162|health|アレルギー|あれるぎー|arerugī|dị ứng|allergy
+ja-vocab-1163|health|花粉症|かふんしょう|kafunshō|dị ứng phấn hoa|hay fever
+ja-vocab-1164|health|かゆみ|かゆみ|kayumi|ngứa|itching
+ja-vocab-1165|health|腫れ|はれ|hare|sưng|swelling
+ja-vocab-1166|health|湿疹|しっしん|shisshin|chàm da|eczema
+ja-vocab-1167|health|感染|かんせん|kansen|nhiễm bệnh|infection
+ja-vocab-1168|health|ウイルス|ういるす|uirusu|vi-rút|virus
+ja-vocab-1169|health|細菌|さいきん|saikin|vi khuẩn|bacterium
+ja-vocab-1170|health|炎症|えんしょう|enshō|viêm|inflammation
+ja-vocab-1171|health|予防|よぼう|yobō|phòng ngừa|prevention
+ja-vocab-1172|health|ワクチン|わくちん|wakuchin|vắc-xin|vaccine
+ja-vocab-1173|health|注射|ちゅうしゃ|chūsha|tiêm|injection
+ja-vocab-1174|health|薬|くすり|kusuri|thuốc|medicine
+ja-vocab-1175|health|錠剤|じょうざい|jōzai|viên nén|tablet medicine
+ja-vocab-1176|health|粉薬|こなぐすり|konagusuri|thuốc bột|powdered medicine
+ja-vocab-1177|health|目薬|めぐすり|megusuri|thuốc nhỏ mắt|eye drops
+ja-vocab-1178|health|痛み止め|いたみどめ|itamidome|thuốc giảm đau|painkiller
+ja-vocab-1179|health|処方箋|しょほうせん|shohōsen|đơn thuốc|prescription
+ja-vocab-1180|health|副作用|ふくさよう|fukusayō|tác dụng phụ|side effect
+ja-vocab-1181|health|用量|ようりょう|yōryō|liều lượng|dosage
+ja-vocab-1182|health|診察|しんさつ|shinsatsu|khám bệnh|medical examination
+ja-vocab-1183|health|診断|しんだん|shindan|chẩn đoán|diagnosis
+ja-vocab-1184|health|治療|ちりょう|chiryō|điều trị|treatment
+ja-vocab-1185|health|手術|しゅじゅつ|shujutsu|phẫu thuật|surgery
+ja-vocab-1186|health|入院|にゅういん|nyūin|nhập viện|hospital admission
+ja-vocab-1187|health|退院|たいいん|taiin|xuất viện|hospital discharge
+ja-vocab-1188|health|通院|つういん|tsūin|đi khám định kỳ|outpatient visits
+ja-vocab-1189|health|救急|きゅうきゅう|kyūkyū|cấp cứu|emergency care
+ja-vocab-1190|health|応急処置|おうきゅうしょち|ōkyūshochi|sơ cứu|first aid
+ja-vocab-1191|health|包帯|ほうたい|hōtai|băng cuộn|bandage
+ja-vocab-1192|health|絆創膏|ばんそうこう|bansōkō|băng cá nhân|adhesive bandage
+ja-vocab-1193|health|消毒|しょうどく|shōdoku|khử trùng|disinfection
+ja-vocab-1194|health|マスク|ますく|masuku|khẩu trang|face mask
+ja-vocab-1195|health|体温計|たいおんけい|taionkei|nhiệt kế y tế|clinical thermometer
+ja-vocab-1196|health|体温|たいおん|taion|nhiệt độ cơ thể|body temperature
+ja-vocab-1197|health|血圧|けつあつ|ketsuatsu|huyết áp|blood pressure
+ja-vocab-1198|health|脈|みゃく|myaku|mạch|pulse
+ja-vocab-1199|health|血液型|けつえきがた|ketsuekigata|nhóm máu|blood type
+ja-vocab-1200|health|症状|しょうじょう|shōjō|triệu chứng|symptom
+ja-vocab-1201|health|患者|かんじゃ|kanja|bệnh nhân|patient
+ja-vocab-1202|health|歯医者|はいしゃ|haisha|nha sĩ|dentist
+ja-vocab-1203|health|眼科|がんか|ganka|khoa mắt|ophthalmology
+ja-vocab-1204|health|内科|ないか|naika|khoa nội|internal medicine
+ja-vocab-1205|health|外科|げか|geka|khoa ngoại|surgery department
+ja-vocab-1206|health|小児科|しょうにか|shōnika|khoa nhi|pediatrics
+ja-vocab-1207|health|保険証|ほけんしょう|hokenshō|thẻ bảo hiểm|insurance card
+ja-vocab-1208|health|健康診断|けんこうしんだん|kenkōshindan|khám sức khỏe|health checkup
+ja-vocab-1209|health|回復|かいふく|kaifuku|hồi phục|recovery
+ja-vocab-1210|health|リハビリ|りはびり|rihabiri|phục hồi chức năng|rehabilitation
+ja-vocab-1211|health|介護|かいご|kaigo|chăm sóc người cần trợ giúp|nursing care
+ja-vocab-1212|health|妊娠|にんしん|ninshin|mang thai|pregnancy
+ja-vocab-1213|health|出産|しゅっさん|shussan|sinh con|childbirth
+ja-vocab-1214|health|禁煙|きんえん|kin'en|cấm hút thuốc|no smoking
+ja-vocab-1215|health|ストレス|すとれす|sutoresu|căng thẳng|stress
+ja-vocab-1216|health|うがい|うがい|ugai|súc họng|gargling
+ja-vocab-1217|school|学校|がっこう|gakkō|trường học|school
+ja-vocab-1218|school|大学|だいがく|daigaku|đại học|university
+ja-vocab-1219|school|高校|こうこう|kōkō|trường trung học phổ thông|high school
+ja-vocab-1220|school|中学校|ちゅうがっこう|chūgakkō|trường trung học cơ sở|junior high school
+ja-vocab-1221|school|小学校|しょうがっこう|shōgakkō|trường tiểu học|elementary school
+ja-vocab-1222|school|幼稚園|ようちえん|yōchien|trường mẫu giáo|kindergarten
+ja-vocab-1223|school|保育園|ほいくえん|hoikuen|nhà trẻ|nursery school
+ja-vocab-1224|school|教室|きょうしつ|kyōshitsu|phòng học|classroom
+ja-vocab-1225|school|職員室|しょくいんしつ|shokuinshitsu|phòng giáo viên|staff room
+ja-vocab-1226|school|校庭|こうてい|kōtei|sân trường|school grounds
+ja-vocab-1227|school|図書館|としょかん|toshokan|thư viện|library
+ja-vocab-1228|school|体育館|たいいくかん|taiikukan|nhà thể chất|gymnasium
+ja-vocab-1229|school|講堂|こうどう|kōdō|hội trường|lecture hall
+ja-vocab-1230|school|寮|りょう|ryō|ký túc xá|dormitory
+ja-vocab-1231|school|食堂|しょくどう|shokudō|nhà ăn|cafeteria
+ja-vocab-1232|school|黒板|こくばん|kokuban|bảng đen|blackboard
+ja-vocab-1233|school|ホワイトボード|ほわいとぼーど|howaitobōdo|bảng trắng|whiteboard
+ja-vocab-1234|school|教科書|きょうかしょ|kyōkasho|sách giáo khoa|textbook
+ja-vocab-1235|school|参考書|さんこうしょ|sankōsho|sách tham khảo|study guide
+ja-vocab-1236|school|辞書|じしょ|jisho|từ điển|dictionary
+ja-vocab-1237|school|ノート|のーと|nōto|vở|notebook
+ja-vocab-1238|school|鉛筆|えんぴつ|enpitsu|bút chì|pencil
+ja-vocab-1239|school|ボールペン|ぼーるぺん|bōrupen|bút bi|ballpoint pen
+ja-vocab-1240|school|消しゴム|けしごむ|keshigomu|tẩy|eraser
+ja-vocab-1241|school|定規|じょうぎ|jōgi|thước kẻ|ruler
+ja-vocab-1242|school|筆箱|ふでばこ|fudebako|hộp bút|pencil case
+ja-vocab-1243|school|紙|かみ|kami|giấy|paper
+ja-vocab-1244|school|ページ|ぺーじ|pēji|trang|page
+ja-vocab-1245|school|チョーク|ちょーく|chōku|phấn viết|chalk
+ja-vocab-1246|school|文房具|ぶんぼうぐ|bunbōgu|văn phòng phẩm|stationery
+ja-vocab-1247|school|授業|じゅぎょう|jugyō|tiết học|class lesson
+ja-vocab-1248|school|講義|こうぎ|kōgi|bài giảng|lecture
+ja-vocab-1249|school|科目|かもく|kamoku|môn học|subject
+ja-vocab-1250|school|国語|こくご|kokugo|môn quốc ngữ|national language subject
+ja-vocab-1251|school|数学|すうがく|sūgaku|toán học|mathematics
+ja-vocab-1252|school|理科|りか|rika|môn khoa học|school science
+ja-vocab-1253|school|歴史|れきし|rekishi|lịch sử|history
+ja-vocab-1254|school|地理|ちり|chiri|địa lý|geography
+ja-vocab-1255|school|英語|えいご|eigo|tiếng Anh|English language
+ja-vocab-1256|school|日本語|にほんご|nihongo|tiếng Nhật|Japanese language
+ja-vocab-1257|school|中国語|ちゅうごくご|chūgokugo|tiếng Trung|Chinese language
+ja-vocab-1258|school|ベトナム語|べとなむご|betonamugo|tiếng Việt|Vietnamese language
+ja-vocab-1259|school|外国語|がいこくご|gaikokugo|ngoại ngữ|foreign language
+ja-vocab-1260|school|言語|げんご|gengo|ngôn ngữ|language
+ja-vocab-1261|school|単語|たんご|tango|từ vựng đơn lẻ|word
+ja-vocab-1262|school|語彙|ごい|goi|vốn từ|vocabulary
+ja-vocab-1263|school|文法|ぶんぽう|bunpō|ngữ pháp|grammar
+ja-vocab-1264|school|発音|はつおん|hatsuon|phát âm|pronunciation
+ja-vocab-1265|school|文字|もじ|moji|chữ viết|written character
+ja-vocab-1266|school|漢字|かんじ|kanji|chữ Hán|kanji
+ja-vocab-1267|school|ひらがな|ひらがな|hiragana|chữ hiragana|hiragana
+ja-vocab-1268|school|カタカナ|かたかな|katakana|chữ katakana|katakana
+ja-vocab-1269|school|アルファベット|あるふぁべっと|arufabetto|bảng chữ cái|alphabet
+ja-vocab-1270|school|文章|ぶんしょう|bunshō|đoạn văn|written passage
+ja-vocab-1271|school|文|ぶん|bun|câu|sentence
+ja-vocab-1272|school|意味|いみ|imi|ý nghĩa|meaning
+ja-vocab-1273|school|翻訳|ほんやく|hon'yaku|biên dịch|translation
+ja-vocab-1274|school|作文|さくぶん|sakubun|bài tập làm văn|composition
+ja-vocab-1275|school|読書|どくしょ|dokusho|đọc sách|reading books
+ja-vocab-1276|school|音読|おんどく|ondoku|đọc thành tiếng|reading aloud
+ja-vocab-1277|school|勉強|べんきょう|benkyō|việc học|study
+ja-vocab-1278|school|学習|がくしゅう|gakushū|học tập|learning
+ja-vocab-1279|school|練習|れんしゅう|renshū|luyện tập|practice
+ja-vocab-1280|school|復習|ふくしゅう|fukushū|ôn bài|review of lessons
+ja-vocab-1281|school|予習|よしゅう|yoshū|chuẩn bị bài trước|lesson preparation
+ja-vocab-1282|school|宿題|しゅくだい|shukudai|bài tập về nhà|homework
+ja-vocab-1283|school|課題|かだい|kadai|bài được giao|assignment
+ja-vocab-1284|school|試験|しけん|shiken|kỳ thi|examination
+ja-vocab-1285|school|テスト|てすと|tesuto|bài kiểm tra|test
+ja-vocab-1286|school|問題|もんだい|mondai|câu hỏi bài tập|exercise question
+ja-vocab-1287|school|質問|しつもん|shitsumon|câu hỏi|question
+ja-vocab-1288|school|答え|こたえ|kotae|câu trả lời|answer
+ja-vocab-1289|school|正解|せいかい|seikai|đáp án đúng|correct answer
+ja-vocab-1290|school|間違い|まちがい|machigai|lỗi sai|mistake
+ja-vocab-1291|school|成績|せいせき|seiseki|kết quả học tập|grades
+ja-vocab-1292|school|点数|てんすう|tensū|điểm số|score
+ja-vocab-1293|school|合格|ごうかく|gōkaku|thi đỗ|passing an exam
+ja-vocab-1294|school|不合格|ふごうかく|fugōkaku|thi trượt|failing an exam
+ja-vocab-1295|school|入学|にゅうがく|nyūgaku|nhập học|school enrollment
+ja-vocab-1296|school|卒業|そつぎょう|sotsugyō|tốt nghiệp|graduation
+ja-vocab-1297|school|学期|がっき|gakki|học kỳ|school term
+ja-vocab-1298|school|学年|がくねん|gakunen|năm học|school year
+ja-vocab-1299|school|時間割|じかんわり|jikanwari|thời khóa biểu|class timetable
+ja-vocab-1300|school|休み時間|やすみじかん|yasumijikan|giờ ra chơi|school break
+ja-vocab-1301|school|夏休み|なつやすみ|natsuyasumi|kỳ nghỉ hè|summer vacation
+ja-vocab-1302|school|出席|しゅっせき|shusseki|có mặt|attendance
+ja-vocab-1303|school|欠席|けっせき|kesseki|vắng mặt|absence
+ja-vocab-1304|school|遅刻|ちこく|chikoku|đi muộn|lateness
+ja-vocab-1305|school|早退|そうたい|sōtai|về sớm|leaving early
+ja-vocab-1306|school|クラス|くらす|kurasu|lớp học|class group
+ja-vocab-1307|school|同級生|どうきゅうせい|dōkyūsei|bạn cùng lớp|classmate
+ja-vocab-1308|school|校長|こうちょう|kōchō|hiệu trưởng|school principal
+ja-vocab-1309|school|教授|きょうじゅ|kyōju|giáo sư|professor
+ja-vocab-1310|school|学費|がくひ|gakuhi|học phí|tuition fees
+ja-vocab-1311|school|奨学金|しょうがくきん|shōgakukin|học bổng|scholarship
+ja-vocab-1312|school|学位|がくい|gakui|học vị|academic degree
+ja-vocab-1313|school|専門|せんもん|senmon|chuyên ngành|specialty
+ja-vocab-1314|school|研究|けんきゅう|kenkyū|nghiên cứu|research
+ja-vocab-1315|school|実験|じっけん|jikken|thí nghiệm|experiment
+ja-vocab-1316|school|知識|ちしき|chishiki|kiến thức|knowledge
+ja-vocab-1317|work|仕事|しごと|shigoto|công việc|work
+ja-vocab-1318|work|会社|かいしゃ|kaisha|công ty|company
+ja-vocab-1319|work|職場|しょくば|shokuba|nơi làm việc|workplace
+ja-vocab-1320|work|事務所|じむしょ|jimusho|văn phòng|office
+ja-vocab-1321|work|工場|こうじょう|kōjō|nhà máy|factory
+ja-vocab-1322|work|企業|きぎょう|kigyō|doanh nghiệp|business enterprise
+ja-vocab-1323|work|産業|さんぎょう|sangyō|công nghiệp|industry
+ja-vocab-1324|work|業界|ぎょうかい|gyōkai|giới kinh doanh cùng ngành|business sector
+ja-vocab-1325|work|職業|しょくぎょう|shokugyō|nghề nghiệp|occupation
+ja-vocab-1326|work|職種|しょくしゅ|shokushu|loại công việc|job category
+ja-vocab-1327|work|社員|しゃいん|shain|nhân viên công ty|company employee
+ja-vocab-1328|work|正社員|せいしゃいん|seishain|nhân viên chính thức|permanent employee
+ja-vocab-1329|work|アルバイト|あるばいと|arubaito|việc làm thêm|part-time job
+ja-vocab-1330|work|パート|ぱーと|pāto|việc bán thời gian|part-time work
+ja-vocab-1331|work|派遣|はけん|haken|phái cử nhân viên|temporary staffing
+ja-vocab-1332|work|採用|さいよう|saiyō|tuyển dụng|hiring
+ja-vocab-1333|work|求人|きゅうじん|kyūjin|tuyển người|job vacancy
+ja-vocab-1334|work|応募|おうぼ|ōbo|ứng tuyển|application
+ja-vocab-1335|work|履歴書|りれきしょ|rirekisho|sơ yếu lý lịch|resume
+ja-vocab-1336|work|面接|めんせつ|mensetsu|phỏng vấn|interview
+ja-vocab-1337|work|就職|しゅうしょく|shūshoku|tìm được việc|getting a job
+ja-vocab-1338|work|転職|てんしょく|tenshoku|chuyển việc|job change
+ja-vocab-1339|work|退職|たいしょく|taishoku|nghỉ việc|leaving a job
+ja-vocab-1340|work|定年|ていねん|teinen|tuổi nghỉ hưu|retirement age
+ja-vocab-1341|work|失業|しつぎょう|shitsugyō|thất nghiệp|unemployment
+ja-vocab-1342|work|経験|けいけん|keiken|kinh nghiệm|experience
+ja-vocab-1343|work|資格|しかく|shikaku|chứng chỉ năng lực|qualification
+ja-vocab-1344|work|能力|のうりょく|nōryoku|năng lực|ability
+ja-vocab-1345|work|技術|ぎじゅつ|gijutsu|kỹ thuật|technical skill
+ja-vocab-1346|work|研修|けんしゅう|kenshū|đào tạo nghiệp vụ|job training
+ja-vocab-1347|work|給料|きゅうりょう|kyūryō|lương|salary
+ja-vocab-1348|work|時給|じきゅう|jikyū|lương theo giờ|hourly wage
+ja-vocab-1349|work|賞与|しょうよ|shōyo|tiền thưởng|bonus payment
+ja-vocab-1350|work|昇給|しょうきゅう|shōkyū|tăng lương|pay raise
+ja-vocab-1351|work|昇進|しょうしん|shōshin|thăng chức|promotion
+ja-vocab-1352|work|残業|ざんぎょう|zangyō|làm thêm giờ|overtime work
+ja-vocab-1353|work|出勤|しゅっきん|shukkin|đến làm việc|reporting for work
+ja-vocab-1354|work|退勤|たいきん|taikin|tan làm|leaving work
+ja-vocab-1355|work|通勤|つうきん|tsūkin|đi làm hằng ngày|commuting
+ja-vocab-1356|work|勤務|きんむ|kinmu|làm nhiệm vụ|service at work
+ja-vocab-1357|work|休暇|きゅうか|kyūka|nghỉ phép|leave from work
+ja-vocab-1358|work|有給休暇|ゆうきゅうきゅうか|yūkyūkyūka|nghỉ phép có lương|paid leave
+ja-vocab-1359|work|休憩|きゅうけい|kyūkei|nghỉ giải lao|break
+ja-vocab-1360|work|出張|しゅっちょう|shutchō|công tác|business trip
+ja-vocab-1361|work|在宅勤務|ざいたくきんむ|zaitakukinmu|làm việc tại nhà|working from home
+ja-vocab-1362|work|会議|かいぎ|kaigi|cuộc họp|meeting
+ja-vocab-1363|work|打ち合わせ|うちあわせ|uchiawase|trao đổi trước công việc|planning discussion
+ja-vocab-1364|work|議題|ぎだい|gidai|nội dung cuộc họp|agenda item
+ja-vocab-1365|work|議事録|ぎじろく|gijiroku|biên bản cuộc họp|meeting minutes
+ja-vocab-1366|work|報告|ほうこく|hōkoku|báo cáo|report
+ja-vocab-1367|work|連絡|れんらく|renraku|liên lạc|contact
+ja-vocab-1368|work|相談|そうだん|sōdan|bàn bạc xin ý kiến|consultation
+ja-vocab-1369|work|提案|ていあん|teian|đề xuất|proposal
+ja-vocab-1370|work|企画|きかく|kikaku|lập kế hoạch|project planning
+ja-vocab-1371|work|計画|けいかく|keikaku|kế hoạch|plan
+ja-vocab-1372|work|目標|もくひょう|mokuhyō|mục tiêu|goal
+ja-vocab-1373|work|目的|もくてき|mokuteki|mục đích|purpose
+ja-vocab-1374|work|成果|せいか|seika|thành quả|achievement
+ja-vocab-1375|work|結果|けっか|kekka|kết quả|result
+ja-vocab-1376|work|評価|ひょうか|hyōka|đánh giá|evaluation
+ja-vocab-1377|work|資料|しりょう|shiryō|tài liệu|reference materials
+ja-vocab-1378|work|書類|しょるい|shorui|giấy tờ|documents
+ja-vocab-1379|work|契約|けいやく|keiyaku|hợp đồng|contract
+ja-vocab-1380|work|署名|しょめい|shomei|chữ ký|signature
+ja-vocab-1381|work|印鑑|いんかん|inkan|con dấu cá nhân|personal seal
+ja-vocab-1382|work|名刺|めいし|meishi|danh thiếp|business card
+ja-vocab-1383|work|封筒|ふうとう|fūtō|phong bì|envelope
+ja-vocab-1384|work|郵送|ゆうそう|yūsō|gửi qua bưu điện|sending by mail
+ja-vocab-1385|work|請求書|せいきゅうしょ|seikyūsho|hóa đơn yêu cầu thanh toán|invoice
+ja-vocab-1386|work|見積もり|みつもり|mitsumori|báo giá|price estimate
+ja-vocab-1387|work|予算|よさん|yosan|ngân sách|budget
+ja-vocab-1388|work|費用|ひよう|hiyō|chi phí|expense
+ja-vocab-1389|work|経費|けいひ|keihi|chi phí hoạt động|business expense
+ja-vocab-1390|work|売上|うりあげ|uriage|doanh thu bán hàng|sales revenue
+ja-vocab-1391|work|利益|りえき|rieki|lợi nhuận|profit
+ja-vocab-1392|work|損失|そんしつ|sonshitsu|thua lỗ|loss
+ja-vocab-1393|work|取引|とりひき|torihiki|giao dịch|business transaction
+ja-vocab-1394|work|顧客|こきゃく|kokyaku|khách hàng|client
+ja-vocab-1395|work|営業|えいぎょう|eigyō|hoạt động bán hàng|sales operations
+ja-vocab-1396|work|広告|こうこく|kōkoku|quảng cáo|advertisement
+ja-vocab-1397|work|宣伝|せんでん|senden|quảng bá|publicity
+ja-vocab-1398|work|販売|はんばい|hanbai|bán hàng|selling
+ja-vocab-1399|work|生産|せいさん|seisan|sản xuất|production
+ja-vocab-1400|work|製造|せいぞう|seizō|chế tạo|manufacturing
+ja-vocab-1401|work|開発|かいはつ|kaihatsu|phát triển sản phẩm|development
+ja-vocab-1402|work|設計|せっけい|sekkei|thiết kế kỹ thuật|design
+ja-vocab-1403|work|管理|かんり|kanri|quản lý|management
+ja-vocab-1404|work|担当|たんとう|tantō|phụ trách|being in charge
+ja-vocab-1405|work|責任|せきにん|sekinin|trách nhiệm|responsibility
+ja-vocab-1406|work|部署|ぶしょ|busho|bộ phận|department
+ja-vocab-1407|work|支店|してん|shiten|chi nhánh|branch office
+ja-vocab-1408|work|本社|ほんしゃ|honsha|trụ sở chính|head office
+ja-vocab-1409|work|納期|のうき|nōki|hạn giao hàng|delivery deadline
+ja-vocab-1410|work|納品|のうひん|nōhin|bàn giao hàng|delivery of goods
+ja-vocab-1411|work|協力|きょうりょく|kyōryoku|hợp tác|cooperation
+ja-vocab-1412|technology|コンピューター|こんぴゅーたー|konpyūtā|máy tính|computer
+ja-vocab-1413|technology|パソコン|ぱそこん|pasokon|máy tính cá nhân|personal computer
+ja-vocab-1414|technology|ノートパソコン|のーとぱそこん|nōtopasokon|máy tính xách tay|laptop
+ja-vocab-1415|technology|スマートフォン|すまーとふぉん|sumātofon|điện thoại thông minh|smartphone
+ja-vocab-1416|technology|携帯電話|けいたいでんわ|keitaidenwa|điện thoại di động|mobile phone
+ja-vocab-1417|technology|タブレット|たぶれっと|taburetto|máy tính bảng|tablet computer
+ja-vocab-1418|technology|画面|がめん|gamen|màn hình|screen
+ja-vocab-1419|technology|キーボード|きーぼーど|kībōdo|bàn phím|keyboard
+ja-vocab-1420|technology|マウス|まうす|mausu|chuột máy tính|computer mouse
+ja-vocab-1421|technology|プリンター|ぷりんたー|purintā|máy in|printer
+ja-vocab-1422|technology|スキャナー|すきゃなー|sukyanā|máy quét|scanner
+ja-vocab-1423|technology|カメラ|かめら|kamera|máy ảnh|camera
+ja-vocab-1424|technology|マイク|まいく|maiku|micro|microphone
+ja-vocab-1425|technology|スピーカー|すぴーかー|supīkā|loa|speaker
+ja-vocab-1426|technology|イヤホン|いやほん|iyahon|tai nghe nhét tai|earphones
+ja-vocab-1427|technology|ヘッドホン|へっどほん|heddohon|tai nghe chụp tai|headphones
+ja-vocab-1428|technology|ケーブル|けーぶる|kēburu|dây cáp|cable
+ja-vocab-1429|technology|充電器|じゅうでんき|jūdenki|bộ sạc|charger
+ja-vocab-1430|technology|充電|じゅうでん|jūden|sạc điện|charging
+ja-vocab-1431|technology|電源|でんげん|dengen|nguồn điện|power supply
+ja-vocab-1432|technology|インターネット|いんたーねっと|intānetto|internet|internet
+ja-vocab-1433|technology|ネットワーク|ねっとわーく|nettowāku|mạng kết nối|network
+ja-vocab-1434|technology|接続|せつぞく|setsuzoku|kết nối|connection
+ja-vocab-1435|technology|通信|つうしん|tsūshin|truyền tin|communication
+ja-vocab-1436|technology|電波|でんぱ|denpa|sóng vô tuyến|radio signal
+ja-vocab-1437|technology|無線|むせん|musen|không dây|wireless
+ja-vocab-1438|technology|回線|かいせん|kaisen|đường truyền|communication line
+ja-vocab-1439|technology|ルーター|るーたー|rūtā|bộ định tuyến|router
+ja-vocab-1440|technology|ブラウザー|ぶらうざー|burauzā|trình duyệt|browser
+ja-vocab-1441|technology|検索|けんさく|kensaku|tìm kiếm|search
+ja-vocab-1442|technology|ウェブサイト|うぇぶさいと|webusaito|trang web|website
+ja-vocab-1443|technology|ホームページ|ほーむぺーじ|hōmupēji|trang chủ|home page
+ja-vocab-1444|technology|リンク|りんく|rinku|liên kết|link
+ja-vocab-1445|technology|アドレス|あどれす|adoresu|địa chỉ điện tử|electronic address
+ja-vocab-1446|technology|メール|めーる|mēru|thư điện tử|email
+ja-vocab-1447|technology|送信|そうしん|sōshin|gửi tin|transmission
+ja-vocab-1448|technology|受信|じゅしん|jushin|nhận tin|reception of data
+ja-vocab-1449|technology|返信|へんしん|henshin|trả lời tin nhắn|reply
+ja-vocab-1450|technology|添付|てんぷ|tenpu|đính kèm|attachment
+ja-vocab-1451|technology|件名|けんめい|kenmei|tiêu đề thư|subject line
+ja-vocab-1452|technology|アカウント|あかうんと|akaunto|tài khoản|account
+ja-vocab-1453|technology|パスワード|ぱすわーど|pasuwādo|mật khẩu|password
+ja-vocab-1454|technology|ログイン|ろぐいん|roguin|đăng nhập|login
+ja-vocab-1455|technology|ログアウト|ろぐあうと|roguauto|đăng xuất|logout
+ja-vocab-1456|technology|登録|とうろく|tōroku|đăng ký|registration
+ja-vocab-1457|technology|設定|せってい|settei|cài đặt|settings
+ja-vocab-1458|technology|通知|つうち|tsūchi|thông báo|notification
+ja-vocab-1459|technology|更新|こうしん|kōshin|cập nhật|update
+ja-vocab-1460|technology|保存|ほぞん|hozon|lưu trữ|saving
+ja-vocab-1461|technology|削除|さくじょ|sakujo|xóa|deletion
+ja-vocab-1462|technology|ファイル|ふぁいる|fairu|tệp|file
+ja-vocab-1463|technology|フォルダー|ふぉるだー|forudā|thư mục|folder
+ja-vocab-1464|technology|データ|でーた|dēta|dữ liệu|data
+ja-vocab-1465|technology|バックアップ|ばっくあっぷ|bakkuappu|bản sao lưu|backup
+ja-vocab-1466|technology|ダウンロード|だうんろーど|daunrōdo|tải xuống|download
+ja-vocab-1467|technology|アップロード|あっぷろーど|appurōdo|tải lên|upload
+ja-vocab-1468|technology|インストール|いんすとーる|insutōru|cài đặt phần mềm|installation
+ja-vocab-1469|technology|アプリ|あぷり|apuri|ứng dụng|app
+ja-vocab-1470|technology|ソフトウェア|そふとうぇあ|sofutowea|phần mềm|software
+ja-vocab-1471|technology|ハードウェア|はーどうぇあ|hādowea|phần cứng|hardware
+ja-vocab-1472|technology|プログラム|ぷろぐらむ|puroguramu|chương trình|program
+ja-vocab-1473|technology|入力|にゅうりょく|nyūryoku|nhập dữ liệu|input
+ja-vocab-1474|technology|出力|しゅつりょく|shutsuryoku|xuất dữ liệu|output
+ja-vocab-1475|technology|編集|へんしゅう|henshū|chỉnh sửa|editing
+ja-vocab-1476|technology|コピー|こぴー|kopī|sao chép|copy
+ja-vocab-1477|technology|貼り付け|はりつけ|haritsuke|dán dữ liệu|pasting
+ja-vocab-1478|technology|印刷|いんさつ|insatsu|in ấn|printing
+ja-vocab-1479|technology|共有|きょうゆう|kyōyū|chia sẻ|sharing
+ja-vocab-1480|technology|画像|がぞう|gazō|hình ảnh số|digital image
+ja-vocab-1481|technology|動画|どうが|dōga|video|video
+ja-vocab-1482|technology|音声|おんせい|onsei|âm thanh giọng nói|voice audio
+ja-vocab-1483|technology|録音|ろくおん|rokuon|ghi âm|audio recording
+ja-vocab-1484|technology|録画|ろくが|rokuga|ghi hình|video recording
+ja-vocab-1485|technology|再生|さいせい|saisei|phát lại|playback
+ja-vocab-1486|technology|一時停止|いちじていし|ichijiteishi|tạm dừng|pause
+ja-vocab-1487|technology|音量|おんりょう|onryō|âm lượng|volume
+ja-vocab-1488|technology|容量|ようりょう|yōryō|dung lượng|capacity
+ja-vocab-1489|technology|メモリー|めもりー|memorī|bộ nhớ|memory
+ja-vocab-1490|technology|機能|きのう|kinō|chức năng|function
+ja-vocab-1491|technology|操作|そうさ|sōsa|thao tác điều khiển|operation
+ja-vocab-1492|technology|故障|こしょう|koshō|hỏng hóc|breakdown
+ja-vocab-1493|technology|修理|しゅうり|shūri|sửa chữa|repair
+ja-vocab-1494|technology|エラー|えらー|erā|lỗi hệ thống|error
+ja-vocab-1495|technology|再起動|さいきどう|saikidō|khởi động lại|restart
+ja-vocab-1496|technology|安全性|あんぜんせい|anzensei|độ an toàn|safety level
+ja-vocab-1497|technology|個人情報|こじんじょうほう|kojinjōhō|thông tin cá nhân|personal information
+ja-vocab-1498|technology|プライバシー|ぷらいばしー|puraibashī|quyền riêng tư|privacy
+ja-vocab-1499|technology|認証|にんしょう|ninshō|xác thực|authentication
+ja-vocab-1500|technology|暗号化|あんごうか|angōka|mã hóa|encryption
+ja-vocab-1501|technology|人工知能|じんこうちのう|jinkōchinō|trí tuệ nhân tạo|artificial intelligence
+ja-vocab-1502|activities|趣味|しゅみ|shumi|sở thích|hobby
+ja-vocab-1503|activities|スポーツ|すぽーつ|supōtsu|thể thao|sports
+ja-vocab-1504|activities|運動|うんどう|undō|vận động|exercise
+ja-vocab-1505|activities|散歩|さんぽ|sanpo|đi dạo|walk for pleasure
+ja-vocab-1506|activities|ジョギング|じょぎんぐ|jogingu|chạy bộ nhẹ|jogging
+ja-vocab-1507|activities|ランニング|らんにんぐ|ran'ningu|chạy bộ|running
+ja-vocab-1508|activities|ウォーキング|うぉーきんぐ|wōkingu|đi bộ rèn sức khỏe|fitness walking
+ja-vocab-1509|activities|体操|たいそう|taisō|thể dục|gymnastics
+ja-vocab-1510|activities|ヨガ|よが|yoga|yoga|yoga
+ja-vocab-1511|activities|水泳|すいえい|suiei|bơi lội|swimming
+ja-vocab-1512|activities|サイクリング|さいくりんぐ|saikuringu|đạp xe|cycling
+ja-vocab-1513|activities|登山|とざん|tozan|leo núi|mountain climbing
+ja-vocab-1514|activities|ハイキング|はいきんぐ|haikingu|đi bộ đường dài|hiking
+ja-vocab-1515|activities|キャンプ|きゃんぷ|kyanpu|cắm trại|camping
+ja-vocab-1516|activities|釣り|つり|tsuri|câu cá|fishing
+ja-vocab-1517|activities|ピクニック|ぴくにっく|pikunikku|dã ngoại|picnic
+ja-vocab-1518|activities|スキー|すきー|sukī|trượt tuyết|skiing
+ja-vocab-1519|activities|スケート|すけーと|sukēto|trượt băng|skating
+ja-vocab-1520|activities|サーフィン|さーふぃん|sāfin|lướt sóng|surfing
+ja-vocab-1521|activities|ダイビング|だいびんぐ|daibingu|lặn biển|diving
+ja-vocab-1522|activities|サッカー|さっかー|sakkā|bóng đá|soccer
+ja-vocab-1523|activities|野球|やきゅう|yakyū|bóng chày|baseball
+ja-vocab-1524|activities|バスケットボール|ばすけっとぼーる|basukettobōru|bóng rổ|basketball
+ja-vocab-1525|activities|バレーボール|ばれーぼーる|barēbōru|bóng chuyền|volleyball
+ja-vocab-1526|activities|テニス|てにす|tenisu|quần vợt|tennis
+ja-vocab-1527|activities|卓球|たっきゅう|takkyū|bóng bàn|table tennis
+ja-vocab-1528|activities|バドミントン|ばどみんとん|badominton|cầu lông|badminton
+ja-vocab-1529|activities|ゴルフ|ごるふ|gorufu|gôn|golf
+ja-vocab-1530|activities|柔道|じゅうどう|jūdō|võ judo|judo
+ja-vocab-1531|activities|空手|からて|karate|võ karate|karate
+ja-vocab-1532|activities|試合|しあい|shiai|trận đấu|match
+ja-vocab-1533|activities|大会|たいかい|taikai|giải đấu|tournament
+ja-vocab-1534|activities|チーム|ちーむ|chīmu|đội|team
+ja-vocab-1535|activities|応援|おうえん|ōen|cổ vũ|cheering
+ja-vocab-1536|activities|勝利|しょうり|shōri|chiến thắng|victory
+ja-vocab-1537|activities|敗北|はいぼく|haiboku|thất bại trong thi đấu|defeat
+ja-vocab-1538|activities|引き分け|ひきわけ|hikiwake|trận hòa|draw
+ja-vocab-1539|activities|得点|とくてん|tokuten|điểm ghi được|points scored
+ja-vocab-1540|activities|反則|はんそく|hansoku|phạm luật|foul
+ja-vocab-1541|activities|審判|しんぱん|shinpan|trọng tài|referee
+ja-vocab-1542|activities|ボール|ぼーる|bōru|quả bóng|ball
+ja-vocab-1543|activities|バット|ばっと|batto|gậy bóng chày|baseball bat
+ja-vocab-1544|activities|ラケット|らけっと|raketto|vợt|racket
+ja-vocab-1545|activities|ゴール|ごーる|gōru|khung thành|goal in sports
+ja-vocab-1546|activities|プール|ぷーる|pūru|bể bơi|swimming pool
+ja-vocab-1547|activities|競技場|きょうぎじょう|kyōgijō|sân vận động|sports stadium
+ja-vocab-1548|activities|ジム|じむ|jimu|phòng tập|fitness gym
+ja-vocab-1549|activities|音楽|おんがく|ongaku|âm nhạc|music
+ja-vocab-1550|activities|歌|うた|uta|bài hát|song
+ja-vocab-1551|activities|曲|きょく|kyoku|bản nhạc|piece of music
+ja-vocab-1552|activities|楽器|がっき|gakki|nhạc cụ|musical instrument
+ja-vocab-1553|activities|ピアノ|ぴあの|piano|đàn piano|piano
+ja-vocab-1554|activities|ギター|ぎたー|gitā|đàn ghi-ta|guitar
+ja-vocab-1555|activities|バイオリン|ばいおりん|baiorin|đàn vĩ cầm|violin
+ja-vocab-1556|activities|ドラム|どらむ|doramu|trống|drum
+ja-vocab-1557|activities|フルート|ふるーと|furūto|sáo tây|flute
+ja-vocab-1558|activities|演奏|えんそう|ensō|biểu diễn nhạc|musical performance
+ja-vocab-1559|activities|合唱|がっしょう|gasshō|hợp xướng|choral singing
+ja-vocab-1560|activities|コンサート|こんさーと|konsāto|buổi hòa nhạc|concert
+ja-vocab-1561|activities|カラオケ|からおけ|karaoke|karaoke|karaoke
+ja-vocab-1562|activities|ダンス|だんす|dansu|khiêu vũ|dance
+ja-vocab-1563|activities|踊り|おどり|odori|điệu múa|dance
+ja-vocab-1564|activities|映画|えいが|eiga|phim|movie
+ja-vocab-1565|activities|映画館|えいがかん|eigakan|rạp chiếu phim|cinema
+ja-vocab-1566|activities|劇場|げきじょう|gekijō|nhà hát|theater
+ja-vocab-1567|activities|演劇|えんげき|engeki|kịch sân khấu|drama on stage
+ja-vocab-1568|activities|舞台|ぶたい|butai|sân khấu|stage
+ja-vocab-1569|activities|チケット|ちけっと|chiketto|vé sự kiện|event ticket
+ja-vocab-1570|activities|観客|かんきゃく|kankyaku|khán giả|audience
+ja-vocab-1571|activities|拍手|はくしゅ|hakushu|vỗ tay|applause
+ja-vocab-1572|activities|テレビ|てれび|terebi|truyền hình|television
+ja-vocab-1573|activities|ラジオ|らじお|rajio|đài phát thanh|radio
+ja-vocab-1574|activities|番組|ばんぐみ|bangumi|chương trình phát sóng|broadcast program
+ja-vocab-1575|activities|アニメ|あにめ|anime|phim hoạt hình|animation
+ja-vocab-1576|activities|漫画|まんが|manga|truyện tranh|comics
+ja-vocab-1577|activities|小説|しょうせつ|shōsetsu|tiểu thuyết|novel
+ja-vocab-1578|activities|詩|し|shi|thơ|poetry
+ja-vocab-1579|activities|雑誌|ざっし|zasshi|tạp chí|magazine
+ja-vocab-1580|activities|本|ほん|hon|sách|book
+ja-vocab-1581|activities|物語|ものがたり|monogatari|câu chuyện|story
+ja-vocab-1582|activities|絵|え|e|bức tranh|picture
+ja-vocab-1583|activities|絵画|かいが|kaiga|hội họa|painting
+ja-vocab-1584|activities|撮影|さつえい|satsuei|chụp ảnh hoặc quay phim|photography or filming
+ja-vocab-1585|activities|手芸|しゅげい|shugei|thủ công trang trí|handicrafts
+ja-vocab-1586|activities|編み物|あみもの|amimono|đan len|knitting
+ja-vocab-1587|activities|折り紙|おりがみ|origami|gấp giấy|origami
+ja-vocab-1588|activities|園芸|えんげい|engei|làm vườn|gardening
+ja-vocab-1589|activities|書道|しょどう|shodō|thư pháp|calligraphy
+ja-vocab-1590|activities|ゲーム|げーむ|gēmu|trò chơi|game
+ja-vocab-1591|activities|将棋|しょうぎ|shōgi|cờ shogi|shogi
+ja-vocab-1592|activities|囲碁|いご|igo|cờ vây|go board game
+ja-vocab-1593|activities|トランプ|とらんぷ|toranpu|bài tây|playing cards
+ja-vocab-1594|activities|パズル|ぱずる|pazuru|trò giải đố|puzzle
+ja-vocab-1595|activities|遊び|あそび|asobi|vui chơi|play
+ja-vocab-1596|activities|祭り|まつり|matsuri|lễ hội|festival
+ja-vocab-1597|activities|花火|はなび|hanabi|pháo hoa|fireworks
+ja-vocab-1598|activities|花見|はなみ|hanami|ngắm hoa anh đào|cherry blossom viewing
+ja-vocab-1599|activities|集まり|あつまり|atsumari|buổi tụ họp|gathering
+ja-vocab-1600|activities|パーティー|ぱーてぃー|pātī|bữa tiệc|party
+ja-vocab-1601|activities|招待|しょうたい|shōtai|mời tham dự|invitation
+ja-vocab-1602|verbs|する|する|suru|làm|do
+ja-vocab-1603|verbs|ある|ある|aru|có (vật vô tri)|exist for things
+ja-vocab-1604|verbs|いる|いる|iru|có (người hoặc động vật)|exist for living beings
+ja-vocab-1605|verbs|行く|いく|iku|đi|go
+ja-vocab-1606|verbs|来る|くる|kuru|đến|come
+ja-vocab-1607|verbs|帰る|かえる|kaeru|về nhà|go home
+ja-vocab-1608|verbs|出る|でる|deru|ra ngoài|go out
+ja-vocab-1609|verbs|入る|はいる|hairu|vào|enter
+ja-vocab-1610|verbs|戻る|もどる|modoru|quay lại|return
+ja-vocab-1611|verbs|着く|つく|tsuku|đến nơi|arrive
+ja-vocab-1612|verbs|起きる|おきる|okiru|thức dậy|get up
+ja-vocab-1613|verbs|寝る|ねる|neru|đi ngủ|go to bed
+ja-vocab-1614|verbs|眠る|ねむる|nemuru|ngủ|sleep
+ja-vocab-1615|verbs|休む|やすむ|yasumu|nghỉ|rest
+ja-vocab-1616|verbs|働く|はたらく|hataraku|làm việc|work
+ja-vocab-1617|verbs|学ぶ|まなぶ|manabu|học hỏi|learn
+ja-vocab-1618|verbs|教える|おしえる|oshieru|dạy|teach
+ja-vocab-1619|verbs|習う|ならう|narau|học từ người dạy|learn from a teacher
+ja-vocab-1620|verbs|覚える|おぼえる|oboeru|ghi nhớ|memorize
+ja-vocab-1621|verbs|忘れる|わすれる|wasureru|quên|forget
+ja-vocab-1622|verbs|見る|みる|miru|nhìn|see
+ja-vocab-1623|verbs|聞く|きく|kiku|nghe|hear
+ja-vocab-1624|verbs|話す|はなす|hanasu|nói chuyện|speak
+ja-vocab-1625|verbs|言う|いう|iu|nói|say
+ja-vocab-1626|verbs|読む|よむ|yomu|đọc|read
+ja-vocab-1627|verbs|書く|かく|kaku|viết|write
+ja-vocab-1628|verbs|考える|かんがえる|kangaeru|suy nghĩ|think
+ja-vocab-1629|verbs|思う|おもう|omou|nghĩ|think
+ja-vocab-1630|verbs|分かる|わかる|wakaru|hiểu|understand
+ja-vocab-1631|verbs|知る|しる|shiru|biết|know
+ja-vocab-1632|verbs|食べる|たべる|taberu|ăn|eat
+ja-vocab-1633|verbs|飲む|のむ|nomu|uống|drink
+ja-vocab-1634|verbs|作る|つくる|tsukuru|làm ra|make
+ja-vocab-1635|verbs|焼く|やく|yaku|nướng|grill or bake
+ja-vocab-1636|verbs|煮る|にる|niru|nấu sôi|simmer
+ja-vocab-1637|verbs|蒸す|むす|musu|hấp|steam
+ja-vocab-1638|verbs|揚げる|あげる|ageru|chiên ngập dầu|deep-fry
+ja-vocab-1639|verbs|切る|きる|kiru|cắt|cut
+ja-vocab-1640|verbs|混ぜる|まぜる|mazeru|trộn|mix
+ja-vocab-1641|verbs|洗う|あらう|arau|rửa|wash
+ja-vocab-1642|verbs|拭く|ふく|fuku|lau|wipe
+ja-vocab-1643|verbs|磨く|みがく|migaku|đánh bóng|polish
+ja-vocab-1644|verbs|掃く|はく|haku|quét|sweep
+ja-vocab-1645|verbs|片付ける|かたづける|katazukeru|dọn dẹp|tidy up
+ja-vocab-1646|verbs|捨てる|すてる|suteru|vứt bỏ|throw away
+ja-vocab-1647|verbs|拾う|ひろう|hirou|nhặt|pick up
+ja-vocab-1648|verbs|置く|おく|oku|đặt|put down
+ja-vocab-1649|verbs|並べる|ならべる|naraberu|xếp thành hàng|line up objects
+ja-vocab-1650|verbs|運ぶ|はこぶ|hakobu|vận chuyển|carry
+ja-vocab-1651|verbs|買う|かう|kau|mua|buy
+ja-vocab-1652|verbs|売る|うる|uru|bán|sell
+ja-vocab-1653|verbs|払う|はらう|harau|trả tiền|pay
+ja-vocab-1654|verbs|選ぶ|えらぶ|erabu|chọn|choose
+ja-vocab-1655|verbs|探す|さがす|sagasu|tìm kiếm|look for
+ja-vocab-1656|verbs|見つける|みつける|mitsukeru|tìm thấy|find
+ja-vocab-1657|verbs|借りる|かりる|kariru|mượn|borrow
+ja-vocab-1658|verbs|貸す|かす|kasu|cho mượn|lend
+ja-vocab-1659|verbs|返す|かえす|kaesu|trả lại|give back
+ja-vocab-1660|verbs|使う|つかう|tsukau|sử dụng|use
+ja-vocab-1661|verbs|開ける|あける|akeru|mở một vật|open something
+ja-vocab-1662|verbs|閉める|しめる|shimeru|đóng một vật|close something
+ja-vocab-1663|verbs|開く|あく|aku|mở ra|become open
+ja-vocab-1664|verbs|閉まる|しまる|shimaru|đóng lại|become closed
+ja-vocab-1665|verbs|つける|つける|tsukeru|bật thiết bị|turn on
+ja-vocab-1666|verbs|消す|けす|kesu|tắt|turn off
+ja-vocab-1667|verbs|壊す|こわす|kowasu|làm hỏng|break something
+ja-vocab-1668|verbs|壊れる|こわれる|kowareru|bị hỏng|break down
+ja-vocab-1669|verbs|直す|なおす|naosu|sửa|fix
+ja-vocab-1670|verbs|治る|なおる|naoru|khỏi bệnh|recover from illness
+ja-vocab-1671|verbs|歩く|あるく|aruku|đi bộ|walk
+ja-vocab-1672|verbs|走る|はしる|hashiru|chạy|run
+ja-vocab-1673|verbs|泳ぐ|およぐ|oyogu|bơi|swim
+ja-vocab-1674|verbs|飛ぶ|とぶ|tobu|bay|fly
+ja-vocab-1675|verbs|登る|のぼる|noboru|leo|climb
+ja-vocab-1676|verbs|降りる|おりる|oriru|xuống xe|get off
+ja-vocab-1677|verbs|乗る|のる|noru|lên xe|get on
+ja-vocab-1678|verbs|止まる|とまる|tomaru|dừng lại|come to a stop
+ja-vocab-1679|verbs|止める|とめる|tomeru|dừng một việc|stop something
+ja-vocab-1680|verbs|動く|うごく|ugoku|chuyển động|move
+ja-vocab-1681|verbs|持つ|もつ|motsu|cầm|hold
+ja-vocab-1682|verbs|取る|とる|toru|lấy|take
+ja-vocab-1683|verbs|渡す|わたす|watasu|đưa cho|hand over
+ja-vocab-1684|verbs|受け取る|うけとる|uketoru|nhận|receive
+ja-vocab-1685|verbs|送る|おくる|okuru|gửi|send
+ja-vocab-1686|verbs|届ける|とどける|todokeru|giao đến|deliver
+ja-vocab-1687|verbs|出す|だす|dasu|lấy ra|take out
+ja-vocab-1688|verbs|呼ぶ|よぶ|yobu|gọi|call
+ja-vocab-1689|verbs|待つ|まつ|matsu|đợi|wait
+ja-vocab-1690|verbs|会う|あう|au|gặp|meet
+ja-vocab-1691|verbs|遊ぶ|あそぶ|asobu|chơi|play
+ja-vocab-1692|verbs|歌う|うたう|utau|hát|sing
+ja-vocab-1693|verbs|踊る|おどる|odoru|nhảy múa|dance
+ja-vocab-1694|verbs|弾く|ひく|hiku|chơi nhạc cụ dây hoặc phím|play a string or keyboard instrument
+ja-vocab-1695|verbs|描く|えがく|egaku|vẽ|draw
+ja-vocab-1696|verbs|笑う|わらう|warau|cười|laugh
+ja-vocab-1697|verbs|泣く|なく|naku|khóc|cry
+ja-vocab-1698|verbs|怒る|おこる|okoru|nổi giận|get angry
+ja-vocab-1699|verbs|喜ぶ|よろこぶ|yorokobu|vui mừng|be pleased
+ja-vocab-1700|verbs|驚く|おどろく|odoroku|ngạc nhiên|be surprised
+ja-vocab-1701|verbs|楽しむ|たのしむ|tanoshimu|tận hưởng|enjoy
+ja-vocab-1702|verbs|始まる|はじまる|hajimaru|bắt đầu diễn ra|begin
+ja-vocab-1703|verbs|始める|はじめる|hajimeru|bắt đầu làm|start something
+ja-vocab-1704|verbs|終わる|おわる|owaru|kết thúc|come to an end
+ja-vocab-1705|verbs|終える|おえる|oeru|hoàn tất|finish something
+ja-vocab-1706|verbs|続く|つづく|tsuzuku|tiếp diễn|continue happening
+ja-vocab-1707|verbs|続ける|つづける|tsuzukeru|tiếp tục làm|keep doing
+ja-vocab-1708|verbs|変わる|かわる|kawaru|thay đổi|change
+ja-vocab-1709|verbs|変える|かえる|kaeru|thay đổi một thứ|change something
+ja-vocab-1710|verbs|増える|ふえる|fueru|tăng lên|increase
+ja-vocab-1711|verbs|増やす|ふやす|fuyasu|làm tăng|increase something
+ja-vocab-1712|verbs|減る|へる|heru|giảm đi|decrease
+ja-vocab-1713|verbs|減らす|へらす|herasu|cắt giảm|reduce something
+ja-vocab-1714|verbs|上がる|あがる|agaru|đi lên|rise
+ja-vocab-1715|verbs|上げる|あげる|ageru|nâng lên|raise
+ja-vocab-1716|verbs|下がる|さがる|sagaru|hạ xuống|go down
+ja-vocab-1717|verbs|下げる|さげる|sageru|hạ một thứ xuống|lower something
+ja-vocab-1718|verbs|落ちる|おちる|ochiru|rơi|fall
+ja-vocab-1719|verbs|落とす|おとす|otosu|làm rơi|drop something
+ja-vocab-1720|verbs|立つ|たつ|tatsu|đứng|stand
+ja-vocab-1721|verbs|座る|すわる|suwaru|ngồi|sit
+ja-vocab-1722|verbs|押す|おす|osu|đẩy; ấn|push
+ja-vocab-1723|verbs|引く|ひく|hiku|kéo|pull
+ja-vocab-1724|verbs|回る|まわる|mawaru|xoay; đi vòng|turn around
+ja-vocab-1725|verbs|回す|まわす|mawasu|xoay một vật|rotate something
+ja-vocab-1726|verbs|曲がる|まがる|magaru|rẽ; cong|turn a corner
+ja-vocab-1727|verbs|曲げる|まげる|mageru|uốn cong|bend something
+ja-vocab-1728|verbs|渡る|わたる|wataru|băng qua|cross
+ja-vocab-1729|verbs|通る|とおる|tōru|đi qua|pass through
+ja-vocab-1730|verbs|通う|かよう|kayou|đi đến thường xuyên|attend regularly
+ja-vocab-1731|verbs|急ぐ|いそぐ|isogu|vội vàng|hurry
+ja-vocab-1732|verbs|遅れる|おくれる|okureru|đến muộn|be late
+ja-vocab-1733|verbs|間に合う|まにあう|maniau|kịp giờ|be in time
+ja-vocab-1734|verbs|間違える|まちがえる|machigaeru|làm sai|make a mistake
+ja-vocab-1735|verbs|迷う|まよう|mayou|lạc đường; phân vân|get lost or hesitate
+ja-vocab-1736|verbs|決める|きめる|kimeru|quyết định|decide
+ja-vocab-1737|verbs|決まる|きまる|kimaru|được quyết định|be decided
+ja-vocab-1738|verbs|頼む|たのむ|tanomu|nhờ; yêu cầu|ask a favor
+ja-vocab-1739|verbs|断る|ことわる|kotowaru|từ chối|refuse
+ja-vocab-1740|verbs|答える|こたえる|kotaeru|trả lời|answer
+ja-vocab-1741|verbs|尋ねる|たずねる|tazuneru|hỏi|inquire
+ja-vocab-1742|verbs|伝える|つたえる|tsutaeru|truyền đạt|convey
+ja-vocab-1743|verbs|手伝う|てつだう|tetsudau|giúp một tay|help with a task
+ja-vocab-1744|verbs|助ける|たすける|tasukeru|giúp đỡ; cứu|help or rescue
+ja-vocab-1745|verbs|守る|まもる|mamoru|bảo vệ; tuân thủ|protect or obey
+ja-vocab-1746|verbs|信じる|しんじる|shinjiru|tin tưởng|believe
+ja-vocab-1747|verbs|疑う|うたがう|utagau|nghi ngờ|doubt
+ja-vocab-1748|verbs|比べる|くらべる|kuraberu|so sánh|compare
+ja-vocab-1749|verbs|調べる|しらべる|shiraberu|tra cứu; tìm hiểu|look into
+ja-vocab-1750|verbs|確かめる|たしかめる|tashikameru|kiểm tra cho chắc|make sure
+ja-vocab-1751|verbs|試す|ためす|tamesu|thử|try out
+ja-vocab-1752|verbs|頑張る|がんばる|ganbaru|cố gắng|do one's best
+ja-vocab-1753|verbs|諦める|あきらめる|akirameru|từ bỏ|give up
+ja-vocab-1754|verbs|慣れる|なれる|nareru|quen với|get used to
+ja-vocab-1755|verbs|疲れる|つかれる|tsukareru|mệt mỏi|get tired
+ja-vocab-1756|verbs|困る|こまる|komaru|gặp khó khăn|be in trouble
+ja-vocab-1757|verbs|悩む|なやむ|nayamu|băn khoăn; khổ tâm|worry over something
+ja-vocab-1758|verbs|感じる|かんじる|kanjiru|cảm thấy|feel
+ja-vocab-1759|verbs|気づく|きづく|kizuku|nhận ra|notice
+ja-vocab-1760|verbs|思い出す|おもいだす|omoidasu|nhớ lại|recall
+ja-vocab-1761|verbs|見える|みえる|mieru|có thể nhìn thấy|be visible
+ja-vocab-1762|verbs|聞こえる|きこえる|kikoeru|nghe thấy|be audible
+ja-vocab-1763|verbs|見せる|みせる|miseru|cho xem|show
+ja-vocab-1764|verbs|教わる|おそわる|osowaru|được dạy|be taught
+ja-vocab-1765|verbs|育つ|そだつ|sodatsu|lớn lên|grow up
+ja-vocab-1766|verbs|育てる|そだてる|sodateru|nuôi dưỡng|raise a child or plant
+ja-vocab-1767|verbs|生まれる|うまれる|umareru|được sinh ra|be born
+ja-vocab-1768|verbs|生きる|いきる|ikiru|sống|live
+ja-vocab-1769|verbs|死ぬ|しぬ|shinu|chết|die
+ja-vocab-1770|verbs|住む|すむ|sumu|cư trú|reside
+ja-vocab-1771|verbs|暮らす|くらす|kurasu|sinh sống|lead a life
+ja-vocab-1772|verbs|引っ越す|ひっこす|hikkosu|chuyển nhà|move house
+ja-vocab-1773|verbs|泊まる|とまる|tomaru|ở qua đêm|stay overnight
+ja-vocab-1774|verbs|迎える|むかえる|mukaeru|đón|welcome or meet someone
+ja-vocab-1775|verbs|別れる|わかれる|wakareru|chia tay|part ways
+ja-vocab-1776|verbs|着る|きる|kiru|mặc áo|put on upper-body clothing
+ja-vocab-1777|verbs|脱ぐ|ぬぐ|nugu|cởi đồ|take off clothing
+ja-vocab-1778|verbs|履く|はく|haku|mặc quần; đi giày|put on trousers or shoes
+ja-vocab-1779|verbs|かぶる|かぶる|kaburu|đội mũ|put on a hat
+ja-vocab-1780|verbs|畳む|たたむ|tatamu|gấp lại|fold
+ja-vocab-1781|verbs|干す|ほす|hosu|phơi khô|hang out to dry
+ja-vocab-1782|verbs|乾く|かわく|kawaku|khô đi|dry out
+ja-vocab-1783|verbs|濡れる|ぬれる|nureru|bị ướt|get wet
+ja-vocab-1784|verbs|汚れる|よごれる|yogoreru|bị bẩn|get dirty
+ja-vocab-1785|verbs|汚す|よごす|yogosu|làm bẩn|make dirty
+ja-vocab-1786|verbs|触る|さわる|sawaru|chạm vào|touch
+ja-vocab-1787|verbs|握る|にぎる|nigiru|nắm chặt|grip
+ja-vocab-1788|verbs|投げる|なげる|nageru|ném|throw
+ja-vocab-1789|verbs|蹴る|ける|keru|đá|kick
+ja-vocab-1790|verbs|打つ|うつ|utsu|đánh; gõ|hit
+ja-vocab-1791|verbs|勝つ|かつ|katsu|thắng|win
+ja-vocab-1792|verbs|負ける|まける|makeru|thua|lose a contest
+ja-vocab-1793|verbs|残る|のこる|nokoru|còn lại|remain
+ja-vocab-1794|verbs|残す|のこす|nokosu|để lại|leave behind
+ja-vocab-1795|verbs|足りる|たりる|tariru|đủ|be enough
+ja-vocab-1796|verbs|足す|たす|tasu|thêm vào|add
+ja-vocab-1797|verbs|分ける|わける|wakeru|chia ra|divide
+ja-vocab-1798|verbs|集める|あつめる|atsumeru|thu thập|collect
+ja-vocab-1799|verbs|集まる|あつまる|atsumaru|tụ họp|gather
+ja-vocab-1800|verbs|払い戻す|はらいもどす|haraimodosu|hoàn tiền|refund
+ja-vocab-1801|adjectives|大きい|おおきい|ōkii|to; lớn|big
+ja-vocab-1802|adjectives|小さい|ちいさい|chiisai|nhỏ|small
+ja-vocab-1803|adjectives|長い|ながい|nagai|dài|long
+ja-vocab-1804|adjectives|短い|みじかい|mijikai|ngắn|short
+ja-vocab-1805|adjectives|高い|たかい|takai|cao; đắt|high or expensive
+ja-vocab-1806|adjectives|低い|ひくい|hikui|thấp|low
+ja-vocab-1807|adjectives|広い|ひろい|hiroi|rộng|wide
+ja-vocab-1808|adjectives|狭い|せまい|semai|hẹp|narrow
+ja-vocab-1809|adjectives|深い|ふかい|fukai|sâu|deep
+ja-vocab-1810|adjectives|浅い|あさい|asai|nông|shallow
+ja-vocab-1811|adjectives|重い|おもい|omoi|nặng|heavy
+ja-vocab-1812|adjectives|軽い|かるい|karui|nhẹ|light in weight
+ja-vocab-1813|adjectives|厚い|あつい|atsui|dày|thick
+ja-vocab-1814|adjectives|薄い|うすい|usui|mỏng; nhạt|thin or dilute
+ja-vocab-1815|adjectives|暑い|あつい|atsui|nóng (thời tiết)|hot weather
+ja-vocab-1816|adjectives|寒い|さむい|samui|lạnh (thời tiết)|cold weather
+ja-vocab-1817|adjectives|暖かい|あたたかい|atatakai|ấm áp|warm
+ja-vocab-1818|adjectives|涼しい|すずしい|suzushii|mát mẻ|cool
+ja-vocab-1819|adjectives|熱い|あつい|atsui|nóng (khi chạm vào)|hot to the touch
+ja-vocab-1820|adjectives|冷たい|つめたい|tsumetai|lạnh (khi chạm vào)|cold to the touch
+ja-vocab-1821|adjectives|新しい|あたらしい|atarashii|mới|new
+ja-vocab-1822|adjectives|古い|ふるい|furui|cũ|old
+ja-vocab-1823|adjectives|若い|わかい|wakai|trẻ|young
+ja-vocab-1824|adjectives|良い|よい|yoi|tốt|good
+ja-vocab-1825|adjectives|悪い|わるい|warui|xấu; tệ|bad
+ja-vocab-1826|adjectives|美しい|うつくしい|utsukushii|đẹp|beautiful
+ja-vocab-1827|adjectives|汚い|きたない|kitanai|bẩn|dirty
+ja-vocab-1828|adjectives|きれい|きれい|kirei|đẹp; sạch sẽ|pretty or clean
+ja-vocab-1829|adjectives|うるさい|うるさい|urusai|ồn ào|noisy
+ja-vocab-1830|adjectives|静か|しずか|shizuka|yên tĩnh|quiet
+ja-vocab-1831|adjectives|忙しい|いそがしい|isogashii|bận rộn|busy
+ja-vocab-1832|adjectives|暇|ひま|hima|rảnh rỗi|free from work
+ja-vocab-1833|adjectives|便利|べんり|benri|tiện lợi|convenient
+ja-vocab-1834|adjectives|不便|ふべん|fuben|bất tiện|inconvenient
+ja-vocab-1835|adjectives|易しい|やさしい|yasashii|dễ|easy
+ja-vocab-1836|adjectives|難しい|むずかしい|muzukashii|khó|difficult
+ja-vocab-1837|adjectives|面白い|おもしろい|omoshiroi|thú vị|interesting
+ja-vocab-1838|adjectives|つまらない|つまらない|tsumaranai|nhàm chán|boring
+ja-vocab-1839|adjectives|楽しい|たのしい|tanoshii|vui vẻ|enjoyable
+ja-vocab-1840|adjectives|嬉しい|うれしい|ureshii|vui mừng|glad
+ja-vocab-1841|adjectives|悲しい|かなしい|kanashii|buồn|sad
+ja-vocab-1842|adjectives|寂しい|さびしい|sabishii|cô đơn|lonely
+ja-vocab-1843|adjectives|怖い|こわい|kowai|đáng sợ|scary
+ja-vocab-1844|adjectives|痛い|いたい|itai|đau|painful
+ja-vocab-1845|adjectives|かゆい|かゆい|kayui|ngứa|itchy
+ja-vocab-1846|adjectives|甘い|あまい|amai|ngọt|sweet
+ja-vocab-1847|adjectives|辛い|からい|karai|cay|spicy
+ja-vocab-1848|adjectives|苦い|にがい|nigai|đắng|bitter
+ja-vocab-1849|adjectives|しょっぱい|しょっぱい|shoppai|mặn|salty
+ja-vocab-1850|adjectives|酸っぱい|すっぱい|suppai|chua|sour
+ja-vocab-1851|adjectives|おいしい|おいしい|oishii|ngon|delicious
+ja-vocab-1852|adjectives|まずい|まずい|mazui|dở (mùi vị)|bad-tasting
+ja-vocab-1853|adjectives|安い|やすい|yasui|rẻ|inexpensive
+ja-vocab-1854|adjectives|速い|はやい|hayai|nhanh|fast
+ja-vocab-1855|adjectives|早い|はやい|hayai|sớm|early
+ja-vocab-1856|adjectives|遅い|おそい|osoi|chậm; muộn|slow or late
+ja-vocab-1857|adjectives|近い|ちかい|chikai|gần|near
+ja-vocab-1858|adjectives|遠い|とおい|tōi|xa|far
+ja-vocab-1859|adjectives|強い|つよい|tsuyoi|mạnh|strong
+ja-vocab-1860|adjectives|弱い|よわい|yowai|yếu|weak
+ja-vocab-1861|adjectives|硬い|かたい|katai|cứng|hard in texture
+ja-vocab-1862|adjectives|柔らかい|やわらかい|yawarakai|mềm|soft
+ja-vocab-1863|adjectives|明るい|あかるい|akarui|sáng|bright
+ja-vocab-1864|adjectives|暗い|くらい|kurai|tối|dark
+ja-vocab-1865|adjectives|丸い|まるい|marui|tròn|round
+ja-vocab-1866|adjectives|四角い|しかくい|shikakui|vuông|square
+ja-vocab-1867|adjectives|同じ|おなじ|onaji|giống nhau|the same
+ja-vocab-1868|adjectives|多い|おおい|ōi|nhiều|numerous
+ja-vocab-1869|adjectives|少ない|すくない|sukunai|ít|few
+ja-vocab-1870|adjectives|十分|じゅうぶん|jūbun|đầy đủ|sufficient
+ja-vocab-1871|adjectives|大切|たいせつ|taisetsu|quan trọng; quý giá|important or precious
+ja-vocab-1872|adjectives|必要|ひつよう|hitsuyō|cần thiết|necessary
+ja-vocab-1873|adjectives|有名|ゆうめい|yūmei|nổi tiếng|famous
+ja-vocab-1874|adjectives|親切|しんせつ|shinsetsu|tốt bụng|kind and helpful
+ja-vocab-1875|adjectives|丁寧|ていねい|teinei|lịch sự; cẩn thận|polite or careful
+ja-vocab-1876|adjectives|正直|しょうじき|shōjiki|trung thực|honest
+ja-vocab-1877|adjectives|真面目|まじめ|majime|nghiêm túc|serious and diligent
+ja-vocab-1878|adjectives|陽気|ようき|yōki|vui tính|cheerful
+ja-vocab-1879|adjectives|元気|げんき|genki|khỏe khoắn; năng động|well and energetic
+ja-vocab-1880|adjectives|丈夫|じょうぶ|jōbu|chắc chắn; khỏe mạnh|sturdy or robust
+ja-vocab-1881|adjectives|好き|すき|suki|yêu thích|fond of
+ja-vocab-1882|adjectives|嫌い|きらい|kirai|không thích|disliked
+ja-vocab-1883|adjectives|上手|じょうず|jōzu|giỏi; khéo|skillful
+ja-vocab-1884|adjectives|下手|へた|heta|vụng; kém|unskillful
+ja-vocab-1885|adjectives|得意|とくい|tokui|giỏi; sở trường|good at
+ja-vocab-1886|adjectives|苦手|にがて|nigate|không giỏi; ngại|not good at
+ja-vocab-1887|adjectives|簡単|かんたん|kantan|đơn giản|simple
+ja-vocab-1888|adjectives|複雑|ふくざつ|fukuzatsu|phức tạp|complicated
+ja-vocab-1889|adjectives|特別|とくべつ|tokubetsu|đặc biệt|special
+ja-vocab-1890|adjectives|退屈|たいくつ|taikutsu|buồn chán|bored or tedious
+ja-vocab-1891|adjectives|珍しい|めずらしい|mezurashii|hiếm; lạ|unusual
+ja-vocab-1892|adjectives|正しい|ただしい|tadashii|đúng|correct
+ja-vocab-1893|adjectives|おかしい|おかしい|okashii|kỳ lạ; buồn cười|strange or funny
+ja-vocab-1894|adjectives|厳しい|きびしい|kibishii|nghiêm khắc|strict
+ja-vocab-1895|adjectives|優しい|やさしい|yasashii|dịu dàng|gentle
+ja-vocab-1896|adjectives|詳しい|くわしい|kuwashii|chi tiết; am hiểu|detailed or knowledgeable
+ja-vocab-1897|adjectives|恥ずかしい|はずかしい|hazukashii|xấu hổ|embarrassed
+ja-vocab-1898|adjectives|眠い|ねむい|nemui|buồn ngủ|sleepy
+ja-vocab-1899|adjectives|細い|ほそい|hosoi|thon; mảnh|slender
+ja-vocab-1900|adjectives|太い|ふとい|futoi|to; dày (dạng trụ)|thick around
+ja-vocab-1901|society|社会|しゃかい|shakai|xã hội|society
+ja-vocab-1902|society|政治|せいじ|seiji|chính trị|politics
+ja-vocab-1903|society|経済|けいざい|keizai|kinh tế|economy
+ja-vocab-1904|society|文化|ぶんか|bunka|văn hóa|culture
+ja-vocab-1905|society|現代|げんだい|gendai|thời hiện đại|modern times
+ja-vocab-1906|society|伝統|でんとう|dentō|truyền thống|tradition
+ja-vocab-1907|society|習慣|しゅうかん|shūkan|thói quen; tập quán|habit or custom
+ja-vocab-1908|society|宗教|しゅうきょう|shūkyō|tôn giáo|religion
+ja-vocab-1909|society|国|くに|kuni|đất nước|country
+ja-vocab-1910|society|国家|こっか|kokka|quốc gia|nation state
+ja-vocab-1911|society|政府|せいふ|seifu|chính phủ|government
+ja-vocab-1912|society|国会|こっかい|kokkai|quốc hội|national parliament
+ja-vocab-1913|society|議会|ぎかい|gikai|hội đồng lập pháp|legislative assembly
+ja-vocab-1914|society|市役所|しやくしょ|shiyakusho|tòa thị chính|city hall
+ja-vocab-1915|society|区役所|くやくしょ|kuyakusho|văn phòng hành chính quận|ward office
+ja-vocab-1916|society|役所|やくしょ|yakusho|cơ quan hành chính|government office
+ja-vocab-1917|society|大使館|たいしかん|taishikan|đại sứ quán|embassy
+ja-vocab-1918|society|領事館|りょうじかん|ryōjikan|lãnh sự quán|consulate
+ja-vocab-1919|society|警察|けいさつ|keisatsu|cảnh sát|police
+ja-vocab-1920|society|治安|ちあん|chian|an ninh trật tự|public safety
+ja-vocab-1921|society|交番|こうばん|kōban|đồn cảnh sát khu phố|neighborhood police box
+ja-vocab-1922|society|消防署|しょうぼうしょ|shōbōsho|trạm cứu hỏa|fire station
+ja-vocab-1923|society|消防|しょうぼう|shōbō|phòng cháy chữa cháy|firefighting
+ja-vocab-1924|society|裁判所|さいばんしょ|saibansho|tòa án|court of law
+ja-vocab-1925|society|裁判|さいばん|saiban|xét xử|trial
+ja-vocab-1926|society|犯罪者|はんざいしゃ|hanzaisha|người phạm tội|criminal
+ja-vocab-1927|society|法律|ほうりつ|hōritsu|pháp luật|law
+ja-vocab-1928|society|規則|きそく|kisoku|quy tắc|rule
+ja-vocab-1929|society|権利|けんり|kenri|quyền lợi|right or entitlement
+ja-vocab-1930|society|義務|ぎむ|gimu|nghĩa vụ|duty
+ja-vocab-1931|society|自由|じゆう|jiyū|tự do|freedom
+ja-vocab-1932|society|平等|びょうどう|byōdō|bình đẳng|equality
+ja-vocab-1933|society|平和|へいわ|heiwa|hòa bình|peace
+ja-vocab-1934|society|戦争|せんそう|sensō|chiến tranh|war
+ja-vocab-1935|society|選挙|せんきょ|senkyo|bầu cử|election
+ja-vocab-1936|society|投票|とうひょう|tōhyō|bỏ phiếu|voting
+ja-vocab-1937|society|候補者|こうほしゃ|kōhosha|ứng cử viên|candidate
+ja-vocab-1938|society|政党|せいとう|seitō|đảng chính trị|political party
+ja-vocab-1939|society|首相|しゅしょう|shushō|thủ tướng|prime minister
+ja-vocab-1940|society|大統領|だいとうりょう|daitōryō|tổng thống|president of a country
+ja-vocab-1941|society|国民|こくみん|kokumin|người dân một nước|people of a nation
+ja-vocab-1942|society|市民|しみん|shimin|công dân; người dân thành phố|citizen
+ja-vocab-1943|society|自治体|じちたい|jichitai|chính quyền địa phương|local government body
+ja-vocab-1944|society|人口|じんこう|jinkō|dân số|population
+ja-vocab-1945|society|世代|せだい|sedai|thế hệ|generation
+ja-vocab-1946|society|少子化|しょうしか|shōshika|tình trạng giảm số trẻ sinh ra|declining birth rate
+ja-vocab-1947|society|高齢化|こうれいか|kōreika|già hóa dân số|population aging
+ja-vocab-1948|society|子育て|こそだて|kosodate|nuôi dạy con|raising children
+ja-vocab-1949|society|福祉|ふくし|fukushi|phúc lợi|social welfare
+ja-vocab-1950|society|社会保障|しゃかいほしょう|shakai hoshō|an sinh xã hội|social security
+ja-vocab-1951|society|年金|ねんきん|nenkin|lương hưu|pension
+ja-vocab-1952|society|税金|ぜいきん|zeikin|tiền thuế|tax
+ja-vocab-1953|society|消費税|しょうひぜい|shōhizei|thuế tiêu dùng|consumption tax
+ja-vocab-1954|society|所得税|しょとくぜい|shotokuzei|thuế thu nhập|income tax
+ja-vocab-1955|society|保険|ほけん|hoken|bảo hiểm|insurance
+ja-vocab-1956|society|健康保険|けんこうほけん|kenkō hoken|bảo hiểm y tế|health insurance
+ja-vocab-1957|society|戸籍|こせき|koseki|hộ tịch|family register
+ja-vocab-1958|society|移住|いじゅう|ijū|chuyển nơi định cư|migration
+ja-vocab-1959|society|移民|いみん|imin|người nhập cư|immigrant
+ja-vocab-1960|society|難民|なんみん|nanmin|người tị nạn|refugee
+ja-vocab-1961|society|国際|こくさい|kokusai|quốc tế|international
+ja-vocab-1962|society|外交|がいこう|gaikō|ngoại giao|diplomacy
+ja-vocab-1963|society|条約|じょうやく|jōyaku|hiệp ước|treaty
+ja-vocab-1964|society|外国|がいこく|gaikoku|nước ngoài|foreign country
+ja-vocab-1965|society|故郷|ふるさと|furusato|quê hương|hometown
+ja-vocab-1966|society|地域|ちいき|chiiki|khu vực|area or region
+ja-vocab-1967|society|地方|ちほう|chihō|địa phương|region or locality
+ja-vocab-1968|society|都会|とかい|tokai|đô thị|city or urban area
+ja-vocab-1969|society|田舎|いなか|inaka|nông thôn|countryside
+ja-vocab-1970|society|近所|きんじょ|kinjo|khu lân cận|neighborhood
+ja-vocab-1971|society|公共|こうきょう|kōkyō|công cộng|public use
+ja-vocab-1972|society|施設|しせつ|shisetsu|cơ sở; công trình|facility
+ja-vocab-1973|society|建設|けんせつ|kensetsu|xây dựng|construction
+ja-vocab-1974|society|工事|こうじ|kōji|công việc thi công|construction work
+ja-vocab-1975|society|工業|こうぎょう|kōgyō|công nghiệp chế tạo|manufacturing industry
+ja-vocab-1976|society|農業|のうぎょう|nōgyō|nông nghiệp|agriculture
+ja-vocab-1977|society|漁業|ぎょぎょう|gyogyō|ngư nghiệp|fishing industry
+ja-vocab-1978|society|製造業|せいぞうぎょう|seizōgyō|ngành sản xuất|manufacturing sector
+ja-vocab-1979|society|貿易|ぼうえき|bōeki|ngoại thương|international trade
+ja-vocab-1980|society|輸出|ゆしゅつ|yushutsu|xuất khẩu|export
+ja-vocab-1981|society|輸入|ゆにゅう|yunyū|nhập khẩu|import
+ja-vocab-1982|society|物価|ぶっか|bukka|giá cả hàng hóa|consumer prices
+ja-vocab-1983|society|景気|けいき|keiki|tình hình kinh tế|economic conditions
+ja-vocab-1984|society|不況|ふきょう|fukyō|suy thoái kinh tế|recession
+ja-vocab-1985|society|雇用|こよう|koyō|việc thuê lao động|employment
+ja-vocab-1986|society|労働|ろうどう|rōdō|lao động|labor
+ja-vocab-1987|society|貧困|ひんこん|hinkon|nghèo đói|poverty
+ja-vocab-1988|society|支援|しえん|shien|hỗ trợ|support
+ja-vocab-1989|society|寄付|きふ|kifu|quyên góp|donation
+ja-vocab-1990|society|ボランティア|ぼらんてぃあ|borantia|tình nguyện viên|volunteer
+ja-vocab-1991|society|団体|だんたい|dantai|đoàn thể|organized group
+ja-vocab-1992|society|組織|そしき|soshiki|tổ chức|organization
+ja-vocab-1993|society|事件|じけん|jiken|vụ việc|incident
+ja-vocab-1994|society|犯罪|はんざい|hanzai|tội phạm (hành vi)|crime
+ja-vocab-1995|society|盗難|とうなん|tōnan|vụ trộm|theft
+ja-vocab-1996|society|詐欺|さぎ|sagi|lừa đảo|fraud
+ja-vocab-1997|society|差別|さべつ|sabetsu|phân biệt đối xử|discrimination
+ja-vocab-1998|society|偏見|へんけん|henken|thành kiến|prejudice
+ja-vocab-1999|society|報道|ほうどう|hōdō|đưa tin|news reporting
+ja-vocab-2000|society|世論|よろん|yoron|dư luận|public opinion
