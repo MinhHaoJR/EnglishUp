@@ -8,7 +8,17 @@ Use original writing. Do not paste textbook, examination, news or copyrighted ex
 
 ## Shared fields
 
-Every item has a stable unique `id`, a `level` (`A1`, `A2`, `B1`, `B2`, `C1`) and a `topic`. The topic registry and Vietnamese display names live in `topics` and `topicVi` in `src/i18n/index.ts`; update both when adding a topic. Keep IDs stable so saved reviews and drafts retain their meaning.
+Every standard lesson has a stable unique `id`, a `level` (`A1`, `A2`, `B1`, `B2`, `C1`, `C2`) and a `topic`. The topic registry and Vietnamese display names live in `topics` and `topicVi` in `src/i18n/index.ts`; update both when adding a topic. Keep IDs stable so saved reviews and drafts retain their meaning. C2 is supported in custom words, CSV and backups; bundled C2 material currently lives in the separate word-relations collection below. Other skill/level selections may have no lessons.
+
+## English synonyms and antonyms
+
+Open **Vocabulary → Synonyms & antonyms**, or `/vocabulary?tab=relations`. The separate, original collection contains 72 headword lessons, 12 at each CEFR level A1–C2. Each teaches one selected sense with an English definition, Vietnamese meaning, original example, one near-synonym, one antonym, related-word meanings/examples and bilingual usage notes. These are 144 directed lexical relations, not synonyms automatically generated for every word in the general vocabulary catalog.
+
+The [Council of Europe defines six CEFR proficiency levels](https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions). [English Vocabulary Profile](https://englishprofile.org/?menu=english-vocabulary-profile) emphasizes individual meanings, not just whole words. The collection uses **editorial lesson difficulty**, guided by the selected sense and context. Related words may have different difficulty or register. Labels are not individually certified word ratings, an IELTS/TOEIC score conversion, or proof of exam readiness. Synonyms are often near-equivalents; an antonym applies to the sense stated on the card. All definitions, examples and usage explanations were written for this app, not copied from dictionary entries.
+
+Source files: `src/data/wordRelations-basic.json` (A1–B1) and `src/data/wordRelations-advanced.json` (B2–C2). `src/data/wordRelations.ts` validates required fields, supported levels, unique headwords/IDs, matching level prefixes, and distinct headword/synonym/antonym strings. Preserve the selected part of speech and check real contextual opposition when editing. Structural validation cannot replace a professional linguistic review.
+
+The collection has its own level, relation-type and accent-insensitive search controls, independent of general vocabulary topic filters. At most 12 cards render per library page. Practice selects up to 10 distinct entries from the current level/search selection. Each two-option question contrasts the authored synonym and antonym for the selected sense, so random unrelated words do not introduce extra plausible answers. Mixed practice alternates the requested relation type. Successful saves use the shared English vocabulary attempt log; scores are 100 or 0, and labels include relation type, lesson level and headword. Existing SRS schedules are unaffected. Attempts survive the existing backup/reset/import flow without a database migration. Unsaved choices and in-progress session position are temporary.
 
 ## Vocabulary — vocabulary.json
 

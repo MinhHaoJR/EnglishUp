@@ -1,0 +1,928 @@
+[
+  {
+    "id": "rel-a1-big",
+    "level": "A1",
+    "word": "big",
+    "pos": "adjective",
+    "meaning": "to, lớn về kích thước",
+    "definition": "Taking up a lot of space because of its size.",
+    "example": "We need a big table for six people.",
+    "synonyms": [
+      { "word": "large", "meaning": "lớn", "example": "A large box stands beside the door." }
+    ],
+    "antonyms": [
+      { "word": "small", "meaning": "nhỏ", "example": "This small bag holds only one book." }
+    ],
+    "usageNote": {
+      "vi": "Big và large gần nghĩa khi nói về kích thước. Không thay large vào các cụm như big sister (chị gái).",
+      "en": "Big and large are close in meaning for size. Large cannot replace big in expressions such as big sister."
+    }
+  },
+  {
+    "id": "rel-a1-happy",
+    "level": "A1",
+    "word": "happy",
+    "pos": "adjective",
+    "meaning": "vui, vui mừng",
+    "definition": "Feeling pleased because something is good or welcome.",
+    "example": "I am happy to see my friend again.",
+    "synonyms": [
+      { "word": "glad", "meaning": "vui mừng", "example": "We are glad that you can come." }
+    ],
+    "antonyms": [
+      { "word": "sad", "meaning": "buồn", "example": "She feels sad when her friend leaves." }
+    ],
+    "usageNote": {
+      "vi": "Glad thường dùng sau be hoặc feel, nhất là khi vui vì một việc cụ thể. Không dùng a glad child thay cho a happy child trong cách nói thông thường.",
+      "en": "Glad usually follows be or feel, often for pleasure about a particular event. A happy child is natural; a glad child is not usual everyday wording."
+    }
+  },
+  {
+    "id": "rel-a1-old",
+    "level": "A1",
+    "word": "old",
+    "pos": "adjective",
+    "meaning": "già, cao tuổi",
+    "definition": "Having lived for many years.",
+    "example": "The old man walks to the park every morning.",
+    "synonyms": [
+      {
+        "word": "elderly",
+        "meaning": "cao tuổi",
+        "example": "An elderly woman is reading by the window."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "young",
+        "meaning": "trẻ tuổi",
+        "example": "The young woman is starting her first job."
+      }
+    ],
+    "usageNote": {
+      "vi": "Ở đây old nói về tuổi của người. Elderly trang trọng hơn và không dùng cho đồ vật; với an old phone, từ trái nghĩa phù hợp là new.",
+      "en": "This sense of old describes a person's age. Elderly is more formal and does not describe objects; the opposite in an old phone is new."
+    }
+  },
+  {
+    "id": "rel-a1-cold",
+    "level": "A1",
+    "word": "cold",
+    "pos": "adjective",
+    "meaning": "lạnh về nhiệt độ",
+    "definition": "Having a low temperature that you can feel.",
+    "example": "The room is cold, so I put on a coat.",
+    "synonyms": [
+      {
+        "word": "chilly",
+        "meaning": "se lạnh, lạnh khó chịu",
+        "example": "It is chilly in the garden this morning."
+      }
+    ],
+    "antonyms": [
+      { "word": "hot", "meaning": "nóng", "example": "The kitchen is hot when the oven is on." }
+    ],
+    "usageNote": {
+      "vi": "Chilly thường tả không khí lạnh hơi khó chịu, không phải mọi mức độ của cold. Các từ này đang nói về nhiệt độ, không phải thái độ lạnh nhạt.",
+      "en": "Chilly often describes air that feels uncomfortably cool, rather than every degree of cold. These examples concern temperature, not an unfriendly attitude."
+    }
+  },
+  {
+    "id": "rel-a1-good",
+    "level": "A1",
+    "word": "good",
+    "pos": "adjective",
+    "meaning": "tốt về chất lượng",
+    "definition": "Of a quality that people like or find useful.",
+    "example": "This is a good camera for family photos.",
+    "synonyms": [
+      {
+        "word": "excellent",
+        "meaning": "rất tốt, xuất sắc",
+        "example": "The new camera takes excellent photos."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "bad",
+        "meaning": "tệ, kém chất lượng",
+        "example": "The bad sound quality makes the video hard to follow."
+      }
+    ],
+    "usageNote": {
+      "vi": "Excellent mạnh hơn good: chất lượng rất cao, không chỉ đạt yêu cầu. Bài này không xét nghĩa good là ngoan hoặc có đạo đức.",
+      "en": "Excellent is stronger than good: it describes very high quality, not merely acceptable quality. This entry does not cover good meaning well behaved or morally right."
+    }
+  },
+  {
+    "id": "rel-a1-fast",
+    "level": "A1",
+    "word": "fast",
+    "pos": "adjective",
+    "meaning": "nhanh về tốc độ di chuyển",
+    "definition": "Able to move a long way in a short time.",
+    "example": "Mai is a fast runner on our team.",
+    "synonyms": [
+      {
+        "word": "quick",
+        "meaning": "nhanh",
+        "example": "That quick little dog can catch the ball."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "slow",
+        "meaning": "chậm",
+        "example": "The slow bus takes an hour to reach the town."
+      }
+    ],
+    "usageNote": {
+      "vi": "Fast và quick cùng tả chuyển động nhanh, nhưng fast thường nói về tốc độ, còn quick cũng nói về thời gian thực hiện ngắn. Ở đây cả ba đều là tính từ.",
+      "en": "Fast and quick can both describe rapid movement. Fast commonly concerns speed, while quick can also mean taking little time. All three words are adjectives here."
+    }
+  },
+  {
+    "id": "rel-a1-easy",
+    "level": "A1",
+    "word": "easy",
+    "pos": "adjective",
+    "meaning": "dễ làm hoặc dễ hiểu",
+    "definition": "Needing little effort to do or understand.",
+    "example": "The first question is easy for me.",
+    "synonyms": [
+      {
+        "word": "simple",
+        "meaning": "đơn giản, dễ",
+        "example": "This simple exercise takes two minutes."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "difficult",
+        "meaning": "khó",
+        "example": "The last question is difficult without a map."
+      }
+    ],
+    "usageNote": {
+      "vi": "Simple gần nghĩa với easy khi bài tập không phức tạp. Một ý tưởng có thể simple nhưng vẫn difficult to carry out (khó thực hiện).",
+      "en": "Simple is close to easy when a task has little complexity. An idea can still be simple but difficult to carry out."
+    }
+  },
+  {
+    "id": "rel-a1-clean",
+    "level": "A1",
+    "word": "clean",
+    "pos": "adjective",
+    "meaning": "sạch, không có bụi bẩn",
+    "definition": "Having no dirt on its surface.",
+    "example": "Please put the clean cups on the shelf.",
+    "synonyms": [
+      {
+        "word": "spotless",
+        "meaning": "sạch không tì vết",
+        "example": "The spotless white plate shines in the light."
+      }
+    ],
+    "antonyms": [
+      { "word": "dirty", "meaning": "bẩn", "example": "Leave your dirty boots outside the door." }
+    ],
+    "usageNote": {
+      "vi": "Spotless nhấn mạnh sạch hoàn toàn, mạnh hơn clean. Tidy chỉ sự ngăn nắp nên không luôn đồng nghĩa với clean.",
+      "en": "Spotless emphasizes complete cleanliness and is stronger than clean. Tidy describes order, so it is not always a synonym of clean."
+    }
+  },
+  {
+    "id": "rel-a1-start",
+    "level": "A1",
+    "word": "start",
+    "pos": "verb",
+    "meaning": "bắt đầu một hoạt động",
+    "definition": "Do the first part of an activity.",
+    "example": "We start our lesson at nine.",
+    "synonyms": [
+      {
+        "word": "begin",
+        "meaning": "bắt đầu",
+        "example": "Please begin the exercise on page five."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "finish",
+        "meaning": "hoàn thành, kết thúc",
+        "example": "We finish our lesson before lunch."
+      }
+    ],
+    "usageNote": {
+      "vi": "Start và begin thay thế nhau trong nhiều hoạt động. Với máy móc, start the car là cách nói tự nhiên; không nói begin the car.",
+      "en": "Start and begin are interchangeable for many activities. For a machine, start the car is natural, but begin the car is not."
+    }
+  },
+  {
+    "id": "rel-a1-close",
+    "level": "A1",
+    "word": "close",
+    "pos": "verb",
+    "meaning": "đóng cửa hoặc vật đang mở",
+    "definition": "Move something so that its opening is covered.",
+    "example": "Please close the window before you leave.",
+    "synonyms": [
+      { "word": "shut", "meaning": "đóng lại", "example": "Shut the gate so the dog stays inside." }
+    ],
+    "antonyms": [{ "word": "open", "meaning": "mở", "example": "Can you open the door for me?" }],
+    "usageNote": {
+      "vi": "Close và shut gần nghĩa với cửa, cửa sổ hoặc cổng. Đây là động từ close, không phải tính từ close mang nghĩa gần.",
+      "en": "Close and shut are close in meaning for doors, windows, and gates. This is the verb close, not the adjective close meaning near."
+    }
+  },
+  {
+    "id": "rel-a1-love",
+    "level": "A1",
+    "word": "love",
+    "pos": "verb",
+    "meaning": "rất thích một thứ hoặc hoạt động",
+    "definition": "Enjoy something very much.",
+    "example": "I love reading stories on rainy days.",
+    "synonyms": [
+      {
+        "word": "adore",
+        "meaning": "rất yêu thích, mê",
+        "example": "The children adore their new board game."
+      }
+    ],
+    "antonyms": [
+      { "word": "hate", "meaning": "rất ghét", "example": "I hate waiting in a long queue." }
+    ],
+    "usageNote": {
+      "vi": "Adore nhấn mạnh sự yêu thích, có sắc thái hào hứng hơn love. Bài này dùng love cho sở thích, không xét mọi sắc thái tình cảm giữa người với người.",
+      "en": "Adore expresses enthusiastic liking and can sound stronger than love. This entry concerns preferences rather than every meaning of love between people."
+    }
+  },
+  {
+    "id": "rel-a1-right",
+    "level": "A1",
+    "word": "right",
+    "pos": "adjective",
+    "meaning": "đúng về thông tin hoặc đáp án",
+    "definition": "Matching the facts or the expected answer.",
+    "example": "You chose the right answer to the question.",
+    "synonyms": [
+      {
+        "word": "correct",
+        "meaning": "chính xác, đúng",
+        "example": "Write the correct date at the top."
+      }
+    ],
+    "antonyms": [
+      { "word": "wrong", "meaning": "sai", "example": "That is the wrong number for our office." }
+    ],
+    "usageNote": {
+      "vi": "Right ở đây nghĩa là đúng, không phải bên phải. Correct thường trang trọng hơn một chút; trái nghĩa của right chỉ phương hướng là left.",
+      "en": "Right here means correct, not the direction. Correct is a little more formal; the opposite of directional right is left."
+    }
+  },
+  {
+    "id": "rel-a2-clever",
+    "level": "A2",
+    "word": "clever",
+    "pos": "adjective",
+    "meaning": "thông minh, có ý tưởng khéo léo",
+    "definition": "Showing an ability to think of good solutions.",
+    "example": "That is a clever way to carry three boxes at once.",
+    "synonyms": [
+      {
+        "word": "smart",
+        "meaning": "thông minh, khôn khéo",
+        "example": "Saving a copy of the file was a smart decision."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "stupid",
+        "meaning": "ngu ngốc, thiếu suy nghĩ",
+        "example": "Leaving the key inside the locked car was a stupid mistake."
+      }
+    ],
+    "usageNote": {
+      "vi": "Smart mang nghĩa thông minh trong bài này, không phải ăn mặc chỉnh tề. Stupid có sắc thái nặng và dễ xúc phạm khi dùng để gọi một người.",
+      "en": "Smart here means intelligent, not neatly dressed. Stupid is a strong negative word and can be insulting when used to label a person."
+    }
+  },
+  {
+    "id": "rel-a2-quiet",
+    "level": "A2",
+    "word": "quiet",
+    "pos": "adjective",
+    "meaning": "yên tĩnh, ít tiếng ồn",
+    "definition": "Having little sound around you.",
+    "example": "We found a quiet room where we could study.",
+    "synonyms": [
+      {
+        "word": "silent",
+        "meaning": "im lặng, không có tiếng động",
+        "example": "The classroom was silent during the test."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "noisy",
+        "meaning": "ồn ào",
+        "example": "The noisy café was a poor place for our meeting."
+      }
+    ],
+    "usageNote": {
+      "vi": "Silent mạnh hơn quiet: thường là không có tiếng động, còn quiet vẫn có thể có âm thanh nhỏ. Không dùng cặp này cho mọi nghĩa của quiet, như a quiet business day.",
+      "en": "Silent is stronger than quiet: it normally means no sound, while quiet can allow soft sounds. This pair does not cover every use, such as a quiet business day."
+    }
+  },
+  {
+    "id": "rel-a2-polite",
+    "level": "A2",
+    "word": "polite",
+    "pos": "adjective",
+    "meaning": "lịch sự trong cách cư xử",
+    "definition": "Treating other people with good manners and respect.",
+    "example": "The polite customer thanked the driver before leaving.",
+    "synonyms": [
+      {
+        "word": "courteous",
+        "meaning": "lịch thiệp, nhã nhặn",
+        "example": "A courteous assistant helped us find the right room."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "rude",
+        "meaning": "thô lỗ, bất lịch sự",
+        "example": "It was rude to interrupt her while she was speaking."
+      }
+    ],
+    "usageNote": {
+      "vi": "Courteous trang trọng hơn polite và thường dùng khi nhận xét cách phục vụ hoặc ứng xử. Rude ở đây nói về hành vi thiếu lịch sự.",
+      "en": "Courteous is more formal than polite and often describes service or conduct. Rude here refers to bad manners."
+    }
+  },
+  {
+    "id": "rel-a2-safe",
+    "level": "A2",
+    "word": "safe",
+    "pos": "adjective",
+    "meaning": "an toàn, được bảo vệ khỏi nguy hiểm",
+    "definition": "Protected well enough that harm is unlikely.",
+    "example": "The children have a safe place to play behind the house.",
+    "synonyms": [
+      {
+        "word": "secure",
+        "meaning": "an toàn, được bảo vệ chắc chắn",
+        "example": "The centre provides a secure place for children to play."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "dangerous",
+        "meaning": "nguy hiểm",
+        "example": "The broken bridge is a dangerous place to cross the river."
+      }
+    ],
+    "usageNote": {
+      "vi": "Secure nhấn mạnh có biện pháp bảo vệ hoặc kiểm soát. Không dùng secure thay safe trong mọi cụm, chẳng hạn safe to eat (ăn được an toàn).",
+      "en": "Secure emphasizes protection or controlled access. It cannot replace safe in every expression, such as safe to eat."
+    }
+  },
+  {
+    "id": "rel-a2-cheap",
+    "level": "A2",
+    "word": "cheap",
+    "pos": "adjective",
+    "meaning": "rẻ, có giá thấp",
+    "definition": "Costing little money compared with similar things.",
+    "example": "We found a cheap ticket for the morning train.",
+    "synonyms": [
+      {
+        "word": "inexpensive",
+        "meaning": "không đắt",
+        "example": "The shop sells inexpensive notebooks for students."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "expensive",
+        "meaning": "đắt tiền",
+        "example": "That expensive ticket includes a meal and a larger seat."
+      }
+    ],
+    "usageNote": {
+      "vi": "Inexpensive nói trung tính về giá thấp. Cheap đôi khi hàm ý chất lượng kém, nhưng bài này chỉ xét giá tiền.",
+      "en": "Inexpensive is a neutral way to describe a low price. Cheap can also suggest poor quality, but this entry concerns price only."
+    }
+  },
+  {
+    "id": "rel-a2-wet",
+    "level": "A2",
+    "word": "wet",
+    "pos": "adjective",
+    "meaning": "ướt, có nước hoặc chất lỏng",
+    "definition": "Having water or another liquid on or in something.",
+    "example": "My socks are wet after the walk in the rain.",
+    "synonyms": [
+      {
+        "word": "damp",
+        "meaning": "ẩm, hơi ướt",
+        "example": "The towel is still damp, so leave it in the sun."
+      }
+    ],
+    "antonyms": [
+      { "word": "dry", "meaning": "khô", "example": "Put on a dry shirt before you go outside." }
+    ],
+    "usageNote": {
+      "vi": "Damp chỉ hơi ướt; đồ damp chưa chắc ướt nhiều như đồ wet. Cả ba từ ở đây mô tả độ ẩm của vật.",
+      "en": "Damp means slightly wet; a damp item is not necessarily very wet. All three words here describe moisture in an object."
+    }
+  },
+  {
+    "id": "rel-a2-strong",
+    "level": "A2",
+    "word": "strong",
+    "pos": "adjective",
+    "meaning": "mạnh về lực hoặc sức tác động",
+    "definition": "Having enough force to move or affect things greatly.",
+    "example": "The strong wind moved the garden chairs.",
+    "synonyms": [
+      {
+        "word": "powerful",
+        "meaning": "mạnh mẽ, có lực lớn",
+        "example": "A powerful wave pushed the boat towards the beach."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "weak",
+        "meaning": "yếu, ít lực",
+        "example": "The weak wind barely moved the leaves."
+      }
+    ],
+    "usageNote": {
+      "vi": "Powerful gần nghĩa với strong khi nói về lực. Các cụm như strong coffee thường cần từ khác; powerful coffee không phải cách thay tự nhiên.",
+      "en": "Powerful is close to strong when describing force. Expressions such as strong coffee need different wording; powerful coffee is not a natural direct replacement."
+    }
+  },
+  {
+    "id": "rel-a2-repair",
+    "level": "A2",
+    "word": "repair",
+    "pos": "verb",
+    "meaning": "sửa chữa vật bị hỏng",
+    "definition": "Make a damaged or broken thing work properly again.",
+    "example": "The mechanic will repair my bicycle tomorrow.",
+    "synonyms": [
+      {
+        "word": "fix",
+        "meaning": "sửa, sửa chữa",
+        "example": "Can you fix the broken lamp on my desk?"
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "damage",
+        "meaning": "làm hỏng",
+        "example": "Heavy rain can damage the wooden roof."
+      }
+    ],
+    "usageNote": {
+      "vi": "Fix thông dụng hơn trong hội thoại; repair cụ thể về sửa hỏng. Damage gây hư hại, đối lập với việc khắc phục hư hại trong ngữ cảnh này.",
+      "en": "Fix is common in conversation; repair specifically concerns restoring a damaged thing. Damage creates the harm that repair reverses in this context."
+    }
+  },
+  {
+    "id": "rel-a2-late",
+    "level": "A2",
+    "word": "late",
+    "pos": "adjective",
+    "meaning": "trễ hơn giờ dự kiến",
+    "definition": "Arriving or happening after the planned time.",
+    "example": "The late train made us miss the beginning of the show.",
+    "synonyms": [
+      {
+        "word": "delayed",
+        "meaning": "bị chậm, bị trì hoãn",
+        "example": "Passengers on the delayed flight received a new departure time."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "early",
+        "meaning": "sớm hơn dự kiến",
+        "example": "An early delivery arrived before the shop opened."
+      }
+    ],
+    "usageNote": {
+      "vi": "Delayed nhấn mạnh có sự chậm trễ so với kế hoạch và ở đây là tính từ. Late còn có nghĩa khác, như late evening, nên không luôn thay bằng delayed.",
+      "en": "Delayed emphasizes a delay from the schedule and is an adjective here. Late has other meanings, as in late evening, where delayed cannot replace it."
+    }
+  },
+  {
+    "id": "rel-a2-beautiful",
+    "level": "A2",
+    "word": "beautiful",
+    "pos": "adjective",
+    "meaning": "đẹp khi nhìn vào",
+    "definition": "Very pleasing to look at.",
+    "example": "We walked through a beautiful garden full of flowers.",
+    "synonyms": [
+      {
+        "word": "lovely",
+        "meaning": "đẹp, đáng yêu",
+        "example": "There is a lovely view of the hills from this window."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "ugly",
+        "meaning": "xấu, khó coi",
+        "example": "The empty building has an ugly concrete wall."
+      }
+    ],
+    "usageNote": {
+      "vi": "Lovely có thể tả vẻ đẹp trong hội thoại, nhưng cũng có nghĩa dễ chịu hoặc tử tế. Ở đây các từ chỉ đánh giá vẻ ngoài.",
+      "en": "Lovely can describe beauty in conversation, but it can also mean pleasant or kind. These examples concern appearance."
+    }
+  },
+  {
+    "id": "rel-a2-angry",
+    "level": "A2",
+    "word": "angry",
+    "pos": "adjective",
+    "meaning": "tức giận",
+    "definition": "Feeling upset and wanting to object because something seems wrong.",
+    "example": "He was angry when someone took his bicycle without asking.",
+    "synonyms": [
+      {
+        "word": "mad",
+        "meaning": "tức giận, trong cách nói thân mật",
+        "example": "I was mad about the change because nobody told me."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "calm",
+        "meaning": "bình tĩnh",
+        "example": "She stayed calm and explained the problem clearly."
+      }
+    ],
+    "usageNote": {
+      "vi": "Mad mang nghĩa angry phổ biến trong tiếng Anh Mỹ thân mật; từ này còn nhiều nghĩa khác. Calm đối lập với trạng thái bộc lộ tức giận trong ví dụ này.",
+      "en": "Mad meaning angry is common in informal American English and has other meanings too. Calm contrasts with an openly angry state in this context."
+    }
+  },
+  {
+    "id": "rel-a2-rich",
+    "level": "A2",
+    "word": "rich",
+    "pos": "adjective",
+    "meaning": "giàu có về tiền bạc",
+    "definition": "Having much more money and property than is needed for daily life.",
+    "example": "The rich owner paid for a new library in the village.",
+    "synonyms": [
+      {
+        "word": "wealthy",
+        "meaning": "giàu có",
+        "example": "A wealthy family donated the land for the school."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "poor",
+        "meaning": "nghèo, ít tiền",
+        "example": "The charity helps poor families buy school supplies."
+      }
+    ],
+    "usageNote": {
+      "vi": "Wealthy thường trang trọng hơn rich khi nói về tiền. Không dùng cặp này cho rich food (đồ ăn béo, đậm) hoặc rich colours (màu đậm).",
+      "en": "Wealthy is often more formal than rich when discussing money. This pair does not cover rich food or rich colours."
+    }
+  },
+  {
+    "id": "rel-b1-brave",
+    "level": "B1",
+    "word": "brave",
+    "pos": "adjective",
+    "meaning": "dũng cảm khi đối diện khó khăn hoặc nguy hiểm",
+    "definition": "Willing to face danger or difficulty despite possible fear.",
+    "example": "The brave student spoke up when others were treated unfairly.",
+    "synonyms": [
+      {
+        "word": "courageous",
+        "meaning": "can đảm",
+        "example": "It was courageous to report the problem despite the pressure to stay silent."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "cowardly",
+        "meaning": "hèn nhát, thiếu can đảm",
+        "example": "The story presents his decision to abandon his friends as cowardly."
+      }
+    ],
+    "usageNote": {
+      "vi": "Courageous trang trọng hơn brave. Cowardly là lời phê phán mạnh; afraid không phải từ trái nghĩa chính xác, vì một người vẫn có thể sợ mà hành động dũng cảm.",
+      "en": "Courageous is more formal than brave. Cowardly is strongly critical; afraid is not an exact opposite, since a person can feel fear and still act bravely."
+    }
+  },
+  {
+    "id": "rel-b1-calm",
+    "level": "B1",
+    "word": "calm",
+    "pos": "adjective",
+    "meaning": "bình tĩnh, kiểm soát được cảm xúc",
+    "definition": "Not showing strong worry, anger, or excitement.",
+    "example": "Her calm voice helped the group discuss the problem.",
+    "synonyms": [
+      {
+        "word": "composed",
+        "meaning": "điềm tĩnh, giữ được bình tĩnh",
+        "example": "The speaker remained composed when the microphone stopped working."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "agitated",
+        "meaning": "bồn chồn, kích động",
+        "example": "The agitated passenger kept asking when the bus would arrive."
+      }
+    ],
+    "usageNote": {
+      "vi": "Composed nhấn mạnh khả năng giữ bình tĩnh trước áp lực. Đây là cảm xúc của người; calm sea (biển lặng) có các từ đối lập khác.",
+      "en": "Composed emphasizes keeping control under pressure. This entry concerns people; calm sea has different opposites."
+    }
+  },
+  {
+    "id": "rel-b1-honest",
+    "level": "B1",
+    "word": "honest",
+    "pos": "adjective",
+    "meaning": "trung thực, nói đúng sự thật",
+    "definition": "Saying what is true instead of trying to deceive someone.",
+    "example": "Please give an honest answer about what happened.",
+    "synonyms": [
+      {
+        "word": "truthful",
+        "meaning": "đúng sự thật, thật thà",
+        "example": "The witness gave a truthful account of the accident."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "dishonest",
+        "meaning": "không trung thực, gian dối",
+        "example": "A dishonest answer can make a small mistake much worse."
+      }
+    ],
+    "usageNote": {
+      "vi": "Truthful tập trung vào việc nói sự thật. Honest còn có nghĩa rộng hơn là không gian lận hoặc trộm cắp, nên hai từ không luôn thay thế được.",
+      "en": "Truthful focuses on telling the truth. Honest can also mean not cheating or stealing, so the words are not interchangeable in every context."
+    }
+  },
+  {
+    "id": "rel-b1-generous",
+    "level": "B1",
+    "word": "generous",
+    "pos": "adjective",
+    "meaning": "rộng rãi, sẵn lòng cho hoặc chia sẻ",
+    "definition": "Happy to share money or other useful things with people.",
+    "example": "Our generous neighbour bought books for every child in the club.",
+    "synonyms": [
+      {
+        "word": "open-handed",
+        "meaning": "hào phóng, rộng rãi với tiền bạc",
+        "example": "An open-handed donor paid for all the team's equipment."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "stingy",
+        "meaning": "keo kiệt, không muốn cho hoặc chi tiền",
+        "example": "The character is too stingy to share even a small prize."
+      }
+    ],
+    "usageNote": {
+      "vi": "Open-handed thường nói về việc cho tiền hoặc quà. Stingy mang sắc thái chê trách; bài này không dùng generous trong nghĩa khẩu phần lớn.",
+      "en": "Open-handed usually concerns giving money or gifts. Stingy is disapproving; this entry does not use generous to describe a large portion."
+    }
+  },
+  {
+    "id": "rel-b1-accept",
+    "level": "B1",
+    "word": "accept",
+    "pos": "verb",
+    "meaning": "chấp nhận một lời đề nghị công việc",
+    "definition": "Say yes to something that someone offers you.",
+    "example": "I will accept the job offer after discussing the schedule.",
+    "synonyms": [
+      {
+        "word": "take",
+        "meaning": "nhận, chấp nhận lời đề nghị",
+        "example": "She decided to take the job after meeting the team."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "refuse",
+        "meaning": "từ chối",
+        "example": "He had to refuse the offer because he was moving away."
+      }
+    ],
+    "usageNote": {
+      "vi": "Take gần nghĩa với accept khi nhận công việc hoặc đề nghị. Không thay trực tiếp accept bằng take trong accept an invitation (nhận lời mời) hay accept that something is true (thừa nhận điều gì đúng).",
+      "en": "Take is close to accept for jobs or offers. It does not directly replace accept in accept an invitation or accept that something is true."
+    }
+  },
+  {
+    "id": "rel-b1-increase",
+    "level": "B1",
+    "word": "increase",
+    "pos": "verb",
+    "meaning": "tăng lên về số lượng hoặc quy mô",
+    "definition": "Become greater in number, amount, or size.",
+    "example": "Student numbers may increase when the new course opens.",
+    "synonyms": [
+      {
+        "word": "grow",
+        "meaning": "tăng lên",
+        "example": "Sales usually grow during the summer holidays."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "decrease",
+        "meaning": "giảm xuống",
+        "example": "Travel costs decrease when we book our tickets early."
+      }
+    ],
+    "usageNote": {
+      "vi": "Trong ví dụ này cả ba là nội động từ, không có tân ngữ. Increase còn dùng được với tân ngữ, nhưng không thể luôn thay bằng grow, như increase the temperature.",
+      "en": "All three are intransitive here, with no direct object. Increase can also take an object, but grow cannot always replace it, as in increase the temperature."
+    }
+  },
+  {
+    "id": "rel-b1-improve",
+    "level": "B1",
+    "word": "improve",
+    "pos": "verb",
+    "meaning": "cải thiện chất lượng của một thứ",
+    "definition": "Make something better than it was before.",
+    "example": "Clearer lighting will improve the appearance of the room.",
+    "synonyms": [
+      {
+        "word": "enhance",
+        "meaning": "nâng cao, làm tốt hơn",
+        "example": "The new lamps enhance the appearance of the entrance."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "worsen",
+        "meaning": "làm tệ hơn",
+        "example": "Adding too much text can worsen the design of a poster."
+      }
+    ],
+    "usageNote": {
+      "vi": "Enhance trang trọng hơn, thường nói về nâng cao chất lượng hay sức hấp dẫn. Bài này dùng improve có tân ngữ; trong My health improved, enhance không thay thế trực tiếp được.",
+      "en": "Enhance is more formal and often concerns quality or appeal. Improve takes an object here; enhance cannot directly replace it in My health improved."
+    }
+  },
+  {
+    "id": "rel-b1-allow",
+    "level": "B1",
+    "word": "allow",
+    "pos": "verb",
+    "meaning": "cho phép làm một việc",
+    "definition": "Give someone permission to do something.",
+    "example": "The teacher will allow us to use a dictionary for this task.",
+    "synonyms": [
+      {
+        "word": "permit",
+        "meaning": "cho phép",
+        "example": "The rules permit visitors to take photos in the garden."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "forbid",
+        "meaning": "cấm",
+        "example": "The rules forbid visitors to enter the work area."
+      }
+    ],
+    "usageNote": {
+      "vi": "Permit trang trọng hơn allow và thường gặp trong quy định. Với người làm tân ngữ, cả ba có thể theo mẫu động từ + người + to + động từ.",
+      "en": "Permit is more formal than allow and is common in rules. With a person as the object, all three can follow the pattern verb + person + to + verb."
+    }
+  },
+  {
+    "id": "rel-b1-success",
+    "level": "B1",
+    "word": "success",
+    "pos": "noun",
+    "meaning": "một việc hoặc kết quả thành công",
+    "definition": "An event or result that achieves what people hoped for.",
+    "example": "The school concert was a success and raised money for new instruments.",
+    "synonyms": [
+      {
+        "word": "triumph",
+        "meaning": "thành công lớn, thắng lợi",
+        "example": "The final performance was a triumph for the young band."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "failure",
+        "meaning": "sự thất bại, việc không đạt mục tiêu",
+        "example": "The first event was a failure because almost nobody came."
+      }
+    ],
+    "usageNote": {
+      "vi": "Triumph nhấn mạnh thành công lớn hơn success. Ở đây cả ba là danh từ đếm được chỉ một sự việc; success cũng có cách dùng không đếm được.",
+      "en": "Triumph emphasizes a greater success. All three are countable nouns for an event here; success also has uncountable uses."
+    }
+  },
+  {
+    "id": "rel-b1-advantage",
+    "level": "B1",
+    "word": "advantage",
+    "pos": "noun",
+    "meaning": "lợi thế, điểm có lợi",
+    "definition": "A useful feature that makes a choice or situation better.",
+    "example": "One advantage of this flat is its short distance from the station.",
+    "synonyms": [
+      {
+        "word": "benefit",
+        "meaning": "lợi ích",
+        "example": "A major benefit of the course is its flexible schedule."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "disadvantage",
+        "meaning": "bất lợi, điểm hạn chế",
+        "example": "The main disadvantage of the flat is the noise from the road."
+      }
+    ],
+    "usageNote": {
+      "vi": "Advantage thường nói về điểm có lợi khi so sánh lựa chọn; benefit tập trung vào điều tốt nhận được. Không thay benefit vào mọi cụm như take advantage of.",
+      "en": "Advantage often identifies a favourable feature when comparing choices; benefit focuses on something good that is gained. Benefit does not replace advantage in every phrase, such as take advantage of."
+    }
+  },
+  {
+    "id": "rel-b1-arrive",
+    "level": "B1",
+    "word": "arrive",
+    "pos": "verb",
+    "meaning": "đến một địa điểm",
+    "definition": "Get to the place where a journey ends.",
+    "example": "We expect to arrive at the campsite before dark.",
+    "synonyms": [
+      {
+        "word": "reach",
+        "meaning": "đến, tới",
+        "example": "The walkers hope to reach the village by lunchtime."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "depart",
+        "meaning": "rời đi, khởi hành",
+        "example": "The coach will depart from the station at eight."
+      }
+    ],
+    "usageNote": {
+      "vi": "Arrive dùng at hoặc in trước địa điểm; reach nhận địa điểm trực tiếp, không thêm at. Depart trang trọng hơn leave; cặp đối lập là đến và rời một nơi.",
+      "en": "Arrive uses at or in before a place; reach takes the place directly without at. Depart is more formal than leave; the contrast is arriving at and leaving a place."
+    }
+  },
+  {
+    "id": "rel-b1-simple",
+    "level": "B1",
+    "word": "simple",
+    "pos": "adjective",
+    "meaning": "đơn giản, ít phần phức tạp",
+    "definition": "Made of few parts or steps that are easy to understand.",
+    "example": "The guide gives a simple explanation of how the machine works.",
+    "synonyms": [
+      {
+        "word": "straightforward",
+        "meaning": "rõ ràng, dễ hiểu hoặc dễ làm",
+        "example": "The website provides straightforward instructions for new users."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "complicated",
+        "meaning": "phức tạp, khó hiểu",
+        "example": "The complicated form has six pages of questions."
+      }
+    ],
+    "usageNote": {
+      "vi": "Straightforward gần nghĩa với simple khi mô tả quy trình hoặc lời giải thích dễ hiểu. Simple còn có nghĩa mộc mạc hoặc không trang trí, ngoài phạm vi bài này.",
+      "en": "Straightforward is close to simple for clear processes or explanations. Simple can also mean plain or undecorated, which is outside this entry's scope."
+    }
+  }
+]

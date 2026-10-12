@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { useApp } from '../../app/store';
 import { vocabulary } from '../../data/content';
 import type { Word } from '../../data/schema';
@@ -10,6 +11,7 @@ import { db, download } from '../../services/storage';
 import { dueQueue, schedule, type Rating } from '../../services/srs';
 import { importCSV, exportCSV } from '../../services/csv';
 import TranslationPractice from './TranslationPractice';
+import WordRelations from './WordRelations';
 import { groupWords, searchWords, paginateWords } from '../../services/vocabulary';
 type Mode = 'flashcards' | 'choice' | 'type' | 'spell';
 export default function Vocabulary() {
@@ -20,7 +22,20 @@ export default function Vocabulary() {
   const { value: reviews = [] } = useLive(() => db.reviews.toArray());
   const all = [...vocabulary, ...custom];
   const filtered = useFiltered(all);
-  const [tab, setTab] = useState<'practice' | 'library' | 'translation'>('practice');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const requestedTab = searchParams.get('tab');
+  const tab =
+    requestedTab === 'library' || requestedTab === 'translation' || requestedTab === 'relations'
+      ? requestedTab
+      : 'practice';
+  function setTab(next: 'practice' | 'library' | 'translation' | 'relations') {
+    setSearchParams((previous) => {
+      const params = new URLSearchParams(previous);
+      if (next === 'practice') params.delete('tab');
+      else params.set('tab', next);
+      return params;
+    });
+  }
   const [mode, setMode] = useState<Mode>('flashcards');
   const [queue, setQueue] = useState<Word[]>([]);
   const [index, setIndex] = useState(0);
@@ -99,24 +114,30 @@ export default function Vocabulary() {
           'Learn in context. Review at the right time.',
         )}
       >
-        <button className="primary" onClick={() => setEditing({})}>
-          ＋ {t('add')}
-        </button>
+        {tab !== 'relations' && (
+          <button className="primary" onClick={() => setEditing({})}>
+            ＋ {t('add')}
+          </button>
+        )}
       </PageTitle>
-      <div className="stats">
-        {[
-          [t('new'), all.length - reviews.filter((r) => all.some((w) => w.id === r.id)).length],
-          [t('learning'), reviews.filter((r) => r.interval < 21).length],
-          [t('mastered'), reviews.filter((r) => r.interval >= 21).length],
-          [t('accuracy'), `${accuracy}%`],
-        ].map(([label, n]) => (
-          <div className="stat" key={label}>
-            <span>{label}</span>
-            <strong>{n}</strong>
-          </div>
-        ))}
-      </div>
-      {editing && <WordEditor word={editing} onClose={() => setEditing(null)} />}
+      {tab !== 'relations' && (
+        <div className="stats">
+          {[
+            [t('new'), all.length - reviews.filter((r) => all.some((w) => w.id === r.id)).length],
+            [t('learning'), reviews.filter((r) => r.interval < 21).length],
+            [t('mastered'), reviews.filter((r) => r.interval >= 21).length],
+            [t('accuracy'), `${accuracy}%`],
+          ].map(([label, n]) => (
+            <div className="stat" key={label}>
+              <span>{label}</span>
+              <strong>{n}</strong>
+            </div>
+          ))}
+        </div>
+      )}
+      {editing && tab !== 'relations' && (
+        <WordEditor word={editing} onClose={() => setEditing(null)} />
+      )}
       <div className="tabs">
         <button aria-pressed={tab === 'practice'} onClick={() => setTab('practice')}>
           {t('practiceTab')}
@@ -127,8 +148,11 @@ export default function Vocabulary() {
         <button aria-pressed={tab === 'translation'} onClick={() => setTab('translation')}>
           {bi('Luyện viết và dịch', 'Translation practice')}
         </button>
+        <button aria-pressed={tab === 'relations'} onClick={() => setTab('relations')}>
+          {bi('Đồng nghĩa & trái nghĩa', 'Synonyms & antonyms')}
+        </button>
       </div>
-      {(!card || tab !== 'practice') && (
+      {tab !== 'relations' && (!card || tab !== 'practice') && (
         <>
           <Filters availableTopics={topicGroups.map((group) => group.topic)} />
           <section
@@ -180,7 +204,9 @@ export default function Vocabulary() {
       )}
       {error && <Notice error>{error}</Notice>}
       {message && <Notice>{message}</Notice>}
-      {tab === 'translation' ? (
+      {tab === 'relations' ? (
+        <WordRelations />
+      ) : tab === 'translation' ? (
         <TranslationPractice words={filtered} />
       ) : tab === 'library' ? (
         <>

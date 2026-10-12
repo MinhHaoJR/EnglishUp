@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { liveQuery } from 'dexie';
 import { useApp } from '../app/store';
 import { useT, topics, topicVi } from '../i18n';
-import type { Level } from '../data/schema';
+import { levelSchema, type Level } from '../data/schema';
 export function useLive<T>(query: () => Promise<T>, deps: unknown[] = []) {
   const [value, setValue] = useState<T>();
   const [error, setError] = useState('');
@@ -25,7 +25,7 @@ export function Filters({ availableTopics = topics }: { availableTopics?: string
         {t('level')}
         <select value={level} onChange={(e) => filter(e.target.value as Level | 'all', topic)}>
           <option value="all">{t('allLevels')}</option>
-          {['A1', 'A2', 'B1', 'B2', 'C1'].map((x) => (
+          {levelSchema.options.map((x) => (
             <option key={x}>{x}</option>
           ))}
         </select>

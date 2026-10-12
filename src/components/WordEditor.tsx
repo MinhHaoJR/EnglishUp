@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { wordSchema, type Word, type Level } from '../data/schema';
+import { wordSchema, levelSchema, type Word, type Level } from '../data/schema';
 import { topics, topicVi, useT, useBi } from '../i18n';
 import { db } from '../services/storage';
 import { Notice } from './shared';
@@ -80,7 +80,7 @@ export function WordEditor({ word, onClose }: { word?: Partial<Word>; onClose: (
           value={form.level}
           onChange={(e) => setForm({ ...form, level: e.target.value as Level })}
         >
-          {['A1', 'A2', 'B1', 'B2', 'C1'].map((l) => (
+          {levelSchema.options.map((l) => (
             <option key={l}>{l}</option>
           ))}
         </select>

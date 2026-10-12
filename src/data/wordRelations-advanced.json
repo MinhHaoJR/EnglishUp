@@ -1,0 +1,974 @@
+[
+  {
+    "id": "rel-b2-accurate",
+    "level": "B2",
+    "word": "accurate",
+    "pos": "adjective",
+    "meaning": "chính xác, đúng với thực tế",
+    "definition": "Matching the facts without introducing mistakes.",
+    "example": "An accurate sales report helps us plan next month's budget.",
+    "synonyms": [
+      {
+        "word": "correct",
+        "meaning": "đúng",
+        "example": "Please enter the correct delivery address before paying."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "inaccurate",
+        "meaning": "không chính xác",
+        "example": "The inaccurate total included the same payment twice."
+      }
+    ],
+    "usageNote": {
+      "vi": "Accurate và correct gần nghĩa khi nói về thông tin đúng. Accurate nhấn mạnh sự khớp với thực tế; correct còn dùng cho đáp án hoặc hành vi phù hợp.",
+      "en": "Accurate and correct overlap for factual information. Accurate stresses correspondence with reality; correct also describes answers or appropriate behaviour."
+    }
+  },
+  {
+    "id": "rel-b2-temporary",
+    "level": "B2",
+    "word": "temporary",
+    "pos": "adjective",
+    "meaning": "tạm thời, chỉ kéo dài trong một thời gian",
+    "definition": "Intended to remain in place for a limited period.",
+    "example": "The library has a temporary entrance while builders repair the front steps.",
+    "synonyms": [
+      {
+        "word": "short-term",
+        "meaning": "ngắn hạn",
+        "example": "We need a short-term solution until the new equipment arrives."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "permanent",
+        "meaning": "lâu dài, cố định",
+        "example": "The team moved into a permanent office beside the station."
+      }
+    ],
+    "usageNote": {
+      "vi": "Temporary đối lập với permanent về thời gian tồn tại. Short-term nhấn mạnh thời gian ngắn; một giải pháp temporary vẫn có thể kéo dài khá lâu.",
+      "en": "Temporary contrasts with permanent in duration. Short-term stresses a short period; something temporary can still last quite a long time."
+    }
+  },
+  {
+    "id": "rel-b2-flexible",
+    "level": "B2",
+    "word": "flexible",
+    "pos": "adjective",
+    "meaning": "linh hoạt, dễ điều chỉnh theo tình huống",
+    "definition": "Ready to change plans or methods when circumstances change.",
+    "example": "A flexible team can adjust its schedule when a client needs help.",
+    "synonyms": [
+      {
+        "word": "adaptable",
+        "meaning": "dễ thích nghi",
+        "example": "An adaptable team learns to use new tools without much difficulty."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "inflexible",
+        "meaning": "cứng nhắc, không chịu thay đổi",
+        "example": "An inflexible manager refused every suggested change to the rota."
+      }
+    ],
+    "usageNote": {
+      "vi": "Cặp từ này nói về cách làm việc hoặc thái độ. Adaptable nhấn mạnh khả năng thích nghi; không dùng nó thay flexible trong nghĩa vật liệu dễ uốn.",
+      "en": "These relations concern working methods or attitudes. Adaptable stresses adjustment to new conditions; it does not replace flexible for bendable materials."
+    }
+  },
+  {
+    "id": "rel-b2-reliable",
+    "level": "B2",
+    "word": "reliable",
+    "pos": "adjective",
+    "meaning": "đáng tin cậy, có thể trông cậy",
+    "definition": "Consistently doing what others need or expect.",
+    "example": "A reliable supplier delivers the right items on the agreed date.",
+    "synonyms": [
+      {
+        "word": "dependable",
+        "meaning": "có thể tin cậy",
+        "example": "Our dependable driver always checks the route before leaving."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "unreliable",
+        "meaning": "không đáng tin cậy",
+        "example": "The unreliable courier missed three collections in one week."
+      }
+    ],
+    "usageNote": {
+      "vi": "Reliable và dependable rất gần nghĩa khi nói về người hoặc dịch vụ làm đúng điều mong đợi. Reliable còn thường dùng với dữ liệu, nguồn tin và thiết bị.",
+      "en": "Reliable and dependable are close for people or services that meet expectations. Reliable is also common with data, sources and equipment."
+    }
+  },
+  {
+    "id": "rel-b2-optimistic",
+    "level": "B2",
+    "word": "optimistic",
+    "pos": "adjective",
+    "meaning": "lạc quan, tin rằng kết quả sẽ tốt",
+    "definition": "Expecting a situation to develop in a favourable way.",
+    "example": "The organisers are optimistic about ticket sales after a busy first week.",
+    "synonyms": [
+      {
+        "word": "hopeful",
+        "meaning": "đầy hy vọng",
+        "example": "The organisers remain hopeful that every seat will be filled."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "pessimistic",
+        "meaning": "bi quan",
+        "example": "The manager was pessimistic about sales after several quiet days."
+      }
+    ],
+    "usageNote": {
+      "vi": "Optimistic thường thể hiện kỳ vọng tích cực mạnh hơn hopeful. Hopeful có thể chỉ là hy vọng dù người nói vẫn thấy kết quả chưa chắc chắn.",
+      "en": "Optimistic often expresses a stronger positive expectation than hopeful. Someone can be hopeful while still considering success quite uncertain."
+    }
+  },
+  {
+    "id": "rel-b2-beneficial",
+    "level": "B2",
+    "word": "beneficial",
+    "pos": "adjective",
+    "meaning": "có lợi, mang lại tác động tốt",
+    "definition": "Producing an improvement or another positive effect.",
+    "example": "Regular feedback is beneficial to students learning to write clear paragraphs.",
+    "synonyms": [
+      {
+        "word": "helpful",
+        "meaning": "hữu ích, có tác dụng hỗ trợ",
+        "example": "A short outline is helpful when you organise a long essay."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "harmful",
+        "meaning": "có hại",
+        "example": "Repeated personal criticism can be harmful to a learner's confidence."
+      }
+    ],
+    "usageNote": {
+      "vi": "Beneficial trang trọng hơn helpful và nhấn mạnh tác động tốt. Helpful còn có thể tả người sẵn lòng giúp đỡ; beneficial ít dùng theo cách đó.",
+      "en": "Beneficial is more formal than helpful and emphasises a positive effect. Helpful can also describe a willing person, where beneficial is unusual."
+    }
+  },
+  {
+    "id": "rel-b2-expand",
+    "level": "B2",
+    "word": "expand",
+    "pos": "verb",
+    "meaning": "mở rộng, làm tăng kích thước",
+    "definition": "Make the physical size of something greater.",
+    "example": "Drag the corner to expand the diagram on the screen.",
+    "synonyms": [
+      {
+        "word": "enlarge",
+        "meaning": "phóng to, làm lớn hơn",
+        "example": "Use the plus button to enlarge the image."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "shrink",
+        "meaning": "thu nhỏ",
+        "example": "Use the minus button to shrink the image."
+      }
+    ],
+    "usageNote": {
+      "vi": "Trong bài này, expand và enlarge đều chỉ tăng kích thước. Expand còn dùng cho kinh doanh hoặc ý tưởng; không phải lúc nào enlarge cũng thay được trong các nghĩa đó.",
+      "en": "Here expand and enlarge both concern increased size. Expand also applies to businesses or ideas, where enlarge is not always a natural replacement."
+    }
+  },
+  {
+    "id": "rel-b2-simplify",
+    "level": "B2",
+    "word": "simplify",
+    "pos": "verb",
+    "meaning": "đơn giản hóa một quy trình",
+    "definition": "Make a process easier by reducing its complexity.",
+    "example": "We can simplify registration by removing questions we never use.",
+    "synonyms": [
+      {
+        "word": "streamline",
+        "meaning": "tinh giản để hiệu quả hơn",
+        "example": "The new form will streamline registration by removing repeated steps."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "complicate",
+        "meaning": "làm phức tạp hơn",
+        "example": "Extra approval stages would complicate the registration process."
+      }
+    ],
+    "usageNote": {
+      "vi": "Streamline gần nghĩa với simplify khi tinh giản quy trình để hiệu quả hơn. Simplify rộng hơn và còn dùng cho cách giải thích hoặc biểu thức toán học.",
+      "en": "Streamline overlaps with simplify when unnecessary process steps are removed for efficiency. Simplify also applies more broadly to explanations and mathematical expressions."
+    }
+  },
+  {
+    "id": "rel-b2-permit",
+    "level": "B2",
+    "word": "permit",
+    "pos": "verb",
+    "meaning": "cho phép một hành động",
+    "definition": "Give someone permission to do something.",
+    "example": "The gallery does not permit visitors to touch the paintings.",
+    "synonyms": [
+      {
+        "word": "allow",
+        "meaning": "cho phép",
+        "example": "The guides allow visitors to take photographs in the entrance hall."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "forbid",
+        "meaning": "cấm",
+        "example": "The rules forbid visitors to bring food into the exhibition."
+      }
+    ],
+    "usageNote": {
+      "vi": "Permit trang trọng hơn allow và hay dùng trong nội quy. Cả ba động từ dùng được với cấu trúc someone to do something; forbid diễn tả việc cấm.",
+      "en": "Permit is more formal than allow and is common in rules. All three verbs can take someone to do something; forbid expresses prohibition."
+    }
+  },
+  {
+    "id": "rel-b2-profit",
+    "level": "B2",
+    "word": "profit",
+    "pos": "noun",
+    "meaning": "lợi nhuận, khoản tiền thu được sau chi phí",
+    "definition": "Money remaining from business income after the relevant costs are paid.",
+    "example": "The stall made a small profit after paying for ingredients and rent.",
+    "synonyms": [
+      {
+        "word": "gain",
+        "meaning": "khoản thu lợi",
+        "example": "The sale produced a financial gain after all expenses were deducted."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "loss",
+        "meaning": "khoản lỗ",
+        "example": "The stall made a loss because its costs exceeded its sales."
+      }
+    ],
+    "usageNote": {
+      "vi": "Gain chỉ gần nghĩa profit khi nói về khoản thu lợi tài chính. Profit cụ thể hơn về thu nhập trừ chi phí; gain còn dùng cho sự tăng lên hoặc lợi ích khác.",
+      "en": "Gain overlaps with profit in a financial context. Profit specifically concerns income after costs; gain can also mean an increase or another kind of benefit."
+    }
+  },
+  {
+    "id": "rel-b2-confidence",
+    "level": "B2",
+    "word": "confidence",
+    "pos": "noun",
+    "meaning": "sự tự tin vào khả năng của bản thân",
+    "definition": "A belief that you can carry out a task successfully.",
+    "example": "Practice gave Lan the confidence to lead the discussion.",
+    "synonyms": [
+      {
+        "word": "assurance",
+        "meaning": "sự tự tin, vững vàng",
+        "example": "Lan spoke with assurance after rehearsing her opening remarks."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "doubt",
+        "meaning": "sự nghi ngờ khả năng của bản thân",
+        "example": "Doubt about her speaking ability made Lan hesitate to volunteer."
+      }
+    ],
+    "usageNote": {
+      "vi": "Assurance ở đây chỉ sự tự tin trong cách hành động, không phải lời cam đoan. Doubt là sự thiếu tin tưởng vào khả năng trong cùng ngữ cảnh.",
+      "en": "Assurance here means confidence in how someone acts, not a promise. Doubt expresses uncertainty about ability in the same context."
+    }
+  },
+  {
+    "id": "rel-b2-gradually",
+    "level": "B2",
+    "word": "gradually",
+    "pos": "adverb",
+    "meaning": "dần dần, qua những thay đổi nhỏ",
+    "definition": "Through small changes spread over a period of time.",
+    "example": "The course gradually introduces longer conversations as learners gain confidence.",
+    "synonyms": [
+      {
+        "word": "incrementally",
+        "meaning": "từng bước nhỏ",
+        "example": "The team will increase the test group incrementally over six weeks."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "abruptly",
+        "meaning": "đột ngột",
+        "example": "The course abruptly switched to difficult material without preparation."
+      }
+    ],
+    "usageNote": {
+      "vi": "Incrementally trang trọng hơn và nhấn mạnh các bước tăng nhỏ. Gradually nhấn mạnh diễn tiến theo thời gian; abruptly mô tả thay đổi xảy ra đột ngột.",
+      "en": "Incrementally is more formal and stresses small added steps. Gradually emphasises development over time; abruptly describes a sudden change."
+    }
+  },
+  {
+    "id": "rel-c1-vague",
+    "level": "C1",
+    "word": "vague",
+    "pos": "adjective",
+    "meaning": "mơ hồ, thiếu chi tiết rõ ràng",
+    "definition": "Lacking enough specific detail to establish a clear meaning.",
+    "example": "The brief was vague about who would approve the final design.",
+    "synonyms": [
+      {
+        "word": "imprecise",
+        "meaning": "không cụ thể, thiếu chính xác",
+        "example": "The imprecise deadline left everyone unsure when to submit the draft."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "precise",
+        "meaning": "cụ thể, rõ ràng và chính xác",
+        "example": "The revised brief gives precise instructions for submitting the draft."
+      }
+    ],
+    "usageNote": {
+      "vi": "Vague và imprecise gần nghĩa với mô tả hoặc hướng dẫn thiếu cụ thể. Vague còn tả ký ức lờ mờ; imprecise có thể tả số đo không đủ chính xác.",
+      "en": "Vague and imprecise overlap for insufficiently specific descriptions or instructions. Vague also describes faint memories; imprecise can describe inexact measurements."
+    }
+  },
+  {
+    "id": "rel-c1-coherent",
+    "level": "C1",
+    "word": "coherent",
+    "pos": "adjective",
+    "meaning": "mạch lạc, các ý liên kết hợp lý",
+    "definition": "Organised so that its ideas connect and can be understood together.",
+    "example": "Her coherent explanation linked each proposed change to a clear purpose.",
+    "synonyms": [
+      {
+        "word": "logical",
+        "meaning": "hợp logic, hợp lý",
+        "example": "The report follows a logical sequence from the problem to the proposed solution."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "incoherent",
+        "meaning": "rời rạc, thiếu mạch lạc",
+        "example": "The incoherent account jumped between events without explaining their connection."
+      }
+    ],
+    "usageNote": {
+      "vi": "Coherent nhấn mạnh các phần gắn kết và dễ hiểu; logical nhấn mạnh trình tự hoặc lập luận hợp lý. Một bài nói coherent vẫn có thể dựa trên thông tin sai.",
+      "en": "Coherent stresses connected, understandable parts; logical stresses reasoning or sequence. A coherent speech can still rely on incorrect information."
+    }
+  },
+  {
+    "id": "rel-c1-meticulous",
+    "level": "C1",
+    "word": "meticulous",
+    "pos": "adjective",
+    "meaning": "tỉ mỉ, chú ý kỹ đến từng chi tiết",
+    "definition": "Taking great care over even the smallest details of a task.",
+    "example": "A meticulous editor checked every label against the original research notes.",
+    "synonyms": [
+      {
+        "word": "thorough",
+        "meaning": "kỹ lưỡng",
+        "example": "A thorough editor checks both the argument and the supporting references."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "careless",
+        "meaning": "cẩu thả, thiếu cẩn thận",
+        "example": "A careless editor overlooked several incorrect dates."
+      }
+    ],
+    "usageNote": {
+      "vi": "Meticulous nhấn mạnh chi tiết rất nhỏ; thorough nhấn mạnh kiểm tra đầy đủ mọi phần. Cả hai đều đối lập với careless trong cách thực hiện nhiệm vụ.",
+      "en": "Meticulous stresses fine detail; thorough stresses complete coverage. Both contrast with careless in the way a task is performed."
+    }
+  },
+  {
+    "id": "rel-c1-substantial",
+    "level": "C1",
+    "word": "substantial",
+    "pos": "adjective",
+    "meaning": "đáng kể về lượng hoặc mức độ",
+    "definition": "Large enough in amount or degree to have an important effect.",
+    "example": "The revised timetable produced a substantial reduction in waiting time.",
+    "synonyms": [
+      {
+        "word": "considerable",
+        "meaning": "khá lớn, đáng kể",
+        "example": "The redesign led to a considerable improvement in response times."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "negligible",
+        "meaning": "nhỏ đến mức không đáng kể",
+        "example": "The extra stop caused only a negligible increase in travel time."
+      }
+    ],
+    "usageNote": {
+      "vi": "Quan hệ này áp dụng cho lượng, mức tăng hoặc tác động. Negligible không nhất thiết bằng không; nó nhỏ đến mức có thể bỏ qua trong ngữ cảnh.",
+      "en": "These relations apply to amounts, changes or effects. Negligible need not mean zero; it means small enough to disregard in the context."
+    }
+  },
+  {
+    "id": "rel-c1-reluctant",
+    "level": "C1",
+    "word": "reluctant",
+    "pos": "adjective",
+    "meaning": "miễn cưỡng, không muốn làm điều gì",
+    "definition": "Feeling unwilling to act, often because of reservations.",
+    "example": "The researchers were reluctant to publish conclusions before checking the data.",
+    "synonyms": [
+      {
+        "word": "unwilling",
+        "meaning": "không sẵn lòng",
+        "example": "The researchers were unwilling to release an unverified result."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "willing",
+        "meaning": "sẵn lòng",
+        "example": "The researchers were willing to share their methods with the review team."
+      }
+    ],
+    "usageNote": {
+      "vi": "Reluctant có thể chỉ sự do dự nhưng cuối cùng vẫn làm; unwilling thường thể hiện sự không muốn mạnh hơn. Dùng reluctant hoặc willing to do something.",
+      "en": "Reluctant can describe hesitation followed by action; unwilling often sounds firmer. Use reluctant or willing to do something."
+    }
+  },
+  {
+    "id": "rel-c1-impartial",
+    "level": "C1",
+    "word": "impartial",
+    "pos": "adjective",
+    "meaning": "không thiên vị khi đánh giá",
+    "definition": "Treating competing people or positions fairly without favouring one side.",
+    "example": "An impartial reviewer assesses each proposal using the same criteria.",
+    "synonyms": [
+      {
+        "word": "unbiased",
+        "meaning": "khách quan, không thiên kiến",
+        "example": "An unbiased assessment considers evidence from every applicant."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "biased",
+        "meaning": "thiên vị",
+        "example": "The biased reviewer awarded extra points to a friend's proposal."
+      }
+    ],
+    "usageNote": {
+      "vi": "Impartial thường dùng cho người phân xử hoặc đánh giá công bằng giữa các bên. Unbiased rộng hơn, còn dùng cho thông tin và phương pháp thu thập dữ liệu.",
+      "en": "Impartial often describes someone judging fairly between sides. Unbiased is broader and also applies to information and data collection methods."
+    }
+  },
+  {
+    "id": "rel-c1-alleviate",
+    "level": "C1",
+    "word": "alleviate",
+    "pos": "verb",
+    "meaning": "làm giảm bớt mức độ nghiêm trọng",
+    "definition": "Reduce the severity of a difficulty or an unpleasant condition.",
+    "example": "Clearer instructions could alleviate the confusion among new volunteers.",
+    "synonyms": [
+      {
+        "word": "ease",
+        "meaning": "làm dịu, giảm bớt",
+        "example": "A simple checklist could ease the pressure on new volunteers."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "aggravate",
+        "meaning": "làm trầm trọng thêm",
+        "example": "Conflicting messages would aggravate the confusion."
+      }
+    ],
+    "usageNote": {
+      "vi": "Alleviate trang trọng hơn ease và không hàm ý loại bỏ hoàn toàn vấn đề. Aggravate ở đây nghĩa là làm vấn đề nặng hơn, không phải nghĩa làm ai bực mình.",
+      "en": "Alleviate is more formal than ease and does not imply removing the problem entirely. Aggravate here means worsen, rather than annoy someone."
+    }
+  },
+  {
+    "id": "rel-c1-conceal",
+    "level": "C1",
+    "word": "conceal",
+    "pos": "verb",
+    "meaning": "che giấu thông tin để người khác không biết",
+    "definition": "Keep information from becoming known to other people.",
+    "example": "The manager tried to conceal the delay from the client.",
+    "synonyms": [
+      {
+        "word": "hide",
+        "meaning": "giấu",
+        "example": "The manager could not hide the missing delivery records."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "reveal",
+        "meaning": "tiết lộ",
+        "example": "The team agreed to reveal the full timetable at the meeting."
+      }
+    ],
+    "usageNote": {
+      "vi": "Conceal trang trọng hơn hide; cả hai dùng được cho thông tin hoặc vật thể. Bài này xét thông tin được giữ kín hay tiết lộ, không xét vật bị che khuất tình cờ.",
+      "en": "Conceal is more formal than hide; both can concern information or objects. This lesson concerns keeping information secret or revealing it, not accidental obstruction."
+    }
+  },
+  {
+    "id": "rel-c1-deter",
+    "level": "C1",
+    "word": "deter",
+    "pos": "verb",
+    "meaning": "khiến ai chùn bước, không muốn thực hiện",
+    "definition": "Make someone less likely to act by presenting a difficulty or negative consequence.",
+    "example": "A complicated application form may deter people from joining the course.",
+    "synonyms": [
+      {
+        "word": "discourage",
+        "meaning": "làm nản lòng, khiến không muốn làm",
+        "example": "High fees can discourage people from applying."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "encourage",
+        "meaning": "khuyến khích",
+        "example": "A free introductory session can encourage people to apply."
+      }
+    ],
+    "usageNote": {
+      "vi": "Deter thường đi với someone from doing something. Encourage thường đi với someone to do something; cần đổi cấu trúc khi diễn đạt ý trái ngược.",
+      "en": "Deter commonly takes someone from doing something. Encourage commonly takes someone to do something, so the opposite idea requires a different structure."
+    }
+  },
+  {
+    "id": "rel-c1-consensus",
+    "level": "C1",
+    "word": "consensus",
+    "pos": "noun",
+    "meaning": "sự đồng thuận chung trong một nhóm",
+    "definition": "A position that a group broadly accepts after considering an issue.",
+    "example": "The committee reached a consensus on the main priorities for next year.",
+    "synonyms": [
+      {
+        "word": "agreement",
+        "meaning": "sự nhất trí",
+        "example": "There was broad agreement on the need for clearer guidance."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "disagreement",
+        "meaning": "sự bất đồng",
+        "example": "Persistent disagreement prevented the committee from choosing a date."
+      }
+    ],
+    "usageNote": {
+      "vi": "Consensus là đồng thuận chung của nhóm, không nhất thiết mọi người đồng ý từng chi tiết. Agreement rộng hơn và còn có thể chỉ một bản thỏa thuận.",
+      "en": "Consensus is broad group agreement, not necessarily agreement on every detail. Agreement is wider and can also refer to a formal arrangement."
+    }
+  },
+  {
+    "id": "rel-c1-scarcity",
+    "level": "C1",
+    "word": "scarcity",
+    "pos": "noun",
+    "meaning": "tình trạng khan hiếm, không có đủ",
+    "definition": "A situation in which an available resource is insufficient or difficult to obtain.",
+    "example": "The scarcity of affordable studio space limits opportunities for local artists.",
+    "synonyms": [
+      {
+        "word": "shortage",
+        "meaning": "sự thiếu hụt",
+        "example": "A shortage of rehearsal rooms forced several groups to share one hall."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "abundance",
+        "meaning": "sự dồi dào",
+        "example": "An abundance of empty rooms made it easy to find a suitable studio."
+      }
+    ],
+    "usageNote": {
+      "vi": "Scarcity nhấn mạnh nguồn lực hiếm hoặc khó kiếm; shortage nhấn mạnh lượng cung không đủ nhu cầu. Abundance chỉ lượng sẵn có rất nhiều trong cùng ngữ cảnh.",
+      "en": "Scarcity stresses limited availability; shortage stresses supply falling below need. Abundance describes plentiful availability in the same context."
+    }
+  },
+  {
+    "id": "rel-c1-explicitly",
+    "level": "C1",
+    "word": "explicitly",
+    "pos": "adverb",
+    "meaning": "một cách rõ ràng, được nói thẳng ra",
+    "definition": "By stating something directly rather than leaving it to be inferred.",
+    "example": "The guidelines explicitly require a reference for every quoted passage.",
+    "synonyms": [
+      {
+        "word": "expressly",
+        "meaning": "một cách minh thị, rõ ràng",
+        "example": "The guidelines expressly prohibit submitting another person's work."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "implicitly",
+        "meaning": "một cách ngầm hiểu",
+        "example": "The friendly invitation implicitly suggested that questions were welcome."
+      }
+    ],
+    "usageNote": {
+      "vi": "Expressly gần nghĩa explicitly khi điều gì được nêu rõ, thường trong quy định. Expressly còn có nghĩa dành riêng cho một mục đích; implicitly là được ngụ ý chứ không nói thẳng.",
+      "en": "Expressly overlaps with explicitly for a direct statement, often in rules. Expressly can also mean for a particular purpose; implicitly means through implication."
+    }
+  },
+  {
+    "id": "rel-c2-equivocal",
+    "level": "C2",
+    "word": "equivocal",
+    "pos": "adjective",
+    "meaning": "nước đôi, có thể hiểu theo những hướng khác nhau",
+    "definition": "Allowing conflicting interpretations instead of communicating a definite position.",
+    "example": "The director's equivocal reply left staff unsure whether the project would continue.",
+    "synonyms": [
+      {
+        "word": "ambiguous",
+        "meaning": "mơ hồ, có nhiều cách hiểu",
+        "example": "The ambiguous announcement could be read as either a promise or a warning."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "unequivocal",
+        "meaning": "rõ ràng dứt khoát, không mập mờ",
+        "example": "The board issued an unequivocal statement that the project would continue."
+      }
+    ],
+    "usageNote": {
+      "vi": "Equivocal trang trọng và thường tả câu trả lời chưa bộc lộ rõ lập trường. Ambiguous rộng hơn, gồm cả câu có nhiều cách hiểu ngoài ý muốn; không tự động suy ra người nói cố ý đánh lừa.",
+      "en": "Equivocal is formal and often describes an unclear position in a response. Ambiguous is broader and includes unintended multiple meanings; neither automatically proves deliberate deception."
+    }
+  },
+  {
+    "id": "rel-c2-intransigent",
+    "level": "C2",
+    "word": "intransigent",
+    "pos": "adjective",
+    "meaning": "cứng rắn không chịu nhượng bộ",
+    "definition": "Refusing to adjust a position even when compromise is being sought.",
+    "example": "The intransigent negotiator rejected every proposal to share the costs.",
+    "synonyms": [
+      {
+        "word": "uncompromising",
+        "meaning": "không thỏa hiệp",
+        "example": "Her uncompromising stance left little room for a negotiated settlement."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "accommodating",
+        "meaning": "sẵn lòng điều chỉnh để đáp ứng người khác",
+        "example": "An accommodating negotiator accepted a revised schedule that suited both teams."
+      }
+    ],
+    "usageNote": {
+      "vi": "Intransigent thường mang ý chê. Uncompromising đôi khi là lời khen về nguyên tắc vững vàng; accommodating đối lập trong thái độ sẵn sàng nhượng bộ khi thương lượng.",
+      "en": "Intransigent usually expresses disapproval. Uncompromising can praise firm principles; accommodating contrasts in a negotiator's willingness to make adjustments."
+    }
+  },
+  {
+    "id": "rel-c2-scrupulous",
+    "level": "C2",
+    "word": "scrupulous",
+    "pos": "adjective",
+    "meaning": "luôn giữ sự trung thực và các nguyên tắc đạo đức",
+    "definition": "Taking great care to act honestly and respect ethical obligations.",
+    "example": "A scrupulous researcher reports results that challenge her own theory.",
+    "synonyms": [
+      {
+        "word": "principled",
+        "meaning": "có nguyên tắc đạo đức",
+        "example": "A principled researcher refuses to remove inconvenient findings."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "unscrupulous",
+        "meaning": "bất chấp đạo đức, không trung thực",
+        "example": "An unscrupulous researcher altered the figures to obtain funding."
+      }
+    ],
+    "usageNote": {
+      "vi": "Bài này xét nghĩa đạo đức của scrupulous. Principled nhấn mạnh nguyên tắc, scrupulous nhấn mạnh cẩn trọng để không làm sai; scrupulous còn có nghĩa tỉ mỉ trong công việc.",
+      "en": "This lesson selects the ethical sense of scrupulous. Principled stresses principles; scrupulous stresses care to avoid wrongdoing. Scrupulous also has a separate sense of meticulous attention."
+    }
+  },
+  {
+    "id": "rel-c2-cogent",
+    "level": "C2",
+    "word": "cogent",
+    "pos": "adjective",
+    "meaning": "thuyết phục nhờ lập luận rõ ràng, vững chắc",
+    "definition": "Persuasive because the reasoning is clear and well supported.",
+    "example": "She presented a cogent argument for testing the design with real users.",
+    "synonyms": [
+      {
+        "word": "convincing",
+        "meaning": "có sức thuyết phục",
+        "example": "The team gave a convincing explanation supported by several observations."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "unconvincing",
+        "meaning": "thiếu sức thuyết phục",
+        "example": "His unconvincing argument relied on assumptions that the data contradicted."
+      }
+    ],
+    "usageNote": {
+      "vi": "Cogent trang trọng, thường đi với argument, reason hoặc explanation. Convincing rộng hơn và có thể tả diễn xuất hoặc vẻ ngoài; cogent nhấn mạnh chất lượng lý lẽ.",
+      "en": "Cogent is formal and commonly modifies argument, reason or explanation. Convincing is broader and can describe acting or appearances; cogent stresses the quality of reasoning."
+    }
+  },
+  {
+    "id": "rel-c2-perfunctory",
+    "level": "C2",
+    "word": "perfunctory",
+    "pos": "adjective",
+    "meaning": "qua loa, chỉ làm cho xong trách nhiệm",
+    "definition": "Performed with minimal attention because the person feels little interest or commitment.",
+    "example": "A perfunctory review missed errors that a careful reader would have noticed.",
+    "synonyms": [
+      {
+        "word": "cursory",
+        "meaning": "qua loa, sơ sài",
+        "example": "A cursory review checked the headings but ignored the calculations."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "thorough",
+        "meaning": "kỹ lưỡng, đầy đủ",
+        "example": "A thorough review examined every calculation and its supporting evidence."
+      }
+    ],
+    "usageNote": {
+      "vi": "Perfunctory thường ngụ ý làm chiếu lệ, thiếu quan tâm. Cursory nhấn mạnh việc xem nhanh và ít chi tiết; thorough là đối lập về mức độ xem xét trong bài này.",
+      "en": "Perfunctory often implies going through the motions without interest. Cursory stresses a quick, superficial examination; thorough contrasts in depth of review here."
+    }
+  },
+  {
+    "id": "rel-c2-tenuous",
+    "level": "C2",
+    "word": "tenuous",
+    "pos": "adjective",
+    "meaning": "mong manh, thiếu cơ sở vững chắc",
+    "definition": "Supported so weakly that its existence or validity is doubtful.",
+    "example": "The article proposes a tenuous link between office colour and productivity.",
+    "synonyms": [
+      {
+        "word": "weak",
+        "meaning": "yếu, thiếu vững chắc",
+        "example": "The study found only a weak connection between the two measures."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "strong",
+        "meaning": "chặt chẽ, có cơ sở vững chắc",
+        "example": "Repeated studies established a strong connection between the two measures."
+      }
+    ],
+    "usageNote": {
+      "vi": "Tenuous thường tả mối liên hệ, lập luận hoặc vị thế thiếu chắc chắn. Weak và strong ở đây nói về độ vững của mối liên hệ, không phải sức mạnh thể chất.",
+      "en": "Tenuous often describes a doubtful connection, argument or position. Weak and strong here concern the support for a connection, not physical strength."
+    }
+  },
+  {
+    "id": "rel-c2-prolix",
+    "level": "C2",
+    "word": "prolix",
+    "pos": "adjective",
+    "meaning": "dài dòng, dùng quá nhiều lời",
+    "definition": "Using so many words that the main message becomes tiring to follow.",
+    "example": "The editor replaced the prolix introduction with two focused paragraphs.",
+    "synonyms": [
+      {
+        "word": "verbose",
+        "meaning": "rườm rà, nhiều lời",
+        "example": "The verbose summary repeated the same point in five different ways."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "concise",
+        "meaning": "ngắn gọn nhưng đủ ý",
+        "example": "A concise summary explained the findings without unnecessary detail."
+      }
+    ],
+    "usageNote": {
+      "vi": "Prolix trang trọng, ít gặp hơn verbose và thường mang ý chê. Concise là gọn mà vẫn đủ ý, không chỉ đơn thuần là văn bản có ít từ.",
+      "en": "Prolix is formal, less common than verbose and usually disapproving. Concise means economical but sufficiently informative, not merely short."
+    }
+  },
+  {
+    "id": "rel-c2-magnanimous",
+    "level": "C2",
+    "word": "magnanimous",
+    "pos": "adjective",
+    "meaning": "rộng lượng với người từng đối đầu hoặc gây lỗi",
+    "definition": "Showing generosity of spirit towards someone who opposed or wronged you.",
+    "example": "Her magnanimous response to the former rival's apology helped rebuild trust.",
+    "synonyms": [
+      {
+        "word": "forgiving",
+        "meaning": "sẵn lòng tha thứ",
+        "example": "His forgiving response allowed the colleagues to work together again."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "vindictive",
+        "meaning": "muốn trả đũa, thù dai",
+        "example": "Her vindictive response aimed to damage the former rival's reputation."
+      }
+    ],
+    "usageNote": {
+      "vi": "Magnanimous trang trọng, thường tả sự rộng lượng với đối thủ. Forgiving gần nghĩa khi bỏ qua lỗi lầm; vindictive trái nghĩa trong thái độ muốn trả đũa người đã làm mình tổn thương.",
+      "en": "Magnanimous is formal and often describes generosity towards an opponent. Forgiving overlaps when an offence is pardoned; vindictive contrasts through a desire for revenge."
+    }
+  },
+  {
+    "id": "rel-c2-exacerbate",
+    "level": "C2",
+    "word": "exacerbate",
+    "pos": "verb",
+    "meaning": "làm một vấn đề sẵn có trở nên trầm trọng hơn",
+    "definition": "Increase the seriousness of a problem that already exists.",
+    "example": "Inconsistent instructions could exacerbate the confusion during the transition.",
+    "synonyms": [
+      {
+        "word": "aggravate",
+        "meaning": "làm nặng thêm",
+        "example": "Further delays would aggravate the staffing problem."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "alleviate",
+        "meaning": "làm giảm bớt",
+        "example": "A clear handover plan could alleviate the pressure on the incoming team."
+      }
+    ],
+    "usageNote": {
+      "vi": "Exacerbate trang trọng và dùng với tình trạng tiêu cực đã tồn tại. Aggravate cũng có nghĩa làm ai bực mình; không dùng exacerbate để thay thế nghĩa đó một cách máy móc.",
+      "en": "Exacerbate is formal and concerns an existing negative condition. Aggravate can also mean annoy a person; exacerbate should not mechanically replace it in that sense."
+    }
+  },
+  {
+    "id": "rel-c2-substantiate",
+    "level": "C2",
+    "word": "substantiate",
+    "pos": "verb",
+    "meaning": "chứng minh hoặc củng cố một nhận định bằng bằng chứng",
+    "definition": "Provide factual evidence that gives a claim a firm basis.",
+    "example": "The archived invoices substantiate her claim that the materials were paid for.",
+    "synonyms": [
+      {
+        "word": "corroborate",
+        "meaning": "xác nhận bằng chứng bổ sung",
+        "example": "The delivery records corroborate her account of when the materials arrived."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "refute",
+        "meaning": "bác bỏ bằng lý lẽ hoặc bằng chứng",
+        "example": "The original timestamps refute the claim that the files were created later."
+      }
+    ],
+    "usageNote": {
+      "vi": "Substantiate là đưa bằng chứng làm cơ sở; corroborate nhấn mạnh bằng chứng bổ sung xác nhận. Refute ở đây là chứng minh nhận định sai, mạnh hơn việc chỉ nói không đồng ý.",
+      "en": "Substantiate supplies a factual basis; corroborate stresses additional confirming evidence. Refute here means showing a claim to be false, which is stronger than simply disagreeing."
+    }
+  },
+  {
+    "id": "rel-c2-obfuscate",
+    "level": "C2",
+    "word": "obfuscate",
+    "pos": "verb",
+    "meaning": "làm thông tin trở nên khó hiểu, thường có chủ ý",
+    "definition": "Make an issue harder to understand by expressing it in an unnecessarily confusing way.",
+    "example": "Unexplained technical terms can obfuscate an otherwise straightforward policy.",
+    "synonyms": [
+      {
+        "word": "obscure",
+        "meaning": "làm khó hiểu, che mờ ý nghĩa",
+        "example": "The complicated wording may obscure the purpose of the policy."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "clarify",
+        "meaning": "làm rõ",
+        "example": "A concrete example would clarify how the policy affects new applicants."
+      }
+    ],
+    "usageNote": {
+      "vi": "Obfuscate trang trọng và thường gợi ý việc làm rối có chủ ý. Obscure rộng hơn, có thể là vô tình; bài này không xét nghĩa che khuất vật thể hoặc làm rối mã nguồn.",
+      "en": "Obfuscate is formal and often suggests deliberate confusion. Obscure is broader and can be accidental; this lesson excludes physical obstruction and code obfuscation."
+    }
+  },
+  {
+    "id": "rel-c2-acquiesce",
+    "level": "C2",
+    "word": "acquiesce",
+    "pos": "verb",
+    "meaning": "chấp thuận mà không phản đối, thường miễn cưỡng",
+    "definition": "Accept a proposal without resisting it, despite possible reservations.",
+    "example": "Several members chose to acquiesce in the decision despite their reservations.",
+    "synonyms": [
+      {
+        "word": "consent",
+        "meaning": "đồng ý, chấp thuận",
+        "example": "The members agreed to consent to the revised timetable."
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "object",
+        "meaning": "phản đối",
+        "example": "Several members decided to object to the timetable because it left too little time."
+      }
+    ],
+    "usageNote": {
+      "vi": "Acquiesce trang trọng và thường hàm ý chấp thuận miễn cưỡng, còn consent không bắt buộc có sắc thái đó. Dùng acquiesce in/to, consent to và object to; không dùng tân ngữ trực tiếp sau acquiesce.",
+      "en": "Acquiesce is formal and often suggests reluctant acceptance; consent need not. Use acquiesce in/to, consent to and object to; acquiesce does not take a direct object."
+    }
+  }
+]

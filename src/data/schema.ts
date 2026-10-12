@@ -1,5 +1,5 @@
 import { z } from 'zod';
-export const levelSchema = z.enum(['A1', 'A2', 'B1', 'B2', 'C1']);
+export const levelSchema = z.enum(['A1', 'A2', 'B1', 'B2', 'C1', 'C2']);
 export const skillSchema = z.enum(['vocabulary', 'listening', 'speaking', 'reading', 'writing']);
 export const wordSchema = z.object({
   id: z.string().min(1),
