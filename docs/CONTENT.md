@@ -50,6 +50,14 @@ The common expansion is authored in `scripts/content/common-vocabulary.txt`: a h
 
 The original 160 words were authored in `scripts/create-vocabulary.mjs`, retained as historical provenance only. Do not run that older script to update the current catalog: it overwrites the expanded JSON with its original set. Content tests check quantity, topic labels, unique headwords and contextual examples; flow tests cover pagination, A1 practice, CSV and backup/restore of new-card progress.
 
+## English vocabulary practice groups
+
+The main vocabulary practice screen divides the current level/topic selection into fixed groups of 20 words in catalog order; the last group can be shorter. Choose a group, preview its words and start any of the four practice modes. There is no daily new-word cap. The daily minute goal is informational; the legacy `settings.newCards` field is retained only for compatibility with existing backups and no longer limits practice.
+
+Each level/topic combination has its own selected group and visited word IDs in Dexie. Rating or skipping a card saves its position immediately. Ending early leaves the unanswered current card available for the next visit; previously rated/skipped cards are excluded until the learner explicitly chooses **Review this group** after completing it. Switching practice mode shares the same position. Existing SRS reviews seed the visited IDs on first use of a selection, avoiding an immediate repeat of previously studied words. Later visits use the saved traversal; the SRS schedule remains a suggestion and does not block group access. Skipping creates neither a score nor an SRS review. Rating saves the review, shared attempt and traversal atomically.
+
+Progress survives reload and JSON backup/reset/import. Level/topic filters themselves remain temporary, so choose the same filters to resume that selection. Group membership follows the current catalog, including custom words; editing or removing words can change group boundaries. IDs retain visited history, and a removed group anchor falls back to an unfinished group. Japanese/Chinese practice and the separate translation/word-relations modes keep their existing session behavior.
+
 ## Questions
 
 ```json
@@ -101,7 +109,7 @@ Quote cells containing commas/newlines; double embedded quotes. Two examples are
 
 ## Backup v1
 
-Top-level fields: `version: 1`, `settings`, `words`, `reviews`, `attempts`, `drafts`, `submissions`. Full runtime schemas live in `src/services/storage.ts`. All timestamps are Unix milliseconds; attempt duration is seconds. `settings.id` is always `main`. Reviews store ease, interval in days, repetitions, due date, introduction date, last review and accuracy counters. IDs in each table must be unique. Import validates all tables before a single atomic replacement transaction. Recordings and transient filters are never included.
+Top-level fields: `version: 1`, `settings`, `words`, `reviews`, `attempts`, `drafts`, `submissions`, `vocabularyStudy`. Full runtime schemas live in `src/services/storage.ts`. All timestamps are Unix milliseconds; attempt duration is seconds. `settings.id` is always `main`. Reviews store ease, interval in days, repetitions, due date, introduction date, last review and accuracy counters. `vocabularyStudy` stores the selected group and unique visited word IDs per English level/topic selection. Older backups without this field import with an empty progress table. Dexie schema version 2 adds this seventh table without replacing existing data; the JSON backup format remains version 1 with an additive optional field. IDs in each table must be unique. Import validates all tables before a single atomic replacement transaction. Recordings and transient filters are never included.
 
 ## Bilingual translation sentences
 

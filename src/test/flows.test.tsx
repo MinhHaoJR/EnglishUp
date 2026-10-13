@@ -29,15 +29,21 @@ beforeEach(async () => {
 function show(element: React.ReactNode) {
   return render(<MemoryRouter>{element}</MemoryRouter>);
 }
+async function startVocabulary() {
+  const button = screen.getByRole('button', { name: /Start practice/ });
+  await waitFor(() => expect(button).toBeEnabled());
+  fireEvent.click(button);
+  await screen.findByRole('button', { name: 'Reveal answer' });
+}
 async function verifyAttempt(skill: string) {
   await waitFor(async () => expect(await db.attempts.where('skill').equals(skill).count()).toBe(1));
 }
-test('vocabulary completes a card, schedules it and persists the attempt', async () => {
+test('vocabulary advances a card, schedules it and persists the attempt', async () => {
   show(<Vocabulary />);
-  fireEvent.click(screen.getByRole('button', { name: /Start practice/ }));
+  await startVocabulary();
   fireEvent.click(screen.getByRole('button', { name: 'Reveal answer' }));
   fireEvent.click(screen.getByRole('button', { name: 'Good' }));
-  await screen.findByRole('heading', { name: 'Session complete' });
+  await screen.findByRole('heading', { name: vocabulary[1].word });
   await verifyAttempt('vocabulary');
   expect(await db.reviews.count()).toBe(1);
 });
@@ -67,7 +73,7 @@ test('large library pages are bounded and search and topic changes return to pag
 test('a new A1 card persists through backup, reset and restore; CSV includes a whole topic', async () => {
   useApp.setState({ level: 'A1', topic: 'People and family' });
   const view = show(<Vocabulary />);
-  fireEvent.click(screen.getByRole('button', { name: /Start practice/ }));
+  await startVocabulary();
   expect(screen.getByRole('heading', { name: 'person' })).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Reveal answer' }));
   fireEvent.click(screen.getByRole('button', { name: 'Good' }));
@@ -94,7 +100,7 @@ test('IT topics filter the library and practice, and persist a review across rem
   fireEvent.change(screen.getByRole('combobox', { name: 'Level' }), { target: { value: 'B1' } });
   expect(within(group).getAllByRole('article')).toHaveLength(5);
   fireEvent.click(screen.getByRole('button', { name: 'Practice' }));
-  fireEvent.click(screen.getByRole('button', { name: /Start practice/ }));
+  await startVocabulary();
   expect(screen.getByRole('heading', { name: 'variable' })).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Reveal answer' }));
   fireEvent.click(screen.getByRole('button', { name: 'Good' }));
@@ -102,9 +108,11 @@ test('IT topics filter the library and practice, and persist a review across rem
   expect(await db.reviews.get('v-extra-variable')).toMatchObject({ total: 1 });
   view.unmount();
   view = show(<Vocabulary />);
-  await waitFor(() =>
-    expect(screen.getByRole('button', { name: /Start practice/ })).toBeDisabled(),
-  );
+  await startVocabulary();
+  const nextWord = vocabulary.filter(
+    (word) => word.topic === 'IT: Programming' && word.level === 'B1',
+  )[1];
+  expect(screen.getByRole('heading', { name: nextWord.word })).toBeInTheDocument();
   expect((await db.attempts.toArray())[0].label).toBe('variable');
   view.unmount();
 });
@@ -311,7 +319,7 @@ test('C1 vocabulary filters, exports and persists a review through backup and re
   expect(exported).toHaveLength(10);
   expect(exported.every((word) => word.level === 'C1')).toBe(true);
   fireEvent.click(screen.getByRole('button', { name: 'Practice' }));
-  fireEvent.click(screen.getByRole('button', { name: /Start practice/ }));
+  await startVocabulary();
   expect(screen.getByRole('heading', { name: 'accountability' })).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Reveal answer' }));
   fireEvent.click(screen.getByRole('button', { name: 'Good' }));

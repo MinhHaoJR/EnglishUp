@@ -34,12 +34,11 @@ export function schedule(id: string, rating: Rating, previous?: Review, now = Da
     total: (previous?.total ?? 0) + 1,
   };
 }
-export function dueQueue(words: Word[], reviews: Review[], limit: number, now = Date.now()) {
+export function dueQueue(words: Word[], reviews: Review[], now = Date.now()) {
   const map = new Map(reviews.map((r) => [r.id, r]));
-  const introduced = reviews.filter((r) => dayKey(r.introduced) === dayKey(now)).length;
   const due = words
     .filter((w) => map.has(w.id) && map.get(w.id)!.due <= now)
     .sort((a, b) => map.get(a.id)!.due - map.get(b.id)!.due);
-  const fresh = words.filter((w) => !map.has(w.id)).slice(0, Math.max(0, limit - introduced));
+  const fresh = words.filter((w) => !map.has(w.id));
   return [...due, ...fresh];
 }

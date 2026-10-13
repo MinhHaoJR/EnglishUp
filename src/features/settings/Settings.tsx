@@ -88,19 +88,12 @@ export default function Settings() {
             }}
           />
         </label>
-        <label>
-          {t('newCards')}
-          <input
-            type="number"
-            min="0"
-            max="100"
-            value={settings.newCards}
-            onChange={(e) => {
-              const n = Number(e.target.value);
-              if (n >= 0 && n <= 100) change({ newCards: Math.round(n) });
-            }}
-          />
-        </label>
+        <div className="notice">
+          {bi(
+            'Học từ vựng không giới hạn mỗi ngày. Mục tiêu phút học chỉ để theo dõi tiến độ.',
+            'Vocabulary practice has no daily limit. Your daily minute goal only tracks progress.',
+          )}
+        </div>
         <label className="checkbox">
           <input
             type="checkbox"

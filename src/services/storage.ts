@@ -59,6 +59,15 @@ export const submissionSchema = z.object({
   feedback: z.array(z.string()),
 });
 export type Submission = z.infer<typeof submissionSchema>;
+export const vocabularyStudySchema = z.object({
+  id: z.string().min(1),
+  selectedGroupId: z.string().min(1),
+  visitedIds: z
+    .array(z.string().min(1))
+    .refine((ids) => new Set(ids).size === ids.length, 'Duplicate visited IDs'),
+  updated: z.number().nonnegative(),
+});
+export type VocabularyStudy = z.infer<typeof vocabularyStudySchema>;
 export class EnglishDB extends Dexie {
   settings!: Table<Settings, string>;
   attempts!: Table<Attempt, string>;
@@ -66,6 +75,7 @@ export class EnglishDB extends Dexie {
   reviews!: Table<Review, string>;
   drafts!: Table<Draft, string>;
   submissions!: Table<Submission, string>;
+  vocabularyStudy!: Table<VocabularyStudy, string>;
   constructor(name = 'englishup') {
     super(name);
     this.version(1).stores({
@@ -76,6 +86,7 @@ export class EnglishDB extends Dexie {
       drafts: 'id',
       submissions: 'id,promptId,timestamp',
     });
+    this.version(2).stores({ vocabularyStudy: 'id,updated' });
   }
 }
 export const db = new EnglishDB();
@@ -104,6 +115,7 @@ export const backupSchema = z.object({
   reviews: z.array(reviewSchema),
   drafts: z.array(draftSchema),
   submissions: z.array(submissionSchema),
+  vocabularyStudy: z.array(vocabularyStudySchema).default([]),
 });
 export async function exportData() {
   return db.transaction('r', db.tables, async () => ({
@@ -114,6 +126,7 @@ export async function exportData() {
     reviews: await db.reviews.toArray(),
     drafts: await db.drafts.toArray(),
     submissions: await db.submissions.toArray(),
+    vocabularyStudy: await db.vocabularyStudy.toArray(),
   }));
 }
 export async function resetData() {
@@ -123,7 +136,14 @@ export async function resetData() {
 }
 export async function importData(raw: unknown) {
   const data = backupSchema.parse(raw);
-  for (const list of [data.attempts, data.words, data.reviews, data.drafts, data.submissions])
+  for (const list of [
+    data.attempts,
+    data.words,
+    data.reviews,
+    data.drafts,
+    data.submissions,
+    data.vocabularyStudy,
+  ])
     if (new Set(list.map((x) => x.id)).size !== list.length) throw new Error('Duplicate IDs');
   await db.transaction('rw', db.tables, async () => {
     for (const table of db.tables) await table.clear();
@@ -133,6 +153,7 @@ export async function importData(raw: unknown) {
     await db.reviews.bulkAdd(data.reviews);
     await db.drafts.bulkAdd(data.drafts);
     await db.submissions.bulkAdd(data.submissions);
+    await db.vocabularyStudy.bulkAdd(data.vocabularyStudy);
   });
 }
 export function download(name: string, text: string, type = 'application/json') {

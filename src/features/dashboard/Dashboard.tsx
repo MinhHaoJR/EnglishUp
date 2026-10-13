@@ -29,7 +29,7 @@ export default function Dashboard() {
   const { value: reviews = [] } = useLive(() => db.reviews.toArray());
   const { value: custom = [] } = useLive(() => db.words.toArray());
   const progress = getProgress(attempts);
-  const due = dueQueue([...vocabulary, ...custom], reviews, settings.newCards).length;
+  const due = dueQueue([...vocabulary, ...custom], reviews).length;
   const minutes = Math.floor(progress.todaySeconds / 60);
   const percent = Math.min(
     100,

@@ -8,17 +8,19 @@ import { PageTitle, Filters, Empty, Notice, useLive, useFiltered } from '../../c
 import { WordEditor } from '../../components/WordEditor';
 import { SpeakButton } from '../../components/SpeakButton';
 import { db, download } from '../../services/storage';
-import { dueQueue, schedule, type Rating } from '../../services/srs';
+import { studyScope } from '../../services/vocabularyStudy';
+import VocabularyPractice from './VocabularyPractice';
 import { importCSV, exportCSV } from '../../services/csv';
 import TranslationPractice from './TranslationPractice';
 import WordRelations from './WordRelations';
 import { groupWords, searchWords, paginateWords } from '../../services/vocabulary';
-type Mode = 'flashcards' | 'choice' | 'type' | 'spell';
 export default function Vocabulary() {
   const t = useT();
   const bi = useBi();
-  const { settings, level, topic, filter } = useApp();
-  const { value: custom = [], error } = useLive(() => db.words.toArray());
+  const { level, topic, filter } = useApp();
+  const { value: customWords, error } = useLive(() => db.words.toArray());
+  const custom = customWords ?? [];
+  const [practicing, setPracticing] = useState(false);
   const { value: reviews = [] } = useLive(() => db.reviews.toArray());
   const all = [...vocabulary, ...custom];
   const filtered = useFiltered(all);
@@ -36,17 +38,9 @@ export default function Vocabulary() {
       return params;
     });
   }
-  const [mode, setMode] = useState<Mode>('flashcards');
-  const [queue, setQueue] = useState<Word[]>([]);
-  const [index, setIndex] = useState(0);
-  const [started, setStarted] = useState(0);
-  const [revealed, setRevealed] = useState(false);
-  const [answer, setAnswer] = useState('');
   const [editing, setEditing] = useState<Partial<Word> | null>(null);
   const [search, setSearch] = useState('');
   const [message, setMessage] = useState('');
-  const [busy, setBusy] = useState(false);
-  const [finished, setFinished] = useState(false);
   const [pagination, setPagination] = useState({ key: '', page: 0 });
   const topicGroups = groupWords(all);
   const searchResults = searchWords(filtered, search);
@@ -57,53 +51,10 @@ export default function Vocabulary() {
   const libraryGroups = groupWords(pageData.words);
   const changePage = (page: number) => setPagination({ key: pageKey, page });
   const topicLabel = (name: string) => bi(topicVi[name] ?? name, name);
-  const due = dueQueue(filtered, reviews, settings.newCards);
-  const card = queue[index];
   const total = reviews.reduce((n, r) => n + r.total, 0);
   const accuracy = total
     ? Math.round((reviews.reduce((n, r) => n + r.correct, 0) / total) * 100)
     : 0;
-  const matched =
-    card &&
-    (mode === 'choice'
-      ? answer === card.id
-      : answer.trim().toLowerCase() === card.word.toLowerCase());
-  const options = card
-    ? [
-        card,
-        ...all
-          .filter((w) => w.id !== card.id && w.meaning !== card.meaning)
-          .slice(index % 20, (index % 20) + 3),
-      ].sort((a, b) => a.meaning.localeCompare(b.meaning))
-    : [];
-  async function rate(rating: Rating) {
-    if (!card || busy) return;
-    setBusy(true);
-    try {
-      const now = Date.now();
-      await db.transaction('rw', db.reviews, db.attempts, async () => {
-        const prior = await db.reviews.get(card.id);
-        await db.reviews.put(schedule(card.id, rating, prior, now));
-        await db.attempts.add({
-          id: crypto.randomUUID(),
-          skill: 'vocabulary',
-          score: rating === 'again' ? 0 : rating === 'hard' ? 60 : rating === 'good' ? 85 : 100,
-          duration: Math.max(1, Math.round((now - started) / 1000)),
-          timestamp: now,
-          label: card.word,
-        });
-      });
-      setIndex(index + 1);
-      setRevealed(false);
-      setAnswer('');
-      setStarted(Date.now());
-      if (index + 1 === queue.length) setFinished(true);
-    } catch {
-      setMessage(t('error'));
-    } finally {
-      setBusy(false);
-    }
-  }
   return (
     <>
       <PageTitle
@@ -152,7 +103,7 @@ export default function Vocabulary() {
           {bi('Đồng nghĩa & trái nghĩa', 'Synonyms & antonyms')}
         </button>
       </div>
-      {tab !== 'relations' && (!card || tab !== 'practice') && (
+      {tab !== 'relations' && (!practicing || tab !== 'practice') && (
         <>
           <Filters availableTopics={topicGroups.map((group) => group.topic)} />
           <section
@@ -351,199 +302,15 @@ export default function Vocabulary() {
             </>
           )}
         </>
-      ) : card ? (
-        <section className="panel flashcard">
-          <div className="flex justify-between">
-            <span className="badge">
-              {card.level} · {topicLabel(card.topic)}
-            </span>
-            <span className="muted">
-              {index + 1} / {queue.length}
-            </span>
-          </div>
-          <progress value={index} max={queue.length} aria-label={t('progress')} />
-          <div className="card-content">
-            {mode === 'spell' ? (
-              <SpeakButton text={card.word} />
-            ) : mode === 'type' ? (
-              <>
-                <p className="eyebrow">{bi('TỪ NÀO PHÙ HỢP?', 'WHICH WORD FITS?')}</p>
-                <h2>{card.meaning}</h2>
-                <p>{card.definition}</p>
-              </>
-            ) : (
-              <>
-                <h2>{card.word}</h2>
-                <p className="muted">
-                  {card.ipa ? `${card.ipa} · ` : ''}
-                  {card.pos}
-                </p>
-                <SpeakButton text={card.word} />
-              </>
-            )}
-            {mode === 'choice' && !revealed && (
-              <div className="choice-grid">
-                {options.map((o) => (
-                  <button
-                    key={o.id}
-                    aria-pressed={answer === o.id}
-                    className={answer === o.id ? 'primary' : ''}
-                    onClick={() => setAnswer(o.id)}
-                  >
-                    {o.meaning}
-                  </button>
-                ))}
-              </div>
-            )}
-            {(mode === 'type' || mode === 'spell') && !revealed && (
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setRevealed(true);
-                }}
-              >
-                <label>
-                  {t('answer')}
-                  <input
-                    autoComplete="off"
-                    value={answer}
-                    onChange={(e) => setAnswer(e.target.value)}
-                  />
-                </label>
-                <button className="primary mt-4" disabled={!answer.trim()}>
-                  {t('check')}
-                </button>
-              </form>
-            )}
-            {revealed ? (
-              <>
-                <div className="answer-box">
-                  {mode !== 'flashcards' && (
-                    <strong>{matched ? t('correct') : bi('Đáp án đúng', 'Correct answer')}</strong>
-                  )}
-                  <h3>
-                    {card.word} — {card.meaning}
-                  </h3>
-                  <p>{card.definition}</p>
-                  {card.examples.map((s) => (
-                    <p key={s}>
-                      <em>{s}</em>
-                    </p>
-                  ))}
-                </div>
-                <p className="muted">
-                  {bi('Bạn nhớ từ này tốt đến đâu?', 'How well did you remember?')}
-                </p>
-                <div className="actions justify-center">
-                  {(['again', 'hard', 'good', 'easy'] as Rating[]).map((r) => (
-                    <button
-                      disabled={busy || (mode !== 'flashcards' && !matched && r !== 'again')}
-                      key={r}
-                      onClick={() => void rate(r)}
-                    >
-                      {t(r)}
-                    </button>
-                  ))}
-                </div>
-              </>
-            ) : mode === 'flashcards' ? (
-              <button className="primary mt-6" onClick={() => setRevealed(true)}>
-                {t('reveal')}
-              </button>
-            ) : mode === 'choice' ? (
-              <button className="primary mt-5" disabled={!answer} onClick={() => setRevealed(true)}>
-                {t('check')}
-              </button>
-            ) : null}
-          </div>
-          <button
-            onClick={() => {
-              setQueue([]);
-              setFinished(false);
-            }}
-          >
-            {bi('Kết thúc sớm (giữ kết quả đã lưu)', 'End early (keep saved reviews)')}
-          </button>
-        </section>
       ) : (
-        <>
-          <section className="panel practice-intro">
-            <span className="big-glyph" aria-hidden="true">
-              Aa
-            </span>
-            <div>
-              <h2>
-                {finished
-                  ? t('result')
-                  : bi(
-                      'Một chút mỗi ngày, nhớ lâu hơn',
-                      'A little every day, remembered for longer',
-                    )}
-              </h2>
-              <p className="muted">
-                {due.length}{' '}
-                {bi(
-                  'thẻ sẵn sàng • tối đa 10 thẻ mỗi buổi',
-                  'cards ready • up to 10 cards per session',
-                )}
-              </p>
-              <label>
-                {bi('Cách luyện tập', 'Practice mode')}
-                <select value={mode} onChange={(e) => setMode(e.target.value as Mode)}>
-                  <option value="flashcards">{bi('Thẻ ghi nhớ', 'Flashcards')}</option>
-                  <option value="choice">{bi('Chọn nghĩa đúng', 'Multiple choice')}</option>
-                  <option value="type">{bi('Gõ từ tiếng Anh', 'Type the word')}</option>
-                  <option value="spell">{bi('Nghe và viết từ', 'Listen and spell')}</option>
-                </select>
-              </label>
-              <button
-                className="primary mt-5"
-                disabled={!due.length}
-                onClick={() => {
-                  setQueue(due.slice(0, 10));
-                  setIndex(0);
-                  setStarted(Date.now());
-                  setAnswer('');
-                  setRevealed(false);
-                  setFinished(false);
-                }}
-              >
-                {t('start')} →
-              </button>
-              {!due.length && (
-                <p className="muted">
-                  {bi(
-                    'Đã hết thẻ đến hạn hoặc đạt giới hạn từ mới hôm nay.',
-                    'No cards due, or today’s new-card limit is reached.',
-                  )}
-                </p>
-              )}
-            </div>
-          </section>
-          <section className="panel">
-            <h2>{t('upcoming')}</h2>
-            <div className="upcoming-grid">
-              {Array.from({ length: 7 }, (_, i) => {
-                const a = new Date();
-                a.setDate(a.getDate() + i + 1);
-                a.setHours(0, 0, 0, 0);
-                const b = new Date(a);
-                b.setDate(b.getDate() + 1);
-                return (
-                  <div key={i}>
-                    <span className="muted">
-                      {a.toLocaleDateString(settings.language, {
-                        weekday: 'short',
-                        day: 'numeric',
-                      })}
-                    </span>
-                    <strong>{reviews.filter((r) => r.due >= +a && r.due < +b).length}</strong>
-                  </div>
-                );
-              })}
-            </div>
-          </section>
-        </>
+        <VocabularyPractice
+          key={studyScope(level, topic)}
+          scope={studyScope(level, topic)}
+          words={filtered}
+          all={all}
+          ready={customWords !== undefined}
+          onActiveChange={setPracticing}
+        />
       )}
     </>
   );

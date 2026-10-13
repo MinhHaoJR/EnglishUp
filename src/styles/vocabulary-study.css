@@ -1,0 +1,100 @@
+.vocabulary-study .study-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.vocabulary-study .study-heading h2 {
+  margin: 0 0 8px;
+}
+.vocabulary-study .study-mark {
+  display: grid;
+  place-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+  background: var(--soft);
+  color: var(--green);
+  font-size: 1.7rem;
+  font-weight: 750;
+  flex-shrink: 0;
+}
+.vocabulary-study .study-heading p {
+  margin: 0;
+}
+.vocabulary-study .study-chooser {
+  border-top: 4px solid var(--green);
+}
+.vocabulary-study .study-summary {
+  padding: 12px 15px;
+  background: var(--soft);
+  border-radius: 12px;
+  margin: 20px 0;
+}
+.vocabulary-study .study-preview summary {
+  cursor: pointer;
+  font-weight: 650;
+  padding: 10px 0;
+}
+.vocabulary-study .study-preview ol {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  padding: 12px 0;
+  list-style: none;
+}
+.vocabulary-study .study-preview li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--border);
+  padding: 10px;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+.vocabulary-study .study-preview small {
+  color: var(--muted);
+}
+.vocabulary-study .study-card-meta,
+.vocabulary-study .study-session-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.vocabulary-study .study-skip {
+  background: var(--soft);
+  color: var(--green);
+  border-color: var(--green);
+}
+.vocabulary-study .card-content > h2 {
+  overflow-wrap: anywhere;
+}
+.vocabulary-study h2[tabindex='-1']:focus {
+  outline: none;
+}
+.vocabulary-study fieldset {
+  min-width: 0;
+}
+@media (max-width: 700px) {
+  .vocabulary-study .card-content > h2 {
+    font-size: clamp(1.6rem, 7.5vw, 2.5rem);
+    line-height: 1.25;
+  }
+  .vocabulary-study .study-preview ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .vocabulary-study .study-session-actions button {
+    width: 100%;
+  }
+  .vocabulary-study .study-heading {
+    align-items: flex-start;
+  }
+  .vocabulary-study .study-mark {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    font-size: 1.3rem;
+  }
+}

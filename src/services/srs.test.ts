@@ -13,10 +13,11 @@ test('SM-2 intervals, failures and minimum ease', () => {
   for (let i = 0; i < 20; i++) r = schedule('a', 'again', r);
   expect(r.ease).toBe(1.3);
 });
-test('new limit is global while overdue cards are always included', () => {
+test('all new words remain available after studying today, with overdue cards first', () => {
   const now = Date.now();
   const review = schedule(vocabulary[0].id, 'good', undefined, now);
   review.due = now - 1;
-  expect(dueQueue(vocabulary, [review], 1, now).map((w) => w.id)).toEqual([review.id]);
-  expect(dueQueue(vocabulary, [], 0, now)).toEqual([]);
+  expect(dueQueue(vocabulary, [review], now)).toHaveLength(vocabulary.length);
+  expect(dueQueue(vocabulary, [review], now)[0].id).toBe(review.id);
+  expect(dueQueue(vocabulary, [], now)).toEqual(vocabulary);
 });
