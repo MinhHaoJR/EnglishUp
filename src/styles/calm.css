@@ -1,0 +1,329 @@
+/* A quieter, shared visual language: neutral surfaces and one restrained accent. */
+:root {
+  --bg: #f5f7f8;
+  --panel: #fff;
+  --ink: #26333b;
+  --muted: #62717a;
+  --border: #dce3e6;
+  --green: #315d70;
+  --soft: #edf3f5;
+  --accent: #dbe8ed;
+}
+
+.workspace[data-skill] {
+  --skill-accent: #315d70;
+  --skill-soft: #edf3f5;
+  background: var(--bg);
+}
+
+.workspace .panel {
+  border-radius: 16px;
+  box-shadow: 0 2px 10px #19323d08;
+}
+
+.workspace:not([data-skill='dashboard']) main > .page-title {
+  border-left: 3px solid var(--green);
+}
+
+.workspace .stats:not(.dashboard-stats) > .stat,
+.workspace .stats:not(.dashboard-stats) > .stat:nth-child(n),
+.workspace .lesson-grid > .lesson-card,
+.workspace .flashcard,
+.workspace .vocabulary-study .study-chooser {
+  border-top: 1px solid var(--border);
+}
+
+.workspace .tabs button[aria-pressed='true'] {
+  box-shadow: none;
+}
+
+.workspace .vocabulary-study .study-mark,
+.workspace .vocabulary-study .study-summary {
+  background: var(--soft);
+  color: var(--ink);
+}
+
+.workspace .vocabulary-study .study-mark {
+  border-radius: 14px;
+}
+
+.sidebar-note,
+.dark .sidebar-note {
+  background: var(--soft);
+  border-color: var(--border);
+}
+
+.sidebar-note .plant,
+.dark .sidebar-note .plant,
+.language-picker-mark,
+.dark .language-picker-mark {
+  color: var(--green);
+}
+
+.language-picker,
+.dark .language-picker {
+  background: var(--soft);
+  border-color: var(--border);
+}
+
+.brand-mark,
+.dark .brand-mark {
+  background: #315d70;
+  box-shadow: none;
+}
+
+.brand-mark span,
+.brand-dot {
+  color: #aac8d3;
+}
+
+.sidebar nav a[data-skill] {
+  --skill-accent: #315d70;
+  --skill-soft: #edf3f5;
+}
+
+.sidebar nav a[data-skill].active {
+  color: #315d70;
+  background: #edf3f5;
+  border-color: var(--border);
+}
+
+.sidebar nav a[data-skill].active > span {
+  color: #fff;
+  background: #315d70;
+}
+
+.topbar {
+  background: var(--panel);
+}
+
+.avatar {
+  background: var(--soft);
+  color: var(--green);
+  border-color: var(--border);
+}
+
+.workspace .joy-dashboard .hero {
+  display: block;
+  min-height: 0;
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #19323d08;
+}
+
+.workspace .joy-dashboard .hero::before,
+.workspace .joy-dashboard .joy-hero-art {
+  display: none;
+}
+
+.workspace .joy-dashboard .hero-copy {
+  max-width: 670px;
+  padding: 30px 36px;
+  color: var(--ink);
+}
+
+.workspace .joy-dashboard .hero-chip {
+  color: var(--green);
+  background: var(--soft);
+  border-color: var(--border);
+}
+
+.workspace .joy-dashboard .hero h2,
+.workspace .joy-dashboard .hero h2 em {
+  color: var(--ink);
+}
+
+.workspace .joy-dashboard .hero h2 {
+  margin: 15px 0 10px;
+  font-size: clamp(1.75rem, 2.8vw, 2.4rem);
+}
+
+.workspace .joy-dashboard .hero p,
+.workspace .joy-dashboard .hero .hero-foot {
+  color: var(--muted);
+}
+
+.workspace .joy-dashboard .hero .primary,
+.workspace .joy-dashboard .hero .primary:hover {
+  color: #fff;
+  background: #315d70;
+  border-color: #315d70;
+  box-shadow: none;
+  transform: none;
+}
+
+.workspace .joy-dashboard .dashboard-stats .stat {
+  border-top: 1px solid var(--border);
+}
+
+.workspace .joy-dashboard .dashboard-stats strong,
+.workspace .joy-dashboard .dashboard-stats .stat-label > span:last-child {
+  color: var(--ink);
+}
+
+.workspace .joy-dashboard .dashboard-stats .text-link {
+  color: var(--green);
+}
+
+.workspace .joy-dashboard .skill-card:is(.peach, .rose, .blue, .mint) {
+  --skill-bg: var(--panel);
+  --skill-ink: var(--ink);
+  --skill-accent: #315d70;
+  --skill-border: var(--border);
+  border-radius: 16px;
+}
+
+.workspace .joy-dashboard .skill-card:hover {
+  transform: none;
+  box-shadow: 0 4px 14px #19323d12;
+}
+
+.workspace .joy-dashboard .skill-icon,
+.workspace .joy-dashboard .vocab-icon {
+  color: var(--green);
+  background: var(--soft);
+  box-shadow: none;
+}
+
+.workspace .joy-dashboard .vocab-banner,
+.workspace .joy-dashboard .quote-card {
+  background: var(--panel);
+  border-color: var(--border);
+  color: var(--ink);
+}
+
+.workspace .joy-dashboard .vocab-banner p,
+.workspace .joy-dashboard .quote-card :is(p, small, span) {
+  color: var(--muted);
+}
+
+.workspace .joy-dashboard .plan-panel {
+  border-top: 1px solid var(--border);
+}
+
+.workspace .joy-dashboard .plan-panel .badge,
+.workspace .joy-dashboard .plan-number,
+.workspace .joy-dashboard .plan-list a:nth-child(n) .plan-number,
+.workspace .joy-dashboard .activity-list > div:nth-child(n) .activity-icon {
+  background: var(--soft);
+  color: var(--green);
+}
+
+.workspace .joy-dashboard .bar-slot i,
+.workspace .joy-dashboard .week-chart > div:nth-child(n) i {
+  background: #8caeb9;
+}
+
+.workspace .language-space.language-ja,
+.workspace .language-space.language-zh {
+  --language-accent: #315d70;
+  --language-bg: var(--panel);
+  --language-border: var(--border);
+  --language-soft: var(--soft);
+  --language-ink: var(--ink);
+  --language-muted: var(--muted);
+  --language-hero-end: var(--panel);
+  --topic-accent: #315d70;
+  --topic-soft: var(--soft);
+  --topic-border: var(--border);
+  --topic-selected: #315d70;
+}
+
+.workspace .language-space :is(.language-welcome, .lexicon-hero) {
+  background: var(--panel);
+  box-shadow: none;
+}
+
+.workspace .language-space :is(.language-summary > div, .lexicon-stat),
+.workspace .language-space :is(.language-summary > div, .lexicon-stat):nth-child(n) {
+  background: var(--panel);
+  border-color: var(--border);
+  color: var(--ink);
+}
+
+.workspace .language-space .language-art-note {
+  background: var(--soft);
+  border-color: var(--border);
+  color: var(--ink);
+}
+
+html.dark {
+  --bg: #182126;
+  --panel: #202b31;
+  --ink: #eaf0f2;
+  --muted: #b3c0c6;
+  --border: #3a4a52;
+  --green: #a2c6d2;
+  --soft: #2b3b43;
+  --accent: #35505b;
+}
+
+html.dark .workspace[data-skill] {
+  --skill-accent: #a2c6d2;
+  --skill-soft: #2b3b43;
+  background: var(--bg);
+}
+
+html.dark .topbar {
+  background: var(--panel);
+}
+
+html.dark .sidebar nav a[data-skill] {
+  --skill-accent: #a2c6d2;
+  --skill-soft: #2b3b43;
+}
+
+html.dark .sidebar nav a[data-skill].active {
+  color: #a2c6d2;
+  background: #2b3b43;
+}
+
+html.dark .sidebar nav a[data-skill].active > span {
+  color: #182126;
+  background: #a2c6d2;
+}
+
+html.dark .workspace .joy-dashboard .hero {
+  background: var(--panel);
+  color: var(--ink);
+}
+
+html.dark .workspace .joy-dashboard .hero-copy,
+html.dark .workspace .joy-dashboard .hero h2,
+html.dark .workspace .joy-dashboard .hero h2 em {
+  color: var(--ink);
+}
+
+html.dark .workspace .joy-dashboard .hero p,
+html.dark .workspace .joy-dashboard .hero .hero-foot {
+  color: var(--muted);
+}
+
+html.dark .workspace .joy-dashboard .hero .primary,
+html.dark .workspace .joy-dashboard .hero .primary:hover {
+  background: #a2c6d2;
+  border-color: #a2c6d2;
+  color: #182126;
+}
+
+html.dark .workspace .joy-dashboard .skill-card:is(.peach, .rose, .blue, .mint) {
+  --skill-bg: var(--panel);
+  --skill-ink: var(--ink);
+  --skill-accent: #a2c6d2;
+  --skill-border: var(--border);
+}
+
+html.dark .workspace .language-space.language-ja,
+html.dark .workspace .language-space.language-zh {
+  --language-accent: #a2c6d2;
+  --topic-accent: #a2c6d2;
+  --topic-selected: #a2c6d2;
+}
+
+@media (max-width: 700px) {
+  .workspace .joy-dashboard .hero-copy {
+    padding: 24px;
+  }
+}

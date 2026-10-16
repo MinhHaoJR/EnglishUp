@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 import { useApp } from './store';
 import { useT } from '../i18n';
-import Dashboard from '../features/dashboard/Dashboard';
+const Dashboard = lazy(() => import('../features/dashboard/Dashboard'));
 import LanguagePicker from '../features/languages/LanguagePicker';
 import SkillIcon from '../components/SkillIcon';
 const LanguageWorkspace = lazy(() => import('../features/languages/LanguageWorkspace'));

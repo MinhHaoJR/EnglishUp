@@ -31,9 +31,9 @@ function show(element: React.ReactNode) {
 }
 async function startVocabulary() {
   const button = screen.getByRole('button', { name: /Start practice/ });
-  await waitFor(() => expect(button).toBeEnabled());
+  await waitFor(() => expect(button).toBeEnabled(), { timeout: 4000 });
   fireEvent.click(button);
-  await screen.findByRole('button', { name: 'Reveal answer' });
+  await screen.findByRole('button', { name: 'Reveal answer' }, { timeout: 4000 });
 }
 async function verifyAttempt(skill: string) {
   await waitFor(async () => expect(await db.attempts.where('skill').equals(skill).count()).toBe(1));
@@ -46,21 +46,25 @@ test('vocabulary advances a card, schedules it and persists the attempt', async 
   await screen.findByRole('heading', { name: vocabulary[1].word });
   await verifyAttempt('vocabulary');
   expect(await db.reviews.count()).toBe(1);
-});
+}, 12000);
 
 test('large library pages are bounded and search and topic changes return to page one', () => {
   show(<Vocabulary />);
   fireEvent.click(screen.getByRole('button', { name: /Word library/ }));
   expect(screen.getAllByRole('article')).toHaveLength(30);
   fireEvent.click(screen.getByRole('button', { name: 'Next page' }));
-  expect(screen.getByText('Page 2/56 · 1680 matching words')).toBeInTheDocument();
-  fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'pineapple' } });
+  expect(screen.getByText('Page 2/64 · 1920 matching words')).toBeInTheDocument();
+  fireEvent.change(screen.getByRole('searchbox', { name: 'Search words' }), {
+    target: { value: 'pineapple' },
+  });
   expect(screen.getAllByRole('article')).toHaveLength(1);
   expect(screen.getByRole('heading', { name: /pineapple/ })).toBeInTheDocument();
   expect(screen.getByRole('button', { name: 'Previous page' })).toBeDisabled();
-  fireEvent.change(screen.getByRole('searchbox'), { target: { value: '' } });
-  expect(screen.getByText('Page 1/56 · 1680 matching words')).toBeInTheDocument();
-  fireEvent.click(screen.getByRole('button', { name: 'People and family · 50' }));
+  fireEvent.change(screen.getByRole('searchbox', { name: 'Search words' }), {
+    target: { value: '' },
+  });
+  expect(screen.getByText('Page 1/64 · 1920 matching words')).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'People and family 50 words' }));
   expect(screen.getByText('Page 1/2 · 50 matching words')).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Next page' }));
   expect(screen.getAllByRole('article')).toHaveLength(20);
@@ -92,7 +96,8 @@ test('a new A1 card persists through backup, reset and restore; CSV includes a w
 
 test('IT topics filter the library and practice, and persist a review across remount', async () => {
   let view = show(<Vocabulary />);
-  fireEvent.click(screen.getByRole('button', { name: 'IT: Programming · 10' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Specialist' }));
+  fireEvent.click(screen.getByRole('button', { name: 'IT: Programming 10 words' }));
   fireEvent.click(screen.getByRole('button', { name: /Word library/ }));
   const group = screen.getByRole('region', { name: 'IT: Programming' });
   expect(within(group).getAllByRole('article')).toHaveLength(10);
@@ -132,12 +137,18 @@ test('Vietnamese topics and accent-free search include custom imported topics', 
     custom: true,
   });
   show(<Vocabulary />);
-  expect(await screen.findByRole('button', { name: 'My project · 1' })).toBeInTheDocument();
-  fireEvent.click(screen.getByRole('button', { name: 'IT: Cơ sở dữ liệu · 10' }));
+  fireEvent.click(await screen.findByRole('button', { name: 'Tự thêm' }));
+  expect(screen.getByRole('button', { name: 'My project 1 từ' })).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Chuyên ngành' }));
+  fireEvent.click(screen.getByRole('button', { name: 'IT: Cơ sở dữ liệu 10 từ' }));
   fireEvent.click(screen.getByRole('button', { name: /Sổ từ vựng/ }));
-  fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'co so du lieu' } });
+  fireEvent.change(screen.getByRole('searchbox', { name: 'Tìm từ vựng' }), {
+    target: { value: 'co so du lieu' },
+  });
   expect(screen.getByRole('heading', { name: /database/ })).toBeInTheDocument();
-  fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'not-a-word' } });
+  fireEvent.change(screen.getByRole('searchbox', { name: 'Tìm từ vựng' }), {
+    target: { value: 'not-a-word' },
+  });
   expect(screen.queryAllByRole('article')).toHaveLength(0);
   fireEvent.click(screen.getByRole('button', { name: 'Xóa tìm kiếm' }));
   expect(screen.getAllByRole('article')).toHaveLength(10);

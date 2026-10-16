@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 const App = React.lazy(() => import('./app/App'));
 import './styles.css';
 import './styles/vibrant.css';
+import './styles/calm.css';
 class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { error: boolean }> {
   state = { error: false };
   static getDerivedStateFromError() {

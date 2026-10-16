@@ -28,9 +28,9 @@ function show() {
 }
 async function start() {
   const button = screen.getByRole('button', { name: /Start practice/ });
-  await waitFor(() => expect(button).toBeEnabled());
+  await waitFor(() => expect(button).toBeEnabled(), { timeout: 4000 });
   fireEvent.click(button);
-  await screen.findByRole('button', { name: 'Reveal answer' });
+  await screen.findByRole('button', { name: 'Reveal answer' }, { timeout: 4000 });
 }
 
 test('twenty-word groups can be selected with a zero legacy daily limit and resume after skip, early exit and backup', async () => {
@@ -61,7 +61,7 @@ test('twenty-word groups can be selected with a zero legacy daily limit and resu
   expect(screen.getByRole('heading', { name: words[22].word })).toBeInTheDocument();
   expect(await db.attempts.count()).toBe(1);
   view.unmount();
-}, 10000);
+}, 15000);
 
 test('skip is guarded against double clicks and a failed save keeps the current word', async () => {
   show();

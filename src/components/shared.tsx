@@ -16,9 +16,22 @@ export function useLive<T>(query: () => Promise<T>, deps: unknown[] = []) {
   }, deps);
   return { value, error };
 }
-export function Filters({ availableTopics = topics }: { availableTopics?: string[] }) {
+export function Filters({
+  availableTopics = topics,
+  topicOptionGroups,
+}: {
+  availableTopics?: string[];
+  topicOptionGroups?: { label: string; topics: readonly string[] }[];
+}) {
   const t = useT();
   const { level, topic, filter, settings } = useApp();
+  const choices = [...new Set([...availableTopics, ...(topic === 'all' ? [] : [topic])])];
+  const options = (entries: readonly string[]) =>
+    entries.map((name) => (
+      <option key={name} value={name}>
+        {settings.language === 'vi' ? (topicVi[name] ?? name) : name}
+      </option>
+    ));
   return (
     <div className="filters">
       <label>
@@ -34,11 +47,13 @@ export function Filters({ availableTopics = topics }: { availableTopics?: string
         {t('topic')}
         <select value={topic} onChange={(e) => filter(level, e.target.value)}>
           <option value="all">{t('allTopics')}</option>
-          {[...new Set([...availableTopics, ...(topic === 'all' ? [] : [topic])])].map((x) => (
-            <option key={x} value={x}>
-              {settings.language === 'vi' ? (topicVi[x] ?? x) : x}
-            </option>
-          ))}
+          {topicOptionGroups
+            ? topicOptionGroups.map((group) => (
+                <optgroup label={group.label} key={group.label}>
+                  {options(group.topics.filter((name) => choices.includes(name)))}
+                </optgroup>
+              ))
+            : options(choices)}
         </select>
       </label>
     </div>

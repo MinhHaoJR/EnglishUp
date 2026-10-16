@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useApp } from '../../app/store';
 import { vocabulary } from '../../data/content';
+import { topicSectionFor, topicSections, type TopicSectionId } from '../../data/topicSections';
 import type { Word } from '../../data/schema';
 import { useT, useBi, topicVi } from '../../i18n';
 import { PageTitle, Filters, Empty, Notice, useLive, useFiltered } from '../../components/shared';
@@ -14,6 +15,7 @@ import { importCSV, exportCSV } from '../../services/csv';
 import TranslationPractice from './TranslationPractice';
 import WordRelations from './WordRelations';
 import { groupWords, searchWords, paginateWords } from '../../services/vocabulary';
+import '../../styles/vocabulary-topics.css';
 export default function Vocabulary() {
   const t = useT();
   const bi = useBi();
@@ -21,6 +23,10 @@ export default function Vocabulary() {
   const { value: customWords, error } = useLive(() => db.words.toArray());
   const custom = customWords ?? [];
   const [practicing, setPracticing] = useState(false);
+  const [section, setSection] = useState<TopicSectionId>(
+    topic === 'all' ? 'everyday' : topicSectionFor(topic),
+  );
+  const [topicSearch, setTopicSearch] = useState('');
   const { value: reviews = [] } = useLive(() => db.reviews.toArray());
   const all = [...vocabulary, ...custom];
   const filtered = useFiltered(all);
@@ -42,7 +48,42 @@ export default function Vocabulary() {
   const [search, setSearch] = useState('');
   const [message, setMessage] = useState('');
   const [pagination, setPagination] = useState({ key: '', page: 0 });
+  const topicLabel = (name: string) => bi(topicVi[name] ?? name, name);
   const topicGroups = groupWords(all);
+  const knownTopics = new Set<string>(topicSections.flatMap((entry) => [...entry.topics]));
+  const customTopics = topicGroups
+    .map((group) => group.topic)
+    .filter((name) => !knownTopics.has(name));
+  const topicOptionGroups = [
+    ...topicSections.map((entry) => ({ label: bi(entry.vi, entry.en), topics: entry.topics })),
+    ...(customTopics.length ? [{ label: bi('Tự thêm', 'Custom'), topics: customTopics }] : []),
+  ];
+  const normalizeTopic = (value: string) =>
+    value.normalize('NFD').replace(/\p{M}/gu, '').replace(/[đĐ]/g, 'd').toLowerCase();
+  const topicRank = new Map<string, number>(
+    topicSections.flatMap((entry) => [...entry.topics]).map((name, index) => [name, index]),
+  );
+  const activeTopics = topicGroups
+    .filter((group) =>
+      topicSearch.trim()
+        ? normalizeTopic(topicLabel(group.topic)).includes(normalizeTopic(topicSearch.trim())) ||
+          normalizeTopic(group.topic).includes(normalizeTopic(topicSearch.trim()))
+        : section === 'custom'
+          ? customTopics.includes(group.topic)
+          : topicSectionFor(group.topic) === section,
+    )
+    .sort(
+      (a, b) =>
+        (topicRank.get(a.topic) ?? Number.MAX_SAFE_INTEGER) -
+          (topicRank.get(b.topic) ?? Number.MAX_SAFE_INTEGER) ||
+        topicLabel(a.topic).localeCompare(topicLabel(b.topic)),
+    );
+  useEffect(() => {
+    if (topic !== 'all') {
+      setSection(topicSectionFor(topic));
+      setTopicSearch('');
+    }
+  }, [topic]);
   const searchResults = searchWords(filtered, search);
   const pageKey = JSON.stringify([level, topic, search]);
   // Reset the stored cursor too, so returning to a previous search cannot restore a stale page.
@@ -50,7 +91,6 @@ export default function Vocabulary() {
   const pageData = paginateWords(searchResults, pagination.key === pageKey ? pagination.page : 0);
   const libraryGroups = groupWords(pageData.words);
   const changePage = (page: number) => setPagination({ key: pageKey, page });
-  const topicLabel = (name: string) => bi(topicVi[name] ?? name, name);
   const total = reviews.reduce((n, r) => n + r.total, 0);
   const accuracy = total
     ? Math.round((reviews.reduce((n, r) => n + r.correct, 0) / total) * 100)
@@ -105,51 +145,103 @@ export default function Vocabulary() {
       </div>
       {tab !== 'relations' && (!practicing || tab !== 'practice') && (
         <>
-          <Filters availableTopics={topicGroups.map((group) => group.topic)} />
+          <Filters
+            availableTopics={topicGroups.map((group) => group.topic)}
+            topicOptionGroups={topicOptionGroups}
+          />
           <section
-            className="vocabulary-topics panel space-y-4"
+            className="vocabulary-topics panel"
             aria-label={bi('Chọn chủ đề từ vựng', 'Choose a vocabulary topic')}
           >
-            <div className="actions">
-              <h2>{bi('Học theo chủ đề', 'Learn by topic')}</h2>
-              <button aria-pressed={topic === 'all'} onClick={() => filter(level, 'all')}>
+            <div className="vocabulary-topic-heading">
+              <div>
+                <h2>{bi('Chọn chủ đề', 'Choose a topic')}</h2>
+                <p className="muted">
+                  {bi(
+                    'Lọc theo nhóm hoặc tìm nhanh tên chủ đề.',
+                    'Browse a group or search by topic name.',
+                  )}
+                </p>
+              </div>
+              <button
+                className="topic-all"
+                aria-pressed={topic === 'all'}
+                onClick={() => filter(level, 'all')}
+              >
                 {t('allTopics')} ·{' '}
                 {all.filter((word) => level === 'all' || word.level === level).length}
               </button>
             </div>
-            {[false, true].map((it) => (
-              <div key={String(it)}>
-                <h3>
-                  {it
-                    ? bi('Tiếng Anh chuyên ngành IT', 'English for IT')
-                    : bi('Đời sống và công việc', 'Everyday life and work')}
-                </h3>
-                <div className="topic-choices actions mt-2">
-                  {topicGroups
-                    .filter((group) => group.topic.startsWith('IT:') === it)
-                    .map((group) => (
-                      <button
-                        key={group.topic}
-                        aria-pressed={topic === group.topic}
-                        className={topic === group.topic ? 'primary' : ''}
-                        onClick={() => filter(level, group.topic)}
-                      >
-                        {topicLabel(group.topic)} ·{' '}
-                        {
-                          group.words.filter((word) => level === 'all' || word.level === level)
-                            .length
-                        }
-                      </button>
-                    ))}
-                </div>
-              </div>
-            ))}
-            <p className="muted">
-              {bi(
-                'Số từ theo trình độ đang chọn. Chọn chủ đề để xem từ và luyện tập.',
-                'Counts reflect the selected level. Choose a topic to browse and practice.',
-              )}
-            </p>
+            <div className="topic-toolbar">
+              <nav className="topic-sections" aria-label={bi('Nhóm chủ đề', 'Topic groups')}>
+                {topicSections.map((entry) => (
+                  <button
+                    key={entry.id}
+                    aria-pressed={section === entry.id && !topicSearch}
+                    onClick={() => {
+                      setSection(entry.id);
+                      setTopicSearch('');
+                      filter(level, 'all');
+                    }}
+                  >
+                    {bi(entry.vi, entry.en)}
+                  </button>
+                ))}
+                {customTopics.length > 0 && (
+                  <button
+                    aria-pressed={section === 'custom' && !topicSearch}
+                    onClick={() => {
+                      setSection('custom');
+                      setTopicSearch('');
+                      filter(level, 'all');
+                    }}
+                  >
+                    {bi('Tự thêm', 'Custom')}
+                  </button>
+                )}
+              </nav>
+              <label className="topic-search">
+                {bi('Tìm chủ đề', 'Find a topic')}
+                <input
+                  type="search"
+                  value={topicSearch}
+                  onChange={(event) => setTopicSearch(event.target.value)}
+                  placeholder={bi('Ví dụ: marketing', 'e.g. marketing')}
+                />
+              </label>
+            </div>
+            {section === 'exam' && !topicSearch && (
+              <p className="topic-guidance muted">
+                {bi(
+                  'Từ C1–C2 để luyện đọc, viết và lập luận học thuật. Nhãn cấp độ mang tính gợi ý.',
+                  'C1–C2 words for academic reading, writing and argument. Levels are editorial guidance.',
+                )}
+              </p>
+            )}
+            <div className="topic-grid">
+              {activeTopics.map((group) => {
+                const count = group.words.filter(
+                  (word) => level === 'all' || word.level === level,
+                ).length;
+                return (
+                  <button
+                    key={group.topic}
+                    className="topic-tile"
+                    aria-pressed={topic === group.topic}
+                    disabled={count === 0}
+                    onClick={() => filter(level, group.topic)}
+                  >
+                    <span>{topicLabel(group.topic)}</span>
+                    <small>
+                      {count} {t('words')}
+                    </small>
+                  </button>
+                );
+              })}
+            </div>
+            {activeTopics.length === 0 && (
+              <p className="muted">{bi('Không tìm thấy chủ đề phù hợp.', 'No matching topics.')}</p>
+            )}
           </section>
         </>
       )}

@@ -1,0 +1,266 @@
+# Original EnglishUp specialist and advanced practice content. Format: word|Vietnamese meaning|English definition|original example.
+# CEFR labels are editorial learning guidance, not certified word ratings or IELTS band conversions.
+@Marketing: Strategy|noun|B2
+positioning|định vị thương hiệu|the place a brand aims to hold in customers' minds|Clear positioning helped the new brand stand apart.
+buyer persona|chân dung khách hàng mục tiêu|a research-based profile of a typical customer|The team revised its buyer persona after interviewing customers.
+value proposition|lợi ích cốt lõi dành cho khách hàng|a clear statement of why a customer should choose an offer|Our value proposition emphasizes reliable delivery.
+brand equity|giá trị thương hiệu|the value a brand gains from recognition and trust|Strong brand equity allowed the company to charge more.
+market segmentation|phân khúc thị trường|dividing a broad market into groups with shared needs|Market segmentation revealed a neglected group of commuters.
+customer insight|hiểu biết sâu về khách hàng|a useful understanding of what customers need or do|A customer insight from interviews changed the design.
+brand promise|cam kết thương hiệu|the experience a brand commits to provide|The brand promise must match the actual service.
+product launch|đợt ra mắt sản phẩm|the introduction of a new product to a market|The product launch began with a small regional event.
+competitive advantage|lợi thế cạnh tranh|a feature that helps a business outperform rivals|Fast repairs became the firm's competitive advantage.
+target audience|nhóm người xem mục tiêu|the people a message or product is intended to reach|The campaign's target audience was first-time renters.
+@Marketing: Strategy|noun|C1
+brand architecture|cấu trúc thương hiệu|the way a company organizes its brands and subbrands|The merger required a clearer brand architecture.
+category entry point|tình huống gợi nhớ ngành hàng|a situation that prompts someone to think of a product category|The study identified a category entry point linked to commuting.
+share of voice|tỷ trọng hiện diện truyền thông|a brand's portion of advertising or discussion in a market|Its share of voice rose during the holiday campaign.
+customer lifetime value|giá trị vòng đời khách hàng|the estimated value of a customer relationship over time|Customer lifetime value informed the retention budget.
+market penetration|mức độ thâm nhập thị trường|the extent to which a product reaches potential buyers|Market penetration remained low outside major cities.
+brand salience|mức độ dễ được nhớ tới của thương hiệu|how readily a brand comes to mind in buying situations|Distinctive packaging improved brand salience.
+differentiation strategy|chiến lược tạo khác biệt|a plan to stand out through meaningful differences|The differentiation strategy focused on repairable products.
+portfolio strategy|chiến lược danh mục sản phẩm|a plan for managing a set of products or brands|A new portfolio strategy removed overlapping product lines.
+perceptual map|bản đồ nhận thức thương hiệu|a diagram showing how customers view competing brands|The perceptual map placed both brands near each other.
+brand extension|mở rộng thương hiệu|using an established brand name for a new product|The brand extension into tea needed careful testing.
+@Marketing: Digital|noun|B2
+click-through rate|tỷ lệ nhấp|the share of viewers who click a link or advert|The click-through rate improved after we rewrote the headline.
+conversion funnel|phễu chuyển đổi|the stages a person passes through before taking a desired action|The conversion funnel showed where visitors left the site.
+landing page|trang đích|a web page designed for visitors from a particular campaign|The landing page explained the offer in plain language.
+organic reach|lượt tiếp cận tự nhiên|the number of people reached without paid promotion|Organic reach fell when the posting schedule changed.
+paid search|quảng cáo tìm kiếm trả phí|advertising displayed alongside search results|Paid search brought visitors looking for local services.
+keyword intent|ý định đằng sau từ khóa tìm kiếm|the purpose behind a person's search phrase|Keyword intent matters more than search volume alone.
+email campaign|chiến dịch email|a coordinated set of marketing messages sent by email|The email campaign invited customers to a free workshop.
+content calendar|lịch nội dung|a schedule for publishing planned content|The content calendar prevented duplicate posts.
+retargeting|tiếp thị lại|showing ads to people who previously interacted with a brand|Retargeting reminded visitors about the unfinished booking.
+engagement rate|tỷ lệ tương tác|the proportion of an audience that interacts with content|The engagement rate rose when posts answered real questions.
+@Marketing: Digital|noun|C1
+attribution model|mô hình phân bổ đóng góp chuyển đổi|a method for assigning credit to marketing interactions|The attribution model gave some credit to early visits.
+incrementality test|thử nghiệm đo tác động tăng thêm|an experiment that estimates what a campaign adds beyond the baseline|An incrementality test showed that the advert created few new sales.
+search impression share|tỷ lệ hiển thị trên tìm kiếm|the share of eligible search ad impressions actually received|Search impression share dropped as competitors raised bids.
+cohort analysis|phân tích nhóm khách hàng cùng giai đoạn|comparing the behavior of groups that started at different times|Cohort analysis revealed weaker retention among recent sign-ups.
+customer acquisition cost|chi phí thu hút một khách hàng|the average cost of gaining one new customer|Customer acquisition cost increased during the launch.
+first-party data|dữ liệu do doanh nghiệp tự thu thập|information gathered directly from one's own customers|First-party data helped the team understand repeat purchases.
+marketing automation|tự động hóa tiếp thị|software that triggers marketing actions using defined rules|Marketing automation sent a welcome message after registration.
+conversion lift|mức tăng chuyển đổi do chiến dịch|the increase in conversions attributable to a campaign|The holdout group helped estimate conversion lift.
+creative fatigue|sự giảm hiệu quả do lặp lại mẫu quảng cáo|reduced response after an audience repeatedly sees the same advert|Creative fatigue appeared after the video ran for weeks.
+lookalike audience|tệp khách hàng tương tự|a new audience selected for similarities to existing customers|The lookalike audience performed poorly outside the city.
+@Economics: Macroeconomics|noun|B2
+gross domestic product|tổng sản phẩm quốc nội|the value of final goods and services produced within a country|Gross domestic product rose despite weak household spending.
+consumer price index|chỉ số giá tiêu dùng|an index tracking prices paid for a selected basket of goods and services|The consumer price index increased in September.
+interest rate spread|chênh lệch lãi suất|the difference between two interest rates|The interest rate spread widened after the policy change.
+central bank|ngân hàng trung ương|the institution responsible for a country's monetary system|The central bank announced its decision on Thursday.
+unemployment rate|tỷ lệ thất nghiệp|the share of the labor force without work and seeking a job|The unemployment rate fell as hiring recovered.
+real wage|tiền lương thực tế|pay adjusted for changes in prices|Her real wage fell when prices rose faster than earnings.
+trade balance|cán cân thương mại|the difference between a country's exports and imports|The trade balance improved as exports grew.
+budget deficit|thâm hụt ngân sách|the amount by which public spending exceeds revenue|The budget deficit narrowed after tax receipts increased.
+public debt|nợ công|money owed by the government to lenders|Public debt grew during the recession.
+currency depreciation|sự mất giá tiền tệ|a fall in a currency's value relative to other currencies|Currency depreciation raised the cost of imported equipment.
+@Economics: Macroeconomics|noun|C1
+output gap|chênh lệch sản lượng|the difference between actual output and an estimate of potential output|The output gap suggested the economy had unused capacity.
+quantitative easing|nới lỏng định lượng|central bank purchases of assets intended to ease financial conditions|Quantitative easing lowered some longer-term borrowing costs.
+monetary tightening|thắt chặt tiền tệ|policy actions intended to reduce inflationary pressure|Monetary tightening slowed credit growth.
+fiscal stimulus|kích thích tài khóa|government tax or spending measures intended to support demand|The fiscal stimulus funded repairs and temporary jobs.
+core inflation|lạm phát cơ bản|a price measure that excludes selected volatile items|Core inflation remained high after fuel prices fell.
+yield curve|đường cong lợi suất|a line showing bond yields across different maturities|The yield curve flattened as short-term rates rose.
+automatic stabilizer|cơ chế ổn định tự động|a tax or benefit rule that softens economic swings without new legislation|Unemployment insurance acted as an automatic stabilizer.
+sovereign debt|nợ chính phủ|money owed by a national government|Investors demanded a higher return on sovereign debt.
+capital flight|dòng vốn tháo chạy|a rapid movement of money out of a country|Capital flight put pressure on the currency.
+stagflation|đình lạm|a period of high inflation combined with weak growth|Stagflation made the policy choice difficult.
+@Economics: Markets|noun|B2
+supply shock|cú sốc nguồn cung|a sudden event that changes the supply of goods or services|A storm caused a supply shock in the fruit market.
+market equilibrium|cân bằng thị trường|a state in which quantity supplied matches quantity demanded|A new tax shifted the market equilibrium.
+price ceiling|giá trần|a legal maximum price for a good or service|The price ceiling was set below the usual rent.
+consumer surplus|thặng dư tiêu dùng|the gap between what buyers would pay and what they actually pay|Consumer surplus grew when ticket prices fell.
+producer surplus|thặng dư sản xuất|the gap between the price sellers receive and their minimum acceptable price|Producer surplus shrank after the fee increased.
+elastic demand|cầu co giãn|demand that changes substantially when price changes|Elastic demand made a price rise risky for the shop.
+opportunity cost|chi phí cơ hội|the value of the best alternative given up by a choice|The opportunity cost of studying was an evening of paid work.
+barrier to entry|rào cản gia nhập thị trường|an obstacle that makes it hard for new firms to enter a market|A costly licence became a barrier to entry.
+economies of scale|lợi thế kinh tế theo quy mô|lower average costs achieved as production increases|Economies of scale made larger deliveries cheaper per item.
+market failure|thất bại thị trường|a situation in which markets do not allocate resources efficiently|Pollution is one example of market failure.
+@Economics: Markets|noun|C1
+marginal utility|lợi ích cận biên|the extra satisfaction gained from one more unit of something|The marginal utility of another cup of coffee was small.
+deadweight loss|tổn thất vô ích|a loss of total welfare caused by inefficient allocation|The tax created a deadweight loss in the model.
+information asymmetry|bất cân xứng thông tin|a situation in which one party knows more than another|Information asymmetry made second-hand car buyers cautious.
+monopsony|độc quyền mua|a market with one dominant buyer|A single local employer created conditions close to monopsony.
+externality|tác động ngoại ứng|a cost or benefit affecting people outside a transaction|Noise from the airport is a negative externality.
+network effect|hiệu ứng mạng lưới|a rise in a product's value as more people use it|The network effect helped the messaging app grow.
+price discrimination|phân biệt giá|charging different prices to different buyers for similar goods|Student discounts can be a form of price discrimination.
+contestable market|thị trường dễ gia nhập|a market in which potential entry constrains existing firms|Low start-up costs made it a contestable market.
+game theory|lý thuyết trò chơi|the study of choices when each person's outcome depends on others' choices|Game theory helped explain the firms' pricing decisions.
+rent seeking|trục lợi đặc quyền|seeking economic gain through influence rather than productive activity|The report criticized rent seeking in the licensing system.
+@Finance: Investing|noun|B2
+asset allocation|phân bổ tài sản|the division of investments among asset classes|Asset allocation changed as the fund approached its target date.
+diversification|đa dạng hóa đầu tư|spreading investments to reduce dependence on one asset|Diversification reduced the fund's exposure to one industry.
+bond yield|lợi suất trái phiếu|the return an investor receives from a bond at its current price|The bond yield rose when its market price fell.
+dividend yield|tỷ suất cổ tức|annual dividends divided by the current share price|The dividend yield looked high because the share price had fallen.
+mutual fund|quỹ tương hỗ|a pooled investment vehicle managed for many investors|The mutual fund held shares from several industries.
+liquidity risk|rủi ro thanh khoản|the risk of being unable to trade an asset quickly at a fair price|Liquidity risk increased when trading volumes dried up.
+credit rating|xếp hạng tín nhiệm|an assessment of a borrower's ability to repay debt|The credit rating influenced the bond's borrowing cost.
+capital gain|lãi vốn|profit made when an asset is sold above its purchase price|A capital gain arose when she sold the shares.
+market volatility|biến động thị trường|the extent of changes in market prices over time|Market volatility increased after the announcement.
+portfolio return|lợi nhuận danh mục đầu tư|the gain or loss from a collection of investments|The portfolio return reflected both dividends and price changes.
+@Finance: Investing|noun|C1
+duration risk|rủi ro kỳ hạn của trái phiếu|the risk that bond prices move when interest rates change|Duration risk was greater for the fund's long-term bonds.
+drawdown|mức sụt giảm từ đỉnh|a fall from a previous peak in an investment's value|The portfolio's drawdown lasted several months.
+hedging instrument|công cụ phòng ngừa rủi ro|a financial contract used to offset a particular risk|The firm used a hedging instrument against currency movements.
+discounted cash flow|dòng tiền chiết khấu|a valuation method based on the present value of expected future cash|The discounted cash flow estimate depended on the growth assumption.
+earnings multiple|hệ số định giá theo lợi nhuận|a company's value expressed as a multiple of its earnings|The earnings multiple was higher than that of its peers.
+counterparty risk|rủi ro đối tác|the risk that the other party to a contract fails to meet its obligations|Counterparty risk mattered in the swap agreement.
+collateral call|yêu cầu bổ sung tài sản bảo đảm|a demand for more collateral when exposure rises|A collateral call forced the fund to raise cash quickly.
+liquidity premium|phần bù thanh khoản|extra return sought for holding a hard-to-trade asset|The liquidity premium was larger for rarely traded bonds.
+systemic risk|rủi ro hệ thống|the risk that problems spread across an entire financial system|Regulators monitored systemic risk during the crisis.
+stress testing|kiểm thử sức chịu đựng tài chính|testing how a portfolio or institution handles severe scenarios|Stress testing exposed a weakness in the bank's funding.
+@Law: Contracts|noun|B2
+binding agreement|thỏa thuận có hiệu lực ràng buộc|an agreement that creates enforceable obligations|Both sides signed a binding agreement after negotiations.
+breach of contract|vi phạm hợp đồng|a failure to perform a contractual obligation|Late delivery may amount to a breach of contract.
+liability clause|điều khoản trách nhiệm pháp lý|a contract term setting out responsibility for loss|The liability clause limited certain claims.
+terms and conditions|điều khoản và điều kiện|rules governing the use or sale of a product or service|Please read the terms and conditions before signing.
+legal remedy|biện pháp khắc phục theo pháp luật|a form of relief available when a legal right is violated|Compensation was one possible legal remedy.
+due diligence|thẩm định trước giao dịch|an investigation carried out before a business decision|Due diligence revealed an unpaid licence fee.
+non-disclosure agreement|thỏa thuận bảo mật thông tin|a contract restricting the sharing of confidential information|The partners signed a non-disclosure agreement before meeting.
+governing law|luật điều chỉnh hợp đồng|the legal system chosen to interpret a contract|The governing law was stated near the end of the contract.
+termination notice|thông báo chấm dứt hợp đồng|a formal message ending an agreement under its terms|The supplier sent a termination notice in writing.
+warranty period|thời hạn bảo hành|the time during which promised repairs or replacements apply|The warranty period began on the delivery date.
+@Law: Contracts|noun|C1
+force majeure|sự kiện bất khả kháng|an extraordinary event that may affect contractual duties under a clause|The force majeure clause listed the events it covered.
+indemnification|nghĩa vụ bồi hoàn|an obligation to compensate another party for specified losses|The contract's indemnification section covered third-party claims.
+arbitration clause|điều khoản trọng tài|a contract term requiring certain disputes to be resolved by arbitration|The arbitration clause named the agreed forum.
+material breach|vi phạm nghiêm trọng|a serious breach that substantially affects an agreement|Repeated non-payment was treated as a material breach.
+severability|khả năng tách biệt điều khoản|the principle that valid terms may survive an invalid contract term|The severability clause preserved the remaining terms.
+waiver of rights|việc từ bỏ quyền|a voluntary decision not to exercise specified legal rights|The waiver of rights applied only to that claim.
+statutory duty|nghĩa vụ theo luật định|an obligation imposed by legislation|The employer still had a statutory duty to keep records.
+burden of proof|nghĩa vụ chứng minh|the responsibility to establish a claim with evidence|The burden of proof rested with the claimant.
+conflict of interest|xung đột lợi ích|a situation in which private interests may affect professional judgment|The adviser disclosed a conflict of interest.
+without prejudice|không làm phương hại đến quyền lợi|a label used in some legal systems for certain settlement communications|The letter was marked without prejudice during negotiations.
+@Healthcare: Clinical work|noun|B2
+medical history|tiền sử bệnh|a record of a patient's past health and treatment|The clinician reviewed the patient's medical history.
+adverse reaction|phản ứng có hại|an unwanted response after a medicine or treatment|The nurse recorded an adverse reaction to the medicine.
+follow-up appointment|cuộc hẹn tái khám|a later visit to review progress after initial care|A follow-up appointment was booked for next week.
+clinical assessment|đánh giá lâm sàng|an evaluation of symptoms and physical findings|The clinical assessment guided the next test.
+patient consent|sự đồng ý của người bệnh|a patient's agreement to a proposed procedure or care|The team documented patient consent before the procedure.
+diagnostic test|xét nghiệm chẩn đoán|a test used to help identify a condition|The diagnostic test helped clarify the cause of the symptoms.
+treatment plan|kế hoạch điều trị|an agreed approach to managing a health condition|The treatment plan included rest and a review visit.
+referral letter|thư giới thiệu chuyển tuyến|a letter requesting assessment by another clinician|The doctor sent a referral letter to the specialist.
+vital signs|dấu hiệu sinh tồn|basic measures such as pulse and breathing rate|The nurse checked the patient's vital signs.
+discharge summary|bản tóm tắt ra viện|a record of a patient's hospital care and follow-up needs|The discharge summary listed the medicines to continue.
+@Healthcare: Clinical work|noun|C1
+contraindication|chống chỉ định|a condition that makes a treatment unsuitable or unsafe|An allergy can be a contraindication to that drug.
+differential diagnosis|chẩn đoán phân biệt|a list of possible conditions that could explain symptoms|The differential diagnosis included several common infections.
+clinical trial|thử nghiệm lâm sàng|a study of a medical intervention involving people|The clinical trial compared two treatment approaches.
+informed consent|sự đồng ý sau khi được cung cấp thông tin|agreement given after understanding relevant risks and alternatives|Informed consent was obtained before enrollment.
+comorbidity|bệnh lý đi kèm|another condition present alongside the main condition|The patient's comorbidity complicated recovery.
+prognosis|tiên lượng|an estimate of how a condition may develop|The prognosis improved after early treatment.
+therapeutic dose|liều điều trị|a dose intended to produce a treatment effect|The clinician adjusted the therapeutic dose cautiously.
+adverse event|biến cố bất lợi|an unwanted medical occurrence during care or research|The research team reported every adverse event.
+care pathway|quy trình chăm sóc|a planned sequence of care steps for a patient group|The care pathway helped staff coordinate appointments.
+medication reconciliation|đối chiếu danh sách thuốc|checking medicine records for accuracy during care transitions|Medication reconciliation found a missing prescription.
+@Hospitality: Service|noun|B2
+room occupancy|tỷ lệ phòng có khách|the proportion of available rooms being used|Room occupancy rose during the festival.
+guest feedback|phản hồi của khách|comments from guests about their experience|Guest feedback highlighted the slow breakfast service.
+late checkout|trả phòng muộn|permission to leave a room after the usual departure time|Late checkout was available for a small fee.
+booking confirmation|xác nhận đặt chỗ|a message showing the details of a reservation|The booking confirmation included the arrival date.
+front desk|quầy lễ tân|the place where guests receive help on arrival|The front desk stored her luggage after checkout.
+service recovery|khắc phục sự cố dịch vụ|actions taken to repair a poor customer experience|Quick service recovery turned a complaint into praise.
+room upgrade|nâng hạng phòng|a move to a room in a higher category|The hotel offered a room upgrade when space became available.
+peak season|mùa cao điểm|the period with the highest demand for a service|Prices rose during peak season.
+dietary requirement|yêu cầu ăn uống đặc biệt|a food-related need arising from health or preference|The restaurant noted each dietary requirement in the booking.
+complaint handling|xử lý khiếu nại|the process of receiving and resolving customer complaints|Complaint handling improved after staff training.
+@Hospitality: Service|noun|C1
+occupancy forecast|dự báo công suất phòng|an estimate of how many rooms will be used|The occupancy forecast helped plan staffing.
+revenue management|quản lý doanh thu|adjusting price and availability to improve revenue|Revenue management changed rates for the busy weekend.
+dynamic pricing|định giá linh hoạt|changing prices in response to demand and other conditions|Dynamic pricing raised rates for the holiday period.
+guest retention|khả năng giữ chân khách|a business's ability to encourage guests to return|Guest retention improved after the service changes.
+service blueprint|sơ đồ quy trình dịch vụ|a diagram linking customer actions to staff and support processes|The service blueprint exposed a delay at check-in.
+distribution channel|kênh phân phối|a route through which a room or service is sold|The hotel compared costs by distribution channel.
+rate parity|sự đồng nhất giá giữa các kênh|consistency of publicly offered room rates across sales channels|The manager checked rate parity across booking sites.
+upselling opportunity|cơ hội bán thêm dịch vụ cao hơn|a chance to offer a more valuable option to a customer|A suite opening created an upselling opportunity.
+customer journey|hành trình khách hàng|the sequence of interactions a customer has with a service|The customer journey began before the guest arrived.
+operational handover|bàn giao công việc vận hành|the transfer of important work information between shifts|The operational handover covered every late arrival.
+@Exam: Academic argument|noun|C1
+thesis statement|luận điểm chính|a sentence stating the central claim of an essay|The thesis statement made the essay's position clear.
+coherent argument|lập luận mạch lạc|reasoning whose parts fit together logically|A coherent argument needs clear links between claims.
+qualified claim|khẳng định có giới hạn|a statement whose scope or certainty is carefully limited|The writer made a qualified claim about the survey results.
+logical progression|mạch triển khai hợp lý|an orderly development from one idea to the next|Logical progression helped readers follow the discussion.
+balanced analysis|phân tích cân bằng|an examination that considers relevant sides fairly|Balanced analysis acknowledged both costs and benefits.
+causal link|mối liên hệ nhân quả|a connection in which one factor contributes to another|The data alone did not prove a causal link.
+underlying assumption|giả định nền tảng|an unstated idea on which an argument depends|The underlying assumption was that demand would remain stable.
+counterargument|lập luận phản biện|a reason offered against a particular claim|The essay addressed a strong counterargument.
+policy implication|hàm ý chính sách|a possible consequence of evidence for public decisions|One policy implication is the need for better access.
+evidence base|cơ sở bằng chứng|the body of information supporting a conclusion|The evidence base was too narrow for a firm conclusion.
+@Exam: Academic argument|noun|C2
+cogent argument|lập luận thuyết phục|reasoning that is clear and persuasive|Her cogent argument linked each claim to evidence.
+nuanced stance|lập trường có cân nhắc sắc thái|a position that recognizes important distinctions|A nuanced stance avoided treating every case alike.
+conceptual framework|khung khái niệm|a set of ideas used to organize an analysis|The conceptual framework separated access from quality.
+epistemic limit|giới hạn nhận thức|a boundary on what can reasonably be known from the evidence|The author noted an epistemic limit of the study.
+analytical rigor|tính chặt chẽ trong phân tích|careful and consistent use of reasoning and evidence|Analytical rigor made the comparison more convincing.
+discursive shift|sự chuyển hướng trong lập luận|a change in the way an issue is discussed|A discursive shift moved the debate toward fairness.
+methodological caveat|lưu ý về phương pháp nghiên cứu|a warning about a method's limitations|The methodological caveat concerned the small sample.
+interpretive lens|góc nhìn diễn giải|a perspective used to understand a text or event|The report used an economic interpretive lens.
+normative claim|khẳng định mang tính chuẩn tắc|a statement about what ought to be done|The final paragraph made a normative claim about fairness.
+provisional conclusion|kết luận tạm thời|a conclusion open to revision when better evidence appears|The team offered a provisional conclusion pending more data.
+@Exam: Evidence and research|noun|C1
+empirical evidence|bằng chứng thực nghiệm|information drawn from observation or measurement|Empirical evidence challenged the original theory.
+representative sample|mẫu có tính đại diện|a group that reflects relevant features of a larger population|A representative sample was essential to the survey.
+confounding factor|yếu tố gây nhiễu|a variable that can distort an apparent relationship|Age was a confounding factor in the comparison.
+correlation coefficient|hệ số tương quan|a number expressing the strength and direction of a relationship|The correlation coefficient was close to zero.
+longitudinal study|nghiên cứu theo thời gian|research that follows the same subjects over a period|The longitudinal study followed families for a decade.
+peer review|phản biện khoa học|evaluation of research by other specialists before publication|Peer review led the authors to revise the methods.
+research gap|khoảng trống nghiên cứu|a question insufficiently addressed by existing studies|The research gap concerned rural transport.
+measurement error|sai số đo lường|a difference between a measured value and the underlying value|Measurement error may have weakened the estimate.
+replication study|nghiên cứu lặp lại để kiểm chứng|research that repeats an earlier study's methods or question|The replication study produced a similar result.
+statistical significance|ý nghĩa thống kê|evidence that an observed result is unlikely under a stated null model|Statistical significance does not guarantee practical importance.
+@Exam: Evidence and research|noun|C2
+causal inference|suy luận nhân quả|reasoning about whether a factor causes an outcome|Causal inference required more than a simple correlation.
+selection bias|thiên lệch chọn mẫu|distortion caused by how observations are included|Selection bias affected the volunteer survey.
+ecological fallacy|ngụy biện sinh thái|the mistake of inferring individual behavior from group data|The paper warned against an ecological fallacy.
+publication bias|thiên lệch công bố|distortion when some results are more likely to be published|Publication bias may have inflated the reported effect.
+construct validity|giá trị đo lường khái niệm|the extent to which a measure captures the concept intended|The questionnaire's construct validity needed further study.
+triangulation|đối chiếu nhiều nguồn dữ liệu|using several methods or sources to examine the same question|Triangulation combined interviews with records.
+heterogeneous effect|tác động khác nhau giữa các nhóm|an effect that varies across people or settings|The policy had a heterogeneous effect by age group.
+robustness check|kiểm tra độ vững của kết quả|an additional analysis testing whether a result survives changed assumptions|A robustness check used a different time period.
+external validity|khả năng khái quát kết quả|the extent to which a finding applies beyond the study setting|The small urban sample limited external validity.
+latent variable|biến tiềm ẩn|a characteristic inferred from observed measures rather than measured directly|Motivation was treated as a latent variable.
+@Exam: Society and policy|noun|C1
+social mobility|dịch chuyển xã hội|movement between social or economic positions|Education can influence social mobility.
+income inequality|bất bình đẳng thu nhập|uneven distribution of income among people|Income inequality widened in the period studied.
+public accountability|trách nhiệm giải trình trước công chúng|the duty to explain public decisions and results|Open records strengthened public accountability.
+institutional trust|niềm tin vào thể chế|confidence in public or social institutions|Institutional trust fell after the scandal.
+policy trade-off|sự đánh đổi chính sách|a choice in which improving one goal may harm another|The policy trade-off involved cost and coverage.
+civic participation|sự tham gia của công dân|involvement in community and public affairs|Civic participation increased after local meetings began.
+intergenerational change|thay đổi giữa các thế hệ|a shift in circumstances or attitudes across generations|Intergenerational change altered housing expectations.
+urban sprawl|sự lan rộng thiếu tập trung của đô thị|low-density expansion of a city into surrounding land|Urban sprawl increased travel times.
+digital divide|khoảng cách số|unequal access to digital tools and skills|The digital divide left some students without online lessons.
+regulatory oversight|sự giám sát của cơ quan quản lý|monitoring by an authority responsible for enforcing rules|Regulatory oversight increased after the incident.
+@Exam: Society and policy|noun|C2
+distributive justice|công bằng trong phân phối|fairness in how benefits and burdens are shared|The debate on distributive justice shaped the tax proposal.
+demographic transition|chuyển đổi cơ cấu dân số|long-term changes in birth and death rates as societies develop|The demographic transition changed demand for schools.
+structural disadvantage|bất lợi mang tính cấu trúc|persistent barriers built into institutions or systems|Structural disadvantage affected access to training.
+policy coherence|tính nhất quán giữa các chính sách|the alignment of policies across goals and agencies|Policy coherence mattered when several ministries shared responsibility.
+institutional inertia|sự trì trệ của thể chế|resistance to change within established organizations|Institutional inertia delayed the reform.
+collective action|hành động tập thể|coordinated efforts by a group toward a common goal|Collective action improved the neighborhood park.
+democratic legitimacy|tính chính danh dân chủ|public acceptance grounded in democratic procedures|Open debate helped strengthen democratic legitimacy.
+social stratification|phân tầng xã hội|the division of society into unequal social layers|Social stratification shaped access to housing.
+regulatory capture|sự chi phối cơ quan quản lý|a situation in which an industry unduly influences its regulator|The inquiry examined possible regulatory capture.
+intergenerational equity|công bằng giữa các thế hệ|fair treatment of present and future generations|Intergenerational equity was central to the climate plan.
+@Exam: Language and nuance|noun|C1
+plausible explanation|lời giải thích hợp lý|an account that seems credible given available information|The researcher offered a plausible explanation for the change.
+implicit meaning|hàm ý|an idea communicated without being stated directly|The reader noticed an implicit meaning in the final line.
+rhetorical question|câu hỏi tu từ|a question asked for effect rather than an answer|The speech opened with a rhetorical question.
+figurative language|ngôn ngữ hình tượng|words used beyond their literal meanings for effect|Figurative language made the image memorable.
+tone of voice|sắc thái giọng điệu|the attitude conveyed by the way something is said or written|The tone of voice became more cautious near the end.
+subtle distinction|sự phân biệt tinh tế|a small but important difference in meaning|The essay drew a subtle distinction between fairness and equality.
+qualified agreement|sự đồng tình có điều kiện|agreement that accepts a claim only within stated limits|Her qualified agreement left room for exceptions.
+semantic shift|sự chuyển nghĩa|a change in a word's meaning over time or context|The article traced a semantic shift in the term.
+contextual clue|manh mối từ ngữ cảnh|information nearby that helps reveal a word's meaning|A contextual clue helped readers understand the phrase.
+register choice|lựa chọn phong cách ngôn ngữ|the selection of formal or informal language for a situation|Register choice matters in a job application.
+@Exam: Language and nuance|noun|C2
+equivocation|cách nói lập lờ|language that avoids a clear commitment or shifts between meanings|The politician's equivocation frustrated the audience.
+conversational implicature|hàm ý hội thoại|meaning suggested by an utterance beyond its literal words|The reply carried a conversational implicature of refusal.
+semantic ambiguity|sự mơ hồ về nghĩa|the possibility that an expression has more than one meaning|Semantic ambiguity made the headline misleading.
+pragmatic inference|suy luận ngữ dụng|a conclusion drawn from context and a speaker's likely intent|Understanding the joke required pragmatic inference.
+ironic understatement|lối nói giảm mang tính mỉa mai|a deliberately mild expression that implies stronger criticism|Calling the disaster inconvenient was ironic understatement.
+lexical precision|sự chính xác trong dùng từ|choosing words that express the intended meaning exactly|Lexical precision helped distinguish risk from uncertainty.
+discursive framing|cách định khung diễn ngôn|the way language shapes how an issue is understood|Discursive framing changed the focus of the debate.
+concessive clause|mệnh đề nhượng bộ|a clause acknowledging a contrast or limitation|The concessive clause began with although.
+tonal dissonance|sự lệch tông giọng điệu|a mismatch between a message's tone and its subject|The joke created tonal dissonance in the serious report.
+intertextual reference|sự liên hệ với văn bản khác|an allusion to another text that adds meaning|The novel's intertextual reference rewarded attentive readers.

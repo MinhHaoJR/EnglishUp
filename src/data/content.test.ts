@@ -8,10 +8,11 @@ import {
 } from './content';
 import { wordSchema, questionSchema } from './schema';
 import { topics, topicVi } from '../i18n';
+import { topicSectionFor, topicSections } from './topicSections';
 test('expanded catalog has translated topics, complete IT entries and stable original IDs', () => {
-  expect(vocabulary).toHaveLength(1680);
-  expect(vocabulary.filter((word) => !word.topic.startsWith('IT:'))).toHaveLength(1620);
-  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(35);
+  expect(vocabulary).toHaveLength(1920);
+  expect(vocabulary.filter((word) => !word.topic.startsWith('IT:'))).toHaveLength(1860);
+  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(47);
   for (const topic of topics) {
     expect(topicVi[topic]).toBeTruthy();
     expect(vocabulary.some((word) => word.topic === topic)).toBe(true);
@@ -33,7 +34,9 @@ test('expanded catalog has translated topics, complete IT entries and stable ori
 test('original vocabulary meets quantity, topic and schema requirements', () => {
   expect(vocabulary.length).toBeGreaterThanOrEqual(1500);
   expect(new Set(vocabulary.map((w) => w.word.trim().toLowerCase())).size).toBe(vocabulary.length);
-  expect(vocabulary.every((w) => ['A1', 'A2', 'B1', 'B2', 'C1'].includes(w.level))).toBe(true);
+  expect(vocabulary.every((w) => ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].includes(w.level))).toBe(
+    true,
+  );
   expect(vocabulary.filter((word) => word.level === 'A1').length).toBeGreaterThanOrEqual(900);
 });
 
@@ -99,8 +102,9 @@ test('reading passages have 150–350 words, five questions and exact evidence',
 });
 
 test('advanced vocabulary covers B2 and C1 across six learning topics', () => {
-  expect(vocabulary.filter((word) => word.level === 'B2')).toHaveLength(146);
-  expect(vocabulary.filter((word) => word.level === 'C1')).toHaveLength(60);
+  expect(vocabulary.filter((word) => word.level === 'B2')).toHaveLength(226);
+  expect(vocabulary.filter((word) => word.level === 'C1')).toHaveLength(180);
+  expect(vocabulary.filter((word) => word.level === 'C2')).toHaveLength(40);
   for (const topic of [
     'Work',
     'Education',
@@ -115,4 +119,31 @@ test('advanced vocabulary covers B2 and C1 across six learning topics', () => {
       for (const word of words) expect(wordSchema.safeParse(word).success).toBe(true);
     }
   }
+});
+
+test('specialist and exam additions have complete, distinct content and compact registered sections', () => {
+  const extended = vocabulary.filter((word) => word.id.startsWith('v-extended-'));
+  expect(extended).toHaveLength(240);
+  expect(new Set(extended.map((word) => word.topic)).size).toBe(12);
+  expect(new Set(extended.map((word) => word.examples[0])).size).toBe(240);
+  expect(new Set(extended.map((word) => word.definition)).size).toBe(240);
+  expect(new Set(topicSections.flatMap((section) => [...section.topics]))).toEqual(new Set(topics));
+  for (const topic of new Set(extended.map((word) => word.topic))) {
+    const entries = extended.filter((word) => word.topic === topic);
+    expect(entries).toHaveLength(20);
+    expect(topicSectionFor(topic)).toBe(topic.startsWith('Exam:') ? 'exam' : 'specialist');
+    expect(
+      entries.filter((word) => word.level === (topic.startsWith('Exam:') ? 'C2' : 'B2')),
+    ).toHaveLength(10);
+    expect(entries.filter((word) => word.level === 'C1')).toHaveLength(10);
+  }
+  for (const word of extended) {
+    expect(wordSchema.safeParse(word).success).toBe(true);
+    expect(word.examples[0].toLowerCase()).toContain(word.word.toLowerCase());
+    expect(word.examples[0].split(/\s+/).length).toBeGreaterThanOrEqual(5);
+    expect(word.definition.split(/\s+/).length).toBeGreaterThanOrEqual(4);
+    expect(word.ipa).toBe('');
+  }
+  expect(vocabulary[0].id).toBe('v-1-1');
+  expect(vocabulary[1680].id).toBe(extended[0].id);
 });
