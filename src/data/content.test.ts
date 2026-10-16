@@ -10,19 +10,20 @@ import { wordSchema, questionSchema } from './schema';
 import { topics, topicVi } from '../i18n';
 import { topicSectionFor, topicSections } from './topicSections';
 test('expanded catalog has translated topics, complete IT entries and stable original IDs', () => {
-  expect(vocabulary).toHaveLength(1920);
+  expect(vocabulary).toHaveLength(2080);
   expect(vocabulary.filter((word) => !word.topic.startsWith('IT:'))).toHaveLength(1860);
-  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(47);
+  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(49);
   for (const topic of topics) {
     expect(topicVi[topic]).toBeTruthy();
     expect(vocabulary.some((word) => word.topic === topic)).toBe(true);
   }
   const itTopics = topics.filter((topic) => topic.startsWith('IT:'));
-  expect(itTopics).toHaveLength(6);
+  expect(itTopics).toHaveLength(8);
   for (const topic of itTopics) {
     const words = vocabulary.filter((word) => word.topic === topic);
-    expect(words).toHaveLength(10);
-    for (const word of words) {
+    expect(words).toHaveLength(topic.includes('Devices') || topic.includes('Cloud') ? 20 : 30);
+    expect(words.filter((word) => word.id.startsWith('v-it-'))).toHaveLength(20);
+    for (const word of words.filter((entry) => !entry.id.startsWith('v-it-'))) {
       expect(word.ipa).toMatch(/^\/.+\/$/);
       expect(word.examples[0].toLowerCase()).toContain(word.word.toLowerCase());
     }
@@ -102,7 +103,8 @@ test('reading passages have 150–350 words, five questions and exact evidence',
 });
 
 test('advanced vocabulary covers B2 and C1 across six learning topics', () => {
-  expect(vocabulary.filter((word) => word.level === 'B2')).toHaveLength(226);
+  expect(vocabulary.filter((word) => word.level === 'B1')).toHaveLength(174);
+  expect(vocabulary.filter((word) => word.level === 'B2')).toHaveLength(306);
   expect(vocabulary.filter((word) => word.level === 'C1')).toHaveLength(180);
   expect(vocabulary.filter((word) => word.level === 'C2')).toHaveLength(40);
   for (const topic of [
@@ -146,4 +148,27 @@ test('specialist and exam additions have complete, distinct content and compact 
   }
   expect(vocabulary[0].id).toBe('v-1-1');
   expect(vocabulary[1680].id).toBe(extended[0].id);
+});
+
+test('new IT terms cover eight practical domains with distinct examples and stable appended IDs', () => {
+  const added = vocabulary.filter((word) => word.id.startsWith('v-it-'));
+  expect(added).toHaveLength(160);
+  expect(new Set(added.map((word) => word.topic)).size).toBe(8);
+  expect(added.filter((word) => word.level === 'B1')).toHaveLength(80);
+  expect(added.filter((word) => word.level === 'B2')).toHaveLength(80);
+  expect(new Set(added.map((word) => word.examples[0])).size).toBe(160);
+  expect(new Set(added.map((word) => word.definition)).size).toBe(160);
+  for (const topic of new Set(added.map((word) => word.topic))) {
+    expect(added.filter((word) => word.topic === topic)).toHaveLength(20);
+    expect(topicSectionFor(topic)).toBe('specialist');
+  }
+  for (const word of added) {
+    expect(wordSchema.safeParse(word).success).toBe(true);
+    expect(word.meaning.trim().length).toBeGreaterThan(3);
+    expect(word.definition.split(/\s+/).length).toBeGreaterThanOrEqual(5);
+    expect(word.examples[0].toLowerCase()).toContain(word.word.toLowerCase());
+    expect(word.examples[0].split(/\s+/).length).toBeGreaterThanOrEqual(6);
+    expect(word.ipa).toBe('');
+  }
+  expect(vocabulary[1920].id).toBe(added[0].id);
 });

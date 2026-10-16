@@ -1,0 +1,178 @@
+# Original EnglishUp vocabulary for everyday IT work. Format: word|Vietnamese meaning|English definition|original example.
+# B1/B2 labels are editorial study guidance, not certified CEFR ratings.
+@IT: Programming|noun|B1
+source code|mã nguồn|instructions written in a programming language|The developer saved the source code before making changes.
+syntax|cú pháp|rules for arranging words and symbols in code|The editor highlighted a syntax error on line twelve.
+data type|kiểu dữ liệu|a category that determines what kind of value can be stored|Choose a data type that fits the value you need.
+string|chuỗi ký tự|a sequence of characters stored as one value|The form saves each name as a string.
+integer|số nguyên|a whole-number value without a fractional part|The counter stores an integer rather than a decimal.
+Boolean value|giá trị đúng hoặc sai|a value that can be either true or false|The Boolean value shows whether the user has signed in.
+operator|toán tử|a symbol or word that performs an action on values|The plus operator combines the two numbers.
+conditional statement|câu lệnh điều kiện|code that runs only when a stated condition is met|A conditional statement shows the warning when the file is missing.
+function argument|đối số của hàm|a value supplied when a function is called|The function argument contains the customer's ID.
+method call|lệnh gọi phương thức|an instruction that runs a method on an object|The method call updates the total on the screen.
+@IT: Programming|noun|B2
+class definition|định nghĩa lớp|code that describes the structure and behavior of a class|The class definition groups the account's properties and methods.
+object instance|thể hiện của đối tượng|a particular object created from a class or blueprint|Each object instance keeps its own settings.
+refactoring|tái cấu trúc mã|the process of improving code structure without intentionally changing behavior|Refactoring made the parser easier to read.
+module|mô-đun|a separate part of a program with a focused responsibility|The payment module handles refunds as well as charges.
+software library|thư viện phần mềm|reusable code that other programs can call|The software library formats dates for every screen.
+dependency|thành phần phụ thuộc|a component that another piece of software needs to work|We updated a dependency after the security review.
+package manager|trình quản lý gói|a tool that installs and manages software packages|The package manager installed the project's required tools.
+code review|việc rà soát mã|a check of proposed code changes by another developer|A code review caught the missing error message.
+stack trace|dấu vết ngăn xếp lệnh gọi|a list of function calls shown when a program fails|The stack trace pointed to the broken parser.
+configuration file|tệp cấu hình|a file that stores settings used by a program|The configuration file sets the service port.
+@IT: Web development|noun|B1
+web application|ứng dụng web|software that people use through a web browser|The web application lets customers track their orders.
+user interface|giao diện người dùng|the controls and screens through which a person uses software|The user interface now has a clearer search button.
+navigation menu|trình đơn điều hướng|a list of links that helps people move through a site|The navigation menu includes a link to account settings.
+form field|ô biểu mẫu|a place where a person enters information in a form|The email form field must not be left empty.
+hyperlink|siêu liên kết|clickable text or an element that opens another location|The hyperlink opens the help article in a new tab.
+URL|địa chỉ URL|the address used to locate a resource on the web|Copy the URL from the browser's address bar.
+HTML element|phần tử HTML|a building block that gives a web document structure|An HTML element can contain text or another element.
+CSS selector|bộ chọn CSS|a pattern used to target elements for styling|The CSS selector applies the rule to every heading.
+JavaScript|ngôn ngữ JavaScript|a programming language often used for interactive web behavior|JavaScript updates the page after the button is pressed.
+browser tab|thẻ trình duyệt|one page opened inside a browser window|Open a new browser tab to compare both pages.
+@IT: Web development|noun|B2
+web API|giao diện lập trình cho web|a defined way for software to exchange data over the web|The web API returns the latest order status.
+HTTP method|phương thức HTTP|a request label that states the intended action on a web resource|The HTTP method tells the server whether to read or update data.
+status code|mã trạng thái|a number in an HTTP response that reports the request outcome|The status code showed that the page was not found.
+browser session|phiên trình duyệt|a period of interaction that a website can recognize|The browser session ended after a long period of inactivity.
+cache|bộ nhớ đệm|stored data that helps repeated requests finish faster|The cache kept a copy of the image for later visits.
+accessibility|khả năng tiếp cận|how well people with different abilities can use a product|Accessibility improved when every form field received a label.
+mobile layout|bố cục trên thiết bị di động|the arrangement of page content on a small screen|The mobile layout keeps the main button easy to reach.
+API response|phản hồi từ API|the data and status returned after an API request|The API response included the customer's shipping address.
+client-side script|mã lệnh phía máy khách|code that runs in the user's browser|A client-side script checks the form before submission.
+server-side code|mã lệnh phía máy chủ|code that runs on a server rather than in the browser|The server-side code checks the user's permission.
+@IT: Databases|noun|B1
+SQL statement|câu lệnh SQL|an instruction written in SQL to work with stored data|The SQL statement selects orders from this month.
+data table|bảng dữ liệu|a collection of related records arranged in rows and columns|The data table stores one row for each customer.
+database column|cột trong cơ sở dữ liệu|a named field shared by records in a table|The database column holds the customer's email address.
+database row|hàng trong cơ sở dữ liệu|one record in a database table|Each database row represents a separate order.
+data model|mô hình dữ liệu|a plan for how information is organized and related|The data model connects customers with their orders.
+table relationship|quan hệ giữa các bảng|a link between records in two database tables|The table relationship connects an order to its customer.
+join operation|phép nối bảng|an operation that combines matching records from tables|The join operation adds customer names to the order list.
+WHERE clause|mệnh đề WHERE|the part of a SQL statement that filters rows by a condition|The WHERE clause keeps only unpaid invoices.
+sort order|thứ tự sắp xếp|the order in which results are arranged|The sort order puts the newest messages first.
+result set|tập kết quả|the rows returned by a database query|The result set contains twenty matching products.
+@IT: Databases|noun|B2
+unique constraint|ràng buộc duy nhất|a database rule that prevents duplicate values in selected fields|A unique constraint stops two users sharing the same email address.
+null value|giá trị rỗng trong cơ sở dữ liệu|a marker showing that a database field has no known value|A null value means no phone number was supplied.
+data backup|bản sao lưu dữ liệu|a saved copy of data used for recovery|The data backup was stored separately from the main server.
+data restore|việc khôi phục dữ liệu|the process of bringing saved data back from a backup|The data restore returned the records lost during the outage.
+read query|truy vấn đọc dữ liệu|a query that retrieves data without changing it|The read query lists all open support tickets.
+write query|truy vấn ghi dữ liệu|a query that adds or changes stored data|The write query updates the customer's address.
+data integrity|tính toàn vẹn dữ liệu|the accuracy and consistency of stored information|The team checked data integrity after the migration.
+database administrator|quản trị viên cơ sở dữ liệu|a person who manages database operation and access|The database administrator reviewed the slow queries.
+query plan|kế hoạch thực thi truy vấn|a description of how a database intends to run a query|The query plan revealed a full table scan.
+data export|dữ liệu xuất ra|a copy of stored information prepared for another system or file|The data export included only approved columns.
+@IT: Networking|noun|B1
+local network|mạng nội bộ|a network connecting devices within a limited area|The printer and laptops share the same local network.
+wireless network|mạng không dây|a network that connects devices without physical cables|The wireless network reaches every meeting room.
+network switch|thiết bị chuyển mạch mạng|a device that forwards data between devices on a local network|The network switch connects the office computers.
+network cable|cáp mạng|a cable used to connect devices to a network|Replace the network cable if the connection keeps dropping.
+port number|số cổng mạng|a number used to identify a service on a networked device|The service listens on a different port number in testing.
+DNS lookup|tra cứu DNS|a request to find the network address for a domain name|A slow DNS lookup delayed the page load.
+network traffic|lưu lượng mạng|data moving through a network|The team watched network traffic during the launch.
+upload speed|tốc độ tải lên|the rate at which a device sends data to a network|The upload speed was too low for the video call.
+download speed|tốc độ tải xuống|the rate at which a device receives data from a network|The download speed improved after the router was replaced.
+network outage|sự cố mất mạng|a period when a network service is unavailable|A network outage stopped the office from reaching the server.
+@IT: Networking|noun|B2
+subnet|mạng con|a smaller network within a larger address range|The guest devices use a separate subnet.
+gateway|cổng kết nối mạng|a device or address through which traffic reaches another network|The gateway sends office traffic to the internet.
+proxy server|máy chủ trung gian|a server that passes requests between a client and another service|The proxy server filters requests from the office.
+VPN|mạng riêng ảo|a protected connection across another network|The employee uses a VPN to reach internal tools from home.
+load balancer|bộ cân bằng tải|a service that distributes requests across multiple servers|The load balancer sent new requests to the healthy server.
+network interface|giao diện mạng|the hardware or software connection a device uses to communicate on a network|The network interface was disabled after the update.
+packet loss|tình trạng mất gói tin|the failure of some data packets to reach their destination|Packet loss made the call sound broken.
+round-trip time|thời gian khứ hồi|the time a message takes to travel out and receive a reply|The round-trip time increased when the remote server was busy.
+secure connection|kết nối bảo mật|a network connection that protects data in transit|The browser established a secure connection before sign-in.
+network address|địa chỉ mạng|an identifier used to locate a device or service on a network|The printer received a new network address.
+@IT: Security|noun|B1
+password manager|trình quản lý mật khẩu|a tool that stores and helps create passwords|The password manager generated a different password for each site.
+multi-factor authentication|xác thực đa yếu tố|a sign-in process requiring more than one kind of proof|Multi-factor authentication asked for a code after the password.
+user permission|quyền của người dùng|an allowed action assigned to a user or role|The user permission on this folder controls who can delete files.
+security alert|cảnh báo bảo mật|a warning about a possible security problem|The security alert reported an unusual sign-in.
+data breach|vụ lộ dữ liệu|an incident in which protected information is exposed or taken|The company investigated the data breach immediately.
+malicious link|liên kết độc hại|a link intended to lead someone to harmful content or software|The suspicious message contained a malicious link.
+spam message|tin nhắn rác|an unwanted message sent in bulk|The filter placed the spam message in a separate folder.
+security update|bản cập nhật bảo mật|a software update that fixes a security weakness|Install the security update before using the device again.
+password reset|việc đặt lại mật khẩu|the process of replacing a password after a request or problem|The password reset required a confirmation email.
+device lock|khóa thiết bị|a feature that blocks access to a device until it is unlocked|The device lock turned on when the laptop was idle.
+@IT: Security|noun|B2
+access token|mã thông báo truy cập|a temporary value that grants access to a service or resource|The access token expired before the request was sent.
+security incident|sự cố bảo mật|an event that may harm the confidentiality or safety of a system|The team recorded the security incident in its response log.
+risk assessment|đánh giá rủi ro|a review of possible problems and their likely impact|The risk assessment identified outdated software on shared computers.
+threat model|mô hình mối đe dọa|a description of possible attackers and paths of attack|The threat model included stolen employee accounts.
+least privilege|nguyên tắc ít đặc quyền nhất|the practice of granting only the access needed for a task|Least privilege limits what a stolen account can reach.
+input validation|kiểm tra dữ liệu đầu vào|checks that incoming data follows expected rules|Input validation rejected the malformed email address.
+secure storage|nơi lưu trữ an toàn|storage designed to protect information from unwanted access|The app keeps recovery codes in secure storage.
+secret key|khóa bí mật|a confidential value used in a security operation|The secret key must never appear in the public repository.
+security awareness|nhận thức về bảo mật|the ability to notice and respond to common security risks|Security awareness training helped staff spot fake login pages.
+intrusion detection|phát hiện xâm nhập|the monitoring of systems for signs of unauthorized activity|Intrusion detection raised an alert after repeated login attempts.
+@IT: Testing and deployment|noun|B1
+test case|trường hợp kiểm thử|a defined input and expected outcome used to check software|The test case covers an empty search box.
+test suite|bộ kiểm thử|a collection of tests run together|The test suite runs before each release.
+expected result|kết quả mong đợi|the outcome a test should produce when software works correctly|The expected result is an error message for an invalid address.
+actual result|kết quả thực tế|the outcome observed when a test is run|The actual result did not match the specification.
+test failure|lỗi kiểm thử|a test outcome that does not meet its expected condition|A test failure blocked the release.
+issue tracker|hệ thống theo dõi vấn đề|a tool for recording bugs and work items|The issue tracker lists the steps needed to reproduce the bug.
+pull request|yêu cầu hợp nhất mã|a proposal to review and merge code changes|The pull request includes a screenshot of the new form.
+commit message|thông điệp commit|a short description saved with a set of code changes|The commit message explains why the fix was needed.
+release note|ghi chú phát hành|a written summary of changes in a software release|The release note mentions the new export option.
+staging environment|môi trường thử nghiệm trước phát hành|a place to check software before it reaches real users|The team tested the payment change in the staging environment.
+@IT: Testing and deployment|noun|B2
+production environment|môi trường vận hành thực tế|the live system used by real customers|The production environment received the update overnight.
+build pipeline|quy trình tạo bản dựng tự động|a sequence of steps that prepares software for release|The build pipeline runs tests before packaging the app.
+automated test|bài kiểm thử tự động|a test run by software rather than manually by a person|An automated test checks the login flow each night.
+smoke test|kiểm thử nhanh chức năng chính|a short check that core features work after a change|The smoke test confirmed that users could sign in.
+acceptance test|kiểm thử chấp nhận|a check that software meets an agreed user requirement|The acceptance test covers the complete checkout journey.
+code coverage|độ bao phủ mã bởi kiểm thử|a measure of how much code is exercised by tests|Code coverage increased after the team added error-path tests.
+deployment script|tập lệnh triển khai|a program that automates steps for releasing software|The deployment script copies the new files to the server.
+hotfix|bản sửa lỗi khẩn cấp|a small urgent change released to fix a serious problem|The hotfix restored access to the order page.
+feature flag|cờ bật tắt tính năng|a setting that controls whether a feature is active|The feature flag kept the new screen hidden during testing.
+version number|số phiên bản|a label that identifies a particular software release|The version number appears in the settings page.
+@IT: Devices and support|noun|B1
+operating system|hệ điều hành|the main software that manages a device and runs programs|The operating system needs an update before installation.
+device driver|trình điều khiển thiết bị|software that lets a computer work with a hardware device|The printer stopped working after its device driver failed.
+storage drive|ổ lưu trữ|a device that keeps files and programs|The storage drive is nearly full.
+computer memory|bộ nhớ máy tính|space used by a computer to hold data while programs run|The laptop needs more computer memory for large files.
+processor|bộ xử lý|the part of a computer that carries out instructions|The processor became busy during the export.
+peripheral|thiết bị ngoại vi|an external device connected to a computer|The scanner is a peripheral used by the reception team.
+keyboard shortcut|phím tắt|a key combination that performs an action quickly|A keyboard shortcut opens the search panel.
+screen resolution|độ phân giải màn hình|the number of pixels a screen displays across and down|The screen resolution made the text look too small.
+file extension|phần mở rộng tệp|the ending of a filename that often indicates its format|The file extension shows that this is a PDF document.
+user account|tài khoản người dùng|an identity used to access a device or service|The technician created a user account for the new employee.
+@IT: Devices and support|noun|B2
+system setting|thiết lập hệ thống|an option that changes how a device or program behaves|The system setting controls automatic updates.
+error code|mã lỗi|a short identifier that helps explain a technical failure|Write down the error code before contacting support.
+help desk|bộ phận hỗ trợ kỹ thuật|a team that answers users' technical questions|The help desk helped the employee reconnect the printer.
+support ticket|phiếu yêu cầu hỗ trợ|a recorded request for help with a technical issue|The support ticket includes the time the problem started.
+troubleshooting|quá trình xử lý sự cố|the process of finding and fixing the cause of a problem|Troubleshooting began with a check of the network cable.
+remote support|hỗ trợ từ xa|technical help given without visiting the user's location|Remote support let the technician inspect the laptop from another office.
+device restart|việc khởi động lại thiết bị|turning a device off and on to start it again|A device restart completed the update.
+access request|yêu cầu cấp quyền truy cập|a request to use a system or resource|The manager approved the access request for the shared folder.
+software installation|việc cài đặt phần mềm|the process of placing a program on a device so it can run|The software installation finished without an error.
+system log|nhật ký hệ thống|a record of events produced by a device or operating system|The system log showed when the service stopped.
+@IT: Cloud and operations|noun|B1
+cloud service|dịch vụ đám mây|a computing service provided over a network|The cloud service stores copies of the team calendar.
+virtual machine|máy ảo|a computer created in software that runs like a physical machine|The virtual machine hosts the test website.
+cloud storage|lưu trữ đám mây|online storage reached through a network|The team saved shared documents in cloud storage.
+data center|trung tâm dữ liệu|a facility that houses computing and network equipment|The data center has backup power for outages.
+server instance|phiên bản máy chủ đang chạy|one running copy of a server environment|A new server instance handled the extra traffic.
+service outage|sự cố gián đoạn dịch vụ|a period when a service cannot be used|The service outage prevented customers from signing in.
+uptime|thời gian hoạt động liên tục|the period during which a service is available|The team tracks uptime for the booking service.
+monitoring dashboard|bảng theo dõi hệ thống|a screen showing the current state of a system|The monitoring dashboard showed a rise in errors.
+backup schedule|lịch sao lưu|a plan for making copies of data at set times|The backup schedule runs every night.
+resource usage|mức sử dụng tài nguyên|the amount of computing capacity a service consumes|Resource usage rose during the sales event.
+@IT: Cloud and operations|noun|B2
+container image|ảnh container|a packaged template used to start a software container|The container image includes the app and its dependencies.
+environment variable|biến môi trường|a named value supplied to a program by its environment|The environment variable sets the app's language.
+autoscaling|tự động điều chỉnh quy mô|automatic adjustment of computing capacity as demand changes|Autoscaling added more servers during the busy hour.
+disaster recovery|khôi phục sau thảm họa|a plan for restoring a service after a major disruption|The team tested disaster recovery with a copy of the database.
+deployment pipeline|quy trình triển khai tự động|a series of steps that moves software toward a live release|The deployment pipeline requires approval before release.
+infrastructure as code|hạ tầng dưới dạng mã|the practice of defining computing infrastructure in machine-readable files|Infrastructure as code made test environments repeatable.
+service level agreement|thỏa thuận mức dịch vụ|a contract that states the service standards a provider promises|The service level agreement sets a target for availability.
+incident report|báo cáo sự cố|a written account of a problem, its impact and the response|The incident report explains why the service went offline.
+log aggregation|tập hợp nhật ký hệ thống|the collection of logs from several systems in one place|Log aggregation helped the team find related errors.
+health check|kiểm tra tình trạng dịch vụ|a small request or test used to see whether a service is working|The health check failed when the database connection dropped.

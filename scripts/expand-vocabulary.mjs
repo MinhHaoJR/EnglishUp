@@ -3,15 +3,21 @@ import { log } from 'node:console';
 import { URL } from 'node:url';
 
 // Original EnglishUp content. Do not renumber existing cards: reviews reference their IDs.
-const path = new URL('../src/data/vocabulary.json', import.meta.url);
-const original = JSON.parse(readFileSync(path, 'utf8')).filter(
-  (word) => !word.id.startsWith('v-common-') && !word.id.startsWith('v-extended-'),
+const corePath = new URL('../src/data/vocabulary.json', import.meta.url);
+const itPath = new URL('../src/data/vocabulary-it.json', import.meta.url);
+const original = JSON.parse(readFileSync(corePath, 'utf8')).filter(
+  (word) =>
+    !word.id.startsWith('v-common-') &&
+    !word.id.startsWith('v-extended-') &&
+    !word.id.startsWith('v-it-'),
 );
 const words = [...original];
+const itWords = [];
 const seen = new Set(words.map((word) => word.word.toLowerCase()));
-for (const [file, prefix] of [
-  ['common-vocabulary.txt', 'v-common-'],
-  ['extended-english-vocabulary.txt', 'v-extended-'],
+for (const [file, prefix, output] of [
+  ['common-vocabulary.txt', 'v-common-', words],
+  ['extended-english-vocabulary.txt', 'v-extended-', words],
+  ['it-vocabulary.txt', 'v-it-', itWords],
 ]) {
   const source = new URL(`./content/${file}`, import.meta.url);
   let topic, pos, level;
@@ -48,7 +54,7 @@ for (const [file, prefix] of [
     if (seen.has(word.toLowerCase()))
       throw new Error(`Duplicate word at ${file}:${index + 1}: ${word}`);
     seen.add(word.toLowerCase());
-    words.push({
+    output.push({
       id: `${prefix}${word
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, '-')
@@ -64,13 +70,20 @@ for (const [file, prefix] of [
     });
   }
 }
-if (new Set(words.map((word) => word.id)).size !== words.length)
+const all = [...words, ...itWords];
+if (new Set(all.map((word) => word.id)).size !== all.length)
   throw new Error('Duplicate generated IDs');
-let exampleIndex = 0;
-const output = JSON.stringify(words, null, 2).replace(
-  /^ {4}"examples": \[\n(?: {6}.*\n)+ {4}\],$/gm,
-  () => `    "examples": ${JSON.stringify(words[exampleIndex++].examples)},`,
-);
-if (exampleIndex !== words.length) throw new Error('Could not serialize every example');
-writeFileSync(path, output + '\n');
-log(`${words.length} words (${words.length - original.length} generated from authored sources)`);
+function serialize(entries) {
+  let exampleIndex = 0;
+  const output = JSON.stringify(entries, null, 2).replace(
+    /^ {4}"examples": \[\n(?: {6}.*\n)+ {4}\],$/gm,
+    () => `    "examples": ${JSON.stringify(entries[exampleIndex++].examples)},`,
+  );
+  if (exampleIndex !== entries.length) throw new Error('Could not serialize every example');
+  return output + '\n';
+}
+const coreOutput = serialize(words);
+const itOutput = serialize(itWords);
+writeFileSync(corePath, coreOutput);
+writeFileSync(itPath, itOutput);
+log(`${all.length} words (${all.length - original.length} generated from authored sources)`);

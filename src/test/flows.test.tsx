@@ -53,7 +53,7 @@ test('large library pages are bounded and search and topic changes return to pag
   fireEvent.click(screen.getByRole('button', { name: /Word library/ }));
   expect(screen.getAllByRole('article')).toHaveLength(30);
   fireEvent.click(screen.getByRole('button', { name: 'Next page' }));
-  expect(screen.getByText('Page 2/64 · 1920 matching words')).toBeInTheDocument();
+  expect(screen.getByText('Page 2/70 · 2080 matching words')).toBeInTheDocument();
   fireEvent.change(screen.getByRole('searchbox', { name: 'Search words' }), {
     target: { value: 'pineapple' },
   });
@@ -63,7 +63,7 @@ test('large library pages are bounded and search and topic changes return to pag
   fireEvent.change(screen.getByRole('searchbox', { name: 'Search words' }), {
     target: { value: '' },
   });
-  expect(screen.getByText('Page 1/64 · 1920 matching words')).toBeInTheDocument();
+  expect(screen.getByText('Page 1/70 · 2080 matching words')).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'People and family 50 words' }));
   expect(screen.getByText('Page 1/2 · 50 matching words')).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Next page' }));
@@ -97,13 +97,13 @@ test('a new A1 card persists through backup, reset and restore; CSV includes a w
 test('IT topics filter the library and practice, and persist a review across remount', async () => {
   let view = show(<Vocabulary />);
   fireEvent.click(screen.getByRole('button', { name: 'Specialist' }));
-  fireEvent.click(screen.getByRole('button', { name: 'IT: Programming 10 words' }));
+  fireEvent.click(screen.getByRole('button', { name: 'IT: Programming 30 words' }));
   fireEvent.click(screen.getByRole('button', { name: /Word library/ }));
   const group = screen.getByRole('region', { name: 'IT: Programming' });
-  expect(within(group).getAllByRole('article')).toHaveLength(10);
+  expect(within(group).getAllByRole('article')).toHaveLength(30);
   expect(screen.queryByRole('region', { name: 'Daily life' })).not.toBeInTheDocument();
   fireEvent.change(screen.getByRole('combobox', { name: 'Level' }), { target: { value: 'B1' } });
-  expect(within(group).getAllByRole('article')).toHaveLength(5);
+  expect(within(group).getAllByRole('article')).toHaveLength(15);
   fireEvent.click(screen.getByRole('button', { name: 'Practice' }));
   await startVocabulary();
   expect(screen.getByRole('heading', { name: 'variable' })).toBeInTheDocument();
@@ -140,18 +140,18 @@ test('Vietnamese topics and accent-free search include custom imported topics', 
   fireEvent.click(await screen.findByRole('button', { name: 'Tự thêm' }));
   expect(screen.getByRole('button', { name: 'My project 1 từ' })).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Chuyên ngành' }));
-  fireEvent.click(screen.getByRole('button', { name: 'IT: Cơ sở dữ liệu 10 từ' }));
+  fireEvent.click(screen.getByRole('button', { name: 'IT: Cơ sở dữ liệu 30 từ' }));
   fireEvent.click(screen.getByRole('button', { name: /Sổ từ vựng/ }));
   fireEvent.change(screen.getByRole('searchbox', { name: 'Tìm từ vựng' }), {
     target: { value: 'co so du lieu' },
   });
-  expect(screen.getByRole('heading', { name: /database/ })).toBeInTheDocument();
+  expect(screen.getAllByRole('heading', { name: /database/ }).length).toBeGreaterThan(0);
   fireEvent.change(screen.getByRole('searchbox', { name: 'Tìm từ vựng' }), {
     target: { value: 'not-a-word' },
   });
   expect(screen.queryAllByRole('article')).toHaveLength(0);
   fireEvent.click(screen.getByRole('button', { name: 'Xóa tìm kiếm' }));
-  expect(screen.getAllByRole('article')).toHaveLength(10);
+  expect(screen.getAllByRole('article')).toHaveLength(30);
   fireEvent.change(screen.getByRole('combobox', { name: 'Chủ đề' }), {
     target: { value: 'My project' },
   });

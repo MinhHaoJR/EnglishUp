@@ -8,6 +8,8 @@ export default defineConfig({
         manualChunks: {
           react: ['react', 'react-dom', 'react-router-dom'],
           storage: ['dexie', 'zod'],
+          englishItVocabulary: ['src/data/itVocabularyContent.ts'],
+          englishVocabulary: ['src/data/vocabularyContent.ts'],
         },
       },
     },

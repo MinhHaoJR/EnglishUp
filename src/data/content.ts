@@ -1,5 +1,4 @@
 import { z } from 'zod';
-import rawWords from './vocabulary.json';
 import rawTranslations from './translations.json';
 import { levelSchema } from './schema';
 export const translations = z
@@ -17,7 +16,6 @@ export const translations = z
 if (new Set(translations.map((item) => item.id)).size !== translations.length)
   throw new Error('Duplicate translation IDs');
 import {
-  wordSchema,
   readingSchema,
   listeningSchema,
   dictationSchema,
@@ -34,6 +32,4 @@ export const listenings = z.array(listeningSchema).min(6).parse(rawListening);
 export const dictations = z.array(dictationSchema).min(10).parse(rawDictation);
 import rawReading from './reading.json';
 export const readings = z.array(readingSchema).min(6).parse(rawReading);
-export const vocabulary = z.array(wordSchema).min(1500).parse(rawWords);
-if (new Set(vocabulary.map((x) => x.id)).size !== vocabulary.length)
-  throw new Error('Duplicate content IDs');
+export { vocabulary } from './vocabularyContent';

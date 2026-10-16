@@ -61,3 +61,24 @@ test('C2 exam topics remain browsable and their cards export with exact level an
   });
   expect(screen.getByRole('heading', { name: /epistemic limit/ })).toBeInTheDocument();
 });
+
+test('IT topics expose new cards in twenty-word groups without recording a skipped answer', async () => {
+  render(
+    <MemoryRouter>
+      <Vocabulary />
+    </MemoryRouter>,
+  );
+  fireEvent.click(screen.getByRole('button', { name: 'Specialist' }));
+  fireEvent.click(screen.getByRole('button', { name: /IT: Programming 30 words/ }));
+  const group = screen.getByRole('combobox', { name: 'Word group' });
+  await waitFor(() => expect(group).toBeEnabled());
+  const options = group.querySelectorAll('option');
+  expect(options).toHaveLength(2);
+  fireEvent.change(group, { target: { value: options[1].value } });
+  await waitFor(() => expect(group).toHaveValue(options[1].value));
+  fireEvent.click(screen.getByRole('button', { name: /Start practice/ }));
+  await screen.findByRole('heading', { name: 'class definition' });
+  fireEvent.click(screen.getByRole('button', { name: 'Skip word →' }));
+  await screen.findByRole('heading', { name: 'object instance' });
+  expect(await db.attempts.count()).toBe(0);
+});
