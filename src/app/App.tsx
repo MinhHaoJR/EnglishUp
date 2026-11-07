@@ -21,12 +21,18 @@ const Reading = lazy(() => import('../features/reading/Reading'));
 const Listening = lazy(() => import('../features/listening/Listening'));
 const Speaking = lazy(() => import('../features/speaking/Speaking'));
 const Writing = lazy(() => import('../features/writing/Writing'));
+const Account = lazy(() => import('../features/account/Account'));
+import { restoreSession, useAuth } from '../services/auth';
 export const APP_NAME = 'EnglishUp';
 export function Layout() {
   const t = useT();
   const { settings, load, ready, error } = useApp();
   const { pathname } = useLocation();
   const selectedSkill = skillSchema.safeParse(pathname.split('/')[1]);
+  const email = useAuth((state) => state.email);
+  useEffect(() => {
+    void restoreSession();
+  }, []);
   useEffect(() => {
     document.getElementById('main')?.focus();
     window.scrollTo(0, 0);
@@ -91,7 +97,19 @@ export function Layout() {
             <span>
               {settings.language === 'vi' ? 'Không gian học cá nhân' : 'Personal learning space'}
             </span>
-            <span className="avatar">U</span>
+            <Link
+              className="avatar"
+              to="/account"
+              aria-label={
+                email ??
+                (settings.language === 'vi'
+                  ? 'Đăng nhập hoặc đăng ký'
+                  : 'Sign in or create account')
+              }
+              title={email ?? undefined}
+            >
+              {email ? email[0].toUpperCase() : 'U'}
+            </Link>
           </div>
         </div>
         <main id="main" tabIndex={-1}>
@@ -130,6 +148,7 @@ const router = createBrowserRouter([
       { path: 'speaking', element: <Speaking /> },
       { path: 'writing', element: <Writing /> },
       { path: 'settings', element: <Settings /> },
+      { path: 'account', element: <Account /> },
       { path: '*', element: <NotFound /> },
     ],
   },

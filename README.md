@@ -13,6 +13,17 @@ npm run dev
 
 Open the localhost URL printed by Vite. `npm run build` creates `dist`; `npm run preview` serves it locally. Keep the same origin/port to retain access to the same IndexedDB data. A deployed SPA needs a fallback to `index.html`.
 
+### Optional account server
+
+Accounts need the ASP.NET Core API (requires the .NET 9 SDK and SQL Server LocalDB, which ships with Visual Studio / SQL Server Express):
+
+```sh
+cd server
+dotnet run --project EnglishUp.Api
+```
+
+It listens on `http://localhost:5080`, creates/migrates the `EnglishUp` LocalDB database in Development, and Vite proxies `/api` to it. Point it at another SQL Server with the `ConnectionStrings__Default` environment variable. Without the server, everything except **Account** keeps working. Run `dotnet test` in `server/` for API tests.
+
 ## Checks
 
 ```sh
@@ -24,7 +35,8 @@ npm run build
 
 ## Assumptions
 
-- Single learner per browser profile, no account/backend or cross-device sync.
+- Single learner per browser profile. Accounts (email + password, ASP.NET Identity bearer tokens) are optional; learning data is not yet synced to the account, so there is no cross-device sync.
+- The access token lasts one hour and is refreshed automatically with a 14-day refresh token. Tokens are kept in `localStorage`, outside Dexie and backups. Signing out deletes them on this device; the server does not revoke issued tokens. Email confirmation and password reset emails are not configured.
 - Daily goal is elapsed practice minutes between starting and saving an attempt, rounded down on the dashboard. Idle time in an open exercise counts; close the session when finished. Dates use the learner's local timezone.
 - English vocabulary spans A1–C2. CEFR labels guide study and do not certify a word's exam level or predict an IELTS band.
 - English vocabulary can be studied without a daily card cap. The daily minute goal only tracks practice time.

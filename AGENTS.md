@@ -1,24 +1,28 @@
 # EnglishUp
 
-Local-first Vietnamese/English learning app. React 18, strict TypeScript, Vite, Tailwind, Zustand, Dexie. No server and no secret keys.
+Vietnamese/English learning app with optional accounts. React 18, strict TypeScript, Vite, Tailwind, Zustand, Dexie on the client; ASP.NET Core 9 Web API, EF Core and SQL Server in `server/`. Practice works without signing in; learning data stays in Dexie until account sync lands.
 
 ## Structure
 
 - `src/app`: routing, shell and reactive application state.
-- `src/features`: dashboard, vocabulary, reading, listening, speaking, writing, settings.
-- `src/services`: storage, SRS, speech, alignment, CSV and writing feedback.
+- `src/features`: dashboard, vocabulary, languages (Japanese/Chinese), reading, listening, speaking, writing, settings, account.
+- `src/services`: storage, SRS, speech, alignment, CSV, writing feedback and `auth` (API session).
 - `src/data`: original JSON learning content and startup Zod validation.
 - `src/components`, `src/i18n`: shared accessible controls and bilingual strings.
-- `src/test`: test setup and integration coverage; `docs`: content authoring guide.
+- `src/test`: test setup and integration coverage; `docs`: content authoring guide; `scripts`: content generators.
+- `server/EnglishUp.Api`: Web API (`/api/*`), ASP.NET Identity endpoints, EF Core migrations in `Data/Migrations`.
+- `server/EnglishUp.Api.Tests`: xUnit API tests on an in-memory database.
 
 ## Commands
 
-`npm install`, `npm run dev`, `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, `npm run preview`, `npm run format`.
+Client: `npm install`, `npm run dev`, `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, `npm run preview`, `npm run format`.
+
+Server (from `server/`): `dotnet run --project EnglishUp.Api` (port 5080, migrates LocalDB in Development), `dotnet test`, `dotnet tool restore` then `dotnet ef migrations add <Name> --project EnglishUp.Api -o Data/Migrations`.
 
 ## Conventions
 
-Use typed services for business rules, keep user data in Dexie, use the shared attempt log for every skill. Never persist audio or API secrets. UI labels must support vi/en; English learning content remains English. Validate imports before a transaction. Use semantic controls and visible keyboard focus. Original content only.
+Use typed services for business rules, keep user data in Dexie, use the shared attempt log for every skill. Never persist audio. Secrets (AI keys, production connection strings) live only on the server via user-secrets or environment variables, never in the Vite bundle or the repository. Auth tokens stay out of Dexie and JSON backups. The browser reaches the API only through same-origin `/api` (Vite proxy). UI labels must support vi/en; English learning content remains English. Validate imports before a transaction. Use semantic controls and visible keyboard focus. Original content only.
 
 ## Definition of done
 
-All four quality checks pass after each milestone; conventional commit per milestone. Each skill completes and records a persisted attempt; backups survive reset/import. Add meaningful service and flow tests. Document limitations and assumptions. Do not claim microphone hardware was verified without real evidence.
+All four client checks and `dotnet test` pass after each milestone; conventional commit per milestone. Each skill completes and records a persisted attempt; backups survive reset/import. Add meaningful service and flow tests. Document limitations and assumptions. Do not claim microphone hardware was verified without real evidence.
