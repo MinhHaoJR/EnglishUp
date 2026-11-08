@@ -15,6 +15,9 @@ public class ApiFactory : WebApplicationFactory<Program>
 {
     private readonly string database = Guid.NewGuid().ToString();
 
+    /// <summary>The app's clock; tests move it forward to pass time limits.</summary>
+    public ManualClock Clock { get; } = new(DateTimeOffset.UtcNow);
+
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
         builder.UseEnvironment("Testing");
@@ -24,6 +27,8 @@ public class ApiFactory : WebApplicationFactory<Program>
             services.RemoveAll<DbContextOptions<AppDbContext>>();
             services.RemoveAll<IDbContextOptionsConfiguration<AppDbContext>>();
             services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase(database));
+            services.RemoveAll<TimeProvider>();
+            services.AddSingleton<TimeProvider>(Clock);
         });
     }
 
@@ -39,6 +44,12 @@ public class ApiFactory : WebApplicationFactory<Program>
         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tokens!.AccessToken);
         return client;
     }
+}
+
+public class ManualClock(DateTimeOffset now) : TimeProvider
+{
+    public DateTimeOffset Now { get; set; } = now;
+    public override DateTimeOffset GetUtcNow() => Now;
 }
 
 public class AuthTests(ApiFactory factory) : IClassFixture<ApiFactory>

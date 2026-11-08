@@ -1212,6 +1212,14 @@ footer {
 .lesson-card.locked {
   opacity: 0.55;
 }
+.choice-grid button.right {
+  background: var(--green);
+  color: white;
+}
+.choice-grid button.wrong {
+  background: #fbe8e5;
+  color: #922b2b;
+}
 .tabs {
   display: flex;
   gap: 8px;

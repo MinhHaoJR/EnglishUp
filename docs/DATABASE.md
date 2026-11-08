@@ -17,7 +17,7 @@
 | Tài khoản               | `AspNetUsers`, `AspNetRoles`, `AspNetUserRoles`, `AspNetUserClaims`, `AspNetRoleClaims`, `AspNetUserLogins`, `AspNetUserTokens` | Đã có (`InitialCreate`) |
 | Đồng bộ học tập         | `Attempts`, `SyncRecords`                                                                                                       | Đã có (`InitialCreate`) |
 | Hồ sơ, điểm, thành tích | `PointLedger` (`AddPoints`), `LearnerProfiles`, `UserAchievements` (`AddCommunity`)                                             | Đã có                   |
-| Trò chơi                | `GameSessions`                                                                                                                  | Đề xuất, tuần 3         |
+| Trò chơi                | `GameSessions` (`AddGame`)                                                                                                      | Đã có                   |
 | Trợ giảng RAG           | `KnowledgeChunks`, `Conversations`, `ChatMessages`, `MessageCitations`                                                          | Đề xuất, tuần 5–6       |
 
 ```mermaid
@@ -131,21 +131,23 @@ Danh mục huy hiệu và điều kiện đạt viết trong code C# (`Community
 
 Huy hiệu được xét sau mỗi lần đồng bộ, dựa trên lịch sử đã lưu; mỗi huy hiệu chỉ đạt một lần nhờ khoá chính ghép.
 
-### 3.7 `GameSessions` — Đề xuất
+### 3.7 `GameSessions` — Đã có (`AddGame`)
 
-Trò chơi trắc nghiệm 60 giây. Server tạo đề và chấm, trình duyệt chỉ gửi câu trả lời.
+Trò chơi trắc nghiệm 60 giây. Server rút 60 từ (lọc theo trình độ nếu chọn) từ `vocabulary.json` và `vocabulary-it.json` của client (liên kết vào thư mục output của API), tạo 4 lựa chọn nghĩa tiếng Việt, tính giờ và chấm **từng câu**; đáp án không bao giờ gửi cho trình duyệt.
 
-| Cột                                     | Kiểu                     | Ràng buộc                       | Ghi chú                                                              |
-| --------------------------------------- | ------------------------ | ------------------------------- | -------------------------------------------------------------------- |
-| `Id`                                    | uuid                     | PK                              | Server cấp khi bắt đầu                                               |
-| `UserId`                                | text                     | NN, FK → `AspNetUsers`, cascade |                                                                      |
-| `Level`, `Topic`                        | varchar(32), varchar(64) | null                            | Bộ lọc người học chọn                                                |
-| `QuestionsJson`                         | text                     | NN                              | Id từ, các lựa chọn và đáp án đúng; không gửi đáp án cho trình duyệt |
-| `StartedAt`                             | timestamptz              | NN                              | Giờ server                                                           |
-| `FinishedAt`                            | timestamptz              | null                            | Câu trả lời sau `StartedAt + 60 giây + 5 giây trễ mạng` bị bỏ        |
-| `Correct`, `Total`, `MaxCombo`, `Score` | int                      | null cho đến khi chấm           |                                                                      |
+| Cột                            | Kiểu        | Ràng buộc                       | Ghi chú                                                                         |
+| ------------------------------ | ----------- | ------------------------------- | ------------------------------------------------------------------------------- |
+| `Id`                           | uuid        | PK                              | Server cấp khi bắt đầu                                                          |
+| `UserId`                       | text        | NN, FK → `AspNetUsers`, cascade |                                                                                 |
+| `Level`                        | varchar(8)  | null                            | `A1`–`C2`, null = mọi trình độ                                                  |
+| `QuestionsJson`                | text        | NN                              | Id từ, từ, 4 lựa chọn và chỉ số đáp án                                          |
+| `StartedAt`                    | timestamptz | NN                              | Giờ server; câu trả lời sau `StartedAt + 60 giây + 3 giây` bị từ chối (409)     |
+| `FinishedAt`                   | timestamptz | null                            | Đặt khi kết thúc; kết thúc lại trả cùng kết quả                                 |
+| `Answered`                     | int         | NN, concurrency token           | Câu phải trả lời theo thứ tự; hai câu trả lời cùng lúc cho một câu chỉ tính một |
+| `Correct`, `Combo`, `MaxCombo` | int         | NN                              |                                                                                 |
+| `Score`                        | int         | null cho đến khi kết thúc       | `10 × Correct + 5 × MaxCombo`                                                   |
 
-Index (`UserId`, `StartedAt`) cho kỷ lục cá nhân và lịch sử chơi.
+Index (`UserId`, `StartedAt`). Kỷ lục cá nhân = `MAX(Score)`; số ván đã chơi = số ván có `Score`.
 
 ### 3.8 Trợ giảng RAG — Đề xuất
 
@@ -191,7 +193,7 @@ Index (`UserId`, `StartedAt`) cho kỷ lục cá nhân và lịch sử chơi.
 **Điểm (giá trị khởi đầu, chỉnh sau khi chạy thử):**
 
 - Mỗi lượt luyện tập mới đồng bộ lên: `1 + floor(Score / 25)` điểm (1–5).
-- Trò chơi: `10 × câu đúng + 5 × combo cao nhất`, do server chấm.
+- Trò chơi: điểm ván `10 × câu đúng + 5 × combo cao nhất`, do server chấm; điểm tích luỹ = điểm ván / 10 (nguồn `game`, `SourceId` = Id ván).
 - Thành tích: cộng điểm thưởng của huy hiệu một lần, **không** tính vào giới hạn ngày.
 - Giới hạn 300 điểm mỗi `LocalDate` cho nguồn `attempt` và `game`, để không cày điểm bằng các lượt ngắn.
 - Lượt có `Timestamp` cũ hơn 7 ngày khi đồng bộ vẫn được lưu nhưng không cộng điểm, để không nhập file sao lưu cũ lấy điểm.
@@ -221,7 +223,7 @@ LIMIT 50;
 | 1–2  | `InitialCreate`                         | `AspNet*`, `Attempts`, `SyncRecords` (đã có)                           |
 | 1    | `AddPoints`                             | `PointLedger` (đã có)                                                  |
 | 2    | `AddCommunity`                          | `LearnerProfiles`, `UserAchievements` (đã có)                          |
-| 3    | `AddGame`                               | `GameSessions`                                                         |
+| 3    | `AddGame`                               | `GameSessions` (đã có)                                                 |
 | 5–6  | `AddAssistant` (bật extension `vector`) | `KnowledgeChunks`, `Conversations`, `ChatMessages`, `MessageCitations` |
 
 ## 7. Hạn chế đã biết

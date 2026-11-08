@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { authFetch } from './auth';
+import { fetchJson } from './auth';
 
 const profileSchema = z.object({ displayName: z.string(), showOnLeaderboard: z.boolean() });
 export type Profile = z.infer<typeof profileSchema>;
@@ -30,23 +30,16 @@ const leaderboardSchema = z.object({
 });
 export type Leaderboard = z.infer<typeof leaderboardSchema>;
 
-/** Rejects on HTTP errors or unexpected payloads; callers show an error state. */
-async function getJson<T>(schema: z.ZodType<T>, path: string, init?: RequestInit) {
-  const response = await authFetch(path, init);
-  if (!response.ok) throw new Error(`${path} ${response.status}`);
-  return schema.parse(await response.json());
-}
-
-export const fetchProfile = () => getJson(profileSchema, '/api/profile');
+export const fetchProfile = () => fetchJson(profileSchema, '/api/profile');
 
 export const saveProfile = (profile: Profile) =>
-  getJson(profileSchema, '/api/profile', {
+  fetchJson(profileSchema, '/api/profile', {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ ...profile, displayName: profile.displayName.trim() }),
   });
 
-export const fetchAchievements = () => getJson(achievementsSchema, '/api/achievements');
+export const fetchAchievements = () => fetchJson(achievementsSchema, '/api/achievements');
 
 export const fetchLeaderboard = (period: Period) =>
-  getJson(leaderboardSchema, `/api/leaderboard?period=${period}`);
+  fetchJson(leaderboardSchema, `/api/leaderboard?period=${period}`);

@@ -9,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
 builder.Services.AddAuthorization();
+builder.Services.AddSingleton(TimeProvider.System);
+builder.Services.AddSingleton(QuestionBank.Load(Path.Combine(AppContext.BaseDirectory, "Content")));
 // Optional fields (e.g. an attempt without learningLanguage) stay absent, matching the client schemas.
 builder.Services.ConfigureHttpJsonOptions(options =>
     options.SerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull);
@@ -37,6 +39,7 @@ api.MapIdentityApi<IdentityUser>();
 api.MapSync();
 api.MapPoints();
 api.MapCommunity();
+api.MapGame();
 api.MapGet("/health", () => Results.Ok(new { status = "ok" }));
 
 app.Run();

@@ -12,6 +12,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
     public DbSet<PointEntry> PointLedger => Set<PointEntry>();
     public DbSet<LearnerProfile> LearnerProfiles => Set<LearnerProfile>();
     public DbSet<UserAchievement> UserAchievements => Set<UserAchievement>();
+    public DbSet<GameSession> GameSessions => Set<GameSession>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -54,6 +55,14 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
             entity.HasKey(a => new { a.UserId, a.Code });
             entity.HasOne<IdentityUser>().WithMany().HasForeignKey(a => a.UserId);
             entity.Property(a => a.Code).HasMaxLength(32);
+        });
+        builder.Entity<GameSession>(entity =>
+        {
+            entity.HasOne<IdentityUser>().WithMany().HasForeignKey(g => g.UserId);
+            entity.Property(g => g.Level).HasMaxLength(8);
+            // Two answers to the same question must not both count.
+            entity.Property(g => g.Answered).IsConcurrencyToken();
+            entity.HasIndex(g => new { g.UserId, g.StartedAt });
         });
     }
 }
@@ -98,6 +107,22 @@ public class UserAchievement
     public required string UserId { get; set; }
     public required string Code { get; set; }
     public DateTimeOffset EarnedAt { get; set; }
+}
+
+/// <summary>One 60-second quiz game; questions and answers stay on the server.</summary>
+public class GameSession
+{
+    public Guid Id { get; set; }
+    public required string UserId { get; set; }
+    public string? Level { get; set; }
+    public required string QuestionsJson { get; set; }
+    public DateTimeOffset StartedAt { get; set; }
+    public DateTimeOffset? FinishedAt { get; set; }
+    public int Answered { get; set; }
+    public int Correct { get; set; }
+    public int Combo { get; set; }
+    public int MaxCombo { get; set; }
+    public int? Score { get; set; }
 }
 
 /// <summary>A Dexie record (settings, words, reviews, drafts, submissions, vocabularyStudy) kept as JSON.</summary>

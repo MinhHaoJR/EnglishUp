@@ -16,4 +16,9 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
   </ItemGroup>
 
+  <!-- The client's bundled learning content is the single source for game questions (and later RAG). -->
+  <ItemGroup>
+    <Content Include="..\..\src\data\vocabulary.json;..\..\src\data\vocabulary-it.json" LinkBase="Content" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>

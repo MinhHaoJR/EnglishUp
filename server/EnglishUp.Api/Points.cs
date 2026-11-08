@@ -28,22 +28,26 @@ public static class Points
     public static async Task AwardAsync(AppDbContext db, string userId, IEnumerable<Attempt> added, DateTimeOffset now)
     {
         var today = Today(now);
-        var earned = await db.PointLedger
-            .Where(p => p.UserId == userId && p.LocalDate == today && p.Source != "achievement")
-            .SumAsync(p => p.Points);
+        var remaining = await RemainingTodayAsync(db, userId, today);
         var cutoff = (now - MaxAttemptAge).ToUnixTimeMilliseconds();
         foreach (var attempt in added.Where(a => a.Timestamp >= cutoff).OrderBy(a => a.Timestamp))
         {
-            var points = Math.Min(ForAttempt(attempt.Score), DailyCap - earned);
+            var points = Math.Min(ForAttempt(attempt.Score), remaining);
             if (points <= 0) break;
             db.PointLedger.Add(new PointEntry
             {
                 UserId = userId, Source = "attempt", SourceId = attempt.Id,
                 Points = points, LocalDate = today, CreatedAt = now,
             });
-            earned += points;
+            remaining -= points;
         }
     }
+
+    /// <summary>Practice and game points still available today; badge bonuses do not use the cap.</summary>
+    public static async Task<int> RemainingTodayAsync(AppDbContext db, string userId, DateOnly today) =>
+        DailyCap - await db.PointLedger
+            .Where(p => p.UserId == userId && p.LocalDate == today && p.Source != "achievement")
+            .SumAsync(p => p.Points);
 
     public static void MapPoints(this IEndpointRouteBuilder api) =>
         api.MapGet("/points", async (ClaimsPrincipal user, AppDbContext db) =>

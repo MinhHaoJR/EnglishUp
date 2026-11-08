@@ -129,6 +129,19 @@ export async function authFetch(path: string, init: RequestInit = {}) {
   return response;
 }
 
+export class ApiError extends Error {
+  constructor(readonly status: number) {
+    super(`HTTP ${status}`);
+  }
+}
+
+/** Calls the API and validates the JSON reply; rejects with ApiError on HTTP errors. */
+export async function fetchJson<T>(schema: z.ZodType<T>, path: string, init?: RequestInit) {
+  const response = await authFetch(path, init);
+  if (!response.ok) throw new ApiError(response.status);
+  return schema.parse(await response.json());
+}
+
 /** Restores the saved session; an offline server keeps it, a rejected token clears it. */
 export async function restoreSession() {
   const session = readSession();
