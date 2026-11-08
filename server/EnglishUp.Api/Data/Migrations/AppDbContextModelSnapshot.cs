@@ -61,6 +61,47 @@ namespace EnglishUp.Api.Data.Migrations
                     b.ToTable("Attempts");
                 });
 
+            modelBuilder.Entity("EnglishUp.Api.Data.PointEntry", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<DateTimeOffset>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateOnly>("LocalDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("Points")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Source")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("character varying(16)");
+
+                    b.Property<string>("SourceId")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId", "LocalDate");
+
+                    b.HasIndex("UserId", "Source", "SourceId")
+                        .IsUnique();
+
+                    b.ToTable("PointLedger", (string)null);
+                });
+
             modelBuilder.Entity("EnglishUp.Api.Data.SyncRecord", b =>
                 {
                     b.Property<string>("UserId")
@@ -283,6 +324,15 @@ namespace EnglishUp.Api.Data.Migrations
                 });
 
             modelBuilder.Entity("EnglishUp.Api.Data.Attempt", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("EnglishUp.Api.Data.PointEntry", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
                         .WithMany()

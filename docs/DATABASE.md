@@ -16,8 +16,8 @@
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | Tài khoản               | `AspNetUsers`, `AspNetRoles`, `AspNetUserRoles`, `AspNetUserClaims`, `AspNetRoleClaims`, `AspNetUserLogins`, `AspNetUserTokens` | Đã có (`InitialCreate`) |
 | Đồng bộ học tập         | `Attempts`, `SyncRecords`                                                                                                       | Đã có (`InitialCreate`) |
-| Hồ sơ, điểm, thành tích | `LearnerProfiles`, `PointLedger`, `Achievements`, `UserAchievements`                                                            | Đề xuất, tuần 3         |
-| Trò chơi                | `GameSessions`                                                                                                                  | Đề xuất, tuần 4         |
+| Hồ sơ, điểm, thành tích | `PointLedger` đã có (`AddPoints`); `LearnerProfiles`, `Achievements`, `UserAchievements` đề xuất tuần 2                         | Đang làm, tuần 1–2      |
+| Trò chơi                | `GameSessions`                                                                                                                  | Đề xuất, tuần 3         |
 | Trợ giảng RAG           | `KnowledgeChunks`, `Conversations`, `ChatMessages`, `MessageCitations`                                                          | Đề xuất, tuần 5–6       |
 
 ```mermaid
@@ -83,7 +83,7 @@ Sáu kho Dexie còn lại (`settings`, `words`, `reviews`, `drafts`, `submission
 
 Lý do dùng JSON: server chỉ giữ hộ và gộp các kho này, không truy vấn bên trong; client thêm trường không cần migration. Khi cần truy vấn một trường (ví dụ số từ đã thuộc), tách kho đó thành bảng riêng giống `Attempts`.
 
-### 3.4 `LearnerProfiles` — Đề xuất
+### 3.4 `LearnerProfiles` — Đề xuất, tuần 2
 
 | Cột                 | Kiểu        | Ràng buộc                       | Ghi chú                                                 |
 | ------------------- | ----------- | ------------------------------- | ------------------------------------------------------- |
@@ -93,7 +93,7 @@ Lý do dùng JSON: server chỉ giữ hộ và gộp các kho này, không truy 
 | `TimeZone`          | varchar(64) | NN, mặc định `Asia/Ho_Chi_Minh` | Xác định "một ngày" cho giới hạn điểm và chuỗi ngày học |
 | `CreatedAt`         | timestamptz | NN                              |                                                         |
 
-### 3.5 `PointLedger` — Đề xuất
+### 3.5 `PointLedger` — Đã có (`AddPoints`)
 
 Sổ ghi điểm: mỗi dòng là một lần cộng điểm. Tổng điểm và bảng xếp hạng đều tính từ bảng này nên luôn kiểm tra lại được.
 
@@ -212,12 +212,13 @@ LIMIT 50;
 
 ## 6. Lộ trình migration
 
-| Tuần | Migration                               | Bảng                                                                            |
-| ---- | --------------------------------------- | ------------------------------------------------------------------------------- |
-| 1–2  | `InitialCreate`                         | `AspNet*`, `Attempts`, `SyncRecords` (đã có)                                    |
-| 3    | `AddPoints`                             | `LearnerProfiles`, `PointLedger`, `Achievements` (kèm seed), `UserAchievements` |
-| 4    | `AddGame`                               | `GameSessions`                                                                  |
-| 5–6  | `AddAssistant` (bật extension `vector`) | `KnowledgeChunks`, `Conversations`, `ChatMessages`, `MessageCitations`          |
+| Tuần | Migration                               | Bảng                                                                   |
+| ---- | --------------------------------------- | ---------------------------------------------------------------------- |
+| 1–2  | `InitialCreate`                         | `AspNet*`, `Attempts`, `SyncRecords` (đã có)                           |
+| 1    | `AddPoints`                             | `PointLedger` (đã có)                                                  |
+| 2    | `AddProfiles`                           | `LearnerProfiles`, `Achievements` (kèm seed), `UserAchievements`       |
+| 3    | `AddGame`                               | `GameSessions`                                                         |
+| 5–6  | `AddAssistant` (bật extension `vector`) | `KnowledgeChunks`, `Conversations`, `ChatMessages`, `MessageCitations` |
 
 ## 7. Hạn chế đã biết
 

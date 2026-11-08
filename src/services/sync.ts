@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { create } from 'zustand';
 import { wordSchema } from '../data/schema';
-import { authFetch } from './auth';
+import { authFetch, useAuth } from './auth';
 import {
   attemptSchema,
   db,
@@ -40,9 +40,28 @@ const responseSchema = z.object({
   ),
 });
 
-export const useSync = create<{ status: 'idle' | 'syncing' | 'error'; lastSynced: number | null }>(
-  () => ({ status: 'idle', lastSynced: null }),
-);
+const pointsSchema = z.object({
+  total: z.number().int().nonnegative(),
+  today: z.number().int().nonnegative(),
+  dailyCap: z.number().int().positive(),
+});
+export type Points = z.infer<typeof pointsSchema>;
+
+export const useSync = create<{
+  status: 'idle' | 'syncing' | 'error';
+  lastSynced: number | null;
+  points: Points | null;
+}>(() => ({ status: 'idle', lastSynced: null, points: null }));
+
+/** Points are computed by the server from synced attempts; a failed read keeps the last value. */
+async function fetchPoints() {
+  try {
+    const response = await authFetch('/api/points');
+    return response.ok ? pointsSchema.parse(await response.json()) : useSync.getState().points;
+  } catch {
+    return useSync.getState().points;
+  }
+}
 
 /**
  * Merges this device with the signed-in account in both directions.
@@ -89,10 +108,28 @@ export async function syncNow() {
         );
       }
     });
-    useSync.setState({ status: 'idle', lastSynced: Date.now() });
+    useSync.setState({ status: 'idle', lastSynced: Date.now(), points: await fetchPoints() });
     return true;
   } catch {
     useSync.setState({ status: 'error' });
     return false;
   }
+}
+
+/**
+ * Syncs shortly after any new attempt while signed in, so points arrive without opening Account.
+ * Attempts written by a running sync are skipped, which also prevents a sync loop.
+ */
+export function startAutoSync(delay = 1500) {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const onCreate = () => {
+    if (!useAuth.getState().email || useSync.getState().status === 'syncing') return;
+    clearTimeout(timer);
+    timer = setTimeout(() => void syncNow(), delay);
+  };
+  db.attempts.hook('creating', onCreate);
+  return () => {
+    clearTimeout(timer);
+    db.attempts.hook('creating').unsubscribe(onCreate);
+  };
 }

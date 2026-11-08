@@ -9,6 +9,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
 {
     public DbSet<Attempt> Attempts => Set<Attempt>();
     public DbSet<SyncRecord> SyncRecords => Set<SyncRecord>();
+    public DbSet<PointEntry> PointLedger => Set<PointEntry>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -30,6 +31,16 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
             entity.Property(r => r.Store).HasMaxLength(32);
             entity.Property(r => r.Id).HasMaxLength(128);
         });
+        builder.Entity<PointEntry>(entity =>
+        {
+            entity.ToTable("PointLedger");
+            entity.HasOne<IdentityUser>().WithMany().HasForeignKey(p => p.UserId);
+            entity.Property(p => p.Source).HasMaxLength(16);
+            entity.Property(p => p.SourceId).HasMaxLength(128);
+            // One award per source, however often a device re-sends it.
+            entity.HasIndex(p => new { p.UserId, p.Source, p.SourceId }).IsUnique();
+            entity.HasIndex(p => new { p.UserId, p.LocalDate });
+        });
     }
 }
 
@@ -44,6 +55,18 @@ public class Attempt
     public double Timestamp { get; set; }
     public required string Label { get; set; }
     public string? LearningLanguage { get; set; }
+}
+
+/// <summary>One award of points; totals and leaderboards are sums over this ledger.</summary>
+public class PointEntry
+{
+    public long Id { get; set; }
+    public required string UserId { get; set; }
+    public required string Source { get; set; }
+    public required string SourceId { get; set; }
+    public int Points { get; set; }
+    public DateOnly LocalDate { get; set; }
+    public DateTimeOffset CreatedAt { get; set; }
 }
 
 /// <summary>A Dexie record (settings, words, reviews, drafts, submissions, vocabularyStudy) kept as JSON.</summary>

@@ -10,17 +10,11 @@ import {
   type AuthErrorKind,
 } from '../../services/auth';
 import { syncNow, useSync } from '../../services/sync';
-import { useApp } from '../../app/store';
-
-/** Merges this device with the account, then reloads settings that may have come from another device. */
-async function sync() {
-  if (await syncNow()) await useApp.getState().load();
-}
 
 export default function Account() {
   const bi = useBi();
   const email = useAuth((state) => state.email);
-  const { status, lastSynced } = useSync();
+  const { status, lastSynced, points } = useSync();
   const [mode, setMode] = useState<'login' | 'register'>('login');
   const [form, setForm] = useState({ email: '', password: '' });
   const [busy, setBusy] = useState(false);
@@ -51,10 +45,36 @@ export default function Account() {
           <p>
             {bi('Đang đăng nhập với', 'Signed in as')} <strong>{email}</strong>
           </p>
+          {points && (
+            <div className="stats">
+              <div className="stat">
+                <span>{bi('Điểm hôm nay', 'Points today')}</span>
+                <strong>
+                  {points.today}
+                  <small> / {points.dailyCap}</small>
+                </strong>
+                <progress
+                  value={points.today}
+                  max={points.dailyCap}
+                  aria-label={bi('Điểm hôm nay', 'Points today')}
+                />
+              </div>
+              <div className="stat">
+                <span>{bi('Tổng điểm', 'Total points')}</span>
+                <strong>{points.total}</strong>
+              </div>
+            </div>
+          )}
           <p className="muted">
             {bi(
-              'Tiến độ học được gộp giữa thiết bị này và tài khoản mỗi khi mở ứng dụng hoặc bấm Đồng bộ. Xoá từ hay đặt lại dữ liệu chỉ có tác dụng trên thiết bị này.',
-              'Progress merges between this device and your account when the app opens or when you select Sync. Deleting words or resetting data only affects this device.',
+              `Mỗi lượt luyện tập được 1–5 điểm theo kết quả, tối đa ${points?.dailyCap ?? 300} điểm mỗi ngày; máy chủ tính điểm sau khi đồng bộ.`,
+              `Each practice earns 1–5 points by result, up to ${points?.dailyCap ?? 300} a day; the server awards them after syncing.`,
+            )}
+          </p>
+          <p className="muted">
+            {bi(
+              'Tiến độ học được gộp giữa thiết bị này và tài khoản mỗi khi mở ứng dụng, sau mỗi lượt luyện tập hoặc khi bấm Đồng bộ. Xoá từ hay đặt lại dữ liệu chỉ có tác dụng trên thiết bị này.',
+              'Progress merges between this device and your account when the app opens, after each practice or when you select Sync. Deleting words or resetting data only affects this device.',
             )}
           </p>
           <p role="status">
@@ -73,7 +93,11 @@ export default function Account() {
             </Notice>
           )}
           <div className="actions">
-            <button className="primary" disabled={status === 'syncing'} onClick={() => void sync()}>
+            <button
+              className="primary"
+              disabled={status === 'syncing'}
+              onClick={() => void syncNow()}
+            >
               {bi('Đồng bộ ngay', 'Sync now')}
             </button>
             <button onClick={logout}>{bi('Đăng xuất', 'Sign out')}</button>
@@ -112,7 +136,7 @@ export default function Account() {
           setBusy(true);
           setError('');
           (mode === 'login' ? login : register)(form.email, form.password)
-            .then(sync)
+            .then(syncNow)
             .catch((e: unknown) => setError(e instanceof AuthError ? e.kind : 'network'))
             .finally(() => setBusy(false));
         }}

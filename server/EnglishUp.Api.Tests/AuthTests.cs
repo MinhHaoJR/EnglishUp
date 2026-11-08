@@ -26,6 +26,19 @@ public class ApiFactory : WebApplicationFactory<Program>
             services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase(database));
         });
     }
+
+    private record Tokens(string AccessToken);
+
+    /// <summary>A client for a freshly registered learner.</summary>
+    public async Task<HttpClient> SignedInClient()
+    {
+        var client = CreateClient();
+        var credentials = new { email = $"learner-{Guid.NewGuid():N}@example.test", password = "Learn#2026" };
+        (await client.PostAsJsonAsync("/api/register", credentials)).EnsureSuccessStatusCode();
+        var tokens = await (await client.PostAsJsonAsync("/api/login", credentials)).Content.ReadFromJsonAsync<Tokens>();
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tokens!.AccessToken);
+        return client;
+    }
 }
 
 public class AuthTests(ApiFactory factory) : IClassFixture<ApiFactory>

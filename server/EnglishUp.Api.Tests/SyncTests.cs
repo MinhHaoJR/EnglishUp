@@ -1,5 +1,4 @@
 using System.Net;
-using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
 
@@ -7,17 +6,7 @@ namespace EnglishUp.Api.Tests;
 
 public class SyncTests(ApiFactory factory) : IClassFixture<ApiFactory>
 {
-    private record Tokens(string AccessToken);
-
-    private async Task<HttpClient> SignedInClient()
-    {
-        var client = factory.CreateClient();
-        var credentials = new { email = $"sync-{Guid.NewGuid():N}@example.test", password = "Learn#2026" };
-        (await client.PostAsJsonAsync("/api/register", credentials)).EnsureSuccessStatusCode();
-        var tokens = await (await client.PostAsJsonAsync("/api/login", credentials)).Content.ReadFromJsonAsync<Tokens>();
-        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tokens!.AccessToken);
-        return client;
-    }
+    private Task<HttpClient> SignedInClient() => factory.SignedInClient();
 
     private static object Attempt(string id, double score = 80) =>
         new { id, skill = "reading", score, duration = 60, timestamp = 1000, label = "Passage 1" };

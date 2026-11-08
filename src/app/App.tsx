@@ -23,7 +23,7 @@ const Speaking = lazy(() => import('../features/speaking/Speaking'));
 const Writing = lazy(() => import('../features/writing/Writing'));
 const Account = lazy(() => import('../features/account/Account'));
 import { restoreSession, useAuth } from '../services/auth';
-import { syncNow } from '../services/sync';
+import { startAutoSync, syncNow, useSync } from '../services/sync';
 export const APP_NAME = 'EnglishUp';
 export function Layout() {
   const t = useT();
@@ -34,8 +34,17 @@ export function Layout() {
   useEffect(() => {
     void (async () => {
       await restoreSession();
-      if (useAuth.getState().email && (await syncNow())) await useApp.getState().load();
+      if (useAuth.getState().email) await syncNow();
     })();
+    const stopAutoSync = startAutoSync();
+    // A sync may bring newer settings from another device.
+    const stopReload = useSync.subscribe((state, previous) => {
+      if (state.lastSynced !== previous.lastSynced) void useApp.getState().load();
+    });
+    return () => {
+      stopAutoSync();
+      stopReload();
+    };
   }, []);
   useEffect(() => {
     document.getElementById('main')?.focus();

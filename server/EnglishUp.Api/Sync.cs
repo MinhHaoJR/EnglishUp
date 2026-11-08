@@ -35,12 +35,13 @@ public static class Sync
 
         var attemptIds = (await db.Attempts.Where(a => a.UserId == userId).Select(a => a.Id).ToListAsync())
             .ToHashSet();
-        foreach (var a in payload.Attempts.Where(a => attemptIds.Add(a.Id)))
-            db.Attempts.Add(new Attempt
-            {
-                UserId = userId, Id = a.Id, Skill = a.Skill, Score = a.Score, Duration = a.Duration,
-                Timestamp = a.Timestamp, Label = a.Label, LearningLanguage = a.LearningLanguage,
-            });
+        var added = payload.Attempts.Where(a => attemptIds.Add(a.Id)).Select(a => new Attempt
+        {
+            UserId = userId, Id = a.Id, Skill = a.Skill, Score = a.Score, Duration = a.Duration,
+            Timestamp = a.Timestamp, Label = a.Label, LearningLanguage = a.LearningLanguage,
+        }).ToList();
+        db.Attempts.AddRange(added);
+        await Points.AwardAsync(db, userId, added, DateTimeOffset.UtcNow);
 
         var records = await db.SyncRecords.Where(r => r.UserId == userId).ToDictionaryAsync(r => (r.Store, r.Id));
         foreach (var incoming in payload.Records)

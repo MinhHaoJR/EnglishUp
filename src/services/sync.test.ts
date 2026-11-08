@@ -1,5 +1,6 @@
-import { db, defaults, resetData, type Attempt, type Review } from './storage';
-import { syncNow, useSync } from './sync';
+import { useAuth } from './auth';
+import { db, defaults, logAttempt, resetData, type Attempt, type Review } from './storage';
+import { startAutoSync, syncNow, useSync } from './sync';
 
 const json = (body: unknown, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } });
@@ -26,7 +27,8 @@ const review = (id: string, lastReviewed: number): Review => ({
 let fetchMock: ReturnType<typeof vi.fn>;
 beforeEach(async () => {
   await resetData();
-  useSync.setState({ status: 'idle', lastSynced: null });
+  useSync.setState({ status: 'idle', lastSynced: null, points: null });
+  useAuth.setState({ email: null });
   localStorage.setItem(
     'englishup.session',
     JSON.stringify({
@@ -107,4 +109,52 @@ it('reports offline and rejected syncs without throwing', async () => {
   fetchMock.mockResolvedValueOnce(json({ title: 'bad' }, 400));
   expect(await syncNow()).toBe(false);
   expect(useSync.getState().status).toBe('error');
+});
+
+it('reads server points after a sync and keeps them when the read fails', async () => {
+  fetchMock
+    .mockResolvedValueOnce(json({ attempts: [], records: [] }))
+    .mockResolvedValueOnce(json({ total: 42, today: 12, dailyCap: 300 }));
+  expect(await syncNow()).toBe(true);
+  expect(fetchMock.mock.calls[1][0]).toBe('/api/points');
+  expect(useSync.getState().points).toEqual({ total: 42, today: 12, dailyCap: 300 });
+
+  fetchMock
+    .mockResolvedValueOnce(json({ attempts: [], records: [] }))
+    .mockResolvedValueOnce(json({ total: 'many' }));
+  expect(await syncNow()).toBe(true);
+  expect(useSync.getState().points?.total).toBe(42);
+});
+
+describe('auto sync', () => {
+  const syncCalls = () => fetchMock.mock.calls.filter(([path]) => path === '/api/sync').length;
+  let stop: () => void;
+  afterEach(() => stop());
+
+  it('syncs once shortly after new attempts while signed in', async () => {
+    useAuth.setState({ email: 'learner@example.test' });
+    // The account returns an attempt from another device; adding it must not start another sync.
+    fetchMock.mockImplementation((path: string) =>
+      Promise.resolve(
+        path === '/api/sync'
+          ? json({ attempts: [attempt('other-device')], records: [] })
+          : json({ total: 3, today: 3, dailyCap: 300 }),
+      ),
+    );
+    stop = startAutoSync(10);
+    await logAttempt('vocabulary', 100, Date.now(), 'word');
+    await logAttempt('vocabulary', 50, Date.now(), 'word');
+
+    await vi.waitFor(() => expect(useSync.getState().points?.total).toBe(3));
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    expect(syncCalls()).toBe(1);
+    expect(await db.attempts.count()).toBe(3);
+  });
+
+  it('stays offline-only when signed out', async () => {
+    stop = startAutoSync(10);
+    await logAttempt('vocabulary', 100, Date.now(), 'word');
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
 });

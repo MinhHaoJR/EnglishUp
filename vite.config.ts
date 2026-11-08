@@ -3,7 +3,11 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   // Same-origin /api keeps the browser free of CORS rules; run the ASP.NET Core API on 5080.
-  server: { proxy: { '/api': 'http://localhost:5080' } },
+  server: {
+    proxy: { '/api': 'http://localhost:5080' },
+    // Visual Studio locks files under server/.vs, which crashes Vite's watcher; the client never imports server/.
+    watch: { ignored: ['**/server/**'] },
+  },
   preview: { proxy: { '/api': 'http://localhost:5080' } },
   build: {
     rollupOptions: {
