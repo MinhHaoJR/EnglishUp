@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -14,11 +14,12 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+    <PackageReference Include="Pgvector.EntityFrameworkCore" Version="0.3.0" />
   </ItemGroup>
 
-  <!-- The client's bundled learning content is the single source for game questions (and later RAG). -->
+  <!-- The client's bundled learning content is the single source for game questions and the RAG assistant. -->
   <ItemGroup>
-    <Content Include="..\..\src\data\vocabulary.json;..\..\src\data\vocabulary-it.json" LinkBase="Content" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\src\data\vocabulary.json;..\..\src\data\vocabulary-it.json;..\..\src\data\reading.json;..\..\src\data\listening.json;..\..\src\data\writing.json" LinkBase="Content" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

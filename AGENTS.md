@@ -10,14 +10,14 @@ Vietnamese/English learning app with optional accounts. React 18, strict TypeScr
 - `src/data`: original JSON learning content and startup Zod validation.
 - `src/components`, `src/i18n`: shared accessible controls and bilingual strings.
 - `src/test`: test setup and integration coverage; `docs`: content authoring guide; `scripts`: content generators.
-- `server/EnglishUp.Api`: Web API (`/api/*`), ASP.NET Identity endpoints, sync, points (`Points.cs`) profile/badge/leaderboard (`Community.cs`) and quiz game (`Game.cs`, questions from `src/data` vocabulary JSON linked into the build) endpoints, EF Core migrations in `Data/Migrations`.
+- `server/EnglishUp.Api`: Web API (`/api/*`), ASP.NET Identity endpoints, sync, points (`Points.cs`) profile/badge/leaderboard (`Community.cs`) quiz game (`Game.cs`) and content search for the RAG assistant (`Knowledge.cs`: chunks, Gemini embeddings, pgvector) endpoints, all reading `src/data` JSON linked into the build, EF Core migrations in `Data/Migrations`.
 - `server/EnglishUp.Api.Tests`: xUnit API tests on an in-memory database.
 
 ## Commands
 
 Client: `npm install`, `npm run dev`, `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, `npm run preview`, `npm run format`.
 
-Server (from `server/`): `dotnet run --project EnglishUp.Api` (port 5080; needs `ConnectionStrings:Default` in user-secrets, migrates in Development), `dotnet test`, `dotnet tool restore` then `dotnet ef migrations add <Name> --project EnglishUp.Api -o Data/Migrations`.
+Server (from `server/`): `dotnet run --project EnglishUp.Api` (port 5080; needs `ConnectionStrings:Default` in user-secrets, migrates in Development), `dotnet run --project EnglishUp.Api -- ingest` (embeds `src/data` content; needs `Gemini:ApiKey`), `dotnet test` (uses a fake embedder, never Gemini), `dotnet tool restore` then `dotnet ef migrations add <Name> --project EnglishUp.Api -o Data/Migrations`.
 
 ## Conventions
 

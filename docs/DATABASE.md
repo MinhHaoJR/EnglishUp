@@ -18,7 +18,7 @@
 | Đồng bộ học tập         | `Attempts`, `SyncRecords`                                                                                                       | Đã có (`InitialCreate`) |
 | Hồ sơ, điểm, thành tích | `PointLedger` (`AddPoints`), `LearnerProfiles`, `UserAchievements` (`AddCommunity`)                                             | Đã có                   |
 | Trò chơi                | `GameSessions` (`AddGame`)                                                                                                      | Đã có                   |
-| Trợ giảng RAG           | `KnowledgeChunks`, `Conversations`, `ChatMessages`, `MessageCitations`                                                          | Đề xuất, tuần 5–6       |
+| Trợ giảng RAG           | `KnowledgeChunks` (Đã có); `Conversations`, `ChatMessages`, `MessageCitations`                                                  | Tuần 5; còn lại tuần 6  |
 
 ```mermaid
 erDiagram
@@ -149,9 +149,9 @@ Trò chơi trắc nghiệm 60 giây. Server rút 60 từ (lọc theo trình đ�
 
 Index (`UserId`, `StartedAt`). Kỷ lục cá nhân = `MAX(Score)`; số ván đã chơi = số ván có `Score`.
 
-### 3.8 Trợ giảng RAG — Đề xuất
+### 3.8 Trợ giảng RAG — `KnowledgeChunks` Đã có, các bảng hội thoại Đề xuất
 
-`KnowledgeChunks` chứa nội dung học của chính ứng dụng (từ vựng, bài đọc, bài nghe, giải thích), cắt thành đoạn ngắn kèm embedding.
+`KnowledgeChunks` chứa nội dung học của chính ứng dụng, mỗi mục một đoạn: 2.080 từ vựng, 6 bài đọc, 6 bài nghe, 10 đề viết. Lệnh `dotnet run --project EnglishUp.Api -- ingest` tạo embedding cho các đoạn mới hoặc đã đổi và xoá đoạn không còn trong nội dung.
 
 | Cột              | Kiểu          | Ràng buộc | Ghi chú                                                         |
 | ---------------- | ------------- | --------- | --------------------------------------------------------------- |
@@ -164,8 +164,8 @@ Index (`UserId`, `StartedAt`). Kỷ lục cá nhân = `MAX(Score)`; số ván đ
 | `EmbeddingModel` | varchar(64)   | NN        | Hiện là `gemini-embedding-2`; đổi mô hình thì tạo lại embedding |
 | `Embedding`      | vector(768)   | NN        | Kiểu của pgvector; 768 chiều của `gemini-embedding-2`           |
 
-- UQ (`SourceType`, `SourceId`, `ContentHash`).
-- Ước tính vài nghìn đoạn; ví dụ 5.000 đoạn × 768 chiều × 4 byte ≈ 15 MB, pgvector tìm theo khoảng cách cosine ngay trong SQL; thêm index HNSW khi số đoạn lớn.
+- UQ (`SourceType`, `SourceId`): mỗi mục nội dung đúng một đoạn; `ContentHash` quyết định có tạo lại embedding hay không.
+- Ước tính vài nghìn đoạn; ví dụ 5.000 đoạn × 768 chiều × 4 byte ≈ 15 MB, pgvector tìm theo khoảng cách cosine ngay trong SQL, có index HNSW (`vector_cosine_ops`).
 
 | `Conversations` | Kiểu        | Ràng buộc                       |
 | --------------- | ----------- | ------------------------------- |
@@ -218,18 +218,19 @@ LIMIT 50;
 
 ## 6. Lộ trình migration
 
-| Tuần | Migration                               | Bảng                                                                   |
-| ---- | --------------------------------------- | ---------------------------------------------------------------------- |
-| 1–2  | `InitialCreate`                         | `AspNet*`, `Attempts`, `SyncRecords` (đã có)                           |
-| 1    | `AddPoints`                             | `PointLedger` (đã có)                                                  |
-| 2    | `AddCommunity`                          | `LearnerProfiles`, `UserAchievements` (đã có)                          |
-| 3    | `AddGame`                               | `GameSessions` (đã có)                                                 |
-| 5–6  | `AddAssistant` (bật extension `vector`) | `KnowledgeChunks`, `Conversations`, `ChatMessages`, `MessageCitations` |
+| Tuần | Migration                               | Bảng                                                |
+| ---- | --------------------------------------- | --------------------------------------------------- |
+| 1–2  | `InitialCreate`                         | `AspNet*`, `Attempts`, `SyncRecords` (đã có)        |
+| 1    | `AddPoints`                             | `PointLedger` (đã có)                               |
+| 2    | `AddCommunity`                          | `LearnerProfiles`, `UserAchievements` (đã có)       |
+| 3    | `AddGame`                               | `GameSessions` (đã có)                              |
+| 5    | `AddKnowledge` (bật extension `vector`) | `KnowledgeChunks` (đã có)                           |
+| 6    | `AddAssistant`                          | `Conversations`, `ChatMessages`, `MessageCitations` |
 
 ## 7. Hạn chế đã biết
 
 - Đồng bộ không có bản ghi xoá (tombstone): xoá từ tự thêm hoặc đặt lại dữ liệu chỉ có tác dụng trên một thiết bị.
 - Phiên bản bản ghi dựa vào đồng hồ của thiết bị; đồng hồ sai có thể làm bản cũ thắng.
 - Mỗi lần đồng bộ trả toàn bộ dữ liệu tài khoản; cần con trỏ "từ thời điểm" khi lịch sử lớn.
-- Tìm kiếm vector tính trong bộ nhớ của server, phù hợp vài nghìn đoạn nội dung, không phù hợp kho tài liệu lớn.
+- Gói miễn phí của Gemini cho 100 embedding mỗi phút và 1.000 mỗi ngày cho cả server; mỗi lần tìm kiếm dùng một lượt, nên khi hết lượt người dùng nhận lỗi 503. Lần ingest đầu (khoảng 2.100 đoạn) phải chạy trong ba ngày.
 - Đăng xuất chưa thu hồi token phía server.

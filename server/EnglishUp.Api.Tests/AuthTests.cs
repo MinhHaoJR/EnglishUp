@@ -29,6 +29,9 @@ public class ApiFactory : WebApplicationFactory<Program>
             services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase(database));
             services.RemoveAll<TimeProvider>();
             services.AddSingleton<TimeProvider>(Clock);
+            // Never call Gemini from tests.
+            services.RemoveAll<IEmbedder>();
+            services.AddSingleton<IEmbedder>(new FakeEmbedder());
         });
     }
 

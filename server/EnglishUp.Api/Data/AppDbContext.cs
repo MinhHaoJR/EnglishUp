@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Pgvector;
 
 namespace EnglishUp.Api.Data;
 
@@ -13,6 +14,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
     public DbSet<LearnerProfile> LearnerProfiles => Set<LearnerProfile>();
     public DbSet<UserAchievement> UserAchievements => Set<UserAchievement>();
     public DbSet<GameSession> GameSessions => Set<GameSession>();
+    public DbSet<KnowledgeChunk> KnowledgeChunks => Set<KnowledgeChunk>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -63,6 +65,24 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
             // Two answers to the same question must not both count.
             entity.Property(g => g.Answered).IsConcurrencyToken();
             entity.HasIndex(g => new { g.UserId, g.StartedAt });
+        });
+        builder.HasPostgresExtension("vector");
+        builder.Entity<KnowledgeChunk>(entity =>
+        {
+            entity.Property(c => c.SourceType).HasMaxLength(16);
+            entity.Property(c => c.SourceId).HasMaxLength(128);
+            entity.Property(c => c.Title).HasMaxLength(200);
+            entity.Property(c => c.Text).HasMaxLength(4000);
+            entity.Property(c => c.ContentHash).HasMaxLength(64).IsFixedLength();
+            entity.Property(c => c.EmbeddingModel).HasMaxLength(64);
+            entity.Property(c => c.Embedding).HasColumnType($"vector({EnglishUp.Api.GeminiEmbedder.Dimensions})");
+            entity.HasIndex(c => new { c.SourceType, c.SourceId }).IsUnique();
+            entity.HasIndex(c => c.Embedding).HasMethod("hnsw").HasOperators("vector_cosine_ops");
+            // The in-memory test database has no vector type; store the floats as JSON instead.
+            if (!Database.IsNpgsql())
+                entity.Property(c => c.Embedding).HasConversion(
+                    v => System.Text.Json.JsonSerializer.Serialize(v.ToArray(), (System.Text.Json.JsonSerializerOptions?)null),
+                    s => new Vector(System.Text.Json.JsonSerializer.Deserialize<float[]>(s, (System.Text.Json.JsonSerializerOptions?)null)!));
         });
     }
 }
@@ -123,6 +143,20 @@ public class GameSession
     public int Combo { get; set; }
     public int MaxCombo { get; set; }
     public int? Score { get; set; }
+}
+
+/// <summary>One embedded piece of the app's learning content, searched by the RAG assistant.</summary>
+public class KnowledgeChunk
+{
+    public int Id { get; set; }
+    public required string SourceType { get; set; }
+    public required string SourceId { get; set; }
+    public required string Title { get; set; }
+    public required string Text { get; set; }
+    /// <summary>SHA-256 of title and text; unchanged content is not embedded again.</summary>
+    public required string ContentHash { get; set; }
+    public required string EmbeddingModel { get; set; }
+    public required Vector Embedding { get; set; }
 }
 
 /// <summary>A Dexie record (settings, words, reviews, drafts, submissions, vocabularyStudy) kept as JSON.</summary>
