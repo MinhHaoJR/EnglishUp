@@ -1209,6 +1209,9 @@ footer {
 .lesson-card .primary {
   margin-top: auto;
 }
+.lesson-card.locked {
+  opacity: 0.55;
+}
 .tabs {
   display: flex;
   gap: 8px;

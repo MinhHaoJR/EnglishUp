@@ -10,6 +10,8 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
     public DbSet<Attempt> Attempts => Set<Attempt>();
     public DbSet<SyncRecord> SyncRecords => Set<SyncRecord>();
     public DbSet<PointEntry> PointLedger => Set<PointEntry>();
+    public DbSet<LearnerProfile> LearnerProfiles => Set<LearnerProfile>();
+    public DbSet<UserAchievement> UserAchievements => Set<UserAchievement>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -41,6 +43,18 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
             entity.HasIndex(p => new { p.UserId, p.Source, p.SourceId }).IsUnique();
             entity.HasIndex(p => new { p.UserId, p.LocalDate });
         });
+        builder.Entity<LearnerProfile>(entity =>
+        {
+            entity.HasKey(p => p.UserId);
+            entity.HasOne<IdentityUser>().WithOne().HasForeignKey<LearnerProfile>(p => p.UserId);
+            entity.Property(p => p.DisplayName).HasMaxLength(40);
+        });
+        builder.Entity<UserAchievement>(entity =>
+        {
+            entity.HasKey(a => new { a.UserId, a.Code });
+            entity.HasOne<IdentityUser>().WithMany().HasForeignKey(a => a.UserId);
+            entity.Property(a => a.Code).HasMaxLength(32);
+        });
     }
 }
 
@@ -67,6 +81,23 @@ public class PointEntry
     public int Points { get; set; }
     public DateOnly LocalDate { get; set; }
     public DateTimeOffset CreatedAt { get; set; }
+}
+
+/// <summary>Public face of a learner; hidden from the leaderboard until they opt in.</summary>
+public class LearnerProfile
+{
+    public required string UserId { get; set; }
+    public required string DisplayName { get; set; }
+    public bool ShowOnLeaderboard { get; set; }
+    public DateTimeOffset CreatedAt { get; set; }
+}
+
+/// <summary>A badge a learner has earned; the rules are in Community.cs.</summary>
+public class UserAchievement
+{
+    public required string UserId { get; set; }
+    public required string Code { get; set; }
+    public DateTimeOffset EarnedAt { get; set; }
 }
 
 /// <summary>A Dexie record (settings, words, reviews, drafts, submissions, vocabularyStudy) kept as JSON.</summary>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useBi } from '../../i18n';
 import { Notice, PageTitle } from '../../components/shared';
 import {
@@ -10,6 +10,7 @@ import {
   type AuthErrorKind,
 } from '../../services/auth';
 import { syncNow, useSync } from '../../services/sync';
+import { fetchProfile, saveProfile, type Profile } from '../../services/community';
 
 export default function Account() {
   const bi = useBi();
@@ -103,6 +104,7 @@ export default function Account() {
             <button onClick={logout}>{bi('Đăng xuất', 'Sign out')}</button>
           </div>
         </section>
+        <ProfileForm />
       </>
     );
 
@@ -171,5 +173,86 @@ export default function Account() {
         </div>
       </form>
     </>
+  );
+}
+
+/** Display name and leaderboard opt-in; the leaderboard never shows emails. */
+function ProfileForm() {
+  const bi = useBi();
+  const [profile, setProfile] = useState<Profile | null>(null);
+  const [state, setState] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
+
+  useEffect(() => {
+    let current = true;
+    fetchProfile()
+      .then((loaded) => current && setProfile(loaded))
+      .catch(() => current && setState('error'));
+    return () => {
+      current = false;
+    };
+  }, []);
+
+  if (!profile)
+    return state === 'error' ? (
+      <Notice error>{bi('Không tải được hồ sơ.', 'Could not load your profile.')}</Notice>
+    ) : null;
+
+  return (
+    <form
+      className="panel space-y-4"
+      onSubmit={(event) => {
+        event.preventDefault();
+        setState('saving');
+        saveProfile(profile)
+          .then((saved) => {
+            setProfile(saved);
+            setState('saved');
+          })
+          .catch(() => setState('error'));
+      }}
+    >
+      <h2>{bi('Hồ sơ trên bảng xếp hạng', 'Leaderboard profile')}</h2>
+      <label>
+        {bi('Tên hiển thị', 'Display name')}
+        <input
+          required
+          minLength={2}
+          maxLength={40}
+          value={profile.displayName}
+          onChange={(e) => {
+            setProfile({ ...profile, displayName: e.target.value });
+            setState('idle');
+          }}
+        />
+      </label>
+      <label className="checkbox">
+        <input
+          type="checkbox"
+          checked={profile.showOnLeaderboard}
+          onChange={(e) => {
+            setProfile({ ...profile, showOnLeaderboard: e.target.checked });
+            setState('idle');
+          }}
+        />
+        {bi(
+          'Hiện tôi trên bảng xếp hạng (chỉ tên hiển thị và điểm, không hiện email)',
+          'Show me on the leaderboard (display name and points only, never my email)',
+        )}
+      </label>
+      {state === 'saved' && <p role="status">{bi('Đã lưu hồ sơ.', 'Profile saved.')}</p>}
+      {state === 'error' && (
+        <Notice error>
+          {bi(
+            'Không lưu được. Tên hiển thị cần 2–40 ký tự; hãy kiểm tra kết nối.',
+            'Could not save. Display names need 2–40 characters; check your connection.',
+          )}
+        </Notice>
+      )}
+      <div className="actions">
+        <button className="primary" disabled={state === 'saving'}>
+          {bi('Lưu hồ sơ', 'Save profile')}
+        </button>
+      </div>
+    </form>
   );
 }

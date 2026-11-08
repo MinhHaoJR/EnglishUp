@@ -61,6 +61,27 @@ namespace EnglishUp.Api.Data.Migrations
                     b.ToTable("Attempts");
                 });
 
+            modelBuilder.Entity("EnglishUp.Api.Data.LearnerProfile", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("text");
+
+                    b.Property<DateTimeOffset>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("DisplayName")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("character varying(40)");
+
+                    b.Property<bool>("ShowOnLeaderboard")
+                        .HasColumnType("boolean");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("LearnerProfiles");
+                });
+
             modelBuilder.Entity("EnglishUp.Api.Data.PointEntry", b =>
                 {
                     b.Property<long>("Id")
@@ -125,6 +146,23 @@ namespace EnglishUp.Api.Data.Migrations
                     b.HasKey("UserId", "Store", "Id");
 
                     b.ToTable("SyncRecords");
+                });
+
+            modelBuilder.Entity("EnglishUp.Api.Data.UserAchievement", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Code")
+                        .HasMaxLength(32)
+                        .HasColumnType("character varying(32)");
+
+                    b.Property<DateTimeOffset>("EarnedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("UserId", "Code");
+
+                    b.ToTable("UserAchievements");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -332,6 +370,15 @@ namespace EnglishUp.Api.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("EnglishUp.Api.Data.LearnerProfile", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithOne()
+                        .HasForeignKey("EnglishUp.Api.Data.LearnerProfile", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("EnglishUp.Api.Data.PointEntry", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
@@ -342,6 +389,15 @@ namespace EnglishUp.Api.Data.Migrations
                 });
 
             modelBuilder.Entity("EnglishUp.Api.Data.SyncRecord", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("EnglishUp.Api.Data.UserAchievement", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
                         .WithMany()

@@ -5,12 +5,12 @@ Vietnamese/English learning app with optional accounts. React 18, strict TypeScr
 ## Structure
 
 - `src/app`: routing, shell and reactive application state.
-- `src/features`: dashboard, vocabulary, languages (Japanese/Chinese), reading, listening, speaking, writing, settings, account.
-- `src/services`: storage, SRS, speech, alignment, CSV, writing feedback and `auth` (API session) and `sync` (account merge).
+- `src/features`: dashboard, vocabulary, languages (Japanese/Chinese), reading, listening, speaking, writing, settings, account, achievements.
+- `src/services`: storage, SRS, speech, alignment, CSV, writing feedback and `auth` (API session), `sync` (account merge) and `community` (profile, badges, leaderboard).
 - `src/data`: original JSON learning content and startup Zod validation.
 - `src/components`, `src/i18n`: shared accessible controls and bilingual strings.
 - `src/test`: test setup and integration coverage; `docs`: content authoring guide; `scripts`: content generators.
-- `server/EnglishUp.Api`: Web API (`/api/*`), ASP.NET Identity endpoints, sync endpoint, EF Core migrations in `Data/Migrations`.
+- `server/EnglishUp.Api`: Web API (`/api/*`), ASP.NET Identity endpoints, sync, points (`Points.cs`) and profile/badge/leaderboard (`Community.cs`) endpoints, EF Core migrations in `Data/Migrations`.
 - `server/EnglishUp.Api.Tests`: xUnit API tests on an in-memory database.
 
 ## Commands

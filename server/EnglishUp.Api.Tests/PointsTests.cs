@@ -43,7 +43,7 @@ public class PointsTests(ApiFactory factory) : IClassFixture<ApiFactory>
         await Sync(client, attempts);
 
         var points = await Points(client);
-        Assert.Equal(5 + 2 + 1, points.Today);
+        Assert.Equal(5 + 2 + 1 + Community.Bonus("first-practice"), points.Today);
         Assert.Equal(points.Today, points.Total);
         Assert.Equal(300, points.DailyCap);
     }
@@ -54,7 +54,8 @@ public class PointsTests(ApiFactory factory) : IClassFixture<ApiFactory>
         var client = await factory.SignedInClient();
         await Sync(client, Enumerable.Range(0, 70).Select(i => Attempt($"a{i}", 100, Now + i)));
 
-        Assert.Equal(300, (await Points(client)).Today);
+        // Practice stops at the cap; badge bonuses come on top of it.
+        Assert.Equal(300 + Community.Bonus("first-practice") + Community.Bonus("perfect-10"), (await Points(client)).Today);
     }
 
     [Fact]
@@ -64,7 +65,7 @@ public class PointsTests(ApiFactory factory) : IClassFixture<ApiFactory>
         var eightDaysAgo = Now - TimeSpan.FromDays(8).TotalMilliseconds;
         await Sync(client, [Attempt("old", 100, eightDaysAgo)]);
 
-        Assert.Equal(0, (await Points(client)).Total);
+        Assert.Equal(Community.Bonus("first-practice"), (await Points(client)).Total);
         var state = await (await client.PostAsJsonAsync("/api/sync", new { attempts = Array.Empty<object>(), records = Array.Empty<object>() }))
             .Content.ReadFromJsonAsync<SyncPayload>();
         Assert.Single(state!.Attempts);

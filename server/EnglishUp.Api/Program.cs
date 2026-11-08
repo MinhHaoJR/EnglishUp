@@ -36,6 +36,7 @@ var api = app.MapGroup("/api");
 api.MapIdentityApi<IdentityUser>();
 api.MapSync();
 api.MapPoints();
+api.MapCommunity();
 api.MapGet("/health", () => Results.Ok(new { status = "ok" }));
 
 app.Run();

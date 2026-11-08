@@ -11,7 +11,7 @@ public static class Points
 {
     public const int DailyCap = 300;
     private static readonly TimeSpan MaxAttemptAge = TimeSpan.FromDays(7);
-    // shortcut: every learner uses Vietnam time; read the zone from LearnerProfiles once profiles exist.
+    // shortcut: every learner uses Vietnam time; add a TimeZone column to LearnerProfiles if learners abroad join.
     private static readonly TimeZoneInfo Zone = TimeZoneInfo.FindSystemTimeZoneById("Asia/Ho_Chi_Minh");
 
     /// <summary>1 point for trying, up to 5 for a perfect score.</summary>
@@ -22,12 +22,15 @@ public static class Points
 
     /// <summary>
     /// Adds ledger rows for attempts saved for the first time in this request. Attempts older than
-    /// seven days (an imported backup) are kept without points, and a day never exceeds the cap.
+    /// seven days (an imported backup) are kept without points, and practice never exceeds the daily cap
+    /// (badge bonuses do not count towards it).
     /// </summary>
     public static async Task AwardAsync(AppDbContext db, string userId, IEnumerable<Attempt> added, DateTimeOffset now)
     {
         var today = Today(now);
-        var earned = await db.PointLedger.Where(p => p.UserId == userId && p.LocalDate == today).SumAsync(p => p.Points);
+        var earned = await db.PointLedger
+            .Where(p => p.UserId == userId && p.LocalDate == today && p.Source != "achievement")
+            .SumAsync(p => p.Points);
         var cutoff = (now - MaxAttemptAge).ToUnixTimeMilliseconds();
         foreach (var attempt in added.Where(a => a.Timestamp >= cutoff).OrderBy(a => a.Timestamp))
         {

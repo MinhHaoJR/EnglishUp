@@ -66,6 +66,9 @@ public static class Sync
         try
         {
             await db.SaveChangesAsync();
+            // Badge rules read the saved history, so they run after the first save.
+            await Community.AwardAchievementsAsync(db, userId, DateTimeOffset.UtcNow);
+            await db.SaveChangesAsync();
         }
         catch (DbUpdateException)
         {

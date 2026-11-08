@@ -16,7 +16,7 @@
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | Tài khoản               | `AspNetUsers`, `AspNetRoles`, `AspNetUserRoles`, `AspNetUserClaims`, `AspNetRoleClaims`, `AspNetUserLogins`, `AspNetUserTokens` | Đã có (`InitialCreate`) |
 | Đồng bộ học tập         | `Attempts`, `SyncRecords`                                                                                                       | Đã có (`InitialCreate`) |
-| Hồ sơ, điểm, thành tích | `PointLedger` đã có (`AddPoints`); `LearnerProfiles`, `Achievements`, `UserAchievements` đề xuất tuần 2                         | Đang làm, tuần 1–2      |
+| Hồ sơ, điểm, thành tích | `PointLedger` (`AddPoints`), `LearnerProfiles`, `UserAchievements` (`AddCommunity`)                                             | Đã có                   |
 | Trò chơi                | `GameSessions`                                                                                                                  | Đề xuất, tuần 3         |
 | Trợ giảng RAG           | `KnowledgeChunks`, `Conversations`, `ChatMessages`, `MessageCitations`                                                          | Đề xuất, tuần 5–6       |
 
@@ -27,7 +27,6 @@ erDiagram
   AspNetUsers ||--|| LearnerProfiles : "hồ sơ"
   AspNetUsers ||--o{ PointLedger : "nhận điểm"
   AspNetUsers ||--o{ UserAchievements : "đạt"
-  Achievements ||--o{ UserAchievements : ""
   AspNetUsers ||--o{ GameSessions : "chơi"
   AspNetUsers ||--o{ Conversations : "hỏi"
   Conversations ||--o{ ChatMessages : ""
@@ -83,15 +82,16 @@ Sáu kho Dexie còn lại (`settings`, `words`, `reviews`, `drafts`, `submission
 
 Lý do dùng JSON: server chỉ giữ hộ và gộp các kho này, không truy vấn bên trong; client thêm trường không cần migration. Khi cần truy vấn một trường (ví dụ số từ đã thuộc), tách kho đó thành bảng riêng giống `Attempts`.
 
-### 3.4 `LearnerProfiles` — Đề xuất, tuần 2
+### 3.4 `LearnerProfiles` — Đã có (`AddCommunity`)
 
-| Cột                 | Kiểu        | Ràng buộc                       | Ghi chú                                                 |
-| ------------------- | ----------- | ------------------------------- | ------------------------------------------------------- |
-| `UserId`            | text        | PK, FK → `AspNetUsers`, cascade | Quan hệ 1–1                                             |
-| `DisplayName`       | varchar(40) | NN                              | Mặc định "Học viên" + 4 ký tự ngẫu nhiên                |
-| `ShowOnLeaderboard` | boolean     | NN, mặc định false              | Người học tự bật                                        |
-| `TimeZone`          | varchar(64) | NN, mặc định `Asia/Ho_Chi_Minh` | Xác định "một ngày" cho giới hạn điểm và chuỗi ngày học |
-| `CreatedAt`         | timestamptz | NN                              |                                                         |
+| Cột                 | Kiểu        | Ràng buộc                       | Ghi chú                                          |
+| ------------------- | ----------- | ------------------------------- | ------------------------------------------------ |
+| `UserId`            | text        | PK, FK → `AspNetUsers`, cascade | Quan hệ 1–1, tạo khi cần lần đầu                 |
+| `DisplayName`       | varchar(40) | NN, 2–40 ký tự in được          | Mặc định "Học viên" + 4 chữ số ngẫu nhiên        |
+| `ShowOnLeaderboard` | boolean     | NN, mặc định false              | Người học tự bật; bảng xếp hạng không hiện email |
+| `CreatedAt`         | timestamptz | NN                              |                                                  |
+
+Chưa có cột múi giờ: mọi người học dùng giờ Việt Nam (`Asia/Ho_Chi_Minh`) cho "một ngày", giới hạn điểm, chuỗi ngày học và tuần của bảng xếp hạng. Thêm cột `TimeZone` khi có người học ở nước ngoài.
 
 ### 3.5 `PointLedger` — Đã có (`AddPoints`)
 
@@ -104,28 +104,32 @@ Sổ ghi điểm: mỗi dòng là một lần cộng điểm. Tổng điểm và
 | `Source`    | varchar(16)     | NN                              | `attempt`, `game`, `achievement`                  |
 | `SourceId`  | varchar(128)    | NN                              | Id lượt luyện tập, Id ván chơi hoặc mã thành tích |
 | `Points`    | int             | NN, > 0                         |                                                   |
-| `LocalDate` | date            | NN                              | Ngày theo `TimeZone` của người học                |
+| `LocalDate` | date            | NN                              | Ngày theo giờ Việt Nam                            |
 | `CreatedAt` | timestamptz     | NN                              | Giờ server                                        |
 
 - UQ (`UserId`, `Source`, `SourceId`): một nguồn chỉ được cộng điểm một lần, dù đồng bộ lại bao nhiêu lần.
-- Index (`LocalDate`, `UserId`) INCLUDE (`Points`) cho bảng xếp hạng.
+- Index (`UserId`, `LocalDate`) để tính điểm trong ngày.
 
-### 3.6 `Achievements` và `UserAchievements` — Đề xuất
+### 3.6 `UserAchievements` — Đã có (`AddCommunity`)
 
-| `Achievements`                   | Kiểu         | Ràng buộc | Ghi chú                                                         |
-| -------------------------------- | ------------ | --------- | --------------------------------------------------------------- |
-| `Code`                           | varchar(32)  | PK        | Ví dụ `first-attempt`, `streak-7`, `words-100`, `game-combo-10` |
-| `TitleVi`, `TitleEn`             | varchar(80)  | NN        | Song ngữ theo quy ước giao diện                                 |
-| `DescriptionVi`, `DescriptionEn` | varchar(200) | NN        |                                                                 |
-| `Points`                         | int          | NN, ≥ 0   | Điểm thưởng khi đạt                                             |
+Danh mục huy hiệu và điều kiện đạt viết trong code C# (`Community.cs`); tên và mô tả song ngữ nằm ở client vì là chữ giao diện. Không cần bảng `Achievements`.
 
-Điều kiện đạt được viết trong code C# theo `Code`; bảng chỉ chứa phần hiển thị, nạp bằng seed data trong migration.
+| Mã               | Điều kiện                                 | Điểm thưởng |
+| ---------------- | ----------------------------------------- | ----------- |
+| `first-practice` | Có ít nhất 1 lượt luyện tập               | 10          |
+| `streak-3`       | 3 ngày liên tiếp có luyện tập             | 20          |
+| `streak-7`       | 7 ngày liên tiếp có luyện tập             | 50          |
+| `all-skills`     | Đã luyện đủ 5 kỹ năng                     | 30          |
+| `perfect-10`     | 10 lượt đạt 100%                          | 30          |
+| `words-100`      | 100 bản ghi `reviews` trong `SyncRecords` | 50          |
 
 | `UserAchievements` | Kiểu        | Ràng buộc                       |
 | ------------------ | ----------- | ------------------------------- |
 | `UserId`           | text        | PK, FK → `AspNetUsers`, cascade |
-| `AchievementCode`  | varchar(32) | PK, FK → `Achievements`         |
+| `Code`             | varchar(32) | PK                              |
 | `EarnedAt`         | timestamptz | NN                              |
+
+Huy hiệu được xét sau mỗi lần đồng bộ, dựa trên lịch sử đã lưu; mỗi huy hiệu chỉ đạt một lần nhờ khoá chính ghép.
 
 ### 3.7 `GameSessions` — Đề xuất
 
@@ -188,7 +192,7 @@ Index (`UserId`, `StartedAt`) cho kỷ lục cá nhân và lịch sử chơi.
 
 - Mỗi lượt luyện tập mới đồng bộ lên: `1 + floor(Score / 25)` điểm (1–5).
 - Trò chơi: `10 × câu đúng + 5 × combo cao nhất`, do server chấm.
-- Thành tích: cộng `Achievements.Points` một lần.
+- Thành tích: cộng điểm thưởng của huy hiệu một lần, **không** tính vào giới hạn ngày.
 - Giới hạn 300 điểm mỗi `LocalDate` cho nguồn `attempt` và `game`, để không cày điểm bằng các lượt ngắn.
 - Lượt có `Timestamp` cũ hơn 7 ngày khi đồng bộ vẫn được lưu nhưng không cộng điểm, để không nhập file sao lưu cũ lấy điểm.
 
@@ -216,7 +220,7 @@ LIMIT 50;
 | ---- | --------------------------------------- | ---------------------------------------------------------------------- |
 | 1–2  | `InitialCreate`                         | `AspNet*`, `Attempts`, `SyncRecords` (đã có)                           |
 | 1    | `AddPoints`                             | `PointLedger` (đã có)                                                  |
-| 2    | `AddProfiles`                           | `LearnerProfiles`, `Achievements` (kèm seed), `UserAchievements`       |
+| 2    | `AddCommunity`                          | `LearnerProfiles`, `UserAchievements` (đã có)                          |
 | 3    | `AddGame`                               | `GameSessions`                                                         |
 | 5–6  | `AddAssistant` (bật extension `vector`) | `KnowledgeChunks`, `Conversations`, `ChatMessages`, `MessageCitations` |
 
