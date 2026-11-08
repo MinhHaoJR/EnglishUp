@@ -9,10 +9,18 @@ import {
   useAuth,
   type AuthErrorKind,
 } from '../../services/auth';
+import { syncNow, useSync } from '../../services/sync';
+import { useApp } from '../../app/store';
+
+/** Merges this device with the account, then reloads settings that may have come from another device. */
+async function sync() {
+  if (await syncNow()) await useApp.getState().load();
+}
 
 export default function Account() {
   const bi = useBi();
   const email = useAuth((state) => state.email);
+  const { status, lastSynced } = useSync();
   const [mode, setMode] = useState<'login' | 'register'>('login');
   const [form, setForm] = useState({ email: '', password: '' });
   const [busy, setBusy] = useState(false);
@@ -45,11 +53,31 @@ export default function Account() {
           </p>
           <p className="muted">
             {bi(
-              'Tiến độ học hiện vẫn lưu trên thiết bị này. Đồng bộ với tài khoản sẽ có ở bản tiếp theo.',
-              'Learning progress is still stored on this device. Account sync arrives in the next release.',
+              'Tiến độ học được gộp giữa thiết bị này và tài khoản mỗi khi mở ứng dụng hoặc bấm Đồng bộ. Xoá từ hay đặt lại dữ liệu chỉ có tác dụng trên thiết bị này.',
+              'Progress merges between this device and your account when the app opens or when you select Sync. Deleting words or resetting data only affects this device.',
             )}
           </p>
-          <button onClick={logout}>{bi('Đăng xuất', 'Sign out')}</button>
+          <p role="status">
+            {status === 'syncing'
+              ? bi('Đang đồng bộ…', 'Syncing…')
+              : lastSynced
+                ? `${bi('Đồng bộ lần cuối', 'Last synced')}: ${new Date(lastSynced).toLocaleTimeString()}`
+                : bi('Chưa đồng bộ trong phiên này.', 'Not synced in this session.')}
+          </p>
+          {status === 'error' && (
+            <Notice error>
+              {bi(
+                'Không đồng bộ được. Dữ liệu trên thiết bị này vẫn an toàn; hãy thử lại khi có mạng.',
+                'Sync failed. Data on this device is safe; try again when you are online.',
+              )}
+            </Notice>
+          )}
+          <div className="actions">
+            <button className="primary" disabled={status === 'syncing'} onClick={() => void sync()}>
+              {bi('Đồng bộ ngay', 'Sync now')}
+            </button>
+            <button onClick={logout}>{bi('Đăng xuất', 'Sign out')}</button>
+          </div>
         </section>
       </>
     );
@@ -59,8 +87,8 @@ export default function Account() {
       <PageTitle
         title={bi('Tài khoản', 'Account')}
         description={bi(
-          'Đăng nhập để lưu điểm, nhận thành tích và tham gia bảng xếp hạng. Không đăng nhập vẫn học được.',
-          'Sign in to keep points, earn achievements and join the leaderboard. You can still practice without an account.',
+          'Đăng nhập để lưu tiến độ lên tài khoản và dùng trên nhiều thiết bị. Tiến độ đang có trên thiết bị này sẽ được gộp vào tài khoản. Không đăng nhập vẫn học được.',
+          'Sign in to keep progress in your account across devices. Progress already on this device is merged into the account. You can still practice without an account.',
         )}
       />
       <div className="tabs">
@@ -84,6 +112,7 @@ export default function Account() {
           setBusy(true);
           setError('');
           (mode === 'login' ? login : register)(form.email, form.password)
+            .then(sync)
             .catch((e: unknown) => setError(e instanceof AuthError ? e.kind : 'network'))
             .finally(() => setBusy(false));
         }}

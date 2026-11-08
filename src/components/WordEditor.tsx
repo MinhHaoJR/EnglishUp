@@ -31,6 +31,7 @@ export function WordEditor({ word, onClose }: { word?: Partial<Word>; onClose: (
               id: word?.custom && word.id ? word.id : crypto.randomUUID(),
               examples: form.examples.split('\n').filter(Boolean),
               custom: true,
+              updated: Date.now(),
             });
             await db.words.put(parsed);
             onClose();

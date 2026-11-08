@@ -13,6 +13,8 @@ export const settingsSchema = z.object({
   dailyGoal: z.number().int().min(1).max(120),
   newCards: z.number().int().min(0).max(100),
   transcript: z.boolean(),
+  /** Last local edit; orders account sync. */
+  updated: z.number().nonnegative().optional(),
 });
 export type Settings = z.infer<typeof settingsSchema>;
 export const defaults: Settings = {

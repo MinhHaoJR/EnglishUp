@@ -12,6 +12,8 @@ export const wordSchema = z.object({
   level: levelSchema,
   topic: z.string().trim().min(1),
   custom: z.boolean().optional(),
+  /** Last edit of a custom word; orders account sync. */
+  updated: z.number().nonnegative().optional(),
 });
 export type Word = z.infer<typeof wordSchema>;
 export type Skill = z.infer<typeof skillSchema>;

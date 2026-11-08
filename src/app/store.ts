@@ -36,7 +36,7 @@ export const useApp = create<State>((set, get) => ({
   },
   update: async (patch) => {
     const previous = get().settings;
-    const settings = settingsSchema.parse({ ...previous, ...patch });
+    const settings = settingsSchema.parse({ ...previous, ...patch, updated: Date.now() });
     set({ settings });
     try {
       await db.settings.put(settings);

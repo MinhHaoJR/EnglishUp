@@ -15,14 +15,19 @@ Open the localhost URL printed by Vite. `npm run build` creates `dist`; `npm run
 
 ### Optional account server
 
-Accounts need the ASP.NET Core API (requires the .NET 9 SDK and SQL Server LocalDB, which ships with Visual Studio / SQL Server Express):
+Accounts need the ASP.NET Core API (.NET 9 SDK) and a PostgreSQL database hosted on [Supabase](https://supabase.com). The browser never talks to Supabase: only the API holds the connection string.
+
+1. Create a Supabase project (a region near your learners, e.g. Singapore) and note the database password.
+2. In the dashboard choose **Connect → Session pooler** and copy the host and user (`postgres.<project-ref>`). The session pooler works over IPv4; the direct connection needs IPv6.
+3. Store the connection string in user-secrets (kept outside the repository), then run the API:
 
 ```sh
 cd server
+dotnet user-secrets set "ConnectionStrings:Default" "Host=<pooler-host>;Port=5432;Database=postgres;Username=postgres.<project-ref>;Password=<database-password>;SSL Mode=Require" --project EnglishUp.Api
 dotnet run --project EnglishUp.Api
 ```
 
-It listens on `http://localhost:5080`, creates/migrates the `EnglishUp` LocalDB database in Development, and Vite proxies `/api` to it. Point it at another SQL Server with the `ConnectionStrings__Default` environment variable. Without the server, everything except **Account** keeps working. Run `dotnet test` in `server/` for API tests.
+It listens on `http://localhost:5080`, applies EF Core migrations to that database in Development, and Vite proxies `/api` to it. In production set the `ConnectionStrings__Default` environment variable instead. Free Supabase projects pause after a week without traffic; resume the project in the dashboard before a demo. Signed-in learners sync automatically when the app opens and on **Account → Sync now**. Without the server, everything except **Account** keeps working. Run `dotnet test` in `server/` for API tests.
 
 ## Checks
 
@@ -35,7 +40,8 @@ npm run build
 
 ## Assumptions
 
-- Single learner per browser profile. Accounts (email + password, ASP.NET Identity bearer tokens) are optional; learning data is not yet synced to the account, so there is no cross-device sync.
+- Single learner per browser profile. Accounts (email + password, ASP.NET Identity bearer tokens) are optional. Signing in merges the progress already in this browser into the account, so do not sign a different learner into a browser that holds someone else's progress.
+- Sync merges both ways when the app opens and on demand: attempts are append-only by ID; settings, custom words, reviews, drafts, submissions and word-group progress keep the newest version (`updated`, `lastReviewed` or `timestamp`; last write wins, so clocks matter). Deletions and **Reset** affect only the device: a deleted custom word or reset data returns on the next sync. Each sync transfers the whole account, which suits one learner's history but not very large ones.
 - The access token lasts one hour and is refreshed automatically with a 14-day refresh token. Tokens are kept in `localStorage`, outside Dexie and backups. Signing out deletes them on this device; the server does not revoke issued tokens. Email confirmation and password reset emails are not configured.
 - Daily goal is elapsed practice minutes between starting and saving an attempt, rounded down on the dashboard. Idle time in an open exercise counts; close the session when finished. Dates use the learner's local timezone.
 - English vocabulary spans A1–C2. CEFR labels guide study and do not certify a word's exam level or predict an IELTS band.

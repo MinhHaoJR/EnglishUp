@@ -22,5 +22,7 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './src/test/setup.ts',
     restoreMocks: true,
+    // Flows that render the 2,080-word library can pass 5 s on a busy machine.
+    testTimeout: 15_000,
   },
 });

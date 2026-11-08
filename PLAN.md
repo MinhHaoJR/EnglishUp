@@ -33,7 +33,7 @@ After every milestone run lint, typecheck, tests and production build, fix failu
 
 ## Thesis roadmap — "EnglishUp với trợ giảng AI dựa trên RAG" (due 2027-01-04)
 
-Accounts, server-side points, achievements and leaderboard, a 60-second quiz game, personalised recommendations and a RAG teaching assistant, on React → ASP.NET Core Web API → SQL Server.
+Accounts, server-side points, achievements and leaderboard, a 60-second quiz game, personalised recommendations and a RAG teaching assistant, on React → ASP.NET Core Web API → PostgreSQL (Supabase).
 
 1. Week 1 (Nov 9–15): API skeleton, ASP.NET Identity, sign-in/registration UI. **Done.**
 2. Week 2: SQL tables mirroring the seven Dexie stores, push/pull sync, import a local backup into an account.
@@ -43,6 +43,8 @@ Accounts, server-side points, achievements and leaderboard, a 60-second quiz gam
 6. Week 7: hardening, demo data, Docker run, screenshots. Week 8: report.
 
 - Week 1 completed: `server/` solution with ASP.NET Core 9 minimal API, EF Core SQL Server (LocalDB by default), ASP.NET Identity API endpoints under `/api` (register, login, refresh, manage/info) with bearer tokens, 8-character complex passwords, unique emails and lockout. Vite proxies `/api`. The client adds an `auth` service (token refresh, offline-tolerant session restore) and an **Account** page linked from the top-bar avatar. Client: lint, typecheck, 107 tests in 23 files and build pass. Server: 9 xUnit tests pass. Browser check against LocalDB: weak password rejected, registration, reload persistence, sign-out and sign-in. Learning data is not synced yet.
+- Week 2 completed: SQL Server `Attempts` (typed, for points/leaderboards) and `SyncRecords` (settings, words, reviews, drafts, submissions, vocabularyStudy as versioned JSON) with cascade delete per user; authenticated `POST /api/sync` validates the payload, merges (attempts append-only, newest version wins) and returns the account. The client syncs on startup, after sign-in and from **Account**, validates the response with Zod before one Dexie transaction, and reloads settings. Importing a local backup then syncing moves it into the account. Client: lint, typecheck, 110 tests in 24 files and build pass. Server: 19 xUnit tests pass. Browser check against LocalDB: a vocabulary rating and theme reached SQL Server, survived a local reset via sync with no duplicates, and an offline sync showed the error while keeping the session. Deletions are not synced (no tombstones).
+- Database moved from SQL Server to PostgreSQL on Supabase (Npgsql 9.0.4, single `InitialCreate` migration, connection string in user-secrets) for pgvector and a hosted database; the API, Identity and sync logic are unchanged. Server: 19 xUnit tests pass. Checked against the Supabase project (Singapore, session pooler, Data API disabled): migration applied, register/login, 401 without a token, sync merge (append-only attempts, newest review kept) and 400 on an invalid payload. Design: [docs/DATABASE.md](docs/DATABASE.md).
 
 ## Translation extension
 

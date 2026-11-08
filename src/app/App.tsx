@@ -23,6 +23,7 @@ const Speaking = lazy(() => import('../features/speaking/Speaking'));
 const Writing = lazy(() => import('../features/writing/Writing'));
 const Account = lazy(() => import('../features/account/Account'));
 import { restoreSession, useAuth } from '../services/auth';
+import { syncNow } from '../services/sync';
 export const APP_NAME = 'EnglishUp';
 export function Layout() {
   const t = useT();
@@ -31,7 +32,10 @@ export function Layout() {
   const selectedSkill = skillSchema.safeParse(pathname.split('/')[1]);
   const email = useAuth((state) => state.email);
   useEffect(() => {
-    void restoreSession();
+    void (async () => {
+      await restoreSession();
+      if (useAuth.getState().email && (await syncNow())) await useApp.getState().load();
+    })();
   }, []);
   useEffect(() => {
     document.getElementById('main')?.focus();
