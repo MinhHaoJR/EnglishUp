@@ -5,6 +5,7 @@ import { Filters, Notice, PageTitle, useLive } from '../../components/shared';
 import { db } from '../../services/storage';
 import { dueQueue } from '../../services/srs';
 import { getProgress } from '../../services/progress';
+import { recommend, type Reason } from '../../services/recommend';
 import {
   vocabulary,
   listenings,
@@ -29,7 +30,30 @@ export default function Dashboard() {
   const { value: reviews = [] } = useLive(() => db.reviews.toArray());
   const { value: custom = [] } = useLive(() => db.words.toArray());
   const progress = getProgress(attempts);
-  const due = dueQueue([...vocabulary, ...custom], reviews).length;
+  const queue = dueQueue([...vocabulary, ...custom], reviews);
+  const due = queue.length;
+  const reviewed = new Set(reviews.map((r) => r.id));
+  const plan = recommend(attempts, queue.filter((w) => reviewed.has(w.id)).length);
+  const why = (reason: Reason) => {
+    switch (reason.kind) {
+      case 'due':
+        return bi(
+          `${reason.cards} thẻ đã đến hạn ôn`,
+          `${reason.cards} ${reason.cards === 1 ? 'card' : 'cards'} due for review`,
+        );
+      case 'new':
+        return bi('Bạn chưa thử kỹ năng này', 'You have not tried this skill yet');
+      case 'weak':
+        return bi(
+          `Điểm gần đây ${reason.average}% — luyện thêm sẽ tiến bộ`,
+          `Recent score ${reason.average}% — more practice will help`,
+        );
+      case 'stale':
+        return bi(`${reason.days} ngày chưa luyện`, `Not practised for ${reason.days} days`);
+      case 'keep':
+        return bi(`Giữ phong độ ${reason.average}%`, `Keep up your ${reason.average}%`);
+    }
+  };
   const minutes = Math.floor(progress.todaySeconds / 60);
   const percent = Math.min(
     100,
@@ -112,7 +136,7 @@ export default function Dashboard() {
               'From a new word to a great story. Take 5–10 minutes to explore English your way.',
             )}
           </p>
-          <Link className="button primary" to={due ? '/vocabulary' : '/reading'}>
+          <Link className="button primary" to={`/${plan[0].skill}`}>
             {t('continue')} <span aria-hidden="true">→</span>
           </Link>
           <span className="hero-foot">
@@ -251,28 +275,7 @@ export default function Dashboard() {
                 : bi('Dành một khoảng nhỏ cho bản thân.', 'Make a little time for yourself.')}
             </p>
             <div className="plan-list">
-              {(
-                [
-                  {
-                    skill: 'vocabulary',
-                    minutes: 3,
-                    vi: 'Ôn vài từ quen thuộc',
-                    en: 'Revisit a few words',
-                  },
-                  {
-                    skill: 'listening',
-                    minutes: 4,
-                    vi: 'Lắng nghe một hội thoại',
-                    en: 'Listen to a conversation',
-                  },
-                  {
-                    skill: 'reading',
-                    minutes: 3,
-                    vi: 'Khám phá một câu chuyện',
-                    en: 'Explore a short story',
-                  },
-                ] as const
-              ).map((step, i) => (
+              {plan.map((step, i) => (
                 <Link key={step.skill} to={`/${step.skill}`}>
                   <span
                     className={`plan-number ${progress.todaySkills.has(step.skill) ? 'complete' : ''}`}
@@ -280,9 +283,9 @@ export default function Dashboard() {
                     {progress.todaySkills.has(step.skill) ? '✓' : i + 1}
                   </span>
                   <div>
-                    <strong>{bi(step.vi, step.en)}</strong>
+                    <strong>{t(step.skill)}</strong>
                     <small>
-                      {step.minutes} {t('minutes')}
+                      {why(step.reason)} · {step.minutes} {t('minutes')}
                     </small>
                   </div>
                   <span className="muted">›</span>
@@ -291,8 +294,8 @@ export default function Dashboard() {
             </div>
             <p className="plan-caption">
               {bi(
-                'Gợi ý 10 phút · Tùy chọn bài bạn thích',
-                'A 10-minute suggestion · Choose what you enjoy',
+                'Gợi ý theo thẻ đến hạn, điểm gần đây và ngày luyện cuối · Tùy chọn bài bạn thích',
+                'Based on due cards, recent scores and last practice · Choose what you enjoy',
               )}
             </p>
           </section>

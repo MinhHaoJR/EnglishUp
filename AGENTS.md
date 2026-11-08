@@ -6,7 +6,7 @@ Vietnamese/English learning app with optional accounts. React 18, strict TypeScr
 
 - `src/app`: routing, shell and reactive application state.
 - `src/features`: dashboard, vocabulary, languages (Japanese/Chinese), reading, listening, speaking, writing, settings, account, achievements, game (60-second race).
-- `src/services`: storage, SRS, speech, alignment, CSV, writing feedback and `auth` (API session), `sync` (account merge) and `community` (profile, badges, leaderboard) and `game`.
+- `src/services`: storage, SRS, speech, alignment, CSV, writing feedback and `auth` (API session), `sync` (account merge) and `community` (profile, badges, leaderboard) `game` and `recommend` (dashboard daily plan).
 - `src/data`: original JSON learning content and startup Zod validation.
 - `src/components`, `src/i18n`: shared accessible controls and bilingual strings.
 - `src/test`: test setup and integration coverage; `docs`: content authoring guide; `scripts`: content generators.

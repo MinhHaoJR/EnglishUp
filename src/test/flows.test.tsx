@@ -255,6 +255,38 @@ test('dashboard reconstructs progress from persisted attempts after remount', as
   view.unmount();
 });
 
+test('dashboard plan puts due cards first and then the weakest skill', async () => {
+  const yesterday = Date.now() - 86_400_000;
+  await db.attempts.bulkAdd(
+    (['vocabulary', 'listening', 'speaking', 'reading', 'writing'] as const).map((skill) => ({
+      id: skill,
+      skill,
+      score: skill === 'listening' ? 40 : 95,
+      duration: 60,
+      timestamp: yesterday,
+      label: skill,
+    })),
+  );
+  await db.reviews.add({
+    id: vocabulary[0].id,
+    ease: 2.5,
+    interval: 1,
+    repetitions: 1,
+    due: yesterday,
+    introduced: yesterday,
+    lastReviewed: yesterday,
+    correct: 1,
+    total: 1,
+  });
+  show(<Dashboard />);
+  const plan = within(
+    (await screen.findByRole('heading', { name: 'Your plan for today' })).closest('section')!,
+  );
+  await waitFor(() => expect(plan.getAllByRole('link')[1]).toHaveTextContent('Recent score 40%'));
+  expect(plan.getAllByRole('link')[0]).toHaveTextContent('1 card due for review');
+  expect(plan.getAllByRole('link')[1]).toHaveAttribute('href', '/listening');
+});
+
 test('continue writing opens the next prompt and keeps the saved draft and attempt', async () => {
   show(<Writing />);
   fireEvent.click(screen.getAllByRole('button', { name: /Start practice/ })[0]);
