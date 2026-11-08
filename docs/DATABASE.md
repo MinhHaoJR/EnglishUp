@@ -153,19 +153,19 @@ Index (`UserId`, `StartedAt`). Kỷ lục cá nhân = `MAX(Score)`; số ván đ
 
 `KnowledgeChunks` chứa nội dung học của chính ứng dụng (từ vựng, bài đọc, bài nghe, giải thích), cắt thành đoạn ngắn kèm embedding.
 
-| Cột              | Kiểu          | Ràng buộc | Ghi chú                                                     |
-| ---------------- | ------------- | --------- | ----------------------------------------------------------- |
-| `Id`             | int identity  | PK        |                                                             |
-| `SourceType`     | varchar(16)   | NN        | `word`, `reading`, `listening`, `writing-guide`…            |
-| `SourceId`       | varchar(128)  | NN        | Id trong file JSON nội dung, để mở đúng bài khi trích nguồn |
-| `Title`          | varchar(200)  | NN        | Hiện trong phần nguồn trích dẫn                             |
-| `Text`           | varchar(4000) | NN        | Một đoạn khoảng 100–300 từ                                  |
-| `ContentHash`    | char(64)      | NN        | SHA-256 của `Text`; chỉ tạo lại embedding khi nội dung đổi  |
-| `EmbeddingModel` | varchar(64)   | NN        | Đổi mô hình thì tạo lại embedding                           |
-| `Embedding`      | vector(n)     | NN        | Kiểu của pgvector; n theo mô hình embedding                 |
+| Cột              | Kiểu          | Ràng buộc | Ghi chú                                                         |
+| ---------------- | ------------- | --------- | --------------------------------------------------------------- |
+| `Id`             | int identity  | PK        |                                                                 |
+| `SourceType`     | varchar(16)   | NN        | `word`, `reading`, `listening`, `writing-guide`…                |
+| `SourceId`       | varchar(128)  | NN        | Id trong file JSON nội dung, để mở đúng bài khi trích nguồn     |
+| `Title`          | varchar(200)  | NN        | Hiện trong phần nguồn trích dẫn                                 |
+| `Text`           | varchar(4000) | NN        | Một đoạn khoảng 100–300 từ                                      |
+| `ContentHash`    | char(64)      | NN        | SHA-256 của `Text`; chỉ tạo lại embedding khi nội dung đổi      |
+| `EmbeddingModel` | varchar(64)   | NN        | Hiện là `gemini-embedding-2`; đổi mô hình thì tạo lại embedding |
+| `Embedding`      | vector(768)   | NN        | Kiểu của pgvector; 768 chiều của `gemini-embedding-2`           |
 
 - UQ (`SourceType`, `SourceId`, `ContentHash`).
-- Ước tính vài nghìn đoạn; ví dụ 5.000 đoạn × 1.536 chiều × 4 byte ≈ 30 MB, pgvector tìm theo khoảng cách cosine ngay trong SQL; thêm index HNSW khi số đoạn lớn.
+- Ước tính vài nghìn đoạn; ví dụ 5.000 đoạn × 768 chiều × 4 byte ≈ 15 MB, pgvector tìm theo khoảng cách cosine ngay trong SQL; thêm index HNSW khi số đoạn lớn.
 
 | `Conversations` | Kiểu        | Ràng buộc                       |
 | --------------- | ----------- | ------------------------------- |
