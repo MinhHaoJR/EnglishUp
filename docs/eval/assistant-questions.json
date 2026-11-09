@@ -1,0 +1,120 @@
+[
+  { "id": "q01", "question": "What does \"routine\" mean?", "expected": ["word/v-1-1"] },
+  { "id": "q02", "question": "Từ \"appointment\" nghĩa là gì?", "expected": ["word/v-1-7"] },
+  {
+    "id": "q03",
+    "question": "\"borrow\" và \"lend\" khác nhau thế nào?",
+    "expected": ["word/v-1-12", "word/v-1-13"]
+  },
+  { "id": "q04", "question": "Từ tiếng Anh nào có nghĩa là hạn chót?", "expected": ["word/v-3-2"] },
+  { "id": "q05", "question": "Mật khẩu tiếng Anh là gì?", "expected": ["word/v-6-3"] },
+  {
+    "id": "q06",
+    "question": "Give me an example sentence with \"reliable\".",
+    "expected": ["word/v-6-11"]
+  },
+  { "id": "q07", "question": "\"source code\" là gì?", "expected": ["word/v-it-source-code"] },
+  {
+    "id": "q08",
+    "question": "How do you say \"cơ sở dữ liệu\" in English?",
+    "expected": ["word/v-extra-database"]
+  },
+  {
+    "id": "q09",
+    "question": "Phân biệt routine và habit giúp tôi.",
+    "expected": ["word/v-1-1", "word/v-1-8"]
+  },
+  {
+    "id": "q10",
+    "question": "What is the word for the instructions you follow to cook a dish?",
+    "expected": ["word/v-4-2"]
+  },
+  { "id": "q11", "question": "Cho tôi ví dụ câu có từ \"neighbor\".", "expected": ["word/v-1-2"] },
+  {
+    "id": "q12",
+    "question": "Is \"advice\" a noun or a verb?",
+    "expected": ["word/v-common-advice"]
+  },
+  {
+    "id": "q13",
+    "question": "\"although\" nghĩa là gì và dùng khi nào?",
+    "expected": ["word/v-common-although"]
+  },
+  {
+    "id": "q14",
+    "question": "What does \"schedule\" mean in Vietnamese?",
+    "expected": ["word/v-3-4"]
+  },
+  {
+    "id": "q15",
+    "question": "Trong bài đọc về buổi sáng của Linh, cô ấy đã thay đổi thói quen như thế nào?",
+    "expected": ["reading/r1"]
+  },
+  {
+    "id": "q16",
+    "question": "Why did Minh and his sister take the later train to the coast?",
+    "expected": ["reading/r2"]
+  },
+  {
+    "id": "q17",
+    "question": "Quản lý Hoa đã làm gì để mọi người trong nhóm thiết kế cùng phát biểu?",
+    "expected": ["reading/r3"]
+  },
+  {
+    "id": "q18",
+    "question": "How did the cafe owner An reduce food waste?",
+    "expected": ["reading/r4"]
+  },
+  {
+    "id": "q19",
+    "question": "What problem did the library's room booking app create?",
+    "expected": ["reading/r5"]
+  },
+  {
+    "id": "q20",
+    "question": "Bài đọc về khu vườn cộng đồng nói gì về lợi ích ngoài rau củ?",
+    "expected": ["reading/r6"]
+  },
+  {
+    "id": "q21",
+    "question": "Mai muốn mua quà sinh nhật cho ai và hẹn gặp Ben ở đâu?",
+    "expected": ["listening/l1"]
+  },
+  {
+    "id": "q22",
+    "question": "Which platform does the train to Green Bay leave from now?",
+    "expected": ["listening/l2"]
+  },
+  {
+    "id": "q23",
+    "question": "Khách hàng gọi mì rau bị dị ứng với gì?",
+    "expected": ["listening/l3"]
+  },
+  {
+    "id": "q24",
+    "question": "Why can't the team deliver the website on Thursday?",
+    "expected": ["listening/l4"]
+  },
+  {
+    "id": "q25",
+    "question": "Cảm biến nước trong dự án sông đo gì và không cho biết điều gì?",
+    "expected": ["listening/l5"]
+  },
+  {
+    "id": "q26",
+    "question": "Làm sao viết email mời bạn đi chơi chiều thứ Bảy?",
+    "expected": ["writing/w1"]
+  },
+  {
+    "id": "q27",
+    "question": "What should my paragraph about small daily habits include?",
+    "expected": ["writing/w6"]
+  },
+  {
+    "id": "q28",
+    "question": "Đề viết về giảm rác thải trong khu phố yêu cầu những gì?",
+    "expected": ["writing/w8"]
+  },
+  { "id": "q29", "question": "What is the capital of Australia?", "expected": [] },
+  { "id": "q30", "question": "Giải thích cách dùng thì hiện tại hoàn thành.", "expected": [] }
+]

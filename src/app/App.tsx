@@ -24,6 +24,7 @@ const Writing = lazy(() => import('../features/writing/Writing'));
 const Account = lazy(() => import('../features/account/Account'));
 const Achievements = lazy(() => import('../features/achievements/Achievements'));
 const Game = lazy(() => import('../features/game/Game'));
+const Assistant = lazy(() => import('../features/assistant/Assistant'));
 import { restoreSession, useAuth } from '../services/auth';
 import { startAutoSync, syncNow, useSync } from '../services/sync';
 export const APP_NAME = 'EnglishUp';
@@ -83,6 +84,7 @@ export function Layout() {
               ['/speaking', 'speaking'],
               ['/reading', 'reading'],
               ['/writing', 'writing'],
+              ['/assistant', 'assistant'],
               ['/game', 'game'],
               ['/achievements', 'achievements'],
               ['/settings', 'settings'],
@@ -166,6 +168,7 @@ const router = createBrowserRouter([
       { path: 'writing', element: <Writing /> },
       { path: 'settings', element: <Settings /> },
       { path: 'account', element: <Account /> },
+      { path: 'assistant', element: <Assistant /> },
       { path: 'game', element: <Game /> },
       { path: 'achievements', element: <Achievements /> },
       { path: '*', element: <NotFound /> },

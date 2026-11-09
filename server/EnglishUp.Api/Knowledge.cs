@@ -15,13 +15,10 @@ public record ChunkSource(string SourceType, string SourceId, string Title, stri
     public string Hash => Convert.ToHexStringLower(SHA256.HashData(Encoding.UTF8.GetBytes(Title + "\n" + Text)));
 }
 
-public record SearchHit(string SourceType, string SourceId, string Title, string Text, double Score);
+public record SearchHit(int ChunkId, string SourceType, string SourceId, string Title, string Text, double Score);
 
-public record IngestReport(int Added, int Updated, int Unchanged, int Removed);
-
-/// <summary>The free tier's 1,000 embeddings a day are used up; waiting minutes will not help.</summary>
-public class DailyQuotaException()
-    : HttpRequestException("Gemini daily embedding quota used up", null, HttpStatusCode.TooManyRequests);
+/// <summary>Remaining: chunks still to embed because the run hit its <c>max</c>.</summary>
+public record IngestReport(int Added, int Updated, int Unchanged, int Removed, int Remaining = 0);
 
 /// <summary>Turns text into vectors; Gemini in the app, a deterministic fake in tests.</summary>
 public interface IEmbedder
@@ -47,34 +44,19 @@ public class GeminiEmbedder(HttpClient http, IConfiguration config) : IEmbedder
 
     private async Task<float[][]> EmbedAsync(IReadOnlyList<string> texts, CancellationToken ct)
     {
-        var key = config["Gemini:ApiKey"];
-        if (string.IsNullOrEmpty(key))
-            throw new InvalidOperationException("Set Gemini:ApiKey with dotnet user-secrets: see README.");
         var vectors = new List<float[]>();
         foreach (var batch in texts.Chunk(BatchLimit))
         {
-            using var request = new HttpRequestMessage(HttpMethod.Post,
-                $"https://generativelanguage.googleapis.com/v1beta/models/{Model}:batchEmbedContents")
+            var body = await Gemini.PostAsync<BatchResponse>(http, config, Model, "batchEmbedContents", new
             {
-                Content = JsonContent.Create(new
+                requests = batch.Select(text => new
                 {
-                    requests = batch.Select(text => new
-                    {
-                        model = $"models/{Model}",
-                        content = new { parts = new[] { new { text } } },
-                        outputDimensionality = Dimensions,
-                    }),
+                    model = $"models/{Model}",
+                    content = new { parts = new[] { new { text } } },
+                    outputDimensionality = Dimensions,
                 }),
-            };
-            request.Headers.Add("x-goog-api-key", key);
-            using var response = await http.SendAsync(request, ct);
-            if (response.StatusCode == HttpStatusCode.TooManyRequests
-                && (await response.Content.ReadAsStringAsync(ct)).Contains("PerDay"))
-                throw new DailyQuotaException();
-            if (!response.IsSuccessStatusCode)
-                throw new HttpRequestException($"Gemini embeddings failed: {(int)response.StatusCode}", null, response.StatusCode);
-            var body = await response.Content.ReadFromJsonAsync<BatchResponse>(ct);
-            vectors.AddRange(body!.Embeddings.Select(e => e.Values));
+            }, ct);
+            vectors.AddRange(body.Embeddings.Select(e => e.Values));
         }
         return [.. vectors];
     }
@@ -88,7 +70,6 @@ public static class Knowledge
 {
     public const int MaxQueryLength = 500;
     public const int MaxResults = 10;
-    public const int MaxTries = 5;
 
     private record ContentWord(string Id, string Word, string Ipa, string Pos, string Meaning, string Definition,
         string[] Examples, string Level, string Topic);
@@ -126,10 +107,10 @@ public static class Knowledge
     /// Embeds only new or changed chunks and removes ones no longer in the content, so a run cut short by a
     /// rate limit can simply be repeated. Saves after each batch to keep the progress.
     /// The free tier allows 100 embeddings a minute, so a 429 waits <paramref name="retryAfter"/> (default 61 s)
-    /// and retries, up to <see cref="MaxTries"/> in a row; the daily quota (1,000) stops at once.
+    /// and retries, up to <see cref="Gemini.MaxTries"/> in a row; the daily quota (1,000) stops at once.
     /// </summary>
     public static async Task<IngestReport> IngestAsync(AppDbContext db, IEmbedder embedder, IReadOnlyList<ChunkSource> sources,
-        Action<string>? log = null, int batchSize = 100, TimeSpan? retryAfter = null, CancellationToken ct = default)
+        Action<string>? log = null, int batchSize = 100, TimeSpan? retryAfter = null, int? max = null, CancellationToken ct = default)
     {
         var existing = await db.KnowledgeChunks.ToDictionaryAsync(c => (c.SourceType, c.SourceId), ct);
         var wanted = sources.ToDictionary(s => (s.SourceType, s.SourceId));
@@ -139,23 +120,12 @@ public static class Knowledge
 
         var todo = sources.Where(s => !existing.TryGetValue((s.SourceType, s.SourceId), out var c)
             || c.ContentHash != s.Hash || c.EmbeddingModel != embedder.Model).ToList();
+        var pending = todo.Count;
+        todo = todo.Take(max ?? int.MaxValue).ToList();
         int added = 0, updated = 0;
         foreach (var batch in todo.Chunk(batchSize))
         {
-            float[][] vectors;
-            for (var tries = 1; ; tries++)
-            {
-                try
-                {
-                    vectors = await embedder.EmbedDocumentsAsync(batch, ct);
-                    break;
-                }
-                catch (HttpRequestException e) when (e is not DailyQuotaException && e.StatusCode == HttpStatusCode.TooManyRequests && tries < MaxTries)
-                {
-                    log?.Invoke("Rate limited; waiting a minute");
-                    await Task.Delay(retryAfter ?? TimeSpan.FromSeconds(61), ct);
-                }
-            }
+            var vectors = await Gemini.WithRetryAsync(() => embedder.EmbedDocumentsAsync(batch, ct), retryAfter, log, ct);
             for (var i = 0; i < batch.Length; i++)
             {
                 var source = batch[i];
@@ -179,7 +149,7 @@ public static class Knowledge
             await db.SaveChangesAsync(ct);
             log?.Invoke($"Embedded {added + updated}/{todo.Count} chunks");
         }
-        return new IngestReport(added, updated, sources.Count - todo.Count, stale.Count);
+        return new IngestReport(added, updated, sources.Count - pending, stale.Count, pending - todo.Count);
     }
 
     /// <summary>The k chunks closest to the query by cosine similarity (1 = same direction).</summary>
@@ -191,12 +161,12 @@ public static class Knowledge
             return await db.KnowledgeChunks
                 .Select(c => new { c, Distance = c.Embedding.CosineDistance(vector) })
                 .OrderBy(x => x.Distance).Take(k)
-                .Select(x => new SearchHit(x.c.SourceType, x.c.SourceId, x.c.Title, x.c.Text, 1 - x.Distance))
+                .Select(x => new SearchHit(x.c.Id, x.c.SourceType, x.c.SourceId, x.c.Title, x.c.Text, 1 - x.Distance))
                 .ToListAsync(ct);
         // shortcut: the in-memory test database cannot run pgvector SQL, so tests rank in C#; Postgres uses the HNSW index.
         var q = vector.ToArray();
         return (await db.KnowledgeChunks.ToListAsync(ct))
-            .Select(c => new SearchHit(c.SourceType, c.SourceId, c.Title, c.Text, Cosine(q, c.Embedding.ToArray())))
+            .Select(c => new SearchHit(c.Id, c.SourceType, c.SourceId, c.Title, c.Text, Cosine(q, c.Embedding.ToArray())))
             .OrderByDescending(h => h.Score).Take(k).ToList();
     }
 
@@ -225,13 +195,7 @@ public static class Knowledge
             }
             catch (HttpRequestException e)
             {
-                return Results.Problem(e switch
-                    {
-                        DailyQuotaException => "Today's AI quota is used up; try again tomorrow.",
-                        { StatusCode: HttpStatusCode.TooManyRequests } => "The AI quota is used up for now; try again in a minute.",
-                        _ => "The embedding service is unavailable.",
-                    },
-                    statusCode: StatusCodes.Status503ServiceUnavailable);
+                return Gemini.Unavailable(e);
             }
         }).RequireAuthorization();
     }

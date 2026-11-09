@@ -32,6 +32,8 @@ public class ApiFactory : WebApplicationFactory<Program>
             // Never call Gemini from tests.
             services.RemoveAll<IEmbedder>();
             services.AddSingleton<IEmbedder>(new FakeEmbedder());
+            services.RemoveAll<IAnswerer>();
+            services.AddSingleton<IAnswerer>(new FakeAnswerer());
         });
     }
 

@@ -5,19 +5,19 @@ Vietnamese/English learning app with optional accounts. React 18, strict TypeScr
 ## Structure
 
 - `src/app`: routing, shell and reactive application state.
-- `src/features`: dashboard, vocabulary, languages (Japanese/Chinese), reading, listening, speaking, writing, settings, account, achievements, game (60-second race).
-- `src/services`: storage, SRS, speech, alignment, CSV, writing feedback and `auth` (API session), `sync` (account merge) and `community` (profile, badges, leaderboard) `game` and `recommend` (dashboard daily plan).
+- `src/features`: dashboard, vocabulary, languages (Japanese/Chinese), reading, listening, speaking, writing, settings, account, achievements, game (60-second race), assistant (AI tutor chat).
+- `src/services`: storage, SRS, speech, alignment, CSV, writing feedback and `auth` (API session), `sync` (account merge) and `community` (profile, badges, leaderboard) `game`, `recommend` (dashboard daily plan) and `assistant`.
 - `src/data`: original JSON learning content and startup Zod validation.
 - `src/components`, `src/i18n`: shared accessible controls and bilingual strings.
 - `src/test`: test setup and integration coverage; `docs`: content authoring guide; `scripts`: content generators.
-- `server/EnglishUp.Api`: Web API (`/api/*`), ASP.NET Identity endpoints, sync, points (`Points.cs`) profile/badge/leaderboard (`Community.cs`) quiz game (`Game.cs`) and content search for the RAG assistant (`Knowledge.cs`: chunks, Gemini embeddings, pgvector) endpoints, all reading `src/data` JSON linked into the build, EF Core migrations in `Data/Migrations`.
+- `server/EnglishUp.Api`: Web API (`/api/*`), ASP.NET Identity endpoints, sync, points (`Points.cs`) profile/badge/leaderboard (`Community.cs`) quiz game (`Game.cs`) content search (`Knowledge.cs`: chunks, Gemini embeddings, pgvector) and the RAG assistant (`Assistant.cs`, shared Gemini client in `Gemini.cs`, evaluation in `Evaluation.cs`) endpoints, all reading `src/data` JSON linked into the build, EF Core migrations in `Data/Migrations`.
 - `server/EnglishUp.Api.Tests`: xUnit API tests on an in-memory database.
 
 ## Commands
 
 Client: `npm install`, `npm run dev`, `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, `npm run preview`, `npm run format`.
 
-Server (from `server/`): `dotnet run --project EnglishUp.Api` (port 5080; needs `ConnectionStrings:Default` in user-secrets, migrates in Development), `dotnet run --project EnglishUp.Api -- ingest` (embeds `src/data` content; needs `Gemini:ApiKey`), `dotnet test` (uses a fake embedder, never Gemini), `dotnet tool restore` then `dotnet ef migrations add <Name> --project EnglishUp.Api -o Data/Migrations`.
+Server (from `server/`): `dotnet run --project EnglishUp.Api` (port 5080; needs `ConnectionStrings:Default` in user-secrets, migrates in Development), `dotnet run --project EnglishUp.Api -- ingest` (embeds `src/data` content; needs `Gemini:ApiKey`), `dotnet run --project EnglishUp.Api -- eval ../docs/eval/assistant-questions.json <report.md>` (30 questions, uses the Gemini quota), `dotnet test` (fake embedder and answerer, never Gemini), `dotnet tool restore` then `dotnet ef migrations add <Name> --project EnglishUp.Api -o Data/Migrations`.
 
 ## Conventions
 

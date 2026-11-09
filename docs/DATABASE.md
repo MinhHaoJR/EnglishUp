@@ -18,7 +18,7 @@
 | Đồng bộ học tập         | `Attempts`, `SyncRecords`                                                                                                       | Đã có (`InitialCreate`) |
 | Hồ sơ, điểm, thành tích | `PointLedger` (`AddPoints`), `LearnerProfiles`, `UserAchievements` (`AddCommunity`)                                             | Đã có                   |
 | Trò chơi                | `GameSessions` (`AddGame`)                                                                                                      | Đã có                   |
-| Trợ giảng RAG           | `KnowledgeChunks` (Đã có); `Conversations`, `ChatMessages`, `MessageCitations`                                                  | Tuần 5; còn lại tuần 6  |
+| Trợ giảng RAG           | `KnowledgeChunks`, `Conversations`, `ChatMessages`, `MessageCitations`                                                          | Đã có (tuần 5–6)        |
 
 ```mermaid
 erDiagram
@@ -149,7 +149,7 @@ Trò chơi trắc nghiệm 60 giây. Server rút 60 từ (lọc theo trình đ�
 
 Index (`UserId`, `StartedAt`). Kỷ lục cá nhân = `MAX(Score)`; số ván đã chơi = số ván có `Score`.
 
-### 3.8 Trợ giảng RAG — `KnowledgeChunks` Đã có, các bảng hội thoại Đề xuất
+### 3.8 Trợ giảng RAG — Đã có
 
 `KnowledgeChunks` chứa nội dung học của chính ứng dụng, mỗi mục một đoạn: 2.080 từ vựng, 6 bài đọc, 6 bài nghe, 10 đề viết. Lệnh `dotnet run --project EnglishUp.Api -- ingest` tạo embedding cho các đoạn mới hoặc đã đổi và xoá đoạn không còn trong nội dung.
 
@@ -167,26 +167,29 @@ Index (`UserId`, `StartedAt`). Kỷ lục cá nhân = `MAX(Score)`; số ván đ
 - UQ (`SourceType`, `SourceId`): mỗi mục nội dung đúng một đoạn; `ContentHash` quyết định có tạo lại embedding hay không.
 - Ước tính vài nghìn đoạn; ví dụ 5.000 đoạn × 768 chiều × 4 byte ≈ 15 MB, pgvector tìm theo khoảng cách cosine ngay trong SQL, có index HNSW (`vector_cosine_ops`).
 
-| `Conversations` | Kiểu        | Ràng buộc                       |
-| --------------- | ----------- | ------------------------------- |
-| `Id`            | uuid        | PK                              |
-| `UserId`        | text        | NN, FK → `AspNetUsers`, cascade |
-| `CreatedAt`     | timestamptz | NN                              |
+| `Conversations` | Kiểu        | Ràng buộc                                                                                 |
+| --------------- | ----------- | ----------------------------------------------------------------------------------------- |
+| `Id`            | uuid        | PK                                                                                        |
+| `UserId`        | text        | NN, FK → `AspNetUsers`, cascade                                                           |
+| `CreatedAt`     | timestamptz | NN                                                                                        |
+| `DeletedAt`     | timestamptz | NULL: người học xoá thì nội dung tin nhắn bị xoá trắng, dòng vẫn giữ để đếm giới hạn ngày |
 
 | `ChatMessages`   | Kiểu            | Ràng buộc                         | Ghi chú                            |
 | ---------------- | --------------- | --------------------------------- | ---------------------------------- |
 | `Id`             | bigint identity | PK                                |                                    |
 | `ConversationId` | uuid            | NN, FK → `Conversations`, cascade |                                    |
 | `Role`           | varchar(16)     | NN                                | `user` hoặc `assistant`            |
-| `Content`        | text            | NN                                | Câu hỏi giới hạn 2.000 ký tự ở API |
+| `Content`        | varchar(4000)   | NN                                | Câu hỏi giới hạn 1.000 ký tự ở API |
 | `CreatedAt`      | timestamptz     | NN                                |                                    |
 
-| `MessageCitations` | Kiểu             | Ràng buộc                        | Ghi chú                                     |
-| ------------------ | ---------------- | -------------------------------- | ------------------------------------------- |
-| `MessageId`        | bigint           | PK, FK → `ChatMessages`, cascade | Tin nhắn của trợ giảng                      |
-| `ChunkId`          | int              | PK, FK → `KnowledgeChunks`       |                                             |
-| `Rank`             | int              | NN                               | Thứ tự liên quan                            |
-| `Score`            | double precision | NN                               | Độ tương đồng cosine, dùng khi đánh giá RAG |
+| `MessageCitations` | Kiểu             | Ràng buộc                           | Ghi chú                                                 |
+| ------------------ | ---------------- | ----------------------------------- | ------------------------------------------------------- |
+| `MessageId`        | bigint           | PK, FK → `ChatMessages`, cascade    | Tin nhắn của trợ giảng                                  |
+| `ChunkId`          | int              | PK, FK → `KnowledgeChunks`, cascade | Ingest xoá đoạn cũ thì trích dẫn đi theo                |
+| `Rank`             | int              | NN                                  | Số [n] dùng trong câu trả lời; chỉ lưu nguồn được trích |
+| `Score`            | double precision | NN                                  | Độ tương đồng cosine, dùng khi đánh giá RAG             |
+
+- Mỗi người hỏi tối đa 20 câu mỗi ngày (giờ Việt Nam), đếm theo `ChatMessages` có `Role = user`.
 
 ## 4. Quy tắc nghiệp vụ gắn với dữ liệu
 
@@ -218,14 +221,14 @@ LIMIT 50;
 
 ## 6. Lộ trình migration
 
-| Tuần | Migration                               | Bảng                                                |
-| ---- | --------------------------------------- | --------------------------------------------------- |
-| 1–2  | `InitialCreate`                         | `AspNet*`, `Attempts`, `SyncRecords` (đã có)        |
-| 1    | `AddPoints`                             | `PointLedger` (đã có)                               |
-| 2    | `AddCommunity`                          | `LearnerProfiles`, `UserAchievements` (đã có)       |
-| 3    | `AddGame`                               | `GameSessions` (đã có)                              |
-| 5    | `AddKnowledge` (bật extension `vector`) | `KnowledgeChunks` (đã có)                           |
-| 6    | `AddAssistant`                          | `Conversations`, `ChatMessages`, `MessageCitations` |
+| Tuần | Migration                               | Bảng                                                                                                    |
+| ---- | --------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| 1–2  | `InitialCreate`                         | `AspNet*`, `Attempts`, `SyncRecords` (đã có)                                                            |
+| 1    | `AddPoints`                             | `PointLedger` (đã có)                                                                                   |
+| 2    | `AddCommunity`                          | `LearnerProfiles`, `UserAchievements` (đã có)                                                           |
+| 3    | `AddGame`                               | `GameSessions` (đã có)                                                                                  |
+| 5    | `AddKnowledge` (bật extension `vector`) | `KnowledgeChunks` (đã có)                                                                               |
+| 6    | `AddAssistant`                          | `Conversations`, `ChatMessages`, `MessageCitations` (đã có); `SoftDeleteConversations` thêm `DeletedAt` |
 
 ## 7. Hạn chế đã biết
 

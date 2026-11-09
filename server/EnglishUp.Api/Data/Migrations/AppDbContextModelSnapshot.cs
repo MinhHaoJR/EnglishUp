@@ -63,6 +63,60 @@ namespace EnglishUp.Api.Data.Migrations
                     b.ToTable("Attempts");
                 });
 
+            modelBuilder.Entity("EnglishUp.Api.Data.ChatMessage", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(4000)
+                        .HasColumnType("character varying(4000)");
+
+                    b.Property<Guid>("ConversationId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("character varying(16)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ConversationId", "Id");
+
+                    b.ToTable("ChatMessages");
+                });
+
+            modelBuilder.Entity("EnglishUp.Api.Data.Conversation", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTimeOffset?>("DeletedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId", "CreatedAt");
+
+                    b.ToTable("Conversations");
+                });
+
             modelBuilder.Entity("EnglishUp.Api.Data.GameSession", b =>
                 {
                     b.Property<Guid>("Id")
@@ -185,6 +239,27 @@ namespace EnglishUp.Api.Data.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("LearnerProfiles");
+                });
+
+            modelBuilder.Entity("EnglishUp.Api.Data.MessageCitation", b =>
+                {
+                    b.Property<long>("MessageId")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("ChunkId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Rank")
+                        .HasColumnType("integer");
+
+                    b.Property<double>("Score")
+                        .HasColumnType("double precision");
+
+                    b.HasKey("MessageId", "ChunkId");
+
+                    b.HasIndex("ChunkId");
+
+                    b.ToTable("MessageCitations");
                 });
 
             modelBuilder.Entity("EnglishUp.Api.Data.PointEntry", b =>
@@ -475,6 +550,24 @@ namespace EnglishUp.Api.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("EnglishUp.Api.Data.ChatMessage", b =>
+                {
+                    b.HasOne("EnglishUp.Api.Data.Conversation", null)
+                        .WithMany()
+                        .HasForeignKey("ConversationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("EnglishUp.Api.Data.Conversation", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("EnglishUp.Api.Data.GameSession", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
@@ -489,6 +582,21 @@ namespace EnglishUp.Api.Data.Migrations
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
                         .WithOne()
                         .HasForeignKey("EnglishUp.Api.Data.LearnerProfile", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("EnglishUp.Api.Data.MessageCitation", b =>
+                {
+                    b.HasOne("EnglishUp.Api.Data.KnowledgeChunk", null)
+                        .WithMany()
+                        .HasForeignKey("ChunkId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EnglishUp.Api.Data.ChatMessage", null)
+                        .WithMany()
+                        .HasForeignKey("MessageId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

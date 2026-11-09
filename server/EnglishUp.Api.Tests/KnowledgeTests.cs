@@ -90,6 +90,12 @@ public class KnowledgeTests(ApiFactory factory) : IClassFixture<ApiFactory>
         Assert.Equal(new IngestReport(0, 1, 1, 1), await Knowledge.IngestAsync(db, embedder, sources));
         Assert.Equal("a red fruit", (await db.KnowledgeChunks.SingleAsync(c => c.SourceId == "1")).Text);
 
+        sources = [.. sources, new("word", "3", "cat", "a pet"), new("word", "4", "dog", "another pet")];
+        Assert.Equal(new IngestReport(1, 0, 2, 0, 1), await Knowledge.IngestAsync(db, embedder, sources, max: 1));
+        Assert.Equal(new IngestReport(1, 0, 3, 0), await Knowledge.IngestAsync(db, embedder, sources));
+        sources = sources[..2];
+        await Knowledge.IngestAsync(db, embedder, sources);
+
         embedder.Model = "fake-embedding-v2";
         Assert.Equal(new IngestReport(0, 2, 0, 0), await Knowledge.IngestAsync(db, embedder, sources));
         Assert.All(await db.KnowledgeChunks.ToListAsync(), c => Assert.Equal("fake-embedding-v2", c.EmbeddingModel));
@@ -104,11 +110,11 @@ public class KnowledgeTests(ApiFactory factory) : IClassFixture<ApiFactory>
         Assert.Equal(1, (await Knowledge.IngestAsync(db, embedder, sources, retryAfter: TimeSpan.Zero)).Added);
         Assert.Equal(3, embedder.Calls);
 
-        embedder = new FakeEmbedder { RateLimited = Knowledge.MaxTries };
+        embedder = new FakeEmbedder { RateLimited = Gemini.MaxTries };
         sources = [new("word", "2", "book", "pages")];
         await Assert.ThrowsAsync<HttpRequestException>(() =>
             Knowledge.IngestAsync(db, embedder, sources, retryAfter: TimeSpan.Zero));
-        Assert.Equal(Knowledge.MaxTries, embedder.Calls);
+        Assert.Equal(Gemini.MaxTries, embedder.Calls);
 
         embedder = new FakeEmbedder { DailyQuota = true };
         await Assert.ThrowsAsync<DailyQuotaException>(() =>

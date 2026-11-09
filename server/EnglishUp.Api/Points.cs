@@ -17,6 +17,13 @@ public static class Points
     /// <summary>1 point for trying, up to 5 for a perfect score.</summary>
     public static int ForAttempt(double score) => 1 + (int)Math.Floor(Math.Clamp(score, 0, 100) / 25);
 
+    /// <summary>Midnight Vietnam time at the start of <paramref name="now"/>'s day, in UTC as Npgsql requires.</summary>
+    public static DateTimeOffset StartOfToday(DateTimeOffset now)
+    {
+        var local = TimeZoneInfo.ConvertTime(now, Zone);
+        return new DateTimeOffset(local.Date, local.Offset).ToUniversalTime();
+    }
+
     public static DateOnly Today(DateTimeOffset now) =>
         DateOnly.FromDateTime(TimeZoneInfo.ConvertTime(now, Zone).DateTime);
 

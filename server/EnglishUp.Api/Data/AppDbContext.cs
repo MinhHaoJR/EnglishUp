@@ -15,6 +15,9 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
     public DbSet<UserAchievement> UserAchievements => Set<UserAchievement>();
     public DbSet<GameSession> GameSessions => Set<GameSession>();
     public DbSet<KnowledgeChunk> KnowledgeChunks => Set<KnowledgeChunk>();
+    public DbSet<Conversation> Conversations => Set<Conversation>();
+    public DbSet<ChatMessage> ChatMessages => Set<ChatMessage>();
+    public DbSet<MessageCitation> MessageCitations => Set<MessageCitation>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -83,6 +86,25 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
                 entity.Property(c => c.Embedding).HasConversion(
                     v => System.Text.Json.JsonSerializer.Serialize(v.ToArray(), (System.Text.Json.JsonSerializerOptions?)null),
                     s => new Vector(System.Text.Json.JsonSerializer.Deserialize<float[]>(s, (System.Text.Json.JsonSerializerOptions?)null)!));
+        });
+        builder.Entity<Conversation>(entity =>
+        {
+            entity.HasOne<IdentityUser>().WithMany().HasForeignKey(c => c.UserId);
+            entity.HasIndex(c => new { c.UserId, c.CreatedAt });
+        });
+        builder.Entity<ChatMessage>(entity =>
+        {
+            entity.HasOne<Conversation>().WithMany().HasForeignKey(m => m.ConversationId);
+            entity.Property(m => m.Role).HasMaxLength(16);
+            entity.Property(m => m.Content).HasMaxLength(4000);
+            entity.HasIndex(m => new { m.ConversationId, m.Id });
+        });
+        builder.Entity<MessageCitation>(entity =>
+        {
+            entity.HasKey(c => new { c.MessageId, c.ChunkId });
+            entity.HasOne<ChatMessage>().WithMany().HasForeignKey(c => c.MessageId);
+            // Ingest deletes chunks that left the content; their citations go with them.
+            entity.HasOne<KnowledgeChunk>().WithMany().HasForeignKey(c => c.ChunkId);
         });
     }
 }
@@ -157,6 +179,35 @@ public class KnowledgeChunk
     public required string ContentHash { get; set; }
     public required string EmbeddingModel { get; set; }
     public required Vector Embedding { get; set; }
+}
+
+/// <summary>One chat with the assistant; its title is the first question.</summary>
+public class Conversation
+{
+    public Guid Id { get; set; }
+    public required string UserId { get; set; }
+    public DateTimeOffset CreatedAt { get; set; }
+    /// <summary>Set when the learner deletes it; the message text is erased, the rows stay for the daily limit.</summary>
+    public DateTimeOffset? DeletedAt { get; set; }
+}
+
+/// <summary>A learner question ("user") or an assistant answer ("assistant").</summary>
+public class ChatMessage
+{
+    public long Id { get; set; }
+    public Guid ConversationId { get; set; }
+    public required string Role { get; set; }
+    public required string Content { get; set; }
+    public DateTimeOffset CreatedAt { get; set; }
+}
+
+/// <summary>A source an answer cites; Rank is the [n] used in the answer, Score the cosine similarity.</summary>
+public class MessageCitation
+{
+    public long MessageId { get; set; }
+    public int ChunkId { get; set; }
+    public int Rank { get; set; }
+    public double Score { get; set; }
 }
 
 /// <summary>A Dexie record (settings, words, reviews, drafts, submissions, vocabularyStudy) kept as JSON.</summary>
