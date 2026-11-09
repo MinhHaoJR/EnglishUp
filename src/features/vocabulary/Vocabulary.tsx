@@ -6,7 +6,7 @@ import { vocabulary } from '../../data/content';
 import { topicSectionFor, topicSections, type TopicSectionId } from '../../data/topicSections';
 import { levelSchema, type Level, type Word } from '../../data/schema';
 import { useT, useBi, topicVi } from '../../i18n';
-import { PageTitle, Filters, Empty, Notice, useLive, useFiltered } from '../../components/shared';
+import { PageTitle, Empty, Notice, useLive, useFiltered } from '../../components/shared';
 import { WordEditor } from '../../components/WordEditor';
 import { SpeakButton } from '../../components/SpeakButton';
 import { db, download } from '../../services/storage';
@@ -56,10 +56,6 @@ export default function Vocabulary() {
   const customTopics = topicGroups
     .map((group) => group.topic)
     .filter((name) => !knownTopics.has(name));
-  const topicOptionGroups = [
-    ...topicSections.map((entry) => ({ label: bi(entry.vi, entry.en), topics: entry.topics })),
-    ...(customTopics.length ? [{ label: bi('Tự thêm', 'Custom'), topics: customTopics }] : []),
-  ];
   const normalizeTopic = (value: string) =>
     value.normalize('NFD').replace(/\p{M}/gu, '').replace(/[đĐ]/g, 'd').toLowerCase();
   const topicRank = new Map<string, number>(
@@ -232,7 +228,8 @@ export default function Vocabulary() {
           {bi('Đồng nghĩa & trái nghĩa', 'Synonyms & antonyms')}
         </button>
       </div>
-      {tab === 'practice' && !practicing && (
+      {/* One topic bar for every tab that lists words; the directory opens only when needed. */}
+      {tab !== 'relations' && !(tab === 'practice' && practicing) && (
         <>
           <section className="panel topic-bar" aria-label={bi('Chủ đề đang học', 'Current topic')}>
             <div className="topic-bar-name">
@@ -253,22 +250,14 @@ export default function Vocabulary() {
                 ))}
               </select>
             </label>
-            {topic !== 'all' && (
+            {!(topic === 'all' && tab === 'practice') && (
               <button aria-expanded={picking} onClick={() => setPicking((open) => !open)}>
                 {picking ? bi('Đóng danh sách', 'Close list') : bi('Đổi chủ đề', 'Change topic')}
               </button>
             )}
           </section>
-          {(topic === 'all' || picking) && topicDirectory}
-        </>
-      )}
-      {(tab === 'library' || tab === 'translation') && (
-        <>
-          <Filters
-            availableTopics={topicGroups.map((group) => group.topic)}
-            topicOptionGroups={topicOptionGroups}
-          />
-          {topicDirectory}
+          {/* Practice starts from the directory; the word list and translation start from their content. */}
+          {((topic === 'all' && tab === 'practice') || picking) && topicDirectory}
         </>
       )}
       {error && <Notice error>{error}</Notice>}

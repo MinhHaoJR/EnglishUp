@@ -64,6 +64,7 @@ test('large library pages are bounded and search and topic changes return to pag
     target: { value: '' },
   });
   expect(screen.getByText('Page 1/70 · 2080 matching words')).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Change topic' }));
   fireEvent.click(screen.getByRole('button', { name: 'People and family 50 words' }));
   expect(screen.getByText('Page 1/2 · 50 matching words')).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Next page' }));
@@ -152,9 +153,9 @@ test('Vietnamese topics and accent-free search include custom imported topics', 
   expect(screen.queryAllByRole('article')).toHaveLength(0);
   fireEvent.click(screen.getByRole('button', { name: 'Xóa tìm kiếm' }));
   expect(screen.getAllByRole('article')).toHaveLength(30);
-  fireEvent.change(screen.getByRole('combobox', { name: 'Chủ đề' }), {
-    target: { value: 'My project' },
-  });
+  fireEvent.click(screen.getByRole('button', { name: 'Đổi chủ đề' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Tự thêm' }));
+  fireEvent.click(screen.getByRole('button', { name: 'My project 1 từ' }));
   expect(screen.getAllByRole('article')).toHaveLength(1);
   expect(screen.getByRole('heading', { name: /widget/ })).toBeInTheDocument();
 });
@@ -360,7 +361,9 @@ test('C1 vocabulary filters, exports and persists a review through backup and re
   const view = show(<Vocabulary />);
   fireEvent.change(screen.getByRole('combobox', { name: 'Level' }), { target: { value: 'C1' } });
   fireEvent.click(screen.getByRole('button', { name: /Word library/ }));
-  fireEvent.change(screen.getByRole('combobox', { name: 'Topic' }), { target: { value: 'Work' } });
+  fireEvent.click(screen.getByRole('button', { name: 'Change topic' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Work & study' }));
+  fireEvent.click(screen.getByRole('button', { name: /^Work \d+ words$/ }));
   expect(screen.getAllByRole('article')).toHaveLength(10);
   expect(screen.getByRole('heading', { name: /accountability/ })).toBeInTheDocument();
   expect(screen.queryByRole('heading', { name: /workload/ })).not.toBeInTheDocument();

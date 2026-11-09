@@ -11,99 +11,13 @@
 }
 .word-relations :is(button, input, select, a):focus-visible,
 .word-relations .relations-option:has(input:focus-visible) {
-  outline: 3px solid #8055e2;
-  outline-offset: 4px;
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
+/* Headings are focused by code so screen readers announce each new question; they are not controls. */
 .word-relations :is(h2, h3)[tabindex='-1']:focus {
+  /* craft-ignore: outline-none */
   outline: none;
-}
-.relations-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 210px;
-  gap: 28px;
-  align-items: center;
-  padding: 30px 32px;
-  border: 1px solid #d9cefa;
-  border-radius: 24px;
-  background: linear-gradient(115deg, #eee7ff, #f8eafb 62%, #fff1e7);
-  color: #342052;
-  overflow: hidden;
-}
-.relations-eyebrow {
-  margin: 0 0 9px;
-  font-size: 0.69rem;
-  font-weight: 750;
-  letter-spacing: 1.6px;
-  color: #6d429b;
-}
-.relations-hero h2 {
-  margin: 0 0 12px;
-  font-size: clamp(1.6rem, 2.4vw, 2rem);
-  line-height: 1.15;
-  letter-spacing: -0.8px;
-}
-.relations-hero p:not(.relations-eyebrow) {
-  max-width: 590px;
-  margin: 0;
-  line-height: 1.65;
-  color: #665274;
-  font-size: 0.92rem;
-}
-.relations-hero-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  margin-top: 18px;
-}
-.relations-hero-tags span {
-  background: #ffffffa8;
-  padding: 6px 10px;
-  border-radius: 8px;
-  font-size: 0.75rem;
-  font-weight: 650;
-}
-.relations-art {
-  position: relative;
-  height: 178px;
-}
-.relations-art span {
-  position: absolute;
-  display: block;
-  padding: 10px 23px;
-  font-size: 1.2rem;
-  font-weight: 750;
-  border-radius: 14px;
-  box-shadow: 0 7px 0 #34205212;
-}
-.relations-art span:nth-child(1) {
-  top: 2px;
-  left: 25px;
-  background: #754cdc;
-  color: white;
-  transform: rotate(-7deg);
-  font-size: 1.8rem;
-}
-.relations-art span:nth-child(2) {
-  top: 66px;
-  right: 0;
-  background: #b8eddf;
-  color: #165a4e;
-  transform: rotate(7deg);
-}
-.relations-art span:nth-child(3) {
-  top: 124px;
-  left: 0;
-  background: #ffc7d9;
-  color: #852248;
-  transform: rotate(-5deg);
-}
-.relations-art i {
-  position: absolute;
-  top: 0;
-  right: 5px;
-  color: #dd8b20;
-  font-size: 2rem;
-  font-style: normal;
 }
 .relations-section-title,
 .relations-library-heading {
@@ -301,7 +215,7 @@
 }
 .relations-card h4 {
   font-size: 1.55rem;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.02em;
   line-height: 1.2;
   margin: 0 0 6px;
   color: var(--ink);
@@ -476,10 +390,9 @@
 .relations-question blockquote {
   margin: 0 0 25px;
   padding: 13px 17px;
-  border-left: 3px solid var(--relations-purple);
   background: var(--relations-purple-soft);
   color: var(--ink);
-  border-radius: 0 9px 9px 0;
+  border-radius: var(--radius-sm);
   font-size: 0.92rem;
   line-height: 1.65;
 }
@@ -535,7 +448,6 @@
 .relations-feedback {
   margin-top: 23px;
   border: 1px solid var(--border);
-  border-left: 4px solid var(--relations-rose);
   border-radius: 12px;
   padding: 17px 20px;
   background: var(--relations-rose-soft);
@@ -566,17 +478,6 @@
   margin: 0 auto;
   padding: 42px 26px;
   text-align: center;
-}
-.relations-complete-mark {
-  display: grid;
-  place-items: center;
-  width: 70px;
-  height: 70px;
-  background: var(--relations-purple-soft);
-  color: var(--relations-purple);
-  font-size: 2.5rem;
-  border-radius: 23px;
-  margin: 0 auto 22px;
 }
 .relations-complete h2 {
   font-size: 1.7rem;
@@ -617,20 +518,6 @@
   --relations-teal-soft: #193d37;
   --relations-rose: #ffb5ce;
   --relations-rose-soft: #442a39;
-}
-.dark .relations-hero {
-  background: linear-gradient(115deg, #36274e, #442b43 65%, #423428);
-  border-color: #604575;
-  color: #f0e7ff;
-}
-.dark .relations-hero p:not(.relations-eyebrow) {
-  color: #d0badc;
-}
-.dark .relations-eyebrow {
-  color: #ccadf7;
-}
-.dark .relations-hero-tags span {
-  background: #ffffff10;
 }
 .dark .word-relations [data-level] {
   --level-ink: #a1e5c9;
@@ -674,13 +561,6 @@
   .relations-level {
     min-height: 105px;
   }
-  .relations-hero {
-    grid-template-columns: minmax(0, 1fr) 165px;
-    padding: 26px;
-  }
-  .relations-art span {
-    padding-inline: 17px;
-  }
   .relations-card {
     padding: 20px;
   }
@@ -689,13 +569,6 @@
   }
 }
 @media (max-width: 760px) {
-  .relations-hero {
-    grid-template-columns: 1fr;
-    padding: 25px;
-  }
-  .relations-art {
-    display: none;
-  }
   .relations-toolbar {
     grid-template-columns: 1fr 1fr;
   }
@@ -712,12 +585,6 @@
 @media (max-width: 460px) {
   .word-relations {
     gap: 22px;
-  }
-  .relations-hero {
-    padding: 23px 20px;
-  }
-  .relations-hero h2 {
-    font-size: 1.55rem;
   }
   .relations-section-title {
     align-items: flex-start;
@@ -813,4 +680,44 @@
   .word-relations .relations-level:hover {
     transform: none;
   }
+}
+
+/* Wayfinding world: a plain header,
+one neutral family for the level tiles. */
+.relations-head {
+  margin-bottom: 20px;
+}
+.relations-head h2 {
+  margin: 0 0 4px;
+}
+.relations-head h2:focus {
+  /* craft-ignore: outline-none */
+  outline: none;
+}
+.relations-head p {
+  margin: 0;
+}
+.word-relations .relations-level,
+.word-relations .relations-level[data-level] {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  box-shadow: none;
+}
+.word-relations .relations-level strong {
+  color: var(--line-vocabulary);
+}
+.word-relations .relations-level :is(span, small) {
+  color: var(--muted);
+}
+.word-relations .relations-level[aria-pressed='true'],
+.word-relations .relations-all-levels[aria-pressed='true'] {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+.word-relations .relations-all-levels {
+  color: var(--primary);
+  border-color: var(--border);
+  background: var(--panel);
 }

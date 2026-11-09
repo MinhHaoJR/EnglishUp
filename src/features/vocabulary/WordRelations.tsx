@@ -118,10 +118,6 @@ export default function WordRelations() {
     return (
       <section className="word-relations">
         <div className="relations-complete panel">
-          <span className="relations-complete-mark" aria-hidden="true">
-            ✦
-          </span>
-          <p className="relations-eyebrow">{bi('THÊM MỘT BƯỚC TIẾN', 'ONE MORE STEP FORWARD')}</p>
           <h2 ref={questionHeading} tabIndex={-1}>
             {bi('Đã hoàn thành lượt luyện!', 'Practice complete!')}
           </h2>
@@ -263,34 +259,16 @@ export default function WordRelations() {
 
   return (
     <section className="word-relations">
-      <div className="relations-hero">
-        <div>
-          <p className="relations-eyebrow">
-            {bi('MỞ RỘNG CÁCH DIỄN ĐẠT', 'MORE WAYS TO EXPRESS YOURSELF')}
-          </p>
-          <h2 ref={libraryHeading} tabIndex={-1}>
-            {bi('Một từ. Nhiều kết nối.', 'One word. More connections.')}
-          </h2>
-          <p>
-            {bi(
-              'Khám phá từ đồng nghĩa và trái nghĩa từ A1 đến C2. Học theo một nghĩa cụ thể, kèm ví dụ để biết dùng đúng lúc.',
-              'Explore synonyms and antonyms from A1 to C2. Learn a specific meaning with examples that show when to use it.',
-            )}
-          </p>
-          <div className="relations-hero-tags">
-            <span>≈ {bi('Đồng nghĩa', 'Synonyms')}</span>
-            <span>↔ {bi('Trái nghĩa', 'Antonyms')}</span>
-            <span>
-              {wordRelations.length} {bi('mục từ', 'entries')}
-            </span>
-          </div>
-        </div>
-        <div className="relations-art" aria-hidden="true">
-          <span>big</span>
-          <span>≈ large</span>
-          <span>↔ small</span>
-          <i>✦</i>
-        </div>
+      <div className="relations-head">
+        <h2 ref={libraryHeading} tabIndex={-1}>
+          {bi('Đồng nghĩa & trái nghĩa', 'Synonyms & antonyms')}
+        </h2>
+        <p className="muted">
+          {bi(
+            `${wordRelations.length} mục từ · A1–C2 · Học theo một nghĩa cụ thể, có ví dụ`,
+            `${wordRelations.length} entries · A1–C2 · One meaning at a time, with examples`,
+          )}
+        </p>
       </div>
 
       <section
@@ -357,7 +335,7 @@ export default function WordRelations() {
               target="_blank"
               rel="noreferrer"
             >
-              {bi('Xem mô tả CEFR chính thức ↗', 'Official CEFR descriptions ↗')}
+              {bi('Xem mô tả CEFR chính thức', 'Official CEFR descriptions')}
             </a>
           </p>
         </details>

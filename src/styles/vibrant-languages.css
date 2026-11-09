@@ -49,164 +49,11 @@
   box-shadow: 0 5px 0 #00000012;
 }
 
-.language-space :is(.language-welcome, .lexicon-hero) {
-  background: linear-gradient(115deg, var(--language-bg), var(--language-hero-end));
-  border-color: var(--language-border);
-  border-radius: 25px;
-  box-shadow: 0 8px 25px #6b3e7d0a;
-}
-
-.language-space :is(.language-welcome-copy, .lexicon-hero-copy) {
-  padding: 36px;
-}
-
 .language-space :is(.language-kicker, .lexicon-eyebrow) {
   font-size: 0.72rem;
   font-weight: 750;
   letter-spacing: 1.3px;
   line-height: 1.6;
-}
-
-.language-space :is(.language-welcome h2, .lexicon-hero h1, .lexicon-hero h2) {
-  font-size: clamp(2rem, 3.2vw, 3rem);
-  font-weight: 800;
-  line-height: 1.18;
-  letter-spacing: -1.2px;
-  color: var(--language-ink);
-  margin: 18px 0;
-}
-
-.language-space .language-welcome h2 em {
-  color: var(--language-accent);
-}
-
-.language-space .language-welcome-copy > p,
-.language-space .lexicon-hero-copy > p:not(.lexicon-eyebrow) {
-  color: var(--language-muted);
-  font-size: 0.93rem;
-  line-height: 1.75;
-  max-width: 510px;
-}
-
-.language-space .language-welcome-copy > small {
-  font-size: 0.75rem;
-  color: var(--language-muted);
-}
-
-.language-space .language-art-ring {
-  background: #ffffff4d;
-  border: 2px solid #ffffffb3;
-}
-
-.language-space .language-art-ring::after {
-  border-color: var(--language-border);
-}
-
-.language-space .language-art-back {
-  background: #8261df;
-  color: #fff;
-  border-color: #6641c0;
-  border-radius: 7px 18px 18px 7px;
-}
-
-.language-space .language-art-front {
-  background: var(--language-accent);
-  color: #fff;
-  border-radius: 7px 18px 18px 7px;
-  box-shadow: 8px 16px 25px #30215729;
-}
-
-.language-space .language-art-front > span {
-  font-size: 0.57rem;
-  letter-spacing: 1px;
-}
-
-.language-space .language-art-front > small {
-  color: #fff;
-  border-color: #ffffff66;
-  font-size: 0.75rem;
-}
-
-.language-space .language-art-note {
-  background: #fff7bd;
-  border-color: #ecd969;
-  color: #5b4612;
-  border-radius: 14px;
-  box-shadow: 0 8px 20px #5b46121c;
-}
-
-.language-space .language-art-note > small {
-  font-size: 0.75rem;
-}
-
-.language-space .language-art-spark {
-  color: #d67906;
-  opacity: 1;
-}
-
-.language-space .lexicon-hero-art {
-  background: #ffffff7a;
-  border: 2px solid #fff;
-  border-radius: 95px 95px 30px 30px;
-  transform: rotate(5deg);
-  box-shadow: 7px 7px 0 #ffffff45;
-  margin: 30px 30px 30px 0;
-  min-height: 250px;
-}
-
-.language-space .lexicon-hero-art > span {
-  font-family: 'Yu Gothic', 'Microsoft YaHei', var(--font);
-  font-weight: 650;
-  font-size: 3rem;
-}
-
-.language-space .lexicon-hero-art small {
-  font-size: 0.78rem;
-  letter-spacing: 0.5px;
-}
-
-.language-space :is(.language-summary, .lexicon-stats) {
-  gap: 14px;
-  background: transparent;
-  border: 0;
-  padding: 0;
-  margin: 20px 0 32px;
-}
-
-.language-space :is(.language-summary > div, .lexicon-stat) {
-  padding: 20px 22px;
-  border: 1px solid #d8cbfa;
-  border-radius: 18px;
-  background: #f0eaff;
-  color: #584279;
-}
-
-.language-space :is(.language-summary > div, .lexicon-stat):nth-child(2) {
-  background: #e2f8fd;
-  border-color: #b8e6ef;
-  color: #1e6377;
-}
-
-.language-space :is(.language-summary > div, .lexicon-stat):nth-child(3) {
-  background: #fff0dc;
-  border-color: #f2d5a7;
-  color: #8a551a;
-}
-
-.language-space :is(.language-summary strong, .lexicon-stat strong) {
-  color: inherit;
-  font-size: 1.9rem;
-  font-weight: 800;
-  line-height: 1.2;
-  letter-spacing: -0.6px;
-}
-
-.language-space :is(.language-summary span, .lexicon-stat span) {
-  color: inherit;
-  font-size: 0.82rem;
-  line-height: 1.5;
-  display: block;
-  margin-top: 7px;
 }
 
 .language-space :is(.language-section-heading h2, .lexicon-section-heading h2) {
@@ -234,79 +81,10 @@
     border-color 160ms ease;
 }
 
-.language-space .language-topic-card {
-  border: 1px solid var(--topic-border);
-  background: var(--topic-soft);
-  padding: 21px;
-}
-
-.language-space .language-topic-card .language-topic-mark {
-  width: 44px;
-  height: 44px;
-  border-radius: 13px;
-  background: var(--topic-selected);
-  color: var(--topic-on-selected);
-  margin-bottom: 15px;
-}
-
-.language-space .language-topic-card > strong {
-  font-size: 0.98rem;
-  color: var(--topic-accent);
-  line-height: 1.45;
-}
-
-.language-space .language-topic-card > span:last-child {
-  font-size: 0.8rem;
-  color: var(--topic-accent);
-}
-
 .language-space :is(.language-topic-card, .lexicon-card):hover {
   border-color: var(--topic-accent);
   box-shadow: 0 8px 19px #45218e12;
   transform: translateY(-3px);
-}
-
-.language-space .language-card {
-  padding: 22px;
-  border-top: 4px solid var(--topic-accent);
-}
-
-.language-space .language-card .language-skill-mark {
-  background: var(--topic-soft);
-  color: var(--topic-accent);
-  width: 45px;
-  height: 45px;
-  border-radius: 14px;
-}
-
-.language-space .language-card h3 {
-  font-size: 1rem;
-}
-
-.language-space .language-card p {
-  font-size: 0.8rem;
-}
-
-.language-space .language-card-arrow {
-  color: var(--topic-accent);
-}
-
-.language-space .language-history {
-  border-radius: 20px;
-}
-
-.language-space .language-history-empty p {
-  font-size: 0.9rem;
-  line-height: 1.7;
-}
-
-.language-space .language-history-empty > span {
-  display: inline-grid;
-  place-items: center;
-  width: 54px;
-  height: 54px;
-  background: var(--language-soft);
-  border-radius: 18px;
 }
 
 .language-space .lexicon-topics {
@@ -586,47 +364,6 @@ html.dark .language-space .language-option:has(input:focus-visible) {
   outline-color: #c7a7ff;
 }
 
-html.dark .language-space :is(.language-art-front, .language-art-front > small) {
-  color: #321e36;
-}
-
-html.dark .language-space .language-art-front > small {
-  border-color: #321e3655;
-}
-
-html.dark .language-space :is(.language-art-ring, .lexicon-hero-art) {
-  background: #ffffff07;
-  border-color: #ffffff26;
-  box-shadow: none;
-}
-
-html.dark .language-space .language-art-spark {
-  color: #ffd477;
-}
-
-html.dark .language-space :is(.language-summary > div, .lexicon-stat) {
-  background: #34274b;
-  border-color: #574472;
-  color: #d7c2ff;
-}
-
-html.dark .language-space :is(.language-summary > div, .lexicon-stat):nth-child(2) {
-  background: #183f4e;
-  border-color: #2b6374;
-  color: #96def0;
-}
-
-html.dark .language-space :is(.language-summary > div, .lexicon-stat):nth-child(3) {
-  background: #473627;
-  border-color: #796045;
-  color: #f5d098;
-}
-
-html.dark .language-space .language-topic-card .language-topic-mark {
-  background: var(--topic-selected);
-  color: var(--topic-on-selected);
-}
-
 html.dark .language-space .lexicon-topic > small {
   background: #ffffff0d;
 }
@@ -698,64 +435,7 @@ html.dark .language-space :is([data-topic='transport'], [data-topic='technology'
   --topic-selected: #bdc8ff;
 }
 
-@media (max-width: 900px) {
-  .language-space :is(.language-welcome-copy, .lexicon-hero-copy) {
-    padding: 28px;
-  }
-
-  .language-space .lexicon-hero-art {
-    margin-right: 20px;
-    min-height: 220px;
-  }
-
-  .language-space .lexicon-hero-art > span {
-    font-size: 2.5rem;
-  }
-
-  .language-space :is(.language-summary > div, .lexicon-stat) {
-    padding: 17px;
-  }
-}
-
 @media (max-width: 700px) {
-  .language-space .language-welcome,
-  .language-space .lexicon-hero {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .language-space :is(.language-welcome-art, .lexicon-hero-art) {
-    display: none;
-  }
-
-  .language-space :is(.language-summary, .lexicon-stats) {
-    gap: 8px;
-  }
-
-  .language-space :is(.language-summary > div, .lexicon-stat) {
-    padding: 16px 12px;
-    border-radius: 14px;
-  }
-
-  .language-space :is(.language-summary strong, .lexicon-stat strong) {
-    font-size: 1.55rem;
-  }
-
-  .language-space :is(.language-summary span, .lexicon-stat span) {
-    font-size: 0.76rem;
-  }
-
-  .language-space .language-topic-card {
-    padding: 17px;
-  }
-
-  .language-space .language-topic-card > strong {
-    font-size: 0.9rem;
-  }
-
-  .language-space .language-section-heading > .text-link {
-    font-size: 0.85rem;
-  }
-
   .language-space .lexicon-toolbar {
     padding: 16px;
   }
@@ -766,32 +446,9 @@ html.dark .language-space :is([data-topic='transport'], [data-topic='technology'
 }
 
 @media (max-width: 480px) {
-  .language-space :is(.language-welcome-copy, .lexicon-hero-copy) {
-    padding: 25px;
-  }
-
-  .language-space :is(.language-welcome h2, .lexicon-hero h1) {
-    font-size: 2.05rem;
-    letter-spacing: -0.8px;
-  }
-
-  .language-space .language-welcome-copy .button,
-  .language-space .lexicon-hero-copy > .primary {
-    width: 100%;
-    justify-content: center;
-  }
-
   .language-space .lexicon-topic {
     font-size: 0.8rem;
     padding: 9px 10px;
-  }
-
-  .language-space .language-card {
-    padding: 18px 15px;
-  }
-
-  .language-space .language-card p {
-    font-size: 0.78rem;
   }
 
   .language-space .lexicon-card {

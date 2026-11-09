@@ -67,21 +67,25 @@ function AudioPlayer({
           </select>
         </label>
       </div>
-      <p className="muted mt-4">
-        {bi('Nghe lại từng câu', 'Replay a sentence')} · {settings.accent}
-      </p>
-      <div className="actions mt-2">
-        {sentences.map((line, i) => (
-          <button
-            key={i}
-            onClick={() => play([line])}
-            aria-label={`${bi('Nghe câu', 'Play sentence')} ${i + 1}`}
-          >
-            {i + 1}
-            {reveal ? ` · ${line.speaker}` : ''}
-          </button>
-        ))}
-      </div>
+      {sentences.length > 1 && (
+        <>
+          <p className="muted mt-4">
+            {bi('Nghe lại từng câu', 'Replay a sentence')} · {settings.accent}
+          </p>
+          <div className="actions mt-2">
+            {sentences.map((line, i) => (
+              <button
+                key={i}
+                onClick={() => play([line])}
+                aria-label={`${bi('Nghe câu', 'Play sentence')} ${i + 1}`}
+              >
+                {i + 1}
+                {reveal ? ` · ${line.speaker}` : ''}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
       {error && <Notice error>{error}</Notice>}
     </section>
   );
@@ -317,13 +321,10 @@ export default function Listening() {
                 {bi('Câu', 'Sentence')} {i + 1}
               </h2>
               <p className="muted">
-                {bi(
-                  'Nghe và gõ lại. Nhận phản hồi từng từ.',
-                  'Listen and type. Get feedback on each word.',
-                )}
+                {d.text.split(/\s+/).length} {bi('từ', 'words')}
               </p>
               <button className="primary" onClick={() => setDictation(d)}>
-                {t('start')}
+                {t('start')} →
               </button>
             </article>
           ))}

@@ -109,7 +109,6 @@ Elevation is a 1px `--border` and nothing else. Shadows are not combined with bo
 
 ## Out of system
 
-- `src/styles.css` still contains rules for the removed dashboard (`.hero`, `.joy-*`, the old green tokens). They are dead and harmless, but should be deleted.
-- `src/styles/vibrant-languages.css` and `src/styles/word-relations.css` still hard-code colours. Their main surfaces are mapped to the theme, but Japanese/Chinese practice screens, the synonym/antonym screens and the dark variants of those files have not been reviewed.
+- `src/styles/vibrant-languages.css` still hard-codes colours for the Japanese/Chinese practice screens and their dark variants; those screens have not been reviewed against the theme.
 - Some Japanese/Chinese topic marks in the data are arrows or symbols (`↗`, `⌂`) rather than drawn icons.
 - There is no authored motion moment yet. The route filling in as stops are completed is the obvious candidate.

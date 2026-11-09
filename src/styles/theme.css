@@ -153,7 +153,8 @@ p {
   outline: 2px solid var(--focus);
   outline-offset: 2px;
 }
-/* main is focused by code on route change for screen readers; it is not a control, and every control keeps the ring above. */
+/* main is focused by code on route change for screen readers; it is not a control,
+and every control keeps the ring above. */
 main:focus {
   /* craft-ignore: outline-none */
   outline: none;
@@ -343,7 +344,8 @@ progress::-moz-progress-bar {
   font-weight: 700;
   box-shadow: none;
 }
-/* "You are here": the station marker of signage, not a coloured stripe. */
+/* "You are here": the station marker of signage,
+not a coloured stripe. */
 .sidebar nav a.active::after {
   content: '';
   position: absolute;
@@ -441,9 +443,6 @@ main {
   font-size: 0.8125rem;
   font-weight: 600;
 }
-.eyebrow {
-  display: none;
-}
 
 /* ---------- Plates and lists ---------- */
 .panel,
@@ -489,7 +488,8 @@ main {
   color: var(--muted);
 }
 
-/* Tabs read as a segmented sign, not a row of pills. */
+/* Tabs read as a segmented sign,
+not a row of pills. */
 .tabs,
 .workspace .tabs {
   display: inline-flex;
@@ -523,7 +523,8 @@ main {
   color: var(--muted);
 }
 
-/* Stat plates on practice pages: one compact row of small signs, not a wall of big numbers. */
+/* Stat plates on practice pages: one compact row of small signs,
+not a wall of big numbers. */
 .stats {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 12px;
@@ -760,7 +761,10 @@ html.dark .lesson-card .primary:hover:not(:disabled) {
   }
 }
 
-/* ---------- Home: status signs, today's route, line directory, week (English and the language workspaces) ---------- */
+/* ---------- Home: status signs,
+today's route,
+line directory,
+week (English and the language workspaces) ---------- */
 .home {
   display: grid;
   gap: 24px;
@@ -811,7 +815,8 @@ html.dark .lesson-card .primary:hover:not(:disabled) {
   width: 72px;
 }
 
-/* The route: one stop per suggested skill, joined in that skill's line colour. */
+/* The route: one stop per suggested skill,
+joined in that skill's line colour. */
 .route-stops {
   list-style: none;
   margin: 0;
@@ -902,7 +907,8 @@ html.dark .lesson-card .primary:hover:not(:disabled) {
   font-weight: 600;
 }
 
-/* Directory of lines, then the week and recent activity beside it. */
+/* Directory of lines,
+then the week and recent activity beside it. */
 .home-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.55fr) minmax(280px, 1fr);
@@ -1026,7 +1032,8 @@ html.dark .lesson-card .primary:hover:not(:disabled) {
     grid-template-columns: 1fr;
   }
 }
-/* On phones the route runs top to bottom, like a line diagram on a platform. */
+/* On phones the route runs top to bottom,
+like a line diagram on a platform. */
 @media (max-width: 700px) {
   .route-stops {
     grid-template-columns: 1fr;
@@ -1066,7 +1073,8 @@ html.dark .lesson-card .primary:hover:not(:disabled) {
   }
 }
 
-/* ---------- Japanese / Chinese workspace: same signage, sign-blue accent ---------- */
+/* ---------- Japanese / Chinese workspace: same signage,
+sign-blue accent ---------- */
 .workspace .language-space.language-ja,
 .workspace .language-space.language-zh {
   --language-accent: var(--primary);
@@ -1081,22 +1089,6 @@ html.dark .lesson-card .primary:hover:not(:disabled) {
   --topic-border: var(--border);
   --topic-selected: var(--primary);
 }
-.workspace .language-space :is(.language-welcome, .lexicon-hero) {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  box-shadow: none;
-}
-.workspace .language-space :is(.language-summary > div, .lexicon-stat),
-.workspace .language-space :is(.language-summary > div, .lexicon-stat):nth-child(n) {
-  background: var(--panel);
-  border-color: var(--border);
-  color: var(--ink);
-}
-.workspace .language-space .language-art-note {
-  background: var(--soft);
-  border-color: var(--border);
-  color: var(--ink);
-}
 /* One neutral family for every topic; the lazily loaded language sheet must not repaint them in pastels. */
 .workspace .language-space :is([data-topic], [data-skill]) {
   --topic-accent: var(--primary);
@@ -1105,8 +1097,10 @@ html.dark .lesson-card .primary:hover:not(:disabled) {
   --topic-selected: var(--primary);
 }
 
-/* ---------- Lesson pages: material in a readable column, a sticky rail beside it ----------
-   Surface roll seed a9c0e33c/0: candidate #4 of 7 (one question at a time), "marginalia" composition. */
+/* ---------- Lesson pages: material in a readable column,
+a sticky rail beside it ----------
+   Surface roll seed a9c0e33c/0: candidate #4 of 7 (one question at a time),
+"marginalia" composition. */
 .split {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
@@ -1135,7 +1129,9 @@ html.dark .lesson-card .primary:hover:not(:disabled) {
   }
 }
 
-/* One question at a time; the stations show what is answered and, once checked, what is right. */
+/* One question at a time; the stations show what is answered and,
+once checked,
+what is right. */
 .question-pager {
   display: grid;
   gap: 14px;
@@ -1212,7 +1208,8 @@ html.dark .lesson-card .primary:hover:not(:disabled) {
   gap: 8px;
 }
 
-/* Skill lesson lists read as a directory: one row per lesson, the action on the right. */
+/* Skill lesson lists read as a directory: one row per lesson,
+the action on the right. */
 .workspace:is(
     [data-skill='reading'],
     [data-skill='listening'],
