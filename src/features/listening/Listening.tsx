@@ -120,7 +120,7 @@ function ListeningSession({
       <button className="mb-5" onClick={onBack}>
         ← {t('back')}
       </button>
-      <PageTitle title={lesson.title} eyebrow={`${lesson.level} · ${lesson.topic}`} />
+      <PageTitle title={lesson.title} meta={`${lesson.level} · ${lesson.topic}`} />
       <div className="split">
         <section className="panel">
           <AudioPlayer lines={lesson.lines} reveal={submitted || settings.transcript} />
@@ -202,7 +202,7 @@ function DictationSession({
       </button>
       <PageTitle
         title={bi('Nghe và chép lại', 'Listen and write')}
-        eyebrow={`${item.level} · ${item.topic}`}
+        meta={`${item.level} · ${item.topic}`}
       />
       <section className="panel">
         <AudioPlayer lines={[{ speaker: 'Narrator', text: item.text }]} reveal={done || show} />
@@ -279,14 +279,7 @@ export default function Listening() {
     );
   return (
     <>
-      <PageTitle
-        eyebrow={bi('LẮNG NGHE TIẾNG ANH ĐỜI THƯỜNG', 'TUNE IN TO EVERYDAY ENGLISH')}
-        title={t('listening')}
-        description={bi(
-          'Lắng nghe, hiểu ý, rồi thử lại theo nhịp của bạn.',
-          'Listen, understand, and replay at your own pace.',
-        )}
-      />
+      <PageTitle title={t('listening')} />
       <div className="tabs">
         <button aria-pressed={tab === 'lessons'} onClick={() => setTab('lessons')}>
           {bi('Hội thoại & bài nói', 'Dialogues & talks')}
@@ -299,9 +292,8 @@ export default function Listening() {
       {tab === 'lessons' ? (
         lessons.length ? (
           <div className="lesson-grid">
-            {lessons.map((l, i) => (
+            {lessons.map((l) => (
               <article key={l.id} className="panel lesson-card">
-                <span className="lesson-number">0{i + 1} / LISTENING</span>
                 <span className="badge">
                   {l.level} · {l.topic}
                 </span>

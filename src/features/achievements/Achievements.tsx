@@ -77,15 +77,7 @@ export default function Achievements() {
     };
   }, [email, period, lastSynced]);
 
-  const title = (
-    <PageTitle
-      title={bi('Thành tích', 'Achievements')}
-      description={bi(
-        'Huy hiệu bạn đã đạt và bảng xếp hạng điểm của những người học chọn hiển thị.',
-        'Badges you have earned and the points leaderboard of learners who chose to appear.',
-      )}
-    />
-  );
+  const title = <PageTitle title={bi('Thành tích', 'Achievements')} />;
 
   if (!email)
     return (

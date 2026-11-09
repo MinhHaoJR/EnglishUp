@@ -106,7 +106,7 @@ Under Settings, Export backup saves a versioned JSON snapshot of all seven store
 
 ## Architecture and extension
 
-See [AGENTS.md](AGENTS.md) for structure/conventions and [docs/CONTENT.md](docs/CONTENT.md) for all JSON schemas, accepted answers and CSV examples. [docs/TESTING.md](docs/TESTING.md) describes automated coverage and real-device checks. `src/services/feedback.ts` exports the `FeedbackProvider` interface for a future optional provider. No LLM endpoint, API key or proxy is included in this MVP.
+See [DESIGN.md](DESIGN.md) for the visual system, [AGENTS.md](AGENTS.md) for structure/conventions and [docs/CONTENT.md](docs/CONTENT.md) for all JSON schemas, accepted answers and CSV examples. [docs/TESTING.md](docs/TESTING.md) describes automated coverage and real-device checks. `src/services/feedback.ts` exports the `FeedbackProvider` interface for a future optional provider. No LLM endpoint, API key or proxy is included in this MVP.
 
 The app uses semantic form controls, explicit labels, keyboard focus, a skip link, textual diff labels alongside colors, responsive layouts and light/dark palettes. It uses system fonts and CSS illustrations without external asset requests. Feature routes load lazily. No stack deviation was necessary.
 

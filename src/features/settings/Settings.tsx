@@ -32,7 +32,7 @@ export default function Settings() {
   const change = (patch: Partial<SettingsType>) => void run(() => update(patch));
   return (
     <>
-      <PageTitle title={t('settings')} description={t('settingsIntro')} />
+      <PageTitle title={t('settings')} />
       <section className="panel form-grid">
         <label>
           {t('language')}

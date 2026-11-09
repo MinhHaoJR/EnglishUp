@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useApp } from '../app/store';
 import { useT } from '../i18n';
 import { speak, stopSpeech } from '../services/speech';
+import SkillIcon from './SkillIcon';
 export function SpeakButton({ text }: { text: string }) {
   const settings = useApp((s) => s.settings);
   const t = useT();
@@ -13,7 +14,8 @@ export function SpeakButton({ text }: { text: string }) {
         type="button"
         onClick={() => setError(!speak(text, settings, 0, () => setError(true)))}
       >
-        ◖)) {t('listen')}
+        <SkillIcon skill="speaker" size={18} />
+        {t('listen')}
       </button>
       {error && (
         <span role="status" className="muted">

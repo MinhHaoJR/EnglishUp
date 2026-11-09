@@ -39,8 +39,8 @@ function ReadingSession({
         ← {t('back')}
       </button>
       <PageTitle
-        eyebrow={`${lesson.level} · ${lesson.topic}`}
         title={lesson.title}
+        meta={`${lesson.level} · ${lesson.topic}`}
         description={`${count} ${t('words')} · ${seconds}s`}
       />
       <div className="split">
@@ -116,22 +116,14 @@ export default function Reading() {
     );
   return (
     <>
-      <PageTitle
-        eyebrow={bi('MỖI TRANG ĐỌC, THÊM MỘT GÓC NHÌN', 'A NEW PERSPECTIVE, ONE PAGE AT A TIME')}
-        title={t('reading')}
-        description={bi(
-          'Những câu chuyện nhỏ, những góc nhìn mới.',
-          'Small stories. Fresh perspectives.',
-        )}
-      />
+      <PageTitle title={t('reading')} />
       <Filters />
       {!filtered.length ? (
         <Empty />
       ) : (
         <div className="lesson-grid">
-          {filtered.map((r, i) => (
+          {filtered.map((r) => (
             <article className="panel lesson-card" key={r.id}>
-              <span className="lesson-number">0{i + 1} / READING</span>
               <span className="badge">
                 {r.level} · {r.topic}
               </span>

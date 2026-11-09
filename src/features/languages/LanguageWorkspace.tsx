@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useApp } from '../../app/store';
 import { useBi, useT } from '../../i18n';
 import { PageTitle, useLive } from '../../components/shared';
+import SkillIcon from '../../components/SkillIcon';
 import { languageLessons, languageNames, type LanguageLesson } from '../../data/languages';
 import type { Skill } from '../../data/schema';
 import { db } from '../../services/storage';
@@ -14,15 +15,6 @@ import { LessonContinue } from '../../components/LessonContinue';
 import { nextLesson } from '../../services/lessonNavigation';
 import LanguageVocabulary from './LanguageVocabulary';
 import '../../styles/vibrant-languages.css';
-
-const skillMarks: Record<Skill, string> = {
-  vocabulary: 'Aa',
-  listening: '◉',
-  speaking: '◌',
-  reading: '▤',
-  writing: '✎',
-  grammar: '¶',
-};
 
 export default function LanguageWorkspace({ skill }: { skill?: Skill }) {
   const { settings } = useApp();
@@ -52,186 +44,89 @@ export default function LanguageWorkspace({ skill }: { skill?: Skill }) {
   return (
     <div className={`language-space language-${language}`}>
       <PageTitle
-        eyebrow={`${name.native} · ${bi('KHÔNG GIAN HỌC CỦA BẠN', 'YOUR LEARNING SPACE')}`}
         title={skill ? `${t(skill)} · ${name[settings.language]}` : name[settings.language]}
-        description={
-          language === 'ja'
-            ? bi(
-                'Từ những nét chữ đầu tiên đến những cuộc trò chuyện mỗi ngày.',
-                'From your first characters to everyday conversations.',
-              )
-            : bi(
-                'Khám phá chữ giản thể, pinyin và những từ gần gũi mỗi ngày.',
-                'Discover simplified characters, pinyin and words for everyday life.',
-              )
-        }
       />
       {!skill ? (
-        <>
-          <section className="language-welcome">
-            <div className="language-welcome-copy">
-              <span className="language-kicker">
-                {bi('MỖI NGÀY, THÊM MỘT CHÚT', 'A LITTLE MORE, EVERY DAY')}
-              </span>
-              <h2>
-                {bi('Một từ mới.', 'One new word.')}
-                <br />
-                <em>{bi('Một thế giới rộng hơn.', 'A wider world.')}</em>
-              </h2>
-              <p>
-                {bi(
-                  `${words.length.toLocaleString('vi-VN')} từ thông dụng, chia theo chủ đề. Có phiên âm, nghĩa và giọng đọc để bạn bắt đầu thật nhẹ nhàng.`,
-                  `${words.length.toLocaleString('en-US')} everyday words, organized by topic. Explore their readings, meanings and pronunciation at your own pace.`,
-                )}
-              </p>
-              <Link className="button primary" to="/vocabulary">
-                {bi('Khám phá từ vựng', 'Explore vocabulary')} <span aria-hidden="true">↗</span>
-              </Link>
-              <small>
-                {bi(
-                  'Học theo nhịp của bạn · Lưu trên thiết bị',
-                  'Your pace · Saved on your device',
-                )}
-              </small>
-            </div>
-            <div className="language-welcome-art" aria-hidden="true">
-              <div className="language-art-ring" />
-              <div className="language-art-page language-art-back">
-                <span>{name.native}</span>
-                <i>{language === 'ja' ? '学ぶ' : '学习'}</i>
-              </div>
-              <div className="language-art-page language-art-front">
-                <span>{bi('MỖI CHỮ, MỘT KHỞI ĐẦU', 'EVERY WORD, A BEGINNING')}</span>
-                <strong lang={language}>{name.mark}</strong>
-                <small>{language === 'ja' ? 'nihongo' : 'zhōngwén'}</small>
-              </div>
-              <div className="language-art-note">
-                <strong lang={language}>{language === 'ja' ? 'こんにちは' : '你好'}</strong>
-                <span>{language === 'ja' ? 'konnichiwa' : 'nǐ hǎo'}</span>
-                <small>
-                  {bi('Xin chào', 'Hello')} <span>✦</span>
-                </small>
-              </div>
-              <span className="language-art-spark">✳</span>
-            </div>
-          </section>
-          <div className="language-summary">
-            <div>
-              <strong>
-                {words.length.toLocaleString(settings.language === 'vi' ? 'vi-VN' : 'en-US')}
-              </strong>
-              <span>{bi('từ thông dụng để khám phá', 'everyday words to discover')}</span>
-            </div>
-            <div>
-              <strong>{vocabularyTopics.length.toString().padStart(2, '0')}</strong>
-              <span>{bi('chủ đề gần gũi với bạn', 'topics from everyday life')}</span>
-            </div>
-            <div>
-              <strong>{attempts.length.toString().padStart(2, '0')}</strong>
-              <span>{bi('lượt luyện tập đã lưu', 'saved practice attempts')}</span>
-            </div>
-          </div>
-          <section className="language-discover">
-            <div className="language-section-heading">
-              <div>
-                <p className="eyebrow">
-                  {bi('BẮT ĐẦU TỪ ĐIỀU QUEN THUỘC', 'START WITH THE FAMILIAR')}
-                </p>
-                <h2>{bi('Hôm nay, bạn muốn khám phá gì?', 'What will you discover today?')}</h2>
-              </div>
+        <div className="home-grid">
+          <section className="panel" aria-labelledby="topics-title">
+            <div className="panel-head">
+              <h2 id="topics-title">{bi('Từ vựng theo chủ đề', 'Words by topic')}</h2>
               <Link className="text-link" to="/vocabulary">
-                {bi('Tất cả chủ đề', 'All topics')} <span aria-hidden="true">↗</span>
+                {bi('Tất cả chủ đề', 'All topics')}
               </Link>
             </div>
-            <div className="language-topic-grid">
+            <ul className="line-list" data-skill="vocabulary">
               {vocabularyTopics.slice(0, 6).map((topic) => (
-                <Link
-                  className="language-topic-card"
-                  data-topic={topic.id}
-                  key={topic.id}
-                  to={`/vocabulary?topic=${encodeURIComponent(topic.id)}`}
-                >
-                  <span className="language-topic-mark" aria-hidden="true">
-                    {topic.mark}
-                  </span>
-                  <strong>{topic[settings.language]}</strong>
-                  <span>
-                    {words.filter((word) => word.topic === topic.id).length}{' '}
-                    {bi('từ vựng', 'words')} <i aria-hidden="true">↗</i>
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </section>
-          <section className="language-skills">
-            <div className="language-section-heading">
-              <div>
-                <p className="eyebrow">{bi('THỬ MỘT CHÚT MỖI NGÀY', 'MAKE A LITTLE TIME')}</p>
-                <h2>{bi('Đưa ngôn ngữ vào cuộc sống', 'Bring the language to life')}</h2>
-              </div>
-              <span className="muted">{bi('Bài luyện nhập môn', 'Starter practice')}</span>
-            </div>
-            <div className="language-skill-grid">
-              {skills
-                .filter((item) => item !== 'vocabulary' && item !== 'grammar')
-                .map((item) => (
-                  <Link className="language-card" data-skill={item} key={item} to={`/${item}`}>
-                    <span className="language-skill-mark" aria-hidden="true">
-                      {skillMarks[item]}
+                <li key={topic.id}>
+                  <Link to={`/vocabulary?topic=${encodeURIComponent(topic.id)}`}>
+                    <span className="line-tile" aria-hidden="true" lang={language}>
+                      {topic.mark}
                     </span>
-                    <h3>{t(item)}</h3>
-                    <p>
-                      {lessons.length} {bi('bài nhập môn', 'starter lessons')}
-                    </p>
-                    <span className="language-card-arrow" aria-hidden="true">
-                      ↗
-                    </span>
-                  </Link>
-                ))}
-            </div>
-          </section>
-          <section className="panel language-history">
-            <div className="language-section-heading">
-              <h2>{bi('Những bước tiến gần đây', 'Your recent steps')}</h2>
-              <span className="badge">{bi('Đã lưu trên thiết bị', 'Saved on this device')}</span>
-            </div>
-            {error && <p role="alert">{error}</p>}
-            {attempts.length === 0 ? (
-              <div className="language-history-empty">
-                <span aria-hidden="true">✦</span>
-                <p>
-                  {bi(
-                    'Trang đầu tiên đang chờ bạn. Hoàn thành một bài luyện để ghi lại bước tiến của mình.',
-                    'Your first page is waiting. Complete a practice to see your progress here.',
-                  )}
-                </p>
-                <Link className="text-link" to="/vocabulary">
-                  {bi('Bắt đầu với một từ mới', 'Start with a new word')} →
-                </Link>
-              </div>
-            ) : (
-              <ul className="language-history-list">
-                {attempts.slice(0, 10).map((attempt) => (
-                  <li key={attempt.id}>
-                    <span className="language-skill-mark" aria-hidden="true">
-                      {skillMarks[attempt.skill]}
-                    </span>
-                    <div>
-                      <strong>{attempt.label}</strong>
+                    <span className="line-name">
+                      <strong>{topic[settings.language]}</strong>
                       <small>
-                        {t(attempt.skill)} ·{' '}
-                        {new Date(attempt.timestamp).toLocaleDateString(
-                          settings.language === 'vi' ? 'vi-VN' : 'en-US',
-                        )}
+                        {words.filter((word) => word.topic === topic.id).length} {bi('từ', 'words')}
                       </small>
-                    </div>
-                    <span className="badge">{attempt.score}%</span>
-                  </li>
-                ))}
-              </ul>
-            )}
+                    </span>
+                    <SkillIcon skill="arrow" size={18} />
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </section>
-        </>
+          <div className="home-side">
+            <section className="panel" aria-labelledby="starter-title">
+              <h2 id="starter-title">{bi('Bài nhập môn', 'Starter lessons')}</h2>
+              <ul className="line-list">
+                {skills
+                  .filter((item) => item !== 'vocabulary' && item !== 'grammar')
+                  .map((item) => (
+                    <li key={item} data-skill={item}>
+                      <Link to={`/${item}`}>
+                        <span className="line-tile" aria-hidden="true">
+                          <SkillIcon skill={item} />
+                        </span>
+                        <span className="line-name">
+                          <strong>{t(item)}</strong>
+                          <small>
+                            {lessons.length} {bi('bài', 'lessons')}
+                          </small>
+                        </span>
+                        <SkillIcon skill="arrow" size={18} />
+                      </Link>
+                    </li>
+                  ))}
+              </ul>
+            </section>
+            <section className="panel" aria-labelledby="history-title">
+              <h2 id="history-title">{t('recent')}</h2>
+              {error && <p role="alert">{error}</p>}
+              {attempts.length === 0 ? (
+                <p className="muted">{t('noActivity')}</p>
+              ) : (
+                <ul className="recent-list">
+                  {attempts.slice(0, 10).map((attempt) => (
+                    <li key={attempt.id} data-skill={attempt.skill}>
+                      <span className="line-tile small" aria-hidden="true">
+                        <SkillIcon skill={attempt.skill} size={16} />
+                      </span>
+                      <span className="recent-text">
+                        <strong>{attempt.label}</strong>
+                        <small>
+                          {t(attempt.skill)} ·{' '}
+                          {new Date(attempt.timestamp).toLocaleDateString(
+                            settings.language === 'vi' ? 'vi-VN' : 'en-US',
+                          )}
+                        </small>
+                      </span>
+                      <span className="badge">{attempt.score}%</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </section>
+          </div>
+        </div>
       ) : active ? (
         <Practice
           key={`${active.id}-${skill}`}

@@ -13,7 +13,6 @@ const Dashboard = lazy(() => import('../features/dashboard/Dashboard'));
 import LanguagePicker from '../features/languages/LanguagePicker';
 import SkillIcon from '../components/SkillIcon';
 const LanguageWorkspace = lazy(() => import('../features/languages/LanguageWorkspace'));
-import { languageNames } from '../data/languages';
 import { skillSchema } from '../data/schema';
 const Settings = lazy(() => import('../features/settings/Settings'));
 const Vocabulary = lazy(() => import('../features/vocabulary/Vocabulary'));
@@ -30,6 +29,24 @@ import ChatWidget from '../features/assistant/ChatWidget';
 import { restoreSession, useAuth } from '../services/auth';
 import { startAutoSync, syncNow, useSync } from '../services/sync';
 export const APP_NAME = 'EnglishUp';
+/** Home, then the six skill lines, then the services, like the groups on a station directory. */
+const navGroups = [
+  [['/', 'dashboard']],
+  [
+    ['/vocabulary', 'vocabulary'],
+    ['/listening', 'listening'],
+    ['/speaking', 'speaking'],
+    ['/reading', 'reading'],
+    ['/writing', 'writing'],
+    ['/grammar', 'grammar'],
+  ],
+  [
+    ['/assistant', 'assistant'],
+    ['/game', 'game'],
+    ['/achievements', 'achievements'],
+    ['/settings', 'settings'],
+  ],
+] as const;
 export function Layout() {
   const t = useT();
   const { settings, load, ready, error } = useApp();
@@ -70,70 +87,40 @@ export function Layout() {
       </a>
       <aside className="sidebar">
         <NavLink className="brand" to="/">
-          <span className="brand-mark">
+          <span className="brand-mark" aria-hidden="true">
             e<span>↗</span>
           </span>
           {APP_NAME}
-          <span className="brand-dot">.</span>
         </NavLink>
         {ready && <LanguagePicker />}
-        <p className="sidebar-caption">{t('practice')}</p>
         <nav aria-label={t('practice')}>
-          {(
-            [
-              ['/', 'dashboard'],
-              ['/vocabulary', 'vocabulary'],
-              ['/listening', 'listening'],
-              ['/speaking', 'speaking'],
-              ['/reading', 'reading'],
-              ['/writing', 'writing'],
-              ['/grammar', 'grammar'],
-              ['/assistant', 'assistant'],
-              ['/game', 'game'],
-              ['/achievements', 'achievements'],
-              ['/settings', 'settings'],
-            ] as const
-          ).map(([path, label]) => (
-            <NavLink key={path} to={path} end={path === '/'} data-skill={label}>
-              <span aria-hidden="true">
-                <SkillIcon skill={label} />
-              </span>
-              {t(label)}
-            </NavLink>
+          {navGroups.map((group) => (
+            <div className="nav-group" key={group[0][0]}>
+              {group.map(([path, label]) => (
+                <NavLink key={path} to={path} end={path === '/'} data-skill={label}>
+                  <span className="nav-tile" aria-hidden="true">
+                    <SkillIcon skill={label} />
+                  </span>
+                  {t(label)}
+                </NavLink>
+              ))}
+            </div>
           ))}
         </nav>
-        <div className="sidebar-note">
-          <span className="plant" aria-hidden="true">
-            ✳
-          </span>
-          <strong>{t('tagline')}</strong>
-          <p>{t('local')}</p>
-        </div>
       </aside>
       <div className="workspace" data-skill={pathname.split('/')[1] || 'dashboard'}>
         <div className="topbar">
-          <span>
-            {languageNames[settings.learningLanguage][settings.language]} · {t('tagline')}
-          </span>
-          <div className="flex items-center gap-3">
-            <span className="online-dot" />
-            <span>
-              {settings.language === 'vi' ? 'Không gian học cá nhân' : 'Personal learning space'}
-            </span>
-            <Link
-              className="avatar"
-              to="/account"
-              aria-label={
-                email ??
-                (settings.language === 'vi'
-                  ? 'Đăng nhập hoặc đăng ký'
-                  : 'Sign in or create account')
-              }
-              title={email ?? undefined}
-            >
-              {email ? email[0].toUpperCase() : 'U'}
-            </Link>
-          </div>
+          <Link
+            className="avatar"
+            to="/account"
+            aria-label={
+              email ??
+              (settings.language === 'vi' ? 'Đăng nhập hoặc đăng ký' : 'Sign in or create account')
+            }
+            title={email ?? undefined}
+          >
+            {email ? email[0].toUpperCase() : 'U'}
+          </Link>
         </div>
         <main id="main" tabIndex={-1}>
           {!ready ? (
@@ -153,9 +140,6 @@ export function Layout() {
             </Suspense>
           )}
         </main>
-        <footer>
-          {APP_NAME} · {t('local')}
-        </footer>
       </div>
       {ready && <ChatWidget />}
     </>

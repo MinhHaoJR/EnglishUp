@@ -1,0 +1,1071 @@
+/*
+THESIS: EnglishUp reads like bilingual wayfinding. Each skill is a colour-coded line with its own
+pictogram, today's plan is a route of stops, and the next stop is always the most visible thing.
+Refuses the candy-gamified dashboard and the KPI-tile admin board.
+OWN-WORLD: signage white ground, sign-blue plates and buttons (the blue of Vietnamese guide signs),
+signal yellow only for "you are here", six calibrated line colours as pictogram tiles, flat sign
+plates with 12px corners and 1px rules, no shadows except the floating tutor.
+STORY: the learner sees today's route, starts the next stop in one tap, and watches stops turn solid.
+FIRST VIEWPORT: date and two small status signs, then the route with its Start button, then the
+directory of six skill lines.
+FORM: candidate #1 of 7 (bilingual wayfinding signage), roll seed 5d3ea829/0.
+FINISH: critique pass, then DESIGN.md.
+Scene: learners practise in daylit classrooms, offices and living rooms, and on phones at night,
+so light is the default and dark is the night-lit sign.
+*/
+
+:root {
+  --font: 'Be Vietnam Pro', 'Segoe UI', Roboto, Arial, sans-serif;
+  --bg: #f3f6f9;
+  --panel: #ffffff;
+  --ink: #13243a;
+  --muted: #55677b;
+  --border: #d8e0e9;
+  --soft: #eaf0f6;
+  --primary: #0b5cad;
+  --primary-strong: #084a8c;
+  --primary-ink: #ffffff;
+  --primary-soft: #e3eefa;
+  --signal: #ffc629;
+  --signal-ink: #13243a;
+  --success: #136b40;
+  --success-soft: #e4f4ea;
+  --danger: #b42318;
+  --danger-soft: #fdecea;
+  --focus: #0b5cad;
+  /* Line colours: similar weight so no skill shouts; white pictograms stay above 4.5:1. */
+  --line-vocabulary: #1a8754;
+  --line-listening: #6b47c9;
+  --line-speaking: #c2410c;
+  --line-reading: #0e7490;
+  --line-writing: #be185d;
+  --line-grammar: #a16207;
+  --line-service: #3d5a80;
+  --tile-ink: #ffffff;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow-float: 0 10px 28px rgb(19 36 58 / 18%);
+  /* Legacy names other stylesheets still read. */
+  --green: var(--primary);
+  --accent: var(--primary-soft);
+  --skill-accent: var(--primary);
+  --skill-soft: var(--primary-soft);
+  --line: var(--line-service);
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--bg);
+  font-synthesis: none;
+}
+
+html.dark {
+  --bg: #0d1828;
+  --panel: #142338;
+  --ink: #e9eff6;
+  --muted: #a6b4c5;
+  --border: #283a54;
+  --soft: #1b2d47;
+  --primary: #62a8f2;
+  --primary-strong: #8cc0f6;
+  --primary-ink: #0b1726;
+  --primary-soft: #18324f;
+  --signal: #ffd44f;
+  --signal-ink: #0b1726;
+  --success: #4cc787;
+  --success-soft: #133524;
+  --danger: #ff8a7a;
+  --danger-soft: #3d1d1c;
+  --focus: #ffd44f;
+  --line-vocabulary: #45c486;
+  --line-listening: #a68cf5;
+  --line-speaking: #f2854c;
+  --line-reading: #3fbcd8;
+  --line-writing: #ef6c9c;
+  --line-grammar: #e2aa3f;
+  --line-service: #8aa6c8;
+  --tile-ink: #0b1726;
+  --shadow-float: 0 10px 28px rgb(0 0 0 / 45%);
+  color: var(--ink);
+  background: var(--bg);
+}
+
+[data-skill='vocabulary'] {
+  --line: var(--line-vocabulary);
+}
+[data-skill='listening'] {
+  --line: var(--line-listening);
+}
+[data-skill='speaking'] {
+  --line: var(--line-speaking);
+}
+[data-skill='reading'] {
+  --line: var(--line-reading);
+}
+[data-skill='writing'] {
+  --line: var(--line-writing);
+}
+[data-skill='grammar'] {
+  --line: var(--line-grammar);
+}
+[data-skill] {
+  --skill-accent: var(--line);
+  --skill-soft: color-mix(in srgb, var(--line) 12%, var(--panel));
+}
+
+/* ---------- Base ---------- */
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+html h1,
+html:lang(vi) h1 {
+  font-family: var(--font);
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 0;
+}
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 1rem;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+p {
+  line-height: 1.6;
+}
+.muted {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+::selection {
+  background: color-mix(in srgb, var(--signal) 55%, transparent);
+  color: var(--ink);
+}
+:focus-visible,
+.button:focus-within {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+/* main is focused by code on route change for screen readers; it is not a control, and every control keeps the ring above. */
+main:focus {
+  /* craft-ignore: outline-none */
+  outline: none;
+}
+
+/* ---------- Controls ---------- */
+button,
+.button {
+  min-height: 42px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--panel);
+  color: var(--ink);
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  transition:
+    background-color 120ms ease-out,
+    border-color 120ms ease-out;
+}
+button:hover:not(:disabled),
+.button:hover {
+  background: var(--soft);
+  border-color: color-mix(in srgb, var(--ink) 25%, var(--border));
+}
+button:active:not(:disabled) {
+  background: color-mix(in srgb, var(--ink) 8%, var(--soft));
+}
+.primary,
+html.dark .primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary-ink);
+}
+.primary:hover:not(:disabled),
+html.dark .primary:hover:not(:disabled) {
+  background: var(--primary-strong);
+  border-color: var(--primary-strong);
+  color: var(--primary-ink);
+}
+button.danger {
+  color: var(--danger);
+  border-color: color-mix(in srgb, var(--danger) 45%, var(--border));
+}
+button:disabled {
+  opacity: 0.45;
+}
+input:not([type='checkbox']):not([type='range']):not([type='radio']),
+select,
+textarea {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--panel);
+  color: var(--ink);
+  min-height: 42px;
+}
+select {
+  max-width: 28rem;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+}
+input[type='checkbox'],
+input[type='radio'],
+input[type='range'] {
+  accent-color: var(--primary);
+}
+label {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+progress {
+  appearance: none;
+  height: 6px;
+  border: 0;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--soft);
+}
+progress::-webkit-progress-bar {
+  background: var(--soft);
+  border-radius: 999px;
+}
+progress::-webkit-progress-value {
+  background: var(--primary);
+  border-radius: 999px;
+}
+progress::-moz-progress-bar {
+  background: var(--primary);
+  border-radius: 999px;
+}
+
+/* ---------- Shell: a station directory on the left ---------- */
+.sidebar {
+  width: 248px;
+  padding: 24px 16px;
+  gap: 20px;
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+}
+.workspace {
+  margin-left: 248px;
+  background: var(--bg);
+}
+.brand {
+  gap: 10px;
+  padding: 0 8px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.brand-mark,
+.dark .brand-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  background: var(--primary);
+  color: var(--primary-ink);
+  font-size: 26px;
+  line-height: 30px;
+}
+.brand-mark span {
+  color: var(--signal);
+  font-size: 15px;
+  top: -3px;
+  right: 1px;
+}
+.language-picker,
+.dark .language-picker {
+  margin: 0;
+  padding: 0 8px;
+  background: none;
+  border: 0;
+}
+.language-picker-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.language-picker label {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.language-picker-mark {
+  display: none;
+}
+.language-picker select {
+  margin-top: 6px;
+  font-size: 0.875rem;
+}
+.sidebar nav {
+  gap: 12px;
+  margin: 0;
+}
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.nav-group + .nav-group {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+.sidebar nav a,
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  background: none;
+}
+.sidebar nav a:hover {
+  background: var(--soft);
+}
+.sidebar nav a.active {
+  background: var(--primary-soft);
+  font-weight: 700;
+  box-shadow: none;
+}
+/* "You are here": the station marker of signage, not a coloured stripe. */
+.sidebar nav a.active::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--signal);
+  box-shadow: 0 0 0 2px var(--panel);
+}
+.sidebar nav .nav-tile,
+.sidebar nav a > span,
+.sidebar nav a.active > span,
+.dark .sidebar nav a.active > span {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-sm);
+  background: var(--line);
+  color: var(--tile-ink);
+  font-size: inherit;
+}
+.sidebar nav a[data-skill='dashboard'] > span {
+  background: var(--primary);
+  color: var(--primary-ink);
+}
+.topbar,
+.dark .topbar {
+  height: 60px;
+  padding: 0 32px;
+  justify-content: flex-end;
+  background: transparent;
+  border-bottom: 0;
+}
+.avatar,
+.dark .avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--primary-ink);
+  font-weight: 700;
+}
+main {
+  max-width: 1180px;
+  padding: 8px 32px 48px;
+  min-height: calc(100vh - 60px);
+}
+.skip:focus {
+  background: var(--signal);
+  color: var(--signal-ink);
+}
+
+/* ---------- Page title: the sign at the entrance ---------- */
+.page-title,
+.workspace:not([data-skill='dashboard']) main > .page-title {
+  margin-bottom: 24px;
+  padding: 0;
+  border: 0;
+}
+.page-title .muted {
+  margin: 6px 0 0;
+  font-size: 1rem;
+}
+.page-meta {
+  display: inline-flex;
+  margin: 10px 0 0;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--ink);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.eyebrow {
+  display: none;
+}
+
+/* ---------- Plates and lists ---------- */
+.panel,
+.workspace .panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: none;
+  padding: 24px;
+}
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+.badge {
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--ink);
+  border: 0;
+  font-weight: 600;
+}
+.notice {
+  border-radius: var(--radius-sm);
+  background: var(--primary-soft);
+  color: var(--ink);
+  border: 0;
+}
+.notice.error,
+.dark .notice.error,
+.dark .error {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+.notice a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.empty > span {
+  color: var(--muted);
+}
+
+/* Tabs read as a segmented sign, not a row of pills. */
+.tabs,
+.workspace .tabs {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  margin-bottom: 20px;
+  background: var(--soft);
+  border: 0;
+  border-radius: var(--radius-sm);
+  box-shadow: none;
+}
+.tabs button,
+.workspace .tabs button {
+  min-height: 38px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+}
+.tabs button[aria-pressed='true'],
+.workspace .tabs button[aria-pressed='true'],
+.dark .tabs button[aria-pressed='true'] {
+  background: var(--panel);
+  color: var(--ink);
+  box-shadow: 0 1px 2px rgb(19 36 58 / 12%);
+}
+.filters {
+  gap: 12px;
+}
+.filters label {
+  color: var(--muted);
+}
+
+/* Stat plates on practice pages: one compact row of small signs, not a wall of big numbers. */
+.stats {
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.stats .stat,
+.workspace .stats:not(.dashboard-stats) > .stat,
+.workspace .stats:not(.dashboard-stats) > .stat:nth-child(n) {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: none;
+}
+.stats .stat {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+  padding: 12px 16px;
+}
+.stat strong,
+.workspace .stat strong {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.stat span {
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+.lesson-grid > .lesson-card,
+.workspace .lesson-grid > .lesson-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: none;
+  transition: border-color 120ms ease-out;
+}
+.workspace .lesson-card:hover {
+  border-color: color-mix(in srgb, var(--line) 55%, var(--border));
+  transform: none;
+  box-shadow: none;
+}
+.lesson-card .badge {
+  align-self: flex-start;
+}
+.workspace .lesson-card .badge {
+  background: var(--skill-soft);
+}
+.lesson-card .primary,
+html.dark .lesson-card .primary {
+  background: var(--panel);
+  border-color: var(--border);
+  color: var(--primary);
+}
+.lesson-card .primary:hover:not(:disabled),
+html.dark .lesson-card .primary:hover:not(:disabled) {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.lesson-grid {
+  margin-bottom: 24px;
+}
+
+.flashcard,
+.workspace .flashcard {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: none;
+}
+.choice-grid button {
+  justify-content: flex-start;
+  text-align: left;
+  min-height: 48px;
+}
+.choice-grid button.right {
+  background: var(--success-soft);
+  border-color: var(--success);
+  color: var(--success);
+}
+.choice-grid button.wrong {
+  background: var(--danger-soft);
+  border-color: var(--danger);
+  color: var(--danger);
+}
+.question label:has(input:checked) {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+}
+
+.activity-list > div {
+  border-color: var(--border);
+}
+.activity-list [aria-current] {
+  background: var(--primary-soft);
+}
+
+/* Shared line tile: the pictogram plate for a skill. */
+.line-tile {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: var(--line);
+  color: var(--tile-ink);
+}
+.line-tile.small {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+/* ---------- Tablet and phone ---------- */
+@media (max-width: 1100px) {
+  .sidebar {
+    width: 216px;
+    padding-inline: 12px;
+  }
+  .workspace {
+    margin-left: 216px;
+  }
+  main {
+    padding: 8px 24px 40px;
+  }
+  .topbar {
+    padding: 0 24px;
+  }
+}
+@media (max-width: 700px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    padding: 16px 16px 8px;
+    gap: 12px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+    overflow: visible;
+  }
+  .workspace {
+    margin-left: 0;
+  }
+  .language-picker {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+  }
+  .language-picker select {
+    margin: 0;
+  }
+  .sidebar nav {
+    flex-direction: row;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+  .sidebar nav::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-group {
+    display: contents;
+  }
+  .nav-group + .nav-group {
+    border: 0;
+    padding: 0;
+  }
+  .sidebar nav a,
+  .sidebar nav a:hover,
+  .sidebar nav a.active {
+    white-space: nowrap;
+    gap: 8px;
+    padding: 6px 12px 6px 6px;
+    font-size: 0.875rem;
+  }
+  .sidebar nav a.active::after {
+    display: none;
+  }
+  .sidebar nav a.active {
+    box-shadow: inset 0 -3px 0 var(--signal);
+  }
+  .sidebar nav .nav-tile {
+    width: 28px;
+    height: 28px;
+  }
+  /* The account button joins the brand row instead of taking a row of its own. */
+  .topbar,
+  .dark .topbar {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    height: auto;
+    padding: 0;
+  }
+  /* Room at the end so the floating tutor button never hides the last control. */
+  main {
+    padding: 20px 16px 96px;
+  }
+  .panel,
+  .workspace .panel {
+    padding: 18px;
+  }
+  .page-title,
+  .workspace:not([data-skill='dashboard']) main > .page-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Home: status signs, today's route, line directory, week (English and the language workspaces) ---------- */
+.home {
+  display: grid;
+  gap: 24px;
+}
+.home h2 {
+  margin-bottom: 16px;
+}
+
+.home-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+.home-date {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+.home-date::first-letter {
+  text-transform: uppercase;
+}
+.home-signs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.sign-plate {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--panel);
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.sign-plate svg {
+  color: var(--primary);
+}
+.sign-plate strong {
+  color: var(--ink);
+  font-size: 1rem;
+}
+.sign-plate progress {
+  width: 72px;
+}
+
+/* The route: one stop per suggested skill, joined in that skill's line colour. */
+.route-stops {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 16px;
+}
+.route-stop {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+.route-stop:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 22px;
+  right: -14px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--line);
+}
+.route-dot {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 3px solid var(--line);
+  background: var(--panel);
+  color: var(--tile-ink);
+}
+.route-stop.done .route-dot {
+  background: var(--line);
+}
+.route-stop.next .route-dot {
+  box-shadow: 0 0 0 4px var(--signal);
+}
+.route-stop a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 72px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--panel);
+  transition: border-color 120ms ease-out;
+}
+.route-stop a:hover {
+  border-color: var(--line);
+}
+.route-stop.next a {
+  border-color: var(--line);
+  background: color-mix(in srgb, var(--line) 7%, var(--panel));
+}
+.route-stop.done a {
+  color: var(--muted);
+}
+.route-text {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.route-text small {
+  color: var(--muted);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+.route-foot {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.route-foot .button {
+  gap: 10px;
+}
+.route-done {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: var(--success);
+  font-weight: 600;
+}
+
+/* Directory of lines, then the week and recent activity beside it. */
+.home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(280px, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.home-grid .panel {
+  margin: 0;
+}
+.home-side {
+  display: grid;
+  gap: 24px;
+}
+.line-list,
+.recent-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.line-list a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 8px;
+  margin: 0 -8px;
+  border-radius: var(--radius-sm);
+}
+.line-list li + li a {
+  border-top: 1px solid var(--border);
+  border-radius: 0;
+}
+.line-list a:hover {
+  background: var(--soft);
+  border-radius: var(--radius-sm);
+}
+.line-list a > svg {
+  color: var(--muted);
+}
+.line-name,
+.line-score,
+.recent-text {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.line-name {
+  flex: 1;
+}
+.line-list .line-tile {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.line-name small,
+.line-score small,
+.recent-text small {
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.line-score {
+  text-align: right;
+}
+.home-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+.week-bars {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+  height: 128px;
+}
+.week-bars > div {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 6px;
+  text-align: center;
+}
+.week-bars span {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 6px;
+  background: var(--soft);
+  overflow: hidden;
+}
+.week-bars i {
+  display: block;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  background: var(--primary);
+}
+.week-bars small {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.week-bars .today small {
+  color: var(--ink);
+  font-weight: 700;
+  box-shadow: inset 0 -3px 0 var(--signal);
+}
+
+.recent-list li {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+}
+.recent-list li + li {
+  border-top: 1px solid var(--border);
+}
+.recent-text strong {
+  font-size: 0.875rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1000px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* On phones the route runs top to bottom, like a line diagram on a platform. */
+@media (max-width: 700px) {
+  .route-stops {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .route-stop {
+    grid-template-columns: 21px minmax(0, 1fr);
+    align-items: center;
+  }
+  .route-stop:not(:last-child)::before {
+    /* From this dot's lower edge to the next dot's upper edge (stops share one height). */
+    top: calc(50% + 10.5px);
+    bottom: calc(10.5px - 50% - 12px);
+    left: 9px;
+    right: auto;
+    width: 3px;
+    height: auto;
+  }
+  .route-foot .button {
+    width: 100%;
+  }
+  .home-signs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .sign-plate {
+    min-width: 0;
+  }
+  .sign-plate progress {
+    flex: 1;
+    width: auto;
+    min-width: 24px;
+  }
+  .line-list a > svg {
+    display: none;
+  }
+}
+
+/* ---------- Japanese / Chinese workspace: same signage, sign-blue accent ---------- */
+.workspace .language-space.language-ja,
+.workspace .language-space.language-zh {
+  --language-accent: var(--primary);
+  --language-bg: var(--panel);
+  --language-border: var(--border);
+  --language-soft: var(--soft);
+  --language-ink: var(--ink);
+  --language-muted: var(--muted);
+  --language-hero-end: var(--panel);
+  --topic-accent: var(--primary);
+  --topic-soft: var(--soft);
+  --topic-border: var(--border);
+  --topic-selected: var(--primary);
+}
+.workspace .language-space :is(.language-welcome, .lexicon-hero) {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  box-shadow: none;
+}
+.workspace .language-space :is(.language-summary > div, .lexicon-stat),
+.workspace .language-space :is(.language-summary > div, .lexicon-stat):nth-child(n) {
+  background: var(--panel);
+  border-color: var(--border);
+  color: var(--ink);
+}
+.workspace .language-space .language-art-note {
+  background: var(--soft);
+  border-color: var(--border);
+  color: var(--ink);
+}
+/* One neutral family for every topic; the lazily loaded language sheet must not repaint them in pastels. */
+.workspace .language-space :is([data-topic], [data-skill]) {
+  --topic-accent: var(--primary);
+  --topic-soft: var(--panel);
+  --topic-border: var(--border);
+  --topic-selected: var(--primary);
+}

@@ -113,8 +113,8 @@ export default function Account() {
       <PageTitle
         title={bi('Tài khoản', 'Account')}
         description={bi(
-          'Đăng nhập để lưu tiến độ lên tài khoản và dùng trên nhiều thiết bị. Tiến độ đang có trên thiết bị này sẽ được gộp vào tài khoản. Không đăng nhập vẫn học được.',
-          'Sign in to keep progress in your account across devices. Progress already on this device is merged into the account. You can still practice without an account.',
+          'Lưu tiến độ để học trên nhiều thiết bị. Không đăng nhập vẫn học được.',
+          'Keep your progress across devices. You can practise without an account.',
         )}
       />
       <div className="tabs">

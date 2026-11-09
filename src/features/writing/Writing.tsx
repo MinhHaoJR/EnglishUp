@@ -119,7 +119,7 @@ function WritingSession({
         ← {t('back')}
       </button>
       <PageTitle
-        eyebrow={`${prompt.level} · ${prompt.topic} · ${prompt.genre}`}
+        meta={`${prompt.level} · ${prompt.topic} · ${prompt.genre}`}
         title={prompt.title}
       />
       <div className="split">
@@ -290,7 +290,6 @@ function WritingSession({
 }
 export default function Writing() {
   const t = useT();
-  const bi = useBi();
   const prompts = useFiltered(writingPrompts);
   const [active, setActive] = useState<WritingPrompt>();
   if (active)
@@ -305,14 +304,7 @@ export default function Writing() {
     );
   return (
     <>
-      <PageTitle
-        eyebrow={bi('DIỄN ĐẠT Ý TƯỞNG CỦA BẠN', 'MAKE YOUR IDEAS HEARD')}
-        title={t('writing')}
-        description={bi(
-          'Từ một ý tưởng nhỏ đến một bài viết rõ ràng.',
-          'Turn a small idea into clear writing.',
-        )}
-      />
+      <PageTitle title={t('writing')} />
       <Filters />
       {prompts.length ? (
         <div className="lesson-grid">

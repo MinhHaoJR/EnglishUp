@@ -66,21 +66,22 @@ export function useFiltered<T extends { level: string; topic: string }>(items: T
   );
 }
 export function PageTitle({
-  eyebrow,
   title,
+  meta,
   description,
   children,
 }: {
-  eyebrow?: string;
   title: string;
+  /** Facts about the item, such as level and topic, shown under the heading. */
+  meta?: string;
   description?: string;
   children?: React.ReactNode;
 }) {
   return (
     <header className="page-title">
       <div>
-        {eyebrow && <p className="eyebrow">{eyebrow}</p>}
         <h1>{title}</h1>
+        {meta && <p className="page-meta">{meta}</p>}
         {description && <p className="muted">{description}</p>}
       </div>
       {children}

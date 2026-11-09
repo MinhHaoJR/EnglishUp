@@ -161,11 +161,10 @@ export default function Grammar() {
 
   const title = (
     <PageTitle
-      eyebrow={bi('100 CẤU TRÚC CẦN NHỚ', '100 PATTERNS TO KNOW')}
       title={t('grammar')}
       description={bi(
-        'Học công thức, nghĩa và một câu ví dụ cho từng cấu trúc, rồi luyện điền vào chỗ trống.',
-        'Learn the formula, meaning and an example for each pattern, then practise filling the gap.',
+        '100 cấu trúc kèm ví dụ. Học, rồi luyện điền chỗ trống.',
+        '100 patterns with examples. Learn them, then fill the gaps.',
       )}
     />
   );

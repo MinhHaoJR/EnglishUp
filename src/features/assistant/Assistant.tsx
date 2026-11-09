@@ -38,8 +38,8 @@ export default function Assistant() {
     <PageTitle
       title={bi('Trợ giảng AI', 'AI tutor')}
       description={bi(
-        'Hỏi về từ vựng, bài đọc, bài nghe và đề viết trong EnglishUp. Trợ giảng chỉ trả lời từ bài học của app và ghi rõ nguồn. Bạn cũng có thể mở trợ giảng ở góc dưới bên phải của mọi trang.',
-        "Ask about EnglishUp's vocabulary, readings, listening scripts and writing tasks. The tutor answers only from the app's lessons and cites them. You can also open it from the bottom-right corner of any page.",
+        'Trả lời từ bài học trong app, luôn kèm nguồn.',
+        "Answers from the app's lessons, always with sources.",
       )}
     />
   );

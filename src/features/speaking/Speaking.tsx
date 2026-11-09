@@ -68,7 +68,7 @@ function SpeakingSession({
       </button>
       <PageTitle
         title={prompt.title}
-        eyebrow={`${prompt.level} · ${prompt.topic} · ${prompt.mode === 'read' ? bi('Đọc thành tiếng / nhại mẫu', 'Read aloud / shadowing') : bi('Nói theo chủ đề', 'Topic talk')}`}
+        meta={`${prompt.level} · ${prompt.topic} · ${prompt.mode === 'read' ? bi('Đọc thành tiếng / nhại mẫu', 'Read aloud / shadowing') : bi('Nói theo chủ đề', 'Topic talk')}`}
       />
       <div className="split">
         <section className="panel">
@@ -301,14 +301,7 @@ export default function Speaking() {
     );
   return (
     <>
-      <PageTitle
-        eyebrow={bi('TỰ TIN VỚI GIỌNG NÓI CỦA BẠN', 'FIND YOUR VOICE')}
-        title={t('speaking')}
-        description={bi(
-          'Không cần hoàn hảo. Cứ bắt đầu nói.',
-          'You don’t need to be perfect. Just start speaking.',
-        )}
-      />
+      <PageTitle title={t('speaking')} />
       <div className="tabs">
         <button aria-pressed={mode === 'read'} onClick={() => setMode('read')}>
           {bi('Đọc & nhại mẫu', 'Read & shadow')}

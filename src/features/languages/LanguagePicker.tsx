@@ -14,7 +14,7 @@ export default function LanguagePicker() {
   return (
     <div className={`language-picker picker-${settings.learningLanguage}`} aria-busy={busy}>
       <div className="language-picker-heading">
-        <label htmlFor="learning-language">{bi('Ngôn ngữ muốn học', 'Learning language')}</label>
+        <label htmlFor="learning-language">{bi('Đang học', 'Learning')}</label>
         <span className="language-picker-mark" aria-hidden="true">
           {languageNames[settings.learningLanguage].mark}
         </span>
@@ -45,9 +45,6 @@ export default function LanguagePicker() {
           </option>
         ))}
       </select>
-      <p className="language-picker-note">
-        {bi('Một góc nhỏ, ba ngôn ngữ', 'A little space, three languages')}
-      </p>
       {error && (
         <p role="alert">
           {bi('Không lưu được lựa chọn. Hãy thử lại.', 'Could not save your choice. Please retry.')}

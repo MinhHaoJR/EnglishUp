@@ -133,8 +133,8 @@ export default function Game() {
     <PageTitle
       title={bi('Đua 60 giây', '60-second race')}
       description={bi(
-        'Chọn nghĩa tiếng Việt đúng cho càng nhiều từ càng tốt trong 60 giây. Trả lời đúng liên tiếp để tăng combo.',
-        'Pick the right Vietnamese meaning for as many words as you can in 60 seconds. Answer correctly in a row to build a combo.',
+        'Chọn nghĩa đúng cho càng nhiều từ càng tốt trong 60 giây.',
+        'Pick the right meaning for as many words as you can in 60 seconds.',
       )}
     />
   );

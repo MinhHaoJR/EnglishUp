@@ -2973,7 +2973,7 @@ html.dark .language-space .primary:hover {
 .structure-card h2 {
   margin: 0;
   font-size: 1.05rem;
-  color: var(--green);
+  color: var(--ink);
 }
 .structure-card-top {
   display: flex;
@@ -2998,7 +2998,7 @@ html.dark .language-space .primary:hover {
   line-height: 1.5;
 }
 .structure-example mark {
-  background: var(--accent);
+  background: var(--skill-soft);
   color: var(--ink);
   border-radius: 4px;
   padding: 0 0.15rem;

@@ -97,14 +97,7 @@ export default function Vocabulary() {
     : 0;
   return (
     <>
-      <PageTitle
-        eyebrow={bi('NHỮNG TỪ BẠN SẼ NHỚ', 'WORDS THAT STAY WITH YOU')}
-        title={t('vocabulary')}
-        description={bi(
-          'Học từ trong ngữ cảnh. Ôn lại đúng lúc.',
-          'Learn in context. Review at the right time.',
-        )}
-      >
+      <PageTitle title={t('vocabulary')}>
         {tab !== 'relations' && (
           <button className="primary" onClick={() => setEditing({})}>
             ＋ {t('add')}

@@ -20,7 +20,7 @@ function show(element: React.ReactNode) {
 }
 test('picker persists target language independently of interface language and reloads it', async () => {
   show(<LanguagePicker />);
-  fireEvent.change(screen.getByLabelText('Learning language'), { target: { value: 'zh' } });
+  fireEvent.change(screen.getByLabelText('Learning'), { target: { value: 'zh' } });
   await waitFor(async () => expect((await db.settings.get('main'))?.learningLanguage).toBe('zh'));
   await useApp.getState().load();
   expect(useApp.getState().settings).toMatchObject({ language: 'en', learningLanguage: 'zh' });

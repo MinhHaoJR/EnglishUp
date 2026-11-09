@@ -1,3 +1,4 @@
+/** One line-drawn pictogram set (24px grid, 1.8 stroke), used for the nav, skill lines and status signs. */
 const paths = {
   dashboard: 'M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z',
   vocabulary: 'M4 4h12a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2V4z M4 16h14 M8 8h6 M21 7v14',
@@ -12,17 +13,24 @@ const paths = {
   game: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z M12 7v5l3 2 M9 1h6',
   achievements:
     'M8 4h8v5a4 4 0 0 1-8 0V4z M8 6H5a3 3 0 0 0 3 4 M16 6h3a3 3 0 0 1-3 4 M12 13v4 M8 21h8 M10 17h4',
+  streak: 'M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2 1-4 3-5 0 2 1 3 2 3 0-3-1-5 0-8z',
+  goal: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z M12 11v2',
+  check: 'M5 12.5l4.5 4.5L19 7',
+  arrow: 'M5 12h14 M13 6l6 6-6 6',
+  speaker: 'M4 9h4l5-4v14l-5-4H4z M16.5 9a4 4 0 0 1 0 6 M19 6.5a7.5 7.5 0 0 1 0 11',
 } as const;
 
-export default function SkillIcon({ skill }: { skill: keyof typeof paths }) {
+export type IconName = keyof typeof paths;
+
+export default function SkillIcon({ skill, size = 20 }: { skill: IconName; size?: number }) {
   return (
     <svg
-      width="20"
-      height="20"
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.7"
+      strokeWidth="1.8"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"

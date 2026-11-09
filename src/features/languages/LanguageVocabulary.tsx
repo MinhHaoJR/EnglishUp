@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useApp } from '../../app/store';
 import { useBi, useT } from '../../i18n';
 import { Notice, useLive } from '../../components/shared';
+import SkillIcon from '../../components/SkillIcon';
 import {
   languageVocabulary,
   vocabularyTopics,
@@ -87,43 +88,28 @@ export default function LanguageVocabulary({ language }: { language: VocabularyL
     );
   return (
     <div className="lexicon">
-      <section className="lexicon-hero">
-        <div className="lexicon-hero-copy">
-          <p className="lexicon-eyebrow">
-            {languageNames[language].native} / {bi('TỪ VỰNG MỖI NGÀY', 'WORDS FOR EVERY DAY')}
-          </p>
+      <header className="page-title">
+        <div>
           <h1>
-            {bi('Từng từ nhỏ,', 'Small words,')}
-            <br />
-            {bi('mở ra thế giới lớn.', 'a wider world.')}
+            {t('vocabulary')} · {languageNames[language][settings.language]}
           </h1>
-          <p>
-            {bi(
-              'Khám phá những từ thường gặp. Học cách đọc, nghe phát âm và ghi nhớ theo chủ đề.',
-              'Explore useful words. Learn their readings, hear them aloud and practice by topic.',
-            )}
-          </p>
-          <button className="primary" disabled={!filtered.length} onClick={() => start()}>
-            {bi('Luyện 10 từ', 'Practice 10 words')} <span aria-hidden="true">↗</span>
-          </button>
         </div>
-        <div className="lexicon-hero-art" aria-hidden="true">
-          <span>{language === 'ja' ? 'ことば' : '学以致用'}</span>
-          <small>{language === 'ja' ? 'kotoba' : 'xué yǐ zhì yòng'}</small>
-        </div>
-      </section>
-      <div className="lexicon-stats">
-        <div className="lexicon-stat">
+        <button className="primary" disabled={!filtered.length} onClick={() => start()}>
+          {bi('Luyện 10 từ', 'Practice 10 words')}
+        </button>
+      </header>
+      <div className="stats">
+        <div className="stat">
+          <span>{bi('Từ trong thư viện', 'Words in library')}</span>
           <strong>{words.length.toLocaleString(locale)}</strong>
-          <span>{bi('mục từ trong thư viện', 'words in your library')}</span>
         </div>
-        <div className="lexicon-stat">
+        <div className="stat">
+          <span>{bi('Chủ đề', 'Topics')}</span>
           <strong>{vocabularyTopics.length}</strong>
-          <span>{bi('chủ đề đời sống', 'everyday topics')}</span>
         </div>
-        <div className="lexicon-stat">
+        <div className="stat">
+          <span>{bi('Từ đã luyện', 'Words practised')}</span>
           <strong>{learned}</strong>
-          <span>{bi('từ đã luyện', 'words practiced')}</span>
         </div>
       </div>
       <section aria-label={bi('Chọn chủ đề', 'Choose a topic')}>
@@ -200,7 +186,7 @@ export default function LanguageVocabulary({ language }: { language: VocabularyL
               <div className="lexicon-card-top">
                 <span>{vocabularyTopics.find((item) => item.id === word.topic)![locale]}</span>
                 <button onClick={() => listen(word)} aria-label={`${t('listen')}: ${word.text}`}>
-                  <span aria-hidden="true">♪</span>
+                  <SkillIcon skill="speaker" size={18} />
                 </button>
               </div>
               <h3 className="lexicon-script" lang={language}>
@@ -414,7 +400,8 @@ function VocabularySession({ queue, onBack }: { queue: WordQuestion[]; onBack: (
                   setAudioError(true);
               }}
             >
-              {t('listen')} ♪
+              <SkillIcon skill="speaker" size={18} />
+              {t('listen')}
             </button>
             {audioError && (
               <Notice>
