@@ -25,6 +25,7 @@ const Account = lazy(() => import('../features/account/Account'));
 const Achievements = lazy(() => import('../features/achievements/Achievements'));
 const Game = lazy(() => import('../features/game/Game'));
 const Assistant = lazy(() => import('../features/assistant/Assistant'));
+import ChatWidget from '../features/assistant/ChatWidget';
 import { restoreSession, useAuth } from '../services/auth';
 import { startAutoSync, syncNow, useSync } from '../services/sync';
 export const APP_NAME = 'EnglishUp';
@@ -153,6 +154,7 @@ export function Layout() {
           {APP_NAME} · {t('local')}
         </footer>
       </div>
+      {ready && <ChatWidget />}
     </>
   );
 }
