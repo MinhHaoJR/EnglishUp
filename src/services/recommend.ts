@@ -22,6 +22,7 @@ const minutes: Record<Skill, number> = {
   speaking: 3,
   reading: 3,
   writing: 5,
+  grammar: 4,
 };
 const DAY = 86_400_000;
 

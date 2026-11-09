@@ -23,8 +23,8 @@ test('a new learner starts with untried skills in skill order', () => {
 
 test('due cards lead, then the weakest and longest-unpractised skills', () => {
   const attempts = [
-    ...(['vocabulary', 'listening', 'speaking', 'reading', 'writing'] as const).map((s) =>
-      attempt(s, 90, 1),
+    ...(['vocabulary', 'listening', 'speaking', 'reading', 'writing', 'grammar'] as const).map(
+      (s) => attempt(s, 90, 1),
     ),
     attempt('writing', 30, 1),
     attempt('reading', 95, 6),
@@ -44,6 +44,7 @@ test('a strong but neglected skill outranks a recent one and reports the gap', (
       attempt('listening', 90, 0.9),
       attempt('speaking', 90, 0.9),
       attempt('reading', 90, 0.9),
+      attempt('grammar', 90, 0.9),
       attempt('writing', 85, 8),
     ],
     0,
@@ -57,7 +58,7 @@ test('only the latest attempts count and today does not reshuffle the plan', () 
   const old = Array.from({ length: 5 }, (_, i) => attempt('listening', 10, 20 + i));
   const recent = Array.from({ length: 5 }, () => attempt('listening', 100, 1));
   const today = attempt('speaking', 100, 0);
-  const plan = recommend([...old, ...recent, today], 0, now, 5);
+  const plan = recommend([...old, ...recent, today], 0, now, 6);
   expect(plan.find((r) => r.skill === 'listening')?.reason).toEqual({
     kind: 'keep',
     average: 100,

@@ -1,7 +1,14 @@
 import type { Attempt } from './storage';
 import { dayKey } from './srs';
 import type { Skill } from '../data/schema';
-export const skills: Skill[] = ['vocabulary', 'listening', 'speaking', 'reading', 'writing'];
+export const skills: Skill[] = [
+  'vocabulary',
+  'listening',
+  'speaking',
+  'reading',
+  'writing',
+  'grammar',
+];
 export function getProgress(attempts: Attempt[], now = Date.now()) {
   const today = dayKey(now);
   const days = new Set(attempts.map((a) => dayKey(a.timestamp)));

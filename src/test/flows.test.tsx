@@ -258,14 +258,16 @@ test('dashboard reconstructs progress from persisted attempts after remount', as
 test('dashboard plan puts due cards first and then the weakest skill', async () => {
   const yesterday = Date.now() - 86_400_000;
   await db.attempts.bulkAdd(
-    (['vocabulary', 'listening', 'speaking', 'reading', 'writing'] as const).map((skill) => ({
-      id: skill,
-      skill,
-      score: skill === 'listening' ? 40 : 95,
-      duration: 60,
-      timestamp: yesterday,
-      label: skill,
-    })),
+    (['vocabulary', 'listening', 'speaking', 'reading', 'writing', 'grammar'] as const).map(
+      (skill) => ({
+        id: skill,
+        skill,
+        score: skill === 'listening' ? 40 : 95,
+        duration: 60,
+        timestamp: yesterday,
+        label: skill,
+      }),
+    ),
   );
   await db.reviews.add({
     id: vocabulary[0].id,

@@ -2959,3 +2959,63 @@ html.dark .language-space .primary:hover {
     display: none;
   }
 }
+/* Sentence patterns */
+.structure-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.structure-card {
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+}
+.structure-card h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--green);
+}
+.structure-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.structure-meaning {
+  margin: 0;
+  font-weight: 600;
+}
+.structure-example-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.structure-example {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+.structure-example mark {
+  background: var(--accent);
+  color: var(--ink);
+  border-radius: 4px;
+  padding: 0 0.15rem;
+  font-weight: 600;
+}
+.structure-blank {
+  display: inline-block;
+  min-width: 4.5rem;
+  border-bottom: 2px solid var(--green);
+  color: transparent;
+  margin: 0 0.15rem;
+}
+.structure-review {
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 1.1rem;
+}
+.structure-card p.muted {
+  margin: 0;
+}

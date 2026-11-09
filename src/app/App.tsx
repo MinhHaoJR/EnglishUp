@@ -25,6 +25,7 @@ const Account = lazy(() => import('../features/account/Account'));
 const Achievements = lazy(() => import('../features/achievements/Achievements'));
 const Game = lazy(() => import('../features/game/Game'));
 const Assistant = lazy(() => import('../features/assistant/Assistant'));
+const Grammar = lazy(() => import('../features/grammar/Grammar'));
 import ChatWidget from '../features/assistant/ChatWidget';
 import { restoreSession, useAuth } from '../services/auth';
 import { startAutoSync, syncNow, useSync } from '../services/sync';
@@ -33,7 +34,8 @@ export function Layout() {
   const t = useT();
   const { settings, load, ready, error } = useApp();
   const { pathname } = useLocation();
-  const selectedSkill = skillSchema.safeParse(pathname.split('/')[1]);
+  // Sentence patterns are English-only, so they never open the Japanese/Chinese workspace.
+  const selectedSkill = skillSchema.exclude(['grammar']).safeParse(pathname.split('/')[1]);
   const email = useAuth((state) => state.email);
   useEffect(() => {
     void (async () => {
@@ -85,6 +87,7 @@ export function Layout() {
               ['/speaking', 'speaking'],
               ['/reading', 'reading'],
               ['/writing', 'writing'],
+              ['/grammar', 'grammar'],
               ['/assistant', 'assistant'],
               ['/game', 'game'],
               ['/achievements', 'achievements'],
@@ -168,6 +171,7 @@ const router = createBrowserRouter([
       { path: 'listening', element: <Listening /> },
       { path: 'speaking', element: <Speaking /> },
       { path: 'writing', element: <Writing /> },
+      { path: 'grammar', element: <Grammar /> },
       { path: 'settings', element: <Settings /> },
       { path: 'account', element: <Account /> },
       { path: 'assistant', element: <Assistant /> },

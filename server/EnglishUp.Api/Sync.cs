@@ -16,7 +16,8 @@ public static class Sync
 {
     private static readonly HashSet<string> Stores =
         ["settings", "words", "reviews", "drafts", "submissions", "vocabularyStudy"];
-    private static readonly HashSet<string> Skills = ["vocabulary", "listening", "speaking", "reading", "writing"];
+    // Attempts may also come from the English sentence-pattern practice ("grammar").
+    private static readonly HashSet<string> Skills = ["vocabulary", "listening", "speaking", "reading", "writing", "grammar"];
     private static readonly HashSet<string> Languages = ["en", "ja", "zh"];
     private const int MaxRecordLength = 200_000;
 

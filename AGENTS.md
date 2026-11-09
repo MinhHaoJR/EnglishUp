@@ -5,7 +5,7 @@ Vietnamese/English learning app with optional accounts. React 18, strict TypeScr
 ## Structure
 
 - `src/app`: routing, shell and reactive application state.
-- `src/features`: dashboard, vocabulary, languages (Japanese/Chinese), reading, listening, speaking, writing, settings, account, achievements, game (60-second race), assistant (AI tutor: `Chat.tsx` shared chat, `ChatWidget.tsx` corner mini chat in the app shell, full page).
+- `src/features`: dashboard, vocabulary, languages (Japanese/Chinese), reading, listening, speaking, writing, settings, account, achievements, grammar (100 sentence patterns: learn and gap-fill practice, skill `grammar`), game (60-second race), assistant (AI tutor: `Chat.tsx` shared chat, `ChatWidget.tsx` corner mini chat in the app shell, full page).
 - `src/services`: storage, SRS, speech, alignment, CSV, writing feedback and `auth` (API session), `sync` (account merge) and `community` (profile, badges, leaderboard) `game`, `recommend` (dashboard daily plan) and `assistant`.
 - `src/data`: original JSON learning content and startup Zod validation.
 - `src/components`, `src/i18n`: shared accessible controls and bilingual strings.

@@ -49,6 +49,15 @@ public class SyncTests(ApiFactory factory) : IClassFixture<ApiFactory>
     }
 
     [Fact]
+    public async Task SentencePatternPractice_SyncsAsGrammar()
+    {
+        var client = await factory.SignedInClient();
+        var grammar = new { id = "g1", skill = "grammar", score = 80, duration = 90, timestamp = 1000, label = "Cấu trúc câu" };
+        var result = await Sync(client, [grammar], []);
+        Assert.Equal("grammar", Assert.Single(result.Attempts).Skill);
+    }
+
+    [Fact]
     public async Task Accounts_AreIsolated()
     {
         await Sync(await SignedInClient(), [Attempt("shared-id")], [Review(500)]);

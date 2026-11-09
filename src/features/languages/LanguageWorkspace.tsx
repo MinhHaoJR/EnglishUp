@@ -21,6 +21,7 @@ const skillMarks: Record<Skill, string> = {
   speaking: '◌',
   reading: '▤',
   writing: '✎',
+  grammar: '¶',
 };
 
 export default function LanguageWorkspace({ skill }: { skill?: Skill }) {
@@ -172,7 +173,7 @@ export default function LanguageWorkspace({ skill }: { skill?: Skill }) {
             </div>
             <div className="language-skill-grid">
               {skills
-                .filter((item) => item !== 'vocabulary')
+                .filter((item) => item !== 'vocabulary' && item !== 'grammar')
                 .map((item) => (
                   <Link className="language-card" data-skill={item} key={item} to={`/${item}`}>
                     <span className="language-skill-mark" aria-hidden="true">

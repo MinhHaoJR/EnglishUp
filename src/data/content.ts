@@ -33,3 +33,8 @@ export const dictations = z.array(dictationSchema).min(10).parse(rawDictation);
 import rawReading from './reading.json';
 export const readings = z.array(readingSchema).min(6).parse(rawReading);
 export { vocabulary } from './vocabularyContent';
+import rawStructures from './structures.json';
+import { structureSchema } from './schema';
+export const structures = z.array(structureSchema).length(100).parse(rawStructures);
+if (new Set(structures.map((item) => item.id)).size !== structures.length)
+  throw new Error('Duplicate structure IDs');

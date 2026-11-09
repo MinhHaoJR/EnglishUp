@@ -15,7 +15,14 @@ import {
   writingPrompts,
 } from '../../data/content';
 import '../../styles/vibrant-dashboard.css';
-const icons = { vocabulary: 'Aa', listening: '♫', speaking: '✦', reading: '▤', writing: '✎' };
+const icons = {
+  vocabulary: 'Aa',
+  listening: '♫',
+  speaking: '✦',
+  reading: '▤',
+  writing: '✎',
+  grammar: '¶',
+};
 export default function Dashboard() {
   const t = useT();
   const bi = useBi();

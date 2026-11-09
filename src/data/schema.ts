@@ -1,6 +1,13 @@
 import { z } from 'zod';
 export const levelSchema = z.enum(['A1', 'A2', 'B1', 'B2', 'C1', 'C2']);
-export const skillSchema = z.enum(['vocabulary', 'listening', 'speaking', 'reading', 'writing']);
+export const skillSchema = z.enum([
+  'vocabulary',
+  'listening',
+  'speaking',
+  'reading',
+  'writing',
+  'grammar',
+]);
 export const wordSchema = z.object({
   id: z.string().min(1),
   word: z.string().trim().min(1),
@@ -89,3 +96,40 @@ export const writingSchema = z
   })
   .refine((p) => p.maxWords >= p.minWords, 'Invalid word range');
 export type WritingPrompt = z.infer<typeof writingSchema>;
+
+export const structureGroups = [
+  'linking',
+  'degree',
+  'to-v',
+  'v-ing',
+  'sb-do',
+  'change',
+  'ing-phrases',
+  'habits',
+  'compare',
+  'time',
+  'it-there',
+  'academic',
+] as const;
+/** A sentence pattern with an original example; `key` is the part of the example the quiz blanks out. */
+export const structureSchema = z
+  .object({
+    id: z.string().regex(/^s\d{3}$/),
+    group: z.enum(structureGroups),
+    formula: z.string().trim().min(1),
+    meaning: z.string().trim().min(1),
+    example: z.string().trim().min(1),
+    key: z.string().trim().min(1),
+    options: z.array(z.string().trim().min(1)).length(2),
+    translation: z.string().trim().min(1),
+  })
+  .refine(
+    (s) => s.example.split(s.key).length === 2,
+    'The key must appear exactly once in the example',
+  )
+  .refine(
+    (s) => new Set([s.key, ...s.options]).size === 3,
+    'Wrong options must differ from each other and from the key',
+  );
+export type Structure = z.infer<typeof structureSchema>;
+export type StructureGroup = (typeof structureGroups)[number];
