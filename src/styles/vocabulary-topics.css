@@ -159,3 +159,43 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Current topic as a single sign: name and size, level, and a way to change it. */
+.topic-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 16px 20px;
+}
+.topic-bar-name {
+  flex: 1 1 220px;
+  display: grid;
+  gap: 2px;
+}
+.topic-bar-name h2 {
+  margin: 0;
+}
+.topic-bar-name small {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.topic-bar-level {
+  flex: 0 1 180px;
+}
+.topic-bar-level select {
+  margin-top: 4px;
+}
+.topic-grid .topic-tile {
+  min-height: 52px;
+  font-size: 0.9375rem;
+}
+.topic-grid .topic-tile small {
+  font-size: 0.8125rem;
+}
+@media (max-width: 700px) {
+  .topic-bar > button,
+  .topic-bar-level {
+    flex: 1 1 100%;
+  }
+}

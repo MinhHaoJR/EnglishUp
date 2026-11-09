@@ -353,8 +353,8 @@ test('the last filtered reading returns to lessons without starting an unrelated
 test('C1 vocabulary filters, exports and persists a review through backup and restore', async () => {
   const view = show(<Vocabulary />);
   fireEvent.change(screen.getByRole('combobox', { name: 'Level' }), { target: { value: 'C1' } });
-  fireEvent.change(screen.getByRole('combobox', { name: 'Topic' }), { target: { value: 'Work' } });
   fireEvent.click(screen.getByRole('button', { name: /Word library/ }));
+  fireEvent.change(screen.getByRole('combobox', { name: 'Topic' }), { target: { value: 'Work' } });
   expect(screen.getAllByRole('article')).toHaveLength(10);
   expect(screen.getByRole('heading', { name: /accountability/ })).toBeInTheDocument();
   expect(screen.queryByRole('heading', { name: /workload/ })).not.toBeInTheDocument();

@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent, waitFor, within } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { vi } from 'vitest';
 import Vocabulary from '../features/vocabulary/Vocabulary';
@@ -35,11 +35,12 @@ async function start() {
 
 test('twenty-word groups can be selected with a zero legacy daily limit and resume after skip, early exit and backup', async () => {
   let view = show();
-  const select = screen.getByRole('combobox', { name: 'Word group' });
-  await waitFor(() => expect(select).toBeEnabled());
-  expect(select.querySelectorAll('option')).toHaveLength(2);
-  fireEvent.change(select, { target: { value: words[20].id } });
-  await waitFor(() => expect(select).toHaveValue(words[20].id));
+  const group = screen.getByRole('radiogroup', { name: 'Word group' });
+  await waitFor(() => expect(within(group).getAllByRole('radio')[1]).toBeEnabled());
+  const stations = within(group).getAllByRole('radio');
+  expect(stations).toHaveLength(2);
+  fireEvent.click(stations[1]);
+  await waitFor(() => expect(stations[1]).toHaveAttribute('aria-checked', 'true'));
   await start();
   expect(screen.getByRole('heading', { name: words[20].word })).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Skip word →' }));
@@ -99,9 +100,7 @@ test('changing practice mode preserves the next word and typing starts with a fr
   fireEvent.click(screen.getByRole('button', { name: 'Skip word →' }));
   await screen.findByRole('heading', { name: words[1].word });
   fireEvent.click(screen.getByRole('button', { name: 'End early (keep progress)' }));
-  fireEvent.change(screen.getByRole('combobox', { name: 'Practice mode' }), {
-    target: { value: 'type' },
-  });
+  fireEvent.click(screen.getByRole('radio', { name: 'Type the word' }));
   const button = screen.getByRole('button', { name: /Start practice/ });
   await waitFor(() => expect(button).toBeEnabled());
   fireEvent.click(button);
@@ -114,4 +113,21 @@ test('changing practice mode preserves the next word and typing starts with a fr
   fireEvent.click(screen.getByRole('button', { name: 'Good' }));
   await screen.findByRole('heading', { name: words[2].meaning });
   expect(screen.getByRole('textbox', { name: 'Your answer' })).toHaveValue('');
+});
+
+test('keyboard shortcuts reveal and rate, and a remembered word moves to the second pile', async () => {
+  show();
+  await start();
+  expect(screen.getByRole('heading', { name: words[0].word })).toBeInTheDocument();
+  fireEvent.keyDown(window, { key: ' ' });
+  expect(screen.getByRole('button', { name: 'Good' })).toHaveAttribute('aria-keyshortcuts', '3');
+  fireEvent.keyDown(window, { key: '3' });
+  await screen.findByRole('heading', { name: words[1].word });
+  fireEvent.click(screen.getByRole('button', { name: 'End early (keep progress)' }));
+
+  const remembered = await screen.findByRole('region', { name: /Remembered/ });
+  await waitFor(() => expect(within(remembered).getByText(words[0].word)).toBeInTheDocument());
+  const toLearn = screen.getByRole('region', { name: /To learn/ });
+  expect(within(toLearn).queryByText(words[0].word)).not.toBeInTheDocument();
+  expect(within(toLearn).getByText(words[1].word)).toBeInTheDocument();
 });

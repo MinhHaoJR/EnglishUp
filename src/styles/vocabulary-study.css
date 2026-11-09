@@ -1,100 +1,405 @@
-.vocabulary-study .study-heading {
+/*
+SURFACE: vocabulary study, inside the wayfinding world (DESIGN.md).
+FORM: candidate #2 of 7, topic directory with groups as stations; composition "diptych": the
+"To learn" and "Remembered" piles always sit side by side and words move between them.
+Roll seed 31f64b64/0.
+*/
+
+/* Stations: one per 20-word group, on the topic's line. */
+.station-line {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 4px 2px 12px;
+  margin-bottom: 20px;
+  scrollbar-width: thin;
+}
+.station {
+  position: relative;
+  flex: none;
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  min-width: 86px;
+  min-height: 78px;
+  padding: 10px 8px 8px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: none;
+  color: var(--ink);
+}
+.station:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: calc(50% + 11px);
+  width: calc(100% - 16px);
+  height: 3px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--line) 35%, var(--border));
+  pointer-events: none;
+}
+.station-dot {
+  position: relative;
+  z-index: 1;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 3px solid var(--line);
+  background: var(--panel);
+}
+.station.started .station-dot {
+  background: linear-gradient(90deg, var(--line) 50%, var(--panel) 50%);
+}
+.station.done .station-dot {
+  background: var(--line);
+}
+.station[aria-checked='true'] {
+  background: var(--primary-soft);
+  border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+}
+.station[aria-checked='true'] .station-dot {
+  box-shadow: 0 0 0 4px var(--signal);
+}
+.station-name {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.station small {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+/* The diptych: two piles, always together. */
+.diptych {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.pile {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.pile.done {
+  background: color-mix(in srgb, var(--success) 6%, var(--panel));
+}
+.pile h3 {
   display: flex;
   align-items: center;
-  gap: 18px;
-  margin-bottom: 24px;
+  gap: 8px;
+  margin: 0 0 12px;
 }
-.vocabulary-study .study-heading h2 {
-  margin: 0 0 8px;
-}
-.vocabulary-study .study-mark {
-  display: grid;
-  place-items: center;
-  width: 65px;
-  height: 65px;
-  border-radius: 20px;
+.pile h3 span {
+  min-width: 28px;
+  padding: 1px 8px;
+  border-radius: 999px;
   background: var(--soft);
-  color: var(--green);
-  font-size: 1.7rem;
-  font-weight: 750;
-  flex-shrink: 0;
+  text-align: center;
+  font-size: 0.875rem;
 }
-.vocabulary-study .study-heading p {
+.pile.done h3 span {
+  background: var(--success-soft);
+  color: var(--success);
+}
+.pile ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.vocabulary-study .study-chooser {
-  border-top: 4px solid var(--green);
-}
-.vocabulary-study .study-summary {
-  padding: 12px 15px;
+.pile li {
+  padding: 4px 10px;
+  border-radius: 999px;
   background: var(--soft);
-  border-radius: 12px;
-  margin: 20px 0;
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
 }
-.vocabulary-study .study-preview summary {
-  cursor: pointer;
-  font-weight: 650;
-  padding: 10px 0;
+.pile.todo li.seen {
+  background: var(--panel);
+  box-shadow: inset 0 0 0 1px var(--border);
 }
-.vocabulary-study .study-preview ol {
+.pile.done li {
+  background: var(--success-soft);
+  color: var(--success);
+  font-weight: 600;
+}
+.pile p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+/* Four ways to practise, as large pictogram buttons. */
+.mode-tiles {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.mode-tiles button {
+  flex-direction: column;
+  gap: 8px;
+  min-height: 84px;
+  padding: 12px 8px;
+  text-align: center;
+  line-height: 1.3;
+}
+.mode-tiles button svg {
+  color: var(--primary);
+}
+.mode-tiles button[aria-checked='true'] {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+.study-start {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.study-start .primary {
+  min-height: 48px;
+  padding-inline: 20px;
+  font-size: 1rem;
+}
+
+/* The card: one word, big, centred; everything else steps back. */
+.study-session {
+  display: grid;
+  gap: 14px;
+}
+.study-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.pile-counters {
+  display: flex;
+  gap: 8px;
+}
+.pile-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--soft);
+  font-size: 0.875rem;
+}
+.pile-count.done {
+  background: var(--success-soft);
+  color: var(--success);
+}
+.study-session > progress {
+  width: 100%;
+}
+.study-card {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  padding: 12px 0 4px;
+  text-align: center;
+}
+.study-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.study-card > h2 {
+  margin: 4px 0 0;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+/* The word heading is focused by code so screen readers announce each new card; it is not a control. */
+.study-card > h2:focus {
+  /* craft-ignore: outline-none */
+  outline: none;
+}
+.study-sound {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.study-hint {
+  max-width: 52ch;
+  margin: 0;
+  color: var(--muted);
+}
+.study-card fieldset {
+  width: 100%;
+  max-width: 640px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+}
+.study-card .choice-grid {
+  width: 100%;
+}
+.study-card .choice-grid button.selected {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+.study-answer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.study-answer label {
+  flex: 1 1 260px;
+  text-align: left;
+}
+.study-answer input {
+  font-size: 1.125rem;
+}
+.study-main {
+  min-width: 220px;
+  min-height: 52px;
+  font-size: 1rem;
+}
+.answer-box {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: var(--radius);
+  background: var(--soft);
+  text-align: left;
+}
+.answer-box.right {
+  background: var(--success-soft);
+}
+.answer-box.wrong {
+  background: var(--danger-soft);
+}
+.answer-box > strong {
+  display: block;
+  margin-bottom: 4px;
+}
+.answer-box.right > strong {
+  color: var(--success);
+}
+.answer-box.wrong > strong {
+  color: var(--danger);
+}
+.answer-box h3 {
+  margin: 0 0 6px;
+  font-size: 1.125rem;
+}
+.answer-box p {
+  margin: 4px 0 0;
+}
+.rating-question {
+  margin: 0;
+  font-weight: 600;
+}
+/* Ratings carry colour and their word, never colour alone. */
+.rating-row {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
-  padding: 12px 0;
-  list-style: none;
+  width: 100%;
 }
-.vocabulary-study .study-preview li {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  border: 1px solid var(--border);
-  padding: 10px;
-  border-radius: 10px;
-  overflow-wrap: anywhere;
+.rating {
+  min-height: 56px;
+  gap: 8px;
+  font-size: 0.9375rem;
 }
-.vocabulary-study .study-preview small {
+.rating kbd {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: var(--panel);
   color: var(--muted);
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px var(--border);
 }
-.vocabulary-study .study-card-meta,
-.vocabulary-study .study-session-actions {
+.rating.again {
+  background: var(--danger-soft);
+  border-color: color-mix(in srgb, var(--danger) 40%, var(--border));
+  color: var(--danger);
+}
+.rating.hard {
+  background: color-mix(in srgb, var(--line-grammar) 12%, var(--panel));
+  border-color: color-mix(in srgb, var(--line-grammar) 40%, var(--border));
+  color: color-mix(in srgb, var(--line-grammar) 80%, var(--ink));
+}
+.rating.good {
+  background: var(--success-soft);
+  border-color: color-mix(in srgb, var(--success) 40%, var(--border));
+  color: var(--success);
+}
+.rating.easy {
+  background: var(--primary-soft);
+  border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
+  color: var(--primary);
+}
+.study-footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
 }
-.vocabulary-study .study-skip {
+button.quiet {
+  border-color: transparent;
+  background: none;
+  color: var(--primary);
+}
+button.quiet:hover:not(:disabled) {
   background: var(--soft);
-  color: var(--green);
-  border-color: var(--green);
+  border-color: transparent;
 }
-.vocabulary-study .card-content > h2 {
-  overflow-wrap: anywhere;
+.keys-hint {
+  font-size: 0.8125rem;
 }
-.vocabulary-study h2[tabindex='-1']:focus {
-  outline: none;
-}
-.vocabulary-study fieldset {
-  min-width: 0;
-}
+
 @media (max-width: 700px) {
-  .vocabulary-study .card-content > h2 {
-    font-size: clamp(1.6rem, 7.5vw, 2.5rem);
-    line-height: 1.25;
+  .diptych {
+    grid-template-columns: 1fr;
   }
-  .vocabulary-study .study-preview ol {
+  .mode-tiles,
+  .rating-row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .vocabulary-study .study-session-actions button {
+  .study-start > * {
+    flex: 1 1 100%;
+  }
+  .keys-hint {
+    display: none;
+  }
+  .study-main {
     width: 100%;
   }
-  .vocabulary-study .study-heading {
-    align-items: flex-start;
-  }
-  .vocabulary-study .study-mark {
-    width: 48px;
-    height: 48px;
-    border-radius: 14px;
-    font-size: 1.3rem;
+}
+@media (hover: none) {
+  .keys-hint,
+  .rating kbd {
+    display: none;
   }
 }

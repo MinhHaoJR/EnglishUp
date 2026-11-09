@@ -18,6 +18,9 @@ const paths = {
   check: 'M5 12.5l4.5 4.5L19 7',
   arrow: 'M5 12h14 M13 6l6 6-6 6',
   speaker: 'M4 9h4l5-4v14l-5-4H4z M16.5 9a4 4 0 0 1 0 6 M19 6.5a7.5 7.5 0 0 1 0 11',
+  cards: 'M8 4h10a2 2 0 0 1 2 2v10 M4 8h11a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8z',
+  choice: 'M4 6.5h2 M9 6.5h11 M4 12h2 M9 12h11 M4 17.5h2 M9 17.5h11',
+  keyboard: 'M3 6h18v12H3z M7 10h1 M11 10h2 M16 10h1 M7 14h10',
 } as const;
 
 export type IconName = keyof typeof paths;

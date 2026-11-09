@@ -714,6 +714,20 @@ html.dark .lesson-card .primary:hover:not(:disabled) {
     flex-direction: column;
     align-items: flex-start;
   }
+  /* Tabs stay one swipeable row instead of stacking into a tall block. */
+  .tabs,
+  .workspace .tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .tabs button,
+  .workspace .tabs button {
+    flex: none;
+    white-space: nowrap;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   *,

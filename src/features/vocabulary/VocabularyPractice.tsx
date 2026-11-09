@@ -4,6 +4,7 @@ import { useApp } from '../../app/store';
 import { useBi, useT, topicVi } from '../../i18n';
 import { Notice, useLive } from '../../components/shared';
 import { SpeakButton } from '../../components/SpeakButton';
+import SkillIcon, { type IconName } from '../../components/SkillIcon';
 import { db } from '../../services/storage';
 import { stopSpeech } from '../../services/speech';
 import type { Rating } from '../../services/srs';
@@ -18,6 +19,16 @@ import {
 import '../../styles/vocabulary-study.css';
 
 type Mode = 'flashcards' | 'choice' | 'type' | 'spell';
+const modes: [Mode, IconName, string, string][] = [
+  ['flashcards', 'cards', 'Thẻ ghi nhớ', 'Flashcards'],
+  ['choice', 'choice', 'Chọn nghĩa đúng', 'Multiple choice'],
+  ['type', 'keyboard', 'Gõ từ tiếng Anh', 'Type the word'],
+  ['spell', 'speaker', 'Nghe và viết từ', 'Listen and spell'],
+];
+const ratings = ['again', 'hard', 'good', 'easy'] as const;
+/** Lets keyboard shortcuts ignore keys typed into a field. */
+const typing = (target: EventTarget | null) =>
+  target instanceof HTMLElement && !!target.closest('input, textarea, select');
 export default function VocabularyPractice({
   words,
   all,
@@ -62,6 +73,9 @@ export default function VocabularyPractice({
   const remaining = selected?.words.filter((word) => !visited.has(word.id)) ?? [];
   const nextGroup = groups.find(
     (group) => group.id !== selected?.id && group.words.some((word) => !visited.has(word.id)),
+  );
+  const remembered = new Set(
+    (saved?.reviews ?? []).filter((review) => review.repetitions > 0).map((review) => review.id),
   );
   const card = queue[index];
   const activeGroup = groups.find((group) => group.id === sessionGroup);
@@ -135,6 +149,21 @@ export default function VocabularyPractice({
       if (index + 1 === queue.length) setFinished(true);
     });
   }
+  useEffect(() => {
+    if (!card) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (typing(event.target) || busy) return;
+      if (!revealed && mode === 'flashcards' && (event.key === ' ' || event.key === 'Enter')) {
+        event.preventDefault();
+        setRevealed(true);
+      } else if (revealed && /^[1-4]$/.test(event.key)) {
+        const rating = ratings[Number(event.key) - 1];
+        if (mode === 'flashcards' || matched || rating === 'again') advance(rating);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  });
   const notices = (
     <>
       {readError && <Notice error>{readError}</Notice>}
@@ -149,126 +178,31 @@ export default function VocabularyPractice({
     </>
   );
 
-  if (card)
+  const piles = (group: (typeof groups)[number]) => {
+    const todo = group.words.filter((word) => !remembered.has(word.id));
+    const done = group.words.filter((word) => remembered.has(word.id));
+    return { todo, done };
+  };
+
+  if (card) {
+    const counts = activeGroup ? piles(activeGroup) : { todo: queue, done: [] };
     return (
-      <section className="panel flashcard vocabulary-study">
+      <section
+        className="panel vocabulary-study study-session"
+        aria-label={bi('Thẻ từ', 'Word card')}
+      >
         {notices}
-        <div className="study-card-meta">
-          <span className="badge">
-            {card.level} · {bi(topicVi[card.topic] ?? card.topic, card.topic)}
-          </span>
-          <span>
-            {bi('Cụm', 'Group')} {activeGroup?.number} ·{' '}
-            {(activeGroup?.words.findIndex((word) => word.id === card.id) ?? index) + 1} /{' '}
-            {activeGroup?.words.length ?? queue.length}
-          </span>
-        </div>
-        <progress
-          value={activeGroup?.words.filter((word) => visited.has(word.id)).length ?? index}
-          max={activeGroup?.words.length ?? queue.length}
-          aria-label={t('progress')}
-        />
-        <div className="card-content">
-          <h2 ref={heading} tabIndex={-1}>
-            {mode === 'spell'
-              ? bi('Nghe và viết từ', 'Listen and spell')
-              : mode === 'type'
-                ? card.meaning
-                : card.word}
-          </h2>
-          {mode === 'type' ? (
-            <p>{card.definition}</p>
-          ) : (
-            <>
-              <p className="muted">
-                {mode !== 'spell' && `${card.ipa ? `${card.ipa} · ` : ''}${card.pos}`}
-              </p>
-              <SpeakButton text={card.word} />
-            </>
-          )}
-          <fieldset disabled={busy}>
-            <legend className="sr-only">{bi('Trả lời thẻ từ', 'Answer the word card')}</legend>
-            {mode === 'choice' && !revealed && (
-              <div className="choice-grid">
-                {options.map((option) => (
-                  <button
-                    key={option.id}
-                    aria-pressed={answer === option.id}
-                    className={answer === option.id ? 'primary' : ''}
-                    onClick={() => setAnswer(option.id)}
-                  >
-                    {option.meaning}
-                  </button>
-                ))}
-              </div>
-            )}
-            {(mode === 'type' || mode === 'spell') && !revealed && (
-              <form
-                onSubmit={(event) => {
-                  event.preventDefault();
-                  if (answer.trim()) setRevealed(true);
-                }}
-              >
-                <label>
-                  {t('answer')}
-                  <input
-                    autoComplete="off"
-                    value={answer}
-                    onChange={(event) => setAnswer(event.target.value)}
-                  />
-                </label>
-                <button className="primary mt-4" disabled={!answer.trim()}>
-                  {t('check')}
-                </button>
-              </form>
-            )}
-            {revealed ? (
-              <>
-                <div className="answer-box">
-                  {mode !== 'flashcards' && (
-                    <strong>{matched ? t('correct') : bi('Đáp án đúng', 'Correct answer')}</strong>
-                  )}
-                  <h3>
-                    {card.word} — {card.meaning}
-                  </h3>
-                  <p>{card.definition}</p>
-                  {card.examples.map((example) => (
-                    <p key={example}>
-                      <em>{example}</em>
-                    </p>
-                  ))}
-                </div>
-                <p className="muted">
-                  {bi('Bạn nhớ từ này tốt đến đâu?', 'How well did you remember?')}
-                </p>
-                <div className="actions justify-center">
-                  {(['again', 'hard', 'good', 'easy'] as const).map((rating) => (
-                    <button
-                      key={rating}
-                      disabled={mode !== 'flashcards' && !matched && rating !== 'again'}
-                      onClick={() => advance(rating)}
-                    >
-                      {t(rating)}
-                    </button>
-                  ))}
-                </div>
-              </>
-            ) : mode === 'flashcards' ? (
-              <button className="primary mt-6" onClick={() => setRevealed(true)}>
-                {t('reveal')}
-              </button>
-            ) : mode === 'choice' ? (
-              <button className="primary mt-5" disabled={!answer} onClick={() => setRevealed(true)}>
-                {t('check')}
-              </button>
-            ) : null}
-          </fieldset>
-        </div>
-        <div className="study-session-actions">
-          <button disabled={busy} className="study-skip" onClick={() => advance()}>
-            {bi('Bỏ qua / Tiếp tục →', 'Skip word →')}
-          </button>
+        <div className="study-topbar">
+          <div className="pile-counters" aria-live="polite">
+            <span className="pile-count todo">
+              {bi('Cần học', 'To learn')} <strong>{counts.todo.length}</strong>
+            </span>
+            <span className="pile-count done">
+              {bi('Đã nhớ', 'Remembered')} <strong>{counts.done.length}</strong>
+            </span>
+          </div>
           <button
+            className="quiet"
             disabled={busy}
             onClick={() => {
               setQueue([]);
@@ -279,113 +213,290 @@ export default function VocabularyPractice({
             {bi('Kết thúc sớm (giữ tiến độ)', 'End early (keep progress)')}
           </button>
         </div>
-        <p className="muted">
-          {bi(
-            'Bỏ qua không chấm điểm. Lần học tiếp sẽ bắt đầu từ từ chưa đi qua trong cụm.',
-            'Skipping does not score the word. Continue later from the next unvisited word in this group.',
+        <progress
+          value={activeGroup?.words.filter((word) => visited.has(word.id)).length ?? index}
+          max={activeGroup?.words.length ?? queue.length}
+          aria-label={t('progress')}
+        />
+        <div className="study-card">
+          <p className="study-card-meta">
+            <span className="badge">
+              {card.level} · {bi(topicVi[card.topic] ?? card.topic, card.topic)}
+            </span>
+            <span>
+              {bi('Cụm', 'Group')} {activeGroup?.number} ·{' '}
+              {(activeGroup?.words.findIndex((word) => word.id === card.id) ?? index) + 1}/
+              {activeGroup?.words.length ?? queue.length}
+            </span>
+          </p>
+          <h2 ref={heading} tabIndex={-1} lang={mode === 'type' ? undefined : 'en'}>
+            {mode === 'spell'
+              ? bi('Nghe và viết từ', 'Listen and spell')
+              : mode === 'type'
+                ? card.meaning
+                : card.word}
+          </h2>
+          {mode === 'type' ? (
+            <p className="study-hint">{card.definition}</p>
+          ) : (
+            <div className="study-sound">
+              {mode !== 'spell' && (
+                <span className="muted">{`${card.ipa ? `${card.ipa} · ` : ''}${card.pos}`}</span>
+              )}
+              <SpeakButton text={card.word} />
+            </div>
           )}
-        </p>
+          <fieldset disabled={busy}>
+            <legend className="sr-only">{bi('Trả lời thẻ từ', 'Answer the word card')}</legend>
+            {mode === 'choice' && !revealed && (
+              <div className="choice-grid">
+                {options.map((option) => (
+                  <button
+                    key={option.id}
+                    aria-pressed={answer === option.id}
+                    className={answer === option.id ? 'selected' : ''}
+                    onClick={() => setAnswer(option.id)}
+                  >
+                    {option.meaning}
+                  </button>
+                ))}
+              </div>
+            )}
+            {(mode === 'type' || mode === 'spell') && !revealed && (
+              <form
+                className="study-answer"
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  if (answer.trim()) setRevealed(true);
+                }}
+              >
+                <label>
+                  {t('answer')}
+                  <input
+                    autoComplete="off"
+                    autoCapitalize="off"
+                    spellCheck={false}
+                    lang="en"
+                    value={answer}
+                    onChange={(event) => setAnswer(event.target.value)}
+                  />
+                </label>
+                <button className="primary" disabled={!answer.trim()}>
+                  {t('check')}
+                </button>
+              </form>
+            )}
+            {revealed ? (
+              <>
+                <div
+                  className={`answer-box ${mode === 'flashcards' ? '' : matched ? 'right' : 'wrong'}`}
+                >
+                  {mode !== 'flashcards' && (
+                    <strong>{matched ? t('correct') : bi('Đáp án đúng', 'Correct answer')}</strong>
+                  )}
+                  <h3>
+                    <span lang="en">{card.word}</span> — {card.meaning}
+                  </h3>
+                  <p lang="en">{card.definition}</p>
+                  {card.examples.map((example) => (
+                    <p key={example} lang="en">
+                      <em>{example}</em>
+                    </p>
+                  ))}
+                </div>
+                <p className="rating-question">
+                  {bi('Bạn nhớ từ này tốt đến đâu?', 'How well did you remember?')}
+                </p>
+                <div className="rating-row">
+                  {ratings.map((rating, i) => (
+                    <button
+                      key={rating}
+                      className={`rating ${rating}`}
+                      aria-keyshortcuts={String(i + 1)}
+                      disabled={mode !== 'flashcards' && !matched && rating !== 'again'}
+                      onClick={() => advance(rating)}
+                    >
+                      <kbd aria-hidden="true">{i + 1}</kbd>
+                      {t(rating)}
+                    </button>
+                  ))}
+                </div>
+              </>
+            ) : mode === 'flashcards' ? (
+              <button
+                className="primary study-main"
+                aria-keyshortcuts="Space"
+                onClick={() => setRevealed(true)}
+              >
+                {t('reveal')}
+              </button>
+            ) : mode === 'choice' ? (
+              <button
+                className="primary study-main"
+                disabled={!answer}
+                onClick={() => setRevealed(true)}
+              >
+                {t('check')}
+              </button>
+            ) : null}
+          </fieldset>
+        </div>
+        <div className="study-footer">
+          <button disabled={busy} className="quiet" onClick={() => advance()}>
+            {bi('Bỏ qua / Tiếp tục →', 'Skip word →')}
+          </button>
+          <span className="muted keys-hint" aria-hidden="true">
+            {mode === 'flashcards'
+              ? bi('Phím cách: xem đáp án · 1–4: đánh giá', 'Space: reveal · 1–4: rate')
+              : bi('1–4: đánh giá', '1–4: rate')}
+          </span>
+        </div>
       </section>
     );
+  }
 
+  const selectedPiles = selected ? piles(selected) : { todo: [], done: [] };
   return (
     <div className="vocabulary-study">
       {notices}
-      <section className="panel study-chooser">
-        <div className="study-heading">
-          <span className="study-mark" aria-hidden="true">
-            Aa
-          </span>
-          <div>
-            <h2 ref={chooser} tabIndex={-1}>
-              {finished ? t('result') : bi('Chọn cụm từ để học', 'Choose a word group')}
-            </h2>
-            <p className="muted">
+      <section className="panel study-chooser" aria-labelledby="study-title">
+        <div className="panel-head">
+          <h2 id="study-title" ref={chooser} tabIndex={-1}>
+            {finished ? t('result') : bi('Chọn cụm từ để học', 'Choose a word group')}
+          </h2>
+          {selected && (
+            <span className="muted">
               {bi(
-                'Mỗi cụm tối đa 20 từ · Không giới hạn học mỗi ngày',
-                'Up to 20 words per group · No daily study limit',
+                `${groups.length} cụm · tối đa 20 từ`,
+                `${groups.length} groups · up to 20 words`,
               )}
-            </p>
-          </div>
+            </span>
+          )}
         </div>
         {finished && (
           <Notice>
             {bi(
-              `Lượt này: ${rated} từ đã đánh giá, ${skipped} từ bỏ qua. Bạn có thể học tiếp cụm khác ngay.`,
-              `This session: ${rated} rated, ${skipped} skipped. You can start another group now.`,
+              `Lượt này: ${rated} từ đã đánh giá, ${skipped} từ bỏ qua.`,
+              `This session: ${rated} rated, ${skipped} skipped.`,
             )}
           </Notice>
         )}
         {selected ? (
           <>
-            <div className="form-grid">
-              <label>
-                {bi('Cụm từ vựng', 'Word group')}
-                <select
-                  disabled={busy || !ready || !saved}
-                  value={selected.id}
-                  onChange={(event) => {
-                    const id = event.target.value;
-                    void run(async () => {
-                      await selectStudyGroup(scope, words, id);
-                      setFinished(false);
-                    });
-                  }}
-                >
-                  {groups.map((group) => (
-                    <option key={group.id} value={group.id}>
-                      {bi('Cụm', 'Group')} {group.number} · {(group.number - 1) * 20 + 1}–
-                      {(group.number - 1) * 20 + group.words.length} ·{' '}
-                      {group.words.filter((word) => visited.has(word.id)).length}/
-                      {group.words.length} {bi('đã đi qua', 'visited')}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              <label>
-                {bi('Cách luyện tập', 'Practice mode')}
-                <select
-                  value={mode}
-                  disabled={busy}
-                  onChange={(event) => setMode(event.target.value as Mode)}
-                >
-                  <option value="flashcards">{bi('Thẻ ghi nhớ', 'Flashcards')}</option>
-                  <option value="choice">{bi('Chọn nghĩa đúng', 'Multiple choice')}</option>
-                  <option value="type">{bi('Gõ từ tiếng Anh', 'Type the word')}</option>
-                  <option value="spell">{bi('Nghe và viết từ', 'Listen and spell')}</option>
-                </select>
-              </label>
+            <div
+              className="station-line"
+              role="radiogroup"
+              aria-label={bi('Cụm từ vựng', 'Word group')}
+            >
+              {groups.map((group) => {
+                const seen = group.words.filter((word) => visited.has(word.id)).length;
+                const state = seen === group.words.length ? 'done' : seen > 0 ? 'started' : 'fresh';
+                return (
+                  <button
+                    key={group.id}
+                    role="radio"
+                    aria-checked={group.id === selected.id}
+                    aria-label={bi(
+                      `Cụm ${group.number}, ${seen}/${group.words.length} đã đi qua`,
+                      `Group ${group.number}, ${seen}/${group.words.length} visited`,
+                    )}
+                    className={`station ${state}`}
+                    disabled={busy || !ready || !saved}
+                    onClick={() =>
+                      void run(async () => {
+                        await selectStudyGroup(scope, words, group.id);
+                        setFinished(false);
+                      })
+                    }
+                  >
+                    <span className="station-dot" aria-hidden="true" />
+                    <span className="station-name">
+                      {bi('Cụm', 'Group')} {group.number}
+                    </span>
+                    <small>
+                      {seen}/{group.words.length}
+                    </small>
+                  </button>
+                );
+              })}
             </div>
-            <p className="study-summary" role="status">
-              {bi(
-                `Cụm ${selected.number}: ${selected.words.length - remaining.length}/${selected.words.length} từ đã đi qua · Còn ${remaining.length} từ`,
-                `Group ${selected.number}: ${selected.words.length - remaining.length}/${selected.words.length} visited · ${remaining.length} remaining`,
-              )}
-            </p>
-            <details className="study-preview">
-              <summary>
-                {bi(
-                  `Xem ${selected.words.length} từ trong cụm`,
-                  `Preview ${selected.words.length} words`,
+
+            <div className="diptych">
+              <section className="pile todo" aria-labelledby="pile-todo">
+                <h3 id="pile-todo">
+                  {bi('Cần học', 'To learn')} <span>{selectedPiles.todo.length}</span>
+                </h3>
+                {selectedPiles.todo.length ? (
+                  <ul>
+                    {selectedPiles.todo.map((word) => (
+                      <li
+                        key={word.id}
+                        lang="en"
+                        className={visited.has(word.id) ? 'seen' : undefined}
+                      >
+                        {word.word}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="muted">
+                    {bi('Bạn đã nhớ hết cụm này.', 'You remember this whole group.')}
+                  </p>
                 )}
-              </summary>
-              <ol>
-                {selected.words.map((word) => (
-                  <li key={word.id}>
-                    <span lang="en">{word.word}</span>
-                    {visited.has(word.id) && <small>{bi('Đã đi qua', 'Visited')}</small>}
-                  </li>
-                ))}
-              </ol>
-            </details>
-            <div className="actions mt-5">
+              </section>
+              <section className="pile done" aria-labelledby="pile-done">
+                <h3 id="pile-done">
+                  {bi('Đã nhớ', 'Remembered')} <span>{selectedPiles.done.length}</span>
+                </h3>
+                {selectedPiles.done.length ? (
+                  <ul>
+                    {selectedPiles.done.map((word) => (
+                      <li key={word.id} lang="en">
+                        {word.word}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="muted">
+                    {bi(
+                      'Từ chọn “Nhớ được” hoặc “Dễ” sẽ chuyển sang đây.',
+                      'Words you rate Good or Easy move here.',
+                    )}
+                  </p>
+                )}
+              </section>
+            </div>
+
+            <div
+              className="mode-tiles"
+              role="radiogroup"
+              aria-label={bi('Cách luyện tập', 'Practice mode')}
+            >
+              {modes.map(([value, icon, vi, en]) => (
+                <button
+                  key={value}
+                  role="radio"
+                  aria-checked={mode === value}
+                  disabled={busy}
+                  onClick={() => setMode(value)}
+                >
+                  <SkillIcon skill={icon} size={22} />
+                  {bi(vi, en)}
+                </button>
+              ))}
+            </div>
+
+            <div className="study-start">
               <button
                 className="primary"
                 disabled={busy || !ready || !saved || !!readError}
                 onClick={() => start()}
               >
                 {remaining.length
-                  ? `${bi('Bắt đầu luyện tập / Tiếp tục', 'Start practice / Continue')} →`
+                  ? bi(
+                      `Bắt đầu luyện tập · còn ${remaining.length} từ →`,
+                      `Start practice · ${remaining.length} left →`,
+                    )
                   : bi('Ôn lại cụm này →', 'Review this group →')}
               </button>
               {nextGroup && (
@@ -397,12 +508,6 @@ export default function VocabularyPractice({
                 </button>
               )}
             </div>
-            <p className="muted">
-              {bi(
-                'Tiến độ tự lưu sau mỗi lần đánh giá hoặc bỏ qua. Chọn “Ôn lại cụm này” khi muốn học lại cụm đã hoàn tất.',
-                'Progress saves after every rating or skip. Choose “Review this group” to repeat a completed group.',
-              )}
-            </p>
           </>
         ) : (
           <p>
@@ -413,8 +518,8 @@ export default function VocabularyPractice({
           </p>
         )}
       </section>
-      <section className="panel">
-        <h2>{t('upcoming')}</h2>
+      <section className="panel" aria-labelledby="upcoming-title">
+        <h2 id="upcoming-title">{t('upcoming')}</h2>
         <div className="upcoming-grid">
           {Array.from({ length: 7 }, (_, index) => {
             const from = new Date();
@@ -438,12 +543,6 @@ export default function VocabularyPractice({
             );
           })}
         </div>
-        <p className="muted">
-          {bi(
-            'Lịch ôn là gợi ý. Bạn vẫn có thể chọn bất kỳ cụm nào để học.',
-            'The review schedule is a suggestion. You can study any group at any time.',
-          )}
-        </p>
       </section>
     </div>
   );

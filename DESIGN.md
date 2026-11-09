@@ -83,10 +83,18 @@ Elevation is a 1px `--border` and nothing else. Shadows are not combined with bo
 - **Lesson cards.** The level and topic badge is tinted with the page's line. The card button is secondary (outline) so one primary action remains per screen.
 - **Segmented tabs.** A tinted track with the selected tab raised on the panel colour.
 - **Choice grid.** Right and wrong answers are marked by colour and also by ✓/✗ plus a status message.
+- **Vocabulary study** (`src/styles/vocabulary-study.css`, surface roll seed `31f64b64/0`, layout #2 of 7, "diptych" composition). The practice tab shows the current topic as one bar (name, word count, level, Change topic). The topic directory opens only before a topic is chosen or on request.
+  - Each 20-word group is a station on the topic's line. Station states are empty, half-filled or solid; the selected station gets the yellow ring.
+  - Two piles always sit side by side: "To learn" and "Remembered" (reviewed with repetitions > 0).
+  - Four large mode tiles (radio group) and one primary Start button.
+  - The card puts one word large and centred. The answer box is tinted right or wrong.
+  - Four rating buttons pair colour with their word and keys 1–4. Space reveals.
+  - Key hints are hidden on touch screens and below 700px. The totals hide while a card is on screen.
 - **Tutor.** A round chat head in the corner opens a messaging window: header with avatar and status, bubbles on both sides, source chips and a rounded composer.
 
 ## Deliberate exceptions
 
+- `.study-card > h2:focus { outline: none }`: the word heading is focused by code so screen readers announce each new card (`craft-ignore`).
 - `main:focus { outline: none }`: `main` receives focus from code on every route change, for screen readers. It is not a control, and every control keeps the focus ring (`craft-ignore` in `theme.css`).
 - The floating tutor (chat head and window) uses `--shadow-float`, because it really sits above scrolling content.
 - The selected segmented tab has a 1px shadow to lift it out of its track.

@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useApp } from '../../app/store';
 import { vocabulary } from '../../data/content';
 import { topicSectionFor, topicSections, type TopicSectionId } from '../../data/topicSections';
-import type { Word } from '../../data/schema';
+import { levelSchema, type Level, type Word } from '../../data/schema';
 import { useT, useBi, topicVi } from '../../i18n';
 import { PageTitle, Filters, Empty, Notice, useLive, useFiltered } from '../../components/shared';
 import { WordEditor } from '../../components/WordEditor';
@@ -23,6 +23,7 @@ export default function Vocabulary() {
   const { value: customWords, error } = useLive(() => db.words.toArray());
   const custom = customWords ?? [];
   const [practicing, setPracticing] = useState(false);
+  const [picking, setPicking] = useState(false);
   const [section, setSection] = useState<TopicSectionId>(
     topic === 'all' ? 'everyday' : topicSectionFor(topic),
   );
@@ -95,16 +96,110 @@ export default function Vocabulary() {
   const accuracy = total
     ? Math.round((reviews.reduce((n, r) => n + r.correct, 0) / total) * 100)
     : 0;
+  const topicDirectory = (
+    <section
+      className="vocabulary-topics panel"
+      aria-label={bi('Chọn chủ đề từ vựng', 'Choose a vocabulary topic')}
+    >
+      <div className="vocabulary-topic-heading">
+        <h2>{bi('Chọn chủ đề', 'Choose a topic')}</h2>
+        <button
+          className="topic-all"
+          aria-pressed={topic === 'all'}
+          onClick={() => {
+            filter(level, 'all');
+            setPicking(false);
+          }}
+        >
+          {t('allTopics')} · {all.filter((word) => level === 'all' || word.level === level).length}
+        </button>
+      </div>
+      <div className="topic-toolbar">
+        <nav className="topic-sections" aria-label={bi('Nhóm chủ đề', 'Topic groups')}>
+          {topicSections.map((entry) => (
+            <button
+              key={entry.id}
+              aria-pressed={section === entry.id && !topicSearch}
+              onClick={() => {
+                setSection(entry.id);
+                setTopicSearch('');
+                filter(level, 'all');
+              }}
+            >
+              {bi(entry.vi, entry.en)}
+            </button>
+          ))}
+          {customTopics.length > 0 && (
+            <button
+              aria-pressed={section === 'custom' && !topicSearch}
+              onClick={() => {
+                setSection('custom');
+                setTopicSearch('');
+                filter(level, 'all');
+              }}
+            >
+              {bi('Tự thêm', 'Custom')}
+            </button>
+          )}
+        </nav>
+        <label className="topic-search">
+          {bi('Tìm chủ đề', 'Find a topic')}
+          <input
+            type="search"
+            value={topicSearch}
+            onChange={(event) => setTopicSearch(event.target.value)}
+            placeholder={bi('Ví dụ: marketing', 'e.g. marketing')}
+          />
+        </label>
+      </div>
+      {section === 'exam' && !topicSearch && (
+        <p className="topic-guidance muted">
+          {bi(
+            'Từ C1–C2 để luyện đọc, viết và lập luận học thuật. Nhãn cấp độ mang tính gợi ý.',
+            'C1–C2 words for academic reading, writing and argument. Levels are editorial guidance.',
+          )}
+        </p>
+      )}
+      <div className="topic-grid">
+        {activeTopics.map((group) => {
+          const count = group.words.filter(
+            (word) => level === 'all' || word.level === level,
+          ).length;
+          return (
+            <button
+              key={group.topic}
+              className="topic-tile"
+              aria-pressed={topic === group.topic}
+              disabled={count === 0}
+              onClick={() => {
+                filter(level, group.topic);
+                setPicking(false);
+              }}
+            >
+              <span>{topicLabel(group.topic)}</span>
+              <small>
+                {count} {t('words')}
+              </small>
+            </button>
+          );
+        })}
+      </div>
+      {activeTopics.length === 0 && (
+        <p className="muted">{bi('Không tìm thấy chủ đề phù hợp.', 'No matching topics.')}</p>
+      )}
+    </section>
+  );
   return (
     <>
       <PageTitle title={t('vocabulary')}>
         {tab !== 'relations' && (
           <button className="primary" onClick={() => setEditing({})}>
-            ＋ {t('add')}
+            {t('add')}
           </button>
         )}
       </PageTitle>
-      {tab !== 'relations' && (
+      {/* While a card is on screen, the totals step aside so the word has the page. */}
+      {tab !== 'relations' && !(tab === 'practice' && practicing) && (
         <div className="stats">
           {[
             [t('new'), all.length - reviews.filter((r) => all.some((w) => w.id === r.id)).length],
@@ -136,106 +231,43 @@ export default function Vocabulary() {
           {bi('Đồng nghĩa & trái nghĩa', 'Synonyms & antonyms')}
         </button>
       </div>
-      {tab !== 'relations' && (!practicing || tab !== 'practice') && (
+      {tab === 'practice' && !practicing && (
+        <>
+          <section className="panel topic-bar" aria-label={bi('Chủ đề đang học', 'Current topic')}>
+            <div className="topic-bar-name">
+              <h2>{topic === 'all' ? t('allTopics') : topicLabel(topic)}</h2>
+              <small>
+                {filtered.length} {t('words')}
+              </small>
+            </div>
+            <label className="topic-bar-level">
+              {t('level')}
+              <select
+                value={level}
+                onChange={(event) => filter(event.target.value as Level | 'all', topic)}
+              >
+                <option value="all">{t('allLevels')}</option>
+                {levelSchema.options.map((value) => (
+                  <option key={value}>{value}</option>
+                ))}
+              </select>
+            </label>
+            {topic !== 'all' && (
+              <button aria-expanded={picking} onClick={() => setPicking((open) => !open)}>
+                {picking ? bi('Đóng danh sách', 'Close list') : bi('Đổi chủ đề', 'Change topic')}
+              </button>
+            )}
+          </section>
+          {(topic === 'all' || picking) && topicDirectory}
+        </>
+      )}
+      {(tab === 'library' || tab === 'translation') && (
         <>
           <Filters
             availableTopics={topicGroups.map((group) => group.topic)}
             topicOptionGroups={topicOptionGroups}
           />
-          <section
-            className="vocabulary-topics panel"
-            aria-label={bi('Chọn chủ đề từ vựng', 'Choose a vocabulary topic')}
-          >
-            <div className="vocabulary-topic-heading">
-              <div>
-                <h2>{bi('Chọn chủ đề', 'Choose a topic')}</h2>
-                <p className="muted">
-                  {bi(
-                    'Lọc theo nhóm hoặc tìm nhanh tên chủ đề.',
-                    'Browse a group or search by topic name.',
-                  )}
-                </p>
-              </div>
-              <button
-                className="topic-all"
-                aria-pressed={topic === 'all'}
-                onClick={() => filter(level, 'all')}
-              >
-                {t('allTopics')} ·{' '}
-                {all.filter((word) => level === 'all' || word.level === level).length}
-              </button>
-            </div>
-            <div className="topic-toolbar">
-              <nav className="topic-sections" aria-label={bi('Nhóm chủ đề', 'Topic groups')}>
-                {topicSections.map((entry) => (
-                  <button
-                    key={entry.id}
-                    aria-pressed={section === entry.id && !topicSearch}
-                    onClick={() => {
-                      setSection(entry.id);
-                      setTopicSearch('');
-                      filter(level, 'all');
-                    }}
-                  >
-                    {bi(entry.vi, entry.en)}
-                  </button>
-                ))}
-                {customTopics.length > 0 && (
-                  <button
-                    aria-pressed={section === 'custom' && !topicSearch}
-                    onClick={() => {
-                      setSection('custom');
-                      setTopicSearch('');
-                      filter(level, 'all');
-                    }}
-                  >
-                    {bi('Tự thêm', 'Custom')}
-                  </button>
-                )}
-              </nav>
-              <label className="topic-search">
-                {bi('Tìm chủ đề', 'Find a topic')}
-                <input
-                  type="search"
-                  value={topicSearch}
-                  onChange={(event) => setTopicSearch(event.target.value)}
-                  placeholder={bi('Ví dụ: marketing', 'e.g. marketing')}
-                />
-              </label>
-            </div>
-            {section === 'exam' && !topicSearch && (
-              <p className="topic-guidance muted">
-                {bi(
-                  'Từ C1–C2 để luyện đọc, viết và lập luận học thuật. Nhãn cấp độ mang tính gợi ý.',
-                  'C1–C2 words for academic reading, writing and argument. Levels are editorial guidance.',
-                )}
-              </p>
-            )}
-            <div className="topic-grid">
-              {activeTopics.map((group) => {
-                const count = group.words.filter(
-                  (word) => level === 'all' || word.level === level,
-                ).length;
-                return (
-                  <button
-                    key={group.topic}
-                    className="topic-tile"
-                    aria-pressed={topic === group.topic}
-                    disabled={count === 0}
-                    onClick={() => filter(level, group.topic)}
-                  >
-                    <span>{topicLabel(group.topic)}</span>
-                    <small>
-                      {count} {t('words')}
-                    </small>
-                  </button>
-                );
-              })}
-            </div>
-            {activeTopics.length === 0 && (
-              <p className="muted">{bi('Không tìm thấy chủ đề phù hợp.', 'No matching topics.')}</p>
-            )}
-          </section>
+          {topicDirectory}
         </>
       )}
       {error && <Notice error>{error}</Notice>}
