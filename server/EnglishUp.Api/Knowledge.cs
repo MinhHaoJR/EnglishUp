@@ -78,8 +78,10 @@ public static class Knowledge
     private record ContentListening(string Id, string Title, string Level, string Topic, Line[] Lines);
     private record ContentWriting(string Id, string Title, string Level, string Topic, string Genre, string Prompt,
         int MinWords, int MaxWords, string[] Checklist);
+    private record ContentPattern(string Id, string Formula, string Meaning, string Example, string Key,
+        string[] Options, string Translation);
 
-    /// <summary>One chunk per word, reading, listening script and writing task; each stays well under 300 words.</summary>
+    /// <summary>One chunk per word, reading, listening script, writing task and sentence pattern; each stays well under 300 words.</summary>
     public static List<ChunkSource> BuildChunks(string folder)
     {
         var options = new JsonSerializerOptions(JsonSerializerDefaults.Web);
@@ -99,8 +101,14 @@ public static class Knowledge
             .Select(w => new ChunkSource("writing", w.Id, w.Title,
                 $"Writing task: {w.Genre}, {w.Level}, {w.Topic}, {w.MinWords}-{w.MaxWords} words.\n{w.Prompt}\n" +
                 $"Checklist: {string.Join(" ", w.Checklist)}"));
+        // The quiz's wrong forms are named as such, so questions like "enjoy + to-V?" find the pattern.
+        var patterns = Read<ContentPattern>("structures.json")
+            .Select(p => new ChunkSource("grammar", p.Id, p.Formula,
+                $"Sentence pattern: {p.Formula}\nVietnamese meaning: {p.Meaning}\n" +
+                $"Example: {p.Example} (the pattern in use: \"{p.Key}\")\nVietnamese translation: {p.Translation}\n" +
+                $"Wrong forms learners often use: {string.Join("; ", p.Options)}"));
         // Lessons first: with 1,000 free embeddings a day, a first ingest spans several days.
-        return [.. readings, .. listenings, .. writing, .. words];
+        return [.. readings, .. listenings, .. writing, .. patterns, .. words];
     }
 
     /// <summary>

@@ -64,6 +64,7 @@ public class KnowledgeTests(ApiFactory factory) : IClassFixture<ApiFactory>
         Assert.Equal(6, counts["reading"]);
         Assert.Equal(6, counts["listening"]);
         Assert.Equal(10, counts["writing"]);
+        Assert.Equal(100, counts["grammar"]);
         Assert.Equal(chunks.Count, chunks.Select(c => (c.SourceType, c.SourceId)).Distinct().Count());
         Assert.All(chunks, c => Assert.True(c.Title.Length <= 200 && c.Text.Length <= 4000, c.SourceId));
         var routine = chunks.Single(c => c is { SourceType: "word", Title: "routine" });
@@ -148,6 +149,11 @@ public class KnowledgeTests(ApiFactory factory) : IClassFixture<ApiFactory>
         var plans = await client.GetFromJsonAsync<List<SearchHit>>(
             "/api/knowledge/search?q=" + Uri.EscapeDataString("Mai Ben Saturday birthday gift bookshop"));
         Assert.Equal(("listening", "l1"), (plans![0].SourceType, plans[0].SourceId));
+
+        var pattern = await client.GetFromJsonAsync<List<SearchHit>>(
+            "/api/knowledge/search?q=" + Uri.EscapeDataString("enjoy painting or enjoy to paint"));
+        // The fake embedder only counts shared words, so assert the pattern reaches the tutor's five sources.
+        Assert.Contains(pattern!, h => (h.SourceType, h.SourceId) == ("grammar", "s026"));
         Assert.Equal(5, plans.Count);
     }
 

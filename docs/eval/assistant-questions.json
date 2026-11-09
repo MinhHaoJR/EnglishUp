@@ -1,19 +1,39 @@
 [
-  { "id": "q01", "question": "What does \"routine\" mean?", "expected": ["word/v-1-1"] },
-  { "id": "q02", "question": "Từ \"appointment\" nghĩa là gì?", "expected": ["word/v-1-7"] },
+  {
+    "id": "q01",
+    "question": "What does \"routine\" mean?",
+    "expected": ["word/v-1-1"]
+  },
+  {
+    "id": "q02",
+    "question": "Từ \"appointment\" nghĩa là gì?",
+    "expected": ["word/v-1-7"]
+  },
   {
     "id": "q03",
     "question": "\"borrow\" và \"lend\" khác nhau thế nào?",
     "expected": ["word/v-1-12", "word/v-1-13"]
   },
-  { "id": "q04", "question": "Từ tiếng Anh nào có nghĩa là hạn chót?", "expected": ["word/v-3-2"] },
-  { "id": "q05", "question": "Mật khẩu tiếng Anh là gì?", "expected": ["word/v-6-3"] },
+  {
+    "id": "q04",
+    "question": "Từ tiếng Anh nào có nghĩa là hạn chót?",
+    "expected": ["word/v-3-2"]
+  },
+  {
+    "id": "q05",
+    "question": "Mật khẩu tiếng Anh là gì?",
+    "expected": ["word/v-6-3"]
+  },
   {
     "id": "q06",
     "question": "Give me an example sentence with \"reliable\".",
     "expected": ["word/v-6-11"]
   },
-  { "id": "q07", "question": "\"source code\" là gì?", "expected": ["word/v-it-source-code"] },
+  {
+    "id": "q07",
+    "question": "\"source code\" là gì?",
+    "expected": ["word/v-it-source-code"]
+  },
   {
     "id": "q08",
     "question": "How do you say \"cơ sở dữ liệu\" in English?",
@@ -29,7 +49,11 @@
     "question": "What is the word for the instructions you follow to cook a dish?",
     "expected": ["word/v-4-2"]
   },
-  { "id": "q11", "question": "Cho tôi ví dụ câu có từ \"neighbor\".", "expected": ["word/v-1-2"] },
+  {
+    "id": "q11",
+    "question": "Cho tôi ví dụ câu có từ \"neighbor\".",
+    "expected": ["word/v-1-2"]
+  },
   {
     "id": "q12",
     "question": "Is \"advice\" a noun or a verb?",
@@ -42,8 +66,8 @@
   },
   {
     "id": "q14",
-    "question": "What does \"schedule\" mean in Vietnamese?",
-    "expected": ["word/v-3-4"]
+    "question": "Viết giúp tôi một đoạn code Python để sắp xếp một danh sách.",
+    "expected": []
   },
   {
     "id": "q15",
@@ -115,6 +139,14 @@
     "question": "Đề viết về giảm rác thải trong khu phố yêu cầu những gì?",
     "expected": ["writing/w8"]
   },
-  { "id": "q29", "question": "What is the capital of Australia?", "expected": [] },
-  { "id": "q30", "question": "Giải thích cách dùng thì hiện tại hoàn thành.", "expected": [] }
+  {
+    "id": "q29",
+    "question": "What is the capital of Australia?",
+    "expected": []
+  },
+  {
+    "id": "q30",
+    "question": "Giải thích cách dùng thì hiện tại hoàn thành.",
+    "expected": ["grammar/s077", "grammar/s078", "grammar/s081", "grammar/s082", "grammar/s084"]
+  }
 ]

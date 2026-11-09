@@ -151,7 +151,7 @@ Index (`UserId`, `StartedAt`). Kỷ lục cá nhân = `MAX(Score)`; số ván đ
 
 ### 3.8 Trợ giảng RAG — Đã có
 
-`KnowledgeChunks` chứa nội dung học của chính ứng dụng, mỗi mục một đoạn: 2.080 từ vựng, 6 bài đọc, 6 bài nghe, 10 đề viết. Lệnh `dotnet run --project EnglishUp.Api -- ingest` tạo embedding cho các đoạn mới hoặc đã đổi và xoá đoạn không còn trong nội dung.
+`KnowledgeChunks` chứa nội dung học của chính ứng dụng, mỗi mục một đoạn: 2.080 từ vựng, 6 bài đọc, 6 bài nghe, 10 đề viết và 100 cấu trúc câu (`grammar`). Lệnh `dotnet run --project EnglishUp.Api -- ingest` tạo embedding cho các đoạn mới hoặc đã đổi và xoá đoạn không còn trong nội dung.
 
 | Cột              | Kiểu          | Ràng buộc | Ghi chú                                                         |
 | ---------------- | ------------- | --------- | --------------------------------------------------------------- |

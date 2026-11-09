@@ -56,6 +56,10 @@ export async function deleteConversation(id: string) {
 
 /** Where a cited source can be practised in the app. */
 export const sourcePath = (sourceType: string) =>
-  ({ word: '/vocabulary', reading: '/reading', listening: '/listening', writing: '/writing' })[
-    sourceType
-  ] ?? '/';
+  ({
+    word: '/vocabulary',
+    reading: '/reading',
+    listening: '/listening',
+    writing: '/writing',
+    grammar: '/grammar',
+  })[sourceType] ?? '/';

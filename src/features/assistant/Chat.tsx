@@ -16,6 +16,7 @@ const sourceLabel = {
   reading: ['Bài đọc', 'Reading'],
   listening: ['Bài nghe', 'Listening'],
   writing: ['Đề viết', 'Writing task'],
+  grammar: ['Cấu trúc câu', 'Sentence pattern'],
 } as Record<string, [string, string]>;
 
 const suggestions: [string, string][] = [
