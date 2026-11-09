@@ -90,6 +90,13 @@ Elevation is a 1px `--border` and nothing else. Shadows are not combined with bo
   - The card puts one word large and centred. The answer box is tinted right or wrong.
   - Four rating buttons pair colour with their word and keys 1–4. Space reveals.
   - Key hints are hidden on touch screens and below 700px. The totals hide while a card is on screen.
+- **Lesson pages** for reading, listening, speaking and writing (surface roll seed `a9c0e33c/0`: layout #4 of 7, one question at a time, "marginalia" composition).
+  - `.split` puts the material in a primary column (text capped at 68ch) beside a 300–380px rail that stays in view while you scroll.
+  - The rail stacks under the material below 960px.
+  - Questions come one at a time. Numbered stations are blue when answered and green or red once checked; the current one has the yellow ring.
+  - Answer choices are 48px rows.
+  - Lesson lists on these four pages are directory rows: level chip, title, one-line excerpt and facts, with the action on the right.
+- **Icons.** Play, stop, download and upload are drawn in the shared icon set; no glyph icons remain on learning screens.
 - **Tutor.** A round chat head in the corner opens a messaging window: header with avatar and status, bubbles on both sides, source chips and a rounded composer.
 
 ## Deliberate exceptions

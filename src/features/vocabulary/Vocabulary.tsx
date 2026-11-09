@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useApp } from '../../app/store';
+import SkillIcon from '../../components/SkillIcon';
 import { vocabulary } from '../../data/content';
 import { topicSectionFor, topicSections, type TopicSectionId } from '../../data/topicSections';
 import { levelSchema, type Level, type Word } from '../../data/schema';
@@ -289,10 +290,12 @@ export default function Vocabulary() {
                   download('englishup-words.csv', exportCSV(filtered), 'text/csv;charset=utf-8')
                 }
               >
-                ↓ {bi('Xuất CSV', 'Export CSV')}
+                <SkillIcon skill="download" size={18} />
+                {bi('Xuất CSV', 'Export CSV')}
               </button>
               <label className="button">
-                ↑ {bi('Nhập CSV', 'Import CSV')}
+                <SkillIcon skill="upload" size={18} />
+                {bi('Nhập CSV', 'Import CSV')}
                 <input
                   className="sr-only"
                   type="file"

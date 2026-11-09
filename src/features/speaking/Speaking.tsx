@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { speakingPrompts } from '../../data/content';
 import type { SpeakingPrompt } from '../../data/schema';
 import { useApp } from '../../app/store';
+import SkillIcon from '../../components/SkillIcon';
 import { useT, useBi } from '../../i18n';
 import { Filters, PageTitle, Notice, Empty, useFiltered, useTimer } from '../../components/shared';
 import { SpeakButton } from '../../components/SpeakButton';
@@ -137,7 +138,8 @@ function SpeakingSession({
             </strong>
             {rec.recording ? (
               <button className="primary" onClick={rec.stop}>
-                ■ {t('stop')}
+                <SkillIcon skill="stop" size={16} />
+                {t('stop')}
               </button>
             ) : (
               <button

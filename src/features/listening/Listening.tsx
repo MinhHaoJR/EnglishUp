@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { listenings, dictations } from '../../data/content';
 import type { ListeningLesson } from '../../data/schema';
 import { useApp } from '../../app/store';
+import SkillIcon from '../../components/SkillIcon';
 import { useT, useBi } from '../../i18n';
 import { Filters, PageTitle, Notice, Empty, useFiltered, useTimer } from '../../components/shared';
 import { Questions, isCorrect } from '../../components/Questions';
@@ -46,21 +47,15 @@ function AudioPlayer({
     );
   return (
     <section className="audio-player">
-      <div className="audio-art" aria-hidden="true">
-        <span>▂</span>
-        <span>▅</span>
-        <span>▇</span>
-        <span>▃</span>
-        <span>▆</span>
-        <span>█</span>
-        <span>▅</span>
-        <span>▂</span>
-      </div>
       <div className="actions">
         <button className="primary" onClick={() => play(sentences)}>
-          ▶ {t('listen')}
+          <SkillIcon skill="play" size={18} />
+          {t('listen')}
         </button>
-        <button onClick={stopSpeech}>■ {t('stop')}</button>
+        <button onClick={stopSpeech}>
+          <SkillIcon skill="stop" size={16} />
+          {t('stop')}
+        </button>
         <label>
           {bi('Tốc độ bài nghe', 'Playback speed')}
           <select value={speed} onChange={(e) => setSpeed(Number(e.target.value))}>

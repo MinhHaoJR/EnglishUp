@@ -161,6 +161,7 @@ test('Vietnamese topics and accent-free search include custom imported topics', 
 test('reading completes all question types, shows evidence and logs score', async () => {
   show(<Reading />);
   fireEvent.click(screen.getAllByRole('button', { name: /Start practice/ })[0]);
+  // Questions come one at a time; the pager moves on with "Next question".
   for (const q of readings[0].questions) {
     if (q.type === 'short')
       fireEvent.change(screen.getByRole('textbox'), { target: { value: q.answers[0] } });
@@ -172,6 +173,8 @@ test('reading completes all question types, shows evidence and logs score', asyn
           }),
         ).getByRole('radio', { name: q.answers[0] }),
       );
+    const next = screen.getByRole('button', { name: /Next question/ });
+    if (!next.hasAttribute('disabled')) fireEvent.click(next);
   }
   fireEvent.click(screen.getByRole('button', { name: 'Check answer' }));
   await verifyAttempt('reading');
@@ -187,11 +190,12 @@ test('listening gates transcript until answers are submitted', async () => {
   show(<Listening />);
   fireEvent.click(screen.getAllByRole('button', { name: /Start practice/ })[0]);
   expect(screen.getByText('The transcript unlocks after you answer.')).toBeInTheDocument();
-  const boxes = screen.getAllByRole('textbox');
-  let i = 0;
   for (const q of listenings[0].questions) {
-    if (q.type === 'blank') fireEvent.change(boxes[i++], { target: { value: q.answers[0] } });
+    if (q.type === 'blank')
+      fireEvent.change(screen.getByRole('textbox'), { target: { value: q.answers[0] } });
     else fireEvent.click(screen.getByRole('radio', { name: q.answers[0] }));
+    const next = screen.getByRole('button', { name: /Next question/ });
+    if (!next.hasAttribute('disabled')) fireEvent.click(next);
   }
   fireEvent.click(screen.getByRole('button', { name: 'Check answer' }));
   await verifyAttempt('listening');
@@ -341,6 +345,8 @@ test('the last filtered reading returns to lessons without starting an unrelated
     if (q.type === 'short' || q.type === 'blank')
       fireEvent.change(within(group).getByRole('textbox'), { target: { value: q.answers[0] } });
     else fireEvent.click(within(group).getByRole('radio', { name: q.answers[0] }));
+    const next = screen.getByRole('button', { name: /Câu tiếp/ });
+    if (!next.hasAttribute('disabled')) fireEvent.click(next);
   }
   fireEvent.click(screen.getByRole('button', { name: 'Kiểm tra' }));
   fireEvent.click(await screen.findByRole('button', { name: 'Về danh sách bài học →' }));
