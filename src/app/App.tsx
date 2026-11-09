@@ -26,6 +26,7 @@ const Game = lazy(() => import('../features/game/Game'));
 const Assistant = lazy(() => import('../features/assistant/Assistant'));
 const Grammar = lazy(() => import('../features/grammar/Grammar'));
 import ChatWidget from '../features/assistant/ChatWidget';
+import { OfflineSign } from '../components/OfflineSign';
 import { restoreSession, useAuth } from '../services/auth';
 import { startAutoSync, syncNow, useSync } from '../services/sync';
 export const APP_NAME = 'EnglishUp';
@@ -110,6 +111,7 @@ export function Layout() {
       </aside>
       <div className="workspace" data-skill={pathname.split('/')[1] || 'dashboard'}>
         <div className="topbar">
+          <OfflineSign />
           <Link
             className="avatar"
             to="/account"

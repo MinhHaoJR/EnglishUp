@@ -128,8 +128,11 @@ export function startAutoSync(delay = 1500) {
     timer = setTimeout(() => void syncNow(), delay);
   };
   db.attempts.hook('creating', onCreate);
+  // Practice done offline is already in Dexie; send it as soon as the connection is back.
+  window.addEventListener('online', onCreate);
   return () => {
     clearTimeout(timer);
     db.attempts.hook('creating').unsubscribe(onCreate);
+    window.removeEventListener('online', onCreate);
   };
 }

@@ -69,7 +69,7 @@ All settings, reviews, attempts, custom vocabulary, drafts and submissions live 
 
 Microphone recording requires HTTPS or localhost and explicit browser permission. SpeechRecognition support varies, is mainly available in Chrome/Edge, and may send audio to a browser vendor service that needs internet. Read the speaking notice before enabling transcription. Without recognition, use recording and self-assessment. TTS voices depend on the OS/browser; some voices need connectivity. No audio or transcription is sent by EnglishUp to an application server.
 
-Static assets must load before local practice can run. This MVP is not an installable PWA and does not guarantee cold-start offline navigation. Keep the app open for network-free rule-based exercises. IndexedDB is required; blocked storage displays an error rather than pretending to save.
+EnglishUp is an installable PWA (`vite-plugin-pwa`). The production build precaches the app, fonts, icons and bundled lessons (about 2.5 MB) on the first visit, so after that the app opens and practice works with no network; install it from the browser's Install / Add to Home screen option. Account sync, points, the 60-second race, the leaderboard, the AI tutor and browser speech recognition still need a connection; an "Offline" sign shows when it is missing, and practice saved meanwhile syncs when the connection returns. The service worker never caches `/api`. It runs only in production builds (`npm run build` then `npm run preview`), not in `npm run dev`. IndexedDB is required; blocked storage displays an error rather than pretending to save.
 
 ## What is included
 

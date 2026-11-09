@@ -151,6 +151,20 @@ describe('auto sync', () => {
     expect(await db.attempts.count()).toBe(3);
   });
 
+  it('syncs when the connection comes back', async () => {
+    useAuth.setState({ email: 'learner@example.test' });
+    fetchMock.mockImplementation((path: string) =>
+      Promise.resolve(
+        path === '/api/sync'
+          ? json({ attempts: [], records: [] })
+          : json({ total: 1, today: 1, dailyCap: 300 }),
+      ),
+    );
+    stop = startAutoSync(10);
+    window.dispatchEvent(new Event('online'));
+    await vi.waitFor(() => expect(syncCalls()).toBe(1));
+  });
+
   it('stays offline-only when signed out', async () => {
     stop = startAutoSync(10);
     await logAttempt('vocabulary', 100, Date.now(), 'word');
