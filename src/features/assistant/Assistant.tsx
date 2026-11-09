@@ -7,7 +7,7 @@ import {
   fetchConversations,
   type ConversationSummary,
 } from '../../services/assistant';
-import { ChatPanel, SignInNotice, useChat } from './Chat';
+import { ChatPanel, ChatWindow, SignInNotice, TutorAvatar, useChat } from './Chat';
 
 /** Full tutor page: the same chat as the mini chat, plus the list of saved conversations. */
 export default function Assistant() {
@@ -65,6 +65,7 @@ export default function Assistant() {
             <ul className="chat-list">
               {conversations.map((c) => (
                 <li key={c.id}>
+                  <TutorAvatar size={32} />
                   <button
                     aria-current={c.id === chat.current || undefined}
                     onClick={() => void chat.open(c.id)}
@@ -84,11 +85,10 @@ export default function Assistant() {
             <p className="muted">{bi('Chưa có cuộc trò chuyện nào.', 'No conversations yet.')}</p>
           )}
         </section>
-        <section className="panel" aria-labelledby="chat-current">
-          <h2 id="chat-current">
-            {chat.current ? bi('Trò chuyện', 'Chat') : bi('Câu hỏi mới', 'New question')}
-          </h2>
-          <ChatPanel chat={chat} />
+        <section className="chat-page-window" aria-label={bi('Trò chuyện', 'Chat')}>
+          <ChatWindow busy={chat.busy}>
+            <ChatPanel chat={chat} />
+          </ChatWindow>
         </section>
       </div>
     </>

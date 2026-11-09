@@ -18,6 +18,12 @@ const sourceLabel = {
   writing: ['Đề viết', 'Writing task'],
 } as Record<string, [string, string]>;
 
+const suggestions: [string, string][] = [
+  ['"routine" và "habit" khác nhau thế nào?', 'How are "routine" and "habit" different?'],
+  ['Mai muốn mua quà sinh nhật cho ai?', 'Who is Mai buying a birthday gift for?'],
+  ['Làm sao viết email mời bạn đi chơi?', 'How do I write an email inviting a friend out?'],
+];
+
 /** One conversation with the tutor; shared by the full page and the floating mini chat. */
 export function useChat(onAsked?: () => void) {
   const email = useAuth((state) => state.email);
@@ -53,12 +59,11 @@ export function useChat(onAsked?: () => void) {
     }
   }
 
-  async function send(event: React.FormEvent) {
-    event.preventDefault();
-    const text = question.trim();
+  async function submit(text = question.trim()) {
     if (!text || busy) return;
     setBusy(true);
     setError(null);
+    setQuestion(text);
     const now = new Date().toISOString();
     setMessages((list) => [
       ...list,
@@ -91,11 +96,95 @@ export function useChat(onAsked?: () => void) {
     busy,
     error,
     left,
-    send,
+    submit,
     open,
     startNew,
     fail,
   };
+}
+
+/** The tutor's face: an original drawing, not a photo of anyone. */
+export function TutorAvatar({ size = 28 }: { size?: number }) {
+  return (
+    <svg className="tutor-avatar" width={size} height={size} viewBox="0 0 32 32" aria-hidden="true">
+      <circle cx="16" cy="16" r="16" className="tutor-avatar-bg" />
+      <circle cx="11.5" cy="14" r="2" className="tutor-avatar-ink" />
+      <circle cx="20.5" cy="14" r="2" className="tutor-avatar-ink" />
+      <path d="M10.5 19.5c3 3.2 8 3.2 11 0" className="tutor-avatar-line" />
+      <path d="M23 6.5l1-2.5 1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1z" className="tutor-avatar-ink" />
+    </svg>
+  );
+}
+
+const icons = {
+  send: 'M4 12l16-8-6 16-2.5-6.5z M11.5 13.5L20 4',
+  compose: 'M4 20h4L19 9l-4-4L4 16z M14 6l4 4',
+  expand: 'M14 4h6v6 M20 4l-7 7 M10 20H4v-6 M4 20l7-7',
+  minimize: 'M5 12h14',
+  close: 'M6 6l12 12 M18 6L6 18',
+} as const;
+
+export function IconButton({
+  icon,
+  label,
+  onClick,
+  ...rest
+}: { icon: keyof typeof icons; label: string } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
+  return (
+    <button
+      type="button"
+      className="icon-button"
+      aria-label={label}
+      title={label}
+      onClick={onClick}
+      {...rest}
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d={icons[icon]} />
+      </svg>
+    </button>
+  );
+}
+
+/** Messenger-style frame: avatar, name and status on top, the conversation below. */
+export function ChatWindow({
+  busy = false,
+  actions,
+  children,
+}: {
+  busy?: boolean;
+  actions?: React.ReactNode;
+  children: React.ReactNode;
+}) {
+  const bi = useBi();
+  return (
+    <div className="chat-window">
+      <header className="chat-header">
+        <TutorAvatar size={36} />
+        <div className="chat-header-text">
+          <strong>{bi('Trợ giảng AI', 'AI tutor')}</strong>
+          <small>
+            <span className={busy ? 'chat-presence busy' : 'chat-presence'} aria-hidden="true" />
+            {busy
+              ? bi('Đang soạn câu trả lời…', 'Typing an answer…')
+              : bi('Luôn sẵn sàng', 'Always here')}
+          </small>
+        </div>
+        <div className="chat-header-actions">{actions}</div>
+      </header>
+      {children}
+    </div>
+  );
 }
 
 export function SignInNotice() {
@@ -111,21 +200,41 @@ export function SignInNotice() {
   );
 }
 
-/** Message log, question box, errors and the privacy note. */
+/** Answers come as paragraphs; each becomes its own bubble, like a run of chat messages. */
+const bubbles = (text: string) =>
+  text
+    .split(/\n\s*\n/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+/** Scrolling conversation, typing indicator, errors and the message box. */
 export function ChatPanel({
   chat,
-  inputRef,
+  autoFocus = false,
 }: {
   chat: ReturnType<typeof useChat>;
-  inputRef?: React.Ref<HTMLTextAreaElement>;
+  autoFocus?: boolean;
 }) {
   const bi = useBi();
-  const log = useRef<HTMLOListElement>(null);
+  const scroller = useRef<HTMLDivElement>(null);
+  const input = useRef<HTMLTextAreaElement>(null);
   const { messages, busy, error, left, question } = chat;
 
   useEffect(() => {
-    log.current?.scrollTo?.({ top: log.current.scrollHeight });
-  }, [messages.length, busy]);
+    if (autoFocus) input.current?.focus();
+  }, [autoFocus]);
+
+  useEffect(() => {
+    scroller.current?.scrollTo?.({ top: scroller.current.scrollHeight });
+  }, [messages.length, busy, error]);
+
+  // Grow the box with its text, back to one line once sent.
+  useEffect(() => {
+    const box = input.current;
+    if (!box) return;
+    box.style.height = 'auto';
+    if (question) box.style.height = `${box.scrollHeight}px`;
+  }, [question]);
 
   const errorText =
     error === 429
@@ -145,69 +254,118 @@ export function ChatPanel({
 
   return (
     <>
-      <ol className="chat-log" aria-live="polite" ref={log}>
-        {messages.map((m, i) => (
-          <li key={i} className={`chat-message ${m.role}`}>
-            <strong>{m.role === 'user' ? bi('Bạn', 'You') : bi('Trợ giảng', 'Tutor')}</strong>
-            <p>{m.content}</p>
-            {m.citations.length > 0 && (
-              <ul className="citations" aria-label={bi('Nguồn', 'Sources')}>
-                {m.citations.map((c) => (
-                  <li key={c.n}>
-                    [{c.n}]{' '}
-                    <Link to={sourcePath(c.sourceType)}>
-                      {bi(...(sourceLabel[c.sourceType] ?? ['Bài học', 'Lesson']))}: {c.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+      <div className="chat-scroll" ref={scroller}>
+        <div className="chat-intro">
+          <TutorAvatar size={56} />
+          <strong>{bi('Trợ giảng AI', 'AI tutor')}</strong>
+          <p>
+            {bi(
+              'Hỏi mình về từ vựng, bài đọc, bài nghe và đề viết trong EnglishUp. Mình chỉ trả lời từ bài học của app và ghi rõ nguồn.',
+              "Ask me about EnglishUp's vocabulary, readings, listening scripts and writing tasks. I answer only from the app's lessons and cite them.",
             )}
-          </li>
-        ))}
-        {busy && (
-          <li className="chat-message assistant muted">
-            {bi('Đang tìm trong bài học…', 'Searching the lessons…')}
-          </li>
-        )}
-      </ol>
-      <form onSubmit={(e) => void chat.send(e)} className="chat-form">
-        <label>
-          {bi('Câu hỏi của bạn', 'Your question')}
-          <textarea
-            ref={inputRef}
-            value={question}
-            maxLength={MAX_QUESTION_LENGTH}
-            rows={3}
-            onChange={(e) => chat.setQuestion(e.target.value)}
-            onKeyDown={(e) => {
-              // Enter sends, Shift+Enter starts a new line, as in most chat apps.
-              if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
-                e.preventDefault();
-                e.currentTarget.form?.requestSubmit();
-              }
-            }}
-            placeholder={bi(
-              'Ví dụ: "routine" và "habit" khác nhau thế nào?',
-              'For example: how are "routine" and "habit" different?',
+          </p>
+          <p className="chat-privacy">
+            {bi(
+              'Câu hỏi được gửi tới Google Gemini (gói miễn phí, Google có thể dùng để cải thiện dịch vụ). Đừng nhập thông tin cá nhân.',
+              'Questions are sent to Google Gemini (free tier; Google may use them to improve its services). Do not enter personal information.',
             )}
-          />
-        </label>
-        <div className="actions">
-          <button className="primary" type="submit" disabled={busy || !question.trim()}>
-            {bi('Gửi', 'Send')}
-          </button>
-          {left !== null && (
-            <span className="muted">
-              {bi(`Còn ${left} câu hỏi hôm nay`, `${left} questions left today`)}
-            </span>
+          </p>
+          {messages.length === 0 && !busy && (
+            <div className="chat-suggestions">
+              {suggestions.map(([vi, en]) => (
+                <button key={en} type="button" onClick={() => void chat.submit(bi(vi, en))}>
+                  {bi(vi, en)}
+                </button>
+              ))}
+            </div>
           )}
         </div>
+        <ol className="chat-log" aria-live="polite">
+          {messages.map((m, i) => (
+            <li key={i} className={`chat-row ${m.role}`}>
+              <span className="sr-only">
+                {m.role === 'user' ? bi('Bạn:', 'You:') : bi('Trợ giảng:', 'Tutor:')}
+              </span>
+              {m.role === 'assistant' && <TutorAvatar />}
+              <div className="chat-stack">
+                {bubbles(m.content).map((part, j) => (
+                  <p key={j} className="bubble">
+                    {part}
+                  </p>
+                ))}
+              </div>
+              {/* Wraps onto its own line, so the avatar stays beside the last bubble. */}
+              {m.citations.length > 0 && (
+                <ul className="citations" aria-label={bi('Nguồn', 'Sources')}>
+                  {m.citations.map((c) => (
+                    <li key={c.n}>
+                      <span className="citation-n">{c.n}</span>
+                      <Link to={sourcePath(c.sourceType)}>
+                        {bi(...(sourceLabel[c.sourceType] ?? ['Bài học', 'Lesson']))}: {c.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+          {busy && (
+            <li className="chat-row assistant">
+              <TutorAvatar />
+              <div className="chat-stack">
+                <p className="bubble typing">
+                  <span className="sr-only">
+                    {bi('Đang tìm trong bài học…', 'Searching the lessons…')}
+                  </span>
+                  <i aria-hidden="true" />
+                  <i aria-hidden="true" />
+                  <i aria-hidden="true" />
+                </p>
+              </div>
+            </li>
+          )}
+        </ol>
+        {error !== null && <Notice error>{errorText}</Notice>}
+      </div>
+      <form
+        className="chat-composer"
+        onSubmit={(e) => {
+          e.preventDefault();
+          void chat.submit();
+        }}
+      >
+        <textarea
+          ref={input}
+          aria-label={bi('Câu hỏi của bạn', 'Your question')}
+          value={question}
+          maxLength={MAX_QUESTION_LENGTH}
+          rows={1}
+          onChange={(e) => chat.setQuestion(e.target.value)}
+          onKeyDown={(e) => {
+            // Enter sends, Shift+Enter starts a new line, as in most chat apps.
+            if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
+              e.preventDefault();
+              e.currentTarget.form?.requestSubmit();
+            }
+          }}
+          placeholder={bi('Nhắn cho trợ giảng…', 'Message the tutor…')}
+        />
+        <IconButton
+          icon="send"
+          label={bi('Gửi', 'Send')}
+          type="submit"
+          disabled={busy || !question.trim()}
+        />
       </form>
-      {error !== null && <Notice error>{errorText}</Notice>}
-      <p className="muted chat-note">
+      <p className="chat-footnote">
+        {left !== null && (
+          <>
+            <span>{bi(`Còn ${left} câu hỏi hôm nay`, `${left} questions left today`)}</span> ·{' '}
+          </>
+        )}
         {bi(
-          'Câu hỏi được gửi tới Google Gemini (gói miễn phí, Google có thể dùng để cải thiện dịch vụ). Đừng nhập thông tin cá nhân. Câu trả lời có thể sai; hãy kiểm tra nguồn.',
-          'Questions are sent to Google Gemini (free tier; Google may use them to improve its services). Do not enter personal information. Answers can be wrong; check the sources.',
+          'Trợ giảng có thể sai, hãy kiểm tra nguồn.',
+          'The tutor can be wrong; check the sources.',
         )}
       </p>
     </>

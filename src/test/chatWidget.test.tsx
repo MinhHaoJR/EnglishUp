@@ -93,3 +93,30 @@ it('asks signed-out learners to sign in and hides on the full tutor page', async
   show('/assistant');
   expect(screen.queryByRole('button', { name: 'Trợ giảng AI' })).not.toBeInTheDocument();
 });
+
+it('sends a suggested question and splits a long answer into bubbles', async () => {
+  fetchMock.mockImplementation(() =>
+    Promise.resolve(
+      json({
+        conversationId: '3f2a8c1e-5b7d-4e9a-8c6b-1d2e3f4a5b6c',
+        answer: 'Routine là thói quen hằng ngày [1].\n\nHabit là việc bạn làm thường xuyên [2].',
+        citations: [],
+        questionsLeft: 18,
+      }),
+    ),
+  );
+  show();
+  await userEvent.click(toggle());
+  await userEvent.click(
+    screen.getByRole('button', { name: '"routine" và "habit" khác nhau thế nào?' }),
+  );
+
+  const first = await screen.findByText('Routine là thói quen hằng ngày [1].');
+  const second = screen.getByText('Habit là việc bạn làm thường xuyên [2].');
+  expect(first).toHaveClass('bubble');
+  expect(second).toHaveClass('bubble');
+  expect(first.parentElement).toBe(second.parentElement);
+  const body = JSON.parse((fetchMock.mock.calls[0] as [string, RequestInit])[1].body as string);
+  expect(body.question).toBe('"routine" và "habit" khác nhau thế nào?');
+  expect(screen.queryByRole('button', { name: /khác nhau thế nào/ })).not.toBeInTheDocument();
+});
