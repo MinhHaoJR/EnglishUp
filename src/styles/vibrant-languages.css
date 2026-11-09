@@ -28,7 +28,7 @@
 }
 
 .language-space :is(h1, h2, h3, .language-summary strong, .lexicon-stat strong) {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: var(--font);
   font-weight: 750;
 }
 
@@ -155,7 +155,7 @@
 }
 
 .language-space .lexicon-hero-art > span {
-  font-family: 'Yu Gothic', 'Microsoft YaHei', sans-serif;
+  font-family: 'Yu Gothic', 'Microsoft YaHei', var(--font);
   font-weight: 650;
   font-size: 3rem;
 }
@@ -405,7 +405,7 @@
 }
 
 .language-space .lexicon-script {
-  font-family: 'Yu Gothic', 'Microsoft YaHei', 'Segoe UI', sans-serif;
+  font-family: 'Yu Gothic', 'Microsoft YaHei', var(--font);
   color: var(--ink);
   font-size: 2.1rem;
   font-weight: 650;

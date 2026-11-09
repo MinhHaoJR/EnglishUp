@@ -1,6 +1,6 @@
 /* Shared learning studio: route colors carry through navigation and practice. */
 :root {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: var(--font);
   --bg: #f6f5fc;
   --panel: #fff;
   --ink: #27243b;
@@ -47,7 +47,7 @@ html h1,
 html:lang(vi) h1,
 html .hero h2,
 html:lang(vi) .hero h2 {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: var(--font);
   font-weight: 750;
   letter-spacing: -1.2px;
 }
@@ -132,7 +132,7 @@ input[type='checkbox'] {
   border-radius: 13px;
   background: #6643dc;
   box-shadow: 0 5px 12px #6643dc28;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: var(--font);
   font-size: 33px;
   font-weight: 800;
   line-height: 1;
@@ -344,7 +344,7 @@ input[type='checkbox'] {
   border-top: 5px solid var(--green);
 }
 .flashcard .card-content > h2 {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: var(--font);
   font-weight: 750;
 }
 .flashcard .answer-box {

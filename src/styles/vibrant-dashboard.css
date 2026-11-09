@@ -16,7 +16,7 @@ html:lang(vi) .joy-dashboard .hero h2,
 .joy-dashboard h2,
 .joy-dashboard h3,
 .joy-dashboard .stat strong {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: var(--font);
 }
 
 .joy-dashboard .hero {
@@ -457,7 +457,7 @@ html:lang(vi) .joy-dashboard .hero h2,
   border-radius: 14px;
   background: #385c24;
   color: #e9f6ce;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: var(--font);
   font-size: 1.35rem;
   font-weight: 750;
   flex-shrink: 0;
