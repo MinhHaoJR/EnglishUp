@@ -19,7 +19,7 @@ import { SpeakButton } from '../../components/SpeakButton';
 import { db, download } from '../../services/storage';
 import { studyScope } from '../../services/vocabularyStudy';
 import VocabularyPractice from './VocabularyPractice';
-import { importCSV, exportCSV } from '../../services/csv';
+import { exportCSV } from '../../services/csv';
 import TranslationPractice from './TranslationPractice';
 import WordRelations from './WordRelations';
 import { groupWords, searchWords, paginateWords } from '../../services/vocabulary';
@@ -195,13 +195,8 @@ export default function Vocabulary() {
   );
   return (
     <>
-      <PageTitle title={t('vocabulary')}>
-        {tab !== 'relations' && (
-          <button className="primary" onClick={() => setEditing({})}>
-            {t('add')}
-          </button>
-        )}
-      </PageTitle>
+      {/* Words are added only in the admin library; learners keep editing words they saved before. */}
+      <PageTitle title={t('vocabulary')} />
       {/* While a card is on screen, the totals step aside so the word has the page. */}
       {tab !== 'relations' && !(tab === 'practice' && practicing) && (
         <div className="stats">
@@ -289,34 +284,6 @@ export default function Vocabulary() {
                 <SkillIcon skill="download" size={18} />
                 {bi('Xuất CSV', 'Export CSV')}
               </button>
-              <label className="button">
-                <SkillIcon skill="upload" size={18} />
-                {bi('Nhập CSV', 'Import CSV')}
-                <input
-                  className="sr-only"
-                  type="file"
-                  accept=".csv,text/csv"
-                  onChange={(e) => {
-                    const file = e.target.files?.[0];
-                    if (file)
-                      void (async () => {
-                        try {
-                          const rows = importCSV(await file.text());
-                          await db.words.bulkAdd(rows);
-                          setMessage(`${rows.length} ${t('saved')}`);
-                        } catch {
-                          setMessage(
-                            bi(
-                              'CSV không hợp lệ. Xem định dạng trong docs/CONTENT.md.',
-                              'Invalid CSV. See docs/CONTENT.md for the format.',
-                            ),
-                          );
-                        }
-                      })();
-                    e.target.value = '';
-                  }}
-                />
-              </label>
             </div>
           </div>
           {searchResults.length > 0 && (
