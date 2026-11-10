@@ -176,6 +176,11 @@ namespace EnglishUp.Api.Data.Migrations
                     b.Property<int>("MaxCombo")
                         .HasColumnType("integer");
 
+                    b.Property<string>("Mode")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("character varying(16)");
+
                     b.Property<string>("QuestionsJson")
                         .IsRequired()
                         .HasColumnType("text");
@@ -191,6 +196,8 @@ namespace EnglishUp.Api.Data.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Mode", "StartedAt");
 
                     b.HasIndex("UserId", "StartedAt");
 

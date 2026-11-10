@@ -36,6 +36,8 @@ public static partial class Content
         ["writing"] = ["title", "level", "topic", "genre", "prompt", "minWords", "maxWords", "checklist"],
         ["translation"] = ["level", "topic", "en", "vi"],
         ["relation"] = ["level", "word", "pos", "meaning", "definition", "example", "synonyms", "antonyms", "usageNote"],
+        ["quiz"] = ["level", "category", "sentence", "options", "answer", "explanation"],
+        ["roadmap"] = ["from", "to", "weeks", "title", "summary", "stages"],
     };
 
     /// <summary>Seed files per kind, in the order the app lists them.</summary>
@@ -50,6 +52,8 @@ public static partial class Content
         ["writing"] = ["writing.json"],
         ["translation"] = ["translations.json"],
         ["relation"] = ["wordRelations-basic.json", "wordRelations-advanced.json"],
+        ["quiz"] = ["grammar-quiz.json"],
+        ["roadmap"] = ["roadmaps.json"],
     };
 
     [GeneratedRegex("^[A-Za-z0-9-]{1,64}$")]

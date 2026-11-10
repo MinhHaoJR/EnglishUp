@@ -81,6 +81,117 @@ export const translationSchema = z.object({
   vi: z.array(z.string().trim().min(1)).min(1),
 });
 export type Translation = z.infer<typeof translationSchema>;
+
+/** Grammar points the fill-in-the-blank questions practise, with their Vietnamese and English names. */
+export const quizCategories = {
+  tense: ['Thì động từ', 'Tenses'],
+  article: ['Mạo từ', 'Articles'],
+  preposition: ['Giới từ', 'Prepositions'],
+  adverb: ['Trạng từ', 'Adverbs'],
+  comparison: ['So sánh', 'Comparison'],
+  conditional: ['Câu điều kiện và câu ước', 'Conditionals and wishes'],
+  passive: ['Câu bị động', 'The passive'],
+  modal: ['Động từ khuyết thiếu', 'Modal verbs'],
+  verbform: ['Dạng động từ (to-V, V-ing)', 'Verb forms (to-V, V-ing)'],
+  connector: ['Liên từ và từ nối', 'Linking words'],
+  relative: ['Mệnh đề quan hệ', 'Relative clauses'],
+  quantifier: ['Từ chỉ lượng', 'Quantifiers'],
+  pronoun: ['Đại từ', 'Pronouns'],
+  reported: ['Câu tường thuật', 'Reported speech'],
+  inversion: ['Đảo ngữ', 'Inversion'],
+} as const satisfies Record<string, readonly [string, string]>;
+export type QuizCategory = keyof typeof quizCategories;
+/** One sentence with a single blank (___) and four options, exactly one of them right. */
+export const quizSchema = z
+  .object({
+    id: z.string().min(1),
+    level: levelSchema,
+    category: z.enum(Object.keys(quizCategories) as [QuizCategory, ...QuizCategory[]]),
+    sentence: z.string().trim().min(1),
+    options: z.array(z.string().trim().min(1)).length(4),
+    answer: z.string().trim().min(1),
+    explanation: z.string().trim().min(1),
+  })
+  .refine((q) => q.sentence.split('___').length === 2, 'The sentence needs exactly one blank (___)')
+  .refine((q) => new Set(q.options).size === 4, 'The four options must differ')
+  .refine((q) => q.options.includes(q.answer), 'The answer must be one of the options');
+export type Quiz = z.infer<typeof quizSchema>;
+
+/** Where a learning-path task sends the learner: a practice page, a game, the tutor or the level test. */
+export const roadmapSkills = [
+  'vocabulary',
+  'translation',
+  'relations',
+  'grammar',
+  'reading',
+  'listening',
+  'speaking',
+  'writing',
+  'wordgame',
+  'grammargame',
+  'assistant',
+  'placement',
+] as const;
+export type RoadmapSkill = (typeof roadmapSkills)[number];
+/** Names of the pages a learning-path task can open. */
+export const roadmapSkillLabels: Record<RoadmapSkill, [string, string]> = {
+  vocabulary: ['Từ vựng', 'Vocabulary'],
+  translation: ['Luyện dịch', 'Translation'],
+  relations: ['Đồng nghĩa – trái nghĩa', 'Synonyms & antonyms'],
+  grammar: ['Cấu trúc câu', 'Sentence patterns'],
+  reading: ['Luyện đọc', 'Reading'],
+  listening: ['Luyện nghe', 'Listening'],
+  speaking: ['Luyện nói', 'Speaking'],
+  writing: ['Luyện viết', 'Writing'],
+  wordgame: ['Đua từ vựng', 'Vocabulary race'],
+  grammargame: ['Đua ngữ pháp', 'Grammar race'],
+  assistant: ['Trợ giảng AI', 'AI tutor'],
+  placement: ['Kiểm tra trình độ', 'Level test'],
+};
+const bilingual = z.object({ vi: z.string().trim().min(1), en: z.string().trim().min(1) });
+/** A learning path from one level to the next: stages with a goal, each with practice tasks. */
+export const roadmapSchema = z
+  .object({
+    id: z.string().regex(/^rm-(a1|a2|b1|b2|c1)-(a2|b1|b2|c1|c2)$/),
+    from: levelSchema,
+    to: levelSchema,
+    weeks: z.number().int().min(1).max(52),
+    title: bilingual,
+    summary: bilingual,
+    stages: z
+      .array(
+        z.object({
+          id: z.string().min(1),
+          title: bilingual,
+          goal: bilingual,
+          tasks: z
+            .array(
+              z.object({
+                id: z.string().min(1),
+                skill: z.enum(roadmapSkills),
+                level: levelSchema,
+                /** A quiz category for a grammar race; empty means every grammar point. */
+                category: z.string().optional(),
+                vi: z.string().trim().min(1),
+                en: z.string().trim().min(1),
+              }),
+            )
+            .min(1),
+        }),
+      )
+      .min(1),
+  })
+  .refine(
+    (r) => levelSchema.options.indexOf(r.to) === levelSchema.options.indexOf(r.from) + 1,
+    'A path goes from one level to the next',
+  )
+  .refine(
+    (r) =>
+      new Set(r.stages.flatMap((s) => s.tasks.map((t) => t.id))).size ===
+      r.stages.flatMap((s) => s.tasks).length,
+    'Task ids must differ',
+  );
+export type Roadmap = z.infer<typeof roadmapSchema>;
 export const speakingSchema = z.object({
   id: z.string(),
   title: z.string(),

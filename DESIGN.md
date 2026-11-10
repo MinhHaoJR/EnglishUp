@@ -133,6 +133,9 @@ Elevation is a 1px `--border` and nothing else. Shadows are not combined with bo
   - Right is the form: segmented Sign in / Create account, email, password with a drawn eye toggle, a live checklist of the server's password rules while creating an account, one full-width primary button, a privacy line and a "Keep practising without an account" link.
   - At night the plate dims to `--primary-soft` with ink text instead of a bright panel. Below 860px the plate stacks above the form.
   - Every sign-in link carries `?next=` back to the page that asked. Only same-site paths are followed. Signed-in visitors skip the page. `/account` sends signed-out visitors here.
+- **Games** (`/game`). Two race cards side by side as tabs, each in its skill line (vocabulary green, grammar amber); the chosen one is tinted and outlined. In the grammar race the sentence is centred at reading size and the blank is a tinted box with a line underneath; after an answer the box holds the right option, and a wrong answer adds the Vietnamese explanation under the options. The leaderboard lists ranks on alternating soft rows, with gold, silver and bronze plates for the top three, games played and a blue best-score chip; the learner's own row is yellow.
+- **Level test** (`/placement`). One question at a time with a progress bar, and the same blank box for grammar. The result pairs the score tile (sign blue) with the estimated level (grammar amber), then one bar per level, green when passed, and a button to the matching path.
+- **Learning paths** (`/roadmap`). A five-step level ladder (the current path filled sign blue, "Following" or "Suggested" under it), a head with the summary, fact chips and a progress tile, then the stages as numbered stops on one vertical line, green with a check when complete. Tasks are rows tinted in their skill line with a checkbox, a pictogram tile, the page and level, and an "Open" button.
 
 ## Deliberate exceptions
 

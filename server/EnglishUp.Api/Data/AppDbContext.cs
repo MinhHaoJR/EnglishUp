@@ -78,6 +78,8 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
         });
         builder.Entity<GameSession>(entity =>
         {
+            entity.Property(g => g.Mode).HasMaxLength(16);
+            entity.HasIndex(g => new { g.Mode, g.StartedAt });
             entity.HasOne<IdentityUser>().WithMany().HasForeignKey(g => g.UserId);
             entity.Property(g => g.Level).HasMaxLength(8);
             // Two answers to the same question must not both count.
@@ -193,6 +195,8 @@ public class GameSession
     public Guid Id { get; set; }
     public required string UserId { get; set; }
     public string? Level { get; set; }
+    /// <summary><c>vocabulary</c> (meanings) or <c>grammar</c> (fill the blank); each has its own records and leaderboard.</summary>
+    public string Mode { get; set; } = Game.Vocabulary;
     public required string QuestionsJson { get; set; }
     public DateTimeOffset StartedAt { get; set; }
     public DateTimeOffset? FinishedAt { get; set; }

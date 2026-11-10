@@ -2,7 +2,16 @@ import { useState } from 'react';
 import type { ZodIssue } from 'zod';
 import { useBi, topicVi } from '../../i18n';
 import SkillIcon from '../../components/SkillIcon';
-import { levelSchema, structureGroups, type StructureGroup } from '../../data/schema';
+import {
+  levelSchema,
+  quizCategories,
+  roadmapSkillLabels,
+  roadmapSkills,
+  type RoadmapSkill,
+  structureGroups,
+  type QuizCategory,
+  type StructureGroup,
+} from '../../data/schema';
 import { topicSections } from '../../data/topicSections';
 import { contentKinds, type ContentKind } from '../../services/content';
 import { groupLabels } from '../grammar/Grammar';
@@ -38,6 +47,7 @@ type Field = {
 };
 
 const topics: string[] = topicSections.flatMap((section) => [...section.topics]);
+
 const level: Field = {
   key: 'level',
   label: ['Trình độ', 'Level'],
@@ -271,6 +281,120 @@ const specs: Record<ContentKind, Field[]> = {
       wide: true,
     },
   ],
+  roadmap: [
+    {
+      key: 'from',
+      label: ['Từ trình độ', 'From level'],
+      type: 'select',
+      options: levelSchema.options,
+    },
+    {
+      key: 'to',
+      label: ['Lên trình độ', 'To level'],
+      type: 'select',
+      options: levelSchema.options,
+    },
+    { key: 'weeks', label: ['Số tuần gợi ý', 'Suggested weeks'], type: 'number' },
+    { key: 'title.vi', label: ['Tên lộ trình (tiếng Việt)', 'Title (Vietnamese)'], type: 'text' },
+    { key: 'title.en', label: ['Tên lộ trình (tiếng Anh)', 'Title (English)'], type: 'text' },
+    { key: 'summary.vi', label: ['Mô tả (tiếng Việt)', 'Summary (Vietnamese)'], type: 'long' },
+    { key: 'summary.en', label: ['Mô tả (tiếng Anh)', 'Summary (English)'], type: 'long' },
+    {
+      key: 'stages',
+      label: ['Các chặng', 'Stages'],
+      type: 'rows',
+      min: 1,
+      item: ['Chặng', 'Stage'],
+      template: () => ({
+        id: `s${Date.now().toString(36)}`,
+        title: { vi: '', en: '' },
+        goal: { vi: '', en: '' },
+        tasks: [],
+      }),
+      fields: [
+        {
+          key: 'title.vi',
+          label: ['Tên chặng (tiếng Việt)', 'Stage title (Vietnamese)'],
+          type: 'text',
+        },
+        {
+          key: 'title.en',
+          label: ['Tên chặng (tiếng Anh)', 'Stage title (English)'],
+          type: 'text',
+        },
+        { key: 'goal.vi', label: ['Mục tiêu (tiếng Việt)', 'Goal (Vietnamese)'], type: 'long' },
+        { key: 'goal.en', label: ['Mục tiêu (tiếng Anh)', 'Goal (English)'], type: 'long' },
+        {
+          key: 'tasks',
+          label: ['Nhiệm vụ', 'Tasks'],
+          type: 'rows',
+          min: 1,
+          item: ['Nhiệm vụ', 'Task'],
+          // Ids only need to differ inside a path; the time keeps them apart.
+          template: () => ({
+            id: `t${Date.now().toString(36)}${Math.floor(Math.random() * 1296).toString(36)}`,
+            skill: 'vocabulary',
+            level: 'A1',
+            vi: '',
+            en: '',
+          }),
+          fields: [
+            {
+              key: 'skill',
+              label: ['Mở trang', 'Opens'],
+              type: 'select',
+              options: roadmapSkills,
+              optionLabel: (s) => roadmapSkillLabels[s as RoadmapSkill],
+            },
+            {
+              key: 'level',
+              label: ['Trình độ bài luyện', 'Practice level'],
+              type: 'select',
+              options: levelSchema.options,
+            },
+            {
+              key: 'category',
+              label: ['Dạng ngữ pháp (Đua ngữ pháp)', 'Grammar point (grammar race)'],
+              type: 'select',
+              options: ['', ...Object.keys(quizCategories)],
+              optionLabel: (c) =>
+                c ? ([...quizCategories[c as QuizCategory]] as Label) : ['Mọi dạng', 'Every point'],
+              showIf: (task) => task.skill === 'grammargame',
+            },
+            { key: 'vi', label: ['Việc cần làm (tiếng Việt)', 'Task (Vietnamese)'], type: 'long' },
+            { key: 'en', label: ['Việc cần làm (tiếng Anh)', 'Task (English)'], type: 'long' },
+          ],
+        },
+      ],
+    },
+  ],
+  quiz: [
+    level,
+    {
+      key: 'category',
+      label: ['Dạng ngữ pháp', 'Grammar point'],
+      type: 'select',
+      options: Object.keys(quizCategories),
+      optionLabel: (c) => [...quizCategories[c as QuizCategory]] as Label,
+    },
+    {
+      key: 'sentence',
+      label: ['Câu có một chỗ trống ___', 'Sentence with one blank ___'],
+      type: 'long',
+      wide: true,
+    },
+    {
+      key: 'options',
+      label: ['Bốn lựa chọn (mỗi dòng một)', 'Four options (one per line)'],
+      type: 'list',
+    },
+    {
+      key: 'answer',
+      label: ['Đáp án đúng (chép đúng một lựa chọn)', 'Right answer (one of the options)'],
+      type: 'text',
+    },
+    { key: 'explanation', label: ['Giải thích', 'Explanation'], type: 'long', wide: true },
+  ],
   relation: [
     { key: 'word', label: ['Từ chính', 'Headword'], type: 'text' },
     {
@@ -444,6 +568,20 @@ const ruleText: Record<string, Label> = {
     'Từ chính, từ đồng nghĩa và từ trái nghĩa phải khác nhau',
     'The headword, synonym and antonym must differ',
   ],
+  'The sentence needs exactly one blank (___)': [
+    'Câu cần đúng một chỗ trống ___',
+    'The sentence needs exactly one blank ___',
+  ],
+  'The four options must differ': ['Bốn lựa chọn phải khác nhau', 'The four options must differ'],
+  'The answer must be one of the options': [
+    'Đáp án đúng phải trùng với một trong bốn lựa chọn',
+    'The answer must be one of the four options',
+  ],
+  'A path goes from one level to the next': [
+    'Lộ trình phải đi từ một trình độ lên trình độ liền kề',
+    'A path goes from one level to the next',
+  ],
+  'Task ids must differ': ['Mã nhiệm vụ bị trùng', 'Task ids must differ'],
   'Relation ID level does not match the lesson': [
     'Mã mục không khớp với trình độ',
     'The id does not match the level',
@@ -669,8 +807,18 @@ export default function ContentForm({
   onCancel: () => void;
 }) {
   const bi = useBi();
+  // New synonym entries and paths take the id their schema requires from their own fields.
   const named = (item: Value) =>
-    isNew && kind === 'relation' ? { ...item, id: relationId(item) } : item;
+    !isNew
+      ? item
+      : kind === 'relation'
+        ? { ...item, id: relationId(item) }
+        : kind === 'roadmap'
+          ? {
+              ...item,
+              id: `rm-${String(item.from).toLowerCase()}-${String(item.to).toLowerCase()}`,
+            }
+          : item;
   const [draft, setDraft] = useState<Value>(() => named(initial));
   const update = (next: Value) => setDraft(named(next));
   const check = contentKinds[kind].schema.safeParse(draft);

@@ -1,0 +1,1864 @@
+[
+  {
+    "id": "q-a1-001",
+    "level": "A1",
+    "category": "tense",
+    "sentence": "She ___ to school every day.",
+    "options": [
+      "walks",
+      "walk",
+      "walking",
+      "is walk"
+    ],
+    "answer": "walks",
+    "explanation": "Hiện tại đơn với chủ ngữ số ít (she): động từ thêm -s."
+  },
+  {
+    "id": "q-a1-002",
+    "level": "A1",
+    "category": "tense",
+    "sentence": "I ___ a student.",
+    "options": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "answer": "am",
+    "explanation": "Chủ ngữ I đi với am."
+  },
+  {
+    "id": "q-a1-003",
+    "level": "A1",
+    "category": "tense",
+    "sentence": "They ___ football now.",
+    "options": [
+      "are playing",
+      "play",
+      "plays",
+      "is playing"
+    ],
+    "answer": "are playing",
+    "explanation": "Có now → hiện tại tiếp diễn; they đi với are."
+  },
+  {
+    "id": "q-a1-004",
+    "level": "A1",
+    "category": "tense",
+    "sentence": "He ___ like coffee.",
+    "options": [
+      "doesn't",
+      "don't",
+      "isn't",
+      "not"
+    ],
+    "answer": "doesn't",
+    "explanation": "Phủ định hiện tại đơn với he/she/it: doesn't + động từ nguyên mẫu."
+  },
+  {
+    "id": "q-a1-005",
+    "level": "A1",
+    "category": "tense",
+    "sentence": "___ you like music?",
+    "options": [
+      "Do",
+      "Does",
+      "Are",
+      "Is"
+    ],
+    "answer": "Do",
+    "explanation": "Câu hỏi hiện tại đơn với you: Do + chủ ngữ + động từ."
+  },
+  {
+    "id": "q-a1-006",
+    "level": "A1",
+    "category": "tense",
+    "sentence": "Yesterday I ___ to the park.",
+    "options": [
+      "went",
+      "go",
+      "goes",
+      "going"
+    ],
+    "answer": "went",
+    "explanation": "Yesterday → quá khứ đơn; go có dạng quá khứ bất quy tắc là went."
+  },
+  {
+    "id": "q-a1-007",
+    "level": "A1",
+    "category": "tense",
+    "sentence": "Look! It ___.",
+    "options": [
+      "is raining",
+      "rains",
+      "rain",
+      "rained"
+    ],
+    "answer": "is raining",
+    "explanation": "Look! báo hiệu việc đang xảy ra → hiện tại tiếp diễn."
+  },
+  {
+    "id": "q-a1-008",
+    "level": "A1",
+    "category": "article",
+    "sentence": "I have ___ apple in my bag.",
+    "options": [
+      "an",
+      "a",
+      "many",
+      "two"
+    ],
+    "answer": "an",
+    "explanation": "Apple bắt đầu bằng nguyên âm nên dùng an."
+  },
+  {
+    "id": "q-a1-009",
+    "level": "A1",
+    "category": "article",
+    "sentence": "My father is ___ doctor.",
+    "options": [
+      "a",
+      "an",
+      "some",
+      "many"
+    ],
+    "answer": "a",
+    "explanation": "Nói nghề nghiệp của một người: a/an + danh từ; doctor bắt đầu bằng phụ âm."
+  },
+  {
+    "id": "q-a1-010",
+    "level": "A1",
+    "category": "article",
+    "sentence": "___ sun is very hot today.",
+    "options": [
+      "The",
+      "A",
+      "An",
+      "Some"
+    ],
+    "answer": "The",
+    "explanation": "Vật duy nhất (the sun, the moon) dùng the."
+  },
+  {
+    "id": "q-a1-011",
+    "level": "A1",
+    "category": "preposition",
+    "sentence": "We have lunch ___ twelve o'clock.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "for"
+    ],
+    "answer": "at",
+    "explanation": "Giờ cụ thể dùng at."
+  },
+  {
+    "id": "q-a1-012",
+    "level": "A1",
+    "category": "preposition",
+    "sentence": "My birthday is ___ May.",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "to"
+    ],
+    "answer": "in",
+    "explanation": "Tháng dùng in."
+  },
+  {
+    "id": "q-a1-013",
+    "level": "A1",
+    "category": "preposition",
+    "sentence": "I go swimming ___ Mondays.",
+    "options": [
+      "on",
+      "in",
+      "at",
+      "to"
+    ],
+    "answer": "on",
+    "explanation": "Thứ trong tuần dùng on."
+  },
+  {
+    "id": "q-a1-014",
+    "level": "A1",
+    "category": "preposition",
+    "sentence": "The book is ___ the table.",
+    "options": [
+      "on",
+      "to",
+      "of",
+      "from"
+    ],
+    "answer": "on",
+    "explanation": "Nằm trên bề mặt dùng on."
+  },
+  {
+    "id": "q-a1-015",
+    "level": "A1",
+    "category": "quantifier",
+    "sentence": "There ___ two books on the table.",
+    "options": [
+      "are",
+      "is",
+      "am",
+      "be"
+    ],
+    "answer": "are",
+    "explanation": "There are + danh từ số nhiều."
+  },
+  {
+    "id": "q-a1-016",
+    "level": "A1",
+    "category": "quantifier",
+    "sentence": "How ___ apples do you want?",
+    "options": [
+      "many",
+      "much",
+      "any",
+      "lot"
+    ],
+    "answer": "many",
+    "explanation": "Danh từ đếm được số nhiều (apples) dùng how many."
+  },
+  {
+    "id": "q-a1-017",
+    "level": "A1",
+    "category": "quantifier",
+    "sentence": "There isn't ___ milk in the fridge.",
+    "options": [
+      "any",
+      "many",
+      "a",
+      "few"
+    ],
+    "answer": "any",
+    "explanation": "Câu phủ định với danh từ không đếm được dùng any."
+  },
+  {
+    "id": "q-a1-018",
+    "level": "A1",
+    "category": "modal",
+    "sentence": "I ___ speak English, but I can't speak French.",
+    "options": [
+      "can",
+      "am",
+      "is",
+      "does"
+    ],
+    "answer": "can",
+    "explanation": "Can + động từ nguyên mẫu nói về khả năng."
+  },
+  {
+    "id": "q-a1-019",
+    "level": "A1",
+    "category": "adverb",
+    "sentence": "He drives very ___.",
+    "options": [
+      "carefully",
+      "careful",
+      "care",
+      "carefulness"
+    ],
+    "answer": "carefully",
+    "explanation": "Bổ nghĩa cho động từ drive cần trạng từ (careful → carefully)."
+  },
+  {
+    "id": "q-a1-020",
+    "level": "A1",
+    "category": "comparison",
+    "sentence": "My brother is ___ than me.",
+    "options": [
+      "taller",
+      "tall",
+      "tallest",
+      "more tall"
+    ],
+    "answer": "taller",
+    "explanation": "Tính từ ngắn so sánh hơn: thêm -er + than."
+  },
+  {
+    "id": "q-a1-021",
+    "level": "A1",
+    "category": "pronoun",
+    "sentence": "This is my sister. ___ name is Lan.",
+    "options": [
+      "Her",
+      "She",
+      "His",
+      "Hers"
+    ],
+    "answer": "Her",
+    "explanation": "Trước danh từ (name) dùng tính từ sở hữu her."
+  },
+  {
+    "id": "q-a1-022",
+    "level": "A1",
+    "category": "pronoun",
+    "sentence": "Can you help ___?",
+    "options": [
+      "me",
+      "I",
+      "my",
+      "mine"
+    ],
+    "answer": "me",
+    "explanation": "Sau động từ help dùng đại từ tân ngữ me."
+  },
+  {
+    "id": "q-a2-001",
+    "level": "A2",
+    "category": "tense",
+    "sentence": "I was watching TV when the phone ___.",
+    "options": [
+      "rang",
+      "rings",
+      "ring",
+      "has rung"
+    ],
+    "answer": "rang",
+    "explanation": "Việc xen vào (quá khứ đơn) cắt ngang việc đang diễn ra (quá khứ tiếp diễn)."
+  },
+  {
+    "id": "q-a2-002",
+    "level": "A2",
+    "category": "tense",
+    "sentence": "Have you ever ___ sushi?",
+    "options": [
+      "eaten",
+      "ate",
+      "eat",
+      "eating"
+    ],
+    "answer": "eaten",
+    "explanation": "Hiện tại hoàn thành: have + quá khứ phân từ (eat → eaten)."
+  },
+  {
+    "id": "q-a2-003",
+    "level": "A2",
+    "category": "tense",
+    "sentence": "We ___ here since 2020.",
+    "options": [
+      "have lived",
+      "live",
+      "lived",
+      "are living"
+    ],
+    "answer": "have lived",
+    "explanation": "Since + mốc thời gian → hiện tại hoàn thành."
+  },
+  {
+    "id": "q-a2-004",
+    "level": "A2",
+    "category": "tense",
+    "sentence": "I ___ my keys. I can't find them now.",
+    "options": [
+      "have lost",
+      "lose",
+      "am losing",
+      "was lose"
+    ],
+    "answer": "have lost",
+    "explanation": "Việc trong quá khứ còn ảnh hưởng tới hiện tại → hiện tại hoàn thành."
+  },
+  {
+    "id": "q-a2-005",
+    "level": "A2",
+    "category": "tense",
+    "sentence": "Look at those dark clouds! It ___ rain.",
+    "options": [
+      "is going to",
+      "goes to",
+      "is going",
+      "going to"
+    ],
+    "answer": "is going to",
+    "explanation": "Dự đoán dựa trên dấu hiệu trước mắt: be going to + động từ."
+  },
+  {
+    "id": "q-a2-006",
+    "level": "A2",
+    "category": "comparison",
+    "sentence": "This is the ___ film I have ever seen.",
+    "options": [
+      "best",
+      "good",
+      "better",
+      "most good"
+    ],
+    "answer": "best",
+    "explanation": "So sánh nhất của good là the best."
+  },
+  {
+    "id": "q-a2-007",
+    "level": "A2",
+    "category": "comparison",
+    "sentence": "Lan is ___ than her sister.",
+    "options": [
+      "more careful",
+      "carefuller",
+      "most careful",
+      "careful"
+    ],
+    "answer": "more careful",
+    "explanation": "Tính từ dài so sánh hơn: more + tính từ + than."
+  },
+  {
+    "id": "q-a2-008",
+    "level": "A2",
+    "category": "comparison",
+    "sentence": "My bag is as heavy ___ yours.",
+    "options": [
+      "as",
+      "than",
+      "like",
+      "so"
+    ],
+    "answer": "as",
+    "explanation": "So sánh bằng: as + tính từ + as."
+  },
+  {
+    "id": "q-a2-009",
+    "level": "A2",
+    "category": "modal",
+    "sentence": "You ___ wear a seatbelt in the car. It's the law.",
+    "options": [
+      "must",
+      "can",
+      "might",
+      "would"
+    ],
+    "answer": "must",
+    "explanation": "Bắt buộc theo luật: must."
+  },
+  {
+    "id": "q-a2-010",
+    "level": "A2",
+    "category": "modal",
+    "sentence": "You ___ smoke here. It's not allowed.",
+    "options": [
+      "mustn't",
+      "don't have to",
+      "needn't",
+      "can"
+    ],
+    "answer": "mustn't",
+    "explanation": "Cấm đoán: mustn't (khác don't have to = không cần)."
+  },
+  {
+    "id": "q-a2-011",
+    "level": "A2",
+    "category": "verbform",
+    "sentence": "I enjoy ___ to music.",
+    "options": [
+      "listening",
+      "listen",
+      "to listen",
+      "listened"
+    ],
+    "answer": "listening",
+    "explanation": "Enjoy + V-ing."
+  },
+  {
+    "id": "q-a2-012",
+    "level": "A2",
+    "category": "verbform",
+    "sentence": "She wants ___ a doctor.",
+    "options": [
+      "to become",
+      "becoming",
+      "become",
+      "became"
+    ],
+    "answer": "to become",
+    "explanation": "Want + to V."
+  },
+  {
+    "id": "q-a2-013",
+    "level": "A2",
+    "category": "article",
+    "sentence": "She plays ___ piano every evening.",
+    "options": [
+      "the",
+      "a",
+      "an",
+      "some"
+    ],
+    "answer": "the",
+    "explanation": "Chơi nhạc cụ: play the + nhạc cụ."
+  },
+  {
+    "id": "q-a2-014",
+    "level": "A2",
+    "category": "article",
+    "sentence": "I'd like ___ information about the course.",
+    "options": [
+      "some",
+      "an",
+      "a",
+      "many"
+    ],
+    "answer": "some",
+    "explanation": "Information không đếm được, không dùng a/an; dùng some."
+  },
+  {
+    "id": "q-a2-015",
+    "level": "A2",
+    "category": "preposition",
+    "sentence": "I'm interested ___ art.",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "about"
+    ],
+    "answer": "in",
+    "explanation": "Interested in + danh từ/V-ing."
+  },
+  {
+    "id": "q-a2-016",
+    "level": "A2",
+    "category": "preposition",
+    "sentence": "She is good ___ maths.",
+    "options": [
+      "at",
+      "on",
+      "of",
+      "with"
+    ],
+    "answer": "at",
+    "explanation": "Good at + môn học/kỹ năng."
+  },
+  {
+    "id": "q-a2-017",
+    "level": "A2",
+    "category": "quantifier",
+    "sentence": "We don't have ___ time. Hurry up!",
+    "options": [
+      "much",
+      "many",
+      "a few",
+      "few"
+    ],
+    "answer": "much",
+    "explanation": "Time không đếm được: much trong câu phủ định."
+  },
+  {
+    "id": "q-a2-018",
+    "level": "A2",
+    "category": "quantifier",
+    "sentence": "There are ___ people in the room, maybe three or four.",
+    "options": [
+      "a few",
+      "a little",
+      "much",
+      "any"
+    ],
+    "answer": "a few",
+    "explanation": "Một vài (đếm được): a few + danh từ số nhiều."
+  },
+  {
+    "id": "q-a2-019",
+    "level": "A2",
+    "category": "connector",
+    "sentence": "I was tired, ___ I went to bed early.",
+    "options": [
+      "so",
+      "but",
+      "because",
+      "although"
+    ],
+    "answer": "so",
+    "explanation": "So nêu kết quả: mệt nên đi ngủ sớm."
+  },
+  {
+    "id": "q-a2-020",
+    "level": "A2",
+    "category": "connector",
+    "sentence": "She stayed at home ___ she was ill.",
+    "options": [
+      "because",
+      "so",
+      "but",
+      "or"
+    ],
+    "answer": "because",
+    "explanation": "Because nêu lý do."
+  },
+  {
+    "id": "q-a2-021",
+    "level": "A2",
+    "category": "passive",
+    "sentence": "This bridge ___ in 1990.",
+    "options": [
+      "was built",
+      "built",
+      "is building",
+      "was build"
+    ],
+    "answer": "was built",
+    "explanation": "Bị động quá khứ đơn: was/were + quá khứ phân từ."
+  },
+  {
+    "id": "q-a2-022",
+    "level": "A2",
+    "category": "relative",
+    "sentence": "The woman ___ lives next door is a teacher.",
+    "options": [
+      "who",
+      "which",
+      "where",
+      "whose"
+    ],
+    "answer": "who",
+    "explanation": "Who thay cho người, làm chủ ngữ của mệnh đề quan hệ."
+  },
+  {
+    "id": "q-a2-023",
+    "level": "A2",
+    "category": "adverb",
+    "sentence": "He ___ goes to the gym. He goes every day.",
+    "options": [
+      "always",
+      "never",
+      "rarely",
+      "seldom"
+    ],
+    "answer": "always",
+    "explanation": "Đi mỗi ngày → always (luôn luôn)."
+  },
+  {
+    "id": "q-a2-024",
+    "level": "A2",
+    "category": "adverb",
+    "sentence": "The test was ___ easy.",
+    "options": [
+      "surprisingly",
+      "surprising",
+      "surprise",
+      "surprised"
+    ],
+    "answer": "surprisingly",
+    "explanation": "Bổ nghĩa cho tính từ easy cần trạng từ."
+  },
+  {
+    "id": "q-a2-025",
+    "level": "A2",
+    "category": "pronoun",
+    "sentence": "This isn't my umbrella. It's ___.",
+    "options": [
+      "hers",
+      "her",
+      "she",
+      "herself"
+    ],
+    "answer": "hers",
+    "explanation": "Đứng một mình thay cho her umbrella: đại từ sở hữu hers."
+  },
+  {
+    "id": "q-b1-001",
+    "level": "B1",
+    "category": "tense",
+    "sentence": "By the time we arrived, the film ___.",
+    "options": [
+      "had started",
+      "has started",
+      "starts",
+      "will start"
+    ],
+    "answer": "had started",
+    "explanation": "Việc xảy ra trước một mốc quá khứ → quá khứ hoàn thành."
+  },
+  {
+    "id": "q-b1-002",
+    "level": "B1",
+    "category": "tense",
+    "sentence": "I ___ for two hours when she finally called.",
+    "options": [
+      "had been waiting",
+      "have been waiting",
+      "am waiting",
+      "wait"
+    ],
+    "answer": "had been waiting",
+    "explanation": "Việc kéo dài đến một thời điểm trong quá khứ → quá khứ hoàn thành tiếp diễn."
+  },
+  {
+    "id": "q-b1-003",
+    "level": "B1",
+    "category": "tense",
+    "sentence": "This time tomorrow, I ___ on a beach.",
+    "options": [
+      "will be lying",
+      "lie",
+      "have lain",
+      "lay"
+    ],
+    "answer": "will be lying",
+    "explanation": "Việc đang diễn ra tại một thời điểm tương lai → tương lai tiếp diễn."
+  },
+  {
+    "id": "q-b1-004",
+    "level": "B1",
+    "category": "tense",
+    "sentence": "I have ___ finished my homework, so I can go out now.",
+    "options": [
+      "already",
+      "yet",
+      "still",
+      "ever"
+    ],
+    "answer": "already",
+    "explanation": "Already (đã rồi) trong câu khẳng định thì hoàn thành."
+  },
+  {
+    "id": "q-b1-005",
+    "level": "B1",
+    "category": "conditional",
+    "sentence": "If it ___ tomorrow, we will stay at home.",
+    "options": [
+      "rains",
+      "will rain",
+      "rained",
+      "would rain"
+    ],
+    "answer": "rains",
+    "explanation": "Câu điều kiện loại 1: If + hiện tại đơn, will + V."
+  },
+  {
+    "id": "q-b1-006",
+    "level": "B1",
+    "category": "conditional",
+    "sentence": "If I ___ more money, I would travel the world.",
+    "options": [
+      "had",
+      "have",
+      "will have",
+      "would have"
+    ],
+    "answer": "had",
+    "explanation": "Câu điều kiện loại 2: If + quá khứ đơn, would + V."
+  },
+  {
+    "id": "q-b1-007",
+    "level": "B1",
+    "category": "conditional",
+    "sentence": "I would call him if I ___ his number.",
+    "options": [
+      "knew",
+      "know",
+      "will know",
+      "knows"
+    ],
+    "answer": "knew",
+    "explanation": "Điều kiện không có thật ở hiện tại: quá khứ đơn trong mệnh đề if."
+  },
+  {
+    "id": "q-b1-008",
+    "level": "B1",
+    "category": "passive",
+    "sentence": "English ___ in many countries.",
+    "options": [
+      "is spoken",
+      "speaks",
+      "is speaking",
+      "spoken"
+    ],
+    "answer": "is spoken",
+    "explanation": "Bị động hiện tại đơn: is/are + quá khứ phân từ."
+  },
+  {
+    "id": "q-b1-009",
+    "level": "B1",
+    "category": "passive",
+    "sentence": "The letters ___ yet.",
+    "options": [
+      "haven't been sent",
+      "haven't sent",
+      "didn't send",
+      "weren't sending"
+    ],
+    "answer": "haven't been sent",
+    "explanation": "Bị động hiện tại hoàn thành: have/has been + quá khứ phân từ."
+  },
+  {
+    "id": "q-b1-010",
+    "level": "B1",
+    "category": "modal",
+    "sentence": "She ___ be at home. Her car is outside.",
+    "options": [
+      "must",
+      "can't",
+      "mustn't",
+      "shouldn't"
+    ],
+    "answer": "must",
+    "explanation": "Suy đoán chắc chắn dựa trên bằng chứng: must be."
+  },
+  {
+    "id": "q-b1-011",
+    "level": "B1",
+    "category": "modal",
+    "sentence": "You ___ have told me earlier! Now it's too late.",
+    "options": [
+      "should",
+      "can",
+      "will",
+      "need"
+    ],
+    "answer": "should",
+    "explanation": "Should have + quá khứ phân từ: trách việc lẽ ra nên làm."
+  },
+  {
+    "id": "q-b1-012",
+    "level": "B1",
+    "category": "verbform",
+    "sentence": "I'm looking forward to ___ you.",
+    "options": [
+      "seeing",
+      "see",
+      "to see",
+      "saw"
+    ],
+    "answer": "seeing",
+    "explanation": "Look forward to + V-ing (to ở đây là giới từ)."
+  },
+  {
+    "id": "q-b1-013",
+    "level": "B1",
+    "category": "verbform",
+    "sentence": "He stopped ___ because it was bad for his health.",
+    "options": [
+      "smoking",
+      "to smoke",
+      "smoke",
+      "smoked"
+    ],
+    "answer": "smoking",
+    "explanation": "Stop + V-ing = bỏ hẳn việc đó; stop + to V = dừng lại để làm việc khác."
+  },
+  {
+    "id": "q-b1-014",
+    "level": "B1",
+    "category": "verbform",
+    "sentence": "She let me ___ her car.",
+    "options": [
+      "use",
+      "to use",
+      "using",
+      "used"
+    ],
+    "answer": "use",
+    "explanation": "Let + tân ngữ + động từ nguyên mẫu không to."
+  },
+  {
+    "id": "q-b1-015",
+    "level": "B1",
+    "category": "relative",
+    "sentence": "This is the house ___ I was born.",
+    "options": [
+      "where",
+      "which",
+      "who",
+      "what"
+    ],
+    "answer": "where",
+    "explanation": "Where thay cho nơi chốn (in which)."
+  },
+  {
+    "id": "q-b1-016",
+    "level": "B1",
+    "category": "relative",
+    "sentence": "The man ___ car was stolen called the police.",
+    "options": [
+      "whose",
+      "who",
+      "which",
+      "that"
+    ],
+    "answer": "whose",
+    "explanation": "Whose chỉ sự sở hữu (chiếc xe của người đàn ông)."
+  },
+  {
+    "id": "q-b1-017",
+    "level": "B1",
+    "category": "reported",
+    "sentence": "She told me she ___ the film the day before.",
+    "options": [
+      "had seen",
+      "has seen",
+      "sees",
+      "will see"
+    ],
+    "answer": "had seen",
+    "explanation": "Tường thuật lùi thì: quá khứ đơn → quá khứ hoàn thành."
+  },
+  {
+    "id": "q-b1-018",
+    "level": "B1",
+    "category": "article",
+    "sentence": "___ Mekong is one of the longest rivers in Asia.",
+    "options": [
+      "The",
+      "A",
+      "An",
+      "Some"
+    ],
+    "answer": "The",
+    "explanation": "Tên sông dùng the."
+  },
+  {
+    "id": "q-b1-019",
+    "level": "B1",
+    "category": "article",
+    "sentence": "She is ___ honest person.",
+    "options": [
+      "an",
+      "a",
+      "the",
+      "some"
+    ],
+    "answer": "an",
+    "explanation": "Honest đọc bắt đầu bằng nguyên âm (h câm) nên dùng an."
+  },
+  {
+    "id": "q-b1-020",
+    "level": "B1",
+    "category": "preposition",
+    "sentence": "It depends ___ the weather.",
+    "options": [
+      "on",
+      "of",
+      "from",
+      "at"
+    ],
+    "answer": "on",
+    "explanation": "Depend on."
+  },
+  {
+    "id": "q-b1-021",
+    "level": "B1",
+    "category": "preposition",
+    "sentence": "I apologised ___ being late.",
+    "options": [
+      "for",
+      "to",
+      "of",
+      "with"
+    ],
+    "answer": "for",
+    "explanation": "Apologise for + V-ing (apologise to + người)."
+  },
+  {
+    "id": "q-b1-022",
+    "level": "B1",
+    "category": "quantifier",
+    "sentence": "___ of my friends like football; the rest prefer tennis.",
+    "options": [
+      "Some",
+      "Any",
+      "Much",
+      "Every"
+    ],
+    "answer": "Some",
+    "explanation": "Some of + danh từ số nhiều: một số trong nhóm."
+  },
+  {
+    "id": "q-b1-023",
+    "level": "B1",
+    "category": "connector",
+    "sentence": "___ it was raining, we went for a walk.",
+    "options": [
+      "Although",
+      "Because",
+      "So",
+      "Despite"
+    ],
+    "answer": "Although",
+    "explanation": "Although + mệnh đề: mặc dù (despite + danh từ/V-ing)."
+  },
+  {
+    "id": "q-b1-024",
+    "level": "B1",
+    "category": "connector",
+    "sentence": "She passed the exam ___ studying very little.",
+    "options": [
+      "despite",
+      "although",
+      "because",
+      "so"
+    ],
+    "answer": "despite",
+    "explanation": "Despite + V-ing/danh từ."
+  },
+  {
+    "id": "q-b1-025",
+    "level": "B1",
+    "category": "comparison",
+    "sentence": "The more you practise, ___ you get.",
+    "options": [
+      "the better",
+      "better",
+      "the best",
+      "more better"
+    ],
+    "answer": "the better",
+    "explanation": "So sánh kép: the + so sánh hơn ..., the + so sánh hơn."
+  },
+  {
+    "id": "q-b2-001",
+    "level": "B2",
+    "category": "tense",
+    "sentence": "By next June, she ___ here for ten years.",
+    "options": [
+      "will have worked",
+      "will work",
+      "works",
+      "has worked"
+    ],
+    "answer": "will have worked",
+    "explanation": "Đến một mốc tương lai thì việc đã kéo dài → tương lai hoàn thành."
+  },
+  {
+    "id": "q-b2-002",
+    "level": "B2",
+    "category": "tense",
+    "sentence": "I ___ English for five years, and I still have a lot to learn.",
+    "options": [
+      "have been studying",
+      "am studying",
+      "study",
+      "had studied"
+    ],
+    "answer": "have been studying",
+    "explanation": "Việc bắt đầu trong quá khứ, còn tiếp diễn → hiện tại hoàn thành tiếp diễn."
+  },
+  {
+    "id": "q-b2-003",
+    "level": "B2",
+    "category": "conditional",
+    "sentence": "If you had told me, I ___ you.",
+    "options": [
+      "would have helped",
+      "will help",
+      "helped",
+      "had helped"
+    ],
+    "answer": "would have helped",
+    "explanation": "Câu điều kiện loại 3: If + quá khứ hoàn thành, would have + quá khứ phân từ."
+  },
+  {
+    "id": "q-b2-004",
+    "level": "B2",
+    "category": "conditional",
+    "sentence": "___ you need any help, just call me.",
+    "options": [
+      "Should",
+      "Would",
+      "Had",
+      "Were"
+    ],
+    "answer": "Should",
+    "explanation": "Đảo ngữ điều kiện loại 1: Should + chủ ngữ + V = If you need."
+  },
+  {
+    "id": "q-b2-005",
+    "level": "B2",
+    "category": "conditional",
+    "sentence": "I wish I ___ more time to read.",
+    "options": [
+      "had",
+      "have",
+      "will have",
+      "would have"
+    ],
+    "answer": "had",
+    "explanation": "Ước điều trái hiện tại: wish + quá khứ đơn."
+  },
+  {
+    "id": "q-b2-006",
+    "level": "B2",
+    "category": "conditional",
+    "sentence": "I wish I ___ that email. It caused so many problems.",
+    "options": [
+      "hadn't sent",
+      "didn't send",
+      "haven't sent",
+      "wouldn't send"
+    ],
+    "answer": "hadn't sent",
+    "explanation": "Hối tiếc về quá khứ: wish + quá khứ hoàn thành."
+  },
+  {
+    "id": "q-b2-007",
+    "level": "B2",
+    "category": "passive",
+    "sentence": "The results are expected ___ next week.",
+    "options": [
+      "to be announced",
+      "to announce",
+      "being announced",
+      "announced"
+    ],
+    "answer": "to be announced",
+    "explanation": "Expected + to be + quá khứ phân từ (bị động)."
+  },
+  {
+    "id": "q-b2-008",
+    "level": "B2",
+    "category": "passive",
+    "sentence": "I'm going to have my hair ___ tomorrow.",
+    "options": [
+      "cut",
+      "cutting",
+      "to cut",
+      "cuts"
+    ],
+    "answer": "cut",
+    "explanation": "Thể sai khiến: have + vật + quá khứ phân từ."
+  },
+  {
+    "id": "q-b2-009",
+    "level": "B2",
+    "category": "modal",
+    "sentence": "He ___ have left already; his coat is still here.",
+    "options": [
+      "can't",
+      "mustn't",
+      "shouldn't",
+      "needn't"
+    ],
+    "answer": "can't",
+    "explanation": "Suy đoán phủ định về quá khứ: can't have + quá khứ phân từ."
+  },
+  {
+    "id": "q-b2-010",
+    "level": "B2",
+    "category": "modal",
+    "sentence": "You ___ have bought milk. We already had some.",
+    "options": [
+      "needn't",
+      "mustn't",
+      "couldn't",
+      "wouldn't"
+    ],
+    "answer": "needn't",
+    "explanation": "Needn't have + quá khứ phân từ: đã làm nhưng hoá ra không cần."
+  },
+  {
+    "id": "q-b2-011",
+    "level": "B2",
+    "category": "verbform",
+    "sentence": "I regret ___ you that your application was unsuccessful.",
+    "options": [
+      "to tell",
+      "telling",
+      "tell",
+      "told"
+    ],
+    "answer": "to tell",
+    "explanation": "Regret + to V: lấy làm tiếc phải báo (thư trang trọng); regret + V-ing là hối tiếc việc đã làm."
+  },
+  {
+    "id": "q-b2-012",
+    "level": "B2",
+    "category": "verbform",
+    "sentence": "She is used to ___ up early.",
+    "options": [
+      "getting",
+      "get",
+      "got",
+      "have got"
+    ],
+    "answer": "getting",
+    "explanation": "Be used to + V-ing: đã quen với."
+  },
+  {
+    "id": "q-b2-013",
+    "level": "B2",
+    "category": "relative",
+    "sentence": "My sister, ___ lives in Hanoi, is a nurse.",
+    "options": [
+      "who",
+      "that",
+      "which",
+      "whom"
+    ],
+    "answer": "who",
+    "explanation": "Mệnh đề không xác định (có dấu phẩy) không dùng that; người làm chủ ngữ → who."
+  },
+  {
+    "id": "q-b2-014",
+    "level": "B2",
+    "category": "relative",
+    "sentence": "He failed the exam, ___ surprised everyone.",
+    "options": [
+      "which",
+      "that",
+      "what",
+      "who"
+    ],
+    "answer": "which",
+    "explanation": "Which thay cho cả mệnh đề phía trước."
+  },
+  {
+    "id": "q-b2-015",
+    "level": "B2",
+    "category": "reported",
+    "sentence": "He asked me where ___.",
+    "options": [
+      "I lived",
+      "did I live",
+      "do I live",
+      "lived I"
+    ],
+    "answer": "I lived",
+    "explanation": "Câu hỏi gián tiếp giữ trật tự câu kể: chủ ngữ + động từ."
+  },
+  {
+    "id": "q-b2-016",
+    "level": "B2",
+    "category": "article",
+    "sentence": "___ rich should pay more tax.",
+    "options": [
+      "The",
+      "A",
+      "An",
+      "Some"
+    ],
+    "answer": "The",
+    "explanation": "The + tính từ chỉ một nhóm người (the rich, the poor)."
+  },
+  {
+    "id": "q-b2-017",
+    "level": "B2",
+    "category": "preposition",
+    "sentence": "She insisted ___ paying for dinner.",
+    "options": [
+      "on",
+      "in",
+      "at",
+      "for"
+    ],
+    "answer": "on",
+    "explanation": "Insist on + V-ing."
+  },
+  {
+    "id": "q-b2-018",
+    "level": "B2",
+    "category": "preposition",
+    "sentence": "There has been a sharp rise ___ prices.",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "by"
+    ],
+    "answer": "in",
+    "explanation": "A rise/increase in + danh từ."
+  },
+  {
+    "id": "q-b2-019",
+    "level": "B2",
+    "category": "connector",
+    "sentence": "___ the bad weather, the match went ahead.",
+    "options": [
+      "In spite of",
+      "Although",
+      "Even though",
+      "However"
+    ],
+    "answer": "In spite of",
+    "explanation": "In spite of + danh từ."
+  },
+  {
+    "id": "q-b2-020",
+    "level": "B2",
+    "category": "connector",
+    "sentence": "He's very talented. ___, he's lazy.",
+    "options": [
+      "However",
+      "Although",
+      "Despite",
+      "Because"
+    ],
+    "answer": "However",
+    "explanation": "However đứng đầu câu, sau đó là dấu phẩy, nối hai câu đối lập."
+  },
+  {
+    "id": "q-b2-021",
+    "level": "B2",
+    "category": "quantifier",
+    "sentence": "___ student has to take the test.",
+    "options": [
+      "Every",
+      "All",
+      "Both",
+      "Many"
+    ],
+    "answer": "Every",
+    "explanation": "Every + danh từ số ít + động từ số ít."
+  },
+  {
+    "id": "q-b2-022",
+    "level": "B2",
+    "category": "quantifier",
+    "sentence": "I have two sisters, but ___ of them lives near me.",
+    "options": [
+      "neither",
+      "none",
+      "both",
+      "either"
+    ],
+    "answer": "neither",
+    "explanation": "Hai người, phủ định cả hai: neither of them."
+  },
+  {
+    "id": "q-b2-023",
+    "level": "B2",
+    "category": "comparison",
+    "sentence": "It was ___ difficult exam that nobody finished it.",
+    "options": [
+      "such a",
+      "so",
+      "so a",
+      "such"
+    ],
+    "answer": "such a",
+    "explanation": "Such + a/an + tính từ + danh từ + that."
+  },
+  {
+    "id": "q-b2-024",
+    "level": "B2",
+    "category": "comparison",
+    "sentence": "The film was ___ boring that I fell asleep.",
+    "options": [
+      "so",
+      "such",
+      "too",
+      "very"
+    ],
+    "answer": "so",
+    "explanation": "So + tính từ + that."
+  },
+  {
+    "id": "q-b2-025",
+    "level": "B2",
+    "category": "adverb",
+    "sentence": "I could ___ hear him because of the noise.",
+    "options": [
+      "hardly",
+      "hard",
+      "harder",
+      "hardest"
+    ],
+    "answer": "hardly",
+    "explanation": "Hardly = hầu như không (khác hard = chăm chỉ, mạnh)."
+  },
+  {
+    "id": "q-c1-001",
+    "level": "C1",
+    "category": "inversion",
+    "sentence": "No sooner had I arrived ___ the phone rang.",
+    "options": [
+      "than",
+      "when",
+      "then",
+      "as"
+    ],
+    "answer": "than",
+    "explanation": "No sooner ... than: vừa mới ... thì."
+  },
+  {
+    "id": "q-c1-002",
+    "level": "C1",
+    "category": "inversion",
+    "sentence": "Rarely ___ such a beautiful sunset.",
+    "options": [
+      "have I seen",
+      "I have seen",
+      "I saw",
+      "saw I"
+    ],
+    "answer": "have I seen",
+    "explanation": "Rarely đứng đầu câu → đảo trợ động từ lên trước chủ ngữ."
+  },
+  {
+    "id": "q-c1-003",
+    "level": "C1",
+    "category": "inversion",
+    "sentence": "Not until the end of the meeting ___ the truth.",
+    "options": [
+      "did she reveal",
+      "she revealed",
+      "she did reveal",
+      "revealed she"
+    ],
+    "answer": "did she reveal",
+    "explanation": "Not until ... đứng đầu → đảo ngữ ở mệnh đề chính."
+  },
+  {
+    "id": "q-c1-004",
+    "level": "C1",
+    "category": "conditional",
+    "sentence": "___ it not been for your help, I would have failed.",
+    "options": [
+      "Had",
+      "If",
+      "Were",
+      "Should"
+    ],
+    "answer": "Had",
+    "explanation": "Đảo ngữ điều kiện loại 3: Had it not been for = If it hadn't been for."
+  },
+  {
+    "id": "q-c1-005",
+    "level": "C1",
+    "category": "conditional",
+    "sentence": "If I had taken that job, I ___ in London now.",
+    "options": [
+      "would be living",
+      "would have lived",
+      "will live",
+      "lived"
+    ],
+    "answer": "would be living",
+    "explanation": "Điều kiện hỗn hợp: quá khứ khác đi → kết quả ở hiện tại (would + V)."
+  },
+  {
+    "id": "q-c1-006",
+    "level": "C1",
+    "category": "verbform",
+    "sentence": "The doctor recommended that he ___ more exercise.",
+    "options": [
+      "take",
+      "takes",
+      "took",
+      "taking"
+    ],
+    "answer": "take",
+    "explanation": "Thức giả định sau recommend that: động từ nguyên mẫu."
+  },
+  {
+    "id": "q-c1-007",
+    "level": "C1",
+    "category": "verbform",
+    "sentence": "It's high time we ___ home.",
+    "options": [
+      "went",
+      "go",
+      "will go",
+      "have gone"
+    ],
+    "answer": "went",
+    "explanation": "It's (high) time + chủ ngữ + quá khứ đơn: đã đến lúc."
+  },
+  {
+    "id": "q-c1-008",
+    "level": "C1",
+    "category": "verbform",
+    "sentence": "I'd rather you ___ smoke in the house.",
+    "options": [
+      "didn't",
+      "don't",
+      "won't",
+      "not"
+    ],
+    "answer": "didn't",
+    "explanation": "Would rather + người khác + quá khứ đơn."
+  },
+  {
+    "id": "q-c1-009",
+    "level": "C1",
+    "category": "passive",
+    "sentence": "He is said ___ a fortune in the 1990s.",
+    "options": [
+      "to have made",
+      "to make",
+      "making",
+      "that he made"
+    ],
+    "answer": "to have made",
+    "explanation": "Bị động kể lại với việc đã qua: is said to have + quá khứ phân từ."
+  },
+  {
+    "id": "q-c1-010",
+    "level": "C1",
+    "category": "passive",
+    "sentence": "It ___ that the company will cut jobs.",
+    "options": [
+      "is rumoured",
+      "rumours",
+      "is rumouring",
+      "has rumoured"
+    ],
+    "answer": "is rumoured",
+    "explanation": "It is rumoured/said/believed that ... (bị động khách quan)."
+  },
+  {
+    "id": "q-c1-011",
+    "level": "C1",
+    "category": "modal",
+    "sentence": "You ___ as well take an umbrella; it might rain.",
+    "options": [
+      "may",
+      "must",
+      "should",
+      "can"
+    ],
+    "answer": "may",
+    "explanation": "May/might as well: cũng nên làm (vì chẳng mất gì)."
+  },
+  {
+    "id": "q-c1-012",
+    "level": "C1",
+    "category": "relative",
+    "sentence": "The committee, most of ___ are volunteers, meets monthly.",
+    "options": [
+      "whom",
+      "who",
+      "which",
+      "them"
+    ],
+    "answer": "whom",
+    "explanation": "Sau most of/some of chỉ người dùng whom."
+  },
+  {
+    "id": "q-c1-013",
+    "level": "C1",
+    "category": "relative",
+    "sentence": "That is the reason ___ I resigned.",
+    "options": [
+      "why",
+      "which",
+      "what",
+      "how"
+    ],
+    "answer": "why",
+    "explanation": "The reason why + mệnh đề."
+  },
+  {
+    "id": "q-c1-014",
+    "level": "C1",
+    "category": "article",
+    "sentence": "___ number of applicants has risen sharply this year.",
+    "options": [
+      "The",
+      "A",
+      "An",
+      "Some"
+    ],
+    "answer": "The",
+    "explanation": "The number of + danh từ số nhiều + động từ số ít (khác a number of + động từ số nhiều)."
+  },
+  {
+    "id": "q-c1-015",
+    "level": "C1",
+    "category": "preposition",
+    "sentence": "The new policy is ___ odds with our values.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "by"
+    ],
+    "answer": "at",
+    "explanation": "At odds with: mâu thuẫn với."
+  },
+  {
+    "id": "q-c1-016",
+    "level": "C1",
+    "category": "preposition",
+    "sentence": "She was accused ___ stealing the documents.",
+    "options": [
+      "of",
+      "for",
+      "with",
+      "about"
+    ],
+    "answer": "of",
+    "explanation": "Accuse somebody of + V-ing."
+  },
+  {
+    "id": "q-c1-017",
+    "level": "C1",
+    "category": "connector",
+    "sentence": "___ as it may seem, the plan actually worked.",
+    "options": [
+      "Strange",
+      "Strangely",
+      "Although strange",
+      "However strange"
+    ],
+    "answer": "Strange",
+    "explanation": "Tính từ + as + chủ ngữ + may seem: dù có vẻ ... đến đâu."
+  },
+  {
+    "id": "q-c1-018",
+    "level": "C1",
+    "category": "connector",
+    "sentence": "We should leave now ___ we miss the last train.",
+    "options": [
+      "lest",
+      "unless",
+      "provided",
+      "whereas"
+    ],
+    "answer": "lest",
+    "explanation": "Lest = để khỏi, kẻo (trang trọng)."
+  },
+  {
+    "id": "q-c1-019",
+    "level": "C1",
+    "category": "quantifier",
+    "sentence": "___ the students passed the exam; it was a disaster.",
+    "options": [
+      "Hardly any of",
+      "Hardly",
+      "Few",
+      "Much of"
+    ],
+    "answer": "Hardly any of",
+    "explanation": "Hardly any of + danh từ xác định: hầu như không ai trong số."
+  },
+  {
+    "id": "q-c1-020",
+    "level": "C1",
+    "category": "comparison",
+    "sentence": "The ___ he gets, the wiser he becomes.",
+    "options": [
+      "older",
+      "old",
+      "oldest",
+      "more old"
+    ],
+    "answer": "older",
+    "explanation": "So sánh kép: the + so sánh hơn, the + so sánh hơn."
+  },
+  {
+    "id": "q-c2-001",
+    "level": "C2",
+    "category": "inversion",
+    "sentence": "Little ___ that he was being watched.",
+    "options": [
+      "did he know",
+      "he knew",
+      "knew he",
+      "he did know"
+    ],
+    "answer": "did he know",
+    "explanation": "Little đứng đầu câu (phủ định) → đảo trợ động từ."
+  },
+  {
+    "id": "q-c2-002",
+    "level": "C2",
+    "category": "inversion",
+    "sentence": "So severe ___ that the town was cut off.",
+    "options": [
+      "was the storm",
+      "the storm was",
+      "did the storm",
+      "the storm"
+    ],
+    "answer": "was the storm",
+    "explanation": "So + tính từ đứng đầu → đảo động từ be lên trước chủ ngữ."
+  },
+  {
+    "id": "q-c2-003",
+    "level": "C2",
+    "category": "conditional",
+    "sentence": "Were the government ___ taxes, there would be protests.",
+    "options": [
+      "to raise",
+      "raising",
+      "raise",
+      "raised"
+    ],
+    "answer": "to raise",
+    "explanation": "Đảo ngữ Were + chủ ngữ + to V = If the government raised."
+  },
+  {
+    "id": "q-c2-004",
+    "level": "C2",
+    "category": "verbform",
+    "sentence": "It is essential that every applicant ___ the form in person.",
+    "options": [
+      "submit",
+      "submits",
+      "submitted",
+      "will submit"
+    ],
+    "answer": "submit",
+    "explanation": "Thức giả định sau It is essential that: động từ nguyên mẫu cho mọi chủ ngữ."
+  },
+  {
+    "id": "q-c2-005",
+    "level": "C2",
+    "category": "passive",
+    "sentence": "The issue is believed ___ for years before anyone noticed.",
+    "options": [
+      "to have been ignored",
+      "to be ignored",
+      "to have ignored",
+      "being ignored"
+    ],
+    "answer": "to have been ignored",
+    "explanation": "Bị động kể lại, việc đã qua và bị động: to have been + quá khứ phân từ."
+  },
+  {
+    "id": "q-c2-006",
+    "level": "C2",
+    "category": "modal",
+    "sentence": "She ___ have been more helpful if she had known the facts.",
+    "options": [
+      "might well",
+      "must",
+      "needn't",
+      "ought"
+    ],
+    "answer": "might well",
+    "explanation": "Might well have + quá khứ phân từ: rất có thể đã (khả năng trong quá khứ)."
+  },
+  {
+    "id": "q-c2-007",
+    "level": "C2",
+    "category": "verbform",
+    "sentence": "He denied ___ the meeting, despite clear evidence.",
+    "options": [
+      "having attended",
+      "to have attended",
+      "attend",
+      "to attend"
+    ],
+    "answer": "having attended",
+    "explanation": "Deny + V-ing; having + quá khứ phân từ nhấn mạnh việc đã xảy ra."
+  },
+  {
+    "id": "q-c2-008",
+    "level": "C2",
+    "category": "verbform",
+    "sentence": "Far from ___ the problem, the new law made it worse.",
+    "options": [
+      "solving",
+      "solve",
+      "to solve",
+      "solved"
+    ],
+    "answer": "solving",
+    "explanation": "Far from + V-ing: không những không ... mà còn."
+  },
+  {
+    "id": "q-c2-009",
+    "level": "C2",
+    "category": "relative",
+    "sentence": "The scientist, ___ work the prize was awarded, gave a short speech.",
+    "options": [
+      "for whose",
+      "whose",
+      "for whom",
+      "for which"
+    ],
+    "answer": "for whose",
+    "explanation": "Giới từ + whose + danh từ: (the prize was awarded for his work)."
+  },
+  {
+    "id": "q-c2-010",
+    "level": "C2",
+    "category": "article",
+    "sentence": "She has ___ unusual ability to remember faces.",
+    "options": [
+      "an",
+      "a",
+      "much",
+      "few"
+    ],
+    "answer": "an",
+    "explanation": "Ability đếm được, unusual bắt đầu bằng nguyên âm → an."
+  },
+  {
+    "id": "q-c2-011",
+    "level": "C2",
+    "category": "preposition",
+    "sentence": "The decision was made ___ consultation with local residents.",
+    "options": [
+      "in",
+      "at",
+      "on",
+      "by"
+    ],
+    "answer": "in",
+    "explanation": "In consultation with: có tham vấn với."
+  },
+  {
+    "id": "q-c2-012",
+    "level": "C2",
+    "category": "preposition",
+    "sentence": "His theory is ___ variance with the evidence.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "of"
+    ],
+    "answer": "at",
+    "explanation": "At variance with: trái ngược với."
+  },
+  {
+    "id": "q-c2-013",
+    "level": "C2",
+    "category": "connector",
+    "sentence": "___ his lack of experience, he handled the crisis remarkably well.",
+    "options": [
+      "Notwithstanding",
+      "Nevertheless",
+      "Whereas",
+      "Albeit"
+    ],
+    "answer": "Notwithstanding",
+    "explanation": "Notwithstanding + danh từ = despite (trang trọng)."
+  },
+  {
+    "id": "q-c2-014",
+    "level": "C2",
+    "category": "connector",
+    "sentence": "The plan was ambitious, ___ unrealistic.",
+    "options": [
+      "albeit",
+      "despite",
+      "whereas",
+      "unless"
+    ],
+    "answer": "albeit",
+    "explanation": "Albeit + tính từ/cụm từ = although (trang trọng)."
+  },
+  {
+    "id": "q-c2-015",
+    "level": "C2",
+    "category": "quantifier",
+    "sentence": "___ of the two proposals was accepted.",
+    "options": [
+      "Neither",
+      "None",
+      "Nor",
+      "No"
+    ],
+    "answer": "Neither",
+    "explanation": "Hai lựa chọn, không cái nào: Neither of + động từ số ít."
+  },
+  {
+    "id": "q-c2-016",
+    "level": "C2",
+    "category": "comparison",
+    "sentence": "This is by ___ the most difficult problem we have faced.",
+    "options": [
+      "far",
+      "much",
+      "very",
+      "so"
+    ],
+    "answer": "far",
+    "explanation": "By far + so sánh nhất: nhấn mạnh vượt trội."
+  }
+]

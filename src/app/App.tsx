@@ -28,6 +28,8 @@ const Game = lazy(() => import('../features/game/Game'));
 const Assistant = lazy(() => import('../features/assistant/Assistant'));
 const Grammar = lazy(() => import('../features/grammar/Grammar'));
 const AdminPage = lazy(() => import('../features/admin/Admin'));
+const Roadmap = lazy(() => import('../features/roadmap/Roadmap'));
+const Placement = lazy(() => import('../features/roadmap/Placement'));
 import ChatWidget from '../features/assistant/ChatWidget';
 import { OfflineSign } from '../components/OfflineSign';
 import { restoreSession, useAuth } from '../services/auth';
@@ -36,7 +38,11 @@ import { startPresence, useAdmin } from '../services/admin';
 export const APP_NAME = 'EnglishUp';
 /** Home, then the six skill lines, then the services, like the groups on a station directory. */
 const navGroups = [
-  [['/', 'dashboard']],
+  [
+    ['/', 'dashboard'],
+    ['/roadmap', 'roadmap'],
+    ['/placement', 'placement'],
+  ],
   [
     ['/vocabulary', 'vocabulary'],
     ['/listening', 'listening'],
@@ -214,6 +220,8 @@ const router = createBrowserRouter([
       { path: 'login', element: <SignIn /> },
       { path: 'assistant', element: <Assistant /> },
       { path: 'game', element: <Game /> },
+      { path: 'roadmap', element: <Roadmap /> },
+      { path: 'placement', element: <Placement /> },
       { path: 'achievements', element: <Achievements /> },
       { path: 'admin', element: <AdminPage /> },
       { path: '*', element: <NotFound /> },

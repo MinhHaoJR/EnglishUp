@@ -1,5 +1,7 @@
 import type {
   Dictation,
+  Quiz,
+  Roadmap,
   ListeningLesson,
   ReadingLesson,
   SpeakingPrompt,
@@ -22,3 +24,5 @@ export const dictations: Dictation[] = [];
 export const speakingPrompts: SpeakingPrompt[] = [];
 export const writingPrompts: WritingPrompt[] = [];
 export const translations: Translation[] = [];
+export const quizzes: Quiz[] = [];
+export const roadmaps: Roadmap[] = [];

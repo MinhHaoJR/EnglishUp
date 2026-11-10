@@ -3492,3 +3492,464 @@ main.admin-main {
     padding: 18px 16px 14px;
   }
 }
+
+/* ---------- Games: two races, each in its skill line; a sentence with a drawn blank; a ranked board ---------- */
+.game-modes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.game-modes button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  min-height: 88px;
+  padding: 14px 16px;
+  border: 1px solid color-mix(in srgb, var(--line) 30%, var(--border));
+  border-radius: var(--radius);
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+}
+.game-modes button > span:last-child {
+  display: grid;
+  gap: 4px;
+}
+.game-modes button small {
+  color: var(--muted);
+  font-weight: 400;
+}
+.game-modes button:hover {
+  background: var(--skill-soft);
+}
+.game-modes button[aria-selected='true'] {
+  border-color: var(--line);
+  background: var(--skill-soft);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.game-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+}
+.game-options label {
+  display: grid;
+  gap: 6px;
+  min-width: 200px;
+  font-weight: 600;
+}
+.game-sentence {
+  max-width: 40ch;
+  margin-inline: auto;
+  font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+  line-height: 1.6;
+  text-align: center;
+}
+.game-blank {
+  display: inline-block;
+  min-width: 5.5em;
+  margin: 0 0.2em;
+  padding: 0 0.4em;
+  border-bottom: 3px solid var(--line);
+  border-radius: 4px 4px 0 0;
+  background: var(--skill-soft);
+  color: var(--line);
+  vertical-align: baseline;
+}
+.game-blank.filled {
+  font-weight: 700;
+}
+.game-feedback {
+  min-height: 3.2em;
+}
+.game-feedback p {
+  margin: 0 0 4px;
+}
+.game-ranks {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.game-ranks li {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+}
+.game-ranks li:nth-child(even) {
+  background: color-mix(in srgb, var(--soft) 60%, var(--panel));
+}
+.game-ranks li[aria-current] {
+  background: color-mix(in srgb, var(--signal) 22%, var(--panel));
+}
+.game-ranks strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.game-rank {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: var(--soft);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+/* The podium: gold, silver, bronze plates with dark ink, so the top three read at a glance. */
+.game-rank.r1 {
+  background: #f5c542;
+  color: #3a2a00;
+}
+.game-rank.r2 {
+  background: #cfd6de;
+  color: #1f2a36;
+}
+.game-rank.r3 {
+  background: #e0a072;
+  color: #3a1d08;
+}
+.game-best {
+  padding: 2px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 640px) {
+  .game-modes {
+    grid-template-columns: 1fr;
+  }
+  .game-ranks li {
+    grid-template-columns: 32px minmax(0, 1fr) auto;
+  }
+  .game-ranks li > .muted {
+    display: none;
+  }
+}
+
+/* ---------- Learning paths: a level ladder, then the stages as stops on one line ---------- */
+.roadmap-ladder {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.roadmap-ladder button {
+  display: grid;
+  gap: 2px;
+  justify-items: center;
+  min-height: 64px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+}
+.roadmap-ladder button strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.05rem;
+}
+.roadmap-ladder button small {
+  color: var(--muted);
+}
+.roadmap-ladder button:hover {
+  background: var(--primary-soft);
+}
+.roadmap-ladder button[aria-current] {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--primary-ink);
+}
+.roadmap-ladder button[aria-current] small {
+  color: inherit;
+  opacity: 0.85;
+}
+.roadmap-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 16px 24px;
+  align-items: start;
+  margin-bottom: 20px;
+}
+.roadmap-head h2 {
+  margin: 0 0 6px;
+}
+.roadmap-head p {
+  margin: 0 0 10px;
+  max-width: 70ch;
+}
+.roadmap-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.roadmap-facts span {
+  padding: 2px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.roadmap-progress {
+  display: grid;
+  gap: 6px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  background: var(--soft);
+}
+.roadmap-progress strong {
+  font-size: 2rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+.roadmap-progress span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.roadmap-progress progress {
+  width: 100%;
+}
+.roadmap-stages {
+  position: relative;
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0 0 0 48px;
+  list-style: none;
+}
+.roadmap-stages::before {
+  content: '';
+  position: absolute;
+  left: 17px;
+  top: 18px;
+  bottom: 18px;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--border);
+}
+.roadmap-stages > li {
+  position: relative;
+}
+.roadmap-stop {
+  position: absolute;
+  left: -48px;
+  top: 14px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--panel);
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--primary-ink);
+  font-weight: 700;
+}
+.roadmap-stages > li.complete .roadmap-stop {
+  background: var(--success);
+}
+.roadmap-stages header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.roadmap-stages h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.roadmap-count {
+  padding: 2px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--soft);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.roadmap-stages > li.complete .roadmap-count {
+  background: var(--success-soft);
+  color: var(--success);
+}
+.roadmap-tasks {
+  display: grid;
+  gap: 4px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.roadmap-tasks li {
+  display: grid;
+  grid-template-columns: auto auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--line) 6%, var(--panel));
+}
+.roadmap-tasks li.done .roadmap-task-text > span {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+.roadmap-check input {
+  width: 22px;
+  height: 22px;
+  accent-color: var(--success);
+}
+.roadmap-task-text {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.roadmap-task-text small {
+  color: color-mix(in srgb, var(--line) 78%, var(--ink));
+  font-weight: 600;
+}
+.roadmap-tasks button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+/* ---------- Level test ---------- */
+.placement-progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+.placement-progress progress {
+  flex: 1;
+}
+.placement-question .choice-grid {
+  margin-top: 8px;
+}
+.placement-facts {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.placement-facts li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.placement-facts svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--primary);
+}
+.placement-verdict {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.placement-verdict > div {
+  display: grid;
+  gap: 4px;
+  padding: 16px;
+  border-radius: var(--radius);
+  background: var(--primary-soft);
+}
+.placement-verdict > div[data-skill] {
+  background: var(--skill-soft);
+}
+.placement-verdict strong {
+  font-size: 2.4rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+.placement-verdict strong small {
+  font-size: 1rem;
+  color: var(--muted);
+}
+.placement-levels {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.placement-levels li {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) 64px;
+  align-items: center;
+  gap: 12px;
+}
+.placement-levels li > span:last-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.placement-level {
+  font-weight: 700;
+}
+.placement-bar {
+  height: 12px;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: var(--soft);
+}
+.placement-bar span {
+  display: block;
+  height: 100%;
+  background: var(--muted);
+}
+.placement-levels li.passed .placement-bar span {
+  background: var(--success);
+}
+.placement-levels li.passed > span:last-child {
+  color: var(--success);
+  font-weight: 700;
+}
+@media (max-width: 860px) {
+  .roadmap-ladder {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .roadmap-head {
+    grid-template-columns: 1fr;
+  }
+  .roadmap-stages {
+    padding-left: 40px;
+  }
+  .roadmap-stages::before {
+    left: 13px;
+  }
+  .roadmap-stop {
+    left: -40px;
+    width: 30px;
+    height: 30px;
+  }
+  .roadmap-tasks li {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+  .roadmap-tasks li > .line-tile {
+    display: none;
+  }
+  .roadmap-tasks li > button {
+    grid-column: 2;
+    justify-self: start;
+  }
+  .placement-verdict {
+    grid-template-columns: 1fr;
+  }
+}

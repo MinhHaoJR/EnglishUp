@@ -133,21 +133,22 @@ Danh mục huy hiệu và điều kiện đạt viết trong code C# (`Community
 
 Huy hiệu được xét sau mỗi lần đồng bộ, dựa trên lịch sử đã lưu; mỗi huy hiệu chỉ đạt một lần nhờ khoá chính ghép.
 
-### 3.7 `GameSessions` — Đã có (`AddGame`)
+### 3.7 `GameSessions` — Đã có (`AddGame`, `GameModes`)
 
 Trò chơi trắc nghiệm 60 giây. Server rút 60 từ (lọc theo trình độ nếu chọn) từ `vocabulary.json` và `vocabulary-it.json` của client (liên kết vào thư mục output của API), tạo 4 lựa chọn nghĩa tiếng Việt, tính giờ và chấm **từng câu**; đáp án không bao giờ gửi cho trình duyệt.
 
-| Cột                            | Kiểu        | Ràng buộc                       | Ghi chú                                                                         |
-| ------------------------------ | ----------- | ------------------------------- | ------------------------------------------------------------------------------- |
-| `Id`                           | uuid        | PK                              | Server cấp khi bắt đầu                                                          |
-| `UserId`                       | text        | NN, FK → `AspNetUsers`, cascade |                                                                                 |
-| `Level`                        | varchar(8)  | null                            | `A1`–`C2`, null = mọi trình độ                                                  |
-| `QuestionsJson`                | text        | NN                              | Id từ, từ, 4 lựa chọn và chỉ số đáp án                                          |
-| `StartedAt`                    | timestamptz | NN                              | Giờ server; câu trả lời sau `StartedAt + 60 giây + 3 giây` bị từ chối (409)     |
-| `FinishedAt`                   | timestamptz | null                            | Đặt khi kết thúc; kết thúc lại trả cùng kết quả                                 |
-| `Answered`                     | int         | NN, concurrency token           | Câu phải trả lời theo thứ tự; hai câu trả lời cùng lúc cho một câu chỉ tính một |
-| `Correct`, `Combo`, `MaxCombo` | int         | NN                              |                                                                                 |
-| `Score`                        | int         | null cho đến khi kết thúc       | `10 × Correct + 5 × MaxCombo`                                                   |
+| Cột                            | Kiểu        | Ràng buộc                       | Ghi chú                                                                                                                                  |
+| ------------------------------ | ----------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `Id`                           | uuid        | PK                              | Server cấp khi bắt đầu                                                                                                                   |
+| `UserId`                       | text        | NN, FK → `AspNetUsers`, cascade |                                                                                                                                          |
+| `Level`                        | varchar(8)  | null                            | `A1`–`C2`, null = mọi trình độ                                                                                                           |
+| `Mode`                         | varchar(16) | NN, mặc định `vocabulary`       | `vocabulary` (chọn nghĩa) hoặc `grammar` (điền chỗ trống); kỷ lục và bảng xếp hạng tính riêng theo chế độ; chỉ mục (`Mode`, `StartedAt`) |
+| `QuestionsJson`                | text        | NN                              | Id từ, từ, 4 lựa chọn và chỉ số đáp án                                                                                                   |
+| `StartedAt`                    | timestamptz | NN                              | Giờ server; câu trả lời sau `StartedAt + 60 giây + 3 giây` bị từ chối (409)                                                              |
+| `FinishedAt`                   | timestamptz | null                            | Đặt khi kết thúc; kết thúc lại trả cùng kết quả                                                                                          |
+| `Answered`                     | int         | NN, concurrency token           | Câu phải trả lời theo thứ tự; hai câu trả lời cùng lúc cho một câu chỉ tính một                                                          |
+| `Correct`, `Combo`, `MaxCombo` | int         | NN                              |                                                                                                                                          |
+| `Score`                        | int         | null cho đến khi kết thúc       | `10 × Correct + 5 × MaxCombo`                                                                                                            |
 
 Index (`UserId`, `StartedAt`). Kỷ lục cá nhân = `MAX(Score)`; số ván đã chơi = số ván có `Score`.
 
@@ -253,14 +254,14 @@ Quản trị viên là tài khoản thuộc vai trò `Admin` (bảng có sẵn c
 
 ### `ContentItems` — Đã có (`AddContentItems`, `ContentInDatabase`)
 
-Toàn bộ bài học tiếng Anh (2.318 mục khi khởi tạo). App, Đua 60 giây và trợ giảng AI đều đọc từ bảng này; `src/data/*.json` chỉ còn là dữ liệu khởi tạo cho lệnh `seed` và cho test. `GET /api/content` công khai, có ETag; client kiểm tra từng dòng bằng chính schema Zod của app, bỏ qua dòng sai và lưu một bản sao trong Dexie để học offline.
+Toàn bộ bài học tiếng Anh (2.456 mục khi khởi tạo, gồm 133 câu hỏi ngữ pháp và 5 lộ trình). App, Đua 60 giây và trợ giảng AI đều đọc từ bảng này; `src/data/*.json` chỉ còn là dữ liệu khởi tạo cho lệnh `seed` và cho test. `GET /api/content` công khai, có ETag; client kiểm tra từng dòng bằng chính schema Zod của app, bỏ qua dòng sai và lưu một bản sao trong Dexie để học offline.
 
-| Cột         | Kiểu         | Ràng buộc | Ghi chú                                                                                                    |
-| ----------- | ------------ | --------- | ---------------------------------------------------------------------------------------------------------- |
-| `Kind`      | varchar(16)  | PK        | `word`, `structure`, `reading`, `listening`, `dictation`, `speaking`, `writing`, `translation`, `relation` |
-| `Id`        | varchar(64)  | PK        | Mã bài, ví dụ `v-1-1`, `s12`, `r1`                                                                         |
-| `Json`      | text         | NN        | Bài theo đúng cấu trúc JSON của app                                                                        |
-| `Position`  | integer      | NN        | Thứ tự trong loại (theo file seed; bài thêm mới xếp cuối)                                                  |
-| `Hidden`    | boolean      | NN        | Ẩn khỏi người học                                                                                          |
-| `UpdatedAt` | timestamptz  | NN        |                                                                                                            |
-| `UpdatedBy` | varchar(256) | NN        | Email quản trị viên, hoặc `seed`                                                                           |
+| Cột         | Kiểu         | Ràng buộc | Ghi chú                                                                                                                                                      |
+| ----------- | ------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Kind`      | varchar(16)  | PK        | `word`, `structure`, `reading`, `listening`, `dictation`, `speaking`, `writing`, `translation`, `relation`, `quiz` (câu điền ngữ pháp), `roadmap` (lộ trình) |
+| `Id`        | varchar(64)  | PK        | Mã bài, ví dụ `v-1-1`, `s12`, `r1`                                                                                                                           |
+| `Json`      | text         | NN        | Bài theo đúng cấu trúc JSON của app                                                                                                                          |
+| `Position`  | integer      | NN        | Thứ tự trong loại (theo file seed; bài thêm mới xếp cuối)                                                                                                    |
+| `Hidden`    | boolean      | NN        | Ẩn khỏi người học                                                                                                                                            |
+| `UpdatedAt` | timestamptz  | NN        |                                                                                                                                                              |
+| `UpdatedBy` | varchar(256) | NN        | Email quản trị viên, hoặc `seed`                                                                                                                             |

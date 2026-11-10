@@ -9,6 +9,8 @@ import writing from './writing.json';
 import translations from './translations.json';
 import relationsBasic from './wordRelations-basic.json';
 import relationsAdvanced from './wordRelations-advanced.json';
+import grammarQuiz from './grammar-quiz.json';
+import roadmaps from './roadmaps.json';
 import type { ContentRow } from '../services/content';
 
 /**
@@ -25,6 +27,8 @@ const files: Record<string, { id: string }[]> = {
   writing,
   translation: translations,
   relation: [...relationsBasic, ...relationsAdvanced],
+  quiz: grammarQuiz,
+  roadmap: roadmaps,
 };
 
 export const seedRows: ContentRow[] = Object.entries(files).flatMap(([kind, items]) =>

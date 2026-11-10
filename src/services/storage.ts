@@ -1,6 +1,6 @@
 import Dexie, { type Table } from 'dexie';
 import { z } from 'zod';
-import { skillSchema, wordSchema, type Word, type Skill } from '../data/schema';
+import { levelSchema, skillSchema, wordSchema, type Word, type Skill } from '../data/schema';
 export const learningLanguageSchema = z.enum(['en', 'ja', 'zh']);
 export type LearningLanguage = z.infer<typeof learningLanguageSchema>;
 export const settingsSchema = z.object({
@@ -13,6 +13,14 @@ export const settingsSchema = z.object({
   dailyGoal: z.number().int().min(1).max(120),
   newCards: z.number().int().min(0).max(100),
   transcript: z.boolean(),
+  /** The latest level test: estimated level (null = below A1), score out of 100, when. */
+  placement: z
+    .object({ level: levelSchema.nullable(), score: z.number().min(0).max(100), at: z.number() })
+    .optional(),
+  /** The learning path being followed, and the finished task ids of every path started. */
+  roadmap: z
+    .object({ id: z.string().min(1), done: z.record(z.string(), z.array(z.string())) })
+    .optional(),
   /** Last local edit; orders account sync. */
   updated: z.number().nonnegative().optional(),
 });

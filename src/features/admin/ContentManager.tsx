@@ -2,7 +2,13 @@ import { useEffect, useMemo, useState } from 'react';
 import { useBi, topicVi } from '../../i18n';
 import { Notice } from '../../components/shared';
 import SkillIcon, { type IconName } from '../../components/SkillIcon';
-import { levelSchema, structureGroups, type StructureGroup } from '../../data/schema';
+import {
+  levelSchema,
+  quizCategories,
+  structureGroups,
+  type QuizCategory,
+  type StructureGroup,
+} from '../../data/schema';
 import { groupLabels } from '../grammar/Grammar';
 import ContentForm, { blankItem } from './ContentForm';
 import { topicSections } from '../../data/topicSections';
@@ -46,6 +52,8 @@ const kinds: { id: ContentKind; icon: IconName; skill: string; vi: string; en: s
     vi: 'Đồng nghĩa – trái nghĩa',
     en: 'Synonyms & antonyms',
   },
+  { id: 'quiz', icon: 'choice', skill: 'grammar', vi: 'Câu hỏi ngữ pháp', en: 'Grammar questions' },
+  { id: 'roadmap', icon: 'roadmap', skill: 'reading', vi: 'Lộ trình học', en: 'Learning paths' },
 ];
 
 /** One line that names an item in the list, whatever its kind. */
@@ -54,6 +62,8 @@ function label(kind: ContentKind, item: Item) {
     return `${String(item.word)} — ${String(item.meaning)}`;
   if (kind === 'translation') return String((item.en as string[] | undefined)?.[0]);
   if (kind === 'structure') return String(item.formula);
+  if (kind === 'quiz') return `${String(item.sentence)} → ${String(item.answer)}`;
+  if (kind === 'roadmap') return String((item.title as { vi?: string } | undefined)?.vi);
   if (kind === 'dictation') return String(item.text);
   return String(item.title);
 }
@@ -99,6 +109,19 @@ function grouping(kind: ContentKind) {
       key: (item: Item) => String(item.group),
       order: [...structureGroups] as string[],
       name: (key: string): [string, string] => groupLabels[key as StructureGroup] ?? [key, key],
+    };
+  if (kind === 'quiz')
+    return {
+      key: (item: Item) => String(item.category),
+      order: Object.keys(quizCategories),
+      name: (key: string): [string, string] =>
+        [...(quizCategories[key as QuizCategory] ?? [key, key])] as [string, string],
+    };
+  if (kind === 'roadmap')
+    return {
+      key: (item: Item) => String(item.from),
+      order: levels,
+      name: (key: string): [string, string] => [`Bắt đầu từ ${key}`, `Starting at ${key}`],
     };
   if (kind === 'relation')
     return {
@@ -189,9 +212,9 @@ export default function ContentManager() {
   // Clusters come from the whole group, so a search keeps each word's real cluster number.
   const groups = useMemo(() => groupsOf(kind, all), [kind, all]);
   const groupWord =
-    kind === 'structure'
+    kind === 'structure' || kind === 'quiz'
       ? bi('nhóm', 'groups')
-      : kind === 'relation'
+      : kind === 'relation' || kind === 'roadmap'
         ? bi('trình độ', 'levels')
         : bi('chủ đề', 'topics');
   const counts = Object.fromEntries(kinds.map((k) => [k.id, entries(k.id, rows).length]));

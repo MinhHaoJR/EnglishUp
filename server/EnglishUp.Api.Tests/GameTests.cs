@@ -202,4 +202,94 @@ public class GameTests(ApiFactory factory) : IClassFixture<ApiFactory>
         ]);
         Assert.Equal(["novel"], bank.Draw("A1", 10, new Random(1)).Select(q => q.Word));
     }
+
+    private static async Task<GameStartDto> StartGrammar(HttpClient client, string? level = null, string? category = null)
+    {
+        var response = await client.PostAsJsonAsync("/api/game/start", new { level, mode = "grammar", category });
+        response.EnsureSuccessStatusCode();
+        return (await response.Content.ReadFromJsonAsync<GameStartDto>())!;
+    }
+
+    [Fact]
+    public async Task GrammarMode_DrawsBlankSentencesAndExplainsTheAnswer()
+    {
+        var client = await factory.SignedInClient();
+        var game = await StartGrammar(client, "B1");
+        Assert.Equal(25, game.Questions.Count); // every B1 question in the seed
+        Assert.All(game.Questions, q =>
+        {
+            Assert.Contains("___", q.Word);
+            Assert.Equal(4, q.Options.Distinct().Count());
+        });
+
+        var key = await Key(game.Id);
+        var reply = await (await Answer(client, game.Id, 0, key[0].Answer)).Content.ReadFromJsonAsync<AnswerDto>();
+        Assert.True(reply!.Correct);
+        Assert.False(string.IsNullOrWhiteSpace(reply.Explanation));
+
+        var articles = await StartGrammar(client, null, "article");
+        Assert.All(await Key(articles.Id), q => Assert.StartsWith("q-", q.WordId));
+        Assert.Equal(HttpStatusCode.BadRequest,
+            (await client.PostAsJsonAsync("/api/game/start", new { mode = "chess" })).StatusCode);
+        Assert.Equal(HttpStatusCode.BadRequest,
+            (await client.PostAsJsonAsync("/api/game/start", new { mode = "grammar", category = "nothing" })).StatusCode);
+    }
+
+    [Fact]
+    public async Task Leaderboard_RanksBestGamePerModeAndHidesPrivateProfiles()
+    {
+        using var local = new ApiFactory();
+        async Task<HttpClient> Player(string name, bool shown)
+        {
+            var client = await local.SignedInClient();
+            (await client.PutAsJsonAsync("/api/profile", new { displayName = name, showOnLeaderboard = shown }))
+                .EnsureSuccessStatusCode();
+            return client;
+        }
+        async Task PlayGrammar(HttpClient client, int right)
+        {
+            var response = await client.PostAsJsonAsync("/api/game/start", new { mode = "grammar" });
+            var game = (await response.Content.ReadFromJsonAsync<GameStartDto>())!;
+            using var scope = local.Services.CreateScope();
+            var json = await scope.ServiceProvider.GetRequiredService<AppDbContext>().GameSessions
+                .Where(s => s.Id == game.Id).Select(s => s.QuestionsJson).SingleAsync();
+            var key = JsonSerializer.Deserialize<List<GameQuestion>>(json)!;
+            for (var i = 0; i < right; i++)
+                (await client.PostAsJsonAsync($"/api/game/{game.Id}/answer", new { index = i, choice = key[i].Answer }))
+                    .EnsureSuccessStatusCode();
+            (await client.PostAsync($"/api/game/{game.Id}/finish", null)).EnsureSuccessStatusCode();
+        }
+
+        var an = await Player("An", true);
+        var binh = await Player("Bình", true);
+        var hidden = await Player("Ẩn danh", false);
+        await PlayGrammar(an, 2);
+        await PlayGrammar(an, 5); // only the best game counts
+        await PlayGrammar(binh, 3);
+        await PlayGrammar(hidden, 9);
+
+        var board = await an.GetFromJsonAsync<GameLeaderboardDto>("/api/game/leaderboard?mode=grammar&period=week");
+        Assert.Equal(["An", "Bình"], board!.Entries.Select(e => e.DisplayName));
+        Assert.Equal((Game.ScoreOf(5, 5), 2, true), (board.Entries[0].Best, board.Entries[0].Played, board.Entries[0].IsMe));
+        Assert.Equal(Game.ScoreOf(5, 5), board.MyBest);
+
+        // The hidden learner still sees their own best, without a row.
+        var mine = await hidden.GetFromJsonAsync<GameLeaderboardDto>("/api/game/leaderboard?mode=grammar&period=all");
+        Assert.Equal((Game.ScoreOf(9, 9), false), (mine!.MyBest, mine.MyRowShown));
+        Assert.Empty((await an.GetFromJsonAsync<GameLeaderboardDto>("/api/game/leaderboard?mode=vocabulary"))!.Entries);
+
+        // Games from last week drop off the weekly board; all-time keeps them.
+        using (var scope = local.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            foreach (var session in db.GameSessions) session.StartedAt = session.StartedAt.AddDays(-8);
+            await db.SaveChangesAsync();
+        }
+        Assert.Empty((await an.GetFromJsonAsync<GameLeaderboardDto>("/api/game/leaderboard?mode=grammar&period=week"))!.Entries);
+        Assert.Equal(2, (await an.GetFromJsonAsync<GameLeaderboardDto>("/api/game/leaderboard?mode=grammar&period=all"))!.Entries.Count);
+        Assert.Equal(HttpStatusCode.BadRequest, (await an.GetAsync("/api/game/leaderboard?period=year")).StatusCode);
+
+        var records = await an.GetFromJsonAsync<GameRecordsDto>("/api/game/records?mode=grammar");
+        Assert.Equal((Game.ScoreOf(5, 5), 2), (records!.Best, records.Played));
+    }
 }

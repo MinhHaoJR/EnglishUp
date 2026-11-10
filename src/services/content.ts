@@ -3,7 +3,9 @@ import { create } from 'zustand';
 import {
   dictations,
   listenings,
+  quizzes,
   readings,
+  roadmaps,
   speakingPrompts,
   structures,
   translations,
@@ -13,7 +15,9 @@ import {
 import {
   dictationSchema,
   listeningSchema,
+  quizSchema,
   readingSchema,
+  roadmapSchema,
   speakingSchema,
   structureSchema,
   translationSchema,
@@ -38,6 +42,8 @@ export const contentKinds = {
   writing: { schema: writingSchema, items: writingPrompts },
   translation: { schema: translationSchema, items: translations },
   relation: { schema: wordRelationSchema, items: wordRelations },
+  quiz: { schema: quizSchema, items: quizzes },
+  roadmap: { schema: roadmapSchema, items: roadmaps },
 } as const;
 export type ContentKind = keyof typeof contentKinds;
 type Item = { id: string };
