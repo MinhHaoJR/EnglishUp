@@ -10,7 +10,7 @@ import { wordSchema, questionSchema } from './schema';
 import { topics, topicVi } from '../i18n';
 import { topicSectionFor, topicSections } from './topicSections';
 test('expanded catalog has translated topics, complete IT entries and stable original IDs', () => {
-  expect(vocabulary).toHaveLength(2487);
+  expect(vocabulary).toHaveLength(2491);
   // The phrasal verbs (their own test below) are left out of the original catalog's counts.
   expect(
     vocabulary.filter(
@@ -43,7 +43,10 @@ test('expanded catalog has translated topics, complete IT entries and stable ori
 });
 test('original vocabulary meets quantity, topic and schema requirements', () => {
   expect(vocabulary.length).toBeGreaterThanOrEqual(1500);
-  expect(new Set(vocabulary.map((w) => w.word.trim().toLowerCase())).size).toBe(vocabulary.length);
+  // A headword repeats only as another word class (may the verb beside May the month).
+  expect(new Set(vocabulary.map((w) => `${w.word.trim().toLowerCase()}|${w.pos}`)).size).toBe(
+    vocabulary.length,
+  );
   expect(vocabulary.every((w) => ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].includes(w.level))).toBe(
     true,
   );
@@ -221,14 +224,24 @@ test('the IELTS Writing collocations fill 15 themed topics of ten in their own s
   }
 });
 
-test('the added common verbs join Everyday verbs with their IPA and never repeat a headword', () => {
+test('the added common verbs join Everyday verbs with their IPA and repeat a headword only for a new verb sense', () => {
   const verbs = vocabulary.filter((word) => word.id.startsWith('v-verb-'));
-  expect(verbs).toHaveLength(57);
+  expect(verbs).toHaveLength(61);
   for (const word of verbs) {
     expect(word.topic).toBe('Everyday verbs');
     expect(word.ipa).toMatch(/^\/.+\/$/);
     expect(['verb', 'modal verb']).toContain(word.pos);
     expect(word.examples[0].toLowerCase()).toContain(word.word);
   }
-  expect(vocabulary.filter((word) => word.topic === 'Everyday verbs')).toHaveLength(257);
+  expect(vocabulary.filter((word) => word.topic === 'Everyday verbs')).toHaveLength(261);
+  const repeated = verbs.filter((verb) =>
+    vocabulary.some((w) => w.word.toLowerCase() === verb.word && w.id !== verb.id),
+  );
+  expect(repeated.map((w) => w.word).sort()).toEqual(['account', 'correct', 'mark', 'may']);
+  for (const verb of repeated)
+    expect(
+      vocabulary
+        .filter((w) => w.word.toLowerCase() === verb.word && w.id !== verb.id)
+        .every((w) => !w.pos.includes('verb')),
+    ).toBe(true);
 });

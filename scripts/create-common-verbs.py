@@ -3,7 +3,8 @@ that the library did not have yet, added to the existing "Everyday verbs" topic.
 
 Of 141 distinct words in the first list, 96 were already in the library (any topic) and are left out;
 of 30 in a second list, 18 were, so 12 more join. A headword that exists as another word class
-(may the month, correct the adjective, mark and account the nouns) still counts as present.
+(may the month, correct the adjective, mark and account the nouns) was skipped at first; their verb
+senses were then added as separate entries on request, so those four headwords appear twice.
 The IPA is taken from the user's list (American transcriptions). The Vietnamese meanings follow the
 verb sense, the definitions and examples are written for EnglishUp, and every example contains the
 headword. Run: python scripts/create-common-verbs.py
@@ -73,23 +74,30 @@ ITEMS = [
     ("affect", "/əˈfɛkt/", "B1", "ảnh hưởng đến, tác động đến", "to cause a change in someone or something", "Lack of sleep can affect your memory."),
     ("afford", "/əˈfɔrd/", "B1", "đủ khả năng (chi trả, làm gì)", "to have enough money or time for something", "We can't afford a new car this year."),
     ("aim", "/eɪm/", "B1", "nhắm tới, đặt mục tiêu", "to plan or try to achieve something, or to point at a target", "We aim to finish the book by Friday."),
+    # Verb senses of headwords the library has only as another word class (asked for on 11/11/2026).
+    ("may", "/meɪ/", "A2", "có thể; được phép", "used to say something is possible, or to ask for or give permission", "May I borrow your pen?"),
+    ("correct", "/kəˈrɛkt/", "A2", "sửa (lỗi), chữa (bài)", "to find and fix mistakes", "The teacher will correct our essays tonight."),
+    ("mark", "/mɑrk/", "B1", "đánh dấu; chấm (bài)", "to put a sign on something, or to check and score students' work", "Mark the questions you are not sure about."),
+    ("account", "/əˈkaʊnt/", "B2", "giải thích; chiếm (tỉ lệ) (account for)", "to explain why something happened, or to form a part of a total", "Tourism can account for half of a small town's income."),
 ]
+# Headwords allowed to repeat: the library has them only as a noun or adjective, never as a verb.
+VERB_SENSES = {"may", "correct", "mark", "account"}
 
 
 def main():
     root = pathlib.Path(__file__).resolve().parent.parent / "src" / "data"
-    existing = {w["word"].lower() for f in ["vocabulary", "vocabulary-it", "vocabulary-phrasal", "vocabulary-collocations"]
+    existing = {w["word"].lower(): w["pos"] for f in ["vocabulary", "vocabulary-it", "vocabulary-phrasal", "vocabulary-collocations"]
                 for w in json.loads((root / f"{f}.json").read_text(encoding="utf-8"))}
     out = []
     for word, ipa, level, meaning, definition, example in ITEMS:
-        assert word not in existing, f"{word} is already in the library"
+        assert word not in existing or (word in VERB_SENSES and "verb" not in existing[word]), f"{word} is already in the library"
         assert word in example.lower() and ipa.startswith("/") and ipa.endswith("/"), word
         out.append({
             "id": f"v-verb-{word}", "word": word, "ipa": ipa,
-            "pos": "modal verb" if word in ("should", "can", "could") else "verb",
+            "pos": "modal verb" if word in ("should", "can", "could", "may") else "verb",
             "meaning": meaning, "definition": definition, "examples": [example], "level": level, "topic": TOPIC,
         })
-    assert len({w["word"] for w in out}) == len(out) == 57
+    assert len({w["word"] for w in out}) == len(out) == 61
     (root / "vocabulary-verbs.json").write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(len(out), "verbs:", {lv: sum(1 for w in out if w["level"] == lv) for lv in ["A1", "A2", "B1", "B2"]})
 

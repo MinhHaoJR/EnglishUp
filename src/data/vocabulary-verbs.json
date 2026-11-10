@@ -625,5 +625,49 @@
     "examples": ["We aim to finish the book by Friday."],
     "level": "B1",
     "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-may",
+    "word": "may",
+    "ipa": "/meɪ/",
+    "pos": "modal verb",
+    "meaning": "có thể; được phép",
+    "definition": "used to say something is possible, or to ask for or give permission",
+    "examples": ["May I borrow your pen?"],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-correct",
+    "word": "correct",
+    "ipa": "/kəˈrɛkt/",
+    "pos": "verb",
+    "meaning": "sửa (lỗi), chữa (bài)",
+    "definition": "to find and fix mistakes",
+    "examples": ["The teacher will correct our essays tonight."],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-mark",
+    "word": "mark",
+    "ipa": "/mɑrk/",
+    "pos": "verb",
+    "meaning": "đánh dấu; chấm (bài)",
+    "definition": "to put a sign on something, or to check and score students' work",
+    "examples": ["Mark the questions you are not sure about."],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-account",
+    "word": "account",
+    "ipa": "/əˈkaʊnt/",
+    "pos": "verb",
+    "meaning": "giải thích; chiếm (tỉ lệ) (account for)",
+    "definition": "to explain why something happened, or to form a part of a total",
+    "examples": ["Tourism can account for half of a small town's income."],
+    "level": "B2",
+    "topic": "Everyday verbs"
   }
 ]
