@@ -1,7 +1,9 @@
 """Writes src/data/vocabulary-verbs.json: common verbs from a study list the user shared (11/11/2026)
 that the library did not have yet, added to the existing "Everyday verbs" topic.
 
-Of 141 distinct words in the list, 96 were already in the library (any topic) and are left out.
+Of 141 distinct words in the first list, 96 were already in the library (any topic) and are left out;
+of 30 in a second list, 18 were, so 12 more join. A headword that exists as another word class
+(may the month, correct the adjective, mark and account the nouns) still counts as present.
 The IPA is taken from the user's list (American transcriptions). The Vietnamese meanings follow the
 verb sense, the definitions and examples are written for EnglishUp, and every example contains the
 headword. Run: python scripts/create-common-verbs.py
@@ -58,6 +60,19 @@ ITEMS = [
     ("destroy", "/dɪˈstrɔɪ/", "B1", "phá hủy", "to damage something so badly that it cannot be used", "The storm could destroy the old bridge."),
     ("die", "/daɪ/", "A2", "chết; (cây) héo chết", "to stop living", "Plants die without enough light."),
     ("discuss", "/dɪˈskʌs/", "A2", "thảo luận, bàn bạc", "to talk about something with other people", "Let's discuss the plan after lunch."),
+    # Second list (11/11/2026, 3 images): 30 words, 18 already in the library.
+    ("contribute", "/kənˈtrɪbjut/", "B1", "góp phần, đóng góp", "to give money, time or ideas to help something succeed", "Everyone can contribute an idea to the class project."),
+    ("control", "/kənˈtroʊl/", "B1", "kiểm soát, điều khiển", "to have power over something, or to make it work the way you want", "It is hard to control a kite on a windy day."),
+    ("copy", "/ˈkɑpi/", "A2", "sao chép, chép lại", "to make something that is the same as something else", "Copy the new words into your notebook."),
+    ("could", "/kʊd/", "A1", "có thể (quá khứ của can); có lẽ", "used as the past of can, to ask politely, or to say something is possible", "Could you open the window, please?"),
+    ("lead", "/lid/", "B1", "dẫn dắt, lãnh đạo; dẫn tới", "to guide or be in charge of a group, or to cause a result", "Our coach will lead the team in the final."),
+    ("link", "/lɪŋk/", "B1", "liên kết, kết nối", "to connect two or more things or ideas", "This bridge will link the two villages."),
+    ("achieve", "/əˈʧiv/", "B1", "đạt được", "to succeed in doing something after working hard", "With practice, you can achieve a high score."),
+    ("act", "/ækt/", "B1", "hành động; đóng vai, diễn", "to do something to deal with a situation, or to play a part in a play or film", "We must act quickly to put out the fire."),
+    ("admit", "/ədˈmɪt/", "B1", "thừa nhận", "to agree that something is true, often something bad", "He did not want to admit that he was wrong."),
+    ("affect", "/əˈfɛkt/", "B1", "ảnh hưởng đến, tác động đến", "to cause a change in someone or something", "Lack of sleep can affect your memory."),
+    ("afford", "/əˈfɔrd/", "B1", "đủ khả năng (chi trả, làm gì)", "to have enough money or time for something", "We can't afford a new car this year."),
+    ("aim", "/eɪm/", "B1", "nhắm tới, đặt mục tiêu", "to plan or try to achieve something, or to point at a target", "We aim to finish the book by Friday."),
 ]
 
 
@@ -71,10 +86,10 @@ def main():
         assert word in example.lower() and ipa.startswith("/") and ipa.endswith("/"), word
         out.append({
             "id": f"v-verb-{word}", "word": word, "ipa": ipa,
-            "pos": "modal verb" if word in ("should", "can") else "verb",
+            "pos": "modal verb" if word in ("should", "can", "could") else "verb",
             "meaning": meaning, "definition": definition, "examples": [example], "level": level, "topic": TOPIC,
         })
-    assert len({w["word"] for w in out}) == len(out) == 45
+    assert len({w["word"] for w in out}) == len(out) == 57
     (root / "vocabulary-verbs.json").write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(len(out), "verbs:", {lv: sum(1 for w in out if w["level"] == lv) for lv in ["A1", "A2", "B1", "B2"]})
 

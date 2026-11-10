@@ -10,7 +10,7 @@ import { wordSchema, questionSchema } from './schema';
 import { topics, topicVi } from '../i18n';
 import { topicSectionFor, topicSections } from './topicSections';
 test('expanded catalog has translated topics, complete IT entries and stable original IDs', () => {
-  expect(vocabulary).toHaveLength(2475);
+  expect(vocabulary).toHaveLength(2487);
   // The phrasal verbs (their own test below) are left out of the original catalog's counts.
   expect(
     vocabulary.filter(
@@ -223,12 +223,12 @@ test('the IELTS Writing collocations fill 15 themed topics of ten in their own s
 
 test('the added common verbs join Everyday verbs with their IPA and never repeat a headword', () => {
   const verbs = vocabulary.filter((word) => word.id.startsWith('v-verb-'));
-  expect(verbs).toHaveLength(45);
+  expect(verbs).toHaveLength(57);
   for (const word of verbs) {
     expect(word.topic).toBe('Everyday verbs');
     expect(word.ipa).toMatch(/^\/.+\/$/);
     expect(['verb', 'modal verb']).toContain(word.pos);
     expect(word.examples[0].toLowerCase()).toContain(word.word);
   }
-  expect(vocabulary.filter((word) => word.topic === 'Everyday verbs')).toHaveLength(245);
+  expect(vocabulary.filter((word) => word.topic === 'Everyday verbs')).toHaveLength(257);
 });

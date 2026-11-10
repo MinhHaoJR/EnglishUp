@@ -117,7 +117,7 @@ public class ContentTests
         using var scope = factory.Services.CreateScope();
         var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
         var seed = Content.ReadSeed(Content.SeedFolder);
-        Assert.Equal(2475, seed.Count(r => r.Kind == "word"));
+        Assert.Equal(2487, seed.Count(r => r.Kind == "word"));
         Assert.Equal(Content.SeedFiles.Count, seed.Select(r => r.Kind).Distinct().Count());
 
         var word = await db.ContentItems.SingleAsync(c => c.Kind == "word" && c.Id == seed[0].Id);
