@@ -3139,33 +3139,66 @@ main.admin-main {
   margin: 0;
   font-size: 1.1rem;
 }
-.content-word {
+/* The item form: two columns of labelled fields; long text, lists and repeated rows span both. */
+.content-fields {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px 16px;
 }
-.content-word label,
-.content-json {
+.content-fields label {
   display: grid;
+  align-content: start;
   gap: 6px;
+  font-weight: 600;
 }
-.content-word input,
-.content-word select {
+.content-fields .wide {
+  grid-column: 1 / -1;
+}
+.content-fields input,
+.content-fields select {
   width: 100%;
   max-width: none;
   padding: 0 10px;
 }
-.content-word textarea {
+.content-fields textarea {
   min-height: 72px;
   padding: 8px 10px;
+  font-weight: 400;
 }
-.content-json textarea {
-  min-height: 420px;
-  padding: 12px;
-  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+.content-fields textarea.tall {
+  min-height: 260px;
+  line-height: 1.6;
+}
+.content-rows {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 12px 14px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.content-rows > legend {
+  padding: 0 6px;
+  font-weight: 700;
+}
+.content-row {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 10px 12px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--soft);
+}
+.content-row > legend {
+  padding: 0 4px;
+  color: var(--muted);
   font-size: 0.85rem;
-  line-height: 1.5;
-  tab-size: 2;
+  font-weight: 700;
+}
+.content-row > button,
+.content-rows > button {
+  justify-self: start;
 }
 .content-issues {
   margin: 0;
@@ -3198,7 +3231,7 @@ main.admin-main {
     grid-column: 1 / -1;
     justify-content: flex-start;
   }
-  .content-word {
+  .content-fields {
     grid-template-columns: 1fr;
   }
 }

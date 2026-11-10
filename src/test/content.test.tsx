@@ -115,12 +115,20 @@ describe('content manager', () => {
     show();
     await userEvent.click(await screen.findByRole('button', { name: '+ Thêm từ vựng' }));
     const form = screen.getByRole('heading', { name: /Thêm mục mới/ }).closest('form')!;
-    await userEvent.clear(within(form).getByLabelText('Từ'));
-    await userEvent.type(within(form).getByLabelText('Từ'), 'harbour');
-    await userEvent.clear(within(form).getByLabelText('Nghĩa tiếng Việt'));
-    await userEvent.type(within(form).getByLabelText('Nghĩa tiếng Việt'), 'bến cảng');
+    const save = within(form).getByRole('button', { name: 'Lưu vào cơ sở dữ liệu' });
+    // A new item starts blank, so it cannot be saved yet.
+    expect(save).toBeDisabled();
+    for (const [name, text] of [
+      ['Từ', 'harbour'],
+      ['Từ loại', 'noun'],
+      ['Nghĩa tiếng Việt', 'bến cảng'],
+      ['Định nghĩa tiếng Anh', 'A sheltered place for boats.'],
+      [/^Ví dụ/, 'The boats wait in the harbour.'],
+    ] as const)
+      await userEvent.type(within(form).getByLabelText(name), text);
+    await userEvent.selectOptions(within(form).getByLabelText('Trình độ'), 'B1');
     expect(within(form).getByText(/Hợp lệ với cấu trúc/)).toBeInTheDocument();
-    await userEvent.click(within(form).getByRole('button', { name: 'Lưu' }));
+    await userEvent.click(save);
 
     const put = fetchMock.mock.calls.find(([, init]) => (init as RequestInit)?.method === 'PUT');
     expect(put![0]).toMatch(/^\/api\/admin\/content\/word\/a-word-/);
@@ -128,20 +136,50 @@ describe('content manager', () => {
     expect(body.data).toMatchObject({
       word: 'harbour',
       meaning: 'bến cảng',
-      level: original.level,
+      examples: ['The boats wait in the harbour.'],
+      level: 'B1',
+      topic: 'Daily life',
     });
     expect(await screen.findByText(/Đã lưu/)).toBeInTheDocument();
   });
 
-  it('checks JSON lessons against the app schema before saving', async () => {
+  it('gives lessons a form with repeatable questions, checked against the app schema', async () => {
     show();
     await userEvent.click(await screen.findByRole('tab', { name: /Bài đọc/ }));
     await userEvent.click(screen.getByRole('button', { name: '+ Thêm bài đọc' }));
-    const editor = screen.getByRole('textbox', { name: /Nội dung \(JSON/ });
-    await userEvent.clear(editor);
-    await userEvent.type(editor, '{{"id": "r-x", "title": "Only a title"}');
-    expect(screen.getByText(/^level:/)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Lưu' })).toBeDisabled();
+    const form = screen.getByRole('heading', { name: /Thêm mục mới/ }).closest('form')!;
+    // No JSON: the passage and its five questions are separate fields.
+    expect(within(form).queryByText(/JSON/)).not.toBeInTheDocument();
+    expect(within(form).getByLabelText('Bài đọc')).toBeInTheDocument();
+    expect(within(form).getAllByLabelText('Câu hỏi')).toHaveLength(5);
+    expect(within(form).getByText('Chưa điền: Tiêu đề')).toBeInTheDocument();
+    expect(within(form).getByRole('button', { name: 'Lưu vào cơ sở dữ liệu' })).toBeDisabled();
+
+    // A sixth question can be added and removed again; a reading needs exactly five.
+    await userEvent.click(within(form).getByRole('button', { name: '+ Thêm mục' }));
+    expect(within(form).getAllByLabelText('Câu hỏi')).toHaveLength(6);
+    await userEvent.click(within(form).getByRole('button', { name: 'Bỏ mục 6' }));
+    expect(within(form).getAllByLabelText('Câu hỏi')).toHaveLength(5);
+  });
+
+  it('edits an existing lesson in its form and saves the change', async () => {
+    show();
+    await userEvent.click(await screen.findByRole('tab', { name: /Bài đọc/ }));
+    await userEvent.click(screen.getByRole('button', { name: 'Mở tất cả' }));
+    const first = readings[0];
+    const row = screen.getByText(first.id).closest('li')!;
+    await userEvent.click(within(row).getByRole('button', { name: 'Sửa' }));
+    const form = screen.getByRole('heading', { name: /Sửa mục/ }).closest('form')!;
+    const titleBox = within(form).getByLabelText('Tiêu đề');
+    expect(titleBox).toHaveValue(first.title);
+    await userEvent.clear(titleBox);
+    await userEvent.type(titleBox, 'A calmer morning');
+    await userEvent.click(within(form).getByRole('button', { name: 'Lưu vào cơ sở dữ liệu' }));
+
+    const put = fetchMock.mock.calls.find(([, init]) => (init as RequestInit)?.method === 'PUT');
+    expect(put![0]).toBe(`/api/admin/content/reading/${first.id}`);
+    const body = JSON.parse((put![1] as RequestInit).body as string);
+    expect(body.data).toEqual({ ...first, title: 'A calmer morning' });
   });
 
   it('groups words by topic into the 20-word learning clusters and lists every word', async () => {

@@ -81,3 +81,5 @@ Cut order if late: game records, number of badges, recommendations beyond the we
 ## Translation extension
 
 Added bidirectional word/sentence writing inside Vocabulary, 16 original bilingual sentences, reference matching with explicit equivalent-answer self-assessment, and persisted vocabulary attempts independent of SRS. All four checks passed (34 tests). Browser verification completed and saved a sentence in both directions.
+
+- Admin forms for every kind (user request, 2026-11-10): the JSON editor is replaced by `ContentForm.tsx`, a field list per kind (text, long text, number, select, one-per-line lists, repeatable rows for dialogue lines and questions, nested paths such as `synonyms.0.word`). New items start blank with the schema's minimum rows. Empty required texts are flagged in the form (only a word's IPA may stay empty, as in the seed), because several lesson schemas accept empty strings that the server rejects. Client: 172 tests pass. Checked on Supabase: a dictation saved through the form appeared in `/api/content` and was then deleted.

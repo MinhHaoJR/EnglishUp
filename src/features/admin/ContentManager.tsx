@@ -2,13 +2,13 @@ import { useEffect, useMemo, useState } from 'react';
 import { useBi, topicVi } from '../../i18n';
 import { Notice } from '../../components/shared';
 import SkillIcon, { type IconName } from '../../components/SkillIcon';
-import { levelSchema, structureGroups, type StructureGroup, type Word } from '../../data/schema';
+import { levelSchema, structureGroups, type StructureGroup } from '../../data/schema';
 import { groupLabels } from '../grammar/Grammar';
+import ContentForm, { blankItem } from './ContentForm';
 import { topicSections } from '../../data/topicSections';
 import { STUDY_GROUP_SIZE } from '../../services/vocabularyStudy';
 import { ApiError } from '../../services/auth';
 import {
-  contentKinds,
   deleteContent,
   fetchContentRows,
   hideContent,
@@ -224,9 +224,7 @@ export default function ContentManager() {
 
   function startNew() {
     const taken = new Set(all.map((e) => e.id));
-    // The first item of the kind is the template, so the editor shows the expected shape.
-    const first = all.find((e) => e.item)?.item ?? {};
-    const template = { ...first, id: newId(kind, taken) } as Item;
+    const template = blankItem(kind, newId(kind, taken));
     setEditing({ item: template, isNew: true });
     setMessage('');
   }
@@ -345,7 +343,7 @@ export default function ContentManager() {
       {error && <Notice error>{error}</Notice>}
 
       {editing ? (
-        <Editor
+        <ContentForm
           kind={kind}
           initial={editing.item}
           isNew={editing.isNew}
@@ -481,172 +479,5 @@ export default function ContentManager() {
         </>
       )}
     </section>
-  );
-}
-
-/** A form for words (the common case); a JSON editor checked live against the app's schema for the rest. */
-function Editor({
-  kind,
-  initial,
-  isNew,
-  onSave,
-  onCancel,
-}: {
-  kind: ContentKind;
-  initial: Item;
-  isNew: boolean;
-  onSave: (item: Item) => void;
-  onCancel: () => void;
-}) {
-  const bi = useBi();
-  const [text, setText] = useState(() => JSON.stringify(initial, null, 2));
-  const [word, setWord] = useState(() => initial as unknown as Word);
-
-  let value: unknown = null;
-  let syntax = '';
-  if (kind === 'word') value = word;
-  else
-    try {
-      value = JSON.parse(text);
-    } catch (e) {
-      syntax = e instanceof Error ? e.message : String(e);
-    }
-  const check = syntax ? null : contentKinds[kind].schema.safeParse(value);
-  const issues = syntax
-    ? [bi(`JSON chưa đúng cú pháp: ${syntax}`, `The JSON is not valid: ${syntax}`)]
-    : check && !check.success
-      ? check.error.issues.map((i) => `${i.path.join('.') || '(item)'}: ${i.message}`)
-      : [];
-  const idChanged = !isNew && (value as Item | null)?.id !== initial.id;
-  if (idChanged)
-    issues.push(
-      bi(
-        'Không đổi mã khi sửa; hãy thêm mục mới nếu cần mã khác.',
-        'Keep the id when editing; add a new item for a different id.',
-      ),
-    );
-
-  const topicIds = [...new Set(contentKinds.word.items.map((w) => w.topic))].sort();
-  const field = (key: keyof Word, labelText: string, long = false) => (
-    <label>
-      {labelText}
-      {long ? (
-        <textarea
-          value={String(word[key] ?? '')}
-          onChange={(e) => setWord({ ...word, [key]: e.target.value })}
-        />
-      ) : (
-        <input
-          value={String(word[key] ?? '')}
-          onChange={(e) => setWord({ ...word, [key]: e.target.value })}
-        />
-      )}
-    </label>
-  );
-
-  return (
-    <form
-      className="content-editor"
-      onSubmit={(event) => {
-        event.preventDefault();
-        if (check?.success && !idChanged) onSave(check.data as Item);
-      }}
-    >
-      <h3>
-        {isNew ? bi('Thêm mục mới', 'New item') : bi('Sửa mục', 'Edit item')}{' '}
-        <code>{initial.id}</code>
-      </h3>
-      {kind === 'word' ? (
-        <div className="content-word">
-          {field('word', bi('Từ', 'Word'))}
-          {field('ipa', bi('Phiên âm', 'IPA'))}
-          {field('pos', bi('Từ loại', 'Part of speech'))}
-          {field('meaning', bi('Nghĩa tiếng Việt', 'Vietnamese meaning'))}
-          {field('definition', bi('Định nghĩa tiếng Anh', 'English definition'), true)}
-          <label>
-            {bi('Ví dụ 1', 'Example 1')}
-            <input
-              value={word.examples[0] ?? ''}
-              onChange={(e) =>
-                setWord({ ...word, examples: [e.target.value, ...word.examples.slice(1)] })
-              }
-            />
-          </label>
-          <label>
-            {bi('Ví dụ 2 (không bắt buộc)', 'Example 2 (optional)')}
-            <input
-              value={word.examples[1] ?? ''}
-              onChange={(e) =>
-                setWord({
-                  ...word,
-                  examples: e.target.value
-                    ? [word.examples[0] ?? '', e.target.value]
-                    : [word.examples[0] ?? ''],
-                })
-              }
-            />
-          </label>
-          <label>
-            {bi('Trình độ', 'Level')}
-            <select
-              value={word.level}
-              onChange={(e) => setWord({ ...word, level: e.target.value as Word['level'] })}
-            >
-              {levelSchema.options.map((l) => (
-                <option key={l}>{l}</option>
-              ))}
-            </select>
-          </label>
-          <label>
-            {bi('Chủ đề', 'Topic')}
-            <select
-              value={word.topic}
-              onChange={(e) => setWord({ ...word, topic: e.target.value })}
-            >
-              {topicIds.map((t) => (
-                <option key={t} value={t}>
-                  {bi(topicVi[t] ?? t, t)}
-                </option>
-              ))}
-            </select>
-          </label>
-        </div>
-      ) : (
-        <label className="content-json">
-          {bi(
-            'Nội dung (JSON theo cấu trúc của các bài cùng loại)',
-            'Content (JSON in the same shape as the other items of this kind)',
-          )}
-          <textarea
-            spellCheck={false}
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            aria-describedby="content-issues"
-          />
-        </label>
-      )}
-      <div id="content-issues" aria-live="polite">
-        {issues.length ? (
-          <ul className="content-issues">
-            {issues.map((issue) => (
-              <li key={issue}>{issue}</li>
-            ))}
-          </ul>
-        ) : (
-          <p className="content-ok">
-            <SkillIcon skill="check" size={16} />{' '}
-            {bi('Hợp lệ với cấu trúc của ứng dụng.', 'Valid for the app.')}
-          </p>
-        )}
-      </div>
-      <div className="actions">
-        <button className="primary" disabled={issues.length > 0}>
-          {bi('Lưu', 'Save')}
-        </button>
-        <button type="button" onClick={onCancel}>
-          {bi('Huỷ', 'Cancel')}
-        </button>
-      </div>
-    </form>
   );
 }
