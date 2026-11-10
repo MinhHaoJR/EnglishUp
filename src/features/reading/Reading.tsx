@@ -4,7 +4,15 @@ import { useState } from 'react';
 import { readings } from '../../data/content';
 import type { ReadingLesson } from '../../data/schema';
 import { useT, useBi } from '../../i18n';
-import { Empty, Filters, Notice, PageTitle, useFiltered, useTimer } from '../../components/shared';
+import {
+  Empty,
+  Filters,
+  Notice,
+  PageTitle,
+  useFiltered,
+  useTimer,
+  LevelTopic,
+} from '../../components/shared';
 import { DictionaryText } from '../../components/DictionaryText';
 import { Questions, isCorrect } from '../../components/Questions';
 import { logAttempt } from '../../services/storage';
@@ -124,9 +132,7 @@ export default function Reading() {
         <div className="lesson-grid">
           {filtered.map((r) => (
             <article className="panel lesson-card" key={r.id}>
-              <span className="badge">
-                {r.level} · {r.topic}
-              </span>
+              <LevelTopic level={r.level} topic={r.topic} />
               <h2>{r.title}</h2>
               <p className="muted">{r.text.slice(0, 125)}…</p>
               <span className="muted">

@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { useInRouterContext, useLocation } from 'react-router-dom';
+import SkillIcon, { isIconName, type IconName } from './SkillIcon';
 import { liveQuery } from 'dexie';
 import { useApp } from '../app/store';
 import { useT, topics, topicVi } from '../i18n';
@@ -79,6 +81,7 @@ export function PageTitle({
 }) {
   return (
     <header className="page-title">
+      {useInRouterContext() && <PageTile />}
       <div>
         <h1>{title}</h1>
         {meta && <p className="page-meta">{meta}</p>}
@@ -88,6 +91,42 @@ export function PageTitle({
     </header>
   );
 }
+/** The page's pictogram on its skill-line plate, from the first part of the address. */
+function PageTile() {
+  const { pathname } = useLocation();
+  const segment = pathname.split('/')[1] || 'dashboard';
+  const icon: IconName | null =
+    segment === 'account' ? 'user' : isIconName(segment) ? segment : null;
+  return icon ? (
+    <span className="line-tile page-tile" aria-hidden="true">
+      <SkillIcon skill={icon} size={26} />
+    </span>
+  ) : null;
+}
+
+/** A lesson's level, on the CEFR colour scale, and its topic in the interface language. */
+export function LevelTopic({
+  level,
+  topic,
+  extra,
+}: {
+  level: string;
+  topic: string;
+  /** One more fact, such as a writing genre. */
+  extra?: string;
+}) {
+  const language = useApp((s) => s.settings.language);
+  return (
+    <span className="level-topic">
+      <span className="level-chip" data-level={level}>
+        {level}
+      </span>
+      <span className="topic-chip">{language === 'vi' ? (topicVi[topic] ?? topic) : topic}</span>
+      {extra && <span className="topic-chip">{extra}</span>}
+    </span>
+  );
+}
+
 export function Empty() {
   const t = useT();
   const filter = useApp((s) => s.filter);

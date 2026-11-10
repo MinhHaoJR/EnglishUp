@@ -10,7 +10,7 @@ Chosen from seven candidates drawn from Vietnamese learners' world (guide signs,
 
 ## Color
 
-Strategy: restrained. Neutrals plus one accent (sign blue), with signal yellow reserved for "you are here", and six line colours used only to identify skills (pictogram tiles, route segments, tints). Light is the default because learners mostly practise in daylit rooms. Dark is the night-lit sign, used on phones in the evening.
+Strategy: full palette, one line per page (colour pass of 10/11/2026, design-craft colorize + layout). Each learning page owns its skill line at page scale: a 5% wash on the ground, a title plate with the page pictogram on a 17%→5% tint, line-tinted panel edges, primary buttons filled with the line, stat tiles, tabs, progress bars, checkboxes and choices. Signal yellow stays reserved for "you are here". CEFR levels have their own sequential spectrum (below), used for level chips and the faint wash of each lesson card. Vocabulary topic tiles walk the same spectrum with a coloured stop, so long lists read as varied but stay in one family. The Overview's title plate ends in a six-segment route map of the skill lines. Harmony comes from one recipe: tints are the line mixed into the panel at 4, 10, 17 and 24 percent, and text colours are the line mixed 78% with ink (`--line-wash`, `--line-tint`, `--line-edge`, `--line-text`). Earlier strategy, kept for the admin pages: neutrals plus sign blue, with line colours for skills only. Light is the default because learners mostly practise in daylit rooms. Dark is the night-lit sign, used on phones in the evening.
 
 | Role                         | Light     | Dark      | Where it is used                                                                                   |
 | ---------------------------- | --------- | --------- | -------------------------------------------------------------------------------------------------- |
@@ -28,15 +28,30 @@ Strategy: restrained. Neutrals plus one accent (sign blue), with signal yellow r
 
 The line colours were picked at similar weight so no skill shouts. White pictograms reach 4.5–6.7:1 on the light tiles; dark tiles use `#0b1726` pictograms.
 
-| Line                                                 | Light     | Dark      |
-| ---------------------------------------------------- | --------- | --------- |
-| Vocabulary                                           | `#1a8754` | `#45c486` |
-| Listening                                            | `#6b47c9` | `#a68cf5` |
-| Speaking                                             | `#c2410c` | `#f2854c` |
-| Reading                                              | `#0e7490` | `#3fbcd8` |
-| Writing                                              | `#be185d` | `#ef6c9c` |
-| Grammar (sentence patterns)                          | `#a16207` | `#e2aa3f` |
-| Services (home, tutor, race, achievements, settings) | `#3d5a80` | `#8aa6c8` |
+| Line                                | Light     | Dark      |
+| ----------------------------------- | --------- | --------- |
+| Vocabulary                          | `#1a8754` | `#45c486` |
+| Listening                           | `#6b47c9` | `#a68cf5` |
+| Speaking                            | `#c2410c` | `#f2854c` |
+| Reading                             | `#0e7490` | `#3fbcd8` |
+| Writing                             | `#be185d` | `#ef6c9c` |
+| Grammar (sentence patterns)         | `#a16207` | `#e2aa3f` |
+| Overview (dashboard)                | `#0b5cad` | `#62a8f2` |
+| Learning paths and level test       | `#4338ca` | `#8b93f5` |
+| Games                               | `#a21caf` | `#e07ae6` |
+| Achievements                        | `#be123c` | `#f7718d` |
+| Services (tutor, settings, account) | `#3d5a80` | `#8aa6c8` |
+
+CEFR spectrum (`--lv-a1` … `--lv-c2`), each with white text at 5:1 or more in light and dark ink in dark mode:
+
+| Level | Light     | Dark      |
+| ----- | --------- | --------- |
+| A1    | `#15803d` | `#4ade80` |
+| A2    | `#0f766e` | `#2dd4bf` |
+| B1    | `#0369a1` | `#38bdf8` |
+| B2    | `#4338ca` | `#8b93f5` |
+| C1    | `#7e22ce` | `#c08af8` |
+| C2    | `#be185d` | `#f472b6` |
 
 `[data-skill]` sets `--line`, `--skill-accent` and `--skill-soft` (12% of the line colour over the panel). Legacy names `--green`, `--accent`, `--skill-*` point at these tokens for older stylesheets.
 

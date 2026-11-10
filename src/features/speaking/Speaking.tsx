@@ -6,7 +6,15 @@ import type { SpeakingPrompt } from '../../data/schema';
 import { useApp } from '../../app/store';
 import SkillIcon from '../../components/SkillIcon';
 import { useT, useBi } from '../../i18n';
-import { Filters, PageTitle, Notice, Empty, useFiltered, useTimer } from '../../components/shared';
+import {
+  Filters,
+  PageTitle,
+  Notice,
+  Empty,
+  useFiltered,
+  useTimer,
+  LevelTopic,
+} from '../../components/shared';
 import { SpeakButton } from '../../components/SpeakButton';
 import { WordDiff } from '../../components/WordDiff';
 import { alignWords } from '../../services/diff';
@@ -317,9 +325,7 @@ export default function Speaking() {
         <div className="lesson-grid">
           {filtered.map((p) => (
             <article className="panel lesson-card" key={p.id}>
-              <span className="badge">
-                {p.level} · {p.topic}
-              </span>
+              <LevelTopic level={p.level} topic={p.topic} />
               <h2>{p.title}</h2>
               <p className="muted">{p.text}</p>
               <button className="primary" onClick={() => setActive(p)}>

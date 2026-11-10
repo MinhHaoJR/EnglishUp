@@ -3953,3 +3953,361 @@ main.admin-main {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- Learning colour pass (design-craft: colorize + layout) ----------
+   THESIS: every learning page owns its skill line at page scale (ground wash, title plate, primary
+   actions, stats, tabs, progress, choices), and the CEFR levels get their own sequential spectrum, so
+   colour answers "where am I" and "how hard is this". It refuses white panels on grey with one blue
+   accent. Harmony comes from one recipe: every tint is the line mixed into the panel at the same few
+   strengths (4, 10 and 24 percent), and every text colour is the line mixed with ink. */
+:root {
+  --line-dashboard: var(--primary);
+  --line-roadmap: #4338ca;
+  --line-game: #a21caf;
+  --line-achievements: #be123c;
+  /* CEFR spectrum: green to magenta, every step readable with white text (contrast 5:1 or more). */
+  --lv-a1: #15803d;
+  --lv-a2: #0f766e;
+  --lv-b1: #0369a1;
+  --lv-b2: #4338ca;
+  --lv-c1: #7e22ce;
+  --lv-c2: #be185d;
+}
+html.dark {
+  --line-roadmap: #8b93f5;
+  --line-game: #e07ae6;
+  --line-achievements: #f7718d;
+  --lv-a1: #4ade80;
+  --lv-a2: #2dd4bf;
+  --lv-b1: #38bdf8;
+  --lv-b2: #8b93f5;
+  --lv-c1: #c08af8;
+  --lv-c2: #f472b6;
+}
+[data-skill='dashboard'] {
+  --line: var(--line-dashboard);
+}
+[data-skill='roadmap'],
+[data-skill='placement'] {
+  --line: var(--line-roadmap);
+}
+[data-skill='game'] {
+  --line: var(--line-game);
+}
+[data-skill='achievements'] {
+  --line: var(--line-achievements);
+}
+/* Declared on every element that sets a line, since a custom property resolves where it is declared. */
+:root,
+[data-skill] {
+  --line-text: color-mix(in srgb, var(--line) 78%, var(--ink));
+  --line-wash: color-mix(in srgb, var(--line) 4%, var(--panel));
+  --line-tint: color-mix(in srgb, var(--line) 10%, var(--panel));
+  --line-edge: color-mix(in srgb, var(--line) 24%, var(--border));
+}
+.sidebar nav a.active {
+  background: var(--line-tint);
+}
+.sidebar nav a:hover {
+  background: var(--line-wash);
+}
+
+/* The page ground carries a breath of the page's line. */
+.workspace {
+  background: color-mix(in srgb, var(--line) 5%, var(--bg));
+}
+
+/* Title plate: the page's pictogram on its line, the heading on a tinted plate. */
+.workspace .page-title,
+.workspace:not([data-skill='dashboard']) main > .page-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  border: 1px solid var(--line-edge);
+  border-radius: var(--radius);
+  background: var(--line-tint);
+}
+.workspace .page-title > div {
+  flex: 1;
+  min-width: 0;
+}
+.page-tile {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius);
+}
+.workspace .page-title .muted {
+  color: color-mix(in srgb, var(--line) 30%, var(--muted));
+}
+.workspace .page-meta {
+  background: var(--panel);
+  color: var(--line-text);
+}
+
+/* Panels sit on the wash with a line-tinted edge. */
+.workspace .panel,
+.workspace .stats .stat {
+  border-color: color-mix(in srgb, var(--line) 14%, var(--border));
+}
+.workspace .badge {
+  background: var(--line-tint);
+  color: var(--line-text);
+}
+.workspace .filters label {
+  color: var(--line-text);
+}
+
+/* Primary actions take the page's line; outline actions on cards fill with it on hover. */
+html .workspace .primary {
+  background: var(--line);
+  border-color: var(--line);
+  color: var(--tile-ink);
+}
+html .workspace .primary:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--line) 84%, var(--ink));
+  border-color: color-mix(in srgb, var(--line) 84%, var(--ink));
+  color: var(--tile-ink);
+}
+html .workspace .lesson-card .primary {
+  background: var(--line-tint);
+  border-color: var(--line-edge);
+  color: var(--line-text);
+}
+html .workspace .lesson-card .primary:hover:not(:disabled) {
+  background: var(--line);
+  border-color: var(--line);
+  color: var(--tile-ink);
+}
+.workspace .lesson-grid > .lesson-card:hover {
+  border-color: color-mix(in srgb, var(--line) 50%, var(--border));
+  background: var(--line-wash);
+}
+
+/* Stats, tabs, progress and choices in the line. */
+html .workspace .stats:not(.dashboard-stats) > .stat:nth-child(n) {
+  background: var(--line-tint);
+  border-color: var(--line-edge);
+}
+.workspace .stat strong {
+  color: var(--line-text);
+}
+.workspace .tabs {
+  background: color-mix(in srgb, var(--line) 12%, var(--soft));
+}
+html .workspace .tabs button[aria-pressed='true'] {
+  color: var(--line-text);
+  box-shadow:
+    inset 0 -2px 0 var(--line),
+    0 1px 2px rgb(19 36 58 / 10%);
+}
+.workspace progress::-webkit-progress-value {
+  background: var(--line);
+}
+.workspace progress::-moz-progress-bar {
+  background: var(--line);
+}
+.workspace input[type='checkbox'],
+.workspace input[type='radio'],
+.workspace input[type='range'] {
+  accent-color: var(--line);
+}
+.workspace .choice-grid button:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--line) 50%, var(--border));
+  background: var(--line-wash);
+}
+.workspace .question label:has(input:checked) {
+  border-color: var(--line);
+  background: var(--line-tint);
+}
+.workspace .flashcard {
+  border-color: var(--line-edge);
+  background: linear-gradient(180deg, var(--line-tint), var(--panel) 180px);
+}
+
+/* Lesson facts: the level on its CEFR colour, then the topic in the page's line. */
+.level-topic {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  gap: 6px;
+}
+.level-chip,
+.topic-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.level-chip {
+  background: var(--lv, var(--muted));
+  color: var(--tile-ink);
+  letter-spacing: 0.02em;
+}
+.level-chip[data-level='A1'] {
+  --lv: var(--lv-a1);
+}
+.level-chip[data-level='A2'] {
+  --lv: var(--lv-a2);
+}
+.level-chip[data-level='B1'] {
+  --lv: var(--lv-b1);
+}
+.level-chip[data-level='B2'] {
+  --lv: var(--lv-b2);
+}
+.level-chip[data-level='C1'] {
+  --lv: var(--lv-c1);
+}
+.level-chip[data-level='C2'] {
+  --lv: var(--lv-c2);
+}
+.topic-chip {
+  background: var(--line-tint);
+  color: var(--line-text);
+  font-weight: 600;
+}
+
+/* Overview: a title plate with the six skill lines as a route map underneath, and every skill
+   row and recent activity in its own line. */
+.home-head {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 20px 22px 26px;
+  border: 1px solid var(--line-edge);
+  border-radius: var(--radius);
+  background: var(--line-tint);
+}
+.home-head::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--line-vocabulary) 0 16.66%,
+    var(--line-listening) 16.66% 33.33%,
+    var(--line-speaking) 33.33% 50%,
+    var(--line-reading) 50% 66.66%,
+    var(--line-writing) 66.66% 83.33%,
+    var(--line-grammar) 83.33% 100%
+  );
+}
+.home-signs .sign-plate {
+  background: var(--panel);
+}
+.line-list li a,
+.line-list li + li a {
+  margin: 2px -8px 0;
+  border-top: 0;
+  border-radius: var(--radius-sm);
+  background: var(--line-wash);
+}
+.line-list a:hover {
+  background: var(--line-tint);
+}
+.line-score strong {
+  color: var(--line-text);
+}
+.recent-list .badge {
+  background: var(--line-tint);
+  color: var(--line-text);
+}
+.week-bars .today i {
+  background: var(--signal);
+}
+.week-bars .today span {
+  background: color-mix(in srgb, var(--signal) 22%, var(--soft));
+}
+@media (max-width: 860px) {
+  .workspace .page-title,
+  .workspace:not([data-skill='dashboard']) main > .page-title {
+    padding: 14px 16px;
+  }
+  .page-tile {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Richer plates: the title plate leans from a stronger tint into the wash. */
+.workspace .page-title,
+.workspace:not([data-skill='dashboard']) main > .page-title,
+.home-head {
+  background: linear-gradient(
+    115deg,
+    color-mix(in srgb, var(--line) 17%, var(--panel)),
+    color-mix(in srgb, var(--line) 5%, var(--panel)) 72%
+  );
+}
+
+/* Each lesson card carries its level: a faint wash and edge in the CEFR colour. */
+.workspace .lesson-card:has(.level-chip[data-level='A1']) {
+  --lv: var(--lv-a1);
+}
+.workspace .lesson-card:has(.level-chip[data-level='A2']) {
+  --lv: var(--lv-a2);
+}
+.workspace .lesson-card:has(.level-chip[data-level='B1']) {
+  --lv: var(--lv-b1);
+}
+.workspace .lesson-card:has(.level-chip[data-level='B2']) {
+  --lv: var(--lv-b2);
+}
+.workspace .lesson-card:has(.level-chip[data-level='C1']) {
+  --lv: var(--lv-c1);
+}
+.workspace .lesson-card:has(.level-chip[data-level='C2']) {
+  --lv: var(--lv-c2);
+}
+.workspace .lesson-grid > .lesson-card:has(.level-chip) {
+  border-color: color-mix(in srgb, var(--lv) 22%, var(--border));
+  background: color-mix(in srgb, var(--lv) 3%, var(--panel));
+}
+.workspace .lesson-grid > .lesson-card:has(.level-chip):hover {
+  border-color: color-mix(in srgb, var(--lv) 50%, var(--border));
+  background: color-mix(in srgb, var(--lv) 7%, var(--panel));
+}
+
+/* Vocabulary topics: a coloured stop on each tile, walking the same six-step spectrum. */
+.workspace .topic-grid .topic-tile {
+  --dot: var(--lv-a1);
+  justify-content: flex-start;
+  border-color: color-mix(in srgb, var(--dot) 22%, var(--border));
+  background: color-mix(in srgb, var(--dot) 4%, var(--panel));
+}
+.workspace .topic-grid .topic-tile::before {
+  content: '';
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--dot);
+}
+.workspace .topic-grid .topic-tile span {
+  flex: 1;
+}
+.workspace .topic-grid .topic-tile:nth-child(6n + 2) {
+  --dot: var(--lv-a2);
+}
+.workspace .topic-grid .topic-tile:nth-child(6n + 3) {
+  --dot: var(--lv-b1);
+}
+.workspace .topic-grid .topic-tile:nth-child(6n + 4) {
+  --dot: var(--lv-b2);
+}
+.workspace .topic-grid .topic-tile:nth-child(6n + 5) {
+  --dot: var(--lv-c1);
+}
+.workspace .topic-grid .topic-tile:nth-child(6n) {
+  --dot: var(--lv-c2);
+}
+.workspace .topic-grid .topic-tile:hover:not(:disabled),
+.workspace .topic-grid .topic-tile[aria-pressed='true'] {
+  border-color: var(--dot);
+  background: color-mix(in srgb, var(--dot) 10%, var(--panel));
+}

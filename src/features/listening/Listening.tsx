@@ -6,7 +6,15 @@ import type { ListeningLesson } from '../../data/schema';
 import { useApp } from '../../app/store';
 import SkillIcon from '../../components/SkillIcon';
 import { useT, useBi } from '../../i18n';
-import { Filters, PageTitle, Notice, Empty, useFiltered, useTimer } from '../../components/shared';
+import {
+  Filters,
+  PageTitle,
+  Notice,
+  Empty,
+  useFiltered,
+  useTimer,
+  LevelTopic,
+} from '../../components/shared';
 import { Questions, isCorrect } from '../../components/Questions';
 import { DictionaryText } from '../../components/DictionaryText';
 import { WordDiff } from '../../components/WordDiff';
@@ -293,9 +301,7 @@ export default function Listening() {
           <div className="lesson-grid">
             {lessons.map((l) => (
               <article key={l.id} className="panel lesson-card">
-                <span className="badge">
-                  {l.level} · {l.topic}
-                </span>
+                <LevelTopic level={l.level} topic={l.topic} />
                 <h2>{l.title}</h2>
                 <p className="muted">
                   {l.lines.length} {bi('lượt nói', 'speaking turns')} · {l.questions.length}{' '}
@@ -314,9 +320,7 @@ export default function Listening() {
         <div className="lesson-grid">
           {sentences.map((d, i) => (
             <article key={d.id} className="panel lesson-card">
-              <span className="badge">
-                {d.level} · {d.topic}
-              </span>
+              <LevelTopic level={d.level} topic={d.topic} />
               <h2>
                 {bi('Câu', 'Sentence')} {i + 1}
               </h2>

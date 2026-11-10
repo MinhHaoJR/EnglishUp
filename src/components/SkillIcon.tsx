@@ -41,6 +41,7 @@ const paths = {
 } as const;
 
 export type IconName = keyof typeof paths;
+export const isIconName = (name: string): name is IconName => name in paths;
 
 export default function SkillIcon({ skill, size = 20 }: { skill: IconName; size?: number }) {
   return (

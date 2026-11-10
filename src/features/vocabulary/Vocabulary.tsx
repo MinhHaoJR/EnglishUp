@@ -6,7 +6,14 @@ import { vocabulary } from '../../data/content';
 import { topicSectionFor, topicSections, type TopicSectionId } from '../../data/topicSections';
 import { levelSchema, type Level, type Word } from '../../data/schema';
 import { useT, useBi, topicVi } from '../../i18n';
-import { PageTitle, Empty, Notice, useLive, useFiltered } from '../../components/shared';
+import {
+  PageTitle,
+  Empty,
+  Notice,
+  useLive,
+  useFiltered,
+  LevelTopic,
+} from '../../components/shared';
 import { WordEditor } from '../../components/WordEditor';
 import { SpeakButton } from '../../components/SpeakButton';
 import { db, download } from '../../services/storage';
@@ -357,9 +364,7 @@ export default function Vocabulary() {
                 {group.words.map((w) => (
                   <article className="panel lesson-card" key={w.id}>
                     <div className="flex justify-between w-full">
-                      <span className="badge">
-                        {w.level} · {topicLabel(w.topic)}
-                      </span>
+                      <LevelTopic level={w.level} topic={w.topic} />
                       {w.custom && <span className="badge">{t('custom')}</span>}
                     </div>
                     <h2>

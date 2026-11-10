@@ -13,6 +13,7 @@ import {
   useFiltered,
   useLive,
   useTimer,
+  LevelTopic,
 } from '../../components/shared';
 import { WordDiff } from '../../components/WordDiff';
 import { db, type Submission } from '../../services/storage';
@@ -310,9 +311,7 @@ export default function Writing() {
         <div className="lesson-grid">
           {prompts.map((p) => (
             <article className="panel lesson-card" key={p.id}>
-              <span className="badge">
-                {p.level} · {p.topic} · {p.genre}
-              </span>
+              <LevelTopic level={p.level} topic={p.topic} extra={p.genre} />
               <h2>{p.title}</h2>
               <p className="muted">{p.prompt}</p>
               <span className="muted">
