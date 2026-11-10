@@ -2,7 +2,8 @@ import { useEffect, useMemo, useState } from 'react';
 import { useBi, topicVi } from '../../i18n';
 import { Notice } from '../../components/shared';
 import SkillIcon, { type IconName } from '../../components/SkillIcon';
-import { levelSchema, type Word } from '../../data/schema';
+import { levelSchema, structureGroups, type StructureGroup, type Word } from '../../data/schema';
+import { groupLabels } from '../grammar/Grammar';
 import { topicSections } from '../../data/topicSections';
 import { STUDY_GROUP_SIZE } from '../../services/vocabularyStudy';
 import { ApiError } from '../../services/auth';
@@ -75,37 +76,69 @@ function entries(kind: ContentKind, rows: ContentRow[]): Entry[] {
     });
 }
 
-type TopicGroup = {
-  topic: string;
+type Group = {
+  key: string;
+  /** Vietnamese and English names of the group. */
+  name: [string, string];
   total: number;
-  /** The visible words in the same 20-word clusters learners study (numbered from 1). */
+  /**
+   * The visible items. Words come in the same 20-word clusters learners study (numbered from 1);
+   * other kinds are one unnumbered block, as their pages show them.
+   */
   clusters: { number: number; words: Entry[] }[];
-  /** Hidden or invalid words: learners do not see them, so they are in no cluster. */
+  /** Hidden or invalid items: learners do not see them, so they are in no cluster. */
   other: Entry[];
 };
 const catalogOrder: string[] = topicSections.flatMap((section) => [...section.topics]);
-const rank = (topic: string) => {
-  const at = catalogOrder.indexOf(topic);
-  return at < 0 ? catalogOrder.length : at;
-};
+const levels: string[] = [...levelSchema.options];
 
-/** Words by topic in catalog order, each topic cut into the learners' clusters; hidden and invalid words follow. */
-function topicGroups(list: Entry[]): TopicGroup[] {
-  const byTopic = new Map<string, Entry[]>();
+/** How each kind is grouped in the list: by topic, by grammar group (patterns) or by level (synonyms). */
+function grouping(kind: ContentKind) {
+  if (kind === 'structure')
+    return {
+      key: (item: Item) => String(item.group),
+      order: [...structureGroups] as string[],
+      name: (key: string): [string, string] => groupLabels[key as StructureGroup] ?? [key, key],
+    };
+  if (kind === 'relation')
+    return {
+      key: (item: Item) => String(item.level),
+      order: levels,
+      name: (key: string): [string, string] => [`Trình độ ${key}`, `Level ${key}`],
+    };
+  return {
+    key: (item: Item) => String(item.topic),
+    order: catalogOrder,
+    name: (key: string): [string, string] => [topicVi[key] ?? key, key],
+  };
+}
+
+/** Items in their groups (in the learning pages' order); words are also cut into the learners' clusters. */
+function groupsOf(kind: ContentKind, list: Entry[]): Group[] {
+  const { key, order, name } = grouping(kind);
+  const rank = (k: string) => (order.includes(k) ? order.indexOf(k) : order.length);
+  const byKey = new Map<string, Entry[]>();
   for (const entry of list) {
-    const topic = String((entry.item ?? (entry.row.data as Item | null))?.topic ?? '—');
-    byTopic.set(topic, [...(byTopic.get(topic) ?? []), entry]);
+    const source = entry.item ?? (entry.row.data as Item | null);
+    const k = source ? key(source) : '—';
+    byKey.set(k, [...(byKey.get(k) ?? []), entry]);
   }
-  return [...byTopic]
+  const clustered = kind === 'word';
+  return [...byKey]
     .sort(([a], [b]) => rank(a) - rank(b) || a.localeCompare(b))
-    .map(([topic, items]) => {
+    .map(([k, items]) => {
       const live = items.filter((e) => e.status === 'live');
+      // Words: one cluster per 20; other kinds: one block when anything is visible.
+      const count = clustered
+        ? Math.ceil(live.length / STUDY_GROUP_SIZE)
+        : Math.min(live.length, 1);
       return {
-        topic,
+        key: k,
+        name: name(k),
         total: items.length,
-        clusters: Array.from({ length: Math.ceil(live.length / STUDY_GROUP_SIZE) }, (_, i) => ({
-          number: i + 1,
-          words: live.slice(i * STUDY_GROUP_SIZE, (i + 1) * STUDY_GROUP_SIZE),
+        clusters: Array.from({ length: count }, (_, i) => ({
+          number: clustered ? i + 1 : 0,
+          words: clustered ? live.slice(i * STUDY_GROUP_SIZE, (i + 1) * STUDY_GROUP_SIZE) : live,
         })),
         other: items.filter((e) => e.status !== 'live'),
       };
@@ -153,8 +186,14 @@ export default function ContentManager() {
     !term ||
     e.id.toLowerCase().includes(term) ||
     (e.item !== null && label(kind, e.item).toLowerCase().includes(term));
-  // Clusters come from the whole topic, so a search keeps each word's real cluster number.
-  const groups = useMemo(() => (kind === 'word' ? topicGroups(all) : []), [kind, all]);
+  // Clusters come from the whole group, so a search keeps each word's real cluster number.
+  const groups = useMemo(() => groupsOf(kind, all), [kind, all]);
+  const groupWord =
+    kind === 'structure'
+      ? bi('nhóm', 'groups')
+      : kind === 'relation'
+        ? bi('trình độ', 'levels')
+        : bi('chủ đề', 'topics');
   const counts = Object.fromEntries(kinds.map((k) => [k.id, entries(k.id, rows).length]));
   const current = kinds.find((k) => k.id === kind)!;
 
@@ -205,7 +244,6 @@ export default function ContentManager() {
         <small>
           <code>{e.id}</code>
           {e.item && 'level' in e.item && ` · ${String(e.item.level)}`}
-          {e.item && 'topic' in e.item && kind !== 'word' && ` · ${String(e.item.topic)}`}
         </small>
       </div>
       <span className={`content-status ${e.status}`}>{statusText[e.status]}</span>
@@ -348,99 +386,98 @@ export default function ContentManager() {
                   `${matches.length} of ${all.length} match`,
                 )
               : bi(`${all.length} mục`, `${all.length} items`)}
+            {` · ${groups.length} ${groupWord}`}
             {kind === 'word' &&
               bi(
-                ` · ${groups.length} chủ đề, mỗi cụm ${STUDY_GROUP_SIZE} từ như trang học`,
-                ` · ${groups.length} topics, ${STUDY_GROUP_SIZE}-word clusters as on the learning page`,
+                `, mỗi cụm ${STUDY_GROUP_SIZE} từ như trang học`,
+                `, ${STUDY_GROUP_SIZE}-word clusters as on the learning page`,
               )}
           </p>
-          {kind === 'word' ? (
-            <>
-              {!term && (
-                <div className="content-topic-tools">
-                  <button
-                    type="button"
-                    onClick={() => setOpenTopics(new Set(groups.map((g) => g.topic)))}
-                  >
-                    {bi('Mở tất cả chủ đề', 'Expand all topics')}
-                  </button>
-                  <button type="button" onClick={() => setOpenTopics(new Set())}>
-                    {bi('Thu gọn tất cả', 'Collapse all')}
-                  </button>
-                </div>
-              )}
-              <div className="content-topics">
-                {groups.map((group) => {
-                  const clusters = group.clusters
-                    .map((c) => ({ ...c, words: c.words.filter(isMatch) }))
-                    .filter((c) => c.words.length);
-                  const other = group.other.filter(isMatch);
-                  if (term && !clusters.length && !other.length) return null;
-                  // A search opens every topic with a match.
-                  const open = Boolean(term) || openTopics.has(group.topic);
-                  return (
-                    <section key={group.topic} className="content-topic">
-                      <h3>
-                        <button
-                          type="button"
-                          aria-expanded={open}
-                          disabled={Boolean(term)}
-                          onClick={() =>
-                            setOpenTopics((current) => {
-                              const next = new Set(current);
-                              if (next.has(group.topic)) next.delete(group.topic);
-                              else next.add(group.topic);
-                              return next;
-                            })
-                          }
-                        >
-                          <SkillIcon skill="chevron" size={16} />
-                          <span className="content-topic-name">
-                            {bi(topicVi[group.topic] ?? group.topic, group.topic)}
-                          </span>
-                          <small>
-                            {bi(
-                              `${group.total} từ · ${group.clusters.length} cụm`,
-                              `${group.total} words · ${group.clusters.length} clusters`,
-                            )}
-                          </small>
-                        </button>
-                      </h3>
-                      {open && (
-                        <div className="content-clusters">
-                          {clusters.map((cluster) => (
-                            <section key={cluster.number} className="content-cluster">
-                              <h4>
-                                {bi(`Cụm ${cluster.number}`, `Cluster ${cluster.number}`)}{' '}
-                                <small>
-                                  {bi(
-                                    `${cluster.words.length} từ`,
-                                    `${cluster.words.length} words`,
-                                  )}
-                                </small>
-                              </h4>
-                              <ul className="content-list">{cluster.words.map(row)}</ul>
-                            </section>
-                          ))}
-                          {other.length > 0 && (
-                            <section className="content-cluster">
-                              <h4>
-                                {bi('Đã ẩn hoặc lỗi dữ liệu', 'Hidden or invalid')}{' '}
-                                <small>{bi(`${other.length} từ`, `${other.length} words`)}</small>
-                              </h4>
-                              <ul className="content-list">{other.map(row)}</ul>
-                            </section>
-                          )}
-                        </div>
-                      )}
-                    </section>
-                  );
-                })}
-              </div>
-            </>
-          ) : (
-            <ul className="content-list">{matches.map(row)}</ul>
+          {!term && (
+            <div className="content-topic-tools">
+              <button
+                type="button"
+                onClick={() => setOpenTopics(new Set(groups.map((g) => `${kind}:${g.key}`)))}
+              >
+                {bi('Mở tất cả', 'Expand all')}
+              </button>
+              <button type="button" onClick={() => setOpenTopics(new Set())}>
+                {bi('Thu gọn tất cả', 'Collapse all')}
+              </button>
+            </div>
           )}
+          <div className="content-topics">
+            {groups.map((group) => {
+              const id = `${kind}:${group.key}`;
+              const clusters = group.clusters
+                .map((c) => ({ ...c, words: c.words.filter(isMatch) }))
+                .filter((c) => c.words.length);
+              const other = group.other.filter(isMatch);
+              if (term && !clusters.length && !other.length) return null;
+              // A search opens every group with a match.
+              const open = Boolean(term) || openTopics.has(id);
+              const unit = (n: number) =>
+                kind === 'word' ? bi(`${n} từ`, `${n} words`) : bi(`${n} mục`, `${n} items`);
+              return (
+                <section key={id} className="content-topic">
+                  <h3>
+                    <button
+                      type="button"
+                      aria-expanded={open}
+                      disabled={Boolean(term)}
+                      onClick={() =>
+                        setOpenTopics((current) => {
+                          const next = new Set(current);
+                          if (next.has(id)) next.delete(id);
+                          else next.add(id);
+                          return next;
+                        })
+                      }
+                    >
+                      <SkillIcon skill="chevron" size={16} />
+                      <span className="content-topic-name">{bi(...group.name)}</span>
+                      <small>
+                        {unit(group.total)}
+                        {kind === 'word' &&
+                          bi(
+                            ` · ${group.clusters.length} cụm`,
+                            ` · ${group.clusters.length} clusters`,
+                          )}
+                      </small>
+                    </button>
+                  </h3>
+                  {open && (
+                    <div className="content-clusters">
+                      {clusters.map((cluster) =>
+                        cluster.number ? (
+                          <section key={cluster.number} className="content-cluster">
+                            <h4>
+                              {bi(`Cụm ${cluster.number}`, `Cluster ${cluster.number}`)}{' '}
+                              <small>{unit(cluster.words.length)}</small>
+                            </h4>
+                            <ul className="content-list">{cluster.words.map(row)}</ul>
+                          </section>
+                        ) : (
+                          <ul key="all" className="content-list">
+                            {cluster.words.map(row)}
+                          </ul>
+                        ),
+                      )}
+                      {other.length > 0 && (
+                        <section className="content-cluster">
+                          <h4>
+                            {bi('Đã ẩn hoặc lỗi dữ liệu', 'Hidden or invalid')}{' '}
+                            <small>{unit(other.length)}</small>
+                          </h4>
+                          <ul className="content-list">{other.map(row)}</ul>
+                        </section>
+                      )}
+                    </div>
+                  )}
+                </section>
+              );
+            })}
+          </div>
         </>
       )}
     </section>

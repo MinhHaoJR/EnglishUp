@@ -168,8 +168,15 @@ describe('content manager', () => {
 
   it('lists every kind from the library and deletes only after a confirmation', async () => {
     show();
-    await userEvent.click(await screen.findByRole('tab', { name: /Câu dịch/ }));
+    // Sentence patterns are grouped like the grammar page, every pattern in its group.
+    await userEvent.click(await screen.findByRole('tab', { name: /Cấu trúc câu/ }));
+    expect(screen.getAllByRole('button', { expanded: false })).toHaveLength(12);
+    await userEvent.click(screen.getByRole('button', { name: 'Mở tất cả' }));
+    expect(document.querySelectorAll('.content-topics li')).toHaveLength(100);
+
+    await userEvent.click(screen.getByRole('tab', { name: /Câu dịch/ }));
     const first = seedRows.find((r) => r.kind === 'translation')!;
+    await userEvent.click(screen.getByRole('button', { name: /^Đời sống/ }));
     const row = (await screen.findByText(first.id)).closest('li')!;
     await userEvent.click(within(row).getByRole('button', { name: 'Xoá' }));
     expect(
