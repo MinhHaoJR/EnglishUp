@@ -133,6 +133,32 @@ public class AuthTests(ApiFactory factory) : IClassFixture<ApiFactory>
         Assert.Equal(HttpStatusCode.BadRequest, (await Register(email)).StatusCode);
     }
 
+    [Fact]
+    public async Task ChangePassword_NeedsTheCurrentOne_ThenTheNewOneSignsIn()
+    {
+        var email = NewEmail();
+        await Register(email);
+        var tokens = await (await Login(email)).Content.ReadFromJsonAsync<Tokens>();
+        Task<HttpResponseMessage> Change(string oldPassword, string newPassword)
+        {
+            var request = new HttpRequestMessage(HttpMethod.Post, "/api/manage/info")
+            {
+                Content = JsonContent.Create(new { oldPassword, newPassword }),
+            };
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", tokens!.AccessToken);
+            return client.SendAsync(request);
+        }
+
+        var wrong = await Change("Wrong#2026", "Fresh#2027");
+        Assert.Equal(HttpStatusCode.BadRequest, wrong.StatusCode);
+        Assert.Contains("PasswordMismatch", await wrong.Content.ReadAsStringAsync());
+        Assert.Equal(HttpStatusCode.BadRequest, (await Change(Password, "weak")).StatusCode);
+
+        Assert.Equal(HttpStatusCode.OK, (await Change(Password, "Fresh#2027")).StatusCode);
+        Assert.Equal(HttpStatusCode.Unauthorized, (await Login(email)).StatusCode);
+        Assert.Equal(HttpStatusCode.OK, (await Login(email, "Fresh#2027")).StatusCode);
+    }
+
     [Theory]
     [InlineData("Ab#1")]
     [InlineData("alllowercase#1")]

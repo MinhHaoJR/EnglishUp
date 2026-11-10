@@ -93,6 +93,22 @@ export async function register(email: string, password: string) {
   await login(email, password);
 }
 
+/** Changes the password through Identity's manage endpoint; the current one is required. */
+export async function changePassword(oldPassword: string, newPassword: string) {
+  const response = await authFetch('/api/manage/info', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ oldPassword, newPassword }),
+  });
+  if (response.status === 400) {
+    const { errors = {} } = (await response.json().catch(() => ({}))) as {
+      errors?: Record<string, string[]>;
+    };
+    throw new AuthError('PasswordMismatch' in errors ? 'invalid' : 'password');
+  }
+  if (!response.ok) throw new AuthError('network');
+}
+
 export function logout() {
   // shortcut: bearer tokens expire on their own (1 h, refresh 14 days); add server revocation if accounts are shared devices.
   writeSession(null);

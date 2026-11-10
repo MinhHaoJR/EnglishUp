@@ -98,11 +98,17 @@ Elevation is a 1px `--border` and nothing else. Shadows are not combined with bo
   - Lesson lists on these four pages are directory rows: level chip, title, one-line excerpt and facts, with the action on the right.
 - **Icons.** Play, stop, download and upload are drawn in the shared icon set; no glyph icons remain on learning screens.
 - **Tutor.** A round chat head in the corner opens a messaging window: header with avatar and status, bubbles on both sides, source chips and a rounded composer.
-- **Account page** (`/account`, surface roll seed `443a6945/0`: structure #3 of 6, timeline, "diptych comparison" composition).
-  - Two plates stand side by side. "Only you see" is a sign-blue plate (`--plate`, dimmed at night): a yellow monogram, the email, a three-column score row with tabular numerals (total, today with a signal-yellow meter, streak), sync and sign-out.
-  - "Everyone sees" previews your all-time leaderboard row, lit in signal yellow, live as you edit the name or the opt-in. It never shows the email. Below the preview sits the profile form.
-  - Under both, "Learning journey" runs the last ten active days as stops on a route. Each stop has small skill-line tiles for what was practised, the count and minutes. Badge days are yellow stops.
-  - Stacks below 860px.
+- **Account page** (`/account`). It follows the user's reference, a classic account-settings layout, played straight in this world.
+  - Left: a profile card with a sign-blue cover (dimmed at night), a 92px yellow monogram, the display name, the email and "View achievements".
+  - Under the card, a section menu styled like the sidebar directory: service tile, label and chevron. The current section gets the blue tint, bold text and the yellow dot. "Sign out" is the last row, in danger colours.
+  - Right: one pane at a time, chosen by `?tab=`:
+    - Profile: read-only email, display name, leaderboard opt-in with a live yellow preview row.
+    - Points & sync: a sign-blue score plate with tabular numerals and a signal-yellow meter, plus a sync bar.
+    - Learning journey: the last ten active days as route stops in skill-line colours, badge days in yellow.
+    - Change password: current, new with the live rule list, repeat. Uses Identity's `POST /api/manage/info`.
+    - Privacy: one row per kind of data.
+  - Sections the product does not have (notifications, photos, delete account) are left out.
+  - Below 860px the card turns horizontal and the menu becomes a sideways row.
 - **Tutor page** (`/assistant`, surface roll seed `66dcd42e/0`: structure #1 of 6, workspace with history rail, "contact sheet" composition). It is one 12px plate filling the viewport.
   - The rail lists saved chats as small frames grouped Today / Earlier, with title and time. The open frame grows, gets a blue border and the yellow "you are here" dot. Delete shows on hover, on focus or for the open frame.
   - The main frame has a header (open title, status, questions left today) and a centred 760px reading column. Answers read as plain text beside the avatar, questions are blue bubbles, and sources are labels with the skill-line tile.

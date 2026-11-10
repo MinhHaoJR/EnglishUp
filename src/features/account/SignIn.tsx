@@ -20,6 +20,27 @@ export const passwordRules = [
   { test: (p: string) => /[^a-zA-Z0-9]/.test(p), vi: 'Một ký tự đặc biệt', en: 'A symbol' },
 ];
 
+/** A live checklist of the password rules; used when creating an account and changing a password. */
+export function PasswordRules({ id, password }: { id: string; password: string }) {
+  const bi = useBi();
+  return (
+    <ul className="signin-rules" id={id}>
+      {passwordRules.map((rule) => {
+        const met = rule.test(password);
+        return (
+          <li key={rule.en} className={met ? 'met' : undefined}>
+            <span aria-hidden="true">{met && <SkillIcon skill="check" size={14} />}</span>
+            {bi(rule.vi, rule.en)}
+            <span className="sr-only">
+              {met ? bi(': đạt', ': met') : bi(': chưa đạt', ': not met')}
+            </span>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
 /**
  * The station entrance: a sign-blue plate saying what an account adds, beside the form.
  * Lives outside the app shell; practice never needs it.
@@ -182,22 +203,7 @@ export default function SignIn() {
               <SkillIcon skill={reveal ? 'eyeOff' : 'eye'} />
             </button>
           </div>
-          {creating && (
-            <ul className="signin-rules" id="password-rules">
-              {passwordRules.map((rule) => {
-                const met = rule.test(form.password);
-                return (
-                  <li key={rule.en} className={met ? 'met' : undefined}>
-                    <span aria-hidden="true">{met && <SkillIcon skill="check" size={14} />}</span>
-                    {bi(rule.vi, rule.en)}
-                    <span className="sr-only">
-                      {met ? bi(': đạt', ': met') : bi(': chưa đạt', ': not met')}
-                    </span>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
+          {creating && <PasswordRules id="password-rules" password={form.password} />}
           {error && <Notice error>{messages[error]}</Notice>}
           <button className="primary" disabled={busy}>
             {busy

@@ -158,3 +158,60 @@ describe('Account profile form', () => {
     expect(await screen.findByText(/Không lưu được/)).toBeInTheDocument();
   });
 });
+
+describe('Account password section', () => {
+  const openPassword = () =>
+    render(
+      <MemoryRouter initialEntries={['/account?tab=password']}>
+        <Account />
+      </MemoryRouter>,
+    );
+
+  it('changes the password with the current one and clears the form', async () => {
+    fetchMock.mockImplementation((path: string, init?: RequestInit) =>
+      Promise.resolve(
+        path === '/api/manage/info' && init?.method === 'POST'
+          ? json({ email: 'learner@example.test', isEmailConfirmed: false })
+          : path === '/api/profile'
+            ? json({ displayName: 'Học viên 1234', showOnLeaderboard: false })
+            : json({}, 500),
+      ),
+    );
+    openPassword();
+    const submit = screen.getByRole('button', { name: 'Đổi mật khẩu' });
+    await userEvent.type(screen.getByLabelText('Mật khẩu hiện tại'), 'Learn#2026');
+    await userEvent.type(screen.getByLabelText('Mật khẩu mới'), 'Fresh#2027');
+    await userEvent.type(screen.getByLabelText('Nhập lại mật khẩu mới'), 'Fresh#2028');
+    expect(screen.getByText('Hai mật khẩu mới chưa giống nhau.')).toBeInTheDocument();
+    expect(submit).toBeDisabled();
+
+    await userEvent.clear(screen.getByLabelText('Nhập lại mật khẩu mới'));
+    await userEvent.type(screen.getByLabelText('Nhập lại mật khẩu mới'), 'Fresh#2027');
+    await userEvent.click(submit);
+    expect(await screen.findByText('Đã đổi mật khẩu.')).toBeInTheDocument();
+    const post = fetchMock.mock.calls.find(
+      ([p, init]) => p === '/api/manage/info' && (init as RequestInit)?.method === 'POST',
+    );
+    expect(JSON.parse((post![1] as RequestInit).body as string)).toEqual({
+      oldPassword: 'Learn#2026',
+      newPassword: 'Fresh#2027',
+    });
+    expect(screen.getByLabelText('Mật khẩu hiện tại')).toHaveValue('');
+  });
+
+  it('says when the current password is wrong', async () => {
+    fetchMock.mockImplementation((path: string, init?: RequestInit) =>
+      Promise.resolve(
+        path === '/api/manage/info' && init?.method === 'POST'
+          ? json({ errors: { PasswordMismatch: ['Incorrect password.'] } }, 400)
+          : json({}, 500),
+      ),
+    );
+    openPassword();
+    await userEvent.type(screen.getByLabelText('Mật khẩu hiện tại'), 'Wrong#2026');
+    await userEvent.type(screen.getByLabelText('Mật khẩu mới'), 'Fresh#2027');
+    await userEvent.type(screen.getByLabelText('Nhập lại mật khẩu mới'), 'Fresh#2027');
+    await userEvent.click(screen.getByRole('button', { name: 'Đổi mật khẩu' }));
+    expect(await screen.findByText('Mật khẩu hiện tại không đúng.')).toBeInTheDocument();
+  });
+});
