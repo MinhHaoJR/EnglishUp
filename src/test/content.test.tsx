@@ -3,30 +3,33 @@ import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import ContentManager from '../features/admin/ContentManager';
 import { readings, vocabulary } from '../data/content';
-import { applyContent, bundled, type ContentRow } from '../services/content';
+import { seedRows } from '../data/seed';
+import { applyContent, loadContent, useContent, type ContentRow } from '../services/content';
 import { useAuth } from '../services/auth';
+import { db, resetData } from '../services/storage';
 
 const json = (body: unknown, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } });
 const at = '2026-11-10T08:00:00Z';
-const original = bundled.word[0] as (typeof vocabulary)[number];
+const original = vocabulary[0];
+const seedWords = vocabulary.length;
+const seedReadings = readings.length;
 
-afterEach(() => {
-  applyContent([]);
+afterEach(async () => {
+  applyContent(seedRows);
   vi.unstubAllGlobals();
   localStorage.clear();
   useAuth.setState({ email: null });
+  await db.lessons.clear();
 });
 
-test('admin rows replace, add and hide items; invalid rows never reach learners', () => {
+test('the library follows the server rows; hidden and invalid rows never reach learners', () => {
+  const firstReading = seedRows.find((r) => r.kind === 'reading')!.id;
   const rows: ContentRow[] = [
-    {
-      kind: 'word',
-      id: original.id,
-      data: { ...original, meaning: 'đã sửa' },
-      hidden: false,
-      updatedAt: at,
-    },
+    // The first word is deleted on the server and the first reading hidden.
+    ...seedRows
+      .filter((r) => r.kind !== 'word' || r.id !== original.id)
+      .map((r) => (r.kind === 'reading' && r.id === firstReading ? { ...r, hidden: true } : r)),
     {
       kind: 'word',
       id: 'a-new',
@@ -41,17 +44,40 @@ test('admin rows replace, add and hide items; invalid rows never reach learners'
       hidden: false,
       updatedAt: at,
     },
-    { kind: 'reading', id: bundled.reading[0].id, hidden: true, updatedAt: at },
   ];
   applyContent(rows);
-  expect(vocabulary.find((w) => w.id === original.id)?.meaning).toBe('đã sửa');
+  expect(vocabulary.some((w) => w.id === original.id)).toBe(false);
   expect(vocabulary.at(-1)?.word).toBe('harbour');
   expect(vocabulary.some((w) => w.id === 'a-bad')).toBe(false);
-  expect(readings).toHaveLength(bundled.reading.length - 1);
+  expect(vocabulary).toHaveLength(seedWords);
+  expect(readings).toHaveLength(seedReadings - 1);
+});
+
+test('each download is kept on the device, so lessons still load offline', async () => {
+  vi.stubGlobal(
+    'fetch',
+    vi.fn(() => Promise.resolve(json(seedRows))),
+  );
+  await loadContent(true);
+  expect(useContent.getState().status).toBe('live');
+  expect((await db.lessons.get('library'))?.rows).toHaveLength(seedRows.length);
+
+  // A reset clears the learner's data, not the lesson library.
+  await resetData();
+  expect(await db.lessons.get('library')).toBeDefined();
 
   applyContent([]);
-  expect(vocabulary).toHaveLength(bundled.word.length);
-  expect(vocabulary[0].meaning).toBe(original.meaning);
+  vi.stubGlobal(
+    'fetch',
+    vi.fn(() => Promise.reject(new TypeError('offline'))),
+  );
+  await loadContent(true);
+  expect(useContent.getState().status).toBe('offline');
+  expect(vocabulary).toHaveLength(seedWords);
+
+  await db.lessons.clear();
+  await loadContent(true);
+  expect(useContent.getState().status).toBe('missing');
 });
 
 describe('content manager', () => {
@@ -67,11 +93,13 @@ describe('content manager', () => {
       }),
     );
     useAuth.setState({ email: 'admin@example.test' });
-    fetchMock = vi.fn((path: string) =>
+    fetchMock = vi.fn((path: string, init?: RequestInit) =>
       Promise.resolve(
         path === '/api/content'
-          ? json([])
-          : json({ kind: 'word', id: 'x', hidden: false, updatedAt: at }),
+          ? json(seedRows)
+          : init?.method === 'DELETE'
+            ? new Response(null, { status: 204 })
+            : json({ kind: 'word', id: 'x', data: {}, hidden: false, updatedAt: at }),
       ),
     );
     vi.stubGlobal('fetch', fetchMock);
@@ -114,5 +142,19 @@ describe('content manager', () => {
     await userEvent.type(editor, '{{"id": "r-x", "title": "Only a title"}');
     expect(screen.getByText(/^level:/)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Lưu' })).toBeDisabled();
+  });
+
+  it('lists every kind from the library and deletes only after a confirmation', async () => {
+    show();
+    await userEvent.click(await screen.findByRole('tab', { name: /Câu dịch/ }));
+    const first = seedRows.find((r) => r.kind === 'translation')!;
+    const row = (await screen.findByText(first.id)).closest('li')!;
+    await userEvent.click(within(row).getByRole('button', { name: 'Xoá' }));
+    expect(
+      fetchMock.mock.calls.some(([, init]) => (init as RequestInit)?.method === 'DELETE'),
+    ).toBe(false);
+    await userEvent.click(within(row).getByRole('button', { name: 'Xác nhận xoá vĩnh viễn' }));
+    const del = fetchMock.mock.calls.find(([, init]) => (init as RequestInit)?.method === 'DELETE');
+    expect(del![0]).toBe(`/api/admin/content/translation/${first.id}`);
   });
 });

@@ -81,51 +81,29 @@ public static class Knowledge
     private record ContentPattern(string Id, string Formula, string Meaning, string Example, string Key,
         string[] Options, string Translation);
 
-    /// <summary>The bundled learning content shipped next to the API (linked from src/data).</summary>
-    public static readonly string Folder = Path.Combine(AppContext.BaseDirectory, "Content");
-
-    /// <summary>Content kinds the assistant knows, with their chunk source type; dictation and speaking are not taught content.</summary>
+    /// <summary>
+    /// Content kinds the assistant knows, with their chunk source type, lessons first: with 1,000 free embeddings
+    /// a day, a first ingest spans several days. Dictation, speaking, translation and relation items are practice, not taught content.
+    /// </summary>
     public static readonly Dictionary<string, string> SourceTypes = new()
     {
         ["reading"] = "reading", ["listening"] = "listening", ["writing"] = "writing", ["structure"] = "grammar", ["word"] = "word",
     };
 
-    private static readonly Dictionary<string, string[]> Files = new()
-    {
-        ["reading"] = ["reading.json"], ["listening"] = ["listening.json"], ["writing"] = ["writing.json"],
-        ["structure"] = ["structures.json"], ["word"] = ["vocabulary.json", "vocabulary-it.json"],
-    };
-
     private static readonly JsonSerializerOptions Web = new(JsonSerializerDefaults.Web);
 
-    /// <summary>
-    /// One chunk per word, reading, listening script, writing task and sentence pattern; each stays well under 300 words.
-    /// Admin rows (<see cref="ContentItem"/>) sit on top of the bundled files, as in the app: same id replaces, hidden removes.
-    /// </summary>
-    public static List<ChunkSource> BuildChunks(string folder, IEnumerable<ContentItem>? overlay = null)
+    /// <summary>One chunk per visible word, reading, listening script, writing task and sentence pattern; each stays well under 300 words.</summary>
+    public static List<ChunkSource> BuildChunks(IEnumerable<ContentItem> rows)
     {
-        var rows = overlay?.ToList() ?? [];
-        // Lessons first: with 1,000 free embeddings a day, a first ingest spans several days.
-        return Files.SelectMany(kind =>
-        {
-            var items = new List<(string Id, JsonElement Item)>();
-            foreach (var file in kind.Value)
-                items.AddRange(JsonSerializer.Deserialize<List<JsonElement>>(File.ReadAllText(Path.Combine(folder, file)))!
-                    .Select(e => (e.GetProperty("id").GetString()!, e)));
-            foreach (var row in rows.Where(r => r.Kind == kind.Key))
+        var order = SourceTypes.Keys.ToList();
+        return rows.Where(r => !r.Hidden && order.Contains(r.Kind))
+            .OrderBy(r => order.IndexOf(r.Kind)).ThenBy(r => r.Position)
+            .Select(r =>
             {
-                var at = items.FindIndex(i => i.Id == row.Id);
-                if (row.Hidden || row.Json is null)
-                {
-                    if (row.Hidden && at >= 0) items.RemoveAt(at);
-                    continue;
-                }
-                var item = (row.Id, JsonDocument.Parse(row.Json).RootElement.Clone());
-                if (at >= 0) items[at] = item;
-                else items.Add(item);
-            }
-            return items.Select(i => ToChunk(kind.Key, i.Item)).OfType<ChunkSource>();
-        }).ToList();
+                using var json = JsonDocument.Parse(r.Json);
+                return ToChunk(r.Kind, json.RootElement) is { } chunk && chunk.SourceId == r.Id ? chunk : null;
+            })
+            .OfType<ChunkSource>().ToList();
     }
 
     /// <summary>The chunk for one item, or null when an admin row lacks what the text needs (the app skips it too).</summary>
@@ -223,8 +201,8 @@ public static class Knowledge
     public static async Task SyncAsync(AppDbContext db, IEmbedder embedder, string kind, string id, CancellationToken ct = default)
     {
         if (!SourceTypes.TryGetValue(kind, out var type)) return;
-        var rows = await db.ContentItems.Where(c => c.Kind == kind && c.Id == id).ToListAsync(ct);
-        var source = BuildChunks(Folder, rows).SingleOrDefault(c => c.SourceType == type && c.SourceId == id);
+        var rows = await db.ContentItems.AsNoTracking().Where(c => c.Kind == kind && c.Id == id).ToListAsync(ct);
+        var source = BuildChunks(rows).SingleOrDefault();
         var chunk = await db.KnowledgeChunks.SingleOrDefaultAsync(c => c.SourceType == type && c.SourceId == id, ct);
         if (source is null)
         {

@@ -251,15 +251,16 @@ Lần cuối mỗi tài khoản mở app. Trình duyệt gửi `POST /api/presen
 
 Quản trị viên là tài khoản thuộc vai trò `Admin` (bảng có sẵn của Identity), cấp bằng `dotnet run --project EnglishUp.Api -- admin <email>` và thu hồi bằng `--remove`.
 
-### `ContentItems` — Đã có (`AddContentItems`)
+### `ContentItems` — Đã có (`AddContentItems`, `ContentInDatabase`)
 
-Bài admin thêm, sửa hoặc ẩn. Bài có sẵn vẫn nằm trong `src/data/*.json`; mỗi dòng ở đây đè lên bài có sẵn cùng loại và mã, hoặc là bài mới. `GET /api/content` công khai; client kiểm tra từng dòng bằng chính schema Zod của app và bỏ qua dòng sai, nên một dòng hỏng không làm hỏng trang học.
+Toàn bộ bài học tiếng Anh (2.318 mục khi khởi tạo). App, Đua 60 giây và trợ giảng AI đều đọc từ bảng này; `src/data/*.json` chỉ còn là dữ liệu khởi tạo cho lệnh `seed` và cho test. `GET /api/content` công khai, có ETag; client kiểm tra từng dòng bằng chính schema Zod của app, bỏ qua dòng sai và lưu một bản sao trong Dexie để học offline.
 
-| Cột         | Kiểu         | Ràng buộc | Ghi chú                                                                         |
-| ----------- | ------------ | --------- | ------------------------------------------------------------------------------- |
-| `Kind`      | varchar(16)  | PK        | `word`, `structure`, `reading`, `listening`, `dictation`, `speaking`, `writing` |
-| `Id`        | varchar(64)  | PK        | Trùng mã bài có sẵn = sửa bài đó; mã mới = bài thêm                             |
-| `Json`      | text         | null      | Bài theo đúng cấu trúc JSON của app; null khi chỉ ẩn một bài có sẵn             |
-| `Hidden`    | boolean      | NN        | Ẩn khỏi người học                                                               |
-| `UpdatedAt` | timestamptz  | NN        |                                                                                 |
-| `UpdatedBy` | varchar(256) | NN        | Email quản trị viên                                                             |
+| Cột         | Kiểu         | Ràng buộc | Ghi chú                                                                                                    |
+| ----------- | ------------ | --------- | ---------------------------------------------------------------------------------------------------------- |
+| `Kind`      | varchar(16)  | PK        | `word`, `structure`, `reading`, `listening`, `dictation`, `speaking`, `writing`, `translation`, `relation` |
+| `Id`        | varchar(64)  | PK        | Mã bài, ví dụ `v-1-1`, `s12`, `r1`                                                                         |
+| `Json`      | text         | NN        | Bài theo đúng cấu trúc JSON của app                                                                        |
+| `Position`  | integer      | NN        | Thứ tự trong loại (theo file seed; bài thêm mới xếp cuối)                                                  |
+| `Hidden`    | boolean      | NN        | Ẩn khỏi người học                                                                                          |
+| `UpdatedAt` | timestamptz  | NN        |                                                                                                            |
+| `UpdatedBy` | varchar(256) | NN        | Email quản trị viên, hoặc `seed`                                                                           |

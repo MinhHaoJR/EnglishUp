@@ -34,7 +34,7 @@ public class AssistantTests : IClassFixture<ApiFactory>
         var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
         if (!db.KnowledgeChunks.Any())
             Knowledge.IngestAsync(db, scope.ServiceProvider.GetRequiredService<IEmbedder>(),
-                Knowledge.BuildChunks(Path.Combine(AppContext.BaseDirectory, "Content"))).GetAwaiter().GetResult();
+                Knowledge.BuildChunks(EnglishUp.Api.Content.ReadSeed(EnglishUp.Api.Content.SeedFolder))).GetAwaiter().GetResult();
     }
 
     private static async Task<AssistantReply> Ask(HttpClient client, string question, Guid? conversationId = null)
@@ -72,7 +72,7 @@ public class AssistantTests : IClassFixture<ApiFactory>
         var items = Evaluation.Load(Path.Combine(AppContext.BaseDirectory, "eval", "assistant-questions.json"));
         Assert.Equal(30, items.Count);
         Assert.Equal(30, items.Select(i => i.Id).Distinct().Count());
-        var known = Knowledge.BuildChunks(Path.Combine(AppContext.BaseDirectory, "Content"))
+        var known = Knowledge.BuildChunks(EnglishUp.Api.Content.ReadSeed(EnglishUp.Api.Content.SeedFolder))
             .Select(c => $"{c.SourceType}/{c.SourceId}").ToHashSet();
         Assert.All(items.SelectMany(i => i.Expected), key => Assert.Contains(key, known));
     }

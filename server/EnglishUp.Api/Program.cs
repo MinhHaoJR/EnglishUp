@@ -10,8 +10,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Default"), npgsql => npgsql.UseVector()));
 builder.Services.AddAuthorizationBuilder().AddPolicy(Admin.Policy, policy => policy.RequireRole(Admin.Role));
 builder.Services.AddSingleton(TimeProvider.System);
-var content = Knowledge.Folder;
-builder.Services.AddSingleton(QuestionBank.Load(content));
+builder.Services.AddSingleton<ContentStore>();
 builder.Services.AddHttpClient<IEmbedder, GeminiEmbedder>();
 builder.Services.AddHttpClient<IAnswerer, GeminiAnswerer>();
 // Optional fields (e.g. an attempt without learningLanguage) stay absent, matching the client schemas.
@@ -34,7 +33,21 @@ if (app.Environment.IsDevelopment())
         throw new InvalidOperationException(
             "Set ConnectionStrings:Default to your Supabase session pooler: see README, 'Optional account server'.");
     using var scope = app.Services.CreateScope();
-    scope.ServiceProvider.GetRequiredService<AppDbContext>().Database.Migrate();
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.Migrate();
+    // A fresh database gets the seed lessons, so a new clone runs without extra steps.
+    if (!db.ContentItems.Any()) await Content.SeedAsync(db, Content.SeedFolder, DateTimeOffset.UtcNow);
+}
+
+// `dotnet run --project EnglishUp.Api -- seed [--overwrite]` copies the src/data seed lessons into ContentItems,
+// then exits. Items already there (an admin's edits) are kept unless --overwrite puts the seed's version back.
+if (args.Contains("seed"))
+{
+    using var scope = app.Services.CreateScope();
+    var report = await Content.SeedAsync(scope.ServiceProvider.GetRequiredService<AppDbContext>(), Content.SeedFolder,
+        DateTimeOffset.UtcNow, args.Contains("--overwrite"));
+    Console.WriteLine($"Seed done: {report}");
+    return;
 }
 
 // `dotnet run --project EnglishUp.Api -- ingest [max]` embeds the learning content for the assistant, then exits.
@@ -47,7 +60,7 @@ if (args.Contains("ingest"))
     try
     {
         var report = await Knowledge.IngestAsync(db, scope.ServiceProvider.GetRequiredService<IEmbedder>(),
-            Knowledge.BuildChunks(content, await db.ContentItems.AsNoTracking().ToListAsync()), Console.WriteLine, max: max);
+            Knowledge.BuildChunks(await db.ContentItems.AsNoTracking().ToListAsync()), Console.WriteLine, max: max);
         Console.WriteLine($"Ingest done: {report}");
     }
     catch (DailyQuotaException)

@@ -32,19 +32,11 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,woff,woff2,png,svg}'],
-        // The bundled vocabulary chunks are larger than Workbox's 2 MB default.
+        // The Japanese/Chinese vocabulary chunk (still bundled JSON) is larger than Workbox's 2 MB default.
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         navigateFallback: '/index.html',
         // API answers are personal and live: never serve them from the cache.
         navigateFallbackDenylist: [/^\/api\//],
-        // Admin-added lessons are public: use the network, fall back to the last copy offline.
-        runtimeCaching: [
-          {
-            urlPattern: ({ url }) => url.pathname === '/api/content',
-            handler: 'NetworkFirst',
-            options: { cacheName: 'content', networkTimeoutSeconds: 4 },
-          },
-        ],
       },
     }),
   ],
@@ -61,8 +53,6 @@ export default defineConfig({
         manualChunks: {
           react: ['react', 'react-dom', 'react-router-dom'],
           storage: ['dexie', 'zod'],
-          englishItVocabulary: ['src/data/itVocabularyContent.ts'],
-          englishVocabulary: ['src/data/vocabularyContent.ts'],
         },
       },
     },

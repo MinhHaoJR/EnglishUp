@@ -5,36 +5,52 @@ import SkillIcon, { type IconName } from '../../components/SkillIcon';
 import { levelSchema, type Word } from '../../data/schema';
 import { ApiError } from '../../services/auth';
 import {
-  bundled,
   contentKinds,
+  deleteContent,
   fetchContentRows,
   hideContent,
   loadContent,
   parseRow,
-  resetContent,
   saveContent,
   type ContentKind,
   type ContentRow,
 } from '../../services/content';
 
 type Item = { id: string } & Record<string, unknown>;
-type Status = 'bundled' | 'edited' | 'added' | 'hidden' | 'invalid';
-type Entry = { id: string; item: Item | null; status: Status; row?: ContentRow };
+type Status = 'live' | 'hidden' | 'invalid';
+type Entry = { id: string; item: Item | null; status: Status; row: ContentRow };
 
-const kinds: { id: ContentKind; icon: IconName; vi: string; en: string }[] = [
-  { id: 'word', icon: 'vocabulary', vi: 'Từ vựng', en: 'Vocabulary' },
-  { id: 'structure', icon: 'grammar', vi: 'Cấu trúc câu', en: 'Sentence patterns' },
-  { id: 'reading', icon: 'reading', vi: 'Bài đọc', en: 'Readings' },
-  { id: 'listening', icon: 'listening', vi: 'Bài nghe', en: 'Listening' },
-  { id: 'dictation', icon: 'keyboard', vi: 'Chép chính tả', en: 'Dictation' },
-  { id: 'speaking', icon: 'speaking', vi: 'Luyện nói', en: 'Speaking' },
-  { id: 'writing', icon: 'writing', vi: 'Luyện viết', en: 'Writing' },
+/** Each kind with its icon and the skill line that tints its tab. */
+const kinds: { id: ContentKind; icon: IconName; skill: string; vi: string; en: string }[] = [
+  { id: 'word', icon: 'vocabulary', skill: 'vocabulary', vi: 'Từ vựng', en: 'Vocabulary' },
+  {
+    id: 'structure',
+    icon: 'grammar',
+    skill: 'grammar',
+    vi: 'Cấu trúc câu',
+    en: 'Sentence patterns',
+  },
+  { id: 'reading', icon: 'reading', skill: 'reading', vi: 'Bài đọc', en: 'Readings' },
+  { id: 'listening', icon: 'listening', skill: 'listening', vi: 'Bài nghe', en: 'Listening' },
+  { id: 'dictation', icon: 'keyboard', skill: 'listening', vi: 'Chép chính tả', en: 'Dictation' },
+  { id: 'speaking', icon: 'speaking', skill: 'speaking', vi: 'Luyện nói', en: 'Speaking' },
+  { id: 'writing', icon: 'writing', skill: 'writing', vi: 'Luyện viết', en: 'Writing' },
+  { id: 'translation', icon: 'choice', skill: 'vocabulary', vi: 'Câu dịch', en: 'Translations' },
+  {
+    id: 'relation',
+    icon: 'cards',
+    skill: 'vocabulary',
+    vi: 'Đồng nghĩa – trái nghĩa',
+    en: 'Synonyms & antonyms',
+  },
 ];
 const PAGE = 50;
 
 /** One line that names an item in the list, whatever its kind. */
 function label(kind: ContentKind, item: Item) {
-  if (kind === 'word') return `${String(item.word)} — ${String(item.meaning)}`;
+  if (kind === 'word' || kind === 'relation')
+    return `${String(item.word)} — ${String(item.meaning)}`;
+  if (kind === 'translation') return String((item.en as string[] | undefined)?.[0]);
   if (kind === 'structure') return String(item.formula);
   if (kind === 'dictation') return String(item.text);
   return String(item.title);
@@ -48,31 +64,14 @@ function newId(kind: ContentKind, taken: Set<string>) {
   return `a-${kind}-${Date.now().toString(36)}`;
 }
 
-/** Bundled lessons and the admin's rows side by side, with what each row does to the bundled item. */
+/** The library's items of one kind, in the app's order, with whether learners see each one. */
 function entries(kind: ContentKind, rows: ContentRow[]): Entry[] {
-  const mine = new Map(rows.filter((r) => r.kind === kind).map((r) => [r.id, r]));
-  const list: Entry[] = bundled[kind].map((original) => {
-    const row = mine.get(original.id);
-    if (!row) return { id: original.id, item: original as Item, status: 'bundled' };
-    const parsed = parseRow(row) as Item | null;
-    return {
-      id: original.id,
-      item: row.hidden ? ((parsed ?? original) as Item) : parsed,
-      status: row.hidden ? 'hidden' : parsed ? 'edited' : 'invalid',
-      row,
-    };
-  });
-  for (const row of mine.values()) {
-    if (bundled[kind].some((b) => b.id === row.id)) continue;
-    const parsed = parseRow(row) as Item | null;
-    list.push({
-      id: row.id,
-      item: parsed,
-      status: row.hidden ? 'hidden' : parsed ? 'added' : 'invalid',
-      row,
+  return rows
+    .filter((row) => row.kind === kind)
+    .map((row) => {
+      const item = parseRow(row) as Item | null;
+      return { id: row.id, item, row, status: row.hidden ? 'hidden' : item ? 'live' : 'invalid' };
     });
-  }
-  return list;
 }
 
 /** Admin area for the learning content: list, add, edit, hide and restore items of every kind. */
@@ -84,6 +83,7 @@ export default function ContentManager() {
   const [editing, setEditing] = useState<{ item: Item; isNew: boolean } | null>(null);
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
+  const [confirming, setConfirming] = useState<string | null>(null);
 
   async function reload() {
     try {
@@ -116,6 +116,7 @@ export default function ContentManager() {
   async function run(action: () => Promise<void>, done: string) {
     setError('');
     setMessage('');
+    setConfirming(null);
     try {
       await action();
       await reload();
@@ -139,15 +140,15 @@ export default function ContentManager() {
 
   function startNew() {
     const taken = new Set(all.map((e) => e.id));
-    const template = { ...(bundled[kind][0] as Item), id: newId(kind, taken) };
+    // The first item of the kind is the template, so the editor shows the expected shape.
+    const first = all.find((e) => e.item)?.item ?? {};
+    const template = { ...first, id: newId(kind, taken) } as Item;
     setEditing({ item: template, isNew: true });
     setMessage('');
   }
 
   const statusText: Record<Status, string> = {
-    bundled: bi('Có sẵn', 'Bundled'),
-    edited: bi('Đã sửa', 'Edited'),
-    added: bi('Thêm mới', 'Added'),
+    live: bi('Đang dùng', 'Live'),
     hidden: bi('Đã ẩn', 'Hidden'),
     invalid: bi('Lỗi dữ liệu', 'Invalid'),
   };
@@ -158,8 +159,8 @@ export default function ContentManager() {
         <h2 id="content-title">{bi('Tài liệu học tập', 'Learning content')}</h2>
         <p className="muted">
           {bi(
-            'Bài có sẵn đi kèm ứng dụng; bài thêm hoặc sửa ở đây được lưu trên máy chủ và người học nhận khi mở app. Từ vựng mới vào cả Đua 60 giây; trợ giảng AI học bài mới ngay khi lưu (nếu hết hạn mức Gemini, bài được nạp ở lần chạy ingest sau).',
-            'Bundled lessons ship with the app; items added or edited here are stored on the server and reach learners when they open the app. New words join the 60-second race; the AI tutor learns an item as soon as it is saved (if the Gemini quota is used up, the next ingest run adds it).',
+            'Toàn bộ bài học nằm trong cơ sở dữ liệu; người học nhận bản mới khi mở app và giữ một bản sao để học offline. Từ vựng vào cả Đua 60 giây; trợ giảng AI học bài mới ngay khi lưu (nếu hết hạn mức Gemini, bài được nạp ở lần chạy ingest sau).',
+            'Every lesson lives in the database; learners get the latest when they open the app and keep a copy for offline practice. Words also feed the 60-second race; the AI tutor learns an item as soon as it is saved (if the Gemini quota is used up, the next ingest run adds it).',
           )}
         </p>
       </div>
@@ -174,7 +175,7 @@ export default function ContentManager() {
             type="button"
             role="tab"
             aria-selected={k.id === kind}
-            data-skill={k.id === 'dictation' ? 'listening' : k.icon}
+            data-skill={k.skill}
             onClick={() => {
               setKind(k.id);
               setEditing(null);
@@ -211,7 +212,7 @@ export default function ContentManager() {
                 setEditing(null);
               },
               bi(
-                'Đã lưu. Người học nhận bản mới khi mở lại app.',
+                'Đã lưu vào cơ sở dữ liệu. Người học nhận bản mới khi mở lại app.',
                 'Saved. Learners get it the next time they open the app.',
               ),
             )
@@ -258,10 +259,8 @@ export default function ContentManager() {
                     <button
                       type="button"
                       onClick={() => {
-                        const parsed = e.row ? (parseRow(e.row) as Item | null) : null;
                         setEditing({
-                          item:
-                            parsed ?? (e.item as Item) ?? ((e.row?.data as Item) || { id: e.id }),
+                          item: e.item ?? ((e.row.data as Item) || { id: e.id }),
                           isNew: false,
                         });
                         setMessage('');
@@ -295,27 +294,21 @@ export default function ContentManager() {
                       {bi('Ẩn', 'Hide')}
                     </button>
                   )}
-                  {(e.status === 'edited' || e.status === 'invalid') &&
-                    bundled[kind].some((b) => b.id === e.id) && (
-                      <button
-                        type="button"
-                        onClick={() =>
-                          void run(
-                            () => resetContent(kind, e.id),
-                            bi('Đã khôi phục bản gốc.', 'Original restored.'),
-                          )
-                        }
-                      >
-                        {bi('Khôi phục bản gốc', 'Restore original')}
-                      </button>
-                    )}
-                  {e.row && !bundled[kind].some((b) => b.id === e.id) && (
+                  {confirming === e.id ? (
+                    <button
+                      type="button"
+                      className="danger"
+                      onClick={() =>
+                        void run(() => deleteContent(kind, e.id), bi('Đã xoá.', 'Deleted.'))
+                      }
+                    >
+                      {bi('Xác nhận xoá vĩnh viễn', 'Confirm permanent delete')}
+                    </button>
+                  ) : (
                     <button
                       type="button"
                       className="danger-outline"
-                      onClick={() =>
-                        void run(() => resetContent(kind, e.id), bi('Đã xoá.', 'Deleted.'))
-                      }
+                      onClick={() => setConfirming(e.id)}
                     >
                       {bi('Xoá', 'Delete')}
                     </button>
@@ -372,7 +365,7 @@ function Editor({
       ),
     );
 
-  const topicIds = [...new Set(bundled.word.map((w) => String((w as Item).topic)))].sort();
+  const topicIds = [...new Set(contentKinds.word.items.map((w) => w.topic))].sort();
   const field = (key: keyof Word, labelText: string, long = false) => (
     <label>
       {labelText}
@@ -460,8 +453,8 @@ function Editor({
       ) : (
         <label className="content-json">
           {bi(
-            'Nội dung (JSON theo cấu trúc của bài có sẵn)',
-            'Content (JSON in the same shape as the bundled lessons)',
+            'Nội dung (JSON theo cấu trúc của các bài cùng loại)',
+            'Content (JSON in the same shape as the other items of this kind)',
           )}
           <textarea
             spellCheck={false}

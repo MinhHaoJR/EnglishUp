@@ -22,7 +22,8 @@ public class ContentTests
         var learner = await AdminTests.Learner(factory);
         var anonymous = factory.CreateClient();
 
-        Assert.Empty((await anonymous.GetFromJsonAsync<List<ContentItemDto>>("/api/content"))!);
+        var seeded = (await anonymous.GetFromJsonAsync<List<ContentItemDto>>("/api/content"))!;
+        Assert.Equal(Content.ReadSeed(Content.SeedFolder).Count, seeded.Count);
         Assert.Equal(HttpStatusCode.Forbidden,
             (await learner.PutAsJsonAsync("/api/admin/content/word/a-1", new { data = Word("a-1") })).StatusCode);
         Assert.Equal(HttpStatusCode.Unauthorized,
@@ -30,14 +31,16 @@ public class ContentTests
 
         Assert.Equal(HttpStatusCode.OK,
             (await admin.PutAsJsonAsync("/api/admin/content/word/a-1", new { data = Word("a-1") })).StatusCode);
-        var item = Assert.Single((await anonymous.GetFromJsonAsync<List<ContentItemDto>>("/api/content"))!);
-        Assert.Equal(("word", "a-1", false), (item.Kind, item.Id, item.Hidden));
-        Assert.Equal("harbour", item.Data!.Value.GetProperty("word").GetString());
+        var words = (await anonymous.GetFromJsonAsync<List<ContentItemDto>>("/api/content"))!.Where(i => i.Kind == "word").ToList();
+        // A new item goes last in its kind.
+        Assert.Equal(("a-1", false), (words[^1].Id, words[^1].Hidden));
+        Assert.Equal("harbour", words[^1].Data.GetProperty("word").GetString());
 
         // Saving again edits the same row.
         await admin.PutAsJsonAsync("/api/admin/content/word/a-1", new { data = Word("a-1", "port") });
-        item = Assert.Single((await anonymous.GetFromJsonAsync<List<ContentItemDto>>("/api/content"))!);
-        Assert.Equal("port", item.Data!.Value.GetProperty("word").GetString());
+        var all = (await anonymous.GetFromJsonAsync<List<ContentItemDto>>("/api/content"))!;
+        Assert.Equal(seeded.Count + 1, all.Count);
+        Assert.Equal("port", all.Single(i => i.Id == "a-1").Data.GetProperty("word").GetString());
     }
 
     [Theory]
@@ -67,34 +70,67 @@ public class ContentTests
     }
 
     [Fact]
-    public async Task Hide_ThenDelete_RestoresTheBundledItem()
+    public async Task Hide_Show_AndDelete()
     {
         using var factory = new ApiFactory();
         var admin = await AdminTests.Learner(factory, admin: true);
+        async Task<ContentItemDto?> Get(string id) =>
+            (await admin.GetFromJsonAsync<List<ContentItemDto>>("/api/content"))!.SingleOrDefault(i => i.Id == id);
 
-        // Hiding a bundled item needs no data; the row is a tombstone.
         Assert.Equal(HttpStatusCode.OK,
-            (await admin.PostAsJsonAsync("/api/admin/content/reading/r-1/hide", new { hidden = true })).StatusCode);
-        var item = Assert.Single((await admin.GetFromJsonAsync<List<ContentItemDto>>("/api/content"))!);
-        Assert.True(item.Hidden);
-        Assert.Null(item.Data);
+            (await admin.PostAsJsonAsync("/api/admin/content/reading/r1/hide", new { hidden = true })).StatusCode);
+        Assert.True((await Get("r1"))!.Hidden);
+        await admin.PostAsJsonAsync("/api/admin/content/reading/r1/hide", new { hidden = false });
+        Assert.False((await Get("r1"))!.Hidden);
 
-        // Showing it again leaves no empty row behind.
-        Assert.Equal(HttpStatusCode.NoContent,
-            (await admin.PostAsJsonAsync("/api/admin/content/reading/r-1/hide", new { hidden = false })).StatusCode);
-        Assert.Empty((await admin.GetFromJsonAsync<List<ContentItemDto>>("/api/content"))!);
+        Assert.Equal(HttpStatusCode.NoContent, (await admin.DeleteAsync("/api/admin/content/reading/r1")).StatusCode);
+        Assert.Null(await Get("r1"));
+        Assert.Equal(HttpStatusCode.NotFound, (await admin.DeleteAsync("/api/admin/content/reading/r1")).StatusCode);
+        Assert.Equal(HttpStatusCode.NotFound,
+            (await admin.PostAsJsonAsync("/api/admin/content/reading/r1/hide", new { hidden = true })).StatusCode);
+    }
 
-        // An edited item keeps its edit when hidden and shown again.
+    [Fact]
+    public async Task Content_RevalidatesWithItsETag()
+    {
+        using var factory = new ApiFactory();
+        var admin = await AdminTests.Learner(factory, admin: true);
+        var anonymous = factory.CreateClient();
+        var first = await anonymous.GetAsync("/api/content");
+        var etag = first.Headers.ETag!;
+
+        var again = new HttpRequestMessage(HttpMethod.Get, "/api/content");
+        again.Headers.IfNoneMatch.Add(etag);
+        Assert.Equal(HttpStatusCode.NotModified, (await anonymous.SendAsync(again)).StatusCode);
+
+        // A change gives a new version, so browsers download it.
         await admin.PutAsJsonAsync("/api/admin/content/word/a-1", new { data = Word("a-1") });
-        await admin.PostAsJsonAsync("/api/admin/content/word/a-1/hide", new { hidden = true });
-        await admin.PostAsJsonAsync("/api/admin/content/word/a-1/hide", new { hidden = false });
-        Assert.False(Assert.Single((await admin.GetFromJsonAsync<List<ContentItemDto>>("/api/content"))!).Hidden);
+        var changed = new HttpRequestMessage(HttpMethod.Get, "/api/content");
+        changed.Headers.IfNoneMatch.Add(etag);
+        Assert.Equal(HttpStatusCode.OK, (await anonymous.SendAsync(changed)).StatusCode);
+    }
 
-        await admin.PostAsJsonAsync("/api/admin/content/reading/r-1/hide", new { hidden = true });
-        Assert.Equal(HttpStatusCode.NoContent, (await admin.DeleteAsync("/api/admin/content/reading/r-1")).StatusCode);
-        await admin.DeleteAsync("/api/admin/content/word/a-1");
-        Assert.Empty((await admin.GetFromJsonAsync<List<ContentItemDto>>("/api/content"))!);
-        Assert.Equal(HttpStatusCode.NotFound, (await admin.DeleteAsync("/api/admin/content/reading/r-1")).StatusCode);
+    [Fact]
+    public async Task Seed_KeepsAdminEdits_UnlessOverwritten()
+    {
+        using var factory = new ApiFactory();
+        using var scope = factory.Services.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+        var seed = Content.ReadSeed(Content.SeedFolder);
+        Assert.Equal(2080, seed.Count(r => r.Kind == "word"));
+        Assert.Equal(9, seed.Select(r => r.Kind).Distinct().Count());
+
+        var word = await db.ContentItems.SingleAsync(c => c.Kind == "word" && c.Id == seed[0].Id);
+        word.Json = word.Json.Insert(1, "\"note\":\"edited\",");
+        db.ContentItems.Remove(await db.ContentItems.SingleAsync(c => c.Kind == "reading" && c.Id == "r1"));
+        await db.SaveChangesAsync();
+
+        Assert.Equal(new SeedReport(1, 0, seed.Count - 1), await Content.SeedAsync(db, Content.SeedFolder, DateTimeOffset.UtcNow));
+        Assert.Contains("edited", (await db.ContentItems.AsNoTracking().SingleAsync(c => c.Id == seed[0].Id && c.Kind == "word")).Json);
+
+        Assert.Equal(new SeedReport(0, 1, seed.Count - 1),
+            await Content.SeedAsync(db, Content.SeedFolder, DateTimeOffset.UtcNow, overwrite: true));
+        Assert.DoesNotContain("edited", (await db.ContentItems.AsNoTracking().SingleAsync(c => c.Id == seed[0].Id && c.Kind == "word")).Json);
     }
 
     [Fact]

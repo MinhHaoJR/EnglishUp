@@ -1,40 +1,24 @@
-import { z } from 'zod';
-import rawTranslations from './translations.json';
-import { levelSchema } from './schema';
-export const translations = z
-  .array(
-    z.object({
-      id: z.string().min(1),
-      level: levelSchema,
-      topic: z.string().min(1),
-      en: z.array(z.string().trim().min(1)).min(1),
-      vi: z.array(z.string().trim().min(1)).min(1),
-    }),
-  )
-  .min(16)
-  .parse(rawTranslations);
-if (new Set(translations.map((item) => item.id)).size !== translations.length)
-  throw new Error('Duplicate translation IDs');
-import {
-  readingSchema,
-  listeningSchema,
-  dictationSchema,
-  speakingSchema,
-  writingSchema,
+import type {
+  Dictation,
+  ListeningLesson,
+  ReadingLesson,
+  SpeakingPrompt,
+  Structure,
+  Translation,
+  Word,
+  WritingPrompt,
 } from './schema';
-import rawWriting from './writing.json';
-export const writingPrompts = z.array(writingSchema).min(10).parse(rawWriting);
-import rawSpeaking from './speaking.json';
-export const speakingPrompts = z.array(speakingSchema).min(16).parse(rawSpeaking);
-import rawListening from './listening.json';
-import rawDictation from './dictation.json';
-export const listenings = z.array(listeningSchema).min(6).parse(rawListening);
-export const dictations = z.array(dictationSchema).min(10).parse(rawDictation);
-import rawReading from './reading.json';
-export const readings = z.array(readingSchema).min(6).parse(rawReading);
-export { vocabulary } from './vocabularyContent';
-import rawStructures from './structures.json';
-import { structureSchema } from './schema';
-export const structures = z.array(structureSchema).length(100).parse(rawStructures);
-if (new Set(structures.map((item) => item.id)).size !== structures.length)
-  throw new Error('Duplicate structure IDs');
+
+/*
+ * The English learning library. It lives in the server's database (Supabase); services/content.ts fills these
+ * lists in place from GET /api/content, or from the offline copy in Dexie, before any page renders.
+ * The JSON files beside this module are seed data only: the server's `seed` command and the tests read them.
+ */
+export const vocabulary: Word[] = [];
+export const structures: Structure[] = [];
+export const readings: ReadingLesson[] = [];
+export const listenings: ListeningLesson[] = [];
+export const dictations: Dictation[] = [];
+export const speakingPrompts: SpeakingPrompt[] = [];
+export const writingPrompts: WritingPrompt[] = [];
+export const translations: Translation[] = [];

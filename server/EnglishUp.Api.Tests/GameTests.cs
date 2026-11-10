@@ -74,7 +74,7 @@ public class GameTests(ApiFactory factory) : IClassFixture<ApiFactory>
     public async Task LevelFilter_DrawsOnlyThatLevel()
     {
         var client = await factory.SignedInClient();
-        var bank = factory.Services.GetRequiredService<QuestionBank>();
+        var bank = QuestionBank.From(Content.ReadSeed(Content.SeedFolder));
         var game = await Start(client, "C2");
         Assert.Equal(Math.Min(60, bank.Count("C2")), game.Questions.Count);
 
@@ -189,17 +189,17 @@ public class GameTests(ApiFactory factory) : IClassFixture<ApiFactory>
     }
 
     [Fact]
-    public void QuestionBank_TakesTheAdminsWords()
+    public void QuestionBank_TakesVisibleCompleteWordRows()
     {
-        var bank = new QuestionBank([new("1", "apple", "quả táo", "A1"), new("2", "book", "quyển sách", "A1")]);
-        var next = bank.With([
-            new ContentItem { Kind = "word", Id = "1", Hidden = true },
-            new ContentItem { Kind = "word", Id = "2", Json = """{"id":"2","word":"novel","meaning":"tiểu thuyết","level":"A1"}""" },
-            new ContentItem { Kind = "word", Id = "a-3", Json = """{"id":"a-3","word":"harbour","meaning":"bến cảng","level":"A1"}""" },
-            new ContentItem { Kind = "word", Id = "a-4", Json = """{"id":"a-4","word":"odd","meaning":"lạ","level":"Z9"}""" },
-            new ContentItem { Kind = "word", Id = "a-5", Json = """{"id":"a-5","word":""}""" },
+        ContentItem Row(string id, string json, bool hidden = false) =>
+            new() { Kind = "word", Id = id, Json = json, Hidden = hidden };
+        var bank = QuestionBank.From([
+            Row("1", """{"id":"1","word":"apple","meaning":"quả táo","level":"A1"}""", hidden: true),
+            Row("2", """{"id":"2","word":"novel","meaning":"tiểu thuyết","level":"A1"}"""),
+            Row("3", """{"id":"3","word":"odd","meaning":"lạ","level":"Z9"}"""),
+            Row("4", """{"id":"4","word":""}"""),
+            new ContentItem { Kind = "reading", Id = "r", Json = """{"id":"r","word":"x","meaning":"y","level":"A1"}""" },
         ]);
-        Assert.Equal(["harbour", "novel"], next.Draw("A1", 10, new Random(1)).Select(q => q.Word).Order());
-        Assert.Equal(2, bank.Count("A1"));
+        Assert.Equal(["novel"], bank.Draw("A1", 10, new Random(1)).Select(q => q.Word));
     }
 }

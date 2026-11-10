@@ -24,45 +24,28 @@ public record GameResultDto(int Score, int Correct, int Answered, int MaxCombo, 
 
 public record GameRecordsDto(int Best, int Played);
 
-/// <summary>English words with Vietnamese meanings, loaded from the client's bundled content.</summary>
+/// <summary>English words with Vietnamese meanings, from the content library in the database.</summary>
 public class QuestionBank(IReadOnlyList<WordCard> words)
 {
-    public static QuestionBank Load(string folder)
-    {
-        var options = new JsonSerializerOptions(JsonSerializerDefaults.Web);
-        var words = new[] { "vocabulary.json", "vocabulary-it.json" }
-            .SelectMany(file => JsonSerializer.Deserialize<List<WordCard>>(File.ReadAllText(Path.Combine(folder, file)), options)!)
-            .ToList();
-        return new QuestionBank(words);
-    }
+    private static readonly JsonSerializerOptions Web = new(JsonSerializerDefaults.Web);
 
-    /// <summary>The bank with the admin's word rows on top: same id replaces, hidden removes, incomplete rows are skipped.</summary>
-    public QuestionBank With(IReadOnlyList<ContentItem> rows)
-    {
-        if (rows.Count == 0) return this;
-        var options = new JsonSerializerOptions(JsonSerializerDefaults.Web);
-        var next = words.ToList();
-        foreach (var row in rows)
+    /// <summary>The visible word rows; incomplete rows and unknown levels are skipped, as the app skips them.</summary>
+    public static QuestionBank From(IEnumerable<ContentItem> rows) => new(rows
+        .Where(r => r is { Kind: "word", Hidden: false })
+        .Select(r =>
         {
-            var at = next.FindIndex(w => w.Id == row.Id);
-            if (row.Hidden)
-            {
-                if (at >= 0) next.RemoveAt(at);
-                continue;
-            }
-            WordCard? card = null;
             try
             {
-                if (row.Json is not null) card = JsonSerializer.Deserialize<WordCard>(row.Json, options);
+                return JsonSerializer.Deserialize<WordCard>(r.Json, Web);
             }
-            catch (JsonException) { }
-            if (card is not { Id: { } id, Word: { Length: > 0 }, Meaning: { Length: > 0 }, Level: { } level }
-                || id != row.Id || !Game.Levels.Contains(level)) continue;
-            if (at >= 0) next[at] = card;
-            else next.Add(card);
-        }
-        return new QuestionBank(next);
-    }
+            catch (JsonException)
+            {
+                return null;
+            }
+        })
+        .OfType<WordCard>()
+        .Where(c => c is { Id.Length: > 0, Word.Length: > 0, Meaning.Length: > 0 } && Game.Levels.Contains(c.Level))
+        .ToList());
 
     public int Count(string? level) => words.Count(w => level is null || w.Level == level);
 
@@ -98,12 +81,11 @@ public static class Game
         var game = api.MapGroup("/game").RequireAuthorization();
 
         game.MapPost("/start", async (StartGameRequest request, ClaimsPrincipal user, AppDbContext db,
-            QuestionBank bank, TimeProvider clock) =>
+            ContentStore store, TimeProvider clock) =>
         {
             if (request.Level is not null && !Levels.Contains(request.Level))
                 return Results.ValidationProblem(new Dictionary<string, string[]> { ["level"] = ["Unknown level."] });
-            var rows = await db.ContentItems.AsNoTracking().Where(c => c.Kind == "word").ToListAsync();
-            var questions = bank.With(rows).Draw(request.Level, QuestionCount, Random.Shared);
+            var questions = QuestionBank.From((await store.GetAsync(db)).Rows).Draw(request.Level, QuestionCount, Random.Shared);
             var session = new GameSession
             {
                 Id = Guid.NewGuid(), UserId = UserId(user), Level = request.Level,

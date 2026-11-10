@@ -8,6 +8,7 @@ import {
   Link,
 } from 'react-router-dom';
 import { useApp } from './store';
+import { useContent } from '../services/content';
 import { useT } from '../i18n';
 const Dashboard = lazy(() => import('../features/dashboard/Dashboard'));
 import LanguagePicker from '../features/languages/LanguagePicker';
@@ -54,6 +55,7 @@ const navGroups = [
 export function Layout() {
   const t = useT();
   const { settings, load, ready, error } = useApp();
+  const lessons = useContent((state) => state.status);
   const { pathname } = useLocation();
   // Sentence patterns are English-only, so they never open the Japanese/Chinese workspace.
   const selectedSkill = skillSchema.exclude(['grammar']).safeParse(pathname.split('/')[1]);
@@ -167,6 +169,17 @@ export function Layout() {
             <p>{t('loading')}</p>
           ) : error ? (
             <p role="alert">{error}</p>
+          ) : lessons === 'missing' ? (
+            <div className="notice error" role="alert">
+              <p>
+                {settings.language === 'vi'
+                  ? 'Chưa tải được bài học. Lần đầu mở app cần có mạng; sau đó bạn học offline được.'
+                  : 'The lessons could not be loaded. The first visit needs the network; after that you can practise offline.'}
+              </p>
+              <button type="button" onClick={() => location.reload()}>
+                {settings.language === 'vi' ? 'Thử lại' : 'Try again'}
+              </button>
+            </div>
           ) : (
             <Suspense fallback={<p role="status">{t('loading')}</p>}>
               {settings.learningLanguage !== 'en' && (pathname === '/' || selectedSkill.success) ? (

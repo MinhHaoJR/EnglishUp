@@ -70,6 +70,8 @@ export const vocabularyStudySchema = z.object({
   updated: z.number().nonnegative(),
 });
 export type VocabularyStudy = z.infer<typeof vocabularyStudySchema>;
+/** The last learning library downloaded from the server, for offline practice; not part of backups. */
+export type Library = { id: 'library'; rows: unknown[]; saved: number };
 export class EnglishDB extends Dexie {
   settings!: Table<Settings, string>;
   attempts!: Table<Attempt, string>;
@@ -78,6 +80,7 @@ export class EnglishDB extends Dexie {
   drafts!: Table<Draft, string>;
   submissions!: Table<Submission, string>;
   vocabularyStudy!: Table<VocabularyStudy, string>;
+  lessons!: Table<Library, string>;
   constructor(name = 'englishup') {
     super(name);
     this.version(1).stores({
@@ -89,6 +92,7 @@ export class EnglishDB extends Dexie {
       submissions: 'id,promptId,timestamp',
     });
     this.version(2).stores({ vocabularyStudy: 'id,updated' });
+    this.version(3).stores({ lessons: 'id' });
   }
 }
 export const db = new EnglishDB();
@@ -131,9 +135,11 @@ export async function exportData() {
     vocabularyStudy: await db.vocabularyStudy.toArray(),
   }));
 }
+/** The learner's own tables; the lesson library is server content and survives a reset or import. */
+const userTables = () => db.tables.filter((table) => table.name !== 'lessons');
 export async function resetData() {
-  await db.transaction('rw', db.tables, async () => {
-    for (const table of db.tables) await table.clear();
+  await db.transaction('rw', userTables(), async () => {
+    for (const table of userTables()) await table.clear();
   });
 }
 export async function importData(raw: unknown) {
@@ -147,8 +153,8 @@ export async function importData(raw: unknown) {
     data.vocabularyStudy,
   ])
     if (new Set(list.map((x) => x.id)).size !== list.length) throw new Error('Duplicate IDs');
-  await db.transaction('rw', db.tables, async () => {
-    for (const table of db.tables) await table.clear();
+  await db.transaction('rw', userTables(), async () => {
+    for (const table of userTables()) await table.clear();
     await db.settings.put(data.settings);
     await db.attempts.bulkAdd(data.attempts);
     await db.words.bulkAdd(data.words);

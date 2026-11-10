@@ -4,6 +4,7 @@ using System.Net.Http.Json;
 using EnglishUp.Api.Data;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
@@ -35,6 +36,16 @@ public class ApiFactory : WebApplicationFactory<Program>
             services.RemoveAll<IAnswerer>();
             services.AddSingleton<IAnswerer>(new FakeAnswerer());
         });
+    }
+
+    /// <summary>Every test app starts with the seed lessons in its database, as a fresh deployment does.</summary>
+    protected override IHost CreateHost(IHostBuilder builder)
+    {
+        var host = base.CreateHost(builder);
+        using var scope = host.Services.CreateScope();
+        Content.SeedAsync(scope.ServiceProvider.GetRequiredService<AppDbContext>(), Content.SeedFolder, Clock.Now)
+            .GetAwaiter().GetResult();
+        return host;
     }
 
     private record Tokens(string AccessToken);

@@ -1,7 +1,5 @@
 import { z } from 'zod';
 import { levelSchema } from './schema';
-import basic from './wordRelations-basic.json';
-import advanced from './wordRelations-advanced.json';
 
 const text = z.string().trim().min(1);
 const relatedWordSchema = z.object({ word: text, meaning: text, example: text });
@@ -41,13 +39,5 @@ export const wordRelationSchema = z
   });
 
 export type WordRelation = z.infer<typeof wordRelationSchema>;
-export const wordRelations = z
-  .array(wordRelationSchema)
-  .min(1)
-  .parse([...basic, ...advanced]);
-if (
-  new Set(wordRelations.map((entry) => entry.id)).size !== wordRelations.length ||
-  new Set(wordRelations.map((entry) => normalized(entry.word))).size !== wordRelations.length
-) {
-  throw new Error('Duplicate word relation IDs or headwords');
-}
+/** Filled from the server's content library by services/content.ts, like the lists in ./content. */
+export const wordRelations: WordRelation[] = [];

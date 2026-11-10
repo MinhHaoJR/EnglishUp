@@ -22,7 +22,7 @@ export const useApp = create<State>((set, get) => ({
   topic: 'all',
   refresh: 0,
   load: async () => {
-    // Admin-added and edited lessons join the bundled ones before any page renders.
+    // The lessons come from the server (or the offline copy) before any page renders.
     await loadContent();
     try {
       set({

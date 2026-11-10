@@ -155,8 +155,10 @@ public class ContentItem
 {
     public required string Kind { get; set; }
     public required string Id { get; set; }
-    /// <summary>The item as JSON in the client's schema; null for a hidden bundled item never edited.</summary>
-    public string? Json { get; set; }
+    /// <summary>The item as JSON in the client's schema.</summary>
+    public required string Json { get; set; }
+    /// <summary>Order within the kind, as the app lists it (seed file order, new items last).</summary>
+    public int Position { get; set; }
     public bool Hidden { get; set; }
     public DateTimeOffset UpdatedAt { get; set; }
     public string UpdatedBy { get; set; } = "";

@@ -6,19 +6,23 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EnglishUp.Api;
 
-public record ContentItemDto(string Kind, string Id, JsonElement? Data, bool Hidden, DateTimeOffset UpdatedAt);
+public record ContentItemDto(string Kind, string Id, JsonElement Data, bool Hidden, DateTimeOffset UpdatedAt);
 public record ContentSaveRequest(JsonElement Data);
 public record ContentHideRequest(bool Hidden);
+public record SeedReport(int Added, int Updated, int Unchanged);
 
 /// <summary>
-/// Learning content added, edited or hidden by admins. The bundled JSON in src/data stays the base;
-/// these rows sit on top of it (same kind and id replaces a bundled item, a hidden row removes it).
-/// Every client validates each item with the app's own schemas before use, so a bad row is skipped,
-/// never shown; the server checks the envelope and the required fields.
+/// Every English learning item lives in the ContentItems table: the app, the 60-second race and the RAG assistant
+/// all read it from here. The JSON in src/data is only seed data for an empty database (the <c>seed</c> command) and tests.
+/// Every client validates each item with the app's own schemas before use, so a bad row is skipped, never shown;
+/// the server checks the envelope and the required fields.
 /// </summary>
 public static partial class Content
 {
     private const int MaxJsonLength = 64 * 1024;
+
+    /// <summary>The seed JSON shipped next to the API (linked from src/data).</summary>
+    public static readonly string SeedFolder = Path.Combine(AppContext.BaseDirectory, "Content");
 
     /// <summary>Fields each kind must have; the full shape is checked by the client's Zod schemas.</summary>
     public static readonly Dictionary<string, string[]> Required = new()
@@ -30,66 +34,122 @@ public static partial class Content
         ["dictation"] = ["text", "level", "topic"],
         ["speaking"] = ["title", "level", "topic", "mode", "text", "cues"],
         ["writing"] = ["title", "level", "topic", "genre", "prompt", "minWords", "maxWords", "checklist"],
+        ["translation"] = ["level", "topic", "en", "vi"],
+        ["relation"] = ["level", "word", "pos", "meaning", "definition", "example", "synonyms", "antonyms", "usageNote"],
+    };
+
+    /// <summary>Seed files per kind, in the order the app lists them.</summary>
+    public static readonly Dictionary<string, string[]> SeedFiles = new()
+    {
+        ["word"] = ["vocabulary.json", "vocabulary-it.json"],
+        ["structure"] = ["structures.json"],
+        ["reading"] = ["reading.json"],
+        ["listening"] = ["listening.json"],
+        ["dictation"] = ["dictation.json"],
+        ["speaking"] = ["speaking.json"],
+        ["writing"] = ["writing.json"],
+        ["translation"] = ["translations.json"],
+        ["relation"] = ["wordRelations-basic.json", "wordRelations-advanced.json"],
     };
 
     [GeneratedRegex("^[A-Za-z0-9-]{1,64}$")]
     private static partial Regex IdPattern();
 
+    /// <summary>The seed files as rows, numbered in file order within each kind.</summary>
+    public static List<ContentItem> ReadSeed(string folder) =>
+        SeedFiles.SelectMany(kind => kind.Value
+            .SelectMany(file => JsonSerializer.Deserialize<List<JsonElement>>(File.ReadAllText(Path.Combine(folder, file)))!)
+            .Select((item, position) => new ContentItem
+            {
+                Kind = kind.Key, Id = item.GetProperty("id").GetString()!, Json = item.GetRawText(), Position = position,
+                UpdatedBy = "seed",
+            })).ToList();
+
+    /// <summary>
+    /// Adds seed items the database lacks. Existing rows (an admin's edits) stay unless <paramref name="overwrite"/>,
+    /// which puts the seed's text and order back on the items that are in the seed.
+    /// </summary>
+    public static async Task<SeedReport> SeedAsync(AppDbContext db, string folder, DateTimeOffset now, bool overwrite = false)
+    {
+        var existing = await db.ContentItems.ToDictionaryAsync(c => (c.Kind, c.Id));
+        int added = 0, updated = 0, unchanged = 0;
+        foreach (var seed in ReadSeed(folder))
+        {
+            if (!existing.TryGetValue((seed.Kind, seed.Id), out var row))
+            {
+                seed.UpdatedAt = now;
+                db.ContentItems.Add(seed);
+                added++;
+            }
+            else if (overwrite && (row.Json != seed.Json || row.Position != seed.Position))
+            {
+                (row.Json, row.Position, row.UpdatedAt, row.UpdatedBy) = (seed.Json, seed.Position, now, "seed");
+                updated++;
+            }
+            else unchanged++;
+        }
+        await db.SaveChangesAsync();
+        return new SeedReport(added, updated, unchanged);
+    }
+
     public static void MapContent(this IEndpointRouteBuilder api)
     {
-        // Public: signed-out learners practise with the same lessons.
-        api.MapGet("/content", async (AppDbContext db) =>
-            Results.Ok((await db.ContentItems.AsNoTracking().OrderBy(c => c.Kind).ThenBy(c => c.Id).ToListAsync())
-                .Select(ToDto)));
+        // Public: signed-out learners practise with the same lessons. The ETag lets browsers revalidate
+        // the whole library (about 1 MB) with a 304 instead of downloading it on every start.
+        api.MapGet("/content", async (HttpContext http, AppDbContext db, ContentStore store) =>
+        {
+            var (rows, version) = await store.GetAsync(db);
+            http.Response.Headers.CacheControl = "no-cache";
+            http.Response.Headers.ETag = version;
+            if (http.Request.Headers.IfNoneMatch == version) return Results.StatusCode(StatusCodes.Status304NotModified);
+            return Results.Ok(rows.Select(ToDto));
+        });
 
         var admin = api.MapGroup("/admin/content").RequireAuthorization(Admin.Policy);
 
         admin.MapPut("/{kind}/{id}", async (string kind, string id, ContentSaveRequest input, ClaimsPrincipal user,
-            AppDbContext db, IEmbedder embedder, ILoggerFactory logs, TimeProvider clock) =>
+            AppDbContext db, ContentStore store, IEmbedder embedder, ILoggerFactory logs, TimeProvider clock) =>
         {
             var errors = Validate(kind, id, input.Data);
             if (errors.Count > 0) return Results.ValidationProblem(errors);
             var row = await db.ContentItems.FindAsync(kind, id);
-            if (row is null) db.ContentItems.Add(row = new ContentItem { Kind = kind, Id = id });
+            if (row is null)
+            {
+                // New items go to the end of their kind's list.
+                var last = await db.ContentItems.Where(c => c.Kind == kind).MaxAsync(c => (int?)c.Position) ?? -1;
+                db.ContentItems.Add(row = new ContentItem { Kind = kind, Id = id, Json = "", Position = last + 1 });
+            }
             row.Json = input.Data.GetRawText();
-            row.Hidden = false;
             row.UpdatedAt = clock.GetUtcNow();
             row.UpdatedBy = user.FindFirstValue(ClaimTypes.Name) ?? "";
             await db.SaveChangesAsync();
+            store.Invalidate();
             await ReindexAsync(db, embedder, logs, kind, id);
             return Results.Ok(ToDto(row));
         });
 
         admin.MapPost("/{kind}/{id}/hide", async (string kind, string id, ContentHideRequest input, ClaimsPrincipal user,
-            AppDbContext db, IEmbedder embedder, ILoggerFactory logs, TimeProvider clock) =>
+            AppDbContext db, ContentStore store, IEmbedder embedder, ILoggerFactory logs, TimeProvider clock) =>
         {
-            if (!Required.ContainsKey(kind) || !IdPattern().IsMatch(id)) return Results.BadRequest();
             var row = await db.ContentItems.FindAsync(kind, id);
-            // Showing a bundled item that was only hidden: nothing is left to keep, so the row goes.
-            if (row is { Json: null } && !input.Hidden)
-            {
-                db.ContentItems.Remove(row);
-                await db.SaveChangesAsync();
-                await ReindexAsync(db, embedder, logs, kind, id);
-                return Results.NoContent();
-            }
-            if (row is null) db.ContentItems.Add(row = new ContentItem { Kind = kind, Id = id });
+            if (row is null) return Results.NotFound();
             row.Hidden = input.Hidden;
             row.UpdatedAt = clock.GetUtcNow();
             row.UpdatedBy = user.FindFirstValue(ClaimTypes.Name) ?? "";
             await db.SaveChangesAsync();
+            store.Invalidate();
             await ReindexAsync(db, embedder, logs, kind, id);
             return Results.Ok(ToDto(row));
         });
 
-        // Removes the admin's row: an added item disappears, an edited bundled item returns to the original.
-        admin.MapDelete("/{kind}/{id}", async (string kind, string id, AppDbContext db, IEmbedder embedder,
-            ILoggerFactory logs) =>
+        admin.MapDelete("/{kind}/{id}", async (string kind, string id, AppDbContext db, ContentStore store,
+            IEmbedder embedder, ILoggerFactory logs) =>
         {
             var row = await db.ContentItems.FindAsync(kind, id);
             if (row is null) return Results.NotFound();
             db.ContentItems.Remove(row);
             await db.SaveChangesAsync();
+            store.Invalidate();
             await ReindexAsync(db, embedder, logs, kind, id);
             return Results.NoContent();
         });
@@ -130,8 +190,41 @@ public static partial class Content
         return errors;
     }
 
-    private static ContentItemDto ToDto(ContentItem row) => new(
-        row.Kind, row.Id,
-        row.Json is null ? null : JsonDocument.Parse(row.Json).RootElement.Clone(),
-        row.Hidden, row.UpdatedAt);
+    private static ContentItemDto ToDto(ContentItem row) =>
+        new(row.Kind, row.Id, JsonDocument.Parse(row.Json).RootElement.Clone(), row.Hidden, row.UpdatedAt);
+}
+
+/// <summary>
+/// The content rows in memory, read from the database once and again after each admin change, so learners'
+/// app starts and race games do not each pull the whole library from Supabase.
+/// shortcut: one cache per API process; with several instances, another instance's admin change shows only
+/// after that instance restarts. Upgrade to a version column checked per request if the API is scaled out.
+/// </summary>
+public class ContentStore
+{
+    private volatile Snapshot? current;
+    private int generation;
+    private record Snapshot(IReadOnlyList<ContentItem> Rows, string Version);
+
+    public async Task<(IReadOnlyList<ContentItem> Rows, string Version)> GetAsync(AppDbContext db)
+    {
+        var snapshot = current;
+        if (snapshot is null)
+        {
+            var started = Volatile.Read(ref generation);
+            var rows = await db.ContentItems.AsNoTracking().OrderBy(c => c.Kind).ThenBy(c => c.Position).ThenBy(c => c.Id)
+                .ToListAsync();
+            var stamp = rows.Count == 0 ? 0 : rows.Max(r => r.UpdatedAt.UtcTicks);
+            snapshot = new Snapshot(rows, $"\"{rows.Count}-{stamp}\"");
+            // A change saved while this read ran keeps the cache empty, so the next request reads it.
+            if (Volatile.Read(ref generation) == started) current = snapshot;
+        }
+        return (snapshot.Rows, snapshot.Version);
+    }
+
+    public void Invalidate()
+    {
+        Interlocked.Increment(ref generation);
+        current = null;
+    }
 }

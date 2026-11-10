@@ -58,7 +58,7 @@ public class KnowledgeTests(ApiFactory factory) : IClassFixture<ApiFactory>
     [Fact]
     public void BuildChunks_CoversEveryContentFileOnce()
     {
-        var chunks = Knowledge.BuildChunks(Content);
+        var chunks = Knowledge.BuildChunks(EnglishUp.Api.Content.ReadSeed(Content));
         var counts = chunks.GroupBy(c => c.SourceType).ToDictionary(g => g.Key, g => g.Count());
         Assert.Equal(2080, counts["word"]);
         Assert.Equal(6, counts["reading"]);
@@ -72,30 +72,25 @@ public class KnowledgeTests(ApiFactory factory) : IClassFixture<ApiFactory>
     }
 
     [Fact]
-    public void BuildChunks_PutsAdminRowsOnTop()
+    public void BuildChunks_SkipsHiddenBrokenAndPracticeRows()
     {
-        var bundled = Knowledge.BuildChunks(Content);
-        var reading = bundled.First(c => c.SourceType == "reading");
-        var pattern = bundled.First(c => c.SourceType == "grammar");
-        var chunks = Knowledge.BuildChunks(Content, [
-            new ContentItem { Kind = "reading", Id = reading.SourceId, Hidden = true },
-            new ContentItem { Kind = "word", Id = "a-new", Json = """
+        var chunks = Knowledge.BuildChunks([
+            new ContentItem { Kind = "word", Id = "a-new", Position = 1, Json = """
                 {"id":"a-new","word":"harbour","ipa":"","pos":"noun","meaning":"bến cảng","definition":"a place for boats",
                  "examples":["Boats wait in the harbour."],"level":"B1","topic":"travel"}
                 """ },
-            new ContentItem { Kind = "structure", Id = pattern.SourceId, Json = $$"""
-                {"id":"{{pattern.SourceId}}","group":"x","formula":"S + edited","meaning":"m","example":"e","key":"k",
-                 "options":["a","b"],"translation":"t"}
+            new ContentItem { Kind = "structure", Id = "s1", Json = """
+                {"id":"s1","group":"x","formula":"S + V","meaning":"m","example":"e","key":"k","options":["a","b"],"translation":"t"}
                 """ },
+            new ContentItem { Kind = "reading", Id = "r-hidden", Hidden = true, Json = """{"id":"r-hidden","title":"t","level":"A1","topic":"x","text":"y"}""" },
             new ContentItem { Kind = "word", Id = "a-broken", Json = """{"id":"a-broken"}""" },
-            new ContentItem { Kind = "speaking", Id = "a-talk", Json = """{"id":"a-talk"}""" },
+            new ContentItem { Kind = "word", Id = "a-other", Json = """{"id":"another","word":"w","meaning":"m","examples":[]}""" },
+            new ContentItem { Kind = "speaking", Id = "a-talk", Json = """{"id":"a-talk","title":"Talk"}""" },
         ]);
 
-        Assert.DoesNotContain(chunks, c => c.SourceId == reading.SourceId && c.SourceType == "reading");
-        Assert.Contains("bến cảng", chunks.Single(c => c.SourceId == "a-new").Text);
-        Assert.Equal("S + edited", chunks.Single(c => c is { SourceType: "grammar" } && c.SourceId == pattern.SourceId).Title);
-        Assert.DoesNotContain(chunks, c => c.SourceId is "a-broken" or "a-talk");
-        Assert.Equal(bundled.Count, chunks.Count);
+        // Patterns come before words, so lessons are embedded first.
+        Assert.Equal(["s1", "a-new"], chunks.Select(c => c.SourceId));
+        Assert.Contains("bến cảng", chunks[1].Text);
     }
 
     [Fact]
@@ -165,7 +160,7 @@ public class KnowledgeTests(ApiFactory factory) : IClassFixture<ApiFactory>
     {
         using (var scope = factory.Services.CreateScope())
             await Knowledge.IngestAsync(scope.ServiceProvider.GetRequiredService<AppDbContext>(),
-                scope.ServiceProvider.GetRequiredService<IEmbedder>(), Knowledge.BuildChunks(Content));
+                scope.ServiceProvider.GetRequiredService<IEmbedder>(), Knowledge.BuildChunks(EnglishUp.Api.Content.ReadSeed(Content)));
         var client = await factory.SignedInClient();
 
         var hits = await client.GetFromJsonAsync<List<SearchHit>>("/api/knowledge/search?q=routine&k=3");

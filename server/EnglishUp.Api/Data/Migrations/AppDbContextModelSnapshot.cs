@@ -108,7 +108,11 @@ namespace EnglishUp.Api.Data.Migrations
                         .HasColumnType("boolean");
 
                     b.Property<string>("Json")
+                        .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int>("Position")
+                        .HasColumnType("integer");
 
                     b.Property<DateTimeOffset>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");

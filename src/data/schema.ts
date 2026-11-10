@@ -72,6 +72,15 @@ export const dictationSchema = z.object({
   level: levelSchema,
   topic: z.string(),
 });
+export type Dictation = z.infer<typeof dictationSchema>;
+export const translationSchema = z.object({
+  id: z.string().min(1),
+  level: levelSchema,
+  topic: z.string().min(1),
+  en: z.array(z.string().trim().min(1)).min(1),
+  vi: z.array(z.string().trim().min(1)).min(1),
+});
+export type Translation = z.infer<typeof translationSchema>;
 export const speakingSchema = z.object({
   id: z.string(),
   title: z.string(),
