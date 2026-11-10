@@ -152,7 +152,12 @@ export default function Admin() {
         <>
           <section className="admin-presence" aria-labelledby="presence-title">
             <div className="admin-presence-head">
-              <h2 id="presence-title">{bi('Hiện diện', 'Presence')}</h2>
+              <h2 id="presence-title" className="admin-heading">
+                <span className="line-tile small" aria-hidden="true">
+                  <SkillIcon skill="user" size={16} />
+                </span>
+                {bi('Hiện diện', 'Presence')}
+              </h2>
               <p className="muted">
                 {bi('Cập nhật lúc', 'Updated at')}{' '}
                 {new Date(overview.at).toLocaleTimeString(locale)} ·{' '}
@@ -188,16 +193,39 @@ export default function Admin() {
           </section>
 
           <section className="admin-today" aria-labelledby="today-title">
-            <h2 id="today-title">{bi('Hôm nay', 'Today')}</h2>
+            <h2 id="today-title" className="admin-heading">
+              <span className="line-tile small" aria-hidden="true">
+                <SkillIcon skill="dashboard" size={16} />
+              </span>
+              {bi('Hôm nay', 'Today')}
+            </h2>
+            {/* Each figure keeps one colour, so the four read apart at a glance. */}
             <dl>
-              {[
-                [bi('Mở app hôm nay', 'Opened the app'), overview.activeToday],
-                [bi('Lượt luyện tập', 'Practices'), overview.attemptsToday],
-                [bi('Câu hỏi trợ giảng', 'Tutor questions'), overview.questionsToday],
-                [bi('Ván Đua 60 giây', 'Races'), overview.gamesToday],
-              ].map(([label, value]) => (
-                <div key={String(label)}>
-                  <dt>{label}</dt>
+              {(
+                [
+                  [bi('Mở app hôm nay', 'Opened the app'), overview.activeToday, 'reading', 'user'],
+                  [
+                    bi('Lượt luyện tập', 'Practices'),
+                    overview.attemptsToday,
+                    'vocabulary',
+                    'check',
+                  ],
+                  [
+                    bi('Câu hỏi trợ giảng', 'Tutor questions'),
+                    overview.questionsToday,
+                    'listening',
+                    'assistant',
+                  ],
+                  [bi('Ván Đua 60 giây', 'Races'), overview.gamesToday, 'speaking', 'game'],
+                ] as const
+              ).map(([label, value, skill, icon]) => (
+                <div key={label} data-skill={skill}>
+                  <dt>
+                    <span className="line-tile small" aria-hidden="true">
+                      <SkillIcon skill={icon} size={16} />
+                    </span>
+                    {label}
+                  </dt>
                   <dd>{value}</dd>
                 </div>
               ))}
@@ -214,7 +242,12 @@ export default function Admin() {
 
       <section className="admin-users" aria-labelledby="users-title">
         <div className="admin-users-head">
-          <h2 id="users-title">{bi('Người dùng', 'Users')}</h2>
+          <h2 id="users-title" className="admin-heading">
+            <span className="line-tile small" aria-hidden="true">
+              <SkillIcon skill="admin" size={16} />
+            </span>
+            {bi('Người dùng', 'Users')}
+          </h2>
           <label>
             <span className="sr-only">{bi('Tìm người dùng', 'Search users')}</span>
             <input
@@ -275,6 +308,7 @@ export default function Admin() {
                             disabled={busy === u.id}
                             onClick={() => void act(u, () => hideFromLeaderboard(u.id))}
                           >
+                            <SkillIcon skill="eyeOff" size={16} />
                             {bi('Ẩn khỏi bảng xếp hạng', 'Hide from leaderboard')}
                           </button>
                         )}
@@ -285,6 +319,7 @@ export default function Admin() {
                               disabled={busy === u.id}
                               onClick={() => void act(u, () => setLocked(u.id, false))}
                             >
+                              <SkillIcon skill="lock" size={16} />
                               {bi('Mở khoá', 'Unlock')}
                             </button>
                           ) : confirming === u.id ? (
@@ -294,10 +329,16 @@ export default function Admin() {
                               disabled={busy === u.id}
                               onClick={() => void act(u, () => setLocked(u.id, true))}
                             >
+                              <SkillIcon skill="lock" size={16} />
                               {bi('Xác nhận khoá', 'Confirm lock')}
                             </button>
                           ) : (
-                            <button type="button" onClick={() => setConfirming(u.id)}>
+                            <button
+                              type="button"
+                              className="danger-outline"
+                              onClick={() => setConfirming(u.id)}
+                            >
+                              <SkillIcon skill="lock" size={16} />
                               {bi('Khoá tài khoản', 'Lock account')}
                             </button>
                           ))}

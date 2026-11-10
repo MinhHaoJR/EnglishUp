@@ -240,8 +240,10 @@ export default function ContentManager() {
       <div className="content-what">
         <strong>{e.item ? label(kind, e.item) : e.id}</strong>
         <small>
-          <code>{e.id}</code>
-          {e.item && 'level' in e.item && ` · ${String(e.item.level)}`}
+          <code className="content-id">{e.id}</code>
+          {e.item && 'level' in e.item && (
+            <span className="content-level">{String(e.item.level)}</span>
+          )}
         </small>
       </div>
       <span className={`content-status ${e.status}`}>{statusText[e.status]}</span>
@@ -249,11 +251,13 @@ export default function ContentManager() {
         {e.status !== 'hidden' && (
           <button
             type="button"
+            className="content-edit"
             onClick={() => {
               setEditing({ item: e.item ?? ((e.row.data as Item) || { id: e.id }), isNew: false });
               setMessage('');
             }}
           >
+            <SkillIcon skill="writing" size={16} />
             {bi('Sửa', 'Edit')}
           </button>
         )}
@@ -264,6 +268,7 @@ export default function ContentManager() {
               void run(() => hideContent(kind, e.id, false), bi('Đã hiện lại.', 'Shown again.'))
             }
           >
+            <SkillIcon skill="eye" size={16} />
             {bi('Hiện lại', 'Show')}
           </button>
         ) : (
@@ -276,6 +281,7 @@ export default function ContentManager() {
               )
             }
           >
+            <SkillIcon skill="eyeOff" size={16} />
             {bi('Ẩn', 'Hide')}
           </button>
         )}
@@ -297,42 +303,45 @@ export default function ContentManager() {
   );
 
   return (
-    <section className="content-admin" aria-labelledby="content-title">
-      <div className="content-admin-head">
-        <h2 id="content-title">{bi('Tài liệu học tập', 'Learning content')}</h2>
-        <p className="muted">
-          {bi(
-            'Toàn bộ bài học nằm trong cơ sở dữ liệu; người học nhận bản mới khi mở app và giữ một bản sao để học offline. Từ vựng vào cả Đua 60 giây; trợ giảng AI học bài mới ngay khi lưu (nếu hết hạn mức Gemini, bài được nạp ở lần chạy ingest sau).',
-            'Every lesson lives in the database; learners get the latest when they open the app and keep a copy for offline practice. Words also feed the 60-second race; the AI tutor learns an item as soon as it is saved (if the Gemini quota is used up, the next ingest run adds it).',
-          )}
-        </p>
-      </div>
-      <div
-        className="content-kinds"
-        role="tablist"
-        aria-label={bi('Loại tài liệu', 'Content kind')}
-      >
-        {kinds.map((k) => (
-          <button
-            key={k.id}
-            type="button"
-            role="tab"
-            aria-selected={k.id === kind}
-            data-skill={k.skill}
-            onClick={() => {
-              setKind(k.id);
-              setEditing(null);
-              setSearch('');
-              setMessage('');
-            }}
-          >
-            <span className="line-tile small" aria-hidden="true">
-              <SkillIcon skill={k.icon} size={16} />
-            </span>
-            {bi(k.vi, k.en)}
-            <small>{counts[k.id]}</small>
-          </button>
-        ))}
+    // The chosen kind's skill colour tints the header band, its tab, the group bars and the clusters.
+    <section className="content-admin" aria-labelledby="content-title" data-skill={current.skill}>
+      <div className="content-admin-top">
+        <div className="content-admin-head">
+          <h2 id="content-title">{bi('Tài liệu học tập', 'Learning content')}</h2>
+          <p className="muted">
+            {bi(
+              'Toàn bộ bài học nằm trong cơ sở dữ liệu; người học nhận bản mới khi mở app và giữ một bản sao để học offline. Từ vựng vào cả Đua 60 giây; trợ giảng AI học bài mới ngay khi lưu (nếu hết hạn mức Gemini, bài được nạp ở lần chạy ingest sau).',
+              'Every lesson lives in the database; learners get the latest when they open the app and keep a copy for offline practice. Words also feed the 60-second race; the AI tutor learns an item as soon as it is saved (if the Gemini quota is used up, the next ingest run adds it).',
+            )}
+          </p>
+        </div>
+        <div
+          className="content-kinds"
+          role="tablist"
+          aria-label={bi('Loại tài liệu', 'Content kind')}
+        >
+          {kinds.map((k) => (
+            <button
+              key={k.id}
+              type="button"
+              role="tab"
+              aria-selected={k.id === kind}
+              data-skill={k.skill}
+              onClick={() => {
+                setKind(k.id);
+                setEditing(null);
+                setSearch('');
+                setMessage('');
+              }}
+            >
+              <span className="line-tile small" aria-hidden="true">
+                <SkillIcon skill={k.icon} size={16} />
+              </span>
+              {bi(k.vi, k.en)}
+              <small>{counts[k.id]}</small>
+            </button>
+          ))}
+        </div>
       </div>
 
       {message && (

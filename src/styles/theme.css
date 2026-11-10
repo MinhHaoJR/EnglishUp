@@ -3235,3 +3235,260 @@ main.admin-main {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- Admin colour pass (design-craft: colorize + layout) ----------
+   Full palette from the skill lines, each with a job: the chosen content kind tints its header band,
+   fills its tab and colours its group bars and clusters; each "today" figure keeps one line colour.
+   Rows sit on alternating soft grounds instead of hairlines, statuses carry a dot and a word, and
+   actions carry an icon (Edit in sign blue, destructive ones in red). No side stripes, no glow. */
+/* Redeclared wherever the line changes, since a custom property resolves where it is declared. */
+.content-admin,
+.admin-users,
+.admin-today [data-skill] {
+  --line-text: color-mix(in srgb, var(--line) 78%, var(--ink));
+}
+.content-admin-top {
+  margin: -24px -24px 20px;
+  padding: 24px 24px 16px;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 30%, var(--border));
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: var(--skill-soft);
+}
+.content-admin-top .content-kinds {
+  margin-bottom: 0;
+}
+.content-kinds button {
+  background: var(--panel);
+}
+.content-kinds button:hover {
+  border-color: color-mix(in srgb, var(--line) 45%, var(--border));
+}
+.content-kinds button[aria-selected='true'] {
+  border-color: var(--line);
+  background: var(--line);
+  color: var(--tile-ink);
+}
+.content-kinds button[aria-selected='true'] small {
+  color: inherit;
+  opacity: 0.85;
+}
+.content-kinds button[aria-selected='true'] .line-tile {
+  background: color-mix(in srgb, var(--tile-ink) 22%, transparent);
+}
+
+/* Group bars and clusters in the kind's colour. */
+.content-topic {
+  border-color: color-mix(in srgb, var(--line) 24%, var(--border));
+  background: var(--panel);
+}
+.content-topic h3 button {
+  background: color-mix(in srgb, var(--line) 5%, var(--panel));
+}
+.content-topic h3 button:hover:not(:disabled),
+.content-topic h3 button[aria-expanded='true'] {
+  background: var(--skill-soft);
+}
+.content-topic h3 button[aria-expanded='true'] {
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.content-topic h3 button svg {
+  color: var(--line);
+}
+.content-topic h3 small {
+  padding: 2px 10px;
+  border: 1px solid color-mix(in srgb, var(--line) 35%, var(--border));
+  border-radius: var(--radius-sm);
+  background: var(--panel);
+  color: var(--line-text);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.content-clusters {
+  border-top-color: color-mix(in srgb, var(--line) 24%, var(--border));
+}
+.content-cluster h4 {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 16px 0 6px;
+  padding: 3px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--line);
+  color: var(--tile-ink);
+}
+.content-cluster h4 small {
+  color: inherit;
+  opacity: 0.85;
+}
+
+/* Item rows: alternating soft grounds, the id and level as small chips. */
+.content-list li {
+  min-height: 56px;
+  padding: 8px 12px;
+  border-bottom: 0;
+  border-radius: var(--radius-sm);
+}
+.content-list li + li {
+  margin-top: 2px;
+}
+.content-list li:nth-child(even) {
+  background: color-mix(in srgb, var(--soft) 60%, var(--panel));
+}
+.content-list li:hover {
+  background: var(--skill-soft);
+}
+.content-what small {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 3px;
+}
+.content-id,
+.content-level {
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.content-id {
+  background: var(--skill-soft);
+  color: var(--line-text);
+}
+.content-level {
+  border: 1px solid color-mix(in srgb, var(--line) 40%, var(--border));
+  color: var(--line-text);
+}
+
+/* Status: a dot and a word, in the inherited semantic colours. */
+.content-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+}
+.content-status::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.content-status.live {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+/* Actions with icons; Edit is the everyday action, so it alone is tinted. */
+.content-actions button,
+.admin-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.content-actions .content-edit {
+  border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+.content-actions .content-edit:hover {
+  background: color-mix(in srgb, var(--primary) 18%, var(--panel));
+}
+.admin-actions .danger-outline {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+/* The form: repeated blocks and their legends in the kind's colour. */
+.content-editor h3 code {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--skill-soft);
+  color: var(--line-text);
+}
+.content-rows {
+  border-color: color-mix(in srgb, var(--line) 30%, var(--border));
+}
+.content-rows > legend {
+  color: var(--line-text);
+}
+.content-row {
+  border-color: color-mix(in srgb, var(--line) 22%, var(--border));
+  background: color-mix(in srgb, var(--line) 6%, var(--panel));
+}
+.content-row > legend {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--line);
+  color: var(--tile-ink);
+}
+
+/* Overview: sign-blue heading tiles, one colour per "today" figure, alternating user rows. */
+.admin-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.admin-heading .line-tile {
+  background: var(--primary);
+  color: var(--primary-ink);
+}
+.admin-today dl {
+  gap: 12px;
+  border-block: 0;
+}
+.admin-today dl > div:nth-child(n) {
+  padding: 14px 16px;
+  border: 1px solid color-mix(in srgb, var(--line) 28%, var(--border));
+  border-radius: var(--radius);
+  background: var(--skill-soft);
+}
+.admin-today dt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--line-text);
+  font-weight: 600;
+}
+.admin-today dd {
+  margin-top: 8px;
+  font-size: 2.1rem;
+}
+.admin-band h3 span {
+  font-weight: 700;
+}
+.admin-band.today h3,
+.admin-band.week h3 {
+  color: var(--primary);
+}
+.admin-band.today h3 span,
+.admin-band.week h3 span {
+  background: var(--primary-soft);
+}
+.admin-band li {
+  /* Wide enough for both buttons with icons on one line; fixed, so the columns line up row to row. */
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 380px;
+  border-bottom: 0;
+  border-radius: var(--radius-sm);
+}
+.admin-band li + li {
+  margin-top: 2px;
+}
+.admin-band li:nth-child(even) {
+  background: color-mix(in srgb, var(--soft) 60%, var(--panel));
+}
+.admin-band li:hover {
+  background: var(--primary-soft);
+}
+.admin-band li.self {
+  background: color-mix(in srgb, var(--signal) 20%, var(--panel));
+}
+@media (max-width: 860px) {
+  .admin-band li {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .content-admin-top {
+    margin: -18px -16px 16px;
+    padding: 18px 16px 14px;
+  }
+}
