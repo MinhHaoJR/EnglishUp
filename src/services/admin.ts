@@ -2,18 +2,28 @@ import { z } from 'zod';
 import { create } from 'zustand';
 import { ApiError, authFetch, fetchJson, useAuth } from './auth';
 
-/** Whether the signed-in account is in the server's Admin role (checked on the server, not trusted). */
-export const useAdmin = create<{ isAdmin: boolean }>(() => ({ isAdmin: false }));
+/**
+ * Whether the signed-in account is in the server's Admin role (checked on the server, not trusted).
+ * `checkedFor` is the email the answer belongs to, so a page never acts on the previous account's answer.
+ */
+export const useAdmin = create<{ isAdmin: boolean; checkedFor: string | null }>(() => ({
+  isAdmin: false,
+  checkedFor: null,
+}));
 
 const meSchema = z.object({ email: z.string(), isAdmin: z.boolean() });
 
 export async function refreshAdmin() {
-  if (!useAuth.getState().email) return useAdmin.setState({ isAdmin: false });
+  const email = useAuth.getState().email;
+  if (!email) return useAdmin.setState({ isAdmin: false, checkedFor: null });
+  let isAdmin = false;
   try {
-    useAdmin.setState({ isAdmin: (await fetchJson(meSchema, '/api/me')).isAdmin });
+    isAdmin = (await fetchJson(meSchema, '/api/me')).isAdmin;
   } catch {
-    useAdmin.setState({ isAdmin: false });
+    /* Offline or rejected: treat as a learner; the server still guards /api/admin. */
   }
+  // Another account signed in meanwhile: its own check will answer.
+  if (useAuth.getState().email === email) useAdmin.setState({ isAdmin, checkedFor: email });
 }
 
 /**

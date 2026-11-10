@@ -87,6 +87,15 @@ export function Layout() {
     document.documentElement.lang = settings.language;
     document.documentElement.classList.toggle('dark', settings.theme === 'dark');
   }, [settings]);
+  // The admin area is a separate page with its own header and no learning shell.
+  if (pathname === '/admin')
+    return ready ? (
+      <Suspense fallback={<p role="status">{t('loading')}</p>}>
+        <Outlet />
+      </Suspense>
+    ) : (
+      <p>{t('loading')}</p>
+    );
   // The sign-in page is a full-screen entrance without the sidebar, tutor bubble or top bar.
   if (pathname === '/login')
     return (

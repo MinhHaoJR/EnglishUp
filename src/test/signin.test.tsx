@@ -4,6 +4,7 @@ import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import SignIn, { safeNext } from '../features/account/SignIn';
 import Account from '../features/account/Account';
 import { useAuth } from '../services/auth';
+import { useAdmin } from '../services/admin';
 
 const json = (body: unknown, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } });
@@ -17,6 +18,7 @@ afterEach(() => {
   vi.unstubAllGlobals();
   localStorage.clear();
   useAuth.setState({ email: null });
+  useAdmin.setState({ isAdmin: false, checkedFor: null });
 });
 
 const show = (path: string) =>
@@ -26,6 +28,7 @@ const show = (path: string) =>
         <Route path="/login" element={<SignIn />} />
         <Route path="/account" element={<Account />} />
         <Route path="/game" element={<p>Game page</p>} />
+        <Route path="/admin" element={<p>Admin page</p>} />
         <Route path="/" element={<p>Home page</p>} />
       </Routes>
     </MemoryRouter>,
@@ -85,8 +88,31 @@ test('the account page sends signed-out learners to the sign-in page', () => {
   expect(screen.getByRole('heading', { name: 'Mang tiến độ học theo bạn' })).toBeInTheDocument();
 });
 
-test('signed-in learners skip the sign-in page', () => {
+test('signed-in learners skip the sign-in page', async () => {
   useAuth.setState({ email: 'learner@example.test' });
   show('/login?next=/game');
-  expect(screen.getByText('Game page')).toBeInTheDocument();
+  expect(await screen.findByText('Game page')).toBeInTheDocument();
+});
+
+test('an admin account goes to the admin page, a learner never does', async () => {
+  fetchMock.mockImplementation((path: string) =>
+    Promise.resolve(
+      path === '/api/login'
+        ? json({ accessToken: 'a', refreshToken: 'r', expiresIn: 3600 })
+        : path === '/api/me'
+          ? json({ email: 'boss@example.test', isAdmin: true })
+          : json({}, 500),
+    ),
+  );
+  show('/login?next=/game');
+  await userEvent.type(screen.getByRole('textbox', { name: 'Email' }), 'boss@example.test');
+  await userEvent.type(screen.getByLabelText('Mật khẩu'), 'Learn#2026');
+  await userEvent.click(submit());
+  expect(await screen.findByText('Admin page')).toBeInTheDocument();
+});
+
+test('a learner sent from the admin page lands on the learning app', async () => {
+  useAuth.setState({ email: 'learner@example.test' });
+  show('/login?next=/admin');
+  expect(await screen.findByText('Home page')).toBeInTheDocument();
 });

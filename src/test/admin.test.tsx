@@ -1,6 +1,6 @@
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { MemoryRouter } from 'react-router-dom';
+import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import Admin from '../features/admin/Admin';
 import { useAuth } from '../services/auth';
 import { startPresence, useAdmin } from '../services/admin';
@@ -72,7 +72,7 @@ beforeEach(() => {
     }),
   );
   useAuth.setState({ email: 'admin@example.test' });
-  useAdmin.setState({ isAdmin: true });
+  useAdmin.setState({ isAdmin: true, checkedFor: 'admin@example.test' });
   fetchMock = vi.fn((path: string) =>
     Promise.resolve(
       path === '/api/admin/overview'
@@ -88,21 +88,40 @@ afterEach(() => {
   vi.unstubAllGlobals();
   localStorage.clear();
   useAuth.setState({ email: null });
-  useAdmin.setState({ isAdmin: false });
+  useAdmin.setState({ isAdmin: false, checkedFor: null });
 });
 
 const show = () =>
   render(
-    <MemoryRouter>
-      <Admin />
+    <MemoryRouter initialEntries={['/admin']}>
+      <Routes>
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/" element={<p>Learning app</p>} />
+        <Route path="/login" element={<p>Sign-in page</p>} />
+      </Routes>
     </MemoryRouter>,
   );
 
-test('non-admins see a refusal and no data is requested', () => {
-  useAdmin.setState({ isAdmin: false });
+test('a learner account is sent to the learning app and no admin data is requested', () => {
+  useAdmin.setState({ isAdmin: false, checkedFor: 'admin@example.test' });
   show();
-  expect(screen.getByText(/chỉ dành cho quản trị viên/)).toBeInTheDocument();
-  expect(fetchMock).not.toHaveBeenCalled();
+  expect(screen.getByText('Learning app')).toBeInTheDocument();
+  expect(fetchMock.mock.calls.some(([p]) => String(p).startsWith('/api/admin'))).toBe(false);
+});
+
+test('signed out, the admin page asks for sign-in', () => {
+  useAuth.setState({ email: null });
+  show();
+  expect(screen.getByText('Sign-in page')).toBeInTheDocument();
+});
+
+test('the admin page has its own header with a way back to learning', async () => {
+  show();
+  const header = screen.getAllByRole('banner')[0];
+  expect(within(header).getByText('admin@example.test')).toBeInTheDocument();
+  expect(within(header).getByRole('link', { name: 'Trang học tập' })).toHaveAttribute('href', '/');
+  expect(within(header).getByRole('button', { name: 'Đăng xuất' })).toBeInTheDocument();
+  await screen.findByText('đang online');
 });
 
 test('shows the online split and puts users on the time spine', async () => {

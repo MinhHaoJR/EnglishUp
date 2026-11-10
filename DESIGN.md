@@ -114,7 +114,8 @@ Elevation is a 1px `--border` and nothing else. Shadows are not combined with bo
   - "Today" follows as one ruled row of four counts (opened the app, practices, tutor questions, races) with a line of system totals.
   - Users hang on one line ordered by when they were last seen, in bands: online now, today, last 7 days, earlier, never seen. Each account is a stop with its light, email, display name, tags (Admin, Locked, On leaderboard), points, practices, last seen and actions. The admin's own row is lit yellow and cannot be locked.
   - Locking takes a second click to confirm. The page refreshes every 30 s.
-  - The sidebar shows an extra "Admin" group only for admins.
+  - It is a separate page outside the learning shell, with no sidebar or tutor bubble. Its own sticky sign-blue bar carries the brand, a yellow "Admin" plate, the admin's email, "Learning app" and "Sign out". Signing in with an admin account lands here. A learner opening `/admin` is sent to the learning app, and a signed-out visitor to sign-in.
+  - In the learning app, the sidebar shows an extra "Admin" group only for admins.
 - **Tutor page** (`/assistant`, surface roll seed `66dcd42e/0`: structure #1 of 6, workspace with history rail, "contact sheet" composition). It is one 12px plate filling the viewport.
   - The rail lists saved chats as small frames grouped Today / Earlier, with title and time. The open frame grows, gets a blue border and the yellow "you are here" dot. Delete shows on hover, on focus or for the open frame.
   - The main frame has a header (open title, status, questions left today) and a centred 760px reading column. Answers read as plain text beside the avatar, questions are blue bubbles, and sources are labels with the skill-line tile.

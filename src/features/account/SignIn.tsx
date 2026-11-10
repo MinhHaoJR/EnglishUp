@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, Navigate, useSearchParams } from 'react-router-dom';
 import { useBi } from '../../i18n';
 import { Notice } from '../../components/shared';
 import SkillIcon from '../../components/SkillIcon';
 import { AuthError, login, register, useAuth, type AuthErrorKind } from '../../services/auth';
 import { syncNow } from '../../services/sync';
+import { refreshAdmin, useAdmin } from '../../services/admin';
 
 /** Only same-site paths, so a crafted link cannot send a learner to another site after signing in. */
 export function safeNext(raw: string | null) {
@@ -58,7 +59,21 @@ export default function SignIn() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<AuthErrorKind | ''>('');
 
-  if (email) return <Navigate to={next} replace />;
+  const { isAdmin, checkedFor } = useAdmin();
+  const checked = !!email && checkedFor === email;
+  useEffect(() => {
+    if (email && checkedFor !== email) void refreshAdmin();
+  }, [email, checkedFor]);
+
+  // Admins go to their own page; learners go back to the lesson that sent them (never the admin page).
+  if (email)
+    return checked ? (
+      <Navigate to={isAdmin ? '/admin' : next.startsWith('/admin') ? '/' : next} replace />
+    ) : (
+      <p role="status" className="signin-wait">
+        {bi('Đang mở…', 'Opening…')}
+      </p>
+    );
 
   const messages: Record<AuthErrorKind, string> = {
     invalid: bi(

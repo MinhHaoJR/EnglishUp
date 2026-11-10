@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { useBi } from '../../i18n';
 import { Notice, PageTitle } from '../../components/shared';
 import SkillIcon from '../../components/SkillIcon';
 import { useApp } from '../../app/store';
-import { ApiError, useAuth } from '../../services/auth';
+import { ApiError, logout, useAuth } from '../../services/auth';
 import {
   fetchOverview,
   fetchUsers,
   hideFromLeaderboard,
+  refreshAdmin,
   setLocked,
   useAdmin,
   type AdminUser,
@@ -43,7 +44,7 @@ export default function Admin() {
   const bi = useBi();
   const locale = useApp((state) => (state.settings.language === 'vi' ? 'vi-VN' : 'en-US'));
   const email = useAuth((state) => state.email);
-  const isAdmin = useAdmin((state) => state.isAdmin);
+  const { isAdmin, checkedFor } = useAdmin();
   const [overview, setOverview] = useState<Overview | null>(null);
   const [users, setUsers] = useState<AdminUser[]>([]);
   const [search, setSearch] = useState('');
@@ -64,7 +65,7 @@ export default function Admin() {
 
   // Refresh on a timer so the online count stays live; searching reloads after a short pause.
   useEffect(() => {
-    if (!email || !isAdmin) return;
+    if (!email || !isAdmin || checkedFor !== email) return;
     const pause = setTimeout(() => void load(search), 300);
     const timer = setInterval(() => void load(search), REFRESH_MS);
     return () => {
@@ -72,42 +73,17 @@ export default function Admin() {
       clearInterval(timer);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [email, isAdmin, search]);
+  }, [email, isAdmin, checkedFor, search]);
 
-  const title = (
-    <PageTitle
-      title={bi('Quản trị', 'Admin')}
-      description={bi(
-        'Người dùng, hiện diện và hoạt động của hệ thống.',
-        'Users, presence and system activity.',
-      )}
-    />
-  );
-  if (!email)
+  // Signed out: sign in first. A learner account belongs in the learning app, not here.
+  if (!email) return <Navigate to="/login?next=/admin" replace />;
+  if (checkedFor !== email)
     return (
-      <>
-        {title}
-        <Notice>
-          {bi('Hãy', 'Please')}{' '}
-          <Link to="/login?next=/admin">
-            {bi('đăng nhập bằng tài khoản quản trị', 'sign in with an admin account')}
-          </Link>
-          .
-        </Notice>
-      </>
+      <AdminShell>
+        <p role="status">{bi('Đang kiểm tra quyền…', 'Checking access…')}</p>
+      </AdminShell>
     );
-  if (!isAdmin)
-    return (
-      <>
-        {title}
-        <Notice error>
-          {bi(
-            'Trang này chỉ dành cho quản trị viên. Nếu bạn vừa được cấp quyền, hãy đăng xuất rồi đăng nhập lại.',
-            'This page is for admins only. If you were just made an admin, sign out and in again.',
-          )}
-        </Notice>
-      </>
-    );
+  if (!isAdmin) return <Navigate to="/" replace />;
 
   async function act(user: AdminUser, action: () => Promise<void>) {
     setBusy(user.id);
@@ -145,8 +121,14 @@ export default function Admin() {
   const share = overview && overview.users ? (overview.online / overview.users) * 100 : 0;
 
   return (
-    <>
-      {title}
+    <AdminShell>
+      <PageTitle
+        title={bi('Quản trị hệ thống', 'System admin')}
+        description={bi(
+          'Người dùng, hiện diện và hoạt động của EnglishUp.',
+          'Users, presence and activity across EnglishUp.',
+        )}
+      />
       {error !== null && (
         <Notice error>
           {error === 403
@@ -322,6 +304,48 @@ export default function Admin() {
           <p className="muted">{bi('Không có người dùng phù hợp.', 'No matching users.')}</p>
         )}
       </section>
-    </>
+    </AdminShell>
+  );
+}
+
+/** The admin area's own frame: a sign-blue bar with the admin's email, a way back to learning and sign out. */
+function AdminShell({ children }: { children: React.ReactNode }) {
+  const bi = useBi();
+  const email = useAuth((state) => state.email);
+  const checkedFor = useAdmin((state) => state.checkedFor);
+  // Opening /admin directly (or after a reload) checks the role here; the learning shell is not mounted.
+  useEffect(() => {
+    if (email && checkedFor !== email) void refreshAdmin();
+  }, [email, checkedFor]);
+  return (
+    <div className="admin-shell">
+      <a className="skip" href="#main">
+        Skip to content / Đến nội dung
+      </a>
+      <header className="admin-top">
+        <Link className="admin-brand" to="/admin">
+          <span className="brand-mark" aria-hidden="true">
+            e<span>↗</span>
+          </span>
+          EnglishUp
+          <span className="admin-badge">{bi('Quản trị', 'Admin')}</span>
+        </Link>
+        <div className="admin-top-actions">
+          {email && <span className="admin-top-email">{email}</span>}
+          <Link className="button" to="/">
+            {bi('Trang học tập', 'Learning app')}
+          </Link>
+          {email && (
+            <button type="button" onClick={logout}>
+              <SkillIcon skill="logout" size={18} />
+              {bi('Đăng xuất', 'Sign out')}
+            </button>
+          )}
+        </div>
+      </header>
+      <main id="main" className="admin-main" tabIndex={-1}>
+        {children}
+      </main>
+    </div>
   );
 }
