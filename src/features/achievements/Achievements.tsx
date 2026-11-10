@@ -127,7 +127,7 @@ export default function Achievements() {
                 <p className="muted">{bi(viText, enText)}</p>
                 <span className="badge">
                   {badge.earnedAt
-                    ? `${bi('Đã đạt', 'Earned')} ${new Date(badge.earnedAt).toLocaleDateString()} · +${badge.points}`
+                    ? `${bi('Đã đạt', 'Earned')} ${new Date(badge.earnedAt).toLocaleDateString(bi('vi-VN', 'en-US'))} · +${badge.points}`
                     : `${bi('Chưa đạt', 'Locked')} · +${badge.points} ${bi('điểm', 'points')}`}
                 </span>
               </li>

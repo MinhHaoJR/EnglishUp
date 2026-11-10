@@ -82,7 +82,7 @@ export default function Account() {
             {status === 'syncing'
               ? bi('Đang đồng bộ…', 'Syncing…')
               : lastSynced
-                ? `${bi('Đồng bộ lần cuối', 'Last synced')}: ${new Date(lastSynced).toLocaleTimeString()}`
+                ? `${bi('Đồng bộ lần cuối', 'Last synced')}: ${new Date(lastSynced).toLocaleTimeString(bi('vi-VN', 'en-US'))}`
                 : bi('Chưa đồng bộ trong phiên này.', 'Not synced in this session.')}
           </p>
           {status === 'error' && (
