@@ -77,6 +77,28 @@ export const topicSections = [
       'Exam: Phrasal verbs',
     ],
   },
+  {
+    id: 'writing',
+    vi: 'Collocation IELTS Writing',
+    en: 'IELTS Writing collocations',
+    topics: [
+      'Writing: Education',
+      'Writing: Technology',
+      'Writing: Environment',
+      'Writing: Health',
+      'Writing: Work',
+      'Writing: Government and public services',
+      'Writing: Crime and justice',
+      'Writing: Media and advertising',
+      'Writing: Transport',
+      'Writing: Urban life and housing',
+      'Writing: Family and society',
+      'Writing: Culture and traditions',
+      'Writing: Globalisation',
+      'Writing: Science and research',
+      'Writing: Economy and development',
+    ],
+  },
 ] as const;
 
 export type TopicSectionId = (typeof topicSections)[number]['id'] | 'custom';

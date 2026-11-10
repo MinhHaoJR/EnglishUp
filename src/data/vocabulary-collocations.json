@@ -1,0 +1,1952 @@
+[
+  {
+    "id": "v-col-access-to-education",
+    "word": "access to education",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "cơ hội được đi học",
+    "definition": "the chance to attend school or study",
+    "examples": [
+      "Girls in remote villages still have limited access to education."
+    ],
+    "level": "B2",
+    "topic": "Writing: Education"
+  },
+  {
+    "id": "v-col-receive-a-formal-education",
+    "word": "receive a formal education",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "được học hành chính quy",
+    "definition": "to study at school, college or university in an organised way",
+    "examples": [
+      "Not everyone who succeeds in business has had the chance to receive a formal education."
+    ],
+    "level": "B2",
+    "topic": "Writing: Education"
+  },
+  {
+    "id": "v-col-acquire-practical-skills",
+    "word": "acquire practical skills",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "học được kỹ năng thực tế",
+    "definition": "to gain abilities that are useful in real situations",
+    "examples": [
+      "Work placements let students acquire practical skills before they graduate."
+    ],
+    "level": "B2",
+    "topic": "Writing: Education"
+  },
+  {
+    "id": "v-col-develop-critical-thinking-skills",
+    "word": "develop critical thinking skills",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "phát triển tư duy phản biện",
+    "definition": "to improve the ability to judge ideas and evidence carefully",
+    "examples": [
+      "Group projects help pupils develop critical thinking skills."
+    ],
+    "level": "B2",
+    "topic": "Writing: Education"
+  },
+  {
+    "id": "v-col-improve-academic-performance",
+    "word": "improve academic performance",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "nâng cao kết quả học tập",
+    "definition": "to get better marks and results at school",
+    "examples": [
+      "A quiet place to study can improve academic performance."
+    ],
+    "level": "B2",
+    "topic": "Writing: Education"
+  },
+  {
+    "id": "v-col-meet-students-needs",
+    "word": "meet students' needs",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "đáp ứng nhu cầu của học sinh",
+    "definition": "to provide what different learners require",
+    "examples": [
+      "Schools need more teaching assistants to meet students' needs."
+    ],
+    "level": "B2",
+    "topic": "Writing: Education"
+  },
+  {
+    "id": "v-col-place-pressure-on-students",
+    "word": "place pressure on students",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tạo áp lực cho học sinh",
+    "definition": "to make learners feel stressed or worried",
+    "examples": [
+      "Ranking pupils by test scores can place pressure on students."
+    ],
+    "level": "B2",
+    "topic": "Writing: Education"
+  },
+  {
+    "id": "v-col-allocate-funding-to-education",
+    "word": "allocate funding to education",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "dành ngân sách cho giáo dục",
+    "definition": "to decide that public money will be spent on schools",
+    "examples": [
+      "The province plans to allocate funding to education in poorer districts."
+    ],
+    "level": "C1",
+    "topic": "Writing: Education"
+  },
+  {
+    "id": "v-col-reduce-educational-inequality",
+    "word": "reduce educational inequality",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "thu hẹp bất bình đẳng trong giáo dục",
+    "definition": "to make learning opportunities fairer between groups",
+    "examples": [
+      "Free textbooks are one way to reduce educational inequality."
+    ],
+    "level": "C1",
+    "topic": "Writing: Education"
+  },
+  {
+    "id": "v-col-provide-equal-learning-opportunities",
+    "word": "provide equal learning opportunities",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "mang lại cơ hội học tập như nhau",
+    "definition": "to give every learner the same chance to study",
+    "examples": [
+      "A good school system should provide equal learning opportunities for all children."
+    ],
+    "level": "B2",
+    "topic": "Writing: Education"
+  },
+  {
+    "id": "v-col-technological-advances",
+    "word": "technological advances",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "những tiến bộ về công nghệ",
+    "definition": "new developments in science and machines",
+    "examples": [
+      "Technological advances have made banking much faster."
+    ],
+    "level": "B2",
+    "topic": "Writing: Technology"
+  },
+  {
+    "id": "v-col-automate-routine-tasks",
+    "word": "automate routine tasks",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tự động hoá việc lặp đi lặp lại",
+    "definition": "to let machines do simple jobs that are repeated",
+    "examples": [
+      "Software can automate routine tasks such as sorting emails."
+    ],
+    "level": "C1",
+    "topic": "Writing: Technology"
+  },
+  {
+    "id": "v-col-artificial-intelligence",
+    "word": "artificial intelligence",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "trí tuệ nhân tạo",
+    "definition": "computer systems that can learn and make decisions",
+    "examples": [
+      "Hospitals use artificial intelligence to read X-ray images."
+    ],
+    "level": "B2",
+    "topic": "Writing: Technology"
+  },
+  {
+    "id": "v-col-excessive-screen-time",
+    "word": "excessive screen time",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "dùng thiết bị điện tử quá nhiều",
+    "definition": "too many hours spent looking at phones, computers or TV",
+    "examples": [
+      "Doctors link excessive screen time to poor sleep."
+    ],
+    "level": "B2",
+    "topic": "Writing: Technology"
+  },
+  {
+    "id": "v-col-breach-of-privacy",
+    "word": "breach of privacy",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự xâm phạm quyền riêng tư",
+    "definition": "a failure to protect someone's personal information",
+    "examples": [
+      "Sharing customer data without consent is a breach of privacy."
+    ],
+    "level": "C1",
+    "topic": "Writing: Technology"
+  },
+  {
+    "id": "v-col-bridge-the-digital-divide",
+    "word": "bridge the digital divide",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "thu hẹp khoảng cách số",
+    "definition": "to reduce the gap between people with and without technology",
+    "examples": [
+      "Free public Wi-Fi can help bridge the digital divide."
+    ],
+    "level": "C1",
+    "topic": "Writing: Technology"
+  },
+  {
+    "id": "v-col-cybercrime-prevention",
+    "word": "cybercrime prevention",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "phòng chống tội phạm mạng",
+    "definition": "action taken to stop crime committed online",
+    "examples": [
+      "Banks spend heavily on cybercrime prevention."
+    ],
+    "level": "C1",
+    "topic": "Writing: Technology"
+  },
+  {
+    "id": "v-col-facilitate-remote-learning",
+    "word": "facilitate remote learning",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tạo điều kiện cho việc học từ xa",
+    "definition": "to make it easier to study online from home",
+    "examples": [
+      "Recorded lectures facilitate remote learning for working adults."
+    ],
+    "level": "C1",
+    "topic": "Writing: Technology"
+  },
+  {
+    "id": "v-col-reliance-on-smartphones",
+    "word": "reliance on smartphones",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự lệ thuộc vào điện thoại thông minh",
+    "definition": "a strong need to use mobile phones for everyday tasks",
+    "examples": [
+      "Our reliance on smartphones grows every year."
+    ],
+    "level": "B2",
+    "topic": "Writing: Technology"
+  },
+  {
+    "id": "v-col-driverless-vehicles",
+    "word": "driverless vehicles",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "xe tự lái",
+    "definition": "cars or buses that drive themselves without a person",
+    "examples": [
+      "Several cities are testing driverless vehicles on quiet roads."
+    ],
+    "level": "B2",
+    "topic": "Writing: Technology"
+  },
+  {
+    "id": "v-col-combat-climate-change",
+    "word": "combat climate change",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "chống biến đổi khí hậu",
+    "definition": "to take action against the warming of the planet",
+    "examples": [
+      "Planting trees is one small way to combat climate change."
+    ],
+    "level": "B2",
+    "topic": "Writing: Environment"
+  },
+  {
+    "id": "v-col-greenhouse-gas-emissions",
+    "word": "greenhouse gas emissions",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "lượng khí thải nhà kính",
+    "definition": "gases released into the air that trap heat",
+    "examples": [
+      "Coal power stations produce large greenhouse gas emissions."
+    ],
+    "level": "B2",
+    "topic": "Writing: Environment"
+  },
+  {
+    "id": "v-col-renewable-energy-sources",
+    "word": "renewable energy sources",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "các nguồn năng lượng tái tạo",
+    "definition": "power from sun, wind or water that will not run out",
+    "examples": [
+      "Vietnam is investing in renewable energy sources such as solar farms."
+    ],
+    "level": "B2",
+    "topic": "Writing: Environment"
+  },
+  {
+    "id": "v-col-deplete-natural-resources",
+    "word": "deplete natural resources",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "làm cạn kiệt tài nguyên thiên nhiên",
+    "definition": "to use up water, minerals or forests faster than they recover",
+    "examples": [
+      "Overfishing can deplete natural resources within a decade."
+    ],
+    "level": "C1",
+    "topic": "Writing: Environment"
+  },
+  {
+    "id": "v-col-conserve-endangered-species",
+    "word": "conserve endangered species",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "bảo tồn các loài có nguy cơ tuyệt chủng",
+    "definition": "to protect animals and plants that may soon disappear",
+    "examples": [
+      "National parks help conserve endangered species."
+    ],
+    "level": "C1",
+    "topic": "Writing: Environment"
+  },
+  {
+    "id": "v-col-carbon-footprint",
+    "word": "carbon footprint",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "lượng khí thải carbon của một người hay hoạt động",
+    "definition": "the amount of carbon dioxide produced by a person or activity",
+    "examples": [
+      "Flying less is the quickest way to cut your carbon footprint."
+    ],
+    "level": "B2",
+    "topic": "Writing: Environment"
+  },
+  {
+    "id": "v-col-environmental-degradation",
+    "word": "environmental degradation",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự suy thoái môi trường",
+    "definition": "damage to land, water and air over time",
+    "examples": [
+      "Illegal mining has caused serious environmental degradation."
+    ],
+    "level": "C1",
+    "topic": "Writing: Environment"
+  },
+  {
+    "id": "v-col-dispose-of-hazardous-waste",
+    "word": "dispose of hazardous waste",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "xử lý chất thải nguy hại",
+    "definition": "to get rid of dangerous waste in a safe way",
+    "examples": [
+      "Hospitals must dispose of hazardous waste with great care."
+    ],
+    "level": "C1",
+    "topic": "Writing: Environment"
+  },
+  {
+    "id": "v-col-raise-environmental-awareness",
+    "word": "raise environmental awareness",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "nâng cao ý thức về môi trường",
+    "definition": "to help people understand environmental problems",
+    "examples": [
+      "School gardens raise environmental awareness among young children."
+    ],
+    "level": "B2",
+    "topic": "Writing: Environment"
+  },
+  {
+    "id": "v-col-deforestation-rates",
+    "word": "deforestation rates",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tốc độ phá rừng",
+    "definition": "how fast forests are being cut down",
+    "examples": [
+      "Satellite images show that deforestation rates fell last year."
+    ],
+    "level": "C1",
+    "topic": "Writing: Environment"
+  },
+  {
+    "id": "v-col-sedentary-lifestyle",
+    "word": "sedentary lifestyle",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "lối sống ít vận động",
+    "definition": "a way of life with little physical activity",
+    "examples": [
+      "Office work often leads to a sedentary lifestyle."
+    ],
+    "level": "B2",
+    "topic": "Writing: Health"
+  },
+  {
+    "id": "v-col-adhere-to-a-balanced-diet",
+    "word": "adhere to a balanced diet",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "giữ chế độ ăn cân bằng",
+    "definition": "to keep eating healthy amounts of different foods",
+    "examples": [
+      "Athletes adhere to a balanced diet during training."
+    ],
+    "level": "C1",
+    "topic": "Writing: Health"
+  },
+  {
+    "id": "v-col-prevent-chronic-diseases",
+    "word": "prevent chronic diseases",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "phòng ngừa bệnh mãn tính",
+    "definition": "to stop long-lasting illnesses from developing",
+    "examples": [
+      "Walking every day can help prevent chronic diseases."
+    ],
+    "level": "B2",
+    "topic": "Writing: Health"
+  },
+  {
+    "id": "v-col-strain-healthcare-systems",
+    "word": "strain healthcare systems",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "gây quá tải cho hệ thống y tế",
+    "definition": "to put too much pressure on hospitals and medical services",
+    "examples": [
+      "Flu outbreaks in winter strain healthcare systems."
+    ],
+    "level": "C1",
+    "topic": "Writing: Health"
+  },
+  {
+    "id": "v-col-mental-health-issues",
+    "word": "mental health issues",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "các vấn đề về sức khỏe tinh thần",
+    "definition": "problems such as stress, anxiety or depression",
+    "examples": [
+      "Many students face mental health issues during exams."
+    ],
+    "level": "B2",
+    "topic": "Writing: Health"
+  },
+  {
+    "id": "v-col-childhood-obesity",
+    "word": "childhood obesity",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "béo phì ở trẻ em",
+    "definition": "the condition of children being much too heavy",
+    "examples": [
+      "Sugary drinks are a major cause of childhood obesity."
+    ],
+    "level": "B2",
+    "topic": "Writing: Health"
+  },
+  {
+    "id": "v-col-promote-physical-activity",
+    "word": "promote physical activity",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "khuyến khích vận động thể chất",
+    "definition": "to encourage people to exercise more",
+    "examples": [
+      "Cycle lanes promote physical activity in cities."
+    ],
+    "level": "B2",
+    "topic": "Writing: Health"
+  },
+  {
+    "id": "v-col-life-expectancy",
+    "word": "life expectancy",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tuổi thọ trung bình",
+    "definition": "the average number of years people are expected to live",
+    "examples": [
+      "Clean water has raised life expectancy in many countries."
+    ],
+    "level": "B2",
+    "topic": "Writing: Health"
+  },
+  {
+    "id": "v-col-subsidise-healthcare-costs",
+    "word": "subsidise healthcare costs",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "trợ giá chi phí y tế",
+    "definition": "to pay part of the cost of medical care with public money",
+    "examples": [
+      "The government should subsidise healthcare costs for the elderly."
+    ],
+    "level": "C1",
+    "topic": "Writing: Health"
+  },
+  {
+    "id": "v-col-nutritional-deficiency",
+    "word": "nutritional deficiency",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự thiếu hụt dinh dưỡng",
+    "definition": "a lack of the vitamins or minerals the body needs",
+    "examples": [
+      "Pale skin can be a sign of nutritional deficiency."
+    ],
+    "level": "C1",
+    "topic": "Writing: Health"
+  },
+  {
+    "id": "v-col-work-life-balance",
+    "word": "work-life balance",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "cân bằng giữa công việc và cuộc sống",
+    "definition": "a healthy division of time between your job and private life",
+    "examples": [
+      "Working from home has improved my work-life balance."
+    ],
+    "level": "B2",
+    "topic": "Writing: Work"
+  },
+  {
+    "id": "v-col-job-satisfaction",
+    "word": "job satisfaction",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự hài lòng với công việc",
+    "definition": "the pleasure people get from their jobs",
+    "examples": [
+      "Friendly colleagues add a lot to job satisfaction."
+    ],
+    "level": "B2",
+    "topic": "Writing: Work"
+  },
+  {
+    "id": "v-col-telecommuting-arrangements",
+    "word": "telecommuting arrangements",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "chế độ làm việc từ xa",
+    "definition": "agreements that let staff work away from the office",
+    "examples": [
+      "The company offers telecommuting arrangements two days a week."
+    ],
+    "level": "C1",
+    "topic": "Writing: Work"
+  },
+  {
+    "id": "v-col-career-advancement-opportunities",
+    "word": "career advancement opportunities",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "cơ hội thăng tiến",
+    "definition": "chances to move to a higher position at work",
+    "examples": [
+      "Young engineers look for career advancement opportunities."
+    ],
+    "level": "C1",
+    "topic": "Writing: Work"
+  },
+  {
+    "id": "v-col-competitive-salary-packages",
+    "word": "competitive salary packages",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "mức lương và phúc lợi hấp dẫn",
+    "definition": "pay and benefits that are as good as or better than others",
+    "examples": [
+      "Tech firms use competitive salary packages to keep staff."
+    ],
+    "level": "C1",
+    "topic": "Writing: Work"
+  },
+  {
+    "id": "v-col-suffer-from-burnout",
+    "word": "suffer from burnout",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "bị kiệt sức vì công việc",
+    "definition": "to become exhausted from too much work or stress",
+    "examples": [
+      "Nurses on long shifts often suffer from burnout."
+    ],
+    "level": "B2",
+    "topic": "Writing: Work"
+  },
+  {
+    "id": "v-col-job-security",
+    "word": "job security",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự ổn định của công việc",
+    "definition": "the confidence that you will not lose your job",
+    "examples": [
+      "Many workers value job security more than high pay."
+    ],
+    "level": "B2",
+    "topic": "Writing: Work"
+  },
+  {
+    "id": "v-col-pursue-a-career-path",
+    "word": "pursue a career path",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "theo đuổi một con đường sự nghiệp",
+    "definition": "to follow a particular type of work over time",
+    "examples": [
+      "She decided to pursue a career path in medicine."
+    ],
+    "level": "B2",
+    "topic": "Writing: Work"
+  },
+  {
+    "id": "v-col-labour-market-demands",
+    "word": "labour market demands",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "nhu cầu của thị trường lao động",
+    "definition": "the skills and workers that employers need",
+    "examples": [
+      "Training courses should follow labour market demands."
+    ],
+    "level": "C1",
+    "topic": "Writing: Work"
+  },
+  {
+    "id": "v-col-foster-team-collaboration",
+    "word": "foster team collaboration",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "thúc đẩy làm việc nhóm",
+    "definition": "to encourage people to work together well",
+    "examples": [
+      "Shared goals foster team collaboration."
+    ],
+    "level": "C1",
+    "topic": "Writing: Work"
+  },
+  {
+    "id": "v-col-allocate-public-funds",
+    "word": "allocate public funds",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "phân bổ ngân sách công",
+    "definition": "to decide how government money is spent",
+    "examples": [
+      "Councils must allocate public funds fairly between districts."
+    ],
+    "level": "C1",
+    "topic": "Writing: Government and public services"
+  },
+  {
+    "id": "v-col-subsidise-public-transport",
+    "word": "subsidise public transport",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "trợ giá phương tiện công cộng",
+    "definition": "to pay part of the cost of buses and trains",
+    "examples": [
+      "Cities that subsidise public transport often have cleaner air."
+    ],
+    "level": "C1",
+    "topic": "Writing: Government and public services"
+  },
+  {
+    "id": "v-col-enact-strict-legislation",
+    "word": "enact strict legislation",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "ban hành luật nghiêm ngặt",
+    "definition": "to pass firm laws",
+    "examples": [
+      "Some countries enact strict legislation against plastic bags."
+    ],
+    "level": "C1",
+    "topic": "Writing: Government and public services"
+  },
+  {
+    "id": "v-col-provide-basic-necessities",
+    "word": "provide basic necessities",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "cung cấp nhu yếu phẩm thiết yếu",
+    "definition": "to supply food, water and shelter",
+    "examples": [
+      "Aid workers provide basic necessities after a flood."
+    ],
+    "level": "B2",
+    "topic": "Writing: Government and public services"
+  },
+  {
+    "id": "v-col-national-security",
+    "word": "national security",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "an ninh quốc gia",
+    "definition": "the safety of a country against threats",
+    "examples": [
+      "The new law was passed for reasons of national security."
+    ],
+    "level": "B2",
+    "topic": "Writing: Government and public services"
+  },
+  {
+    "id": "v-col-alleviate-poverty",
+    "word": "alleviate poverty",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "giảm nghèo",
+    "definition": "to make the problems of being poor less severe",
+    "examples": [
+      "Microloans can alleviate poverty in rural areas."
+    ],
+    "level": "C1",
+    "topic": "Writing: Government and public services"
+  },
+  {
+    "id": "v-col-implement-social-policies",
+    "word": "implement social policies",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "thực hiện chính sách xã hội",
+    "definition": "to put government plans for society into action",
+    "examples": [
+      "It takes years to implement social policies across a whole country."
+    ],
+    "level": "C1",
+    "topic": "Writing: Government and public services"
+  },
+  {
+    "id": "v-col-upgrade-civic-infrastructure",
+    "word": "upgrade civic infrastructure",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "nâng cấp hạ tầng công cộng",
+    "definition": "to improve public roads, bridges and buildings",
+    "examples": [
+      "The town needs to upgrade civic infrastructure before the population grows."
+    ],
+    "level": "C1",
+    "topic": "Writing: Government and public services"
+  },
+  {
+    "id": "v-col-taxpayer-money",
+    "word": "taxpayer money",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tiền thuế của người dân",
+    "definition": "public money that comes from taxes",
+    "examples": [
+      "Voters want to know how taxpayer money is spent."
+    ],
+    "level": "B2",
+    "topic": "Writing: Government and public services"
+  },
+  {
+    "id": "v-col-deliver-essential-services",
+    "word": "deliver essential services",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "cung cấp các dịch vụ thiết yếu",
+    "definition": "to provide services people cannot live without, such as water and health care",
+    "examples": [
+      "Local governments deliver essential services such as rubbish collection."
+    ],
+    "level": "B2",
+    "topic": "Writing: Government and public services"
+  },
+  {
+    "id": "v-col-deter-criminal-behaviour",
+    "word": "deter criminal behaviour",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "răn đe hành vi phạm tội",
+    "definition": "to make people decide not to commit crimes",
+    "examples": [
+      "Street lighting can deter criminal behaviour at night."
+    ],
+    "level": "C1",
+    "topic": "Writing: Crime and justice"
+  },
+  {
+    "id": "v-col-juvenile-delinquency",
+    "word": "juvenile delinquency",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tình trạng phạm pháp ở trẻ vị thành niên",
+    "definition": "crime committed by young people",
+    "examples": [
+      "Youth clubs help reduce juvenile delinquency."
+    ],
+    "level": "C1",
+    "topic": "Writing: Crime and justice"
+  },
+  {
+    "id": "v-col-rehabilitate-offenders",
+    "word": "rehabilitate offenders",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "cải tạo người phạm tội",
+    "definition": "to help criminals return to a normal, lawful life",
+    "examples": [
+      "Education in prison helps rehabilitate offenders."
+    ],
+    "level": "C1",
+    "topic": "Writing: Crime and justice"
+  },
+  {
+    "id": "v-col-reintegrate-into-society",
+    "word": "reintegrate into society",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tái hòa nhập cộng đồng",
+    "definition": "to become part of normal community life again",
+    "examples": [
+      "Former prisoners need jobs to reintegrate into society."
+    ],
+    "level": "C1",
+    "topic": "Writing: Crime and justice"
+  },
+  {
+    "id": "v-col-capital-punishment",
+    "word": "capital punishment",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "án tử hình",
+    "definition": "the legal killing of a person as punishment for a crime",
+    "examples": [
+      "Many countries have abolished capital punishment."
+    ],
+    "level": "C1",
+    "topic": "Writing: Crime and justice"
+  },
+  {
+    "id": "v-col-commit-petty-crimes",
+    "word": "commit petty crimes",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "phạm những tội nhỏ",
+    "definition": "to do minor illegal acts such as shoplifting",
+    "examples": [
+      "Bored teenagers sometimes commit petty crimes."
+    ],
+    "level": "B2",
+    "topic": "Writing: Crime and justice"
+  },
+  {
+    "id": "v-col-enforce-law-and-order",
+    "word": "enforce law and order",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "duy trì luật pháp và trật tự",
+    "definition": "to make sure people obey laws and stay safe",
+    "examples": [
+      "Extra police were sent to enforce law and order during the festival."
+    ],
+    "level": "C1",
+    "topic": "Writing: Crime and justice"
+  },
+  {
+    "id": "v-col-custodial-sentence",
+    "word": "custodial sentence",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "án tù giam",
+    "definition": "a punishment that sends someone to prison",
+    "examples": [
+      "The judge gave the driver a custodial sentence of two years."
+    ],
+    "level": "C1",
+    "topic": "Writing: Crime and justice"
+  },
+  {
+    "id": "v-col-recidivism-rates",
+    "word": "recidivism rates",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tỷ lệ tái phạm",
+    "definition": "how often people commit crimes again after punishment",
+    "examples": [
+      "Job training has lowered recidivism rates in the region."
+    ],
+    "level": "C1",
+    "topic": "Writing: Crime and justice"
+  },
+  {
+    "id": "v-col-prevent-illegal-activities",
+    "word": "prevent illegal activities",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "ngăn chặn hoạt động phi pháp",
+    "definition": "to stop actions that break the law",
+    "examples": [
+      "Border checks prevent illegal activities such as smuggling."
+    ],
+    "level": "B2",
+    "topic": "Writing: Crime and justice"
+  },
+  {
+    "id": "v-col-target-young-consumers",
+    "word": "target young consumers",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "nhắm vào người tiêu dùng trẻ",
+    "definition": "to aim products or adverts at young buyers",
+    "examples": [
+      "Fast-food adverts often target young consumers."
+    ],
+    "level": "B2",
+    "topic": "Writing: Media and advertising"
+  },
+  {
+    "id": "v-col-sensationalise-news-stories",
+    "word": "sensationalise news stories",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "giật gân hóa tin tức",
+    "definition": "to report news in a shocking way to attract attention",
+    "examples": [
+      "Some websites sensationalise news stories to get clicks."
+    ],
+    "level": "C1",
+    "topic": "Writing: Media and advertising"
+  },
+  {
+    "id": "v-col-spread-false-information",
+    "word": "spread false information",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "lan truyền thông tin sai lệch",
+    "definition": "to share untrue facts with many people",
+    "examples": [
+      "Fake accounts spread false information during elections."
+    ],
+    "level": "B2",
+    "topic": "Writing: Media and advertising"
+  },
+  {
+    "id": "v-col-shape-public-opinion",
+    "word": "shape public opinion",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "định hướng dư luận",
+    "definition": "to influence what most people think",
+    "examples": [
+      "Television debates can shape public opinion."
+    ],
+    "level": "C1",
+    "topic": "Writing: Media and advertising"
+  },
+  {
+    "id": "v-col-celebrity-endorsement",
+    "word": "celebrity endorsement",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "việc người nổi tiếng quảng bá sản phẩm",
+    "definition": "a famous person publicly supporting a product",
+    "examples": [
+      "The new drink sold well thanks to celebrity endorsement."
+    ],
+    "level": "C1",
+    "topic": "Writing: Media and advertising"
+  },
+  {
+    "id": "v-col-unrealistic-beauty-standards",
+    "word": "unrealistic beauty standards",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tiêu chuẩn sắc đẹp phi thực tế",
+    "definition": "ideas about appearance that few real people can reach",
+    "examples": [
+      "Edited photos create unrealistic beauty standards."
+    ],
+    "level": "B2",
+    "topic": "Writing: Media and advertising"
+  },
+  {
+    "id": "v-col-curb-misleading-advertisements",
+    "word": "curb misleading advertisements",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "hạn chế quảng cáo gây hiểu lầm",
+    "definition": "to control adverts that give a false idea of a product",
+    "examples": [
+      "New rules aim to curb misleading advertisements for diet pills."
+    ],
+    "level": "C1",
+    "topic": "Writing: Media and advertising"
+  },
+  {
+    "id": "v-col-influence-purchasing-habits",
+    "word": "influence purchasing habits",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tác động đến thói quen mua sắm",
+    "definition": "to change how and what people buy",
+    "examples": [
+      "Online reviews strongly influence purchasing habits."
+    ],
+    "level": "C1",
+    "topic": "Writing: Media and advertising"
+  },
+  {
+    "id": "v-col-independent-journalism",
+    "word": "independent journalism",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "báo chí độc lập",
+    "definition": "news reporting that is free from government or owner control",
+    "examples": [
+      "A healthy democracy needs independent journalism."
+    ],
+    "level": "C1",
+    "topic": "Writing: Media and advertising"
+  },
+  {
+    "id": "v-col-censor-inappropriate-content",
+    "word": "censor inappropriate content",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "kiểm duyệt nội dung không phù hợp",
+    "definition": "to remove material that is unsuitable, especially for children",
+    "examples": [
+      "Video platforms censor inappropriate content for young viewers."
+    ],
+    "level": "C1",
+    "topic": "Writing: Media and advertising"
+  },
+  {
+    "id": "v-col-ease-traffic-congestion",
+    "word": "ease traffic congestion",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "giảm ùn tắc giao thông",
+    "definition": "to make roads less crowded with vehicles",
+    "examples": [
+      "A new metro line should ease traffic congestion downtown."
+    ],
+    "level": "B2",
+    "topic": "Writing: Transport"
+  },
+  {
+    "id": "v-col-commute-to-work",
+    "word": "commute to work",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "đi làm hằng ngày",
+    "definition": "to travel regularly between home and your workplace",
+    "examples": [
+      "Many people commute to work by motorbike in Hanoi."
+    ],
+    "level": "B1",
+    "topic": "Writing: Transport"
+  },
+  {
+    "id": "v-col-high-speed-rail-networks",
+    "word": "high-speed rail networks",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "mạng lưới đường sắt cao tốc",
+    "definition": "systems of very fast trains between cities",
+    "examples": [
+      "China has built huge high-speed rail networks."
+    ],
+    "level": "B2",
+    "topic": "Writing: Transport"
+  },
+  {
+    "id": "v-col-pedestrian-friendly-zones",
+    "word": "pedestrian-friendly zones",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "khu vực thân thiện với người đi bộ",
+    "definition": "areas designed for people walking rather than cars",
+    "examples": [
+      "The old quarter has become one of the city's pedestrian-friendly zones."
+    ],
+    "level": "B2",
+    "topic": "Writing: Transport"
+  },
+  {
+    "id": "v-col-encourage-bicycle-usage",
+    "word": "encourage bicycle usage",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "khuyến khích sử dụng xe đạp",
+    "definition": "to persuade more people to ride bikes",
+    "examples": [
+      "Bike-sharing schemes encourage bicycle usage."
+    ],
+    "level": "B2",
+    "topic": "Writing: Transport"
+  },
+  {
+    "id": "v-col-fossil-fuel-consumption",
+    "word": "fossil fuel consumption",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "lượng nhiên liệu hóa thạch tiêu thụ",
+    "definition": "the amount of coal, oil and gas used",
+    "examples": [
+      "Electric buses cut fossil fuel consumption."
+    ],
+    "level": "C1",
+    "topic": "Writing: Transport"
+  },
+  {
+    "id": "v-col-improve-road-safety",
+    "word": "improve road safety",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "nâng cao an toàn giao thông",
+    "definition": "to make roads less dangerous",
+    "examples": [
+      "Speed cameras improve road safety near schools."
+    ],
+    "level": "B2",
+    "topic": "Writing: Transport"
+  },
+  {
+    "id": "v-col-peak-travel-hours",
+    "word": "peak travel hours",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "giờ cao điểm",
+    "definition": "the busiest times for journeys",
+    "examples": [
+      "Trains are packed during peak travel hours."
+    ],
+    "level": "B2",
+    "topic": "Writing: Transport"
+  },
+  {
+    "id": "v-col-reliable-transit-infrastructure",
+    "word": "reliable transit infrastructure",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "hạ tầng giao thông công cộng đáng tin cậy",
+    "definition": "public transport systems that work well and on time",
+    "examples": [
+      "Investors prefer cities with reliable transit infrastructure."
+    ],
+    "level": "C1",
+    "topic": "Writing: Transport"
+  },
+  {
+    "id": "v-col-reduce-reliance-on-cars",
+    "word": "reduce reliance on cars",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "giảm phụ thuộc vào ô tô",
+    "definition": "to make people need cars less",
+    "examples": [
+      "Good bus services reduce reliance on cars."
+    ],
+    "level": "B2",
+    "topic": "Writing: Transport"
+  },
+  {
+    "id": "v-col-skyrocketing-house-prices",
+    "word": "skyrocketing house prices",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "giá nhà tăng vọt",
+    "definition": "house prices that rise very fast",
+    "examples": [
+      "Skyrocketing house prices force young couples to rent."
+    ],
+    "level": "C1",
+    "topic": "Writing: Urban life and housing"
+  },
+  {
+    "id": "v-col-affordable-housing-projects",
+    "word": "affordable housing projects",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "các dự án nhà ở giá phải chăng",
+    "definition": "building schemes that offer homes people can pay for",
+    "examples": [
+      "The city has launched affordable housing projects for factory workers."
+    ],
+    "level": "B2",
+    "topic": "Writing: Urban life and housing"
+  },
+  {
+    "id": "v-col-rapid-urban-sprawl",
+    "word": "rapid urban sprawl",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự mở rộng đô thị ồ ạt",
+    "definition": "the fast spread of a city into the countryside",
+    "examples": [
+      "Rapid urban sprawl has swallowed nearby rice fields."
+    ],
+    "level": "C1",
+    "topic": "Writing: Urban life and housing"
+  },
+  {
+    "id": "v-col-substandard-living-conditions",
+    "word": "substandard living conditions",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "điều kiện sống dưới mức tiêu chuẩn",
+    "definition": "housing that is not good enough to be healthy or safe",
+    "examples": [
+      "Migrant workers often live in substandard living conditions."
+    ],
+    "level": "C1",
+    "topic": "Writing: Urban life and housing"
+  },
+  {
+    "id": "v-col-high-cost-of-living",
+    "word": "high cost of living",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "chi phí sinh hoạt cao",
+    "definition": "the large amount of money needed for everyday needs",
+    "examples": [
+      "The high cost of living makes big cities hard for students."
+    ],
+    "level": "B2",
+    "topic": "Writing: Urban life and housing"
+  },
+  {
+    "id": "v-col-gentrify-historic-neighbourhoods",
+    "word": "gentrify historic neighbourhoods",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "làm 'thượng lưu hóa' các khu phố cổ",
+    "definition": "to renovate old areas so that richer people move in",
+    "examples": [
+      "Developers gentrify historic neighbourhoods and push out long-time residents."
+    ],
+    "level": "C1",
+    "topic": "Writing: Urban life and housing"
+  },
+  {
+    "id": "v-col-ample-green-spaces",
+    "word": "ample green spaces",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "nhiều không gian xanh",
+    "definition": "plenty of parks and areas with trees and grass",
+    "examples": [
+      "A healthy city offers ample green spaces."
+    ],
+    "level": "C1",
+    "topic": "Writing: Urban life and housing"
+  },
+  {
+    "id": "v-col-population-density",
+    "word": "population density",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "mật độ dân số",
+    "definition": "the number of people living in an area",
+    "examples": [
+      "Hanoi's old quarter has a very high population density."
+    ],
+    "level": "B2",
+    "topic": "Writing: Urban life and housing"
+  },
+  {
+    "id": "v-col-urban-renewal-programs",
+    "word": "urban renewal programs",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "các chương trình chỉnh trang đô thị",
+    "definition": "plans to rebuild and improve run-down parts of a city",
+    "examples": [
+      "Urban renewal programs turned old warehouses into flats."
+    ],
+    "level": "C1",
+    "topic": "Writing: Urban life and housing"
+  },
+  {
+    "id": "v-col-sense-of-community",
+    "word": "sense of community",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tinh thần cộng đồng",
+    "definition": "a feeling of belonging to a group of neighbours",
+    "examples": [
+      "Street festivals build a sense of community."
+    ],
+    "level": "B2",
+    "topic": "Writing: Urban life and housing"
+  },
+  {
+    "id": "v-col-nuclear-family-structure",
+    "word": "nuclear family structure",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "mô hình gia đình hạt nhân",
+    "definition": "a family made up of parents and their children only",
+    "examples": [
+      "Moving to cities has spread the nuclear family structure."
+    ],
+    "level": "C1",
+    "topic": "Writing: Family and society"
+  },
+  {
+    "id": "v-col-bridge-generation-gaps",
+    "word": "bridge generation gaps",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "thu hẹp khoảng cách thế hệ",
+    "definition": "to help old and young people understand each other",
+    "examples": [
+      "Shared hobbies can bridge generation gaps."
+    ],
+    "level": "C1",
+    "topic": "Writing: Family and society"
+  },
+  {
+    "id": "v-col-balance-family-responsibilities",
+    "word": "balance family responsibilities",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "cân bằng trách nhiệm gia đình",
+    "definition": "to manage duties at home alongside other duties",
+    "examples": [
+      "Single parents must balance family responsibilities with work."
+    ],
+    "level": "B2",
+    "topic": "Writing: Family and society"
+  },
+  {
+    "id": "v-col-social-cohesion",
+    "word": "social cohesion",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự gắn kết xã hội",
+    "definition": "the bonds that hold a society together",
+    "examples": [
+      "Public libraries support social cohesion."
+    ],
+    "level": "C1",
+    "topic": "Writing: Family and society"
+  },
+  {
+    "id": "v-col-parental-guidance",
+    "word": "parental guidance",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự hướng dẫn của cha mẹ",
+    "definition": "advice and supervision from parents",
+    "examples": [
+      "Some films are suitable only with parental guidance."
+    ],
+    "level": "B2",
+    "topic": "Writing: Family and society"
+  },
+  {
+    "id": "v-col-care-for-elderly-relatives",
+    "word": "care for elderly relatives",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "chăm sóc người thân lớn tuổi",
+    "definition": "to look after old family members",
+    "examples": [
+      "Many women leave work to care for elderly relatives."
+    ],
+    "level": "B2",
+    "topic": "Writing: Family and society"
+  },
+  {
+    "id": "v-col-instil-moral-values",
+    "word": "instil moral values",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "khắc sâu các giá trị đạo đức",
+    "definition": "to teach principles of right and wrong over time",
+    "examples": [
+      "Grandparents often instil moral values through stories."
+    ],
+    "level": "C1",
+    "topic": "Writing: Family and society"
+  },
+  {
+    "id": "v-col-income-disparity",
+    "word": "income disparity",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự chênh lệch thu nhập",
+    "definition": "the difference in earnings between groups",
+    "examples": [
+      "Income disparity between cities and villages is growing."
+    ],
+    "level": "C1",
+    "topic": "Writing: Family and society"
+  },
+  {
+    "id": "v-col-gender-equality",
+    "word": "gender equality",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "bình đẳng giới",
+    "definition": "the same rights and chances for men and women",
+    "examples": [
+      "Equal pay is a key step towards gender equality."
+    ],
+    "level": "B2",
+    "topic": "Writing: Family and society"
+  },
+  {
+    "id": "v-col-ageing-population",
+    "word": "ageing population",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "dân số già hóa",
+    "definition": "a population with a growing share of old people",
+    "examples": [
+      "An ageing population needs more nurses and care homes."
+    ],
+    "level": "B2",
+    "topic": "Writing: Family and society"
+  },
+  {
+    "id": "v-col-preserve-cultural-heritage",
+    "word": "preserve cultural heritage",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "gìn giữ di sản văn hóa",
+    "definition": "to protect the buildings, art and traditions of the past",
+    "examples": [
+      "Museums help preserve cultural heritage for future visitors."
+    ],
+    "level": "B2",
+    "topic": "Writing: Culture and traditions"
+  },
+  {
+    "id": "v-col-traditional-customs",
+    "word": "traditional customs",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "phong tục truyền thống",
+    "definition": "old ways of behaving that a community still follows",
+    "examples": [
+      "Tet is full of traditional customs such as giving lucky money."
+    ],
+    "level": "B2",
+    "topic": "Writing: Culture and traditions"
+  },
+  {
+    "id": "v-col-threaten-indigenous-cultures",
+    "word": "threaten indigenous cultures",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "đe dọa văn hóa bản địa",
+    "definition": "to put the ways of life of native peoples at risk",
+    "examples": [
+      "Large dams can threaten indigenous cultures in the mountains."
+    ],
+    "level": "C1",
+    "topic": "Writing: Culture and traditions"
+  },
+  {
+    "id": "v-col-embrace-cultural-diversity",
+    "word": "embrace cultural diversity",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "đón nhận sự đa dạng văn hóa",
+    "definition": "to welcome many different cultures",
+    "examples": [
+      "International schools embrace cultural diversity."
+    ],
+    "level": "C1",
+    "topic": "Writing: Culture and traditions"
+  },
+  {
+    "id": "v-col-historical-landmarks",
+    "word": "historical landmarks",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "các công trình lịch sử nổi tiếng",
+    "definition": "famous old buildings or places",
+    "examples": [
+      "Hue is full of historical landmarks."
+    ],
+    "level": "B2",
+    "topic": "Writing: Culture and traditions"
+  },
+  {
+    "id": "v-col-loss-of-cultural-identity",
+    "word": "loss of cultural identity",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự mai một bản sắc văn hóa",
+    "definition": "losing the traditions and values that make a group distinct",
+    "examples": [
+      "Some elders fear a loss of cultural identity among the young."
+    ],
+    "level": "C1",
+    "topic": "Writing: Culture and traditions"
+  },
+  {
+    "id": "v-col-pass-down-through-generations",
+    "word": "pass down through generations",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "truyền qua nhiều thế hệ",
+    "definition": "to be given from older family members to younger ones",
+    "examples": [
+      "Weaving skills pass down through generations in this village."
+    ],
+    "level": "C1",
+    "topic": "Writing: Culture and traditions"
+  },
+  {
+    "id": "v-col-intangible-cultural-heritage",
+    "word": "intangible cultural heritage",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "di sản văn hóa phi vật thể",
+    "definition": "traditions such as music, crafts and festivals rather than objects",
+    "examples": [
+      "Ca tru singing is recognised as intangible cultural heritage."
+    ],
+    "level": "C1",
+    "topic": "Writing: Culture and traditions"
+  },
+  {
+    "id": "v-col-cultural-assimilation",
+    "word": "cultural assimilation",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự đồng hóa văn hóa",
+    "definition": "the process of a group adopting the culture of another",
+    "examples": [
+      "Learning the local language speeds up cultural assimilation."
+    ],
+    "level": "C1",
+    "topic": "Writing: Culture and traditions"
+  },
+  {
+    "id": "v-col-foster-intercultural-understanding",
+    "word": "foster intercultural understanding",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "thúc đẩy hiểu biết giữa các nền văn hóa",
+    "definition": "to help people from different cultures understand each other",
+    "examples": [
+      "Student exchanges foster intercultural understanding."
+    ],
+    "level": "C1",
+    "topic": "Writing: Culture and traditions"
+  },
+  {
+    "id": "v-col-cross-border-trade",
+    "word": "cross-border trade",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "thương mại xuyên biên giới",
+    "definition": "buying and selling goods between countries",
+    "examples": [
+      "New roads have boosted cross-border trade with Laos."
+    ],
+    "level": "B2",
+    "topic": "Writing: Globalisation"
+  },
+  {
+    "id": "v-col-interconnected-global-economy",
+    "word": "interconnected global economy",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "nền kinh tế toàn cầu gắn kết chặt chẽ",
+    "definition": "a world economy where countries depend on each other",
+    "examples": [
+      "In an interconnected global economy, one crisis spreads quickly."
+    ],
+    "level": "C1",
+    "topic": "Writing: Globalisation"
+  },
+  {
+    "id": "v-col-multinational-corporations",
+    "word": "multinational corporations",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "các tập đoàn đa quốc gia",
+    "definition": "large companies that operate in many countries",
+    "examples": [
+      "Multinational corporations have opened factories near Hai Phong."
+    ],
+    "level": "B2",
+    "topic": "Writing: Globalisation"
+  },
+  {
+    "id": "v-col-cultural-homogenisation",
+    "word": "cultural homogenisation",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự đồng nhất hóa văn hóa",
+    "definition": "the process of cultures becoming more and more alike",
+    "examples": [
+      "Global fast-food chains add to cultural homogenisation."
+    ],
+    "level": "C1",
+    "topic": "Writing: Globalisation"
+  },
+  {
+    "id": "v-col-international-cooperation",
+    "word": "international cooperation",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "sự hợp tác quốc tế",
+    "definition": "countries working together on shared problems",
+    "examples": [
+      "Fighting disease requires international cooperation."
+    ],
+    "level": "B2",
+    "topic": "Writing: Globalisation"
+  },
+  {
+    "id": "v-col-outsourcing-production",
+    "word": "outsourcing production",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "thuê ngoài việc sản xuất",
+    "definition": "having goods made by another company, often abroad",
+    "examples": [
+      "Outsourcing production saves money but can cost local jobs."
+    ],
+    "level": "C1",
+    "topic": "Writing: Globalisation"
+  },
+  {
+    "id": "v-col-brain-drain-phenomenon",
+    "word": "brain drain phenomenon",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "hiện tượng chảy máu chất xám",
+    "definition": "the movement of skilled people to other countries",
+    "examples": [
+      "Higher salaries abroad drive the brain drain phenomenon."
+    ],
+    "level": "C1",
+    "topic": "Writing: Globalisation"
+  },
+  {
+    "id": "v-col-facilitate-foreign-investment",
+    "word": "facilitate foreign investment",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tạo thuận lợi cho đầu tư nước ngoài",
+    "definition": "to make it easier for overseas companies to invest",
+    "examples": [
+      "Simple licensing rules facilitate foreign investment."
+    ],
+    "level": "C1",
+    "topic": "Writing: Globalisation"
+  },
+  {
+    "id": "v-col-global-supply-chains",
+    "word": "global supply chains",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "chuỗi cung ứng toàn cầu",
+    "definition": "the networks that move parts and goods around the world",
+    "examples": [
+      "The pandemic exposed weaknesses in global supply chains."
+    ],
+    "level": "C1",
+    "topic": "Writing: Globalisation"
+  },
+  {
+    "id": "v-col-worldwide-mobility",
+    "word": "worldwide mobility",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "khả năng di chuyển khắp thế giới",
+    "definition": "the ease with which people travel and move between countries",
+    "examples": [
+      "Cheap flights have increased worldwide mobility."
+    ],
+    "level": "C1",
+    "topic": "Writing: Globalisation"
+  },
+  {
+    "id": "v-col-conduct-scientific-experiments",
+    "word": "conduct scientific experiments",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tiến hành thí nghiệm khoa học",
+    "definition": "to carry out tests in order to discover something",
+    "examples": [
+      "Students conduct scientific experiments in the new laboratory."
+    ],
+    "level": "B2",
+    "topic": "Writing: Science and research"
+  },
+  {
+    "id": "v-col-breakthrough-discoveries",
+    "word": "breakthrough discoveries",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "những phát hiện mang tính đột phá",
+    "definition": "important new findings that change our understanding",
+    "examples": [
+      "Breakthrough discoveries in medicine have saved millions of lives."
+    ],
+    "level": "C1",
+    "topic": "Writing: Science and research"
+  },
+  {
+    "id": "v-col-fund-academic-research",
+    "word": "fund academic research",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tài trợ cho nghiên cứu học thuật",
+    "definition": "to pay for studies carried out at universities",
+    "examples": [
+      "Private companies increasingly fund academic research."
+    ],
+    "level": "C1",
+    "topic": "Writing: Science and research"
+  },
+  {
+    "id": "v-col-ethical-considerations",
+    "word": "ethical considerations",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "những cân nhắc về đạo đức",
+    "definition": "questions of right and wrong that must be thought about",
+    "examples": [
+      "Testing on animals raises ethical considerations."
+    ],
+    "level": "C1",
+    "topic": "Writing: Science and research"
+  },
+  {
+    "id": "v-col-commercialise-scientific-findings",
+    "word": "commercialise scientific findings",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "thương mại hóa kết quả nghiên cứu",
+    "definition": "to turn research results into products that are sold",
+    "examples": [
+      "Start-ups help universities commercialise scientific findings."
+    ],
+    "level": "C1",
+    "topic": "Writing: Science and research"
+  },
+  {
+    "id": "v-col-foster-technological-innovation",
+    "word": "foster technological innovation",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "thúc đẩy đổi mới công nghệ",
+    "definition": "to encourage the creation of new technology",
+    "examples": [
+      "Tax breaks foster technological innovation in small firms."
+    ],
+    "level": "C1",
+    "topic": "Writing: Science and research"
+  },
+  {
+    "id": "v-col-space-exploration-missions",
+    "word": "space exploration missions",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "các sứ mệnh thám hiểm không gian",
+    "definition": "journeys to study space, the moon or planets",
+    "examples": [
+      "Space exploration missions cost billions of dollars."
+    ],
+    "level": "B2",
+    "topic": "Writing: Science and research"
+  },
+  {
+    "id": "v-col-rigorous-scientific-methodology",
+    "word": "rigorous scientific methodology",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "phương pháp khoa học chặt chẽ",
+    "definition": "careful and strict ways of doing research",
+    "examples": [
+      "Reliable results depend on rigorous scientific methodology."
+    ],
+    "level": "C1",
+    "topic": "Writing: Science and research"
+  },
+  {
+    "id": "v-col-clinical-trials",
+    "word": "clinical trials",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "thử nghiệm lâm sàng",
+    "definition": "tests of new medicines or treatments on people",
+    "examples": [
+      "The vaccine passed three stages of clinical trials."
+    ],
+    "level": "B2",
+    "topic": "Writing: Science and research"
+  },
+  {
+    "id": "v-col-advance-scientific-knowledge",
+    "word": "advance scientific knowledge",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "mở rộng tri thức khoa học",
+    "definition": "to increase what science knows and understands",
+    "examples": [
+      "Open data helps advance scientific knowledge."
+    ],
+    "level": "C1",
+    "topic": "Writing: Science and research"
+  },
+  {
+    "id": "v-col-stimulate-economic-growth",
+    "word": "stimulate economic growth",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "kích thích tăng trưởng kinh tế",
+    "definition": "to help an economy grow faster",
+    "examples": [
+      "Lower interest rates can stimulate economic growth."
+    ],
+    "level": "C1",
+    "topic": "Writing: Economy and development"
+  },
+  {
+    "id": "v-col-curb-inflation-rates",
+    "word": "curb inflation rates",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "kiềm chế lạm phát",
+    "definition": "to stop prices rising too quickly",
+    "examples": [
+      "The central bank acted to curb inflation rates."
+    ],
+    "level": "C1",
+    "topic": "Writing: Economy and development"
+  },
+  {
+    "id": "v-col-foster-entrepreneurship",
+    "word": "foster entrepreneurship",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "khuyến khích tinh thần khởi nghiệp",
+    "definition": "to encourage people to start their own businesses",
+    "examples": [
+      "Business incubators foster entrepreneurship among graduates."
+    ],
+    "level": "C1",
+    "topic": "Writing: Economy and development"
+  },
+  {
+    "id": "v-col-attract-foreign-direct-investment",
+    "word": "attract foreign direct investment",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "thu hút vốn đầu tư trực tiếp nước ngoài",
+    "definition": "to bring overseas companies to build and invest locally",
+    "examples": [
+      "Industrial parks attract foreign direct investment."
+    ],
+    "level": "C1",
+    "topic": "Writing: Economy and development"
+  },
+  {
+    "id": "v-col-sustainable-development",
+    "word": "sustainable development",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "phát triển bền vững",
+    "definition": "growth that meets present needs without harming the future",
+    "examples": [
+      "Sustainable development balances jobs and nature."
+    ],
+    "level": "B2",
+    "topic": "Writing: Economy and development"
+  },
+  {
+    "id": "v-col-combat-income-inequality",
+    "word": "combat income inequality",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "chống bất bình đẳng thu nhập",
+    "definition": "to reduce the gap between rich and poor",
+    "examples": [
+      "A higher minimum wage can combat income inequality."
+    ],
+    "level": "C1",
+    "topic": "Writing: Economy and development"
+  },
+  {
+    "id": "v-col-boost-domestic-consumption",
+    "word": "boost domestic consumption",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "kích cầu tiêu dùng trong nước",
+    "definition": "to make people at home spend more",
+    "examples": [
+      "Holiday bonuses boost domestic consumption."
+    ],
+    "level": "C1",
+    "topic": "Writing: Economy and development"
+  },
+  {
+    "id": "v-col-alleviate-financial-strain",
+    "word": "alleviate financial strain",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "giảm bớt gánh nặng tài chính",
+    "definition": "to make money worries less severe",
+    "examples": [
+      "Free school meals alleviate financial strain on poor families."
+    ],
+    "level": "C1",
+    "topic": "Writing: Economy and development"
+  },
+  {
+    "id": "v-col-emerging-market-economies",
+    "word": "emerging market economies",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "các nền kinh tế mới nổi",
+    "definition": "fast-growing economies that are becoming more developed",
+    "examples": [
+      "Investors are turning to emerging market economies in Asia."
+    ],
+    "level": "C1",
+    "topic": "Writing: Economy and development"
+  },
+  {
+    "id": "v-col-create-employment-opportunities",
+    "word": "create employment opportunities",
+    "ipa": "",
+    "pos": "collocation",
+    "meaning": "tạo ra việc làm",
+    "definition": "to make new jobs available",
+    "examples": [
+      "Tourism can create employment opportunities in rural areas."
+    ],
+    "level": "B2",
+    "topic": "Writing: Economy and development"
+  }
+]

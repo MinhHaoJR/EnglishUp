@@ -10,14 +10,17 @@ import { wordSchema, questionSchema } from './schema';
 import { topics, topicVi } from '../i18n';
 import { topicSectionFor, topicSections } from './topicSections';
 test('expanded catalog has translated topics, complete IT entries and stable original IDs', () => {
-  expect(vocabulary).toHaveLength(2280);
+  expect(vocabulary).toHaveLength(2430);
   // The phrasal verbs (their own test below) are left out of the original catalog's counts.
   expect(
     vocabulary.filter(
-      (word) => !word.topic.startsWith('IT:') && word.topic !== 'Exam: Phrasal verbs',
+      (word) =>
+        !word.topic.startsWith('IT:') &&
+        word.topic !== 'Exam: Phrasal verbs' &&
+        !word.topic.startsWith('Writing: '),
     ),
   ).toHaveLength(1860);
-  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(50);
+  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(65);
   for (const topic of topics) {
     expect(topicVi[topic]).toBeTruthy();
     expect(vocabulary.some((word) => word.topic === topic)).toBe(true);
@@ -108,7 +111,9 @@ test('reading passages have 150–350 words, five questions and exact evidence',
 });
 
 test('advanced vocabulary covers B2 and C1 across six learning topics', () => {
-  const catalog = vocabulary.filter((word) => word.topic !== 'Exam: Phrasal verbs');
+  const catalog = vocabulary.filter(
+    (word) => word.topic !== 'Exam: Phrasal verbs' && !word.topic.startsWith('Writing: '),
+  );
   expect(catalog.filter((word) => word.level === 'B1')).toHaveLength(174);
   expect(catalog.filter((word) => word.level === 'B2')).toHaveLength(306);
   expect(catalog.filter((word) => word.level === 'C1')).toHaveLength(180);
@@ -194,4 +199,20 @@ test('the phrasal verbs are complete, in their own exam topic and shown in conte
   // Easiest first, so the 20-word clusters climb in level.
   const order = phrasal.map((word) => ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].indexOf(word.level));
   expect(order).toEqual([...order].sort((a, b) => a - b));
+});
+
+test('the IELTS Writing collocations fill 15 themed topics of ten in their own section', () => {
+  const writing = vocabulary.filter((word) => word.topic.startsWith('Writing: '));
+  expect(writing).toHaveLength(150);
+  const byTopic = new Map<string, number>();
+  for (const word of writing) byTopic.set(word.topic, (byTopic.get(word.topic) ?? 0) + 1);
+  expect([...byTopic.values()]).toEqual(Array(15).fill(10));
+  for (const word of writing) {
+    expect(topicSectionFor(word.topic)).toBe('writing');
+    expect(topicVi[word.topic]).toMatch(/^Collocation: /);
+    expect(word.id).toMatch(/^v-col-[a-z-]+$/);
+    expect(word.pos).toBe('collocation');
+    expect(word.examples[0].toLowerCase()).toContain(word.word);
+    expect(word.ipa).toBe('');
+  }
 });
