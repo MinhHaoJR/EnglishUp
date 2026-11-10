@@ -1097,6 +1097,15 @@ sign-blue accent ---------- */
   --topic-selected: var(--primary);
 }
 
+/* Words in a reading are buttons for lookup, but must flow as plain text: no box, no gap before punctuation. */
+.prose .word-button {
+  display: inline;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+}
+
 /* ---------- Lesson pages: material in a readable column,
 a sticky rail beside it ----------
    Surface roll seed a9c0e33c/0: candidate #4 of 7 (one question at a time),

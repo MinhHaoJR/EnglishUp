@@ -17,22 +17,31 @@ export function DictionaryText({ text }: { text: string }) {
   return (
     <>
       <div className="prose">
-        {text.split(/([A-Za-z]+(?:['’][A-Za-z]+)?)/).map((part, i) =>
-          /^[A-Za-z]/.test(part) ? (
-            <button
-              className="word-button"
-              key={i}
-              onClick={() => {
-                setSelected(part);
-                setManual(false);
-                setMessage('');
-              }}
-              aria-label={`${bi('Tra từ', 'Look up')} ${part}`}
-            >
-              {part}
-            </button>
+        {/* Each word keeps its punctuation on the same line ("started." never wraps before the dot). */}
+        {text.split(/(\s+)/).map((chunk, i) =>
+          /^\s*$/.test(chunk) ? (
+            chunk
           ) : (
-            part
+            <span className="whitespace-nowrap" key={i}>
+              {chunk.split(/([A-Za-z]+(?:['’][A-Za-z]+)?)/).map((part, j) =>
+                /^[A-Za-z]/.test(part) ? (
+                  <button
+                    className="word-button"
+                    key={j}
+                    onClick={() => {
+                      setSelected(part);
+                      setManual(false);
+                      setMessage('');
+                    }}
+                    aria-label={`${bi('Tra từ', 'Look up')} ${part}`}
+                  >
+                    {part}
+                  </button>
+                ) : (
+                  part
+                ),
+              )}
+            </span>
           ),
         )}
       </div>

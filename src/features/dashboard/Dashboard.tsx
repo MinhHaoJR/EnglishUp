@@ -133,7 +133,8 @@ export default function Dashboard() {
                   <span className="route-text">
                     <strong>{t(step.skill)}</strong>
                     <small>
-                      {why(step.reason)} · {step.minutes} {t('minutes')}
+                      {done ? bi('Đã xong hôm nay', 'Done today') : why(step.reason)} ·{' '}
+                      {step.minutes} {t('minutes')}
                     </small>
                   </span>
                 </Link>
