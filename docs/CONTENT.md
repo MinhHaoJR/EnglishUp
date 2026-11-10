@@ -86,7 +86,7 @@ Fields: `id`, `title`, `level`, `topic`, `text`, `questions`. Separate paragraph
 
 ## Listening — listening.json and dictation.json
 
-Listening fields: `id`, `title`, `level`, `topic`, `lines`, `questions`. Each line is `{ "speaker": "Mai", "text": "Are you free on Saturday?" }`. Speaker names determine the voice index; when only one suitable voice exists, pitch alternates. Use one sentence per line when precise sentence replay is desired. The UI additionally splits longer turns into sentences for playback. Each lesson requires four or five questions, usually a mix of `choice` and `blank`.
+Listening fields: `id`, `title`, `level`, `topic`, `lines`, `questions`. Each line is `{ "speaker": "Mai", "text": "Are you free on Saturday?" }`. Speaker names determine the voice index; when only one suitable voice exists, pitch alternates. Use one sentence per line when precise sentence replay is desired. The UI additionally splits longer turns into sentences for playback. Each lesson requires four or five questions, usually a mix of `choice` and `blank`. There are 24 lessons, four per level from A1 to C2 (l1–l6 were the first A2–B2 set; l7–l24 were written on 2026-11-11). Length grows with the level, from about 45 words at A1 to 110–175 at C2; C1 lessons add discussion, register and idiom, and C2 lessons test implication, irony and hedged argument. `tfng` questions need no `options`. Every `evidence` is an exact substring of the script.
 
 Dictation fields: `id`, `text`, `level`, `topic`. There are 12 original sentences. The target remains hidden until submission, unless the learner has explicitly enabled always-show-transcript.
 

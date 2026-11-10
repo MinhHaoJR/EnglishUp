@@ -62,7 +62,7 @@ public class KnowledgeTests(ApiFactory factory) : IClassFixture<ApiFactory>
         var counts = chunks.GroupBy(c => c.SourceType).ToDictionary(g => g.Key, g => g.Count());
         Assert.Equal(2491, counts["word"]);
         Assert.Equal(6, counts["reading"]);
-        Assert.Equal(6, counts["listening"]);
+        Assert.Equal(24, counts["listening"]);
         Assert.Equal(10, counts["writing"]);
         Assert.Equal(113, counts["grammar"]); // 100 sentence patterns and 13 tenses
         Assert.Equal(chunks.Count, chunks.Select(c => (c.SourceType, c.SourceId)).Distinct().Count());

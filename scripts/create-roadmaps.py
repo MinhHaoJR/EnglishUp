@@ -1,8 +1,8 @@
 """Writes src/data/roadmaps.json, the seed for the learning paths (one per step from A1 to C2).
 
-Each path has four stages; each stage a goal and tasks that open a practice page at a level. Readings,
-listening, speaking, writing and translation exist at A2-B2 only, so higher paths use the hardest B2
-lessons for them and say so. Run: python scripts/create-roadmaps.py
+Each path has four stages; each stage a goal and tasks that open a practice page at a level. Listening has
+lessons at every level; readings, speaking, writing and translation exist at A2-B2 only, so higher
+paths use the hardest B2 lessons for them and say so. Run: python scripts/create-roadmaps.py
 """
 import json
 import pathlib
@@ -104,8 +104,8 @@ PATHS = [
      ]),
     ("B2", "C1", 16,
      ("Từ B2 lên C1: chính xác và tự nhiên", "B2 to C1: precise and natural"),
-     ("Từ vựng lập luận, đảo ngữ, điều kiện hỗn hợp, thức giả định và diễn đạt có sắc thái. Bài đọc, nghe, viết dùng bài B2 khó nhất.",
-      "Vocabulary for argument, inversion, mixed conditionals, the subjunctive and nuance. Reading, listening and writing use the hardest B2 lessons."),
+     ("Từ vựng lập luận, đảo ngữ, điều kiện hỗn hợp, thức giả định và diễn đạt có sắc thái. Bài đọc, viết dùng bài B2 khó nhất.",
+      "Vocabulary for argument, inversion, mixed conditionals, the subjunctive and nuance. Reading and writing use the hardest B2 lessons."),
      [
          stage(("Từ vựng lập luận", "Vocabulary for argument"),
                ("Học từ C1 để nêu luận điểm, bằng chứng và mức độ chắc chắn.", "Learn C1 words to state claims, evidence and certainty."),
@@ -120,7 +120,7 @@ PATHS = [
          stage(("Đọc và nghe chuyên sâu", "Read and listen in depth"),
                ("Đọc, nghe bài khó nhất hiện có và tóm tắt bằng lời của bạn.", "Read and listen to the hardest lessons available and summarise them in your own words."),
                [task("reading", "B2", "Đọc bài B2, tóm tắt bằng 3 câu không nhìn bài.", "Read a B2 text and summarise it in three sentences without looking."),
-                task("listening", "B2", "Nghe bài B2 ở tốc độ 1,25× rồi chép lại một câu.", "Listen to a B2 dialogue at 1.25× and write one line down."),
+                task("listening", "C1", "Nghe một bài C1 ở tốc độ 1,25× rồi chép lại một câu.", "Listen to a C1 discussion at 1.25× and write one line down."),
                 task("assistant", "C1", "Hỏi trợ giảng AI cách dùng một cấu trúc đảo ngữ trong bài viết.", "Ask the AI tutor how to use an inversion in your writing.")]),
          stage(("Viết trang trọng và kiểm tra", "Formal writing and check"),
                ("Viết bài 200–250 từ dùng ít nhất một câu đảo ngữ và một câu bị động.", "Write 200–250 words with at least one inversion and one passive."),
@@ -130,8 +130,8 @@ PATHS = [
      ]),
     ("C1", "C2", 16,
      ("Từ C1 lên C2: thành thạo sắc thái", "C1 to C2: mastery of nuance"),
-     ("Từ vựng C2, cấu trúc trang trọng hiếm gặp, liên từ học thuật và tự sửa lỗi. Bài đọc, nghe, viết dùng bài B2 khó nhất.",
-      "C2 vocabulary, rare formal structures, academic connectors and self-correction. Reading, listening and writing use the hardest B2 lessons."),
+     ("Từ vựng C2, cấu trúc trang trọng hiếm gặp, liên từ học thuật và tự sửa lỗi. Bài đọc, viết dùng bài B2 khó nhất.",
+      "C2 vocabulary, rare formal structures, academic connectors and self-correction. Reading and writing use the hardest B2 lessons."),
      [
          stage(("Từ vựng C2", "C2 vocabulary"),
                ("Học từ C2 và phân biệt sắc thái của các từ gần nghĩa.", "Learn C2 words and the nuances between near-synonyms."),
@@ -146,7 +146,7 @@ PATHS = [
          stage(("Đọc, nghe và thảo luận", "Read, listen and discuss"),
                ("Phân tích lập luận và sắc thái trong bài khó nhất hiện có.", "Analyse argument and nuance in the hardest lessons available."),
                [task("reading", "B2", "Đọc bài B2 và chỉ ra giọng điệu, mục đích của tác giả.", "Read a B2 text and name the writer's tone and purpose."),
-                task("listening", "B2", "Nghe bài B2 không xem lời thoại, rồi kiểm tra từng câu.", "Listen to a B2 dialogue without the transcript, then check each line."),
+                task("listening", "C2", "Nghe một bài C2 không xem lời thoại, chú ý hàm ý của người nói, rồi kiểm tra từng câu.", "Listen to a C2 discussion without the transcript, notice what the speakers imply, then check each line."),
                 task("assistant", "C2", "Thảo luận với trợ giảng AI về sắc thái của hai từ gần nghĩa.", "Discuss the nuance of two near-synonyms with the AI tutor.")]),
          stage(("Viết và tự đánh giá", "Write and assess yourself"),
                ("Viết bài 250 từ chính xác, đa dạng cấu trúc và tự sửa lỗi.", "Write 250 precise, varied words and correct your own mistakes."),

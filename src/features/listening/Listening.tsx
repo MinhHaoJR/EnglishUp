@@ -2,7 +2,7 @@ import { LessonContinue } from '../../components/LessonContinue';
 import { nextLesson } from '../../services/lessonNavigation';
 import { useEffect, useState } from 'react';
 import { listenings, dictations } from '../../data/content';
-import type { ListeningLesson } from '../../data/schema';
+import { levelSchema, type ListeningLesson } from '../../data/schema';
 import { useApp } from '../../app/store';
 import SkillIcon from '../../components/SkillIcon';
 import { useT, useBi } from '../../i18n';
@@ -259,7 +259,10 @@ function DictationSession({
 export default function Listening() {
   const t = useT();
   const bi = useBi();
-  const lessons = useFiltered(listenings);
+  // Easiest first: lessons an admin adds later are stored last, whatever their level.
+  const lessons = [...useFiltered(listenings)].sort(
+    (a, b) => levelSchema.options.indexOf(a.level) - levelSchema.options.indexOf(b.level),
+  );
   const sentences = useFiltered(dictations);
   const [tab, setTab] = useState('lessons');
   const [active, setActive] = useState<ListeningLesson>();

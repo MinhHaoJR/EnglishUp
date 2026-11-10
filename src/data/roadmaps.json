@@ -468,8 +468,8 @@
       "en": "B2 to C1: precise and natural"
     },
     "summary": {
-      "vi": "Từ vựng lập luận, đảo ngữ, điều kiện hỗn hợp, thức giả định và diễn đạt có sắc thái. Bài đọc, nghe, viết dùng bài B2 khó nhất.",
-      "en": "Vocabulary for argument, inversion, mixed conditionals, the subjunctive and nuance. Reading, listening and writing use the hardest B2 lessons."
+      "vi": "Từ vựng lập luận, đảo ngữ, điều kiện hỗn hợp, thức giả định và diễn đạt có sắc thái. Bài đọc, viết dùng bài B2 khó nhất.",
+      "en": "Vocabulary for argument, inversion, mixed conditionals, the subjunctive and nuance. Reading and writing use the hardest B2 lessons."
     },
     "stages": [
       {
@@ -561,9 +561,9 @@
           },
           {
             "skill": "listening",
-            "level": "B2",
-            "vi": "Nghe bài B2 ở tốc độ 1,25× rồi chép lại một câu.",
-            "en": "Listen to a B2 dialogue at 1.25× and write one line down.",
+            "level": "C1",
+            "vi": "Nghe một bài C1 ở tốc độ 1,25× rồi chép lại một câu.",
+            "en": "Listen to a C1 discussion at 1.25× and write one line down.",
             "id": "s3t2"
           },
           {
@@ -621,8 +621,8 @@
       "en": "C1 to C2: mastery of nuance"
     },
     "summary": {
-      "vi": "Từ vựng C2, cấu trúc trang trọng hiếm gặp, liên từ học thuật và tự sửa lỗi. Bài đọc, nghe, viết dùng bài B2 khó nhất.",
-      "en": "C2 vocabulary, rare formal structures, academic connectors and self-correction. Reading, listening and writing use the hardest B2 lessons."
+      "vi": "Từ vựng C2, cấu trúc trang trọng hiếm gặp, liên từ học thuật và tự sửa lỗi. Bài đọc, viết dùng bài B2 khó nhất.",
+      "en": "C2 vocabulary, rare formal structures, academic connectors and self-correction. Reading and writing use the hardest B2 lessons."
     },
     "stages": [
       {
@@ -715,9 +715,9 @@
           },
           {
             "skill": "listening",
-            "level": "B2",
-            "vi": "Nghe bài B2 không xem lời thoại, rồi kiểm tra từng câu.",
-            "en": "Listen to a B2 dialogue without the transcript, then check each line.",
+            "level": "C2",
+            "vi": "Nghe một bài C2 không xem lời thoại, chú ý hàm ý của người nói, rồi kiểm tra từng câu.",
+            "en": "Listen to a C2 discussion without the transcript, notice what the speakers imply, then check each line.",
             "id": "s3t2"
           },
           {

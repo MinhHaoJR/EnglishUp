@@ -191,7 +191,9 @@ test('listening gates transcript until answers are submitted', async () => {
   show(<Listening />);
   fireEvent.click(screen.getAllByRole('button', { name: /Start practice/ })[0]);
   expect(screen.getByText('The transcript unlocks after you answer.')).toBeInTheDocument();
-  for (const q of listenings[0].questions) {
+  // The list shows the easiest level first.
+  const [first, second] = listenings.filter((lesson) => lesson.level === 'A1');
+  for (const q of first.questions) {
     if (q.type === 'blank')
       fireEvent.change(screen.getByRole('textbox'), { target: { value: q.answers[0] } });
     else fireEvent.click(screen.getByRole('radio', { name: q.answers[0] }));
@@ -202,7 +204,7 @@ test('listening gates transcript until answers are submitted', async () => {
   await verifyAttempt('listening');
   expect(await screen.findByRole('heading', { name: 'Transcript' })).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Continue →' }));
-  expect(screen.getByRole('heading', { name: listenings[1].title })).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: second.title })).toBeInTheDocument();
   expect(screen.queryByRole('heading', { name: 'Transcript' })).not.toBeInTheDocument();
 });
 test('speaking unsupported-API flow completes with explicit self-assessment', async () => {
