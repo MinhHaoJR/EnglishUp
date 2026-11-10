@@ -21,6 +21,7 @@ const Listening = lazy(() => import('../features/listening/Listening'));
 const Speaking = lazy(() => import('../features/speaking/Speaking'));
 const Writing = lazy(() => import('../features/writing/Writing'));
 const Account = lazy(() => import('../features/account/Account'));
+const SignIn = lazy(() => import('../features/account/SignIn'));
 const Achievements = lazy(() => import('../features/achievements/Achievements'));
 const Game = lazy(() => import('../features/game/Game'));
 const Assistant = lazy(() => import('../features/assistant/Assistant'));
@@ -81,6 +82,19 @@ export function Layout() {
     document.documentElement.lang = settings.language;
     document.documentElement.classList.toggle('dark', settings.theme === 'dark');
   }, [settings]);
+  // The sign-in page is a full-screen entrance without the sidebar, tutor bubble or top bar.
+  if (pathname === '/login')
+    return (
+      <main id="main" className="signin-main" tabIndex={-1}>
+        {ready ? (
+          <Suspense fallback={<p role="status">{t('loading')}</p>}>
+            <Outlet />
+          </Suspense>
+        ) : (
+          <p>{t('loading')}</p>
+        )}
+      </main>
+    );
   return (
     <>
       <a className="skip" href="#main">
@@ -114,7 +128,7 @@ export function Layout() {
           <OfflineSign />
           <Link
             className="avatar"
-            to="/account"
+            to={email ? '/account' : `/login?next=${pathname}`}
             aria-label={
               email ??
               (settings.language === 'vi' ? 'Đăng nhập hoặc đăng ký' : 'Sign in or create account')
@@ -160,6 +174,7 @@ const router = createBrowserRouter([
       { path: 'grammar', element: <Grammar /> },
       { path: 'settings', element: <Settings /> },
       { path: 'account', element: <Account /> },
+      { path: 'login', element: <SignIn /> },
       { path: 'assistant', element: <Assistant /> },
       { path: 'game', element: <Game /> },
       { path: 'achievements', element: <Achievements /> },

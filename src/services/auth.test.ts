@@ -1,7 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { createElement } from 'react';
+import { createElement as h } from 'react';
+import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import Account from '../features/account/Account';
+import SignIn from '../features/account/SignIn';
 import { AuthError, authFetch, login, logout, register, restoreSession, useAuth } from './auth';
 
 const json = (status: number, body?: unknown) =>
@@ -87,11 +89,26 @@ describe('auth service', () => {
   });
 });
 
+// The sign-in entrance and the account page it returns to.
+const showAt = (path: string) =>
+  render(
+    h(
+      MemoryRouter,
+      { initialEntries: [path] },
+      h(
+        Routes,
+        null,
+        h(Route, { path: '/login', element: h(SignIn) }),
+        h(Route, { path: '/account', element: h(Account) }),
+      ),
+    ),
+  );
+
 describe('account page', () => {
   it('signs in, shows the account and signs out', async () => {
     const user = userEvent.setup();
     fetchMock.mockResolvedValueOnce(json(401, { detail: 'Failed' }));
-    render(createElement(Account));
+    showAt('/account');
     await user.type(screen.getByLabelText('Email'), 'learner@example.test');
     await user.type(screen.getByLabelText('Mật khẩu'), 'Wrong#2026');
     // [0] is the mode tab; [1] submits the form.
@@ -105,15 +122,15 @@ describe('account page', () => {
     expect(screen.getByLabelText('Email')).toBeInTheDocument();
   });
 
-  it('shows the password policy when registration is rejected', async () => {
+  it('explains a rejected password when creating an account', async () => {
     const user = userEvent.setup();
     fetchMock.mockResolvedValueOnce(json(400, { errors: { PasswordRequiresDigit: ['x'] } }));
-    render(createElement(Account));
-    await user.click(screen.getByRole('button', { name: 'Đăng ký' }));
+    showAt('/login');
+    await user.click(screen.getByRole('button', { name: 'Tạo tài khoản', pressed: false }));
     await user.type(screen.getByLabelText('Email'), 'learner@example.test');
     await user.type(screen.getByLabelText('Mật khẩu'), 'NoDigits#Here');
-    await user.click(screen.getByRole('button', { name: 'Tạo tài khoản' }));
-    expect(await screen.findByRole('alert')).toHaveTextContent('ít nhất 8 ký tự');
+    await user.click(screen.getAllByRole('button', { name: 'Tạo tài khoản' })[1]);
+    expect(await screen.findByRole('alert')).toHaveTextContent('chưa đủ các điều kiện');
     expect(useAuth.getState().email).toBeNull();
   });
 });

@@ -145,7 +145,7 @@ export default function Game() {
         {title}
         <Notice>
           {bi('Trò chơi được chấm trên máy chủ. Hãy', 'Games are graded on the server. Please')}{' '}
-          <Link to="/account">
+          <Link to="/login?next=/game">
             {bi('đăng nhập hoặc tạo tài khoản', 'sign in or create an account')}
           </Link>{' '}
           {bi('để chơi.', 'to play.')}

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useBi } from '../../i18n';
 import { Notice } from '../../components/shared';
 import { ApiError, useAuth } from '../../services/auth';
@@ -190,10 +190,11 @@ export function ChatWindow({
 
 export function SignInNotice() {
   const bi = useBi();
+  const { pathname } = useLocation();
   return (
     <Notice>
       {bi('Trợ giảng chạy trên máy chủ. Hãy', 'The tutor runs on the server. Please')}{' '}
-      <Link to="/account">
+      <Link to={`/login?next=${pathname}`}>
         {bi('đăng nhập hoặc tạo tài khoản', 'sign in or create an account')}
       </Link>{' '}
       {bi('để hỏi.', 'to ask.')}

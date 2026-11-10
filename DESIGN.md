@@ -98,6 +98,11 @@ Elevation is a 1px `--border` and nothing else. Shadows are not combined with bo
   - Lesson lists on these four pages are directory rows: level chip, title, one-line excerpt and facts, with the action on the right.
 - **Icons.** Play, stop, download and upload are drawn in the shared icon set; no glyph icons remain on learning screens.
 - **Tutor.** A round chat head in the corner opens a messaging window: header with avatar and status, bubbles on both sides, source chips and a rounded composer.
+- **Sign-in entrance** (`/login`, `src/features/account/SignIn.tsx`). A full-screen page outside the app shell: no sidebar, top bar or tutor bubble.
+  - Left is a sign-blue plate (`--plate`): brand, one h1, and what an account adds as an upright three-stop route with white pictogram tiles.
+  - Right is the form: segmented Sign in / Create account, email, password with a drawn eye toggle, a live checklist of the server's password rules while creating an account, one full-width primary button, a privacy line and a "Keep practising without an account" link.
+  - At night the plate dims to `--primary-soft` with ink text instead of a bright panel. Below 860px the plate stacks above the form.
+  - Every sign-in link carries `?next=` back to the page that asked. Only same-site paths are followed. Signed-in visitors skip the page. `/account` sends signed-out visitors here.
 
 ## Deliberate exceptions
 

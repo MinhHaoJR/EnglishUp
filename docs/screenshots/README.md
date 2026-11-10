@@ -4,6 +4,8 @@ Chụp ngày 10/11/2026 bằng Chrome headless, khung nhìn 1440×900, giao di�
 
 | Ảnh | Màn hình | Gợi ý chú thích |
 |---|---|---|
+| `00-dang-nhap.png` | Đăng nhập | Lối vào riêng: tấm biển xanh nêu ba điều tài khoản mang lại, form đăng nhập/tạo tài khoản bên cạnh; học không cần tài khoản. |
+| `00b-dang-nhap-dien-thoai.png` | Đăng nhập trên điện thoại (375px) | Tấm biển xếp trên form; khi tạo tài khoản, danh sách điều kiện mật khẩu đánh dấu ngay khi gõ. |
 | `01-tong-quan.png` | Tổng quan | Kế hoạch học hôm nay dạng lộ trình: chặng đã xong có dấu ✓, nút bắt đầu chặng kế tiếp; tiến độ theo kỹ năng và theo tuần. |
 | `02-tu-vung-chu-de.png` | Từ vựng, chọn chủ đề | Danh mục chủ đề theo nhóm (Hằng ngày, Công việc & học tập, Chuyên ngành, Ôn thi nâng cao) với số từ mỗi chủ đề. |
 | `03-tu-vung-cum-tu.png` | Từ vựng, cụm từ | Mỗi chủ đề chia thành cụm tối đa 20 từ, hai cột "Cần học" và "Đã nhớ", bốn chế độ luyện. |

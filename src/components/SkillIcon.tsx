@@ -25,6 +25,10 @@ const paths = {
   cards: 'M8 4h10a2 2 0 0 1 2 2v10 M4 8h11a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8z',
   choice: 'M4 6.5h2 M9 6.5h11 M4 12h2 M9 12h11 M4 17.5h2 M9 17.5h11',
   keyboard: 'M3 6h18v12H3z M7 10h1 M11 10h2 M16 10h1 M7 14h10',
+  sync: 'M20 11a8 8 0 0 0-14.5-4.5 M4 3v4h4 M4 13a8 8 0 0 0 14.5 4.5 M20 21v-4h-4',
+  eye: 'M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z',
+  eyeOff:
+    'M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M4 4l16 16',
 } as const;
 
 export type IconName = keyof typeof paths;

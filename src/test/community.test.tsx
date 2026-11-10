@@ -47,7 +47,7 @@ describe('Achievements page', () => {
     show(<Achievements />);
     expect(screen.getByRole('link', { name: 'đăng nhập hoặc tạo tài khoản' })).toHaveAttribute(
       'href',
-      '/account',
+      '/login?next=/achievements',
     );
     expect(fetchMock).not.toHaveBeenCalled();
   });

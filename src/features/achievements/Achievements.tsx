@@ -85,7 +85,7 @@ export default function Achievements() {
         {title}
         <Notice>
           {bi('Hãy', 'Please')}{' '}
-          <Link to="/account">
+          <Link to="/login?next=/achievements">
             {bi('đăng nhập hoặc tạo tài khoản', 'sign in or create an account')}
           </Link>{' '}
           {bi(
