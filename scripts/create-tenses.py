@@ -1,6 +1,6 @@
 """Writes src/data/tenses.json: the 12 English tenses plus "be going to", for the grammar page.
 
-Each tense has its form (affirmative, negative, question), its uses with an example, signal words, a tip
+Checked against a common Vietnamese summary of the 12 tenses (11/11/2026); each tense has its form (affirmative, negative, question), its uses with an example, signal words, a tip
 on a common mistake, and three fill-in-the-blank checks with one grammatical answer. Explanations are in
 Vietnamese and English for the interface; examples are original English. Run: python scripts/create-tenses.py
 """
@@ -22,7 +22,7 @@ TENSES = [
       ["S + do/does + not + V", "S + am/is/are + not + N/Adj"],
       ["Do/Does + S + V?", "Am/Is/Are + S + N/Adj?"]),
      [use("Thói quen, việc lặp đi lặp lại", "Habits and repeated actions", "I walk to school every day."),
-      use("Sự thật hiển nhiên", "Facts that are always true", "Water boils at 100 degrees Celsius."),
+      use("Sự thật hiển nhiên, chân lý", "Facts and general truths", "Water boils at 100 degrees Celsius."),
       use("Lịch trình, thời gian biểu cố định", "Fixed timetables", "The train leaves at seven in the morning.")],
      ["always", "usually", "often", "sometimes", "never", "every day", "on Mondays"],
      ("Với he/she/it, động từ thêm -s/-es. Sau does, động từ trở về nguyên mẫu: Does she like tea? (không nói Does she likes).",
@@ -33,7 +33,7 @@ TENSES = [
     ("present-continuous", "present", "A1", ("Hiện tại tiếp diễn", "Present continuous"),
      (["S + am/is/are + V-ing"], ["S + am/is/are + not + V-ing"], ["Am/Is/Are + S + V-ing?"]),
      [use("Việc đang diễn ra lúc nói", "Actions happening now", "She is cooking dinner now."),
-      use("Việc tạm thời trong giai đoạn này", "Temporary situations", "I am staying with my aunt this week."),
+      use("Việc tạm thời, diễn ra xung quanh thời điểm nói", "Temporary actions around the time of speaking", "I am staying with my aunt this week."),
       use("Kế hoạch tương lai đã sắp xếp", "Arranged future plans", "We are meeting the teacher tomorrow afternoon.")],
      ["now", "right now", "at the moment", "Look!", "Listen!", "this week", "today"],
      ("Động từ chỉ trạng thái (know, like, want, believe, need) thường không dùng tiếp diễn: nói I know, không nói I am knowing.",
@@ -56,7 +56,7 @@ TENSES = [
      (["S + have/has + been + V-ing"], ["S + have/has + not + been + V-ing"], ["Have/Has + S + been + V-ing?"]),
      [use("Kéo dài đến hiện tại, nhấn mạnh quá trình", "Actions continuing up to now, stressing the duration", "I have been learning English for three years."),
       use("Vừa dừng lại, còn để lại dấu hiệu", "Recent actions with visible signs", "Her eyes are red; she has been crying.")],
-     ["for", "since", "all day", "all morning", "how long", "lately", "recently"],
+     ["for", "since", "all day", "all morning", "so far", "how long", "lately", "recently"],
      ("So với hiện tại hoàn thành: thì này nhấn mạnh thời gian kéo dài (I have been reading for two hours), còn hiện tại hoàn thành nhấn mạnh kết quả (I have read three chapters).",
       "Compared with the present perfect, it stresses how long (I have been reading for two hours) rather than the result (I have read three chapters)."),
      [check("It ___ all morning, so the roads are wet.", "has been raining", ["has been rain", "have been raining", "has raining"], "Kéo dài cả buổi sáng, còn dấu hiệu (đường ướt) → has been + V-ing."),
@@ -98,7 +98,7 @@ TENSES = [
      (["S + had been + V-ing"], ["S + had not been + V-ing"], ["Had + S + been + V-ing?"]),
      [use("Kéo dài cho đến một mốc trong quá khứ", "Lasting up to a past moment", "I had been waiting for an hour when she arrived."),
       use("Nguyên nhân kéo dài của một tình trạng quá khứ", "The ongoing cause of a past situation", "The ground was wet because it had been raining.")],
-     ["for", "since", "how long", "before", "by the time"],
+     ["for", "since", "until then", "how long", "before", "by the time"],
      ("Giống hiện tại hoàn thành tiếp diễn nhưng lùi về quá khứ: mốc kết thúc là một thời điểm đã qua.",
       "Like the present perfect continuous, shifted to the past: the end point is a moment that has passed."),
      [check("They ___ for two hours when the bus finally came.", "had been waiting", ["had been wait", "has been waiting", "had waiting"], "Kéo dài đến một mốc quá khứ → had been + V-ing."),
@@ -107,7 +107,7 @@ TENSES = [
     ("future-simple", "future", "A1", ("Tương lai đơn", "Future simple (will)"),
      (["S + will + V"], ["S + will not (won't) + V"], ["Will + S + V?"]),
      [use("Quyết định ngay lúc nói", "Decisions made at the moment of speaking", "It's cold. I will close the window."),
-      use("Dự đoán theo ý kiến cá nhân", "Predictions based on opinion", "I think it will rain tomorrow."),
+      use("Dự đoán không có căn cứ rõ ràng, theo ý kiến cá nhân", "Predictions without clear evidence, based on opinion", "I think it will rain tomorrow."),
       use("Lời hứa, lời đề nghị giúp đỡ", "Promises and offers", "I will help you with your homework.")],
      ["tomorrow", "next week", "soon", "I think", "probably", "in 2030"],
      ("Sau will luôn là động từ nguyên mẫu: She will come (không nói She will comes).",
@@ -148,7 +148,7 @@ TENSES = [
     ("future-perfect-continuous", "future", "C1", ("Tương lai hoàn thành tiếp diễn", "Future perfect continuous"),
      (["S + will have been + V-ing"], ["S + will not have been + V-ing"], ["Will + S + have been + V-ing?"]),
      [use("Kéo dài đến một mốc tương lai, nhấn mạnh thời lượng", "Lasting up to a future time, stressing how long", "By next year, I will have been teaching for ten years.")],
-     ["by + thời gian + for + khoảng thời gian", "by the time", "by then"],
+     ["by + mốc tương lai", "for + khoảng thời gian", "by the time", "by then"],
      ("Ít gặp trong hội thoại; thường dùng để nhấn mạnh một quãng thời gian dài tính đến một mốc tương lai.",
       "Rare in conversation; mostly used to stress a long period up to a future point."),
      [check("By December, she ___ here for five years.", "will have been working", ["will have working", "will been working", "has been worked"], "Kéo dài đến một mốc tương lai → will have been + V-ing."),

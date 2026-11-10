@@ -29,8 +29,8 @@
         "example": "I walk to school every day."
       },
       {
-        "vi": "Sự thật hiển nhiên",
-        "en": "Facts that are always true",
+        "vi": "Sự thật hiển nhiên, chân lý",
+        "en": "Facts and general truths",
         "example": "Water boils at 100 degrees Celsius."
       },
       {
@@ -115,8 +115,8 @@
         "example": "She is cooking dinner now."
       },
       {
-        "vi": "Việc tạm thời trong giai đoạn này",
-        "en": "Temporary situations",
+        "vi": "Việc tạm thời, diễn ra xung quanh thời điểm nói",
+        "en": "Temporary actions around the time of speaking",
         "example": "I am staying with my aunt this week."
       },
       {
@@ -299,6 +299,7 @@
       "since",
       "all day",
       "all morning",
+      "so far",
       "how long",
       "lately",
       "recently"
@@ -629,6 +630,7 @@
     "signals": [
       "for",
       "since",
+      "until then",
       "how long",
       "before",
       "by the time"
@@ -700,8 +702,8 @@
         "example": "It's cold. I will close the window."
       },
       {
-        "vi": "Dự đoán theo ý kiến cá nhân",
-        "en": "Predictions based on opinion",
+        "vi": "Dự đoán không có căn cứ rõ ràng, theo ý kiến cá nhân",
+        "en": "Predictions without clear evidence, based on opinion",
         "example": "I think it will rain tomorrow."
       },
       {
@@ -1020,7 +1022,8 @@
       }
     ],
     "signals": [
-      "by + thời gian + for + khoảng thời gian",
+      "by + mốc tương lai",
+      "for + khoảng thời gian",
       "by the time",
       "by then"
     ],
