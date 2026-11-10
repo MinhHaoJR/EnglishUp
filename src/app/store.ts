@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { defaults, db, settingsSchema, type Settings } from '../services/storage';
 import type { Level } from '../data/schema';
+import { loadContent } from '../services/content';
 type State = {
   settings: Settings;
   ready: boolean;
@@ -21,6 +22,8 @@ export const useApp = create<State>((set, get) => ({
   topic: 'all',
   refresh: 0,
   load: async () => {
+    // Admin-added and edited lessons join the bundled ones before any page renders.
+    await loadContent();
     try {
       set({
         settings: settingsSchema.parse((await db.settings.get('main')) ?? defaults),

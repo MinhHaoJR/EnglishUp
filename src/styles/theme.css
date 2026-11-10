@@ -2909,3 +2909,228 @@ main.admin-main {
   text-align: center;
   color: var(--muted);
 }
+
+/* Admin areas in the bar: the current one underlined in signal yellow. */
+.admin-nav {
+  display: flex;
+  flex: 1;
+  gap: 4px;
+}
+.admin-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 12px;
+  border-radius: var(--radius-sm);
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+.admin-nav a:hover {
+  background: color-mix(in srgb, currentColor 12%, transparent);
+}
+.admin-nav a.active {
+  box-shadow: inset 0 -3px 0 var(--signal);
+}
+/* Learning content: kind tabs in skill-line colours, a list of items, one editor at a time. */
+.content-admin {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+.content-admin-head h2 {
+  margin: 0 0 4px;
+  font-size: 1.35rem;
+}
+.content-admin-head p {
+  margin: 0 0 18px;
+  max-width: 75ch;
+}
+.content-kinds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.content-kinds button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 4px 12px 4px 6px;
+}
+.content-kinds button small {
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+.content-kinds button[aria-selected='true'] {
+  border-color: var(--line);
+  background: color-mix(in srgb, var(--line) 12%, var(--panel));
+  font-weight: 700;
+}
+.content-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+.content-toolbar label {
+  flex: 1 1 280px;
+  max-width: 460px;
+}
+.content-toolbar input {
+  width: 100%;
+  padding: 0 12px;
+}
+.content-count {
+  margin: 10px 0 4px;
+  font-size: 0.85rem;
+}
+.content-message {
+  margin: 0 0 12px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--success-soft);
+  color: var(--success);
+  font-weight: 600;
+}
+.content-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.content-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 120px 360px;
+  align-items: center;
+  gap: 8px 16px;
+  min-height: 60px;
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--border);
+}
+.content-list li.hidden {
+  opacity: 0.7;
+}
+.content-what {
+  display: grid;
+  min-width: 0;
+}
+.content-what strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content-what small {
+  color: var(--muted);
+}
+.content-status {
+  justify-self: start;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--soft);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.content-status.edited {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+.content-status.added {
+  background: var(--success-soft);
+  color: var(--success);
+}
+.content-status.hidden {
+  background: color-mix(in srgb, var(--signal) 30%, var(--panel));
+  color: var(--signal-ink);
+}
+.content-status.invalid {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+.content-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+.content-actions button {
+  min-height: 36px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.85rem;
+}
+.content-actions .danger-outline {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+.content-editor {
+  display: grid;
+  gap: 14px;
+}
+.content-editor h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.content-word {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 16px;
+}
+.content-word label,
+.content-json {
+  display: grid;
+  gap: 6px;
+}
+.content-word input,
+.content-word select {
+  width: 100%;
+  max-width: none;
+  padding: 0 10px;
+}
+.content-word textarea {
+  min-height: 72px;
+  padding: 8px 10px;
+}
+.content-json textarea {
+  min-height: 420px;
+  padding: 12px;
+  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  tab-size: 2;
+}
+.content-issues {
+  margin: 0;
+  padding: 10px 14px 10px 30px;
+  border-radius: var(--radius-sm);
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-size: 0.85rem;
+}
+.content-ok {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: var(--success);
+  font-weight: 600;
+}
+@media (max-width: 860px) {
+  .admin-nav {
+    order: 3;
+    flex-basis: 100%;
+  }
+  .content-admin {
+    padding: 18px 16px;
+  }
+  .content-list li {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .content-actions {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+  .content-word {
+    grid-template-columns: 1fr;
+  }
+}

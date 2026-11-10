@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import { Link, NavLink, Navigate, useSearchParams } from 'react-router-dom';
+import ContentManager from './ContentManager';
 import { useBi } from '../../i18n';
 import { Notice, PageTitle } from '../../components/shared';
 import SkillIcon from '../../components/SkillIcon';
@@ -45,6 +46,8 @@ export default function Admin() {
   const locale = useApp((state) => (state.settings.language === 'vi' ? 'vi-VN' : 'en-US'));
   const email = useAuth((state) => state.email);
   const { isAdmin, checkedFor } = useAdmin();
+  const [params] = useSearchParams();
+  const tab = params.get('tab') === 'content' ? 'content' : 'overview';
   const [overview, setOverview] = useState<Overview | null>(null);
   const [users, setUsers] = useState<AdminUser[]>([]);
   const [search, setSearch] = useState('');
@@ -65,7 +68,7 @@ export default function Admin() {
 
   // Refresh on a timer so the online count stays live; searching reloads after a short pause.
   useEffect(() => {
-    if (!email || !isAdmin || checkedFor !== email) return;
+    if (!email || !isAdmin || checkedFor !== email || tab === 'content') return;
     const pause = setTimeout(() => void load(search), 300);
     const timer = setInterval(() => void load(search), REFRESH_MS);
     return () => {
@@ -73,7 +76,7 @@ export default function Admin() {
       clearInterval(timer);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [email, isAdmin, checkedFor, search]);
+  }, [email, isAdmin, checkedFor, search, tab]);
 
   // Signed out: sign in first. A learner account belongs in the learning app, not here.
   if (!email) return <Navigate to="/login?next=/admin" replace />;
@@ -84,6 +87,12 @@ export default function Admin() {
       </AdminShell>
     );
   if (!isAdmin) return <Navigate to="/" replace />;
+  if (tab === 'content')
+    return (
+      <AdminShell>
+        <ContentManager />
+      </AdminShell>
+    );
 
   async function act(user: AdminUser, action: () => Promise<void>) {
     setBusy(user.id);
@@ -313,6 +322,7 @@ function AdminShell({ children }: { children: React.ReactNode }) {
   const bi = useBi();
   const email = useAuth((state) => state.email);
   const checkedFor = useAdmin((state) => state.checkedFor);
+  const tabParam = useSearchParams()[0].get('tab');
   // Opening /admin directly (or after a reload) checks the role here; the learning shell is not mounted.
   useEffect(() => {
     if (email && checkedFor !== email) void refreshAdmin();
@@ -330,6 +340,21 @@ function AdminShell({ children }: { children: React.ReactNode }) {
           EnglishUp
           <span className="admin-badge">{bi('Quản trị', 'Admin')}</span>
         </Link>
+        <nav className="admin-nav" aria-label={bi('Khu quản trị', 'Admin areas')}>
+          <NavLink
+            to="/admin"
+            end
+            className={({ isActive }) => (isActive && !tabParam ? 'active' : '')}
+          >
+            {bi('Tổng quan', 'Overview')}
+          </NavLink>
+          <NavLink
+            to="/admin?tab=content"
+            className={() => (tabParam === 'content' ? 'active' : '')}
+          >
+            {bi('Tài liệu học tập', 'Learning content')}
+          </NavLink>
+        </nav>
         <div className="admin-top-actions">
           {email && <span className="admin-top-email">{email}</span>}
           <Link className="button" to="/">

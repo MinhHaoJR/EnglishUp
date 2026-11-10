@@ -20,6 +20,7 @@
 | Trò chơi                | `GameSessions` (`AddGame`)                                                                                                      | Đã có                   |
 | Trợ giảng RAG           | `KnowledgeChunks`, `Conversations`, `ChatMessages`, `MessageCitations`                                                          | Đã có (tuần 5–6)        |
 | Quản trị, hiện diện     | `Presence` (`AddPresence`); vai trò `Admin` trong `AspNetRoles`/`AspNetUserRoles`                                               | Đã có                   |
+| Tài liệu học tập        | `ContentItems` (`AddContentItems`)                                                                                              | Đã có                   |
 
 ```mermaid
 erDiagram
@@ -249,3 +250,16 @@ Lần cuối mỗi tài khoản mở app. Trình duyệt gửi `POST /api/presen
 | `LastSeenAt` | timestamptz | NN, chỉ mục                           | Giờ UTC của nhịp gần nhất |
 
 Quản trị viên là tài khoản thuộc vai trò `Admin` (bảng có sẵn của Identity), cấp bằng `dotnet run --project EnglishUp.Api -- admin <email>` và thu hồi bằng `--remove`.
+
+### `ContentItems` — Đã có (`AddContentItems`)
+
+Bài admin thêm, sửa hoặc ẩn. Bài có sẵn vẫn nằm trong `src/data/*.json`; mỗi dòng ở đây đè lên bài có sẵn cùng loại và mã, hoặc là bài mới. `GET /api/content` công khai; client kiểm tra từng dòng bằng chính schema Zod của app và bỏ qua dòng sai, nên một dòng hỏng không làm hỏng trang học.
+
+| Cột         | Kiểu         | Ràng buộc | Ghi chú                                                                         |
+| ----------- | ------------ | --------- | ------------------------------------------------------------------------------- |
+| `Kind`      | varchar(16)  | PK        | `word`, `structure`, `reading`, `listening`, `dictation`, `speaking`, `writing` |
+| `Id`        | varchar(64)  | PK        | Trùng mã bài có sẵn = sửa bài đó; mã mới = bài thêm                             |
+| `Json`      | text         | null      | Bài theo đúng cấu trúc JSON của app; null khi chỉ ẩn một bài có sẵn             |
+| `Hidden`    | boolean      | NN        | Ẩn khỏi người học                                                               |
+| `UpdatedAt` | timestamptz  | NN        |                                                                                 |
+| `UpdatedBy` | varchar(256) | NN        | Email quản trị viên                                                             |

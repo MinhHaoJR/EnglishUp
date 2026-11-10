@@ -18,7 +18,7 @@ public class AdminTests
         return (factory, await Learner(factory, admin: true));
     }
 
-    private static async Task<HttpClient> Learner(ApiFactory factory, bool admin = false, string? email = null)
+    internal static async Task<HttpClient> Learner(ApiFactory factory, bool admin = false, string? email = null)
     {
         var client = factory.CreateClient();
         email ??= $"learner-{Guid.NewGuid():N}@example.test";

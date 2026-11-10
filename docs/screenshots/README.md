@@ -25,6 +25,8 @@ Chụp ngày 10/11/2026 bằng Chrome headless, khung nhìn 1440×900, giao di�
 | `14-tro-giang-ai.png` | Trợ giảng AI, câu trả lời | Lịch sử dạng khung bên trái (khung đang mở có chấm vàng); câu trả lời từ bài học với nguồn [1], [2] gắn nhãn kỹ năng; còn 19/20 câu hôm nay. |
 | `14b-tro-giang-moi.png` | Trợ giảng AI, cuộc trò chuyện mới | Bốn câu hỏi gợi ý, mỗi câu một kỹ năng; ô soạn với nút gửi và ghi chú quyền riêng tư. |
 | `15-quan-tri.png` | Quản trị (trang riêng, chỉ admin) | Số người đang online/offline (mở app trong 2 phút gần nhất), hoạt động hôm nay, người dùng xếp theo lần thấy gần nhất với thao tác khoá/mở khoá và ẩn khỏi bảng xếp hạng. Dữ liệu thật trên Supabase, gồm 6 học viên demo. |
+| `15b-quan-tri-them-tu.png` | Quản trị, thêm từ vựng | Form thêm từ (từ, phiên âm, từ loại, nghĩa, định nghĩa, ví dụ, trình độ, chủ đề), kiểm tra hợp lệ ngay theo cấu trúc của app. |
+| `15c-quan-tri-soan-bai.png` | Quản trị, soạn bài nghe | Trình soạn JSON điền sẵn từ một bài có thật, báo lỗi theo schema trước khi cho lưu. |
 
 Ảnh 14 chụp khi dữ liệu RAG chưa có 100 cấu trúc câu (nạp lúc 15:15 ngày 10/11/2026); câu hỏi trong ảnh là về từ vựng nên không bị ảnh hưởng.
 

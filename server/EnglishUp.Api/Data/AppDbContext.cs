@@ -19,6 +19,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
     public DbSet<ChatMessage> ChatMessages => Set<ChatMessage>();
     public DbSet<MessageCitation> MessageCitations => Set<MessageCitation>();
     public DbSet<Presence> Presence => Set<Presence>();
+    public DbSet<ContentItem> ContentItems => Set<ContentItem>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -49,6 +50,13 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
             // One award per source, however often a device re-sends it.
             entity.HasIndex(p => new { p.UserId, p.Source, p.SourceId }).IsUnique();
             entity.HasIndex(p => new { p.UserId, p.LocalDate });
+        });
+        builder.Entity<ContentItem>(entity =>
+        {
+            entity.HasKey(c => new { c.Kind, c.Id });
+            entity.Property(c => c.Kind).HasMaxLength(16);
+            entity.Property(c => c.Id).HasMaxLength(64);
+            entity.Property(c => c.UpdatedBy).HasMaxLength(256);
         });
         builder.Entity<Presence>(entity =>
         {
@@ -142,6 +150,18 @@ public class PointEntry
 }
 
 /// <summary>Public face of a learner; hidden from the leaderboard until they opt in.</summary>
+/// <summary>An admin's addition, edit or hiding of one learning item; see Content.cs.</summary>
+public class ContentItem
+{
+    public required string Kind { get; set; }
+    public required string Id { get; set; }
+    /// <summary>The item as JSON in the client's schema; null for a hidden bundled item never edited.</summary>
+    public string? Json { get; set; }
+    public bool Hidden { get; set; }
+    public DateTimeOffset UpdatedAt { get; set; }
+    public string UpdatedBy { get; set; } = "";
+}
+
 /// <summary>When the learner last had the app open (a heartbeat every minute); see Admin.cs.</summary>
 public class Presence
 {

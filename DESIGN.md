@@ -116,6 +116,9 @@ Elevation is a 1px `--border` and nothing else. Shadows are not combined with bo
   - Locking takes a second click to confirm. The page refreshes every 30 s.
   - It is a separate page outside the learning shell, with no sidebar or tutor bubble. Its own sticky sign-blue bar carries the brand, a yellow "Admin" plate, the admin's email, "Learning app" and "Sign out". Signing in with an admin account lands here. A learner opening `/admin` is sent to the learning app, and a signed-out visitor to sign-in.
   - In the learning app, the sidebar shows an extra "Admin" group only for admins.
+  - The bar has two areas, Overview and Learning content; the current one is underlined in signal yellow.
+  - Learning content has seven kind tabs, each tinted with its skill line, and a search plus "+ Add" toolbar. The list shows each item's title, id, level, topic and a status chip: Bundled (grey), Edited (blue), Added (green), Hidden (yellow) or Invalid (red). Actions are Edit, Hide or Show, Restore original and Delete. It shows 50 rows at a time.
+  - The editor is a two-column form for words. For other kinds it is a monospace JSON editor with a live list of schema issues, and Save stays disabled until the item is valid.
 - **Tutor page** (`/assistant`, surface roll seed `66dcd42e/0`: structure #1 of 6, workspace with history rail, "contact sheet" composition). It is one 12px plate filling the viewport.
   - The rail lists saved chats as small frames grouped Today / Earlier, with title and time. The open frame grows, gets a blue border and the yellow "you are here" dot. Delete shows on hover, on focus or for the open frame.
   - The main frame has a header (open title, status, questions left today) and a centred 760px reading column. Answers read as plain text beside the avatar, questions are blue bubbles, and sources are labels with the skill-line tile.

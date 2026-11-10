@@ -119,6 +119,7 @@ api.MapGame();
 api.MapKnowledge();
 api.MapAssistant();
 api.MapAdmin();
+api.MapContent();
 api.MapGet("/health", () => Results.Ok(new { status = "ok" }));
 
 app.Run();

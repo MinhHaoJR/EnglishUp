@@ -37,6 +37,14 @@ export default defineConfig({
         navigateFallback: '/index.html',
         // API answers are personal and live: never serve them from the cache.
         navigateFallbackDenylist: [/^\/api\//],
+        // Admin-added lessons are public: use the network, fall back to the last copy offline.
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.pathname === '/api/content',
+            handler: 'NetworkFirst',
+            options: { cacheName: 'content', networkTimeoutSeconds: 4 },
+          },
+        ],
       },
     }),
   ],
