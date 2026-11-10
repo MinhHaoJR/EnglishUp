@@ -43,7 +43,7 @@ public static partial class Content
     /// <summary>Seed files per kind, in the order the app lists them.</summary>
     public static readonly Dictionary<string, string[]> SeedFiles = new()
     {
-        ["word"] = ["vocabulary.json", "vocabulary-it.json", "vocabulary-phrasal.json", "vocabulary-collocations.json"],
+        ["word"] = ["vocabulary.json", "vocabulary-it.json", "vocabulary-phrasal.json", "vocabulary-collocations.json", "vocabulary-verbs.json"],
         ["structure"] = ["structures.json"],
         ["reading"] = ["reading.json"],
         ["listening"] = ["listening.json"],

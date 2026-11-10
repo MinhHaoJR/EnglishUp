@@ -1,0 +1,587 @@
+[
+  {
+    "id": "v-verb-should",
+    "word": "should",
+    "ipa": "/ʃʊd/",
+    "pos": "modal verb",
+    "meaning": "nên",
+    "definition": "used to say what is the right or best thing to do",
+    "examples": [
+      "You should drink more water every day."
+    ],
+    "level": "A1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-can",
+    "word": "can",
+    "ipa": "/kæn/",
+    "pos": "modal verb",
+    "meaning": "có thể",
+    "definition": "to be able to do something, or to be allowed to",
+    "examples": [
+      "I can swim, but not very fast."
+    ],
+    "level": "A1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-sort",
+    "word": "sort",
+    "ipa": "/sɔrt/",
+    "pos": "verb",
+    "meaning": "phân loại, sắp xếp",
+    "definition": "to put things into groups or into order",
+    "examples": [
+      "Please sort the books by size."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-state",
+    "word": "state",
+    "ipa": "/steɪt/",
+    "pos": "verb",
+    "meaning": "tuyên bố, nêu rõ",
+    "definition": "to say or write something clearly and formally",
+    "examples": [
+      "The report will state the main results."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-inform",
+    "word": "inform",
+    "ipa": "/ɪnˈfɔrm/",
+    "pos": "verb",
+    "meaning": "thông báo, báo cho biết",
+    "definition": "to tell someone about a fact officially",
+    "examples": [
+      "Please inform the teacher if you will be absent."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-intend",
+    "word": "intend",
+    "ipa": "/ɪnˈtɛnd/",
+    "pos": "verb",
+    "meaning": "có ý định, dự định",
+    "definition": "to plan or mean to do something",
+    "examples": [
+      "I intend to finish the course by June."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-involve",
+    "word": "involve",
+    "ipa": "/ɪnˈvɑlv/",
+    "pos": "verb",
+    "meaning": "bao gồm; liên quan, kéo vào",
+    "definition": "to include something as a necessary part, or to make someone take part",
+    "examples": [
+      "The job will involve some travel abroad."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-kill",
+    "word": "kill",
+    "ipa": "/kɪl/",
+    "pos": "verb",
+    "meaning": "giết; làm chết",
+    "definition": "to cause a person, animal or plant to die",
+    "examples": [
+      "Too much water can kill a cactus."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-represent",
+    "word": "represent",
+    "ipa": "/ˌrɛprəˈzɛnt/",
+    "pos": "verb",
+    "meaning": "đại diện cho; tượng trưng cho",
+    "definition": "to speak or act for someone, or to stand for something",
+    "examples": [
+      "Two students will represent our class at the meeting."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-roll",
+    "word": "roll",
+    "ipa": "/roʊl/",
+    "pos": "verb",
+    "meaning": "lăn; cuộn",
+    "definition": "to move by turning over and over, or to make into a tube shape",
+    "examples": [
+      "Help me roll the carpet before we move it."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-set",
+    "word": "set",
+    "ipa": "/sɛt/",
+    "pos": "verb",
+    "meaning": "đặt; thiết lập; (mặt trời) lặn",
+    "definition": "to put something in a place, to fix a time or rule, or to go down below the horizon",
+    "examples": [
+      "Let's set a date for the next meeting."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-claim",
+    "word": "claim",
+    "ipa": "/kleɪm/",
+    "pos": "verb",
+    "meaning": "khẳng định; đòi (quyền lợi)",
+    "definition": "to say that something is true, or to ask for something that is yours",
+    "examples": [
+      "He likes to claim that he never gets lost."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-commit",
+    "word": "commit",
+    "ipa": "/kəˈmɪt/",
+    "pos": "verb",
+    "meaning": "phạm (lỗi, tội); cam kết",
+    "definition": "to do something wrong or illegal, or to promise to give time or effort",
+    "examples": [
+      "Few people commit crimes in this quiet town."
+    ],
+    "level": "B2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-point",
+    "word": "point",
+    "ipa": "/pɔɪnt/",
+    "pos": "verb",
+    "meaning": "chỉ, trỏ",
+    "definition": "to show where something is with your finger",
+    "examples": [
+      "Please point to the word you do not know."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-press",
+    "word": "press",
+    "ipa": "/prɛs/",
+    "pos": "verb",
+    "meaning": "nhấn, ấn",
+    "definition": "to push something firmly",
+    "examples": [
+      "Press the green button to start the machine."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-regard",
+    "word": "regard",
+    "ipa": "/rəˈgɑrd/",
+    "pos": "verb",
+    "meaning": "coi như, xem là",
+    "definition": "to think of someone or something in a particular way",
+    "examples": [
+      "Many people regard her as the best teacher in the school."
+    ],
+    "level": "B2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-release",
+    "word": "release",
+    "ipa": "/riˈlis/",
+    "pos": "verb",
+    "meaning": "thả ra; phát hành",
+    "definition": "to let someone or something go free, or to make a film or product available",
+    "examples": [
+      "The band will release a new song next week."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-base",
+    "word": "base",
+    "ipa": "/beɪs/",
+    "pos": "verb",
+    "meaning": "dựa trên, đặt nền tảng",
+    "definition": "to use something as the main reason or starting point for something else",
+    "examples": [
+      "We base our prices on the cost of materials."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-burn",
+    "word": "burn",
+    "ipa": "/bɜrn/",
+    "pos": "verb",
+    "meaning": "đốt cháy; bị bỏng, cháy",
+    "definition": "to destroy or damage something with fire or heat",
+    "examples": [
+      "Don't burn the toast this time."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-shake",
+    "word": "shake",
+    "ipa": "/ʃeɪk/",
+    "pos": "verb",
+    "meaning": "lắc, rung",
+    "definition": "to move something quickly up and down or from side to side",
+    "examples": [
+      "Shake the bottle before you open it."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-complain",
+    "word": "complain",
+    "ipa": "/kəmˈpleɪn/",
+    "pos": "verb",
+    "meaning": "phàn nàn",
+    "definition": "to say that you are not happy about something",
+    "examples": [
+      "Customers often complain about slow delivery."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-concern",
+    "word": "concern",
+    "ipa": "/kənˈsɜrn/",
+    "pos": "verb",
+    "meaning": "liên quan đến; làm lo lắng",
+    "definition": "to be about or affect someone, or to make someone worried",
+    "examples": [
+      "This change does not concern first-year students."
+    ],
+    "level": "B2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-consist",
+    "word": "consist",
+    "ipa": "/kənˈsɪst/",
+    "pos": "verb",
+    "meaning": "gồm có",
+    "definition": "to be made of particular parts (consist of)",
+    "examples": [
+      "The test will consist of three short sections."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-contact",
+    "word": "contact",
+    "ipa": "/ˈkɑnˌtækt/",
+    "pos": "verb",
+    "meaning": "liên lạc, liên hệ",
+    "definition": "to call, write to or email someone",
+    "examples": [
+      "Please contact us if you have any questions."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-care",
+    "word": "care",
+    "ipa": "/kɛr/",
+    "pos": "verb",
+    "meaning": "quan tâm; chăm sóc (care for)",
+    "definition": "to feel that something is important, or to look after someone",
+    "examples": [
+      "Good doctors care about their patients."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-charge",
+    "word": "charge",
+    "ipa": "/ʧɑrʤ/",
+    "pos": "verb",
+    "meaning": "tính phí; sạc (pin)",
+    "definition": "to ask for money for something, or to put electricity into a battery",
+    "examples": [
+      "Some hotels charge extra for breakfast."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-exist",
+    "word": "exist",
+    "ipa": "/ɪgˈzɪst/",
+    "pos": "verb",
+    "meaning": "tồn tại",
+    "definition": "to be real or present",
+    "examples": [
+      "Do you think life could exist on other planets?"
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-express",
+    "word": "express",
+    "ipa": "/ɪkˈsprɛs/",
+    "pos": "verb",
+    "meaning": "bày tỏ, diễn đạt",
+    "definition": "to show a feeling or opinion in words or actions",
+    "examples": [
+      "Children often express their feelings through drawing."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-extend",
+    "word": "extend",
+    "ipa": "/ɪkˈstɛnd/",
+    "pos": "verb",
+    "meaning": "kéo dài; mở rộng",
+    "definition": "to make something longer or bigger",
+    "examples": [
+      "The library will extend its opening hours during exams."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-fail",
+    "word": "fail",
+    "ipa": "/feɪl/",
+    "pos": "verb",
+    "meaning": "thất bại; trượt (kỳ thi)",
+    "definition": "to not succeed in doing something",
+    "examples": [
+      "If you don't study, you may fail the test."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-fasten",
+    "word": "fasten",
+    "ipa": "/ˈfæsən/",
+    "pos": "verb",
+    "meaning": "buộc chặt, cài (dây an toàn)",
+    "definition": "to close or join something so that it stays firmly in place",
+    "examples": [
+      "Please fasten your seatbelt before we leave."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-feed",
+    "word": "feed",
+    "ipa": "/fid/",
+    "pos": "verb",
+    "meaning": "cho ăn",
+    "definition": "to give food to a person or an animal",
+    "examples": [
+      "It is my job to feed the cat every morning."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-fight",
+    "word": "fight",
+    "ipa": "/faɪt/",
+    "pos": "verb",
+    "meaning": "đánh nhau; chiến đấu, đấu tranh",
+    "definition": "to use force against someone, or to try hard to stop something bad",
+    "examples": [
+      "Doctors fight hard to save every patient."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-fill",
+    "word": "fill",
+    "ipa": "/fɪl/",
+    "pos": "verb",
+    "meaning": "đổ đầy, lấp đầy",
+    "definition": "to make something full",
+    "examples": [
+      "Please fill the jug with cold water."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-fit",
+    "word": "fit",
+    "ipa": "/fɪt/",
+    "pos": "verb",
+    "meaning": "vừa (kích cỡ); phù hợp",
+    "definition": "to be the right size or shape for someone or something",
+    "examples": [
+      "These shoes don't fit me any more."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-fold",
+    "word": "fold",
+    "ipa": "/foʊld/",
+    "pos": "verb",
+    "meaning": "gấp, gập",
+    "definition": "to bend something so that one part lies on another",
+    "examples": [
+      "Fold the paper in half."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-apply",
+    "word": "apply",
+    "ipa": "/əˈplaɪ/",
+    "pos": "verb",
+    "meaning": "nộp đơn; áp dụng",
+    "definition": "to ask formally for something, or to use a rule or method",
+    "examples": [
+      "You can apply the same rule to other verbs."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-argue",
+    "word": "argue",
+    "ipa": "/ˈɑrgju/",
+    "pos": "verb",
+    "meaning": "tranh cãi; lập luận",
+    "definition": "to disagree angrily, or to give reasons for an opinion",
+    "examples": [
+      "My brothers often argue about football."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-attack",
+    "word": "attack",
+    "ipa": "/əˈtæk/",
+    "pos": "verb",
+    "meaning": "tấn công",
+    "definition": "to try to hurt or damage someone or something",
+    "examples": [
+      "Some dogs attack when they feel afraid."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-hide",
+    "word": "hide",
+    "ipa": "/haɪd/",
+    "pos": "verb",
+    "meaning": "trốn; giấu",
+    "definition": "to go or put something where others cannot see or find it",
+    "examples": [
+      "The children like to hide behind the curtains."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-hit",
+    "word": "hit",
+    "ipa": "/hɪt/",
+    "pos": "verb",
+    "meaning": "đánh, đập; va vào",
+    "definition": "to touch someone or something hard with your hand or an object",
+    "examples": [
+      "Try to hit the ball over the net."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-deny",
+    "word": "deny",
+    "ipa": "/dɪˈnaɪ/",
+    "pos": "verb",
+    "meaning": "phủ nhận; từ chối",
+    "definition": "to say that something is not true, or to refuse to give something",
+    "examples": [
+      "He continued to deny that he broke the window."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-destroy",
+    "word": "destroy",
+    "ipa": "/dɪˈstrɔɪ/",
+    "pos": "verb",
+    "meaning": "phá hủy",
+    "definition": "to damage something so badly that it cannot be used",
+    "examples": [
+      "The storm could destroy the old bridge."
+    ],
+    "level": "B1",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-die",
+    "word": "die",
+    "ipa": "/daɪ/",
+    "pos": "verb",
+    "meaning": "chết; (cây) héo chết",
+    "definition": "to stop living",
+    "examples": [
+      "Plants die without enough light."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  },
+  {
+    "id": "v-verb-discuss",
+    "word": "discuss",
+    "ipa": "/dɪˈskʌs/",
+    "pos": "verb",
+    "meaning": "thảo luận, bàn bạc",
+    "definition": "to talk about something with other people",
+    "examples": [
+      "Let's discuss the plan after lunch."
+    ],
+    "level": "A2",
+    "topic": "Everyday verbs"
+  }
+]

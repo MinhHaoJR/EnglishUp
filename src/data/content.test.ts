@@ -10,14 +10,15 @@ import { wordSchema, questionSchema } from './schema';
 import { topics, topicVi } from '../i18n';
 import { topicSectionFor, topicSections } from './topicSections';
 test('expanded catalog has translated topics, complete IT entries and stable original IDs', () => {
-  expect(vocabulary).toHaveLength(2430);
+  expect(vocabulary).toHaveLength(2475);
   // The phrasal verbs (their own test below) are left out of the original catalog's counts.
   expect(
     vocabulary.filter(
       (word) =>
         !word.topic.startsWith('IT:') &&
         word.topic !== 'Exam: Phrasal verbs' &&
-        !word.topic.startsWith('Writing: '),
+        !word.topic.startsWith('Writing: ') &&
+        !word.id.startsWith('v-verb-'),
     ),
   ).toHaveLength(1860);
   expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(65);
@@ -112,7 +113,10 @@ test('reading passages have 150–350 words, five questions and exact evidence',
 
 test('advanced vocabulary covers B2 and C1 across six learning topics', () => {
   const catalog = vocabulary.filter(
-    (word) => word.topic !== 'Exam: Phrasal verbs' && !word.topic.startsWith('Writing: '),
+    (word) =>
+      word.topic !== 'Exam: Phrasal verbs' &&
+      !word.topic.startsWith('Writing: ') &&
+      !word.id.startsWith('v-verb-'),
   );
   expect(catalog.filter((word) => word.level === 'B1')).toHaveLength(174);
   expect(catalog.filter((word) => word.level === 'B2')).toHaveLength(306);
@@ -215,4 +219,16 @@ test('the IELTS Writing collocations fill 15 themed topics of ten in their own s
     expect(word.examples[0].toLowerCase()).toContain(word.word);
     expect(word.ipa).toBe('');
   }
+});
+
+test('the added common verbs join Everyday verbs with their IPA and never repeat a headword', () => {
+  const verbs = vocabulary.filter((word) => word.id.startsWith('v-verb-'));
+  expect(verbs).toHaveLength(45);
+  for (const word of verbs) {
+    expect(word.topic).toBe('Everyday verbs');
+    expect(word.ipa).toMatch(/^\/.+\/$/);
+    expect(['verb', 'modal verb']).toContain(word.pos);
+    expect(word.examples[0].toLowerCase()).toContain(word.word);
+  }
+  expect(vocabulary.filter((word) => word.topic === 'Everyday verbs')).toHaveLength(245);
 });
