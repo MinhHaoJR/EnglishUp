@@ -1,5 +1,6 @@
 import vocabulary from './vocabulary.json';
 import itVocabulary from './vocabulary-it.json';
+import phrasalVerbs from './vocabulary-phrasal.json';
 import structures from './structures.json';
 import reading from './reading.json';
 import listening from './listening.json';
@@ -18,7 +19,7 @@ import type { ContentRow } from '../services/content';
  * module, so the JSON stays out of the bundle; the server's `seed` command copies the same files into the database.
  */
 const files: Record<string, { id: string }[]> = {
-  word: [...vocabulary, ...itVocabulary],
+  word: [...vocabulary, ...itVocabulary, ...phrasalVerbs],
   structure: structures,
   reading,
   listening,

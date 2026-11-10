@@ -10,9 +10,14 @@ import { wordSchema, questionSchema } from './schema';
 import { topics, topicVi } from '../i18n';
 import { topicSectionFor, topicSections } from './topicSections';
 test('expanded catalog has translated topics, complete IT entries and stable original IDs', () => {
-  expect(vocabulary).toHaveLength(2080);
-  expect(vocabulary.filter((word) => !word.topic.startsWith('IT:'))).toHaveLength(1860);
-  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(49);
+  expect(vocabulary).toHaveLength(2280);
+  // The phrasal verbs (their own test below) are left out of the original catalog's counts.
+  expect(
+    vocabulary.filter(
+      (word) => !word.topic.startsWith('IT:') && word.topic !== 'Exam: Phrasal verbs',
+    ),
+  ).toHaveLength(1860);
+  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(50);
   for (const topic of topics) {
     expect(topicVi[topic]).toBeTruthy();
     expect(vocabulary.some((word) => word.topic === topic)).toBe(true);
@@ -103,10 +108,11 @@ test('reading passages have 150–350 words, five questions and exact evidence',
 });
 
 test('advanced vocabulary covers B2 and C1 across six learning topics', () => {
-  expect(vocabulary.filter((word) => word.level === 'B1')).toHaveLength(174);
-  expect(vocabulary.filter((word) => word.level === 'B2')).toHaveLength(306);
-  expect(vocabulary.filter((word) => word.level === 'C1')).toHaveLength(180);
-  expect(vocabulary.filter((word) => word.level === 'C2')).toHaveLength(40);
+  const catalog = vocabulary.filter((word) => word.topic !== 'Exam: Phrasal verbs');
+  expect(catalog.filter((word) => word.level === 'B1')).toHaveLength(174);
+  expect(catalog.filter((word) => word.level === 'B2')).toHaveLength(306);
+  expect(catalog.filter((word) => word.level === 'C1')).toHaveLength(180);
+  expect(catalog.filter((word) => word.level === 'C2')).toHaveLength(40);
   for (const topic of [
     'Work',
     'Education',
@@ -171,4 +177,21 @@ test('new IT terms cover eight practical domains with distinct examples and stab
     expect(word.ipa).toBe('');
   }
   expect(vocabulary[1920].id).toBe(added[0].id);
+});
+
+test('the phrasal verbs are complete, in their own exam topic and shown in context', () => {
+  const phrasal = vocabulary.filter((word) => word.topic === 'Exam: Phrasal verbs');
+  expect(phrasal).toHaveLength(200);
+  expect(topicSectionFor('Exam: Phrasal verbs')).toBe('exam');
+  expect(topicVi['Exam: Phrasal verbs']).toBe('Ôn thi: Cụm động từ');
+  for (const word of phrasal) {
+    expect(word.id).toMatch(/^v-pv-[a-z-]+$/);
+    expect(word.pos).toBe('phrasal verb');
+    expect(word.word).toMatch(/^[a-z]+( [a-z]+)+$/);
+    expect(word.examples[0].toLowerCase()).toContain(word.word);
+    expect(word.ipa).toBe('');
+  }
+  // Easiest first, so the 20-word clusters climb in level.
+  const order = phrasal.map((word) => ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].indexOf(word.level));
+  expect(order).toEqual([...order].sort((a, b) => a - b));
 });

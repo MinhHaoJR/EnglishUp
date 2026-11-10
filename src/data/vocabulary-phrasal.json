@@ -1,0 +1,2602 @@
+[
+  {
+    "id": "v-pv-come-from",
+    "word": "come from",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đến từ, xuất xứ từ",
+    "definition": "to be born in or to start in a place",
+    "examples": [
+      "Many of our teachers come from the north."
+    ],
+    "level": "A1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-look-for",
+    "word": "look for",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tìm kiếm",
+    "definition": "to try to find something or someone",
+    "examples": [
+      "I need to look for a cheaper flat."
+    ],
+    "level": "A1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-put-on",
+    "word": "put on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "mặc vào; bật",
+    "definition": "to dress in clothes, or to switch on",
+    "examples": [
+      "Put on a coat; it is cold outside."
+    ],
+    "level": "A1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-talk-about",
+    "word": "talk about",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "nói về",
+    "definition": "to discuss a subject",
+    "examples": [
+      "Let's talk about your weekend."
+    ],
+    "level": "A1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-turn-off",
+    "word": "turn off",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tắt",
+    "definition": "to stop a machine or a light working",
+    "examples": [
+      "Turn off the tap while you brush your teeth."
+    ],
+    "level": "A1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-turn-on",
+    "word": "turn on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bật",
+    "definition": "to start a machine or a light",
+    "examples": [
+      "Turn on the fan if it gets hot."
+    ],
+    "level": "A1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-wait-for",
+    "word": "wait for",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chờ đợi",
+    "definition": "to stay until someone arrives or something happens",
+    "examples": [
+      "We'll wait for the bus under the tree."
+    ],
+    "level": "A1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-wake-up",
+    "word": "wake up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "thức dậy",
+    "definition": "to stop sleeping",
+    "examples": [
+      "I wake up early on school days."
+    ],
+    "level": "A1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-agree-with",
+    "word": "agree with",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đồng ý với",
+    "definition": "to have the same opinion as someone",
+    "examples": [
+      "I agree with you about the new timetable."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-carry-on",
+    "word": "carry on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tiếp tục",
+    "definition": "to continue doing something",
+    "examples": [
+      "We can carry on after a short break."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-check-in",
+    "word": "check in",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "làm thủ tục (khách sạn, sân bay)",
+    "definition": "to report your arrival at a hotel or airport",
+    "examples": [
+      "You can check in online the day before your flight."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-check-out",
+    "word": "check out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "trả phòng; xem thử",
+    "definition": "to leave a hotel, or to look at something interesting",
+    "examples": [
+      "Guests must check out before noon."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-clean-up",
+    "word": "clean up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "dọn dẹp",
+    "definition": "to make a place clean and tidy",
+    "examples": [
+      "Volunteers clean up the beach every Sunday."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-cross-out",
+    "word": "cross out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "gạch bỏ",
+    "definition": "to draw a line through writing to show it is wrong",
+    "examples": [
+      "Cross out any answer you want to change."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-depend-on",
+    "word": "depend on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "phụ thuộc vào; trông cậy vào",
+    "definition": "to be decided by, or to rely on, someone or something",
+    "examples": [
+      "Our plans depend on the weather."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-fill-in",
+    "word": "fill in",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "điền vào (mẫu đơn)",
+    "definition": "to write information in the spaces on a form",
+    "examples": [
+      "Please fill in your address in capital letters."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-find-out",
+    "word": "find out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "phát hiện, tìm ra",
+    "definition": "to discover a fact or a piece of information",
+    "examples": [
+      "I want to find out why the shop closed."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-get-back",
+    "word": "get back",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "quay về; lấy lại",
+    "definition": "to return, or to receive something again",
+    "examples": [
+      "What time will you get back from school?"
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-get-off",
+    "word": "get off",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "xuống (xe)",
+    "definition": "to leave a bus, train or plane",
+    "examples": [
+      "Get off at the third stop."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-get-on",
+    "word": "get on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "lên (xe); hòa hợp",
+    "definition": "to enter a bus, train or plane, or to have a good relationship",
+    "examples": [
+      "Get on the train before the doors close."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-give-back",
+    "word": "give back",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "trả lại",
+    "definition": "to return something to its owner",
+    "examples": [
+      "Please give back my pen after class."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-give-up",
+    "word": "give up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "từ bỏ",
+    "definition": "to stop trying or stop doing something",
+    "examples": [
+      "Don't give up just because the first lesson is hard."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-go-back",
+    "word": "go back",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "quay lại",
+    "definition": "to return to a place",
+    "examples": [
+      "I'd love to go back to Hue one day."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-go-down",
+    "word": "go down",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "giảm xuống",
+    "definition": "to fall in price, level or number",
+    "examples": [
+      "The number of visitors may go down in winter."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-go-on",
+    "word": "go on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tiếp tục; diễn ra",
+    "definition": "to continue, or to happen",
+    "examples": [
+      "The meeting may go on until six."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-go-up",
+    "word": "go up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tăng lên",
+    "definition": "to rise in price, level or number",
+    "examples": [
+      "Rents usually go up every year."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-grow-up",
+    "word": "grow up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "lớn lên, trưởng thành",
+    "definition": "to develop from a child into an adult",
+    "examples": [
+      "Children grow up fast in big families."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-hand-in",
+    "word": "hand in",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "nộp (bài)",
+    "definition": "to give work to a teacher or the person in charge",
+    "examples": [
+      "Remember to hand in your essay by Friday."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-hand-out",
+    "word": "hand out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "phát (cho mọi người)",
+    "definition": "to give something to each person in a group",
+    "examples": [
+      "Volunteers hand out free water at the finish line."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-help-out",
+    "word": "help out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "giúp một tay",
+    "definition": "to help someone, especially at a busy time",
+    "examples": [
+      "My brother came to help out at the shop."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-hold-on",
+    "word": "hold on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chờ máy; bám chặt",
+    "definition": "to wait, especially on the phone, or to hold tightly",
+    "examples": [
+      "Hold on tight when the bus turns."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-join-in",
+    "word": "join in",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tham gia cùng",
+    "definition": "to take part in an activity with others",
+    "examples": [
+      "Everyone is welcome to join in the singing."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-log-in",
+    "word": "log in",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đăng nhập",
+    "definition": "to enter a computer system with a name and password",
+    "examples": [
+      "Log in with your school email."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-log-out",
+    "word": "log out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đăng xuất",
+    "definition": "to leave a computer system",
+    "examples": [
+      "Always log out on a shared computer."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-look-after",
+    "word": "look after",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chăm sóc, trông nom",
+    "definition": "to take care of someone or something",
+    "examples": [
+      "Can you look after my cat this weekend?"
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-look-around",
+    "word": "look around",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đi xem xung quanh",
+    "definition": "to visit a place and look at what is there",
+    "examples": [
+      "We had an hour to look around the old town."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-look-out",
+    "word": "look out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "coi chừng, cẩn thận",
+    "definition": "used to warn someone of danger",
+    "examples": [
+      "Look out for falling rocks on this road."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-look-up",
+    "word": "look up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tra cứu",
+    "definition": "to find information in a book or online",
+    "examples": [
+      "Look up the meaning before you use the word."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-move-in",
+    "word": "move in",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "dọn đến ở",
+    "definition": "to start living in a new home",
+    "examples": [
+      "Our new neighbours will move in on Monday."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-move-out",
+    "word": "move out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "dọn đi",
+    "definition": "to leave the home where you live",
+    "examples": [
+      "Students often move out after their first year."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-pass-by",
+    "word": "pass by",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đi ngang qua",
+    "definition": "to go past a person or place",
+    "examples": [
+      "I pass by the library on my way to work."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-pay-for",
+    "word": "pay for",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "trả tiền cho",
+    "definition": "to give money for something you buy or use",
+    "examples": [
+      "Who will pay for the taxi?"
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-pick-up",
+    "word": "pick up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "nhặt lên; đón; học được",
+    "definition": "to lift something, to collect someone, or to learn without studying",
+    "examples": [
+      "Children pick up new languages quickly."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-point-at",
+    "word": "point at",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chỉ vào",
+    "definition": "to show something by holding your finger towards it",
+    "examples": [
+      "It is rude to point at strangers."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-put-away",
+    "word": "put away",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "cất đi",
+    "definition": "to put something in its usual place",
+    "examples": [
+      "Put away your toys before dinner."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-put-back",
+    "word": "put back",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "để lại chỗ cũ",
+    "definition": "to return something to where it was",
+    "examples": [
+      "Please put back the books you borrow."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-send-back",
+    "word": "send back",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "gửi trả",
+    "definition": "to return something, often because it is wrong",
+    "examples": [
+      "You can send back the shoes if they don't fit."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-slow-down",
+    "word": "slow down",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chậm lại",
+    "definition": "to become slower",
+    "examples": [
+      "Slow down near the school gate."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-stay-up",
+    "word": "stay up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "thức khuya",
+    "definition": "to go to bed later than usual",
+    "examples": [
+      "Try not to stay up late before an exam."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-take-away",
+    "word": "take away",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "mang đi; lấy đi",
+    "definition": "to remove something, or to carry food from a restaurant",
+    "examples": [
+      "The waiter will take away the empty plates."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-take-off",
+    "word": "take off",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "cất cánh; cởi ra",
+    "definition": "to leave the ground, or to remove clothes",
+    "examples": [
+      "Please take off your shoes at the door."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-take-out",
+    "word": "take out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "lấy ra; đưa đi chơi",
+    "definition": "to remove something from a place, or to invite someone out",
+    "examples": [
+      "Take out your notebooks and a pen."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-throw-away",
+    "word": "throw away",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "vứt đi",
+    "definition": "to put something in the rubbish",
+    "examples": [
+      "Don't throw away plastic bottles; recycle them."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-try-on",
+    "word": "try on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "mặc thử",
+    "definition": "to put on clothes to see if they fit",
+    "examples": [
+      "Can I try on these jeans?"
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-walk-into",
+    "word": "walk into",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bước vào; vô tình đâm vào",
+    "definition": "to enter a place, or to hit something while walking",
+    "examples": [
+      "Don't walk into the room with muddy shoes."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-warm-up",
+    "word": "warm up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "khởi động; hâm nóng",
+    "definition": "to prepare for exercise, or to make something warmer",
+    "examples": [
+      "Players warm up for ten minutes before the match."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-watch-out",
+    "word": "watch out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "coi chừng",
+    "definition": "used to warn someone to be careful",
+    "examples": [
+      "Watch out for ice on the steps."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-write-down",
+    "word": "write down",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "ghi lại",
+    "definition": "to write something on paper so you remember it",
+    "examples": [
+      "Write down three goals for this month."
+    ],
+    "level": "A2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-aim-at",
+    "word": "aim at",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "nhắm tới, hướng đến",
+    "definition": "to direct something towards a particular group or goal",
+    "examples": [
+      "These free courses aim at adults returning to study."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-apply-for",
+    "word": "apply for",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "nộp đơn xin",
+    "definition": "to make a formal request for a job, place or document",
+    "examples": [
+      "You can apply for a student visa online."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-back-up",
+    "word": "back up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "ủng hộ; chứng minh; sao lưu",
+    "definition": "to support a person or claim, or to copy files for safety",
+    "examples": [
+      "Always back up your photos before updating the phone."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-break-down",
+    "word": "break down",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bị hỏng; suy sụp; chia nhỏ",
+    "definition": "to stop working, lose control of emotions, or divide into parts",
+    "examples": [
+      "Old buses often break down on the mountain road."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-break-out",
+    "word": "break out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bùng phát, nổ ra",
+    "definition": "to start suddenly, used for fires, wars and diseases",
+    "examples": [
+      "Fights can break out when the crowd gets angry."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-bring-up",
+    "word": "bring up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "nêu ra; nuôi dạy",
+    "definition": "to mention a subject, or to raise a child",
+    "examples": [
+      "Please bring up any questions at the end of the meeting."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-carry-out",
+    "word": "carry out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tiến hành, thực hiện",
+    "definition": "to do a task, study or plan",
+    "examples": [
+      "The team will carry out a survey next month."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-catch-up-with",
+    "word": "catch up with",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bắt kịp, theo kịp",
+    "definition": "to reach the same level or position as someone",
+    "examples": [
+      "I ran faster to catch up with my sister."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-clear-up",
+    "word": "clear up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "làm rõ; (trời) quang đãng",
+    "definition": "to explain a misunderstanding, or to become fine weather",
+    "examples": [
+      "I hope the sky will clear up before the picnic."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-close-down",
+    "word": "close down",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đóng cửa hẳn",
+    "definition": "to stop doing business permanently",
+    "examples": [
+      "Many small shops close down when a mall opens."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-come-across",
+    "word": "come across",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tình cờ thấy, tình cờ gặp",
+    "definition": "to find or meet by chance",
+    "examples": [
+      "You may come across new words in every article."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-come-up",
+    "word": "come up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "xuất hiện, nảy sinh",
+    "definition": "to happen or appear, often unexpectedly",
+    "examples": [
+      "Call me if any problem should come up."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-come-up-with",
+    "word": "come up with",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "nghĩ ra, đưa ra (ý tưởng)",
+    "definition": "to think of an idea, plan or answer",
+    "examples": [
+      "Can you come up with a name for the club?"
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-count-on",
+    "word": "count on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "trông cậy vào",
+    "definition": "to depend on someone to help",
+    "examples": [
+      "You can always count on your best friend."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-cut-down-on",
+    "word": "cut down on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "cắt giảm, giảm bớt",
+    "definition": "to use or do less of something",
+    "examples": [
+      "Doctors advise us to cut down on salt."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-deal-with",
+    "word": "deal with",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "giải quyết, xử lý",
+    "definition": "to take action to solve a problem or handle a task",
+    "examples": [
+      "The manager will deal with your complaint today."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-end-up",
+    "word": "end up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "rốt cuộc, cuối cùng thì",
+    "definition": "to finally be in a place or situation, often unplanned",
+    "examples": [
+      "If you skip breakfast, you may end up eating snacks all day."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-fall-behind",
+    "word": "fall behind",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tụt lại phía sau",
+    "definition": "to make less progress than others or than planned",
+    "examples": [
+      "If you miss classes, you will fall behind."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-figure-out",
+    "word": "figure out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tìm ra, hiểu ra",
+    "definition": "to understand or solve something after thinking",
+    "examples": [
+      "Let's figure out the fastest way to the station."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-find-out-about",
+    "word": "find out about",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tìm hiểu về",
+    "definition": "to get information about something",
+    "examples": [
+      "Visit the website to find out about scholarships."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-fit-in",
+    "word": "fit in",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "hòa nhập",
+    "definition": "to be accepted by a group",
+    "examples": [
+      "It takes time to fit in at a new school."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-focus-on",
+    "word": "focus on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tập trung vào",
+    "definition": "to give most of your attention to something",
+    "examples": [
+      "Try to focus on one task at a time."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-get-along-with",
+    "word": "get along with",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "hòa thuận với",
+    "definition": "to have a friendly relationship with someone",
+    "examples": [
+      "It is easy to get along with our new neighbours."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-get-around",
+    "word": "get around",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đi lại; lan truyền",
+    "definition": "to travel from place to place, or to spread",
+    "examples": [
+      "It is easy to get around the city by metro."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-get-into",
+    "word": "get into",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bắt đầu thích; vào được (trường)",
+    "definition": "to become interested in, or to be accepted by",
+    "examples": [
+      "My sister wants to get into medical school."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-get-over",
+    "word": "get over",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "vượt qua, hồi phục",
+    "definition": "to recover from an illness, a shock or a sad event",
+    "examples": [
+      "It took weeks to get over the flu."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-give-away",
+    "word": "give away",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "cho không; tiết lộ",
+    "definition": "to give something free, or to reveal a secret",
+    "examples": [
+      "The shop will give away free samples."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-go-ahead",
+    "word": "go ahead",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "cứ làm đi; diễn ra theo kế hoạch",
+    "definition": "to start or continue, or to happen as planned",
+    "examples": [
+      "The concert will go ahead despite the rain."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-go-by",
+    "word": "go by",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "(thời gian) trôi qua",
+    "definition": "to pass, used for time",
+    "examples": [
+      "The summer holidays always go by too fast."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-go-for",
+    "word": "go for",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chọn; cố gắng giành lấy",
+    "definition": "to choose something, or to try to get it",
+    "examples": [
+      "I think I'll go for the chicken soup."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-go-over",
+    "word": "go over",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "xem lại, ôn lại",
+    "definition": "to check or review something carefully",
+    "examples": [
+      "Let's go over the main points before the test."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-go-through",
+    "word": "go through",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "trải qua; xem xét kỹ",
+    "definition": "to experience something difficult, or to examine carefully",
+    "examples": [
+      "Many families go through hard times after a flood."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-hang-on",
+    "word": "hang on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chờ một lát; bám chặt",
+    "definition": "to wait for a short time, or to hold something tightly",
+    "examples": [
+      "Hang on, I need to find my ticket."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-head-for",
+    "word": "head for",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đi về phía",
+    "definition": "to move towards a place",
+    "examples": [
+      "After class we usually head for the canteen."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-keep-away-from",
+    "word": "keep away from",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tránh xa",
+    "definition": "to avoid going near someone or something",
+    "examples": [
+      "Keep away from the edge of the cliff."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-keep-on",
+    "word": "keep on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "cứ tiếp tục",
+    "definition": "to continue doing something, often again and again",
+    "examples": [
+      "If you keep on practising, you will improve."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-keep-up-with",
+    "word": "keep up with",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "theo kịp",
+    "definition": "to stay at the same level or speed as someone or something",
+    "examples": [
+      "It is hard to keep up with all the news."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-knock-down",
+    "word": "knock down",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đánh ngã; phá dỡ",
+    "definition": "to make someone fall, or to destroy a building",
+    "examples": [
+      "The city plans to knock down the old market."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-lead-to",
+    "word": "lead to",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "dẫn đến",
+    "definition": "to cause something to happen as a result",
+    "examples": [
+      "Too little sleep can lead to poor marks."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-leave-behind",
+    "word": "leave behind",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bỏ lại, để quên",
+    "definition": "to leave someone or something in a place",
+    "examples": [
+      "Don't leave behind your umbrella."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-leave-out",
+    "word": "leave out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bỏ sót, không đưa vào",
+    "definition": "to not include someone or something",
+    "examples": [
+      "You can leave out the last question."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-let-down",
+    "word": "let down",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "làm thất vọng",
+    "definition": "to disappoint someone by not doing what they expected",
+    "examples": [
+      "I promise I won't let down the team."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-live-on",
+    "word": "live on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "sống nhờ vào",
+    "definition": "to have a certain amount of money or food to live",
+    "examples": [
+      "It is hard to live on a part-time wage."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-look-forward-to",
+    "word": "look forward to",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "mong chờ",
+    "definition": "to feel happy about something that is going to happen",
+    "examples": [
+      "I look forward to hearing from you."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-look-through",
+    "word": "look through",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "xem lướt qua",
+    "definition": "to read or look at something quickly",
+    "examples": [
+      "Please look through these notes before the class."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-make-up",
+    "word": "make up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chiếm, tạo thành; bịa ra; làm lành",
+    "definition": "to form a whole, to invent a story, or to become friends again",
+    "examples": [
+      "Children make up a third of the town's population."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-mix-up",
+    "word": "mix up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "nhầm lẫn",
+    "definition": "to confuse two people or things",
+    "examples": [
+      "It is easy to mix up affect and effect."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-pass-away",
+    "word": "pass away",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "qua đời (cách nói nhẹ nhàng)",
+    "definition": "a polite way of saying that someone has died",
+    "examples": [
+      "Doctors said the old man could pass away peacefully at home."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-pay-back",
+    "word": "pay back",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "trả lại (tiền)",
+    "definition": "to return money you borrowed",
+    "examples": [
+      "I'll pay back the loan by June."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-pick-out",
+    "word": "pick out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chọn ra; nhận ra",
+    "definition": "to choose one from a group, or to recognise",
+    "examples": [
+      "Help me pick out a gift for Mum."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-point-out",
+    "word": "point out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chỉ ra",
+    "definition": "to tell someone about a fact or a mistake",
+    "examples": [
+      "Teachers often point out small spelling errors."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-pull-out",
+    "word": "pull out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "rút ra; rút lui",
+    "definition": "to take something out, or to stop taking part",
+    "examples": [
+      "Two teams decided to pull out of the league."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-pull-over",
+    "word": "pull over",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tấp xe vào lề",
+    "definition": "to move a vehicle to the side of the road and stop",
+    "examples": [
+      "The police asked the driver to pull over."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-put-off",
+    "word": "put off",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "trì hoãn",
+    "definition": "to delay doing something until later",
+    "examples": [
+      "Never put off a visit to the dentist."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-put-out",
+    "word": "put out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "dập tắt",
+    "definition": "to stop a fire or a light from burning",
+    "examples": [
+      "Use sand to put out a small fire."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-put-together",
+    "word": "put together",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "lắp ráp; tập hợp",
+    "definition": "to build from parts, or to prepare by collecting things",
+    "examples": [
+      "We need to put together a short video for class."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-put-up",
+    "word": "put up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "dựng lên; treo lên; cho ở nhờ",
+    "definition": "to build or fix in place, or to let someone stay",
+    "examples": [
+      "We put up a tent beside the lake."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-rely-on",
+    "word": "rely on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "dựa vào, tin cậy",
+    "definition": "to need or trust someone or something",
+    "examples": [
+      "Farmers rely on regular rain."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-run-into",
+    "word": "run into",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tình cờ gặp; đâm vào",
+    "definition": "to meet someone by chance, or to hit something",
+    "examples": [
+      "I often run into old classmates at the market."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-run-out-of",
+    "word": "run out of",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "hết, cạn",
+    "definition": "to use all of something so that none is left",
+    "examples": [
+      "We might run out of time if we start late."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-set-up",
+    "word": "set up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "thành lập; lắp đặt",
+    "definition": "to start a business or group, or to prepare equipment",
+    "examples": [
+      "They want to set up a small bakery."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-show-off",
+    "word": "show off",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "khoe khoang",
+    "definition": "to behave in a way that tries to impress others",
+    "examples": [
+      "He likes to show off his new car."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-show-up",
+    "word": "show up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "xuất hiện, có mặt",
+    "definition": "to arrive, often late or unexpectedly",
+    "examples": [
+      "Only five students show up on rainy days."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-sort-out",
+    "word": "sort out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "giải quyết; sắp xếp",
+    "definition": "to solve a problem or put things in order",
+    "examples": [
+      "Let's sort out the mess in the kitchen."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-speed-up",
+    "word": "speed up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tăng tốc, đẩy nhanh",
+    "definition": "to become faster, or to make something faster",
+    "examples": [
+      "New machines speed up production."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-stand-for",
+    "word": "stand for",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "là viết tắt của; đại diện cho",
+    "definition": "to be a short form of, or to represent",
+    "examples": [
+      "What does the letter B stand for in BBC?"
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-stand-out",
+    "word": "stand out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "nổi bật",
+    "definition": "to be easy to see or better than others",
+    "examples": [
+      "Bright colours stand out on a white page."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-start-over",
+    "word": "start over",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "làm lại từ đầu",
+    "definition": "to begin again",
+    "examples": [
+      "If you make a mistake, just start over."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-take-after",
+    "word": "take after",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "giống (người lớn trong nhà)",
+    "definition": "to look or behave like an older family member",
+    "examples": [
+      "Many boys take after their fathers."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-take-apart",
+    "word": "take apart",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tháo rời",
+    "definition": "to separate something into its parts",
+    "examples": [
+      "It is fun to take apart an old radio."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-take-back",
+    "word": "take back",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "rút lại (lời); trả lại",
+    "definition": "to admit you were wrong to say something, or to return it",
+    "examples": [
+      "You should take back those unkind words."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-take-down",
+    "word": "take down",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "ghi lại; tháo xuống",
+    "definition": "to write something down, or to remove it from a high place",
+    "examples": [
+      "Take down the phone number before you forget."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-take-up",
+    "word": "take up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bắt đầu (sở thích); chiếm (thời gian, chỗ)",
+    "definition": "to start a new hobby, or to fill time or space",
+    "examples": [
+      "My dad wants to take up yoga."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-think-over",
+    "word": "think over",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "cân nhắc kỹ",
+    "definition": "to consider something carefully",
+    "examples": [
+      "Take a day to think over my suggestion."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-try-out",
+    "word": "try out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "thử nghiệm, dùng thử",
+    "definition": "to test something to see if it works or if you like it",
+    "examples": [
+      "Teachers try out new games in class."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-turn-down",
+    "word": "turn down",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "từ chối; vặn nhỏ",
+    "definition": "to refuse an offer, or to reduce sound or heat",
+    "examples": [
+      "Please turn down the music after ten."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-turn-into",
+    "word": "turn into",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "biến thành",
+    "definition": "to change into something different",
+    "examples": [
+      "Caterpillars turn into butterflies."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-turn-up",
+    "word": "turn up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "xuất hiện; vặn to",
+    "definition": "to arrive, or to increase sound or heat",
+    "examples": [
+      "Guests began to turn up around seven."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-use-up",
+    "word": "use up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "dùng hết",
+    "definition": "to use all of something",
+    "examples": [
+      "Did you use up all the printer ink?"
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-walk-away",
+    "word": "walk away",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bỏ đi",
+    "definition": "to leave a person or situation, often to avoid trouble",
+    "examples": [
+      "Sometimes it is wiser to walk away from an argument."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-wear-out",
+    "word": "wear out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "làm mòn; làm kiệt sức",
+    "definition": "to use something until it is damaged, or to make someone very tired",
+    "examples": [
+      "Long shifts can wear out even strong workers."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-work-on",
+    "word": "work on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "làm; cải thiện",
+    "definition": "to spend time improving or producing something",
+    "examples": [
+      "I need to work on my listening skills."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-work-out",
+    "word": "work out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tập thể dục; tìm ra cách",
+    "definition": "to exercise, or to find the answer to a problem",
+    "examples": [
+      "She likes to work out at the gym after work."
+    ],
+    "level": "B1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-account-for",
+    "word": "account for",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chiếm (tỉ lệ); giải thích lý do",
+    "definition": "to form a part of a total, or to explain why something happened",
+    "examples": [
+      "Online sales account for half of our income."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-add-up",
+    "word": "add up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "hợp lý, nghe có lý; cộng lại",
+    "definition": "to make sense, or to calculate a total",
+    "examples": [
+      "The numbers in his story just don't add up."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-bring-about",
+    "word": "bring about",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "gây ra, mang lại",
+    "definition": "to cause something to happen",
+    "examples": [
+      "Small daily habits can bring about big changes."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-call-for",
+    "word": "call for",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đòi hỏi, cần đến",
+    "definition": "to need or demand something",
+    "examples": [
+      "Cooking for twenty guests will call for careful planning."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-cope-with",
+    "word": "cope with",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đương đầu với, xoay xở với",
+    "definition": "to deal successfully with a difficult situation",
+    "examples": [
+      "New students must cope with a lot of change."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-die-out",
+    "word": "die out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tuyệt chủng, mai một",
+    "definition": "to disappear completely over time",
+    "examples": [
+      "Some old customs may die out in a generation."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-do-without",
+    "word": "do without",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "xoay xở mà không cần",
+    "definition": "to manage without something",
+    "examples": [
+      "Few people can do without a phone these days."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-drop-out-of",
+    "word": "drop out of",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bỏ ngang (khoá học, cuộc thi)",
+    "definition": "to stop taking part in a course, race or activity",
+    "examples": [
+      "He had to drop out of the race with a bad knee."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-fall-apart",
+    "word": "fall apart",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tan vỡ; hỏng rời ra",
+    "definition": "to break into pieces, or to fail completely",
+    "examples": [
+      "Cheap furniture can fall apart in a year."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-get-across",
+    "word": "get across",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "truyền đạt",
+    "definition": "to make someone understand an idea",
+    "examples": [
+      "Pictures help get across complex ideas."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-get-ahead",
+    "word": "get ahead",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tiến bộ, thành công",
+    "definition": "to be successful, especially in work",
+    "examples": [
+      "Good communication skills help you get ahead."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-get-away-with",
+    "word": "get away with",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "làm sai mà không bị phạt",
+    "definition": "to escape punishment for doing something wrong",
+    "examples": [
+      "Nobody should get away with copying homework."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-get-by",
+    "word": "get by",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "xoay xở sống qua ngày",
+    "definition": "to manage with what you have, especially money or skills",
+    "examples": [
+      "Students often get by on very little money."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-give-in",
+    "word": "give in",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "nhượng bộ, chịu thua",
+    "definition": "to finally agree after refusing, or to stop competing",
+    "examples": [
+      "Parents sometimes give in when children cry."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-go-without",
+    "word": "go without",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chịu thiếu, nhịn",
+    "definition": "to live without something you need or want",
+    "examples": [
+      "Some families go without heating in winter."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-grow-out-of",
+    "word": "grow out of",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "lớn rồi nên không còn (thích, vừa)",
+    "definition": "to become too old or too big for something",
+    "examples": [
+      "Kids soon grow out of their school shoes."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-hold-back",
+    "word": "hold back",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "kìm lại; cản trở",
+    "definition": "to stop yourself or someone from doing or showing something",
+    "examples": [
+      "Fear of mistakes can hold back new learners."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-keep-to",
+    "word": "keep to",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tuân thủ, giữ đúng",
+    "definition": "to follow a rule, a plan or a path",
+    "examples": [
+      "Please keep to the path in the national park."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-live-up-to",
+    "word": "live up to",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đáp ứng (kỳ vọng)",
+    "definition": "to be as good as people expected",
+    "examples": [
+      "The film did not live up to the reviews."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-look-into",
+    "word": "look into",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "điều tra, xem xét",
+    "definition": "to examine or investigate a problem",
+    "examples": [
+      "The school will look into the missing books."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-look-up-to",
+    "word": "look up to",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "kính trọng, ngưỡng mộ",
+    "definition": "to admire and respect someone",
+    "examples": [
+      "Younger players look up to the captain."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-make-for",
+    "word": "make for",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đi về phía; góp phần tạo nên",
+    "definition": "to move towards a place, or to help produce a result",
+    "examples": [
+      "When the storm started, we had to make for the nearest shelter."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-make-out",
+    "word": "make out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "nhìn rõ, nghe rõ, hiểu được",
+    "definition": "to see, hear or understand something with difficulty",
+    "examples": [
+      "I could just make out the words on the old sign."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-make-up-for",
+    "word": "make up for",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bù đắp",
+    "definition": "to do something good to correct a bad situation",
+    "examples": [
+      "Extra lessons can make up for the missed week."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-open-up",
+    "word": "open up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "mở lòng; mở ra (cơ hội)",
+    "definition": "to talk about your feelings, or to create opportunities",
+    "examples": [
+      "Learning English can open up new job chances."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-pass-on",
+    "word": "pass on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "truyền lại; chuyển lời",
+    "definition": "to give something to another person, often knowledge or a message",
+    "examples": [
+      "Grandparents pass on old stories to the children."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-put-aside",
+    "word": "put aside",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "để dành; gác lại",
+    "definition": "to save money or time, or to ignore something for now",
+    "examples": [
+      "Try to put aside ten percent of your salary."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-put-up-with",
+    "word": "put up with",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chịu đựng",
+    "definition": "to accept something unpleasant without complaining",
+    "examples": [
+      "I can't put up with this noise much longer."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-see-off",
+    "word": "see off",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tiễn",
+    "definition": "to go to a station or airport to say goodbye",
+    "examples": [
+      "The whole family came to see off my brother."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-set-aside",
+    "word": "set aside",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "dành riêng ra",
+    "definition": "to keep time or money for a particular purpose",
+    "examples": [
+      "Set aside an hour each day for reading."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-settle-down",
+    "word": "settle down",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "ổn định (cuộc sống); bình tĩnh lại",
+    "definition": "to start a calm life in one place, or to become calm",
+    "examples": [
+      "After years of travel, they want to settle down."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-split-up",
+    "word": "split up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "chia tay; tách ra",
+    "definition": "to end a relationship, or to divide into groups",
+    "examples": [
+      "Let's split up into groups of four."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-stick-to",
+    "word": "stick to",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bám sát, giữ đúng",
+    "definition": "to continue doing or using something without changing it",
+    "examples": [
+      "Stick to the plan and you will finish on time."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-sum-up",
+    "word": "sum up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tóm tắt",
+    "definition": "to give the main points briefly",
+    "examples": [
+      "Can you sum up the story in one sentence?"
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-take-in",
+    "word": "take in",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tiếp thu; đánh lừa",
+    "definition": "to understand and remember, or to deceive",
+    "examples": [
+      "There was too much data to take in at once."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-take-on",
+    "word": "take on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đảm nhận; tuyển dụng",
+    "definition": "to accept work or responsibility, or to employ someone",
+    "examples": [
+      "I can't take on any more projects this month."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-take-over",
+    "word": "take over",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tiếp quản",
+    "definition": "to take control of something",
+    "examples": [
+      "A new coach will take over the team in June."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-talk-over",
+    "word": "talk over",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "bàn bạc kỹ",
+    "definition": "to discuss something carefully before deciding",
+    "examples": [
+      "We should talk over the offer as a family."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-tear-down",
+    "word": "tear down",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "phá bỏ",
+    "definition": "to destroy a building or structure",
+    "examples": [
+      "They will tear down the bridge and build a new one."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-tell-apart",
+    "word": "tell apart",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "phân biệt",
+    "definition": "to see the difference between similar things",
+    "examples": [
+      "The two flowers are hard to tell apart."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-think-ahead",
+    "word": "think ahead",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tính trước, nghĩ xa",
+    "definition": "to plan for what may happen in the future",
+    "examples": [
+      "Good drivers think ahead and leave space."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-turn-out",
+    "word": "turn out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "hóa ra; có mặt",
+    "definition": "to happen in an unexpected way, or to come to an event",
+    "examples": [
+      "The test may turn out easier than you think."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-wrap-up",
+    "word": "wrap up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "kết thúc; mặc ấm",
+    "definition": "to finish an activity, or to dress in warm clothes",
+    "examples": [
+      "Let's wrap up the meeting by five."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-write-up",
+    "word": "write up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "viết hoàn chỉnh (báo cáo)",
+    "definition": "to write a complete version from notes",
+    "examples": [
+      "We have to write up the lab results by Monday."
+    ],
+    "level": "B2",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-follow-up-on",
+    "word": "follow up on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "theo dõi tiếp, xử lý tiếp",
+    "definition": "to take further action on something",
+    "examples": [
+      "I will follow up on your email tomorrow."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-go-against",
+    "word": "go against",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đi ngược lại",
+    "definition": "to be opposite to a rule, belief or wish",
+    "examples": [
+      "Cheating would go against everything I believe."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-jump-into",
+    "word": "jump into",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "lao vào làm ngay",
+    "definition": "to start doing something quickly and eagerly",
+    "examples": [
+      "Don't jump into a decision without the facts."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-lay-off",
+    "word": "lay off",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "sa thải (vì thiếu việc)",
+    "definition": "to stop employing workers because there is not enough work",
+    "examples": [
+      "The factory had to lay off fifty workers."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-leave-off",
+    "word": "leave off",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "dừng lại (ở chỗ nào đó)",
+    "definition": "to stop at a point in an activity",
+    "examples": [
+      "We will continue tomorrow from where we leave off today."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-make-over",
+    "word": "make over",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "sửa sang, làm mới",
+    "definition": "to change something to make it look better",
+    "examples": [
+      "The students helped make over the old library."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-pick-up-on",
+    "word": "pick up on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "nhận ra, để ý thấy",
+    "definition": "to notice something that is not obvious",
+    "examples": [
+      "Good teachers pick up on small signs of stress."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-pull-off",
+    "word": "pull off",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "làm được (việc khó)",
+    "definition": "to succeed in doing something difficult",
+    "examples": [
+      "Few people thought they could pull off the rescue."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-rule-out",
+    "word": "rule out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "loại trừ",
+    "definition": "to decide that something is not possible",
+    "examples": [
+      "The police cannot rule out an accident."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-see-through",
+    "word": "see through",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "nhìn thấu (mánh khóe)",
+    "definition": "to understand that someone is trying to deceive you",
+    "examples": [
+      "Most customers can see through fake reviews."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-touch-on",
+    "word": "touch on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "đề cập qua",
+    "definition": "to mention a subject briefly",
+    "examples": [
+      "The lecture will only touch on climate policy."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-track-down",
+    "word": "track down",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "lần ra, truy tìm",
+    "definition": "to find someone or something after searching",
+    "examples": [
+      "Journalists tried to track down the source."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-wind-up",
+    "word": "wind up",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "rốt cuộc; kết thúc",
+    "definition": "to end up in a situation, or to bring something to an end",
+    "examples": [
+      "You might wind up paying more if you wait."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-wipe-out",
+    "word": "wipe out",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "xóa sổ, quét sạch",
+    "definition": "to destroy something completely",
+    "examples": [
+      "A single storm could wipe out the harvest."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  },
+  {
+    "id": "v-pv-zoom-in-on",
+    "word": "zoom in on",
+    "ipa": "",
+    "pos": "phrasal verb",
+    "meaning": "tập trung vào; phóng to",
+    "definition": "to focus closely on one detail or part",
+    "examples": [
+      "The report will zoom in on youth unemployment."
+    ],
+    "level": "C1",
+    "topic": "Exam: Phrasal verbs"
+  }
+]

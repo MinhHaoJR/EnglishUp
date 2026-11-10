@@ -273,6 +273,7 @@ export const topics = [
   'Exam: Evidence and research',
   'Exam: Society and policy',
   'Exam: Language and nuance',
+  'Exam: Phrasal verbs',
 ];
 export const topicVi: Record<string, string> = {
   'Daily life': 'Đời sống',
@@ -324,4 +325,5 @@ export const topicVi: Record<string, string> = {
   'Exam: Evidence and research': 'Ôn thi: Bằng chứng và nghiên cứu',
   'Exam: Society and policy': 'Ôn thi: Xã hội và chính sách',
   'Exam: Language and nuance': 'Ôn thi: Sắc thái ngôn ngữ',
+  'Exam: Phrasal verbs': 'Ôn thi: Cụm động từ',
 };

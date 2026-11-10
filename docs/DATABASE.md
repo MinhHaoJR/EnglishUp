@@ -254,7 +254,7 @@ Quản trị viên là tài khoản thuộc vai trò `Admin` (bảng có sẵn c
 
 ### `ContentItems` — Đã có (`AddContentItems`, `ContentInDatabase`)
 
-Toàn bộ bài học tiếng Anh (2.456 mục khi khởi tạo, gồm 133 câu hỏi ngữ pháp và 5 lộ trình). App, Đua 60 giây và trợ giảng AI đều đọc từ bảng này; `src/data/*.json` chỉ còn là dữ liệu khởi tạo cho lệnh `seed` và cho test. `GET /api/content` công khai, có ETag; client kiểm tra từng dòng bằng chính schema Zod của app, bỏ qua dòng sai và lưu một bản sao trong Dexie để học offline.
+Toàn bộ bài học tiếng Anh (2.656 mục khi khởi tạo, gồm 2.280 từ vựng, 133 câu hỏi ngữ pháp và 5 lộ trình). App, Đua 60 giây và trợ giảng AI đều đọc từ bảng này; `src/data/*.json` chỉ còn là dữ liệu khởi tạo cho lệnh `seed` và cho test. `GET /api/content` công khai, có ETag; client kiểm tra từng dòng bằng chính schema Zod của app, bỏ qua dòng sai và lưu một bản sao trong Dexie để học offline.
 
 | Cột         | Kiểu         | Ràng buộc | Ghi chú                                                                                                                                                      |
 | ----------- | ------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |

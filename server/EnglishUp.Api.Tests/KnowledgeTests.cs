@@ -60,7 +60,7 @@ public class KnowledgeTests(ApiFactory factory) : IClassFixture<ApiFactory>
     {
         var chunks = Knowledge.BuildChunks(EnglishUp.Api.Content.ReadSeed(Content));
         var counts = chunks.GroupBy(c => c.SourceType).ToDictionary(g => g.Key, g => g.Count());
-        Assert.Equal(2080, counts["word"]);
+        Assert.Equal(2280, counts["word"]);
         Assert.Equal(6, counts["reading"]);
         Assert.Equal(6, counts["listening"]);
         Assert.Equal(10, counts["writing"]);

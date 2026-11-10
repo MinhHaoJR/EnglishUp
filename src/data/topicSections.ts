@@ -74,6 +74,7 @@ export const topicSections = [
       'Exam: Evidence and research',
       'Exam: Society and policy',
       'Exam: Language and nuance',
+      'Exam: Phrasal verbs',
     ],
   },
 ] as const;
