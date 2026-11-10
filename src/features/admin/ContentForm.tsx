@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import type { ZodIssue } from 'zod';
 import { useBi, topicVi } from '../../i18n';
 import SkillIcon from '../../components/SkillIcon';
 import { levelSchema, structureGroups, type StructureGroup } from '../../data/schema';
@@ -27,6 +28,8 @@ type Field = {
   template?: (item: Value, count: number) => Value;
   /** Rows a new item starts with (the schema's minimum). */
   min?: number;
+  /** What one row is called in legends and messages ("Câu hỏi 3"). */
+  item?: Label;
   wide?: boolean;
   /** May stay empty (the IPA of a word); every other text must be filled, as the server requires. */
   optional?: boolean;
@@ -61,6 +64,7 @@ const questions = (min: number): Field => ({
   label: [`Câu hỏi (ít nhất ${min})`, `Questions (at least ${min})`],
   type: 'rows',
   min,
+  item: ['Câu hỏi', 'Question'],
   template: (item, count) => ({
     id: `${String(item.id)}q${count + 1}`,
     type: 'choice',
@@ -181,6 +185,7 @@ const specs: Record<ContentKind, Field[]> = {
       label: ['Lời thoại', 'Dialogue lines'],
       type: 'rows',
       min: 2,
+      item: ['Dòng thoại', 'Line'],
       template: () => ({ speaker: '', text: '' }),
       fields: [
         { key: 'speaker', label: ['Người nói', 'Speaker'], type: 'text' },
@@ -351,24 +356,194 @@ export function blankItem(kind: ContentKind, id: string): Item {
   return fill(specs[kind], item, item) as Item;
 }
 
-/** Labels of the texts left empty (each line of a list counts), with row numbers for repeated rows. */
-function missing(fields: Field[], value: Value, prefix: Label = ['', '']): Label[] {
+type Path = (string | number)[];
+const keyOf = (path: Path) => path.join('.');
+/** A label without its typing hint: "Tiêu chí tự kiểm tra (mỗi dòng một…)" → "Tiêu chí tự kiểm tra". */
+const plain = (label: Label): Label => [
+  label[0].replace(/\s*\(.*\)$/, ''),
+  label[1].replace(/\s*\(.*\)$/, ''),
+];
+
+/** The field at a path and how to name it, e.g. "Câu hỏi 3 › Đáp án chấp nhận" (rows count from 1). */
+function fieldAt(fields: Field[], path: Path): { field: Field; name: Label } | null {
+  for (const field of fields) {
+    const own = pathOf(field.key);
+    if (!own.every((part, i) => path[i] === part)) continue;
+    const rest = path.slice(own.length);
+    if (field.type === 'rows' && typeof rest[0] === 'number') {
+      const n = rest[0] + 1;
+      const row: Label = [`${field.item![0]} ${n}`, `${field.item![1]} ${n}`];
+      const inner = rest.length > 1 ? fieldAt(field.fields!, rest.slice(1)) : null;
+      return inner
+        ? {
+            field: inner.field,
+            name: [`${row[0]} › ${inner.name[0]}`, `${row[1]} › ${inner.name[1]}`],
+          }
+        : { field, name: row };
+    }
+    return { field, name: plain(field.label) };
+  }
+  return null;
+}
+
+const notFilled: Label = ['chưa điền', 'not filled'];
+/** Required texts left empty, in form order; a list with some text but an empty line says so. */
+function missing(fields: Field[], value: Value, prefix: Path = []): { path: Path; text: Label }[] {
   const blank = (text: unknown) => typeof text !== 'string' || text.trim() === '';
   return fields
     .filter((f) => !f.optional && (!f.showIf || f.showIf(value)))
-    .flatMap((f): Label[] => {
-      const current = getAt(value, pathOf(f.key));
-      const name: Label = [prefix[0] + f.label[0], prefix[1] + f.label[1]];
+    .flatMap((f) => {
+      const own = pathOf(f.key);
+      const path = [...prefix, ...own];
+      const current = getAt(value, own);
       if (f.type === 'rows')
         return (Array.isArray(current) ? (current as Value[]) : []).flatMap((row, i) =>
-          missing(f.fields!, row, [`${name[0]} ${i + 1} › `, `${name[1]} ${i + 1} › `]),
+          missing(f.fields!, row, [...path, i]),
         );
-      if (f.type === 'list')
-        return !Array.isArray(current) || !current.length || current.some(blank) ? [name] : [];
-      if (f.type === 'number') return typeof current === 'number' ? [] : [name];
-      return blank(current) ? [name] : [];
+      if (f.type === 'list') {
+        const lines = Array.isArray(current) ? current : [];
+        if (lines.every(blank)) return [{ path, text: notFilled }];
+        return lines.some(blank)
+          ? [
+              {
+                path,
+                text: ['còn dòng trống, hãy xoá dòng đó', 'has an empty line; remove it'] as Label,
+              },
+            ]
+          : [];
+      }
+      if (f.type === 'number')
+        return typeof current === 'number' ? [] : [{ path, text: notFilled }];
+      return blank(current) ? [{ path, text: notFilled }] : [];
     });
 }
+
+/** The app's own rules (schema refinements), said in the form's words. */
+const ruleText: Record<string, Label> = {
+  'Invalid word range': [
+    'Số từ tối đa phải lớn hơn hoặc bằng số từ tối thiểu',
+    'The maximum must be at least the minimum number of words',
+  ],
+  'Choice questions need at least two options containing every accepted answer': [
+    'câu trắc nghiệm cần ít nhất 2 lựa chọn, và mỗi đáp án phải trùng với một lựa chọn',
+    'a multiple-choice question needs at least 2 options, and every answer must be one of them',
+  ],
+  'Invalid True/False/Not Given answer': [
+    'đáp án dạng Đúng/Sai chỉ được là True, False hoặc Not Given',
+    'answers must be True, False or Not Given',
+  ],
+  'The key must appear exactly once in the example': [
+    'Phần được che phải xuất hiện đúng một lần trong câu ví dụ',
+    'The blanked part must appear exactly once in the example',
+  ],
+  'Wrong options must differ from each other and from the key': [
+    'Hai đáp án sai phải khác nhau và khác phần được che',
+    'The two wrong answers must differ from each other and from the blanked part',
+  ],
+  'Headword, synonym and antonym must differ': [
+    'Từ chính, từ đồng nghĩa và từ trái nghĩa phải khác nhau',
+    'The headword, synonym and antonym must differ',
+  ],
+  'Relation ID level does not match the lesson': [
+    'Mã mục không khớp với trình độ',
+    'The id does not match the level',
+  ],
+};
+
+/** A schema issue as a short phrase after the field name. */
+function explain(issue: ZodIssue, field: Field | undefined): Label {
+  const unit: Label = field?.type === 'rows' ? ['mục', 'items'] : ['dòng', 'lines'];
+  switch (issue.code) {
+    case 'invalid_type':
+      if (issue.received === 'undefined' || issue.received === 'null') return notFilled;
+      return issue.expected === 'number'
+        ? ['phải là một số', 'must be a number']
+        : ['sai kiểu dữ liệu', 'has the wrong type'];
+    case 'too_small': {
+      const n = Number(issue.minimum);
+      if (issue.type === 'array')
+        return issue.exact
+          ? [`cần đúng ${n} ${unit[0]}`, `needs exactly ${n} ${unit[1]}`]
+          : [`cần ít nhất ${n} ${unit[0]}`, `needs at least ${n} ${unit[1]}`];
+      if (issue.type === 'number')
+        return issue.inclusive
+          ? [`phải từ ${n} trở lên`, `must be ${n} or more`]
+          : [`phải lớn hơn ${n}`, `must be more than ${n}`];
+      return notFilled;
+    }
+    case 'too_big': {
+      const n = Number(issue.maximum);
+      if (issue.type === 'array')
+        return issue.exact
+          ? [`cần đúng ${n} ${unit[0]}`, `needs exactly ${n} ${unit[1]}`]
+          : [`tối đa ${n} ${unit[0]}`, `at most ${n} ${unit[1]}`];
+      return [`tối đa ${n}`, `at most ${n}`];
+    }
+    case 'invalid_enum_value':
+      return ['hãy chọn một giá trị trong danh sách', 'choose one of the listed values'];
+    case 'invalid_string':
+      return ['sai định dạng', 'has the wrong format'];
+    default:
+      return ruleText[issue.message] ?? [issue.message, issue.message];
+  }
+}
+
+/**
+ * One line per problem, in form order: empty fields and the schema's issues on other fields.
+ * A count rule ("at least 3 lines") replaces "not filled" for the same list, being the more useful of the two.
+ */
+function problems(
+  kind: ContentKind,
+  draft: Value,
+  issues: ZodIssue[],
+): { name: Label | null; text: Label }[] {
+  const fields = specs[kind];
+  const found = new Map<string, { path: Path; text: Label }>();
+  for (const m of missing(fields, draft)) found.set(keyOf(m.path), m);
+  const empty = [...found.keys()];
+  for (const issue of issues) {
+    const key = keyOf(issue.path);
+    const count =
+      (issue.code === 'too_small' || issue.code === 'too_big') && issue.type === 'array';
+    // Skip issues on an empty field, inside one, or on a row (a question) that still has empty fields.
+    const covered = empty.some(
+      (e) => key === e || key.startsWith(`${e}.`) || (key !== '' && e.startsWith(`${key}.`)),
+    );
+    if ((covered && !(count && found.has(key))) || (found.has(key) && !count)) continue;
+    found.set(key, { path: issue.path, text: explain(issue, fieldAt(fields, issue.path)?.field) });
+  }
+  // Form order: by top-level field, then by row (question 2 before question 3), then by field in the row.
+  const flat = (list: Field[]): Field[] => list.flatMap((f) => [f, ...flat(f.fields ?? [])]);
+  const order = flat(fields);
+  const top = (path: Path) => {
+    const at = fields.findIndex((f) => pathOf(f.key).every((part, i) => path[i] === part));
+    return at < 0 ? fields.length : at;
+  };
+  const inner = (path: Path) => {
+    const field = path.length ? fieldAt(fields, path)?.field : undefined;
+    return field ? order.indexOf(field) : order.length;
+  };
+  const row = (path: Path) => Number(path.find((part) => typeof part === 'number') ?? -1);
+  return [...found.values()]
+    .sort(
+      (a, b) =>
+        top(a.path) - top(b.path) || row(a.path) - row(b.path) || inner(a.path) - inner(b.path),
+    )
+    .map((p) => ({
+      name: p.path.length ? (fieldAt(fields, p.path)?.name ?? null) : null,
+      text: p.text,
+    }));
+}
+
+/** New synonym entries need the id the schema expects: rel-<level>-<headword>. */
+const relationId = (item: Value) =>
+  `rel-${String(item.level ?? '').toLowerCase()}-${
+    String(item.word ?? '')
+      .toLowerCase()
+      .normalize('NFKD')
+      .replace(/[^a-z]+/g, '-')
+      .replace(/^-+|-+$/g, '') || 'new'
+  }`;
 
 /** The fields of one value (an item, a question or a dialogue line), rendered from the spec. */
 function Fields({
@@ -400,7 +575,9 @@ function Fields({
                 <legend>{name}</legend>
                 {rows.map((row, index) => (
                   <fieldset key={index} className="content-row">
-                    <legend>{bi(`Mục ${index + 1}`, `Item ${index + 1}`)}</legend>
+                    <legend>
+                      {bi(`${f.item![0]} ${index + 1}`, `${f.item![1]} ${index + 1}`)}
+                    </legend>
                     <Fields
                       fields={f.fields!}
                       value={row}
@@ -412,7 +589,10 @@ function Fields({
                       className="danger-outline"
                       onClick={() => set(rows.filter((_, i) => i !== index))}
                     >
-                      {bi(`Bỏ mục ${index + 1}`, `Remove item ${index + 1}`)}
+                      {bi(
+                        `Bỏ ${f.item![0].toLowerCase()} ${index + 1}`,
+                        `Remove ${f.item![1].toLowerCase()} ${index + 1}`,
+                      )}
                     </button>
                   </fieldset>
                 ))}
@@ -420,7 +600,7 @@ function Fields({
                   type="button"
                   onClick={() => set([...rows, f.template!(item, rows.length)])}
                 >
-                  + {bi('Thêm mục', 'Add item')}
+                  + {bi(`Thêm ${f.item![0].toLowerCase()}`, `Add ${f.item![1].toLowerCase()}`)}
                 </button>
               </fieldset>
             );
@@ -476,29 +656,35 @@ export default function ContentForm({
   kind,
   initial,
   isNew,
+  taken,
   onSave,
   onCancel,
 }: {
   kind: ContentKind;
   initial: Item;
   isNew: boolean;
+  /** Ids already in the library; a new item must not reuse one, or saving would replace it. */
+  taken: Set<string>;
   onSave: (item: Item) => void;
   onCancel: () => void;
 }) {
   const bi = useBi();
-  const [draft, setDraft] = useState<Value>(initial);
+  const named = (item: Value) =>
+    isNew && kind === 'relation' ? { ...item, id: relationId(item) } : item;
+  const [draft, setDraft] = useState<Value>(() => named(initial));
+  const update = (next: Value) => setDraft(named(next));
   const check = contentKinds[kind].schema.safeParse(draft);
-  const empty = missing(specs[kind], draft).map((name) =>
-    bi(`Chưa điền: ${name[0]}`, `Not filled: ${name[1]}`),
+  const issues = problems(kind, draft, check.success ? [] : check.error.issues).map(
+    ({ name, text }) =>
+      name ? bi(`${name[0]}: ${text[0]}`, `${name[1]}: ${text[1]}`) : bi(text[0], text[1]),
   );
-  const issues = [
-    ...empty,
-    ...(check.success
-      ? []
-      : check.error.issues.map(
-          (i) => `${i.path.join('.') || bi('(toàn mục)', '(item)')}: ${i.message}`,
-        )),
-  ];
+  if (isNew && taken.has(String(draft.id)))
+    issues.unshift(
+      bi(
+        `Mã ${String(draft.id)} đã có trong thư viện; hãy đổi từ chính hoặc trình độ`,
+        `The id ${String(draft.id)} is already in the library; change the headword or level`,
+      ),
+    );
 
   return (
     <form
@@ -510,9 +696,9 @@ export default function ContentForm({
     >
       <h3>
         {isNew ? bi('Thêm mục mới', 'New item') : bi('Sửa mục', 'Edit item')}{' '}
-        <code>{initial.id}</code>
+        <code>{String(draft.id)}</code>
       </h3>
-      <Fields fields={specs[kind]} value={draft} item={draft} onChange={setDraft} />
+      <Fields fields={specs[kind]} value={draft} item={draft} onChange={update} />
       <div id="content-issues" aria-live="polite">
         {issues.length ? (
           <ul className="content-issues">

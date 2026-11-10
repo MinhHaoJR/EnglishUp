@@ -152,14 +152,55 @@ describe('content manager', () => {
     expect(within(form).queryByText(/JSON/)).not.toBeInTheDocument();
     expect(within(form).getByLabelText('Bài đọc')).toBeInTheDocument();
     expect(within(form).getAllByLabelText('Câu hỏi')).toHaveLength(5);
-    expect(within(form).getByText('Chưa điền: Tiêu đề')).toBeInTheDocument();
+    expect(within(form).getByText('Tiêu đề: chưa điền')).toBeInTheDocument();
+    // The multiple-choice rule waits until the question's options are filled in.
+    expect(within(form).queryByText(/trắc nghiệm cần/)).not.toBeInTheDocument();
+    expect(within(form).queryByText(/Expected|Required|Array must/)).not.toBeInTheDocument();
     expect(within(form).getByRole('button', { name: 'Lưu vào cơ sở dữ liệu' })).toBeDisabled();
 
     // A sixth question can be added and removed again; a reading needs exactly five.
-    await userEvent.click(within(form).getByRole('button', { name: '+ Thêm mục' }));
+    await userEvent.click(within(form).getByRole('button', { name: '+ Thêm câu hỏi' }));
     expect(within(form).getAllByLabelText('Câu hỏi')).toHaveLength(6);
-    await userEvent.click(within(form).getByRole('button', { name: 'Bỏ mục 6' }));
+    await userEvent.click(within(form).getByRole('button', { name: 'Bỏ câu hỏi 6' }));
     expect(within(form).getAllByLabelText('Câu hỏi')).toHaveLength(5);
+  });
+
+  it('names each problem once, in Vietnamese, by its field', async () => {
+    show();
+    await userEvent.click(await screen.findByRole('tab', { name: /Luyện viết/ }));
+    await userEvent.click(screen.getByRole('button', { name: '+ Thêm luyện viết' }));
+    const form = screen.getByRole('heading', { name: /Thêm mục mới/ }).closest('form')!;
+    await userEvent.type(within(form).getByLabelText('Tiêu đề'), 'A note to a friend');
+    await userEvent.type(
+      within(form).getByLabelText('Đề bài'),
+      'Write to a friend about your weekend.',
+    );
+    await userEvent.type(within(form).getByLabelText('Số từ tối đa'), '0');
+    await userEvent.type(
+      within(form).getByLabelText(/^Tiêu chí tự kiểm tra/),
+      'Greet your friend{enter}Say one plan',
+    );
+    const lines = within(form)
+      .getAllByRole('listitem')
+      .map((li) => li.textContent);
+    expect(lines).toEqual([
+      'Số từ tối thiểu: chưa điền',
+      'Số từ tối đa: phải lớn hơn 0',
+      'Tiêu chí tự kiểm tra: cần ít nhất 3 dòng',
+    ]);
+  });
+
+  it('names a new synonym entry from its level and headword, and refuses an id in use', async () => {
+    show();
+    await userEvent.click(await screen.findByRole('tab', { name: /Đồng nghĩa/ }));
+    await userEvent.click(screen.getByRole('button', { name: /^\+ Thêm/ }));
+    const form = screen.getByRole('heading', { name: /Thêm mục mới/ }).closest('form')!;
+    await userEvent.type(within(form).getByLabelText('Từ chính'), 'big');
+    expect(within(form).getByRole('heading', { name: /rel-a1-big/ })).toBeInTheDocument();
+    expect(within(form).getByText(/Mã rel-a1-big đã có trong thư viện/)).toBeInTheDocument();
+    await userEvent.selectOptions(within(form).getByLabelText('Trình độ'), 'B2');
+    expect(within(form).getByRole('heading', { name: /rel-b2-big/ })).toBeInTheDocument();
+    expect(within(form).queryByText(/đã có trong thư viện/)).not.toBeInTheDocument();
   });
 
   it('edits an existing lesson in its form and saves the change', async () => {

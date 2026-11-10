@@ -347,6 +347,7 @@ export default function ContentManager() {
           kind={kind}
           initial={editing.item}
           isNew={editing.isNew}
+          taken={new Set(all.map((e) => e.id))}
           onCancel={() => setEditing(null)}
           onSave={(item) =>
             void run(
