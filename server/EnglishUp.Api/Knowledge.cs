@@ -81,35 +81,91 @@ public static class Knowledge
     private record ContentPattern(string Id, string Formula, string Meaning, string Example, string Key,
         string[] Options, string Translation);
 
-    /// <summary>One chunk per word, reading, listening script, writing task and sentence pattern; each stays well under 300 words.</summary>
-    public static List<ChunkSource> BuildChunks(string folder)
-    {
-        var options = new JsonSerializerOptions(JsonSerializerDefaults.Web);
-        List<T> Read<T>(string file) =>
-            JsonSerializer.Deserialize<List<T>>(File.ReadAllText(Path.Combine(folder, file)), options)!;
+    /// <summary>The bundled learning content shipped next to the API (linked from src/data).</summary>
+    public static readonly string Folder = Path.Combine(AppContext.BaseDirectory, "Content");
 
-        var words = Read<ContentWord>("vocabulary.json").Concat(Read<ContentWord>("vocabulary-it.json"))
-            .Select(w => new ChunkSource("word", w.Id, w.Word,
-                $"{w.Word} ({w.Pos}, level {w.Level}, topic {w.Topic}){(w.Ipa == "" ? "" : $" {w.Ipa}")}\n" +
-                $"Vietnamese meaning: {w.Meaning}\nDefinition: {w.Definition}\nExamples: {string.Join(" ", w.Examples)}"));
-        var readings = Read<ContentReading>("reading.json")
-            .Select(r => new ChunkSource("reading", r.Id, r.Title, $"Reading lesson ({r.Level}, {r.Topic}).\n{r.Text}"));
-        var listenings = Read<ContentListening>("listening.json")
-            .Select(l => new ChunkSource("listening", l.Id, l.Title,
-                $"Listening script ({l.Level}, {l.Topic}).\n" + string.Join("\n", l.Lines.Select(x => $"{x.Speaker}: {x.Text}"))));
-        var writing = Read<ContentWriting>("writing.json")
-            .Select(w => new ChunkSource("writing", w.Id, w.Title,
-                $"Writing task: {w.Genre}, {w.Level}, {w.Topic}, {w.MinWords}-{w.MaxWords} words.\n{w.Prompt}\n" +
-                $"Checklist: {string.Join(" ", w.Checklist)}"));
-        // The quiz's wrong forms are named as such, so questions like "enjoy + to-V?" find the pattern.
-        var patterns = Read<ContentPattern>("structures.json")
-            .Select(p => new ChunkSource("grammar", p.Id, p.Formula,
-                $"Sentence pattern: {p.Formula}\nVietnamese meaning: {p.Meaning}\n" +
-                $"Example: {p.Example} (the pattern in use: \"{p.Key}\")\nVietnamese translation: {p.Translation}\n" +
-                $"Wrong forms learners often use: {string.Join("; ", p.Options)}"));
+    /// <summary>Content kinds the assistant knows, with their chunk source type; dictation and speaking are not taught content.</summary>
+    public static readonly Dictionary<string, string> SourceTypes = new()
+    {
+        ["reading"] = "reading", ["listening"] = "listening", ["writing"] = "writing", ["structure"] = "grammar", ["word"] = "word",
+    };
+
+    private static readonly Dictionary<string, string[]> Files = new()
+    {
+        ["reading"] = ["reading.json"], ["listening"] = ["listening.json"], ["writing"] = ["writing.json"],
+        ["structure"] = ["structures.json"], ["word"] = ["vocabulary.json", "vocabulary-it.json"],
+    };
+
+    private static readonly JsonSerializerOptions Web = new(JsonSerializerDefaults.Web);
+
+    /// <summary>
+    /// One chunk per word, reading, listening script, writing task and sentence pattern; each stays well under 300 words.
+    /// Admin rows (<see cref="ContentItem"/>) sit on top of the bundled files, as in the app: same id replaces, hidden removes.
+    /// </summary>
+    public static List<ChunkSource> BuildChunks(string folder, IEnumerable<ContentItem>? overlay = null)
+    {
+        var rows = overlay?.ToList() ?? [];
         // Lessons first: with 1,000 free embeddings a day, a first ingest spans several days.
-        return [.. readings, .. listenings, .. writing, .. patterns, .. words];
+        return Files.SelectMany(kind =>
+        {
+            var items = new List<(string Id, JsonElement Item)>();
+            foreach (var file in kind.Value)
+                items.AddRange(JsonSerializer.Deserialize<List<JsonElement>>(File.ReadAllText(Path.Combine(folder, file)))!
+                    .Select(e => (e.GetProperty("id").GetString()!, e)));
+            foreach (var row in rows.Where(r => r.Kind == kind.Key))
+            {
+                var at = items.FindIndex(i => i.Id == row.Id);
+                if (row.Hidden || row.Json is null)
+                {
+                    if (row.Hidden && at >= 0) items.RemoveAt(at);
+                    continue;
+                }
+                var item = (row.Id, JsonDocument.Parse(row.Json).RootElement.Clone());
+                if (at >= 0) items[at] = item;
+                else items.Add(item);
+            }
+            return items.Select(i => ToChunk(kind.Key, i.Item)).OfType<ChunkSource>();
+        }).ToList();
     }
+
+    /// <summary>The chunk for one item, or null when an admin row lacks what the text needs (the app skips it too).</summary>
+    public static ChunkSource? ToChunk(string kind, JsonElement item)
+    {
+        try
+        {
+            return kind switch
+            {
+                "word" => Word(item.Deserialize<ContentWord>(Web)!),
+                "reading" => item.Deserialize<ContentReading>(Web) is { } r
+                    ? new ChunkSource("reading", r.Id, r.Title, $"Reading lesson ({r.Level}, {r.Topic}).\n{r.Text}") : null,
+                "listening" => item.Deserialize<ContentListening>(Web) is { } l
+                    ? new ChunkSource("listening", l.Id, l.Title,
+                        $"Listening script ({l.Level}, {l.Topic}).\n" + string.Join("\n", l.Lines.Select(x => $"{x.Speaker}: {x.Text}")))
+                    : null,
+                "writing" => item.Deserialize<ContentWriting>(Web) is { } w
+                    ? new ChunkSource("writing", w.Id, w.Title,
+                        $"Writing task: {w.Genre}, {w.Level}, {w.Topic}, {w.MinWords}-{w.MaxWords} words.\n{w.Prompt}\n" +
+                        $"Checklist: {string.Join(" ", w.Checklist)}")
+                    : null,
+                // The quiz's wrong forms are named as such, so questions like "enjoy + to-V?" find the pattern.
+                "structure" => item.Deserialize<ContentPattern>(Web) is { } p
+                    ? new ChunkSource("grammar", p.Id, p.Formula,
+                        $"Sentence pattern: {p.Formula}\nVietnamese meaning: {p.Meaning}\n" +
+                        $"Example: {p.Example} (the pattern in use: \"{p.Key}\")\nVietnamese translation: {p.Translation}\n" +
+                        $"Wrong forms learners often use: {string.Join("; ", p.Options)}")
+                    : null,
+                _ => null,
+            } is { SourceId: not null and not "", Title: not null and not "" } chunk ? chunk : null;
+        }
+        catch (Exception e) when (e is JsonException or ArgumentNullException or NullReferenceException)
+        {
+            return null;
+        }
+    }
+
+    private static ChunkSource Word(ContentWord w) => new("word", w.Id, w.Word,
+        $"{w.Word} ({w.Pos}, level {w.Level}, topic {w.Topic}){(string.IsNullOrEmpty(w.Ipa) ? "" : $" {w.Ipa}")}\n" +
+        $"Vietnamese meaning: {w.Meaning}\nDefinition: {w.Definition}\nExamples: {string.Join(" ", w.Examples)}");
 
     /// <summary>
     /// Embeds only new or changed chunks and removes ones no longer in the content, so a run cut short by a
@@ -158,6 +214,37 @@ public static class Knowledge
             log?.Invoke($"Embedded {added + updated}/{todo.Count} chunks");
         }
         return new IngestReport(added, updated, sources.Count - pending, stale.Count, pending - todo.Count);
+    }
+
+    /// <summary>
+    /// Re-embeds the one item an admin just changed, so the assistant answers from it at once (one embedding call).
+    /// If Gemini is unreachable the change is still saved; the next <c>ingest</c> picks it up.
+    /// </summary>
+    public static async Task SyncAsync(AppDbContext db, IEmbedder embedder, string kind, string id, CancellationToken ct = default)
+    {
+        if (!SourceTypes.TryGetValue(kind, out var type)) return;
+        var rows = await db.ContentItems.Where(c => c.Kind == kind && c.Id == id).ToListAsync(ct);
+        var source = BuildChunks(Folder, rows).SingleOrDefault(c => c.SourceType == type && c.SourceId == id);
+        var chunk = await db.KnowledgeChunks.SingleOrDefaultAsync(c => c.SourceType == type && c.SourceId == id, ct);
+        if (source is null)
+        {
+            if (chunk is not null) db.KnowledgeChunks.Remove(chunk);
+        }
+        else if (chunk?.ContentHash != source.Hash || chunk.EmbeddingModel != embedder.Model)
+        {
+            var vector = (await embedder.EmbedDocumentsAsync([source], ct))[0];
+            if (chunk is null)
+                db.KnowledgeChunks.Add(chunk = new KnowledgeChunk
+                {
+                    SourceType = type, SourceId = id, Title = "", Text = "", ContentHash = "", EmbeddingModel = "", Embedding = null!,
+                });
+            chunk.Title = source.Title;
+            chunk.Text = source.Text;
+            chunk.ContentHash = source.Hash;
+            chunk.EmbeddingModel = embedder.Model;
+            chunk.Embedding = new Vector(vector);
+        }
+        await db.SaveChangesAsync(ct);
     }
 
     /// <summary>The k chunks closest to the query by cosine similarity (1 = same direction).</summary>

@@ -10,7 +10,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Default"), npgsql => npgsql.UseVector()));
 builder.Services.AddAuthorizationBuilder().AddPolicy(Admin.Policy, policy => policy.RequireRole(Admin.Role));
 builder.Services.AddSingleton(TimeProvider.System);
-var content = Path.Combine(AppContext.BaseDirectory, "Content");
+var content = Knowledge.Folder;
 builder.Services.AddSingleton(QuestionBank.Load(content));
 builder.Services.AddHttpClient<IEmbedder, GeminiEmbedder>();
 builder.Services.AddHttpClient<IAnswerer, GeminiAnswerer>();
@@ -47,7 +47,7 @@ if (args.Contains("ingest"))
     try
     {
         var report = await Knowledge.IngestAsync(db, scope.ServiceProvider.GetRequiredService<IEmbedder>(),
-            Knowledge.BuildChunks(content), Console.WriteLine, max: max);
+            Knowledge.BuildChunks(content, await db.ContentItems.AsNoTracking().ToListAsync()), Console.WriteLine, max: max);
         Console.WriteLine($"Ingest done: {report}");
     }
     catch (DailyQuotaException)

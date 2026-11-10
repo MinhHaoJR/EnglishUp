@@ -187,4 +187,19 @@ public class GameTests(ApiFactory factory) : IClassFixture<ApiFactory>
             Assert.Equal(4, q.Options.Distinct().Count());
         });
     }
+
+    [Fact]
+    public void QuestionBank_TakesTheAdminsWords()
+    {
+        var bank = new QuestionBank([new("1", "apple", "quả táo", "A1"), new("2", "book", "quyển sách", "A1")]);
+        var next = bank.With([
+            new ContentItem { Kind = "word", Id = "1", Hidden = true },
+            new ContentItem { Kind = "word", Id = "2", Json = """{"id":"2","word":"novel","meaning":"tiểu thuyết","level":"A1"}""" },
+            new ContentItem { Kind = "word", Id = "a-3", Json = """{"id":"a-3","word":"harbour","meaning":"bến cảng","level":"A1"}""" },
+            new ContentItem { Kind = "word", Id = "a-4", Json = """{"id":"a-4","word":"odd","meaning":"lạ","level":"Z9"}""" },
+            new ContentItem { Kind = "word", Id = "a-5", Json = """{"id":"a-5","word":""}""" },
+        ]);
+        Assert.Equal(["harbour", "novel"], next.Draw("A1", 10, new Random(1)).Select(q => q.Word).Order());
+        Assert.Equal(2, bank.Count("A1"));
+    }
 }

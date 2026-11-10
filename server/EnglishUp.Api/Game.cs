@@ -36,6 +36,34 @@ public class QuestionBank(IReadOnlyList<WordCard> words)
         return new QuestionBank(words);
     }
 
+    /// <summary>The bank with the admin's word rows on top: same id replaces, hidden removes, incomplete rows are skipped.</summary>
+    public QuestionBank With(IReadOnlyList<ContentItem> rows)
+    {
+        if (rows.Count == 0) return this;
+        var options = new JsonSerializerOptions(JsonSerializerDefaults.Web);
+        var next = words.ToList();
+        foreach (var row in rows)
+        {
+            var at = next.FindIndex(w => w.Id == row.Id);
+            if (row.Hidden)
+            {
+                if (at >= 0) next.RemoveAt(at);
+                continue;
+            }
+            WordCard? card = null;
+            try
+            {
+                if (row.Json is not null) card = JsonSerializer.Deserialize<WordCard>(row.Json, options);
+            }
+            catch (JsonException) { }
+            if (card is not { Id: { } id, Word: { Length: > 0 }, Meaning: { Length: > 0 }, Level: { } level }
+                || id != row.Id || !Game.Levels.Contains(level)) continue;
+            if (at >= 0) next[at] = card;
+            else next.Add(card);
+        }
+        return new QuestionBank(next);
+    }
+
     public int Count(string? level) => words.Count(w => level is null || w.Level == level);
 
     /// <summary>Distinct words at the level, each with its meaning and three other meanings in random order.</summary>
@@ -58,7 +86,7 @@ public static class Game
     private const int QuestionCount = 60;
     // Allows for the request that was in flight when the learner's timer reached zero.
     private static readonly TimeSpan Grace = TimeSpan.FromSeconds(3);
-    private static readonly string[] Levels = ["A1", "A2", "B1", "B2", "C1", "C2"];
+    internal static readonly string[] Levels = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
     public static int ScoreOf(int correct, int maxCombo) => 10 * correct + 5 * maxCombo;
 
@@ -74,7 +102,8 @@ public static class Game
         {
             if (request.Level is not null && !Levels.Contains(request.Level))
                 return Results.ValidationProblem(new Dictionary<string, string[]> { ["level"] = ["Unknown level."] });
-            var questions = bank.Draw(request.Level, QuestionCount, Random.Shared);
+            var rows = await db.ContentItems.AsNoTracking().Where(c => c.Kind == "word").ToListAsync();
+            var questions = bank.With(rows).Draw(request.Level, QuestionCount, Random.Shared);
             var session = new GameSession
             {
                 Id = Guid.NewGuid(), UserId = UserId(user), Level = request.Level,

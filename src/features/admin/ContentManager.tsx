@@ -158,8 +158,8 @@ export default function ContentManager() {
         <h2 id="content-title">{bi('Tài liệu học tập', 'Learning content')}</h2>
         <p className="muted">
           {bi(
-            'Bài có sẵn đi kèm ứng dụng; bài thêm hoặc sửa ở đây được lưu trên máy chủ và người học nhận khi mở app.',
-            'Bundled lessons ship with the app; items added or edited here are stored on the server and reach learners when they open the app.',
+            'Bài có sẵn đi kèm ứng dụng; bài thêm hoặc sửa ở đây được lưu trên máy chủ và người học nhận khi mở app. Từ vựng mới vào cả Đua 60 giây; trợ giảng AI học bài mới ngay khi lưu (nếu hết hạn mức Gemini, bài được nạp ở lần chạy ingest sau).',
+            'Bundled lessons ship with the app; items added or edited here are stored on the server and reach learners when they open the app. New words join the 60-second race; the AI tutor learns an item as soon as it is saved (if the Gemini quota is used up, the next ingest run adds it).',
           )}
         </p>
       </div>

@@ -72,6 +72,33 @@ public class KnowledgeTests(ApiFactory factory) : IClassFixture<ApiFactory>
     }
 
     [Fact]
+    public void BuildChunks_PutsAdminRowsOnTop()
+    {
+        var bundled = Knowledge.BuildChunks(Content);
+        var reading = bundled.First(c => c.SourceType == "reading");
+        var pattern = bundled.First(c => c.SourceType == "grammar");
+        var chunks = Knowledge.BuildChunks(Content, [
+            new ContentItem { Kind = "reading", Id = reading.SourceId, Hidden = true },
+            new ContentItem { Kind = "word", Id = "a-new", Json = """
+                {"id":"a-new","word":"harbour","ipa":"","pos":"noun","meaning":"bến cảng","definition":"a place for boats",
+                 "examples":["Boats wait in the harbour."],"level":"B1","topic":"travel"}
+                """ },
+            new ContentItem { Kind = "structure", Id = pattern.SourceId, Json = $$"""
+                {"id":"{{pattern.SourceId}}","group":"x","formula":"S + edited","meaning":"m","example":"e","key":"k",
+                 "options":["a","b"],"translation":"t"}
+                """ },
+            new ContentItem { Kind = "word", Id = "a-broken", Json = """{"id":"a-broken"}""" },
+            new ContentItem { Kind = "speaking", Id = "a-talk", Json = """{"id":"a-talk"}""" },
+        ]);
+
+        Assert.DoesNotContain(chunks, c => c.SourceId == reading.SourceId && c.SourceType == "reading");
+        Assert.Contains("bến cảng", chunks.Single(c => c.SourceId == "a-new").Text);
+        Assert.Equal("S + edited", chunks.Single(c => c is { SourceType: "grammar" } && c.SourceId == pattern.SourceId).Title);
+        Assert.DoesNotContain(chunks, c => c.SourceId is "a-broken" or "a-talk");
+        Assert.Equal(bundled.Count, chunks.Count);
+    }
+
+    [Fact]
     public async Task Ingest_EmbedsOnlyNewOrChangedChunks()
     {
         using var db = NewDb();

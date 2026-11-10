@@ -45,7 +45,7 @@ public static partial class Content
         var admin = api.MapGroup("/admin/content").RequireAuthorization(Admin.Policy);
 
         admin.MapPut("/{kind}/{id}", async (string kind, string id, ContentSaveRequest input, ClaimsPrincipal user,
-            AppDbContext db, TimeProvider clock) =>
+            AppDbContext db, IEmbedder embedder, ILoggerFactory logs, TimeProvider clock) =>
         {
             var errors = Validate(kind, id, input.Data);
             if (errors.Count > 0) return Results.ValidationProblem(errors);
@@ -56,11 +56,12 @@ public static partial class Content
             row.UpdatedAt = clock.GetUtcNow();
             row.UpdatedBy = user.FindFirstValue(ClaimTypes.Name) ?? "";
             await db.SaveChangesAsync();
+            await ReindexAsync(db, embedder, logs, kind, id);
             return Results.Ok(ToDto(row));
         });
 
         admin.MapPost("/{kind}/{id}/hide", async (string kind, string id, ContentHideRequest input, ClaimsPrincipal user,
-            AppDbContext db, TimeProvider clock) =>
+            AppDbContext db, IEmbedder embedder, ILoggerFactory logs, TimeProvider clock) =>
         {
             if (!Required.ContainsKey(kind) || !IdPattern().IsMatch(id)) return Results.BadRequest();
             var row = await db.ContentItems.FindAsync(kind, id);
@@ -69,6 +70,7 @@ public static partial class Content
             {
                 db.ContentItems.Remove(row);
                 await db.SaveChangesAsync();
+                await ReindexAsync(db, embedder, logs, kind, id);
                 return Results.NoContent();
             }
             if (row is null) db.ContentItems.Add(row = new ContentItem { Kind = kind, Id = id });
@@ -76,18 +78,35 @@ public static partial class Content
             row.UpdatedAt = clock.GetUtcNow();
             row.UpdatedBy = user.FindFirstValue(ClaimTypes.Name) ?? "";
             await db.SaveChangesAsync();
+            await ReindexAsync(db, embedder, logs, kind, id);
             return Results.Ok(ToDto(row));
         });
 
         // Removes the admin's row: an added item disappears, an edited bundled item returns to the original.
-        admin.MapDelete("/{kind}/{id}", async (string kind, string id, AppDbContext db) =>
+        admin.MapDelete("/{kind}/{id}", async (string kind, string id, AppDbContext db, IEmbedder embedder,
+            ILoggerFactory logs) =>
         {
             var row = await db.ContentItems.FindAsync(kind, id);
             if (row is null) return Results.NotFound();
             db.ContentItems.Remove(row);
             await db.SaveChangesAsync();
+            await ReindexAsync(db, embedder, logs, kind, id);
             return Results.NoContent();
         });
+    }
+
+    /// <summary>Keeps the assistant's chunk in step with the change; a Gemini failure leaves it for the next ingest.</summary>
+    private static async Task ReindexAsync(AppDbContext db, IEmbedder embedder, ILoggerFactory logs, string kind, string id)
+    {
+        try
+        {
+            await Knowledge.SyncAsync(db, embedder, kind, id);
+        }
+        catch (Exception e) when (e is HttpRequestException or InvalidOperationException or TaskCanceledException)
+        {
+            db.ChangeTracker.Clear();
+            logs.CreateLogger("Content").LogWarning(e, "Could not re-embed {Kind}/{Id}; run ingest later", kind, id);
+        }
     }
 
     public static Dictionary<string, string[]> Validate(string kind, string id, JsonElement data)
