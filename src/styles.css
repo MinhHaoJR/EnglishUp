@@ -1360,8 +1360,8 @@ html.dark .language-space .primary:hover {
 }
 /* AI tutor: a messaging window shared by the corner chat head and the full page. */
 .chat-window {
-  --me: var(--green);
-  --me-ink: #fff;
+  --me: var(--primary);
+  --me-ink: var(--primary-ink);
   --them: var(--soft);
   display: flex;
   flex-direction: column;
@@ -1372,9 +1372,6 @@ html.dark .language-space .primary:hover {
   border: 1px solid var(--border);
   border-radius: 16px;
   overflow: hidden;
-}
-.dark .chat-window {
-  --me-ink: #13291c;
 }
 .chat-header {
   display: flex;
@@ -1632,48 +1629,6 @@ html.dark .language-space .primary:hover {
   padding: 0 0.75rem 0.5rem;
   font-size: 0.7rem;
   color: var(--muted);
-}
-.assistant-layout {
-  display: grid;
-  grid-template-columns: minmax(200px, 280px) 1fr;
-  gap: 1.25rem;
-  align-items: start;
-}
-.chat-page-window {
-  height: min(72vh, 720px);
-  min-height: 460px;
-}
-.chat-list {
-  list-style: none;
-  margin: 1rem 0 0;
-  padding: 0;
-}
-.chat-list li {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.3rem 0;
-  border-top: 1px solid var(--border);
-}
-.chat-list li button:nth-of-type(1) {
-  flex: 1;
-  justify-content: flex-start;
-  text-align: left;
-  font-weight: 500;
-}
-.chat-list button {
-  border: 0;
-  background: none;
-  padding: 0.45rem 0.4rem;
-}
-.chat-list button[aria-current] {
-  color: var(--green);
-  font-weight: 700;
-}
-@media (max-width: 760px) {
-  .assistant-layout {
-    grid-template-columns: 1fr;
-  }
 }
 .chat-widget {
   position: fixed;

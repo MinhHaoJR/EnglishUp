@@ -1,6 +1,6 @@
 # Ảnh chụp màn hình cho báo cáo
 
-Chụp ngày 10/11/2026 bằng Chrome headless, khung nhìn 1440×900, giao diện sáng, ngôn ngữ giao diện tiếng Việt, đang học tiếng Anh. Dữ liệu là một phiên luyện tập thật trên máy (20 thẻ từ vựng, 1 bài đọc). Ảnh 11–13 dùng tài khoản thử `screenshot@englishup.test` (tên hiển thị "Học viên thử"); mật khẩu chỉ nằm trong file cục bộ `.env.test-account`, không commit. Bảng xếp hạng có 6 học viên demo tạo bằng lệnh `demo`.
+Chụp ngày 10/11/2026 bằng Chrome headless, khung nhìn 1440×900, giao diện sáng, ngôn ngữ giao diện tiếng Việt, đang học tiếng Anh. Dữ liệu là một phiên luyện tập thật trên máy (20 thẻ từ vựng, 1 bài đọc). Ảnh 11–14 dùng tài khoản thử `screenshot@englishup.test` (tên hiển thị "Học viên thử"); mật khẩu chỉ nằm trong file cục bộ `.env.test-account`, không commit. Bảng xếp hạng có 6 học viên demo tạo bằng lệnh `demo`.
 
 | Ảnh | Màn hình | Gợi ý chú thích |
 |---|---|---|
@@ -21,7 +21,9 @@ Chụp ngày 10/11/2026 bằng Chrome headless, khung nhìn 1440×900, giao di�
 | `12-thanh-tich.png` | Thành tích, huy hiệu | Sáu huy hiệu do máy chủ xét sau mỗi lần đồng bộ, kèm điểm thưởng. |
 | `12b-bang-xep-hang.png` | Bảng xếp hạng | Xếp hạng theo tuần (giờ Việt Nam) và mọi thời gian; hàng của người học được tô nổi. |
 | `13-dua-60-giay.png` | Đua 60 giây | Đề và chấm điểm ở máy chủ; thời gian, điểm ván và combo. |
+| `14-tro-giang-ai.png` | Trợ giảng AI, câu trả lời | Lịch sử dạng khung bên trái (khung đang mở có chấm vàng); câu trả lời từ bài học với nguồn [1], [2] gắn nhãn kỹ năng; còn 19/20 câu hôm nay. |
+| `14b-tro-giang-moi.png` | Trợ giảng AI, cuộc trò chuyện mới | Bốn câu hỏi gợi ý, mỗi câu một kỹ năng; ô soạn với nút gửi và ghi chú quyền riêng tư. |
 
-Còn thiếu: Trợ giảng AI có trích dẫn (chụp sau khi nạp xong dữ liệu RAG).
+Ảnh 14 chụp khi dữ liệu RAG chưa có 100 cấu trúc câu (nạp lúc 15:15 ngày 10/11/2026); câu hỏi trong ảnh là về từ vựng nên không bị ảnh hưởng.
 
 Chụp lại: chạy `npm run dev`, rồi dùng Chrome ở kích thước 1440×900.

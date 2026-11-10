@@ -98,6 +98,13 @@ Elevation is a 1px `--border` and nothing else. Shadows are not combined with bo
   - Lesson lists on these four pages are directory rows: level chip, title, one-line excerpt and facts, with the action on the right.
 - **Icons.** Play, stop, download and upload are drawn in the shared icon set; no glyph icons remain on learning screens.
 - **Tutor.** A round chat head in the corner opens a messaging window: header with avatar and status, bubbles on both sides, source chips and a rounded composer.
+- **Tutor page** (`/assistant`, surface roll seed `66dcd42e/0`: structure #1 of 6, workspace with history rail, "contact sheet" composition). It is one 12px plate filling the viewport.
+  - The rail lists saved chats as small frames grouped Today / Earlier, with title and time. The open frame grows, gets a blue border and the yellow "you are here" dot. Delete shows on hover, on focus or for the open frame.
+  - The main frame has a header (open title, status, questions left today) and a centred 760px reading column. Answers read as plain text beside the avatar, questions are blue bubbles, and sources are labels with the skill-line tile.
+  - An empty frame asks "What would you like to ask today?" and offers four starter questions, one per skill line.
+  - The composer is a bordered box whose border shows focus, with a filled send button. One footnote covers accuracy and privacy.
+  - Below 860px the rail becomes a sideways strip of frames.
+  - The corner chat keeps its messenger window, and both share `ChatPanel`.
 - **Sign-in entrance** (`/login`, `src/features/account/SignIn.tsx`). A full-screen page outside the app shell: no sidebar, top bar or tutor bubble.
   - Left is a sign-blue plate (`--plate`): brand, one h1, and what an account adds as an upright three-stop route with white pictogram tiles.
   - Right is the form: segmented Sign in / Create account, email, password with a drawn eye toggle, a live checklist of the server's password rules while creating an account, one full-width primary button, a privacy line and a "Keep practising without an account" link.

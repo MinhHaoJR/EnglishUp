@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useBi } from '../../i18n';
 import { Notice } from '../../components/shared';
+import SkillIcon, { type IconName } from '../../components/SkillIcon';
 import { ApiError, useAuth } from '../../services/auth';
 import {
   ask,
@@ -18,6 +19,14 @@ const sourceLabel = {
   writing: ['Đề viết', 'Writing task'],
   grammar: ['Cấu trúc câu', 'Sentence pattern'],
 } as Record<string, [string, string]>;
+/** Each source wears its skill line, like the lessons it links to. */
+export const sourceSkill: Record<string, IconName> = {
+  word: 'vocabulary',
+  reading: 'reading',
+  listening: 'listening',
+  writing: 'writing',
+  grammar: 'grammar',
+};
 
 const suggestions: [string, string][] = [
   ['"routine" và "habit" khác nhau thế nào?', 'How are "routine" and "habit" different?'],
@@ -213,9 +222,15 @@ const bubbles = (text: string) =>
 export function ChatPanel({
   chat,
   autoFocus = false,
+  intro,
+  footnote,
 }: {
   chat: ReturnType<typeof useChat>;
   autoFocus?: boolean;
+  /** Replaces the mini chat's greeting (the full page has its own empty state). */
+  intro?: React.ReactNode;
+  /** Replaces the line under the message box. */
+  footnote?: React.ReactNode;
 }) {
   const bi = useBi();
   const scroller = useRef<HTMLDivElement>(null);
@@ -257,31 +272,35 @@ export function ChatPanel({
   return (
     <>
       <div className="chat-scroll" ref={scroller}>
-        <div className="chat-intro">
-          <TutorAvatar size={56} />
-          <strong>{bi('Trợ giảng AI', 'AI tutor')}</strong>
-          <p>
-            {bi(
-              'Hỏi mình về từ vựng, bài đọc, bài nghe và đề viết trong EnglishUp. Mình chỉ trả lời từ bài học của app và ghi rõ nguồn.',
-              "Ask me about EnglishUp's vocabulary, readings, listening scripts and writing tasks. I answer only from the app's lessons and cite them.",
+        {intro !== undefined ? (
+          intro
+        ) : (
+          <div className="chat-intro">
+            <TutorAvatar size={56} />
+            <strong>{bi('Trợ giảng AI', 'AI tutor')}</strong>
+            <p>
+              {bi(
+                'Hỏi mình về từ vựng, bài đọc, bài nghe và đề viết trong EnglishUp. Mình chỉ trả lời từ bài học của app và ghi rõ nguồn.',
+                "Ask me about EnglishUp's vocabulary, readings, listening scripts and writing tasks. I answer only from the app's lessons and cite them.",
+              )}
+            </p>
+            <p className="chat-privacy">
+              {bi(
+                'Câu hỏi được gửi tới Google Gemini (gói miễn phí, Google có thể dùng để cải thiện dịch vụ). Đừng nhập thông tin cá nhân.',
+                'Questions are sent to Google Gemini (free tier; Google may use them to improve its services). Do not enter personal information.',
+              )}
+            </p>
+            {messages.length === 0 && !busy && (
+              <div className="chat-suggestions">
+                {suggestions.map(([vi, en]) => (
+                  <button key={en} type="button" onClick={() => void chat.submit(bi(vi, en))}>
+                    {bi(vi, en)}
+                  </button>
+                ))}
+              </div>
             )}
-          </p>
-          <p className="chat-privacy">
-            {bi(
-              'Câu hỏi được gửi tới Google Gemini (gói miễn phí, Google có thể dùng để cải thiện dịch vụ). Đừng nhập thông tin cá nhân.',
-              'Questions are sent to Google Gemini (free tier; Google may use them to improve its services). Do not enter personal information.',
-            )}
-          </p>
-          {messages.length === 0 && !busy && (
-            <div className="chat-suggestions">
-              {suggestions.map(([vi, en]) => (
-                <button key={en} type="button" onClick={() => void chat.submit(bi(vi, en))}>
-                  {bi(vi, en)}
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
+          </div>
+        )}
         <ol className="chat-log" aria-live="polite">
           {messages.map((m, i) => (
             <li key={i} className={`chat-row ${m.role}`}>
@@ -300,8 +319,11 @@ export function ChatPanel({
               {m.citations.length > 0 && (
                 <ul className="citations" aria-label={bi('Nguồn', 'Sources')}>
                   {m.citations.map((c) => (
-                    <li key={c.n}>
+                    <li key={c.n} data-skill={sourceSkill[c.sourceType]}>
                       <span className="citation-n">{c.n}</span>
+                      <span className="citation-tile" aria-hidden="true">
+                        <SkillIcon skill={sourceSkill[c.sourceType] ?? 'reading'} size={14} />
+                      </span>
                       <Link to={sourcePath(c.sourceType)}>
                         {bi(...(sourceLabel[c.sourceType] ?? ['Bài học', 'Lesson']))}: {c.title}
                       </Link>
@@ -360,14 +382,19 @@ export function ChatPanel({
         />
       </form>
       <p className="chat-footnote">
-        {left !== null && (
+        {footnote ?? (
           <>
-            <span>{bi(`Còn ${left} câu hỏi hôm nay`, `${left} questions left today`)}</span> ·{' '}
+            {left !== null && (
+              <>
+                <span>{bi(`Còn ${left} câu hỏi hôm nay`, `${left} questions left today`)}</span>{' '}
+                ·{' '}
+              </>
+            )}
+            {bi(
+              'Trợ giảng có thể sai, hãy kiểm tra nguồn.',
+              'The tutor can be wrong; check the sources.',
+            )}
           </>
-        )}
-        {bi(
-          'Trợ giảng có thể sai, hãy kiểm tra nguồn.',
-          'The tutor can be wrong; check the sources.',
         )}
       </p>
     </>

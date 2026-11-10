@@ -145,3 +145,24 @@ it('opens, continues and deletes a saved conversation', async () => {
   await waitFor(() => expect(screen.getByText('Chưa có cuộc trò chuyện nào.')).toBeInTheDocument());
   expect(screen.queryByText('Habit là thói quen [1].')).not.toBeInTheDocument();
 });
+
+it('sends a starter question and shows the new chat as the open frame under Today', async () => {
+  serve();
+  conversations = [];
+  show();
+  await userEvent.click(
+    screen.getByRole('button', { name: /"routine" và "habit" khác nhau thế nào\?/ }),
+  );
+  expect(await screen.findByText('Routine là thói quen hằng ngày [1].')).toBeInTheDocument();
+  const body = JSON.parse(
+    (fetchMock.mock.calls.find(([p]) => p === '/api/assistant/ask')![1] as RequestInit)
+      .body as string,
+  );
+  expect(body.question).toBe('"routine" và "habit" khác nhau thế nào?');
+  // The mock's conversation is dated 2026-11-09, so it sits under "Earlier" unless that is today.
+  const frame = await screen.findByRole('button', { name: 'routine là gì?' });
+  expect(frame).toHaveAttribute('aria-current', 'true');
+  expect(
+    screen.queryByRole('heading', { name: 'Hôm nay bạn muốn hỏi gì?' }),
+  ).not.toBeInTheDocument();
+});
