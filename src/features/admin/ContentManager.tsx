@@ -3,6 +3,8 @@ import { useBi, topicVi } from '../../i18n';
 import { Notice } from '../../components/shared';
 import SkillIcon, { type IconName } from '../../components/SkillIcon';
 import { levelSchema, type Word } from '../../data/schema';
+import { topicSections } from '../../data/topicSections';
+import { STUDY_GROUP_SIZE } from '../../services/vocabularyStudy';
 import { ApiError } from '../../services/auth';
 import {
   contentKinds,
@@ -44,7 +46,6 @@ const kinds: { id: ContentKind; icon: IconName; skill: string; vi: string; en: s
     en: 'Synonyms & antonyms',
   },
 ];
-const PAGE = 50;
 
 /** One line that names an item in the list, whatever its kind. */
 function label(kind: ContentKind, item: Item) {
@@ -74,6 +75,43 @@ function entries(kind: ContentKind, rows: ContentRow[]): Entry[] {
     });
 }
 
+type TopicGroup = {
+  topic: string;
+  total: number;
+  /** The visible words in the same 20-word clusters learners study (numbered from 1). */
+  clusters: { number: number; words: Entry[] }[];
+  /** Hidden or invalid words: learners do not see them, so they are in no cluster. */
+  other: Entry[];
+};
+const catalogOrder: string[] = topicSections.flatMap((section) => [...section.topics]);
+const rank = (topic: string) => {
+  const at = catalogOrder.indexOf(topic);
+  return at < 0 ? catalogOrder.length : at;
+};
+
+/** Words by topic in catalog order, each topic cut into the learners' clusters; hidden and invalid words follow. */
+function topicGroups(list: Entry[]): TopicGroup[] {
+  const byTopic = new Map<string, Entry[]>();
+  for (const entry of list) {
+    const topic = String((entry.item ?? (entry.row.data as Item | null))?.topic ?? '—');
+    byTopic.set(topic, [...(byTopic.get(topic) ?? []), entry]);
+  }
+  return [...byTopic]
+    .sort(([a], [b]) => rank(a) - rank(b) || a.localeCompare(b))
+    .map(([topic, items]) => {
+      const live = items.filter((e) => e.status === 'live');
+      return {
+        topic,
+        total: items.length,
+        clusters: Array.from({ length: Math.ceil(live.length / STUDY_GROUP_SIZE) }, (_, i) => ({
+          number: i + 1,
+          words: live.slice(i * STUDY_GROUP_SIZE, (i + 1) * STUDY_GROUP_SIZE),
+        })),
+        other: items.filter((e) => e.status !== 'live'),
+      };
+    });
+}
+
 /** Admin area for the learning content: list, add, edit, hide and restore items of every kind. */
 export default function ContentManager() {
   const bi = useBi();
@@ -84,6 +122,7 @@ export default function ContentManager() {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
   const [confirming, setConfirming] = useState<string | null>(null);
+  const [openTopics, setOpenTopics] = useState<Set<string>>(new Set());
 
   async function reload() {
     try {
@@ -110,6 +149,12 @@ export default function ContentManager() {
           (e.item && label(kind, e.item).toLowerCase().includes(term)),
       )
     : all;
+  const isMatch = (e: Entry) =>
+    !term ||
+    e.id.toLowerCase().includes(term) ||
+    (e.item !== null && label(kind, e.item).toLowerCase().includes(term));
+  // Clusters come from the whole topic, so a search keeps each word's real cluster number.
+  const groups = useMemo(() => (kind === 'word' ? topicGroups(all) : []), [kind, all]);
   const counts = Object.fromEntries(kinds.map((k) => [k.id, entries(k.id, rows).length]));
   const current = kinds.find((k) => k.id === kind)!;
 
@@ -152,6 +197,68 @@ export default function ContentManager() {
     hidden: bi('Đã ẩn', 'Hidden'),
     invalid: bi('Lỗi dữ liệu', 'Invalid'),
   };
+
+  const row = (e: Entry) => (
+    <li key={e.id} className={e.status}>
+      <div className="content-what">
+        <strong>{e.item ? label(kind, e.item) : e.id}</strong>
+        <small>
+          <code>{e.id}</code>
+          {e.item && 'level' in e.item && ` · ${String(e.item.level)}`}
+          {e.item && 'topic' in e.item && kind !== 'word' && ` · ${String(e.item.topic)}`}
+        </small>
+      </div>
+      <span className={`content-status ${e.status}`}>{statusText[e.status]}</span>
+      <div className="content-actions">
+        {e.status !== 'hidden' && (
+          <button
+            type="button"
+            onClick={() => {
+              setEditing({ item: e.item ?? ((e.row.data as Item) || { id: e.id }), isNew: false });
+              setMessage('');
+            }}
+          >
+            {bi('Sửa', 'Edit')}
+          </button>
+        )}
+        {e.status === 'hidden' ? (
+          <button
+            type="button"
+            onClick={() =>
+              void run(() => hideContent(kind, e.id, false), bi('Đã hiện lại.', 'Shown again.'))
+            }
+          >
+            {bi('Hiện lại', 'Show')}
+          </button>
+        ) : (
+          <button
+            type="button"
+            onClick={() =>
+              void run(
+                () => hideContent(kind, e.id, true),
+                bi('Đã ẩn khỏi người học.', 'Hidden from learners.'),
+              )
+            }
+          >
+            {bi('Ẩn', 'Hide')}
+          </button>
+        )}
+        {confirming === e.id ? (
+          <button
+            type="button"
+            className="danger"
+            onClick={() => void run(() => deleteContent(kind, e.id), bi('Đã xoá.', 'Deleted.'))}
+          >
+            {bi('Xác nhận xoá vĩnh viễn', 'Confirm permanent delete')}
+          </button>
+        ) : (
+          <button type="button" className="danger-outline" onClick={() => setConfirming(e.id)}>
+            {bi('Xoá', 'Delete')}
+          </button>
+        )}
+      </div>
+    </li>
+  );
 
   return (
     <section className="content-admin" aria-labelledby="content-title">
@@ -235,88 +342,105 @@ export default function ContentManager() {
             </button>
           </div>
           <p className="muted content-count">
-            {matches.length > PAGE
+            {term
               ? bi(
-                  `Hiển thị ${PAGE}/${matches.length} mục; hãy tìm để thu hẹp.`,
-                  `Showing ${PAGE} of ${matches.length}; search to narrow it down.`,
+                  `${matches.length}/${all.length} mục khớp`,
+                  `${matches.length} of ${all.length} match`,
                 )
-              : bi(`${matches.length} mục`, `${matches.length} items`)}
+              : bi(`${all.length} mục`, `${all.length} items`)}
+            {kind === 'word' &&
+              bi(
+                ` · ${groups.length} chủ đề, mỗi cụm ${STUDY_GROUP_SIZE} từ như trang học`,
+                ` · ${groups.length} topics, ${STUDY_GROUP_SIZE}-word clusters as on the learning page`,
+              )}
           </p>
-          <ul className="content-list">
-            {matches.slice(0, PAGE).map((e) => (
-              <li key={e.id} className={e.status}>
-                <div className="content-what">
-                  <strong>{e.item ? label(kind, e.item) : e.id}</strong>
-                  <small>
-                    <code>{e.id}</code>
-                    {e.item && 'level' in e.item && ` · ${String(e.item.level)}`}
-                    {e.item && 'topic' in e.item && ` · ${String(e.item.topic)}`}
-                  </small>
+          {kind === 'word' ? (
+            <>
+              {!term && (
+                <div className="content-topic-tools">
+                  <button
+                    type="button"
+                    onClick={() => setOpenTopics(new Set(groups.map((g) => g.topic)))}
+                  >
+                    {bi('Mở tất cả chủ đề', 'Expand all topics')}
+                  </button>
+                  <button type="button" onClick={() => setOpenTopics(new Set())}>
+                    {bi('Thu gọn tất cả', 'Collapse all')}
+                  </button>
                 </div>
-                <span className={`content-status ${e.status}`}>{statusText[e.status]}</span>
-                <div className="content-actions">
-                  {e.status !== 'hidden' && (
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setEditing({
-                          item: e.item ?? ((e.row.data as Item) || { id: e.id }),
-                          isNew: false,
-                        });
-                        setMessage('');
-                      }}
-                    >
-                      {bi('Sửa', 'Edit')}
-                    </button>
-                  )}
-                  {e.status === 'hidden' ? (
-                    <button
-                      type="button"
-                      onClick={() =>
-                        void run(
-                          () => hideContent(kind, e.id, false),
-                          bi('Đã hiện lại.', 'Shown again.'),
-                        )
-                      }
-                    >
-                      {bi('Hiện lại', 'Show')}
-                    </button>
-                  ) : (
-                    <button
-                      type="button"
-                      onClick={() =>
-                        void run(
-                          () => hideContent(kind, e.id, true),
-                          bi('Đã ẩn khỏi người học.', 'Hidden from learners.'),
-                        )
-                      }
-                    >
-                      {bi('Ẩn', 'Hide')}
-                    </button>
-                  )}
-                  {confirming === e.id ? (
-                    <button
-                      type="button"
-                      className="danger"
-                      onClick={() =>
-                        void run(() => deleteContent(kind, e.id), bi('Đã xoá.', 'Deleted.'))
-                      }
-                    >
-                      {bi('Xác nhận xoá vĩnh viễn', 'Confirm permanent delete')}
-                    </button>
-                  ) : (
-                    <button
-                      type="button"
-                      className="danger-outline"
-                      onClick={() => setConfirming(e.id)}
-                    >
-                      {bi('Xoá', 'Delete')}
-                    </button>
-                  )}
-                </div>
-              </li>
-            ))}
-          </ul>
+              )}
+              <div className="content-topics">
+                {groups.map((group) => {
+                  const clusters = group.clusters
+                    .map((c) => ({ ...c, words: c.words.filter(isMatch) }))
+                    .filter((c) => c.words.length);
+                  const other = group.other.filter(isMatch);
+                  if (term && !clusters.length && !other.length) return null;
+                  // A search opens every topic with a match.
+                  const open = Boolean(term) || openTopics.has(group.topic);
+                  return (
+                    <section key={group.topic} className="content-topic">
+                      <h3>
+                        <button
+                          type="button"
+                          aria-expanded={open}
+                          disabled={Boolean(term)}
+                          onClick={() =>
+                            setOpenTopics((current) => {
+                              const next = new Set(current);
+                              if (next.has(group.topic)) next.delete(group.topic);
+                              else next.add(group.topic);
+                              return next;
+                            })
+                          }
+                        >
+                          <SkillIcon skill="chevron" size={16} />
+                          <span className="content-topic-name">
+                            {bi(topicVi[group.topic] ?? group.topic, group.topic)}
+                          </span>
+                          <small>
+                            {bi(
+                              `${group.total} từ · ${group.clusters.length} cụm`,
+                              `${group.total} words · ${group.clusters.length} clusters`,
+                            )}
+                          </small>
+                        </button>
+                      </h3>
+                      {open && (
+                        <div className="content-clusters">
+                          {clusters.map((cluster) => (
+                            <section key={cluster.number} className="content-cluster">
+                              <h4>
+                                {bi(`Cụm ${cluster.number}`, `Cluster ${cluster.number}`)}{' '}
+                                <small>
+                                  {bi(
+                                    `${cluster.words.length} từ`,
+                                    `${cluster.words.length} words`,
+                                  )}
+                                </small>
+                              </h4>
+                              <ul className="content-list">{cluster.words.map(row)}</ul>
+                            </section>
+                          ))}
+                          {other.length > 0 && (
+                            <section className="content-cluster">
+                              <h4>
+                                {bi('Đã ẩn hoặc lỗi dữ liệu', 'Hidden or invalid')}{' '}
+                                <small>{bi(`${other.length} từ`, `${other.length} words`)}</small>
+                              </h4>
+                              <ul className="content-list">{other.map(row)}</ul>
+                            </section>
+                          )}
+                        </div>
+                      )}
+                    </section>
+                  );
+                })}
+              </div>
+            </>
+          ) : (
+            <ul className="content-list">{matches.map(row)}</ul>
+          )}
         </>
       )}
     </section>

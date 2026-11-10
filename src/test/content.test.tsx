@@ -144,6 +144,28 @@ describe('content manager', () => {
     expect(screen.getByRole('button', { name: 'Lưu' })).toBeDisabled();
   });
 
+  it('groups words by topic into the 20-word learning clusters and lists every word', async () => {
+    show();
+    const daily = vocabulary.filter((w) => w.topic === 'Daily life');
+    const topic = await screen.findByRole('button', { name: /^Đời sống/ });
+    expect(topic).toHaveAttribute('aria-expanded', 'false');
+    await userEvent.click(topic);
+    const section = topic.closest('section')!;
+    expect(within(section).getAllByRole('heading', { level: 4 })).toHaveLength(
+      Math.ceil(daily.length / 20),
+    );
+    expect(within(section).getAllByRole('listitem')).toHaveLength(daily.length);
+
+    // A search shows every match, not a first page, in its real cluster.
+    await userEvent.type(screen.getByRole('searchbox'), 'v-');
+    expect(
+      await screen.findByText(`${vocabulary.length}/${vocabulary.length} mục khớp`, {
+        exact: false,
+      }),
+    ).toBeInTheDocument();
+    expect(document.querySelectorAll('.content-topics li')).toHaveLength(vocabulary.length);
+  });
+
   it('lists every kind from the library and deletes only after a confirmation', async () => {
     show();
     await userEvent.click(await screen.findByRole('tab', { name: /Câu dịch/ }));
