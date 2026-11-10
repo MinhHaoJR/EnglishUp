@@ -36,6 +36,13 @@ dotnet user-secrets set "Gemini:ApiKey" "<your-key>" --project EnglishUp.Api
 dotnet run --project EnglishUp.Api -- ingest
 ```
 
+For a presentation, `demo` adds six demo learners whose names end in "(demo)" with two weeks of practice, points and badges, so the leaderboard is not empty. They have no password, so nobody can sign in as them. Running it again replaces them; `demo remove` deletes them and everything they own.
+
+```sh
+dotnet run --project EnglishUp.Api -- demo
+dotnet run --project EnglishUp.Api -- demo remove
+```
+
 ## Checks
 
 ```sh

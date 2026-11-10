@@ -73,6 +73,21 @@ if (args.Contains("eval"))
     return;
 }
 
+// `dotnet run --project EnglishUp.Api -- demo [remove]` adds (or removes) labelled demo learners for the
+// leaderboard, then exits. They have no password, so nobody can sign in as them.
+if (args.Contains("demo"))
+{
+    using var scope = app.Services.CreateScope();
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    if (args.Contains("remove"))
+        Console.WriteLine($"Removed {await Demo.RemoveAsync(db)} demo learners.");
+    else
+        Console.WriteLine($"Added {await Demo.SeedAsync(db,
+            scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>(), DateTimeOffset.UtcNow)} " +
+            "demo learners. Remove them with: demo remove");
+    return;
+}
+
 // The React app reaches these through the Vite /api proxy, so no CORS policy is needed.
 var api = app.MapGroup("/api");
 api.MapIdentityApi<IdentityUser>();
