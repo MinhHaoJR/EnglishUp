@@ -34,6 +34,7 @@ const targets: Record<
     path: (t) =>
       `/game?mode=grammar&level=${t.level}${t.category ? `&category=${t.category}` : ''}`,
   },
+  tenses: { icon: 'grammar', skill: 'grammar', path: () => '/grammar?part=tenses' },
   assistant: { icon: 'assistant', skill: 'service', path: () => '/assistant' },
   placement: { icon: 'placement', skill: 'service', path: () => '/placement' },
 };

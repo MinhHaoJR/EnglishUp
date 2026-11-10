@@ -80,6 +80,10 @@ public static class Knowledge
         int MinWords, int MaxWords, string[] Checklist);
     private record ContentPattern(string Id, string Formula, string Meaning, string Example, string Key,
         string[] Options, string Translation);
+    private record Bilingual(string Vi, string En);
+    private record TenseForms(string[] Affirmative, string[] Negative, string[] Question);
+    private record TenseUse(string Vi, string En, string Example);
+    private record ContentTense(string Id, Bilingual Name, TenseForms Forms, TenseUse[] Uses, string[] Signals, Bilingual Tip);
 
     /// <summary>
     /// Content kinds the assistant knows, with their chunk source type, lessons first: with 1,000 free embeddings
@@ -87,7 +91,8 @@ public static class Knowledge
     /// </summary>
     public static readonly Dictionary<string, string> SourceTypes = new()
     {
-        ["reading"] = "reading", ["listening"] = "listening", ["writing"] = "writing", ["structure"] = "grammar", ["word"] = "word",
+        ["reading"] = "reading", ["listening"] = "listening", ["writing"] = "writing", ["structure"] = "grammar", ["tense"] = "grammar",
+        ["word"] = "word",
     };
 
     private static readonly JsonSerializerOptions Web = new(JsonSerializerDefaults.Web);
@@ -124,6 +129,15 @@ public static class Knowledge
                     ? new ChunkSource("writing", w.Id, w.Title,
                         $"Writing task: {w.Genre}, {w.Level}, {w.Topic}, {w.MinWords}-{w.MaxWords} words.\n{w.Prompt}\n" +
                         $"Checklist: {string.Join(" ", w.Checklist)}")
+                    : null,
+                // A tense chunk carries both names, so "thì hiện tại hoàn thành" and "present perfect" both find it.
+                "tense" => item.Deserialize<ContentTense>(Web) is { } t
+                    ? new ChunkSource("grammar", t.Id, $"{t.Name.En} ({t.Name.Vi})",
+                        $"Tense: {t.Name.En} (Vietnamese: {t.Name.Vi})\n" +
+                        $"Affirmative: {string.Join("; ", t.Forms.Affirmative)}\nNegative: {string.Join("; ", t.Forms.Negative)}\n" +
+                        $"Question: {string.Join("; ", t.Forms.Question)}\n" +
+                        $"Uses: {string.Join(" ", t.Uses.Select(u => $"{u.En} ({u.Vi}): {u.Example}"))}\n" +
+                        $"Signal words: {string.Join(", ", t.Signals)}\nTip: {t.Tip.En} ({t.Tip.Vi})")
                     : null,
                 // The quiz's wrong forms are named as such, so questions like "enjoy + to-V?" find the pattern.
                 "structure" => item.Deserialize<ContentPattern>(Web) is { } p

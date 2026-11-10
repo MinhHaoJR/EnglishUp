@@ -2,6 +2,7 @@ import type {
   Dictation,
   Quiz,
   Roadmap,
+  Tense,
   ListeningLesson,
   ReadingLesson,
   SpeakingPrompt,
@@ -26,3 +27,4 @@ export const writingPrompts: WritingPrompt[] = [];
 export const translations: Translation[] = [];
 export const quizzes: Quiz[] = [];
 export const roadmaps: Roadmap[] = [];
+export const tenses: Tense[] = [];

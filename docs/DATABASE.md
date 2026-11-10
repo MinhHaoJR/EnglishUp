@@ -254,14 +254,14 @@ Quản trị viên là tài khoản thuộc vai trò `Admin` (bảng có sẵn c
 
 ### `ContentItems` — Đã có (`AddContentItems`, `ContentInDatabase`)
 
-Toàn bộ bài học tiếng Anh (2.851 mục khi khởi tạo, gồm 2.475 từ vựng, 133 câu hỏi ngữ pháp và 5 lộ trình). App, Đua 60 giây và trợ giảng AI đều đọc từ bảng này; `src/data/*.json` chỉ còn là dữ liệu khởi tạo cho lệnh `seed` và cho test. `GET /api/content` công khai, có ETag; client kiểm tra từng dòng bằng chính schema Zod của app, bỏ qua dòng sai và lưu một bản sao trong Dexie để học offline.
+Toàn bộ bài học tiếng Anh (2.864 mục khi khởi tạo, gồm 2.475 từ vựng, 13 thì, 133 câu hỏi ngữ pháp và 5 lộ trình). App, Đua 60 giây và trợ giảng AI đều đọc từ bảng này; `src/data/*.json` chỉ còn là dữ liệu khởi tạo cho lệnh `seed` và cho test. `GET /api/content` công khai, có ETag; client kiểm tra từng dòng bằng chính schema Zod của app, bỏ qua dòng sai và lưu một bản sao trong Dexie để học offline.
 
-| Cột         | Kiểu         | Ràng buộc | Ghi chú                                                                                                                                                      |
-| ----------- | ------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `Kind`      | varchar(16)  | PK        | `word`, `structure`, `reading`, `listening`, `dictation`, `speaking`, `writing`, `translation`, `relation`, `quiz` (câu điền ngữ pháp), `roadmap` (lộ trình) |
-| `Id`        | varchar(64)  | PK        | Mã bài, ví dụ `v-1-1`, `s12`, `r1`                                                                                                                           |
-| `Json`      | text         | NN        | Bài theo đúng cấu trúc JSON của app                                                                                                                          |
-| `Position`  | integer      | NN        | Thứ tự trong loại (theo file seed; bài thêm mới xếp cuối)                                                                                                    |
-| `Hidden`    | boolean      | NN        | Ẩn khỏi người học                                                                                                                                            |
-| `UpdatedAt` | timestamptz  | NN        |                                                                                                                                                              |
-| `UpdatedBy` | varchar(256) | NN        | Email quản trị viên, hoặc `seed`                                                                                                                             |
+| Cột         | Kiểu         | Ràng buộc | Ghi chú                                                                                                                                                                         |
+| ----------- | ------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Kind`      | varchar(16)  | PK        | `word`, `structure`, `reading`, `listening`, `dictation`, `speaking`, `writing`, `translation`, `relation`, `quiz` (câu điền ngữ pháp), `roadmap` (lộ trình), `tense` (các thì) |
+| `Id`        | varchar(64)  | PK        | Mã bài, ví dụ `v-1-1`, `s12`, `r1`                                                                                                                                              |
+| `Json`      | text         | NN        | Bài theo đúng cấu trúc JSON của app                                                                                                                                             |
+| `Position`  | integer      | NN        | Thứ tự trong loại (theo file seed; bài thêm mới xếp cuối)                                                                                                                       |
+| `Hidden`    | boolean      | NN        | Ẩn khỏi người học                                                                                                                                                               |
+| `UpdatedAt` | timestamptz  | NN        |                                                                                                                                                                                 |
+| `UpdatedBy` | varchar(256) | NN        | Email quản trị viên, hoặc `seed`                                                                                                                                                |

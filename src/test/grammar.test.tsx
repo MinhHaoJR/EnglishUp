@@ -2,7 +2,8 @@ import { fireEvent, render, screen, waitFor, within } from '@testing-library/rea
 import { MemoryRouter } from 'react-router-dom';
 import { useApp } from '../app/store';
 import { db, defaults, resetData } from '../services/storage';
-import { structures } from '../data/content';
+import { structures, tenses } from '../data/content';
+import userEvent from '@testing-library/user-event';
 import Grammar from '../features/grammar/Grammar';
 
 beforeEach(async () => {
@@ -68,5 +69,46 @@ test('practice blanks the pattern, marks answers and saves the attempt', async (
   await waitFor(async () => {
     const [attempt] = await db.attempts.where('skill').equals('grammar').toArray();
     expect(attempt).toMatchObject({ score: 80, label: 'Cấu trúc câu · Quá… / đủ…' });
+  });
+});
+
+test('the tenses cover the twelve tenses plus be going to, each with a check that has one right answer', () => {
+  expect(tenses).toHaveLength(13);
+  expect(tenses.filter((t) => t.group === 'present')).toHaveLength(4);
+  expect(tenses.filter((t) => t.group === 'past')).toHaveLength(4);
+  expect(tenses.filter((t) => t.group === 'future')).toHaveLength(5);
+  for (const tense of tenses)
+    for (const q of tense.practice) expect(q.options.filter((o) => o === q.answer)).toHaveLength(1);
+});
+
+test('the grammar page has a tenses part: pick a tense, read its form, take the quick check', async () => {
+  show();
+  expect(screen.getByRole('heading', { name: 'Ngữ pháp', level: 1 })).toBeInTheDocument();
+  await userEvent.click(screen.getByRole('tab', { name: /Các thì/ }));
+  // The timeline starts with the first tense; another one opens from its time column.
+  expect(screen.getByRole('heading', { name: 'Hiện tại đơn', level: 2 })).toBeInTheDocument();
+  const past = screen.getByRole('heading', { name: 'Quá khứ' }).closest('section')!;
+  await userEvent.click(within(past).getByRole('button', { name: /Quá khứ đơn/ }));
+  const card = screen.getByRole('article');
+  expect(within(card).getByRole('heading', { name: 'Quá khứ đơn' })).toBeInTheDocument();
+  expect(within(card).getByText('S + V2/ed')).toBeInTheDocument();
+  expect(within(card).getByText('yesterday')).toBeInTheDocument();
+
+  // Answer the three checks: the right one, then two wrong ones.
+  const tense = tenses.find((t) => t.id === 't-past-simple')!;
+  const check = within(card).getByRole('heading', { name: 'Luyện nhanh' }).closest('section')!;
+  const items = within(check).getAllByRole('listitem');
+  for (const [i, q] of tense.practice.entries()) {
+    const pick = i === 0 ? q.answer : q.options.find((o) => o !== q.answer)!;
+    await userEvent.click(within(items[i]).getByRole('button', { name: pick }));
+  }
+  expect(within(check).getByText(/Kết quả: 1\/3 câu đúng/)).toBeInTheDocument();
+  await waitFor(async () => {
+    const [attempt] = await db.attempts.toArray();
+    expect(attempt).toMatchObject({
+      skill: 'grammar',
+      score: 33,
+      label: 'Các thì / Tenses · Past simple',
+    });
   });
 });

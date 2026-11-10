@@ -1,8 +1,11 @@
 import { useMemo, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import SkillIcon from '../../components/SkillIcon';
+import Tenses from './Tenses';
 import { useBi, useT } from '../../i18n';
 import { Notice, PageTitle } from '../../components/shared';
 import { SpeakButton } from '../../components/SpeakButton';
-import { structures } from '../../data/content';
+import { structures, tenses } from '../../data/content';
 import { structureGroups, type Structure, type StructureGroup } from '../../data/schema';
 import { logAttempt } from '../../services/storage';
 
@@ -50,9 +53,9 @@ function Example({ structure, blank = false }: { structure: Structure; blank?: b
   );
 }
 
-export default function Grammar() {
+/** The 100 sentence patterns: browse and search them, then fill the gaps. */
+function Patterns() {
   const bi = useBi();
-  const t = useT();
   const [mode, setMode] = useState<'learn' | 'practice'>('learn');
   const [group, setGroup] = useState<StructureGroup | 'all'>('all');
   const [query, setQuery] = useState('');
@@ -117,7 +120,12 @@ export default function Grammar() {
     setDone(true);
     const score = Math.round(((quiz.length - wrong.length) / quiz.length) * 100);
     try {
-      await logAttempt('grammar', score, started, `${t('grammar')} · ${label(group)}`);
+      await logAttempt(
+        'grammar',
+        score,
+        started,
+        `${bi('Cấu trúc câu', 'Sentence patterns')} · ${label(group)}`,
+      );
     } catch {
       setSaveFailed(true);
     }
@@ -159,20 +167,9 @@ export default function Grammar() {
     </div>
   );
 
-  const title = (
-    <PageTitle
-      title={t('grammar')}
-      description={bi(
-        '100 cấu trúc kèm ví dụ. Học, rồi luyện điền chỗ trống.',
-        '100 patterns with examples. Learn them, then fill the gaps.',
-      )}
-    />
-  );
-
   if (mode === 'learn')
     return (
       <>
-        {title}
         {tabs}
         {controls}
         <p className="muted" role="status">
@@ -205,7 +202,6 @@ export default function Grammar() {
   const correct = quiz.length - wrong.length;
   return (
     <>
-      {title}
       {tabs}
       {done ? (
         <section className="panel space-y-4" aria-labelledby="grammar-result">
@@ -295,6 +291,67 @@ export default function Grammar() {
           )}
         </section>
       ) : null}
+    </>
+  );
+}
+
+/** Grammar: the sentence patterns and every tense, as two parts of one page (?part=tenses). */
+export default function Grammar() {
+  const bi = useBi();
+  const t = useT();
+  const [params, setParams] = useSearchParams();
+  const part = params.get('part') === 'tenses' ? 'tenses' : 'patterns';
+  const parts = [
+    {
+      id: 'patterns',
+      icon: 'grammar',
+      vi: 'Cấu trúc câu',
+      en: 'Sentence patterns',
+      noteVi: `${structures.length} mẫu câu kèm ví dụ, học rồi luyện điền chỗ trống`,
+      noteEn: `${structures.length} patterns with examples, then gap-fill practice`,
+    },
+    {
+      id: 'tenses',
+      icon: 'roadmap',
+      vi: 'Các thì',
+      en: 'Tenses',
+      noteVi: `${tenses.length} thì: công thức, cách dùng, dấu hiệu và luyện nhanh`,
+      noteEn: `${tenses.length} tenses: form, uses, signal words and a quick check`,
+    },
+  ] as const;
+  return (
+    <>
+      <PageTitle
+        title={t('grammar')}
+        description={bi(
+          'Cấu trúc câu và toàn bộ các thì trong tiếng Anh: xem công thức và ví dụ, rồi luyện tập.',
+          'Sentence patterns and every English tense: read the form and examples, then practise.',
+        )}
+      />
+      <div
+        className="grammar-parts"
+        role="tablist"
+        aria-label={bi('Phần ngữ pháp', 'Grammar parts')}
+      >
+        {parts.map((p) => (
+          <button
+            key={p.id}
+            type="button"
+            role="tab"
+            aria-selected={p.id === part}
+            onClick={() => setParams(p.id === 'tenses' ? { part: 'tenses' } : {})}
+          >
+            <span className="line-tile" aria-hidden="true">
+              <SkillIcon skill={p.icon} size={20} />
+            </span>
+            <span>
+              <strong>{bi(p.vi, p.en)}</strong>
+              <small>{bi(p.noteVi, p.noteEn)}</small>
+            </span>
+          </button>
+        ))}
+      </div>
+      {part === 'tenses' ? <Tenses /> : <Patterns />}
     </>
   );
 }

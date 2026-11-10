@@ -54,6 +54,7 @@ const kinds: { id: ContentKind; icon: IconName; skill: string; vi: string; en: s
   },
   { id: 'quiz', icon: 'choice', skill: 'grammar', vi: 'Câu hỏi ngữ pháp', en: 'Grammar questions' },
   { id: 'roadmap', icon: 'roadmap', skill: 'reading', vi: 'Lộ trình học', en: 'Learning paths' },
+  { id: 'tense', icon: 'grammar', skill: 'grammar', vi: 'Các thì', en: 'Tenses' },
 ];
 
 /** One line that names an item in the list, whatever its kind. */
@@ -64,12 +65,15 @@ function label(kind: ContentKind, item: Item) {
   if (kind === 'structure') return String(item.formula);
   if (kind === 'quiz') return `${String(item.sentence)} → ${String(item.answer)}`;
   if (kind === 'roadmap') return String((item.title as { vi?: string } | undefined)?.vi);
+  if (kind === 'tense') return String((item.name as { vi?: string } | undefined)?.vi);
   if (kind === 'dictation') return String(item.text);
   return String(item.title);
 }
 
 /** A fresh id: s### for sentence patterns (their schema requires it), a dated one for the rest. */
 function newId(kind: ContentKind, taken: Set<string>) {
+  // New tenses need an id the schema accepts: t- and letters only.
+  if (kind === 'tense') return `t-new-${Date.now().toString(36).replace(/[0-9]/g, '')}`;
   if (kind === 'structure') {
     for (let n = 101; n < 1000; n++) if (!taken.has(`s${n}`)) return `s${n}`;
   }
@@ -116,6 +120,19 @@ function grouping(kind: ContentKind) {
       order: Object.keys(quizCategories),
       name: (key: string): [string, string] =>
         [...(quizCategories[key as QuizCategory] ?? [key, key])] as [string, string],
+    };
+  if (kind === 'tense')
+    return {
+      key: (item: Item) => String(item.group),
+      order: ['present', 'past', 'future'],
+      name: (key: string): [string, string] =>
+        (
+          ({
+            present: ['Hiện tại', 'Present'],
+            past: ['Quá khứ', 'Past'],
+            future: ['Tương lai', 'Future'],
+          }) as Record<string, [string, string]>
+        )[key] ?? [key, key],
     };
   if (kind === 'roadmap')
     return {
@@ -214,7 +231,7 @@ export default function ContentManager() {
   const groupWord =
     kind === 'structure' || kind === 'quiz'
       ? bi('nhóm', 'groups')
-      : kind === 'relation' || kind === 'roadmap'
+      : kind === 'relation' || kind === 'roadmap' || kind === 'tense'
         ? bi('trình độ', 'levels')
         : bi('chủ đề', 'topics');
   const counts = Object.fromEntries(kinds.map((k) => [k.id, entries(k.id, rows).length]));

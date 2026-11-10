@@ -117,6 +117,50 @@ export const quizSchema = z
   .refine((q) => q.options.includes(q.answer), 'The answer must be one of the options');
 export type Quiz = z.infer<typeof quizSchema>;
 
+const bilingualText = z.object({ vi: z.string().trim().min(1), en: z.string().trim().min(1) });
+/** One English tense: its form, uses with examples, signal words, a tip and three quick checks. */
+export const tenseSchema = z.object({
+  id: z.string().regex(/^t-[a-z-]+$/),
+  order: z.number().int().min(1),
+  group: z.enum(['past', 'present', 'future']),
+  level: levelSchema,
+  name: bilingualText,
+  forms: z.object({
+    affirmative: z.array(z.string().trim().min(1)).min(1),
+    negative: z.array(z.string().trim().min(1)).min(1),
+    question: z.array(z.string().trim().min(1)).min(1),
+  }),
+  uses: z
+    .array(
+      z.object({
+        vi: z.string().trim().min(1),
+        en: z.string().trim().min(1),
+        example: z.string().trim().min(1),
+      }),
+    )
+    .min(1),
+  signals: z.array(z.string().trim().min(1)).min(1),
+  tip: bilingualText,
+  practice: z
+    .array(
+      z
+        .object({
+          sentence: z.string().trim().min(1),
+          options: z.array(z.string().trim().min(1)).length(4),
+          answer: z.string().trim().min(1),
+          explanation: z.string().trim().min(1),
+        })
+        .refine(
+          (q) => q.sentence.split('___').length === 2,
+          'The sentence needs exactly one blank (___)',
+        )
+        .refine((q) => new Set(q.options).size === 4, 'The four options must differ')
+        .refine((q) => q.options.includes(q.answer), 'The answer must be one of the options'),
+    )
+    .min(1),
+});
+export type Tense = z.infer<typeof tenseSchema>;
+
 /** Where a learning-path task sends the learner: a practice page, a game, the tutor or the level test. */
 export const roadmapSkills = [
   'vocabulary',
@@ -129,6 +173,7 @@ export const roadmapSkills = [
   'writing',
   'wordgame',
   'grammargame',
+  'tenses',
   'assistant',
   'placement',
 ] as const;
@@ -145,6 +190,7 @@ export const roadmapSkillLabels: Record<RoadmapSkill, [string, string]> = {
   writing: ['Luyện viết', 'Writing'],
   wordgame: ['Đua từ vựng', 'Vocabulary race'],
   grammargame: ['Đua ngữ pháp', 'Grammar race'],
+  tenses: ['Các thì', 'Tenses'],
   assistant: ['Trợ giảng AI', 'AI tutor'],
   placement: ['Kiểm tra trình độ', 'Level test'],
 };

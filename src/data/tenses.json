@@ -1,0 +1,1067 @@
+[
+  {
+    "id": "t-present-simple",
+    "order": 1,
+    "group": "present",
+    "level": "A1",
+    "name": {
+      "vi": "Hiện tại đơn",
+      "en": "Present simple"
+    },
+    "forms": {
+      "affirmative": [
+        "S + V(s/es) + O",
+        "S + am/is/are + N/Adj"
+      ],
+      "negative": [
+        "S + do/does + not + V",
+        "S + am/is/are + not + N/Adj"
+      ],
+      "question": [
+        "Do/Does + S + V?",
+        "Am/Is/Are + S + N/Adj?"
+      ]
+    },
+    "uses": [
+      {
+        "vi": "Thói quen, việc lặp đi lặp lại",
+        "en": "Habits and repeated actions",
+        "example": "I walk to school every day."
+      },
+      {
+        "vi": "Sự thật hiển nhiên",
+        "en": "Facts that are always true",
+        "example": "Water boils at 100 degrees Celsius."
+      },
+      {
+        "vi": "Lịch trình, thời gian biểu cố định",
+        "en": "Fixed timetables",
+        "example": "The train leaves at seven in the morning."
+      }
+    ],
+    "signals": [
+      "always",
+      "usually",
+      "often",
+      "sometimes",
+      "never",
+      "every day",
+      "on Mondays"
+    ],
+    "tip": {
+      "vi": "Với he/she/it, động từ thêm -s/-es. Sau does, động từ trở về nguyên mẫu: Does she like tea? (không nói Does she likes).",
+      "en": "With he/she/it, add -s/-es. After does the verb goes back to its base form: Does she like tea? (not Does she likes)."
+    },
+    "practice": [
+      {
+        "sentence": "She usually ___ to work by bus.",
+        "options": [
+          "goes",
+          "go",
+          "going",
+          "gone"
+        ],
+        "answer": "goes",
+        "explanation": "Thói quen (usually), chủ ngữ she → goes."
+      },
+      {
+        "sentence": "Water ___ at 100 degrees Celsius.",
+        "options": [
+          "boils",
+          "boil",
+          "boiling",
+          "is boil"
+        ],
+        "answer": "boils",
+        "explanation": "Sự thật hiển nhiên → hiện tại đơn; water là danh từ số ít → boils."
+      },
+      {
+        "sentence": "___ your brother play the guitar?",
+        "options": [
+          "Does",
+          "Do",
+          "Is",
+          "Has"
+        ],
+        "answer": "Does",
+        "explanation": "Câu hỏi hiện tại đơn với your brother (he) → Does + S + V."
+      }
+    ]
+  },
+  {
+    "id": "t-present-continuous",
+    "order": 2,
+    "group": "present",
+    "level": "A1",
+    "name": {
+      "vi": "Hiện tại tiếp diễn",
+      "en": "Present continuous"
+    },
+    "forms": {
+      "affirmative": [
+        "S + am/is/are + V-ing"
+      ],
+      "negative": [
+        "S + am/is/are + not + V-ing"
+      ],
+      "question": [
+        "Am/Is/Are + S + V-ing?"
+      ]
+    },
+    "uses": [
+      {
+        "vi": "Việc đang diễn ra lúc nói",
+        "en": "Actions happening now",
+        "example": "She is cooking dinner now."
+      },
+      {
+        "vi": "Việc tạm thời trong giai đoạn này",
+        "en": "Temporary situations",
+        "example": "I am staying with my aunt this week."
+      },
+      {
+        "vi": "Kế hoạch tương lai đã sắp xếp",
+        "en": "Arranged future plans",
+        "example": "We are meeting the teacher tomorrow afternoon."
+      }
+    ],
+    "signals": [
+      "now",
+      "right now",
+      "at the moment",
+      "Look!",
+      "Listen!",
+      "this week",
+      "today"
+    ],
+    "tip": {
+      "vi": "Động từ chỉ trạng thái (know, like, want, believe, need) thường không dùng tiếp diễn: nói I know, không nói I am knowing.",
+      "en": "State verbs (know, like, want, believe, need) are rarely continuous: say I know, not I am knowing."
+    },
+    "practice": [
+      {
+        "sentence": "Listen! Someone ___ at the door.",
+        "options": [
+          "is knocking",
+          "knock",
+          "are knocking",
+          "knocking"
+        ],
+        "answer": "is knocking",
+        "explanation": "Listen! báo hiệu việc đang xảy ra → is knocking."
+      },
+      {
+        "sentence": "I ___ with my aunt this week while my parents are away.",
+        "options": [
+          "am staying",
+          "is staying",
+          "are staying",
+          "staying"
+        ],
+        "answer": "am staying",
+        "explanation": "Việc tạm thời (this week), chủ ngữ I → am staying."
+      },
+      {
+        "sentence": "They ___ TV at the moment; they are doing homework.",
+        "options": [
+          "aren't watching",
+          "isn't watching",
+          "not watching",
+          "aren't watch"
+        ],
+        "answer": "aren't watching",
+        "explanation": "Phủ định hiện tại tiếp diễn: are + not + V-ing."
+      }
+    ]
+  },
+  {
+    "id": "t-present-perfect",
+    "order": 3,
+    "group": "present",
+    "level": "A2",
+    "name": {
+      "vi": "Hiện tại hoàn thành",
+      "en": "Present perfect"
+    },
+    "forms": {
+      "affirmative": [
+        "S + have/has + V3/ed"
+      ],
+      "negative": [
+        "S + have/has + not + V3/ed"
+      ],
+      "question": [
+        "Have/Has + S + V3/ed?"
+      ]
+    },
+    "uses": [
+      {
+        "vi": "Trải nghiệm tính đến hiện tại",
+        "en": "Experiences up to now",
+        "example": "I have visited Hue twice."
+      },
+      {
+        "vi": "Việc vừa xảy ra, còn ảnh hưởng tới hiện tại",
+        "en": "Past actions with a result now",
+        "example": "She has lost her keys, so she can't get in."
+      },
+      {
+        "vi": "Kéo dài từ quá khứ đến nay",
+        "en": "Situations that started in the past and continue",
+        "example": "We have lived here since 2019."
+      }
+    ],
+    "signals": [
+      "ever",
+      "never",
+      "already",
+      "yet",
+      "just",
+      "since",
+      "for",
+      "so far",
+      "recently"
+    ],
+    "tip": {
+      "vi": "Không dùng với thời điểm quá khứ cụ thể (yesterday, last year, in 2010): nói I saw him yesterday, không nói I have seen him yesterday.",
+      "en": "Do not use it with a finished past time (yesterday, last year, in 2010): say I saw him yesterday, not I have seen him yesterday."
+    },
+    "practice": [
+      {
+        "sentence": "I ___ this film three times.",
+        "options": [
+          "have seen",
+          "has seen",
+          "have saw",
+          "having seen"
+        ],
+        "answer": "have seen",
+        "explanation": "Trải nghiệm tính đến nay → have + V3 (see → seen)."
+      },
+      {
+        "sentence": "She ___ here since 2020.",
+        "options": [
+          "has worked",
+          "have worked",
+          "has work",
+          "working"
+        ],
+        "answer": "has worked",
+        "explanation": "Since + mốc thời gian → hiện tại hoàn thành; she → has."
+      },
+      {
+        "sentence": "Have you ever ___ to Da Lat?",
+        "options": [
+          "been",
+          "be",
+          "being",
+          "was"
+        ],
+        "answer": "been",
+        "explanation": "Have you ever + V3; trải nghiệm đi đâu đó dùng been."
+      }
+    ]
+  },
+  {
+    "id": "t-present-perfect-continuous",
+    "order": 4,
+    "group": "present",
+    "level": "B1",
+    "name": {
+      "vi": "Hiện tại hoàn thành tiếp diễn",
+      "en": "Present perfect continuous"
+    },
+    "forms": {
+      "affirmative": [
+        "S + have/has + been + V-ing"
+      ],
+      "negative": [
+        "S + have/has + not + been + V-ing"
+      ],
+      "question": [
+        "Have/Has + S + been + V-ing?"
+      ]
+    },
+    "uses": [
+      {
+        "vi": "Kéo dài đến hiện tại, nhấn mạnh quá trình",
+        "en": "Actions continuing up to now, stressing the duration",
+        "example": "I have been learning English for three years."
+      },
+      {
+        "vi": "Vừa dừng lại, còn để lại dấu hiệu",
+        "en": "Recent actions with visible signs",
+        "example": "Her eyes are red; she has been crying."
+      }
+    ],
+    "signals": [
+      "for",
+      "since",
+      "all day",
+      "all morning",
+      "how long",
+      "lately",
+      "recently"
+    ],
+    "tip": {
+      "vi": "So với hiện tại hoàn thành: thì này nhấn mạnh thời gian kéo dài (I have been reading for two hours), còn hiện tại hoàn thành nhấn mạnh kết quả (I have read three chapters).",
+      "en": "Compared with the present perfect, it stresses how long (I have been reading for two hours) rather than the result (I have read three chapters)."
+    },
+    "practice": [
+      {
+        "sentence": "It ___ all morning, so the roads are wet.",
+        "options": [
+          "has been raining",
+          "has been rain",
+          "have been raining",
+          "has raining"
+        ],
+        "answer": "has been raining",
+        "explanation": "Kéo dài cả buổi sáng, còn dấu hiệu (đường ướt) → has been + V-ing."
+      },
+      {
+        "sentence": "How long ___ you been waiting?",
+        "options": [
+          "have",
+          "has",
+          "are",
+          "did"
+        ],
+        "answer": "have",
+        "explanation": "How long + have/has + S + been + V-ing; you → have."
+      },
+      {
+        "sentence": "She is tired because she ___ for ten hours.",
+        "options": [
+          "has been driving",
+          "have been driving",
+          "has been drive",
+          "is drive"
+        ],
+        "answer": "has been driving",
+        "explanation": "Việc kéo dài đến hiện tại gây ra mệt → has been + V-ing."
+      }
+    ]
+  },
+  {
+    "id": "t-past-simple",
+    "order": 5,
+    "group": "past",
+    "level": "A1",
+    "name": {
+      "vi": "Quá khứ đơn",
+      "en": "Past simple"
+    },
+    "forms": {
+      "affirmative": [
+        "S + V2/ed",
+        "S + was/were + N/Adj"
+      ],
+      "negative": [
+        "S + did not + V",
+        "S + was/were + not + N/Adj"
+      ],
+      "question": [
+        "Did + S + V?",
+        "Was/Were + S + N/Adj?"
+      ]
+    },
+    "uses": [
+      {
+        "vi": "Việc đã xong tại một thời điểm xác định",
+        "en": "Finished actions at a known past time",
+        "example": "I visited my grandparents last weekend."
+      },
+      {
+        "vi": "Chuỗi hành động nối tiếp trong quá khứ",
+        "en": "A sequence of past actions",
+        "example": "He opened the door, turned on the light and sat down."
+      },
+      {
+        "vi": "Thói quen trong quá khứ",
+        "en": "Past habits",
+        "example": "As a child, she walked to school every day."
+      }
+    ],
+    "signals": [
+      "yesterday",
+      "last week",
+      "last year",
+      "ago",
+      "in 2010",
+      "when I was a child"
+    ],
+    "tip": {
+      "vi": "Sau did và didn't, động từ trở về nguyên mẫu: Did you go? (không nói Did you went?).",
+      "en": "After did and didn't the verb is in its base form: Did you go? (not Did you went?)."
+    },
+    "practice": [
+      {
+        "sentence": "We ___ to the beach last summer.",
+        "options": [
+          "went",
+          "go",
+          "goes",
+          "going"
+        ],
+        "answer": "went",
+        "explanation": "Last summer → quá khứ đơn; go → went."
+      },
+      {
+        "sentence": "She ___ at home yesterday evening.",
+        "options": [
+          "was",
+          "were",
+          "be",
+          "is been"
+        ],
+        "answer": "was",
+        "explanation": "Quá khứ của be với she → was."
+      },
+      {
+        "sentence": "___ you call your mother last night?",
+        "options": [
+          "Did",
+          "Do",
+          "Have",
+          "Were"
+        ],
+        "answer": "Did",
+        "explanation": "Câu hỏi quá khứ đơn với động từ thường → Did + S + V."
+      }
+    ]
+  },
+  {
+    "id": "t-past-continuous",
+    "order": 6,
+    "group": "past",
+    "level": "A2",
+    "name": {
+      "vi": "Quá khứ tiếp diễn",
+      "en": "Past continuous"
+    },
+    "forms": {
+      "affirmative": [
+        "S + was/were + V-ing"
+      ],
+      "negative": [
+        "S + was/were + not + V-ing"
+      ],
+      "question": [
+        "Was/Were + S + V-ing?"
+      ]
+    },
+    "uses": [
+      {
+        "vi": "Đang diễn ra tại một thời điểm trong quá khứ",
+        "en": "In progress at a past moment",
+        "example": "At 8 p.m. yesterday, I was having dinner."
+      },
+      {
+        "vi": "Đang diễn ra thì bị việc khác cắt ngang",
+        "en": "Interrupted by another action",
+        "example": "I was walking home when it started to rain."
+      },
+      {
+        "vi": "Hai việc diễn ra song song",
+        "en": "Two actions at the same time",
+        "example": "While she was cooking, he was setting the table."
+      }
+    ],
+    "signals": [
+      "at that time",
+      "at 8 p.m. yesterday",
+      "while",
+      "when",
+      "all evening"
+    ],
+    "tip": {
+      "vi": "Việc dài dùng quá khứ tiếp diễn, việc ngắn chen vào dùng quá khứ đơn: I was reading when the phone rang.",
+      "en": "Use it for the longer action and the past simple for the short one that interrupts: I was reading when the phone rang."
+    },
+    "practice": [
+      {
+        "sentence": "At nine o'clock last night, we ___ a film together.",
+        "options": [
+          "were watching",
+          "was watching",
+          "were watch",
+          "watching"
+        ],
+        "answer": "were watching",
+        "explanation": "Đang diễn ra tại một thời điểm quá khứ; we → were + V-ing."
+      },
+      {
+        "sentence": "I ___ home when it started to rain.",
+        "options": [
+          "was walking",
+          "were walking",
+          "was walk",
+          "walking"
+        ],
+        "answer": "was walking",
+        "explanation": "Việc dài bị cắt ngang; I → was + V-ing."
+      },
+      {
+        "sentence": "While she ___, the baby fell asleep.",
+        "options": [
+          "was singing",
+          "were singing",
+          "is singing",
+          "singing"
+        ],
+        "answer": "was singing",
+        "explanation": "While + quá khứ tiếp diễn cho việc đang diễn ra."
+      }
+    ]
+  },
+  {
+    "id": "t-past-perfect",
+    "order": 7,
+    "group": "past",
+    "level": "B1",
+    "name": {
+      "vi": "Quá khứ hoàn thành",
+      "en": "Past perfect"
+    },
+    "forms": {
+      "affirmative": [
+        "S + had + V3/ed"
+      ],
+      "negative": [
+        "S + had not + V3/ed"
+      ],
+      "question": [
+        "Had + S + V3/ed?"
+      ]
+    },
+    "uses": [
+      {
+        "vi": "Xảy ra trước một việc hoặc mốc khác trong quá khứ",
+        "en": "Before another past action or time",
+        "example": "When we arrived, the film had already started."
+      },
+      {
+        "vi": "Giải thích nguyên nhân của một tình huống trong quá khứ",
+        "en": "The reason for a past situation",
+        "example": "She was upset because she had lost her bag."
+      }
+    ],
+    "signals": [
+      "before",
+      "after",
+      "by the time",
+      "already",
+      "when + quá khứ đơn"
+    ],
+    "tip": {
+      "vi": "Chỉ cần dùng khi muốn nói rõ việc nào xảy ra trước. Nếu kể theo đúng thứ tự thì quá khứ đơn là đủ.",
+      "en": "Use it only when you need to show which action came first. Telling events in order, the past simple is enough."
+    },
+    "practice": [
+      {
+        "sentence": "By the time we got to the station, the train ___.",
+        "options": [
+          "had left",
+          "had leave",
+          "has leaving",
+          "leaving"
+        ],
+        "answer": "had left",
+        "explanation": "Việc xảy ra trước một mốc quá khứ → had + V3."
+      },
+      {
+        "sentence": "She didn't come because she ___ her ankle.",
+        "options": [
+          "had hurt",
+          "had hurted",
+          "has hurting",
+          "hurting"
+        ],
+        "answer": "had hurt",
+        "explanation": "Nguyên nhân xảy ra trước → had + V3 (hurt là bất quy tắc)."
+      },
+      {
+        "sentence": "___ you finished your homework before dinner?",
+        "options": [
+          "Had",
+          "Has",
+          "Does",
+          "Were"
+        ],
+        "answer": "Had",
+        "explanation": "Câu hỏi quá khứ hoàn thành → Had + S + V3."
+      }
+    ]
+  },
+  {
+    "id": "t-past-perfect-continuous",
+    "order": 8,
+    "group": "past",
+    "level": "B2",
+    "name": {
+      "vi": "Quá khứ hoàn thành tiếp diễn",
+      "en": "Past perfect continuous"
+    },
+    "forms": {
+      "affirmative": [
+        "S + had been + V-ing"
+      ],
+      "negative": [
+        "S + had not been + V-ing"
+      ],
+      "question": [
+        "Had + S + been + V-ing?"
+      ]
+    },
+    "uses": [
+      {
+        "vi": "Kéo dài cho đến một mốc trong quá khứ",
+        "en": "Lasting up to a past moment",
+        "example": "I had been waiting for an hour when she arrived."
+      },
+      {
+        "vi": "Nguyên nhân kéo dài của một tình trạng quá khứ",
+        "en": "The ongoing cause of a past situation",
+        "example": "The ground was wet because it had been raining."
+      }
+    ],
+    "signals": [
+      "for",
+      "since",
+      "how long",
+      "before",
+      "by the time"
+    ],
+    "tip": {
+      "vi": "Giống hiện tại hoàn thành tiếp diễn nhưng lùi về quá khứ: mốc kết thúc là một thời điểm đã qua.",
+      "en": "Like the present perfect continuous, shifted to the past: the end point is a moment that has passed."
+    },
+    "practice": [
+      {
+        "sentence": "They ___ for two hours when the bus finally came.",
+        "options": [
+          "had been waiting",
+          "had been wait",
+          "has been waiting",
+          "had waiting"
+        ],
+        "answer": "had been waiting",
+        "explanation": "Kéo dài đến một mốc quá khứ → had been + V-ing."
+      },
+      {
+        "sentence": "His eyes were red because he ___ all night.",
+        "options": [
+          "had been studying",
+          "had been study",
+          "has been studying",
+          "had studying"
+        ],
+        "answer": "had been studying",
+        "explanation": "Nguyên nhân kéo dài trước mốc quá khứ → had been + V-ing."
+      },
+      {
+        "sentence": "How long ___ she been living there before she moved?",
+        "options": [
+          "had",
+          "has",
+          "did",
+          "was"
+        ],
+        "answer": "had",
+        "explanation": "Câu hỏi quá khứ hoàn thành tiếp diễn → had + S + been + V-ing."
+      }
+    ]
+  },
+  {
+    "id": "t-future-simple",
+    "order": 9,
+    "group": "future",
+    "level": "A1",
+    "name": {
+      "vi": "Tương lai đơn",
+      "en": "Future simple (will)"
+    },
+    "forms": {
+      "affirmative": [
+        "S + will + V"
+      ],
+      "negative": [
+        "S + will not (won't) + V"
+      ],
+      "question": [
+        "Will + S + V?"
+      ]
+    },
+    "uses": [
+      {
+        "vi": "Quyết định ngay lúc nói",
+        "en": "Decisions made at the moment of speaking",
+        "example": "It's cold. I will close the window."
+      },
+      {
+        "vi": "Dự đoán theo ý kiến cá nhân",
+        "en": "Predictions based on opinion",
+        "example": "I think it will rain tomorrow."
+      },
+      {
+        "vi": "Lời hứa, lời đề nghị giúp đỡ",
+        "en": "Promises and offers",
+        "example": "I will help you with your homework."
+      }
+    ],
+    "signals": [
+      "tomorrow",
+      "next week",
+      "soon",
+      "I think",
+      "probably",
+      "in 2030"
+    ],
+    "tip": {
+      "vi": "Sau will luôn là động từ nguyên mẫu: She will come (không nói She will comes).",
+      "en": "After will, always use the base form: She will come (not She will comes)."
+    },
+    "practice": [
+      {
+        "sentence": "The phone is ringing. I ___ it.",
+        "options": [
+          "will answer",
+          "will answers",
+          "will answering",
+          "am answer"
+        ],
+        "answer": "will answer",
+        "explanation": "Quyết định ngay lúc nói → will + V nguyên mẫu."
+      },
+      {
+        "sentence": "I promise I ___ late again.",
+        "options": [
+          "won't be",
+          "won't being",
+          "won't is",
+          "not will be"
+        ],
+        "answer": "won't be",
+        "explanation": "Lời hứa → will not (won't) + V nguyên mẫu."
+      },
+      {
+        "sentence": "Do you think she ___ the exam?",
+        "options": [
+          "will pass",
+          "will passes",
+          "will passing",
+          "wills pass"
+        ],
+        "answer": "will pass",
+        "explanation": "Dự đoán theo ý kiến (Do you think) → will + V."
+      }
+    ]
+  },
+  {
+    "id": "t-be-going-to",
+    "order": 10,
+    "group": "future",
+    "level": "A2",
+    "name": {
+      "vi": "Tương lai gần (be going to)",
+      "en": "Near future (be going to)"
+    },
+    "forms": {
+      "affirmative": [
+        "S + am/is/are + going to + V"
+      ],
+      "negative": [
+        "S + am/is/are + not + going to + V"
+      ],
+      "question": [
+        "Am/Is/Are + S + going to + V?"
+      ]
+    },
+    "uses": [
+      {
+        "vi": "Dự định đã có từ trước",
+        "en": "Plans made before now",
+        "example": "We are going to visit Hoi An next month."
+      },
+      {
+        "vi": "Dự đoán có dấu hiệu rõ ràng",
+        "en": "Predictions based on what we can see",
+        "example": "Look at those clouds! It is going to rain."
+      }
+    ],
+    "signals": [
+      "tonight",
+      "tomorrow",
+      "next week",
+      "Look!",
+      "dấu hiệu trước mắt"
+    ],
+    "tip": {
+      "vi": "Quyết định ngay lúc nói dùng will; dự định đã lên kế hoạch dùng be going to.",
+      "en": "Use will for decisions made now and be going to for plans already made."
+    },
+    "practice": [
+      {
+        "sentence": "Look at those dark clouds! It ___ rain.",
+        "options": [
+          "is going to",
+          "going to",
+          "is go to",
+          "goes to"
+        ],
+        "answer": "is going to",
+        "explanation": "Dự đoán có dấu hiệu (mây đen) → be going to + V."
+      },
+      {
+        "sentence": "We ___ visit our grandparents this weekend; we have bought the tickets.",
+        "options": [
+          "are going to",
+          "is going to",
+          "going to",
+          "are go to"
+        ],
+        "answer": "are going to",
+        "explanation": "Dự định đã có (đã mua vé); we → are going to."
+      },
+      {
+        "sentence": "___ she going to study abroad next year?",
+        "options": [
+          "Is",
+          "Does",
+          "Will",
+          "Has"
+        ],
+        "answer": "Is",
+        "explanation": "Câu hỏi be going to → Am/Is/Are + S + going to + V; she → Is."
+      }
+    ]
+  },
+  {
+    "id": "t-future-continuous",
+    "order": 11,
+    "group": "future",
+    "level": "B1",
+    "name": {
+      "vi": "Tương lai tiếp diễn",
+      "en": "Future continuous"
+    },
+    "forms": {
+      "affirmative": [
+        "S + will be + V-ing"
+      ],
+      "negative": [
+        "S + will not be + V-ing"
+      ],
+      "question": [
+        "Will + S + be + V-ing?"
+      ]
+    },
+    "uses": [
+      {
+        "vi": "Đang diễn ra tại một thời điểm trong tương lai",
+        "en": "In progress at a future moment",
+        "example": "At nine tomorrow morning, I will be taking the exam."
+      },
+      {
+        "vi": "Hỏi lịch sự về kế hoạch của người khác",
+        "en": "Polite questions about plans",
+        "example": "Will you be using the car tonight?"
+      }
+    ],
+    "signals": [
+      "at this time tomorrow",
+      "at 9 a.m. next Monday",
+      "this time next week"
+    ],
+    "tip": {
+      "vi": "Dùng khi có một thời điểm cụ thể trong tương lai và việc đang diễn ra lúc đó.",
+      "en": "Use it with a specific future moment when the action will be in progress."
+    },
+    "practice": [
+      {
+        "sentence": "This time next week, we ___ on the beach.",
+        "options": [
+          "will be lying",
+          "will lying",
+          "will be lie",
+          "are lie"
+        ],
+        "answer": "will be lying",
+        "explanation": "Đang diễn ra tại thời điểm tương lai → will be + V-ing."
+      },
+      {
+        "sentence": "Don't call at eight; I ___ dinner then.",
+        "options": [
+          "will be having",
+          "will having",
+          "will be have",
+          "have had"
+        ],
+        "answer": "will be having",
+        "explanation": "Một thời điểm tương lai cụ thể (at eight) → will be + V-ing."
+      },
+      {
+        "sentence": "___ you be using the printer this afternoon?",
+        "options": [
+          "Will",
+          "Are",
+          "Do",
+          "Have"
+        ],
+        "answer": "Will",
+        "explanation": "Câu hỏi tương lai tiếp diễn → Will + S + be + V-ing."
+      }
+    ]
+  },
+  {
+    "id": "t-future-perfect",
+    "order": 12,
+    "group": "future",
+    "level": "B2",
+    "name": {
+      "vi": "Tương lai hoàn thành",
+      "en": "Future perfect"
+    },
+    "forms": {
+      "affirmative": [
+        "S + will have + V3/ed"
+      ],
+      "negative": [
+        "S + will not have + V3/ed"
+      ],
+      "question": [
+        "Will + S + have + V3/ed?"
+      ]
+    },
+    "uses": [
+      {
+        "vi": "Sẽ hoàn thành trước một mốc trong tương lai",
+        "en": "Finished before a future time",
+        "example": "By 2030, they will have built the new bridge."
+      },
+      {
+        "vi": "Dự đoán về việc đã xong tính đến một lúc sau",
+        "en": "Predicting what will be done by a later time",
+        "example": "By the time you read this, I will have left."
+      }
+    ],
+    "signals": [
+      "by + thời gian",
+      "by the time",
+      "before",
+      "by then"
+    ],
+    "tip": {
+      "vi": "Thường đi với by + mốc tương lai: By Friday, I will have finished.",
+      "en": "It usually comes with by + a future time: By Friday, I will have finished."
+    },
+    "practice": [
+      {
+        "sentence": "By next June, I ___ from university.",
+        "options": [
+          "will have graduated",
+          "will have graduate",
+          "will has graduated",
+          "will graduated"
+        ],
+        "answer": "will have graduated",
+        "explanation": "By + mốc tương lai → will have + V3."
+      },
+      {
+        "sentence": "She ___ the report by the time you arrive.",
+        "options": [
+          "will have finished",
+          "will have finish",
+          "will finished",
+          "will has finished"
+        ],
+        "answer": "will have finished",
+        "explanation": "Hoàn thành trước một mốc tương lai → will have + V3."
+      },
+      {
+        "sentence": "Will they ___ the work before Friday?",
+        "options": [
+          "have completed",
+          "completed",
+          "completing",
+          "has completed"
+        ],
+        "answer": "have completed",
+        "explanation": "Câu hỏi tương lai hoàn thành → Will + S + have + V3."
+      }
+    ]
+  },
+  {
+    "id": "t-future-perfect-continuous",
+    "order": 13,
+    "group": "future",
+    "level": "C1",
+    "name": {
+      "vi": "Tương lai hoàn thành tiếp diễn",
+      "en": "Future perfect continuous"
+    },
+    "forms": {
+      "affirmative": [
+        "S + will have been + V-ing"
+      ],
+      "negative": [
+        "S + will not have been + V-ing"
+      ],
+      "question": [
+        "Will + S + have been + V-ing?"
+      ]
+    },
+    "uses": [
+      {
+        "vi": "Kéo dài đến một mốc tương lai, nhấn mạnh thời lượng",
+        "en": "Lasting up to a future time, stressing how long",
+        "example": "By next year, I will have been teaching for ten years."
+      }
+    ],
+    "signals": [
+      "by + thời gian + for + khoảng thời gian",
+      "by the time",
+      "by then"
+    ],
+    "tip": {
+      "vi": "Ít gặp trong hội thoại; thường dùng để nhấn mạnh một quãng thời gian dài tính đến một mốc tương lai.",
+      "en": "Rare in conversation; mostly used to stress a long period up to a future point."
+    },
+    "practice": [
+      {
+        "sentence": "By December, she ___ here for five years.",
+        "options": [
+          "will have been working",
+          "will have working",
+          "will been working",
+          "has been worked"
+        ],
+        "answer": "will have been working",
+        "explanation": "Kéo dài đến một mốc tương lai → will have been + V-ing."
+      },
+      {
+        "sentence": "By the time you get home, I ___ for three hours.",
+        "options": [
+          "will have been studying",
+          "will have been study",
+          "will be studied",
+          "have been studied"
+        ],
+        "answer": "will have been studying",
+        "explanation": "Quãng thời gian tính đến một mốc tương lai → will have been + V-ing."
+      },
+      {
+        "sentence": "How long will you ___ by the end of this month?",
+        "options": [
+          "have been training",
+          "has been training",
+          "be train",
+          "had trained"
+        ],
+        "answer": "have been training",
+        "explanation": "Câu hỏi: Will + S + have been + V-ing."
+      }
+    ]
+  }
+]

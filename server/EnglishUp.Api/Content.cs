@@ -38,6 +38,7 @@ public static partial class Content
         ["relation"] = ["level", "word", "pos", "meaning", "definition", "example", "synonyms", "antonyms", "usageNote"],
         ["quiz"] = ["level", "category", "sentence", "options", "answer", "explanation"],
         ["roadmap"] = ["from", "to", "weeks", "title", "summary", "stages"],
+        ["tense"] = ["order", "group", "level", "name", "forms", "uses", "signals", "tip", "practice"],
     };
 
     /// <summary>Seed files per kind, in the order the app lists them.</summary>
@@ -54,6 +55,7 @@ public static partial class Content
         ["relation"] = ["wordRelations-basic.json", "wordRelations-advanced.json"],
         ["quiz"] = ["grammar-quiz.json"],
         ["roadmap"] = ["roadmaps.json"],
+        ["tense"] = ["tenses.json"],
     };
 
     [GeneratedRegex("^[A-Za-z0-9-]{1,64}$")]

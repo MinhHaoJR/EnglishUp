@@ -4311,3 +4311,278 @@ html .workspace .tabs button[aria-pressed='true'] {
   border-color: var(--dot);
   background: color-mix(in srgb, var(--dot) 10%, var(--panel));
 }
+
+/* ---------- Grammar: two parts (patterns, tenses); the tenses as a past-present-future timeline ----------
+   Each time keeps one colour from the CEFR spectrum family: past indigo, present teal, future pink. */
+.grammar-parts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.grammar-parts button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  min-height: 80px;
+  padding: 14px 16px;
+  border: 1px solid var(--line-edge);
+  border-radius: var(--radius);
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+}
+.grammar-parts button > span:last-child {
+  display: grid;
+  gap: 4px;
+}
+.grammar-parts button small {
+  color: var(--muted);
+  font-weight: 400;
+}
+.grammar-parts button:hover {
+  background: var(--line-wash);
+}
+.grammar-parts button[aria-selected='true'] {
+  border-color: var(--line);
+  background: var(--line-tint);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+[data-time='past'] {
+  --time: var(--lv-b2);
+}
+[data-time='present'] {
+  --time: var(--lv-a2);
+}
+[data-time='future'] {
+  --time: var(--lv-c2);
+}
+.tenses {
+  display: grid;
+  gap: 20px;
+}
+.tense-timeline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.tense-time {
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--time) 26%, var(--border));
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--time) 6%, var(--panel));
+}
+.tense-time h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 8px;
+  color: color-mix(in srgb, var(--time) 80%, var(--ink));
+  font-size: 1rem;
+}
+.tense-time h2::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--time);
+}
+.tense-time ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tense-time button {
+  display: grid;
+  justify-content: start;
+  justify-items: start;
+  align-content: center;
+  gap: 1px;
+  width: 100%;
+  min-height: 52px;
+  padding: 6px 10px;
+  border: 1px solid color-mix(in srgb, var(--time) 18%, var(--border));
+  border-radius: var(--radius-sm);
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  text-align: left;
+}
+.tense-time button small {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.tense-time button:hover {
+  border-color: color-mix(in srgb, var(--time) 50%, var(--border));
+}
+.tense-time button[aria-current] {
+  border-color: var(--time);
+  background: var(--time);
+  color: var(--tile-ink);
+}
+.tense-time button[aria-current] small {
+  color: inherit;
+  opacity: 0.85;
+}
+.tense-card {
+  display: grid;
+  gap: 22px;
+  border-color: color-mix(in srgb, var(--time) 28%, var(--border));
+}
+.tense-card header h2 {
+  margin: 8px 0 2px;
+  color: color-mix(in srgb, var(--time) 82%, var(--ink));
+  font-size: 1.6rem;
+}
+.tense-card header p {
+  margin: 0;
+}
+.tense-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+.tense-card .topic-chip {
+  background: color-mix(in srgb, var(--time) 12%, var(--panel));
+  color: color-mix(in srgb, var(--time) 80%, var(--ink));
+}
+.tense-forms {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+.tense-forms > div {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--time) 6%, var(--panel));
+}
+.tense-forms dt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+.tense-sign {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--time);
+  color: var(--tile-ink);
+  font-weight: 700;
+}
+.tense-forms dd {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+}
+.tense-forms code {
+  padding: 4px 10px;
+  border: 1px solid color-mix(in srgb, var(--time) 24%, var(--border));
+  border-radius: var(--radius-sm);
+  background: var(--panel);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.tense-uses {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 20px;
+}
+.tense-uses li::marker {
+  color: var(--time);
+  font-weight: 700;
+}
+.tense-uses strong {
+  display: block;
+}
+.tense-example {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--muted);
+}
+.tense-signals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tense-signals li {
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--time) 12%, var(--panel));
+  color: color-mix(in srgb, var(--time) 80%, var(--ink));
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.tense-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--signal) 20%, var(--panel));
+}
+.tense-tip svg {
+  flex: none;
+  margin-top: 2px;
+}
+.tense-check ol {
+  display: grid;
+  gap: 18px;
+  margin: 0;
+  padding-left: 20px;
+}
+.tense-check .game-blank {
+  border-bottom-color: var(--time);
+  background: color-mix(in srgb, var(--time) 12%, var(--panel));
+  color: color-mix(in srgb, var(--time) 80%, var(--ink));
+}
+.tense-sentence {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.tense-feedback {
+  margin: 8px 0 0;
+  color: var(--danger);
+}
+.tense-feedback.ok {
+  color: var(--success);
+}
+.tense-score {
+  margin: 14px 0 0;
+  font-weight: 700;
+}
+@media (max-width: 860px) {
+  .grammar-parts,
+  .tense-timeline {
+    grid-template-columns: 1fr;
+  }
+  .tense-forms > div {
+    grid-template-columns: 1fr;
+  }
+  /* Two tenses a row on phones, so the card is not pushed far below the timeline. */
+  .tense-time ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

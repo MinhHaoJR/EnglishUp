@@ -152,6 +152,8 @@ Elevation is a 1px `--border` and nothing else. Shadows are not combined with bo
 - **Level test** (`/placement`). One question at a time with a progress bar, and the same blank box for grammar. The result pairs the score tile (sign blue) with the estimated level (grammar amber), then one bar per level, green when passed, and a button to the matching path.
 - **Learning paths** (`/roadmap`). A five-step level ladder (the current path filled sign blue, "Following" or "Suggested" under it), a head with the summary, fact chips and a progress tile, then the stages as numbered stops on one vertical line, green with a check when complete. Tasks are rows tinted in their skill line with a checkbox, a pictogram tile, the page and level, and an "Open" button.
 
+- **Grammar** (`/grammar`). Under the title plate, two part cards in the grammar line: Sentence patterns and Tenses (`?part=tenses`). Tenses open on a three-column timeline. Past is indigo, present teal and future pink, the same family as the CEFR spectrum. Each column is a tinted plate of tense buttons, and the chosen one is filled in its time colour. The tense card keeps that colour. It shows a level chip and a time chip, the heading, and the forms as three rows with round +/−/? signs and formula chips. Then come numbered uses with speakable examples, signal-word pills, a yellow-washed tip and the quick check, which uses the race's blank box. Below 860px the timeline stacks and each column shows two tenses a row.
+
 ## Deliberate exceptions
 
 - `.study-card > h2:focus { outline: none }`: the word heading is focused by code so screen readers announce each new card (`craft-ignore`).

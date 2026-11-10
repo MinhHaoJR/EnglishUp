@@ -281,6 +281,88 @@ const specs: Record<ContentKind, Field[]> = {
       wide: true,
     },
   ],
+  tense: [
+    { key: 'name.vi', label: ['Tên thì (tiếng Việt)', 'Name (Vietnamese)'], type: 'text' },
+    { key: 'name.en', label: ['Tên thì (tiếng Anh)', 'Name (English)'], type: 'text' },
+    {
+      key: 'group',
+      label: ['Nhóm thời gian', 'Time'],
+      type: 'select',
+      options: ['present', 'past', 'future'],
+      optionLabel: (g) =>
+        (
+          ({
+            present: ['Hiện tại', 'Present'],
+            past: ['Quá khứ', 'Past'],
+            future: ['Tương lai', 'Future'],
+          }) as Record<string, Label>
+        )[g],
+    },
+    level,
+    { key: 'order', label: ['Thứ tự hiển thị', 'Display order'], type: 'number' },
+    {
+      key: 'forms.affirmative',
+      label: ['Công thức khẳng định (mỗi dòng một)', 'Affirmative (one per line)'],
+      type: 'list',
+      wide: true,
+    },
+    {
+      key: 'forms.negative',
+      label: ['Công thức phủ định (mỗi dòng một)', 'Negative (one per line)'],
+      type: 'list',
+      wide: true,
+    },
+    {
+      key: 'forms.question',
+      label: ['Công thức nghi vấn (mỗi dòng một)', 'Question (one per line)'],
+      type: 'list',
+      wide: true,
+    },
+    {
+      key: 'uses',
+      label: ['Cách dùng', 'Uses'],
+      type: 'rows',
+      min: 1,
+      item: ['Cách dùng', 'Use'],
+      template: () => ({ vi: '', en: '', example: '' }),
+      fields: [
+        { key: 'vi', label: ['Cách dùng (tiếng Việt)', 'Use (Vietnamese)'], type: 'text' },
+        { key: 'en', label: ['Cách dùng (tiếng Anh)', 'Use (English)'], type: 'text' },
+        { key: 'example', label: ['Câu ví dụ', 'Example'], type: 'long', wide: true },
+      ],
+    },
+    {
+      key: 'signals',
+      label: ['Dấu hiệu nhận biết (mỗi dòng một)', 'Signal words (one per line)'],
+      type: 'list',
+      wide: true,
+    },
+    { key: 'tip.vi', label: ['Lưu ý (tiếng Việt)', 'Tip (Vietnamese)'], type: 'long', wide: true },
+    { key: 'tip.en', label: ['Lưu ý (tiếng Anh)', 'Tip (English)'], type: 'long', wide: true },
+    {
+      key: 'practice',
+      label: ['Câu luyện nhanh', 'Quick checks'],
+      type: 'rows',
+      min: 1,
+      item: ['Câu luyện', 'Check'],
+      template: () => ({ sentence: '', options: ['', '', '', ''], answer: '', explanation: '' }),
+      fields: [
+        {
+          key: 'sentence',
+          label: ['Câu có một chỗ trống ___', 'Sentence with one blank ___'],
+          type: 'long',
+          wide: true,
+        },
+        {
+          key: 'options',
+          label: ['Bốn lựa chọn (mỗi dòng một)', 'Four options (one per line)'],
+          type: 'list',
+        },
+        { key: 'answer', label: ['Đáp án đúng', 'Right answer'], type: 'text' },
+        { key: 'explanation', label: ['Giải thích', 'Explanation'], type: 'long', wide: true },
+      ],
+    },
+  ],
   roadmap: [
     {
       key: 'from',
