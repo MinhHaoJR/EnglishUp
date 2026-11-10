@@ -109,6 +109,12 @@ Elevation is a 1px `--border` and nothing else. Shadows are not combined with bo
     - Privacy: one row per kind of data.
   - Sections the product does not have (notifications, photos, delete account) are left out.
   - Below 860px the card turns horizontal and the menu becomes a sideways row.
+- **Admin page** (`/admin`, admins only, surface roll seed `27a71f5c/0`: structure #3 of 6, control room, "timeline as spine" composition).
+  - Presence comes first: big tabular counts for online (green go-light) and offline, a green split bar, the refresh time, the two-minute rule and a Refresh button.
+  - "Today" follows as one ruled row of four counts (opened the app, practices, tutor questions, races) with a line of system totals.
+  - Users hang on one line ordered by when they were last seen, in bands: online now, today, last 7 days, earlier, never seen. Each account is a stop with its light, email, display name, tags (Admin, Locked, On leaderboard), points, practices, last seen and actions. The admin's own row is lit yellow and cannot be locked.
+  - Locking takes a second click to confirm. The page refreshes every 30 s.
+  - The sidebar shows an extra "Admin" group only for admins.
 - **Tutor page** (`/assistant`, surface roll seed `66dcd42e/0`: structure #1 of 6, workspace with history rail, "contact sheet" composition). It is one 12px plate filling the viewport.
   - The rail lists saved chats as small frames grouped Today / Earlier, with title and time. The open frame grows, gets a blue border and the yellow "you are here" dot. Delete shows on hover, on focus or for the open frame.
   - The main frame has a header (open title, status, questions left today) and a centred 760px reading column. Answers read as plain text beside the avatar, questions are blue bubbles, and sources are labels with the skill-line tile.

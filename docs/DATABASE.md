@@ -19,6 +19,7 @@
 | Hồ sơ, điểm, thành tích | `PointLedger` (`AddPoints`), `LearnerProfiles`, `UserAchievements` (`AddCommunity`)                                             | Đã có                   |
 | Trò chơi                | `GameSessions` (`AddGame`)                                                                                                      | Đã có                   |
 | Trợ giảng RAG           | `KnowledgeChunks`, `Conversations`, `ChatMessages`, `MessageCitations`                                                          | Đã có (tuần 5–6)        |
+| Quản trị, hiện diện     | `Presence` (`AddPresence`); vai trò `Admin` trong `AspNetRoles`/`AspNetUserRoles`                                               | Đã có                   |
 
 ```mermaid
 erDiagram
@@ -237,3 +238,14 @@ LIMIT 50;
 - Mỗi lần đồng bộ trả toàn bộ dữ liệu tài khoản; cần con trỏ "từ thời điểm" khi lịch sử lớn.
 - Gói miễn phí của Gemini cho 100 embedding mỗi phút và 1.000 mỗi ngày cho cả server; mỗi lần tìm kiếm dùng một lượt, nên khi hết lượt người dùng nhận lỗi 503. Lần ingest đầu (khoảng 2.100 đoạn) phải chạy trong ba ngày.
 - Đăng xuất chưa thu hồi token phía server.
+
+### `Presence` — Đã có (`AddPresence`)
+
+Lần cuối mỗi tài khoản mở app. Trình duyệt gửi `POST /api/presence` mỗi phút khi đã đăng nhập và tab đang hiển thị; trang quản trị coi người được thấy trong 2 phút gần nhất là online.
+
+| Cột          | Kiểu        | Ràng buộc                             | Ghi chú                   |
+| ------------ | ----------- | ------------------------------------- | ------------------------- |
+| `UserId`     | text        | PK, FK → `AspNetUsers` (1–1), cascade |                           |
+| `LastSeenAt` | timestamptz | NN, chỉ mục                           | Giờ UTC của nhịp gần nhất |
+
+Quản trị viên là tài khoản thuộc vai trò `Admin` (bảng có sẵn của Identity), cấp bằng `dotnet run --project EnglishUp.Api -- admin <email>` và thu hồi bằng `--remove`.

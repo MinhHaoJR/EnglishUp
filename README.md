@@ -36,6 +36,13 @@ dotnet user-secrets set "Gemini:ApiKey" "<your-key>" --project EnglishUp.Api
 dotnet run --project EnglishUp.Api -- ingest
 ```
 
+**Admin dashboard** (`/admin`): make an existing account an admin, then sign out and in again. The *Admin* item appears in the sidebar. It shows how many accounts are online (the app was open in the last two minutes; signed-in clients send a heartbeat every minute) or offline, today's activity, and every account ordered by when it was last seen. Admins can search, lock or unlock accounts and hide a learner from the leaderboard. A locked learner's current access token still works until it expires (at most an hour); the refresh token stops at once.
+
+```sh
+dotnet run --project EnglishUp.Api -- admin <email>
+dotnet run --project EnglishUp.Api -- admin <email> --remove
+```
+
 For a presentation, `demo` adds six demo learners whose names end in "(demo)" with two weeks of practice, points and badges, so the leaderboard is not empty. They have no password, so nobody can sign in as them. Running it again replaces them; `demo remove` deletes them and everything they own.
 
 ```sh

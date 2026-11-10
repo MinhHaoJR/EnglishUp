@@ -2526,3 +2526,289 @@ main.signin-main {
     gap: 6px;
   }
 }
+
+/* ---------- Admin: a control room with time as its spine ----------
+   Surface roll seed 27a71f5c/0: structure #3 of 6 (control room), "timeline as spine" composition.
+   The online/offline split first, today's activity in one line, then every account on one line
+   ordered by when it was last seen. Online is the green go-light; the admin's own row is lit yellow. */
+.admin-presence,
+.admin-today,
+.admin-users {
+  margin-bottom: 20px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+.admin-presence h2,
+.admin-today h2,
+.admin-users h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+.admin-presence-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+}
+.admin-presence-head p {
+  flex: 1;
+  margin: 0;
+  font-size: 0.85rem;
+}
+.admin-presence-head button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.admin-split {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 24px;
+  margin: 18px 0 10px;
+}
+.admin-count {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.admin-count strong {
+  font-size: 3.25rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+  /* craft-ignore: tight-leading (a numeral alone, no descenders) */
+  line-height: 1;
+  color: var(--ink);
+}
+.admin-count.online {
+  color: var(--success);
+}
+.admin-count.online .admin-light {
+  align-self: center;
+  width: 14px;
+  height: 14px;
+}
+.admin-light {
+  display: inline-block;
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--success);
+}
+.admin-light.off {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px var(--border);
+}
+.admin-bar {
+  height: 14px;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: var(--soft);
+}
+.admin-bar span {
+  display: block;
+  height: 100%;
+  min-width: 4px;
+  background: var(--success);
+}
+.admin-today dl {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 14px 0 12px;
+  border-block: 1px solid var(--border);
+}
+.admin-today dl > div {
+  min-width: 0;
+  padding: 14px 0;
+}
+.admin-today dl > div + div {
+  padding-left: 18px;
+  border-left: 1px solid var(--border);
+}
+.admin-today dt {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.admin-today dd {
+  margin: 4px 0 0;
+  font-size: 1.9rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+.admin-today > p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+.admin-users-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.admin-users-head label {
+  flex: 0 1 360px;
+}
+.admin-users-head input {
+  width: 100%;
+  padding: 0 12px;
+}
+/* One band per stretch of time; the line runs down the left like the route on the dashboard. */
+.admin-band h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0 4px;
+  font-size: 0.95rem;
+}
+.admin-band h3 span {
+  padding: 1px 8px;
+  border-radius: var(--radius-sm);
+  background: var(--soft);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+.admin-band.online h3 {
+  color: var(--success);
+}
+.admin-band.online h3 span {
+  background: var(--success-soft);
+}
+.admin-band ol {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 26px;
+}
+.admin-band ol::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: var(--border);
+}
+.admin-band.online ol::before {
+  background: color-mix(in srgb, var(--success) 45%, var(--panel));
+}
+.admin-band li {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 340px;
+  align-items: center;
+  gap: 8px 16px;
+  min-height: 60px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+.admin-band li > .admin-light {
+  position: absolute;
+  left: -24px;
+  top: 50%;
+  translate: 0 -50%;
+  width: 12px;
+  height: 12px;
+}
+.admin-band li > .admin-light.off {
+  background: var(--panel);
+}
+.admin-band li.self {
+  background: color-mix(in srgb, var(--signal) 18%, var(--panel));
+}
+.admin-who {
+  display: grid;
+  min-width: 0;
+}
+.admin-who strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.admin-who small {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+}
+.admin-tag {
+  padding: 0 6px;
+  border-radius: 4px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+}
+.admin-tag.locked {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+.admin-facts {
+  display: grid;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.admin-facts span:first-child {
+  color: var(--ink);
+  font-weight: 600;
+}
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+.admin-actions button {
+  min-height: 36px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+}
+.admin-actions button.danger {
+  border-color: var(--danger);
+  background: var(--danger);
+  color: var(--panel);
+}
+@media (max-width: 860px) {
+  .admin-presence,
+  .admin-today,
+  .admin-users {
+    padding: 18px 16px;
+  }
+  .admin-count strong {
+    font-size: 2.5rem;
+  }
+  .admin-presence-head p {
+    flex-basis: 100%;
+    order: 3;
+  }
+  .admin-today dl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .admin-today dl > div:nth-child(3) {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .admin-today dl > div:nth-child(n + 3) {
+    border-top: 1px solid var(--border);
+  }
+  .admin-band li {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .admin-actions {
+    justify-content: flex-start;
+  }
+}

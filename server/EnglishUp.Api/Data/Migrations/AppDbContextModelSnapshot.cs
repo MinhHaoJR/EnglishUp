@@ -303,6 +303,21 @@ namespace EnglishUp.Api.Data.Migrations
                     b.ToTable("PointLedger", (string)null);
                 });
 
+            modelBuilder.Entity("EnglishUp.Api.Data.Presence", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("text");
+
+                    b.Property<DateTimeOffset>("LastSeenAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("UserId");
+
+                    b.HasIndex("LastSeenAt");
+
+                    b.ToTable("Presence");
+                });
+
             modelBuilder.Entity("EnglishUp.Api.Data.SyncRecord", b =>
                 {
                     b.Property<string>("UserId")
@@ -606,6 +621,15 @@ namespace EnglishUp.Api.Data.Migrations
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("EnglishUp.Api.Data.Presence", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                        .WithOne()
+                        .HasForeignKey("EnglishUp.Api.Data.Presence", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

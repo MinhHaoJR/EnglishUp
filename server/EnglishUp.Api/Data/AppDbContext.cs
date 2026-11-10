@@ -18,6 +18,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
     public DbSet<Conversation> Conversations => Set<Conversation>();
     public DbSet<ChatMessage> ChatMessages => Set<ChatMessage>();
     public DbSet<MessageCitation> MessageCitations => Set<MessageCitation>();
+    public DbSet<Presence> Presence => Set<Presence>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -48,6 +49,12 @@ public class AppDbContext(DbContextOptions<AppDbContext> options)
             // One award per source, however often a device re-sends it.
             entity.HasIndex(p => new { p.UserId, p.Source, p.SourceId }).IsUnique();
             entity.HasIndex(p => new { p.UserId, p.LocalDate });
+        });
+        builder.Entity<Presence>(entity =>
+        {
+            entity.HasKey(p => p.UserId);
+            entity.HasOne<IdentityUser>().WithOne().HasForeignKey<Presence>(p => p.UserId);
+            entity.HasIndex(p => p.LastSeenAt);
         });
         builder.Entity<LearnerProfile>(entity =>
         {
@@ -135,6 +142,13 @@ public class PointEntry
 }
 
 /// <summary>Public face of a learner; hidden from the leaderboard until they opt in.</summary>
+/// <summary>When the learner last had the app open (a heartbeat every minute); see Admin.cs.</summary>
+public class Presence
+{
+    public required string UserId { get; set; }
+    public DateTimeOffset LastSeenAt { get; set; }
+}
+
 public class LearnerProfile
 {
     public required string UserId { get; set; }

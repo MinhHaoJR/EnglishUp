@@ -26,10 +26,12 @@ const Achievements = lazy(() => import('../features/achievements/Achievements'))
 const Game = lazy(() => import('../features/game/Game'));
 const Assistant = lazy(() => import('../features/assistant/Assistant'));
 const Grammar = lazy(() => import('../features/grammar/Grammar'));
+const AdminPage = lazy(() => import('../features/admin/Admin'));
 import ChatWidget from '../features/assistant/ChatWidget';
 import { OfflineSign } from '../components/OfflineSign';
 import { restoreSession, useAuth } from '../services/auth';
 import { startAutoSync, syncNow, useSync } from '../services/sync';
+import { startPresence, useAdmin } from '../services/admin';
 export const APP_NAME = 'EnglishUp';
 /** Home, then the six skill lines, then the services, like the groups on a station directory. */
 const navGroups = [
@@ -56,18 +58,21 @@ export function Layout() {
   // Sentence patterns are English-only, so they never open the Japanese/Chinese workspace.
   const selectedSkill = skillSchema.exclude(['grammar']).safeParse(pathname.split('/')[1]);
   const email = useAuth((state) => state.email);
+  const isAdmin = useAdmin((state) => state.isAdmin);
   useEffect(() => {
     void (async () => {
       await restoreSession();
       if (useAuth.getState().email) await syncNow();
     })();
     const stopAutoSync = startAutoSync();
+    const stopPresence = startPresence();
     // A sync may bring newer settings from another device.
     const stopReload = useSync.subscribe((state, previous) => {
       if (state.lastSynced !== previous.lastSynced) void useApp.getState().load();
     });
     return () => {
       stopAutoSync();
+      stopPresence();
       stopReload();
     };
   }, []);
@@ -121,6 +126,16 @@ export function Layout() {
               ))}
             </div>
           ))}
+          {isAdmin && (
+            <div className="nav-group">
+              <NavLink to="/admin" data-skill="admin">
+                <span className="nav-tile" aria-hidden="true">
+                  <SkillIcon skill="admin" />
+                </span>
+                {t('admin')}
+              </NavLink>
+            </div>
+          )}
         </nav>
       </aside>
       <div className="workspace" data-skill={pathname.split('/')[1] || 'dashboard'}>
@@ -178,6 +193,7 @@ const router = createBrowserRouter([
       { path: 'assistant', element: <Assistant /> },
       { path: 'game', element: <Game /> },
       { path: 'achievements', element: <Achievements /> },
+      { path: 'admin', element: <AdminPage /> },
       { path: '*', element: <NotFound /> },
     ],
   },
