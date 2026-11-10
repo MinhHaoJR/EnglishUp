@@ -122,6 +122,26 @@ describe('Account profile form', () => {
     });
   });
 
+  it('previews the leaderboard row live, without the email', async () => {
+    fetchMock.mockImplementation((path: string) =>
+      Promise.resolve(
+        path === '/api/profile'
+          ? json({ displayName: 'Học viên 1234', showOnLeaderboard: true })
+          : json({}, 500),
+      ),
+    );
+    show(<Account />);
+    const name = await screen.findByRole('textbox', { name: 'Tên hiển thị' });
+    const preview = screen.getByRole('figure');
+    expect(within(preview).getByText('Học viên 1234')).toBeInTheDocument();
+    await userEvent.clear(name);
+    await userEvent.type(name, 'Minh');
+    expect(within(preview).getByText('Minh')).toBeInTheDocument();
+    expect(within(preview).queryByText(/learner@example.test/)).not.toBeInTheDocument();
+    await userEvent.click(screen.getByRole('checkbox', { name: /Hiện tôi trên bảng xếp hạng/ }));
+    expect(within(preview).getByText('Bạn đang ẩn khỏi bảng xếp hạng.')).toBeInTheDocument();
+  });
+
   it('explains a rejected save', async () => {
     fetchMock.mockImplementation((path: string, init?: RequestInit) =>
       Promise.resolve(

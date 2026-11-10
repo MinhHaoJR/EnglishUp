@@ -98,6 +98,11 @@ Elevation is a 1px `--border` and nothing else. Shadows are not combined with bo
   - Lesson lists on these four pages are directory rows: level chip, title, one-line excerpt and facts, with the action on the right.
 - **Icons.** Play, stop, download and upload are drawn in the shared icon set; no glyph icons remain on learning screens.
 - **Tutor.** A round chat head in the corner opens a messaging window: header with avatar and status, bubbles on both sides, source chips and a rounded composer.
+- **Account page** (`/account`, surface roll seed `443a6945/0`: structure #3 of 6, timeline, "diptych comparison" composition).
+  - Two plates stand side by side. "Only you see" is a sign-blue plate (`--plate`, dimmed at night): a yellow monogram, the email, a three-column score row with tabular numerals (total, today with a signal-yellow meter, streak), sync and sign-out.
+  - "Everyone sees" previews your all-time leaderboard row, lit in signal yellow, live as you edit the name or the opt-in. It never shows the email. Below the preview sits the profile form.
+  - Under both, "Learning journey" runs the last ten active days as stops on a route. Each stop has small skill-line tiles for what was practised, the count and minutes. Badge days are yellow stops.
+  - Stacks below 860px.
 - **Tutor page** (`/assistant`, surface roll seed `66dcd42e/0`: structure #1 of 6, workspace with history rail, "contact sheet" composition). It is one 12px plate filling the viewport.
   - The rail lists saved chats as small frames grouped Today / Earlier, with title and time. The open frame grows, gets a blue border and the yellow "you are here" dot. Delete shows on hover, on focus or for the open frame.
   - The main frame has a header (open title, status, questions left today) and a centred 760px reading column. Answers read as plain text beside the avatar, questions are blue bubbles, and sources are labels with the skill-line tile.

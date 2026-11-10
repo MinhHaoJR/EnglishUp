@@ -13,7 +13,7 @@ import {
 } from '../../services/community';
 
 /** Bilingual names for the server's badge codes: [vi title, en title, vi description, en description]. */
-const badgeText: Record<string, [string, string, string, string]> = {
+export const badgeText: Record<string, [string, string, string, string]> = {
   'first-practice': [
     'Bước đầu tiên',
     'First step',

@@ -17,7 +17,7 @@ Chụp ngày 10/11/2026 bằng Chrome headless, khung nhìn 1440×900, giao di�
 | `08-luyen-viet.png` | Luyện viết | Đề viết thư, đếm từ, tự lưu nháp, nhận xét theo quy tắc không cần mạng. |
 | `09-cau-truc-cau.png` | Cấu trúc câu | 100 cấu trúc có ví dụ song ngữ, lọc theo nhóm, chế độ học và luyện điền chỗ trống. |
 | `10-dong-nghia.png` | Đồng nghĩa & trái nghĩa | Học theo mức A1–C2, mỗi mục gắn với một nghĩa cụ thể và có ví dụ. |
-| `11-tai-khoan.png` | Tài khoản | Điểm hôm nay trên giới hạn 300, tổng điểm, đồng bộ giữa thiết bị, hồ sơ bảng xếp hạng (chỉ hiện tên, không hiện email). |
+| `11-tai-khoan.png` | Tài khoản | Hai nửa cạnh nhau: "Chỉ bạn thấy" (email, tổng điểm, điểm hôm nay trên 300, chuỗi ngày, đồng bộ) và "Mọi người thấy" (hàng của bạn trên bảng xếp hạng, xem trước ngay khi sửa tên; không bao giờ hiện email); bên dưới là hành trình học theo ngày với màu từng kỹ năng và huy hiệu. |
 | `12-thanh-tich.png` | Thành tích, huy hiệu | Sáu huy hiệu do máy chủ xét sau mỗi lần đồng bộ, kèm điểm thưởng. |
 | `12b-bang-xep-hang.png` | Bảng xếp hạng | Xếp hạng theo tuần (giờ Việt Nam) và mọi thời gian; hàng của người học được tô nổi. |
 | `13-dua-60-giay.png` | Đua 60 giây | Đề và chấm điểm ở máy chủ; thời gian, điểm ván và combo. |
