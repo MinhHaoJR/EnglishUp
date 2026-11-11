@@ -2427,7 +2427,389 @@ Some passengers have complained that the bus gets very crowded at busy times. Th
 ? t | The bus is never crowded. | F | It gets very crowded at busy times. | the bus gets very crowded at busy times.
 """
 
-# MORE LEVELS
+PASSAGES["B2"] = """
+## The four-day week experiment | WK
+For more than a century, the five-day working week has been the norm in most countries. Recently, however, a growing number of companies have experimented with a four-day week, without reducing salaries.
+
+The idea is not simply to give employees an extra day off. Supporters argue that people are more productive when they are well rested, and that much of a typical working week is lost to unnecessary meetings and distractions. In one large trial involving dozens of companies, most firms reported that productivity stayed the same or even improved. Employees reported less stress, better sleep and more time for their families.
+
+The results were not positive everywhere. Businesses that need staff available every day, such as hospitals and shops, found the system harder to organise. Some employees also felt they had to work more intensely to finish their tasks in four days, which created a different kind of pressure.
+
+There are also questions about whether the early results will last. In a trial, people know they are being observed, and they may work harder than usual. Critics argue that only long-term studies will show the real effects.
+
+Nevertheless, after the trials ended, the majority of participating companies decided to keep the four-day week. For many managers, the main benefit was unexpected: it became much easier to attract and keep talented staff.
+? c | What do supporters of the four-day week argue? | *Well-rested people are more productive | People should earn less | Meetings are essential | The second paragraph explains. | people are more productive when they are well rested
+? c | Which businesses found the system harder to organise? | *Those that need staff every day, like hospitals and shops | Small offices | Technology companies | The third paragraph explains. | Businesses that need staff available every day, such as hospitals and shops
+? t | Some employees felt more pressure to finish their work. | T | They had to work more intensely. | Some employees also felt they had to work more intensely
+? s | According to critics, what will show the real effects? | long-term studies / only long-term studies | The fourth paragraph says so. | Critics argue that only long-term studies will show the real effects.
+? c | What unexpected benefit did many managers notice? | *It became easier to attract and keep staff | Profits doubled | Offices became cheaper | The last paragraph explains. | it became much easier to attract and keep talented staff.
+
+## Why we put things off | HE
+Almost everyone has delayed an important task, scrolling through their phone instead of writing a report or cleaning the house. Procrastination is often seen as a sign of laziness or poor time management, but psychologists increasingly see it differently.
+
+According to recent research, procrastination is mainly an emotional problem. We avoid tasks that make us feel bored, anxious, confused or afraid of failure. Doing something more pleasant, like watching videos, gives us immediate relief. The problem is that the relief is temporary, and the stress returns, often stronger, as the deadline approaches.
+
+This explains why simply making a better schedule often doesn't work. If the real cause is fear of doing the task badly, a detailed plan doesn't address that feeling. Instead, experts recommend strategies that reduce the emotional barrier. One is to make the first step very small: rather than "write the essay", the goal becomes "write the first sentence". Once people start, the task usually feels less unpleasant than they imagined.
+
+Another strategy is self-compassion. Studies have found that students who forgave themselves for procrastinating on one exam were less likely to procrastinate before the next one. Being hard on yourself, it seems, only increases the negative feelings that caused the delay in the first place.
+
+Finally, removing temptations helps. Putting your phone in another room is a simple but surprisingly effective way to protect your attention.
+? c | How do psychologists increasingly see procrastination? | *Mainly as an emotional problem | As laziness | As a lack of intelligence | The second paragraph explains. | procrastination is mainly an emotional problem.
+? c | Why doesn't a better schedule often work? | *It doesn't address the feeling behind the delay | Schedules are too long | People lose their schedules | The third paragraph explains. | a detailed plan doesn't address that feeling.
+? s | What first step do experts suggest instead of "write the essay"? | write the first sentence / writing the first sentence | The third paragraph gives the example. | the goal becomes "write the first sentence".
+? t | Students who forgave themselves procrastinated more before the next exam. | F | They were less likely to procrastinate. | were less likely to procrastinate before the next one.
+? t | The text suggests putting your phone in another room. | T | The last paragraph says so. | Putting your phone in another room is a simple but surprisingly effective way
+
+## Why cities are getting hotter | EN
+On a summer afternoon, the centre of a large city can be several degrees hotter than the countryside around it. This is known as the urban heat island effect, and it is becoming a serious problem as cities grow and the climate warms.
+
+The main reason is the materials cities are built from. Concrete, asphalt and dark roofs absorb the sun's heat during the day and release it slowly at night. As a result, cities stay warm even after sunset, giving people little chance to cool down. Heat from air conditioners, cars and factories adds to the problem. Ironically, the more people use air conditioning, the hotter the streets outside become.
+
+The consequences can be serious. High temperatures increase the risk of heatstroke, especially among older people and outdoor workers. They also raise electricity use and can make air pollution worse.
+
+Fortunately, there are solutions. Trees are among the most effective, because they provide shade and release water vapour that cools the air. Some cities have started planting thousands of trees along streets. Others encourage green roofs, which are covered with plants, or paint roofs white to reflect sunlight. Parks, lakes and fountains can also create cooler areas within the city.
+
+Experts say these measures work best when they are combined and planned carefully. A single park helps its neighbourhood, but a network of green spaces connected across the city can lower temperatures far more widely.
+? c | What is the urban heat island effect? | *City centres being hotter than the surrounding countryside | Islands near cities becoming hotter | Hot weather on islands | The first paragraph explains. | the centre of a large city can be several degrees hotter than the countryside around it.
+? c | Why do cities stay warm after sunset? | *Concrete and asphalt release heat slowly at night | There are more people at night | Factories work at night | The second paragraph explains. | absorb the sun's heat during the day and release it slowly at night.
+? t | Using more air conditioning makes the streets outside cooler. | F | It makes them hotter. | the more people use air conditioning, the hotter the streets outside become.
+? s | Which two groups face a higher risk of heatstroke? | older people and outdoor workers / older people / outdoor workers | The third paragraph says so. | especially among older people and outdoor workers.
+? c | According to experts, when do the measures work best? | *When they are combined and planned carefully | When they are cheap | When they are used in one park | The last paragraph explains. | these measures work best when they are combined and planned carefully.
+
+## Too many visitors in the hills | TR
+Ten years ago, a small mountain village in northern Viet Nam received only a few hundred visitors a year. Then photos of its rice terraces went viral on social media. Today, more than two hundred thousand tourists arrive every year.
+
+At first, the change brought clear benefits. Families opened homestays, young people found jobs as guides, and farmers sold local products to visitors. For the first time, many families could afford to send their children to university in the city.
+
+But the rapid growth also created problems. New hotels were built quickly, sometimes without permission, and some of them block the famous views. The village's water supply struggles to meet demand in the high season, and rubbish collection has not kept pace with the number of visitors. Some residents complain that traditional festivals have become performances for tourists rather than community events.
+
+There are also economic tensions. Investors from the city now own many of the largest hotels, so a significant share of the profits leaves the village. Land prices have risen so much that young local couples can no longer afford to build a house.
+
+The local government is now trying to find a balance. It has stopped issuing permits for large hotels and introduced a small entrance fee, which pays for rubbish collection. Some residents believe these steps came too late, but others hope the village can still protect what made it special in the first place.
+? s | How many tourists visit the village every year now? | more than two hundred thousand / two hundred thousand / 200,000 | The first paragraph says so. | more than two hundred thousand tourists arrive every year.
+? c | Which benefit of tourism is mentioned? | *Families could send their children to university | The roads became quieter | Land became cheaper | The second paragraph explains. | many families could afford to send their children to university in the city.
+? t | All new hotels were built with permission. | F | Some were built without permission. | sometimes without permission
+? c | Why does a significant share of the profits leave the village? | *Investors from the city own many large hotels | Tourists pay online | Taxes are very high | The fourth paragraph explains. | Investors from the city now own many of the largest hotels
+? c | What does the entrance fee pay for? | *Rubbish collection | New hotels | Guides' salaries | The last paragraph says so. | introduced a small entrance fee, which pays for rubbish collection.
+
+## The promise and limits of online learning | ED
+When online courses first became popular, some people predicted that they would replace traditional universities. Anyone with an internet connection could watch lectures by world-class professors, often for free. Education, it seemed, was about to become available to everyone.
+
+The reality has been more complicated. Millions of people have signed up for online courses, but completion rates are often very low. In many free courses, fewer than one in ten students finish. Researchers have found that the students who succeed are usually those who already have good study habits and a university degree. In other words, online learning has often helped the people who needed help least.
+
+One reason is motivation. In a classroom, teachers notice when students fall behind, and classmates create a sense of commitment. Alone in front of a screen, it is easy to postpone a lesson until it is forgotten. Many learners also miss the discussions and personal feedback that make learning meaningful.
+
+However, online learning has clear strengths. It allows people to study while working or caring for family, and to repeat difficult parts of a lecture as many times as necessary. For learners in remote areas, it may be the only option.
+
+Many educators now believe the best approach combines both worlds. In "blended" courses, students watch short videos at home and use class time for discussion, problem-solving and group work. Early studies suggest this combination produces better results than either method alone.
+? c | What did some people predict about online courses? | *They would replace traditional universities | They would be very expensive | They would disappear quickly | The first paragraph explains. | some people predicted that they would replace traditional universities.
+? s | In many free courses, how many students finish? | fewer than one in ten / less than one in ten / one in ten | The second paragraph says so. | fewer than one in ten students finish.
+? c | Who usually succeeds in online courses? | *People who already have good study habits and a degree | Young children | People with no previous education | The second paragraph explains. | the students who succeed are usually those who already have good study habits and a university degree.
+? t | The text says online learning has no advantages. | F | It has clear strengths. | online learning has clear strengths.
+? c | What happens in blended courses? | *Students watch videos at home and discuss in class | Students only study online | Classes are only lectures | The last paragraph explains. | students watch short videos at home and use class time for discussion
+
+## Sharing instead of owning | MS
+Why buy a drill you will use for ten minutes a year, when you could borrow one from a neighbour? This simple idea is at the heart of the sharing economy, a system in which people share or rent things instead of owning them.
+
+The sharing economy has grown rapidly thanks to smartphones and apps. Today, people rent spare rooms to tourists, share car rides with strangers and borrow everything from tools to evening dresses. Supporters say this makes better use of resources. A car, for example, is parked for most of the day; sharing it means fewer cars are needed overall.
+
+There are also financial benefits. Owners can earn extra income from things they rarely use, and users save money. For young people in expensive cities, sharing can make life more affordable.
+
+However, the sharing economy has its critics. In many popular cities, renting apartments to tourists has reduced the number of homes available for local residents and pushed up rents. Some people who work for ride-sharing or delivery apps say they have few rights, unstable incomes and no protection if they are injured or ill.
+
+Governments are now trying to update their laws. Some cities limit how many nights a year an apartment can be rented to tourists. Others require platforms to provide insurance for workers. The challenge is to keep the benefits of sharing while protecting communities and workers from its negative effects.
+? c | What is the sharing economy? | *A system where people share or rent things instead of owning them | A type of bank | Free public services | The first paragraph explains. | a system in which people share or rent things instead of owning them.
+? c | What has helped the sharing economy grow? | *Smartphones and apps | Lower taxes | Bigger houses | The second paragraph says so. | The sharing economy has grown rapidly thanks to smartphones and apps.
+? t | Critics say renting apartments to tourists has lowered rents for locals. | F | It has pushed up rents. | pushed up rents.
+? s | What do some cities limit? | how many nights a year an apartment can be rented to tourists / nights an apartment can be rented | The last paragraph says so. | Some cities limit how many nights a year an apartment can be rented to tourists.
+? c | What is the challenge for governments? | *Keeping the benefits while protecting communities and workers | Banning sharing apps | Making sharing compulsory | The last paragraph explains. | The challenge is to keep the benefits of sharing while protecting communities and workers
+
+## Can young people spot fake news? | TE
+Young people are often called "digital natives" because they grew up with the internet. Many adults assume this means they are good at judging online information. However, studies suggest otherwise.
+
+In one well-known study, researchers asked thousands of secondary school and university students to evaluate online content. The results were worrying. Many students could not tell the difference between a news article and an advertisement labelled "sponsored content". Others trusted a photo shared on social media without asking where it came from or whether it had been edited.
+
+The problem is not a lack of intelligence. Most students were never taught how to check information. Schools often teach students to look at whether a website looks professional, but fake sites can look very professional. Professional fact-checkers use a different approach. Instead of reading a single website carefully from top to bottom, they quickly open new tabs to see what other reliable sources say about it. This technique, called lateral reading, is fast and much more effective.
+
+Some countries have started teaching media literacy from primary school. Students learn to ask simple questions: Who created this? What is their purpose? What evidence do they provide? What do other sources say?
+
+Experts emphasise that the goal is not to make young people distrust everything. A healthy approach involves curiosity and careful checking, not cynicism. In a world full of information, knowing how to find reliable sources is an essential skill.
+? c | What do many adults assume about young people? | *They are good at judging online information | They don't use the internet | They prefer newspapers | The first paragraph explains. | Many adults assume this means they are good at judging online information.
+? c | What could many students not tell apart? | *A news article and an advertisement | Two languages | Photos and videos | The second paragraph explains. | Many students could not tell the difference between a news article and an advertisement
+? s | What is the fact-checkers' technique called? | lateral reading | The third paragraph names it. | This technique, called lateral reading, is fast and much more effective.
+? t | The problem is that students are not intelligent enough. | F | The problem is not a lack of intelligence. | The problem is not a lack of intelligence.
+? c | What is the goal of media literacy, according to experts? | *Curiosity and careful checking, not cynicism | Distrusting everything | Avoiding the internet | The last paragraph explains. | A healthy approach involves curiosity and careful checking, not cynicism.
+
+## Bringing a river back to life | EN
+For decades, the river that runs through the centre of the city was hidden. In the 1970s, it was covered with concrete to make room for a busy road. Below the traffic, the river became a dark, polluted channel, and most residents forgot it existed.
+
+Fifteen years ago, the city made a bold decision: to remove the road and uncover the river. Many people opposed the plan. Business owners feared that traffic would become chaotic, and some residents thought the project was a waste of money.
+
+The work took three years. Engineers removed the concrete, cleaned the riverbed and built new walls. They also planted trees and created walking paths along both sides. To manage traffic, the city improved bus services and built new roads further away.
+
+The results surprised even the project's supporters. Within a few years, fish and birds returned to the river. In summer, the area around the river is several degrees cooler than nearby streets. The paths became a popular place for walking, jogging and relaxing, and property values along the river increased.
+
+Not everything was positive. Some small shops lost customers during the construction and were forced to close, and rising property prices have made the area more expensive for older residents. Nevertheless, the project is now seen as a model for other cities. It shows that urban planning can reverse past decisions and give nature a place in the heart of a city.
+? s | When was the river covered with concrete? | in the 1970s / the 1970s / 1970s | The first paragraph says so. | In the 1970s, it was covered with concrete
+? c | Why did business owners oppose the plan? | *They feared traffic would become chaotic | They wanted a bigger road | They disliked trees | The second paragraph explains. | Business owners feared that traffic would become chaotic
+? c | How long did the work take? | *Three years | Fifteen years | One year | The third paragraph says so. | The work took three years.
+? t | The area around the river is now cooler in summer. | T | It is several degrees cooler. | the area around the river is several degrees cooler than nearby streets.
+? c | Which negative effect is mentioned? | *Rising property prices make the area more expensive for older residents | More pollution | Fewer tourists | The last paragraph explains. | rising property prices have made the area more expensive for older residents.
+
+## The return of board games | HS
+In an age of smartphones and online games, you might expect board games to be disappearing. In fact, the opposite is true. Over the past decade, sales of board games have grown significantly, and board game cafés have opened in cities around the world.
+
+What explains this revival? One reason is the desire for real social contact. After spending hours looking at screens for work and entertainment, many people want an activity that brings them face to face with friends. Board games require players to sit together, talk, laugh and sometimes argue.
+
+Another reason is that modern board games are very different from the classic games many people remember. Today's games often involve strategy, cooperation and storytelling. In some popular games, players work together against the game itself, which appeals to people who dislike direct competition.
+
+The internet has also helped, rather than harmed, the hobby. Game designers raise money through crowdfunding websites, and online videos explain the rules of complex games, making them easier to learn.
+
+Board game cafés have become popular meeting places. For a small fee, customers can choose from hundreds of games, and staff help explain the rules. Some cafés host regular events for beginners, and others are used by teachers and psychologists, who believe games can develop skills such as planning, patience and communication.
+
+For many fans, the appeal is simple. "A board game is a reason to spend an evening together without phones," says one café owner.
+? c | What has happened to board game sales over the past decade? | *They have grown significantly | They have fallen | They have stayed the same | The first paragraph says so. | sales of board games have grown significantly
+? c | What is one reason for the revival? | *The desire for real social contact | Cheaper prices | Better television | The second paragraph explains. | One reason is the desire for real social contact.
+? t | In some modern games, players work together against the game. | T | The third paragraph says so. | players work together against the game itself
+? s | How do game designers raise money? | through crowdfunding websites / crowdfunding | The fourth paragraph says so. | Game designers raise money through crowdfunding websites
+? t | The internet has harmed the board game hobby. | F | It has helped. | The internet has also helped, rather than harmed, the hobby.
+
+## Why languages disappear | CO
+There are about seven thousand languages in the world today, but linguists believe that around half of them could disappear by the end of this century. On average, a language dies every few weeks, when its last fluent speaker passes away.
+
+Languages rarely disappear suddenly. Usually, the process takes several generations. It often begins when a community comes into contact with a more powerful language used in schools, government and business. Parents may decide that their children will have better opportunities if they speak the dominant language. Over time, young people use the traditional language less and less, until only older people speak it.
+
+Why does this matter? Each language contains unique knowledge: words for local plants and animals, traditional medicine, stories and ways of seeing the world. When a language disappears, much of this knowledge is lost with it. For the communities themselves, losing their language can also mean losing an important part of their identity.
+
+Fortunately, some endangered languages are being revived. In New Zealand, the Maori language was in serious decline in the twentieth century. Communities created "language nests", preschools where young children are surrounded by Maori-speaking elders. Today, the number of speakers is growing.
+
+Technology also offers new possibilities. Linguists record speakers and create online dictionaries, and some communities use social media and apps to teach their languages to young people. Experts agree, however, that the key to survival is simple: children must grow up speaking the language at home.
+? s | About how many languages are there in the world today? | about seven thousand / seven thousand / 7000 | The first paragraph says so. | There are about seven thousand languages in the world today
+? c | How does the process of language loss often begin? | *A community comes into contact with a more powerful language | A government bans the language | Speakers forget words | The second paragraph explains. | It often begins when a community comes into contact with a more powerful language
+? c | What is lost when a language disappears? | *Unique knowledge and part of a community's identity | Only some songs | Nothing important | The third paragraph explains. | Each language contains unique knowledge
+? t | The number of Maori speakers is still falling. | F | It is growing. | Today, the number of speakers is growing.
+? c | According to experts, what is the key to a language's survival? | *Children growing up speaking it at home | Online dictionaries | Government money | The last paragraph says so. | children must grow up speaking the language at home.
+
+## The psychology of shopping | SH
+When you walk into a supermarket, almost nothing is there by accident. Shops use psychology carefully to encourage customers to spend more.
+
+Consider the layout. Essential products, such as milk and bread, are often placed at the back of the store, so customers have to walk past many other products to reach them. Along the way, they often pick up items they did not plan to buy. The most profitable products are usually placed at eye level, while cheaper brands are on the lowest shelves.
+
+Prices are also designed to influence us. A price of $9.99 feels significantly cheaper than $10, even though the difference is tiny, because we tend to read the first number. Offers such as "buy two, get one free" encourage people to buy more than they need, and much of the extra food is later thrown away.
+
+Even the atmosphere matters. Studies have shown that slow music makes customers walk more slowly and spend more time in the store. The smell of freshly baked bread can make people feel hungry, and hungry customers buy more.
+
+Online shops use their own techniques. Messages like "only two left in stock" create a sense of urgency, and recommendations based on previous purchases encourage further spending.
+
+Knowing these tricks can help consumers make better decisions. Experts recommend making a shopping list, never shopping when hungry and asking yourself whether you would buy a product if it were not on special offer.
+? c | Why are milk and bread often at the back of the store? | *So customers walk past many other products | Because they need cold air | Because they are cheap | The second paragraph explains. | so customers have to walk past many other products to reach them.
+? c | Why does $9.99 feel cheaper than $10? | *We tend to read the first number | It is much cheaper | Shops say so | The third paragraph explains. | because we tend to read the first number.
+? s | What effect does slow music have? | customers walk more slowly and spend more time / people walk more slowly | The fourth paragraph says so. | slow music makes customers walk more slowly and spend more time in the store.
+? t | Messages like "only two left" create a sense of urgency. | T | The fifth paragraph says so. | create a sense of urgency
+? c | What do experts recommend? | *Never shopping when hungry | Shopping only online | Buying everything on offer | The last paragraph says so. | never shopping when hungry
+
+## Eating more plants | FD
+In many countries, more people are choosing to eat less meat. Some have become vegetarians or vegans, while others simply try to have several meat-free days a week. Supermarkets now offer a wide range of plant-based products, from burgers made of beans to milk made from oats.
+
+People change their diets for different reasons. Some are concerned about animal welfare. Others are motivated by health. Research suggests that diets rich in vegetables, fruit, beans and whole grains are linked to lower risks of heart disease and some types of cancer.
+
+The environment is another major reason. Producing meat, especially beef, requires large amounts of land and water and produces significant greenhouse gas emissions. According to many studies, reducing meat consumption is one of the most effective ways an individual can lower their environmental impact.
+
+However, plant-based diets are not automatically healthy. Many processed vegan products contain high levels of salt, sugar and fat. People who stop eating meat also need to make sure they get enough protein, iron and vitamin B12, which is mainly found in animal products. A doctor or nutritionist can help plan a balanced diet.
+
+Cultural traditions also play a role. In many countries, meat is central to celebrations and family meals, and changing these habits can be difficult.
+
+Experts suggest that small steps are often more realistic than dramatic changes. Trying one vegetarian dinner a week, or replacing half of the meat in a recipe with beans, can make a real difference over time.
+? c | What do some people do without becoming vegetarian? | *Have several meat-free days a week | Eat only fish | Stop eating vegetables | The first paragraph explains. | others simply try to have several meat-free days a week.
+? c | Which meat requires the most resources, according to the text? | *Beef | Chicken | Fish | The third paragraph mentions it. | especially beef
+? t | All plant-based products are healthy. | F | Many processed vegan products contain a lot of salt, sugar and fat. | plant-based diets are not automatically healthy.
+? s | Which vitamin is mainly found in animal products? | vitamin B12 / B12 | The fourth paragraph says so. | vitamin B12, which is mainly found in animal products.
+? c | What do experts suggest? | *Small steps are more realistic | Changing everything at once | Avoiding all processed food | The last paragraph explains. | small steps are often more realistic than dramatic changes.
+
+## Working in the gig economy | WK
+Ten years ago, few people had heard the term "gig economy". Today, millions of people earn money through short-term jobs found on apps: delivering food, driving passengers, cleaning homes or designing websites for clients they never meet.
+
+For many workers, the main attraction is flexibility. They can choose when and how much to work. Students fit shifts around their classes, parents work while children are at school, and some people use gig work to earn extra money alongside a full-time job.
+
+However, flexibility has a price. Gig workers are usually classified as independent contractors rather than employees. This means they typically do not receive sick pay, holiday pay or pension contributions. Their income can change from week to week, depending on demand and on the app's pay rates, which can be changed without negotiation.
+
+There is also the question of control. Although gig workers are officially independent, apps often track their performance closely. A delivery rider whose ratings fall too low may find that they receive fewer orders, or are removed from the platform altogether, sometimes without a clear explanation.
+
+In several countries, courts have ruled that some gig workers should be treated as employees with basic rights. Companies argue that this would increase costs and reduce the flexibility that workers value.
+
+The debate is likely to continue. Many experts believe a middle path is possible: keeping flexible working hours while guaranteeing minimum protections, such as insurance against accidents.
+? c | What is the main attraction of gig work for many people? | *Flexibility | High pay | Free training | The second paragraph says so. | the main attraction is flexibility.
+? c | What do gig workers usually not receive? | *Sick pay and holiday pay | Payment for their work | Customers | The third paragraph explains. | they typically do not receive sick pay, holiday pay or pension contributions.
+? t | A rider with low ratings may receive fewer orders. | T | The fourth paragraph says so. | may find that they receive fewer orders
+? s | What have courts in several countries ruled? | some gig workers should be treated as employees / that some gig workers are employees | The fifth paragraph says so. | courts have ruled that some gig workers should be treated as employees with basic rights.
+? c | What middle path do many experts suggest? | *Flexible hours with minimum protections | Banning gig apps | Paying workers only by the hour | The last paragraph explains. | keeping flexible working hours while guaranteeing minimum protections
+
+## Let children be bored | PF
+Many parents today feel that their children should always be busy. After school, children go to music lessons, sports training and extra classes. At home, screens provide constant entertainment. Silence and empty time are often seen as problems to be solved.
+
+But some psychologists argue that boredom is actually good for children. When there is nothing to do, children are forced to find their own activities. They may invent games, build things from boxes, draw or simply daydream. These experiences help develop creativity, imagination and the ability to entertain themselves.
+
+Boredom also teaches an important life skill: dealing with uncomfortable feelings. Adults regularly face boring tasks and quiet moments. Children who have never experienced boredom may find these situations very difficult and reach for their phones automatically.
+
+This does not mean that structured activities are bad. Learning an instrument or playing a sport can teach discipline and teamwork. The problem arises when a child's schedule leaves no time for free play. Some studies suggest that children with less free time may find it harder to plan and organise their own activities later in life.
+
+Experts suggest some practical steps. Parents can keep some afternoons free, limit screen time and resist the urge to solve boredom immediately. When a child says "I'm bored," a parent might reply, "What could you do?" At first, children may complain. But many parents report that, after a few days, their children become surprisingly inventive.
+? c | How do many parents see empty time? | *As a problem to be solved | As essential | As a reward | The first paragraph explains. | Silence and empty time are often seen as problems to be solved.
+? c | What can boredom help children develop? | *Creativity and imagination | Mathematical skills | Physical strength | The second paragraph explains. | These experiences help develop creativity, imagination
+? t | The text says structured activities are bad for children. | F | They can teach discipline and teamwork. | This does not mean that structured activities are bad.
+? s | What might a parent reply when a child says "I'm bored"? | What could you do? | The last paragraph gives an example. | a parent might reply, "What could you do?"
+? t | Many parents report their children become more inventive after a few days. | T | The last paragraph says so. | after a few days, their children become surprisingly inventive.
+
+## Electric motorbikes on city streets | TP
+In Vietnamese cities, motorbikes are everywhere. They are cheap, fast and practical in narrow streets. But they also produce a large share of urban air pollution and noise. Electric motorbikes are often presented as a solution.
+
+Sales of electric two-wheelers have increased rapidly in recent years. They are quiet, produce no exhaust fumes and are cheap to run. Charging an electric motorbike costs much less than filling a petrol tank, and they need less maintenance because they have fewer moving parts.
+
+However, many buyers remain hesitant. The most common concern is range: many models can travel only around eighty kilometres on a full charge, which may not be enough for long journeys. Charging stations are still limited, and many people live in apartment buildings without a place to charge. Batteries can also be expensive to replace after several years.
+
+There are environmental questions too. An electric motorbike is only as clean as the electricity that charges it. If that electricity comes mainly from coal power plants, the overall benefit is smaller, although cities still gain from cleaner air on the streets. Batteries also need to be recycled properly to avoid pollution.
+
+Some manufacturers are experimenting with battery-swapping stations, where riders exchange an empty battery for a full one in a few minutes. Several cities are also considering limits on petrol motorbikes in central areas. If these efforts succeed, the sound of city traffic could change dramatically in the next decade.
+? c | Why are electric motorbikes cheap to run? | *Charging costs less than petrol and they need less maintenance | They are free to buy | They never need batteries | The second paragraph explains. | Charging an electric motorbike costs much less than filling a petrol tank
+? s | About how far can many models travel on a full charge? | around eighty kilometres / eighty kilometres / 80 km | The third paragraph says so. | many models can travel only around eighty kilometres on a full charge
+? t | Charging stations are now available everywhere. | F | They are still limited. | Charging stations are still limited
+? c | When is the environmental benefit smaller? | *When the electricity comes mainly from coal | When riders go fast | When it rains | The fourth paragraph explains. | If that electricity comes mainly from coal power plants, the overall benefit is smaller
+? c | What happens at battery-swapping stations? | *Riders exchange an empty battery for a full one | Batteries are recycled | Motorbikes are repaired | The last paragraph explains. | riders exchange an empty battery for a full one in a few minutes.
+
+## Is handwriting still important? | ED
+In many classrooms, keyboards and touchscreens are replacing pens and paper. Students type their notes, submit homework online and take exams on computers. Some schools have reduced the time they spend teaching handwriting. Is this a problem?
+
+Researchers have found some reasons to keep handwriting. Studies of young children suggest that writing letters by hand helps them recognise letters and learn to read more quickly than typing does. The physical movements involved seem to strengthen the connection between the shape of a letter and its sound.
+
+For older students, the way notes are taken also matters. Students who type notes in lectures can often write down almost every word the lecturer says. Students who write by hand cannot keep up, so they have to listen, select the most important ideas and summarise them in their own words. Several studies have found that this deeper processing helps them understand and remember the material better.
+
+On the other hand, typing has clear advantages. It is faster, easier to edit and essential for most jobs. For students with certain learning difficulties, such as dyslexia, typing can make writing much more accessible.
+
+Most experts do not argue for a choice between the two. Instead, they recommend teaching handwriting well in the early years and introducing typing gradually. For note-taking, the key is not the tool but the method: whether by hand or on a laptop, students learn best when they summarise ideas rather than copying everything.
+? c | What have some schools done? | *Reduced the time spent teaching handwriting | Banned computers | Stopped teaching reading | The first paragraph says so. | Some schools have reduced the time they spend teaching handwriting.
+? c | How does handwriting help young children? | *They recognise letters and learn to read more quickly | They write faster | They make fewer spelling mistakes | The second paragraph explains. | writing letters by hand helps them recognise letters and learn to read more quickly
+? c | Why do handwritten notes help understanding? | *Students have to select and summarise ideas | They are neater | They are shorter to read | The third paragraph explains. | they have to listen, select the most important ideas and summarise them in their own words.
+? t | Typing can help students with dyslexia. | T | The fourth paragraph says so. | typing can make writing much more accessible.
+? s | According to experts, what matters most for note-taking? | the method / not the tool but the method / summarising ideas | The last paragraph says so. | the key is not the tool but the method
+
+## Plastic we cannot see | EN
+When people think of plastic pollution in the ocean, they often imagine floating bottles and bags. But some of the most worrying pollution is invisible. Microplastics are tiny pieces of plastic, smaller than five millimetres, and they have been found almost everywhere scientists have looked: in deep oceans, Arctic ice, drinking water and even the air.
+
+Some microplastics come from larger plastic items that break down slowly in sunlight and waves. Others are produced directly. Synthetic clothes, such as those made of polyester, release thousands of tiny fibres every time they are washed. Car tyres also release particles as they wear down on roads.
+
+Marine animals often mistake microplastics for food. Fish, shellfish and even tiny plankton eat them, and the particles can move up the food chain. Researchers are still studying the effects on human health. So far, the evidence is unclear, but many scientists believe it is wise to reduce exposure where possible.
+
+Cleaning microplastics from the ocean is almost impossible because the particles are so small and widely spread. For this reason, experts focus on prevention. Some countries have banned tiny plastic beads in cosmetics. Engineers are developing filters for washing machines that catch fibres before they enter wastewater.
+
+Individuals can help too. Washing synthetic clothes less often and at lower temperatures reduces the number of fibres released. Choosing natural materials, reducing single-use plastic and supporting better waste management all help address the problem at its source.
+? s | How small are microplastics? | smaller than five millimetres / less than five millimetres / 5 mm | The first paragraph says so. | smaller than five millimetres
+? c | How do synthetic clothes produce microplastics? | *They release tiny fibres when washed | They melt in the sun | They are thrown into the sea | The second paragraph explains. | release thousands of tiny fibres every time they are washed.
+? t | Scientists have proven that microplastics seriously harm human health. | F | The evidence is still unclear. | So far, the evidence is unclear
+? c | Why do experts focus on prevention? | *Cleaning microplastics from the ocean is almost impossible | Prevention is cheaper than nothing | Fish prefer clean water | The fourth paragraph explains. | Cleaning microplastics from the ocean is almost impossible
+? c | What can individuals do? | *Wash synthetic clothes less often and at lower temperatures | Buy more synthetic clothes | Wash clothes every day | The last paragraph says so. | Washing synthetic clothes less often and at lower temperatures reduces the number of fibres released.
+
+## The bilingual advantage | ED
+More than half of the world's population speaks at least two languages. For a long time, some people believed that growing up with two languages might confuse children or slow their development. Today, research paints a very different picture.
+
+Bilingual children may mix languages when they are very young, but this is a normal part of learning, not a sign of confusion. By school age, most can separate their languages easily and switch between them depending on who they are talking to.
+
+Some studies suggest that managing two languages may strengthen certain mental skills. Because bilingual people constantly choose which language to use, they practise focusing attention and ignoring distractions. However, scientists disagree about how large these benefits are, and some recent studies have found smaller effects than earlier research suggested.
+
+What is clearer are the social and practical benefits. Bilingual people can communicate with a wider range of people, access more information and often find it easier to understand different cultures. In many careers, speaking more than one language is a valuable advantage. For children of immigrant families, keeping their parents' language also helps them maintain close relationships with grandparents and relatives.
+
+Experts advise parents who want to raise bilingual children to be consistent. One common approach is for each parent to speak a different language to the child. Another is to use one language at home and another outside. Above all, children need plenty of real, enjoyable experiences in both languages: stories, songs and conversations, not just lessons.
+? c | What did some people once believe about growing up with two languages? | *It might confuse children | It was the best way to learn | It was impossible | The first paragraph explains. | growing up with two languages might confuse children or slow their development.
+? t | Mixing languages at a young age is a sign of confusion. | F | It is a normal part of learning. | this is a normal part of learning, not a sign of confusion.
+? c | What do scientists disagree about? | *How large the mental benefits are | Whether bilingual people exist | Whether languages can be learned | The third paragraph explains. | scientists disagree about how large these benefits are
+? s | For children of immigrant families, who does keeping their parents' language help them stay close to? | grandparents and relatives / grandparents | The fourth paragraph says so. | maintain close relationships with grandparents and relatives.
+? c | What do children need above all? | *Plenty of real, enjoyable experiences in both languages | Many grammar lessons | Only one language at home | The last paragraph explains. | children need plenty of real, enjoyable experiences in both languages
+
+## Working in a coworking space | WK
+Not long ago, people who worked independently had two main choices: work from home or rent a small private office. Today, there is a popular third option, the coworking space.
+
+A coworking space is a shared office where people from different companies work side by side. Members pay a monthly fee, which is usually much lower than renting a private office. In return, they get a desk, fast internet, meeting rooms and often free coffee. Some spaces also offer extras such as events, workshops and even yoga classes.
+
+Many members say the biggest benefit is not the facilities but the people. Freelancers who work at home often feel isolated. In a coworking space, they can chat during breaks, share ideas and find new clients. A designer might meet a programmer who needs help with a website, for example.
+
+There are also downsides. Open spaces can be noisy, and it can be hard to concentrate when people are on the phone nearby. Some members also worry about privacy when they discuss confidential information.
+
+Interestingly, coworking spaces are no longer used only by freelancers. Large companies now rent desks for small teams or for employees who live far from the main office. As more companies adopt flexible working, many experts expect coworking spaces to become a normal part of working life, especially in big cities where office rents are high.
+? c | What is a coworking space? | *A shared office for people from different companies | A café | A private office for one company | The second paragraph explains. | A coworking space is a shared office where people from different companies work side by side.
+? c | What do many members say is the biggest benefit? | *The people | The free coffee | The yoga classes | The third paragraph says so. | the biggest benefit is not the facilities but the people.
+? t | Coworking spaces are always quiet. | F | They can be noisy. | Open spaces can be noisy
+? s | Besides freelancers, who now rents desks in coworking spaces? | large companies / big companies | The last paragraph says so. | Large companies now rent desks for small teams
+? t | Experts expect coworking spaces to become more common. | T | The last paragraph says so. | many experts expect coworking spaces to become a normal part of working life
+
+## Does volunteer travel help? | TR
+Every year, thousands of young people travel abroad to volunteer. They teach in schools, build houses or care for animals, often paying organisations for the experience. This "voluntourism" is presented as a way to travel while helping others. But does it really help?
+
+Supporters say that, when it is well organised, volunteer travel can make a positive difference. Volunteers with professional skills, such as doctors or engineers, can share knowledge with local people. Money paid by volunteers can fund projects that local communities have chosen themselves. Many volunteers also return home with a deeper understanding of global problems.
+
+Critics, however, point to serious problems. Many projects use unskilled volunteers for work that local people could do, such as building schools, which takes jobs away from the community. Some organisations care more about making money from volunteers than about local needs.
+
+Programmes involving children are especially controversial. Some orphanages, critics say, keep children in poor conditions because they attract donations and volunteers. Children may also form emotional attachments to volunteers who leave after a few weeks.
+
+Experts suggest that people considering volunteer travel should ask some key questions. Does the project respond to needs identified by the local community? Are the volunteers' skills actually useful? How is the money spent? And does the project avoid direct, short-term work with vulnerable children?
+
+For many people, the best way to help may be to donate to well-run local organisations or to travel responsibly as a tourist, spending money in locally owned businesses.
+? c | What do volunteers often pay for? | *The experience offered by organisations | Their flights only | Local schools | The first paragraph explains. | often paying organisations for the experience.
+? c | According to supporters, which volunteers can make a positive difference? | *Volunteers with professional skills | All volunteers | Volunteers who stay one day | The second paragraph explains. | Volunteers with professional skills, such as doctors or engineers, can share knowledge
+? t | Building schools with unskilled volunteers can take jobs from local people. | T | The third paragraph says so. | which takes jobs away from the community.
+? c | Why are programmes involving children especially controversial? | *Children may form attachments to volunteers who leave | Children don't like foreigners | They are too expensive | The fourth paragraph explains. | Children may also form emotional attachments to volunteers who leave after a few weeks.
+? s | Where does the text suggest spending money as a tourist? | in locally owned businesses / locally owned businesses | The last paragraph says so. | spending money in locally owned businesses.
+
+## When antibiotics stop working | HE
+Antibiotics are among the most important discoveries in medical history. Before they were introduced in the 1940s, a small cut or a simple infection could be deadly. Today, however, doctors are increasingly worried that antibiotics are losing their power.
+
+The problem is called antibiotic resistance. Bacteria can change, or evolve, over time. When antibiotics are used, most bacteria are killed, but a few may survive because of small genetic differences. These survivors multiply and pass on their resistance. The more often antibiotics are used, the faster this process happens.
+
+A major cause is the unnecessary use of antibiotics. Many people take antibiotics for colds and flu, which are caused by viruses, not bacteria, so the medicine has no effect on them. Some patients also stop taking antibiotics as soon as they feel better, instead of finishing the full course. In many countries, antibiotics are also widely used in farming to make animals grow faster.
+
+The consequences are serious. Infections that were once easy to treat are becoming harder to cure, and some bacteria resist almost all available drugs. Without effective antibiotics, routine operations and cancer treatments would become much riskier.
+
+Solving the problem requires action at many levels. Doctors need to prescribe antibiotics only when necessary, and governments need to control their use in agriculture. Scientists are searching for new types of antibiotics, but this research is slow and expensive. Individuals can help by never demanding antibiotics for viral infections and by following medical advice carefully.
+? s | When were antibiotics introduced? | in the 1940s / the 1940s / 1940s | The first paragraph says so. | Before they were introduced in the 1940s
+? c | Why do some bacteria survive antibiotics? | *Small genetic differences | They hide in food | Antibiotics are too weak | The second paragraph explains. | a few may survive because of small genetic differences.
+? c | Why are antibiotics useless against colds and flu? | *These illnesses are caused by viruses | The doses are too small | Patients don't take them | The third paragraph explains. | which are caused by viruses, not bacteria
+? t | In some countries, antibiotics are used to make animals grow faster. | T | The third paragraph says so. | antibiotics are also widely used in farming to make animals grow faster.
+? c | Why is research into new antibiotics difficult? | *It is slow and expensive | Bacteria no longer exist | Governments ban it | The last paragraph explains. | this research is slow and expensive.
+
+## Smart homes and privacy | TE
+Imagine a home where the lights turn on when you enter a room, the heating adjusts automatically and you can ask a speaker to play music or order groceries. For millions of people, this smart home is already reality.
+
+Smart devices offer clear benefits. They can save energy by turning off lights and heating when nobody is home. They can make life easier for older people or people with disabilities, who can control their homes with their voice. Security cameras and smart locks allow owners to check their homes from anywhere.
+
+However, these devices also collect large amounts of data. A smart speaker listens for its wake word and may record conversations. Smart TVs can track what you watch, and some devices share information with advertisers. Experts warn that this data can reveal a great deal about our daily routines: when we wake up, when we leave home and even when we argue.
+
+Security is another concern. Like computers, smart devices can be hacked. In some cases, criminals have gained access to home cameras or used poorly protected devices to attack websites. Many devices are sold with weak default passwords that owners never change.
+
+Experts recommend some simple precautions. Before buying a device, check what data it collects and how it is used. Change default passwords, install updates regularly and turn off features you do not need, such as microphones. Smart homes can be convenient, but it is important to stay in control of the information they collect.
+? c | How can smart devices save energy? | *By turning off lights and heating when nobody is home | By using solar panels | By making homes smaller | The second paragraph explains. | turning off lights and heating when nobody is home.
+? c | What can data from smart devices reveal? | *Our daily routines | Our bank passwords only | Nothing important | The third paragraph explains. | this data can reveal a great deal about our daily routines
+? t | Smart devices cannot be hacked. | F | They can be hacked. | smart devices can be hacked.
+? s | What do many devices come with that owners never change? | weak default passwords / default passwords | The fourth paragraph says so. | Many devices are sold with weak default passwords that owners never change.
+? c | Which precaution do experts recommend? | *Changing default passwords and installing updates | Never using the internet | Buying more devices | The last paragraph says so. | Change default passwords, install updates regularly
+
+## Farms with members | FD
+In a typical supermarket, shoppers have no idea who grew their vegetables or how far they have travelled. Community-supported agriculture, often called CSA, offers a different model that connects consumers directly with local farmers.
+
+The system works like a subscription. At the beginning of the growing season, members pay the farmer in advance for a share of the harvest. Then, every week, they receive a box of fresh vegetables and sometimes fruit, eggs or honey. The contents change with the seasons, so members eat what is fresh and local.
+
+For farmers, the advance payment is extremely valuable. It provides money at the start of the season, when they need to buy seeds and equipment, and reduces their dependence on banks and supermarkets. It also means that members share some of the risk. If bad weather destroys part of the harvest, everyone receives a little less.
+
+Members say they enjoy knowing where their food comes from. Many CSA farms invite members to visit, help with the harvest or attend seasonal festivals. Children in particular learn how food is grown.
+
+The model is not for everyone. Members cannot choose exactly what they receive, so they may get a lot of a vegetable they rarely eat. Some people find it hard to pay several months in advance.
+
+Nevertheless, CSA farms have spread to many countries. Supporters see them as a way to build stronger relationships between cities and the countryside, while supporting small farms and more sustainable agriculture.
+? c | How does community-supported agriculture work? | *Members pay in advance for a share of the harvest | Farmers sell to supermarkets | Members grow their own food | The second paragraph explains. | members pay the farmer in advance for a share of the harvest.
+? c | Why is the advance payment valuable for farmers? | *It provides money when they need seeds and equipment | It is a gift | It replaces all other income | The third paragraph explains. | It provides money at the start of the season, when they need to buy seeds and equipment
+? t | If bad weather damages the harvest, members still receive the full amount. | F | Everyone receives a little less. | everyone receives a little less.
+? s | What can members do when they visit CSA farms? | help with the harvest / attend seasonal festivals / visit | The fourth paragraph says so. | help with the harvest or attend seasonal festivals.
+? c | What is one disadvantage of the model? | *Members cannot choose exactly what they receive | The food is not fresh | The farms are far away | The fifth paragraph explains. | Members cannot choose exactly what they receive
+"""
+
+# MORE B2
 
 
 def parse(level, block, first_id):
