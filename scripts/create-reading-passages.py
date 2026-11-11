@@ -3259,7 +3259,423 @@ Experts also suggest steps families can take: keeping regular sleep times, even 
 ? c | What do experts suggest families do? | *Keep phones out of the bedroom at night | Let teenagers sleep until noon on school days | Remove all screens from the house | The last paragraph says so. | keeping phones out of the bedroom at night.
 """
 
-# MORE LEVELS
+PASSAGES["C1"] = """
+## The paradox of choice | SH
+Modern consumers enjoy an almost unlimited range of options. A single supermarket may stock dozens of varieties of yoghurt, and online shops offer thousands of nearly identical products. It seems obvious that more choice should make people happier, since everyone can find exactly what suits them. Yet a growing body of research suggests that the relationship between choice and satisfaction is far more complicated.
+
+In a frequently cited experiment, shoppers were offered samples of jam at a supermarket stand. When twenty-four varieties were displayed, more people stopped to taste them, but far fewer actually made a purchase than when only six varieties were available. The researchers concluded that an abundance of options can lead to "choice overload", in which people feel overwhelmed and postpone or avoid decisions altogether.
+
+Even when people do choose, a wide range of alternatives can reduce their satisfaction. With so many possibilities, it is easy to imagine that a different option might have been better, and this sense of missed opportunity can turn a good decision into a source of regret. Psychologists distinguish between "maximisers", who search exhaustively for the best possible option, and "satisficers", who settle for one that is good enough. Studies indicate that maximisers often achieve objectively better outcomes but feel less content with them.
+
+It would be wrong, however, to conclude that choice is undesirable. Subsequent studies have not always reproduced the jam experiment's dramatic results, and the effect seems to depend on how options are presented and how much people already know. Well-organised categories, clear comparisons and trusted recommendations can make large selections manageable.
+
+The practical lesson may be that freedom of choice is valuable, but only when combined with the means to navigate it.
+? c | What happened when twenty-four varieties of jam were displayed? | *More people tasted but fewer bought | More people bought jam | Nobody stopped at the stand | The second paragraph describes the result. | more people stopped to taste them, but far fewer actually made a purchase
+? s | What term describes feeling overwhelmed by too many options? | choice overload | The second paragraph names it. | an abundance of options can lead to "choice overload"
+? c | How do maximisers differ from satisficers? | *They search exhaustively for the best option | They choose quickly | They avoid all decisions | The third paragraph explains. | who search exhaustively for the best possible option
+? t | Maximisers usually feel more content with their decisions. | F | They often feel less content. | Studies indicate that maximisers often achieve objectively better outcomes but feel less content with them.
+? c | What does the final paragraph suggest? | *Choice is valuable when people can navigate it | Choice should be limited by law | People should never compare options | The writer concludes. | freedom of choice is valuable, but only when combined with the means to navigate it.
+
+## Money for nothing? | MS
+The idea of a universal basic income, a regular payment made by the state to every citizen regardless of whether they work, has moved from the margins of political debate towards the mainstream. Its supporters come from surprisingly different backgrounds, and so do its critics.
+
+Advocates argue that a basic income would provide security in an economy increasingly shaped by automation and unstable employment. Unlike traditional welfare systems, which often require complex applications and can penalise people for taking low-paid work, a universal payment would be simple and unconditional. Proponents claim this would reduce bureaucracy, eliminate the stigma attached to benefits and give people the freedom to retrain, care for relatives or start businesses.
+
+Opponents raise two main objections. The first concerns cost: paying a meaningful amount to every adult would require substantial tax increases or cuts to other public services. The second is behavioural. Critics fear that guaranteed income would discourage work, weakening the economy and the sense of contribution that employment provides.
+
+Evidence from pilot schemes offers a mixed picture. In several trials, recipients did not significantly reduce their working hours; some used the security to look for better jobs or pursue training. Many reported lower stress and improved health. However, most trials have been small, temporary and limited to particular groups, which makes it difficult to predict how a permanent, nationwide scheme would affect an entire economy.
+
+As a result, the debate often reflects deeper differences in values: about what citizens owe one another, and about whether security or incentive is the more effective foundation for a productive society.
+? c | What distinguishes a universal basic income from traditional welfare? | *It is simple and unconditional | It is paid only to the unemployed | It requires complex applications | The second paragraph explains. | a universal payment would be simple and unconditional.
+? c | What is the behavioural objection to basic income? | *It might discourage people from working | It would be too complicated | It would increase bureaucracy | The third paragraph explains. | Critics fear that guaranteed income would discourage work
+? t | In several trials, recipients significantly reduced their working hours. | F | They did not significantly reduce them. | recipients did not significantly reduce their working hours
+? s | Why is it hard to predict the effects of a permanent scheme? | most trials have been small, temporary and limited / trials were small and temporary | The fourth paragraph explains. | most trials have been small, temporary and limited to particular groups
+? c | According to the final paragraph, what does the debate often reflect? | *Deeper differences in values | Disagreements about statistics only | Technical problems | The last paragraph says so. | the debate often reflects deeper differences in values
+
+## Who should the car protect? | TE
+Self-driving cars promise to transform transport. Because human error contributes to the vast majority of road accidents, removing the driver could, in theory, save many lives. Yet the prospect of machines making life-or-death decisions has raised difficult ethical questions.
+
+The most widely discussed is a modern version of a classic philosophical puzzle. Imagine a self-driving car whose brakes fail. It can continue straight and hit a group of pedestrians, or swerve and hit a wall, killing its passenger. How should the car be programmed to respond? A large international online survey asked millions of people versions of this question. Most respondents preferred that cars minimise the total number of deaths. However, many also said they would rather not buy a car programmed to sacrifice its own passengers.
+
+Some engineers argue that such dramatic dilemmas are largely theoretical. In practice, they say, the priority is to design cars that avoid dangerous situations altogether by driving cautiously and reacting faster than humans can. Critics respond that even routine decisions, such as how much space to leave cyclists or how aggressively to merge into traffic, involve value judgements about acceptable risk.
+
+There are also questions of responsibility. When a self-driving car causes an accident, who is to blame: the manufacturer, the software developer, the owner or the government that approved the technology? Existing laws were written for human drivers, and legal systems are still adapting.
+
+What is clear is that these decisions cannot be left to engineers alone. Transparent public debate and clear regulation will be needed to ensure that the values programmed into machines reflect those of the societies that use them.
+? c | Why could self-driving cars save lives in theory? | *Human error contributes to most accidents | They are slower | They have stronger brakes | The first paragraph explains. | human error contributes to the vast majority of road accidents
+? c | What contradiction did the survey reveal? | *People preferred minimising deaths but wouldn't buy cars that sacrifice passengers | People wanted cars to protect only pedestrians | People refused to answer | The second paragraph explains. | many also said they would rather not buy a car programmed to sacrifice its own passengers.
+? t | Some engineers consider the dramatic dilemmas largely theoretical. | T | The third paragraph says so. | Some engineers argue that such dramatic dilemmas are largely theoretical.
+? s | What were existing laws written for? | human drivers | The fourth paragraph says so. | Existing laws were written for human drivers
+? c | What does the writer conclude? | *The decisions need public debate and regulation, not only engineers | Engineers should decide alone | Self-driving cars should be banned | The last paragraph explains. | these decisions cannot be left to engineers alone.
+
+## The myth of multitasking | WK
+Many people take pride in their ability to multitask: answering emails during meetings, checking messages while studying or listening to podcasts while writing reports. In fast-paced workplaces, multitasking is often seen as a sign of efficiency. Neuroscience, however, suggests that this confidence is largely misplaced.
+
+Strictly speaking, the human brain cannot focus on two demanding tasks at once. What we call multitasking is usually rapid task-switching: moving our attention back and forth between activities. Each switch carries a cost. The brain must disengage from one set of rules and goals and load another, a process that takes time and increases the likelihood of errors. Researchers estimate that frequent switching can significantly reduce productivity, even if each individual switch seems to take only a fraction of a second.
+
+Interestingly, studies have found that people who multitask most often are not better at it. In some experiments, heavy media multitaskers performed worse on tests requiring them to filter out irrelevant information. They appeared more easily distracted, perhaps because constant switching had become a habit.
+
+There are exceptions. People can combine an automatic activity, such as walking, with a cognitive one, such as conversation, because the automatic task demands little attention. Problems arise when both tasks require conscious thought.
+
+The implications for work and study are significant. Experts recommend structuring the day into blocks of focused time, disabling non-essential notifications and grouping similar tasks, such as replying to emails, into designated periods. Some organisations have experimented with "meeting-free" days to allow uninterrupted work. Although these strategies require discipline, they often produce better results in less time than the illusion of doing everything at once.
+? c | What is multitasking usually, according to neuroscience? | *Rapid task-switching | True parallel focus | A rare talent | The second paragraph explains. | What we call multitasking is usually rapid task-switching
+? c | What did experiments find about heavy media multitaskers? | *They were more easily distracted | They were better at filtering information | They worked faster | The third paragraph explains. | They appeared more easily distracted
+? t | People can combine walking with conversation without much difficulty. | T | The automatic task demands little attention. | because the automatic task demands little attention.
+? s | What have some organisations experimented with? | meeting-free days / "meeting-free" days | The last paragraph says so. | Some organisations have experimented with "meeting-free" days
+? c | What is the writer's overall view of multitasking? | *It is largely an illusion that reduces productivity | It is the key to efficiency | It works for most demanding tasks | The writer concludes. | they often produce better results in less time than the illusion of doing everything at once.
+
+## Growing food in the city | EN
+More than half of the world's population now lives in cities, and that proportion is expected to grow. Feeding these urban populations depends on long supply chains that transport food across countries and continents. In recent years, interest has grown in producing more food within cities themselves.
+
+Urban agriculture takes many forms: community gardens on vacant land, vegetables grown on rooftops, fish farms combined with plant cultivation, and high-tech indoor farms in which crops grow under artificial light in stacked layers. Supporters claim that these initiatives reduce transport emissions, provide fresh food in neighbourhoods where healthy options are scarce, and reconnect city dwellers with the origins of what they eat.
+
+The social benefits are often as significant as the agricultural ones. Community gardens can bring together neighbours from different backgrounds, offer educational opportunities for children and provide therapeutic activity for people experiencing stress or isolation.
+
+Nevertheless, the potential of urban agriculture should not be overstated. Land in cities is expensive and limited, and most staple crops, such as rice and wheat, require far more space than urban areas can provide. Indoor vertical farms can produce leafy greens efficiently, but their reliance on artificial lighting makes them energy-intensive, and their environmental benefits depend heavily on the source of that energy. Soil in former industrial areas may also be contaminated, requiring careful testing.
+
+Most researchers therefore see urban agriculture as a complement to rural farming rather than a replacement for it. Its greatest value may lie less in the quantity of food produced than in strengthening communities, improving access to fresh produce and making cities more resilient to disruptions in global supply chains.
+? c | What does urban food production depend on today? | *Long supply chains | Local farms only | Imported water | The first paragraph explains. | Feeding these urban populations depends on long supply chains
+? c | Which is a social benefit of community gardens? | *Bringing neighbours from different backgrounds together | Producing all staple crops | Lowering land prices | The third paragraph explains. | Community gardens can bring together neighbours from different backgrounds
+? t | Vertical farms use little energy. | F | They are energy-intensive. | their reliance on artificial lighting makes them energy-intensive
+? s | What may soil in former industrial areas be? | contaminated | The fourth paragraph says so. | Soil in former industrial areas may also be contaminated
+? c | How do most researchers see urban agriculture? | *As a complement to rural farming | As a replacement for rural farming | As unnecessary | The last paragraph explains. | as a complement to rural farming rather than a replacement for it.
+
+## How habits form | HE
+Much of what we do each day is not the result of conscious decisions but of habit. Researchers estimate that a large proportion of daily behaviour is performed almost automatically, from the route we take to work to the moment we reach for our phones. Understanding how habits form can therefore help people change behaviour more effectively than relying on willpower alone.
+
+Psychologists often describe habits as loops consisting of three elements: a cue, a routine and a reward. The cue is a trigger, such as a time of day, a location or an emotion. The routine is the behaviour itself, and the reward is the benefit the brain associates with it. Over time, the connection between cue and routine strengthens until the behaviour occurs with little thought.
+
+A popular belief holds that it takes twenty-one days to form a habit. Research does not support this precise figure. In one study, participants took anywhere from eighteen to more than two hundred days to make a new behaviour automatic, depending on the person and the complexity of the habit. Missing a single day, however, did not significantly harm the process.
+
+Several strategies appear to help. Attaching a new habit to an existing routine, such as doing stretches after brushing your teeth, provides a reliable cue. Making the desired behaviour easier, for example by placing a book on your pillow, reduces the effort required. Conversely, adding friction to unwanted habits, such as keeping snacks out of sight, can weaken them.
+
+Perhaps most importantly, research suggests that people who seem to have strong self-control often succeed not by resisting temptation constantly, but by designing environments in which temptation rarely arises.
+? c | Why can understanding habits help people change behaviour? | *Much daily behaviour is automatic | Willpower always works | Habits are rare | The first paragraph explains. | a large proportion of daily behaviour is performed almost automatically
+? s | What are the three elements of the habit loop? | a cue, a routine and a reward / cue, routine and reward | The second paragraph names them. | a cue, a routine and a reward.
+? t | Research confirms that habits always take twenty-one days to form. | F | It does not support the figure. | Research does not support this precise figure.
+? c | What is an example of adding friction to an unwanted habit? | *Keeping snacks out of sight | Placing a book on your pillow | Stretching after brushing teeth | The fourth paragraph gives the example. | keeping snacks out of sight
+? c | How do people with strong self-control often succeed? | *By designing environments where temptation rarely arises | By resisting temptation constantly | By setting strict punishments | The last paragraph explains. | by designing environments in which temptation rarely arises.
+
+## Does language shape thought? | CO
+For centuries, philosophers and linguists have debated whether the language we speak influences the way we think. In its strongest form, the idea suggests that language determines thought, so that speakers of different languages perceive the world in fundamentally different ways. Few researchers accept this extreme version today, but a growing body of evidence supports a weaker claim: that language can subtly shape attention, memory and perception.
+
+Consider the way languages describe space. Some languages rely on relative terms such as "left" and "right", while others use absolute directions like north and south, even for small objects on a table. Studies of speakers of such languages have found that they maintain a remarkable sense of orientation, apparently because their language requires constant awareness of direction.
+
+Colour offers another example. Languages divide the colour spectrum differently. Speakers of languages that have separate basic words for light and dark blue have been shown to distinguish between these shades slightly faster than speakers of languages that use a single word.
+
+Grammar may also play a role. Languages differ in whether they require speakers to mark the gender of nouns, the timing of events or whether information was directly witnessed. Some researchers argue that such requirements encourage speakers to notice particular aspects of experience.
+
+Critics caution that many of these effects are small and can disappear when people are given time to think or are taught new categories. Bilingual speakers often shift their perceptions depending on the language they are using, which suggests flexibility rather than fixed limits.
+
+The emerging consensus is that language does not imprison thought, but it does provide habitual tools that make certain distinctions easier to notice.
+? c | Which version of the idea do few researchers accept today? | *That language determines thought | That language influences attention | That languages differ | The first paragraph explains. | Few researchers accept this extreme version today
+? c | What do speakers of languages using absolute directions maintain? | *A remarkable sense of orientation | Better colour vision | Faster reading | The second paragraph explains. | they maintain a remarkable sense of orientation
+? t | Some speakers distinguish shades of blue slightly faster if their language has separate words for them. | T | The third paragraph says so. | have been shown to distinguish between these shades slightly faster
+? s | What do bilingual speakers often shift depending on the language? | their perceptions / perceptions | The fifth paragraph says so. | Bilingual speakers often shift their perceptions depending on the language they are using
+? c | What is the emerging consensus? | *Language provides tools that make certain distinctions easier to notice | Language imprisons thought | Language has no effect on thinking | The last paragraph explains. | it does provide habitual tools that make certain distinctions easier to notice.
+
+## The doctor will see you online | HE
+Not long ago, consulting a doctor almost always meant travelling to a clinic and waiting in a crowded room. Today, video consultations, remote monitoring devices and health apps are changing how healthcare is delivered. Telemedicine, once a niche service, has become part of mainstream medical practice in many countries.
+
+The advantages are considerable. For patients in remote areas, telemedicine can eliminate long and expensive journeys. People with mobility difficulties or chronic conditions can receive regular follow-up care from home, and wearable devices can transmit data such as heart rate or blood sugar levels directly to medical teams, allowing problems to be detected earlier. For health systems under pressure, virtual consultations can reduce waiting times and free up clinic space.
+
+However, telemedicine has clear limitations. Many diagnoses depend on physical examination, which cannot be performed through a screen. Doctors may miss subtle signs that would be obvious in person, and some patients find it harder to discuss sensitive issues remotely.
+
+There are also concerns about inequality. Telemedicine requires a reliable internet connection, a suitable device and a degree of digital literacy. Older patients and those on low incomes, who often have the greatest health needs, may be the least able to benefit. Without careful planning, the shift to digital care could widen existing health gaps.
+
+Privacy is another issue. Health data is highly sensitive, and the growing number of apps and devices increases the risk of data breaches.
+
+Most experts envisage a hybrid model, in which digital tools handle routine follow-ups and monitoring while in-person care remains available for examinations and complex cases. The challenge will be to ensure that convenience does not come at the expense of quality or equity.
+? c | Who benefits especially from telemedicine? | *Patients in remote areas | Doctors who prefer travelling | Only young people | The second paragraph explains. | For patients in remote areas, telemedicine can eliminate long and expensive journeys.
+? c | What is a key limitation of telemedicine? | *Many diagnoses need a physical examination | It is always more expensive | It cannot use video | The third paragraph explains. | Many diagnoses depend on physical examination, which cannot be performed through a screen.
+? t | Older and low-income patients are always the first to benefit from telemedicine. | F | They may be the least able to benefit. | may be the least able to benefit.
+? s | What does the growing number of apps and devices increase the risk of? | data breaches | The fifth paragraph says so. | increases the risk of data breaches.
+? c | What model do most experts envisage? | *A hybrid of digital and in-person care | Fully digital healthcare | No digital tools at all | The last paragraph explains. | Most experts envisage a hybrid model
+
+## The price of renewal | PT
+When artists, students and young professionals move into a run-down urban neighbourhood, attracted by low rents, the area often begins to change. New cafés and galleries open, old buildings are renovated and property values rise. This process, known as gentrification, is one of the most contested issues in urban policy.
+
+Supporters emphasise the benefits. Investment can improve housing quality, reduce crime and bring new businesses and jobs. Local governments gain higher tax revenues, which can fund better services. Long-term residents who own their homes may see the value of their property increase significantly.
+
+Critics, however, focus on who benefits and who pays. As rents rise, many long-standing residents, particularly tenants on low incomes, are forced to move elsewhere, often far from their jobs, schools and social networks. Small family businesses may be replaced by expensive shops that cater to newcomers. Even residents who remain can feel like strangers in their own neighbourhood as its character and community life change.
+
+Researchers disagree about the scale of displacement. Some studies have found that low-income residents in gentrifying areas are not necessarily more likely to move than those elsewhere, while others document significant losses of affordable housing. The effects appear to vary greatly depending on local housing markets and policies.
+
+Cities have experimented with various responses, including rent controls, requirements for affordable units in new developments, and community land trusts, which keep land under collective ownership to preserve affordability.
+
+Ultimately, the debate is less about whether neighbourhoods should improve than about ensuring that improvement benefits existing residents rather than replacing them.
+? c | What often begins the process of gentrification? | *Artists and young professionals moving in for low rents | Factories opening | Governments building motorways | The first paragraph explains. | When artists, students and young professionals move into a run-down urban neighbourhood, attracted by low rents
+? c | Which group is most affected by rising rents, according to critics? | *Tenants on low incomes | Home owners | Local governments | The third paragraph explains. | particularly tenants on low incomes
+? t | All researchers agree that displacement is very large. | F | Researchers disagree about the scale. | Researchers disagree about the scale of displacement.
+? s | What do community land trusts keep under collective ownership? | land | The fifth paragraph says so. | which keep land under collective ownership to preserve affordability.
+? c | What is the debate ultimately about, according to the writer? | *Ensuring improvement benefits existing residents | Whether neighbourhoods should improve at all | Stopping all investment | The last paragraph explains. | ensuring that improvement benefits existing residents rather than replacing them.
+
+## What are the humanities for? | ED
+In many countries, the number of students choosing subjects such as history, philosophy and literature has declined, while enrolment in science, technology and business has grown. Governments and universities, under pressure to demonstrate economic returns, have sometimes reduced funding for the humanities, arguing that they offer weaker career prospects.
+
+Defenders of the humanities challenge this view on several grounds. First, they argue that the skills these subjects develop, such as critical thinking, clear writing, interpretation of complex texts and the ability to construct arguments, are highly valued by employers in many sectors. Graduates in the humanities, they point out, often build successful careers in law, media, public service and business, even if their starting salaries are lower.
+
+Second, supporters contend that the value of education cannot be measured only in economic terms. The humanities help people understand human experience, examine moral questions and engage with cultures different from their own. In democratic societies, the ability to evaluate evidence, recognise manipulation and debate respectfully is arguably as important as technical expertise.
+
+Third, many of the most pressing challenges of the modern world, from the ethics of artificial intelligence to climate policy, involve questions that technology alone cannot answer. Decisions about how new tools should be used require understanding of history, values and human behaviour.
+
+Critics respond that students, often burdened with debt, are entitled to consider employability, and that universities have a duty to provide clear information about outcomes.
+
+Increasingly, some institutions are seeking to bridge the divide, encouraging scientists to study ethics and humanities students to develop data skills, in the belief that the most valuable graduates will combine both perspectives.
+? c | Why have some governments reduced funding for the humanities? | *They are under pressure to show economic returns | Students prefer them | They are too popular | The first paragraph explains. | under pressure to demonstrate economic returns
+? c | Which skill do defenders say the humanities develop? | *Critical thinking and clear writing | Laboratory techniques | Programming | The second paragraph lists them. | such as critical thinking, clear writing, interpretation of complex texts and the ability to construct arguments
+? t | Defenders argue that education should be measured only economically. | F | They argue it cannot be measured only in economic terms. | the value of education cannot be measured only in economic terms.
+? s | Name one modern challenge the text says technology alone cannot answer. | the ethics of artificial intelligence / climate policy | The fourth paragraph gives examples. | from the ethics of artificial intelligence to climate policy
+? c | How are some institutions bridging the divide? | *Encouraging scientists to study ethics and humanities students to learn data skills | Closing humanities departments | Banning business degrees | The last paragraph explains. | encouraging scientists to study ethics and humanities students to develop data skills
+
+## Paying to pollute? | EN
+Carbon offsetting allows individuals and companies to compensate for their greenhouse gas emissions by funding projects that reduce or remove carbon dioxide elsewhere. A traveller might pay a small fee when booking a flight, for example, to support tree-planting or renewable energy projects in another country. In principle, the emissions from the flight are balanced by the reductions achieved through the project.
+
+The appeal is obvious. Offsetting offers a way to take responsibility for emissions that are difficult to avoid, and it channels money into projects that may bring additional benefits, such as protecting forests or providing clean cooking stoves to households that would otherwise burn wood.
+
+However, offsetting has attracted serious criticism. One problem is additionality: would the project have happened anyway, even without the payment? If a forest was never at risk of being cut down, paying to protect it does not reduce emissions. Another issue is permanence. Trees planted today may be destroyed by fire, disease or illegal logging decades later, releasing the stored carbon back into the atmosphere. Investigations have also found that some projects significantly overstated the emissions they prevented.
+
+Critics further argue that offsetting can encourage complacency, allowing companies and consumers to continue polluting while claiming to be "carbon neutral". The priority, they insist, should be to reduce emissions directly.
+
+In response, standards for verifying offset projects have been tightened, and some organisations now favour "carbon removal" methods with more measurable results. Many experts conclude that offsets can play a limited role, but only as a final step after every feasible effort has been made to cut emissions at their source.
+? c | What does carbon offsetting allow people to do? | *Compensate for emissions by funding reduction projects elsewhere | Stop flying | Pay lower taxes | The first paragraph explains. | compensate for their greenhouse gas emissions by funding projects that reduce or remove carbon dioxide elsewhere.
+? s | What is the term for whether a project would have happened anyway? | additionality | The third paragraph names it. | One problem is additionality
+? c | Why is permanence a problem with planted trees? | *They may later be destroyed, releasing carbon | They grow too slowly | They need too much water | The third paragraph explains. | Trees planted today may be destroyed by fire, disease or illegal logging decades later
+? t | Investigations found some projects overstated the emissions they prevented. | T | The third paragraph says so. | some projects significantly overstated the emissions they prevented.
+? c | How do many experts see offsets? | *As a final step after cutting emissions at their source | As the main solution | As useless in all cases | The last paragraph explains. | only as a final step after every feasible effort has been made to cut emissions at their source.
+
+## Paying with attention | TE
+Many of the most popular digital services, from social media platforms to search engines and video sites, are free to use. Yet they generate enormous revenues. The explanation lies in what some economists call the attention economy: users pay not with money but with their time and data, which companies sell to advertisers.
+
+In this model, the more time users spend on a platform, the more advertisements they see and the more data they generate. Platforms therefore have strong incentives to maximise engagement. Features such as infinite scrolling, autoplay videos and personalised notifications are designed to keep users returning and remaining online for as long as possible.
+
+Some former technology designers have openly acknowledged that these features draw on psychological research into habit and reward. Unpredictable rewards, such as not knowing whether new messages or likes will appear, are particularly powerful at encouraging repeated checking.
+
+Critics argue that the attention economy has significant social costs. They link excessive use to reduced concentration, poorer sleep and anxiety, particularly among young people. Because algorithms tend to promote content that provokes strong emotional reactions, they may also amplify outrage and misinformation.
+
+Defenders point out that users derive genuine value from these services, which provide communication, information and entertainment at no direct cost. They also note that the research on harms is still developing and that effects vary widely between individuals.
+
+Proposed solutions range from individual strategies, such as turning off notifications, to regulatory measures, including restrictions on designs aimed at children and greater transparency about how algorithms rank content. Some designers advocate "humane technology" that respects users' time rather than exploiting it.
+? c | How do users pay for free digital services in the attention economy? | *With their time and data | With subscriptions | With donations | The first paragraph explains. | users pay not with money but with their time and data
+? c | Why do platforms try to maximise engagement? | *More time means more advertisements and data | Users demand it by law | It reduces costs | The second paragraph explains. | the more time users spend on a platform, the more advertisements they see and the more data they generate.
+? t | Unpredictable rewards are particularly effective at encouraging repeated checking. | T | The third paragraph says so. | are particularly powerful at encouraging repeated checking.
+? s | What kind of content do algorithms tend to promote? | content that provokes strong emotional reactions / emotional content | The fourth paragraph says so. | algorithms tend to promote content that provokes strong emotional reactions
+? c | What do some designers advocate? | *Technology that respects users' time | More advertisements | Banning social media | The last paragraph explains. | Some designers advocate "humane technology" that respects users' time rather than exploiting it.
+
+## When a city is loved too much | TR
+Venice, Barcelona and Kyoto share an unusual problem: they are too popular. Each year, millions of visitors crowd their historic streets, and in peak seasons residents can feel outnumbered in their own neighbourhoods. The phenomenon has become known as overtourism.
+
+Tourism brings undeniable economic benefits, supporting jobs in hotels, restaurants, transport and retail. Yet when visitor numbers exceed what a place can sustainably absorb, the costs become increasingly visible. Narrow streets become congested, public transport overcrowded and fragile monuments damaged. Perhaps most significantly, the conversion of residential apartments into short-term rentals reduces the housing available to locals and pushes up rents, gradually hollowing out historic centres.
+
+Several factors have contributed to the problem. Cheaper flights, the growth of cruise tourism and online rental platforms have made travel more accessible than ever. Social media has concentrated visitors at a limited number of photogenic locations, sometimes overwhelming previously quiet places within months.
+
+Cities have responded with a variety of measures. Some have introduced tourist taxes or entry fees for day visitors at peak times. Others have restricted new hotels or short-term rentals in central districts, limited the number of cruise ships and redirected tour groups. Several destinations have launched campaigns encouraging visitors to explore lesser-known areas or travel outside peak seasons.
+
+These policies are not without controversy. Businesses fear lost revenue, and critics argue that fees may turn historic cities into exclusive destinations for the wealthy. Nevertheless, there is growing consensus that unmanaged tourism risks destroying the very qualities that attract visitors in the first place. The challenge is to ensure that cities remain places to live, not merely places to visit.
+? c | What is overtourism? | *Too many visitors for a place to absorb sustainably | A lack of tourists | Tourism in the countryside | The first and second paragraphs explain. | when visitor numbers exceed what a place can sustainably absorb
+? c | How do short-term rentals affect historic centres? | *They reduce housing for locals and push up rents | They lower rents | They create more homes | The second paragraph explains. | reduces the housing available to locals and pushes up rents
+? s | What has concentrated visitors at a limited number of locations? | social media | The third paragraph says so. | Social media has concentrated visitors at a limited number of photogenic locations
+? t | All businesses support the new policies. | F | Businesses fear lost revenue. | Businesses fear lost revenue
+? c | According to the writer, what is the challenge? | *Ensuring cities remain places to live | Attracting more cruise ships | Building more hotels | The last paragraph explains. | The challenge is to ensure that cities remain places to live, not merely places to visit.
+
+## A gentle push | MS
+Traditional economic theory assumes that people make rational decisions, carefully weighing costs and benefits to maximise their own interests. Behavioural economics, which combines insights from psychology and economics, challenges this assumption. It shows that human decisions are influenced by habits, emotions, social norms and the way choices are presented.
+
+One of the field's most influential ideas is the "nudge": a change in the way options are presented that predictably alters behaviour without restricting choice or significantly changing financial incentives. A classic example concerns pension savings. When employees must actively sign up for a workplace pension scheme, many never do, even if they intend to. When they are automatically enrolled but free to opt out, participation rises dramatically. The options are identical; only the default has changed.
+
+Governments have used nudges in areas ranging from tax collection to public health. Letters telling taxpayers that most of their neighbours pay on time have increased compliance. Placing healthy foods at eye level in canteens has encouraged better diets.
+
+Critics, however, raise concerns. Some argue that nudges can be manipulative, influencing people without their awareness. Others worry that governments may use nudges to avoid more effective but politically difficult policies, such as regulation or taxation. A nudge to recycle, for instance, may achieve less than reforming how packaging is produced.
+
+Supporters respond that every presentation of choices influences behaviour in some way; there is no neutral option. The question is whether that influence serves people's own interests. Most agree that nudges should be transparent, easy to avoid and subject to public scrutiny, so that citizens retain control over their choices.
+? c | What does behavioural economics challenge? | *The assumption that people decide rationally | The existence of markets | The value of money | The first paragraph explains. | challenges this assumption.
+? c | What happened when employees were automatically enrolled in pensions? | *Participation rose dramatically | Participation fell | Nobody noticed | The second paragraph explains. | When they are automatically enrolled but free to opt out, participation rises dramatically.
+? t | Letters about neighbours paying on time increased tax compliance. | T | The third paragraph says so. | Letters telling taxpayers that most of their neighbours pay on time have increased compliance.
+? s | What do some critics say nudges can be? | manipulative | The fourth paragraph says so. | Some argue that nudges can be manipulative
+? c | What do most people agree nudges should be? | *Transparent, easy to avoid and open to scrutiny | Secret and permanent | Compulsory | The last paragraph explains. | nudges should be transparent, easy to avoid and subject to public scrutiny
+
+## Trusting strangers online | TE
+Every day, millions of people do something that would have seemed reckless a generation ago: they get into cars driven by strangers, sleep in strangers' homes and buy expensive items from people they have never met. Digital platforms have made this possible by creating systems designed to build trust between people who have no prior relationship.
+
+Central to these systems are ratings and reviews. After each transaction, both parties evaluate each other, creating a public record of reputation. A host with hundreds of positive reviews or a driver with a high rating appears trustworthy, and users rely heavily on these signals when making decisions. Platforms also verify identities, process payments securely and offer guarantees if something goes wrong.
+
+Research suggests these mechanisms work remarkably well. Most transactions occur without problems, and reputation systems create strong incentives for good behaviour, since a few negative reviews can seriously damage a person's income.
+
+Yet reputation systems have weaknesses. Ratings tend to be inflated, with the vast majority of reviews clustered at the highest levels, which makes it difficult to distinguish between good and excellent service. Fear of retaliation may discourage honest negative feedback. Fake reviews remain a persistent problem.
+
+There are also concerns about fairness. Studies have found evidence that users with certain names or profile photos may receive fewer bookings or lower ratings, reflecting biases that reputation systems can reproduce or even amplify. For workers whose livelihoods depend on ratings, a few unfair reviews can have serious consequences.
+
+As platforms play an ever larger role in economic life, the design of trust systems has become an important question, not only for companies but also for regulators concerned with transparency and discrimination.
+? c | What have digital platforms created? | *Systems to build trust between strangers | Free transport | Private clubs | The first paragraph explains. | creating systems designed to build trust between people who have no prior relationship.
+? c | Why do reputation systems encourage good behaviour? | *Negative reviews can damage a person's income | Users are paid for reviews | Reviews are anonymous | The third paragraph explains. | since a few negative reviews can seriously damage a person's income.
+? t | Ratings are usually spread evenly from low to high. | F | Most cluster at the highest levels. | the vast majority of reviews clustered at the highest levels
+? s | What may discourage honest negative feedback? | fear of retaliation | The fourth paragraph says so. | Fear of retaliation may discourage honest negative feedback.
+? c | What fairness concern do studies raise? | *Biases linked to names or photos may affect bookings and ratings | All users are treated identically | Reviews are too long | The fifth paragraph explains. | users with certain names or profile photos may receive fewer bookings or lower ratings
+
+## The education gap | ED
+Education is often described as the great equaliser, the means by which children from any background can improve their prospects. In practice, however, educational outcomes remain strongly linked to family income in many countries. Children from wealthier households are more likely to complete secondary school, attend university and obtain well-paid jobs.
+
+The gap often appears early. By the time children start school, those from disadvantaged backgrounds may already lag behind in vocabulary and early literacy, partly because of differences in access to books, educational activities and high-quality early childcare. Without targeted support, these early disadvantages can widen over time.
+
+Resources outside school also play a role. Wealthier families can afford private tutoring, extracurricular activities and quiet study spaces, all of which can improve performance. During long school holidays, children from low-income families may lose more of what they have learned, a phenomenon researchers call the "summer slide".
+
+Schools themselves can reinforce inequality. In many places, schools in wealthy areas have more funding, experienced teachers and better facilities, while schools serving poorer communities struggle to recruit and retain staff.
+
+Nevertheless, research identifies interventions that make a difference. High-quality early childhood education has shown long-term benefits, particularly for disadvantaged children. Small-group tutoring, well-trained teachers and programmes that involve parents can also narrow gaps. Some countries have reduced inequality by directing additional funding to schools with greater needs.
+
+Education alone cannot eliminate wider social and economic inequalities. But evidence suggests that well-designed policies can ensure a child's prospects depend less on the circumstances of their birth.
+? c | What remains strongly linked to educational outcomes in many countries? | *Family income | Height | Birth month | The first paragraph explains. | educational outcomes remain strongly linked to family income in many countries.
+? c | When does the gap often first appear? | *Before children start school | At university | After graduation | The second paragraph explains. | By the time children start school, those from disadvantaged backgrounds may already lag behind
+? s | What do researchers call the learning loss during long holidays? | the summer slide / summer slide | The third paragraph names it. | a phenomenon researchers call the "summer slide".
+? t | Schools in poorer communities usually find it easier to recruit teachers. | F | They struggle to recruit and retain staff. | schools serving poorer communities struggle to recruit and retain staff.
+? c | Which intervention has shown long-term benefits? | *High-quality early childhood education | Longer summer holidays | Larger classes | The fifth paragraph says so. | High-quality early childhood education has shown long-term benefits
+
+## The decline of local news | CO
+Over the past two decades, thousands of local newspapers have closed or drastically reduced their staff. The causes are well known: advertising revenue, once the foundation of the newspaper business, has moved to online platforms, and many readers now expect news to be free.
+
+The consequences, however, are less widely appreciated. Local newspapers do more than report events. They attend council meetings, examine public budgets and investigate local businesses and institutions. When they disappear, communities can lose their main source of information about the decisions that most directly affect their lives.
+
+Research has begun to measure these effects. Studies in several countries have found that after local newspapers close, fewer candidates stand in local elections, voter participation falls and public borrowing costs can rise, possibly because reduced scrutiny allows inefficiency or corruption to go unnoticed.
+
+The decline also affects social cohesion. Local news covers schools, sports teams, community events and obituaries, creating a shared sense of place. Without it, residents may rely more on national media and social networks, where local issues receive little attention and misinformation can spread easily.
+
+Various models are being tried to fill the gap. Some newspapers have become non-profit organisations supported by donations and foundations. Others rely on reader subscriptions or membership schemes. In some countries, public funds support local reporting, though this raises questions about independence.
+
+None of these approaches has yet replaced the lost revenue on a large scale. But the experiments reflect a growing recognition that local journalism is not merely a commercial product but a public good, essential to the functioning of democracy at the community level.
+? c | What has caused many local newspapers to close? | *Advertising revenue moving online and readers expecting free news | Too many journalists | Expensive paper | The first paragraph explains. | has moved to online platforms, and many readers now expect news to be free.
+? c | What did studies find after local newspapers close? | *Fewer candidates and lower voter participation | More candidates | Lower public borrowing costs | The third paragraph explains. | fewer candidates stand in local elections, voter participation falls
+? t | Local news coverage of community events contributes to a shared sense of place. | T | The fourth paragraph says so. | creating a shared sense of place.
+? s | What question does public funding of local reporting raise? | independence / questions about independence | The fifth paragraph says so. | though this raises questions about independence.
+? c | How is local journalism increasingly seen, according to the writer? | *As a public good essential to democracy | As purely a commercial product | As unnecessary | The last paragraph explains. | local journalism is not merely a commercial product but a public good
+
+## Sport and the nation | HS
+Few events unite a country as powerfully as international sport. When a national team plays in a major tournament, streets empty, strangers celebrate together and flags appear on balconies. Sport has become one of the most visible expressions of national identity in the modern world.
+
+Historians note that this connection is relatively recent. Many modern sports were codified in the nineteenth century, and international competitions grew alongside the development of nation-states and mass media. Governments soon recognised sport's potential to build national pride and project an image abroad. Hosting major events such as the Olympic Games has often been seen as a way for countries to signal their economic development and global status.
+
+The effects can be positive. Sporting success can foster a sense of belonging and shared purpose, bringing together citizens across social, regional and ethnic divisions. National teams that include players from diverse backgrounds can challenge narrow definitions of national identity.
+
+However, sport can also amplify division. Rivalries between nations sometimes reflect political tensions, and nationalist sentiment can turn into hostility towards opponents or even towards players whose performance is judged a failure. Athletes from minority backgrounds have at times faced abuse after defeats, revealing the conditional nature of their acceptance.
+
+The economic case for hosting major events is also contested. Studies frequently find that the costs of new stadiums and infrastructure exceed the long-term benefits, leaving some host cities with expensive, underused facilities.
+
+Sport, therefore, mirrors the societies in which it is played. It can express inclusive pride and solidarity, but it can also reveal underlying tensions about who truly belongs.
+? c | According to historians, when did the connection between sport and nation develop? | *Relatively recently, alongside nation-states and mass media | In ancient times | Only in this century | The second paragraph explains. | Historians note that this connection is relatively recent.
+? c | Why have countries hosted major events? | *To signal economic development and global status | To reduce costs | To discourage tourism | The second paragraph explains. | a way for countries to signal their economic development and global status.
+? t | Diverse national teams can challenge narrow definitions of national identity. | T | The third paragraph says so. | can challenge narrow definitions of national identity.
+? s | What do studies frequently find about the costs of hosting major events? | they exceed the long-term benefits / costs exceed benefits | The fifth paragraph says so. | the costs of new stadiums and infrastructure exceed the long-term benefits
+? c | What does sport mirror, according to the writer? | *The societies in which it is played | Only government policy | Nothing beyond the game | The last paragraph explains. | Sport, therefore, mirrors the societies in which it is played.
+
+## Machines and the future of work | WK
+Predictions that machines will make human workers obsolete are not new. In the nineteenth century, textile workers destroyed mechanical looms, fearing for their livelihoods. Yet in the long run, technological change created more jobs than it destroyed, as rising productivity generated new industries and occupations.
+
+Today, advances in artificial intelligence and robotics have revived these fears. Unlike earlier machines, which mainly replaced physical labour, modern technologies can perform cognitive tasks such as analysing documents, translating languages and diagnosing diseases from medical images. Some estimates suggest that a substantial proportion of current jobs could be significantly affected within the coming decades.
+
+Economists, however, emphasise that automation usually transforms jobs rather than eliminating them entirely. Most occupations consist of many different tasks, only some of which can be automated. Bank tellers, for example, did not disappear when cash machines were introduced; instead, their role shifted towards customer service and sales.
+
+The more serious concern may be distribution. Workers in routine middle-skill jobs are often most exposed, while highly skilled professionals may benefit from new tools that increase their productivity. Without intervention, technological change could widen inequality and leave many workers struggling to adapt.
+
+This has led to calls for major investment in education and lifelong learning, enabling workers to retrain throughout their careers. Some also propose strengthening social safety nets to support those whose jobs disappear.
+
+The future of work, in other words, is not determined by technology alone. It will depend on choices made by governments, businesses and societies about how the benefits of automation are shared.
+? c | What happened in the long run after earlier technological changes? | *More jobs were created than destroyed | All workers lost their jobs | Productivity fell | The first paragraph explains. | technological change created more jobs than it destroyed
+? c | How do modern technologies differ from earlier machines? | *They can perform cognitive tasks | They only replace physical labour | They are cheaper | The second paragraph explains. | modern technologies can perform cognitive tasks
+? t | Bank tellers disappeared when cash machines were introduced. | F | Their role shifted. | Bank tellers, for example, did not disappear
+? s | Which workers are often most exposed to automation? | workers in routine middle-skill jobs / routine middle-skill workers | The fourth paragraph says so. | Workers in routine middle-skill jobs are often most exposed
+? c | What will the future of work depend on, according to the writer? | *Choices about how the benefits of automation are shared | Technology alone | The weather | The last paragraph explains. | It will depend on choices made by governments, businesses and societies
+
+## The water challenge | EN
+Water covers most of the Earth's surface, yet only a tiny fraction is fresh water accessible for human use. As populations grow, cities expand and the climate changes, pressure on this limited resource is increasing. Many experts consider water scarcity one of the most serious challenges of the twenty-first century.
+
+Agriculture accounts for the largest share of global freshwater use, mostly for irrigation. In many regions, farmers pump groundwater faster than it can be naturally replenished, causing water tables to fall. Some major rivers no longer reach the sea for parts of the year because so much water is extracted upstream.
+
+Climate change is intensifying the problem. Rising temperatures increase evaporation, and changing rainfall patterns bring longer droughts in some areas and more intense floods in others. Glaciers that supply water to hundreds of millions of people during dry seasons are shrinking.
+
+Scarcity is not only a matter of physical supply. In many places, the problem is economic or political: water exists but infrastructure to deliver it safely is lacking, or access is unequal. Poorer communities often pay more for water, sometimes buying it from private vendors at high prices.
+
+Solutions exist, though they require investment and cooperation. Efficient irrigation techniques, such as drip systems, can substantially reduce agricultural use. Repairing leaking pipes can save significant amounts in cities. Treated wastewater can be reused for industry or irrigation, and some countries rely increasingly on desalination, though it is energy-intensive.
+
+Because rivers and aquifers often cross national borders, cooperation between countries is also essential. Managing water fairly and sustainably may become one of the defining tests of international collaboration.
+? c | Which sector uses the largest share of global fresh water? | *Agriculture | Industry | Households | The second paragraph says so. | Agriculture accounts for the largest share of global freshwater use
+? c | How is climate change intensifying water scarcity? | *Higher evaporation and changing rainfall patterns | More glaciers forming | Less evaporation | The third paragraph explains. | Rising temperatures increase evaporation, and changing rainfall patterns bring longer droughts
+? t | Poorer communities often pay less for water. | F | They often pay more. | Poorer communities often pay more for water
+? s | What water source is energy-intensive? | desalination | The fifth paragraph says so. | some countries rely increasingly on desalination, though it is energy-intensive.
+? c | Why is international cooperation essential? | *Rivers and aquifers often cross national borders | Water is sold internationally | Rain falls everywhere equally | The last paragraph explains. | Because rivers and aquifers often cross national borders
+
+## Rethinking the zoo | AN
+Zoos have existed in various forms for thousands of years, but their purpose has changed considerably. Early menageries displayed exotic animals as symbols of wealth and power. Modern zoos, by contrast, typically describe their mission in terms of conservation, education and research.
+
+Supporters point to genuine achievements. Several species that became extinct in the wild have survived thanks to breeding programmes in zoos, and some have been successfully reintroduced into their natural habitats. Zoos also fund conservation projects in the wild and contribute to scientific understanding of animal behaviour, health and reproduction. For many visitors, especially children, seeing live animals can inspire a lasting interest in wildlife.
+
+Critics, however, question whether these benefits justify keeping animals in captivity. They note that most animals kept in zoos are not endangered and that breeding programmes often involve species chosen for their appeal to visitors rather than their conservation needs. Some animals, particularly large, wide-ranging species such as elephants and whales, may suffer in captivity, showing signs of stress or repetitive behaviour.
+
+The educational value of zoos is also debated. While zoos claim to raise awareness, studies have produced mixed results about whether visits lead to lasting changes in knowledge or behaviour.
+
+In response, many modern zoos have redesigned enclosures to resemble natural habitats, focused on species with genuine conservation needs and stopped keeping animals that are particularly unsuited to captivity. Some advocates argue that resources should increasingly shift towards protecting habitats in the wild.
+
+The debate reflects a broader question: how should humans balance their fascination with wildlife against the welfare of individual animals and the survival of species?
+? c | How did early menageries differ from modern zoos? | *They displayed animals as symbols of wealth and power | They focused on conservation | They released animals | The first paragraph explains. | Early menageries displayed exotic animals as symbols of wealth and power.
+? c | What achievement do supporters point to? | *Some species survived through zoo breeding programmes | All zoo animals are endangered | Zoos have no costs | The second paragraph explains. | Several species that became extinct in the wild have survived thanks to breeding programmes in zoos
+? t | Critics say most zoo animals are endangered. | F | Most are not endangered. | most animals kept in zoos are not endangered
+? s | Which large species may suffer most in captivity? | elephants and whales / elephants / whales | The third paragraph gives examples. | such as elephants and whales
+? c | What have many modern zoos done in response? | *Redesigned enclosures and focused on species with conservation needs | Closed permanently | Increased the number of large animals | The fifth paragraph explains. | redesigned enclosures to resemble natural habitats, focused on species with genuine conservation needs
+
+## A burger in every city | FD
+In almost any major city in the world, it is possible to find the same burgers, fried chicken and coffee served under the same familiar logos. The global spread of fast-food chains is often cited as a symbol of globalisation and of the homogenisation of culture.
+
+Critics argue that the expansion of these chains threatens local food traditions. Small family restaurants and street vendors may struggle to compete with the marketing power and efficiency of multinational companies. Diets high in processed food, sugar and fat have been linked to rising rates of obesity and related diseases in many countries undergoing rapid economic change.
+
+Yet the picture is more nuanced than simple cultural replacement. Global chains frequently adapt their menus to local tastes, offering rice dishes in Asia, spicy flavours in Latin America or vegetarian options in countries where many people do not eat beef. Sociologists use the term "glocalisation" to describe this blending of global and local elements.
+
+Moreover, the influence does not run in only one direction. Dishes once considered local specialities, such as sushi, tacos and Vietnamese pho, have themselves become global, served in cities far from their origins. In many places, a renewed interest in traditional and regional cuisine has emerged partly as a reaction to standardised fast food.
+
+For consumers, fast-food chains offer convenience, predictability and often affordable prices, which help explain their popularity, particularly among young urban populations.
+
+Ultimately, the globalisation of food reflects broader patterns of cultural exchange. It brings both opportunities for diversity and risks of uniformity, and the outcome depends partly on how communities value and support their own culinary traditions.
+? c | What do critics say fast-food chains threaten? | *Local food traditions | Global trade | Tourism | The second paragraph explains. | the expansion of these chains threatens local food traditions.
+? s | What term describes blending global and local elements? | glocalisation | The third paragraph names it. | Sociologists use the term "glocalisation"
+? c | How do global chains often adapt? | *By changing menus to local tastes | By lowering prices only | By closing local branches | The third paragraph explains. | Global chains frequently adapt their menus to local tastes
+? t | Local dishes like pho have become global. | T | The fourth paragraph says so. | Dishes once considered local specialities, such as sushi, tacos and Vietnamese pho, have themselves become global
+? c | What does the outcome of food globalisation partly depend on? | *How communities value their own culinary traditions | The size of restaurants | Government advertising | The last paragraph explains. | the outcome depends partly on how communities value and support their own culinary traditions.
+
+## Designing happier cities | PT
+Urban planners have traditionally focused on practical concerns: housing enough people, moving traffic efficiently and providing essential services. Increasingly, however, researchers and designers are asking a different question: how can cities make people happier?
+
+Evidence suggests that the design of urban environments significantly affects wellbeing. Access to green spaces is one of the most consistent findings. People living near parks report lower stress and better mental health, and even brief exposure to trees and water appears to have restorative effects.
+
+Social connection is another key factor. Neighbourhoods with lively streets, small shops, benches and public squares encourage spontaneous encounters between residents. By contrast, environments dominated by highways and large car parks can discourage walking and isolate people from one another. Some research suggests that long commutes are among the most consistently unpleasant parts of people's days, which strengthens the case for compact, mixed-use neighbourhoods where homes, workplaces and services are close together.
+
+Noise, pollution and a sense of insecurity also undermine wellbeing. Narrower streets, slower traffic and good lighting can make public spaces feel safer and more inviting.
+
+Critics caution that happiness is shaped by many factors beyond design, including income, employment and relationships, and that improvements to neighbourhoods can raise property prices, potentially displacing the residents they were intended to benefit.
+
+Nevertheless, a growing number of cities now consider wellbeing explicitly in planning decisions, measuring not only economic output but also residents' satisfaction, health and sense of community. The underlying idea is simple but powerful: cities should be designed around the needs of people rather than vehicles.
+? c | What have urban planners traditionally focused on? | *Practical concerns like housing and traffic | Happiness only | Art and culture | The first paragraph explains. | Urban planners have traditionally focused on practical concerns
+? c | Which finding about green spaces is described as consistent? | *People near parks report lower stress | Parks increase noise | Parks reduce property values | The second paragraph explains. | People living near parks report lower stress and better mental health
+? t | Long commutes are among the most pleasant parts of people's days. | F | They are among the most unpleasant. | long commutes are among the most consistently unpleasant parts of people's days
+? s | What can neighbourhood improvements raise, potentially displacing residents? | property prices | The fifth paragraph says so. | improvements to neighbourhoods can raise property prices
+? c | What is the underlying idea of wellbeing-focused planning? | *Cities should be designed around people rather than vehicles | Cities should grow as fast as possible | Cars should have priority | The last paragraph explains. | cities should be designed around the needs of people rather than vehicles.
+
+## The unreliable witness | HE
+We tend to think of memory as a recording device that stores experiences accurately, ready to be replayed. Decades of psychological research suggest otherwise. Memory is reconstructive: each time we recall an event, we rebuild it from fragments, filling gaps with expectations, general knowledge and information acquired later.
+
+This process is usually efficient, but it makes memory vulnerable to distortion. In a series of influential experiments, participants watched videos of car accidents and were later asked how fast the cars were going when they "smashed" or "hit" each other. Those who heard the word "smashed" estimated higher speeds and were more likely to report seeing broken glass, although there was none in the video.
+
+Researchers have even shown that it is possible to create memories of events that never occurred. When participants were repeatedly encouraged to imagine a childhood experience, such as being lost in a shopping centre, a significant minority came to believe it had really happened.
+
+These findings have important implications for the legal system. Eyewitness testimony can be highly persuasive in court, yet studies of wrongful convictions later overturned through DNA evidence have found that mistaken eyewitness identification was a contributing factor in many cases. Stress, the presence of a weapon and leading questions from investigators can all reduce accuracy.
+
+In response, some police forces have changed procedures, for example by ensuring that the officer conducting an identification does not know which person is the suspect, and by recording witnesses' confidence immediately.
+
+None of this means memory is generally worthless. But it does suggest that confidence and accuracy are not the same, and that even vivid memories should be treated with caution.
+? c | How does research describe memory? | *As reconstructive | As an exact recording | As permanent and unchanging | The first paragraph explains. | Memory is reconstructive
+? c | What happened to participants who heard the word "smashed"? | *They estimated higher speeds and some recalled broken glass | They remembered less | They refused to answer | The second paragraph explains. | Those who heard the word "smashed" estimated higher speeds
+? t | Researchers have shown it is possible to create memories of events that never happened. | T | The third paragraph says so. | it is possible to create memories of events that never occurred.
+? s | What evidence overturned many wrongful convictions? | DNA evidence / DNA | The fourth paragraph says so. | wrongful convictions later overturned through DNA evidence
+? c | What does the writer conclude about confidence and accuracy? | *They are not the same | They are always linked | Confidence guarantees accuracy | The last paragraph explains. | it does suggest that confidence and accuracy are not the same
+"""
+
+# MORE C1
 
 
 def parse(level, block, first_id):
