@@ -4141,7 +4141,433 @@ The debate raises fundamental questions about ownership, memory and the role of 
 ? c | How is the conversation shifting? | *From whether to return objects to how to do it fairly | From museums to schools | Away from the topic entirely | The last paragraph explains. | the conversation is shifting from whether objects should be returned to how restitution can be carried out fairly and collaboratively.
 """
 
-# MORE LEVELS
+PASSAGES["C2"] = """
+## The tyranny of metrics | WK
+There is a seductive logic to measurement. If we can quantify performance, the reasoning goes, we can reward success, identify failure and allocate resources rationally. Hospitals are ranked by waiting times, schools by examination results, researchers by citation counts and employees by an ever-growing array of key performance indicators. Few would argue that such information is useless. The difficulty lies in what happens when the number ceases to be a means of understanding and becomes the goal itself.
+
+The economist Charles Goodhart gave his name to a principle that captures the problem: when a measure becomes a target, it ceases to be a good measure. Faced with targets, people adapt their behaviour not necessarily to improve the underlying reality but to improve the figure. Schools under pressure to raise pass rates may concentrate on pupils near the grade boundary while neglecting both the most and least able. Police forces judged on recorded crime may, consciously or otherwise, record less of it. Hospitals required to treat patients within a fixed time may reclassify waiting areas so that the clock stops sooner.
+
+Such distortions are rarely the result of outright dishonesty. More often they arise from a gradual narrowing of attention, in which whatever is counted crowds out whatever is not. Qualities that resist quantification, such as judgement, trust, curiosity and care, become invisible and therefore expendable.
+
+None of this amounts to an argument against measurement as such. Data can reveal patterns that intuition misses and hold institutions to account. The lesson, rather, is one of humility: metrics should inform judgement, not replace it. They work best when used diagnostically, by people who understand their limitations, and least well when tied mechanically to rewards and punishments. A number, after all, is a representation of something we value, and the danger lies in forgetting the distinction.
+? c | According to Goodhart's principle, what happens when a measure becomes a target? | *It ceases to be a good measure | It becomes more accurate | It is abandoned | The second paragraph states the principle. | when a measure becomes a target, it ceases to be a good measure.
+? c | How might schools respond to pressure on pass rates? | *By concentrating on pupils near the grade boundary | By helping all pupils equally | By abolishing exams | The second paragraph gives the example. | may concentrate on pupils near the grade boundary
+? t | The writer argues that distortions usually result from outright dishonesty. | F | They rarely result from dishonesty. | Such distortions are rarely the result of outright dishonesty.
+? s | Name one quality that the writer says resists quantification. | judgement / trust / curiosity / care | The third paragraph lists them. | such as judgement, trust, curiosity and care
+? c | What is the writer's overall position? | *Metrics should inform judgement rather than replace it | Measurement should be abandoned | Numbers are always reliable | The last paragraph concludes. | metrics should inform judgement, not replace it.
+
+## The uses of nostalgia | DL
+For much of its history, nostalgia was regarded as an affliction. The term was coined in the seventeenth century by a Swiss physician to describe the acute homesickness suffered by soldiers far from home, a condition thought capable of causing fever and even death. By the twentieth century it had shed its medical associations, but it retained a faintly pejorative air, implying sentimentality and a refusal to engage with the present.
+
+Recent psychological research has complicated this picture considerably. Studies suggest that nostalgic reflection, far from being merely escapist, can serve important functions. Recalling meaningful past experiences appears to strengthen a sense of social connectedness, bolster self-esteem and provide a feeling of continuity between who we were and who we are. People who are lonely or anxious often turn to nostalgic memories, and in doing so may find a measure of comfort and even renewed motivation.
+
+Yet nostalgia is selective by nature. Memory tends to soften past hardships and amplify past pleasures, a phenomenon sometimes described as rosy retrospection. The "good old days" are frequently good largely in retrospect. When this selectivity operates at a collective level, it can acquire considerable cultural and political force. Appeals to a lost golden age, whether in advertising or public life, draw their power precisely from their vagueness, since an idealised past cannot easily be contradicted.
+
+The question, then, is not whether nostalgia is good or bad, but how it is used. As a private resource for meaning and resilience, it may be valuable. As a basis for collective decision-making, it warrants scepticism, particularly when it obscures the inequalities and hardships that the past contained. A mature relationship with the past, one might argue, involves both affection and clear-sightedness: cherishing what was valuable without pretending that nothing has improved.
+? c | How was nostalgia originally regarded? | *As a medical condition | As a virtue | As a political movement | The first paragraph explains. | was regarded as an affliction.
+? c | What functions can nostalgic reflection serve, according to research? | *Strengthening social connectedness and self-esteem | Causing fever | Improving memory accuracy | The second paragraph explains. | can serve important functions.
+? s | What is the tendency to soften past hardships sometimes called? | rosy retrospection | The third paragraph names it. | a phenomenon sometimes described as rosy retrospection.
+? t | The writer suggests appeals to a golden age are powerful because they are precise. | F | Their power comes from their vagueness. | draw their power precisely from their vagueness
+? c | What does the writer recommend? | *Combining affection for the past with clear-sightedness | Rejecting the past entirely | Basing policy on nostalgia | The last paragraph concludes. | involves both affection and clear-sightedness
+
+## Can a machine be creative? | TE
+When an image generated by artificial intelligence wins an art competition, or a piece of music composed by an algorithm is mistaken for the work of a human, the reaction is often a mixture of fascination and unease. The unease stems partly from economic anxiety: illustrators, translators and musicians fear for their livelihoods. But it also reflects a deeper uncertainty about what creativity is and whether it can belong to a machine.
+
+Sceptics argue that generative systems do not create in any meaningful sense. They identify statistical patterns in vast quantities of existing human work and produce outputs that recombine those patterns. Without intention, experience or understanding, the argument runs, they merely simulate creativity, much as a parrot simulates conversation.
+
+Defenders counter that human creativity also involves recombination. Artists absorb influences, imitate predecessors and transform existing forms; few ideas emerge from nowhere. If novelty and value are the hallmarks of creativity, they suggest, it is unclear why the origin of a work should matter.
+
+Perhaps the more productive question concerns not the machine but the human context. Much of what we value in art lies in its relationship to a life: the sense that a work expresses a particular perspective, struggle or vision. A novel about grief carries a different weight when we know it was written by someone who grieved. Machine-generated works, however technically accomplished, lack this biographical dimension, though they may still prove useful, decorative or even moving.
+
+There are also pressing questions of fairness. Many systems have been trained on artists' work without their consent or compensation, raising issues that existing copyright law was not designed to address. Whatever one concludes about machine creativity in principle, these practical questions about credit, consent and livelihood demand answers.
+? c | What does the unease about AI art partly stem from? | *Economic anxiety among creative workers | Lack of interest in art | The cost of computers | The first paragraph explains. | The unease stems partly from economic anxiety
+? c | What do sceptics compare generative systems to? | *A parrot simulating conversation | A human artist | A camera | The second paragraph makes the comparison. | much as a parrot simulates conversation.
+? t | Defenders argue that human creativity also involves recombination. | T | The third paragraph says so. | Defenders counter that human creativity also involves recombination.
+? s | What dimension does the writer say machine-generated works lack? | the biographical dimension / biographical | The fourth paragraph says so. | lack this biographical dimension
+? c | What practical issue does the final paragraph raise? | *Systems trained on artists' work without consent or compensation | Machines being too slow | Art becoming cheaper for everyone | The last paragraph explains. | trained on artists' work without their consent or compensation
+
+## Moderating the public square | CO
+The early internet was celebrated as a space of unprecedented freedom, where anyone could publish anything and censorship would be technically impossible. Three decades later, the largest online platforms employ armies of moderators and sophisticated algorithms to decide what billions of people may say and see. How this power is exercised has become one of the defining questions of contemporary public life.
+
+The case for moderation is straightforward. Unrestricted platforms can become vehicles for harassment, incitement to violence, fraud and the exploitation of children. Most people accept that some content should be removed, and platforms that fail to act face both public criticism and legal liability.
+
+The difficulty lies at the margins. Distinguishing satire from hate speech, legitimate dissent from incitement, or contested scientific claims from dangerous misinformation requires contextual judgement that is difficult to apply consistently at scale. Automated systems struggle with irony and cultural nuance, while human moderators, often poorly paid and exposed to disturbing material, must make rapid decisions with limited information.
+
+There is also the question of legitimacy. Decisions with profound consequences for public debate are frequently made by private companies according to rules they write themselves, enforce opaquely and may change at will. Critics on different sides accuse platforms of removing too much or too little, sometimes about the same content.
+
+Proposed remedies vary. Some advocate greater transparency, including clear rules, explanations for removals and meaningful appeals. Others favour regulation that sets standards while preserving protections for lawful expression. A few argue for decentralised alternatives in which users have more control over what they see.
+
+What seems clear is that the original vision of an unmoderated internet has proved untenable. The challenge now is to develop systems of governance that are effective, accountable and compatible with democratic values.
+? c | How was the early internet celebrated? | *As a space of unprecedented freedom | As a tool for governments | As a commercial market | The first paragraph explains. | was celebrated as a space of unprecedented freedom
+? c | Why do automated moderation systems struggle? | *They have difficulty with irony and cultural nuance | They are too expensive | They work too slowly | The third paragraph explains. | Automated systems struggle with irony and cultural nuance
+? t | Critics agree that platforms remove too much content. | F | Critics accuse platforms of removing too much or too little. | Critics on different sides accuse platforms of removing too much or too little
+? s | Name one remedy that advocates of transparency propose. | clear rules / explanations for removals / meaningful appeals | The fifth paragraph lists them. | including clear rules, explanations for removals and meaningful appeals.
+? c | What does the writer conclude about the original vision? | *An unmoderated internet has proved untenable | It has been fully achieved | It should be restored | The last paragraph concludes. | the original vision of an unmoderated internet has proved untenable.
+
+## Lost in translation | CO
+Every language contains words that seem to resist translation. Portuguese has saudade, a melancholic longing for something absent; Japanese has wabi-sabi, an aesthetic appreciation of imperfection and transience; German famously has Schadenfreude, pleasure taken in another's misfortune. Lists of such "untranslatable" words circulate widely, often accompanied by the implication that speakers of these languages experience emotions inaccessible to others.
+
+Linguists tend to be more cautious. That a concept lacks a single equivalent word does not mean it cannot be expressed. English speakers are perfectly capable of feeling pleasure at a rival's misfortune; they simply need a phrase rather than a word to describe it. Indeed, the popularity of such lists in English demonstrates that the concepts are readily understood once explained.
+
+Nevertheless, translation involves genuine losses. Words carry connotations, associations and rhythms that rarely survive intact. A term may be neutral in one language and charged in another; a pun or an echo of a famous text may have no counterpart. Literary translators speak of constant compromise, choosing between fidelity to meaning, to tone and to form, knowing that preserving one often sacrifices another.
+
+There are also gains. A skilful translation can illuminate aspects of a text that readers of the original may overlook, and the encounter between languages can enrich both. Many writers have acknowledged that translation shaped their own style.
+
+Perhaps the most valuable lesson of untranslatability is not that cultures are sealed off from one another, but that every language organises experience in particular ways. Encountering those differences, whether through learning languages or reading translations, can make us more aware of the assumptions embedded in our own words.
+? c | What do lists of "untranslatable" words often imply? | *Speakers of those languages experience emotions inaccessible to others | All languages are identical | Translation is easy | The first paragraph explains. | the implication that speakers of these languages experience emotions inaccessible to others.
+? c | What do linguists argue? | *A concept without a single equivalent word can still be expressed | Some emotions cannot be felt in English | Translation is impossible | The second paragraph explains. | That a concept lacks a single equivalent word does not mean it cannot be expressed.
+? t | Literary translators describe their work as constant compromise. | T | The third paragraph says so. | Literary translators speak of constant compromise
+? s | What can a skilful translation illuminate? | aspects of a text readers of the original may overlook / aspects of a text | The fourth paragraph says so. | can illuminate aspects of a text that readers of the original may overlook
+? c | What is the most valuable lesson of untranslatability, according to the writer? | *Every language organises experience in particular ways | Cultures are sealed off from one another | Translation should be avoided | The last paragraph concludes. | every language organises experience in particular ways.
+
+## Merit reconsidered | WK
+Few principles command such broad assent as meritocracy, the idea that positions and rewards should be allocated according to talent and effort rather than birth or connections. Compared with aristocratic privilege or nepotism, it seems self-evidently fair. Yet in recent years a number of philosophers and social scientists have begun to question not only how meritocracy works in practice but whether its ideals are as benign as they appear.
+
+The practical critique is familiar. Opportunities to develop talent are distributed unequally. Children from affluent families benefit from better schools, private tutoring, enriching activities and professional networks, so that apparent differences in merit often reflect differences in advantage. In this sense, meritocracy can launder inherited privilege, presenting outcomes shaped by circumstance as the deserved result of individual effort.
+
+A more unsettling critique concerns the attitudes meritocracy fosters. If success is earned, those who succeed may come to believe they fully deserve their rewards, overlooking the role of luck in their talents, upbringing and timing. Conversely, those who fail may internalise their position as a judgement on their worth. Some scholars argue that this combination of pride at the top and humiliation at the bottom has contributed to resentment and social division.
+
+Defenders respond that the remedy lies in making meritocracy more genuine, not in abandoning it. Equalising educational opportunity, they argue, would bring practice closer to principle. And few would wish to choose surgeons or pilots by lottery.
+
+Critics do not necessarily disagree. Their point is rather that a society should not rely on merit alone as a measure of human worth, and that recognising the role of fortune might encourage greater humility among the successful and greater respect for forms of work that markets reward poorly.
+? c | What is meritocracy? | *Allocating positions and rewards by talent and effort | Allocating positions by birth | Choosing leaders by lottery | The first paragraph defines it. | positions and rewards should be allocated according to talent and effort rather than birth or connections.
+? s | According to the practical critique, what can meritocracy launder? | inherited privilege | The second paragraph says so. | meritocracy can launder inherited privilege
+? c | What attitude might successful people develop? | *Believing they fully deserve their rewards | Feeling humiliated | Rejecting their success | The third paragraph explains. | those who succeed may come to believe they fully deserve their rewards
+? t | Defenders of meritocracy propose abandoning it. | F | They propose making it more genuine. | the remedy lies in making meritocracy more genuine, not in abandoning it.
+? c | What do critics ultimately argue? | *Merit should not be the only measure of human worth | Surgeons should be chosen by lottery | Talent does not exist | The last paragraph explains. | a society should not rely on merit alone as a measure of human worth
+
+## The idea of progress | ED
+For much of the modern era, educated Westerners took for granted that history moved in a direction, and that the direction was upward. Advances in science, technology, medicine and political rights seemed to confirm a narrative of steady improvement. The twentieth century, with its world wars and genocides, shook this confidence profoundly, yet the idea of progress has proved remarkably resilient.
+
+On many measurable dimensions, the optimists have a strong case. Global life expectancy has risen dramatically; extreme poverty has fallen; literacy has spread; infant mortality has declined. Those who lament the state of the world, they argue, often overlook the scale of these achievements, partly because news coverage focuses on sudden disasters rather than gradual improvements.
+
+Sceptics do not deny these facts but question what they imply. Progress in one domain may coexist with deterioration in another. The same industrial development that lifted billions out of poverty has driven climate change and biodiversity loss whose costs will fall disproportionately on future generations. Material gains have not always translated into greater wellbeing, and advances can be reversed: hard-won rights have been eroded, and diseases once controlled have returned.
+
+There is also a philosophical objection. To speak of progress is to assume a standard against which change can be measured, yet societies differ about what constitutes improvement. What one generation celebrates as liberation, another may regard as loss.
+
+Perhaps the most defensible position lies between complacent optimism and despair. Progress is real but neither inevitable nor uniform; it is the product of human choices, institutions and effort, and it must be sustained deliberately. Recognising past achievements can provide grounds for hope, while recognising their fragility should guard against complacency.
+? c | What shook confidence in progress? | *The world wars and genocides of the twentieth century | Scientific discoveries | Rising literacy | The first paragraph explains. | The twentieth century, with its world wars and genocides, shook this confidence profoundly
+? c | Why do people often overlook achievements, according to optimists? | *News focuses on sudden disasters rather than gradual improvements | Achievements are secret | Statistics are unreliable | The second paragraph explains. | news coverage focuses on sudden disasters rather than gradual improvements.
+? t | Sceptics deny that life expectancy has risen. | F | Sceptics do not deny these facts. | Sceptics do not deny these facts but question what they imply.
+? s | What philosophical problem does speaking of progress involve? | it assumes a standard against which change can be measured / assuming a standard | The fourth paragraph explains. | To speak of progress is to assume a standard against which change can be measured
+? c | What position does the writer find most defensible? | *Between complacent optimism and despair | Complete optimism | Complete despair | The last paragraph concludes. | Perhaps the most defensible position lies between complacent optimism and despair.
+
+## When efficiency backfires | EN
+In 1865, the English economist William Stanley Jevons observed something counterintuitive about coal. As steam engines became more efficient, using less coal to produce the same amount of power, total coal consumption did not fall. It rose. Cheaper effective power made engines profitable in new applications, and demand expanded accordingly. This phenomenon, now known as the Jevons paradox or the rebound effect, has significant implications for contemporary environmental policy.
+
+Efficiency improvements are central to most strategies for reducing energy use and emissions. More efficient cars, appliances, buildings and lighting promise to deliver the same services with fewer resources. Yet when efficiency reduces costs, people may use more of the service. Drivers of fuel-efficient cars may travel further; cheaper lighting may encourage people to illuminate more spaces for longer. Money saved through efficiency may also be spent on other energy-intensive goods.
+
+Economists debate the magnitude of these effects. In many cases, the rebound is partial: efficiency gains still produce net savings, though smaller than engineering calculations predict. In some circumstances, particularly where demand is highly responsive to price, the rebound may approach or even exceed the original savings.
+
+The implication is not that efficiency is futile. It remains among the most cost-effective tools available. Rather, the paradox suggests that efficiency alone may be insufficient to achieve absolute reductions in resource use. Complementary policies, such as carbon pricing, regulations or caps on total consumption, may be needed to ensure that efficiency gains translate into genuine environmental benefits rather than simply enabling greater consumption.
+
+The broader lesson concerns the limits of technological solutions to problems that are also social and economic. How societies choose to use the gains from innovation matters as much as the innovations themselves.
+? c | What did Jevons observe about coal? | *Total consumption rose as engines became more efficient | Consumption fell sharply | Coal ran out | The first paragraph explains. | total coal consumption did not fall. It rose.
+? s | What is the phenomenon now called? | the Jevons paradox / the rebound effect / Jevons paradox | The first paragraph names it. | now known as the Jevons paradox or the rebound effect
+? c | What might drivers of fuel-efficient cars do? | *Travel further | Drive less | Sell their cars | The second paragraph gives the example. | Drivers of fuel-efficient cars may travel further
+? t | The writer concludes that efficiency is futile. | F | It remains among the most cost-effective tools. | The implication is not that efficiency is futile.
+? c | What does the broader lesson concern? | *The limits of technological solutions to social and economic problems | The superiority of coal | The failure of economics | The last paragraph explains. | The broader lesson concerns the limits of technological solutions to problems that are also social and economic.
+
+## Experts and the public | CO
+Modern societies depend on expertise to a degree that would have astonished earlier generations. Few citizens can evaluate the safety of a vaccine, the stability of a bridge or the risks of a financial instrument; they must rely on specialists. Yet trust in experts has become a contested political issue, and the phrase "people have had enough of experts" has become emblematic of a broader scepticism.
+
+Some of this scepticism is unwarranted. Expertise is not mere opinion: it rests on training, accumulated evidence and institutional checks such as peer review. Dismissing it wholesale can lead to costly errors, as when well-established medical advice is ignored.
+
+Yet the relationship between experts and the public is more complex than a simple contrast between knowledge and ignorance. Experts can be wrong, particularly when they extend their authority beyond their field or when their models fail to anticipate unprecedented events. Financial crises that experts did not foresee, or official advice later reversed, have understandably damaged confidence.
+
+Moreover, many public decisions involve not only technical questions but also value judgements. Experts can estimate the likely effects of a policy, but whether those effects are acceptable depends on priorities that citizens are entitled to weigh. When technical advice is presented as if it settled such questions, people may reasonably feel that democratic choice has been displaced.
+
+A healthier relationship might involve greater candour from experts about uncertainty and the limits of their knowledge, clearer separation between evidence and values, and genuine public engagement. Trust, after all, is not owed unconditionally; it must be earned and maintained through transparency and a demonstrated willingness to acknowledge error.
+? c | Why must citizens rely on specialists? | *Few can evaluate technical matters themselves | Experts are always right | Laws require it | The first paragraph explains. | they must rely on specialists.
+? c | What does expertise rest on, according to the writer? | *Training, evidence and institutional checks | Personal opinion | Popularity | The second paragraph explains. | it rests on training, accumulated evidence and institutional checks such as peer review.
+? t | The writer suggests experts can never be wrong. | F | Experts can be wrong. | Experts can be wrong
+? s | Besides technical questions, what do many public decisions involve? | value judgements | The fourth paragraph says so. | many public decisions involve not only technical questions but also value judgements.
+? c | How does the writer say trust must be obtained? | *Earned through transparency and acknowledging error | Demanded by law | Given unconditionally | The last paragraph concludes. | it must be earned and maintained through transparency and a demonstrated willingness to acknowledge error.
+
+## In praise of idleness | DL
+In 1930, the economist John Maynard Keynes predicted that within a century, technological progress would make his grandchildren's generation so prosperous that they would need to work only around fifteen hours a week. The central problem of the future, he suggested, would be how to use abundant leisure wisely.
+
+Keynes was right about prosperity: in many countries, average incomes have multiplied since he wrote. He was wrong about work. Although average working hours fell for much of the twentieth century, the decline slowed, and in some professions hours have increased. Many people feel busier than ever.
+
+Several explanations have been offered. Rising aspirations mean that as incomes grow, so do the goods and experiences people consider necessary. Status competition encourages people to work harder to maintain their relative position. In many professional occupations, long hours have become a marker of commitment and identity, so that being busy carries prestige. The gains from increased productivity have also been distributed unevenly, with many workers seeing little increase in real wages.
+
+There is also a cultural dimension. Many societies attach moral value to work, viewing idleness with suspicion. Leisure itself has become increasingly productive: hobbies are monetised, exercise is tracked and holidays are optimised. Even rest is justified as a means of enhancing performance.
+
+Some philosophers argue for reclaiming leisure as valuable in itself, not merely as recovery for further work. Activities pursued for their own sake, such as conversation, contemplation, play and creative pursuits, may be central to a fulfilling life. Whether societies could organise themselves to allow more such time is partly an economic question, but also a question of what they collectively value.
+? s | How many hours a week did Keynes predict people would work? | around fifteen hours / fifteen hours / 15 hours | The first paragraph says so. | they would need to work only around fifteen hours a week.
+? c | What was Keynes right about? | *Prosperity | Working hours | Leisure | The second paragraph explains. | Keynes was right about prosperity
+? c | Why do long hours carry prestige in some professions? | *They have become a marker of commitment and identity | They are required by law | They pay overtime | The third paragraph explains. | long hours have become a marker of commitment and identity
+? t | According to the writer, leisure has become less productive. | F | Leisure has become increasingly productive. | Leisure itself has become increasingly productive
+? c | What do some philosophers argue? | *Leisure should be valued in itself | Leisure is a waste of time | Work is the only source of meaning | The last paragraph explains. | Some philosophers argue for reclaiming leisure as valuable in itself
+
+## Wellness for sale | HE
+Few industries have grown as rapidly in recent decades as the wellness industry, which encompasses everything from organic juices and supplements to meditation apps, fitness trackers and luxury retreats. Its rhetoric is appealing: individuals are encouraged to take control of their health, reduce stress and optimise their bodies and minds.
+
+Some aspects of this trend are clearly beneficial. Greater awareness of exercise, nutrition, sleep and mental health has encouraged healthier habits, and techniques such as mindfulness have shown modest benefits in some clinical studies.
+
+Critics, however, identify troubling features. Much of what is sold as wellness rests on weak or non-existent evidence. Detox products, for example, claim to eliminate toxins that the liver and kidneys already process effectively. Expensive supplements are often unnecessary for people with balanced diets. The industry's language of purity and optimisation can foster anxiety, encouraging consumers to see their bodies as perpetual projects in need of improvement.
+
+There is also a social critique. By framing health primarily as a matter of individual choice and consumption, the wellness industry may obscure structural determinants of health, such as income, housing, working conditions and access to healthcare. Those who can afford organic food, gym memberships and retreats may be healthier, but attributing this solely to personal discipline risks blaming those whose circumstances limit their options.
+
+Furthermore, wellness can be co-opted by employers, who may offer meditation sessions while maintaining workloads that generate stress in the first place.
+
+None of this means that personal efforts to improve health are misguided. The point is rather that wellness, properly understood, depends not only on individual purchases but on social conditions, and that claims made in its name deserve the same scrutiny as any other commercial promise.
+? c | What does the wellness industry encompass? | *Products from juices and supplements to apps and retreats | Only hospitals | Only gyms | The first paragraph lists them. | which encompasses everything from organic juices and supplements to meditation apps, fitness trackers and luxury retreats.
+? c | What criticism is made of detox products? | *They claim to remove toxins the body already processes | They are too cheap | They are proven effective | The third paragraph explains. | claim to eliminate toxins that the liver and kidneys already process effectively.
+? t | The writer suggests wellness rhetoric may encourage people to see their bodies as projects needing improvement. | T | The third paragraph says so. | encouraging consumers to see their bodies as perpetual projects in need of improvement.
+? s | Name one structural determinant of health mentioned. | income / housing / working conditions / access to healthcare | The fourth paragraph lists them. | such as income, housing, working conditions and access to healthcare.
+? c | How might employers co-opt wellness? | *Offering meditation while keeping stressful workloads | Paying higher wages | Reducing hours | The fifth paragraph explains. | who may offer meditation sessions while maintaining workloads that generate stress in the first place.
+
+## What we choose to remember | ED
+Every society makes choices about what to remember. Monuments, street names, museums, commemorative days and school curricula all reflect decisions, often contested, about which events and individuals deserve public recognition. These decisions reveal as much about the present as about the past.
+
+In recent years, debates about memorials have intensified in many countries. Statues honouring figures associated with slavery, colonialism or repression have been removed, relocated or reinterpreted, sometimes through official processes and sometimes by protesters. Supporters of removal argue that public monuments are not neutral historical records but expressions of honour, and that continuing to honour certain figures causes harm to communities affected by their actions.
+
+Opponents warn of erasing history. They argue that removing statues may sanitise the past, making it easier to forget uncomfortable events rather than confronting them, and that judging historical figures by contemporary standards is anachronistic.
+
+Historians often point out that the distinction between history and commemoration is crucial. A statue in a public square is not equivalent to a history book; it celebrates rather than explains. Removing a monument does not erase historical knowledge, which is preserved in archives, scholarship and education. Conversely, leaving monuments unchanged may perpetuate a partial version of history that omits those whose stories were never commemorated.
+
+Alternatives to simple removal or preservation have emerged. Some monuments are accompanied by explanatory plaques providing context; others are moved to museums where they can be interpreted critically. New memorials are created to recognise previously neglected groups.
+
+What these debates suggest is that collective memory is not fixed but continuously negotiated. Each generation must decide which values its public spaces should express, while engaging honestly with the full complexity of the past.
+? c | What do decisions about memorials reveal, according to the writer? | *As much about the present as about the past | Nothing about the present | Only historical facts | The first paragraph explains. | These decisions reveal as much about the present as about the past.
+? c | How do supporters of removal view public monuments? | *As expressions of honour, not neutral records | As neutral history | As unimportant decorations | The second paragraph explains. | public monuments are not neutral historical records but expressions of honour
+? t | Opponents argue that judging historical figures by contemporary standards is anachronistic. | T | The third paragraph says so. | judging historical figures by contemporary standards is anachronistic.
+? s | Where is historical knowledge preserved, according to historians? | in archives, scholarship and education / archives | The fourth paragraph says so. | which is preserved in archives, scholarship and education.
+? c | What do these debates suggest about collective memory? | *It is continuously negotiated | It is fixed forever | It is decided only by historians | The last paragraph concludes. | collective memory is not fixed but continuously negotiated.
+
+## The quantified self | TE
+Smartwatches count our steps, apps monitor our sleep, and devices track heart rate, calories, moods and menstrual cycles. The "quantified self" movement promises self-knowledge through numbers: by measuring our behaviour and bodies, we can understand ourselves better and improve our lives.
+
+The appeal is understandable. Data can reveal patterns invisible to introspection, such as the link between late-night screen use and poor sleep. For people managing chronic conditions, continuous monitoring can provide genuinely valuable information. Feedback can also motivate: seeing a daily step count may encourage people to walk more.
+
+Yet self-tracking raises questions that go beyond its practical benefits. One concerns the nature of the knowledge it produces. Numbers capture what is easily measurable, not necessarily what matters most. A sleep app may record duration and movement, but it cannot capture whether one feels rested, and users may come to trust the device more than their own perceptions, a phenomenon some researchers have linked to anxiety about sleep itself.
+
+Another concern is motivation. Research on intrinsic motivation suggests that external rewards and measurements can sometimes undermine the enjoyment of activities pursued for their own sake. A walk undertaken to reach a target may become a task rather than a pleasure.
+
+Privacy is a further issue. Health data collected by devices is highly sensitive, and users may not fully understand how it is stored, shared or used by companies, insurers or employers.
+
+Self-tracking need not be harmful. Used thoughtfully, it can support health and self-understanding. But the promise of self-knowledge through data deserves scrutiny, since a life reduced to metrics may lose sight of experiences that cannot be counted.
+? c | What does the quantified self movement promise? | *Self-knowledge through numbers | Freedom from technology | Free devices | The first paragraph explains. | The "quantified self" movement promises self-knowledge through numbers
+? c | What can data reveal that introspection cannot? | *Patterns such as the link between screen use and poor sleep | Feelings of rest | Future events | The second paragraph explains. | such as the link between late-night screen use and poor sleep.
+? t | According to the writer, numbers always capture what matters most. | F | They capture what is easily measurable. | Numbers capture what is easily measurable, not necessarily what matters most.
+? s | What can external measurements sometimes undermine? | intrinsic motivation / the enjoyment of activities pursued for their own sake / enjoyment | The fourth paragraph says so. | can sometimes undermine the enjoyment of activities pursued for their own sake.
+? c | What is the writer's conclusion? | *Self-tracking can help but its promise deserves scrutiny | Self-tracking should be banned | Self-tracking is always harmful | The last paragraph concludes. | the promise of self-knowledge through data deserves scrutiny
+
+## The search for the authentic | TR
+Few words appear as frequently in travel writing and advertising as "authentic". Travellers seek authentic experiences: meals where locals eat, traditional crafts, villages untouched by tourism. The desire reflects a reaction against standardised tourism, against hotels and attractions that seem interchangeable from one country to the next.
+
+Yet the pursuit of authenticity contains a paradox. Once a place becomes known as authentic, it attracts visitors, and their presence transforms it. Restaurants adapt menus, craftspeople produce souvenirs, and villages organise performances of traditions for audiences. The very search for the untouched contributes to its disappearance.
+
+Sociologists have analysed how tourism creates "staged authenticity": performances of local culture designed to appear spontaneous and genuine. A traditional dance performed nightly for tourists may be a commercial production, though it may also sustain practices that would otherwise be lost and provide income for communities.
+
+The concept of authenticity itself is problematic. It often assumes that cultures are static, that a "real" version exists in the past and that change represents corruption. But cultures have always evolved through contact and exchange. A dish adapted to new ingredients or a craft incorporating new techniques is not necessarily less authentic than its predecessors. Insisting that communities preserve traditions for visitors' benefit can even be a subtle form of condescension, denying them the right to modernise.
+
+Perhaps a more useful approach is to shift the focus from the authenticity of the place to the quality of the encounter. Respectful curiosity, willingness to learn and fair economic exchange may matter more than finding the untouched. The question becomes not "Is this real?" but "Is this relationship fair and meaningful for both visitors and hosts?"
+? c | What does the desire for authenticity react against? | *Standardised tourism | Local culture | Travel writing | The first paragraph explains. | The desire reflects a reaction against standardised tourism
+? c | What is the paradox of seeking authenticity? | *Visitors' presence transforms the place they seek | Authentic places are always expensive | Travellers never find anything | The second paragraph explains. | The very search for the untouched contributes to its disappearance.
+? s | What do sociologists call performances designed to appear genuine? | staged authenticity | The third paragraph names it. | "staged authenticity"
+? t | The writer argues that cultures have always been static. | F | Cultures have always evolved. | But cultures have always evolved through contact and exchange.
+? c | What does the writer suggest focusing on instead? | *The quality and fairness of the encounter | Finding untouched places | Avoiding tourism | The last paragraph explains. | shift the focus from the authenticity of the place to the quality of the encounter.
+
+## Giving and power | MS
+Large-scale philanthropy has a long history, but its scale today is unprecedented. Wealthy individuals and foundations direct billions of dollars to causes ranging from global health and education to scientific research and the arts. Many of these efforts have produced remarkable results, funding vaccines, research breakthroughs and programmes that have saved lives.
+
+Why, then, has philanthropy attracted growing criticism? One concern is democratic accountability. When private donors fund public goods, they exercise influence over priorities that might otherwise be determined through democratic processes. A foundation may decide which diseases receive attention or which educational reforms are tested, yet it answers primarily to its founders rather than to the public it affects.
+
+A second concern involves taxation. In many countries, donations receive tax relief, meaning that the public effectively subsidises private choices. Critics argue that if wealth were taxed and allocated democratically, priorities might differ.
+
+A third critique questions whether philanthropy addresses root causes. Donations may alleviate problems while leaving untouched the economic structures that generate inequality. Some critics observe that the wealth funding philanthropy is sometimes accumulated through practices, such as aggressive tax avoidance or low wages, that contribute to the problems philanthropy seeks to solve.
+
+Defenders respond that philanthropy can take risks that governments avoid, support unpopular or neglected causes and act more quickly than public institutions. Philanthropic funding has supported innovations later adopted by governments.
+
+The debate is less about whether generosity is admirable than about the relationship between private wealth and public decision-making. Many observers argue that greater transparency, consultation with affected communities and acknowledgement of the limits of private influence could help philanthropy complement rather than substitute for democratic choice.
+? c | What results has large-scale philanthropy produced? | *Vaccines, research breakthroughs and life-saving programmes | Higher taxes | Fewer schools | The first paragraph explains. | funding vaccines, research breakthroughs and programmes that have saved lives.
+? c | What is the democratic accountability concern? | *Foundations influence public priorities but answer mainly to their founders | Foundations are too small | Donors pay too much tax | The second paragraph explains. | it answers primarily to its founders rather than to the public it affects.
+? t | Tax relief on donations means the public effectively subsidises private choices. | T | The third paragraph says so. | meaning that the public effectively subsidises private choices.
+? s | What can philanthropy do that governments avoid, according to defenders? | take risks / take risks and support unpopular causes | The fifth paragraph explains. | philanthropy can take risks that governments avoid
+? c | What do many observers argue could help philanthropy? | *Greater transparency and consultation with affected communities | More secrecy | Ending all donations | The last paragraph explains. | greater transparency, consultation with affected communities and acknowledgement of the limits of private influence
+
+## The value of quiet | PT
+Cities have always been noisy, but the character of urban sound has changed. The rumble of traffic, the whine of construction and the hum of air-conditioning units now form a constant background in many urban environments. Quiet, once taken for granted, has become a scarce resource, and its distribution is increasingly unequal.
+
+Noise is not merely an annoyance. Prolonged exposure to traffic noise has been associated with sleep disturbance, elevated stress hormones, cardiovascular disease and impaired learning in children. Health authorities have identified environmental noise as a significant public health concern. Yet noise receives far less attention than air pollution, perhaps because its effects are less visible and its sources so familiar.
+
+The burden falls unevenly. Housing near major roads, airports and industrial areas tends to be cheaper, so lower-income residents are often more exposed. Wealthier households can afford better insulation, quieter neighbourhoods or second homes in the countryside. Silence, in this sense, has become something that can be purchased.
+
+There is also a cultural dimension. Some writers argue that modern life has eroded opportunities for quiet reflection, not only through environmental noise but through constant digital stimulation. Quiet spaces such as libraries, parks and places of worship offer refuge, and some cities have begun to designate and protect "quiet areas".
+
+Reducing noise is technically feasible. Lower speed limits, quieter road surfaces, electric vehicles, noise barriers and urban design that separates residential areas from major roads can all help. Planting trees provides both acoustic and psychological benefits.
+
+Recognising quiet as a public good, rather than a private luxury, might encourage policies that distribute it more fairly, ensuring that the restorative value of silence is available to all city dwellers.
+? c | What has quiet become in many cities? | *A scarce and unequally distributed resource | Easy to find everywhere | Unimportant | The first paragraph explains. | Quiet, once taken for granted, has become a scarce resource, and its distribution is increasingly unequal.
+? c | Why may noise receive less attention than air pollution? | *Its effects are less visible and its sources familiar | It is harmless | It is cheaper to fix | The second paragraph explains. | perhaps because its effects are less visible and its sources so familiar.
+? t | Lower-income residents are often less exposed to noise. | F | They are often more exposed. | lower-income residents are often more exposed.
+? s | What have some cities begun to designate and protect? | quiet areas | The fourth paragraph says so. | some cities have begun to designate and protect "quiet areas".
+? c | What does the writer suggest quiet should be recognised as? | *A public good | A private luxury | A cultural myth | The last paragraph concludes. | Recognising quiet as a public good, rather than a private luxury
+
+## Paying for nature | EN
+When a development project destroys a natural habitat, some governments now allow or require the developer to compensate by creating or restoring habitat elsewhere. This practice, known as biodiversity offsetting, aims to ensure "no net loss" of nature: losses in one place are balanced by gains in another.
+
+The approach has an obvious appeal. It allows economic development to proceed while appearing to protect the environment, and it creates financial incentives for conservation. Developers may pay into funds that support restoration projects, and markets for "biodiversity credits" have begun to emerge.
+
+Critics, however, raise fundamental objections. Ecosystems are not interchangeable commodities. An ancient woodland that has developed over centuries cannot be replaced by planting young trees elsewhere, which may take generations to provide comparable habitats, if they ever do. Many offset projects fail to deliver the promised gains, and monitoring is often inadequate.
+
+There are also concerns about uncertainty and timing. The destruction of habitat is immediate and certain, while the benefits of restoration are delayed and uncertain. Species that depend on the lost habitat may disappear before the new habitat matures.
+
+Moreover, offsetting may change how decisions are made. If developers know they can compensate for damage, they may be less inclined to avoid it in the first place. Conservationists therefore emphasise a "mitigation hierarchy": first avoid harm, then minimise it, then restore what can be restored, and only as a last resort offset what remains.
+
+Offsetting, its defenders acknowledge, is imperfect. Properly designed and rigorously enforced, it may improve outcomes compared with no compensation. But it risks becoming a licence to destroy if it is treated as an easy substitute for protecting irreplaceable places.
+? s | What does biodiversity offsetting aim to ensure? | no net loss of nature / no net loss | The first paragraph says so. | aims to ensure "no net loss" of nature
+? c | Why do critics say ecosystems are not interchangeable? | *An ancient woodland cannot be replaced by planting young trees | Trees grow too quickly | All habitats are identical | The third paragraph explains. | An ancient woodland that has developed over centuries cannot be replaced by planting young trees elsewhere
+? c | What timing problem do critics raise? | *Destruction is immediate while restoration benefits are delayed and uncertain | Restoration is too fast | Destruction is slow | The fourth paragraph explains. | The destruction of habitat is immediate and certain, while the benefits of restoration are delayed and uncertain.
+? t | According to the mitigation hierarchy, offsetting should be the first step. | F | It is the last resort. | only as a last resort offset what remains.
+? c | What risk does the writer identify? | *Offsetting becoming a licence to destroy | Too much protection | Developers paying too little tax | The last paragraph concludes. | it risks becoming a licence to destroy
+
+## Medicine and uncertainty | HE
+Patients often expect medicine to provide certainty: a definitive diagnosis, a clear prognosis, a treatment that will work. Yet uncertainty is intrinsic to medical practice. Symptoms are often ambiguous, tests produce false positives and false negatives, and the same treatment may help one patient and harm another.
+
+Medical decisions therefore involve judgements about probability. A test with high accuracy may still produce misleading results when used to screen for rare conditions, since false positives can outnumber true cases. Understanding such statistics is notoriously difficult; studies have found that many people, including some healthcare professionals, misinterpret them.
+
+How doctors communicate uncertainty matters greatly. Some patients prefer clear recommendations; others want detailed information about risks and alternatives. Research suggests that presenting probabilities in natural frequencies, such as "ten out of a hundred people", is more readily understood than percentages.
+
+There are also cultural and institutional pressures. Doctors may order additional tests or treatments to avoid missing a diagnosis or to protect themselves against legal claims, a practice known as defensive medicine. While understandable, this can expose patients to unnecessary procedures, anxiety and costs.
+
+The movement towards shared decision-making seeks to address these issues. Rather than doctors simply instructing patients, the approach involves discussing options, evidence and uncertainty openly, and taking into account patients' values and preferences. A patient weighing treatment options for a slow-growing condition, for example, might reasonably choose differently from another patient with the same diagnosis.
+
+Acknowledging uncertainty can feel uncomfortable for both doctors and patients. Yet honesty about what is not known may strengthen trust, and may lead to decisions that better reflect what matters to individual patients.
+? c | What do patients often expect from medicine? | *Certainty | Uncertainty | Long waits | The first paragraph explains. | Patients often expect medicine to provide certainty
+? c | Why may accurate screening tests mislead for rare conditions? | *False positives can outnumber true cases | Tests are always wrong | Rare conditions cannot be tested | The second paragraph explains. | false positives can outnumber true cases.
+? s | What format of probabilities is more readily understood than percentages? | natural frequencies | The third paragraph says so. | presenting probabilities in natural frequencies
+? t | Defensive medicine can expose patients to unnecessary procedures. | T | The fourth paragraph says so. | this can expose patients to unnecessary procedures, anxiety and costs.
+? c | What does shared decision-making involve? | *Discussing options and uncertainty while considering patients' values | Doctors deciding alone | Patients deciding without information | The fifth paragraph explains. | discussing options, evidence and uncertainty openly, and taking into account patients' values and preferences.
+
+## Moral luck | PF
+Imagine two drivers who have both drunk too much and both drive home. One reaches home safely; the other, through no additional fault, hits a child who runs into the road. Most people judge the second driver far more harshly, and the law typically punishes the second driver more severely. Yet their choices and intentions were identical. The difference lies entirely in circumstances beyond their control.
+
+Philosophers call this phenomenon moral luck. It challenges a widely held intuition that people should be judged only for what is within their control. If we take this intuition seriously, the two drivers deserve the same blame. If we take our actual judgements seriously, outcomes matter morally even when they depend on luck.
+
+The problem extends further. Our characters are shaped by genes, upbringing and experiences we did not choose. Whether we face situations that test our moral courage, such as living under an oppressive regime, is largely a matter of circumstance. Some people who behaved badly in difficult times might have lived blameless lives elsewhere, and some who appear virtuous have simply never been tested.
+
+Different responses have been proposed. Some philosophers argue that we should revise our judgements to focus solely on intentions and choices. Others maintain that outcomes legitimately affect moral assessment and that luck is an unavoidable feature of moral life.
+
+Whatever position one adopts, reflection on moral luck may encourage a degree of humility. Recognising that our own good conduct may owe something to fortune could temper harsh judgements of others, while still holding people responsible for the choices they genuinely make.
+? c | Why do people judge the second driver more harshly? | *Because of the outcome, though the choices were identical | Because the second driver drank more | Because the second driver was faster | The first paragraph explains. | The difference lies entirely in circumstances beyond their control.
+? s | What do philosophers call this phenomenon? | moral luck | The second paragraph names it. | Philosophers call this phenomenon moral luck.
+? c | Which intuition does moral luck challenge? | *That people should be judged only for what they control | That outcomes never matter | That laws are always fair | The second paragraph explains. | people should be judged only for what is within their control.
+? t | The writer suggests some apparently virtuous people have never been tested. | T | The third paragraph says so. | some who appear virtuous have simply never been tested.
+? c | What may reflection on moral luck encourage? | *Humility | Harsher judgements | Ignoring responsibility | The last paragraph concludes. | reflection on moral luck may encourage a degree of humility.
+
+## The novel in an age of distraction | ED
+Periodically, critics announce the death of the novel. Film, television and now digital media, they argue, have displaced long-form fiction as the dominant form of storytelling. Surveys in several countries suggest that the proportion of people reading books for pleasure has declined, particularly among young people, and many readers report difficulty sustaining concentration on long texts.
+
+Yet the novel has proved resilient. Millions of books are still sold each year, book clubs flourish, and online communities devoted to reading have introduced new audiences to literature. Some genres, such as young adult fiction, have experienced remarkable growth, partly fuelled by social media.
+
+Defenders of the novel argue that it offers something other media cannot easily replicate. Reading a novel requires sustained attention and imaginative participation: readers construct characters and settings in their minds and inhabit others' perspectives over extended periods. Some research suggests that reading literary fiction may enhance the ability to understand others' thoughts and feelings, though these findings remain debated.
+
+The novel's form also allows for interiority, the representation of characters' inner lives, in ways that visual media find difficult. A novel can move fluidly between memory, perception and reflection, rendering consciousness itself.
+
+Concerns about attention may nonetheless be justified. Habits of rapid scrolling and multitasking may make deep reading more difficult, and some educators worry that students increasingly encounter literature through summaries rather than complete texts.
+
+Perhaps the novel's future depends less on competition with other media than on whether societies continue to value the capacities it cultivates: patience, empathy and the willingness to dwell within complexity. In an age of distraction, these may be more valuable than ever.
+? c | What do critics periodically announce? | *The death of the novel | The end of film | The rise of poetry | The first paragraph explains. | critics announce the death of the novel.
+? c | What has helped some genres grow? | *Social media | Television advertising | Government funding | The second paragraph explains. | partly fuelled by social media.
+? t | Research has definitively proven that literary fiction improves empathy. | F | These findings remain debated. | though these findings remain debated.
+? s | What term describes the representation of characters' inner lives? | interiority | The fourth paragraph names it. | The novel's form also allows for interiority
+? c | What may the novel's future depend on, according to the writer? | *Whether societies value the capacities it cultivates | Competition with television | Lower book prices | The last paragraph concludes. | whether societies continue to value the capacities it cultivates
+
+## Whose recipe? | FD
+Few subjects provoke as much passion as food authenticity. Debates rage over the correct ingredients for a classic dish, whether a restaurant serving a cuisine should be run by people from that culture and whether adapting recipes for new audiences constitutes innovation or betrayal.
+
+Food is intimately tied to identity. For migrant communities, preserving culinary traditions can be a way of maintaining connection to a homeland and passing heritage to children. When outsiders adopt, adapt or profit from these traditions, particularly when the originating communities faced discrimination for the same foods, resentment can be understandable. Accusations of cultural appropriation in food often reflect broader concerns about power, recognition and economic opportunity.
+
+Yet culinary history complicates claims of authenticity. Most cuisines are products of exchange. Tomatoes, chillies and potatoes, now central to many national cuisines, arrived from the Americas only a few centuries ago. Many "traditional" dishes emerged from poverty, migration, trade or colonial encounters, and have continually evolved.
+
+Some scholars argue that authenticity is less a property of a dish than a relationship of respect. Adaptation is not inherently problematic; the questions concern credit, understanding and economic fairness. Does a chef acknowledge the origins of a dish? Do the communities that developed a cuisine share in its commercial success? Is the dish presented with knowledge or caricature?
+
+Others caution against policing food too strictly. Insisting that people cook only within their own heritage would impoverish culinary life and ignore the creativity that has always characterised cooking.
+
+The debate ultimately reflects tensions between celebrating cultural exchange and addressing inequalities in who benefits from it. Food, in this sense, is never only about taste.
+? c | Why is food important for migrant communities? | *It maintains connection to a homeland and heritage | It is cheaper | It attracts tourists | The second paragraph explains. | preserving culinary traditions can be a way of maintaining connection to a homeland
+? c | What does culinary history show about cuisines? | *Most are products of exchange | They never change | They come from one place | The third paragraph explains. | Most cuisines are products of exchange.
+? t | Tomatoes and chillies have always been part of every national cuisine. | F | They arrived from the Americas a few centuries ago. | arrived from the Americas only a few centuries ago.
+? s | According to some scholars, authenticity is less a property of a dish than what? | a relationship of respect | The fourth paragraph says so. | authenticity is less a property of a dish than a relationship of respect.
+? c | What does the writer conclude about food? | *It is never only about taste | It should never be adapted | Authenticity is easy to define | The last paragraph concludes. | Food, in this sense, is never only about taste.
+
+## The animal question | AN
+How should humans treat other animals? For most of history, the dominant view in many cultures was that animals existed for human use, lacking the moral status that would make their suffering a matter of serious concern. That view has been increasingly challenged, both by philosophical arguments and by scientific evidence about animal minds.
+
+The philosopher Jeremy Bentham argued in the eighteenth century that the relevant question about animals was not whether they could reason or talk, but whether they could suffer. If suffering matters morally, then the suffering of animals cannot be dismissed simply because they belong to another species.
+
+Scientific research has strengthened this argument. Studies indicate that many animals experience pain and fear, and that some display complex emotional and social lives. Evidence of sentience has led some governments to recognise animals formally as sentient beings in law, extending such recognition in some cases to invertebrates such as octopuses.
+
+Yet translating these insights into practice raises difficult questions. Industrial farming, which supplies most meat consumed globally, often involves conditions that cause significant suffering, yet it also provides affordable food for billions. Medical research using animals has contributed to treatments that save human lives. Different ethical frameworks yield different conclusions: some argue for improving welfare standards, others for abolishing the use of animals altogether.
+
+Cultural traditions add further complexity. Practices involving animals carry deep meaning in many communities, and criticism from outsiders may be perceived as cultural imperialism.
+
+What seems increasingly clear is that the question of animal welfare can no longer be treated as marginal. Greater knowledge of animal minds places a corresponding responsibility on societies to justify how animals are treated.
+? c | What was the dominant historical view of animals in many cultures? | *That they existed for human use | That they had equal rights | That they were sacred | The first paragraph explains. | animals existed for human use
+? s | According to Bentham, what was the relevant question about animals? | whether they could suffer / can they suffer | The second paragraph says so. | but whether they could suffer.
+? c | What has scientific evidence of sentience led some governments to do? | *Formally recognise animals as sentient beings in law | Ban all farming | Stop medical research | The third paragraph explains. | has led some governments to recognise animals formally as sentient beings in law
+? t | All ethical frameworks reach the same conclusion about animal use. | F | Different frameworks yield different conclusions. | Different ethical frameworks yield different conclusions
+? c | What does greater knowledge of animal minds place on societies? | *A responsibility to justify how animals are treated | No new obligations | A duty to stop eating | The last paragraph concludes. | places a corresponding responsibility on societies to justify how animals are treated.
+
+## Fearing the wrong things | HE
+People are notoriously poor at assessing risks. Many fear flying more than driving, though driving is statistically far more dangerous per kilometre travelled. Rare but dramatic threats, such as shark attacks or terrorism, often provoke greater anxiety than common but mundane dangers, such as heart disease or household accidents.
+
+Psychologists have identified several reasons for these discrepancies. People judge risks partly by how easily examples come to mind, a mental shortcut known as the availability heuristic. Vivid, widely reported events are easily recalled, making them seem more frequent than they are. Risks that are unfamiliar, uncontrollable or catastrophic tend to be perceived as more frightening than those that are familiar, voluntary or spread over time.
+
+Emotion also plays a central role. Feelings of dread or outrage can amplify perceived risks, while familiarity and perceived benefits can diminish them. People who enjoy an activity, such as skiing, may underestimate its dangers.
+
+Media coverage reinforces these tendencies. News naturally focuses on unusual events, so rare dangers receive disproportionate attention, while chronic risks that kill far more people receive little.
+
+These biases have practical consequences. They influence personal decisions, such as whether to vaccinate or what transport to use, and public policy, when resources are directed towards highly visible threats rather than those causing greater harm.
+
+Yet it would be simplistic to dismiss public perceptions as irrational. Concerns about fairness, control and trust in institutions are legitimate considerations that statistics alone do not capture. Effective risk communication therefore requires not only presenting accurate numbers but understanding the values and emotions that shape how people respond to them.
+? c | Which is statistically more dangerous per kilometre, according to the text? | *Driving | Flying | They are equal | The first paragraph explains. | driving is statistically far more dangerous per kilometre travelled.
+? s | What is the mental shortcut of judging risks by how easily examples come to mind called? | the availability heuristic / availability heuristic | The second paragraph names it. | a mental shortcut known as the availability heuristic.
+? c | Which risks tend to seem more frightening? | *Unfamiliar, uncontrollable or catastrophic ones | Familiar and voluntary ones | Risks spread over time | The second paragraph explains. | Risks that are unfamiliar, uncontrollable or catastrophic tend to be perceived as more frightening
+? t | The writer dismisses public risk perceptions as simply irrational. | F | It would be simplistic to do so. | it would be simplistic to dismiss public perceptions as irrational.
+? c | What does effective risk communication require? | *Accurate numbers and understanding of values and emotions | Only statistics | Ignoring emotions | The last paragraph concludes. | not only presenting accurate numbers but understanding the values and emotions that shape how people respond to them.
+
+## Architecture and power | HF
+Buildings are not merely functional shelters; they communicate. The grand staircases, columns and domes of government buildings, palaces and banks were designed to impress, conveying authority, permanence and wealth. Architecture has long served as an instrument of power, shaping not only how people move through space but how they perceive institutions.
+
+Rulers throughout history have used monumental architecture to assert legitimacy. Vast squares designed for parades, imposing ministries and symbolic capitals built from scratch have expressed political ideologies in stone and concrete. The scale of such structures can make individuals feel small in relation to the state.
+
+Power also operates through less conspicuous design. Urban planners in the nineteenth century widened streets partly to improve sanitation and traffic, but also, some historians argue, to make it harder for protesters to build barricades. The layout of prisons, schools and workplaces can facilitate surveillance and control, a theme explored by philosophers who described how architecture can encourage people to discipline themselves by making them feel constantly observed.
+
+In contemporary cities, so-called "hostile architecture", such as benches with dividers or spikes on ledges, discourages certain uses of public space, often targeting homeless people. Critics argue that such design excludes vulnerable groups while avoiding open debate about social problems.
+
+Architecture can also express democratic values. Parliaments with glass walls aim to symbolise transparency; public libraries and squares can offer spaces accessible to all. Participatory design processes involve communities in shaping their environments.
+
+Recognising that architecture embodies values encourages critical attention to the built environment. The question is not only whether buildings are beautiful or functional, but whose interests they serve and what relationships between people and power they reinforce.
+? c | What did grand government buildings traditionally convey? | *Authority, permanence and wealth | Equality | Humility | The first paragraph explains. | conveying authority, permanence and wealth.
+? c | Why, according to some historians, were nineteenth-century streets widened? | *Partly to make barricades harder to build | Only for decoration | To create parks | The third paragraph explains. | to make it harder for protesters to build barricades.
+? s | What is design that discourages certain uses of public space called? | hostile architecture | The fourth paragraph names it. | so-called "hostile architecture"
+? t | Parliaments with glass walls aim to symbolise transparency. | T | The fifth paragraph says so. | Parliaments with glass walls aim to symbolise transparency
+? c | What question does the writer say we should ask about buildings? | *Whose interests they serve | Only whether they are beautiful | How tall they are | The last paragraph concludes. | whose interests they serve
+
+## Fairness and the body | HS
+Sport is built on a paradox. It celebrates exceptional physical abilities, many of which are partly inherited, while insisting on fair competition. Elite athletes often possess genetic advantages, such as unusual height, lung capacity or muscle composition, that most people could never acquire through training. These advantages are generally accepted as part of what makes champions.
+
+Yet some forms of difference have become intensely controversial. Questions about eligibility in categories divided by sex have generated difficult debates involving athletes with naturally high levels of certain hormones and transgender athletes. Sports organisations have struggled to develop rules that balance inclusion, fairness and athletes' rights, and their decisions have been challenged in courts and criticised from multiple directions.
+
+Technology raises related questions. Advanced equipment, such as running shoes with carbon plates or high-tech swimsuits, has contributed to record-breaking performances, prompting governing bodies to set limits. The line between legitimate innovation and unfair advantage is often contested.
+
+Doping presents a clearer prohibition but similar underlying tensions. The ban on performance-enhancing drugs rests partly on health concerns and partly on the idea that sport should reflect natural ability and effort. Yet the boundary between permitted interventions, such as altitude training, and prohibited ones is not always philosophically obvious.
+
+These debates reveal that fairness in sport is not a simple matter of identical conditions. Sport categories, rules and technologies are human constructions that reflect choices about which differences matter. Different sports may reasonably draw different lines.
+
+What is required, many argue, is transparency about the values guiding such decisions, reliance on the best available evidence and respect for the dignity of athletes whose bodies become the subject of public scrutiny.
+? c | What paradox is sport built on? | *Celebrating partly inherited abilities while insisting on fair competition | Rewarding effort only | Ignoring talent | The first paragraph explains. | It celebrates exceptional physical abilities, many of which are partly inherited, while insisting on fair competition.
+? c | Which advantages are generally accepted? | *Genetic advantages such as height and lung capacity | Performance-enhancing drugs | Illegal equipment | The first paragraph explains. | These advantages are generally accepted as part of what makes champions.
+? t | The boundary between permitted and prohibited interventions is always obvious. | F | It is not always philosophically obvious. | is not always philosophically obvious.
+? s | Name one example of advanced equipment mentioned. | running shoes with carbon plates / high-tech swimsuits | The third paragraph gives examples. | such as running shoes with carbon plates or high-tech swimsuits
+? c | What do many argue is required? | *Transparency about values, evidence and respect for athletes | Identical rules for all sports | Banning all technology | The last paragraph concludes. | transparency about the values guiding such decisions
+"""
+
+# MORE C2
 
 
 def parse(level, block, first_id):
