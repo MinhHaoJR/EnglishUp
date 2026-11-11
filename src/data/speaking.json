@@ -166,5 +166,2815 @@
       "Discuss how motivation affects progress.",
       "Recommend a combination for a beginner."
     ]
+  },
+  {
+    "id": "s17",
+    "title": "Good morning",
+    "level": "A1",
+    "topic": "Daily life",
+    "mode": "read",
+    "text": "Good morning! My name is Lan. I am a student.",
+    "cues": ["Say good morning with a smile in your voice.", "Pause after the first sentence."]
+  },
+  {
+    "id": "s18",
+    "title": "My family",
+    "level": "A1",
+    "topic": "People and family",
+    "mode": "read",
+    "text": "I have a big family. I live with my parents and my two sisters.",
+    "cues": ["Stress big and two.", "Say the s at the end of sisters."]
+  },
+  {
+    "id": "s19",
+    "title": "At the café",
+    "level": "A1",
+    "topic": "Food",
+    "mode": "read",
+    "text": "Can I have a cup of coffee and a small cake, please?",
+    "cues": ["Let your voice go up at the end.", "Say please clearly."]
+  },
+  {
+    "id": "s20",
+    "title": "Sunny and warm",
+    "level": "A1",
+    "topic": "Nature and weather",
+    "mode": "read",
+    "text": "It is sunny and warm today. Let's go to the park.",
+    "cues": ["Stress sunny and warm.", "Say let's go as one group."]
+  },
+  {
+    "id": "s21",
+    "title": "My room",
+    "level": "A1",
+    "topic": "Home and furniture",
+    "mode": "read",
+    "text": "My room is small, but it is bright. There is a bed, a desk and a lamp.",
+    "cues": ["Pause at the comma.", "Say each thing in the list clearly."]
+  },
+  {
+    "id": "s22",
+    "title": "Where is the bus stop?",
+    "level": "A1",
+    "topic": "Transport",
+    "mode": "read",
+    "text": "Excuse me, where is the bus stop? Is it near the bank?",
+    "cues": ["Let your voice go up at the end of the second question.", "Say excuse me slowly."]
+  },
+  {
+    "id": "s23",
+    "title": "My favourite colour",
+    "level": "A1",
+    "topic": "Daily life",
+    "mode": "read",
+    "text": "My favourite colour is blue. I like the sea and the sky.",
+    "cues": ["Stress blue.", "Put your tongue between your teeth for the."]
+  },
+  {
+    "id": "s24",
+    "title": "Shopping for fruit",
+    "level": "A1",
+    "topic": "Shopping",
+    "mode": "read",
+    "text": "I would like three apples and a bag of oranges, please.",
+    "cues": ["Put your tongue between your teeth for three.", "Keep a steady pace."]
+  },
+  {
+    "id": "s25",
+    "title": "Every morning",
+    "level": "A1",
+    "topic": "Daily life",
+    "mode": "read",
+    "text": "I get up at six o'clock. I have breakfast, and then I walk to school.",
+    "cues": ["Say six o'clock clearly.", "Say and then as one group."]
+  },
+  {
+    "id": "s26",
+    "title": "My little cat",
+    "level": "A1",
+    "topic": "Animals",
+    "mode": "read",
+    "text": "I have a little cat. She is white, and she sleeps all day.",
+    "cues": ["Stress little and white.", "Say sleeps with a clear s at the end."]
+  },
+  {
+    "id": "s27",
+    "title": "Saturday and Sunday",
+    "level": "A1",
+    "topic": "Hobbies and sport",
+    "mode": "read",
+    "text": "On Saturday I play football with my friends. On Sunday I rest at home.",
+    "cues": ["Pause after each sentence.", "Stress Saturday and Sunday."]
+  },
+  {
+    "id": "s28",
+    "title": "Nice to meet you",
+    "level": "A1",
+    "topic": "Communication",
+    "mode": "read",
+    "text": "Nice to meet you. Where are you from? I am from Viet Nam.",
+    "cues": ["Say Where are you from with a falling voice.", "Say Viet Nam as two words."]
+  },
+  {
+    "id": "s29",
+    "title": "At school",
+    "level": "A1",
+    "topic": "Education",
+    "mode": "read",
+    "text": "Our teacher is kind. We read books and sing songs in class.",
+    "cues": ["Stress kind.", "Say the ng at the end of sing and songs."]
+  },
+  {
+    "id": "s30",
+    "title": "Lunch time",
+    "level": "A1",
+    "topic": "Food",
+    "mode": "read",
+    "text": "I am hungry. Let's have rice, chicken and some vegetables for lunch.",
+    "cues": ["Pause at each comma.", "Say vegetables with three beats: VEG-ta-bles."]
+  },
+  {
+    "id": "s31",
+    "title": "My new phone",
+    "level": "A1",
+    "topic": "Technology",
+    "mode": "read",
+    "text": "This is my new phone. I use it to call my mum and to take photos.",
+    "cues": ["Stress new.", "Say photos with a long o."]
+  },
+  {
+    "id": "s32",
+    "title": "Thank you very much",
+    "level": "A1",
+    "topic": "Communication",
+    "mode": "read",
+    "text": "Thank you very much for your help. You are very kind.",
+    "cues": ["Put your tongue between your teeth for thank.", "Stress very."]
+  },
+  {
+    "id": "s33",
+    "title": "A day at the beach",
+    "level": "A1",
+    "topic": "Travel",
+    "mode": "read",
+    "text": "We swim in the sea and play on the sand. The water is cool.",
+    "cues": ["Say swim and sea with a clear s.", "Stress cool."]
+  },
+  {
+    "id": "s34",
+    "title": "What time is it?",
+    "level": "A1",
+    "topic": "Daily life",
+    "mode": "read",
+    "text": "What time is it, please? It's half past three.",
+    "cues": ["Use a falling voice for the question.", "Say half past as one group."]
+  },
+  {
+    "id": "s35",
+    "title": "I feel tired",
+    "level": "A1",
+    "topic": "Health",
+    "mode": "read",
+    "text": "I feel tired today. I want to go to bed early.",
+    "cues": ["Stress tired and early.", "Say want to as one group."]
+  },
+  {
+    "id": "s36",
+    "title": "My father's job",
+    "level": "A1",
+    "topic": "Work",
+    "mode": "read",
+    "text": "My father is a driver. He drives a bus in the city.",
+    "cues": ["Say driver and drives with a clear v.", "Stress bus."]
+  },
+  {
+    "id": "s37",
+    "title": "The morning market",
+    "level": "A1",
+    "topic": "Places in town",
+    "mode": "read",
+    "text": "The market is open every morning. People sell fish, meat and fruit.",
+    "cues": ["Pause at the commas.", "Say fish with a soft sh."]
+  },
+  {
+    "id": "s38",
+    "title": "Happy birthday",
+    "level": "A1",
+    "topic": "People and family",
+    "mode": "read",
+    "text": "Happy birthday! Here is a present for you. I hope you like it.",
+    "cues": ["Say happy birthday with energy.", "Stress present on the first part: PRE-sent."]
+  },
+  {
+    "id": "s39",
+    "title": "Take your umbrella",
+    "level": "A1",
+    "topic": "Nature and weather",
+    "mode": "read",
+    "text": "It is raining. Please take your umbrella and your coat.",
+    "cues": ["Stress raining.", "Say umbrella with the stress in the middle: um-BREL-la."]
+  },
+  {
+    "id": "s40",
+    "title": "I like drawing",
+    "level": "A1",
+    "topic": "Hobbies and sport",
+    "mode": "read",
+    "text": "I like drawing. I draw animals and trees in my notebook.",
+    "cues": ["Say drawing and draw clearly.", "Pause after the first sentence."]
+  },
+  {
+    "id": "s41",
+    "title": "Good night",
+    "level": "A1",
+    "topic": "Daily life",
+    "mode": "read",
+    "text": "It is late. Good night, see you tomorrow.",
+    "cues": ["Say good night softly.", "Stress tomorrow in the middle: to-MOR-row."]
+  },
+  {
+    "id": "s42",
+    "title": "Introduce yourself",
+    "level": "A1",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Introduce yourself to a new classmate.",
+    "cues": ["What is your name?", "How old are you?", "What do you like?"]
+  },
+  {
+    "id": "s43",
+    "title": "My home",
+    "level": "A1",
+    "topic": "Home and furniture",
+    "mode": "talk",
+    "text": "Talk about your home.",
+    "cues": ["Where is it?", "How many rooms are there?", "What is your favourite room?"]
+  },
+  {
+    "id": "s44",
+    "title": "The people in my family",
+    "level": "A1",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Talk about the people in your family.",
+    "cues": ["Who is in your family?", "What do they do?", "What do you do together?"]
+  },
+  {
+    "id": "s45",
+    "title": "My favourite food",
+    "level": "A1",
+    "topic": "Food",
+    "mode": "talk",
+    "text": "Talk about a food you love.",
+    "cues": ["What is it?", "When do you eat it?", "Who makes it?"]
+  },
+  {
+    "id": "s46",
+    "title": "My day",
+    "level": "A1",
+    "topic": "Daily life",
+    "mode": "talk",
+    "text": "Describe your day from morning to evening.",
+    "cues": [
+      "What time do you get up?",
+      "What do you do in the afternoon?",
+      "What do you do in the evening?"
+    ]
+  },
+  {
+    "id": "s47",
+    "title": "My best friend",
+    "level": "A1",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Talk about your best friend.",
+    "cues": [
+      "What is your friend's name?",
+      "What does your friend look like?",
+      "What do you do together?"
+    ]
+  },
+  {
+    "id": "s48",
+    "title": "My school or work",
+    "level": "A1",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Talk about your school or your work.",
+    "cues": ["Where is it?", "How do you get there?", "What do you like about it?"]
+  },
+  {
+    "id": "s49",
+    "title": "The weather where I live",
+    "level": "A1",
+    "topic": "Nature and weather",
+    "mode": "talk",
+    "text": "Talk about the weather where you live.",
+    "cues": [
+      "What is the weather like today?",
+      "What is your favourite season?",
+      "What do you wear in winter?"
+    ]
+  },
+  {
+    "id": "s50",
+    "title": "My town",
+    "level": "A1",
+    "topic": "Places in town",
+    "mode": "talk",
+    "text": "Talk about your town or city.",
+    "cues": ["What places are there?", "Where do you like to go?", "What do you not like about it?"]
+  },
+  {
+    "id": "s51",
+    "title": "Animals I like",
+    "level": "A1",
+    "topic": "Animals",
+    "mode": "talk",
+    "text": "Talk about an animal you like.",
+    "cues": ["What animal is it?", "What does it look like?", "Why do you like it?"]
+  },
+  {
+    "id": "s52",
+    "title": "Where I go shopping",
+    "level": "A1",
+    "topic": "Shopping",
+    "mode": "talk",
+    "text": "Talk about where you go shopping.",
+    "cues": ["Which shop do you like?", "What do you buy there?", "Who do you go with?"]
+  },
+  {
+    "id": "s53",
+    "title": "My weekends",
+    "level": "A1",
+    "topic": "Hobbies and sport",
+    "mode": "talk",
+    "text": "Talk about what you do at the weekend.",
+    "cues": ["Where do you go?", "Who do you see?", "What do you like best?"]
+  },
+  {
+    "id": "s54",
+    "title": "What I am wearing",
+    "level": "A1",
+    "topic": "Shopping",
+    "mode": "talk",
+    "text": "Describe what you are wearing today.",
+    "cues": ["What clothes are you wearing?", "What colours are they?", "Do you like them?"]
+  },
+  {
+    "id": "s55",
+    "title": "A sport I like",
+    "level": "A1",
+    "topic": "Hobbies and sport",
+    "mode": "talk",
+    "text": "Talk about a sport you like.",
+    "cues": ["What sport is it?", "Do you play it or watch it?", "When do you play or watch it?"]
+  },
+  {
+    "id": "s56",
+    "title": "My breakfast",
+    "level": "A1",
+    "topic": "Food",
+    "mode": "talk",
+    "text": "Talk about your breakfast.",
+    "cues": ["What do you eat?", "What do you drink?", "Where do you eat it?"]
+  },
+  {
+    "id": "s57",
+    "title": "How I use my phone",
+    "level": "A1",
+    "topic": "Technology",
+    "mode": "talk",
+    "text": "Talk about how you use your phone.",
+    "cues": ["What do you use it for?", "Which app do you like?", "How many hours do you use it?"]
+  },
+  {
+    "id": "s58",
+    "title": "A holiday place",
+    "level": "A1",
+    "topic": "Travel",
+    "mode": "talk",
+    "text": "Talk about a place you visited on holiday.",
+    "cues": ["Where did you go?", "Who did you go with?", "What did you do there?"]
+  },
+  {
+    "id": "s59",
+    "title": "Getting around my town",
+    "level": "A1",
+    "topic": "Transport",
+    "mode": "talk",
+    "text": "Talk about how you travel in your town.",
+    "cues": ["Do you walk, ride or take a bus?", "How long does it take?", "Do you like it?"]
+  },
+  {
+    "id": "s60",
+    "title": "Feeling good",
+    "level": "A1",
+    "topic": "Health",
+    "mode": "talk",
+    "text": "Talk about what you do to stay healthy.",
+    "cues": ["What do you eat?", "Do you do any sport?", "When do you go to bed?"]
+  },
+  {
+    "id": "s61",
+    "title": "My last birthday",
+    "level": "A1",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Talk about your last birthday.",
+    "cues": ["Where were you?", "Who was there?", "What presents did you get?"]
+  },
+  {
+    "id": "s62",
+    "title": "A person I like",
+    "level": "A1",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Talk about a person you like, such as a teacher or a neighbour.",
+    "cues": ["Who is the person?", "What does the person do?", "Why do you like them?"]
+  },
+  {
+    "id": "s63",
+    "title": "My favourite room at home",
+    "level": "A1",
+    "topic": "Home and furniture",
+    "mode": "talk",
+    "text": "Describe your favourite room at home.",
+    "cues": ["What is in the room?", "What colour is it?", "What do you do there?"]
+  },
+  {
+    "id": "s64",
+    "title": "Music I like",
+    "level": "A1",
+    "topic": "Hobbies and sport",
+    "mode": "talk",
+    "text": "Talk about music you like.",
+    "cues": [
+      "What songs do you like?",
+      "When do you listen to music?",
+      "Can you sing or play an instrument?"
+    ]
+  },
+  {
+    "id": "s65",
+    "title": "A park near me",
+    "level": "A1",
+    "topic": "Environment",
+    "mode": "talk",
+    "text": "Talk about a park or a green place near you.",
+    "cues": ["Where is it?", "What can you see there?", "What do people do there?"]
+  },
+  {
+    "id": "s66",
+    "title": "How I learn English",
+    "level": "A1",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Talk about how you learn English.",
+    "cues": ["When do you study?", "What is easy?", "What is difficult?"]
+  },
+  {
+    "id": "s67",
+    "title": "Ordering a meal",
+    "level": "A2",
+    "topic": "Food",
+    "mode": "read",
+    "text": "Could I have the chicken soup and a glass of orange juice, please? And could we have some water too?",
+    "cues": ["Let your voice go up at the end of each question.", "Say could I as one group."]
+  },
+  {
+    "id": "s68",
+    "title": "Calling the doctor",
+    "level": "A2",
+    "topic": "Health",
+    "mode": "read",
+    "text": "Hello, I'd like to make an appointment with the doctor. I've had a headache since yesterday.",
+    "cues": ["Say I'd and I've clearly.", "Stress headache."]
+  },
+  {
+    "id": "s69",
+    "title": "At the train station",
+    "level": "A2",
+    "topic": "Transport",
+    "mode": "read",
+    "text": "Excuse me, which platform does the train to Hue leave from? Is it on time today?",
+    "cues": ["Let your voice go up at the end of the second question.", "Stress platform."]
+  },
+  {
+    "id": "s70",
+    "title": "Visiting my grandparents",
+    "level": "A2",
+    "topic": "Daily life",
+    "mode": "read",
+    "text": "This weekend I'm going to visit my grandparents. We usually cook together and go for a walk after dinner.",
+    "cues": ["Say going to naturally.", "Pause after grandparents."]
+  },
+  {
+    "id": "s71",
+    "title": "My friend Minh",
+    "level": "A2",
+    "topic": "People and family",
+    "mode": "read",
+    "text": "My friend Minh is tall and friendly. He always makes people laugh, and he's very good at football.",
+    "cues": ["Stress always.", "Link he's very."]
+  },
+  {
+    "id": "s72",
+    "title": "Booking a room",
+    "level": "A2",
+    "topic": "Travel",
+    "mode": "read",
+    "text": "I'd like to book a double room for two nights, from Friday to Sunday. Is breakfast included?",
+    "cues": ["Stress double and two.", "Let your voice go up for the question."]
+  },
+  {
+    "id": "s73",
+    "title": "Where are my keys?",
+    "level": "A2",
+    "topic": "Daily life",
+    "mode": "read",
+    "text": "I can't find my keys anywhere. I think I left them on the kitchen table this morning.",
+    "cues": ["Say can't with a clear t.", "Stress anywhere."]
+  },
+  {
+    "id": "s74",
+    "title": "A new job",
+    "level": "A2",
+    "topic": "Work",
+    "mode": "read",
+    "text": "I started a new job last month. The work is interesting, and my colleagues are very helpful.",
+    "cues": ["Say started with an extra beat for -ed.", "Stress interesting on the first part."]
+  },
+  {
+    "id": "s75",
+    "title": "Shoes in a bigger size",
+    "level": "A2",
+    "topic": "Shopping",
+    "mode": "read",
+    "text": "Do you have these shoes in a bigger size? These ones are a little too small for me.",
+    "cues": ["Stress bigger and small.", "Say shoes with a clear sh."]
+  },
+  {
+    "id": "s76",
+    "title": "A film on a rainy day",
+    "level": "A2",
+    "topic": "Nature and weather",
+    "mode": "read",
+    "text": "It's been raining all day, so we stayed inside and watched a film. It was a relaxing afternoon.",
+    "cues": ["Link all day.", "Say watched with one beat."]
+  },
+  {
+    "id": "s77",
+    "title": "My hometown",
+    "level": "A2",
+    "topic": "Places in town",
+    "mode": "read",
+    "text": "My hometown is near the sea. It's quiet in winter, but in summer there are many tourists.",
+    "cues": ["Pause after winter.", "Stress quiet and many."]
+  },
+  {
+    "id": "s78",
+    "title": "Twenty minutes a day",
+    "level": "A2",
+    "topic": "Education",
+    "mode": "read",
+    "text": "I practise English for twenty minutes every day. I listen to songs and write new words in a notebook.",
+    "cues": ["Stress twenty.", "Say practise with a clear s at the end."]
+  },
+  {
+    "id": "s79",
+    "title": "I'm running late",
+    "level": "A2",
+    "topic": "Communication",
+    "mode": "read",
+    "text": "Hi Nam, it's Hoa. I'm going to be ten minutes late. Please wait for me outside the cinema.",
+    "cues": ["Pause after Hoa.", "Stress ten minutes."]
+  },
+  {
+    "id": "s80",
+    "title": "Healthy habits",
+    "level": "A2",
+    "topic": "Health",
+    "mode": "read",
+    "text": "I try to drink more water and walk to work. I feel better when I sleep for eight hours.",
+    "cues": ["Stress more and eight.", "Link walk to."]
+  },
+  {
+    "id": "s81",
+    "title": "My sister's party",
+    "level": "A2",
+    "topic": "People and family",
+    "mode": "read",
+    "text": "We had a party for my sister's birthday. Everyone brought food, and we danced until midnight.",
+    "cues": ["Say sister's with a z sound at the end.", "Say danced with a t sound at the end."]
+  },
+  {
+    "id": "s82",
+    "title": "A simple app",
+    "level": "A2",
+    "topic": "Technology",
+    "mode": "read",
+    "text": "I use this app to check the weather and the bus times. It's simple, and it saves me a lot of time.",
+    "cues": ["Stress simple.", "Link a lot of."]
+  },
+  {
+    "id": "s83",
+    "title": "Three bins",
+    "level": "A2",
+    "topic": "Environment",
+    "mode": "read",
+    "text": "We put paper, plastic and glass in different bins. It only takes a minute, and it helps the environment.",
+    "cues": ["Pause at each comma.", "Stress environment on the second part: en-VI-ron-ment."]
+  },
+  {
+    "id": "s84",
+    "title": "The swimming club",
+    "level": "A2",
+    "topic": "Hobbies and sport",
+    "mode": "read",
+    "text": "I joined a swimming club in March. We practise twice a week, on Tuesdays and Thursdays.",
+    "cues": ["Say Thursdays with th.", "Stress twice."]
+  },
+  {
+    "id": "s85",
+    "title": "Turn right at the lights",
+    "level": "A2",
+    "topic": "Transport",
+    "mode": "read",
+    "text": "Go straight ahead and turn right at the traffic lights. The library is on your left, next to the bank.",
+    "cues": ["Stress right and left.", "Pause after lights."]
+  },
+  {
+    "id": "s86",
+    "title": "Thank you for the flowers",
+    "level": "A2",
+    "topic": "Communication",
+    "mode": "read",
+    "text": "Thank you so much for the flowers. They're beautiful, and they made me very happy.",
+    "cues": ["Say thank you warmly.", "Stress beautiful."]
+  },
+  {
+    "id": "s87",
+    "title": "Saving for a bike",
+    "level": "A2",
+    "topic": "Money and shopping",
+    "mode": "read",
+    "text": "I want to buy a new bike, so I'm saving a little money every week. I hope to buy it in June.",
+    "cues": ["Link want to.", "Stress every week."]
+  },
+  {
+    "id": "s88",
+    "title": "A visit to the zoo",
+    "level": "A2",
+    "topic": "Animals",
+    "mode": "read",
+    "text": "At the zoo we saw elephants, monkeys and a very old turtle. The children loved the penguins most.",
+    "cues": ["Pause at the commas.", "Stress loved."]
+  },
+  {
+    "id": "s89",
+    "title": "A good weekend",
+    "level": "A2",
+    "topic": "Daily life",
+    "mode": "talk",
+    "text": "Describe a weekend you really enjoyed.",
+    "cues": ["Where were you?", "What did you do?", "Why was it good?"]
+  },
+  {
+    "id": "s90",
+    "title": "A place to eat",
+    "level": "A2",
+    "topic": "Food",
+    "mode": "talk",
+    "text": "Recommend a restaurant or café in your town to a visitor.",
+    "cues": [
+      "What kind of food does it serve?",
+      "How much does it cost?",
+      "Why do you recommend it?"
+    ]
+  },
+  {
+    "id": "s91",
+    "title": "A teacher I remember",
+    "level": "A2",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Talk about a teacher you remember from primary school.",
+    "cues": ["What was the teacher like?", "What did you learn?", "Why do you remember them?"]
+  },
+  {
+    "id": "s92",
+    "title": "A trip I want to take",
+    "level": "A2",
+    "topic": "Travel",
+    "mode": "talk",
+    "text": "Talk about a place you would like to visit in the future.",
+    "cues": ["Where is it?", "Who would you go with?", "What would you do there?"]
+  },
+  {
+    "id": "s93",
+    "title": "Around my home",
+    "level": "A2",
+    "topic": "Places in town",
+    "mode": "talk",
+    "text": "Describe the area where you live.",
+    "cues": [
+      "What shops and places are near you?",
+      "Is it quiet or busy?",
+      "What would you change?"
+    ]
+  },
+  {
+    "id": "s94",
+    "title": "Staying healthy",
+    "level": "A2",
+    "topic": "Health",
+    "mode": "talk",
+    "text": "Explain what you do to stay healthy.",
+    "cues": ["What do you eat?", "How do you exercise?", "What is difficult for you?"]
+  },
+  {
+    "id": "s95",
+    "title": "A present I gave",
+    "level": "A2",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Talk about a present you gave to someone.",
+    "cues": ["Who was it for?", "Why did you choose it?", "How did the person react?"]
+  },
+  {
+    "id": "s96",
+    "title": "Jobs at home",
+    "level": "A2",
+    "topic": "Home and furniture",
+    "mode": "talk",
+    "text": "Talk about the jobs you do at home.",
+    "cues": ["Which jobs do you do?", "Which job do you dislike?", "Who does the most work?"]
+  },
+  {
+    "id": "s97",
+    "title": "An app I use every day",
+    "level": "A2",
+    "topic": "Technology",
+    "mode": "talk",
+    "text": "Talk about an app you use every day.",
+    "cues": ["What does it do?", "When do you use it?", "Would you recommend it?"]
+  },
+  {
+    "id": "s98",
+    "title": "A film I enjoyed",
+    "level": "A2",
+    "topic": "Hobbies and sport",
+    "mode": "talk",
+    "text": "Talk about a film or TV programme you enjoyed.",
+    "cues": ["What was it about?", "Who was in it?", "Why did you like it?"]
+  },
+  {
+    "id": "s99",
+    "title": "Buses in my town",
+    "level": "A2",
+    "topic": "Transport",
+    "mode": "talk",
+    "text": "Talk about public transport in your town.",
+    "cues": ["What kinds are there?", "Do you use them?", "How could they be better?"]
+  },
+  {
+    "id": "s100",
+    "title": "Buying things online",
+    "level": "A2",
+    "topic": "Shopping",
+    "mode": "talk",
+    "text": "Talk about buying things online.",
+    "cues": ["What do you buy online?", "What is good about it?", "What problems can happen?"]
+  },
+  {
+    "id": "s101",
+    "title": "A celebration in my country",
+    "level": "A2",
+    "topic": "Daily life",
+    "mode": "talk",
+    "text": "Describe a festival or celebration in your country.",
+    "cues": ["When is it?", "What do people eat?", "What do you do?"]
+  },
+  {
+    "id": "s102",
+    "title": "A day that went wrong",
+    "level": "A2",
+    "topic": "Daily life",
+    "mode": "talk",
+    "text": "Talk about a day when things went wrong.",
+    "cues": ["What happened?", "How did you feel?", "What did you do?"]
+  },
+  {
+    "id": "s103",
+    "title": "What I do",
+    "level": "A2",
+    "topic": "Work",
+    "mode": "talk",
+    "text": "Talk about what you do: your job or your studies.",
+    "cues": [
+      "What do you do every day?",
+      "What do you like about it?",
+      "What would you like to change?"
+    ]
+  },
+  {
+    "id": "s104",
+    "title": "Having a pet",
+    "level": "A2",
+    "topic": "Animals",
+    "mode": "talk",
+    "text": "Talk about having a pet.",
+    "cues": [
+      "Do you have a pet, or would you like one?",
+      "What do pets need?",
+      "Are pets good for children?"
+    ]
+  },
+  {
+    "id": "s105",
+    "title": "Clean air, clean streets",
+    "level": "A2",
+    "topic": "Environment",
+    "mode": "talk",
+    "text": "Talk about the environment in your town.",
+    "cues": ["Is the air clean?", "Is there much rubbish?", "What can people do?"]
+  },
+  {
+    "id": "s106",
+    "title": "Making new friends",
+    "level": "A2",
+    "topic": "Communication",
+    "mode": "talk",
+    "text": "Talk about how people make new friends.",
+    "cues": ["Where do you meet new people?", "Is it easy for you?", "How do you keep in touch?"]
+  },
+  {
+    "id": "s107",
+    "title": "Trying a new sport",
+    "level": "A2",
+    "topic": "Hobbies and sport",
+    "mode": "talk",
+    "text": "Talk about a sport or game you tried for the first time.",
+    "cues": ["What was it?", "Was it difficult?", "Would you try it again?"]
+  },
+  {
+    "id": "s108",
+    "title": "Where my money goes",
+    "level": "A2",
+    "topic": "Money and shopping",
+    "mode": "talk",
+    "text": "Talk about how you spend your money.",
+    "cues": ["What do you spend most on?", "Do you save money?", "What would you like to buy?"]
+  },
+  {
+    "id": "s109",
+    "title": "Two seasons",
+    "level": "A2",
+    "topic": "Nature and weather",
+    "mode": "talk",
+    "text": "Compare two seasons in your country.",
+    "cues": ["What is the weather like?", "What do people do?", "Which season do you prefer?"]
+  },
+  {
+    "id": "s110",
+    "title": "A skill I want to learn",
+    "level": "A2",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Talk about a skill you would like to learn.",
+    "cues": ["What is the skill?", "Why do you want to learn it?", "How will you learn it?"]
+  },
+  {
+    "id": "s111",
+    "title": "Changing my plans",
+    "level": "B1",
+    "topic": "Daily life",
+    "mode": "read",
+    "text": "I was planning to stay at home tonight, but my friends invited me to a concert. I think I'll go, because I haven't seen them for weeks.",
+    "cues": ["Pause at the comma before but.", "Stress haven't and weeks."]
+  },
+  {
+    "id": "s112",
+    "title": "A lesson outside the textbook",
+    "level": "B1",
+    "topic": "Education",
+    "mode": "read",
+    "text": "The most useful thing I learned this year wasn't in a textbook. It was how to ask for help when I didn't understand something.",
+    "cues": ["Stress useful and help.", "Link ask for."]
+  },
+  {
+    "id": "s113",
+    "title": "The battery only lasts an hour",
+    "level": "B1",
+    "topic": "Shopping",
+    "mode": "read",
+    "text": "I bought this laptop last week, but the battery only lasts an hour. I'd like to exchange it or get a refund, please.",
+    "cues": ["Stress hour.", "Pause before or get a refund."]
+  },
+  {
+    "id": "s114",
+    "title": "Running in the mornings",
+    "level": "B1",
+    "topic": "Health",
+    "mode": "read",
+    "text": "Since I started running in the mornings, I've had more energy during the day. It was hard at first, but now I really enjoy it.",
+    "cues": ["Say I've had clearly.", "Stress really."]
+  },
+  {
+    "id": "s115",
+    "title": "A delayed flight",
+    "level": "B1",
+    "topic": "Travel",
+    "mode": "read",
+    "text": "Our flight has been delayed by two hours because of the weather. The airline is giving everyone a free meal while we wait.",
+    "cues": ["Stress two hours.", "Pause after weather."]
+  },
+  {
+    "id": "s116",
+    "title": "Sharing ideas",
+    "level": "B1",
+    "topic": "Work",
+    "mode": "read",
+    "text": "In our team, everyone shares ideas before we make a decision. It takes longer, but the results are usually better.",
+    "cues": ["Stress everyone and better.", "Pause at the comma."]
+  },
+  {
+    "id": "s117",
+    "title": "Cooking more often",
+    "level": "B1",
+    "topic": "Food",
+    "mode": "read",
+    "text": "I've started cooking at home more often. It's cheaper than eating out, and I know exactly what's in my food.",
+    "cues": ["Stress cheaper and exactly.", "Say what's clearly."]
+  },
+  {
+    "id": "s118",
+    "title": "Life on a busy street",
+    "level": "B1",
+    "topic": "Places in town",
+    "mode": "read",
+    "text": "I live on a busy street, so it's never really quiet. I've got used to the noise, but I still use earplugs at night.",
+    "cues": ["Say got used to as one group.", "Stress never."]
+  },
+  {
+    "id": "s119",
+    "title": "Turning off the lights",
+    "level": "B1",
+    "topic": "Environment",
+    "mode": "read",
+    "text": "If everyone turned off the lights when they left a room, we would save a surprising amount of energy.",
+    "cues": ["Read the long sentence in two sense groups.", "Stress surprising."]
+  },
+  {
+    "id": "s120",
+    "title": "My first interview",
+    "level": "B1",
+    "topic": "Work",
+    "mode": "read",
+    "text": "I was so nervous before my first interview that I forgot the manager's name. Luckily, she was very understanding.",
+    "cues": ["Stress so nervous.", "Pause after Luckily."]
+  },
+  {
+    "id": "s121",
+    "title": "Concentrating in online classes",
+    "level": "B1",
+    "topic": "Education",
+    "mode": "read",
+    "text": "Online classes save time, but it's easy to lose concentration. I turn off my phone and sit at a proper desk.",
+    "cues": ["Stress easy and proper.", "Pause at the comma."]
+  },
+  {
+    "id": "s122",
+    "title": "A leaking tap",
+    "level": "B1",
+    "topic": "Home and furniture",
+    "mode": "read",
+    "text": "Hello, this is the tenant from flat twelve. The kitchen tap has been leaking since Monday. Could someone come and look at it?",
+    "cues": ["Pause after twelve.", "Use a polite rising tone in the question."]
+  },
+  {
+    "id": "s123",
+    "title": "Choosing a phone",
+    "level": "B1",
+    "topic": "Technology",
+    "mode": "read",
+    "text": "When I choose a phone, I care more about the battery and the camera than about the brand.",
+    "cues": ["Stress battery and camera.", "Link care more."]
+  },
+  {
+    "id": "s124",
+    "title": "The library reopens",
+    "level": "B1",
+    "topic": "Places in town",
+    "mode": "read",
+    "text": "Our local library has just reopened after a long renovation. There's now a quiet study room and a small café.",
+    "cues": [
+      "Stress quiet and small.",
+      "Say renovation with stress on the third part: ren-o-VA-tion."
+    ]
+  },
+  {
+    "id": "s125",
+    "title": "Worth the effort",
+    "level": "B1",
+    "topic": "Nature and weather",
+    "mode": "read",
+    "text": "We walked for three hours to reach the top of the mountain. The view was amazing, and it was definitely worth the effort.",
+    "cues": ["Stress amazing and definitely.", "Pause after mountain."]
+  },
+  {
+    "id": "s126",
+    "title": "Seeds for the birds",
+    "level": "B1",
+    "topic": "Animals",
+    "mode": "read",
+    "text": "Every winter my grandmother leaves seeds for the birds in her garden. She can name every bird that visits.",
+    "cues": ["Stress every.", "Say birds with a clear ending."]
+  },
+  {
+    "id": "s127",
+    "title": "A real bargain",
+    "level": "B1",
+    "topic": "Money and shopping",
+    "mode": "read",
+    "text": "I found this jacket in the sales for half the original price. It's warm, it fits well, and it was a real bargain.",
+    "cues": ["Pause at each comma.", "Stress half and bargain."]
+  },
+  {
+    "id": "s128",
+    "title": "Learning to drive",
+    "level": "B1",
+    "topic": "Transport",
+    "mode": "read",
+    "text": "I'm learning to drive at the moment. Parking is the hardest part, but my instructor is very patient.",
+    "cues": ["Stress hardest.", "Say instructor with stress on the second part: in-STRUC-tor."]
+  },
+  {
+    "id": "s129",
+    "title": "Sunday video calls",
+    "level": "B1",
+    "topic": "Communication",
+    "mode": "read",
+    "text": "My parents live in another city, so we have a video call every Sunday evening. It's not the same as being there, but it helps.",
+    "cues": ["Pause after city.", "Stress helps."]
+  },
+  {
+    "id": "s130",
+    "title": "Joining a choir",
+    "level": "B1",
+    "topic": "Hobbies and sport",
+    "mode": "read",
+    "text": "Last year I joined a choir, even though I'd never sung in public. Now I look forward to our rehearsals every week.",
+    "cues": ["Say choir as KWAI-er.", "Stress never."]
+  },
+  {
+    "id": "s131",
+    "title": "A stranger with a toolkit",
+    "level": "B1",
+    "topic": "Daily life",
+    "mode": "read",
+    "text": "When my bike broke down, a stranger stopped and helped me fix it. I didn't even get the chance to thank him properly.",
+    "cues": ["Pause after down.", "Stress properly."]
+  },
+  {
+    "id": "s132",
+    "title": "Less sugar",
+    "level": "B1",
+    "topic": "Health",
+    "mode": "read",
+    "text": "I've been trying to eat less sugar. I still have dessert at weekends, but I've stopped putting sugar in my coffee.",
+    "cues": ["Stress less and stopped.", "Say I've been as one group."]
+  },
+  {
+    "id": "s133",
+    "title": "A recent decision",
+    "level": "B1",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Talk about a decision you made recently and how you made it.",
+    "cues": [
+      "What were the options?",
+      "What helped you decide?",
+      "Are you happy with the decision?"
+    ]
+  },
+  {
+    "id": "s134",
+    "title": "The perfect holiday",
+    "level": "B1",
+    "topic": "Travel",
+    "mode": "talk",
+    "text": "Describe your idea of the perfect holiday.",
+    "cues": [
+      "Where would you go?",
+      "What would you do each day?",
+      "Why does this kind of holiday suit you?"
+    ]
+  },
+  {
+    "id": "s135",
+    "title": "Studying at home",
+    "level": "B1",
+    "topic": "Work",
+    "mode": "talk",
+    "text": "Discuss the advantages and disadvantages of working or studying from home.",
+    "cues": ["What is better at home?", "What is more difficult?", "Which do you prefer?"]
+  },
+  {
+    "id": "s136",
+    "title": "What we eat in my country",
+    "level": "B1",
+    "topic": "Food",
+    "mode": "talk",
+    "text": "Explain to a visitor what people in your country usually eat.",
+    "cues": [
+      "What is a typical breakfast?",
+      "What do people eat on special days?",
+      "Which dish should the visitor try?"
+    ]
+  },
+  {
+    "id": "s137",
+    "title": "A book or film that made me think",
+    "level": "B1",
+    "topic": "Hobbies and sport",
+    "mode": "talk",
+    "text": "Talk about a book or film that made you think differently.",
+    "cues": ["What was it about?", "What did you learn?", "Would you recommend it?"]
+  },
+  {
+    "id": "s138",
+    "title": "Social media and me",
+    "level": "B1",
+    "topic": "Technology",
+    "mode": "talk",
+    "text": "Talk about how you use social media.",
+    "cues": [
+      "Which platforms do you use?",
+      "What do you like about them?",
+      "What problems do they cause?"
+    ]
+  },
+  {
+    "id": "s139",
+    "title": "A problem in my city",
+    "level": "B1",
+    "topic": "Places in town",
+    "mode": "talk",
+    "text": "Describe a problem in your city and suggest a solution.",
+    "cues": ["What is the problem?", "Who does it affect?", "What could be done?"]
+  },
+  {
+    "id": "s140",
+    "title": "A mistake that taught me something",
+    "level": "B1",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Talk about a mistake that taught you something.",
+    "cues": ["What happened?", "How did you feel?", "What did you learn?"]
+  },
+  {
+    "id": "s141",
+    "title": "Exercise in a busy life",
+    "level": "B1",
+    "topic": "Health",
+    "mode": "talk",
+    "text": "Explain why exercise is important and how people can fit it into a busy life.",
+    "cues": ["Why is it important?", "What stops people?", "What simple ideas can you suggest?"]
+  },
+  {
+    "id": "s142",
+    "title": "Markets, supermarkets or online?",
+    "level": "B1",
+    "topic": "Shopping",
+    "mode": "talk",
+    "text": "Compare shopping in markets, in supermarkets and online.",
+    "cues": [
+      "What are the advantages of each?",
+      "Which do you use most?",
+      "How have your habits changed?"
+    ]
+  },
+  {
+    "id": "s143",
+    "title": "A good neighbour",
+    "level": "B1",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Describe what makes a good neighbour.",
+    "cues": [
+      "What should a good neighbour do?",
+      "What should they avoid?",
+      "Give an example from your life."
+    ]
+  },
+  {
+    "id": "s144",
+    "title": "Travelling alone",
+    "level": "B1",
+    "topic": "Travel",
+    "mode": "talk",
+    "text": "Would you like to travel alone? Explain your view.",
+    "cues": ["What are the benefits?", "What are the risks?", "Where would you go?"]
+  },
+  {
+    "id": "s145",
+    "title": "Less plastic every day",
+    "level": "B1",
+    "topic": "Environment",
+    "mode": "talk",
+    "text": "Talk about how people could use less plastic.",
+    "cues": [
+      "Where do we use plastic every day?",
+      "What alternatives are there?",
+      "What have you changed?"
+    ]
+  },
+  {
+    "id": "s146",
+    "title": "A job I would like",
+    "level": "B1",
+    "topic": "Work",
+    "mode": "talk",
+    "text": "Describe a job you would like to do in the future.",
+    "cues": ["What does the job involve?", "What skills do you need?", "Why does it interest you?"]
+  },
+  {
+    "id": "s147",
+    "title": "Friends who live far away",
+    "level": "B1",
+    "topic": "Communication",
+    "mode": "talk",
+    "text": "Talk about how you keep in touch with friends who live far away.",
+    "cues": ["Which ways do you use?", "How often do you talk?", "Is it enough?"]
+  },
+  {
+    "id": "s148",
+    "title": "Weekdays and weekends",
+    "level": "B1",
+    "topic": "Daily life",
+    "mode": "talk",
+    "text": "Compare your weekdays and your weekends.",
+    "cues": [
+      "How are they different?",
+      "Which part of the week do you prefer?",
+      "What would you change?"
+    ]
+  },
+  {
+    "id": "s149",
+    "title": "Why people keep pets",
+    "level": "B1",
+    "topic": "Animals",
+    "mode": "talk",
+    "text": "Talk about why people keep pets.",
+    "cues": [
+      "What do pets give people?",
+      "What are the responsibilities?",
+      "Which pet suits a busy person?"
+    ]
+  },
+  {
+    "id": "s150",
+    "title": "Money lessons at school",
+    "level": "B1",
+    "topic": "Money and shopping",
+    "mode": "talk",
+    "text": "Should young people learn to manage money at school? Explain your view.",
+    "cues": [
+      "What should they learn?",
+      "Who should teach it?",
+      "What happens if they do not learn?"
+    ]
+  },
+  {
+    "id": "s151",
+    "title": "A memorable meal",
+    "level": "B1",
+    "topic": "Food",
+    "mode": "talk",
+    "text": "Describe a meal you remember well.",
+    "cues": ["Where were you?", "Who were you with?", "Why do you remember it?"]
+  },
+  {
+    "id": "s152",
+    "title": "The home I would like",
+    "level": "B1",
+    "topic": "Home and furniture",
+    "mode": "talk",
+    "text": "Describe the home you would like to live in one day.",
+    "cues": ["Where is it?", "What does it look like?", "What is the most important room?"]
+  },
+  {
+    "id": "s153",
+    "title": "Travel in twenty years",
+    "level": "B1",
+    "topic": "Transport",
+    "mode": "talk",
+    "text": "Talk about how people might travel in twenty years.",
+    "cues": [
+      "What will change?",
+      "What will stay the same?",
+      "Will it be better for the environment?"
+    ]
+  },
+  {
+    "id": "s154",
+    "title": "A hobby that relaxes me",
+    "level": "B1",
+    "topic": "Hobbies and sport",
+    "mode": "talk",
+    "text": "Describe a hobby that helps you relax.",
+    "cues": ["When did you start?", "How does it help you?", "Would you recommend it to others?"]
+  },
+  {
+    "id": "s155",
+    "title": "The value of sleep",
+    "level": "B2",
+    "topic": "Health",
+    "mode": "read",
+    "text": "Many people treat sleep as something they can sacrifice when they are busy. In reality, a lack of sleep affects concentration, mood and even the immune system.",
+    "cues": [
+      "Group the words: many people treat sleep / as something they can sacrifice.",
+      "Stress reality and immune."
+    ]
+  },
+  {
+    "id": "s156",
+    "title": "The city before the traffic",
+    "level": "B2",
+    "topic": "Places in town",
+    "mode": "read",
+    "text": "The city is at its most fascinating early in the morning, when the street vendors are setting up and the traffic hasn't yet reached its usual chaos.",
+    "cues": ["Pause after morning.", "Stress fascinating and chaos."]
+  },
+  {
+    "id": "s157",
+    "title": "Clear boundaries",
+    "level": "B2",
+    "topic": "Work",
+    "mode": "read",
+    "text": "Working remotely gives people more control over their time, but it also blurs the line between work and home. Setting clear boundaries has become an essential skill.",
+    "cues": ["Pause at the comma before but.", "Stress essential."]
+  },
+  {
+    "id": "s158",
+    "title": "The real cost of cheap clothes",
+    "level": "B2",
+    "topic": "Shopping",
+    "mode": "read",
+    "text": "Cheap clothing seems like a bargain, yet its real cost is often paid by workers and the environment. Buying fewer, better-made items is one way to respond.",
+    "cues": ["Stress real cost.", "Pause after environment."]
+  },
+  {
+    "id": "s159",
+    "title": "Learning a language as an adult",
+    "level": "B2",
+    "topic": "Education",
+    "mode": "read",
+    "text": "Learning a language as an adult is challenging, but it isn't impossible. Regular practice, realistic goals and a little patience make a remarkable difference.",
+    "cues": ["Pause at each comma in the list.", "Stress remarkable."]
+  },
+  {
+    "id": "s160",
+    "title": "The overnight train",
+    "level": "B2",
+    "topic": "Travel",
+    "mode": "read",
+    "text": "We took the overnight train to the north, and I barely slept. I spent most of the night watching small towns pass by in the dark.",
+    "cues": ["Link took the.", "Stress barely."]
+  },
+  {
+    "id": "s161",
+    "title": "Advertising to children",
+    "level": "B2",
+    "topic": "Communication",
+    "mode": "read",
+    "text": "Advertisers know that children influence what their families buy. That is why many experts believe advertising aimed at young audiences should be strictly limited.",
+    "cues": ["Stress influence and strictly.", "Pause after buy."]
+  },
+  {
+    "id": "s162",
+    "title": "Scooters on the pavement",
+    "level": "B2",
+    "topic": "Transport",
+    "mode": "read",
+    "text": "Electric scooters are convenient for short trips, but they have created new problems on crowded pavements. Many cities are now introducing rules about where they can be parked.",
+    "cues": ["Pause after trips.", "Stress convenient and introducing."]
+  },
+  {
+    "id": "s163",
+    "title": "Cleaning the river",
+    "level": "B2",
+    "topic": "Daily life",
+    "mode": "read",
+    "text": "Every spring, the whole village gathers to clean the river and plant trees along its banks. It started as a small project and has become a tradition.",
+    "cues": ["Stress whole and tradition.", "Pause after banks."]
+  },
+  {
+    "id": "s164",
+    "title": "Privacy settings",
+    "level": "B2",
+    "topic": "Technology",
+    "mode": "read",
+    "text": "Most of us accept privacy settings without reading them. We rarely consider how much personal information we share in exchange for convenience.",
+    "cues": ["Stress rarely and convenience.", "Link exchange for."]
+  },
+  {
+    "id": "s165",
+    "title": "At the food bank",
+    "level": "B2",
+    "topic": "Communication",
+    "mode": "read",
+    "text": "Volunteering at the food bank taught me more about my own city than years of living there. You meet people whose lives are completely different from yours.",
+    "cues": ["Pause after bank.", "Stress completely."]
+  },
+  {
+    "id": "s166",
+    "title": "Delivery and packaging",
+    "level": "B2",
+    "topic": "Food",
+    "mode": "read",
+    "text": "Food delivery apps have changed the way people eat, especially in big cities. They are convenient, but they also create a great deal of packaging waste.",
+    "cues": ["Pause after eat.", "Stress great deal."]
+  },
+  {
+    "id": "s167",
+    "title": "Honesty with kindness",
+    "level": "B2",
+    "topic": "People and family",
+    "mode": "read",
+    "text": "Telling a friend something they don't want to hear is never easy. However, honesty delivered with kindness usually strengthens a friendship rather than damaging it.",
+    "cues": ["Pause after However.", "Stress honesty and kindness."]
+  },
+  {
+    "id": "s168",
+    "title": "Gardens on the roof",
+    "level": "B2",
+    "topic": "Environment",
+    "mode": "read",
+    "text": "Rooftop gardens are appearing across the city. They provide fresh vegetables, reduce heat in summer and give neighbours a reason to spend time together.",
+    "cues": ["Pause at each comma.", "Stress rooftop."]
+  },
+  {
+    "id": "s169",
+    "title": "Changing careers",
+    "level": "B2",
+    "topic": "Work",
+    "mode": "read",
+    "text": "Changing careers in your thirties can feel risky. Yet many people discover that the skills they developed in one field are surprisingly valuable in another.",
+    "cues": ["Stress risky and surprisingly.", "Pause after Yet."]
+  },
+  {
+    "id": "s170",
+    "title": "Animals near our towns",
+    "level": "B2",
+    "topic": "Animals",
+    "mode": "read",
+    "text": "As forests shrink, many animals are forced closer to towns and farms. Protecting their habitats is better for both wildlife and the people living nearby.",
+    "cues": ["Pause after farms.", "Stress habitats."]
+  },
+  {
+    "id": "s171",
+    "title": "A simple budget",
+    "level": "B2",
+    "topic": "Money and shopping",
+    "mode": "read",
+    "text": "Keeping a simple budget does not mean giving up everything you enjoy. It simply helps you notice where your money goes and decide what really matters.",
+    "cues": ["Stress simple and really matters.", "Link where your."]
+  },
+  {
+    "id": "s172",
+    "title": "What team sports teach",
+    "level": "B2",
+    "topic": "Hobbies and sport",
+    "mode": "read",
+    "text": "Team sports teach lessons that are hard to learn elsewhere: how to lose gracefully, how to rely on others and how to keep going when you are tired.",
+    "cues": ["Pause at the colon.", "Keep the three parts of the list even."]
+  },
+  {
+    "id": "s173",
+    "title": "Weather or climate?",
+    "level": "B2",
+    "topic": "Nature and weather",
+    "mode": "read",
+    "text": "Weather describes what happens on a particular day, while climate describes long-term patterns. Confusing the two often leads to misleading conclusions.",
+    "cues": ["Contrast weather and climate with stress.", "Pause after day."]
+  },
+  {
+    "id": "s174",
+    "title": "Smart homes",
+    "level": "B2",
+    "topic": "Home and furniture",
+    "mode": "read",
+    "text": "Smart home devices can adjust the lighting and temperature automatically. They are useful, but some people worry about how much data these devices collect.",
+    "cues": ["Stress automatically.", "Pause after useful."]
+  },
+  {
+    "id": "s175",
+    "title": "Using your nerves",
+    "level": "B2",
+    "topic": "Education",
+    "mode": "read",
+    "text": "Most people feel nervous before speaking in public. The trick is not to remove the nerves but to use that energy to sound more engaged.",
+    "cues": ["Stress trick and engaged.", "Pause before but."]
+  },
+  {
+    "id": "s176",
+    "title": "Searching for symptoms",
+    "level": "B2",
+    "topic": "Health",
+    "mode": "read",
+    "text": "Searching for symptoms online can be reassuring or terrifying. Information from reliable sources is helpful, but it can never replace a proper medical examination.",
+    "cues": ["Contrast reassuring and terrifying.", "Stress never."]
+  },
+  {
+    "id": "s177",
+    "title": "Renting instead of buying",
+    "level": "B2",
+    "topic": "Money and shopping",
+    "mode": "read",
+    "text": "Renting tools, cars and even clothes instead of buying them is becoming more common. Supporters say it saves money and resources, while critics worry about safety.",
+    "cues": ["Pause after them.", "Stress supporters and critics."]
+  },
+  {
+    "id": "s178",
+    "title": "News from social media",
+    "level": "B2",
+    "topic": "Technology",
+    "mode": "talk",
+    "text": "Discuss how social media has changed the way people get news.",
+    "cues": [
+      "What are the advantages?",
+      "What are the dangers?",
+      "How do you check whether news is true?"
+    ]
+  },
+  {
+    "id": "s179",
+    "title": "Should university be free?",
+    "level": "B2",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Give your opinion on whether university education should be free.",
+    "cues": ["Who would benefit?", "Who would pay?", "What alternatives are there?"]
+  },
+  {
+    "id": "s180",
+    "title": "A leader I admire",
+    "level": "B2",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Describe a leader you admire, in any field, and explain why.",
+    "cues": [
+      "What has this person achieved?",
+      "What qualities do they have?",
+      "What can others learn from them?"
+    ]
+  },
+  {
+    "id": "s181",
+    "title": "Tourism and local life",
+    "level": "B2",
+    "topic": "Travel",
+    "mode": "talk",
+    "text": "Discuss how tourism affects the lives of local people.",
+    "cues": [
+      "What benefits does it bring?",
+      "What problems can it cause?",
+      "How can the balance be improved?"
+    ]
+  },
+  {
+    "id": "s182",
+    "title": "Work-life balance",
+    "level": "B2",
+    "topic": "Work",
+    "mode": "talk",
+    "text": "Explain what work-life balance means to you and how it can be achieved.",
+    "cues": ["What makes it difficult?", "What can employers do?", "What can individuals do?"]
+  },
+  {
+    "id": "s183",
+    "title": "A healthier city",
+    "level": "B2",
+    "topic": "Health",
+    "mode": "talk",
+    "text": "Describe how a city could be designed to help people live healthier lives.",
+    "cues": [
+      "What would you change about transport?",
+      "What about green spaces?",
+      "Who should pay for these changes?"
+    ]
+  },
+  {
+    "id": "s184",
+    "title": "Do we buy too much?",
+    "level": "B2",
+    "topic": "Shopping",
+    "mode": "talk",
+    "text": "Discuss whether people today buy too much.",
+    "cues": [
+      "Why do people buy more than they need?",
+      "What are the consequences?",
+      "How could habits change?"
+    ]
+  },
+  {
+    "id": "s185",
+    "title": "Grandparents today",
+    "level": "B2",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Talk about the role grandparents play in families today.",
+    "cues": [
+      "How do they help?",
+      "How has their role changed?",
+      "What can younger people learn from them?"
+    ]
+  },
+  {
+    "id": "s186",
+    "title": "Artificial intelligence every day",
+    "level": "B2",
+    "topic": "Technology",
+    "mode": "talk",
+    "text": "Discuss how artificial intelligence is already part of everyday life.",
+    "cues": ["Where do people use it?", "What are the benefits?", "What concerns do people have?"]
+  },
+  {
+    "id": "s187",
+    "title": "Saving endangered animals",
+    "level": "B2",
+    "topic": "Animals",
+    "mode": "talk",
+    "text": "Discuss whether protecting endangered species should be a priority.",
+    "cues": ["Why does it matter?", "What are the costs?", "What can individuals do?"]
+  },
+  {
+    "id": "s188",
+    "title": "The daily commute",
+    "level": "B2",
+    "topic": "Transport",
+    "mode": "talk",
+    "text": "Compare different ways of commuting and their impact.",
+    "cues": [
+      "Which is fastest?",
+      "Which is best for the environment?",
+      "How would you improve commuting in your city?"
+    ]
+  },
+  {
+    "id": "s189",
+    "title": "A skill everyone should have",
+    "level": "B2",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Describe a practical skill you think everyone should learn and explain why.",
+    "cues": ["What is the skill?", "How is it useful?", "How could people learn it?"]
+  },
+  {
+    "id": "s190",
+    "title": "Friends made online",
+    "level": "B2",
+    "topic": "Communication",
+    "mode": "talk",
+    "text": "Discuss whether friendships made online are as valuable as others.",
+    "cues": ["How are they different?", "What are the benefits?", "What are the risks?"]
+  },
+  {
+    "id": "s191",
+    "title": "Food waste",
+    "level": "B2",
+    "topic": "Food",
+    "mode": "talk",
+    "text": "Discuss the causes of food waste and possible solutions.",
+    "cues": ["Where is food wasted?", "Why does it happen?", "What could families and shops do?"]
+  },
+  {
+    "id": "s192",
+    "title": "A first home",
+    "level": "B2",
+    "topic": "Home and furniture",
+    "mode": "talk",
+    "text": "Discuss the difficulties young people face in finding a home.",
+    "cues": ["Why is it difficult?", "What are the consequences?", "What could help?"]
+  },
+  {
+    "id": "s193",
+    "title": "How advertising persuades",
+    "level": "B2",
+    "topic": "Communication",
+    "mode": "talk",
+    "text": "Discuss how advertising influences what people want.",
+    "cues": [
+      "How does advertising persuade people?",
+      "Is it always harmful?",
+      "Should it be more strictly controlled?"
+    ]
+  },
+  {
+    "id": "s194",
+    "title": "Children and competition",
+    "level": "B2",
+    "topic": "Hobbies and sport",
+    "mode": "talk",
+    "text": "Discuss whether competitive sport is good for children.",
+    "cues": [
+      "What can children learn?",
+      "What pressures can it create?",
+      "How should adults behave?"
+    ]
+  },
+  {
+    "id": "s195",
+    "title": "Cash or cards?",
+    "level": "B2",
+    "topic": "Money and shopping",
+    "mode": "talk",
+    "text": "Discuss whether societies should stop using cash.",
+    "cues": [
+      "What are the advantages of digital payments?",
+      "Who might be left behind?",
+      "What do you prefer?"
+    ]
+  },
+  {
+    "id": "s196",
+    "title": "Extreme weather",
+    "level": "B2",
+    "topic": "Nature and weather",
+    "mode": "talk",
+    "text": "Talk about how extreme weather is affecting daily life.",
+    "cues": [
+      "What examples have you seen?",
+      "How do people prepare?",
+      "What should governments do?"
+    ]
+  },
+  {
+    "id": "s197",
+    "title": "The future of local shops",
+    "level": "B2",
+    "topic": "Places in town",
+    "mode": "talk",
+    "text": "Discuss what will happen to high streets and local shops in the future.",
+    "cues": [
+      "Why are some shops closing?",
+      "What could replace them?",
+      "How can communities support them?"
+    ]
+  },
+  {
+    "id": "s198",
+    "title": "Is ambition always good?",
+    "level": "B2",
+    "topic": "Work",
+    "mode": "talk",
+    "text": "Discuss whether ambition is always a positive quality.",
+    "cues": ["When is ambition helpful?", "When can it be harmful?", "Give an example."]
+  },
+  {
+    "id": "s199",
+    "title": "Fame and privacy",
+    "level": "B2",
+    "topic": "Communication",
+    "mode": "talk",
+    "text": "Discuss whether famous people deserve privacy.",
+    "cues": [
+      "Why are people interested in celebrities?",
+      "Where should the limits be?",
+      "How has social media changed this?"
+    ]
+  },
+  {
+    "id": "s200",
+    "title": "City or countryside?",
+    "level": "B2",
+    "topic": "Daily life",
+    "mode": "talk",
+    "text": "Compare life in the city with life in the countryside.",
+    "cues": [
+      "What are the advantages of each?",
+      "Which suits families better?",
+      "Where would you prefer to live?"
+    ]
+  },
+  {
+    "id": "s201",
+    "title": "Too many options",
+    "level": "C1",
+    "topic": "Shopping",
+    "mode": "read",
+    "text": "We tend to assume that more choice makes us happier, yet faced with dozens of almost identical options, many people feel anxious rather than free. Sometimes a shorter list leads to a better decision.",
+    "cues": ["Pause after happier.", "Stress anxious and free."]
+  },
+  {
+    "id": "s202",
+    "title": "Heat in the city",
+    "level": "C1",
+    "topic": "Environment",
+    "mode": "read",
+    "text": "Dense cities trap heat in their concrete and asphalt, which is why temperatures in the centre can be several degrees higher than in the surrounding countryside. Planting trees is one of the simplest remedies.",
+    "cues": ["Pause after asphalt.", "Stress several and simplest."]
+  },
+  {
+    "id": "s203",
+    "title": "Feedback that helps",
+    "level": "C1",
+    "topic": "Work",
+    "mode": "read",
+    "text": "Useful feedback is specific, timely and focused on actions rather than personality. Telling someone they are careless achieves little; showing them which steps they missed gives them something to work with.",
+    "cues": ["Pause at the semicolon.", "Contrast careless with the steps they missed."]
+  },
+  {
+    "id": "s204",
+    "title": "Memory and sleep",
+    "level": "C1",
+    "topic": "Health",
+    "mode": "read",
+    "text": "Researchers have found that sleep plays an active role in memory. While we rest, the brain appears to replay and organise the day's experiences, strengthening what is worth keeping.",
+    "cues": ["Stress active.", "Pause after rest."]
+  },
+  {
+    "id": "s205",
+    "title": "The art of listening",
+    "level": "C1",
+    "topic": "Communication",
+    "mode": "read",
+    "text": "Genuine listening is rarer than we like to admit. Most of us are already preparing our reply while the other person is still speaking, which means we hear the words but miss the meaning.",
+    "cues": ["Stress rarer and meaning.", "Pause after admit."]
+  },
+  {
+    "id": "s206",
+    "title": "What travel can do",
+    "level": "C1",
+    "topic": "Travel",
+    "mode": "read",
+    "text": "Travelling rarely changes who we are overnight. What it can do is loosen our assumptions, showing us that habits we thought were universal are simply one way of living among many.",
+    "cues": ["Pause after overnight.", "Stress loosen and universal."]
+  },
+  {
+    "id": "s207",
+    "title": "Tasks, not jobs",
+    "level": "C1",
+    "topic": "Technology",
+    "mode": "read",
+    "text": "Automation tends to replace tasks rather than entire jobs. The people who adapt best are usually those who learn to work alongside new tools instead of competing with them.",
+    "cues": ["Contrast tasks and entire jobs.", "Stress alongside."]
+  },
+  {
+    "id": "s208",
+    "title": "Reading for pleasure",
+    "level": "C1",
+    "topic": "Education",
+    "mode": "read",
+    "text": "Children who read for pleasure tend to do better at school, not only in language but across subjects. The habit seems to build vocabulary, concentration and curiosity at the same time.",
+    "cues": ["Stress pleasure.", "Pause at each comma in the list."]
+  },
+  {
+    "id": "s209",
+    "title": "The slow food movement",
+    "level": "C1",
+    "topic": "Food",
+    "mode": "read",
+    "text": "The slow food movement began as a reaction against fast food, but it has grown into a broader argument about where our food comes from, who produces it and what it is worth.",
+    "cues": ["Pause after food.", "Keep the three questions at the end even."]
+  },
+  {
+    "id": "s210",
+    "title": "Transport and opportunity",
+    "level": "C1",
+    "topic": "Transport",
+    "mode": "read",
+    "text": "Reliable public transport is not just a matter of convenience. For people who cannot afford a car, it decides which jobs they can reach and how much of their day is spent travelling.",
+    "cues": ["Stress convenience and afford.", "Pause after car."]
+  },
+  {
+    "id": "s211",
+    "title": "In defence of boredom",
+    "level": "C1",
+    "topic": "Daily life",
+    "mode": "read",
+    "text": "We rarely allow ourselves to be bored any more, reaching for our phones at the first quiet moment. Yet boredom may be exactly what the mind needs to wander and produce new ideas.",
+    "cues": ["Pause after more.", "Stress exactly and wander."]
+  },
+  {
+    "id": "s212",
+    "title": "Ageing well",
+    "level": "C1",
+    "topic": "Health",
+    "mode": "read",
+    "text": "Ageing well depends less on avoiding every risk than on staying active, connected and curious. Older adults with strong social ties often report better health than those who live in isolation.",
+    "cues": ["Pause at each comma.", "Stress connected and isolation."]
+  },
+  {
+    "id": "s213",
+    "title": "Two languages, two selves",
+    "level": "C1",
+    "topic": "Communication",
+    "mode": "read",
+    "text": "Many bilingual people say they feel slightly different in each language, as if switching languages also switches their sense of humour, their gestures and even their opinions.",
+    "cues": ["Stress different.", "Pause after language."]
+  },
+  {
+    "id": "s214",
+    "title": "After the floods",
+    "level": "C1",
+    "topic": "People and family",
+    "mode": "read",
+    "text": "After the floods, volunteers arrived from all over the country. Their help was invaluable, although coordinating so many people turned out to be a challenge in itself.",
+    "cues": ["Stress invaluable.", "Pause after invaluable."]
+  },
+  {
+    "id": "s215",
+    "title": "Museums online",
+    "level": "C1",
+    "topic": "Education",
+    "mode": "read",
+    "text": "Museums now publish thousands of images online, allowing anyone to explore their collections. Some feared this would keep visitors away, but early evidence suggests it does the opposite.",
+    "cues": ["Pause after online.", "Stress opposite."]
+  },
+  {
+    "id": "s216",
+    "title": "Water from the tap",
+    "level": "C1",
+    "topic": "Environment",
+    "mode": "read",
+    "text": "We often treat water as limitless because it flows from the tap at the turn of a handle. In many regions, however, underground reserves are being used faster than they can be refilled.",
+    "cues": ["Pause after however.", "Stress limitless and faster."]
+  },
+  {
+    "id": "s217",
+    "title": "Failing and starting again",
+    "level": "C1",
+    "topic": "Money and shopping",
+    "mode": "read",
+    "text": "Most new businesses fail within a few years, but the founders often go on to succeed with later projects. What they learn from failure appears to be as valuable as any early funding.",
+    "cues": ["Pause after years.", "Stress valuable."]
+  },
+  {
+    "id": "s218",
+    "title": "The inner lives of animals",
+    "level": "C1",
+    "topic": "Animals",
+    "mode": "read",
+    "text": "Scientists were once reluctant to say that animals had emotions. Today, studies of elephants, dogs and even fish suggest that the inner lives of animals are richer than we assumed.",
+    "cues": ["Stress reluctant and richer.", "Pause after Today."]
+  },
+  {
+    "id": "s219",
+    "title": "A city's soundtrack",
+    "level": "C1",
+    "topic": "Places in town",
+    "mode": "read",
+    "text": "Every city has its own soundtrack: the calls of street vendors, the rhythm of motorbikes, the bells of a distant temple. Visitors often remember these sounds long after they have forgotten the sights.",
+    "cues": ["Pause at the colon.", "Keep the rhythm of the list steady."]
+  },
+  {
+    "id": "s220",
+    "title": "What separates champions",
+    "level": "C1",
+    "topic": "Hobbies and sport",
+    "mode": "read",
+    "text": "Top athletes are often admired for their talent, but what separates them is usually less visible: years of repetition, careful recovery and the discipline to rest when they would rather train.",
+    "cues": ["Pause at the colon.", "Stress discipline."]
+  },
+  {
+    "id": "s221",
+    "title": "Renting into our thirties",
+    "level": "C1",
+    "topic": "Home and furniture",
+    "mode": "read",
+    "text": "In many countries, owning a home was once seen as a natural step into adulthood. Rising prices have made that step much harder, and many young people now rent well into their thirties.",
+    "cues": ["Stress natural and harder.", "Pause after adulthood."]
+  },
+  {
+    "id": "s222",
+    "title": "Winter light",
+    "level": "C1",
+    "topic": "Nature and weather",
+    "mode": "read",
+    "text": "Shorter days in winter can affect people's energy and mood more than they expect. Spending time outdoors in daylight, even briefly, is one of the simplest ways to counter the effect.",
+    "cues": ["Stress shorter and simplest.", "Pause after daylight."]
+  },
+  {
+    "id": "s223",
+    "title": "Pause before you share",
+    "level": "C1",
+    "topic": "Technology",
+    "mode": "read",
+    "text": "False stories often spread faster than corrections because they are designed to provoke strong emotions. Pausing before sharing something shocking is a small habit with surprisingly large effects.",
+    "cues": ["Stress faster and pausing.", "Pause after corrections."]
+  },
+  {
+    "id": "s224",
+    "title": "What a mentor does",
+    "level": "C1",
+    "topic": "Work",
+    "mode": "read",
+    "text": "A good mentor does not provide all the answers. Instead, they ask the kind of questions that help you discover what you already know and notice what you have been avoiding.",
+    "cues": ["Stress answers and questions.", "Pause after Instead."]
+  },
+  {
+    "id": "s225",
+    "title": "Patterns in history",
+    "level": "C1",
+    "topic": "Education",
+    "mode": "read",
+    "text": "History does not repeat itself exactly, but patterns do recur. Studying them will not predict the future; it can, however, make us more alert to familiar warning signs.",
+    "cues": ["Pause at the semicolon.", "Stress exactly and familiar."]
+  },
+  {
+    "id": "s226",
+    "title": "Technology in the classroom",
+    "level": "C1",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Evaluate the role technology should play in education.",
+    "cues": [
+      "Where does it genuinely help learning?",
+      "Where can it distract or replace thinking?",
+      "How should teachers decide when to use it?"
+    ]
+  },
+  {
+    "id": "s227",
+    "title": "Global and local cultures",
+    "level": "C1",
+    "topic": "Communication",
+    "mode": "talk",
+    "text": "Discuss whether globalisation threatens local cultures.",
+    "cues": ["What is being lost?", "What is being gained?", "Can the two exist together?"]
+  },
+  {
+    "id": "s228",
+    "title": "Who protects the environment?",
+    "level": "C1",
+    "topic": "Environment",
+    "mode": "talk",
+    "text": "Who should take the greatest responsibility for protecting the environment: governments, businesses or individuals?",
+    "cues": ["Consider the power of each group.", "Give examples.", "Reach a conclusion."]
+  },
+  {
+    "id": "s229",
+    "title": "Work in twenty years",
+    "level": "C1",
+    "topic": "Work",
+    "mode": "talk",
+    "text": "Discuss how work is likely to change in the next twenty years.",
+    "cues": [
+      "What skills will matter most?",
+      "Which jobs may disappear?",
+      "How should people prepare?"
+    ]
+  },
+  {
+    "id": "s230",
+    "title": "Success and happiness",
+    "level": "C1",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Discuss the relationship between success and happiness.",
+    "cues": [
+      "How do people define success?",
+      "Does success guarantee happiness?",
+      "What matters more to you?"
+    ]
+  },
+  {
+    "id": "s231",
+    "title": "Is privacy still possible?",
+    "level": "C1",
+    "topic": "Technology",
+    "mode": "talk",
+    "text": "Discuss whether privacy is still possible in the digital age.",
+    "cues": [
+      "What information do we give away?",
+      "Who benefits from it?",
+      "What can individuals do?"
+    ]
+  },
+  {
+    "id": "s232",
+    "title": "Shopping with a conscience",
+    "level": "C1",
+    "topic": "Shopping",
+    "mode": "talk",
+    "text": "Discuss whether consumers can change company behaviour through what they buy.",
+    "cues": ["What examples are there?", "What are the limits?", "How do you shop?"]
+  },
+  {
+    "id": "s233",
+    "title": "An ageing population",
+    "level": "C1",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Discuss the challenges and opportunities of an ageing population.",
+    "cues": [
+      "How will families be affected?",
+      "What about the economy?",
+      "How can older people contribute?"
+    ]
+  },
+  {
+    "id": "s234",
+    "title": "Spending on health",
+    "level": "C1",
+    "topic": "Health",
+    "mode": "talk",
+    "text": "Discuss how governments should decide where to spend healthcare money.",
+    "cues": ["Prevention or treatment?", "Who should decide?", "What would you prioritise?"]
+  },
+  {
+    "id": "s235",
+    "title": "The city of the future",
+    "level": "C1",
+    "topic": "Places in town",
+    "mode": "talk",
+    "text": "Describe what an ideal city of the future would be like.",
+    "cues": [
+      "How would people move around?",
+      "How would it handle growth?",
+      "What would make it pleasant to live in?"
+    ]
+  },
+  {
+    "id": "s236",
+    "title": "Seeing the real culture",
+    "level": "C1",
+    "topic": "Travel",
+    "mode": "talk",
+    "text": "Discuss whether tourists experience the real culture of the places they visit.",
+    "cues": [
+      "What do tourists usually see?",
+      "What do they miss?",
+      "How could travel be more meaningful?"
+    ]
+  },
+  {
+    "id": "s237",
+    "title": "The power of habits",
+    "level": "C1",
+    "topic": "Health",
+    "mode": "talk",
+    "text": "Explain how habits shape our lives and how they can be changed.",
+    "cues": [
+      "Give an example of a helpful habit.",
+      "Why are habits hard to change?",
+      "What strategies work?"
+    ]
+  },
+  {
+    "id": "s238",
+    "title": "Why false stories spread",
+    "level": "C1",
+    "topic": "Technology",
+    "mode": "talk",
+    "text": "Discuss the causes of false information online and how societies should respond.",
+    "cues": [
+      "Why does false information spread?",
+      "Who should deal with it?",
+      "What can individuals do?"
+    ]
+  },
+  {
+    "id": "s239",
+    "title": "Changing expectations of men and women",
+    "level": "C1",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Discuss how expectations of men and women have changed in your lifetime.",
+    "cues": [
+      "What has changed at home?",
+      "What has changed at work?",
+      "What still needs to change?"
+    ]
+  },
+  {
+    "id": "s240",
+    "title": "Cheap food and animal welfare",
+    "level": "C1",
+    "topic": "Animals",
+    "mode": "talk",
+    "text": "Discuss the balance between cheap food and the welfare of farm animals.",
+    "cues": [
+      "Why is cheap meat so common?",
+      "What are the costs?",
+      "What should consumers and governments do?"
+    ]
+  },
+  {
+    "id": "s241",
+    "title": "Competition or cooperation at school",
+    "level": "C1",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Discuss whether schools should encourage competition or cooperation.",
+    "cues": ["What does each teach?", "What are the risks?", "Which should come first?"]
+  },
+  {
+    "id": "s242",
+    "title": "Influencers and young people",
+    "level": "C1",
+    "topic": "Communication",
+    "mode": "talk",
+    "text": "Discuss the influence that celebrities and online influencers have on young people.",
+    "cues": [
+      "Is it mostly positive or negative?",
+      "Why are people influenced?",
+      "Should influencers have responsibilities?"
+    ]
+  },
+  {
+    "id": "s243",
+    "title": "Has money become too important?",
+    "level": "C1",
+    "topic": "Money and shopping",
+    "mode": "talk",
+    "text": "Discuss whether money has become too important in modern life.",
+    "cues": ["Where do you see this?", "What are the effects?", "How can people keep a balance?"]
+  },
+  {
+    "id": "s244",
+    "title": "Mistakes at work",
+    "level": "C1",
+    "topic": "Work",
+    "mode": "talk",
+    "text": "Discuss how organisations should treat mistakes made by their staff.",
+    "cues": [
+      "What happens when mistakes are punished?",
+      "What happens when they are discussed openly?",
+      "Give an example."
+    ]
+  },
+  {
+    "id": "s245",
+    "title": "City and country opportunities",
+    "level": "C1",
+    "topic": "Daily life",
+    "mode": "talk",
+    "text": "Discuss the gap in opportunities between cities and rural areas.",
+    "cues": ["What differences exist?", "Why do they matter?", "How could they be reduced?"]
+  },
+  {
+    "id": "s246",
+    "title": "Sport and national identity",
+    "level": "C1",
+    "topic": "Hobbies and sport",
+    "mode": "talk",
+    "text": "Discuss why sport matters so much to national identity.",
+    "cues": ["Give examples.", "Is it healthy?", "When does it go too far?"]
+  },
+  {
+    "id": "s247",
+    "title": "Adapting to a changing climate",
+    "level": "C1",
+    "topic": "Nature and weather",
+    "mode": "talk",
+    "text": "Discuss how communities can adapt to a changing climate.",
+    "cues": ["What risks do they face?", "What practical measures exist?", "Who should pay?"]
+  },
+  {
+    "id": "s248",
+    "title": "Where we live and how we feel",
+    "level": "C1",
+    "topic": "Home and furniture",
+    "mode": "talk",
+    "text": "Discuss how the place where we live affects our wellbeing.",
+    "cues": [
+      "Space, light or location: what matters most?",
+      "How does housing affect families?",
+      "What should planners consider?"
+    ]
+  },
+  {
+    "id": "s249",
+    "title": "Public money for the arts",
+    "level": "C1",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Discuss whether public money should be spent on the arts.",
+    "cues": [
+      "What do the arts offer society?",
+      "What are the competing priorities?",
+      "What is your view?"
+    ]
+  },
+  {
+    "id": "s250",
+    "title": "The internet in remote places",
+    "level": "C1",
+    "topic": "Technology",
+    "mode": "talk",
+    "text": "Discuss how internet access changes life in remote communities.",
+    "cues": [
+      "What opportunities does it create?",
+      "What risks are there?",
+      "Should access be a right?"
+    ]
+  },
+  {
+    "id": "s251",
+    "title": "A careful \"it depends\"",
+    "level": "C2",
+    "topic": "Education",
+    "mode": "read",
+    "text": "Experts are often most persuasive when they sound certain, yet the most honest answer to a complex question is frequently a qualified one. Learning to trust a careful \"it depends\" may be one of the subtler skills of adult life.",
+    "cues": ["Pause after certain.", "Stress honest and qualified."]
+  },
+  {
+    "id": "s252",
+    "title": "The translator's balance",
+    "level": "C2",
+    "topic": "Communication",
+    "mode": "read",
+    "text": "A translator is forever negotiating between faithfulness and readability. Render a sentence too literally and it sounds foreign; adapt it too freely and the author's voice disappears beneath the translator's own.",
+    "cues": ["Pause at the semicolon.", "Contrast literally and freely."]
+  },
+  {
+    "id": "s253",
+    "title": "When attention is the product",
+    "level": "C2",
+    "topic": "Technology",
+    "mode": "read",
+    "text": "When a service is free, our attention is usually the product being sold. Every notification competes for a resource that is finite, and the companies that capture it most effectively are rewarded handsomely.",
+    "cues": ["Pause after sold.", "Stress finite and handsomely."]
+  },
+  {
+    "id": "s254",
+    "title": "The selective past",
+    "level": "C2",
+    "topic": "Daily life",
+    "mode": "read",
+    "text": "Nostalgia is curiously selective. It edits out the inconvenience and anxiety of the past, leaving a softened version that can make the present seem poorer than it really is.",
+    "cues": ["Stress selective.", "Pause after past."]
+  },
+  {
+    "id": "s255",
+    "title": "Layers of a city",
+    "level": "C2",
+    "topic": "Places in town",
+    "mode": "read",
+    "text": "Old cities resemble manuscripts that have been written over many times. Beneath a modern shopping street you may find the outline of a medieval market, and beneath that, traces of a settlement no one remembers.",
+    "cues": ["Pause after times.", "Keep a steady rhythm through the long sentence."]
+  },
+  {
+    "id": "s256",
+    "title": "The hidden cost of flexibility",
+    "level": "C2",
+    "topic": "Work",
+    "mode": "read",
+    "text": "Flexibility at work is generally welcomed, but it carries a hidden cost: when every hour could be working time, it becomes harder to justify any hour that is not.",
+    "cues": ["Pause at the colon.", "Stress hidden and justify."]
+  },
+  {
+    "id": "s257",
+    "title": "Speaking about uncertainty",
+    "level": "C2",
+    "topic": "Health",
+    "mode": "read",
+    "text": "Patients often want a definite diagnosis, while doctors must weigh probabilities. Communicating that uncertainty honestly, without causing unnecessary alarm, is one of the most demanding parts of medical practice.",
+    "cues": ["Contrast definite and probabilities.", "Pause after honestly."]
+  },
+  {
+    "id": "s258",
+    "title": "Stepping back from nature",
+    "level": "C2",
+    "topic": "Environment",
+    "mode": "read",
+    "text": "Rewilding asks a provocative question: what if, instead of managing nature so tightly, we stepped back and allowed natural processes to reshape the land? The answer, in several projects, has been a surprising return of wildlife.",
+    "cues": ["Pause at the colon.", "Stress provocative and surprising."]
+  },
+  {
+    "id": "s259",
+    "title": "Stage sets for tourists",
+    "level": "C2",
+    "topic": "Travel",
+    "mode": "read",
+    "text": "Travel broadens the mind, we are told, but mass tourism can also flatten the places it celebrates. Neighbourhoods become stage sets, and the residents who gave them character are gradually priced out.",
+    "cues": ["Pause after told.", "Stress broadens and flatten."]
+  },
+  {
+    "id": "s260",
+    "title": "Private fortunes, public problems",
+    "level": "C2",
+    "topic": "Money and shopping",
+    "mode": "read",
+    "text": "Generous donations by the very rich are rightly welcomed, yet they raise an uncomfortable question about accountability: should private fortunes decide which public problems receive attention first?",
+    "cues": ["Pause after welcomed.", "Stress accountability."]
+  },
+  {
+    "id": "s261",
+    "title": "Persuasion that does not feel like it",
+    "level": "C2",
+    "topic": "Communication",
+    "mode": "read",
+    "text": "The most effective persuasion rarely feels like persuasion at all. It works by framing a choice so that one option seems natural and the other faintly unreasonable.",
+    "cues": ["Stress rarely and framing.", "Pause after all."]
+  },
+  {
+    "id": "s262",
+    "title": "The notes left out",
+    "level": "C2",
+    "topic": "Hobbies and sport",
+    "mode": "read",
+    "text": "Musicians often say that the notes they leave out matter as much as those they play. A well-placed silence gives the listener time to anticipate, and anticipation is half the pleasure of music.",
+    "cues": ["Stress leave out.", "Pause after anticipate."]
+  },
+  {
+    "id": "s263",
+    "title": "Recipes and memory",
+    "level": "C2",
+    "topic": "Food",
+    "mode": "read",
+    "text": "What we eat is rarely just a matter of taste. Recipes carry memories of migration, scarcity and celebration, which is why a single dish can provoke surprisingly fierce arguments about authenticity.",
+    "cues": ["Pause after taste.", "Stress fierce."]
+  },
+  {
+    "id": "s264",
+    "title": "The promise of merit",
+    "level": "C2",
+    "topic": "Work",
+    "mode": "read",
+    "text": "A meritocracy promises that talent and effort will be rewarded. Its critics point out, however, that those who succeed often credit their own merit while overlooking the advantages that smoothed their path.",
+    "cues": ["Pause after however.", "Stress merit and advantages."]
+  },
+  {
+    "id": "s265",
+    "title": "What data cannot explain",
+    "level": "C2",
+    "topic": "Technology",
+    "mode": "read",
+    "text": "Data can describe what people do with remarkable precision, but it struggles to explain why they do it. Without that understanding, decisions based purely on numbers risk being efficient and wrong at the same time.",
+    "cues": ["Contrast what and why.", "Stress efficient and wrong."]
+  },
+  {
+    "id": "s266",
+    "title": "Learning to judge danger",
+    "level": "C2",
+    "topic": "People and family",
+    "mode": "read",
+    "text": "Children today are supervised more closely than any previous generation. The intention is protective, but some researchers argue that free play, with its small risks, is precisely how children learn to judge danger.",
+    "cues": ["Pause after protective.", "Stress precisely."]
+  },
+  {
+    "id": "s267",
+    "title": "Monuments and memory",
+    "level": "C2",
+    "topic": "Education",
+    "mode": "read",
+    "text": "Monuments tell us less about the past than about the people who chose to build them. Each statue reflects a decision about who deserved to be remembered and, by implication, who did not.",
+    "cues": ["Stress less and implication.", "Pause after them."]
+  },
+  {
+    "id": "s268",
+    "title": "Judging a fish by climbing",
+    "level": "C2",
+    "topic": "Animals",
+    "mode": "read",
+    "text": "Measuring animal intelligence by human standards is a little like judging a fish by its ability to climb a tree. Each species has developed the abilities its environment demanded.",
+    "cues": ["Pause after standards.", "Stress developed."]
+  },
+  {
+    "id": "s269",
+    "title": "The winters we remember",
+    "level": "C2",
+    "topic": "Nature and weather",
+    "mode": "read",
+    "text": "Oddly, we remember the weather of our childhood as more extreme than the records suggest: summers longer, snow deeper. Memory, it seems, prefers a good story to an accurate one.",
+    "cues": ["Pause at the colon.", "Contrast a good story and an accurate one."]
+  },
+  {
+    "id": "s270",
+    "title": "How a house becomes a home",
+    "level": "C2",
+    "topic": "Home and furniture",
+    "mode": "read",
+    "text": "A house becomes a home not through its furniture but through repetition: the same chair by the window, the same creak on the stairs, the familiar sounds of other people moving through the rooms.",
+    "cues": ["Pause at the colon.", "Keep the list flowing."]
+  },
+  {
+    "id": "s271",
+    "title": "The hours lost travelling",
+    "level": "C2",
+    "topic": "Transport",
+    "mode": "read",
+    "text": "Long commutes are one of the few costs people consistently underestimate when choosing where to live. A larger house rarely makes up for the hours lost every week travelling to and from it.",
+    "cues": ["Stress underestimate and rarely.", "Pause after live."]
+  },
+  {
+    "id": "s272",
+    "title": "The engine of science",
+    "level": "C2",
+    "topic": "Education",
+    "mode": "read",
+    "text": "Doubt is often treated as a weakness, but in science it is the engine of progress. A theory earns our confidence only after surviving determined attempts to prove it wrong.",
+    "cues": ["Pause after weakness.", "Stress engine and surviving."]
+  },
+  {
+    "id": "s273",
+    "title": "Experts and beginners",
+    "level": "C2",
+    "topic": "Work",
+    "mode": "read",
+    "text": "The more people learn about a field, the more aware they become of what they do not know. Genuine experts are therefore often more cautious in their claims than confident beginners.",
+    "cues": ["Stress more and cautious.", "Pause after field."]
+  },
+  {
+    "id": "s274",
+    "title": "Suggestion, not statement",
+    "level": "C2",
+    "topic": "Shopping",
+    "mode": "read",
+    "text": "Advertising rarely lies outright; it prefers suggestion. A product is placed beside happiness, freedom or success, and the viewer is left to draw the connection that the advertiser cannot legally state.",
+    "cues": ["Pause at the semicolon.", "Stress suggestion and legally."]
+  },
+  {
+    "id": "s275",
+    "title": "A few kilometres apart",
+    "level": "C2",
+    "topic": "Health",
+    "mode": "read",
+    "text": "Life expectancy can differ by years between neighbourhoods only a few kilometres apart. Such gaps reflect not personal choices alone but housing, income, education and access to care.",
+    "cues": ["Pause after apart.", "Stress alone."]
+  },
+  {
+    "id": "s276",
+    "title": "Can anyone be objective?",
+    "level": "C2",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Discuss whether journalists, historians or scientists can ever be fully objective.",
+    "cues": [
+      "What influences their work?",
+      "Is objectivity still a useful goal?",
+      "How should audiences respond?"
+    ]
+  },
+  {
+    "id": "s277",
+    "title": "How much do we control?",
+    "level": "C2",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Discuss how much control people really have over the course of their lives.",
+    "cues": ["Consider background, chance and choice.", "Give examples.", "Present a nuanced view."]
+  },
+  {
+    "id": "s278",
+    "title": "When AI causes harm",
+    "level": "C2",
+    "topic": "Technology",
+    "mode": "talk",
+    "text": "Discuss who should be responsible when an artificial intelligence system causes harm.",
+    "cues": [
+      "The developers, the users or the owners?",
+      "How should the rules be made?",
+      "Give a realistic example."
+    ]
+  },
+  {
+    "id": "s279",
+    "title": "Exchange or appropriation?",
+    "level": "C2",
+    "topic": "Communication",
+    "mode": "talk",
+    "text": "Discuss where the line lies between cultural exchange and cultural appropriation.",
+    "cues": ["Give examples of each.", "Who should decide?", "Does intention matter?"]
+  },
+  {
+    "id": "s280",
+    "title": "Growth and the planet",
+    "level": "C2",
+    "topic": "Environment",
+    "mode": "talk",
+    "text": "Discuss whether endless economic growth is compatible with protecting the planet.",
+    "cues": ["Present the main arguments.", "Consider alternatives.", "State your position."]
+  },
+  {
+    "id": "s281",
+    "title": "What is education for?",
+    "level": "C2",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Discuss what the main purpose of education should be.",
+    "cues": [
+      "Jobs, citizenship or personal growth?",
+      "How do these conflict?",
+      "How should schools balance them?"
+    ]
+  },
+  {
+    "id": "s282",
+    "title": "A lie to protect feelings",
+    "level": "C2",
+    "topic": "Communication",
+    "mode": "talk",
+    "text": "Discuss whether it is ever right to lie to protect someone's feelings.",
+    "cues": ["Give examples.", "Consider the consequences.", "Where would you draw the line?"]
+  },
+  {
+    "id": "s283",
+    "title": "Reducing inequality",
+    "level": "C2",
+    "topic": "Money and shopping",
+    "mode": "talk",
+    "text": "Discuss the causes of inequality and whether it can be reduced without harming the economy.",
+    "cues": ["Identify the causes.", "Evaluate policies.", "Consider the trade-offs."]
+  },
+  {
+    "id": "s284",
+    "title": "Editing human genes",
+    "level": "C2",
+    "topic": "Health",
+    "mode": "talk",
+    "text": "Discuss the ethical questions raised by changing human genes.",
+    "cues": ["Medical treatment or improvement?", "Who should decide?", "What are the risks?"]
+  },
+  {
+    "id": "s285",
+    "title": "Meaning or income?",
+    "level": "C2",
+    "topic": "Work",
+    "mode": "talk",
+    "text": "Discuss whether work should provide meaning or simply an income.",
+    "cues": [
+      "What do people expect from work?",
+      "Is meaningful work a privilege?",
+      "How has this changed?"
+    ]
+  },
+  {
+    "id": "s286",
+    "title": "Security and privacy",
+    "level": "C2",
+    "topic": "Technology",
+    "mode": "talk",
+    "text": "Discuss the trade-off between public security and personal privacy.",
+    "cues": ["Where is surveillance justified?", "What are the dangers?", "Who should oversee it?"]
+  },
+  {
+    "id": "s287",
+    "title": "Remembering painful history",
+    "level": "C2",
+    "topic": "Education",
+    "mode": "talk",
+    "text": "Discuss how societies should remember painful parts of their history.",
+    "cues": [
+      "Why is remembering important?",
+      "What forms can remembrance take?",
+      "How should disagreements be handled?"
+    ]
+  },
+  {
+    "id": "s288",
+    "title": "Should animals have rights?",
+    "level": "C2",
+    "topic": "Animals",
+    "mode": "talk",
+    "text": "Discuss whether animals should have legal rights.",
+    "cues": [
+      "What would rights mean in practice?",
+      "What are the objections?",
+      "Where do you stand?"
+    ]
+  },
+  {
+    "id": "s289",
+    "title": "What algorithms decide",
+    "level": "C2",
+    "topic": "Technology",
+    "mode": "talk",
+    "text": "Discuss how algorithms shape what people see, think and buy.",
+    "cues": [
+      "Give examples.",
+      "What are the benefits and risks?",
+      "Should algorithms be more transparent?"
+    ]
+  },
+  {
+    "id": "s290",
+    "title": "Is some art better than other art?",
+    "level": "C2",
+    "topic": "Hobbies and sport",
+    "mode": "talk",
+    "text": "Discuss whether some art is objectively better than other art.",
+    "cues": ["What makes art good?", "Is taste purely personal?", "How do experts judge?"]
+  },
+  {
+    "id": "s291",
+    "title": "A global food system",
+    "level": "C2",
+    "topic": "Food",
+    "mode": "talk",
+    "text": "Discuss the cultural and environmental effects of a global food system.",
+    "cues": [
+      "What has been gained?",
+      "What has been lost?",
+      "What would a better system look like?"
+    ]
+  },
+  {
+    "id": "s292",
+    "title": "Leaving and arriving",
+    "level": "C2",
+    "topic": "Travel",
+    "mode": "talk",
+    "text": "Discuss the effects of migration on both the countries people leave and the countries they join.",
+    "cues": [
+      "Consider the economic effects.",
+      "Consider the cultural effects.",
+      "Avoid generalisation."
+    ]
+  },
+  {
+    "id": "s293",
+    "title": "Born or made leaders?",
+    "level": "C2",
+    "topic": "Work",
+    "mode": "talk",
+    "text": "Discuss whether good leaders are born or made.",
+    "cues": ["What qualities matter?", "Can they be learned?", "Give examples."]
+  },
+  {
+    "id": "s294",
+    "title": "Lonely in a crowd",
+    "level": "C2",
+    "topic": "Places in town",
+    "mode": "talk",
+    "text": "Discuss why people can feel lonely in crowded cities.",
+    "cues": ["What causes it?", "How does city design matter?", "What could help?"]
+  },
+  {
+    "id": "s295",
+    "title": "We are what we buy?",
+    "level": "C2",
+    "topic": "Shopping",
+    "mode": "talk",
+    "text": "Discuss how far people's identities are shaped by what they buy.",
+    "cues": ["Give examples.", "Is this new?", "Is it harmful?"]
+  },
+  {
+    "id": "s296",
+    "title": "Who pays for climate damage?",
+    "level": "C2",
+    "topic": "Nature and weather",
+    "mode": "talk",
+    "text": "Discuss who should pay for the damage caused by climate change.",
+    "cues": [
+      "Past responsibility or present ability?",
+      "How should poorer countries be supported?",
+      "Is fairness achievable?"
+    ]
+  },
+  {
+    "id": "s297",
+    "title": "A home or an investment?",
+    "level": "C2",
+    "topic": "Home and furniture",
+    "mode": "talk",
+    "text": "Discuss whether housing should be treated as a human right rather than an investment.",
+    "cues": ["What would change?", "What are the risks?", "What is your view?"]
+  },
+  {
+    "id": "s298",
+    "title": "Trust in science",
+    "level": "C2",
+    "topic": "Health",
+    "mode": "talk",
+    "text": "Discuss why public trust in science varies and how it could be strengthened.",
+    "cues": [
+      "What damages trust?",
+      "What role do the media play?",
+      "What should scientists do differently?"
+    ]
+  },
+  {
+    "id": "s299",
+    "title": "Between generations",
+    "level": "C2",
+    "topic": "People and family",
+    "mode": "talk",
+    "text": "Discuss the tensions between generations and how they could be eased.",
+    "cues": [
+      "Where do generations disagree?",
+      "Are the differences exaggerated?",
+      "What could bring them together?"
+    ]
+  },
+  {
+    "id": "s300",
+    "title": "Too fast to live well?",
+    "level": "C2",
+    "topic": "Daily life",
+    "mode": "talk",
+    "text": "Discuss whether modern life has become too fast, and what we lose as a result.",
+    "cues": [
+      "Give examples of speed in daily life.",
+      "What are the costs?",
+      "Is slowing down realistic?"
+    ]
   }
 ]

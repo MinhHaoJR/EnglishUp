@@ -62,7 +62,7 @@ test('twenty-word groups can be selected with a zero legacy daily limit and resu
   expect(screen.getByRole('heading', { name: words[22].word })).toBeInTheDocument();
   expect(await db.attempts.count()).toBe(1);
   view.unmount();
-}, 15000);
+});
 
 test('skip is guarded against double clicks and a failed save keeps the current word', async () => {
   show();

@@ -47,7 +47,7 @@ test('vocabulary advances a card, schedules it and persists the attempt', async 
   await screen.findByRole('heading', { name: vocabulary[1].word });
   await verifyAttempt('vocabulary');
   expect(await db.reviews.count()).toBe(1);
-}, 12000);
+});
 
 test('large library pages are bounded and search and topic changes return to page one', () => {
   show(<Vocabulary />);

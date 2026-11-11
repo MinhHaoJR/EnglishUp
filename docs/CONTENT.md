@@ -92,7 +92,7 @@ Dictation fields: `id`, `text`, `level`, `topic`. There are 12 original sentence
 
 ## Speaking — speaking.json
 
-Fields: `id`, `title`, `level`, `topic`, `mode`, `text`, `cues`. `mode` is `read` (target text for alignment) or `talk` (topic prompt). `cues` is a nonempty array of speaking tips or guiding questions. Supply at least eight prompts per mode. Topic sessions can be set to 60, 90 or 120 seconds; shorter practice can be saved with a reminder.
+Fields: `id`, `title`, `level`, `topic`, `mode`, `text`, `cues`. `mode` is `read` (target text for alignment) or `talk` (topic prompt). `cues` is a nonempty array of speaking tips or guiding questions. There are 300 prompts, 50 per level from A1 to C2, 25 of each mode. s1–s16 are the first hand-written set; `python scripts/create-speaking-prompts.py` keeps them and writes s17–s300 from one compact line per prompt. Read-aloud texts grow from one or two short sentences at A1 to a short paragraph at C2, and their cues are pronunciation tips (stress, pauses, linking). Topic talks give a task and three guiding points. Titles are unique, because a saved attempt marks a prompt done by its title. Topic sessions can be set to 60, 90 or 120 seconds; shorter practice can be saved with a reminder.
 
 ## Writing — writing.json
 
