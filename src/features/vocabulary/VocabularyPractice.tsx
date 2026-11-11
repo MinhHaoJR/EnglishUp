@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import type { Word } from '../../data/schema';
-import { useApp } from '../../app/store';
 import { useBi, useT, topicVi } from '../../i18n';
 import { Notice, useLive } from '../../components/shared';
 import { SpeakButton } from '../../components/SpeakButton';
@@ -44,7 +43,6 @@ export default function VocabularyPractice({
 }) {
   const bi = useBi();
   const t = useT();
-  const settings = useApp((state) => state.settings);
   const { value: saved, error: readError } = useLive(
     async () => ({
       progress: await db.vocabularyStudy.get(scope),
@@ -517,32 +515,6 @@ export default function VocabularyPractice({
             )}
           </p>
         )}
-      </section>
-      <section className="panel" aria-labelledby="upcoming-title">
-        <h2 id="upcoming-title">{t('upcoming')}</h2>
-        <div className="upcoming-grid">
-          {Array.from({ length: 7 }, (_, index) => {
-            const from = new Date();
-            from.setDate(from.getDate() + index + 1);
-            from.setHours(0, 0, 0, 0);
-            const to = new Date(from);
-            to.setDate(to.getDate() + 1);
-            return (
-              <div key={index}>
-                <span className="muted">
-                  {from.toLocaleDateString(settings.language, { weekday: 'short', day: 'numeric' })}
-                </span>
-                <strong>
-                  {
-                    (saved?.reviews ?? []).filter(
-                      (review) => review.due >= +from && review.due < +to,
-                    ).length
-                  }
-                </strong>
-              </div>
-            );
-          })}
-        </div>
       </section>
     </div>
   );

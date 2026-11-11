@@ -199,29 +199,7 @@ html:lang(vi) h1 {
   margin: 25px auto;
   max-width: 560px;
 }
-.upcoming-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
-}
-.upcoming-grid > div {
-  text-align: center;
-  background: var(--soft);
-  border-radius: 8px;
-  padding: 12px 2px;
-}
-.upcoming-grid strong {
-  display: block;
-  font-size: 1.4rem;
-  margin-top: 8px;
-}
 @media (max-width: 700px) {
-  .upcoming-grid {
-    gap: 4px;
-  }
-  .upcoming-grid .muted {
-    font-size: 0.6rem;
-  }
   .choice-grid {
     grid-template-columns: 1fr;
   }
