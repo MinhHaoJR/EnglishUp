@@ -161,6 +161,24 @@ export const tenseSchema = z.object({
 });
 export type Tense = z.infer<typeof tenseSchema>;
 
+export const guideCategories = {
+  greeting: ['Chào hỏi', 'Greetings'],
+  about: ['Giới thiệu EnglishUp', 'About EnglishUp'],
+  placement: ['Kiểm tra trình độ', 'Level test'],
+  roadmap: ['Lộ trình học', 'Learning paths'],
+  practice: ['Cách luyện tập', 'How to practise'],
+  account: ['Tài khoản và học tập', 'Account and study'],
+} as const satisfies Record<string, readonly [string, string]>;
+/** One answer the AI tutor gives about EnglishUp itself: greetings, the app, the level test, the paths. */
+export const guideSchema = z.object({
+  id: z.string().regex(/^g-[a-z0-9-]+$/),
+  category: z.enum(Object.keys(guideCategories) as [keyof typeof guideCategories]),
+  question: bilingualText,
+  answer: bilingualText,
+  keywords: z.array(z.string().trim().min(1)).default([]),
+});
+export type Guide = z.infer<typeof guideSchema>;
+
 /** Where a learning-path task sends the learner: a practice page, a game, the tutor or the level test. */
 export const roadmapSkills = [
   'vocabulary',

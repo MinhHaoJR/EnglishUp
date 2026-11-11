@@ -62,4 +62,6 @@ export const sourcePath = (sourceType: string) =>
     listening: '/listening',
     writing: '/writing',
     grammar: '/grammar',
+    guide: '/',
+    roadmap: '/roadmap',
   })[sourceType] ?? '/';

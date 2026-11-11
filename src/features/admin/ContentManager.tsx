@@ -8,6 +8,7 @@ import {
   structureGroups,
   type QuizCategory,
   type StructureGroup,
+  guideCategories,
 } from '../../data/schema';
 import { groupLabels } from '../grammar/Grammar';
 import ContentForm, { blankItem } from './ContentForm';
@@ -55,6 +56,13 @@ const kinds: { id: ContentKind; icon: IconName; skill: string; vi: string; en: s
   { id: 'quiz', icon: 'choice', skill: 'grammar', vi: 'Câu hỏi ngữ pháp', en: 'Grammar questions' },
   { id: 'roadmap', icon: 'roadmap', skill: 'reading', vi: 'Lộ trình học', en: 'Learning paths' },
   { id: 'tense', icon: 'grammar', skill: 'grammar', vi: 'Các thì', en: 'Tenses' },
+  {
+    id: 'guide',
+    icon: 'assistant',
+    skill: 'service',
+    vi: 'Hướng dẫn trợ giảng',
+    en: 'Tutor guide',
+  },
 ];
 
 /** One line that names an item in the list, whatever its kind. */
@@ -66,6 +74,7 @@ function label(kind: ContentKind, item: Item) {
   if (kind === 'quiz') return `${String(item.sentence)} → ${String(item.answer)}`;
   if (kind === 'roadmap') return String((item.title as { vi?: string } | undefined)?.vi);
   if (kind === 'tense') return String((item.name as { vi?: string } | undefined)?.vi);
+  if (kind === 'guide') return String((item.question as { vi?: string } | undefined)?.vi);
   if (kind === 'dictation') return String(item.text);
   return String(item.title);
 }
@@ -74,6 +83,7 @@ function label(kind: ContentKind, item: Item) {
 function newId(kind: ContentKind, taken: Set<string>) {
   // New tenses need an id the schema accepts: t- and letters only.
   if (kind === 'tense') return `t-new-${Date.now().toString(36).replace(/[0-9]/g, '')}`;
+  if (kind === 'guide') return `g-new-${Date.now().toString(36)}`;
   if (kind === 'structure') {
     for (let n = 101; n < 1000; n++) if (!taken.has(`s${n}`)) return `s${n}`;
   }
@@ -120,6 +130,16 @@ function grouping(kind: ContentKind) {
       order: Object.keys(quizCategories),
       name: (key: string): [string, string] =>
         [...(quizCategories[key as QuizCategory] ?? [key, key])] as [string, string],
+    };
+  if (kind === 'guide')
+    return {
+      key: (item: Item) => String(item.category),
+      order: Object.keys(guideCategories),
+      name: (key: string): [string, string] =>
+        [...(guideCategories[key as keyof typeof guideCategories] ?? [key, key])] as [
+          string,
+          string,
+        ],
     };
   if (kind === 'tense')
     return {
@@ -229,7 +249,7 @@ export default function ContentManager() {
   // Clusters come from the whole group, so a search keeps each word's real cluster number.
   const groups = useMemo(() => groupsOf(kind, all), [kind, all]);
   const groupWord =
-    kind === 'structure' || kind === 'quiz'
+    kind === 'structure' || kind === 'quiz' || kind === 'guide'
       ? bi('nhóm', 'groups')
       : kind === 'relation' || kind === 'roadmap' || kind === 'tense'
         ? bi('trình độ', 'levels')

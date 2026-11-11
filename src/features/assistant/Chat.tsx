@@ -18,6 +18,8 @@ const sourceLabel = {
   listening: ['Bài nghe', 'Listening'],
   writing: ['Đề viết', 'Writing task'],
   grammar: ['Cấu trúc câu', 'Sentence pattern'],
+  guide: ['Hướng dẫn EnglishUp', 'EnglishUp guide'],
+  roadmap: ['Lộ trình học', 'Learning path'],
 } as Record<string, [string, string]>;
 /** Each source wears its skill line, like the lessons it links to. */
 export const sourceSkill: Record<string, IconName> = {
@@ -26,6 +28,8 @@ export const sourceSkill: Record<string, IconName> = {
   listening: 'listening',
   writing: 'writing',
   grammar: 'grammar',
+  guide: 'assistant',
+  roadmap: 'roadmap',
 };
 
 const suggestions: [string, string][] = [

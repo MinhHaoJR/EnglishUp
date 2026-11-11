@@ -83,6 +83,11 @@ public static class Knowledge
     private record Bilingual(string Vi, string En);
     private record TenseForms(string[] Affirmative, string[] Negative, string[] Question);
     private record TenseUse(string Vi, string En, string Example);
+    private record ContentGuide(string Id, string Category, Bilingual Question, Bilingual Answer, string[]? Keywords);
+    private record RoadmapTask(string Skill, string Level, string Vi, string En);
+    private record RoadmapStage(Bilingual Title, Bilingual Goal, RoadmapTask[] Tasks);
+    private record ContentRoadmap(string Id, string From, string To, int Weeks, Bilingual Title, Bilingual Summary,
+        RoadmapStage[] Stages);
     private record ContentTense(string Id, Bilingual Name, TenseForms Forms, TenseUse[] Uses, string[] Signals, Bilingual Tip);
 
     /// <summary>
@@ -92,7 +97,7 @@ public static class Knowledge
     public static readonly Dictionary<string, string> SourceTypes = new()
     {
         ["reading"] = "reading", ["listening"] = "listening", ["writing"] = "writing", ["structure"] = "grammar", ["tense"] = "grammar",
-        ["word"] = "word",
+        ["word"] = "word", ["guide"] = "guide", ["roadmap"] = "roadmap",
     };
 
     private static readonly JsonSerializerOptions Web = new(JsonSerializerDefaults.Web);
@@ -129,6 +134,22 @@ public static class Knowledge
                     ? new ChunkSource("writing", w.Id, w.Title,
                         $"Writing task: {w.Genre}, {w.Level}, {w.Topic}, {w.MinWords}-{w.MaxWords} words.\n{w.Prompt}\n" +
                         $"Checklist: {string.Join(" ", w.Checklist)}")
+                    : null,
+                // The tutor's guide to EnglishUp itself; both languages and other phrasings help retrieval.
+                "guide" => item.Deserialize<ContentGuide>(Web) is { } g
+                    ? new ChunkSource("guide", g.Id, $"{g.Question.Vi} ({g.Question.En})",
+                        $"EnglishUp guide ({g.Category}). Question: {g.Question.En} / {g.Question.Vi}\n" +
+                        $"Other ways to ask: {string.Join("; ", g.Keywords ?? [])}\n" +
+                        $"Answer (Vietnamese): {g.Answer.Vi}\nAnswer (English): {g.Answer.En}")
+                    : null,
+                // A learning path with every stage's goal and tasks, so "what is in the B1 to B2 path" finds it.
+                "roadmap" => item.Deserialize<ContentRoadmap>(Web) is { } m
+                    ? new ChunkSource("roadmap", m.Id, $"{m.Title.Vi} ({m.From} → {m.To})",
+                        $"EnglishUp learning path {m.From} to {m.To}, about {m.Weeks} weeks: {m.Title.En} ({m.Title.Vi})\n" +
+                        $"{m.Summary.En} {m.Summary.Vi}\n" +
+                        string.Join("\n", m.Stages.Select((s, i) =>
+                            $"Stage {i + 1}: {s.Title.En} ({s.Title.Vi}). Goal: {s.Goal.En} Tasks: " +
+                            string.Join(" ", s.Tasks.Select(t => $"[{t.Skill} {t.Level}] {t.En}")))))
                     : null,
                 // A tense chunk carries both names, so "thì hiện tại hoàn thành" and "present perfect" both find it.
                 "tense" => item.Deserialize<ContentTense>(Web) is { } t

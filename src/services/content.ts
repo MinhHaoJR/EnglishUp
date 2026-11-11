@@ -7,6 +7,7 @@ import {
   readings,
   roadmaps,
   tenses,
+  guides,
   speakingPrompts,
   structures,
   translations,
@@ -20,6 +21,7 @@ import {
   readingSchema,
   roadmapSchema,
   tenseSchema,
+  guideSchema,
   speakingSchema,
   structureSchema,
   translationSchema,
@@ -47,6 +49,7 @@ export const contentKinds = {
   quiz: { schema: quizSchema, items: quizzes },
   roadmap: { schema: roadmapSchema, items: roadmaps },
   tense: { schema: tenseSchema, items: tenses },
+  guide: { schema: guideSchema, items: guides },
 } as const;
 export type ContentKind = keyof typeof contentKinds;
 type Item = { id: string };

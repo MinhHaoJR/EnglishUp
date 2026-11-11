@@ -39,6 +39,7 @@ public static partial class Content
         ["quiz"] = ["level", "category", "sentence", "options", "answer", "explanation"],
         ["roadmap"] = ["from", "to", "weeks", "title", "summary", "stages"],
         ["tense"] = ["order", "group", "level", "name", "forms", "uses", "signals", "tip", "practice"],
+        ["guide"] = ["category", "question", "answer"],
     };
 
     /// <summary>Seed files per kind, in the order the app lists them.</summary>
@@ -56,6 +57,7 @@ public static partial class Content
         ["quiz"] = ["grammar-quiz.json"],
         ["roadmap"] = ["roadmaps.json"],
         ["tense"] = ["tenses.json"],
+        ["guide"] = ["guides.json"],
     };
 
     [GeneratedRegex("^[A-Za-z0-9-]{1,64}$")]

@@ -19,7 +19,7 @@
 
   <!-- Seed data only: the `seed` command copies it into ContentItems, which the app, the race and the assistant read. -->
   <ItemGroup>
-    <Content Include="..\..\src\data\vocabulary.json;..\..\src\data\vocabulary-it.json;..\..\src\data\reading.json;..\..\src\data\listening.json;..\..\src\data\writing.json;..\..\src\data\structures.json;..\..\src\data\dictation.json;..\..\src\data\speaking.json;..\..\src\data\translations.json;..\..\src\data\wordRelations-basic.json;..\..\src\data\wordRelations-advanced.json;..\..\src\data\grammar-quiz.json;..\..\src\data\roadmaps.json;..\..\src\data\vocabulary-phrasal.json;..\..\src\data\vocabulary-collocations.json;..\..\src\data\vocabulary-verbs.json;..\..\src\data\tenses.json" LinkBase="Content" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\src\data\vocabulary.json;..\..\src\data\vocabulary-it.json;..\..\src\data\reading.json;..\..\src\data\listening.json;..\..\src\data\writing.json;..\..\src\data\structures.json;..\..\src\data\dictation.json;..\..\src\data\speaking.json;..\..\src\data\translations.json;..\..\src\data\wordRelations-basic.json;..\..\src\data\wordRelations-advanced.json;..\..\src\data\grammar-quiz.json;..\..\src\data\roadmaps.json;..\..\src\data\vocabulary-phrasal.json;..\..\src\data\vocabulary-collocations.json;..\..\src\data\vocabulary-verbs.json;..\..\src\data\tenses.json;..\..\src\data\guides.json" LinkBase="Content" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

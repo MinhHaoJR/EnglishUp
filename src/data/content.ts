@@ -3,6 +3,7 @@ import type {
   Quiz,
   Roadmap,
   Tense,
+  Guide,
   ListeningLesson,
   ReadingLesson,
   SpeakingPrompt,
@@ -28,3 +29,4 @@ export const translations: Translation[] = [];
 export const quizzes: Quiz[] = [];
 export const roadmaps: Roadmap[] = [];
 export const tenses: Tense[] = [];
+export const guides: Guide[] = [];

@@ -11,6 +11,7 @@ import {
   structureGroups,
   type QuizCategory,
   type StructureGroup,
+  guideCategories,
 } from '../../data/schema';
 import { topicSections } from '../../data/topicSections';
 import { contentKinds, type ContentKind } from '../../services/content';
@@ -277,6 +278,45 @@ const specs: Record<ContentKind, Field[]> = {
         'Câu tiếng Việt (dòng đầu là câu chính, các dòng sau là cách nói khác)',
         'Vietnamese (first line is the prompt, others are accepted alternatives)',
       ],
+      type: 'list',
+      wide: true,
+    },
+  ],
+  guide: [
+    {
+      key: 'category',
+      label: ['Nhóm', 'Group'],
+      type: 'select',
+      options: Object.keys(guideCategories),
+      optionLabel: (c) => [...guideCategories[c as keyof typeof guideCategories]] as Label,
+    },
+    {
+      key: 'question.vi',
+      label: ['Câu hỏi (tiếng Việt)', 'Question (Vietnamese)'],
+      type: 'text',
+      wide: true,
+    },
+    {
+      key: 'question.en',
+      label: ['Câu hỏi (tiếng Anh)', 'Question (English)'],
+      type: 'text',
+      wide: true,
+    },
+    {
+      key: 'answer.vi',
+      label: ['Câu trả lời (tiếng Việt)', 'Answer (Vietnamese)'],
+      type: 'long',
+      wide: true,
+    },
+    {
+      key: 'answer.en',
+      label: ['Câu trả lời (tiếng Anh)', 'Answer (English)'],
+      type: 'long',
+      wide: true,
+    },
+    {
+      key: 'keywords',
+      label: ['Cách hỏi khác (mỗi dòng một)', 'Other ways to ask (one per line)'],
       type: 'list',
       wide: true,
     },
