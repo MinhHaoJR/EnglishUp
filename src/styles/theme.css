@@ -5934,9 +5934,12 @@ html .workspace .tabs button[aria-pressed='true'] {
   font-size: 0.9375rem;
 }
 /* The pill shows focus for the whole box. */
-:is(.chat-widget-panel, .tutor) .chat-composer textarea:focus-visible {
+:is(.chat-widget-panel, .tutor) .chat-composer textarea,
+:is(.chat-widget-panel, .tutor) .chat-composer textarea:is(:hover, :focus-visible) {
   /* craft-ignore: outline-none */
   outline: none;
+  border-color: transparent;
+  box-shadow: none;
 }
 :is(.chat-widget-panel, .tutor) .chat-composer .icon-button {
   flex: none;
