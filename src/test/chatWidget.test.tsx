@@ -55,8 +55,11 @@ it('opens from the corner, sends with Enter and keeps the chat across pages', as
   expect(screen.getByRole('dialog', { name: 'Trợ giảng Tom' })).toBeInTheDocument();
   const box = screen.getByRole('textbox', { name: 'Câu hỏi của bạn' });
   expect(box).toHaveFocus();
+  expect(screen.getByText(/Hỏi mình về từ vựng/)).toBeInTheDocument();
   await userEvent.type(box, 'routine là gì?{Enter}');
   expect(await screen.findByText('Routine là thói quen hằng ngày [1].')).toBeInTheDocument();
+  // Once a question is sent, the welcome steps aside and only the conversation remains.
+  expect(screen.queryByText(/Hỏi mình về từ vựng/)).not.toBeInTheDocument();
   expect(screen.getByRole('link', { name: 'Từ vựng: routine' })).toHaveAttribute(
     'href',
     '/vocabulary',

@@ -307,9 +307,10 @@ export function ChatPanel({
   return (
     <>
       <div className="chat-scroll" ref={scroller}>
+        {/* Once the learner asks, the welcome steps aside and only the conversation remains. */}
         {intro !== undefined ? (
           intro
-        ) : (
+        ) : messages.length === 0 && !busy ? (
           <div className="chat-intro">
             <div className="tom-stage">
               <Sparkle className="tom-star one" />
@@ -335,19 +336,17 @@ export function ChatPanel({
                 'Questions are sent to Google Gemini (free tier; Google may use them to improve its services). Do not enter personal information.',
               )}
             </p>
-            {messages.length === 0 && !busy && (
-              <div className="chat-suggestions">
-                {suggestions.map(([icon, vi, en]) => (
-                  <button key={en} type="button" onClick={() => void chat.submit(bi(vi, en))}>
-                    <SkillIcon skill={icon} size={20} />
-                    <span>{bi(vi, en)}</span>
-                    <SkillIcon skill="chevron" size={18} />
-                  </button>
-                ))}
-              </div>
-            )}
+            <div className="chat-suggestions">
+              {suggestions.map(([icon, vi, en]) => (
+                <button key={en} type="button" onClick={() => void chat.submit(bi(vi, en))}>
+                  <SkillIcon skill={icon} size={20} />
+                  <span>{bi(vi, en)}</span>
+                  <SkillIcon skill="chevron" size={18} />
+                </button>
+              ))}
+            </div>
           </div>
-        )}
+        ) : null}
         <ol className="chat-log" aria-live="polite">
           {messages.map((m, i) => (
             <li key={i} className={`chat-row ${m.role}`}>

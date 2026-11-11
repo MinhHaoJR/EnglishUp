@@ -190,7 +190,8 @@ export default function Assistant() {
         <span className="tutor-skyline" aria-hidden="true" />
       </nav>
 
-      <div className="tutor-stage">
+      {/* While chatting, the sky folds away so the conversation gets the height. */}
+      <div className={empty ? 'tutor-stage' : 'tutor-stage chatting'}>
         <header className="tutor-sky">
           <img
             className="tutor-peek"
