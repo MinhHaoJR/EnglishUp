@@ -3675,7 +3675,473 @@ None of this means memory is generally worthless. But it does suggest that confi
 ? c | What does the writer conclude about confidence and accuracy? | *They are not the same | They are always linked | Confidence guarantees accuracy | The last paragraph explains. | it does suggest that confidence and accuracy are not the same
 """
 
-# MORE C1
+PASSAGES["C1"] += """
+## Can money buy happiness? | MS
+For decades, governments have measured national progress primarily through economic growth. A rising gross domestic product has been treated as evidence that citizens' lives are improving. Yet a growing number of economists and psychologists question whether income is a reliable measure of wellbeing.
+
+Research presents a nuanced picture. Within countries, richer people tend to report higher life satisfaction than poorer people, particularly when incomes are low and additional money helps meet basic needs such as food, housing and healthcare. However, as incomes rise, each additional increase appears to contribute less to happiness. Some studies suggest that beyond a certain level, extra income has only a modest effect on day-to-day emotional wellbeing.
+
+Over time, the relationship becomes even more puzzling. In several wealthy countries, average incomes have increased substantially over recent decades, while reported happiness has remained relatively stable. One explanation is that people compare themselves with others; if everyone becomes richer, relative position changes little. Another is adaptation: people quickly become accustomed to higher living standards, and new possessions soon lose their power to delight.
+
+Other factors appear to matter greatly. Strong relationships, good health, meaningful work, trust in institutions and a sense of control over one's life are consistently associated with wellbeing. Unemployment, loneliness and long commutes are associated with lower satisfaction, often more strongly than differences in income.
+
+In response, some countries have begun to supplement economic indicators with measures of wellbeing, using surveys to assess life satisfaction, health and social connection. Critics warn that happiness is difficult to measure and could be used to justify neglecting material needs. Supporters argue that such measures encourage policies focused on what people actually value.
+? c | When does additional money help happiness most? | *When incomes are low and basic needs are unmet | When people are already rich | Never | The second paragraph explains. | particularly when incomes are low and additional money helps meet basic needs
+? c | What has happened in several wealthy countries over recent decades? | *Incomes rose while reported happiness stayed stable | Happiness doubled | Incomes fell | The third paragraph explains. | average incomes have increased substantially over recent decades, while reported happiness has remained relatively stable.
+? s | What is the term for people quickly becoming used to higher living standards? | adaptation | The third paragraph says so. | Another is adaptation
+? t | Loneliness is associated with lower satisfaction. | T | The fourth paragraph says so. | Unemployment, loneliness and long commutes are associated with lower satisfaction
+? c | What do critics warn about wellbeing measures? | *Happiness is difficult to measure and could justify neglecting material needs | They are too cheap | They are already perfect | The last paragraph explains. | Critics warn that happiness is difficult to measure and could be used to justify neglecting material needs.
+
+## The quiet decline of insects | AN
+Insects rarely attract the attention given to large, charismatic animals such as tigers or whales. Yet they are among the most important organisms on the planet. They pollinate crops and wild plants, recycle nutrients, control pests and form the basis of food chains for birds, fish and mammals.
+
+In recent years, a series of studies has suggested that insect populations in many regions are declining. Some long-term surveys have recorded dramatic falls in the total mass of flying insects in protected areas. Researchers caution, however, that data are uneven: long-term records exist mainly for parts of Europe and North America, and trends vary between species and places. Some insects are thriving, while others are disappearing.
+
+The causes are multiple and interconnected. The conversion of natural habitats into farmland and urban areas removes the plants and nesting sites insects depend on. Intensive agriculture often involves pesticides, some of which harm beneficial insects as well as pests. Climate change alters temperatures and the timing of seasons, and artificial light at night disrupts the behaviour of many nocturnal species.
+
+The consequences could be far-reaching. A large share of crops depends at least partly on animal pollination, and declines in pollinators could affect food production and prices. Birds that feed on insects are also likely to suffer.
+
+Encouragingly, insect populations can recover relatively quickly when conditions improve, because many species reproduce rapidly. Measures such as planting native flowers, reducing pesticide use, leaving areas of gardens and farmland less tidy and protecting habitats can make a significant difference. Scientists emphasise that better monitoring is also needed to understand where and why declines are occurring.
+? c | Why are insects described as important? | *They pollinate plants, recycle nutrients and support food chains | They are large and charismatic | They are easy to study | The first paragraph explains. | They pollinate crops and wild plants, recycle nutrients, control pests and form the basis of food chains
+? c | What do researchers caution about the data? | *Long-term records exist mainly for parts of Europe and North America | The data are complete everywhere | Insects are increasing everywhere | The second paragraph explains. | long-term records exist mainly for parts of Europe and North America
+? t | Some insect species are thriving. | T | The second paragraph says so. | Some insects are thriving, while others are disappearing.
+? s | What at night disrupts many nocturnal species? | artificial light / artificial light at night | The third paragraph says so. | artificial light at night disrupts the behaviour of many nocturnal species.
+? c | Why can insect populations recover relatively quickly? | *Many species reproduce rapidly | Insects never die | Pesticides help them | The last paragraph explains. | because many species reproduce rapidly.
+
+## The science of persuasion | CO
+Advertisers, politicians, salespeople and fundraisers all share a common goal: to persuade people to think or act in particular ways. Psychological research has identified several principles that make persuasion more effective, many of which operate largely outside our conscious awareness.
+
+One is reciprocity. People feel obliged to return favours, even small ones. Charities that include a small gift with a request for donations often receive more money, and customers who receive a free sample may feel inclined to buy.
+
+Another is social proof. When people are uncertain, they look at what others are doing. Messages stating that most guests reuse their hotel towels have been found to increase towel reuse more than messages about environmental benefits alone.
+
+Authority also plays a role. People are more likely to follow advice from individuals perceived as experts, which is why advertisements often feature doctors or scientists. Scarcity is similarly powerful: products described as limited or available for a short time appear more desirable.
+
+Commitment and consistency form a further principle. Once people have made a small commitment, such as signing a petition, they are more likely to agree to larger requests that seem consistent with it.
+
+These principles can be used ethically, for example to encourage healthier behaviour or charitable giving. But they can also be exploited, creating artificial urgency or false impressions of popularity. Understanding them can help people recognise when they are being influenced and make more deliberate decisions. As one researcher noted, the goal is not to become immune to persuasion, which is part of normal social life, but to ensure that our choices genuinely reflect our own interests.
+? s | What principle describes feeling obliged to return favours? | reciprocity | The second paragraph names it. | One is reciprocity.
+? c | What increased towel reuse in hotels more effectively? | *Messages that most guests reuse their towels | Messages about environmental benefits alone | Free towels | The third paragraph explains. | Messages stating that most guests reuse their hotel towels have been found to increase towel reuse
+? c | Why do advertisements often feature doctors or scientists? | *People follow advice from perceived experts | Doctors are cheap to hire | It is required by law | The fourth paragraph explains. | People are more likely to follow advice from individuals perceived as experts
+? t | After a small commitment, people are less likely to agree to larger requests. | F | They are more likely. | they are more likely to agree to larger requests
+? c | According to the researcher, what is the goal? | *Ensuring choices reflect our own interests | Becoming immune to persuasion | Never trusting anyone | The last paragraph explains. | to ensure that our choices genuinely reflect our own interests.
+
+## Opening up science | ED
+Much scientific research is funded by the public, through government grants and universities. Yet for decades, the results have often been published in journals that charge high subscription fees, making them inaccessible to many researchers, teachers, journalists and members of the public. The open science movement seeks to change this.
+
+At its core, open science aims to make research publications, data and methods freely available. Open access journals allow anyone to read articles without payment. Researchers increasingly share their raw data and computer code, enabling others to check their findings or use the data for new studies.
+
+Supporters argue that openness accelerates progress. When data are shared, scientists can build on each other's work more quickly and avoid duplicating experiments. During major public health emergencies, the rapid sharing of genetic data and early results has allowed researchers around the world to collaborate at unprecedented speed.
+
+Openness may also strengthen reliability. In several fields, attempts to reproduce published results have failed surprisingly often. Making data and methods available allows independent researchers to identify errors, and the practice of registering study plans in advance discourages selective reporting of positive results.
+
+However, the transition raises challenges. Many open access journals cover their costs by charging authors fees, which can be prohibitive for researchers in poorer countries or less well-funded fields. Sharing data involving human participants requires careful protection of privacy. Some researchers also worry that others may benefit from data they spent years collecting without receiving appropriate credit.
+
+Despite these difficulties, funding agencies increasingly require the research they support to be openly available, suggesting that open science is becoming the norm rather than the exception.
+? c | Why were many research results inaccessible? | *Journals charged high subscription fees | They were secret | They were not written down | The first paragraph explains. | published in journals that charge high subscription fees
+? c | What does open science aim to make freely available? | *Publications, data and methods | Only equipment | Only funding | The second paragraph explains. | open science aims to make research publications, data and methods freely available.
+? t | Attempts to reproduce published results have always succeeded. | F | They have failed surprisingly often. | attempts to reproduce published results have failed surprisingly often.
+? s | Who may find author fees prohibitive? | researchers in poorer countries / researchers in poorer countries or less well-funded fields | The fifth paragraph says so. | can be prohibitive for researchers in poorer countries or less well-funded fields.
+? c | What suggests open science is becoming the norm? | *Funding agencies increasingly require open availability | Journals are closing | Scientists refuse to share | The last paragraph explains. | funding agencies increasingly require the research they support to be openly available
+
+## Watching the smart city | TE
+Across the world, cities are installing networks of sensors, cameras and data systems to manage traffic, energy, waste and public safety more efficiently. These so-called smart cities promise cleaner air, shorter journeys and better services. Traffic lights can adjust to real-time congestion, bins can signal when they need emptying and streetlights can dim when streets are empty.
+
+The benefits can be substantial. Data on traffic flows can help planners redesign dangerous junctions, and monitoring of water networks can detect leaks quickly. In some cities, smart systems have reduced energy consumption and response times for emergency services.
+
+However, the same technologies raise serious concerns about privacy and surveillance. Cameras equipped with facial recognition can identify individuals in public spaces, and data from transport cards, phones and sensors can reveal detailed patterns of people's movements. Critics warn that such information could be misused by authorities to monitor protesters or by companies to target advertising.
+
+There are also questions about control. Smart city projects are often developed in partnership with large technology companies. Citizens may not know what data is collected, how long it is stored or who has access to it. If critical infrastructure depends on systems owned by private firms, cities may become dependent on those companies.
+
+Several cities have responded by adopting principles of data governance. These include collecting only the data necessary for a specific purpose, anonymising information where possible, publishing details of how systems work and involving residents in decisions. Some have banned facial recognition by public agencies altogether.
+
+The debate highlights a broader point: technology can make cities more efficient, but whether it makes them better places to live depends on democratic choices about how it is used.
+? c | What can smart traffic lights do? | *Adjust to real-time congestion | Issue fines automatically | Turn off at night | The first paragraph explains. | Traffic lights can adjust to real-time congestion
+? c | What privacy concern do critics raise? | *Data could reveal detailed patterns of movement and be misused | Sensors are too expensive | Cameras break easily | The third paragraph explains. | can reveal detailed patterns of people's movements.
+? t | Citizens always know what data is collected about them. | F | They may not know. | Citizens may not know what data is collected
+? s | What have some cities banned public agencies from using? | facial recognition | The fifth paragraph says so. | Some have banned facial recognition by public agencies altogether.
+? c | According to the writer, what determines whether technology makes cities better? | *Democratic choices about its use | The number of sensors | Private companies alone | The last paragraph explains. | depends on democratic choices about how it is used.
+
+## Small loans, big hopes | MS
+For much of history, people living in poverty have had little access to formal banking. Without collateral or credit histories, they could not obtain loans from banks and often relied on informal moneylenders who charged extremely high interest rates. In the late twentieth century, microfinance emerged as a potential solution.
+
+Microfinance institutions provide small loans, often to women, to start or expand small businesses such as tailoring, food stalls or livestock farming. Many programmes rely on group lending, in which borrowers form small groups and share responsibility for repayment. Social pressure and mutual support within the group help ensure high repayment rates, even without collateral.
+
+Early enthusiasm was enormous. Microfinance was celebrated as a way to lift millions out of poverty while remaining financially sustainable, and its pioneers received international recognition.
+
+Subsequent research, however, has produced more modest conclusions. Several rigorous studies comparing communities with and without access to microloans found that, while borrowers often invested in businesses and gained flexibility in managing their finances, average increases in income and consumption were small. Microfinance did not, on its own, transform the lives of most borrowers.
+
+Problems have also emerged. In some regions, rapid commercial expansion led to over-indebtedness, with borrowers taking multiple loans to repay earlier ones. High interest rates charged by some lenders attracted criticism.
+
+Nevertheless, microfinance has had important benefits. Access to savings accounts and insurance can help poor households cope with emergencies, and some evidence suggests that financial services can strengthen women's economic independence. Many experts now view microfinance as one useful tool among many, rather than a cure for poverty.
+? c | Why could people in poverty not get bank loans? | *They lacked collateral and credit histories | Banks were closed | They didn't want loans | The first paragraph explains. | Without collateral or credit histories, they could not obtain loans from banks
+? s | What lending model has borrowers share responsibility in groups? | group lending | The second paragraph names it. | Many programmes rely on group lending
+? c | What did rigorous studies find about average income increases? | *They were small | They were enormous | Incomes fell sharply | The fourth paragraph explains. | average increases in income and consumption were small.
+? t | Rapid commercial expansion led to over-indebtedness in some regions. | T | The fifth paragraph says so. | rapid commercial expansion led to over-indebtedness
+? c | How do many experts now view microfinance? | *As one useful tool among many | As a cure for poverty | As completely useless | The last paragraph explains. | as one useful tool among many, rather than a cure for poverty.
+
+## A tired society | HE
+Sleep is often the first thing people sacrifice when life becomes busy. Long working hours, commuting, family responsibilities and evening screen use all compete with time in bed. Surveys in many countries suggest that a substantial proportion of adults regularly sleep less than the seven hours that health experts generally recommend.
+
+The consequences extend far beyond feeling tired. Research has linked chronic sleep deprivation to a range of health problems, including obesity, diabetes, cardiovascular disease and weakened immunity. Sleep also plays a vital role in mental health and cognitive function. During sleep, the brain consolidates memories and clears metabolic waste, and insufficient sleep impairs attention, judgement and emotional regulation.
+
+The effects are not only individual. Tired workers are less productive and more prone to errors, and drowsy driving contributes to a significant number of road accidents. Some economic analyses estimate that insufficient sleep costs countries considerable sums in lost productivity.
+
+Part of the problem is cultural. In many workplaces, long hours and constant availability are associated with commitment, while sleep may be seen as a sign of weakness. Technology has blurred the boundaries between work and home, with emails and messages arriving late at night.
+
+Changing this requires action at multiple levels. Individuals can adopt consistent sleep schedules, limit caffeine later in the day and reduce exposure to bright screens before bed. Employers can discourage out-of-hours communication and offer flexible working. Some health experts argue that sleep should be treated as a public health priority, alongside nutrition and exercise, rather than as a luxury.
+? s | How many hours of sleep do health experts generally recommend? | seven hours / seven / 7 | The first paragraph says so. | less than the seven hours that health experts generally recommend.
+? c | Which health problems has chronic sleep deprivation been linked to? | *Obesity, diabetes and cardiovascular disease | Broken bones | Better immunity | The second paragraph explains. | including obesity, diabetes, cardiovascular disease and weakened immunity.
+? c | What does the brain do during sleep? | *Consolidates memories and clears metabolic waste | Stops working completely | Produces more stress | The second paragraph explains. | the brain consolidates memories and clears metabolic waste
+? t | In many workplaces, sleep may be seen as a sign of weakness. | T | The fourth paragraph says so. | sleep may be seen as a sign of weakness.
+? c | How do some health experts argue sleep should be treated? | *As a public health priority | As a luxury | As a private matter only | The last paragraph explains. | sleep should be treated as a public health priority
+
+## Letting nature return | EN
+For much of the twentieth century, conservation focused on protecting particular species and carefully managing habitats. In recent decades, a different approach has gained popularity: rewilding. Instead of intensively managing landscapes, rewilding aims to restore natural processes and allow ecosystems to regulate themselves.
+
+Rewilding projects take many forms. Some involve reintroducing species that have disappeared from an area, such as beavers, wolves or bison. Others focus on removing dams so rivers can flow freely, allowing farmland to return to forest, or reconnecting fragmented habitats.
+
+Supporters point to striking results. Beavers, for example, build dams that slow water flow, create wetlands and reduce flooding downstream, while providing habitats for many other species. In some areas, the return of large predators has altered the behaviour of grazing animals, allowing vegetation to recover.
+
+Rewilding also promises benefits for people. Restored wetlands and forests can store carbon, improve water quality and attract nature tourism, providing new economic opportunities for rural communities.
+
+However, rewilding is controversial. Farmers worry about predators attacking livestock and about losing productive land. Some communities feel that rewilding projects are imposed by outsiders who do not depend on the land for their livelihoods. Scientists also debate how far ecosystems can return to a "natural" state, given that landscapes have been shaped by humans for thousands of years and the climate is changing.
+
+Successful projects increasingly emphasise collaboration with local communities, compensation for losses and clear long-term goals. Rewilding, its advocates argue, is not about excluding people from nature but about creating landscapes where both can thrive.
+? c | What does rewilding aim to do? | *Restore natural processes so ecosystems regulate themselves | Manage every species closely | Build more farms | The first paragraph explains. | rewilding aims to restore natural processes and allow ecosystems to regulate themselves.
+? c | How do beavers help reduce flooding? | *Their dams slow water flow and create wetlands | They drink a lot of water | They remove trees from rivers | The third paragraph explains. | build dams that slow water flow, create wetlands and reduce flooding downstream
+? t | Restored wetlands and forests can store carbon. | T | The fourth paragraph says so. | Restored wetlands and forests can store carbon
+? s | What do farmers worry about regarding predators? | predators attacking livestock / attacks on livestock | The fifth paragraph says so. | Farmers worry about predators attacking livestock
+? c | What do successful projects increasingly emphasise? | *Collaboration with local communities | Excluding people from nature | Removing all farms | The last paragraph explains. | Successful projects increasingly emphasise collaboration with local communities
+
+## Reading our genes | HE
+A few decades ago, sequencing a single human genome required years of work and enormous sums of money. Today, consumers can send a saliva sample to a company and receive information about their ancestry and certain genetic health risks within weeks, often for a modest fee.
+
+Genetic testing offers real benefits. For people with a family history of certain conditions, tests can identify inherited risks, allowing earlier screening and preventive measures. Genetic information can also help doctors choose medications more likely to work for a particular patient, an approach known as personalised medicine.
+
+However, the growth of genetic testing raises complex questions. Many conditions are influenced by numerous genes as well as lifestyle and environmental factors. A test may indicate a slightly increased risk without providing clear guidance, leading to anxiety or false reassurance. Without professional interpretation, consumers may misunderstand results.
+
+Privacy is another major concern. Genetic data is uniquely personal and also reveals information about relatives, who have not consented to testing. Questions arise about how companies store data, whether they share it with researchers or other organisations, and how it could be used by insurers or employers. Some countries have introduced laws preventing genetic discrimination, but protections vary considerably.
+
+There are also ethical dilemmas within families. Should people be told about genetic risks for which no treatment exists? Should parents test children for conditions that may only appear in adulthood?
+
+Experts generally recommend that people consider these issues before testing, read privacy policies carefully and seek advice from genetic counsellors, who can help interpret results and support individuals in making informed decisions.
+? c | How has genetic testing changed over recent decades? | *It has become fast and relatively cheap | It has become slower | It is now illegal | The first paragraph explains. | consumers can send a saliva sample to a company
+? s | What is the approach of choosing medications based on genetics called? | personalised medicine | The second paragraph names it. | an approach known as personalised medicine.
+? c | Why might test results cause anxiety or false reassurance? | *Many conditions depend on many genes and lifestyle factors | Tests are always wrong | Doctors refuse to explain them | The third paragraph explains. | Many conditions are influenced by numerous genes as well as lifestyle and environmental factors.
+? t | Genetic data reveals information only about the person tested. | F | It also reveals information about relatives. | also reveals information about relatives
+? c | Who can help interpret results, according to experts? | *Genetic counsellors | Insurance companies | Employers | The last paragraph explains. | seek advice from genetic counsellors
+
+## Meat without animals | FD
+Global demand for meat continues to rise as populations grow and incomes increase. Yet livestock farming has a substantial environmental footprint, using large areas of land and water and contributing significantly to greenhouse gas emissions. It also raises concerns about animal welfare. In response, scientists and companies are developing alternatives, including meat grown from animal cells.
+
+Cultivated meat is produced by taking a small sample of cells from an animal and growing them in nutrient-rich conditions in large containers called bioreactors. The cells multiply and can be formed into products such as minced meat or chicken pieces. Because no animals need to be raised and slaughtered, supporters believe the technology could dramatically reduce land use and animal suffering.
+
+Several challenges remain, however. Producing cultivated meat at scale is technically difficult and currently expensive. The process requires significant energy, and its environmental benefits depend heavily on whether that energy comes from renewable sources. Some life-cycle analyses suggest that, if powered by fossil fuels, cultivated meat could have a larger climate impact than some conventional meat.
+
+Recreating the texture and flavour of whole cuts, such as steak, is particularly challenging, because these involve complex structures of muscle, fat and connective tissue.
+
+Consumer acceptance is also uncertain. Surveys show mixed attitudes: some people are enthusiastic, while others are uneasy about eating food produced in laboratories or doubt that it is natural.
+
+Regulators in a few countries have approved the sale of cultivated meat products. Many experts see it as one part of a broader transition that may also include plant-based alternatives and reduced meat consumption, rather than a single solution.
+? c | What is cultivated meat grown in? | *Bioreactors | Fields | Greenhouses | The second paragraph explains. | in large containers called bioreactors.
+? c | What do supporters believe the technology could reduce? | *Land use and animal suffering | The price of vegetables | Water in rivers | The second paragraph explains. | could dramatically reduce land use and animal suffering.
+? t | If powered by fossil fuels, cultivated meat could have a larger climate impact than some conventional meat. | T | The third paragraph says so. | if powered by fossil fuels, cultivated meat could have a larger climate impact than some conventional meat.
+? s | Why are whole cuts like steak particularly challenging? | they involve complex structures of muscle, fat and connective tissue / complex structures | The fourth paragraph explains. | these involve complex structures of muscle, fat and connective tissue.
+? c | How do many experts see cultivated meat? | *As one part of a broader transition | As the only solution | As a failure | The last paragraph explains. | as one part of a broader transition
+
+## Cities of newcomers | PT
+Cities have always been shaped by migration. Throughout history, people have moved from the countryside to urban centres, and from one country to another, in search of work, safety and opportunity. Today, many of the world's largest cities have significant populations born elsewhere.
+
+Migrants contribute to urban life in many ways. They fill labour shortages in sectors such as healthcare, construction, hospitality and agriculture, and they are often more likely than native-born residents to start businesses. Neighbourhoods shaped by migration frequently become centres of cultural exchange, known for their restaurants, markets and festivals.
+
+Migration also creates challenges. Rapid population growth can strain housing, schools and public services. Newcomers may face language barriers, discrimination and difficulties in having their qualifications recognised, which can force skilled professionals into low-paid work. In some cities, migrants become concentrated in poorer neighbourhoods with limited opportunities.
+
+Public attitudes vary widely and can be shaped by economic conditions, media coverage and political debate. Research suggests that direct contact between different groups, through workplaces, schools and community activities, tends to reduce prejudice.
+
+Many cities have developed integration policies. These include language classes, programmes to recognise foreign qualifications, support for migrant entrepreneurs and efforts to ensure fair access to housing. Some cities also involve migrant communities directly in local decision-making.
+
+Integration is increasingly understood as a two-way process. It requires newcomers to adapt to their new society, but also requires that society to adjust, ensuring that institutions are accessible and that diversity is recognised as a source of strength rather than a threat.
+? c | In which sectors do migrants often fill labour shortages? | *Healthcare, construction, hospitality and agriculture | Only technology | Only government | The second paragraph lists them. | such as healthcare, construction, hospitality and agriculture
+? c | Why may skilled migrants end up in low-paid work? | *Their qualifications may not be recognised | They prefer it | They lack experience | The third paragraph explains. | difficulties in having their qualifications recognised, which can force skilled professionals into low-paid work.
+? t | Research suggests contact between different groups tends to increase prejudice. | F | It tends to reduce prejudice. | tends to reduce prejudice.
+? s | Name one integration policy mentioned. | language classes / programmes to recognise foreign qualifications / support for migrant entrepreneurs | The fifth paragraph lists them. | These include language classes, programmes to recognise foreign qualifications
+? c | How is integration increasingly understood? | *As a two-way process | As the newcomers' job alone | As unnecessary | The last paragraph explains. | Integration is increasingly understood as a two-way process.
+
+## Does homework help? | ED
+Few aspects of school life generate as much debate among parents, teachers and students as homework. Supporters argue that it reinforces learning, develops independent study skills and allows parents to see what their children are learning. Critics argue that it causes stress, reduces time for play and family life, and widens inequality.
+
+Research suggests that the answer depends heavily on age. For secondary school students, moderate amounts of homework are generally associated with higher achievement, although the benefits appear to diminish beyond a certain point. For younger children, the evidence of academic benefit is much weaker. Some researchers argue that in primary school, reading for pleasure and play may be more valuable than worksheets.
+
+The type of homework also matters. Tasks that are meaningful, clearly linked to classroom learning and appropriately challenging appear more effective than repetitive exercises assigned out of habit. Feedback is important too: homework that is never checked or discussed may do little to improve learning.
+
+Homework can also reinforce inequality. Students from wealthier families often have quiet places to study, access to technology and parents able to help, while others may care for siblings, work part-time or lack internet access. When homework counts heavily towards grades, these differences can affect results.
+
+Some schools have responded by reducing homework, especially for younger pupils, or by providing supervised study time at school. Others have shifted to "flipped" approaches, in which students watch short explanations at home and practise skills in class with teacher support.
+
+Most researchers conclude that the question is not whether homework is good or bad, but how much, what kind and for whom.
+? c | According to research, what does the effect of homework depend heavily on? | *Age | The colour of the paper | The time of year | The second paragraph explains. | Research suggests that the answer depends heavily on age.
+? c | What may be more valuable than worksheets in primary school? | *Reading for pleasure and play | More exams | Longer school days | The second paragraph explains. | reading for pleasure and play may be more valuable than worksheets.
+? t | Homework that is never checked may do little to improve learning. | T | The third paragraph says so. | homework that is never checked or discussed may do little to improve learning.
+? s | What approach has students watch explanations at home and practise in class? | flipped / flipped approaches / the flipped approach | The fifth paragraph names it. | Others have shifted to "flipped" approaches
+? c | What do most researchers conclude? | *The question is how much, what kind and for whom | Homework should be banned | Homework always helps | The last paragraph explains. | how much, what kind and for whom.
+
+## Switching off | TE
+For many people, the smartphone is the first thing they check in the morning and the last thing they see at night. Constant connectivity offers convenience, information and social contact, but it has also prompted a growing interest in "digital detox", deliberately reducing or temporarily stopping the use of digital devices.
+
+Advocates argue that time away from screens can improve sleep, concentration and relationships. Some people report feeling calmer and more present after spending a weekend without notifications. Retreats, holidays and apps that block distracting websites have emerged to meet demand.
+
+Research on the effects of digital detox is mixed. Some studies have found improvements in wellbeing when participants reduced social media use, particularly when they had previously used it heavily. Others have found little lasting effect, or that abrupt abstinence led to anxiety about missing important information. The benefits seem to depend on how people use technology and why they want to reduce it.
+
+Critics of the detox concept argue that framing technology as a toxin to be periodically removed is unhelpful. Digital tools are deeply integrated into work, education and social life, and complete withdrawal is unrealistic for most people. Short breaks may simply be followed by a return to the same habits.
+
+Many experts therefore favour a more sustainable approach sometimes called digital wellbeing. This involves examining which uses of technology add value and which cause stress, and making ongoing changes: turning off non-essential notifications, keeping phones out of bedrooms, scheduling time for focused work and prioritising face-to-face interaction.
+
+The aim is not to reject technology but to use it intentionally, so that it serves people's goals rather than controlling their attention.
+? c | What is a digital detox? | *Deliberately reducing or stopping the use of digital devices | Cleaning a phone | Buying a new device | The first paragraph explains. | deliberately reducing or temporarily stopping the use of digital devices.
+? c | What did some studies find about abrupt abstinence? | *It led to anxiety about missing information | It always improved wellbeing | It had no effect on anyone | The third paragraph explains. | abrupt abstinence led to anxiety about missing important information.
+? t | Critics consider complete withdrawal realistic for most people. | F | They consider it unrealistic. | complete withdrawal is unrealistic for most people.
+? s | What is the more sustainable approach called? | digital wellbeing | The fifth paragraph names it. | sometimes called digital wellbeing.
+? c | What is the aim, according to the writer? | *To use technology intentionally | To reject technology | To use technology more | The last paragraph explains. | The aim is not to reject technology but to use it intentionally
+
+## Creativity in later life | PF
+Popular culture often associates creativity and innovation with youth. Stories of young entrepreneurs and prodigies dominate the media, and many people assume that creative abilities decline with age. Research, however, presents a more varied picture.
+
+Studies of scientists, inventors and artists suggest that creativity can peak at very different ages depending on the type of work. Fields that reward bold conceptual leaps, such as theoretical mathematics, may favour younger people. By contrast, fields that depend on accumulated knowledge and experience, such as history, philosophy and many forms of writing, often see significant achievements later in life.
+
+Some researchers distinguish between two types of creators. "Conceptual" innovators make sudden, radical breakthroughs, often early in their careers. "Experimental" innovators work through gradual trial and error, refining their ideas over many years, and their most important work frequently comes later.
+
+Ageing also brings cognitive changes. While processing speed and some aspects of memory may decline, knowledge, vocabulary and the ability to see connections between different areas often continue to develop. Older adults may also be less concerned with others' opinions, allowing them to take creative risks.
+
+Engaging in creative activities appears to benefit older people themselves. Programmes involving music, painting, writing or dance have been associated with improved mood, social connection and cognitive health.
+
+Societies are ageing rapidly, and these findings challenge assumptions that older people are primarily recipients of care. Many continue to contribute ideas, art and innovation well into their seventies and beyond, provided they have opportunities and encouragement to do so.
+? c | What does popular culture often associate with creativity? | *Youth | Old age | Wealth | The first paragraph explains. | Popular culture often associates creativity and innovation with youth.
+? c | In which fields are significant achievements often later in life? | *Fields depending on accumulated knowledge, like history | Theoretical mathematics | Sports | The second paragraph explains. | fields that depend on accumulated knowledge and experience, such as history, philosophy and many forms of writing
+? s | What kind of innovators work through gradual trial and error? | experimental innovators / experimental | The third paragraph names them. | "Experimental" innovators work through gradual trial and error
+? t | Knowledge and vocabulary usually decline quickly with age. | F | They often continue to develop. | knowledge, vocabulary and the ability to see connections between different areas often continue to develop.
+? c | What have creative programmes for older people been associated with? | *Improved mood, social connection and cognitive health | Higher stress | Lower social contact | The fifth paragraph explains. | have been associated with improved mood, social connection and cognitive health.
+
+## Science needs failure | ED
+Scientific progress is often presented as a series of brilliant discoveries. Textbooks and news reports highlight breakthroughs, while the many experiments that failed are rarely mentioned. Yet failure is not an unfortunate side effect of science; it is central to how science works.
+
+The scientific method depends on testing ideas that may turn out to be wrong. A hypothesis is valuable precisely because it can be disproved. When an experiment fails to produce the expected result, it can reveal flaws in theories, prompt new questions and lead researchers in unexpected directions. Several important discoveries, including some medicines, emerged from experiments designed for entirely different purposes.
+
+However, the culture of research does not always value failure. Academic careers often depend on publishing in prestigious journals, which have traditionally favoured positive and surprising results. Studies that find no effect are less likely to be published, a problem known as publication bias. As a result, the scientific record may overstate the evidence for certain findings, and other researchers may waste time repeating experiments that have already failed.
+
+Pressure to produce positive results can also encourage questionable practices, such as selectively reporting data or analysing results in multiple ways until something appears significant.
+
+In response, reforms are spreading. Some journals now accept studies based on their methods before results are known, guaranteeing publication regardless of outcome. Databases allow researchers to register studies in advance and report negative findings. Some funders actively support replication studies.
+
+Recognising the value of failure, advocates argue, would make science more honest, efficient and ultimately more successful.
+? c | Why is a hypothesis valuable, according to the text? | *It can be disproved | It is always correct | It is easy to publish | The second paragraph explains. | A hypothesis is valuable precisely because it can be disproved.
+? s | What is the problem of studies with no effect being less likely to be published called? | publication bias | The third paragraph names it. | a problem known as publication bias.
+? c | What can pressure to produce positive results encourage? | *Questionable practices like selective reporting | More honest research | Fewer publications | The fourth paragraph explains. | can also encourage questionable practices, such as selectively reporting data
+? t | Some journals now accept studies based on their methods before results are known. | T | The fifth paragraph says so. | Some journals now accept studies based on their methods before results are known
+? c | What do advocates argue recognising failure would do? | *Make science more honest, efficient and successful | Slow science down | Reduce funding | The last paragraph explains. | would make science more honest, efficient and ultimately more successful.
+
+## The right to repair | SH
+When a smartphone screen cracks or a washing machine stops working, many consumers face a frustrating choice: pay a high price for official repairs or replace the product entirely. Increasingly, people are demanding a "right to repair", the ability to fix the products they own or have them fixed by independent repairers at reasonable cost.
+
+Advocates argue that many modern products are deliberately difficult to repair. Components may be glued rather than screwed together, special tools may be required, and manufacturers may restrict access to spare parts, manuals and diagnostic software. Some products contain software that prevents unofficial replacement parts from working.
+
+These practices have environmental consequences. Electronic waste is one of the fastest-growing waste streams in the world, and much of it is not properly recycled. Extending the life of products through repair reduces the need for new manufacturing, which consumes energy and raw materials.
+
+Manufacturers have raised several objections. They argue that unauthorised repairs could compromise safety, for example with batteries, and that sharing technical information could expose intellectual property or create security risks. They also note that official repair networks guarantee quality.
+
+Nevertheless, the right-to-repair movement has achieved significant progress. Several jurisdictions have passed laws requiring manufacturers to make spare parts and repair information available for a certain number of years. Some companies now sell repair kits directly to consumers, and repair scores rating how easily products can be fixed have been introduced in some markets.
+
+The movement reflects a broader shift in attitudes towards consumption, away from disposability and towards products designed to last.
+? c | What does the right to repair mean? | *Being able to fix your products or use independent repairers at reasonable cost | Free products | Returning products for any reason | The first paragraph explains. | the ability to fix the products they own or have them fixed by independent repairers at reasonable cost.
+? c | How may products be made difficult to repair? | *Components glued and access to parts restricted | Using bright colours | Selling them cheaply | The second paragraph explains. | Components may be glued rather than screwed together
+? t | Electronic waste is one of the fastest-growing waste streams. | T | The third paragraph says so. | Electronic waste is one of the fastest-growing waste streams in the world
+? s | What safety concern do manufacturers raise about unauthorised repairs? | batteries / safety with batteries | The fourth paragraph gives the example. | for example with batteries
+? c | What does the movement reflect? | *A shift away from disposability towards durable products | More consumption | Less interest in technology | The last paragraph explains. | away from disposability and towards products designed to last.
+
+## Travelling alone | TR
+Solo travel, once considered unusual, has become increasingly popular. Travel companies report growing numbers of people booking trips alone, from students taking gap years to retirees exploring new countries. Women make up a significant share of solo travellers.
+
+People travel alone for many reasons. Some simply cannot find companions whose schedules, budgets or interests match their own. Others actively choose independence, valuing the freedom to set their own pace, change plans spontaneously and pursue their own interests without compromise.
+
+Many solo travellers describe the experience as transformative. Without a companion to rely on, they must navigate unfamiliar places, solve problems and make decisions independently, which can build confidence and resilience. Travelling alone also often makes people more open to meeting others, whether fellow travellers or local residents.
+
+There are, however, challenges. Loneliness can be a problem, particularly during long trips or at mealtimes. Solo travellers often pay more, since accommodation is frequently priced per room rather than per person. Safety is a significant concern, especially for women travelling in some destinations, and solo travellers lack someone to help in emergencies.
+
+The industry has responded with services designed for solo travellers, including group tours for people travelling alone, accommodation without supplements for single occupancy and social events in hostels. Online communities allow travellers to share advice and arrange to meet.
+
+Experienced solo travellers recommend careful preparation: researching destinations, sharing itineraries with family or friends, keeping digital copies of important documents and trusting instincts in unfamiliar situations. Many argue that, with sensible precautions, the rewards of travelling alone far outweigh the risks.
+? c | Why do some people travel alone? | *They cannot find companions with matching schedules or interests | They are not allowed to travel with others | It is always cheaper | The second paragraph explains. | Some simply cannot find companions whose schedules, budgets or interests match their own.
+? c | How can solo travel build confidence? | *Travellers must solve problems and make decisions independently | Travellers follow a guide all the time | Travellers stay at home | The third paragraph explains. | they must navigate unfamiliar places, solve problems and make decisions independently
+? t | Solo travellers often pay less for accommodation. | F | They often pay more. | Solo travellers often pay more
+? s | What do experienced solo travellers recommend sharing with family or friends? | itineraries / their itineraries | The last paragraph says so. | sharing itineraries with family or friends
+? c | What do many solo travellers argue? | *The rewards outweigh the risks with sensible precautions | Solo travel is too dangerous | Solo travel is boring | The last paragraph explains. | the rewards of travelling alone far outweigh the risks.
+
+## Doing well by doing good? | WK
+In the past, many people believed that the sole responsibility of a business was to make profits for its shareholders while obeying the law. Today, companies are increasingly expected to consider their impact on employees, communities and the environment. This expectation is often described as corporate social responsibility.
+
+Companies engage in social responsibility in many ways: reducing carbon emissions, ensuring fair working conditions in supply chains, supporting local charities or encouraging employees to volunteer. Many publish annual reports describing their environmental and social performance.
+
+Supporters argue that responsible behaviour benefits companies themselves. Consumers, particularly younger ones, increasingly prefer brands that share their values. Employees may be more motivated and loyal when they believe their employer contributes positively to society. Investors are paying growing attention to environmental and social risks, which can affect long-term profitability.
+
+Critics, however, question how much of this activity reflects genuine commitment. Some companies are accused of "greenwashing", promoting minor environmental initiatives while continuing harmful practices elsewhere. Social responsibility reports are often voluntary and difficult to verify, and companies may highlight positive stories while omitting negative ones.
+
+Others argue that relying on voluntary corporate action is insufficient. They contend that serious problems, such as climate change and labour exploitation, require binding regulations rather than goodwill.
+
+In response, some governments are introducing mandatory reporting requirements and due diligence laws, obliging companies to identify and address human rights and environmental risks in their supply chains. The debate increasingly centres not on whether companies have social responsibilities, but on how they can be held accountable for meeting them.
+? c | What was the traditional view of business responsibility? | *To make profits for shareholders while obeying the law | To support charities | To protect the environment | The first paragraph explains. | the sole responsibility of a business was to make profits for its shareholders while obeying the law.
+? c | Why might responsible behaviour benefit companies? | *Consumers and employees prefer companies that share their values | It reduces taxes | It is required everywhere | The third paragraph explains. | Consumers, particularly younger ones, increasingly prefer brands that share their values.
+? s | What is promoting minor environmental initiatives while continuing harmful practices called? | greenwashing | The fourth paragraph names it. | Some companies are accused of "greenwashing"
+? t | Social responsibility reports are always independently verified. | F | They are often voluntary and difficult to verify. | Social responsibility reports are often voluntary and difficult to verify
+? c | What does the debate increasingly centre on? | *How companies can be held accountable | Whether companies have social responsibilities | Whether profits matter | The last paragraph explains. | how they can be held accountable for meeting them.
+
+## When species invade | AN
+When a plant, animal or microorganism is introduced to an area outside its natural range, it usually fails to establish itself. Occasionally, however, a newcomer thrives, spreading rapidly and causing significant ecological and economic harm. Such organisms are known as invasive species.
+
+Invasive species are often introduced by human activity, sometimes deliberately and sometimes by accident. Plants have been imported for gardens, animals released as pets or for hunting, and countless organisms carried unintentionally in the ballast water of ships, in shipments of timber or on travellers' clothing. Global trade and travel have greatly increased the frequency of such introductions.
+
+Once established, invasive species can outcompete native species for food and space, prey on animals that have no evolved defences or introduce diseases. On islands, where wildlife has often evolved in isolation, the effects can be particularly severe; introduced predators such as rats and cats have contributed to the extinction of numerous bird species.
+
+The economic costs are also substantial. Invasive insects can devastate crops and forests, aquatic plants can block waterways and certain species damage infrastructure. Estimates suggest the global costs run into many billions of dollars each year.
+
+Preventing introductions is generally far cheaper than controlling established populations. Many countries inspect imported goods, regulate the trade in plants and animals and require ships to treat ballast water. Early detection programmes, often involving members of the public, can identify new invasions before they spread.
+
+Once a species is widespread, eradication is often impossible, and management focuses on limiting its impact. Some successful eradications, particularly of rats on islands, have allowed native wildlife to recover dramatically.
+? c | What happens to most introduced species? | *They usually fail to establish themselves | They always spread rapidly | They become native | The first paragraph explains. | it usually fails to establish itself.
+? c | How have many organisms been introduced unintentionally? | *In ships' ballast water and timber shipments | Through radio signals | Through rain | The second paragraph explains. | carried unintentionally in the ballast water of ships, in shipments of timber
+? t | Introduced predators have contributed to the extinction of island birds. | T | The third paragraph says so. | have contributed to the extinction of numerous bird species.
+? s | What is generally far cheaper than controlling established populations? | preventing introductions / prevention | The fifth paragraph says so. | Preventing introductions is generally far cheaper than controlling established populations.
+? c | What has happened after some eradications of rats on islands? | *Native wildlife has recovered dramatically | New invasions followed | Nothing changed | The last paragraph explains. | have allowed native wildlife to recover dramatically.
+
+## The limits of human performance | HS
+World records in athletics continue to fall, though more slowly than in the past. Sports scientists have long debated whether there are ultimate limits to human physical performance and how close athletes are to reaching them.
+
+Over the twentieth century, performance improved dramatically. Part of this progress reflected better nutrition, training methods and medical care, as well as the professionalisation of sport, which allowed athletes to train full-time. Increased participation also mattered: as more people around the world took up sport, the chances of discovering exceptionally talented individuals grew.
+
+Technology has played an important role too. Improvements in tracks, shoes, swimsuits and equipment have enhanced performance, sometimes controversially. In several sports, governing bodies have banned or restricted equipment considered to offer an unfair advantage, raising questions about where the boundary lies between human achievement and technological assistance.
+
+Some researchers have analysed historical data and suggested that improvements in many events are levelling off, indicating that athletes may be approaching biological limits. Human physiology imposes constraints on factors such as the speed at which muscles contract and the body's capacity to deliver oxygen.
+
+However, predictions about limits have often been proved wrong. Barriers once thought impossible to break, such as running a mile in under four minutes, have been surpassed. Advances in understanding genetics, recovery and psychology may unlock further improvements.
+
+The question also raises ethical concerns. As margins of victory narrow, the temptation to use prohibited substances may grow. Ensuring fair competition while recognising the role of science and technology remains one of the central challenges facing modern sport.
+? c | What contributed to performance improvements in the twentieth century? | *Better nutrition, training methods and medical care | Fewer competitions | Smaller stadiums | The second paragraph explains. | Part of this progress reflected better nutrition, training methods and medical care
+? c | Why did increased participation matter? | *More chances of discovering exceptional talent | Fewer injuries | Cheaper tickets | The second paragraph explains. | the chances of discovering exceptionally talented individuals grew.
+? t | Governing bodies have banned some equipment considered unfair. | T | The third paragraph says so. | governing bodies have banned or restricted equipment considered to offer an unfair advantage
+? s | Which barrier, once thought impossible, has been surpassed? | running a mile in under four minutes / the four-minute mile | The fifth paragraph gives the example. | such as running a mile in under four minutes
+? c | What ethical concern does the question raise? | *Narrow margins may increase the temptation to use prohibited substances | Records are too easy | Athletes train too little | The last paragraph explains. | the temptation to use prohibited substances may grow.
+
+## Alone in a connected world | PF
+In an era of instant communication and social media, it might seem paradoxical that loneliness is described by some health experts as a growing public health concern. Yet surveys in many countries suggest that substantial numbers of people report feeling lonely often or always.
+
+Loneliness is not the same as being alone. It refers to the painful feeling that one's social relationships are insufficient in number or quality. People can feel lonely in a crowd or within a marriage, while others live alone contentedly.
+
+Research has linked chronic loneliness to a range of health problems, including depression, cardiovascular disease, weakened immunity and cognitive decline. Some studies suggest that its effects on mortality may be comparable to those of other well-known risk factors.
+
+Loneliness affects all age groups. Older adults may experience it after retirement, bereavement or reduced mobility. Surprisingly, several surveys have found high levels of loneliness among young adults, who may face transitions such as moving away for study or work, and who sometimes compare their social lives unfavourably with others online.
+
+Several social changes may contribute, including smaller households, greater geographic mobility and longer working hours that reduce time for relationships and community activities.
+
+Responses have emerged at many levels. Some governments have appointed officials responsible for addressing loneliness. Doctors in some countries can refer patients to community activities, such as walking groups, art classes or volunteering, an approach known as social prescribing. Neighbourhood initiatives, intergenerational programmes and well-designed public spaces can also encourage connection.
+
+Ultimately, addressing loneliness may require recognising social connection not as a private matter, but as an essential component of health and wellbeing.
+? c | What does loneliness refer to? | *The feeling that one's relationships are insufficient | Living alone | Having no phone | The second paragraph explains. | the painful feeling that one's social relationships are insufficient in number or quality.
+? t | People who live alone are always lonely. | F | Some live alone contentedly. | while others live alone contentedly.
+? c | What have several surveys found surprisingly? | *High levels of loneliness among young adults | No loneliness among older people | That loneliness is rare | The fourth paragraph explains. | several surveys have found high levels of loneliness among young adults
+? s | What is referring patients to community activities called? | social prescribing | The sixth paragraph names it. | an approach known as social prescribing.
+? c | What may addressing loneliness ultimately require? | *Recognising social connection as essential to health | Banning social media | Larger houses | The last paragraph explains. | recognising social connection not as a private matter, but as an essential component of health and wellbeing.
+
+## Buildings that bend | HF
+Earthquakes themselves rarely kill people directly. Most deaths and injuries occur when buildings collapse. As a result, the design of earthquake-resistant structures is one of the most important tools for reducing the toll of seismic disasters.
+
+Engineers have developed a range of strategies. Modern building codes in earthquake-prone regions typically require structures to be flexible enough to absorb and dissipate seismic energy, rather than rigid. Reinforced concrete and steel frames allow buildings to bend without breaking, giving occupants time to escape.
+
+More advanced techniques isolate buildings from ground movement. Base isolation systems place flexible bearings, often made of layers of rubber and steel, between a building and its foundations. When the ground shakes, the bearings absorb much of the movement, so the building above moves far less. Some tall buildings contain large dampers, heavy weights or fluid-filled devices that counteract swaying.
+
+Traditional architecture also offers lessons. In several earthquake-prone regions, historic wooden temples and houses have survived centuries of seismic activity thanks to flexible joints and lightweight construction.
+
+The greatest challenge is often not technology but implementation. Many deaths occur in older buildings constructed before modern codes, or in rapidly growing cities where regulations are poorly enforced. Retrofitting existing buildings can be expensive, and in poorer regions resources are limited.
+
+Simple, low-cost solutions can help. Engineers have developed techniques for strengthening masonry homes with affordable materials, and training local builders in safer methods can significantly reduce vulnerability. Experts emphasise that investing in safer construction before disasters is far more effective, and ultimately less costly, than responding afterwards.
+? c | What causes most earthquake deaths and injuries? | *Building collapses | The ground opening | Fires only | The first paragraph explains. | Most deaths and injuries occur when buildings collapse.
+? c | Why do building codes favour flexibility? | *Flexible buildings absorb and dissipate seismic energy | Flexible buildings are cheaper | Rigid buildings are illegal | The second paragraph explains. | to be flexible enough to absorb and dissipate seismic energy, rather than rigid.
+? s | What are base isolation bearings often made of? | layers of rubber and steel / rubber and steel | The third paragraph says so. | often made of layers of rubber and steel
+? t | Many deaths occur in buildings constructed after modern codes. | F | They occur in older buildings or where codes are poorly enforced. | Many deaths occur in older buildings constructed before modern codes
+? c | What do experts emphasise? | *Investing in safer construction before disasters is more effective | Responding after disasters is cheaper | Technology alone solves the problem | The last paragraph explains. | investing in safer construction before disasters is far more effective
+
+## Laws against waste | FD
+Roughly a third of the food produced in the world is lost or wasted, according to widely cited estimates. In wealthier countries, a significant share of this waste occurs in shops and homes, while in poorer countries more food is lost during harvesting, storage and transport.
+
+Some governments have turned to legislation. Certain countries now prohibit large supermarkets from destroying unsold food that is still safe to eat, requiring them instead to donate it to charities or use it for animal feed or compost. Supporters argue that such laws have significantly increased food donations and raised public awareness.
+
+Other measures target date labels. Many consumers discard food when it passes a "best before" date, although this label indicates quality rather than safety. Some retailers have removed such labels from fresh produce, and campaigns encourage people to use their senses to judge whether food is still good.
+
+Businesses are also innovating. Apps connect restaurants and shops with customers who can buy surplus food at reduced prices. Some supermarkets sell "imperfect" fruit and vegetables that would previously have been rejected for cosmetic reasons.
+
+Critics caution that donation laws can shift responsibility to charities, which may lack the capacity to store and distribute large quantities of perishable food. Others argue that reducing overproduction, rather than redistributing surplus, should be the priority.
+
+Nevertheless, food waste has become a recognised policy issue. Reducing it is seen as a way to save money, conserve resources and lower greenhouse gas emissions, since food decomposing in landfill produces methane, a powerful greenhouse gas.
+? c | Where does much food waste occur in wealthier countries? | *In shops and homes | During harvesting | During transport | The first paragraph explains. | In wealthier countries, a significant share of this waste occurs in shops and homes
+? c | What do some countries require large supermarkets to do? | *Donate unsold safe food instead of destroying it | Lower all prices | Close at night | The second paragraph explains. | requiring them instead to donate it to charities
+? t | A "best before" date indicates that food is unsafe after that date. | F | It indicates quality rather than safety. | this label indicates quality rather than safety.
+? s | What do critics say charities may lack? | the capacity to store and distribute food / capacity | The fifth paragraph says so. | which may lack the capacity to store and distribute large quantities of perishable food.
+? c | Why is reducing food waste linked to lower emissions? | *Food in landfill produces methane | Food waste stops rain | Food waste uses electricity | The last paragraph explains. | food decomposing in landfill produces methane
+
+## Predicting the weather | NW
+Weather forecasts are so familiar that it is easy to forget how remarkable they are. Using observations from satellites, weather balloons, ships and thousands of ground stations, meteorologists can predict conditions days in advance with considerable accuracy. A five-day forecast today is roughly as reliable as a one-day forecast was several decades ago.
+
+Modern forecasting relies on numerical weather prediction. The atmosphere is divided into a three-dimensional grid, and powerful supercomputers use the laws of physics to calculate how temperature, pressure, humidity and wind will change at each point over time.
+
+Despite these advances, forecasts can never be perfect. The atmosphere is a chaotic system, meaning that tiny differences in initial conditions can grow into large differences over time. Because observations can never capture every detail of the atmosphere, small errors inevitably exist, and their effects grow, limiting how far ahead weather can be predicted precisely.
+
+To address this uncertainty, forecasters use ensemble forecasting. Instead of running a single simulation, they run many slightly different versions. If most produce similar results, forecasters can be confident; if they diverge widely, the forecast is less certain. This approach allows forecasts to be expressed as probabilities, such as a seventy percent chance of rain.
+
+Communicating uncertainty remains a challenge. Many people misunderstand probability forecasts, and forecasters must balance the risk of false alarms against the danger of failing to warn about severe weather.
+
+Accurate forecasts have enormous value. They save lives by warning of storms and floods, help farmers plan planting and harvesting, and support industries from aviation to energy.
+? c | How does a five-day forecast today compare with the past? | *It is roughly as reliable as a one-day forecast decades ago | It is less reliable | It is perfect | The first paragraph explains. | A five-day forecast today is roughly as reliable as a one-day forecast was several decades ago.
+? s | What is modern forecasting based on? | numerical weather prediction | The second paragraph names it. | Modern forecasting relies on numerical weather prediction.
+? c | Why can forecasts never be perfect? | *The atmosphere is chaotic and small errors grow | Computers are too slow | Satellites are unreliable | The third paragraph explains. | The atmosphere is a chaotic system
+? t | In ensemble forecasting, forecasters run a single simulation. | F | They run many slightly different versions. | Instead of running a single simulation, they run many slightly different versions.
+? c | What balance must forecasters strike? | *Between false alarms and failing to warn of severe weather | Between cost and speed | Between satellites and balloons | The fifth paragraph explains. | balance the risk of false alarms against the danger of failing to warn about severe weather.
+
+## The library reinvented | ED
+With so much information available online, some predicted that public libraries would become obsolete. Instead, many libraries have reinvented themselves, and in some communities they are busier than ever.
+
+Libraries still lend books, but their role has expanded considerably. Many provide free internet access and computers, which remain essential for people who cannot afford devices or connections at home. Librarians help users apply for jobs, access government services and develop digital skills.
+
+Libraries have also become community spaces. They host language classes, homework clubs, reading groups for children and talks by local experts. Some offer "makerspaces" with 3D printers and tools, while others lend unusual items such as musical instruments or gardening equipment. For many people, particularly older residents and young families, libraries are one of the few public places where they can spend time without being expected to buy anything.
+
+Their role in combating misinformation has also grown. Librarians are trained to evaluate sources and can help users distinguish reliable information from misleading content.
+
+Nevertheless, libraries face serious challenges. In many places, budgets have been cut, leading to reduced opening hours, fewer staff and closures. Some libraries rely increasingly on volunteers. Digital lending raises complex issues, as publishers often charge libraries higher prices for e-books than consumers pay.
+
+Supporters argue that libraries represent a rare democratic institution, open to everyone regardless of income, age or background. As societies become more digital and, in some ways, more divided, they contend that libraries' importance is increasing rather than declining.
+? c | What did some people predict about libraries? | *They would become obsolete | They would become more expensive | They would replace schools | The first paragraph explains. | some predicted that public libraries would become obsolete.
+? c | Why is free internet access at libraries essential? | *Some people cannot afford devices or connections | It is faster than at home | It is required by law | The second paragraph explains. | which remain essential for people who cannot afford devices or connections at home.
+? s | What spaces with 3D printers and tools do some libraries offer? | makerspaces | The third paragraph names them. | Some offer "makerspaces" with 3D printers and tools
+? t | Publishers often charge libraries less for e-books than consumers pay. | F | They often charge higher prices. | publishers often charge libraries higher prices for e-books than consumers pay.
+? c | How do supporters describe libraries? | *A rare democratic institution open to everyone | An outdated service | A business | The last paragraph explains. | libraries represent a rare democratic institution
+
+## Whose treasures? | ED
+The world's great museums hold vast collections of objects from other cultures, many acquired during periods of colonial rule. In recent years, there have been growing demands for the return of cultural artefacts to the countries and communities from which they were taken.
+
+Advocates of return, often called restitution, argue that many objects were acquired through conquest, theft or under conditions in which meaningful consent was impossible. For source communities, these artefacts may have profound religious, historical or cultural significance, and their absence represents a continuing loss. Returning them, supporters argue, is a matter of justice and an opportunity to acknowledge historical wrongs.
+
+Museums have traditionally offered several counterarguments. Some have claimed that objects are safer in their care, with better conservation facilities and security. Others argue that "universal museums" allow millions of visitors to see artefacts from many cultures side by side, promoting understanding of shared human history. Legal restrictions in some countries also prevent national collections from being permanently transferred.
+
+These arguments have been increasingly challenged. Many countries seeking returns have built modern museums capable of caring for artefacts, and critics note that the idea of universal access is undermined when people from source countries cannot easily obtain visas to visit the museums holding their heritage.
+
+In recent years, several museums and governments have returned significant collections, and others have launched research into the origins of their holdings. Alternative arrangements, including long-term loans, joint exhibitions and digital sharing, have also been explored.
+
+The debate raises fundamental questions about ownership, memory and the role of museums. Increasingly, the conversation is shifting from whether objects should be returned to how restitution can be carried out fairly and collaboratively.
+? s | What is the return of cultural artefacts often called? | restitution | The second paragraph names it. | often called restitution
+? c | Why do advocates argue for return? | *Many objects were taken through conquest or without real consent | Museums are too full | Objects are damaged | The second paragraph explains. | many objects were acquired through conquest, theft or under conditions in which meaningful consent was impossible.
+? c | What do "universal museums" claim to offer? | *A chance to see artefacts from many cultures side by side | Free entry | Better weather | The third paragraph explains. | allow millions of visitors to see artefacts from many cultures side by side
+? t | Critics note that people from source countries can easily get visas to visit these museums. | F | They cannot easily obtain visas. | when people from source countries cannot easily obtain visas
+? c | How is the conversation shifting? | *From whether to return objects to how to do it fairly | From museums to schools | Away from the topic entirely | The last paragraph explains. | the conversation is shifting from whether objects should be returned to how restitution can be carried out fairly and collaboratively.
+"""
+
+# MORE LEVELS
 
 
 def parse(level, block, first_id):
