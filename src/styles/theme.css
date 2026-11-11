@@ -6026,3 +6026,146 @@ html .workspace .tabs button[aria-pressed='true'] {
     height: 48px;
   }
 }
+
+/* ---------- Shell after the owner's dashboard reference ----------
+   Soft blue waves and a dot grid behind every page, floating cards with a soft shadow, and a
+   denser overview that fits one screen. The waves are a mask over the primary colour, so they
+   follow the theme. */
+:root {
+  --panel-shadow: 0 12px 28px -14px rgb(19 36 58 / 22%), 0 1px 2px rgb(19 36 58 / 5%);
+}
+html.dark {
+  --panel-shadow: 0 12px 28px -14px rgb(0 0 0 / 60%), 0 1px 2px rgb(0 0 0 / 30%);
+}
+.workspace {
+  position: relative;
+  isolation: isolate;
+}
+.workspace::before,
+.workspace::after {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+}
+.workspace::before {
+  inset: 0 0 0 248px;
+  background: color-mix(in srgb, var(--primary) 50%, transparent);
+  -webkit-mask: url('/bg/waves.svg') center / 100% 100% no-repeat;
+  mask: url('/bg/waves.svg') center / 100% 100% no-repeat;
+}
+/* A dot grid fading out from the top-right corner. */
+.workspace::after {
+  top: 56px;
+  right: 24px;
+  width: 200px;
+  height: 230px;
+  background: radial-gradient(
+      color-mix(in srgb, var(--primary) 30%, transparent) 1.6px,
+      transparent 1.8px
+    )
+    0 0 / 20px 20px;
+  -webkit-mask: linear-gradient(225deg, #000 20%, transparent 75%);
+  mask: linear-gradient(225deg, #000 20%, transparent 75%);
+}
+.workspace .panel {
+  border-color: color-mix(in srgb, var(--primary) 8%, var(--border));
+  border-radius: 16px;
+  box-shadow: var(--panel-shadow);
+}
+
+/* Overview: tighter type and spacing so the day's plan, skills, week and activity fit one screen. */
+.workspace[data-skill='dashboard'] main {
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-top: 20px;
+}
+.workspace[data-skill='dashboard'] .home {
+  gap: 18px;
+}
+.workspace[data-skill='dashboard'] .home > * {
+  margin: 0;
+}
+.workspace[data-skill='dashboard'] .home h2 {
+  margin-bottom: 12px;
+  font-size: 1.125rem;
+}
+.workspace[data-skill='dashboard'] .panel {
+  padding: 18px 20px;
+}
+.workspace[data-skill='dashboard'] .home-head {
+  margin-bottom: 0;
+  padding: 14px 20px 20px;
+  border-color: color-mix(in srgb, var(--primary) 8%, var(--border));
+  border-radius: 16px;
+  background: linear-gradient(
+    115deg,
+    var(--panel),
+    color-mix(in srgb, var(--primary) 5%, var(--panel))
+  );
+  box-shadow: var(--panel-shadow);
+}
+.workspace[data-skill='dashboard'] .home-head h1 {
+  font-size: 1.625rem;
+}
+.workspace[data-skill='dashboard'] .home-date {
+  margin-top: 2px;
+  font-size: 0.875rem;
+}
+.workspace[data-skill='dashboard'] .home-head::after {
+  height: 4px;
+}
+.workspace[data-skill='dashboard'] .sign-plate {
+  padding: 6px 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgb(19 36 58 / 6%);
+}
+.workspace[data-skill='dashboard'] .route-stops {
+  gap: 14px;
+}
+.workspace[data-skill='dashboard'] .route-stop {
+  gap: 10px;
+}
+.workspace[data-skill='dashboard'] .route-stop a {
+  min-height: 56px;
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+.workspace[data-skill='dashboard'] .route-foot {
+  margin-top: 12px;
+}
+.workspace[data-skill='dashboard'] .home-grid,
+.workspace[data-skill='dashboard'] .home-side {
+  gap: 18px;
+}
+.workspace[data-skill='dashboard'] .line-list li a {
+  gap: 12px;
+  padding: 6px 8px;
+}
+.workspace[data-skill='dashboard'] .line-list .line-tile {
+  width: 32px;
+  height: 32px;
+}
+.workspace[data-skill='dashboard'] .home-note {
+  margin-top: 10px;
+}
+.workspace[data-skill='dashboard'] .week-bars {
+  height: 100px;
+}
+.workspace[data-skill='dashboard'] .recent-list li {
+  padding: 7px 0;
+}
+@media (max-width: 700px) {
+  .workspace::before {
+    left: 0;
+  }
+  .workspace::after {
+    display: none;
+  }
+}
+@media print {
+  .workspace::before,
+  .workspace::after {
+    display: none;
+  }
+}
