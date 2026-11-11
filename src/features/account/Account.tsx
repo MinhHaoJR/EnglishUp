@@ -54,12 +54,38 @@ export default function Account() {
   // Signed-out learners sign in on the full-screen entrance and come back here.
   if (!email) return <Navigate to="/login?next=/account" replace />;
 
-  const sections: { id: Tab; icon: IconName; label: string }[] = [
-    { id: 'profile', icon: 'user', label: bi('Hồ sơ', 'Profile') },
-    { id: 'points', icon: 'sync', label: bi('Điểm & đồng bộ', 'Points & sync') },
-    { id: 'journey', icon: 'streak', label: bi('Hành trình học', 'Learning journey') },
-    { id: 'password', icon: 'lock', label: bi('Đổi mật khẩu', 'Change password') },
-    { id: 'privacy', icon: 'shield', label: bi('Quyền riêng tư', 'Privacy') },
+  // Each section wears its own colour in the menu: blue for the profile, sync and privacy,
+  // orange for the journey's streak flame, navy for the password lock.
+  const sections: { id: Tab; icon: IconName; menuIcon: IconName; tone: string; label: string }[] = [
+    { id: 'profile', icon: 'user', menuIcon: 'home', tone: 'blue', label: bi('Hồ sơ', 'Profile') },
+    {
+      id: 'points',
+      icon: 'sync',
+      menuIcon: 'sync',
+      tone: 'blue',
+      label: bi('Điểm & đồng bộ', 'Points & sync'),
+    },
+    {
+      id: 'journey',
+      icon: 'streak',
+      menuIcon: 'streak',
+      tone: 'orange',
+      label: bi('Hành trình học', 'Learning journey'),
+    },
+    {
+      id: 'password',
+      icon: 'lock',
+      menuIcon: 'lock',
+      tone: 'navy',
+      label: bi('Đổi mật khẩu', 'Change password'),
+    },
+    {
+      id: 'privacy',
+      icon: 'shield',
+      menuIcon: 'shield',
+      tone: 'blue',
+      label: bi('Quyền riêng tư', 'Privacy'),
+    },
   ];
   const tab = sections.find((s) => s.id === params.get('tab')) ?? sections[0];
   const name = profile?.displayName.trim();
@@ -76,13 +102,31 @@ export default function Account() {
       <div className="account">
         <aside className="account-side">
           <div className="account-card">
-            <span className="account-cover" aria-hidden="true" />
+            <span className="account-cover" aria-hidden="true">
+              <svg className="account-laurel left" viewBox="0 0 40 80">
+                <path d="M28 78C14 62 12 40 20 6" />
+                <path d="M19 62c-8-1-12-6-13-12 7 0 12 5 13 12z M17 46c-7-2-10-8-10-14 7 1 11 7 10 14z M18 30c-6-3-8-9-7-15 6 2 9 8 7 15z M23 16c-3-5-2-11 2-14 3 5 2 10-2 14z" />
+              </svg>
+              <svg className="account-laurel right" viewBox="0 0 40 80">
+                <path d="M28 78C14 62 12 40 20 6" />
+                <path d="M19 62c-8-1-12-6-13-12 7 0 12 5 13 12z M17 46c-7-2-10-8-10-14 7 1 11 7 10 14z M18 30c-6-3-8-9-7-15 6 2 9 8 7 15z M23 16c-3-5-2-11 2-14 3 5 2 10-2 14z" />
+              </svg>
+            </span>
             <span className="account-avatar" aria-hidden="true">
               {initial(name || email)}
+              <span className="account-verified">
+                <SkillIcon skill="check" size={14} />
+              </span>
             </span>
             <strong className="account-name">{name || email}</strong>
-            {name && <small className="account-email">{email}</small>}
+            {name && (
+              <small className="account-email">
+                <SkillIcon skill="mail" size={16} />
+                {email}
+              </small>
+            )}
             <Link className="account-view" to="/achievements">
+              <SkillIcon skill="chart" size={18} />
               {bi('Xem thành tích', 'View achievements')}
               <SkillIcon skill="arrow" size={16} />
             </Link>
@@ -95,9 +139,10 @@ export default function Account() {
                     to={`?tab=${s.id}`}
                     replace
                     aria-current={s.id === tab.id ? 'page' : undefined}
+                    data-tone={s.tone}
                   >
                     <span className="account-menu-tile" aria-hidden="true">
-                      <SkillIcon skill={s.icon} size={18} />
+                      <SkillIcon skill={s.menuIcon} size={22} />
                     </span>
                     {s.label}
                     <SkillIcon skill="chevron" size={16} />
@@ -117,10 +162,16 @@ export default function Account() {
         </aside>
 
         <section className="account-pane" aria-labelledby="account-pane-title">
-          <h2 id="account-pane-title">
-            <SkillIcon skill={tab.icon} size={22} />
-            {tab.label}
-          </h2>
+          <div className="account-pane-head">
+            <h2 id="account-pane-title">
+              <SkillIcon skill={tab.icon} size={26} />
+              {tab.label}
+            </h2>
+            <span className="account-status">
+              <span aria-hidden="true" />
+              {bi('Đang hoạt động', 'Active')}
+            </span>
+          </div>
           {tab.id === 'profile' &&
             (profile ? (
               <ProfileSection email={email} profile={profile} setProfile={setProfile} />
@@ -165,93 +216,113 @@ function ProfileSection({
   }, [lastSynced]);
 
   return (
-    <form
-      className="account-form"
-      onSubmit={(event) => {
-        event.preventDefault();
-        setState('saving');
-        saveProfile(profile)
-          .then((saved) => {
-            setProfile(saved);
-            setState('saved');
-          })
-          .catch(() => setState('error'));
-      }}
-    >
-      <label>
-        Email
-        <input type="email" value={email} readOnly aria-describedby="email-note" />
-        <small id="email-note">
-          {bi('Dùng để đăng nhập; không ai khác thấy.', 'Used to sign in; nobody else sees it.')}
-        </small>
-      </label>
-      <label>
-        {bi('Tên hiển thị', 'Display name')}
-        <input
-          required
-          minLength={2}
-          maxLength={40}
-          value={profile.displayName}
-          onChange={(e) => {
-            setProfile({ ...profile, displayName: e.target.value });
-            setState('idle');
-          }}
-        />
-      </label>
-      <label className="checkbox">
-        <input
-          type="checkbox"
-          checked={profile.showOnLeaderboard}
-          onChange={(e) => {
-            setProfile({ ...profile, showOnLeaderboard: e.target.checked });
-            setState('idle');
-          }}
-        />
-        {bi(
-          'Hiện tôi trên bảng xếp hạng (chỉ tên hiển thị và điểm, không hiện email)',
-          'Show me on the leaderboard (display name and points only, never my email)',
-        )}
-      </label>
-      <figure className="profile-preview">
-        {profile.showOnLeaderboard ? (
-          <div className="profile-row">
-            <span className="profile-rank">{rank ?? '–'}</span>
-            <span className="profile-monogram" aria-hidden="true">
-              {initial(profile.displayName)}
-            </span>
-            <strong>{profile.displayName.trim() || '…'}</strong>
-            <span className="profile-points">
-              {points?.total ?? 0} {bi('điểm', 'pts')}
-            </span>
-          </div>
-        ) : (
-          <div className="profile-row hidden">
-            <SkillIcon skill="eyeOff" size={20} />
-            {bi('Bạn đang ẩn khỏi bảng xếp hạng.', 'You are hidden from the leaderboard.')}
-          </div>
-        )}
-        <figcaption>
+    <div className="profile-layout">
+      <img
+        className="profile-art"
+        src="/art/profile-card.webp"
+        width={220}
+        height={244}
+        alt=""
+        draggable={false}
+      />
+      <form
+        className="account-form"
+        onSubmit={(event) => {
+          event.preventDefault();
+          setState('saving');
+          saveProfile(profile)
+            .then((saved) => {
+              setProfile(saved);
+              setState('saved');
+            })
+            .catch(() => setState('error'));
+        }}
+      >
+        <label>
+          <span className="account-label">
+            <SkillIcon skill="mail" size={20} />
+            Email
+          </span>
+          <input type="email" value={email} readOnly aria-describedby="email-note" />
+          <small id="email-note">
+            <SkillIcon skill="info" size={16} />
+            {bi('Dùng để đăng nhập; không ai khác thấy.', 'Used to sign in; nobody else sees it.')}
+          </small>
+        </label>
+        <label>
+          <span className="account-label">
+            <SkillIcon skill="cap" size={20} />
+            {bi('Tên hiển thị', 'Display name')}
+          </span>
+          <input
+            required
+            minLength={2}
+            maxLength={40}
+            value={profile.displayName}
+            onChange={(e) => {
+              setProfile({ ...profile, displayName: e.target.value });
+              setState('idle');
+            }}
+          />
+        </label>
+        <label className="checkbox">
+          <input
+            type="checkbox"
+            checked={profile.showOnLeaderboard}
+            onChange={(e) => {
+              setProfile({ ...profile, showOnLeaderboard: e.target.checked });
+              setState('idle');
+            }}
+          />
           {bi(
-            'Xem trước hàng của bạn trên bảng xếp hạng mọi thời gian.',
-            'A preview of your all-time leaderboard row.',
+            'Hiện tôi trên bảng xếp hạng (chỉ tên hiển thị và điểm, không hiện email)',
+            'Show me on the leaderboard (display name and points only, never my email)',
           )}
-        </figcaption>
-      </figure>
-      {state === 'saved' && <p role="status">{bi('Đã lưu hồ sơ.', 'Profile saved.')}</p>}
-      {state === 'error' && (
-        <Notice error>
-          {bi(
-            'Không lưu được. Tên hiển thị cần 2–40 ký tự; hãy kiểm tra kết nối.',
-            'Could not save. Display names need 2–40 characters; check your connection.',
+        </label>
+        <figure className="profile-preview">
+          {profile.showOnLeaderboard ? (
+            <div className="profile-row">
+              <span className="profile-rank">{rank ?? '–'}</span>
+              <span className="profile-monogram" aria-hidden="true">
+                {initial(profile.displayName)}
+              </span>
+              <strong>{profile.displayName.trim() || '…'}</strong>
+              <span className="profile-points">
+                {points?.total ?? 0} {bi('điểm', 'pts')}
+              </span>
+            </div>
+          ) : (
+            <div className="profile-row hidden">
+              <SkillIcon skill="eyeOff" size={24} />
+              <strong>
+                {bi('Bạn đang ẩn khỏi bảng xếp hạng.', 'You are hidden from the leaderboard.')}
+              </strong>
+            </div>
           )}
-        </Notice>
-      )}
-      <div className="actions">
-        <button className="primary" disabled={state === 'saving'}>
-          {bi('Lưu hồ sơ', 'Save profile')}
-        </button>
-      </div>
-    </form>
+          <figcaption>
+            {bi(
+              'Xem trước hàng của bạn trên bảng xếp hạng mọi thời gian.',
+              'A preview of your all-time leaderboard row.',
+            )}
+          </figcaption>
+        </figure>
+        {state === 'saved' && <p role="status">{bi('Đã lưu hồ sơ.', 'Profile saved.')}</p>}
+        {state === 'error' && (
+          <Notice error>
+            {bi(
+              'Không lưu được. Tên hiển thị cần 2–40 ký tự; hãy kiểm tra kết nối.',
+              'Could not save. Display names need 2–40 characters; check your connection.',
+            )}
+          </Notice>
+        )}
+        <div className="actions">
+          <button className="primary profile-save" disabled={state === 'saving'}>
+            <SkillIcon skill="save" size={20} />
+            {bi('Lưu hồ sơ', 'Save profile')}
+          </button>
+        </div>
+      </form>
+    </div>
   );
 }
 
