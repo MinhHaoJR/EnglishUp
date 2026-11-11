@@ -73,121 +73,131 @@ function SpeakingSession({
         meta={`${prompt.level} · ${prompt.topic} · ${prompt.mode === 'read' ? bi('Đọc thành tiếng / nhại mẫu', 'Read aloud / shadowing') : bi('Nói theo chủ đề', 'Topic talk')}`}
       />
       <div className="split">
-        <section className="panel">
-          <p className="speaking-target">{prompt.text}</p>
-          <ul className="list-disc pl-5 space-y-2 muted mb-5">
-            {prompt.cues.map((c) => (
-              <li key={c}>{c}</li>
-            ))}
-          </ul>
-          <SpeakButton text={prompt.text} />
-          <p className="muted mt-4">
-            {bi(
-              'Nghe mẫu, sau đó ghi âm và thử bắt chước nhịp điệu. Điểm so khớp văn bản không phải điểm phát âm.',
-              'Listen to the model, then record and imitate its rhythm. Text alignment is not a pronunciation score.',
-            )}
-          </p>
-          <div className="notice">
-            <p>
+        <div className="session-stack">
+          <section className="panel" aria-labelledby="speaking-model">
+            <h2 id="speaking-model">
+              {prompt.mode === 'read' ? bi('Câu mẫu', 'Model text') : bi('Đề nói', 'Your topic')}
+            </h2>
+            <p className="speaking-target" lang="en">
+              {prompt.text}
+            </p>
+            <ul className="speaking-cues" lang="en">
+              {prompt.cues.map((c) => (
+                <li key={c}>{c}</li>
+              ))}
+            </ul>
+            <SpeakButton text={prompt.text} />
+            <p className="muted">
               {bi(
-                'Bản ghi chỉ ở trong bộ nhớ phiên này. Nhận dạng giọng nói có thể gửi âm thanh đến dịch vụ của trình duyệt và cần internet.',
-                'Recordings stay in this session’s memory. Browser speech recognition may send audio to a vendor service and require internet.',
+                'Nghe mẫu, sau đó ghi âm và thử bắt chước nhịp điệu. Điểm so khớp văn bản không phải điểm phát âm.',
+                'Listen to the model, then record and imitate its rhythm. Text alignment is not a pronunciation score.',
               )}
             </p>
-            <label className="checkbox mt-3">
-              <input
-                type="checkbox"
-                disabled={!rec.recognitionSupported || rec.recording || done}
-                checked={transcribe}
-                onChange={(e) => setTranscribe(e.target.checked)}
-              />
-              {bi('Bật nhận dạng giọng nói của trình duyệt', 'Enable browser speech recognition')}
-            </label>
-          </div>
-          {!rec.recognitionSupported && (
-            <Notice>
-              {bi(
-                'Trình duyệt không hỗ trợ nhận dạng. Hãy ghi âm, nghe lại và tự đánh giá.',
-                'Recognition is unsupported. Record, listen back and use self-assessment.',
+          </section>
+          <section className="panel" aria-labelledby="speaking-record">
+            <h2 id="speaking-record">{bi('Ghi âm', 'Record')}</h2>
+            <div className="record-controls">
+              <strong className={rec.recording ? 'recording-dot' : ''}>
+                {String(Math.floor(rec.duration / 60)).padStart(2, '0')}:
+                {String(rec.duration % 60).padStart(2, '0')}
+              </strong>
+              <label className="inline-field">
+                {bi('Thời lượng tối đa', 'Time limit')}
+                <select
+                  value={limit}
+                  disabled={rec.recording || done}
+                  onChange={(e) => setLimit(Number(e.target.value))}
+                >
+                  <option value="60">60 s</option>
+                  <option value="90">90 s</option>
+                  <option value="120">120 s</option>
+                </select>
+              </label>
+              {rec.recording ? (
+                <button className="primary" onClick={rec.stop}>
+                  <SkillIcon skill="stop" size={16} />
+                  {t('stop')}
+                </button>
+              ) : (
+                <button
+                  className="primary"
+                  disabled={done || rec.pending || !rec.recordSupported}
+                  onClick={() => {
+                    stopSpeech();
+                    setReviewed(false);
+                    void rec.start(transcribe);
+                  }}
+                >
+                  ●{' '}
+                  {rec.pending
+                    ? t('loading')
+                    : rec.audio
+                      ? bi('Ghi âm lại', 'Record again')
+                      : t('record')}
+                </button>
               )}
-            </Notice>
-          )}
-          {!rec.recordSupported && (
-            <Notice>
-              {bi(
-                'Ghi âm không được hỗ trợ. Bạn vẫn có thể nói thành tiếng và tự đánh giá.',
-                'Recording is unavailable. You can still speak aloud and self-assess.',
-              )}
-            </Notice>
-          )}
-          <label className="mt-5">
-            {bi('Thời lượng tối đa', 'Time limit')}
-            <select
-              value={limit}
-              disabled={rec.recording || done}
-              onChange={(e) => setLimit(Number(e.target.value))}
-            >
-              <option value="60">60 s</option>
-              <option value="90">90 s</option>
-              <option value="120">120 s</option>
-            </select>
-          </label>
-          <div className="record-controls">
-            <strong className={rec.recording ? 'recording-dot' : ''}>
-              {String(Math.floor(rec.duration / 60)).padStart(2, '0')}:
-              {String(rec.duration % 60).padStart(2, '0')}
-            </strong>
-            {rec.recording ? (
-              <button className="primary" onClick={rec.stop}>
-                <SkillIcon skill="stop" size={16} />
-                {t('stop')}
-              </button>
-            ) : (
-              <button
-                className="primary"
-                disabled={done || rec.pending || !rec.recordSupported}
-                onClick={() => {
-                  stopSpeech();
-                  setReviewed(false);
-                  void rec.start(transcribe);
-                }}
-              >
-                ●{' '}
-                {rec.pending
-                  ? t('loading')
-                  : rec.audio
-                    ? bi('Ghi âm lại', 'Record again')
-                    : t('record')}
-              </button>
+            </div>
+            <div className="notice">
+              <p>
+                {bi(
+                  'Bản ghi chỉ ở trong bộ nhớ phiên này. Nhận dạng giọng nói có thể gửi âm thanh đến dịch vụ của trình duyệt và cần internet.',
+                  'Recordings stay in this session’s memory. Browser speech recognition may send audio to a vendor service and require internet.',
+                )}
+              </p>
+              <label className="checkbox mt-3">
+                <input
+                  type="checkbox"
+                  disabled={!rec.recognitionSupported || rec.recording || done}
+                  checked={transcribe}
+                  onChange={(e) => setTranscribe(e.target.checked)}
+                />
+                {bi('Bật nhận dạng giọng nói của trình duyệt', 'Enable browser speech recognition')}
+              </label>
+            </div>
+            {!rec.recognitionSupported && (
+              <Notice>
+                {bi(
+                  'Trình duyệt không hỗ trợ nhận dạng. Hãy ghi âm, nghe lại và tự đánh giá.',
+                  'Recognition is unsupported. Record, listen back and use self-assessment.',
+                )}
+              </Notice>
             )}
-          </div>
-          {rec.error && (
-            <Notice error>
-              {rec.error === 'NotAllowedError'
-                ? bi(
-                    'Bạn chưa cho phép dùng micro. Bật quyền micro trong trình duyệt, hoặc tự đánh giá bên cạnh.',
-                    'Microphone access was denied. Enable browser permission or use self-assessment.',
-                  )
-                : rec.error.startsWith('recognition')
+            {!rec.recordSupported && (
+              <Notice>
+                {bi(
+                  'Ghi âm không được hỗ trợ. Bạn vẫn có thể nói thành tiếng và tự đánh giá.',
+                  'Recording is unavailable. You can still speak aloud and self-assess.',
+                )}
+              </Notice>
+            )}
+            {rec.error && (
+              <Notice error>
+                {rec.error === 'NotAllowedError'
                   ? bi(
-                      'Nhận dạng chưa hoạt động. Bản ghi vẫn có thể dùng để tự đánh giá.',
-                      'Recognition is unavailable. Your recording can still be used for self-assessment.',
+                      'Bạn chưa cho phép dùng micro. Bật quyền micro trong trình duyệt, hoặc tự đánh giá bên cạnh.',
+                      'Microphone access was denied. Enable browser permission or use self-assessment.',
                     )
-                  : bi(
-                      'Không mở được micro. Kiểm tra thiết bị và dùng HTTPS/localhost, hoặc tự đánh giá.',
-                      'Could not open the microphone. Check the device and HTTPS/localhost, or self-assess.',
-                    )}
-            </Notice>
-          )}
-          {rec.audio && (
-            <audio
-              className="w-full mt-5"
-              controls
-              src={rec.audio}
-              aria-label={bi('Bản ghi của bạn', 'Your recording')}
-            />
-          )}
-        </section>
+                  : rec.error.startsWith('recognition')
+                    ? bi(
+                        'Nhận dạng chưa hoạt động. Bản ghi vẫn có thể dùng để tự đánh giá.',
+                        'Recognition is unavailable. Your recording can still be used for self-assessment.',
+                      )
+                    : bi(
+                        'Không mở được micro. Kiểm tra thiết bị và dùng HTTPS/localhost, hoặc tự đánh giá.',
+                        'Could not open the microphone. Check the device and HTTPS/localhost, or self-assess.',
+                      )}
+              </Notice>
+            )}
+            {rec.audio && (
+              <audio
+                className="w-full mt-5"
+                controls
+                src={rec.audio}
+                aria-label={bi('Bản ghi của bạn', 'Your recording')}
+              />
+            )}
+          </section>
+        </div>
         <section className="panel">
           <h2>{bi('Nhìn lại phần nói của bạn', 'Reflect on your speaking')}</h2>
           <label>
@@ -222,29 +232,33 @@ function SpeakingSession({
           )}
           {automatic && !rec.recording && <WordDiff target={prompt.text} actual={rec.transcript} />}
           <h3 className="mt-6">{t('selfAssess')}</h3>
-          {criteria.map((c, i) => (
-            <label className="checkbox mt-4" key={c}>
+          <div className="check-list">
+            {criteria.map((c, i) => (
+              <label className="checkbox" key={c}>
+                <input
+                  type="checkbox"
+                  disabled={done}
+                  checked={checks[i]}
+                  onChange={(e) =>
+                    setChecks(checks.map((v, n) => (n === i ? e.target.checked : v)))
+                  }
+                />
+                {c}
+              </label>
+            ))}
+            <label className="checkbox check-confirm">
               <input
                 type="checkbox"
-                disabled={done}
-                checked={checks[i]}
-                onChange={(e) => setChecks(checks.map((v, n) => (n === i ? e.target.checked : v)))}
+                disabled={done || rec.recording}
+                checked={reviewed}
+                onChange={(e) => setReviewed(e.target.checked)}
               />
-              {c}
+              {bi(
+                'Tôi đã thực hành nói và hoàn tất tự đánh giá.',
+                'I practiced aloud and completed my self-assessment.',
+              )}
             </label>
-          ))}
-          <label className="checkbox mt-5">
-            <input
-              type="checkbox"
-              disabled={done || rec.recording}
-              checked={reviewed}
-              onChange={(e) => setReviewed(e.target.checked)}
-            />
-            {bi(
-              'Tôi đã thực hành nói và hoàn tất tự đánh giá.',
-              'I practiced aloud and completed my self-assessment.',
-            )}
-          </label>
+          </div>
           {prompt.mode === 'talk' && rec.duration > 0 && rec.duration < 60 && (
             <p className="muted mt-3">
               {bi(

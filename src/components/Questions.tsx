@@ -18,11 +18,16 @@ export function Questions({
   answers,
   onChange,
   submitted,
+  onCheck,
+  checking = false,
 }: {
   questions: Question[];
   answers: Record<string, string>;
   onChange: (id: string, value: string) => void;
   submitted: boolean;
+  /** Shows the check button under the questions; it unlocks once every question has an answer. */
+  onCheck?: () => void;
+  checking?: boolean;
 }) {
   const t = useT();
   const bi = useBi();
@@ -30,10 +35,16 @@ export function Questions({
   const i = Math.min(current, questions.length - 1);
   const q = questions[i];
   const answered = questions.filter((item) => answers[item.id]?.trim()).length;
+  const left = questions.length - answered;
   if (!q) return null;
+  const right = isCorrect(q, answers[q.id] ?? '');
   return (
     <div className="question-pager">
-      <div className="question-stations-head">
+      <div className="question-head">
+        <strong className="question-count">
+          {bi('Câu', 'Question')} {i + 1}
+          <span>/{questions.length}</span>
+        </strong>
         <span className="muted">
           {bi(
             `Đã trả lời ${answered}/${questions.length}`,
@@ -73,25 +84,43 @@ export function Questions({
         })}
       </nav>
       <fieldset className="question" key={q.id}>
-        <legend className="font-semibold">
-          {i + 1}. {q.prompt}
+        <legend className="question-prompt">
+          <span className="sr-only">{i + 1}. </span>
+          {q.prompt}
         </legend>
         {q.type === 'choice' || q.type === 'tfng' ? (
-          (q.type === 'tfng' ? ['True', 'False', 'Not Given'] : (q.options ?? [])).map((option) => (
-            <label key={option}>
-              <input
-                type="radio"
-                name={q.id}
-                value={option}
-                checked={answers[q.id] === option}
-                disabled={submitted}
-                onChange={() => onChange(q.id, option)}
-              />
-              {option}
-            </label>
-          ))
+          <div className="question-options">
+            {(q.type === 'tfng' ? ['True', 'False', 'Not Given'] : (q.options ?? [])).map(
+              (option, n) => {
+                const chosen = answers[q.id] === option;
+                const mark = !submitted
+                  ? ''
+                  : q.answers.some((a) => normalizeAnswer(a) === normalizeAnswer(option))
+                    ? 'right'
+                    : chosen
+                      ? 'wrong'
+                      : '';
+                return (
+                  <label key={option} className={`question-option ${mark}`}>
+                    <input
+                      type="radio"
+                      name={q.id}
+                      value={option}
+                      checked={chosen}
+                      disabled={submitted}
+                      onChange={() => onChange(q.id, option)}
+                    />
+                    <span className="option-key" aria-hidden="true">
+                      {String.fromCharCode(65 + n)}
+                    </span>
+                    <span>{option}</span>
+                  </label>
+                );
+              },
+            )}
+          </div>
         ) : (
-          <label>
+          <label className="question-short">
             {t('answer')}
             <input
               disabled={submitted}
@@ -101,9 +130,9 @@ export function Questions({
           </label>
         )}
         {submitted && (
-          <div className={`notice ${isCorrect(q, answers[q.id] ?? '') ? 'right' : 'error'}`}>
+          <div className={`notice ${right ? 'right' : 'error'}`}>
             <strong>
-              {isCorrect(q, answers[q.id] ?? '') ? '✓' : '✕'} {q.answers[0]}
+              {right ? '✓' : '✕'} {q.answers[0]}
             </strong>
             <p>
               {t('explanation')}: {q.explanation}
@@ -126,6 +155,18 @@ export function Questions({
           {bi('Câu tiếp', 'Next question')} →
         </button>
       </div>
+      {onCheck && !submitted && (
+        <div className="question-check">
+          <button className="primary" disabled={checking || left > 0} onClick={onCheck}>
+            {t('check')}
+          </button>
+          <span className="muted" role="status">
+            {left > 0
+              ? bi(`Còn ${left} câu chưa trả lời.`, `${left} still to answer.`)
+              : bi('Đã trả lời hết, bấm để xem kết quả.', 'All answered: check your result.')}
+          </span>
+        </div>
+      )}
     </div>
   );
 }

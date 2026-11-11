@@ -64,34 +64,27 @@ function ReadingSession({
           )}
         </article>
         <section className="panel">
-          <h2>{bi('Đọc hiểu', 'Check your understanding')}</h2>
           <Questions
             questions={lesson.questions}
             answers={answers}
             submitted={submitted}
             onChange={(id, v) => setAnswers({ ...answers, [id]: v })}
+            checking={busy}
+            onCheck={() => {
+              setBusy(true);
+              void logAttempt('reading', score, start, lesson.title)
+                .then(() => {
+                  setSubmitted(true);
+                  if (readingSeconds === undefined) setReadingSeconds(Math.max(1, seconds));
+                })
+                .catch(() => setError(t('error')))
+                .finally(() => setBusy(false));
+            }}
           />
-          {submitted ? (
+          {submitted && (
             <Notice>
               {t('result')} · {score}%
             </Notice>
-          ) : (
-            <button
-              className="primary mt-5"
-              disabled={busy || lesson.questions.some((q) => !answers[q.id]?.trim())}
-              onClick={() => {
-                setBusy(true);
-                void logAttempt('reading', score, start, lesson.title)
-                  .then(() => {
-                    setSubmitted(true);
-                    if (readingSeconds === undefined) setReadingSeconds(Math.max(1, seconds));
-                  })
-                  .catch(() => setError(t('error')))
-                  .finally(() => setBusy(false));
-              }}
-            >
-              {t('check')}
-            </button>
           )}
           {submitted && <LessonContinue onContinue={onContinue} hasNext={hasNext} />}
           {error && <Notice error>{error}</Notice>}

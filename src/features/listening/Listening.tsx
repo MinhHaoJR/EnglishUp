@@ -47,33 +47,34 @@ function AudioPlayer({
       [...new Set(lines.map((line) => line.speaker))],
     );
   return (
-    <section className="audio-player">
-      <div className="actions">
-        <button className="primary" onClick={() => play(sentences)}>
-          <SkillIcon skill="play" size={18} />
+    <div className="audio-player">
+      <div className="audio-main">
+        <button className="primary audio-play" onClick={() => play(sentences)}>
+          <SkillIcon skill="play" size={20} />
           {t('listen')}
         </button>
         <button onClick={stopSpeech}>
           <SkillIcon skill="stop" size={16} />
           {t('stop')}
         </button>
-        <label>
-          {bi('Tốc độ bài nghe', 'Playback speed')}
-          <select value={speed} onChange={(e) => setSpeed(Number(e.target.value))}>
-            {[0.75, 1, 1.25].map((n) => (
-              <option value={n} key={n}>
-                {n}×
-              </option>
-            ))}
-          </select>
-        </label>
+        <div
+          className="audio-speed"
+          role="group"
+          aria-label={bi('Tốc độ bài nghe', 'Playback speed')}
+        >
+          {[0.75, 1, 1.25].map((n) => (
+            <button key={n} type="button" aria-pressed={speed === n} onClick={() => setSpeed(n)}>
+              {n}×
+            </button>
+          ))}
+        </div>
       </div>
       {sentences.length > 1 && (
-        <>
-          <p className="muted mt-4">
+        <div className="audio-lines">
+          <p className="muted">
             {bi('Nghe lại từng câu', 'Replay a sentence')} · {settings.accent}
           </p>
-          <div className="actions mt-2">
+          <div className="audio-line-buttons">
             {sentences.map((line, i) => (
               <button
                 key={i}
@@ -85,10 +86,10 @@ function AudioPlayer({
               </button>
             ))}
           </div>
-        </>
+        </div>
       )}
       {error && <Notice error>{error}</Notice>}
-    </section>
+    </div>
   );
 }
 function ListeningSession({
@@ -122,52 +123,50 @@ function ListeningSession({
       </button>
       <PageTitle title={lesson.title} meta={`${lesson.level} · ${lesson.topic}`} />
       <div className="split">
-        <section className="panel">
-          <AudioPlayer lines={lesson.lines} reveal={submitted || settings.transcript} />
+        <div className="session-stack">
+          <section className="panel" aria-labelledby="listening-audio">
+            <h2 id="listening-audio">{bi('Bài nghe', 'Audio')}</h2>
+            <AudioPlayer lines={lesson.lines} reveal={submitted || settings.transcript} />
+          </section>
           {submitted || settings.transcript ? (
-            <div className="mt-6">
+            <section className="panel">
               <h2>{bi('Bản chép lời', 'Transcript')}</h2>
               {lesson.lines.map((line, i) => (
-                <div className="mt-4" key={i}>
-                  <strong className="muted">{line.speaker}</strong>
+                <div className="transcript-line" key={i}>
+                  <strong>{line.speaker}</strong>
                   <DictionaryText text={line.text} />
                 </div>
               ))}
-            </div>
+            </section>
           ) : (
-            <p className="notice">
+            <p className="panel locked-note">
+              <SkillIcon skill="lock" size={20} />
               {bi(
                 'Bản chép lời sẽ mở sau khi bạn trả lời.',
                 'The transcript unlocks after you answer.',
               )}
             </p>
           )}
-        </section>
+        </div>
         <section className="panel">
           <Questions
             questions={lesson.questions}
             answers={answers}
             submitted={submitted}
             onChange={(id, v) => setAnswers({ ...answers, [id]: v })}
+            checking={busy}
+            onCheck={() => {
+              setBusy(true);
+              void logAttempt('listening', score, start, lesson.title)
+                .then(() => setSubmitted(true))
+                .catch(() => setError(t('error')))
+                .finally(() => setBusy(false));
+            }}
           />
-          {submitted ? (
+          {submitted && (
             <Notice>
               {t('result')} · {score}%
             </Notice>
-          ) : (
-            <button
-              className="primary mt-5"
-              disabled={busy || lesson.questions.some((q) => !answers[q.id]?.trim())}
-              onClick={() => {
-                setBusy(true);
-                void logAttempt('listening', score, start, lesson.title)
-                  .then(() => setSubmitted(true))
-                  .catch(() => setError(t('error')))
-                  .finally(() => setBusy(false));
-              }}
-            >
-              {t('check')}
-            </button>
           )}
           {submitted && <LessonContinue onContinue={onContinue} hasNext={hasNext} />}
           {error && <Notice error>{error}</Notice>}

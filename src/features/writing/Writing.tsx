@@ -106,6 +106,7 @@ function WritingSession({
     }
   }
   const previous = history.find((s) => s.id === compare);
+  const words = countWords(text);
   return (
     <>
       <button className="mb-5" onClick={onBack}>
@@ -116,58 +117,83 @@ function WritingSession({
         title={prompt.title}
       />
       <div className="split">
-        <section className="panel">
-          <p className="writing-prompt">{prompt.prompt}</p>
-          <div className="editor-toolbar">
-            <span>
-              {countWords(text)} / {prompt.minWords}–{prompt.maxWords} {t('words')}
-            </span>
-            <span>
-              {Math.floor(seconds / 60)}:{String(seconds % 60).padStart(2, '0')} ·{' '}
-              {saving ? bi('Đang lưu…', 'Saving…') : ready ? t('saved') : t('loading')}
-            </span>
-          </div>
-          <label className="sr-only" htmlFor="writing-editor">
-            {t('draft')}
-          </label>
-          <textarea
-            id="writing-editor"
-            className="writing-editor"
-            disabled={!ready || busy}
-            maxLength={15000}
-            spellCheck
-            lang="en"
-            value={text}
-            onChange={(e) => change(e.target.value)}
-            placeholder={bi('Bắt đầu với một ý tưởng…', 'Start with one idea…')}
-          />
-          <div className="actions mt-5">
-            <button
-              className="primary"
-              disabled={!ready || busy || !text.trim() || text === submittedText}
-              onClick={() => void submit()}
-            >
-              {busy ? t('loading') : bi('Nhận phản hồi & lưu bài', 'Get feedback & save')}
-            </button>
-          </div>
-          {!!feedback && text === submittedText && !busy && !saving && (
-            <LessonContinue onContinue={onContinue} hasNext={hasNext} />
-          )}
-          {error && <Notice error>{error}</Notice>}
-        </section>
+        <div className="session-stack">
+          <section className="panel writing-task" aria-labelledby="writing-task">
+            <h2 id="writing-task">{bi('Đề bài', 'Task')}</h2>
+            <p className="writing-prompt" lang="en">
+              {prompt.prompt}
+            </p>
+            <p className="writing-goal">
+              {bi(
+                `Viết ${prompt.minWords}–${prompt.maxWords} từ bằng tiếng Anh.`,
+                `Write ${prompt.minWords}–${prompt.maxWords} words in English.`,
+              )}
+            </p>
+          </section>
+          <section className="panel writing-desk" aria-labelledby="writing-desk">
+            <div className="writing-desk-head">
+              <h2 id="writing-desk">{bi('Bài viết của bạn', 'Your writing')}</h2>
+              <span className="muted">
+                {Math.floor(seconds / 60)}:{String(seconds % 60).padStart(2, '0')} ·{' '}
+                {saving ? bi('Đang lưu…', 'Saving…') : ready ? t('saved') : t('loading')}
+              </span>
+            </div>
+            <label className="sr-only" htmlFor="writing-editor">
+              {t('draft')}
+            </label>
+            <textarea
+              id="writing-editor"
+              className="writing-editor"
+              disabled={!ready || busy}
+              maxLength={15000}
+              spellCheck
+              lang="en"
+              value={text}
+              onChange={(e) => change(e.target.value)}
+              placeholder={bi('Bắt đầu với một ý tưởng…', 'Start with one idea…')}
+            />
+            <div className="writing-desk-foot">
+              <div
+                className={`word-goal ${words < prompt.minWords ? '' : words > prompt.maxWords ? 'over' : 'ok'}`}
+              >
+                <span>
+                  <strong>{words}</strong> / {prompt.minWords}–{prompt.maxWords} {t('words')}
+                </span>
+                <span className="word-meter" aria-hidden="true">
+                  <span style={{ width: `${Math.min(100, (words / prompt.maxWords) * 100)}%` }} />
+                </span>
+              </div>
+              <button
+                className="primary"
+                disabled={!ready || busy || !text.trim() || text === submittedText}
+                onClick={() => void submit()}
+              >
+                {busy ? t('loading') : bi('Nhận phản hồi & lưu bài', 'Get feedback & save')}
+              </button>
+            </div>
+            {!!feedback && text === submittedText && !busy && !saving && (
+              <LessonContinue onContinue={onContinue} hasNext={hasNext} />
+            )}
+            {error && <Notice error>{error}</Notice>}
+          </section>
+        </div>
         <section className="panel">
           <h2>{bi('Trước khi nộp bài', 'Before you submit')}</h2>
-          {prompt.checklist.map((c, i) => (
-            <label className="checkbox mt-5" key={c}>
-              <input
-                type="checkbox"
-                checked={checks[i]}
-                onChange={(e) => setChecks(checks.map((v, n) => (n === i ? e.target.checked : v)))}
-              />
-              {c}
-            </label>
-          ))}
-          <div className="notice mt-6">
+          <div className="check-list">
+            {prompt.checklist.map((c, i) => (
+              <label className="checkbox" key={c}>
+                <input
+                  type="checkbox"
+                  checked={checks[i]}
+                  onChange={(e) =>
+                    setChecks(checks.map((v, n) => (n === i ? e.target.checked : v)))
+                  }
+                />
+                <span lang="en">{c}</span>
+              </label>
+            ))}
+          </div>
+          <div className="notice">
             <strong>
               {bi('Nhận xét theo quy tắc · Không cần mạng', 'Rule-based feedback · Offline')}
             </strong>

@@ -103,7 +103,10 @@ export default function Placement() {
                 lang={question.kind === 'grammar' ? 'en' : undefined}
                 onClick={() => void answer(i)}
               >
-                {option}
+                <span className="option-key" aria-hidden="true">
+                  {String.fromCharCode(65 + i)}
+                </span>
+                <span>{option}</span>
               </button>
             ))}
           </div>
@@ -122,50 +125,56 @@ export default function Placement() {
     <>
       {title}
       {result && <Report result={result} saving={saving} />}
-      <section className="panel space-y-4 placement-intro">
-        <h2>
-          {result
-            ? bi('Làm lại bài kiểm tra', 'Take the test again')
-            : bi('Cách làm', 'How it works')}
-        </h2>
-        <ul className="placement-facts">
-          <li>
-            <SkillIcon skill="placement" size={18} />
-            {bi(
-              `30 câu, ${PER_LEVEL} câu mỗi trình độ từ A1 đến C2, dễ trước khó sau.`,
-              `30 questions, ${PER_LEVEL} per level from A1 to C2, easiest first.`,
-            )}
-          </li>
-          <li>
-            <SkillIcon skill="grammar" size={18} />
-            {bi(
-              'Mỗi trình độ có câu điền ngữ pháp vào chỗ trống và câu chọn nghĩa từ vựng.',
-              'Each level mixes fill-the-blank grammar and word-meaning questions.',
-            )}
-          </li>
-          <li>
-            <SkillIcon skill="goal" size={18} />
-            {bi(
-              `Điểm = số câu đúng / 30 × 100. Bạn đạt một trình độ khi đúng từ ${Math.ceil(PER_LEVEL * PASS_SHARE)}/${PER_LEVEL} câu của trình độ đó và mọi trình độ thấp hơn.`,
-              `Score = right answers / 30 × 100. You reach a level with at least ${Math.ceil(PER_LEVEL * PASS_SHARE)}/${PER_LEVEL} right on it and on every level below.`,
-            )}
-          </li>
-          <li>
-            <SkillIcon skill="game" size={18} />
-            {bi(
-              'Không giới hạn thời gian, khoảng 10 phút. Không biết thì bấm "Bỏ qua", đừng đoán.',
-              'No time limit, about 10 minutes. Skip rather than guess when you do not know.',
-            )}
-          </li>
-        </ul>
-        {last && !result && (
-          <p className="muted">
-            {bi('Lần trước', 'Last time')}: {last.score}/100 · {bi('trình độ', 'level')}{' '}
-            {last.level ?? bi('dưới A1', 'below A1')} (
-            {new Date(last.at).toLocaleDateString(settings.language === 'vi' ? 'vi-VN' : 'en-GB')})
+      <section className="panel placement-intro">
+        <div className="placement-how">
+          <h2>
+            {result
+              ? bi('Làm lại bài kiểm tra', 'Take the test again')
+              : bi('Cách làm', 'How it works')}
+          </h2>
+          <ul className="placement-facts">
+            <li>
+              <SkillIcon skill="placement" size={18} />
+              {bi(
+                `30 câu, ${PER_LEVEL} câu mỗi trình độ từ A1 đến C2, dễ trước khó sau.`,
+                `30 questions, ${PER_LEVEL} per level from A1 to C2, easiest first.`,
+              )}
+            </li>
+            <li>
+              <SkillIcon skill="grammar" size={18} />
+              {bi(
+                'Mỗi trình độ có câu điền ngữ pháp vào chỗ trống và câu chọn nghĩa từ vựng.',
+                'Each level mixes fill-the-blank grammar and word-meaning questions.',
+              )}
+            </li>
+            <li>
+              <SkillIcon skill="goal" size={18} />
+              {bi(
+                `Điểm = số câu đúng / 30 × 100. Bạn đạt một trình độ khi đúng từ ${Math.ceil(PER_LEVEL * PASS_SHARE)}/${PER_LEVEL} câu của trình độ đó và mọi trình độ thấp hơn.`,
+                `Score = right answers / 30 × 100. You reach a level with at least ${Math.ceil(PER_LEVEL * PASS_SHARE)}/${PER_LEVEL} right on it and on every level below.`,
+              )}
+            </li>
+            <li>
+              <SkillIcon skill="game" size={18} />
+              {bi(
+                'Không giới hạn thời gian. Không biết thì bấm "Bỏ qua", đừng đoán.',
+                'No time limit. Skip rather than guess when you do not know.',
+              )}
+            </li>
+          </ul>
+        </div>
+        <div className="placement-start">
+          <p className="placement-length">
+            {bi('30 câu · khoảng 10 phút', '30 questions · about 10 minutes')}
           </p>
-        )}
-        <div className="actions">
+          {last && !result && (
+            <p className="muted">
+              {bi('Lần trước', 'Last time')}: <strong>{last.score}/100</strong> ·{' '}
+              {bi('trình độ', 'level')} {last.level ?? bi('dưới A1', 'below A1')} (
+              {new Date(last.at).toLocaleDateString(settings.language === 'vi' ? 'vi-VN' : 'en-GB')}
+              )
+            </p>
+          )}
           <button
             className="primary"
             onClick={() => {

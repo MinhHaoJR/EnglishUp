@@ -62,3 +62,37 @@ test('after checking, stations say which answers were right', () => {
   fireEvent.click(screen.getByRole('button', { name: 'Question 2, right' }));
   expect(screen.getByText(/Outside the bookshop/)).toBeInTheDocument();
 });
+
+test('the check button waits for every answer, then options show right and wrong', () => {
+  let checked = 0;
+  function Checked() {
+    const [answers, setAnswers] = useState<Record<string, string>>({});
+    const [submitted, setSubmitted] = useState(false);
+    return (
+      <Questions
+        questions={questions}
+        answers={answers}
+        submitted={submitted}
+        onChange={(id, value) => setAnswers({ ...answers, [id]: value })}
+        onCheck={() => {
+          checked++;
+          setSubmitted(true);
+        }}
+      />
+    );
+  }
+  render(<Checked />);
+  const check = screen.getByRole('button', { name: 'Check answer' });
+  expect(check).toBeDisabled();
+  expect(screen.getByText('2 still to answer.')).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('radio', { name: 'Her sister' }));
+  fireEvent.click(screen.getByRole('button', { name: /Next question/ }));
+  fireEvent.change(screen.getByRole('textbox'), { target: { value: 'the bookshop' } });
+  expect(check).toBeEnabled();
+  fireEvent.click(check);
+  expect(checked).toBe(1);
+  expect(screen.queryByRole('button', { name: 'Check answer' })).not.toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Question 1, wrong' }));
+  expect(screen.getByRole('radio', { name: 'Her brother' }).closest('label')).toHaveClass('right');
+  expect(screen.getByRole('radio', { name: 'Her sister' }).closest('label')).toHaveClass('wrong');
+});
