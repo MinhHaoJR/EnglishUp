@@ -145,7 +145,7 @@ Behind every page sit soft waves (lower left, right side, a faint arc at the top
   - The stage starts with a strip of sky (fixed light gradient in both themes, like Tom's artwork): Tom peeks over the card edge with his paws on it, a tilted white speech bubble says "English made easy!", and the name sits large with the status, among white paw prints. The chat card hangs under it with 24px lower corners.
   - The card opens with a soft bar (megaphone for a new chat, bubble for an open one, the subtitle and questions left today), then a centred 860px reading column: answers as plain text beside Tom's avatar, questions as blue bubbles, sources by skill line.
   - An empty chat shows a yellow sparkle with "What would you like to ask today?" and four starter cards in two columns, each with a 52px skill-line tile, the skill name, the question and a chevron.
-  - The composer is the corner chat's pill (sparkle and divider) beside a 56px round send button; the footnote with a small shield covers accuracy and privacy.
+  - The composer is the corner chat's pill (sparkle and divider) beside a 56px round send button; the footnote with a small shield reminds that answers can be wrong.
   - Once a chat has messages the sky folds away and the card takes the full height, with 24px corners all round.
   - Below 1100px the speech bubble goes; below 860px the rail becomes a sideways strip of the new-chat pill and chats, and the sky shrinks to a 118px Tom beside the name.
 - **Sign-in entrance** (`/login`, `src/features/account/SignIn.tsx`). A full-screen page outside the app shell: no sidebar, top bar or tutor bubble.

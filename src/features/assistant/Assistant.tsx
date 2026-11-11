@@ -286,8 +286,8 @@ export default function Assistant() {
                 <>
                   <SkillIcon skill="shield" size={16} />{' '}
                   {bi(
-                    'Trợ giảng có thể sai, hãy kiểm tra nguồn. Câu hỏi được gửi tới Google Gemini (gói miễn phí); đừng nhập thông tin cá nhân.',
-                    'The tutor can be wrong; check the sources. Questions go to Google Gemini (free tier); do not enter personal information.',
+                    'Trợ giảng có thể sai, hãy kiểm tra nguồn.',
+                    'The tutor can be wrong; check the sources.',
                   )}
                 </>
               }
