@@ -439,37 +439,41 @@ function JourneySection() {
       {journey.map((d) => (
         <li key={dayKey(d.time)} className={d.badges.length ? 'milestone' : undefined}>
           <span className="journey-dot" aria-hidden="true" />
-          <time dateTime={dayKey(d.time)}>
-            {new Date(d.time).toLocaleDateString(locale, {
-              weekday: 'short',
-              day: 'numeric',
-              month: 'numeric',
-            })}
-          </time>
-          <div className="journey-body">
-            {d.count > 0 && (
-              <p>
-                <span className="journey-lines">
-                  {skills
-                    .filter((s) => d.skills.has(s))
-                    .map((s) => (
-                      <span key={s} className="line-tile small" data-skill={s} title={t(s)}>
-                        <SkillIcon skill={s} size={16} />
-                        <span className="sr-only">{t(s)}</span>
-                      </span>
-                    ))}
-                </span>
-                {bi(`${d.count} lượt`, `${d.count} practices`)} ·{' '}
-                {Math.max(1, Math.round(d.seconds / 60))} {t('minutes')}
-              </p>
-            )}
-            {d.badges.map((code) => (
-              <p key={code} className="journey-badge">
-                <SkillIcon skill="achievements" size={16} />
-                {bi('Huy hiệu', 'Badge')}:{' '}
-                {bi(badgeText[code]?.[0] ?? code, badgeText[code]?.[1] ?? code)}
-              </p>
-            ))}
+          <div className="journey-card">
+            <time dateTime={dayKey(d.time)}>
+              {new Date(d.time).toLocaleDateString(locale, {
+                weekday: 'short',
+                day: 'numeric',
+                month: 'numeric',
+              })}
+            </time>
+            <div className="journey-body">
+              {d.count > 0 && (
+                <p>
+                  <span className="journey-lines">
+                    {skills
+                      .filter((s) => d.skills.has(s))
+                      .map((s) => (
+                        <span key={s} className="line-tile small" data-skill={s} title={t(s)}>
+                          <SkillIcon skill={s} size={16} />
+                          <span className="sr-only">{t(s)}</span>
+                        </span>
+                      ))}
+                  </span>
+                  <span className="journey-stats">
+                    {bi(`${d.count} lượt`, `${d.count} practices`)} ·{' '}
+                    {Math.max(1, Math.round(d.seconds / 60))} {t('minutes')}
+                  </span>
+                </p>
+              )}
+              {d.badges.map((code) => (
+                <p key={code} className="journey-badge">
+                  <SkillIcon skill="achievements" size={16} />
+                  {bi('Huy hiệu', 'Badge')}:{' '}
+                  {bi(badgeText[code]?.[0] ?? code, badgeText[code]?.[1] ?? code)}
+                </p>
+              ))}
+            </div>
           </div>
         </li>
       ))}
