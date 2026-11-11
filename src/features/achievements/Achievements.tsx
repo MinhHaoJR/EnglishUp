@@ -77,7 +77,12 @@ export default function Achievements() {
     };
   }, [email, period, lastSynced]);
 
-  const title = <PageTitle title={bi('Thành tích', 'Achievements')} />;
+  const title = (
+    <PageTitle
+      title={bi('Thành tích', 'Achievements')}
+      description={bi('Chuỗi ngày học, điểm và huy hiệu của bạn', 'Your streak, points and badges')}
+    />
+  );
 
   if (!email)
     return (

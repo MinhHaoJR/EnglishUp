@@ -66,7 +66,13 @@ export default function Account() {
 
   return (
     <>
-      <PageTitle title={bi('Tài khoản', 'Account')} />
+      <PageTitle
+        title={bi('Tài khoản', 'Account')}
+        description={bi(
+          'Hồ sơ, điểm, huy hiệu và đồng bộ của bạn',
+          'Your profile, points, badges and sync',
+        )}
+      />
       <div className="account">
         <aside className="account-side">
           <div className="account-card">

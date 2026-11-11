@@ -76,12 +76,14 @@ Base unit 4px. In use: 2 and 4 inside tight groups, 8 and 12 between related ite
 
 ## Shape and elevation
 
-- 12px (`--radius`): panels, lesson cards, route stops, chat window.
-- 8px (`--radius-sm`): buttons, inputs, nav items, pictogram tiles, sign plates.
+- 16px (`--radius`): panels, lesson cards, route stops, chat window, notices.
+- 12px (`--radius-sm`): buttons, inputs, selects, nav items, pictogram tiles, sign plates.
 - 6px: small tiles, segmented tab buttons, week bars.
 - Pill: only for small chips (badges, page meta, progress tracks, suggestion chips).
 
 Panels inside the workspace float: 16px corners, a border tinted 8% toward primary and `--panel-shadow` (a soft drop that deepens in dark mode), after the owner's dashboard reference. Other controls keep a 1px `--border` and no shadow, apart from the exceptions below.
+
+The Settings look applies everywhere: every page title has a one-line subtitle; selects draw their own primary chevron; fields gain a primary-tinted edge on hover and a primary border with a soft 3px ring on keyboard focus; ticks and radios are 18px; notices are soft tip cards (9% primary on the panel, 16px corners).
 
 Behind every page sit soft waves (lower left, right side, a faint arc at the top) and a dot grid fading from the top-right corner. Both are masks over the primary colour (`public/bg/waves.svg`), so they follow light and dark; they ignore the pointer, sit under content, drop the dots below 700px and disappear in print. The overview is denser to fit one screen: 18px gaps and panel padding, a 1.625rem title on a white-to-wash plate with a 4px route line, 56px route stops and 32px skill tiles.
 

@@ -196,7 +196,13 @@ export default function Vocabulary() {
   return (
     <>
       {/* Words are added only in the admin library; learners keep editing words they saved before. */}
-      <PageTitle title={t('vocabulary')} />
+      <PageTitle
+        title={t('vocabulary')}
+        description={bi(
+          'Học thẻ từ, ôn tập ngắt quãng và luyện dịch',
+          'Word cards, spaced review and translation',
+        )}
+      />
       {/* While a card is on screen, the totals step aside so the word has the page. */}
       {tab !== 'relations' && !(tab === 'practice' && practicing) && (
         <div className="stats">

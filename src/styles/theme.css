@@ -6375,3 +6375,44 @@ html.dark {
 html.dark .settings-data-art {
   opacity: 0.8;
 }
+
+/* ---------- The Settings look, everywhere ----------
+   12px controls and 16px cards, selects with their own primary chevron, a soft primary ring on
+   focused fields, roomier ticks and notices as soft tip cards. */
+:root {
+  --radius: 16px;
+  --radius-sm: 12px;
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230b5cad' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-position: right 14px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+html.dark select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2362a8f2' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+}
+input:not([type='checkbox'], [type='range'], [type='radio']):hover:not(:disabled),
+select:hover:not(:disabled),
+textarea:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
+}
+input:not([type='checkbox'], [type='range'], [type='radio']):focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 24%, transparent);
+}
+input[type='checkbox'],
+input[type='radio'] {
+  width: 18px;
+  height: 18px;
+}
+.notice {
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--primary) 9%, var(--panel));
+}

@@ -319,7 +319,13 @@ export default function Speaking() {
     );
   return (
     <>
-      <PageTitle title={t('speaking')} />
+      <PageTitle
+        title={t('speaking')}
+        description={bi(
+          'Nói theo mẫu hoặc theo chủ đề, ghi âm và tự đánh giá',
+          'Speak after a model or on a topic, record and reflect',
+        )}
+      />
       <div className="tabs">
         <button aria-pressed={mode === 'read'} onClick={() => setMode('read')}>
           {bi('Đọc & nhại mẫu', 'Read & shadow')}

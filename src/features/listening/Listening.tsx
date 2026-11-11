@@ -280,7 +280,13 @@ export default function Listening() {
     );
   return (
     <>
-      <PageTitle title={t('listening')} />
+      <PageTitle
+        title={t('listening')}
+        description={bi(
+          'Nghe hội thoại theo trình độ rồi trả lời câu hỏi',
+          'Listen to dialogues at your level, then answer',
+        )}
+      />
       <div className="tabs">
         <button aria-pressed={tab === 'lessons'} onClick={() => setTab('lessons')}>
           {bi('Hội thoại & bài nói', 'Dialogues & talks')}

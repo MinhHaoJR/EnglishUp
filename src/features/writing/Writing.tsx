@@ -331,7 +331,13 @@ export default function Writing() {
     );
   return (
     <>
-      <PageTitle title={t('writing')} />
+      <PageTitle
+        title={t('writing')}
+        description={bi(
+          'Viết theo đề, nhận phản hồi và so sánh các bản',
+          'Write to a prompt, get feedback and compare drafts',
+        )}
+      />
       <LessonBrowser
         skill="writing"
         all={all}

@@ -111,7 +111,13 @@ export default function Reading() {
     );
   return (
     <>
-      <PageTitle title={t('reading')} />
+      <PageTitle
+        title={t('reading')}
+        description={bi(
+          'Đọc bài theo trình độ, tra từ và trả lời câu hỏi',
+          'Read at your level, look up words and answer',
+        )}
+      />
       <LessonBrowser
         skill="reading"
         all={all}
