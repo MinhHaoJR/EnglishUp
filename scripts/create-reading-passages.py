@@ -1637,6 +1637,796 @@ Thao
 ? t | Thao wants to become a teacher. | T | The last paragraph says so. | I want to become a teacher like you.
 """
 
+PASSAGES["B1"] = """
+## Working from anywhere | WK
+When Thanh started her small design company five years ago, all six employees worked in the same office. Then, during a long period when people had to stay at home, the company moved online. Something surprising happened: the work did not get worse. In fact, some projects were finished faster.
+
+When the office reopened, Thanh asked her team what they wanted. Most of them preferred a mix: two days in the office and three days at home. One designer, Long, wanted to work from his hometown, three hundred kilometres away, so he could look after his elderly parents.
+
+Thanh agreed, but she made some rules. Everyone had to be online between ten and three, and there was a video meeting every Monday morning. Once a month, the whole team met in person for a day of planning and a long lunch together.
+
+The new system has advantages for the company too. Thanh moved to a smaller office and now pays forty percent less rent. She has also hired two new designers who live in other cities.
+
+There are some difficulties. New employees sometimes feel lonely, and it is harder to share quick ideas. But Thanh says she will never go back to the old way. "People work better when they have some control over their lives," she says.
+? c | What happened when the company moved online? | *The work did not get worse | Several employees left | The company lost clients | The first paragraph explains. | the work did not get worse.
+? c | Why did Long want to work from his hometown? | *To look after his elderly parents | Because rent there is cheaper | To start his own company | The second paragraph explains. | so he could look after his elderly parents.
+? s | Between what times must everyone be online? | between ten and three / ten and three / 10 and 3 | The third paragraph says so. | Everyone had to be online between ten and three
+? t | The company now pays less rent. | T | It pays forty percent less. | now pays forty percent less rent.
+? t | Thanh plans to return to the old way of working. | F | She says she will never go back. | Thanh says she will never go back to the old way.
+
+## Why I sold my car | TP
+For ten years, I drove to work every day. I thought I couldn't live without a car. Then, last year, my car broke down and the repair was going to cost almost a thousand dollars. I decided to try living without it for one month before I paid for the repair.
+
+The first week was difficult. I had to learn the bus routes, and the bus to my office took forty-five minutes, fifteen minutes longer than driving. But I soon discovered that I could read on the bus. In one month, I finished three books, something I hadn't done for years.
+
+For short trips, I bought a second-hand bicycle. I started cycling to the market and to visit friends. After a few weeks, I felt fitter, and I slept better at night.
+
+I also calculated how much my car really cost me. With petrol, parking, insurance and repairs, it was about three hundred dollars a month. Now I spend about sixty dollars on transport.
+
+At the end of the month, I didn't repair the car. I sold it. There are times when I miss it, especially when it rains or when I need to carry heavy things. For those times, I rent a car or take a taxi. Overall, my life is cheaper, healthier and less stressful.
+? c | Why did the writer stop driving at first? | *The car broke down and the repair was expensive | The writer moved closer to work | The writer lost their licence | The first paragraph explains. | my car broke down and the repair was going to cost almost a thousand dollars.
+? s | How many books did the writer finish in the first month? | three / 3 / three books | The second paragraph says so. | In one month, I finished three books
+? c | How much did the car cost the writer each month? | *About three hundred dollars | About sixty dollars | About a thousand dollars | The fourth paragraph says so. | it was about three hundred dollars a month.
+? t | The writer never misses the car. | F | The writer sometimes misses it. | There are times when I miss it
+? t | The writer sometimes rents a car. | T | The last paragraph says so. | For those times, I rent a car or take a taxi.
+
+## The Thursday English club | ED
+Every Thursday evening, about twenty people meet in a room above a café in the city centre. They are students, office workers, a retired doctor and even a taxi driver. They have one thing in common: they all want to speak better English.
+
+The English club was started two years ago by Minh, a university student. He noticed that many people studied English for years but were still afraid to speak. "In class, we learn grammar and take tests," he says. "But we rarely practise real conversation."
+
+The club is free, and there is no teacher. Each week, one member chooses a topic, such as travel, food or technology. Members sit in small groups of four or five and talk for an hour. Then each group shares the most interesting ideas with everyone. Sometimes foreign visitors join the club, and everyone enjoys the chance to talk with them.
+
+The most important rule is that nobody laughs at mistakes. Minh believes that people learn faster when they feel relaxed.
+
+Hoa, a nurse, has come every week for a year. "When I started, I could only say a few sentences," she says. "Last month, I helped a foreign patient at the hospital in English. I was so proud."
+? c | What do all the club members have in common? | *They want to speak better English | They are all students | They all work in the city centre | The first paragraph explains. | they all want to speak better English.
+? c | Why did Minh start the club? | *People rarely practise real conversation in class | He wanted to earn money | His teacher asked him | The second paragraph explains. | we rarely practise real conversation.
+? t | Members have to pay a small fee. | F | The club is free. | The club is free
+? s | What is the most important rule? | nobody laughs at mistakes / no laughing at mistakes | The fourth paragraph says so. | The most important rule is that nobody laughs at mistakes.
+? t | Hoa used English to help a patient. | T | The last paragraph says so. | I helped a foreign patient at the hospital in English.
+
+## The town without plastic bags | EN
+Three years ago, a small coastal town decided to stop using plastic bags. Shops were no longer allowed to give them to customers, and people had to bring their own bags or buy a cloth bag.
+
+The idea came from a group of high school students. They organised a beach clean-up and collected more than two hundred kilos of rubbish in one morning. Most of it was plastic bags. The students took photos and showed them at a town meeting. Many people were shocked.
+
+At first, some shop owners were worried. They thought customers would be angry and go to shop in other towns. A few customers did complain, especially older people who were used to plastic bags. But most people changed their habits quickly. Several local women started a business making colourful bags from old clothes, and tourists love buying them as souvenirs.
+
+Today, the beach is much cleaner, and fishermen say they find less plastic in their nets. Other towns in the region are now thinking about doing the same thing.
+
+The students who started the campaign are now at university. One of them, Lan, is studying environmental science. "We showed that young people can change things," she says.
+? c | Where did the idea come from? | *A group of high school students | The town mayor | Local fishermen | The second paragraph explains. | The idea came from a group of high school students.
+? s | How much rubbish did the students collect in one morning? | more than two hundred kilos / two hundred kilos / 200 kilos | The second paragraph says so. | collected more than two hundred kilos of rubbish in one morning.
+? c | What were shop owners worried about at first? | *Customers would shop in other towns | Bags would be too expensive | Tourists would stop coming | The third paragraph explains. | They thought customers would be angry and go to shop in other towns.
+? t | All customers were happy with the change from the beginning. | F | Some complained. | A few customers did complain
+? t | Fishermen find less plastic in their nets now. | T | The fourth paragraph says so. | fishermen say they find less plastic in their nets.
+
+## Learning a language at fifty | ED
+Many people believe that adults cannot learn a new language well. Mrs. Lan, a fifty-two-year-old accountant, disagrees. Two years ago, she started learning Japanese, and today she can have a simple conversation and read short stories.
+
+She decided to learn because her son moved to Japan for work and married a Japanese woman. "I wanted to talk to my daughter-in-law and, one day, to my grandchildren," she explains.
+
+At first, it was very hard. She found the writing system especially difficult. She also worried that she was too old and that her memory was not good enough. But she discovered some advantages too. As an adult, she was more organised and more motivated than when she was a student.
+
+Her method is simple. She studies for thirty minutes every morning before work. She uses an app for vocabulary, listens to Japanese podcasts while she cooks and has an online lesson with a teacher in Osaka every Saturday.
+
+Last spring, she visited her son in Japan for three weeks. She ordered food in restaurants, asked for directions and talked with her daughter-in-law's parents. "They were very surprised," she laughs. "Now they are learning Vietnamese!"
+? c | Why did Mrs. Lan start learning Japanese? | *To talk with her son's Japanese family | For her job | To travel around Japan | The second paragraph explains. | I wanted to talk to my daughter-in-law
+? c | What did she find especially difficult? | *The writing system | Pronunciation | Listening | The third paragraph says so. | She found the writing system especially difficult.
+? s | How long does she study every morning? | thirty minutes / 30 minutes | The fourth paragraph says so. | She studies for thirty minutes every morning before work.
+? t | Mrs. Lan has online lessons with a teacher in Tokyo. | F | The teacher is in Osaka. | has an online lesson with a teacher in Osaka every Saturday.
+? t | Her daughter-in-law's parents are now learning Vietnamese. | T | The last paragraph says so. | Now they are learning Vietnamese!
+
+## Three generations of bakers | WK
+The Hong Phat bakery has been in the same street for over sixty years. It was opened by Mr. Phat in 1962, and today it is run by his granddaughter, Vy.
+
+When Mr. Phat started, he baked only one kind of bread, the long crispy loaf that is popular all over Viet Nam. He got up at two o'clock every morning to bake, and he sold the bread from a wooden cart.
+
+His son, Vy's father, expanded the business. In the 1990s, he opened a real shop and started making cakes for weddings and birthdays. The bakery became famous in the neighbourhood for its coconut cake.
+
+When Vy took over five years ago, the bakery was having problems. Big chain bakeries had opened nearby, and young customers were buying from them instead. Vy, who studied business, made some changes. She started selling online, created a website with photos of the cakes and added healthier options, like wholemeal bread.
+
+But she did not change everything. The bread is still made with her grandfather's recipe, and older customers still come every morning. "Our customers trust us because some things stay the same," Vy says. Her grandfather, now ninety, still visits the shop on Sundays to check the bread.
+? s | When was the bakery opened? | 1962 / in 1962 | The first paragraph says so. | It was opened by Mr. Phat in 1962
+? c | How did Mr. Phat sell his bread? | *From a wooden cart | In a big shop | Online | The second paragraph says so. | he sold the bread from a wooden cart.
+? c | What was the bakery famous for in the 1990s? | *Its coconut cake | Its wholemeal bread | Its wedding flowers | The third paragraph says so. | The bakery became famous in the neighbourhood for its coconut cake.
+? t | Vy changed the recipe for the bread. | F | It is still made with the grandfather's recipe. | The bread is still made with her grandfather's recipe
+? t | Vy studied business. | T | The fourth paragraph says so. | Vy, who studied business, made some changes.
+
+## The night market economy | SH
+Every evening at six o'clock, an empty car park in the city centre changes completely. Dozens of stalls appear, lights are turned on, and the smell of grilled food fills the air. By eight o'clock, thousands of people are walking between the stalls.
+
+For many families, the night market is an important source of income. Mrs. Hien has sold grilled corn there for twelve years. During the day, she works as a cleaner. The money from the market helps her pay for her children's school fees. "It's tiring to work day and night," she says, "but this is how we built our life."
+
+The market is also good for young people starting a business. Renting a stall costs much less than renting a shop. Duy, a twenty-three-year-old graphic designer, sells T-shirts with his own designs. If his designs sell well at the market, he plans to open an online shop.
+
+However, the market also creates problems. Residents nearby complain about noise and rubbish, and traffic is terrible on weekend nights. Last year, the city introduced new rules: the market must close at eleven, and every stall must take its rubbish away.
+
+Most people agree that the market is worth keeping. It brings life to the city and gives many people a chance to earn a living.
+? c | What is the place used for during the day? | *A car park | A school | A football field | The first paragraph says so. | an empty car park in the city centre changes completely.
+? s | How long has Mrs. Hien sold grilled corn at the market? | twelve years / 12 years | The second paragraph says so. | Mrs. Hien has sold grilled corn there for twelve years.
+? c | Why is the market good for young people starting a business? | *A stall costs much less than a shop | They get free training | The city gives them money | The third paragraph explains. | Renting a stall costs much less than renting a shop.
+? t | Duy already has an online shop. | F | He plans to open one. | he plans to open an online shop.
+? t | Stalls must now take their rubbish away. | T | It is one of the new rules. | every stall must take its rubbish away.
+
+## Sleep and learning | HE
+Many students believe that studying late into the night is the best way to prepare for an exam. But scientists say this is often a mistake. Sleep plays an important role in learning and memory.
+
+While we sleep, the brain is not resting completely. It organises the information we learned during the day and moves important memories to long-term storage. Studies show that students who sleep well after studying remember more than students who stay awake.
+
+Lack of sleep also affects concentration. A tired brain finds it harder to focus and solve problems. People who sleep less than six hours a night often make more mistakes and feel more stressed.
+
+Teenagers need eight to ten hours of sleep a night, but many get much less. One reason is screens. The light from phones and computers makes the brain think it is still daytime, so it becomes harder to fall asleep.
+
+Experts give some simple advice. Try to go to bed and wake up at the same time every day, even at weekends. Stop using screens an hour before bed. And if you have an exam, study in the afternoon or early evening, then get a good night's sleep. Your brain will do the rest.
+? c | According to scientists, what is often a mistake? | *Studying late into the night before an exam | Studying in the afternoon | Sleeping more than eight hours | The first paragraph explains. | studying late into the night is the best way to prepare for an exam. But scientists say this is often a mistake.
+? c | What does the brain do during sleep? | *Organises information and stores important memories | Forgets everything | Rests completely | The second paragraph explains. | It organises the information we learned during the day
+? s | How many hours of sleep do teenagers need? | eight to ten hours / eight to ten / 8 to 10 | The fourth paragraph says so. | Teenagers need eight to ten hours of sleep a night
+? t | Screen light helps the brain fall asleep. | F | It makes the brain think it is daytime. | makes the brain think it is still daytime
+? t | Experts advise the same sleep times at weekends. | T | The last paragraph says so. | even at weekends.
+
+## A year in New Zealand | TR
+After I finished university, I didn't start working immediately. Instead, I went to New Zealand on a working holiday visa. It allowed me to stay for one year and work to pay for my travels.
+
+For the first three months, I worked on a fruit farm picking apples. The work was physically hard, and I had to start at six in the morning. But I worked with people from all over the world: Germany, Chile, Japan and France. We lived together in a big wooden house, and in the evenings we cooked dishes from our countries.
+
+With the money I saved, I travelled around the country for two months. I hiked in national parks, saw glaciers and swam with dolphins. The landscape was more beautiful than anything I had seen before.
+
+Then I got a job in a café in Wellington. My English improved enormously, because I talked to customers all day. I also learned to make very good coffee!
+
+The year changed me. Before, I was shy and depended on my parents for everything. In New Zealand, I had to solve problems alone, like finding a place to live and opening a bank account. When I came home, I felt more confident, and I found a job in tourism quickly.
+? c | What did the visa allow the writer to do? | *Stay for one year and work | Study at a university | Stay for five years | The first paragraph explains. | It allowed me to stay for one year and work to pay for my travels.
+? s | What fruit did the writer pick? | apples | The second paragraph says so. | I worked on a fruit farm picking apples.
+? c | Where did the writer work after travelling? | *In a café in Wellington | On a dolphin boat | In a hotel | The fourth paragraph says so. | Then I got a job in a café in Wellington.
+? t | The writer was confident before the trip. | F | The writer was shy before. | Before, I was shy and depended on my parents for everything.
+? t | The writer found a job in tourism after returning. | T | The last paragraph says so. | I found a job in tourism quickly.
+
+## The real cost of cheap clothes | SH
+Clothes have never been cheaper. Today, you can buy a T-shirt for the price of a cup of coffee. Many people buy new clothes every month and throw away clothes after wearing them only a few times. This is often called fast fashion.
+
+But cheap clothes have hidden costs. Making clothes uses huge amounts of water. Producing one cotton T-shirt can use more than two thousand litres. Factories also use chemicals to colour fabrics, and in some countries these chemicals end up in rivers.
+
+There are also human costs. Many clothes are made in factories where workers earn very low wages and work long hours. Some factories are not safe.
+
+What can we do? Experts suggest a few simple steps. First, buy fewer clothes, but choose better quality ones that last longer. Second, take care of your clothes: wash them at lower temperatures and repair them when they are damaged. Third, try buying second-hand clothes or swapping clothes with friends.
+
+Some young people are leading the change. In many cities, there are now clothes-swapping events where people bring clothes they don't wear and take something new home. It's free, it's fun, and it's better for the planet.
+? c | What is fast fashion? | *Buying many cheap clothes and throwing them away quickly | Making clothes very quickly by hand | Clothes for sport | The first paragraph explains. | Many people buy new clothes every month and throw away clothes after wearing them only a few times.
+? s | How much water can one cotton T-shirt use? | more than two thousand litres / two thousand litres / 2000 litres | The second paragraph says so. | Producing one cotton T-shirt can use more than two thousand litres.
+? t | All clothes factories are unsafe. | F | Some factories are not safe. | Some factories are not safe.
+? c | What do experts suggest? | *Buying fewer, better-quality clothes | Buying only new clothes | Washing clothes at high temperatures | The fourth paragraph says so. | buy fewer clothes, but choose better quality ones that last longer.
+? t | Clothes-swapping events are free. | T | The last paragraph says so. | It's free, it's fun, and it's better for the planet.
+
+## A street that shares | PT
+On Hoa Binh Street, nobody needs to buy a ladder. If you need one, you just borrow it from Mr. Tuan at number fourteen. Need a drill? Ask Mrs. Mai. A big pot for a family party? Number twenty-two has one.
+
+It all started two years ago, when a resident named Linh created an online group for the street. At first, people used it to share news, like water cuts or lost cats. Then Linh had an idea. She asked everyone to make a list of things they owned but rarely used. Soon, the group had a list of more than a hundred items, from tents to sewing machines.
+
+The system is simple. If you want to borrow something, you post a message in the group, and the owner replies. Things are always returned within a week. Nobody pays money, but people often give a small gift, like fruit or homemade cakes.
+
+The project has saved residents money, but Linh says the biggest benefit is something else. "Before, we didn't know our neighbours. Now we stop and talk in the street," she says.
+
+Recently, a local newspaper wrote about Hoa Binh Street, and three other streets in the city have started their own sharing groups.
+? c | What can you borrow from Mr. Tuan? | *A ladder | A drill | A big pot | The first paragraph says so. | you just borrow it from Mr. Tuan at number fourteen.
+? c | What did people first use the online group for? | *Sharing news like water cuts or lost cats | Selling things | Organising parties | The second paragraph explains. | people used it to share news, like water cuts or lost cats.
+? s | Within how long must things be returned? | a week / within a week / one week | The third paragraph says so. | Things are always returned within a week.
+? t | Borrowers pay a small fee. | F | Nobody pays money. | Nobody pays money
+? t | Other streets have started sharing groups. | T | Three other streets have. | three other streets in the city have started their own sharing groups.
+
+## Should children have smartphones? | TE
+At what age should children get their first smartphone? This question causes many arguments in families. Some parents give phones to children at eight or nine; others wait until fourteen or later.
+
+Parents who give phones early often say it is about safety. With a phone, children can call their parents at any time, and parents can see where their children are. Some also say that children need to learn to use technology, because it will be important in their future.
+
+However, many experts are worried. They say young children who spend a lot of time on phones may sleep less, play outside less and have more problems concentrating at school. Social media can also make children feel bad about themselves when they compare their lives with others.
+
+Some families have found a middle way. They give young children a simple phone that can only make calls and send messages. When children are older, they get a smartphone, but with rules, such as no phones at the dinner table or in the bedroom at night.
+
+Most experts agree that the age is less important than how the phone is used. Talking openly with children about the risks is the most important step.
+? c | Why do some parents give phones early? | *For safety | To save money | Because schools require it | The second paragraph explains. | Parents who give phones early often say it is about safety.
+? c | Which worry do experts mention? | *Children may sleep less and concentrate less | Phones are too expensive | Children will lose their phones | The third paragraph explains. | young children who spend a lot of time on phones may sleep less
+? t | All families give smartphones to young children. | F | Some give simple phones. | They give young children a simple phone that can only make calls and send messages.
+? s | What is one rule some families use? | no phones at the dinner table / no phones in the bedroom at night | The fourth paragraph gives examples. | no phones at the dinner table or in the bedroom at night.
+? t | Most experts think how the phone is used matters more than the age. | T | The last paragraph says so. | the age is less important than how the phone is used.
+
+## Life on the night shift | HE
+When most people go to sleep, Hanh goes to work. She is a nurse in the emergency department of a big hospital, and she works nights, from eight in the evening to eight in the morning, four nights a week.
+
+Night shifts are often busy. There are car accidents, people with sudden pains and older patients who fall at home. With fewer doctors in the hospital at night, nurses have to make quick decisions. "You need to stay calm and think clearly, even at four in the morning," Hanh says.
+
+The hardest part is the effect on her body. Sleeping during the day is difficult, because of noise and light. She uses thick curtains and earplugs, but she still sleeps only five or six hours. She also finds it hard to eat at normal times.
+
+Her social life has changed too. She often misses family dinners and parties with friends. Her husband works during the day, so sometimes they only see each other for an hour.
+
+So why does she do it? Night shifts pay more, and she likes the strong teamwork. "At night, we really depend on each other," she says. "And when a patient goes home well, I know my work matters."
+? s | How many nights a week does Hanh work? | four / 4 / four nights | The first paragraph says so. | four nights a week.
+? c | Why must nurses make quick decisions at night? | *There are fewer doctors | There are fewer patients | The hospital is closed | The second paragraph explains. | With fewer doctors in the hospital at night, nurses have to make quick decisions.
+? c | What does Hanh use to sleep in the day? | *Thick curtains and earplugs | Sleeping pills | A special bed | The third paragraph says so. | She uses thick curtains and earplugs
+? t | Hanh sleeps eight hours during the day. | F | Only five or six hours. | she still sleeps only five or six hours.
+? t | Night shifts pay more. | T | The last paragraph says so. | Night shifts pay more
+
+## On a cooking show | FD
+Last year, Phong, a twenty-six-year-old office worker, did something he never expected: he took part in a national TV cooking competition.
+
+Phong had always loved cooking, but he had never studied it. He learned from his grandmother and from online videos. His friends told him to apply for the show, and he sent a video of himself cooking his grandmother's fish soup. A week later, the producers called.
+
+The competition was much harder than it looked on TV. Each episode, the contestants had to cook a dish in sixty minutes, and sometimes they didn't know the ingredients until the clock started. There were cameras everywhere, and the judges were strict. In the third episode, Phong burned his sauce and almost went home.
+
+But he learned quickly. He discovered that the judges valued simple, well-cooked food more than complicated dishes. In the final, he cooked a modern version of his grandmother's fish soup. He didn't win, but he came second out of twenty contestants.
+
+The show changed his life. After it was broadcast, a restaurant owner offered him a job as a junior chef. Phong left his office job, and now he is working towards his dream of opening his own restaurant.
+? c | How did Phong learn to cook? | *From his grandmother and online videos | At a cooking school | At a restaurant | The second paragraph explains. | He learned from his grandmother and from online videos.
+? s | How long did contestants have to cook each dish? | sixty minutes / 60 minutes / an hour / one hour | The third paragraph says so. | the contestants had to cook a dish in sixty minutes
+? c | What did the judges value? | *Simple, well-cooked food | Complicated dishes | Expensive ingredients | The fourth paragraph explains. | the judges valued simple, well-cooked food more than complicated dishes.
+? t | Phong won the competition. | F | He came second. | He didn't win, but he came second out of twenty contestants.
+? t | Phong now works as a junior chef. | T | A restaurant owner offered him the job. | a restaurant owner offered him a job as a junior chef.
+
+## Bringing an old house back to life | HF
+When Duc and Thu bought an old house in Hoi An, their friends thought they were crazy. The house was more than a hundred years old. The roof leaked, the wooden walls were damaged by insects, and there was no modern kitchen.
+
+The couple wanted to keep the character of the old house while making it comfortable to live in. They found a local carpenter, Mr. Sang, who had repaired many traditional houses. He told them that the main wooden structure was still strong. Only some parts needed to be replaced.
+
+The work took eighteen months, much longer than they expected. Finding the right wood was difficult, and the rainy season stopped the work for several weeks. The cost was also higher than planned. They spent almost all their savings.
+
+But the result is beautiful. The house keeps its old wooden doors, carved windows and roof tiles. Inside, there is a modern kitchen and a bathroom, hidden behind wooden panels. The house stays cool in summer without air conditioning, because of its high ceilings and thick walls.
+
+Now tourists often stop to take photos. Duc and Thu are proud that they saved a piece of history. "New houses are easy to build," says Thu. "Old houses, once lost, never come back."
+? s | How old is the house? | more than a hundred years old / over a hundred years / a hundred years / 100 years | The first paragraph says so. | The house was more than a hundred years old.
+? c | What did Mr. Sang say about the wooden structure? | *It was still strong | It had to be replaced | It was damaged by water | The second paragraph says so. | the main wooden structure was still strong.
+? c | How long did the work take? | *Eighteen months | Six months | Three years | The third paragraph says so. | The work took eighteen months
+? t | The house needs air conditioning in summer. | F | It stays cool without it. | The house stays cool in summer without air conditioning
+? t | The work cost more than the couple planned. | T | The third paragraph says so. | The cost was also higher than planned.
+
+## The return of vinyl | HS
+Not long ago, many people thought vinyl records would disappear forever. First came CDs, then digital downloads, and finally streaming, which lets you listen to millions of songs on your phone. But in the last few years, something surprising has happened: vinyl records have become popular again.
+
+Many of the buyers are young people who grew up with streaming. Why are they interested in an old technology? Some say the sound is warmer and more natural. Others like the large album covers, which they see as works of art.
+
+For many, it is about the experience. With streaming, people often skip songs after a few seconds. With a record, you choose an album, take it out carefully and listen from beginning to end. "It makes me really listen," says Bao, a twenty-year-old student who owns about forty records.
+
+Record shops are opening again in many cities. Some also sell coffee and host small concerts, becoming meeting places for music fans.
+
+However, vinyl is not cheap. A new record can cost three or four times more than a monthly streaming subscription. Most fans still use streaming every day and buy records only of their favourite albums.
+? c | Who are many of the new vinyl buyers? | *Young people who grew up with streaming | Older collectors only | Professional musicians | The second paragraph says so. | Many of the buyers are young people who grew up with streaming.
+? c | What do some buyers say about the sound? | *It is warmer and more natural | It is louder | It is clearer than streaming | The second paragraph says so. | Some say the sound is warmer and more natural.
+? s | About how many records does Bao own? | about forty / forty / 40 | The third paragraph says so. | who owns about forty records.
+? t | Most vinyl fans have stopped using streaming. | F | Most still use streaming every day. | Most fans still use streaming every day
+? t | Some record shops host small concerts. | T | The fourth paragraph says so. | Some also sell coffee and host small concerts
+
+## Diary of a new city cyclist | TP
+Monday: Today I cycled to work for the first time. The route is seven kilometres, and it took me forty minutes. Motorbikes passed very close to me, and I was scared at every junction. I arrived wet with sweat and had to change my shirt in the office toilet.
+
+Wednesday: Second ride. I found a quieter route along the river. It is one kilometre longer, but much safer and more pleasant. I left home earlier, at half past six, when it is cooler and the traffic is lighter.
+
+Friday: My legs hurt a lot today. A colleague who cycles every day gave me some advice: drink plenty of water, don't ride too fast at the beginning, and keep a spare shirt at work. Good idea!
+
+Two weeks later: Cycling is getting easier. The trip now takes only thirty-two minutes. I feel more awake when I arrive at work, and I have saved money on petrol.
+
+One month later: I have lost two kilos without changing my diet. My manager has noticed that three other colleagues have started cycling too. She is now asking the company to install a safe place to park bicycles and a shower for cyclists. I think I have started something!
+? s | How long is the first route? | seven kilometres / 7 km / seven km | The Monday entry says so. | The route is seven kilometres
+? c | Why did the writer change to the river route? | *It is safer and more pleasant | It is shorter | It has no traffic lights | The Wednesday entry explains. | but much safer and more pleasant.
+? c | What advice did the colleague give? | *Drink water, start slowly and keep a spare shirt | Buy an expensive bike | Ride at night | The Friday entry says so. | drink plenty of water, don't ride too fast at the beginning, and keep a spare shirt at work.
+? t | After two weeks, the trip took longer than at first. | F | It took only thirty-two minutes. | The trip now takes only thirty-two minutes.
+? t | The manager wants a shower for cyclists. | T | She is asking the company for one. | a safe place to park bicycles and a shower for cyclists.
+
+## Saving the river turtles | AN
+Ten years ago, a rare species of turtle was almost extinct in a river in central Viet Nam. Fishermen often caught the turtles by accident in their nets, and people took their eggs from the sandy riverbanks to eat or sell.
+
+A small conservation group decided to act. Instead of simply making rules, they worked with the local community. They paid fishermen to report turtle nests and to release turtles they caught. They also trained local young people to guard the nests during the nesting season.
+
+One of these guards is Lam, a twenty-four-year-old from the village. Every night from April to July, he walks along the riverbanks looking for nests. When he finds one, he puts a fence around it to protect the eggs from animals and people. "My grandfather ate turtle eggs," he says. "Now I protect them. Times have changed."
+
+The project has been successful. Last year, more than eight hundred baby turtles hatched and returned to the river, compared with fewer than fifty ten years ago.
+
+Schools in the area also teach children about the turtles. Every year, students help release baby turtles into the river. Many of them say they want to work in conservation when they grow up.
+? c | How did fishermen harm the turtles? | *They caught them by accident in their nets | They hunted them for sport | They polluted the river | The first paragraph explains. | Fishermen often caught the turtles by accident in their nets
+? c | What did the conservation group do? | *Worked with the local community and paid fishermen to report nests | Banned all fishing | Moved the turtles to a zoo | The second paragraph explains. | They paid fishermen to report turtle nests and to release turtles they caught.
+? s | When does Lam guard the nests? | from April to July / April to July | The third paragraph says so. | Every night from April to July
+? t | Fewer baby turtles hatched last year than ten years ago. | F | More than eight hundred hatched, compared with fewer than fifty. | more than eight hundred baby turtles hatched
+? t | Lam's grandfather ate turtle eggs. | T | Lam says so. | My grandfather ate turtle eggs
+
+## What makes a good manager? | WK
+A large company recently asked its employees a simple question: what makes a good manager? More than two thousand people answered. The results surprised the company's directors.
+
+Many directors expected employees to want managers with excellent technical skills. But this was not at the top of the list. The most popular answer was "a manager who listens". Employees wanted to feel that their ideas and problems were taken seriously.
+
+The second most popular answer was clear communication. Employees said they worked better when they understood their goals and when the manager explained the reasons behind decisions. Many complained about managers who changed plans without telling them why.
+
+Third on the list was fairness. Employees wanted managers who treated everyone equally and gave credit to the person who did the work. One employee wrote, "My worst manager presented my ideas to the director as his own."
+
+Interestingly, very few people mentioned salary or rewards. The company has now started a training programme for its managers, focusing on listening skills and feedback. After six months, a new survey showed that employees felt more positive about their work and fewer people had left the company.
+? s | How many people answered the question? | more than two thousand / two thousand / 2000 | The first paragraph says so. | More than two thousand people answered.
+? c | What was the most popular answer? | *A manager who listens | Excellent technical skills | A high salary | The second paragraph says so. | The most popular answer was "a manager who listens".
+? c | What did many employees complain about? | *Managers who changed plans without explaining why | Long working hours | Small offices | The third paragraph explains. | Many complained about managers who changed plans without telling them why.
+? t | Many employees mentioned salary. | F | Very few mentioned it. | very few people mentioned salary or rewards.
+? t | Fewer people left the company after the training. | T | The last paragraph says so. | fewer people had left the company.
+
+## Travelling on a small budget | MS
+Many young people dream of travelling but think it is too expensive. With some planning, however, it is possible to see the world without spending a lot of money.
+
+The biggest cost is usually transport. Booking flights early, travelling on weekdays and being flexible with dates can save a lot. Overnight buses and trains are also useful, because you save the cost of one night's accommodation.
+
+For accommodation, hostels are much cheaper than hotels, and they are a good place to meet other travellers. Some hostels have kitchens, so you can cook your own meals instead of eating in restaurants every day. Another option is staying with local families, which also helps you learn about the culture.
+
+Food doesn't have to be expensive either. Street food and local markets are often cheaper and more delicious than tourist restaurants. A good rule is to eat where local people eat.
+
+Finally, plan free activities. Many cities have free walking tours, where you pay the guide only what you want at the end. Parks, beaches, markets and many temples are free to visit.
+
+Of course, it's important to have some emergency money and travel insurance. Saving money is good, but staying safe is more important.
+? c | What is usually the biggest cost of travelling? | *Transport | Food | Souvenirs | The second paragraph says so. | The biggest cost is usually transport.
+? c | Why are overnight buses and trains useful? | *They save the cost of one night's accommodation | They are faster | They are more comfortable | The second paragraph explains. | because you save the cost of one night's accommodation.
+? s | Where does the text suggest eating? | where local people eat | The fourth paragraph gives a rule. | A good rule is to eat where local people eat.
+? t | On free walking tours, you must pay a fixed price at the start. | F | You pay what you want at the end. | you pay the guide only what you want at the end.
+? t | The text says staying safe is more important than saving money. | T | The last paragraph says so. | staying safe is more important.
+
+## The storm on the island | NW
+Last September, I was on holiday on a small island when a big storm arrived. The weather forecast had warned about it, but I didn't think it would be so strong.
+
+In the afternoon, the sky turned dark grey and the wind began to blow hard. The hotel staff told all guests to stay inside and close the windows. They also told us that the ferries to the mainland were cancelled for at least two days.
+
+By evening, the storm was very strong. The wind was so loud that we couldn't hear each other talk. Trees fell in the street, and the electricity went off at about nine o'clock. The hotel had a generator, but it only worked for the kitchen and a few lights.
+
+The staff were amazing. They cooked dinner for everyone by candlelight and told stories about other storms they had experienced. Some guests played cards, and a child played the guitar. It was frightening, but also a strange kind of adventure.
+
+The next morning, the sun came out. The island looked terrible, with branches and rubbish everywhere. Guests and staff worked together to clean the hotel garden. I stayed two more days than planned, and I left with new friends and a lot of respect for the island's people.
+? c | What did the hotel staff tell the guests to do? | *Stay inside and close the windows | Leave the island | Go to the beach | The second paragraph explains. | The hotel staff told all guests to stay inside and close the windows.
+? s | For how long were the ferries cancelled? | at least two days / two days / 2 days | The second paragraph says so. | the ferries to the mainland were cancelled for at least two days.
+? t | The generator powered the whole hotel. | F | Only the kitchen and a few lights. | it only worked for the kitchen and a few lights.
+? c | How did the writer describe the night? | *Frightening but also an adventure | Boring | Completely relaxing | The fourth paragraph says so. | It was frightening, but also a strange kind of adventure.
+? t | The writer left the island earlier than planned. | F | The writer stayed two more days. | I stayed two more days than planned
+"""
+
+PASSAGES["B1"] += """
+## Grandma goes online | PF
+When my grandmother turned seventy-five, my cousins and I gave her a tablet. She looked at it nervously and said, "I'm too old for this. I'll break it." We promised to teach her.
+
+The first lessons were slow. She didn't understand why the screen changed when she touched it by accident, and she was afraid of pressing the wrong button. We wrote simple instructions on a piece of paper: how to turn it on, how to answer a video call and how to look at photos.
+
+After a few weeks, something changed. She started calling us herself. She discovered that she could watch old Vietnamese films and listen to music from her youth. Then she joined an online group for people from her home village, and she found two friends she hadn't seen for fifty years.
+
+Now she uses the tablet every day. She reads the news, looks for recipes and sends us messages with a lot of emojis. She even taught her friend next door how to make video calls.
+
+Of course, there are some problems. Once she almost gave her bank details to a stranger who sent her a message. Now we have taught her to be careful online. But overall, the tablet has made her life richer. "I'm not lonely any more," she says.
+? s | How old was the grandmother when she got the tablet? | seventy-five / 75 | The first paragraph says so. | When my grandmother turned seventy-five
+? c | What did the grandchildren write on paper? | *Simple instructions | Her passwords | A list of films | The second paragraph says so. | We wrote simple instructions on a piece of paper
+? c | What did she find in the online group? | *Two friends she hadn't seen for fifty years | A new job | A doctor | The third paragraph says so. | she found two friends she hadn't seen for fifty years.
+? t | The grandmother gave her bank details to a stranger. | F | She almost did. | Once she almost gave her bank details to a stranger
+? t | The grandmother taught a neighbour to make video calls. | T | The fourth paragraph says so. | She even taught her friend next door how to make video calls.
+
+## The library on wheels | ED
+In many villages in the mountains, there are no libraries, and children have very few books at home. Two years ago, a young teacher named Thao decided to do something about it.
+
+Thao bought an old van, painted it bright yellow and filled it with more than a thousand children's books. Most of the books were donated by people in the city after she posted about her idea online.
+
+Every Saturday and Sunday, Thao drives the van to a different village. When the children hear the music from the van, they run to meet it. They can borrow up to three books each, and Thao returns two weeks later to collect them and lend new ones.
+
+Thao also reads stories to the younger children and organises games. For many children, it is the first time they have chosen a book themselves. "At first, some children only looked at the pictures," Thao says. "Now they ask me for longer stories."
+
+The project is not easy. The roads are often bad, especially in the rainy season, and the van has broken down several times. Thao pays for petrol with her own money and donations. But she has no plans to stop. Next year, she hopes to buy a second van and find another driver.
+? c | Why did Thao start the project? | *Village children had very few books | She wanted to sell books | Her school asked her to | The first paragraph explains. | children have very few books at home.
+? s | How many books are in the van? | more than a thousand / over a thousand / a thousand / 1000 | The second paragraph says so. | filled it with more than a thousand children's books.
+? c | How many books can each child borrow? | *Up to three | Only one | Up to ten | The third paragraph says so. | They can borrow up to three books each
+? t | The government pays for the petrol. | F | Thao pays with her own money and donations. | Thao pays for petrol with her own money and donations.
+? t | Thao hopes to buy a second van. | T | The last paragraph says so. | she hopes to buy a second van and find another driver.
+
+## The farmers' market | FD
+Every Sunday morning, a car park near the university becomes a farmers' market. About forty farmers from the surrounding countryside come to sell their products directly to customers.
+
+The market started five years ago with only eight stalls. The organiser, Mr. Hai, wanted to help small farmers earn more money. When farmers sell to supermarkets, they often receive a very low price. At the market, they set their own prices and keep all the money.
+
+Customers like the market because the food is very fresh. Most vegetables are picked the day before, and many farmers grow them without chemicals. You can also talk to the farmers and ask how the food was grown. Mrs. Tam, who sells mushrooms, says, "My customers know my name and my farm. That trust is important."
+
+However, prices are sometimes higher than in supermarkets. Mr. Hai explains that small farms cannot produce as much as big farms, so their costs are higher. But many customers are happy to pay a little more for quality.
+
+The market has also become a social event. There are live music, cooking demonstrations and activities for children. Many families now spend their whole Sunday morning there.
+? s | How many farmers come to the market? | about forty / forty / 40 | The first paragraph says so. | About forty farmers from the surrounding countryside come
+? c | Why did Mr. Hai start the market? | *To help small farmers earn more money | To sell his own food | To help the university | The second paragraph explains. | Mr. Hai, wanted to help small farmers earn more money.
+? c | What does Mrs. Tam sell? | *Mushrooms | Tomatoes | Rice | The third paragraph says so. | Mrs. Tam, who sells mushrooms
+? t | Prices are always lower than in supermarkets. | F | They are sometimes higher. | prices are sometimes higher than in supermarkets.
+? t | There are cooking demonstrations at the market. | T | The last paragraph says so. | There are live music, cooking demonstrations and activities for children.
+
+## Getting ready for an interview | WK
+A job interview can be stressful, but good preparation makes a big difference. Here are some tips from recruiters.
+
+First, research the company. Look at its website and read recent news about it. Interviewers often ask, "Why do you want to work here?" A good answer shows that you know what the company does and why it interests you.
+
+Second, prepare examples from your experience. Instead of saying "I'm a good team player," describe a real situation where you worked in a team and what you achieved. Specific stories are more convincing than general words.
+
+Third, think about your appearance and arrive on time. Plan your route the day before and aim to arrive ten minutes early. Being late gives a very bad first impression.
+
+During the interview, listen carefully and don't be afraid to take a moment before you answer. It is better to think for a few seconds than to give a confused answer.
+
+At the end, the interviewer will usually ask if you have any questions. Always prepare one or two. Asking about the team or the training shows that you are really interested. Finally, send a short thank-you email after the interview. Many candidates forget this simple step.
+? c | What question do interviewers often ask? | *Why do you want to work here? | How old are you? | Where do you live? | The second paragraph says so. | Interviewers often ask, "Why do you want to work here?"
+? c | What is more convincing than general words? | *Specific stories from real situations | A long CV | Expensive clothes | The third paragraph says so. | Specific stories are more convincing than general words.
+? s | How early should you aim to arrive? | ten minutes early / ten minutes / 10 minutes | The fourth paragraph says so. | aim to arrive ten minutes early.
+? t | You should answer every question immediately. | F | It is better to think for a few seconds. | It is better to think for a few seconds than to give a confused answer.
+? t | Many candidates forget to send a thank-you email. | T | The last paragraph says so. | Many candidates forget this simple step.
+
+## Volunteering at the children's hospital | HE
+Every Wednesday afternoon, Mai, a university student, goes to the children's hospital. She is not a doctor or a nurse. She is a volunteer who plays with children who have to stay in hospital for a long time.
+
+Mai joined the volunteer programme a year ago. Before she started, she had two days of training. She learned how to wash her hands properly, how to talk to sick children and their parents, and what to do if a child becomes upset.
+
+In the playroom, Mai and other volunteers read stories, draw pictures and play board games with the children. Some children are too ill to leave their beds, so the volunteers visit them in their rooms. "For a few hours, they can forget that they are sick," Mai says.
+
+The volunteers also help parents. Many parents stay at the hospital all day and are very tired. When a volunteer plays with their child, they can take a short break, have a coffee or make a phone call.
+
+Sometimes the work is sad. Mai remembers a little boy who was very ill. But many children recover and go home. Last month, a girl who had been in hospital for six months sent Mai a drawing with the words "Thank you for playing with me."
+? c | What does Mai do at the hospital? | *Plays with children who stay a long time | Works as a nurse | Cleans the rooms | The first paragraph explains. | She is a volunteer who plays with children who have to stay in hospital for a long time.
+? s | How long was the training? | two days / 2 days | The second paragraph says so. | she had two days of training.
+? c | How do volunteers help parents? | *They let parents take a short break | They pay hospital bills | They cook meals | The fourth paragraph explains. | When a volunteer plays with their child, they can take a short break
+? t | All the children can leave their beds. | F | Some are too ill. | Some children are too ill to leave their beds
+? t | A girl sent Mai a drawing. | T | The last paragraph says so. | a girl who had been in hospital for six months sent Mai a drawing
+
+## A noisy city | PT
+If you ask people what they dislike about living in a big city, many will say the same thing: noise. Traffic, construction, karaoke and loud music from shops can continue from early morning until late at night.
+
+Noise is not only annoying. Doctors say that living with a lot of noise can cause stress, sleep problems and headaches. Over many years, it may even increase the risk of heart disease. Children who go to school near busy roads may find it harder to concentrate.
+
+Some cities are trying to reduce noise. They plant trees along busy roads, which can absorb some sound. They also build quieter road surfaces and create pedestrian zones where cars are not allowed. In some places, construction work is not allowed after ten at night.
+
+Individuals can also make small changes. Thick curtains and double windows help keep noise out of homes. Many people use earplugs or play soft background sounds, like rain, to help them sleep.
+
+But some experts say the best solution is to change our habits. If fewer people used motorbikes and cars and more people used public transport or bicycles, cities would be much quieter. That would also make the air cleaner.
+? c | What do many people dislike about living in a big city? | *Noise | Prices | Weather | The first paragraph says so. | many will say the same thing: noise.
+? c | What can noise cause, according to doctors? | *Stress, sleep problems and headaches | Better concentration | Lower blood pressure | The second paragraph says so. | living with a lot of noise can cause stress, sleep problems and headaches.
+? s | After what time is construction not allowed in some places? | after ten at night / ten at night / 10 pm / ten | The third paragraph says so. | construction work is not allowed after ten at night.
+? t | Trees along roads can absorb some sound. | T | The third paragraph says so. | which can absorb some sound.
+? t | The experts say earplugs are the best solution. | F | They say changing habits is best. | some experts say the best solution is to change our habits.
+
+## The bird on the balcony | AN
+One rainy morning, I found a small bird on my balcony. It was sitting very still, and one of its wings was hanging down. I think it had hit the window in the storm.
+
+I didn't know what to do, so I called a wildlife rescue centre. A volunteer told me not to give the bird food or water, because this can be dangerous. Instead, she told me to put it gently in a cardboard box with small holes and a soft towel, and to keep it in a quiet, dark place.
+
+That afternoon, I took the box to the rescue centre. A vet examined the bird and said its wing was not broken, just hurt. It needed rest for about two weeks.
+
+During those two weeks, the centre sent me photos of the bird. It was eating well and slowly started to move its wing again. The vet told me that many birds hit windows, especially big glass windows that reflect the sky.
+
+When the bird was ready, the centre invited me to help release it. We opened the box in a park near my home, and the bird flew straight up into a tree. Since then, I have put stickers on my windows to help birds see the glass.
+? c | Why was the bird hurt? | *It probably hit the window in the storm | A cat attacked it | It was very old | The first paragraph explains. | I think it had hit the window in the storm.
+? c | What did the volunteer say not to do? | *Give the bird food or water | Touch the box | Call a vet | The second paragraph says so. | not to give the bird food or water, because this can be dangerous.
+? t | The bird's wing was broken. | F | It was not broken, just hurt. | its wing was not broken, just hurt.
+? s | How long did the bird need to rest? | about two weeks / two weeks / 2 weeks | The third paragraph says so. | It needed rest for about two weeks.
+? t | The writer put stickers on the windows. | T | The last paragraph says so. | I have put stickers on my windows to help birds see the glass.
+
+## The step challenge | TE
+Last spring, the company where I work started a step challenge. Everyone downloaded the same fitness app, and teams of five competed to walk the most steps in a month.
+
+At the beginning, I walked about four thousand steps a day, mostly between my car and my desk. Our team was in last place after the first week. So we made a plan. We parked further from the office, used the stairs instead of the lift and went for a walk together after lunch.
+
+The competition became very exciting. People checked the scores every morning, and some colleagues started walking around the office during phone calls. One team even walked to a restaurant five kilometres away for a team dinner.
+
+By the end of the month, I was walking more than ten thousand steps a day. Our team finished in third place out of twelve. The winning team walked over two million steps in total.
+
+The challenge was fun, but the real benefits were bigger. I sleep better, and I have more energy in the afternoon. I also know my colleagues better, because we talked a lot on our walks. The challenge has finished, but our team still goes for a walk after lunch every day.
+? s | How many people were in each team? | five / 5 | The first paragraph says so. | teams of five competed
+? c | How many steps did the writer walk at the beginning? | *About four thousand a day | About ten thousand a day | About two thousand a day | The second paragraph says so. | I walked about four thousand steps a day
+? c | What did one team do? | *Walked five kilometres to a restaurant | Ran a marathon | Cheated with the app | The third paragraph says so. | One team even walked to a restaurant five kilometres away
+? t | The writer's team won the challenge. | F | They finished third. | Our team finished in third place out of twelve.
+? t | The team still walks after lunch. | T | The last paragraph says so. | our team still goes for a walk after lunch every day.
+
+## My first budget | MS
+When I moved into my first flat at twenty-two, I had a job, a salary and, for the first time, no parents to help me with money. After two months, I had a problem: I didn't know where my money went. At the end of each month, my bank account was almost empty.
+
+A friend advised me to make a budget. I wrote down everything I spent for one month, even small things like coffee and snacks. The results were shocking. I spent more on eating out and food delivery than on rent!
+
+So I made a plan using a simple rule. Fifty percent of my salary goes to needs, like rent, bills and food. Thirty percent goes to wants, like eating out, clothes and entertainment. And twenty percent goes to savings.
+
+The first months were difficult. I had to say no to some evenings out, and I learned to cook cheap meals. But I also found free activities, like walking in the park and going to free concerts.
+
+After a year, I had saved enough money for an emergency fund of three months' living costs. When my laptop broke last month, I could buy a new one without borrowing money. That felt wonderful.
+? s | How old was the writer when moving into the first flat? | twenty-two / 22 | The first paragraph says so. | When I moved into my first flat at twenty-two
+? c | What did the writer spend more on than rent? | *Eating out and food delivery | Clothes | Transport | The second paragraph says so. | I spent more on eating out and food delivery than on rent!
+? c | What percentage of the salary goes to savings? | *Twenty percent | Thirty percent | Fifty percent | The third paragraph explains. | twenty percent goes to savings.
+? t | The writer borrowed money to buy a new laptop. | F | No borrowing was needed. | I could buy a new one without borrowing money.
+? t | The writer found free activities. | T | The fourth paragraph says so. | I also found free activities
+
+## The school garden | EN
+Two years ago, there was an empty piece of land behind our school. It was full of rubbish and weeds. Our biology teacher, Mr. Long, had an idea: why not turn it into a garden?
+
+The students in my class agreed to help. First, we cleaned the land. It took three weekends to remove all the rubbish. Then parents donated tools, seeds and young plants. A local farmer came to teach us how to prepare the soil and plant vegetables.
+
+Now the garden has vegetables, herbs, fruit trees and flowers. Each class is responsible for one part of the garden. Students water the plants before school and remove weeds during break time.
+
+The garden is also used for lessons. In biology, we study plants and insects. In maths, we measure how fast the plants grow. Some vegetables are used in the school canteen, and students who never liked vegetables now eat them, because they grew them themselves!
+
+Last month, the garden won a prize in a competition for green schools in the city. The prize money will be used to build a small greenhouse. Mr. Long says the most important result is that students now understand where their food comes from.
+? c | What was behind the school two years ago? | *An empty piece of land full of rubbish | A football field | A car park | The first paragraph says so. | there was an empty piece of land behind our school.
+? s | How many weekends did it take to remove the rubbish? | three weekends / three / 3 | The second paragraph says so. | It took three weekends to remove all the rubbish.
+? c | How is the garden used in maths lessons? | *Students measure how fast the plants grow | Students count the visitors | Students sell vegetables | The fourth paragraph says so. | In maths, we measure how fast the plants grow.
+? t | The garden won a prize last month. | T | The last paragraph says so. | the garden won a prize in a competition for green schools in the city.
+? t | The prize money will be used to buy new books. | F | It will build a greenhouse. | The prize money will be used to build a small greenhouse.
+
+## Three days in Hue | TR
+Hue was the capital of Viet Nam for more than a hundred years, and it is full of history. Last month, I spent three days there, and it was one of my best trips.
+
+On the first day, I visited the Imperial City. It is a huge area with palaces, gates and gardens, surrounded by walls and a moat. Some buildings were damaged during the war, but many have been restored. I spent five hours walking around and still didn't see everything.
+
+On the second day, I rented a bicycle and visited some royal tombs outside the city. Each tomb is different. My favourite was in a quiet garden with a lake and pine trees. It was peaceful, and there were few tourists.
+
+In the evening, I took a boat trip on the Perfume River. Local singers performed traditional music on the boat, and we released small paper lanterns onto the water.
+
+Hue is also famous for its food. I tried bun bo Hue, a spicy beef noodle soup, and many small cakes made from rice flour. The food is spicier than in other parts of Viet Nam.
+
+I left Hue feeling that I understood my country's history much better.
+? c | What was Hue in the past? | *The capital of Viet Nam | A fishing village | A university town | The first paragraph says so. | Hue was the capital of Viet Nam for more than a hundred years
+? s | How long did the writer spend in the Imperial City? | five hours / 5 hours | The second paragraph says so. | I spent five hours walking around
+? c | How did the writer visit the royal tombs? | *By bicycle | By bus | On foot | The third paragraph says so. | I rented a bicycle and visited some royal tombs
+? t | The writer's favourite tomb was crowded with tourists. | F | There were few tourists. | there were few tourists.
+? t | Food in Hue is spicier than in other parts of Viet Nam. | T | The fifth paragraph says so. | The food is spicier than in other parts of Viet Nam.
+
+## Treasure hunting with a phone | HS
+Have you heard of geocaching? It is a hobby that combines technology, walking and a little adventure. Millions of people around the world do it.
+
+The idea is simple. People hide small containers, called caches, in interesting places, such as parks, forests or near old buildings. They then post the location online using GPS coordinates. Other players use an app on their phones to find the caches.
+
+Inside each cache, there is usually a small notebook where finders write their names and the date. Some caches also contain small objects, like keyrings or toys. The rule is that if you take something, you must leave something of equal or greater value.
+
+My friend Quang started geocaching last year. "I love it because it takes me to places I never knew existed," he says. In our city alone, there are more than three hundred caches. Some are easy to find, but others are very well hidden and can take hours.
+
+There are also some important rules. You should never damage nature or private property, and you should be careful that other people don't see you, so the cache stays secret. Quang says the hobby has made him more patient and more observant, and he has met many other players at events.
+? c | What are caches? | *Small hidden containers | Phone apps | Old buildings | The second paragraph explains. | People hide small containers, called caches
+? c | What is usually inside a cache? | *A small notebook | Money | A map | The third paragraph says so. | there is usually a small notebook where finders write their names and the date.
+? s | How many caches are there in the city? | more than three hundred / over three hundred / three hundred / 300 | The fourth paragraph says so. | there are more than three hundred caches.
+? t | If you take an object, you don't need to leave anything. | F | You must leave something of equal or greater value. | you must leave something of equal or greater value.
+? t | Quang has met other players at events. | T | The last paragraph says so. | he has met many other players at events.
+
+## Can you trust online reviews? | SH
+Before buying a product or choosing a restaurant, most people read online reviews. Reviews can be very useful, but not all of them can be trusted.
+
+Some companies pay people to write positive reviews about their products. Others write negative reviews about their competitors. Experts think that a significant number of reviews on some websites are fake.
+
+How can you spot a fake review? There are some warning signs. Be careful if many reviews are posted on the same day, or if they all use similar words and phrases. Very short reviews with only five stars and no details are also suspicious. Real reviews usually mention specific details, both good and bad.
+
+It is also useful to look at the reviewer's profile. If a person has written hundreds of reviews in a short time, or only gives five stars, they may not be a real customer.
+
+Another tip is to read the middle reviews, with three or four stars. These are often the most honest and balanced. They tell you both what is good and what could be better.
+
+Finally, don't depend on reviews alone. Ask friends and family for their opinions too. Personal recommendations are still one of the best ways to make a good choice.
+? c | Why can't all reviews be trusted? | *Some are written by people who are paid | Reviews are always negative | Reviewers never use the products | The second paragraph explains. | Some companies pay people to write positive reviews about their products.
+? c | Which is a warning sign of fake reviews? | *Many reviews posted on the same day | Reviews with details | Reviews with three stars | The third paragraph says so. | if many reviews are posted on the same day
+? t | Real reviews usually mention specific details. | T | The third paragraph says so. | Real reviews usually mention specific details, both good and bad.
+? s | Which reviews are often the most honest? | the middle reviews / three or four stars / middle reviews with three or four stars | The fifth paragraph says so. | read the middle reviews, with three or four stars.
+? t | The text says you should depend only on reviews. | F | Ask friends and family too. | don't depend on reviews alone.
+
+## Grandma's recipe book | FD
+When my grandmother died two years ago, she left a small notebook. Inside were more than eighty recipes written in her neat handwriting, some of them over fifty years old.
+
+Many of the recipes were for dishes I remembered from my childhood: her sweet and sour soup, her braised fish and the sticky rice cakes she made for Tet. But some recipes were missing important information. She often wrote "a little salt" or "cook until it smells right," because she cooked from experience, not exact measurements.
+
+I decided to try to cook every recipe in the book. It took me more than a year. For the difficult ones, I asked my mother and my aunts for help. They remembered how Grandma made them and helped me find the right amounts.
+
+Some dishes failed many times. My first rice cakes were too hard, and my braised fish was too salty. But slowly, the food started to taste like Grandma's.
+
+Last Tet, I cooked a big meal using her recipes for the whole family. My mother cried when she tasted the soup. Now I am typing all the recipes with clear measurements, so my children can cook them one day. I also added notes about the memories each dish brings back.
+? s | How many recipes were in the notebook? | more than eighty / over eighty / eighty / 80 | The first paragraph says so. | more than eighty recipes
+? c | Why were some recipes missing information? | *The grandmother cooked from experience, not exact measurements | Pages were lost | They were written in another language | The second paragraph explains. | she cooked from experience, not exact measurements.
+? c | Who helped the writer with difficult recipes? | *The mother and aunts | A professional chef | Friends from school | The third paragraph says so. | I asked my mother and my aunts for help.
+? t | The writer's first rice cakes were perfect. | F | They were too hard. | My first rice cakes were too hard
+? t | The writer is typing the recipes with clear measurements. | T | The last paragraph says so. | Now I am typing all the recipes with clear measurements
+
+## When the lights went out | HF
+Last Tuesday evening, there was a power cut in our whole neighbourhood. It started at seven o'clock, just as my family was starting dinner, and it lasted for almost five hours.
+
+At first, everyone was annoyed. My brother was in the middle of an online game, and my father was watching football. The fridge stopped working, and it was very hot without the fan. We looked for candles and found three in a kitchen drawer.
+
+We finished dinner by candlelight. Without the TV or phones, we started talking. My father told us stories about his childhood in the countryside, when there was no electricity at all. My brother and I had never heard many of these stories before.
+
+After dinner, we went outside, because it was cooler. Many neighbours were sitting outside too. Children played games in the street, and the adults chatted. An old man played the guitar, and some people sang along.
+
+When the power came back at midnight, everyone cheered, but some people looked a little disappointed. The next day, my mother said, "Maybe we should have an evening without electricity once a month." We all laughed, but I think she was half serious.
+? s | How long did the power cut last? | almost five hours / five hours / 5 hours | The first paragraph says so. | it lasted for almost five hours.
+? c | How many candles did they find? | *Three | Five | One | The second paragraph says so. | found three in a kitchen drawer.
+? c | What did the father talk about? | *His childhood without electricity | Football | His job | The third paragraph says so. | My father told us stories about his childhood in the countryside
+? t | The neighbours stayed inside their houses. | F | Many sat outside. | Many neighbours were sitting outside too.
+? t | The mother suggested an evening without electricity every month. | T | The last paragraph says so. | Maybe we should have an evening without electricity once a month.
+
+## First weeks in Melbourne | ED
+Three months ago, I moved to Melbourne, Australia, to study for a master's degree. I had studied English for years, but the first weeks were still a shock.
+
+The biggest surprise was the Australian accent. People spoke quickly and used words I had never heard, like "arvo" for afternoon. In the first lectures, I recorded everything so I could listen again at home.
+
+The teaching style was also very different. In Viet Nam, I was used to listening to the teacher and taking notes. Here, students are expected to discuss, ask questions and even disagree with the lecturer. At first, I was too nervous to speak. My tutor encouraged me, saying that my opinion was valuable.
+
+Daily life brought other challenges. Rent is very expensive, so I share a house with four other students. Food is expensive too, so I cook most of my meals. I found an Asian supermarket where I can buy rice and fish sauce.
+
+The weather surprised me most. Melbourne can have four seasons in one day: sunny in the morning, cold and rainy in the afternoon.
+
+Now things are getting easier. I have made friends from many countries, and last week I asked a question in a lecture for the first time.
+? c | Why did the writer move to Melbourne? | *To study for a master's degree | To work | To visit family | The first paragraph says so. | to study for a master's degree.
+? c | What does "arvo" mean? | *Afternoon | Breakfast | Weekend | The second paragraph explains. | like "arvo" for afternoon.
+? t | In Melbourne, students are expected to listen without speaking. | F | They are expected to discuss and ask questions. | students are expected to discuss, ask questions and even disagree with the lecturer.
+? s | How many other students does the writer share a house with? | four / 4 | The fourth paragraph says so. | I share a house with four other students.
+? t | The writer recently asked a question in a lecture. | T | The last paragraph says so. | last week I asked a question in a lecture for the first time.
+
+## The charity shop | SH
+On a busy street in the city centre, there is a shop that looks like any other clothes shop. But everything inside has been donated, and all the profits go to help homeless people.
+
+The shop opened four years ago. It is run by a manager and about twenty volunteers, most of them retired people and students. They sort the donations, wash and repair clothes, and arrange them in the shop.
+
+People donate all kinds of things: clothes, shoes, books, toys and kitchen items. Some donations are almost new. Last month, someone donated a wedding dress that had never been worn. It sold for two hundred dollars in one day.
+
+Prices are low, so the shop is popular with students and families who don't have much money. But many customers come simply because they like finding unusual things. "Every visit is different," says one regular customer. "You never know what you'll find."
+
+Last year, the shop raised about thirty thousand dollars. The money paid for meals, warm blankets and job training for homeless people.
+
+The manager says the shop also helps the environment. Thousands of items that would have been thrown away are used again. "Our motto is simple: give, buy, help," she says.
+? c | Where do the shop's profits go? | *To help homeless people | To the volunteers | To a school | The first paragraph says so. | all the profits go to help homeless people.
+? s | About how many volunteers work at the shop? | about twenty / twenty / 20 | The second paragraph says so. | about twenty volunteers
+? c | What happened to the wedding dress? | *It sold in one day | It was given away | It was kept by a volunteer | The third paragraph says so. | It sold for two hundred dollars in one day.
+? t | The shop is popular only with people who have little money. | F | Many come to find unusual things. | many customers come simply because they like finding unusual things.
+? t | The shop raised about thirty thousand dollars last year. | T | The fifth paragraph says so. | Last year, the shop raised about thirty thousand dollars.
+
+## Coffee culture in Viet Nam | FD
+Coffee is a big part of daily life in Viet Nam. In cities and small towns, there are cafés on almost every street, and people of all ages meet there to talk, work or simply watch the world go by.
+
+Coffee was brought to Viet Nam in the nineteenth century. Today, the country is one of the largest coffee producers in the world. Most of the coffee is grown in the Central Highlands, where the climate is perfect for it.
+
+Vietnamese coffee is strong and is usually made with a small metal filter that sits on top of the cup. The most famous drink is iced coffee with sweetened condensed milk. It is sweet, strong and very refreshing on a hot day.
+
+There are also some unusual coffee drinks. Egg coffee, made with egg yolk, sugar and coffee, was invented in Ha Noi when fresh milk was difficult to find. Coconut coffee and salt coffee are also popular.
+
+Cafés are not only about drinks. For many people, they are places to meet friends, have business meetings or study. Some cafés open very early, at five in the morning, for workers who want a coffee before work. Visiting a café is one of the best ways to understand daily life in Viet Nam.
+? c | Where is most Vietnamese coffee grown? | *In the Central Highlands | In the Mekong Delta | Near Ha Noi | The second paragraph says so. | Most of the coffee is grown in the Central Highlands
+? c | What is used to make Vietnamese coffee? | *A small metal filter | A large machine | A paper bag | The third paragraph says so. | usually made with a small metal filter that sits on top of the cup.
+? s | Where was egg coffee invented? | Ha Noi / in Ha Noi | The fourth paragraph says so. | was invented in Ha Noi
+? t | Egg coffee was invented because fresh milk was difficult to find. | T | The fourth paragraph says so. | when fresh milk was difficult to find.
+? t | All cafés open at noon. | F | Some open at five in the morning. | Some cafés open very early, at five in the morning
+
+## Masks and dirty air | HE
+On some days, the air in our city is so polluted that you can't see the tall buildings in the distance. The air looks grey, and many people wear masks when they go outside.
+
+The main causes of air pollution in big cities are traffic, factories, construction and burning rubbish or crop waste. The pollution is often worse in winter, when there is less wind and cold air traps the dirty air close to the ground.
+
+Polluted air contains tiny particles that can enter deep into the lungs. Over time, they can cause breathing problems, heart disease and other illnesses. Children, older people and people with asthma are most at risk.
+
+Not all masks protect equally. Simple cloth masks stop dust but not the smallest particles. Special masks that fit tightly around the face are much more effective. It is also a good idea to check the air quality on an app before going out and to avoid exercising outdoors on very polluted days.
+
+However, masks only protect individuals. To really solve the problem, cities need cleaner public transport, more green spaces and stricter rules for factories. Many people hope that, in the future, children will not need masks to walk to school.
+? c | Which is a main cause of air pollution in cities? | *Traffic | Rain | Trees | The second paragraph lists the causes. | The main causes of air pollution in big cities are traffic, factories, construction and burning rubbish or crop waste.
+? c | Why is pollution often worse in winter? | *There is less wind and cold air traps it | Factories work more | People drive more | The second paragraph explains. | when there is less wind and cold air traps the dirty air close to the ground.
+? t | Simple cloth masks stop the smallest particles. | F | They do not. | Simple cloth masks stop dust but not the smallest particles.
+? s | Who is most at risk? | children, older people and people with asthma / children and older people | The third paragraph says so. | Children, older people and people with asthma are most at risk.
+? t | The text says masks alone can solve the problem. | F | Masks only protect individuals. | masks only protect individuals.
+
+## The piano next door | HF
+When I moved into my new flat, I discovered that my neighbour was a piano teacher. Every afternoon from three to seven, students came to her flat for lessons. Every evening, she practised for two more hours.
+
+At first, I enjoyed it. The music was beautiful, and it felt like having a free concert. But after a few weeks, it became difficult. I worked from home, and the sound of beginners playing the same notes again and again made it hard to concentrate.
+
+I didn't want to complain, because she seemed very nice. Instead, I tried to solve the problem myself. I moved my desk to the other side of the flat and bought noise-cancelling headphones. It helped a little, but not enough.
+
+Finally, I decided to talk to her. I knocked on her door and explained the situation politely. She was very understanding. She hadn't realised that the walls were so thin. She moved her piano away from our shared wall and put a thick carpet under it. She also agreed to stop playing at nine in the evening.
+
+Now we are good friends. Sometimes she invites me for tea, and she has even offered to teach me piano. I said I would think about it!
+? s | How many hours does the neighbour practise each evening? | two hours / two / 2 hours | The first paragraph says so. | she practised for two more hours.
+? c | Why did the music become a problem? | *The writer worked from home and couldn't concentrate | The music was too sad | The neighbour played at three in the morning | The second paragraph explains. | it hard to concentrate.
+? c | What did the writer buy? | *Noise-cancelling headphones | A piano | Thick curtains | The third paragraph says so. | bought noise-cancelling headphones.
+? t | The neighbour was angry when the writer complained. | F | She was very understanding. | She was very understanding.
+? t | The neighbour offered to teach the writer piano. | T | The last paragraph says so. | she has even offered to teach me piano.
+
+## Learning to say no | WK
+Hoa has worked as an accountant for three years. She is talented and hardworking, and her colleagues like her. But last year, she felt exhausted. She often stayed at the office until nine at night and worked at weekends.
+
+The problem was that Hoa found it impossible to say no. When colleagues asked for help, she always agreed, even when she was already busy. When her manager gave her extra tasks, she accepted them without question. She was afraid that people would think she was lazy or unfriendly.
+
+Eventually, she made a serious mistake in an important report, because she was too tired. Her manager called her into a meeting. To Hoa's surprise, he wasn't angry. He asked her why she was working so much.
+
+After that conversation, Hoa started to change. She learned to say things like, "I'd like to help, but I can't finish it today. Can it wait until Thursday?" She also started telling her manager when she had too much work.
+
+At first, it felt uncomfortable. But people respected her decisions. Now Hoa leaves the office at six most days, she sleeps better and, surprisingly, she is more productive. "Saying no to some things means saying yes to doing my best work," she says.
+? s | How long has Hoa worked as an accountant? | three years / 3 years | The first paragraph says so. | Hoa has worked as an accountant for three years.
+? c | Why did Hoa always say yes? | *She was afraid people would think she was lazy or unfriendly | She wanted more money | Her manager forced her | The second paragraph explains. | She was afraid that people would think she was lazy or unfriendly.
+? c | What happened because Hoa was too tired? | *She made a serious mistake in a report | She lost her job | She became ill | The third paragraph says so. | she made a serious mistake in an important report
+? t | Hoa's manager was very angry. | F | He wasn't angry. | he wasn't angry.
+? t | Hoa is now more productive. | T | The last paragraph says so. | she is more productive.
+
+## The ferry to Cat Ba | TP
+Cat Ba is the largest island in Ha Long Bay. There is no bridge, so most visitors arrive by ferry. Last summer, I took the ferry for the first time with my family.
+
+We drove from Hai Phong to the ferry port early in the morning. The ferry left every hour, but in summer there were long queues of cars and motorbikes. We waited for almost two hours before we could get on.
+
+The journey itself was short, only about twenty minutes, but it was beautiful. The water was green and calm, and huge limestone rocks rose from the sea. Small fishing boats moved slowly between the islands. My little sister counted the rocks, but she stopped after fifty.
+
+On the ferry, there were people selling snacks and drinks. Many passengers stood at the side to take photos. The wind was strong, and my father's hat flew into the sea!
+
+When we arrived on the island, we drove along a winding road through the forest to the main town. The view of the bay from the road was amazing.
+
+Next time, we plan to take the ferry on a weekday, when it is less crowded, or arrive very early in the morning.
+? c | Why do most visitors arrive by ferry? | *There is no bridge | The ferry is free | It is faster than driving | The first paragraph explains. | There is no bridge, so most visitors arrive by ferry.
+? s | How long did the family wait for the ferry? | almost two hours / two hours / 2 hours | The second paragraph says so. | We waited for almost two hours
+? c | How long was the ferry journey? | *About twenty minutes | About two hours | About an hour | The third paragraph says so. | The journey itself was short, only about twenty minutes
+? t | The father's hat flew into the sea. | T | The fourth paragraph says so. | my father's hat flew into the sea!
+? t | Next time, the family plans to travel at the weekend. | F | They plan to go on a weekday. | we plan to take the ferry on a weekday
+
+## The lost wallet | DL
+Last Friday, I found a wallet on the pavement outside my office. Inside there was some money, a bank card, an ID card and a photo of a little girl.
+
+My first thought was to give it to the police. But the police station was far away, and I was in a hurry. Then I noticed a business card in the wallet with a phone number. I decided to call.
+
+A man answered. His name was Mr. Binh, and he sounded very worried. He had lost the wallet that morning and had already cancelled his bank card. When I told him I had found it, he was so happy that he could hardly speak.
+
+We met an hour later in a café near my office. He checked the wallet, and everything was there. He tried to give me some money as a reward, but I refused. Instead, he insisted on paying for my coffee.
+
+He told me that the photo was of his daughter, who had died two years before. It was the only copy he had. "The money doesn't matter," he said. "But this photo means everything to me."
+
+I went back to work feeling very glad that I had made that phone call.
+? c | Where did the writer find the wallet? | *On the pavement outside the office | In a café | On a bus | The first paragraph says so. | I found a wallet on the pavement outside my office.
+? c | How did the writer contact the owner? | *By calling the number on a business card | Through the police | Through social media | The second paragraph explains. | I noticed a business card in the wallet with a phone number. I decided to call.
+? t | Mr. Binh had already cancelled his bank card. | T | The third paragraph says so. | had already cancelled his bank card.
+? s | What did Mr. Binh pay for? | the writer's coffee / coffee / my coffee | The fourth paragraph says so. | he insisted on paying for my coffee.
+? t | The writer accepted a money reward. | F | The writer refused. | I refused.
+
+## Bees on the roof | AN
+On the roof of a tall office building in the city centre, there are five beehives. They belong to a company that started keeping bees three years ago to help the environment.
+
+Bees are very important. They pollinate many of the fruits and vegetables we eat. But in many countries, bee numbers are falling because of pesticides, disease and the loss of flowers.
+
+At first, some employees were afraid of being stung. The company invited a professional beekeeper to give a talk. He explained that bees are usually calm if people move slowly and don't disturb them. He also showed how to take care of the hives safely.
+
+Now about fifteen employees are volunteer beekeepers. Wearing special suits, they check the hives every two weeks. City bees find flowers in parks, gardens and balconies, and they produce more honey than many people expect.
+
+Last year, the bees produced about sixty kilos of honey. The company gives jars of it to employees and visitors. Each jar has a label explaining the importance of bees.
+
+Other companies in the city are now interested in the idea. The beekeeper says it is a small action, but if many buildings did the same, it could make a real difference.
+? s | How many beehives are on the roof? | five / 5 | The first paragraph says so. | there are five beehives.
+? c | Why are bee numbers falling? | *Pesticides, disease and the loss of flowers | Too many beekeepers | Cold weather | The second paragraph explains. | because of pesticides, disease and the loss of flowers.
+? c | Why did the company invite a professional beekeeper? | *Some employees were afraid of being stung | To sell honey | To build the hives | The third paragraph explains. | some employees were afraid of being stung.
+? t | The bees produced about sixty kilos of honey last year. | T | The fifth paragraph says so. | the bees produced about sixty kilos of honey.
+? t | The company sells the honey to make a profit. | F | It gives the jars to employees and visitors. | The company gives jars of it to employees and visitors.
+
+## Running up a mountain | HS
+Last October, Duy ran his first mountain marathon: forty-two kilometres up and down mountain paths in the north of Viet Nam. It was the hardest thing he had ever done.
+
+Duy started running three years ago to lose weight. At first, he ran short distances in the park. Then he joined a running club, where he heard about mountain races. He was excited but also nervous.
+
+He trained for six months. Three times a week he ran in the city, and every weekend he drove two hours to the hills to practise running uphill and downhill. Running downhill was more difficult than he expected, because it is easy to fall.
+
+On race day, the weather was cold and foggy. The race started at five in the morning, and the first part was a steep climb. In some places, runners had to use their hands. Duy's legs hurt badly after thirty kilometres, and he walked for a while. But other runners encouraged him.
+
+He finished in nine hours and twenty minutes. He wasn't fast, but he wasn't last either. "At the finish line, I cried," he says. "I never thought I could do it." He is already planning his next race.
+? s | How long was the race? | forty-two kilometres / 42 km / forty-two km | The first paragraph says so. | forty-two kilometres up and down mountain paths
+? c | Why did Duy start running? | *To lose weight | To win prizes | To join his friends | The second paragraph explains. | Duy started running three years ago to lose weight.
+? c | What was more difficult than expected in training? | *Running downhill | Running in the city | Running at night | The third paragraph says so. | Running downhill was more difficult than he expected
+? t | The weather on race day was hot and sunny. | F | It was cold and foggy. | the weather was cold and foggy.
+? t | Duy is planning another race. | T | The last paragraph says so. | He is already planning his next race.
+
+## Talking to a friend in Brazil | CO
+A year ago, I joined a language exchange website. I wanted to practise English, and I was matched with Lucas, a university student in Brazil who wanted to practise English too and was interested in Vietnamese culture.
+
+We decided to have a video call every Sunday. Because of the time difference, it is nine in the evening for me and eleven in the morning for him. We speak only English, and we correct each other's mistakes gently.
+
+At first, our conversations were short and a little awkward. We talked about simple topics, like our families and our studies. But soon we found many things in common. We both love football, cooking and old films.
+
+We have learned a lot about each other's countries. Lucas told me about the carnival in Rio, and I told him about Tet. He was amazed that people clean their houses completely before the new year. Once, we both cooked a dish from each other's country during our call. My Brazilian bean stew was not very good, but his spring rolls were worse!
+
+My English has improved a lot, especially my listening and speaking. More importantly, I have a real friend on the other side of the world. We are planning to meet in person one day.
+? c | Why did the writer join the website? | *To practise English | To find a job | To learn Portuguese | The first paragraph says so. | I wanted to practise English
+? s | What time is the call for the writer? | nine in the evening / nine / 9 pm / 9 | The second paragraph says so. | it is nine in the evening for me
+? c | What do the writer and Lucas have in common? | *Football, cooking and old films | Music and dancing | Mountain climbing | The third paragraph says so. | We both love football, cooking and old films.
+? t | The writer's Brazilian dish was excellent. | F | It was not very good. | My Brazilian bean stew was not very good
+? t | They plan to meet in person one day. | T | The last paragraph says so. | We are planning to meet in person one day.
+
+## A new bus line | TP
+Last month, the city opened a new bus line that connects the airport with the city centre. Before, travellers had to take a taxi or a slow local bus with many stops.
+
+The new buses are modern and air-conditioned, with space for large suitcases. There is free Wi-Fi and USB chargers at every seat. Announcements are made in Vietnamese and English, which is helpful for foreign visitors.
+
+The bus runs every fifteen minutes from five in the morning until midnight. The journey takes about forty minutes, depending on traffic. A ticket costs one dollar, which is much cheaper than a taxi.
+
+In the first month, more than one hundred thousand passengers used the new line. Many of them are airport workers who live in the city. "Before, I spent a lot of money on motorbike taxis," says Linh, who works at a café in the airport. "Now I save almost a hundred dollars a month."
+
+Some passengers have complained that the bus gets very crowded at busy times. The city says it will add more buses next year. It is also planning a special lane, so that the buses don't get stuck in traffic.
+? c | What does the new bus line connect? | *The airport and the city centre | Two universities | The city and the beach | The first paragraph says so. | connects the airport with the city centre.
+? c | How often does the bus run? | *Every fifteen minutes | Every hour | Every five minutes | The third paragraph says so. | The bus runs every fifteen minutes
+? s | How much does a ticket cost? | one dollar / 1 dollar / $1 | The third paragraph says so. | A ticket costs one dollar
+? t | Linh saves almost a hundred dollars a month. | T | Linh says so. | Now I save almost a hundred dollars a month.
+? t | The bus is never crowded. | F | It gets very crowded at busy times. | the bus gets very crowded at busy times.
+"""
+
 # MORE LEVELS
 
 
