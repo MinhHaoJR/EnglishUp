@@ -11,6 +11,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddAuthorizationBuilder().AddPolicy(Admin.Policy, policy => policy.RequireRole(Admin.Role));
 builder.Services.AddSingleton(TimeProvider.System);
 builder.Services.AddSingleton<ContentStore>();
+builder.Services.AddResponseCompression(options => options.EnableForHttps = true);
 builder.Services.AddHttpClient<IEmbedder, GeminiEmbedder>();
 builder.Services.AddHttpClient<IAnswerer, GeminiAnswerer>();
 // Optional fields (e.g. an attempt without learningLanguage) stay absent, matching the client schemas.
@@ -121,6 +122,11 @@ if (args.Contains("admin"))
     Environment.ExitCode = done ? 0 : 1;
     return;
 }
+
+// The lesson library is a few megabytes of public JSON, so it is compressed; responses that carry
+// tokens or personal data are left alone, because compressing secrets over HTTPS invites BREACH.
+app.UseWhen(context => context.Request.Path.StartsWithSegments("/api/content"),
+    branch => branch.UseResponseCompression());
 
 // The React app reaches these through the Vite /api proxy, so no CORS policy is needed.
 var api = app.MapGroup("/api");

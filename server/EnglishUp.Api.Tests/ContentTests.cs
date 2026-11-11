@@ -111,6 +111,27 @@ public class ContentTests
     }
 
     [Fact]
+    public async Task OnlyTheLibraryIsCompressed()
+    {
+        using var factory = new ApiFactory();
+        var client = factory.CreateClient();
+        HttpRequestMessage Gzip(string path)
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, path);
+            request.Headers.AcceptEncoding.ParseAdd("gzip");
+            return request;
+        }
+
+        var library = await client.SendAsync(Gzip("/api/content"));
+        Assert.Contains("gzip", library.Content.Headers.ContentEncoding);
+        // Signed-in responses carry tokens and personal data, so they are never compressed.
+        var learner = await AdminTests.Learner(factory);
+        var leaderboard = await learner.SendAsync(Gzip("/api/leaderboard"));
+        Assert.Equal(HttpStatusCode.OK, leaderboard.StatusCode);
+        Assert.Empty(leaderboard.Content.Headers.ContentEncoding);
+    }
+
+    [Fact]
     public async Task Seed_KeepsAdminEdits_UnlessOverwritten()
     {
         using var factory = new ApiFactory();
