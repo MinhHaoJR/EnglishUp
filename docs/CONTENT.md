@@ -82,7 +82,7 @@ Progress survives reload and JSON backup/reset/import. Level/topic filters thems
 
 ## Reading — reading.json
 
-Fields: `id`, `title`, `level`, `topic`, `text`, `questions`. Separate paragraphs in `text` with `\n\n`. Each passage has 150–350 whitespace-separated words and exactly five questions, mixing choice, tfng and short answer. There are six original passages (30 questions). The dictionary tokenizes words and matches bundled/custom entries case-insensitively; it does not perform stemming. A word the dictionary lacks is added by an admin, not from the lesson.
+Fields: `id`, `title`, `level`, `topic`, `text`, `questions`. Separate paragraphs in `text` with `\n\n`. Each passage has 150–350 whitespace-separated words and exactly five questions, mixing choice, tfng and short answer. There are 300 passages (1,500 questions), 50 per level from A1 to C2. r1–r6 were written by hand; `python scripts/create-reading-passages.py` keeps them and writes r7–r300 from a compact format (a `## Title | topic` line, the paragraphs, then five `?` lines), refusing any passage outside 150–350 words, without exactly five questions or with evidence that is not an exact part of the text. Length and difficulty grow with the level: simple first-person texts at A1, everyday stories and messages at A2, articles at B1–B2, analytical essays at C1 and argumentative essays that test the writer's stance at C2. Titles are unique, because a saved attempt marks a passage done by its title. The dictionary tokenizes words and matches bundled/custom entries case-insensitively; it does not perform stemming. A word the dictionary lacks is added by an admin, not from the lesson.
 
 ## Listening — listening.json and dictation.json
 

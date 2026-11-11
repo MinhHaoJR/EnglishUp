@@ -4567,7 +4567,461 @@ What is required, many argue, is transparency about the values guiding such deci
 ? c | What do many argue is required? | *Transparency about values, evidence and respect for athletes | Identical rules for all sports | Banning all technology | The last paragraph concludes. | transparency about the values guiding such decisions
 """
 
-# MORE C2
+PASSAGES["C2"] += """
+## The erosion of trust | CO
+Surveys in many democracies have recorded a long-term decline in public trust in institutions: governments, parliaments, the press, banks and, in some cases, scientific bodies. The causes are debated, but the consequences are widely regarded as serious. Societies function more smoothly when citizens believe that institutions are broadly competent and act in good faith; when that belief erodes, cooperation becomes harder and polarisation more likely.
+
+Several explanations compete. One emphasises institutional failure. Financial crises, scandals and policy errors have given citizens concrete reasons for scepticism, and distrust may in such cases be a rational response rather than a pathology. A second points to economic change: communities that experienced industrial decline and stagnant wages may feel that institutions served others' interests rather than theirs. A third focuses on the information environment. Fragmented media and social networks expose people to a constant stream of criticism, conspiracy theories and outrage, while traditional gatekeepers have lost authority.
+
+It is worth distinguishing between healthy scepticism and corrosive cynicism. Democratic systems depend on citizens questioning those in power; unconditional trust would be neither possible nor desirable. Cynicism, by contrast, assumes bad faith regardless of evidence, making it impossible for institutions to regain confidence even when they perform well.
+
+Rebuilding trust is notoriously difficult, since it is lost quickly and recovered slowly. Research suggests that transparency, consistency and visible accountability matter more than public relations. Institutions that acknowledge mistakes, explain decisions and involve citizens in deliberation may be more credible than those that project infallibility.
+
+Ultimately, trust cannot be demanded; it must be earned through conduct. Yet citizens also bear some responsibility for distinguishing between justified criticism and blanket suspicion, lest scepticism harden into a refusal to believe anything at all.
+? c | Why do societies function more smoothly with trust? | *Cooperation becomes easier | Taxes are lower | Laws are fewer | The first paragraph explains. | when that belief erodes, cooperation becomes harder
+? c | According to the first explanation, how might distrust be understood? | *As a rational response to institutional failure | As a mental illness | As unrelated to events | The second paragraph explains. | distrust may in such cases be a rational response rather than a pathology.
+? t | The writer argues that unconditional trust is desirable. | F | It would be neither possible nor desirable. | unconditional trust would be neither possible nor desirable.
+? s | What assumes bad faith regardless of evidence? | cynicism / corrosive cynicism | The third paragraph says so. | Cynicism, by contrast, assumes bad faith regardless of evidence
+? c | According to research, what matters more than public relations in rebuilding trust? | *Transparency, consistency and accountability | Advertising | Silence | The fourth paragraph explains. | transparency, consistency and visible accountability matter more than public relations.
+
+## In defence of useless knowledge | ED
+In 1939, the American educator Abraham Flexner published an essay with a deliberately provocative title, defending research pursued out of curiosity rather than for practical application. Many of the most transformative discoveries, he argued, emerged from investigations that seemed useless at the time. The mathematics underlying modern computing and the physics that eventually made electricity and radio possible were not developed with such applications in mind.
+
+The argument remains relevant. Funding for research is increasingly tied to expected impact, with scientists required to specify the practical benefits their work will produce. The rationale is understandable: public money should serve public purposes, and societies face urgent problems that applied research can address.
+
+Yet critics of this trend argue that demanding predictable impact misunderstands how discovery works. Breakthroughs are often unforeseeable, arising from unexpected results, connections between distant fields or questions pursued for their own sake. Research designed solely to meet specified goals may be efficient at incremental improvements but poorly suited to producing radical innovations.
+
+There is also a broader case for curiosity-driven inquiry that does not rest on eventual utility at all. Understanding the origins of the universe, the structure of ancient languages or the behaviour of distant stars may enrich human life in ways that resist economic measurement, much as art and music do.
+
+None of this implies that applied research is less valuable. Most systems of research funding seek a balance between both forms. The question is whether pressure for immediate results is eroding the space for open-ended investigation on which future applications may ultimately depend.
+
+Flexner's point, in essence, was that usefulness is often visible only in hindsight. A society that funds only what it already knows to be useful may limit its capacity to discover what it does not yet know it needs.
+? c | What did Flexner defend? | *Research pursued out of curiosity | Only applied research | Cutting science funding | The first paragraph explains. | defending research pursued out of curiosity rather than for practical application.
+? c | What is increasingly required of scientists, according to the writer? | *To specify the practical benefits of their work | To work without funding | To avoid applications | The second paragraph explains. | scientists required to specify the practical benefits their work will produce.
+? t | Critics argue breakthroughs are usually predictable. | F | They are often unforeseeable. | Breakthroughs are often unforeseeable
+? s | What does the writer compare curiosity-driven inquiry to, in terms of enriching life? | art and music | The fourth paragraph makes the comparison. | much as art and music do.
+? c | What was Flexner's point, in essence? | *Usefulness is often visible only in hindsight | Research is always useless | Only applied research matters | The last paragraph concludes. | usefulness is often visible only in hindsight.
+
+## Plain words, fair dealings | CO
+Official documents have long been notorious for their impenetrable language. Legal contracts, insurance policies, tax guidance and government forms are frequently written in dense, technical prose that many readers struggle to understand. The plain language movement argues that this is not a trivial matter of style but a question of fairness.
+
+When people cannot understand documents that affect their rights and obligations, they are disadvantaged. They may sign contracts without grasping their implications, fail to claim benefits to which they are entitled or miss deadlines they did not realise existed. Complex language tends to favour those with greater education, time or access to professional advice, reinforcing existing inequalities.
+
+Defenders of technical language argue that precision sometimes requires complexity. Legal terms have established meanings refined over centuries, and simplifying them risks ambiguity that could lead to disputes. Specialists writing for other specialists may legitimately use terminology unfamiliar to outsiders.
+
+Plain language advocates respond that clarity and precision are not opposites. Many documents are complex not because their content requires it but because of habit, defensive caution or a belief that formality conveys authority. Studies of documents rewritten in plain language have found that readers understand them better, make fewer errors and, in some cases, organisations receive fewer queries and complaints.
+
+Several governments have adopted plain language policies, requiring public documents to be written so that intended readers can find, understand and use the information they need. Some legal systems have also sought to simplify consumer contracts.
+
+The movement raises a broader point about the relationship between language and power. Those who control the terms in which information is presented shape who can participate fully in civic and economic life. Clear communication, from this perspective, is a matter of democratic access.
+? c | What does the plain language movement argue? | *Impenetrable language is a question of fairness | Style does not matter | All documents should be longer | The first paragraph explains. | this is not a trivial matter of style but a question of fairness.
+? c | Who tends to benefit from complex language? | *Those with more education, time or access to advice | Everyone equally | People with less education | The second paragraph explains. | Complex language tends to favour those with greater education, time or access to professional advice
+? t | Defenders of technical language argue precision sometimes requires complexity. | T | The third paragraph says so. | precision sometimes requires complexity.
+? s | What did studies find about documents rewritten in plain language? | readers understand them better / readers understand them better and make fewer errors | The fourth paragraph says so. | readers understand them better, make fewer errors
+? c | How does the writer ultimately frame clear communication? | *As a matter of democratic access | As a matter of taste | As unnecessary | The last paragraph concludes. | Clear communication, from this perspective, is a matter of democratic access.
+
+## Growth without end? | MS
+For decades, economic growth has been treated as the primary measure of national success. Rising output has funded improvements in health, education and living standards, and governments of all political persuasions have pursued it. Yet a growing body of scholars questions whether perpetual growth is compatible with the planet's ecological limits.
+
+The central concern is that economic activity has historically been closely linked to resource use and emissions. Proponents of "green growth" argue that this link can be broken: through renewable energy, efficiency and a shift towards services, economies can continue to grow while reducing their environmental impact. Some countries have indeed achieved growth alongside falling emissions.
+
+Critics, associated with a movement sometimes called "degrowth", contend that such decoupling has not occurred quickly enough or on a sufficient scale to meet climate targets. They argue that wealthy countries should deliberately reduce material consumption and production, focusing instead on wellbeing, equality and sustainability. Policies might include shorter working hours, investment in public services and limits on resource-intensive goods.
+
+Opponents of degrowth raise serious objections. Reduced growth could lead to unemployment, fiscal crises and social instability, since many institutions, including pension systems, are designed around expanding economies. Billions of people in poorer countries still need economic development to escape poverty. Critics also question whether democratic electorates would accept reduced consumption.
+
+Between these positions lie proposals to redefine prosperity, measuring progress through indicators of wellbeing and environmental health rather than output alone.
+
+The debate ultimately concerns not only economics but values: what kind of life societies consider good, and how the costs and benefits of economic change should be distributed between rich and poor, present and future generations.
+? c | What do proponents of green growth argue? | *Growth can be decoupled from environmental impact | Growth must stop | Emissions cannot be reduced | The second paragraph explains. | Proponents of "green growth" argue that this link can be broken
+? c | What do degrowth supporters argue wealthy countries should do? | *Deliberately reduce material consumption and production | Increase consumption | Ignore wellbeing | The third paragraph explains. | wealthy countries should deliberately reduce material consumption and production
+? t | Opponents argue degrowth could cause unemployment and fiscal crises. | T | The fourth paragraph says so. | Reduced growth could lead to unemployment, fiscal crises and social instability
+? s | Who still needs economic development to escape poverty? | billions of people in poorer countries / people in poorer countries | The fourth paragraph says so. | Billions of people in poorer countries still need economic development to escape poverty.
+? c | What does the debate ultimately concern, according to the writer? | *Values about what kind of life is good | Only technical economics | Only taxation | The last paragraph concludes. | The debate ultimately concerns not only economics but values
+
+## Digital afterlives | TE
+When people die, they now leave behind not only possessions and memories but vast digital traces: social media profiles, emails, photographs stored in the cloud, messages and online accounts. What should happen to this digital legacy has become a pressing practical and ethical question.
+
+Many platforms allow profiles of deceased users to be memorialised, preserving them as spaces where friends and family can share memories. For some bereaved people, these spaces offer comfort and continuity. For others, encountering a loved one's profile, or receiving automated reminders of their birthday, can be painful.
+
+Legal frameworks have struggled to keep pace. Questions arise about who owns digital assets, whether relatives have a right to access private messages and how the deceased's wishes should be determined. Many people have never considered what they would like to happen to their accounts.
+
+Technological developments raise more profound questions. Some companies offer services that use a person's messages, recordings and posts to create artificial intelligence systems capable of simulating conversation with the deceased. Proponents suggest such "griefbots" might help people process loss or preserve family history. Critics worry that they could interfere with healthy mourning, create dependency or misrepresent the dead, generating words the person never said.
+
+There are also questions of consent. Can a person meaningfully consent to being simulated after death, and should relatives have the power to create such simulations without explicit permission?
+
+These developments challenge long-standing cultural practices surrounding death and memory. Different societies have always had distinct rituals for honouring the dead. Digital technologies are now creating new practices, and societies will need to decide which forms of remembrance respect both the dead and the living.
+? c | What do people now leave behind when they die, besides possessions? | *Vast digital traces | Only memories | Nothing else | The first paragraph explains. | they now leave behind not only possessions and memories but vast digital traces
+? c | How can memorialised profiles affect bereaved people? | *They can comfort some but pain others | They always comfort everyone | They are always painful | The second paragraph explains. | For some bereaved people, these spaces offer comfort and continuity.
+? s | What are AI systems simulating conversation with the deceased called in the text? | griefbots | The fourth paragraph names them. | such "griefbots"
+? t | Critics worry that griefbots could interfere with healthy mourning. | T | The fourth paragraph says so. | they could interfere with healthy mourning
+? c | What will societies need to decide, according to the writer? | *Which forms of remembrance respect both the dead and the living | Whether to ban the internet | How to stop death | The last paragraph concludes. | societies will need to decide which forms of remembrance respect both the dead and the living.
+
+## Maps are never neutral | TR
+We tend to treat maps as objective representations of reality. Yet every map involves choices: what to include and omit, which projection to use, what to name and how. These choices reflect purposes, assumptions and, often, power.
+
+Consider projection. Representing a spherical Earth on a flat surface inevitably distorts something: area, shape, distance or direction. The widely used Mercator projection, developed for navigation, preserves angles but greatly enlarges regions near the poles. Greenland appears comparable in size to Africa, though Africa is roughly fourteen times larger. Critics have argued that such distortions shaped perceptions of the relative importance of regions, though defenders note the projection's genuine utility for navigation.
+
+Names on maps are equally significant. Colonial powers frequently renamed places, replacing indigenous names with European ones, and the restoration of original names has become an important element of decolonisation in many countries. Disputed territories may appear differently on maps depending on where they are published, and online mapping services sometimes display different borders to users in different countries.
+
+What maps omit can be as revealing as what they include. Historical maps of colonial territories sometimes depicted inhabited lands as empty, implicitly justifying settlement. Informal settlements in many modern cities have been left off official maps, rendering their residents invisible to planners and service providers.
+
+In recent years, participatory mapping projects have enabled communities to map their own territories, resources and needs, sometimes supporting land rights claims or improving the delivery of services.
+
+Recognising that maps are constructed does not mean they are arbitrary or useless. Rather, it encourages critical reading: asking who made a map, for what purpose and whose perspective it represents.
+? c | What does the writer say every map involves? | *Choices reflecting purposes and power | Perfect accuracy | No assumptions | The first paragraph explains. | every map involves choices
+? c | What does the Mercator projection preserve? | *Angles | Area | Distance | The second paragraph explains. | preserves angles but greatly enlarges regions near the poles.
+? s | Roughly how many times larger is Africa than Greenland? | fourteen / fourteen times / 14 | The second paragraph says so. | Africa is roughly fourteen times larger.
+? t | Online mapping services always show the same borders to every user. | F | They sometimes display different borders. | online mapping services sometimes display different borders to users in different countries.
+? c | What does recognising maps as constructed encourage? | *Critical reading of who made them and why | Rejecting all maps | Ignoring borders | The last paragraph concludes. | it encourages critical reading
+
+## Homesick at home | EN
+The word nostalgia once referred to a painful longing for home experienced by those who had left it. In 2005, the Australian philosopher Glenn Albrecht coined a related term, solastalgia, to describe a different kind of distress: the feeling of homesickness one experiences while still at home, as the environment one knows and loves is transformed.
+
+Albrecht first observed the phenomenon among communities affected by open-cut mining, whose familiar landscapes were being destroyed around them. Residents described a profound sense of loss and disorientation, even though they had not moved. Their home had, in a sense, left them.
+
+Since then, the concept has been applied more widely, particularly in relation to climate change. People living in places affected by drought, wildfires, floods, coastal erosion or melting ice report similar feelings. For communities whose identity, livelihoods and cultural practices are closely tied to particular landscapes, such as farmers, fishing communities and indigenous peoples, environmental change can threaten not only material security but a sense of self and belonging.
+
+Researchers in psychology and public health have begun to study these experiences, alongside related phenomena such as eco-anxiety, a chronic worry about environmental catastrophe. They caution against pathologising such feelings, which may be rational responses to real losses. At the same time, they recognise that distress can affect wellbeing and that communities may need support.
+
+The concept of solastalgia draws attention to dimensions of environmental change that economic assessments often overlook. Damage is usually measured in terms of property, productivity or biodiversity; the loss of a familiar place, and the meanings attached to it, is harder to quantify. Recognising such losses may be essential for understanding how environmental change is experienced and for designing responses that address not only physical but emotional and cultural needs.
+? s | Who coined the term solastalgia? | Glenn Albrecht / Albrecht | The first paragraph says so. | the Australian philosopher Glenn Albrecht coined a related term, solastalgia
+? c | What does solastalgia describe? | *Homesickness experienced while still at home as the environment changes | Longing for a distant home | Fear of travel | The first paragraph explains. | the feeling of homesickness one experiences while still at home
+? c | Where did Albrecht first observe the phenomenon? | *Among communities affected by open-cut mining | Among city dwellers | Among tourists | The second paragraph explains. | among communities affected by open-cut mining
+? t | Researchers encourage treating these feelings as illnesses. | F | They caution against pathologising them. | They caution against pathologising such feelings
+? c | What does the concept draw attention to? | *Losses that economic assessments often overlook | Rising property prices | Faster economic growth | The last paragraph explains. | draws attention to dimensions of environmental change that economic assessments often overlook.
+
+## The last acceptable prejudice? | PF
+Discrimination based on race or gender is widely condemned, at least in principle, in many societies. Discrimination based on age, by contrast, often passes unnoticed or is treated as harmless humour. Yet ageism, defined as stereotyping, prejudice or discrimination on the basis of age, affects people at both ends of the life course and has measurable consequences.
+
+Older people frequently encounter assumptions that they are less competent, less adaptable or less valuable than younger people. In the workplace, older applicants may be overlooked despite their experience, and older employees may be denied training or encouraged to retire. In healthcare, symptoms may be dismissed as normal ageing, and older patients may receive less aggressive treatment.
+
+Younger people experience ageism too, being dismissed as inexperienced, entitled or irresponsible, and excluded from decision-making that affects their futures.
+
+Ageism can also be internalised. Research suggests that people who hold negative views of ageing may experience poorer health outcomes as they grow older, possibly because such beliefs affect behaviour, stress and willingness to seek care. In some longitudinal studies, people with more positive attitudes towards ageing lived several years longer than those with negative attitudes, though the mechanisms remain debated.
+
+Ageism is reinforced by cultural representations. Advertising frequently presents ageing as a problem to be fought, and older people are underrepresented or stereotyped in media.
+
+Combating ageism involves legal protections against discrimination, but also changes in attitudes and institutions. Intergenerational programmes that bring young and old together have been shown to reduce prejudice. As populations age, challenging ageism becomes not only a matter of fairness but of making use of the contributions that people of all ages can make.
+? c | How is age discrimination often treated, compared with race or gender discrimination? | *It often passes unnoticed or is treated as harmless humour | It is condemned more strongly | It is illegal everywhere | The first paragraph explains. | Discrimination based on age, by contrast, often passes unnoticed or is treated as harmless humour.
+? c | What may happen to older patients in healthcare? | *Symptoms may be dismissed as normal ageing | They always receive better care | They are treated first | The second paragraph explains. | symptoms may be dismissed as normal ageing
+? t | Ageism affects only older people. | F | Younger people experience it too. | Younger people experience ageism too
+? s | What have intergenerational programmes been shown to reduce? | prejudice | The last paragraph says so. | Intergenerational programmes that bring young and old together have been shown to reduce prejudice.
+? c | What did some longitudinal studies find? | *People with more positive attitudes to ageing lived longer | Attitudes have no effect | Negative attitudes improve health | The fourth paragraph explains. | people with more positive attitudes towards ageing lived several years longer
+
+## The myth of the lone genius | ED
+Popular history tends to celebrate individual geniuses: the scientist who single-handedly transformed our understanding of the universe, the inventor working alone in a laboratory, the artist struck by sudden inspiration. These narratives are compelling, but historians increasingly argue that they misrepresent how innovation occurs.
+
+Major discoveries usually emerge from networks of people and ideas. Scientists build on predecessors' work, exchange ideas with contemporaries and rely on assistants, technicians and institutions whose contributions are often forgotten. Many important inventions were developed simultaneously by different people working independently, suggesting that ideas become possible when the necessary knowledge and tools are available, rather than depending on a single extraordinary mind.
+
+The myth also obscures whose contributions are recognised. Historically, women, people from colonised countries and those without formal positions often contributed to discoveries without receiving credit. Collaborators' work has sometimes been attributed to more prominent figures, a pattern some historians call the Matthew effect, after the biblical observation that those who have shall be given more.
+
+The persistence of the lone genius narrative has consequences. It may discourage people who do not see themselves as exceptional from pursuing science or creative work. It can also shape institutions, encouraging prizes and funding structures that reward individuals rather than teams.
+
+None of this denies that individuals can be extraordinarily talented or that personal insight matters. Rather, it suggests that creativity flourishes in environments that encourage collaboration, communication and the sharing of ideas.
+
+Recognising the collective nature of innovation may lead to fairer recognition of contributors and to policies that foster the conditions in which new ideas can emerge, rather than waiting for geniuses to appear.
+? c | What do historians increasingly argue about lone genius narratives? | *They misrepresent how innovation occurs | They are completely accurate | They are rarely told | The first paragraph explains. | they misrepresent how innovation occurs.
+? c | What do simultaneous inventions suggest? | *Ideas become possible when knowledge and tools are available | Inventors copy each other | Geniuses are common | The second paragraph explains. | ideas become possible when the necessary knowledge and tools are available
+? s | What do some historians call the pattern of credit going to prominent figures? | the Matthew effect / Matthew effect | The third paragraph names it. | a pattern some historians call the Matthew effect
+? t | The writer denies that individuals can be extraordinarily talented. | F | It does not deny this. | None of this denies that individuals can be extraordinarily talented
+? c | According to the writer, where does creativity flourish? | *In environments encouraging collaboration and sharing ideas | In isolation | Only in universities | The fifth paragraph explains. | creativity flourishes in environments that encourage collaboration, communication and the sharing of ideas.
+
+## The art of walking in the city | PT
+In nineteenth-century Paris, writers described a figure called the flâneur: a leisurely stroller who wandered the city's streets and arcades, observing crowds, shop windows and urban life with detached curiosity. For poets and critics, the flâneur embodied a particular way of experiencing modernity, in which the city itself became a text to be read.
+
+The idea has enjoyed a revival among writers, urbanists and artists who see aimless walking as a form of attention increasingly rare in contemporary life. Unlike commuting, which treats the city as an obstacle between destinations, strolling allows one to notice architectural details, overheard conversations and the changing character of neighbourhoods.
+
+Critics have pointed out, however, that the classic flâneur was typically a privileged man. Women walking alone in nineteenth-century cities were often viewed with suspicion, and many people lacked the leisure or safety to wander freely. Feminist writers have explored the figure of the flâneuse, examining how gender, class and race shape who can move freely through public space and how they are perceived when they do.
+
+Contemporary cities pose their own challenges. Car-dominated planning, privatised spaces such as shopping centres and surveillance have altered the experience of walking. In some cities, pavements are narrow or absent, making walking unpleasant or dangerous.
+
+Urban planners have increasingly recognised the value of walkability, designing streets with wide pavements, trees, benches and mixed uses that invite people to linger. Walkable neighbourhoods are associated with better health, stronger local economies and greater social interaction.
+
+The flâneur thus remains a useful figure for thinking about cities: not only as a model of attentive observation, but as a reminder that the freedom to wander is shaped by design, inequality and power.
+? s | What was the leisurely stroller of nineteenth-century Paris called? | the flâneur / flâneur / flaneur | The first paragraph names the figure. | a figure called the flâneur
+? c | How does strolling differ from commuting? | *It allows one to notice details rather than treating the city as an obstacle | It is faster | It avoids people | The second paragraph explains. | Unlike commuting, which treats the city as an obstacle between destinations
+? t | The classic flâneur was typically a privileged man. | T | Critics point this out. | the classic flâneur was typically a privileged man.
+? c | What have feminist writers explored? | *How gender, class and race shape who can move freely | The history of cars | Shopping habits | The third paragraph explains. | examining how gender, class and race shape who can move freely through public space
+? c | What is the flâneur a reminder of, according to the writer? | *That the freedom to wander is shaped by design, inequality and power | That walking is outdated | That cities should ban cars | The last paragraph concludes. | the freedom to wander is shaped by design, inequality and power.
+
+## Inheritance and fairness | MS
+Inheritance is one of the most emotionally charged issues in economic policy. Many people regard passing wealth to their children as a natural expression of love and a reward for a lifetime of work. Others see large inheritances as fundamentally incompatible with equality of opportunity, allowing advantages to accumulate across generations regardless of merit.
+
+The scale of inherited wealth is substantial. In many wealthy countries, a growing share of total wealth is inherited rather than earned, and economists have documented how inheritances contribute to wealth inequality. Children of wealthy parents may receive not only bequests on their parents' death but substantial transfers during their lifetimes, helping with education, housing deposits and business ventures.
+
+Taxes on inheritance and estates are among the most unpopular taxes, even among people unlikely ever to pay them. Opponents argue that such taxes amount to double taxation, since the wealth has often already been taxed as income, and that they penalise thrift and family businesses. Some countries have abolished inheritance taxes altogether.
+
+Supporters contend that inheritance taxes are among the fairest forms of taxation, since heirs did nothing to earn the wealth they receive. They argue that revenues could fund public services or reduce taxes on work, and that limiting inherited advantage is consistent with meritocratic principles.
+
+Design matters considerably. Many inheritance tax systems contain exemptions and loopholes, allowing the wealthiest families to transfer assets through trusts or gifts while those with moderate estates pay. Proposals include taxing recipients rather than estates, setting lifetime limits on tax-free receipts and closing avoidance mechanisms.
+
+The debate reflects competing values: family autonomy and the desire to provide for one's children on one side, and equality of opportunity on the other. How societies balance them shapes the distribution of wealth across generations.
+? c | How do many people regard passing wealth to their children? | *As a natural expression of love | As unfair | As illegal | The first paragraph explains. | as a natural expression of love and a reward for a lifetime of work.
+? c | What have economists documented? | *How inheritances contribute to wealth inequality | That inheritances reduce inequality | That inheritance is rare | The second paragraph explains. | economists have documented how inheritances contribute to wealth inequality.
+? t | Inheritance taxes are popular even among people unlikely to pay them. | F | They are among the most unpopular taxes. | Taxes on inheritance and estates are among the most unpopular taxes
+? s | What do opponents call inheritance taxes, since wealth was already taxed? | double taxation | The third paragraph says so. | such taxes amount to double taxation
+? c | What does the debate reflect, according to the writer? | *Competing values of family autonomy and equality of opportunity | Only technical tax questions | Disagreement about statistics | The last paragraph concludes. | The debate reflects competing values
+
+## Algorithms in the courtroom | TE
+In several countries, courts and parole boards have used algorithmic tools to assess the likelihood that a defendant will reoffend. These risk assessment systems analyse data such as criminal history, age and other factors to produce scores intended to inform decisions about bail, sentencing or release.
+
+Proponents argue that algorithms can reduce inconsistency and bias in human judgement. Judges, like all people, are influenced by fatigue, mood and unconscious prejudice; studies have found that decisions can vary depending on factors as arbitrary as the time of day. A well-designed tool, supporters suggest, could apply consistent criteria and help identify defendants who can safely be released.
+
+Critics have raised serious concerns. Investigations of some tools found that they produced higher rates of false positives for certain groups, labelling people as high risk who did not go on to reoffend. Because algorithms are trained on historical data, they may reproduce patterns of past discrimination; if certain communities were more heavily policed, their members will appear more often in criminal records, regardless of underlying behaviour.
+
+Transparency is another problem. Some tools are developed by private companies that treat their methods as trade secrets, making it difficult for defendants to challenge scores that affect their liberty. There are also questions about whether judges understand the limitations of the scores and whether they defer to them excessively.
+
+Researchers have shown that different mathematical definitions of fairness can be mutually incompatible, meaning that no algorithm can satisfy all of them simultaneously. Choosing among them is not a technical matter but a value judgement.
+
+The debate illustrates a broader point: algorithms do not eliminate human choices but embed them, often less visibly. Their use in decisions affecting liberty demands particular scrutiny, transparency and accountability.
+? c | What do risk assessment systems aim to estimate? | *The likelihood that a defendant will reoffend | The cost of a trial | The age of defendants | The first paragraph explains. | to assess the likelihood that a defendant will reoffend.
+? c | Why do proponents favour algorithms? | *They can reduce inconsistency and bias in human judgement | They are cheaper than lawyers | They replace courts | The second paragraph explains. | algorithms can reduce inconsistency and bias in human judgement.
+? t | Algorithms trained on historical data cannot reproduce past discrimination. | F | They may reproduce it. | they may reproduce patterns of past discrimination
+? s | Why is it difficult to challenge some scores? | companies treat their methods as trade secrets / trade secrets | The fourth paragraph explains. | treat their methods as trade secrets
+? c | What does the writer say algorithms do with human choices? | *Embed them, often less visibly | Eliminate them | Ignore them | The last paragraph concludes. | algorithms do not eliminate human choices but embed them, often less visibly.
+
+## Eating with a conscience | FD
+Food choices have become moral choices for many people. Consumers increasingly consider not only taste, price and health but the environmental impact of their diets, the welfare of animals and the working conditions of those who produce food. Labels proclaiming food to be organic, fair trade, free-range or locally sourced respond to these concerns.
+
+Yet ethical eating is more complicated than labels suggest. Considerations can conflict. Locally produced food may involve fewer transport emissions, but in some cases food grown in heated greenhouses nearby has a larger carbon footprint than produce shipped from warmer climates. Organic farming avoids synthetic pesticides but may require more land to produce the same yield. Plant-based diets generally have lower environmental impacts, but some plant foods require large amounts of water or involve labour exploitation.
+
+Information is a further challenge. Supply chains are long and complex, and consumers rarely know how their food was produced. Certification schemes provide some assurance, but standards vary and some labels have been criticised as more marketing than substance.
+
+There are also questions of access and responsibility. Ethically produced food is often more expensive, raising concerns that ethical eating becomes a privilege of the affluent. Some critics argue that focusing on individual consumer choices diverts attention from the structural changes, such as regulation of agriculture and fair wages for workers, that would have greater impact.
+
+Nevertheless, consumer choices can influence markets, and growing demand has encouraged producers to improve practices.
+
+Perhaps the most realistic approach recognises that perfect ethical consistency is impossible, while still making informed choices where possible and supporting policies that make sustainable and fair food accessible to everyone, not only those who can afford to pay more.
+? c | What do consumers increasingly consider when choosing food? | *Environmental impact, animal welfare and working conditions | Only price | Only taste | The first paragraph explains. | the environmental impact of their diets, the welfare of animals and the working conditions of those who produce food.
+? c | Why might local food sometimes have a larger carbon footprint? | *It may be grown in heated greenhouses | It travels further | It uses more packaging | The second paragraph explains. | food grown in heated greenhouses nearby has a larger carbon footprint than produce shipped from warmer climates.
+? t | Organic farming may require more land for the same yield. | T | The second paragraph says so. | may require more land to produce the same yield.
+? s | What concern does the higher price of ethical food raise? | ethical eating becomes a privilege of the affluent / a privilege of the wealthy | The fourth paragraph says so. | ethical eating becomes a privilege of the affluent.
+? c | What does the writer suggest is the most realistic approach? | *Making informed choices while supporting policies for fair access | Achieving perfect consistency | Ignoring ethics | The last paragraph concludes. | while still making informed choices where possible and supporting policies
+
+## Living by the clock | DL
+For most of human history, time was measured by natural rhythms: sunrise and sunset, the seasons, the tides. Work was organised around tasks rather than hours; a farmer worked until the harvest was gathered, not until a fixed time. The mechanical clock, and later industrialisation, transformed this relationship.
+
+Factories required workers to arrive and leave at set times, synchronising labour with machines. Historians have described how industrial societies instilled "time discipline", teaching workers to regard time as a resource to be spent, saved or wasted. The phrase "time is money" captures this shift.
+
+The standardisation of time accelerated with railways. Before the nineteenth century, towns kept local time based on the position of the sun, so that clocks in neighbouring cities might differ by several minutes. Railway timetables required uniformity, leading eventually to time zones and a globally coordinated system.
+
+Today, digital technologies have intensified the regulation of time. Smartphones synchronise automatically, calendars schedule our days in fifteen-minute blocks and productivity apps track how we spend each hour. Paradoxically, while technology promises to save time, many people report feeling more pressed for time than ever.
+
+Some scholars distinguish between clock time, measured and uniform, and lived time, the subjective experience of duration, in which an hour of waiting can feel endless while an absorbing conversation seems to pass in minutes. Modern life tends to privilege the former, sometimes at the expense of the latter.
+
+Movements advocating "slowness", in food, travel and work, can be understood as attempts to reclaim lived time. They do not reject clocks, but question whether efficiency should be the dominant value governing how we spend our lives.
+? c | How was work organised before industrialisation, according to the text? | *Around tasks rather than hours | By fixed working hours | By digital calendars | The first paragraph explains. | Work was organised around tasks rather than hours
+? s | What did industrial societies instil, according to historians? | time discipline | The second paragraph names it. | societies instilled "time discipline"
+? c | What led to standardised time and time zones? | *Railway timetables | Factories | Smartphones | The third paragraph explains. | Railway timetables required uniformity, leading eventually to time zones
+? t | Many people report feeling less pressed for time than before. | F | They report feeling more pressed for time. | many people report feeling more pressed for time than ever.
+? c | How can slowness movements be understood? | *As attempts to reclaim lived time | As a rejection of all clocks | As a form of laziness | The last paragraph concludes. | can be understood as attempts to reclaim lived time.
+
+## Moving with the climate | EN
+Human migration has always been influenced by environmental conditions. Droughts, floods and changing seasons have driven people to seek new homes throughout history. Climate change is expected to make such pressures more frequent and severe, raising difficult questions about how societies should respond.
+
+Estimating the scale of future climate-related migration is notoriously difficult. Environmental factors rarely act alone; they interact with economic, political and social conditions. A drought may push a farmer to migrate, but whether they do so depends on income, opportunities elsewhere, social networks and government policies. Most climate-related movement is likely to occur within countries rather than across borders, often from rural areas to cities.
+
+The legal status of people displaced by environmental change is unclear. International refugee law protects those fleeing persecution, but not those leaving because of environmental degradation. Some legal scholars have called for new frameworks; others argue that existing human rights obligations already provide some protection. A few courts have considered whether returning people to places made uninhabitable by climate change could violate their rights.
+
+Migration is not only a problem but can be a form of adaptation. Moving to areas with better prospects can reduce vulnerability, and remittances sent home may help families cope with environmental stress. Some governments have even planned managed relocation of communities from low-lying coastal areas.
+
+At the same time, the poorest and most vulnerable may lack the resources to move at all, leaving them "trapped" in increasingly hazardous places.
+
+How societies respond, through investment in adaptation, legal protections and fair responsibility-sharing between countries that contributed most to climate change and those most affected, will shape whether climate-related migration becomes a humanitarian crisis or a managed transition.
+? c | Why is estimating future climate migration difficult? | *Environmental factors interact with economic, political and social conditions | There is no climate change | Migration never happens | The second paragraph explains. | Environmental factors rarely act alone; they interact with economic, political and social conditions.
+? c | Where is most climate-related movement likely to occur? | *Within countries | Across oceans | Only to Europe | The second paragraph explains. | Most climate-related movement is likely to occur within countries rather than across borders
+? t | International refugee law clearly protects people fleeing environmental degradation. | F | It does not. | but not those leaving because of environmental degradation.
+? s | What might the poorest lack, leaving them trapped? | the resources to move / resources | The fifth paragraph says so. | may lack the resources to move at all
+? c | How can migration be seen, according to the text? | *As a form of adaptation | Only as a problem | As illegal | The fourth paragraph explains. | Migration is not only a problem but can be a form of adaptation.
+
+## The privacy paradox | TE
+Surveys consistently show that people care about their privacy. Large majorities express concern about how companies and governments collect and use personal data. Yet the same people readily share information online, accept cookies without reading them and use services whose business models depend on data collection. Researchers call this apparent contradiction the privacy paradox.
+
+Several explanations have been proposed. One suggests that people's stated concerns are simply not strong enough to change behaviour when weighed against the convenience and benefits of digital services. Another emphasises the difficulty of making informed choices. Privacy policies are long and complex, and the consequences of sharing data are often invisible, delayed and uncertain, making them hard to evaluate.
+
+A third explanation challenges the idea that the behaviour is contradictory at all. In many cases, people have little meaningful choice. Opting out of major platforms may mean exclusion from social and professional life, and alternatives that protect privacy may be unavailable or impractical. What looks like indifference may be resignation, a sense that privacy has already been lost and individual action makes little difference.
+
+Psychological factors also play a role. People tend to value immediate rewards over distant risks, and design choices, such as default settings that maximise sharing, nudge users towards disclosure.
+
+These findings have implications for policy. If individuals cannot realistically protect their privacy through informed consent alone, then placing responsibility on them may be ineffective. Some regulators have therefore moved towards requiring privacy by default, limiting data collection and restricting certain uses regardless of consent.
+
+The privacy paradox may thus reveal less about individual inconsistency than about the structure of a digital economy in which meaningful choice is often constrained.
+? c | What is the privacy paradox? | *People say they care about privacy yet readily share data | People refuse to use the internet | Companies protect all data | The first paragraph explains. | Researchers call this apparent contradiction the privacy paradox.
+? c | Why is it hard to make informed choices about data? | *Policies are complex and consequences are invisible and delayed | Policies are too short | Data has no value | The second paragraph explains. | the consequences of sharing data are often invisible, delayed and uncertain
+? s | According to the third explanation, what may apparent indifference actually be? | resignation | The third paragraph says so. | What looks like indifference may be resignation
+? t | Default settings often nudge users towards sharing more. | T | The fourth paragraph says so. | default settings that maximise sharing, nudge users towards disclosure.
+? c | What does the writer suggest the paradox reveals? | *The structure of a digital economy that constrains choice | Pure individual inconsistency | That privacy no longer matters | The last paragraph concludes. | than about the structure of a digital economy in which meaningful choice is often constrained.
+
+## Children and risk | PF
+In many wealthy countries, children today enjoy far less independent freedom than previous generations did. Studies comparing generations have found that the distance children are allowed to roam from home without supervision has shrunk dramatically. Many children are driven to school, supervised in structured activities and rarely play outdoors without adults present.
+
+These changes reflect understandable parental concerns about traffic, strangers and accidents. Yet some researchers argue that the perception of danger has grown faster than actual risk. In many places, crimes against children by strangers are rare, and media coverage of rare tragedies may distort parents' sense of probability.
+
+Critics of overprotection suggest that it may carry its own costs. Unsupervised play allows children to take risks, solve problems, negotiate with peers and develop confidence and resilience. Some psychologists argue that a lack of such experiences may contribute to anxiety, as children who are shielded from manageable risks may struggle to cope with uncertainty later.
+
+Advocates of "risky play" distinguish between hazards, which children cannot perceive or manage, and risks that children can assess and learn from, such as climbing trees or using tools under appropriate conditions. Some playgrounds have deliberately introduced elements such as loose materials and natural features that invite exploration.
+
+Social factors also matter. Parents who allow children freedom may face judgement from others, or even, in some places, legal consequences. Neighbourhood design, with busy roads and few safe spaces, may make independent play genuinely difficult.
+
+The debate does not suggest abandoning safety concerns, but rather finding a balance. As one researcher put it, the goal is to make childhood "as safe as necessary, not as safe as possible".
+? c | What has happened to children's independent roaming? | *The distance has shrunk dramatically | It has increased | It has not changed | The first paragraph explains. | the distance children are allowed to roam from home without supervision has shrunk dramatically.
+? c | What do some researchers argue about perceptions of danger? | *They have grown faster than actual risk | They match actual risk | They are too low | The second paragraph explains. | the perception of danger has grown faster than actual risk.
+? t | Advocates of risky play make no distinction between hazards and risks. | F | They distinguish between them. | distinguish between hazards, which children cannot perceive or manage, and risks
+? s | What may parents who allow children freedom face from others? | judgement / judgement from others | The fifth paragraph says so. | may face judgement from others
+? c | What is the goal, according to the researcher quoted? | *As safe as necessary, not as safe as possible | As safe as possible | No safety rules | The last paragraph quotes it. | as safe as necessary, not as safe as possible
+
+## Rituals without religion | DL
+Rituals have long been associated with religion: weddings, funerals, festivals and rites of passage were traditionally organised by religious institutions. As many societies have become more secular, some observers predicted that ritual itself would decline. Instead, rituals have persisted and evolved in new forms.
+
+Anthropologists define ritual broadly as formalised, repeated actions that carry symbolic meaning. By this definition, secular life is full of rituals: graduation ceremonies, birthday celebrations, national holidays, sports events and even morning routines. Many people who do not identify with any religion still mark significant life transitions with ceremonies, often designing them to reflect personal values.
+
+Research suggests that rituals serve important psychological and social functions. They can reduce anxiety in uncertain situations, providing a sense of control and structure. Performing rituals before stressful events, such as performances or exams, has been found in some studies to improve performance. Shared rituals strengthen group cohesion, creating a sense of belonging and continuity across generations.
+
+Rituals also help people cope with grief. Funerals, memorials and anniversaries provide structured ways to acknowledge loss and support the bereaved. In secular contexts, people have developed new forms of commemoration, from personalised ceremonies to online memorials.
+
+Critics sometimes dismiss rituals as empty formalities. Yet their power often lies precisely in their form. Repetition, symbolism and collective participation can convey meanings that words alone struggle to express.
+
+The persistence of ritual in secular societies suggests that the human need for meaning, connection and marking time does not depend on any particular belief system. As traditional institutions lose influence, people continue to create rituals, adapting old forms and inventing new ones to give shape to their lives.
+? c | What did some observers predict about ritual in secular societies? | *It would decline | It would grow stronger | It would become religious | The first paragraph explains. | some observers predicted that ritual itself would decline.
+? s | How do anthropologists define ritual broadly? | formalised, repeated actions that carry symbolic meaning / formalised repeated actions with symbolic meaning | The second paragraph gives the definition. | formalised, repeated actions that carry symbolic meaning.
+? c | What psychological function can rituals serve? | *Reducing anxiety and providing a sense of control | Increasing stress | Replacing sleep | The third paragraph explains. | They can reduce anxiety in uncertain situations, providing a sense of control and structure.
+? t | The writer agrees that rituals are empty formalities. | F | Their power lies in their form. | their power often lies precisely in their form.
+? c | What does the persistence of secular ritual suggest? | *The need for meaning and connection does not depend on a particular belief system | Religion is returning | Rituals are harmful | The last paragraph concludes. | does not depend on any particular belief system.
+
+## Misunderstandings between nations | CO
+Diplomacy depends on communication, yet communication between governments is fraught with potential for misunderstanding. Differences in language, culture and political context can lead to misinterpretations with significant consequences.
+
+Translation presents obvious challenges. Diplomatic texts are drafted with careful attention to wording, since a single term can carry legal or political implications. Ambiguity is sometimes deliberate, allowing parties to agree on a text that each interprets differently. When agreements exist in multiple official languages, discrepancies between versions can become sources of dispute.
+
+Cultural differences in communication style also matter. Some cultures favour direct expression, while others rely heavily on context, implication and indirectness. A statement intended as a polite refusal in one culture may be understood as a tentative acceptance in another. Silence, too, carries different meanings: it may signal disagreement, reflection or respect.
+
+Historical memory shapes interpretation. Words or gestures that seem neutral to one party may evoke painful historical associations for another. Leaders who fail to appreciate such sensitivities may cause offence unintentionally.
+
+Domestic politics complicate matters further. Leaders often speak simultaneously to foreign governments and domestic audiences, and statements designed to reassure voters may be read abroad as threats or provocations.
+
+Diplomats develop skills to manage these risks: careful listening, attention to context, cultivation of personal relationships and the use of interpreters with deep cultural knowledge. Back channels, informal communications away from public scrutiny, allow clarification of intentions.
+
+The study of diplomatic misunderstanding offers lessons beyond international relations. It reminds us that communication involves not only the transmission of words but the interpretation of meaning, shaped by expectations, history and context that speakers may not share.
+? c | Why is ambiguity sometimes deliberate in diplomatic texts? | *It allows parties to agree on a text each interprets differently | It saves time | It is required by law | The second paragraph explains. | allowing parties to agree on a text that each interprets differently.
+? c | What might a polite refusal in one culture be understood as in another? | *A tentative acceptance | A strong agreement | An insult | The third paragraph explains. | may be understood as a tentative acceptance in another.
+? t | Leaders' statements for domestic audiences may be read abroad as threats. | T | The fifth paragraph says so. | may be read abroad as threats or provocations.
+? s | What are informal communications away from public scrutiny called? | back channels | The sixth paragraph names them. | Back channels, informal communications away from public scrutiny
+? c | What broader lesson does the study of diplomatic misunderstanding offer? | *Communication involves interpreting meaning shaped by context | Words always mean the same everywhere | Diplomacy is unnecessary | The last paragraph concludes. | communication involves not only the transmission of words but the interpretation of meaning
+
+## Why forecasts fail | MS
+Economic forecasts appear with confident precision: growth of 2.1 percent next year, inflation falling to a specific figure. Yet the record of economic forecasting is sobering. Major recessions have frequently been missed, and forecasts made even a year in advance often diverge substantially from outcomes.
+
+Part of the problem is inherent. Economies are complex systems involving millions of interacting decisions, influenced by expectations, emotions and events that cannot be predicted, such as pandemics, wars or technological breakthroughs. Small changes can have large and unexpected effects.
+
+The data on which forecasts rely are themselves imperfect. Initial estimates of economic growth are frequently revised, sometimes substantially, as more information becomes available. Forecasters may be working with an inaccurate picture of the present, let alone the future.
+
+There are also behavioural factors. Forecasters may cluster around consensus views, since being wrong alongside others carries less reputational risk than being wrong alone. Models built on historical patterns may fail when circumstances change in ways the past did not anticipate.
+
+Moreover, forecasts can influence the outcomes they predict. If a respected institution predicts a recession, businesses may cut investment and consumers may reduce spending, contributing to the downturn.
+
+None of this means forecasts are worthless. They provide structured frameworks for thinking about the future and identifying risks. The problem lies in how they are communicated and used. Presenting single figures conveys false certainty; ranges and scenarios better reflect the genuine uncertainty involved.
+
+Some economists advocate greater humility, encouraging decision-makers to plan for multiple possible futures rather than relying on a single prediction. Building resilience, the capacity to cope with unexpected shocks, may be more valuable than attempting to foresee them precisely.
+? c | What does the record of economic forecasting show? | *Major recessions have often been missed | Forecasts are always correct | Recessions are easy to predict | The first paragraph explains. | Major recessions have frequently been missed
+? c | Why may forecasters cluster around consensus views? | *Being wrong alongside others carries less reputational risk | They share offices | Consensus is always right | The fourth paragraph explains. | being wrong alongside others carries less reputational risk than being wrong alone.
+? t | Forecasts can influence the outcomes they predict. | T | The fifth paragraph says so. | forecasts can influence the outcomes they predict.
+? s | What better reflects uncertainty than single figures? | ranges and scenarios | The sixth paragraph says so. | ranges and scenarios better reflect the genuine uncertainty involved.
+? c | What may be more valuable than precise prediction, according to some economists? | *Building resilience | Making more forecasts | Ignoring uncertainty | The last paragraph concludes. | may be more valuable than attempting to foresee them precisely.
+
+## The wild garden | NW
+For centuries, the ideal garden in many cultures has been one of order: neatly trimmed lawns, clipped hedges, weed-free beds and carefully arranged flowers. Such gardens express control over nature and, historically, social status, since maintaining them required labour and resources.
+
+In recent decades, a different aesthetic has gained ground. "Wild" or naturalistic gardening encourages native plants, long grass, wildflowers and areas left deliberately untidy. Advocates argue that such gardens provide habitat for insects, birds and other wildlife whose populations have declined, partly because of the loss of natural habitats.
+
+The ecological case is substantial. Lawns that are frequently mown and treated with chemicals support little biodiversity. Allowing grass to grow, leaving fallen leaves and dead wood, and planting native species can provide food and shelter for pollinators and other creatures. Collectively, private gardens cover significant areas in many countries, so changes in gardening practice could have meaningful effects.
+
+Yet the shift raises cultural tensions. To some neighbours, an unmown lawn signals neglect rather than ecological virtue. In some places, local regulations have required residents to maintain tidy gardens, leading to disputes. Proponents suggest that small signals of intention, such as a mown path through long grass or a sign explaining the purpose, can help others interpret wildness as deliberate.
+
+There is also a philosophical dimension. The wild garden challenges assumptions about beauty and the relationship between humans and nature. Rather than imposing order, gardeners collaborate with natural processes, accepting a degree of unpredictability.
+
+Few advocates propose abandoning cultivation altogether. Most gardens will continue to reflect human preferences. But the movement invites reconsideration of what a well-kept garden means, suggesting that tidiness and ecological health are not always aligned.
+? c | What did traditional orderly gardens express? | *Control over nature and social status | Wildness | Poverty | The first paragraph explains. | Such gardens express control over nature and, historically, social status
+? c | Why do advocates favour wild gardens? | *They provide habitat for declining wildlife | They are easier to sell | They need more chemicals | The second paragraph explains. | such gardens provide habitat for insects, birds and other wildlife whose populations have declined
+? t | Frequently mown, chemically treated lawns support a great deal of biodiversity. | F | They support little biodiversity. | support little biodiversity.
+? s | What small signal can help neighbours see wildness as deliberate? | a mown path through long grass / a sign explaining the purpose | The fourth paragraph gives examples. | such as a mown path through long grass or a sign explaining the purpose
+? c | What does the movement suggest about tidiness and ecological health? | *They are not always aligned | They are always the same | Tidiness is always better | The last paragraph concludes. | suggesting that tidiness and ecological health are not always aligned.
+
+## The weight of heritage status | TR
+Inclusion on a list of world heritage sites is widely regarded as an honour. It recognises a place's outstanding cultural or natural value, can attract international funding and expertise, and often brings a surge of visitors. For many governments, securing such status is a source of national pride and an economic opportunity.
+
+Yet heritage designation can have unintended consequences. Increased tourism may strain fragile sites, crowd historic towns and drive up living costs for residents. In some designated towns, local people have moved away as homes are converted into guesthouses and shops cater to tourists rather than residents. The place preserved may become a stage set, maintained for visitors but emptied of the community that gave it meaning.
+
+Designation can also freeze places in time. Rules intended to protect historic character may restrict residents' ability to modernise homes, install new facilities or adapt buildings to changing needs. Communities may feel that decisions about their environment are made by distant experts rather than by those who live there.
+
+Questions also arise about whose heritage is recognised. Critics have noted that lists have historically favoured monumental architecture and sites associated with dominant cultures, while intangible heritage, such as traditional knowledge, rituals and crafts, and the heritage of marginalised communities received less attention. Efforts have been made to broaden the criteria.
+
+Some sites have managed designation more successfully, involving residents in planning, managing visitor numbers and ensuring that tourism revenues benefit local communities.
+
+The challenge is to protect what makes places valuable without turning them into museums. Heritage, many argue, is not only about preserving physical structures but about sustaining the living communities and practices that give them significance.
+? c | What can world heritage status bring? | *International funding, expertise and visitors | Fewer tourists | Lower prices | The first paragraph explains. | can attract international funding and expertise, and often brings a surge of visitors.
+? c | What may happen to residents of some designated towns? | *They move away as homes become guesthouses | They become wealthy | They gain more space | The second paragraph explains. | local people have moved away as homes are converted into guesthouses
+? t | Lists have historically favoured intangible heritage. | F | They have favoured monumental architecture. | lists have historically favoured monumental architecture
+? s | Name one example of intangible heritage mentioned. | traditional knowledge / rituals / crafts | The fourth paragraph lists them. | such as traditional knowledge, rituals and crafts
+? c | What is the challenge, according to the writer? | *Protecting places without turning them into museums | Attracting more visitors | Removing residents | The last paragraph concludes. | The challenge is to protect what makes places valuable without turning them into museums.
+
+## Is lying ever right? | PF
+Most moral traditions condemn lying, yet most people lie regularly, often about trivial matters. We praise gifts we dislike, claim to be fine when we are not and offer excuses to avoid unwanted invitations. The question of whether lying can ever be justified has occupied philosophers for centuries.
+
+The eighteenth-century philosopher Immanuel Kant took a famously strict position. He argued that lying is always wrong, even to a murderer asking where a potential victim is hiding. For Kant, lying treats others merely as means, undermining the trust on which human communication depends, and its wrongness cannot be outweighed by good consequences.
+
+Most people find this conclusion counterintuitive. Consequentialist approaches judge actions by their outcomes. From this perspective, a lie that prevents serious harm may be not only permissible but obligatory. Yet consequentialism faces its own difficulty: if lies are justified whenever they produce better outcomes, trust could erode, since people could never be sure when others judged deception beneficial.
+
+Many ethicists adopt intermediate positions. Some distinguish between lies that serve the deceiver's interests and those intended to protect others. Others emphasise context: in some relationships, such as between doctors and patients, honesty carries particular weight, while social conventions in other settings may make small untruths widely understood and harmless.
+
+Psychological research suggests that people judge lies differently depending on intentions. "Prosocial" lies told to benefit others are often viewed more favourably than selfish ones, and in some studies are even seen as more moral than harmful truths.
+
+The persistence of the debate reflects a genuine tension between two values: honesty, which sustains trust, and kindness or protection of others, which may sometimes seem to require departing from it.
+? c | What was Kant's position on lying? | *It is always wrong, even to a murderer | It is acceptable to protect others | It depends on outcomes | The second paragraph explains. | He argued that lying is always wrong, even to a murderer
+? c | How do consequentialist approaches judge actions? | *By their outcomes | By intentions only | By rules | The third paragraph explains. | Consequentialist approaches judge actions by their outcomes.
+? t | Consequentialism faces the difficulty that trust could erode. | T | The third paragraph says so. | trust could erode
+? s | What are lies told to benefit others called? | prosocial lies / prosocial | The fifth paragraph names them. | "Prosocial" lies told to benefit others
+? c | What tension does the persistence of the debate reflect? | *Between honesty and kindness or protection of others | Between wealth and poverty | Between science and art | The last paragraph concludes. | a genuine tension between two values
+
+## What makes a home | HF
+A house is a physical structure; a home is something more elusive. Philosophers, psychologists and architects have long tried to understand what transforms a dwelling into a place of belonging, security and identity.
+
+Research suggests that home involves a sense of control: the ability to shape one's environment, decide who enters and personalise space. Possessions play an important role, not merely as objects but as carriers of memory and identity. Photographs, inherited furniture and objects from significant places help people construct continuity between past and present selves.
+
+Home is also relational. For many people, home is less a place than the presence of family or community. Migrants often describe home as divided between countries or as something carried within relationships rather than tied to a particular location.
+
+The meaning of home becomes particularly visible when it is threatened. People who lose homes through eviction, disaster or displacement often describe a loss that goes beyond material property, encompassing security, routine and identity. Researchers studying homelessness emphasise that the absence of home affects not only physical health but dignity and social belonging.
+
+Contemporary housing markets complicate these meanings. In many cities, rising prices have turned housing into a financial asset, and young people may rent for years in precarious arrangements that prevent them from personalising space or feeling settled. Some scholars argue that treating housing primarily as an investment undermines its role as home.
+
+Architecture can support or hinder the creation of home. Spaces that allow privacy, personal adaptation and connection with neighbours may foster belonging more effectively than standardised designs.
+
+Ultimately, home appears to be both material and emotional, private and social, a place we inhabit and a feeling we create over time.
+? c | What does research suggest home involves? | *A sense of control over one's environment | Only physical walls | Expensive furniture | The second paragraph explains. | Research suggests that home involves a sense of control
+? c | How do migrants often describe home? | *As divided between countries or carried within relationships | As one fixed building | As unimportant | The third paragraph explains. | Migrants often describe home as divided between countries
+? t | The absence of home affects only physical health. | F | It affects dignity and social belonging too. | affects not only physical health but dignity and social belonging.
+? s | What have rising prices turned housing into in many cities? | a financial asset | The fifth paragraph says so. | rising prices have turned housing into a financial asset
+? c | How does the writer ultimately describe home? | *Both material and emotional, private and social | Only a building | Only a feeling | The last paragraph concludes. | home appears to be both material and emotional, private and social
+
+## Paper or screen? | ED
+As reading increasingly shifts from paper to screens, researchers have asked whether the medium affects comprehension. The question has practical implications for education, publishing and how people engage with texts.
+
+A substantial body of research, including large analyses combining many studies, has found that people tend to understand informational texts somewhat better when reading on paper than on screens, particularly when under time pressure. The difference appears modest but consistent. Interestingly, readers often feel more confident about their screen reading, overestimating their comprehension.
+
+Several explanations have been proposed. Screens may encourage skimming, a habit developed through browsing online content quickly. The physical experience of paper, including a sense of where information is located in a book, may help readers build a mental map of a text. Digital environments also offer distractions, from notifications to hyperlinks.
+
+However, the picture is nuanced. The disadvantage appears smaller or absent for narrative texts and when readers have ample time. Digital formats offer advantages: adjustable font sizes help readers with visual impairments, searchable texts aid research, and interactive features can support learning. Familiarity may also matter, and the gap could change as reading habits evolve.
+
+Some researchers argue that the key issue is not the medium itself but the type of reading. Deep reading, involving sustained attention, inference and reflection, can occur on screens, but may require deliberate effort to resist habits of rapid scanning.
+
+Educators have drawn various conclusions. Some recommend paper for complex texts requiring careful study, while others focus on teaching students strategies for reading digitally, such as slowing down and annotating.
+
+The research suggests that the future of reading need not be a choice between paper and screens, but rather an understanding of how each can best serve different purposes.
+? c | What have large analyses found about informational texts? | *People tend to understand them somewhat better on paper | Screens are always better | There is no difference | The second paragraph explains. | people tend to understand informational texts somewhat better when reading on paper than on screens
+? t | Readers usually feel less confident about their screen reading. | F | They often feel more confident and overestimate comprehension. | readers often feel more confident about their screen reading
+? c | Why might screens encourage weaker comprehension? | *They may encourage skimming | They are too bright only | Screens make text longer | The third paragraph explains. | Screens may encourage skimming
+? s | Name one advantage of digital formats mentioned. | adjustable font sizes / searchable texts / interactive features | The fourth paragraph lists them. | adjustable font sizes help readers with visual impairments
+? c | What does the research suggest about the future of reading? | *Understanding how paper and screens serve different purposes | Choosing only paper | Choosing only screens | The last paragraph concludes. | an understanding of how each can best serve different purposes.
+"""
 
 
 def parse(level, block, first_id):

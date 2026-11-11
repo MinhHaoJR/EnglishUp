@@ -468,8 +468,8 @@
       "en": "B2 to C1: precise and natural"
     },
     "summary": {
-      "vi": "Từ vựng lập luận, đảo ngữ, điều kiện hỗn hợp, thức giả định và diễn đạt có sắc thái. Bài đọc, viết dùng bài B2 khó nhất.",
-      "en": "Vocabulary for argument, inversion, mixed conditionals, the subjunctive and nuance. Reading and writing use the hardest B2 lessons."
+      "vi": "Từ vựng lập luận, đảo ngữ, điều kiện hỗn hợp, thức giả định và diễn đạt có sắc thái. Bài dịch câu dùng câu B2.",
+      "en": "Vocabulary for argument, inversion, mixed conditionals, the subjunctive and nuance. Translation uses B2 sentences."
     },
     "stages": [
       {
@@ -554,9 +554,9 @@
         "tasks": [
           {
             "skill": "reading",
-            "level": "B2",
-            "vi": "Đọc bài B2, tóm tắt bằng 3 câu không nhìn bài.",
-            "en": "Read a B2 text and summarise it in three sentences without looking.",
+            "level": "C1",
+            "vi": "Đọc một bài C1, tóm tắt bằng 3 câu không nhìn bài.",
+            "en": "Read a C1 text and summarise it in three sentences without looking.",
             "id": "s3t1"
           },
           {
@@ -588,16 +588,16 @@
         "tasks": [
           {
             "skill": "writing",
-            "level": "B2",
-            "vi": "Viết lại bài nêu ý kiến B2 ở văn phong trang trọng hơn.",
-            "en": "Rewrite a B2 opinion task in a more formal style.",
+            "level": "C1",
+            "vi": "Viết một bài nghị luận C1 ở văn phong trang trọng.",
+            "en": "Write a C1 opinion task in a formal style.",
             "id": "s4t1"
           },
           {
             "skill": "speaking",
-            "level": "B2",
-            "vi": "Nói tự do 2 phút về một chủ đề xã hội.",
-            "en": "Talk freely for two minutes on a social issue.",
+            "level": "C1",
+            "vi": "Nói tự do 2 phút về một chủ đề C1.",
+            "en": "Talk freely for two minutes on a C1 topic.",
             "id": "s4t2"
           },
           {
@@ -621,8 +621,8 @@
       "en": "C1 to C2: mastery of nuance"
     },
     "summary": {
-      "vi": "Từ vựng C2, cấu trúc trang trọng hiếm gặp, liên từ học thuật và tự sửa lỗi. Bài đọc, viết dùng bài B2 khó nhất.",
-      "en": "C2 vocabulary, rare formal structures, academic connectors and self-correction. Reading and writing use the hardest B2 lessons."
+      "vi": "Từ vựng C2, cấu trúc trang trọng hiếm gặp, liên từ học thuật và tự sửa lỗi. Bài dịch câu dùng câu B2.",
+      "en": "C2 vocabulary, rare formal structures, academic connectors and self-correction. Translation uses B2 sentences."
     },
     "stages": [
       {
@@ -708,9 +708,9 @@
         "tasks": [
           {
             "skill": "reading",
-            "level": "B2",
-            "vi": "Đọc bài B2 và chỉ ra giọng điệu, mục đích của tác giả.",
-            "en": "Read a B2 text and name the writer's tone and purpose.",
+            "level": "C2",
+            "vi": "Đọc một bài C2 và chỉ ra giọng điệu, mục đích của tác giả.",
+            "en": "Read a C2 text and name the writer's tone and purpose.",
             "id": "s3t1"
           },
           {
@@ -742,9 +742,9 @@
         "tasks": [
           {
             "skill": "writing",
-            "level": "B2",
-            "vi": "Viết một bài B2 ở văn phong học thuật, dùng ít nhất 3 cấu trúc C1–C2.",
-            "en": "Write a B2 task in an academic style with at least three C1–C2 structures.",
+            "level": "C2",
+            "vi": "Viết một bài C2 ở văn phong học thuật, dùng ít nhất 3 cấu trúc C1–C2.",
+            "en": "Write a C2 task in an academic style with at least three C1–C2 structures.",
             "id": "s4t1"
           },
           {

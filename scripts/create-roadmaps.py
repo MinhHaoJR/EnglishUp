@@ -1,8 +1,8 @@
 """Writes src/data/roadmaps.json, the seed for the learning paths (one per step from A1 to C2).
 
-Each path has four stages; each stage a goal and tasks that open a practice page at a level. Listening has
-lessons at every level; readings, speaking, writing and translation exist at A2-B2 only, so higher
-paths use the hardest B2 lessons for them and say so. Run: python scripts/create-roadmaps.py
+Each path has four stages; each stage a goal and tasks that open a practice page at a level. Listening, reading,
+speaking and writing have lessons at every level; translation sentences exist at A2-B2 only, so the
+higher paths use B2 sentences for translation and say so. Run: python scripts/create-roadmaps.py
 """
 import json
 import pathlib
@@ -104,8 +104,8 @@ PATHS = [
      ]),
     ("B2", "C1", 16,
      ("Từ B2 lên C1: chính xác và tự nhiên", "B2 to C1: precise and natural"),
-     ("Từ vựng lập luận, đảo ngữ, điều kiện hỗn hợp, thức giả định và diễn đạt có sắc thái. Bài đọc, viết dùng bài B2 khó nhất.",
-      "Vocabulary for argument, inversion, mixed conditionals, the subjunctive and nuance. Reading and writing use the hardest B2 lessons."),
+     ("Từ vựng lập luận, đảo ngữ, điều kiện hỗn hợp, thức giả định và diễn đạt có sắc thái. Bài dịch câu dùng câu B2.",
+      "Vocabulary for argument, inversion, mixed conditionals, the subjunctive and nuance. Translation uses B2 sentences."),
      [
          stage(("Từ vựng lập luận", "Vocabulary for argument"),
                ("Học từ C1 để nêu luận điểm, bằng chứng và mức độ chắc chắn.", "Learn C1 words to state claims, evidence and certainty."),
@@ -119,19 +119,19 @@ PATHS = [
                 task("grammar", "B2", "Ôn toàn bộ 100 cấu trúc ở chế độ luyện điền chỗ trống.", "Review all 100 patterns in fill-the-blank practice.")]),
          stage(("Đọc và nghe chuyên sâu", "Read and listen in depth"),
                ("Đọc, nghe bài khó nhất hiện có và tóm tắt bằng lời của bạn.", "Read and listen to the hardest lessons available and summarise them in your own words."),
-               [task("reading", "B2", "Đọc bài B2, tóm tắt bằng 3 câu không nhìn bài.", "Read a B2 text and summarise it in three sentences without looking."),
+               [task("reading", "C1", "Đọc một bài C1, tóm tắt bằng 3 câu không nhìn bài.", "Read a C1 text and summarise it in three sentences without looking."),
                 task("listening", "C1", "Nghe một bài C1 ở tốc độ 1,25× rồi chép lại một câu.", "Listen to a C1 discussion at 1.25× and write one line down."),
                 task("assistant", "C1", "Hỏi trợ giảng AI cách dùng một cấu trúc đảo ngữ trong bài viết.", "Ask the AI tutor how to use an inversion in your writing.")]),
          stage(("Viết trang trọng và kiểm tra", "Formal writing and check"),
                ("Viết bài 200–250 từ dùng ít nhất một câu đảo ngữ và một câu bị động.", "Write 200–250 words with at least one inversion and one passive."),
-               [task("writing", "B2", "Viết lại bài nêu ý kiến B2 ở văn phong trang trọng hơn.", "Rewrite a B2 opinion task in a more formal style."),
-                task("speaking", "B2", "Nói tự do 2 phút về một chủ đề xã hội.", "Talk freely for two minutes on a social issue."),
+               [task("writing", "C1", "Viết một bài nghị luận C1 ở văn phong trang trọng.", "Write a C1 opinion task in a formal style."),
+                task("speaking", "C1", "Nói tự do 2 phút về một chủ đề C1.", "Talk freely for two minutes on a C1 topic."),
                 task("placement", "C1", "Làm lại bài kiểm tra trình độ, mục tiêu đạt C1.", "Retake the level test; aim for C1.")]),
      ]),
     ("C1", "C2", 16,
      ("Từ C1 lên C2: thành thạo sắc thái", "C1 to C2: mastery of nuance"),
-     ("Từ vựng C2, cấu trúc trang trọng hiếm gặp, liên từ học thuật và tự sửa lỗi. Bài đọc, viết dùng bài B2 khó nhất.",
-      "C2 vocabulary, rare formal structures, academic connectors and self-correction. Reading and writing use the hardest B2 lessons."),
+     ("Từ vựng C2, cấu trúc trang trọng hiếm gặp, liên từ học thuật và tự sửa lỗi. Bài dịch câu dùng câu B2.",
+      "C2 vocabulary, rare formal structures, academic connectors and self-correction. Translation uses B2 sentences."),
      [
          stage(("Từ vựng C2", "C2 vocabulary"),
                ("Học từ C2 và phân biệt sắc thái của các từ gần nghĩa.", "Learn C2 words and the nuances between near-synonyms."),
@@ -145,12 +145,12 @@ PATHS = [
                 task("grammargame", "C1", "Đua ngữ pháp C1 mọi dạng, mục tiêu 200 điểm.", "Play the C1 grammar race on every point; aim for 200 points.")]),
          stage(("Đọc, nghe và thảo luận", "Read, listen and discuss"),
                ("Phân tích lập luận và sắc thái trong bài khó nhất hiện có.", "Analyse argument and nuance in the hardest lessons available."),
-               [task("reading", "B2", "Đọc bài B2 và chỉ ra giọng điệu, mục đích của tác giả.", "Read a B2 text and name the writer's tone and purpose."),
+               [task("reading", "C2", "Đọc một bài C2 và chỉ ra giọng điệu, mục đích của tác giả.", "Read a C2 text and name the writer's tone and purpose."),
                 task("listening", "C2", "Nghe một bài C2 không xem lời thoại, chú ý hàm ý của người nói, rồi kiểm tra từng câu.", "Listen to a C2 discussion without the transcript, notice what the speakers imply, then check each line."),
                 task("assistant", "C2", "Thảo luận với trợ giảng AI về sắc thái của hai từ gần nghĩa.", "Discuss the nuance of two near-synonyms with the AI tutor.")]),
          stage(("Viết và tự đánh giá", "Write and assess yourself"),
                ("Viết bài 250 từ chính xác, đa dạng cấu trúc và tự sửa lỗi.", "Write 250 precise, varied words and correct your own mistakes."),
-               [task("writing", "B2", "Viết một bài B2 ở văn phong học thuật, dùng ít nhất 3 cấu trúc C1–C2.", "Write a B2 task in an academic style with at least three C1–C2 structures."),
+               [task("writing", "C2", "Viết một bài C2 ở văn phong học thuật, dùng ít nhất 3 cấu trúc C1–C2.", "Write a C2 task in an academic style with at least three C1–C2 structures."),
                 task("translation", "B2", "Dịch câu B2 sang tiếng Việt tự nhiên, rồi dịch ngược lại.", "Translate B2 sentences into natural Vietnamese, then back."),
                 task("placement", "C2", "Làm lại bài kiểm tra trình độ, mục tiêu đạt C2.", "Retake the level test; aim for C2.")]),
      ]),
