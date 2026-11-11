@@ -41,7 +41,7 @@ const suggestions: [IconName, string, string][] = [
   ['assistant', 'Mai muốn mua quà sinh nhật cho ai?', 'Who is Mai buying a birthday gift for?'],
   ['mail', 'Làm sao viết email mời bạn đi chơi?', 'How do I write an email inviting a friend out?'],
 ];
-const asset = (name: string) => `/tutor/${name}`;
+export const asset = (name: string) => `/tutor/${name}`;
 
 /** One conversation with the tutor; shared by the full page and the floating mini chat. */
 export function useChat(onAsked?: () => void) {
@@ -137,14 +137,14 @@ export function TutorAvatar({ size = 28 }: { size?: number }) {
 }
 
 /** Small drawn decorations around Tom: a four-point sparkle and a paw print. */
-function Sparkle({ className }: { className: string }) {
+export function Sparkle({ className }: { className: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
       <path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z" />
     </svg>
   );
 }
-function Paw({ className }: { className: string }) {
+export function Paw({ className }: { className: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
       <ellipse cx="12" cy="16" rx="5" ry="4.2" />
