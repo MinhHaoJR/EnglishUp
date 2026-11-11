@@ -66,6 +66,30 @@ public class AssistantTests : IClassFixture<ApiFactory>
         Assert.Contains("| c | capital of Australia | none | ", report);
     }
 
+    private sealed class QuotaAfter(int answers) : IAnswerer
+    {
+        private int calls;
+        public Task<string> AnswerAsync(string system, IReadOnlyList<ChatTurn> turns, CancellationToken ct = default) =>
+            ++calls > answers ? throw new DailyQuotaException() : Task.FromResult("Đáp án [1].");
+    }
+
+    [Fact]
+    public async Task Evaluation_StopsAtTheDailyQuota_AndResumes()
+    {
+        List<EvalQuestion> items = [new("a", "routine", ["word/v-1-1"]), new("b", "bookshop", []), new("c", "harbour", [])];
+        using var scope = factory.Services.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+        var embedder = scope.ServiceProvider.GetRequiredService<IEmbedder>();
+
+        var first = await Evaluation.RunAsync(db, embedder, new QuotaAfter(1), items);
+        Assert.Equal(["a"], first.Select(r => r.Item.Id));
+        Assert.Contains("Partial: 1 of 3 questions", Evaluation.Report(first, "fake", DateTimeOffset.UnixEpoch, 3));
+
+        var resumed = await Evaluation.RunAsync(db, embedder, new QuotaAfter(5), items, done: first);
+        Assert.Equal(["a", "b", "c"], resumed.Select(r => r.Item.Id));
+        Assert.DoesNotContain("Partial", Evaluation.Report(resumed, "fake", DateTimeOffset.UnixEpoch, 3));
+    }
+
     [Fact]
     public void EvaluationSet_HasThirtyQuestionsWithKnownSources()
     {

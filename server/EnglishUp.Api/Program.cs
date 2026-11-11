@@ -1,3 +1,4 @@
+using System.Text.Json;
 using System.Text.Json.Serialization;
 using EnglishUp.Api;
 using EnglishUp.Api.Data;
@@ -78,13 +79,25 @@ if (args.Contains("ingest"))
 if (args.Contains("eval"))
 {
     var paths = args.SkipWhile(a => a != "eval").Skip(1).ToArray();
+    var items = Evaluation.Load(paths[0]);
+    // With a report path, results stopped by the daily quota wait in <report>.progress.json for the next run.
+    var progress = paths.Length > 1 ? paths[1] + ".progress.json" : null;
+    var done = progress is not null && File.Exists(progress)
+        ? JsonSerializer.Deserialize<List<EvalResult>>(File.ReadAllText(progress), JsonSerializerOptions.Web)
+        : null;
     using var scope = app.Services.CreateScope();
     var answerer = scope.ServiceProvider.GetRequiredService<IAnswerer>();
     var results = await Evaluation.RunAsync(scope.ServiceProvider.GetRequiredService<AppDbContext>(),
-        scope.ServiceProvider.GetRequiredService<IEmbedder>(), answerer, Evaluation.Load(paths[0]), Console.WriteLine);
-    var report = Evaluation.Report(results, (answerer as GeminiAnswerer)?.Model ?? "unknown", DateTimeOffset.UtcNow);
-    if (paths.Length > 1) File.WriteAllText(paths[1], report);
+        scope.ServiceProvider.GetRequiredService<IEmbedder>(), answerer, items, Console.WriteLine, done: done);
+    var report = Evaluation.Report(results, (answerer as GeminiAnswerer)?.Model ?? "unknown", DateTimeOffset.UtcNow, items.Count);
+    if (progress is not null)
+    {
+        File.WriteAllText(paths[1], report);
+        if (results.Count < items.Count) File.WriteAllText(progress, JsonSerializer.Serialize(results, JsonSerializerOptions.Web));
+        else File.Delete(progress);
+    }
     else Console.WriteLine(report);
+    Environment.ExitCode = results.Count < items.Count ? 1 : 0;
     return;
 }
 

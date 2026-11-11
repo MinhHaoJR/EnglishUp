@@ -21,30 +21,41 @@ public static class Evaluation
         JsonSerializer.Deserialize<List<EvalQuestion>>(File.ReadAllText(path), JsonSerializerOptions.Web)!;
 
     public static async Task<List<EvalResult>> RunAsync(AppDbContext db, IEmbedder embedder, IAnswerer answerer,
-        IReadOnlyList<EvalQuestion> items, Action<string>? log = null, TimeSpan? retryAfter = null, CancellationToken ct = default)
+        IReadOnlyList<EvalQuestion> items, Action<string>? log = null, TimeSpan? retryAfter = null, CancellationToken ct = default,
+        IReadOnlyList<EvalResult>? done = null)
     {
-        var results = new List<EvalResult>();
-        foreach (var item in items)
+        // The free tier answers about 20 questions a day, so a run resumes from the results of an earlier one.
+        var results = done?.ToList() ?? [];
+        var finished = results.Select(r => r.Item.Id).ToHashSet();
+        try
         {
-            // The same path as POST /api/assistant/ask, without saving a conversation.
-            var hits = await Gemini.WithRetryAsync(
-                () => Knowledge.SearchAsync(db, embedder, item.Question, Assistant.SourceCount, ct), retryAfter, log, ct);
-            var answer = await Gemini.WithRetryAsync(() => answerer.AnswerAsync(Assistant.SystemPrompt,
-                [new ChatTurn("user", Assistant.SourcesPrompt(hits, item.Question))], ct), retryAfter, log, ct);
-            var keys = hits.Select(h => $"{h.SourceType}/{h.SourceId}").ToList();
-            var rank = keys.FindIndex(item.Expected.Contains) is var i and >= 0 ? i + 1 : (int?)null;
-            var cited = Assistant.CitedNumbers(answer, hits.Count);
-            var citedExpected = item.Expected.Length == 0
-                ? cited.Count == 0
-                : cited.Any(n => item.Expected.Contains(keys[n - 1]));
-            results.Add(new EvalResult(item, rank, hits.Count > 0 ? hits[0].Score : 0, citedExpected, cited.Count, answer));
-            log?.Invoke($"{item.Id}: rank {rank?.ToString() ?? "-"}, cited ok {citedExpected}");
+            foreach (var item in items.Where(q => !finished.Contains(q.Id)))
+            {
+                // The same path as POST /api/assistant/ask, without saving a conversation.
+                var hits = await Gemini.WithRetryAsync(
+                    () => Knowledge.SearchAsync(db, embedder, item.Question, Assistant.SourceCount, ct), retryAfter, log, ct);
+                var answer = await Gemini.WithRetryAsync(() => answerer.AnswerAsync(Assistant.SystemPrompt,
+                    [new ChatTurn("user", Assistant.SourcesPrompt(hits, item.Question))], ct), retryAfter, log, ct);
+                var keys = hits.Select(h => $"{h.SourceType}/{h.SourceId}").ToList();
+                var rank = keys.FindIndex(item.Expected.Contains) is var i and >= 0 ? i + 1 : (int?)null;
+                var cited = Assistant.CitedNumbers(answer, hits.Count);
+                var citedExpected = item.Expected.Length == 0
+                    ? cited.Count == 0
+                    : cited.Any(n => item.Expected.Contains(keys[n - 1]));
+                results.Add(new EvalResult(item, rank, hits.Count > 0 ? hits[0].Score : 0, citedExpected, cited.Count, answer));
+                log?.Invoke($"{item.Id}: rank {rank?.ToString() ?? "-"}, cited ok {citedExpected}");
+            }
+        }
+        catch (DailyQuotaException)
+        {
+            log?.Invoke($"Gemini's daily quota is used up after {results.Count} of {items.Count} questions; " +
+                "run eval again after it resets to finish.");
         }
         return results;
     }
 
     /// <summary>A Markdown report with the summary and one row per question.</summary>
-    public static string Report(IReadOnlyList<EvalResult> results, string model, DateTimeOffset when)
+    public static string Report(IReadOnlyList<EvalResult> results, string model, DateTimeOffset when, int? total = null)
     {
         var answerable = results.Where(r => r.Item.Expected.Length > 0).ToList();
         var uncovered = results.Where(r => r.Item.Expected.Length == 0).ToList();
@@ -55,6 +66,11 @@ public static class Evaluation
         text.AppendLine($"# Assistant evaluation, {when:yyyy-MM-dd HH:mm} UTC");
         text.AppendLine();
         text.AppendLine($"Answer model `{model}`, {Assistant.SourceCount} sources per question, {results.Count} questions.");
+        if (total > results.Count)
+        {
+            text.AppendLine();
+            text.AppendLine($"Partial: {results.Count} of {total} questions, stopped by the daily quota. Run eval again to finish.");
+        }
         text.AppendLine();
         text.AppendLine("| Metric | Result |");
         text.AppendLine("| --- | --- |");
