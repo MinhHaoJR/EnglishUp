@@ -4586,3 +4586,251 @@ html .workspace .tabs button[aria-pressed='true'] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* ---------- Lesson browser (reading, listening, speaking, writing) ----------
+   A level band walks the CEFR spectrum and carries progress; a tinted tool row on the page's
+   own line colour; cards in a grid, each washed in its level colour and clickable anywhere. */
+.lesson-browser {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.level-band {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+}
+.level-band button {
+  --lv: var(--line);
+  display: grid;
+  justify-items: start;
+  align-content: start;
+  gap: 2px;
+  min-height: 76px;
+  padding: 10px 12px 12px;
+  border: 1px solid color-mix(in srgb, var(--lv) 26%, var(--border));
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--lv) 7%, var(--panel));
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+}
+.level-band button[data-level='A1'] {
+  --lv: var(--lv-a1);
+}
+.level-band button[data-level='A2'] {
+  --lv: var(--lv-a2);
+}
+.level-band button[data-level='B1'] {
+  --lv: var(--lv-b1);
+}
+.level-band button[data-level='B2'] {
+  --lv: var(--lv-b2);
+}
+.level-band button[data-level='C1'] {
+  --lv: var(--lv-c1);
+}
+.level-band button[data-level='C2'] {
+  --lv: var(--lv-c2);
+}
+.level-band button:hover {
+  border-color: color-mix(in srgb, var(--lv) 60%, var(--border));
+  background: color-mix(in srgb, var(--lv) 13%, var(--panel));
+}
+.level-band strong {
+  color: color-mix(in srgb, var(--lv) 84%, var(--ink));
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+.level-band small {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.level-meter {
+  width: 100%;
+  height: 5px;
+  margin-top: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--lv) 16%, var(--panel));
+}
+.level-meter > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--lv);
+}
+.level-band button[aria-pressed='true'] {
+  border-color: var(--lv);
+  background: var(--lv);
+  color: var(--tile-ink);
+}
+.level-band button[aria-pressed='true'] :is(strong, small) {
+  color: inherit;
+}
+.level-band button[aria-pressed='true'] .level-meter {
+  background: color-mix(in srgb, var(--tile-ink) 28%, transparent);
+}
+.level-band button[aria-pressed='true'] .level-meter > span {
+  background: var(--tile-ink);
+}
+
+.lesson-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 12px 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--line-edge);
+  border-radius: var(--radius);
+  background: var(--line-wash);
+}
+.lesson-tools > label {
+  display: grid;
+  gap: 4px;
+  color: var(--line-text);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.lesson-tools select {
+  min-width: 190px;
+}
+.lesson-tools input[type='search'] {
+  min-width: 220px;
+}
+.lesson-tools > label.lesson-todo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: var(--ink);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.lesson-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  margin-left: auto;
+}
+.lesson-next > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lesson-count {
+  margin: 4px 0 0;
+  font-size: 0.8125rem;
+}
+
+.workspace .lesson-browser .lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+.workspace .lesson-browser .lesson-grid > .lesson-card,
+.workspace .lesson-browser .lesson-grid > .lesson-card + .lesson-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid color-mix(in srgb, var(--lv, var(--line)) 24%, var(--border));
+  border-radius: var(--radius);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--lv, var(--line)) 10%, var(--panel)),
+    var(--panel) 72%
+  );
+}
+.workspace .lesson-browser .lesson-grid > .lesson-card:hover {
+  border-color: color-mix(in srgb, var(--lv, var(--line)) 60%, var(--border));
+}
+/* Older card rules let paragraphs grow from zero; here every part takes its own height. */
+.workspace .lesson-browser .lesson-card > * {
+  flex: none;
+}
+.lesson-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.workspace .lesson-browser .lesson-card h2 {
+  margin: 0;
+  font-size: 1.0625rem;
+  line-height: 1.3;
+}
+.workspace .lesson-browser .lesson-card p.lesson-preview {
+  -webkit-line-clamp: 2;
+}
+.workspace .lesson-browser .lesson-card p.lesson-meta {
+  font-size: 0.8125rem;
+  color: color-mix(in srgb, var(--lv, var(--line)) 60%, var(--muted));
+  font-weight: 600;
+}
+.lesson-done {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--success) 14%, var(--panel));
+  color: color-mix(in srgb, var(--success) 85%, var(--ink));
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.workspace .lesson-browser .lesson-card > button.lesson-open {
+  align-self: flex-start;
+  margin-top: auto;
+}
+/* The start button's hit area covers the card; its own focus ring still marks the button. */
+.lesson-open::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+.lesson-more {
+  justify-self: center;
+}
+@media (max-width: 860px) {
+  .level-band {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .level-band button {
+    min-height: 64px;
+    padding: 8px 10px 10px;
+  }
+  .level-band strong {
+    font-size: 1.05rem;
+    white-space: nowrap;
+  }
+  /* "0/4" carries the count on a narrow band; the word stays for screen readers. */
+  .level-done-word {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .lesson-tools > label,
+  .lesson-tools select,
+  .lesson-tools input[type='search'] {
+    width: 100%;
+    min-width: 0;
+  }
+  .lesson-next {
+    width: 100%;
+    margin-left: 0;
+  }
+}

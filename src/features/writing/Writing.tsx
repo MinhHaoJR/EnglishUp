@@ -1,3 +1,4 @@
+import { LessonBrowser, byLevel } from '../../components/LessonBrowser';
 import { LessonContinue } from '../../components/LessonContinue';
 import { nextLesson } from '../../services/lessonNavigation';
 import { useEffect, useRef, useState } from 'react';
@@ -5,16 +6,7 @@ import { writingPrompts } from '../../data/content';
 import type { WritingPrompt } from '../../data/schema';
 import { useApp } from '../../app/store';
 import { useT, useBi } from '../../i18n';
-import {
-  Filters,
-  PageTitle,
-  Notice,
-  Empty,
-  useFiltered,
-  useLive,
-  useTimer,
-  LevelTopic,
-} from '../../components/shared';
+import { PageTitle, Notice, useFiltered, useLive, useTimer } from '../../components/shared';
 import { WordDiff } from '../../components/WordDiff';
 import { db, type Submission } from '../../services/storage';
 import { feedbackProvider, countWords, type Feedback } from '../../services/feedback';
@@ -289,9 +281,17 @@ function WritingSession({
     </>
   );
 }
+const genreNames: Record<WritingPrompt['genre'], [string, string]> = {
+  email: ['Thư', 'Email'],
+  opinion: ['Nghị luận', 'Opinion'],
+  description: ['Miêu tả', 'Description'],
+  story: ['Kể chuyện', 'Story'],
+};
 export default function Writing() {
   const t = useT();
-  const prompts = useFiltered(writingPrompts);
+  const bi = useBi();
+  const all = byLevel(writingPrompts);
+  const prompts = useFiltered(all);
   const [active, setActive] = useState<WritingPrompt>();
   if (active)
     return (
@@ -306,26 +306,16 @@ export default function Writing() {
   return (
     <>
       <PageTitle title={t('writing')} />
-      <Filters />
-      {prompts.length ? (
-        <div className="lesson-grid">
-          {prompts.map((p) => (
-            <article className="panel lesson-card" key={p.id}>
-              <LevelTopic level={p.level} topic={p.topic} extra={p.genre} />
-              <h2>{p.title}</h2>
-              <p className="muted">{p.prompt}</p>
-              <span className="muted">
-                {p.minWords}–{p.maxWords} {t('words')}
-              </span>
-              <button className="primary" onClick={() => setActive(p)}>
-                {t('start')} →
-              </button>
-            </article>
-          ))}
-        </div>
-      ) : (
-        <Empty />
-      )}
+      <LessonBrowser
+        skill="writing"
+        all={all}
+        onOpen={setActive}
+        describe={(p) => ({
+          preview: p.prompt,
+          meta: `${p.minWords}–${p.maxWords} ${t('words')}`,
+          extra: bi(...genreNames[p.genre]),
+        })}
+      />
     </>
   );
 }

@@ -1,3 +1,4 @@
+import { LessonBrowser, byLevel } from '../../components/LessonBrowser';
 import { LessonContinue } from '../../components/LessonContinue';
 import { nextLesson } from '../../services/lessonNavigation';
 import { useEffect, useState } from 'react';
@@ -6,15 +7,7 @@ import type { SpeakingPrompt } from '../../data/schema';
 import { useApp } from '../../app/store';
 import SkillIcon from '../../components/SkillIcon';
 import { useT, useBi } from '../../i18n';
-import {
-  Filters,
-  PageTitle,
-  Notice,
-  Empty,
-  useFiltered,
-  useTimer,
-  LevelTopic,
-} from '../../components/shared';
+import { PageTitle, Notice, useFiltered, useTimer } from '../../components/shared';
 import { SpeakButton } from '../../components/SpeakButton';
 import { WordDiff } from '../../components/WordDiff';
 import { alignWords } from '../../services/diff';
@@ -295,7 +288,8 @@ function SpeakingSession({
 export default function Speaking() {
   const t = useT();
   const bi = useBi();
-  const prompts = useFiltered(speakingPrompts);
+  const all = byLevel(speakingPrompts);
+  const prompts = useFiltered(all);
   const [mode, setMode] = useState('read');
   const [active, setActive] = useState<SpeakingPrompt>();
   const filtered = prompts.filter((p) => p.mode === mode);
@@ -320,23 +314,18 @@ export default function Speaking() {
           {bi('Nói theo chủ đề', 'Topic talk')} · 60–120s
         </button>
       </div>
-      <Filters />
-      {filtered.length ? (
-        <div className="lesson-grid">
-          {filtered.map((p) => (
-            <article className="panel lesson-card" key={p.id}>
-              <LevelTopic level={p.level} topic={p.topic} />
-              <h2>{p.title}</h2>
-              <p className="muted">{p.text}</p>
-              <button className="primary" onClick={() => setActive(p)}>
-                {t('start')} →
-              </button>
-            </article>
-          ))}
-        </div>
-      ) : (
-        <Empty />
-      )}
+      <LessonBrowser
+        skill="speaking"
+        all={all.filter((p) => p.mode === mode)}
+        onOpen={setActive}
+        describe={(p) => ({
+          preview: p.text,
+          meta:
+            p.mode === 'read'
+              ? `${p.text.split(/\s+/).length} ${bi('từ', 'words')}`
+              : `${p.cues.length} ${bi('gợi ý', 'cues')}`,
+        })}
+      />
     </>
   );
 }

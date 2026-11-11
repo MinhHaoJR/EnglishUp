@@ -1,18 +1,11 @@
+import { LessonBrowser, byLevel } from '../../components/LessonBrowser';
 import { LessonContinue } from '../../components/LessonContinue';
 import { nextLesson } from '../../services/lessonNavigation';
 import { useState } from 'react';
 import { readings } from '../../data/content';
 import type { ReadingLesson } from '../../data/schema';
 import { useT, useBi } from '../../i18n';
-import {
-  Empty,
-  Filters,
-  Notice,
-  PageTitle,
-  useFiltered,
-  useTimer,
-  LevelTopic,
-} from '../../components/shared';
+import { Notice, PageTitle, useFiltered, useTimer } from '../../components/shared';
 import { DictionaryText } from '../../components/DictionaryText';
 import { Questions, isCorrect } from '../../components/Questions';
 import { logAttempt } from '../../services/storage';
@@ -110,7 +103,8 @@ function ReadingSession({
 export default function Reading() {
   const t = useT();
   const bi = useBi();
-  const filtered = useFiltered(readings);
+  const all = byLevel(readings);
+  const filtered = useFiltered(all);
   const [active, setActive] = useState<ReadingLesson>();
   if (active)
     return (
@@ -125,26 +119,15 @@ export default function Reading() {
   return (
     <>
       <PageTitle title={t('reading')} />
-      <Filters />
-      {!filtered.length ? (
-        <Empty />
-      ) : (
-        <div className="lesson-grid">
-          {filtered.map((r) => (
-            <article className="panel lesson-card" key={r.id}>
-              <LevelTopic level={r.level} topic={r.topic} />
-              <h2>{r.title}</h2>
-              <p className="muted">{r.text.slice(0, 125)}…</p>
-              <span className="muted">
-                {r.text.split(/\s+/).length} {t('words')} · 5 {bi('câu hỏi', 'questions')}
-              </span>
-              <button className="primary" onClick={() => setActive(r)}>
-                {t('start')} →
-              </button>
-            </article>
-          ))}
-        </div>
-      )}
+      <LessonBrowser
+        skill="reading"
+        all={all}
+        onOpen={setActive}
+        describe={(r) => ({
+          preview: `${r.text.slice(0, 125)}…`,
+          meta: `${r.text.split(/\s+/).length} ${t('words')} · ${r.questions.length} ${bi('câu hỏi', 'questions')}`,
+        })}
+      />
     </>
   );
 }

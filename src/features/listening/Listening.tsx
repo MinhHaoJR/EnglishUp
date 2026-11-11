@@ -1,20 +1,13 @@
+import { LessonBrowser, byLevel } from '../../components/LessonBrowser';
 import { LessonContinue } from '../../components/LessonContinue';
 import { nextLesson } from '../../services/lessonNavigation';
 import { useEffect, useState } from 'react';
 import { listenings, dictations } from '../../data/content';
-import { levelSchema, type ListeningLesson } from '../../data/schema';
+import type { ListeningLesson } from '../../data/schema';
 import { useApp } from '../../app/store';
 import SkillIcon from '../../components/SkillIcon';
 import { useT, useBi } from '../../i18n';
-import {
-  Filters,
-  PageTitle,
-  Notice,
-  Empty,
-  useFiltered,
-  useTimer,
-  LevelTopic,
-} from '../../components/shared';
+import { PageTitle, Notice, useFiltered, useTimer } from '../../components/shared';
 import { Questions, isCorrect } from '../../components/Questions';
 import { DictionaryText } from '../../components/DictionaryText';
 import { WordDiff } from '../../components/WordDiff';
@@ -259,11 +252,10 @@ function DictationSession({
 export default function Listening() {
   const t = useT();
   const bi = useBi();
-  // Easiest first: lessons an admin adds later are stored last, whatever their level.
-  const lessons = [...useFiltered(listenings)].sort(
-    (a, b) => levelSchema.options.indexOf(a.level) - levelSchema.options.indexOf(b.level),
-  );
-  const sentences = useFiltered(dictations);
+  const allLessons = byLevel(listenings);
+  const allSentences = byLevel(dictations);
+  const lessons = useFiltered(allLessons);
+  const sentences = useFiltered(allSentences);
   const [tab, setTab] = useState('lessons');
   const [active, setActive] = useState<ListeningLesson>();
   const [dictation, setDictation] = useState<(typeof dictations)[number]>();
@@ -298,46 +290,23 @@ export default function Listening() {
           {bi('Chép chính tả', 'Dictation')}
         </button>
       </div>
-      <Filters />
       {tab === 'lessons' ? (
-        lessons.length ? (
-          <div className="lesson-grid">
-            {lessons.map((l) => (
-              <article key={l.id} className="panel lesson-card">
-                <LevelTopic level={l.level} topic={l.topic} />
-                <h2>{l.title}</h2>
-                <p className="muted">
-                  {l.lines.length} {bi('lượt nói', 'speaking turns')} · {l.questions.length}{' '}
-                  {bi('câu hỏi', 'questions')}
-                </p>
-                <button className="primary" onClick={() => setActive(l)}>
-                  {t('start')} →
-                </button>
-              </article>
-            ))}
-          </div>
-        ) : (
-          <Empty />
-        )
-      ) : sentences.length ? (
-        <div className="lesson-grid">
-          {sentences.map((d, i) => (
-            <article key={d.id} className="panel lesson-card">
-              <LevelTopic level={d.level} topic={d.topic} />
-              <h2>
-                {bi('Câu', 'Sentence')} {i + 1}
-              </h2>
-              <p className="muted">
-                {d.text.split(/\s+/).length} {bi('từ', 'words')}
-              </p>
-              <button className="primary" onClick={() => setDictation(d)}>
-                {t('start')} →
-              </button>
-            </article>
-          ))}
-        </div>
+        <LessonBrowser
+          skill="listening"
+          all={allLessons}
+          onOpen={setActive}
+          describe={(l) => ({
+            meta: `${l.lines.length} ${bi('lượt nói', 'speaking turns')} · ${l.questions.length} ${bi('câu hỏi', 'questions')}`,
+          })}
+        />
       ) : (
-        <Empty />
+        <LessonBrowser
+          skill="listening"
+          all={allSentences.map((d, i) => ({ ...d, title: `${bi('Câu', 'Sentence')} ${i + 1}` }))}
+          onOpen={(d) => setDictation(dictations.find((x) => x.id === d.id))}
+          keyOf={(d) => `Dictation ${d.id}`}
+          describe={(d) => ({ meta: `${d.text.split(/\s+/).length} ${bi('từ', 'words')}` })}
+        />
       )}
     </>
   );
