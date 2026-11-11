@@ -148,5 +148,3771 @@
       "Develop a meaningful encounter or decision.",
       "Show the change through actions or details."
     ]
+  },
+  {
+    "id": "w11",
+    "title": "About me",
+    "level": "A1",
+    "topic": "People and family",
+    "genre": "description",
+    "prompt": "Write about yourself. Give your name, your age, where you live and one thing you like.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Say your name and age.", "Say where you live.", "Add one thing you like."]
+  },
+  {
+    "id": "w12",
+    "title": "My best friend",
+    "level": "A1",
+    "topic": "People and family",
+    "genre": "description",
+    "prompt": "Describe your best friend. Write what your friend looks like and what you do together.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Give your friend's name.",
+      "Describe how your friend looks.",
+      "Say one thing you do together."
+    ]
+  },
+  {
+    "id": "w13",
+    "title": "My bedroom",
+    "level": "A1",
+    "topic": "Home and furniture",
+    "genre": "description",
+    "prompt": "Describe your bedroom. Write about the furniture, the colours and your favourite thing in the room.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Name three pieces of furniture.",
+      "Use colour words.",
+      "Say your favourite thing and why."
+    ]
+  },
+  {
+    "id": "w14",
+    "title": "Can I borrow your book?",
+    "level": "A1",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "Write a short message to a classmate. Ask to borrow a book and say when you can give it back.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Start with \"Hi\" and the name.",
+      "Ask politely with \"Can I...?\".",
+      "Say a day to give it back."
+    ]
+  },
+  {
+    "id": "w15",
+    "title": "My morning",
+    "level": "A1",
+    "topic": "Daily life",
+    "genre": "description",
+    "prompt": "Write about what you do every morning, from getting up to leaving home.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Use the present simple.",
+      "Use first, then and after that.",
+      "Write at least five actions."
+    ]
+  },
+  {
+    "id": "w16",
+    "title": "My favourite food",
+    "level": "A1",
+    "topic": "Food",
+    "genre": "opinion",
+    "prompt": "What is your favourite food? Write what it is, when you eat it and why you like it.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Name the food.", "Say when you eat it.", "Give one reason with \"because\"."]
+  },
+  {
+    "id": "w17",
+    "title": "A postcard from the beach",
+    "level": "A1",
+    "topic": "Travel",
+    "genre": "email",
+    "prompt": "You are on holiday at the beach. Write a postcard to a friend about the weather, the hotel and what you do.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Write about the weather.", "Describe the hotel.", "Say two things you do."]
+  },
+  {
+    "id": "w18",
+    "title": "The people in my family",
+    "level": "A1",
+    "topic": "People and family",
+    "genre": "description",
+    "prompt": "Write about the people in your family. Say who they are and one thing about each person.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Name each person.",
+      "Use \"is\" and \"has\".",
+      "Write one fact about each person."
+    ]
+  },
+  {
+    "id": "w19",
+    "title": "A day at my school",
+    "level": "A1",
+    "topic": "Education",
+    "genre": "description",
+    "prompt": "Write about a normal day at your school or class. What subjects do you have, and which one do you like?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Name your subjects.",
+      "Say your favourite subject and why.",
+      "Use the present simple."
+    ]
+  },
+  {
+    "id": "w20",
+    "title": "Last weekend",
+    "level": "A1",
+    "topic": "Daily life",
+    "genre": "story",
+    "prompt": "Write about what you did last weekend. Use the past simple.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Use past verbs such as went, played and ate.",
+      "Say where you went.",
+      "Say how you felt."
+    ]
+  },
+  {
+    "id": "w21",
+    "title": "A shopping list for a party",
+    "level": "A1",
+    "topic": "Shopping",
+    "genre": "description",
+    "prompt": "You are having a small party. Write a shopping list and say why you need some of the things.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "List at least five things.",
+      "Use numbers or \"some\".",
+      "Say why you need two of them."
+    ]
+  },
+  {
+    "id": "w22",
+    "title": "My town",
+    "level": "A1",
+    "topic": "Places in town",
+    "genre": "description",
+    "prompt": "Describe your town. What places are there, and where do you like to go?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Name four places.",
+      "Use \"there is\" and \"there are\".",
+      "Say your favourite place."
+    ]
+  },
+  {
+    "id": "w23",
+    "title": "Come to my birthday party",
+    "level": "A1",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "Invite a friend to your birthday party. Say the day, the time and the place.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Say what the party is for.",
+      "Give the day, time and place.",
+      "Ask your friend to reply."
+    ]
+  },
+  {
+    "id": "w24",
+    "title": "The weather today",
+    "level": "A1",
+    "topic": "Nature and weather",
+    "genre": "description",
+    "prompt": "Describe the weather today and say what you want to do because of it.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Say what the weather is like.",
+      "Use words like sunny, cold or windy.",
+      "Say one thing you want to do."
+    ]
+  },
+  {
+    "id": "w25",
+    "title": "A pet I like",
+    "level": "A1",
+    "topic": "Animals",
+    "genre": "description",
+    "prompt": "Describe your pet, or a pet you would like to have. Say what it looks like and what it eats.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Name the animal.", "Describe its size and colour.", "Say what it eats."]
+  },
+  {
+    "id": "w26",
+    "title": "How I get to school",
+    "level": "A1",
+    "topic": "Transport",
+    "genre": "description",
+    "prompt": "Write how you travel to school or work every day. Say how long it takes and what you see on the way.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Say how you travel.", "Say how long it takes.", "Name two things you see."]
+  },
+  {
+    "id": "w27",
+    "title": "Thank you for your help",
+    "level": "A1",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "Write a short note to thank a neighbour who helped you carry your bags.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Say thank you at the start.",
+      "Say what the neighbour did.",
+      "End with a kind sentence."
+    ]
+  },
+  {
+    "id": "w28",
+    "title": "My favourite sport",
+    "level": "A1",
+    "topic": "Hobbies and sport",
+    "genre": "opinion",
+    "prompt": "What sport do you like to play or watch? Write why you like it and when you play or watch it.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Name the sport.",
+      "Say when you play or watch it.",
+      "Give a reason with \"because\"."
+    ]
+  },
+  {
+    "id": "w29",
+    "title": "A healthy day",
+    "level": "A1",
+    "topic": "Health",
+    "genre": "description",
+    "prompt": "Write about a healthy day: what you eat, what you drink and what you do to stay well.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Name healthy food and drinks.", "Name one activity.", "Use times of the day."]
+  },
+  {
+    "id": "w30",
+    "title": "My phone",
+    "level": "A1",
+    "topic": "Technology",
+    "genre": "description",
+    "prompt": "Describe your phone or computer. What do you use it for every day?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Describe how it looks.",
+      "Write three things you use it for.",
+      "Say if you like it."
+    ]
+  },
+  {
+    "id": "w31",
+    "title": "Dinner at a restaurant",
+    "level": "A1",
+    "topic": "Food",
+    "genre": "story",
+    "prompt": "Write a short story about a visit to a restaurant. What did you order, and was it good?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Say who you went with.", "Say what you ordered.", "Say if the food was good."]
+  },
+  {
+    "id": "w32",
+    "title": "A job I like",
+    "level": "A1",
+    "topic": "Work",
+    "genre": "opinion",
+    "prompt": "Which job do you like? Write what this worker does and why you want the job.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Name the job.", "Say what the worker does.", "Give one reason."]
+  },
+  {
+    "id": "w33",
+    "title": "My English class",
+    "level": "A1",
+    "topic": "Education",
+    "genre": "description",
+    "prompt": "Describe your English class: the teacher, the classroom and what you do in class.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Describe the teacher.", "Describe the room.", "Say two things you do in class."]
+  },
+  {
+    "id": "w34",
+    "title": "I lost my bag",
+    "level": "A1",
+    "topic": "Travel",
+    "genre": "email",
+    "prompt": "You lost your bag on a bus. Write a message to the bus company. Describe the bag and say what is in it.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Say when and where you lost it.", "Describe the bag.", "List what is in it."]
+  },
+  {
+    "id": "w35",
+    "title": "A clean street",
+    "level": "A1",
+    "topic": "Environment",
+    "genre": "opinion",
+    "prompt": "Is your street clean? Write two things people can do to keep it clean.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Say if your street is clean.", "Give two ideas.", "Use \"can\" or \"should\"."]
+  },
+  {
+    "id": "w36",
+    "title": "A family photo",
+    "level": "A1",
+    "topic": "People and family",
+    "genre": "description",
+    "prompt": "Describe a family photo. Who is in it, where are they, and what are they doing?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Say who is in the photo.", "Say where they are.", "Use the present continuous."]
+  },
+  {
+    "id": "w37",
+    "title": "My favourite clothes",
+    "level": "A1",
+    "topic": "Shopping",
+    "genre": "description",
+    "prompt": "Describe your favourite clothes. Say the colours and when you wear them.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Name the clothes.", "Use colour words.", "Say when you wear them."]
+  },
+  {
+    "id": "w38",
+    "title": "My hobby",
+    "level": "A1",
+    "topic": "Hobbies and sport",
+    "genre": "description",
+    "prompt": "Write about your hobby. When did you start it, and how often do you do it?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Name your hobby.", "Say when you started.", "Say how often you do it."]
+  },
+  {
+    "id": "w39",
+    "title": "A rainy afternoon",
+    "level": "A1",
+    "topic": "Nature and weather",
+    "genre": "story",
+    "prompt": "Write a short story about a rainy afternoon. What happened, and what did you do?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Use the past simple.", "Say where you were.", "Say what you did."]
+  },
+  {
+    "id": "w40",
+    "title": "I am ill today",
+    "level": "A1",
+    "topic": "Education",
+    "genre": "email",
+    "prompt": "You are ill today. Write a short message to your teacher. Say why you cannot come and ask for the homework.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Say you are ill.", "Say you cannot come.", "Ask about the homework."]
+  },
+  {
+    "id": "w41",
+    "title": "My kitchen",
+    "level": "A1",
+    "topic": "Home and furniture",
+    "genre": "description",
+    "prompt": "Describe your kitchen and say what you like to cook there.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Name things in the kitchen.",
+      "Use \"there is\" or \"there are\".",
+      "Say what you cook."
+    ]
+  },
+  {
+    "id": "w42",
+    "title": "Hello from Viet Nam",
+    "level": "A1",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "Write a first message to a new online friend in another country. Tell them about yourself and ask two questions.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Say hello and your name.", "Write two facts about you.", "Ask two questions."]
+  },
+  {
+    "id": "w43",
+    "title": "Plans for Saturday",
+    "level": "A1",
+    "topic": "Daily life",
+    "genre": "email",
+    "prompt": "Write a message to a friend about your plans for Saturday and invite them to join you.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Say your plans.", "Invite your friend.", "Give a time to meet."]
+  },
+  {
+    "id": "w44",
+    "title": "The shop near my home",
+    "level": "A1",
+    "topic": "Shopping",
+    "genre": "description",
+    "prompt": "Describe a market or shop near your home. What can you buy there?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Say where it is.",
+      "Name four things you can buy.",
+      "Say if it is cheap or expensive."
+    ]
+  },
+  {
+    "id": "w45",
+    "title": "The best day of the week",
+    "level": "A1",
+    "topic": "Daily life",
+    "genre": "opinion",
+    "prompt": "Which day of the week do you like best? Write why.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Name the day.", "Say what you do on that day.", "Give a reason."]
+  },
+  {
+    "id": "w46",
+    "title": "A trip by train",
+    "level": "A1",
+    "topic": "Transport",
+    "genre": "story",
+    "prompt": "Write about a train or bus trip you took. Where did you go, and what did you see?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Say where you went.", "Say how long the trip was.", "Name two things you saw."]
+  },
+  {
+    "id": "w47",
+    "title": "My dream holiday",
+    "level": "A1",
+    "topic": "Travel",
+    "genre": "description",
+    "prompt": "Describe your dream holiday. Where do you want to go, and what do you want to do?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Name the place.",
+      "Use \"I want to\" or \"I would like to\".",
+      "Name three activities."
+    ]
+  },
+  {
+    "id": "w48",
+    "title": "At the doctor's",
+    "level": "A1",
+    "topic": "Health",
+    "genre": "story",
+    "prompt": "Write about a time you visited the doctor. What was wrong, and what did the doctor say?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Say what was wrong.", "Say what the doctor said.", "Say how you felt after."]
+  },
+  {
+    "id": "w49",
+    "title": "A park I know",
+    "level": "A1",
+    "topic": "Environment",
+    "genre": "description",
+    "prompt": "Describe a park or garden you know. What plants and trees are there, and what do people do there?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Name the park.", "Describe the plants and trees.", "Say what people do there."]
+  },
+  {
+    "id": "w50",
+    "title": "The app I use most",
+    "level": "A1",
+    "topic": "Technology",
+    "genre": "opinion",
+    "prompt": "Which app do you use most? Write what it does and why you like it.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Name the app.", "Say what it does.", "Give two reasons you like it."]
+  },
+  {
+    "id": "w51",
+    "title": "My breakfast",
+    "level": "A1",
+    "topic": "Food",
+    "genre": "description",
+    "prompt": "Describe your breakfast. What do you eat and drink, and who makes it?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Name your food and drink.", "Say what time you eat.", "Say who makes it."]
+  },
+  {
+    "id": "w52",
+    "title": "A busy day for a nurse",
+    "level": "A1",
+    "topic": "Work",
+    "genre": "story",
+    "prompt": "Write about a busy day for a worker you know, such as a nurse or a shop assistant.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Name the job.", "Use the past simple.", "Write three things the worker did."]
+  },
+  {
+    "id": "w53",
+    "title": "My neighbour",
+    "level": "A1",
+    "topic": "People and family",
+    "genre": "description",
+    "prompt": "Describe one of your neighbours. What does your neighbour do, and are you friends?",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Describe the neighbour.", "Say their job or hobby.", "Say if you are friends."]
+  },
+  {
+    "id": "w54",
+    "title": "A present for Mum",
+    "level": "A1",
+    "topic": "Shopping",
+    "genre": "email",
+    "prompt": "Write a message to your brother or sister about a present for your mother. Suggest one present and its price.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Suggest a present.", "Give the price.", "Ask for their opinion."]
+  },
+  {
+    "id": "w55",
+    "title": "Sports day at school",
+    "level": "A1",
+    "topic": "Hobbies and sport",
+    "genre": "story",
+    "prompt": "Write about a sports day or a game you played at school.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Say what game it was.", "Say who played.", "Say who won."]
+  },
+  {
+    "id": "w56",
+    "title": "My favourite season",
+    "level": "A1",
+    "topic": "Nature and weather",
+    "genre": "opinion",
+    "prompt": "Which season do you like best? Write about the weather and the things you do then.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Name the season.", "Describe the weather.", "Say two things you do."]
+  },
+  {
+    "id": "w57",
+    "title": "How to find my house",
+    "level": "A1",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "A friend is coming to your home for the first time. Write a message telling them how to get there from the bus stop.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Use turn left, turn right and go straight.",
+      "Name one place on the way.",
+      "Say the house number or colour."
+    ]
+  },
+  {
+    "id": "w58",
+    "title": "Drink more water",
+    "level": "A1",
+    "topic": "Health",
+    "genre": "opinion",
+    "prompt": "Why is water important? Write how much water you drink and when you drink it.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": [
+      "Say why water is important.",
+      "Say how much you drink.",
+      "Say when you drink it."
+    ]
+  },
+  {
+    "id": "w59",
+    "title": "Saving for something",
+    "level": "A1",
+    "topic": "Money and shopping",
+    "genre": "opinion",
+    "prompt": "Do you save money? Write about one thing you want to buy and how you save for it.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Name the thing you want.", "Say how much it costs.", "Say how you save."]
+  },
+  {
+    "id": "w60",
+    "title": "A new café in town",
+    "level": "A1",
+    "topic": "Places in town",
+    "genre": "description",
+    "prompt": "A new café opened in your town. Describe it and say if you want to go there.",
+    "minWords": 30,
+    "maxWords": 60,
+    "checklist": ["Say where it is.", "Describe the café.", "Say if you want to go."]
+  },
+  {
+    "id": "w61",
+    "title": "A school trip I remember",
+    "level": "A2",
+    "topic": "Education",
+    "genre": "story",
+    "prompt": "Write about a class trip you remember. Where did you go, what did you do, and what was the best part?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Use the past simple.",
+      "Say where and when you went.",
+      "Describe the best moment."
+    ]
+  },
+  {
+    "id": "w62",
+    "title": "I need a new appointment",
+    "level": "A2",
+    "topic": "Health",
+    "genre": "email",
+    "prompt": "Write an email to a dental clinic. You cannot come to your appointment on Tuesday. Explain why and ask for a new time.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Say which appointment you have.",
+      "Give a short reason.",
+      "Suggest two other times."
+    ]
+  },
+  {
+    "id": "w63",
+    "title": "My neighbourhood has changed",
+    "level": "A2",
+    "topic": "Places in town",
+    "genre": "description",
+    "prompt": "Describe how your neighbourhood has changed in the last few years. What is new, and what has stayed the same?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Use the present perfect for changes.",
+      "Mention at least two new things.",
+      "Say how you feel about the changes."
+    ]
+  },
+  {
+    "id": "w64",
+    "title": "An app I could not live without",
+    "level": "A2",
+    "topic": "Technology",
+    "genre": "description",
+    "prompt": "Describe an app you use often. Explain what it does, how often you use it and one thing you would change.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Name the app and its main use.",
+      "Say how often you use it.",
+      "Suggest one improvement."
+    ]
+  },
+  {
+    "id": "w65",
+    "title": "My first online order",
+    "level": "A2",
+    "topic": "Shopping",
+    "genre": "story",
+    "prompt": "Write about a time you bought something online. Did it arrive on time, and were you happy with it?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Say what you bought and why.",
+      "Describe the delivery.",
+      "Say whether you would buy there again."
+    ]
+  },
+  {
+    "id": "w66",
+    "title": "Alone or with a roommate?",
+    "level": "A2",
+    "topic": "Home and furniture",
+    "genre": "opinion",
+    "prompt": "Is it better to live alone or with a roommate? Give your opinion with two reasons.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "State your opinion clearly.",
+      "Give two reasons.",
+      "End with a short conclusion."
+    ]
+  },
+  {
+    "id": "w67",
+    "title": "Thank you, host family",
+    "level": "A2",
+    "topic": "Travel",
+    "genre": "email",
+    "prompt": "You stayed with a host family abroad. Write an email to thank them and say what you enjoyed most.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Thank them at the start.",
+      "Mention two things you enjoyed.",
+      "Invite them to visit you."
+    ]
+  },
+  {
+    "id": "w68",
+    "title": "My first day at work",
+    "level": "A2",
+    "topic": "Work",
+    "genre": "story",
+    "prompt": "Write about your first day at a job or a new class. What happened, and how did you feel at the end of the day?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Describe the place and the people.",
+      "Say what you did.",
+      "Describe your feelings."
+    ]
+  },
+  {
+    "id": "w69",
+    "title": "The gym near my house",
+    "level": "A2",
+    "topic": "Hobbies and sport",
+    "genre": "description",
+    "prompt": "Describe a sports club or gym near your home: the place, the activities and the price.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Describe the place.", "Name three activities.", "Say if it is good value."]
+  },
+  {
+    "id": "w70",
+    "title": "Eating out or cooking at home?",
+    "level": "A2",
+    "topic": "Food",
+    "genre": "opinion",
+    "prompt": "Do you prefer eating at restaurants or cooking at home? Explain why.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Give your choice.",
+      "Compare cost and health.",
+      "Use \"better\" or \"cheaper than\"."
+    ]
+  },
+  {
+    "id": "w71",
+    "title": "Welcome to the team",
+    "level": "A2",
+    "topic": "Work",
+    "genre": "email",
+    "prompt": "A new colleague starts next week. Write an email to welcome them and explain three things about the office.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Welcome the colleague.", "Explain three things about the office.", "Offer help."]
+  },
+  {
+    "id": "w72",
+    "title": "The best present I ever got",
+    "level": "A2",
+    "topic": "People and family",
+    "genre": "story",
+    "prompt": "Write about the best present you have ever received. Who gave it to you, and why was it special?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Say who gave it and when.",
+      "Describe the present.",
+      "Explain why it was special."
+    ]
+  },
+  {
+    "id": "w73",
+    "title": "Rules in our home",
+    "level": "A2",
+    "topic": "People and family",
+    "genre": "description",
+    "prompt": "Describe the rules in your home, for example about chores, screens or bedtime. Do you think they are fair?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Describe three rules.",
+      "Use \"have to\" and \"can't\".",
+      "Say whether they are fair."
+    ]
+  },
+  {
+    "id": "w74",
+    "title": "Wrong size shoes",
+    "level": "A2",
+    "topic": "Shopping",
+    "genre": "email",
+    "prompt": "You received the wrong size shoes from an online shop. Write an email to explain the problem and ask for a change.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Give your order details.",
+      "Explain the problem.",
+      "Say what you want the shop to do."
+    ]
+  },
+  {
+    "id": "w75",
+    "title": "Where I relax",
+    "level": "A2",
+    "topic": "Daily life",
+    "genre": "description",
+    "prompt": "Describe a place where you relax. What can you see and hear there?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Say where it is.",
+      "Use words for sounds and sights.",
+      "Say why it helps you relax."
+    ]
+  },
+  {
+    "id": "w76",
+    "title": "Recycling bins in every classroom",
+    "level": "A2",
+    "topic": "Environment",
+    "genre": "opinion",
+    "prompt": "Should every school have recycling bins in each classroom? Give your opinion and one example.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Give your opinion.", "Give one example.", "Mention one possible problem."]
+  },
+  {
+    "id": "w77",
+    "title": "The day everything went wrong",
+    "level": "A2",
+    "topic": "Travel",
+    "genre": "story",
+    "prompt": "Write about a trip where something went wrong, such as a late train or a lost ticket. How did you solve the problem?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Describe the problem.", "Say what you did.", "Say what you learned."]
+  },
+  {
+    "id": "w78",
+    "title": "Learning something new",
+    "level": "A2",
+    "topic": "Education",
+    "genre": "description",
+    "prompt": "Describe a skill you are learning now, such as cooking or playing the guitar. How do you practise?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Name the skill.", "Describe how you practise.", "Say what is difficult."]
+  },
+  {
+    "id": "w79",
+    "title": "Tips for a tired friend",
+    "level": "A2",
+    "topic": "Health",
+    "genre": "email",
+    "prompt": "Your friend feels tired all the time. Write an email with three pieces of advice.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Show that you care.",
+      "Give three pieces of advice.",
+      "Use \"should\" or \"why don't you\"."
+    ]
+  },
+  {
+    "id": "w80",
+    "title": "A festival in my country",
+    "level": "A2",
+    "topic": "Daily life",
+    "genre": "description",
+    "prompt": "Describe a festival or holiday in your country: when it is, what people eat and what they do.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Say when it is.", "Describe the food.", "Describe two activities."]
+  },
+  {
+    "id": "w81",
+    "title": "Online or in the classroom?",
+    "level": "A2",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "Do you prefer online lessons or lessons in a classroom? Give two reasons.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Give your preference.",
+      "Give two reasons.",
+      "Mention one advantage of the other choice."
+    ]
+  },
+  {
+    "id": "w82",
+    "title": "Booking a hotel room",
+    "level": "A2",
+    "topic": "Travel",
+    "genre": "email",
+    "prompt": "Write an email to a hotel to book a room for two nights. Ask about breakfast and parking.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Give the dates.", "Say what room you want.", "Ask two questions."]
+  },
+  {
+    "id": "w83",
+    "title": "Someone I admire",
+    "level": "A2",
+    "topic": "People and family",
+    "genre": "description",
+    "prompt": "Describe a person you admire, such as a teacher or a relative. What do they do, and why do you admire them?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Say who the person is.", "Describe what they do.", "Give two reasons."]
+  },
+  {
+    "id": "w84",
+    "title": "A walk in the hills",
+    "level": "A2",
+    "topic": "Nature and weather",
+    "genre": "story",
+    "prompt": "Write about a walk in the countryside or a park. What did you see, and what happened?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Describe the place.", "Say what you saw.", "Say what happened."]
+  },
+  {
+    "id": "w85",
+    "title": "Too much time on phones?",
+    "level": "A2",
+    "topic": "Technology",
+    "genre": "opinion",
+    "prompt": "Do young people spend too much time on their phones? Give your opinion with examples.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Give your opinion.", "Give two examples.", "Suggest one change."]
+  },
+  {
+    "id": "w86",
+    "title": "My ideal home",
+    "level": "A2",
+    "topic": "Home and furniture",
+    "genre": "description",
+    "prompt": "Describe your ideal home: where it is, how many rooms it has and what is special about it.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Say where it is.", "Describe the rooms.", "Describe one special thing."]
+  },
+  {
+    "id": "w87",
+    "title": "Music after midnight",
+    "level": "A2",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "Your neighbour plays loud music late at night. Write a polite note asking them to turn it down.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Be polite.", "Explain the problem.", "Suggest a solution."]
+  },
+  {
+    "id": "w88",
+    "title": "A morning at the market",
+    "level": "A2",
+    "topic": "Shopping",
+    "genre": "story",
+    "prompt": "Write about a visit to a busy market. What did you buy, and who did you talk to?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Describe the market.", "Say what you bought.", "Describe a conversation."]
+  },
+  {
+    "id": "w89",
+    "title": "Buses and trains in my city",
+    "level": "A2",
+    "topic": "Transport",
+    "genre": "description",
+    "prompt": "Describe public transport in your city. Is it cheap, fast and clean?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Name the types of transport.",
+      "Talk about price and speed.",
+      "Say what could be better."
+    ]
+  },
+  {
+    "id": "w90",
+    "title": "A lunch I like to make",
+    "level": "A2",
+    "topic": "Food",
+    "genre": "description",
+    "prompt": "Describe a healthy lunch you like to make. What do you need, and how long does it take?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["List the ingredients.", "Describe the steps.", "Say why it is healthy."]
+  },
+  {
+    "id": "w91",
+    "title": "How can I join?",
+    "level": "A2",
+    "topic": "Hobbies and sport",
+    "genre": "email",
+    "prompt": "Write an email to a club, for example a running or chess club, asking how to join, when they meet and how much it costs.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Say why you are writing.", "Ask three questions.", "End politely."]
+  },
+  {
+    "id": "w92",
+    "title": "Saving electricity at home",
+    "level": "A2",
+    "topic": "Environment",
+    "genre": "description",
+    "prompt": "Describe three things your family does or could do to save electricity at home.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Describe three actions.",
+      "Say why each one helps.",
+      "Use \"could\" for new ideas."
+    ]
+  },
+  {
+    "id": "w93",
+    "title": "The surprise",
+    "level": "A2",
+    "topic": "People and family",
+    "genre": "story",
+    "prompt": "Write a story about a surprise party or a surprise visit. Who planned it, and how did the person react?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Say who planned it.",
+      "Describe the moment of surprise.",
+      "Describe the reaction."
+    ]
+  },
+  {
+    "id": "w94",
+    "title": "Should students work at weekends?",
+    "level": "A2",
+    "topic": "Work",
+    "genre": "opinion",
+    "prompt": "Is it a good idea for students to work at weekends? Give your opinion with reasons.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Give your opinion.", "Give two reasons.", "Mention school work."]
+  },
+  {
+    "id": "w95",
+    "title": "How I study",
+    "level": "A2",
+    "topic": "Education",
+    "genre": "description",
+    "prompt": "Describe how and when you study. Where do you sit, and what helps you concentrate?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Say when you study.", "Describe the place.", "Give two things that help you."]
+  },
+  {
+    "id": "w96",
+    "title": "The wallet on the bench",
+    "level": "A2",
+    "topic": "Daily life",
+    "genre": "story",
+    "prompt": "Write a story about finding something that someone had lost. What did you do next?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Say what you found and where.", "Say what you did.", "Describe the ending."]
+  },
+  {
+    "id": "w97",
+    "title": "Information about a course",
+    "level": "A2",
+    "topic": "Education",
+    "genre": "email",
+    "prompt": "Write an email to a language school asking about class times, the price and the level test.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Introduce yourself.", "Ask about times, price and the test.", "Thank them."]
+  },
+  {
+    "id": "w98",
+    "title": "My favourite café",
+    "level": "A2",
+    "topic": "Food",
+    "genre": "description",
+    "prompt": "Describe a café you like: what it looks like, what you order and why you go there.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Describe the café.", "Say what you order.", "Say why you go there."]
+  },
+  {
+    "id": "w99",
+    "title": "A day without the internet",
+    "level": "A2",
+    "topic": "Technology",
+    "genre": "story",
+    "prompt": "Imagine the internet stopped working for a whole day. Write what you did instead.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Describe the problem.", "Say what you did instead.", "Say how you felt."]
+  },
+  {
+    "id": "w100",
+    "title": "Visiting a friend in hospital",
+    "level": "A2",
+    "topic": "Health",
+    "genre": "story",
+    "prompt": "Write about visiting someone in hospital. What did you bring, and what did you talk about?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Say who you visited.", "Say what you brought.", "Describe the visit."]
+  },
+  {
+    "id": "w101",
+    "title": "Should more people cycle?",
+    "level": "A2",
+    "topic": "Transport",
+    "genre": "opinion",
+    "prompt": "Should more people cycle to work or school? Give two advantages and one problem.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Give two advantages.", "Give one problem.", "Give your opinion."]
+  },
+  {
+    "id": "w102",
+    "title": "A picnic on Sunday",
+    "level": "A2",
+    "topic": "Daily life",
+    "genre": "email",
+    "prompt": "Write an email to friends to plan a picnic. Suggest a place, a time and what each person should bring.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Suggest a place and time.", "Give each person a job.", "Ask them to reply."]
+  },
+  {
+    "id": "w103",
+    "title": "The rainy season",
+    "level": "A2",
+    "topic": "Nature and weather",
+    "genre": "description",
+    "prompt": "Describe the rainy season, or winter, where you live. How does it change daily life?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Describe the weather.", "Give two changes in daily life.", "Say if you like it."]
+  },
+  {
+    "id": "w104",
+    "title": "Where my money goes",
+    "level": "A2",
+    "topic": "Money and shopping",
+    "genre": "description",
+    "prompt": "Describe how you spend and save money each week. What do you spend most on?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": [
+      "Say what you spend money on.",
+      "Say how you save.",
+      "Say what you spend most on."
+    ]
+  },
+  {
+    "id": "w105",
+    "title": "I forgot your birthday",
+    "level": "A2",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "You forgot your friend's birthday. Write a message to say sorry and suggest a way to celebrate later.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Say sorry.", "Give a reason without excuses.", "Suggest a plan."]
+  },
+  {
+    "id": "w106",
+    "title": "A teacher who helped me",
+    "level": "A2",
+    "topic": "Education",
+    "genre": "description",
+    "prompt": "Describe a teacher who helped you. What did they do that was different?",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Describe the teacher.", "Say what they did.", "Say how it helped you."]
+  },
+  {
+    "id": "w107",
+    "title": "The best time to visit my country",
+    "level": "A2",
+    "topic": "Travel",
+    "genre": "opinion",
+    "prompt": "Which is the best time of year to visit your country? Explain why.",
+    "minWords": 60,
+    "maxWords": 100,
+    "checklist": ["Name the season or month.", "Give two reasons.", "Suggest one place to visit."]
+  },
+  {
+    "id": "w108",
+    "title": "A late and damaged delivery",
+    "level": "B1",
+    "topic": "Shopping",
+    "genre": "email",
+    "prompt": "An online order arrived two weeks late and one item was damaged. Write an email to the company describing what happened and what you expect them to do.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Give the order details and dates.",
+      "Describe the damage clearly.",
+      "Say whether you want a refund, a replacement or a discount."
+    ]
+  },
+  {
+    "id": "w109",
+    "title": "Should homework be stopped?",
+    "level": "B1",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "Some people think primary schools should stop giving homework. Do you agree?",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "State your view in the introduction.",
+      "Give two supported reasons.",
+      "Mention the other side briefly."
+    ]
+  },
+  {
+    "id": "w110",
+    "title": "A place that surprised me",
+    "level": "B1",
+    "topic": "Travel",
+    "genre": "description",
+    "prompt": "Describe a place you visited that was very different from what you expected.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Say what you expected.",
+      "Describe what you found.",
+      "Explain how your opinion changed."
+    ]
+  },
+  {
+    "id": "w111",
+    "title": "The day I helped a stranger",
+    "level": "B1",
+    "topic": "Daily life",
+    "genre": "story",
+    "prompt": "Write a story about a time you helped a stranger, or a stranger helped you.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Set the scene.",
+      "Describe the problem and the help.",
+      "End with what you learned."
+    ]
+  },
+  {
+    "id": "w112",
+    "title": "Applying for a summer job",
+    "level": "B1",
+    "topic": "Work",
+    "genre": "email",
+    "prompt": "You saw an advertisement for a summer job at a café. Write an email applying for the job.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Say which job you are applying for.",
+      "Describe relevant experience or qualities.",
+      "Say when you are available."
+    ]
+  },
+  {
+    "id": "w113",
+    "title": "Fast food and young people",
+    "level": "B1",
+    "topic": "Food",
+    "genre": "opinion",
+    "prompt": "Fast food is popular with young people. Is this a problem? Give your opinion with examples.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Give your opinion.", "Use examples.", "Suggest one solution."]
+  },
+  {
+    "id": "w114",
+    "title": "A family tradition",
+    "level": "B1",
+    "topic": "People and family",
+    "genre": "description",
+    "prompt": "Describe a tradition your family keeps, such as a special meal or a yearly trip. Explain why it matters to you.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Describe the tradition.", "Explain how it started.", "Say why it matters."]
+  },
+  {
+    "id": "w115",
+    "title": "Something to watch this weekend",
+    "level": "B1",
+    "topic": "Hobbies and sport",
+    "genre": "email",
+    "prompt": "A friend wants something to watch this weekend. Write an email recommending a film or series.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Name it and say what type it is.",
+      "Describe it without spoiling the ending.",
+      "Explain why your friend will enjoy it."
+    ]
+  },
+  {
+    "id": "w116",
+    "title": "Home office or real office?",
+    "level": "B1",
+    "topic": "Work",
+    "genre": "opinion",
+    "prompt": "Is working from home better than working in an office? Discuss the advantages and disadvantages.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Give advantages.", "Give disadvantages.", "Give your conclusion."]
+  },
+  {
+    "id": "w117",
+    "title": "A difficult decision",
+    "level": "B1",
+    "topic": "People and family",
+    "genre": "story",
+    "prompt": "Write about a difficult decision you made, such as choosing a school or moving house.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Explain the choice.",
+      "Describe your thinking.",
+      "Say whether it was the right decision."
+    ]
+  },
+  {
+    "id": "w118",
+    "title": "Ideas for our park",
+    "level": "B1",
+    "topic": "Places in town",
+    "genre": "email",
+    "prompt": "Write an email to your local council suggesting improvements to a park in your area.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Describe the current problems.",
+      "Suggest two improvements.",
+      "Explain who would benefit."
+    ]
+  },
+  {
+    "id": "w119",
+    "title": "Paying for plastic bags",
+    "level": "B1",
+    "topic": "Environment",
+    "genre": "opinion",
+    "prompt": "Should shops charge customers for plastic bags?",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Give your opinion.", "Give two reasons.", "Respond to one objection."]
+  },
+  {
+    "id": "w120",
+    "title": "An invention that changed habits",
+    "level": "B1",
+    "topic": "Technology",
+    "genre": "description",
+    "prompt": "Describe an invention that makes daily life easier and explain how it changed people's habits.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Name and describe the invention.",
+      "Explain how it is used.",
+      "Describe its effect on habits."
+    ]
+  },
+  {
+    "id": "w121",
+    "title": "My best holiday memory",
+    "level": "B1",
+    "topic": "Travel",
+    "genre": "story",
+    "prompt": "Write about your best holiday memory. Include details that help the reader picture the place.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Use descriptive adjectives.",
+      "Use past tenses correctly.",
+      "Explain why it was memorable."
+    ]
+  },
+  {
+    "id": "w122",
+    "title": "Two courses, one choice",
+    "level": "B1",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "You have been offered places on two different courses. Write an email to a friend explaining the choice and asking for advice.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Describe both options.", "Explain what worries you.", "Ask a clear question."]
+  },
+  {
+    "id": "w123",
+    "title": "Exercise during exams",
+    "level": "B1",
+    "topic": "Health",
+    "genre": "opinion",
+    "prompt": "Some students say they have no time for exercise. Is exercise important even during exams?",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Give your opinion.", "Use one personal example.", "Suggest a practical routine."]
+  },
+  {
+    "id": "w124",
+    "title": "A market worth visiting",
+    "level": "B1",
+    "topic": "Shopping",
+    "genre": "description",
+    "prompt": "Describe a market in your city for a visitor guide: what it sells, when to go and how to get there.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Describe what is sold.", "Give practical tips.", "Use a friendly guide style."]
+  },
+  {
+    "id": "w125",
+    "title": "The train left without me",
+    "level": "B1",
+    "topic": "Transport",
+    "genre": "story",
+    "prompt": "Write a story that begins: \"I watched the train leave without me.\"",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Use the opening sentence.", "Build some tension.", "Give a clear ending."]
+  },
+  {
+    "id": "w126",
+    "title": "Learning from free videos",
+    "level": "B1",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "Can people learn a skill well using only free online videos?",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Give your opinion.", "Mention quality and motivation.", "Give an example."]
+  },
+  {
+    "id": "w127",
+    "title": "Thanks for your help on the project",
+    "level": "B1",
+    "topic": "Work",
+    "genre": "email",
+    "prompt": "A colleague helped you finish an important project. Write an email to thank them and explain what difference their help made.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Thank them clearly.", "Explain the help.", "Describe the result."]
+  },
+  {
+    "id": "w128",
+    "title": "A meal to remember",
+    "level": "B1",
+    "topic": "Food",
+    "genre": "story",
+    "prompt": "Write about a meal you will never forget, for good or bad reasons.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Describe the setting.", "Describe the food.", "Explain why you remember it."]
+  },
+  {
+    "id": "w129",
+    "title": "Pets in small flats",
+    "level": "B1",
+    "topic": "Animals",
+    "genre": "opinion",
+    "prompt": "Should people who live in small flats keep pets?",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Give your opinion.", "Consider the animal's needs.", "Consider the neighbours."]
+  },
+  {
+    "id": "w130",
+    "title": "My ideal weekend",
+    "level": "B1",
+    "topic": "Daily life",
+    "genre": "description",
+    "prompt": "Describe your ideal weekend from Friday evening to Sunday night.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Organise it by time.",
+      "Use \"would\" for imagined plans.",
+      "Include a variety of activities."
+    ]
+  },
+  {
+    "id": "w131",
+    "title": "Looking after the plants",
+    "level": "B1",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "Your neighbour is going away and has asked you to look after their plants. Write an email accepting and asking what you need to know.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Accept the request.", "Ask three practical questions.", "Offer extra help."]
+  },
+  {
+    "id": "w132",
+    "title": "Free museums for everyone?",
+    "level": "B1",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "Should museums and galleries be free for everyone?",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Give your opinion.", "Discuss the cost.", "Discuss the benefits for society."]
+  },
+  {
+    "id": "w133",
+    "title": "A day in the life of a bus driver",
+    "level": "B1",
+    "topic": "Work",
+    "genre": "description",
+    "prompt": "Describe a typical day for a bus driver, a farmer or another worker you know about.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Describe the routine.", "Mention the difficulties.", "Mention the rewards."]
+  },
+  {
+    "id": "w134",
+    "title": "The evening the lights went out",
+    "level": "B1",
+    "topic": "Daily life",
+    "genre": "story",
+    "prompt": "Write a story about an evening when the electricity went off in your building.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Set the scene.",
+      "Describe how people reacted.",
+      "End with a surprise or a lesson."
+    ]
+  },
+  {
+    "id": "w135",
+    "title": "Changing my tour date",
+    "level": "B1",
+    "topic": "Travel",
+    "genre": "email",
+    "prompt": "You booked a tour for next Saturday, but you now need to change the date. Write to the tour company.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Give the booking details.",
+      "Explain why.",
+      "Suggest new dates and ask about fees."
+    ]
+  },
+  {
+    "id": "w136",
+    "title": "Phones in lessons",
+    "level": "B1",
+    "topic": "Technology",
+    "genre": "opinion",
+    "prompt": "Should students be allowed to use smartphones during school lessons?",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Give your opinion.", "Give two reasons.", "Suggest a fair rule."]
+  },
+  {
+    "id": "w137",
+    "title": "A sport worth trying",
+    "level": "B1",
+    "topic": "Hobbies and sport",
+    "genre": "description",
+    "prompt": "Describe a sport or activity you think everyone should try at least once.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Explain what it involves.",
+      "Describe how it feels.",
+      "Give advice for beginners."
+    ]
+  },
+  {
+    "id": "w138",
+    "title": "Feedback on a short course",
+    "level": "B1",
+    "topic": "Education",
+    "genre": "email",
+    "prompt": "You have just finished a short course. Write an email to the organisers giving feedback.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Say what you liked.", "Suggest one improvement.", "Keep a polite tone."]
+  },
+  {
+    "id": "w139",
+    "title": "Life without a car",
+    "level": "B1",
+    "topic": "Transport",
+    "genre": "opinion",
+    "prompt": "Is it possible to live comfortably in your city without a car?",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Give your opinion.",
+      "Describe the transport options.",
+      "Mention one difficulty."
+    ]
+  },
+  {
+    "id": "w140",
+    "title": "A small act of kindness",
+    "level": "B1",
+    "topic": "People and family",
+    "genre": "story",
+    "prompt": "Write a story about a small act of kindness that changed someone's day.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Introduce the characters.", "Describe the act.", "Show its effect."]
+  },
+  {
+    "id": "w141",
+    "title": "Better food in the canteen",
+    "level": "B1",
+    "topic": "Health",
+    "genre": "email",
+    "prompt": "Write an email to your manager suggesting healthier food in the office canteen.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Explain the current situation.", "Suggest two changes.", "Explain the benefits."]
+  },
+  {
+    "id": "w142",
+    "title": "My favourite room",
+    "level": "B1",
+    "topic": "Home and furniture",
+    "genre": "description",
+    "prompt": "Describe your favourite room in your home and what makes it comfortable.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Describe the layout.", "Describe the atmosphere.", "Explain how you use it."]
+  },
+  {
+    "id": "w143",
+    "title": "Buying second-hand",
+    "level": "B1",
+    "topic": "Shopping",
+    "genre": "opinion",
+    "prompt": "Is buying second-hand clothes and furniture a good idea?",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Give the advantages.", "Mention one risk.", "Give your opinion."]
+  },
+  {
+    "id": "w144",
+    "title": "Lost in a new city",
+    "level": "B1",
+    "topic": "Travel",
+    "genre": "story",
+    "prompt": "Write a story about getting lost in a city you did not know.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Describe how you got lost.",
+      "Describe who or what helped.",
+      "Describe the ending."
+    ]
+  },
+  {
+    "id": "w145",
+    "title": "Join our clean-up day",
+    "level": "B1",
+    "topic": "Environment",
+    "genre": "email",
+    "prompt": "Write an email to your neighbours inviting them to a community clean-up day.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Give the date, time and place.",
+      "Explain what people will do.",
+      "Encourage them to come."
+    ]
+  },
+  {
+    "id": "w146",
+    "title": "The best way to learn new words",
+    "level": "B1",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "What is the best way to learn new vocabulary in a foreign language?",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Describe one or two methods.",
+      "Explain why they work.",
+      "Give a personal example."
+    ]
+  },
+  {
+    "id": "w147",
+    "title": "A farewell party",
+    "level": "B1",
+    "topic": "Work",
+    "genre": "story",
+    "prompt": "Write about a celebration at a workplace or school, such as an anniversary or a farewell party.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Describe the event.",
+      "Describe one memorable moment.",
+      "Explain why it mattered."
+    ]
+  },
+  {
+    "id": "w148",
+    "title": "Weather and mood",
+    "level": "B1",
+    "topic": "Nature and weather",
+    "genre": "opinion",
+    "prompt": "Does the weather affect people's mood? Give your opinion with examples.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Give your opinion.", "Give examples.", "Explain your reasons."]
+  },
+  {
+    "id": "w149",
+    "title": "A weekend trip on a budget",
+    "level": "B1",
+    "topic": "Money and shopping",
+    "genre": "description",
+    "prompt": "Describe how you would plan a budget for a weekend trip with friends.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["List the main costs.", "Explain how to save money.", "Give a total estimate."]
+  },
+  {
+    "id": "w150",
+    "title": "Friends you have never met",
+    "level": "B1",
+    "topic": "Communication",
+    "genre": "opinion",
+    "prompt": "Can online friendships be as strong as friendships in real life?",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Give your opinion.", "Compare the two.", "Use an example."]
+  },
+  {
+    "id": "w151",
+    "title": "A visit to the animal shelter",
+    "level": "B1",
+    "topic": "Animals",
+    "genre": "story",
+    "prompt": "Write a story about a visit to an animal shelter.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Describe the shelter.", "Describe one animal.", "Describe a decision."]
+  },
+  {
+    "id": "w152",
+    "title": "Advice for a new student",
+    "level": "B1",
+    "topic": "Education",
+    "genre": "email",
+    "prompt": "A new student is joining your class next week. Write an email with advice about the school and the teachers.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": ["Welcome the student.", "Give three pieces of advice.", "Offer to meet."]
+  },
+  {
+    "id": "w153",
+    "title": "Technology for my grandparents",
+    "level": "B1",
+    "topic": "Technology",
+    "genre": "description",
+    "prompt": "Describe how a piece of technology helps an older person you know in daily life.",
+    "minWords": 100,
+    "maxWords": 160,
+    "checklist": [
+      "Describe the person and the technology.",
+      "Explain how it helps.",
+      "Mention one difficulty."
+    ]
+  },
+  {
+    "id": "w154",
+    "title": "A four-day working week",
+    "level": "B2",
+    "topic": "Work",
+    "genre": "opinion",
+    "prompt": "Some companies are trying a four-day working week. Discuss the benefits and drawbacks for employees and employers, and give your view.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Discuss benefits for both groups.",
+      "Discuss drawbacks.",
+      "Give a reasoned conclusion."
+    ]
+  },
+  {
+    "id": "w155",
+    "title": "Cancelled classes",
+    "level": "B2",
+    "topic": "Education",
+    "genre": "email",
+    "prompt": "You paid for an evening course, but classes were often cancelled. Write a formal complaint to the director.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Use a formal register.",
+      "Give specific dates and facts.",
+      "Request a clear remedy."
+    ]
+  },
+  {
+    "id": "w156",
+    "title": "Tourism: blessing or burden?",
+    "level": "B2",
+    "topic": "Travel",
+    "genre": "opinion",
+    "prompt": "Mass tourism brings money but also problems to popular cities. To what extent should tourist numbers be limited?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Present both sides.", "Use specific examples.", "Give a balanced conclusion."]
+  },
+  {
+    "id": "w157",
+    "title": "A street that remembers",
+    "level": "B2",
+    "topic": "Places in town",
+    "genre": "description",
+    "prompt": "Describe a building or street in your city that shows its history. Explain what it reveals about the past.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Describe it vividly.", "Explain the history.", "Reflect on its meaning today."]
+  },
+  {
+    "id": "w158",
+    "title": "The interview that went wrong",
+    "level": "B2",
+    "topic": "Work",
+    "genre": "story",
+    "prompt": "Write a story about a job interview that did not go as planned.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Build tension.", "Use dialogue.", "Give a surprising or meaningful ending."]
+  },
+  {
+    "id": "w159",
+    "title": "A quiet room for studying",
+    "level": "B2",
+    "topic": "Education",
+    "genre": "email",
+    "prompt": "Write an email to your school or university director proposing a new quiet study space.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Explain the need.",
+      "Describe the proposal.",
+      "Address the cost and the benefits."
+    ]
+  },
+  {
+    "id": "w160",
+    "title": "Advertising to children",
+    "level": "B2",
+    "topic": "Food",
+    "genre": "opinion",
+    "prompt": "Should advertising for unhealthy food be banned during children's TV programmes?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Present arguments for and against.",
+      "Support them with examples.",
+      "State your position."
+    ]
+  },
+  {
+    "id": "w161",
+    "title": "A restaurant review",
+    "level": "B2",
+    "topic": "Food",
+    "genre": "description",
+    "prompt": "Write a review of a restaurant for a local website, covering the food, service, atmosphere and value.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Cover all four areas.",
+      "Use precise adjectives.",
+      "Give a clear recommendation."
+    ]
+  },
+  {
+    "id": "w162",
+    "title": "The first month abroad",
+    "level": "B2",
+    "topic": "Travel",
+    "genre": "story",
+    "prompt": "Write a story about someone's first month living in a foreign country.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Show the character's feelings.",
+      "Include a turning point.",
+      "Use varied past tenses."
+    ]
+  },
+  {
+    "id": "w163",
+    "title": "Fewer cars in the city",
+    "level": "B2",
+    "topic": "Transport",
+    "genre": "opinion",
+    "prompt": "What measures would most effectively reduce car use in cities?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Suggest at least two measures.",
+      "Evaluate how effective they are.",
+      "Consider objections."
+    ]
+  },
+  {
+    "id": "w164",
+    "title": "A reference for a former colleague",
+    "level": "B2",
+    "topic": "Work",
+    "genre": "email",
+    "prompt": "A former colleague has applied for a job and asked you for a reference. Write an email to the employer recommending them.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Explain how you know them.",
+      "Describe their strengths with examples.",
+      "Make a clear recommendation."
+    ]
+  },
+  {
+    "id": "w165",
+    "title": "News from social media",
+    "level": "B2",
+    "topic": "Technology",
+    "genre": "opinion",
+    "prompt": "Many people now get their news from social media. Is this a positive development?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Discuss the advantages.",
+      "Discuss risks such as false information.",
+      "Conclude with your view."
+    ]
+  },
+  {
+    "id": "w166",
+    "title": "A turning point",
+    "level": "B2",
+    "topic": "People and family",
+    "genre": "story",
+    "prompt": "Write about a moment that changed the direction of someone's life.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Establish the situation before.",
+      "Describe the turning point.",
+      "Show the consequences."
+    ]
+  },
+  {
+    "id": "w167",
+    "title": "Parks or new homes?",
+    "level": "B2",
+    "topic": "Environment",
+    "genre": "opinion",
+    "prompt": "Should city planners give more land to parks even if it means fewer new homes?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Weigh both priorities.", "Use examples.", "Give your conclusion."]
+  },
+  {
+    "id": "w168",
+    "title": "A festival for visitors",
+    "level": "B2",
+    "topic": "Daily life",
+    "genre": "description",
+    "prompt": "Write an article for an international magazine describing a festival in your country for visitors.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Engage the reader at the start.",
+      "Describe the sights, sounds and food.",
+      "Give practical advice."
+    ]
+  },
+  {
+    "id": "w169",
+    "title": "Higher rent, no repairs",
+    "level": "B2",
+    "topic": "Home and furniture",
+    "genre": "email",
+    "prompt": "Your landlord wants to raise your rent while repairs remain undone. Write an email explaining your position.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Stay polite but firm.", "List the repairs.", "Propose a solution."]
+  },
+  {
+    "id": "w170",
+    "title": "Do exams show what we know?",
+    "level": "B2",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "Do exams measure what students have really learned?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Present your view.", "Discuss alternatives.", "Use examples."]
+  },
+  {
+    "id": "w171",
+    "title": "The last bus home",
+    "level": "B2",
+    "topic": "Transport",
+    "genre": "story",
+    "prompt": "Write a story that begins: \"The last bus home was almost empty, except for one passenger.\"",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Use the opening line.", "Create atmosphere.", "Develop an unexpected ending."]
+  },
+  {
+    "id": "w172",
+    "title": "Health apps and their limits",
+    "level": "B2",
+    "topic": "Health",
+    "genre": "description",
+    "prompt": "Describe how health and fitness apps are changing the way people look after themselves, with their benefits and limitations.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Describe typical apps.", "Explain the benefits.", "Explain the limitations."]
+  },
+  {
+    "id": "w173",
+    "title": "Volunteer with me",
+    "level": "B2",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "Write an email persuading a friend to volunteer with you at a local charity.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Describe the charity.", "Give persuasive reasons.", "Answer likely doubts."]
+  },
+  {
+    "id": "w174",
+    "title": "Who should stop fast fashion?",
+    "level": "B2",
+    "topic": "Shopping",
+    "genre": "opinion",
+    "prompt": "Is fast fashion a problem that consumers or companies should solve?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Explain the problem.", "Discuss who is responsible.", "Give your view."]
+  },
+  {
+    "id": "w175",
+    "title": "A performance I will not forget",
+    "level": "B2",
+    "topic": "Hobbies and sport",
+    "genre": "description",
+    "prompt": "Describe a concert, play or sports match you saw and explain why it impressed you.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Set the scene.", "Describe the key moments.", "Explain its impact."]
+  },
+  {
+    "id": "w176",
+    "title": "Will machines take our jobs?",
+    "level": "B2",
+    "topic": "Technology",
+    "genre": "opinion",
+    "prompt": "Will robots and artificial intelligence create more jobs than they destroy?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Present both views.", "Use examples.", "Give your prediction."]
+  },
+  {
+    "id": "w177",
+    "title": "The letter that arrived too late",
+    "level": "B2",
+    "topic": "People and family",
+    "genre": "story",
+    "prompt": "Write a story about a letter that arrives many years late.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Describe the letter.", "Show the reactions.", "Give a meaningful ending."]
+  },
+  {
+    "id": "w178",
+    "title": "Applying for a scholarship",
+    "level": "B2",
+    "topic": "Education",
+    "genre": "email",
+    "prompt": "Write an email applying for a scholarship to study abroad, explaining your goals and why you deserve support.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "State your goals.",
+      "Give evidence of commitment.",
+      "Explain the benefit to others."
+    ]
+  },
+  {
+    "id": "w179",
+    "title": "Your first salary",
+    "level": "B2",
+    "topic": "Money and shopping",
+    "genre": "email",
+    "prompt": "A younger relative has just started their first job. Write an email giving advice on managing money.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Give practical advice.", "Explain why it matters.", "Keep a friendly tone."]
+  },
+  {
+    "id": "w180",
+    "title": "Do we still need zoos?",
+    "level": "B2",
+    "topic": "Animals",
+    "genre": "opinion",
+    "prompt": "Do zoos still have a role in protecting animals?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Discuss conservation.", "Discuss animal welfare.", "Give your view."]
+  },
+  {
+    "id": "w181",
+    "title": "My street after dark",
+    "level": "B2",
+    "topic": "Places in town",
+    "genre": "description",
+    "prompt": "Describe your neighbourhood at night, focusing on sounds, lights and people.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Use details from the senses.",
+      "Organise the description clearly.",
+      "Create a mood."
+    ]
+  },
+  {
+    "id": "w182",
+    "title": "Working while studying",
+    "level": "B2",
+    "topic": "Work",
+    "genre": "opinion",
+    "prompt": "Should university students work part-time? Discuss the effects on study, money and experience.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Discuss three effects.", "Use examples.", "Conclude clearly."]
+  },
+  {
+    "id": "w183",
+    "title": "A mistake I learned from",
+    "level": "B2",
+    "topic": "People and family",
+    "genre": "story",
+    "prompt": "Write about a mistake that taught you something important.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Describe the mistake.", "Describe the consequences.", "Reflect on the lesson."]
+  },
+  {
+    "id": "w184",
+    "title": "Organising a class reunion",
+    "level": "B2",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "You are organising a reunion for former classmates. Write an email with the plan, asking for help.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Describe the plan.", "Give people tasks.", "Ask for replies by a date."]
+  },
+  {
+    "id": "w185",
+    "title": "Can one person make a difference?",
+    "level": "B2",
+    "topic": "Environment",
+    "genre": "opinion",
+    "prompt": "Can individual choices make a real difference to climate change?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Discuss individual action.",
+      "Discuss the role of governments and businesses.",
+      "Give your view."
+    ]
+  },
+  {
+    "id": "w186",
+    "title": "The night train",
+    "level": "B2",
+    "topic": "Travel",
+    "genre": "description",
+    "prompt": "Describe a long journey by night train or bus, focusing on the people and the atmosphere.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Describe the people.", "Describe the atmosphere.", "Show how the journey felt."]
+  },
+  {
+    "id": "w187",
+    "title": "Online shopping and the high street",
+    "level": "B2",
+    "topic": "Shopping",
+    "genre": "opinion",
+    "prompt": "Is online shopping destroying local shops, and does it matter?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Describe the trend.", "Discuss the effects on communities.", "Give your view."]
+  },
+  {
+    "id": "w188",
+    "title": "The new coach",
+    "level": "B2",
+    "topic": "Hobbies and sport",
+    "genre": "story",
+    "prompt": "Write a story about a coach or mentor who changed a team.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Introduce the team's problem.",
+      "Describe the coach's methods.",
+      "Show the result."
+    ]
+  },
+  {
+    "id": "w189",
+    "title": "A website that frustrates users",
+    "level": "B2",
+    "topic": "Technology",
+    "genre": "email",
+    "prompt": "Write an email to a company explaining problems with its website and suggesting improvements.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Describe the problems.",
+      "Suggest specific improvements.",
+      "Explain the benefits."
+    ]
+  },
+  {
+    "id": "w190",
+    "title": "Sleep or longer hours?",
+    "level": "B2",
+    "topic": "Health",
+    "genre": "opinion",
+    "prompt": "Is getting enough sleep more important than working longer hours?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Give your view.", "Use evidence or examples.", "Address counterarguments."]
+  },
+  {
+    "id": "w191",
+    "title": "A craft worth keeping",
+    "level": "B2",
+    "topic": "Daily life",
+    "genre": "description",
+    "prompt": "Describe a traditional craft from your region and explain why it should be preserved.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Describe the craft.", "Explain its history.", "Argue for keeping it alive."]
+  },
+  {
+    "id": "w192",
+    "title": "Teaching students to fail well",
+    "level": "B2",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "Should schools teach students how to deal with failure?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Explain what this means.", "Give reasons.", "Suggest how to do it."]
+  },
+  {
+    "id": "w193",
+    "title": "From the city to the fields",
+    "level": "B2",
+    "topic": "Nature and weather",
+    "genre": "story",
+    "prompt": "Write a story about a city family that moves to the countryside.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Show their first expectations.",
+      "Describe the challenges.",
+      "Show how they adapt."
+    ]
+  },
+  {
+    "id": "w194",
+    "title": "Save our library",
+    "level": "B2",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "A local newspaper suggested closing the library to save money. Write an email to the editor giving your view.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "State your view early.",
+      "Support it with arguments.",
+      "End with a call to action."
+    ]
+  },
+  {
+    "id": "w195",
+    "title": "Cooking as a school subject",
+    "level": "B2",
+    "topic": "Food",
+    "genre": "opinion",
+    "prompt": "Should cooking be a compulsory school subject?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Give your view.", "Discuss health and independence.", "Consider objections."]
+  },
+  {
+    "id": "w196",
+    "title": "A home that tells a story",
+    "level": "B2",
+    "topic": "Home and furniture",
+    "genre": "description",
+    "prompt": "Describe a home, real or imagined, whose objects tell the story of the people who live there.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Describe several objects.",
+      "Link them to the people.",
+      "Create a clear impression."
+    ]
+  },
+  {
+    "id": "w197",
+    "title": "Are electric cars the answer?",
+    "level": "B2",
+    "topic": "Transport",
+    "genre": "opinion",
+    "prompt": "Are electric cars the answer to pollution from transport?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Discuss the benefits.", "Discuss the limitations.", "Give your view."]
+  },
+  {
+    "id": "w198",
+    "title": "What makes a team work",
+    "level": "B2",
+    "topic": "Work",
+    "genre": "description",
+    "prompt": "Describe what makes a team project succeed, using an example from your experience.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Describe the example.", "Identify the success factors.", "Draw a conclusion."]
+  },
+  {
+    "id": "w199",
+    "title": "Before you adopt a dog",
+    "level": "B2",
+    "topic": "Animals",
+    "genre": "email",
+    "prompt": "Write an email to a friend who is thinking of adopting a dog, explaining the responsibilities.",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": [
+      "Explain the time, cost and care involved.",
+      "Be honest but encouraging.",
+      "Ask about their plans."
+    ]
+  },
+  {
+    "id": "w200",
+    "title": "Tips or fair wages?",
+    "level": "B2",
+    "topic": "Money and shopping",
+    "genre": "opinion",
+    "prompt": "In some countries, waiters depend on tips. Should tipping be replaced by higher wages?",
+    "minWords": 160,
+    "maxWords": 250,
+    "checklist": ["Explain the current system.", "Discuss both options.", "Give your conclusion."]
+  },
+  {
+    "id": "w201",
+    "title": "A basic income for all?",
+    "level": "C1",
+    "topic": "Money and shopping",
+    "genre": "opinion",
+    "prompt": "Some governments are testing a universal basic income. Evaluate whether it would reduce poverty without discouraging work.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Define the idea briefly.",
+      "Evaluate the likely effects on poverty and work.",
+      "Reach a qualified conclusion."
+    ]
+  },
+  {
+    "id": "w202",
+    "title": "How our city commutes",
+    "level": "C1",
+    "topic": "Transport",
+    "genre": "description",
+    "prompt": "Write a report for your city council on how residents commute, and recommend changes.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Use clear headings.",
+      "Summarise the main patterns.",
+      "Make specific recommendations."
+    ]
+  },
+  {
+    "id": "w203",
+    "title": "Replying to a harsh review",
+    "level": "C1",
+    "topic": "Work",
+    "genre": "email",
+    "prompt": "Your company received a harsh online review. Write a public reply that acknowledges the problem and restores trust.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Acknowledge the problem without being defensive.",
+      "Explain what will change.",
+      "Invite further contact."
+    ]
+  },
+  {
+    "id": "w204",
+    "title": "What failure teaches",
+    "level": "C1",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "\"Failure teaches more than success.\" Discuss this statement with reference to education and work.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Interpret the statement.",
+      "Use examples from both areas.",
+      "Present a nuanced view."
+    ]
+  },
+  {
+    "id": "w205",
+    "title": "A town that reinvented itself",
+    "level": "C1",
+    "topic": "Places in town",
+    "genre": "description",
+    "prompt": "Describe a city or town that changed its economy or image, and analyse why the change worked or failed.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Describe the before and after.", "Analyse the causes.", "Draw a wider lesson."]
+  },
+  {
+    "id": "w206",
+    "title": "The negotiation",
+    "level": "C1",
+    "topic": "Work",
+    "genre": "story",
+    "prompt": "Write a story centred on a tense negotiation in which both sides have something to hide.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Establish both characters' aims.",
+      "Use dialogue to build tension.",
+      "Resolve the plot with a twist."
+    ]
+  },
+  {
+    "id": "w207",
+    "title": "Paying with our data",
+    "level": "C1",
+    "topic": "Technology",
+    "genre": "opinion",
+    "prompt": "Are people right to trade personal data for free online services?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Explain the trade.", "Weigh convenience against risk.", "Recommend a position."]
+  },
+  {
+    "id": "w208",
+    "title": "A mentoring scheme for new staff",
+    "level": "C1",
+    "topic": "Education",
+    "genre": "email",
+    "prompt": "Write a formal email to your head of department proposing a mentoring scheme that pairs new and experienced staff.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Explain the problem it solves.",
+      "Outline how it would work.",
+      "Anticipate objections."
+    ]
+  },
+  {
+    "id": "w209",
+    "title": "Local food or global choice?",
+    "level": "C1",
+    "topic": "Food",
+    "genre": "opinion",
+    "prompt": "Should consumers prioritise locally produced food over imported products?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Consider environmental, economic and cultural factors.",
+      "Use examples.",
+      "Avoid oversimplification."
+    ]
+  },
+  {
+    "id": "w210",
+    "title": "In praise of slow travel",
+    "level": "C1",
+    "topic": "Travel",
+    "genre": "description",
+    "prompt": "Write a magazine article encouraging readers to try slow travel, such as long train journeys or staying in one place for weeks.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Hook the reader.", "Use vivid examples.", "Address common objections."]
+  },
+  {
+    "id": "w211",
+    "title": "What remote learning taught us",
+    "level": "C1",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "What lasting lessons should schools take from periods of remote learning?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Identify specific lessons.",
+      "Evaluate their importance.",
+      "Make recommendations."
+    ]
+  },
+  {
+    "id": "w212",
+    "title": "Writing to the energy regulator",
+    "level": "C1",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "Your energy supplier has repeatedly overcharged you and ignored your complaints. Write to the regulator.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Summarise the history concisely.",
+      "Include facts and dates.",
+      "State the outcome you seek."
+    ]
+  },
+  {
+    "id": "w213",
+    "title": "The architect's dilemma",
+    "level": "C1",
+    "topic": "Places in town",
+    "genre": "story",
+    "prompt": "Write a story about an architect asked to design a building she believes will harm the neighbourhood.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Present the dilemma clearly.",
+      "Develop the character's inner conflict.",
+      "Show the consequence of her choice."
+    ]
+  },
+  {
+    "id": "w214",
+    "title": "Whose job is wellbeing at work?",
+    "level": "C1",
+    "topic": "Health",
+    "genre": "opinion",
+    "prompt": "Who is responsible for employees' mental health: the employer or the individual?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Define the issue.",
+      "Discuss both responsibilities.",
+      "Propose practical measures."
+    ]
+  },
+  {
+    "id": "w215",
+    "title": "A thought-provoking book",
+    "level": "C1",
+    "topic": "Education",
+    "genre": "description",
+    "prompt": "Write a review of a non-fiction book you found thought-provoking, assessing its argument and style.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Summarise the main argument.",
+      "Evaluate the evidence and the style.",
+      "Recommend it to a particular reader."
+    ]
+  },
+  {
+    "id": "w216",
+    "title": "Plastic-free supermarkets",
+    "level": "C1",
+    "topic": "Environment",
+    "genre": "opinion",
+    "prompt": "Should supermarkets be required to stop using single-use plastic packaging within five years?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Assess whether it is feasible.",
+      "Discuss costs and benefits.",
+      "Give a reasoned view."
+    ]
+  },
+  {
+    "id": "w217",
+    "title": "Dear sixteen-year-old me",
+    "level": "C1",
+    "topic": "People and family",
+    "genre": "email",
+    "prompt": "Write a letter to yourself at sixteen, giving advice based on what you know now.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Keep a consistent, reflective tone.", "Give specific advice.", "Avoid clichés."]
+  },
+  {
+    "id": "w218",
+    "title": "Sport and national pride",
+    "level": "C1",
+    "topic": "Hobbies and sport",
+    "genre": "opinion",
+    "prompt": "Why do international sporting events matter so much to national identity, and is this healthy?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Explain the connection.",
+      "Evaluate positive and negative effects.",
+      "Conclude thoughtfully."
+    ]
+  },
+  {
+    "id": "w219",
+    "title": "The market at dawn",
+    "level": "C1",
+    "topic": "Shopping",
+    "genre": "description",
+    "prompt": "Describe a wholesale market at dawn for a travel anthology, capturing the people and the rhythm of work.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Use precise sensory detail.",
+      "Convey movement and rhythm.",
+      "Keep a consistent point of view."
+    ]
+  },
+  {
+    "id": "w220",
+    "title": "The safety report",
+    "level": "C1",
+    "topic": "Work",
+    "genre": "story",
+    "prompt": "Write a story about an employee who discovers that her company is hiding a safety problem.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Establish the stakes.",
+      "Show the pressure on the character.",
+      "End with ambiguity or resolution."
+    ]
+  },
+  {
+    "id": "w221",
+    "title": "Societies growing older",
+    "level": "C1",
+    "topic": "People and family",
+    "genre": "opinion",
+    "prompt": "How should societies adapt to a rapidly ageing population?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Identify the key challenges.",
+      "Propose solutions.",
+      "Evaluate their trade-offs."
+    ]
+  },
+  {
+    "id": "w222",
+    "title": "A case for flexible hours",
+    "level": "C1",
+    "topic": "Work",
+    "genre": "email",
+    "prompt": "Write a formal request to your manager for a flexible working arrangement, making a business case for it.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Propose a specific arrangement.",
+      "Show the benefit to the team.",
+      "Address possible concerns."
+    ]
+  },
+  {
+    "id": "w223",
+    "title": "Does handwriting still matter?",
+    "level": "C1",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "Does it matter if children write less by hand?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Consider learning and practical arguments.",
+      "Use examples.",
+      "Give a balanced conclusion."
+    ]
+  },
+  {
+    "id": "w224",
+    "title": "What the festival left behind",
+    "level": "C1",
+    "topic": "Daily life",
+    "genre": "description",
+    "prompt": "Write a report assessing the economic and social impact of a large festival on a small town.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Organise it under headings.",
+      "Present benefits and costs.",
+      "Recommend improvements."
+    ]
+  },
+  {
+    "id": "w225",
+    "title": "Bridges for wildlife",
+    "level": "C1",
+    "topic": "Animals",
+    "genre": "opinion",
+    "prompt": "Should new roads and railways be required to include wildlife crossings, even at high cost?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Explain the problem.", "Weigh cost against benefit.", "Give your view."]
+  },
+  {
+    "id": "w226",
+    "title": "We missed the deadline",
+    "level": "C1",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "Your team missed a deadline that affected a client. Write an email of apology that explains, takes responsibility and proposes a fix.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Take responsibility clearly.",
+      "Explain without making excuses.",
+      "Propose concrete next steps."
+    ]
+  },
+  {
+    "id": "w227",
+    "title": "The inheritance",
+    "level": "C1",
+    "topic": "People and family",
+    "genre": "story",
+    "prompt": "Write a story in which siblings disagree over an unexpected inheritance.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Develop distinct characters.",
+      "Use dialogue to reveal tension.",
+      "Resolve or deepen the conflict."
+    ]
+  },
+  {
+    "id": "w228",
+    "title": "Do algorithms narrow our taste?",
+    "level": "C1",
+    "topic": "Technology",
+    "genre": "opinion",
+    "prompt": "Do recommendation algorithms narrow our cultural tastes?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Explain in general terms how they work.",
+      "Present arguments on both sides.",
+      "Conclude with your view."
+    ]
+  },
+  {
+    "id": "w229",
+    "title": "Somewhere for teenagers to go",
+    "level": "C1",
+    "topic": "Places in town",
+    "genre": "email",
+    "prompt": "Write to the local council arguing for public spaces designed for teenagers.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Explain the current gap.", "Propose specific spaces.", "Anticipate concerns."]
+  },
+  {
+    "id": "w230",
+    "title": "An unsung hero",
+    "level": "C1",
+    "topic": "People and family",
+    "genre": "description",
+    "prompt": "Write a profile for a community magazine of someone whose work goes unnoticed, such as a cleaner or a volunteer.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Describe the person vividly.",
+      "Explain their contribution.",
+      "Convey why it matters."
+    ]
+  },
+  {
+    "id": "w231",
+    "title": "Breaking a promise",
+    "level": "C1",
+    "topic": "Communication",
+    "genre": "opinion",
+    "prompt": "Is it ever right to break a promise? Discuss with examples.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Define the issue.", "Use examples.", "Present a nuanced position."]
+  },
+  {
+    "id": "w232",
+    "title": "The storm",
+    "level": "C1",
+    "topic": "Nature and weather",
+    "genre": "story",
+    "prompt": "Write a story set during a storm that forces strangers to depend on each other.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Create atmosphere.",
+      "Develop relationships under pressure.",
+      "Give a satisfying ending."
+    ]
+  },
+  {
+    "id": "w233",
+    "title": "A region running out of water",
+    "level": "C1",
+    "topic": "Environment",
+    "genre": "description",
+    "prompt": "Write an article explaining how a region facing water shortages could manage its supply better.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Explain the causes.",
+      "Describe possible measures.",
+      "Evaluate how feasible they are."
+    ]
+  },
+  {
+    "id": "w234",
+    "title": "Disappointing leadership training",
+    "level": "C1",
+    "topic": "Work",
+    "genre": "email",
+    "prompt": "Your company paid for leadership training that disappointed staff. Write constructive feedback to the provider.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Be specific about the problems.",
+      "Acknowledge strengths.",
+      "Suggest improvements."
+    ]
+  },
+  {
+    "id": "w235",
+    "title": "A gap year: waste or gift?",
+    "level": "C1",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "Is taking a gap year before university a waste of time or a valuable experience?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Discuss benefits and risks.",
+      "Consider different students.",
+      "Conclude clearly."
+    ]
+  },
+  {
+    "id": "w236",
+    "title": "A neighbourhood in transition",
+    "level": "C1",
+    "topic": "Places in town",
+    "genre": "description",
+    "prompt": "Describe a neighbourhood that is changing as new residents arrive, showing both gains and losses.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Describe concrete changes.",
+      "Present different perspectives.",
+      "Avoid a one-sided judgement."
+    ]
+  },
+  {
+    "id": "w237",
+    "title": "One sentence to translate",
+    "level": "C1",
+    "topic": "Communication",
+    "genre": "story",
+    "prompt": "Write a story about an interpreter who realises a negotiation depends on how she translates one sentence.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Establish the setting.",
+      "Build tension around the sentence.",
+      "Show the consequence."
+    ]
+  },
+  {
+    "id": "w238",
+    "title": "The price of medicine",
+    "level": "C1",
+    "topic": "Health",
+    "genre": "opinion",
+    "prompt": "Should governments control the prices of essential medicines?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Explain the issue.", "Discuss arguments on both sides.", "Give your view."]
+  },
+  {
+    "id": "w239",
+    "title": "Pitching to investors",
+    "level": "C1",
+    "topic": "Money and shopping",
+    "genre": "email",
+    "prompt": "Write an email to potential investors presenting a small business idea and explaining why it will succeed.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Describe the idea and the market.",
+      "Give evidence of demand.",
+      "State what you need."
+    ]
+  },
+  {
+    "id": "w240",
+    "title": "Is meat harder to justify?",
+    "level": "C1",
+    "topic": "Food",
+    "genre": "opinion",
+    "prompt": "Is eating meat becoming harder to justify?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Consider ethical, environmental and cultural views.",
+      "Use evidence.",
+      "Give your position."
+    ]
+  },
+  {
+    "id": "w241",
+    "title": "Reviewing a public service",
+    "level": "C1",
+    "topic": "Daily life",
+    "genre": "description",
+    "prompt": "Write a review of a public service you use, such as a library or clinic, assessing what works and what does not.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Describe the service.", "Assess strengths and weaknesses.", "Recommend changes."]
+  },
+  {
+    "id": "w242",
+    "title": "The comeback",
+    "level": "C1",
+    "topic": "Hobbies and sport",
+    "genre": "story",
+    "prompt": "Write a story about an athlete returning after a serious injury.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Show the setback.", "Show the struggle.", "Give a believable ending."]
+  },
+  {
+    "id": "w243",
+    "title": "No cars in the centre",
+    "level": "C1",
+    "topic": "Transport",
+    "genre": "email",
+    "prompt": "Write to a newspaper responding to a plan to ban private cars from the city centre.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "State your position.",
+      "Support it with arguments.",
+      "Consider the groups affected."
+    ]
+  },
+  {
+    "id": "w244",
+    "title": "Screens and young children",
+    "level": "C1",
+    "topic": "Technology",
+    "genre": "opinion",
+    "prompt": "How much should parents limit young children's screen time?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": [
+      "Discuss research and practical concerns.",
+      "Consider different families.",
+      "Give advice."
+    ]
+  },
+  {
+    "id": "w245",
+    "title": "Moving for work",
+    "level": "C1",
+    "topic": "Work",
+    "genre": "description",
+    "prompt": "Describe the experience of relocating to a new city for work, and what helps people settle.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Describe the challenges.", "Describe what helps.", "Draw a conclusion."]
+  },
+  {
+    "id": "w246",
+    "title": "Fairer exams",
+    "level": "C1",
+    "topic": "Education",
+    "genre": "email",
+    "prompt": "Write to an exam board about how its tests could be made fairer for students with disabilities.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Identify the problems.", "Propose adjustments.", "Explain the benefits."]
+  },
+  {
+    "id": "w247",
+    "title": "Who does volunteering abroad help?",
+    "level": "C1",
+    "topic": "Travel",
+    "genre": "opinion",
+    "prompt": "Does short-term volunteering abroad help communities, or mainly the volunteers?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Present both perspectives.", "Use examples.", "Suggest better practice."]
+  },
+  {
+    "id": "w248",
+    "title": "The village that refused",
+    "level": "C1",
+    "topic": "Nature and weather",
+    "genre": "story",
+    "prompt": "Write a story about a village that refuses to leave its land when a dam is planned.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Present the community.", "Show the conflict.", "Give a powerful ending."]
+  },
+  {
+    "id": "w249",
+    "title": "Buy less, buy better",
+    "level": "C1",
+    "topic": "Shopping",
+    "genre": "opinion",
+    "prompt": "Would people be happier if they bought fewer but higher-quality things?",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Explain the idea.", "Evaluate it.", "Give your view."]
+  },
+  {
+    "id": "w250",
+    "title": "The staff wellbeing survey",
+    "level": "C1",
+    "topic": "Health",
+    "genre": "description",
+    "prompt": "Write a report summarising a staff wellbeing survey and recommending three actions.",
+    "minWords": 220,
+    "maxWords": 320,
+    "checklist": ["Summarise the findings.", "Identify the priorities.", "Recommend three actions."]
+  },
+  {
+    "id": "w251",
+    "title": "The limits of merit",
+    "level": "C2",
+    "topic": "Work",
+    "genre": "opinion",
+    "prompt": "\"A society that rewards only merit will become less fair, not more.\" Discuss.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Interpret the claim precisely.",
+      "Engage with counterarguments.",
+      "Reach a nuanced conclusion."
+    ]
+  },
+  {
+    "id": "w252",
+    "title": "An open letter on summer heat",
+    "level": "C2",
+    "topic": "Environment",
+    "genre": "email",
+    "prompt": "Write an open letter to your city's mayor about rising summer temperatures and how the city should adapt.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Establish urgency with evidence.",
+      "Propose prioritised measures.",
+      "Keep a persuasive but measured tone."
+    ]
+  },
+  {
+    "id": "w253",
+    "title": "The narrator who lies",
+    "level": "C2",
+    "topic": "People and family",
+    "genre": "story",
+    "prompt": "Write a story told by a narrator whose account the reader gradually learns not to trust.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Plant subtle clues.", "Control the reveal.", "Keep the voice consistent."]
+  },
+  {
+    "id": "w254",
+    "title": "Statues of the past",
+    "level": "C2",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "Should public monuments to controversial historical figures be removed?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Distinguish history from commemoration.",
+      "Consider different communities.",
+      "Propose a principled approach."
+    ]
+  },
+  {
+    "id": "w255",
+    "title": "What translation loses and gains",
+    "level": "C2",
+    "topic": "Communication",
+    "genre": "description",
+    "prompt": "Write an essay on what is lost and what can be gained when literature is translated.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Use precise examples.",
+      "Engage with the idea of faithfulness.",
+      "Develop an original argument."
+    ]
+  },
+  {
+    "id": "w256",
+    "title": "Responding to a sugar tax consultation",
+    "level": "C2",
+    "topic": "Health",
+    "genre": "email",
+    "prompt": "A government is consulting on a sugar tax. Write a formal response on behalf of a public health charity.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Summarise your organisation's position.",
+      "Use evidence and anticipate objections.",
+      "Make specific recommendations."
+    ]
+  },
+  {
+    "id": "w257",
+    "title": "Nostalgia and progress",
+    "level": "C2",
+    "topic": "Daily life",
+    "genre": "opinion",
+    "prompt": "Is nostalgia an obstacle to progress or a necessary check on it?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Define both terms carefully.",
+      "Use cultural or political examples.",
+      "Avoid a simple verdict."
+    ]
+  },
+  {
+    "id": "w258",
+    "title": "The last speaker",
+    "level": "C2",
+    "topic": "Communication",
+    "genre": "story",
+    "prompt": "Write a story about the last fluent speaker of a language.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Convey loss without sentimentality.",
+      "Use precise detail.",
+      "Find a resonant ending."
+    ]
+  },
+  {
+    "id": "w259",
+    "title": "The attention economy",
+    "level": "C2",
+    "topic": "Technology",
+    "genre": "opinion",
+    "prompt": "Are digital technologies eroding our capacity for sustained attention, and if so, what should be done?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Evaluate the evidence critically.",
+      "Distinguish individual and collective responses.",
+      "Conclude with a defensible position."
+    ]
+  },
+  {
+    "id": "w260",
+    "title": "An exhibition with a message",
+    "level": "C2",
+    "topic": "Education",
+    "genre": "description",
+    "prompt": "Write a critical review of an exhibition, real or imagined, that tries to address a social issue.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Describe the exhibition concisely.",
+      "Evaluate its argument and methods.",
+      "Judge whether it succeeds."
+    ]
+  },
+  {
+    "id": "w261",
+    "title": "Resigning with dignity",
+    "level": "C2",
+    "topic": "Work",
+    "genre": "email",
+    "prompt": "Write a letter resigning from a senior position over a disagreement about the company's direction, without burning bridges.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "State the decision clearly.",
+      "Explain the reasons with restraint.",
+      "Leave the relationship intact."
+    ]
+  },
+  {
+    "id": "w262",
+    "title": "Billionaires and democracy",
+    "level": "C2",
+    "topic": "Money and shopping",
+    "genre": "opinion",
+    "prompt": "Does large-scale philanthropy by the very rich strengthen or weaken democracy?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Explain the mechanisms.",
+      "Weigh the benefits against accountability.",
+      "Conclude with nuance."
+    ]
+  },
+  {
+    "id": "w263",
+    "title": "The house after the funeral",
+    "level": "C2",
+    "topic": "Home and furniture",
+    "genre": "story",
+    "prompt": "Write a story in which a family sorts through a relative's house and discovers something that changes how they remember him.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Build character through objects.",
+      "Pace the discovery.",
+      "Leave a lasting impression."
+    ]
+  },
+  {
+    "id": "w264",
+    "title": "Returning farmland to the wild",
+    "level": "C2",
+    "topic": "Environment",
+    "genre": "opinion",
+    "prompt": "Should large areas of farmland be returned to the wild?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Consider nature, food security and livelihoods.",
+      "Use examples.",
+      "Offer a balanced judgement."
+    ]
+  },
+  {
+    "id": "w265",
+    "title": "Evaluating the four-day week trial",
+    "level": "C2",
+    "topic": "Work",
+    "genre": "description",
+    "prompt": "Write a report evaluating a company's six-month trial of a four-day week, with findings and a recommendation.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Present the data clearly in prose.",
+      "Interpret the limitations.",
+      "Make a justified recommendation."
+    ]
+  },
+  {
+    "id": "w266",
+    "title": "Knowing our genetic risks",
+    "level": "C2",
+    "topic": "Health",
+    "genre": "opinion",
+    "prompt": "Should people be told about genetic risks they can do nothing about?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Define the dilemma.",
+      "Consider freedom of choice and possible harm.",
+      "Reach a careful conclusion."
+    ]
+  },
+  {
+    "id": "w267",
+    "title": "To be opened in fifty years",
+    "level": "C2",
+    "topic": "Daily life",
+    "genre": "email",
+    "prompt": "Write a letter to be opened in fifty years, describing ordinary life now and what you hope will change.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Choose revealing details.",
+      "Balance description and reflection.",
+      "Address the future reader convincingly."
+    ]
+  },
+  {
+    "id": "w268",
+    "title": "Cities for people, not cars",
+    "level": "C2",
+    "topic": "Transport",
+    "genre": "opinion",
+    "prompt": "\"Cities have been designed for cars for a century; it is time to design them for people.\" Discuss.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Assess the historical claim.",
+      "Evaluate the proposed changes.",
+      "Consider who wins and who loses."
+    ]
+  },
+  {
+    "id": "w269",
+    "title": "The unanswered email",
+    "level": "C2",
+    "topic": "Work",
+    "genre": "story",
+    "prompt": "Write a story in which an email that is never answered changes the course of two careers.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Use structure creatively.",
+      "Develop both characters.",
+      "Avoid an obvious ending."
+    ]
+  },
+  {
+    "id": "w270",
+    "title": "Can a machine make art?",
+    "level": "C2",
+    "topic": "Technology",
+    "genre": "opinion",
+    "prompt": "Can work produced with artificial intelligence be considered art?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Define art carefully.",
+      "Engage with opposing views.",
+      "Develop your own position."
+    ]
+  },
+  {
+    "id": "w271",
+    "title": "Loneliness and solitude",
+    "level": "C2",
+    "topic": "People and family",
+    "genre": "description",
+    "prompt": "Write a reflective essay on the difference between loneliness and solitude.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Define the terms precisely.",
+      "Use observation or examples.",
+      "Develop a reflective argument."
+    ]
+  },
+  {
+    "id": "w272",
+    "title": "On behalf of the residents",
+    "level": "C2",
+    "topic": "Places in town",
+    "genre": "email",
+    "prompt": "As chair of a residents' association, write to a developer about the impact of a construction project on your street.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Represent residents' concerns accurately.",
+      "Cite specific incidents.",
+      "Propose remedies and a deadline."
+    ]
+  },
+  {
+    "id": "w273",
+    "title": "The search for the authentic",
+    "level": "C2",
+    "topic": "Travel",
+    "genre": "opinion",
+    "prompt": "Can tourism ever show visitors an \"authentic\" culture, or does it always change what it displays?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Question the idea of authenticity.", "Use examples.", "Reach a nuanced view."]
+  },
+  {
+    "id": "w274",
+    "title": "The understudy",
+    "level": "C2",
+    "topic": "Hobbies and sport",
+    "genre": "story",
+    "prompt": "Write a story about an understudy who finally gets to perform, on the worst possible night.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Build anticipation.", "Use vivid detail.", "Craft an ironic or moving ending."]
+  },
+  {
+    "id": "w275",
+    "title": "Can schools reduce inequality?",
+    "level": "C2",
+    "topic": "Education",
+    "genre": "opinion",
+    "prompt": "Can schools reduce social inequality, or do they mainly reproduce it?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Consider evidence and theory.", "Discuss policy options.", "Conclude carefully."]
+  },
+  {
+    "id": "w276",
+    "title": "A graduation speech without clichés",
+    "level": "C2",
+    "topic": "Education",
+    "genre": "description",
+    "prompt": "Write a graduation speech that avoids clichés and offers graduates something genuinely useful.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Open memorably.", "Offer specific insight.", "Close with resonance."]
+  },
+  {
+    "id": "w277",
+    "title": "Declining with tact",
+    "level": "C2",
+    "topic": "Communication",
+    "genre": "email",
+    "prompt": "Write a letter declining a prestigious invitation for reasons you cannot fully state, without causing offence.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Decline clearly.",
+      "Use tactful, indirect language.",
+      "Preserve the relationship."
+    ]
+  },
+  {
+    "id": "w278",
+    "title": "Growth or wellbeing?",
+    "level": "C2",
+    "topic": "Money and shopping",
+    "genre": "opinion",
+    "prompt": "Should governments measure success by wellbeing rather than economic growth?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Explain both measures.",
+      "Assess the practical difficulties.",
+      "Take a position."
+    ]
+  },
+  {
+    "id": "w279",
+    "title": "The ferry crossing",
+    "level": "C2",
+    "topic": "Travel",
+    "genre": "story",
+    "prompt": "Write a story set on a ferry crossing in which two strangers realise they have met before.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Create atmosphere.", "Reveal the past gradually.", "End with restraint."]
+  },
+  {
+    "id": "w280",
+    "title": "Food waste in our restaurants",
+    "level": "C2",
+    "topic": "Food",
+    "genre": "description",
+    "prompt": "Write a report on food waste in a chain of restaurants, with its causes and a costed plan to reduce it.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Identify the causes.", "Propose measures with costs.", "Prioritise them."]
+  },
+  {
+    "id": "w281",
+    "title": "Offensive but legal",
+    "level": "C2",
+    "topic": "Technology",
+    "genre": "opinion",
+    "prompt": "Should social media platforms remove content that is offensive but legal?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Distinguish harm from offence.", "Consider who decides.", "Propose principles."]
+  },
+  {
+    "id": "w282",
+    "title": "A eulogy for a teacher",
+    "level": "C2",
+    "topic": "People and family",
+    "genre": "description",
+    "prompt": "Write a eulogy for a fictional teacher who influenced many students, capturing both strengths and flaws.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Use specific anecdotes.", "Balance warmth and honesty.", "Give a fitting close."]
+  },
+  {
+    "id": "w283",
+    "title": "Animals in medical research",
+    "level": "C2",
+    "topic": "Animals",
+    "genre": "opinion",
+    "prompt": "Is the use of animals in medical research still justifiable?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Present the ethical arguments.",
+      "Consider alternatives.",
+      "Reach a reasoned view."
+    ]
+  },
+  {
+    "id": "w284",
+    "title": "An honest reference",
+    "level": "C2",
+    "topic": "Work",
+    "genre": "email",
+    "prompt": "Write a reference for a former employee who is talented but unreliable, being honest without being unfair.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Describe strengths specifically.",
+      "Address weaknesses tactfully.",
+      "Give a fair overall judgement."
+    ]
+  },
+  {
+    "id": "w285",
+    "title": "The archive",
+    "level": "C2",
+    "topic": "Education",
+    "genre": "story",
+    "prompt": "Write a story about a researcher who finds a document in an archive that contradicts an accepted version of events.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Build intrigue.",
+      "Show the character's dilemma.",
+      "Resolve or suspend the tension."
+    ]
+  },
+  {
+    "id": "w286",
+    "title": "People displaced by climate",
+    "level": "C2",
+    "topic": "Environment",
+    "genre": "opinion",
+    "prompt": "How should the international community respond to people displaced by climate change?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Define the problem.", "Evaluate responsibilities.", "Propose responses."]
+  },
+  {
+    "id": "w287",
+    "title": "One city, three moments",
+    "level": "C2",
+    "topic": "Places in town",
+    "genre": "description",
+    "prompt": "Write a descriptive piece portraying the same city at dawn, at midday and at midnight.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Contrast the three moments.",
+      "Use precise imagery.",
+      "Unify the piece with a theme."
+    ]
+  },
+  {
+    "id": "w288",
+    "title": "Experts and the public",
+    "level": "C2",
+    "topic": "Communication",
+    "genre": "opinion",
+    "prompt": "In a democracy, how much should experts influence decisions that affect everyone?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Consider legitimacy and knowledge.", "Use examples.", "Present a nuanced view."]
+  },
+  {
+    "id": "w289",
+    "title": "Answering an accusation",
+    "level": "C2",
+    "topic": "Work",
+    "genre": "email",
+    "prompt": "A journalist has accused your organisation of misleading customers. Write a formal response for publication.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Address the claims precisely.",
+      "Acknowledge any valid points.",
+      "Maintain credibility."
+    ]
+  },
+  {
+    "id": "w290",
+    "title": "The doctor's choice",
+    "level": "C2",
+    "topic": "Health",
+    "genre": "story",
+    "prompt": "Write a story about a doctor in a remote clinic who is forced to choose between two patients.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Establish the setting.", "Convey the pressure.", "Explore the consequences."]
+  },
+  {
+    "id": "w291",
+    "title": "Should voting be compulsory?",
+    "level": "C2",
+    "topic": "Communication",
+    "genre": "opinion",
+    "prompt": "Should voting be compulsory?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Present arguments on both sides.",
+      "Use examples in general terms.",
+      "Give your conclusion."
+    ]
+  },
+  {
+    "id": "w292",
+    "title": "A decade of smartphones",
+    "level": "C2",
+    "topic": "Technology",
+    "genre": "description",
+    "prompt": "Write an essay reviewing how smartphones have changed social life over the past decade.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Identify the key changes.",
+      "Assess their significance.",
+      "Avoid easy conclusions."
+    ]
+  },
+  {
+    "id": "w293",
+    "title": "Housing as a right",
+    "level": "C2",
+    "topic": "Home and furniture",
+    "genre": "opinion",
+    "prompt": "Should adequate housing be treated as a legal right?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Explain the implications.", "Assess feasibility.", "Take a position."]
+  },
+  {
+    "id": "w294",
+    "title": "Free buses for everyone",
+    "level": "C2",
+    "topic": "Transport",
+    "genre": "opinion",
+    "prompt": "Write an editorial for a local newspaper arguing that public transport should be free.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["State the thesis.", "Support it with evidence.", "Answer objections."]
+  },
+  {
+    "id": "w295",
+    "title": "The last match",
+    "level": "C2",
+    "topic": "Hobbies and sport",
+    "genre": "story",
+    "prompt": "Write a story about a veteran player's final match, told from the point of view of a rival.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Use the rival's perspective.", "Build to the climax.", "End with insight."]
+  },
+  {
+    "id": "w296",
+    "title": "Taste and social class",
+    "level": "C2",
+    "topic": "Food",
+    "genre": "opinion",
+    "prompt": "To what extent are our food preferences shaped by social class?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Consider the evidence.", "Use examples.", "Avoid generalisation."]
+  },
+  {
+    "id": "w297",
+    "title": "How I changed my mind",
+    "level": "C2",
+    "topic": "Education",
+    "genre": "description",
+    "prompt": "Write a reflective essay about a belief you changed and how the change happened.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Explain the original belief.", "Trace the change.", "Reflect on what it means."]
+  },
+  {
+    "id": "w298",
+    "title": "AI tutors in our schools",
+    "level": "C2",
+    "topic": "Technology",
+    "genre": "email",
+    "prompt": "Write a letter to an education minister about how schools should use AI tutors responsibly.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Identify opportunities and risks.",
+      "Propose safeguards.",
+      "Conclude persuasively."
+    ]
+  },
+  {
+    "id": "w299",
+    "title": "Luck and success",
+    "level": "C2",
+    "topic": "Money and shopping",
+    "genre": "opinion",
+    "prompt": "How much of success is due to luck?",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": ["Define success and luck.", "Use examples.", "Develop an argument."]
+  },
+  {
+    "id": "w300",
+    "title": "The old map",
+    "level": "C2",
+    "topic": "Travel",
+    "genre": "story",
+    "prompt": "Write a story about an old map that leads its owner somewhere unexpected, and not necessarily to a place.",
+    "minWords": 280,
+    "maxWords": 400,
+    "checklist": [
+      "Use the map as a symbol.",
+      "Develop the character.",
+      "Give an open but satisfying ending."
+    ]
   }
 ]

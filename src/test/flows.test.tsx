@@ -17,6 +17,7 @@ import {
   dictations,
 } from '../data/content';
 import { exportCSV, importCSV } from '../services/csv';
+import { byLevel } from '../components/LessonBrowser';
 beforeEach(async () => {
   await resetData();
   useApp.setState({
@@ -163,14 +164,14 @@ test('reading completes all question types, shows evidence and logs score', asyn
   show(<Reading />);
   fireEvent.click(screen.getAllByRole('button', { name: /Start practice/ })[0]);
   // Questions come one at a time; the pager moves on with "Next question".
-  for (const q of readings[0].questions) {
+  for (const q of byLevel(readings)[0].questions) {
     if (q.type === 'short')
       fireEvent.change(screen.getByRole('textbox'), { target: { value: q.answers[0] } });
     else
       fireEvent.click(
         within(
           screen.getByRole('group', {
-            name: `${readings[0].questions.indexOf(q) + 1}. ${q.prompt}`,
+            name: `${byLevel(readings)[0].questions.indexOf(q) + 1}. ${q.prompt}`,
           }),
         ).getByRole('radio', { name: q.answers[0] }),
       );
@@ -182,7 +183,7 @@ test('reading completes all question types, shows evidence and logs score', asyn
   expect((await db.attempts.toArray())[0].score).toBe(100);
   expect(await screen.findByText(/Session complete · 100/)).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Continue →' }));
-  expect(screen.getByRole('heading', { name: readings[1].title })).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: byLevel(readings)[1].title })).toBeInTheDocument();
   expect(screen.queryByText(/Session complete/)).not.toBeInTheDocument();
   expect(screen.getByRole('button', { name: 'Check answer' })).toBeDisabled();
   expect(await db.attempts.count()).toBe(1);
@@ -219,7 +220,7 @@ test('speaking unsupported-API flow completes with explicit self-assessment', as
   fireEvent.click(await screen.findByRole('button', { name: 'Continue →' }));
   expect(
     screen.getByRole('heading', {
-      name: speakingPrompts.filter((p) => p.mode === 'read')[1].title,
+      name: byLevel(speakingPrompts).filter((p) => p.mode === 'read')[1].title,
     }),
   ).toBeInTheDocument();
   expect(
@@ -234,14 +235,17 @@ test('writing autosaves, submits feedback, and restores a draft after remount', 
   const text =
     'Dear Mai, I am agree with your plan. We can visit the park because the weather is nice. Shall we meet at three?';
   fireEvent.change(editor, { target: { value: text } });
-  await waitFor(async () => expect((await db.drafts.get('w1'))?.text).toBe(text));
+  await waitFor(async () =>
+    expect((await db.drafts.get(byLevel(writingPrompts)[0].id))?.text).toBe(text),
+  );
   fireEvent.click(screen.getByRole('button', { name: 'Get feedback & save' }));
   await verifyAttempt('writing');
   expect(await db.submissions.count()).toBe(1);
   expect(screen.getByRole('region', { name: 'Feedback' })).toHaveTextContent('Agree is a verb');
   view.unmount();
   show(<Writing />);
-  fireEvent.click(screen.getAllByRole('button', { name: /Start practice/ })[0]);
+  // The finished prompt now offers "Try again".
+  fireEvent.click(screen.getAllByRole('button', { name: /Start practice|Try again/ })[0]);
   await waitFor(() => expect(screen.getByRole('textbox', { name: 'Draft' })).toHaveValue(text));
 });
 test('dashboard reconstructs progress from persisted attempts after remount', async () => {
@@ -305,37 +309,42 @@ test('continue writing opens the next prompt and keeps the saved draft and attem
   expect(screen.queryByRole('button', { name: 'Continue →' })).not.toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Get feedback & save' }));
   fireEvent.click(await screen.findByRole('button', { name: 'Continue →' }));
-  expect(screen.getByRole('heading', { name: writingPrompts[1].title })).toBeInTheDocument();
+  expect(
+    screen.getByRole('heading', { name: byLevel(writingPrompts)[1].title }),
+  ).toBeInTheDocument();
   await waitFor(() => expect(screen.getByRole('textbox', { name: 'Draft' })).toBeEnabled());
   expect(screen.getByRole('textbox', { name: 'Draft' })).toHaveValue('');
   expect(await db.attempts.count()).toBe(1);
-  expect((await db.drafts.get(writingPrompts[0].id))?.text).toContain('Dear Mai');
+  expect((await db.drafts.get(byLevel(writingPrompts)[0].id))?.text).toContain('Dear Mai');
 });
 
 test('dictation continues with an empty answer and the previous attempt saved', async () => {
   show(<Listening />);
   fireEvent.click(screen.getByRole('button', { name: 'Dictation' }));
   fireEvent.click(screen.getAllByRole('button', { name: /Start practice/ })[0]);
-  fireEvent.change(screen.getByRole('textbox'), { target: { value: dictations[0].text } });
+  fireEvent.change(screen.getByRole('textbox'), { target: { value: byLevel(dictations)[0].text } });
   fireEvent.click(screen.getByRole('button', { name: 'Check answer' }));
   fireEvent.click(await screen.findByRole('button', { name: 'Continue →' }));
   expect(screen.getByRole('textbox')).toHaveValue('');
-  fireEvent.change(screen.getByRole('textbox'), { target: { value: dictations[1].text } });
+  fireEvent.change(screen.getByRole('textbox'), { target: { value: byLevel(dictations)[1].text } });
   fireEvent.click(screen.getByRole('button', { name: 'Check answer' }));
   await waitFor(async () => expect(await db.attempts.count()).toBe(2));
   expect((await db.attempts.toArray()).map((a) => a.label)).toEqual(
-    expect.arrayContaining([`Dictation ${dictations[0].id}`, `Dictation ${dictations[1].id}`]),
+    expect.arrayContaining([
+      `Dictation ${byLevel(dictations)[0].id}`,
+      `Dictation ${byLevel(dictations)[1].id}`,
+    ]),
   );
 });
 
 test('the last filtered reading returns to lessons without starting an unrelated lesson', async () => {
   useApp.setState({
-    level: readings[0].level,
-    topic: readings[0].topic,
+    level: byLevel(readings)[0].level,
+    topic: byLevel(readings)[0].topic,
     settings: { ...defaults, language: 'vi' },
   });
-  const filtered = readings.filter(
-    (r) => r.level === readings[0].level && r.topic === readings[0].topic,
+  const filtered = byLevel(readings).filter(
+    (r) => r.level === byLevel(readings)[0].level && r.topic === byLevel(readings)[0].topic,
   );
   const last = filtered[filtered.length - 1];
   show(<Reading />);

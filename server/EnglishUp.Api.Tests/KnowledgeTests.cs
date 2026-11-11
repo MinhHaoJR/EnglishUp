@@ -63,7 +63,7 @@ public class KnowledgeTests(ApiFactory factory) : IClassFixture<ApiFactory>
         Assert.Equal(2491, counts["word"]);
         Assert.Equal(6, counts["reading"]);
         Assert.Equal(24, counts["listening"]);
-        Assert.Equal(10, counts["writing"]);
+        Assert.Equal(300, counts["writing"]);
         Assert.Equal(113, counts["grammar"]); // 100 sentence patterns and 13 tenses
         Assert.Equal(chunks.Count, chunks.Select(c => (c.SourceType, c.SourceId)).Distinct().Count());
         Assert.All(chunks, c => Assert.True(c.Title.Length <= 200 && c.Text.Length <= 4000, c.SourceId));

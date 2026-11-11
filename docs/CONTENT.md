@@ -82,7 +82,7 @@ Progress survives reload and JSON backup/reset/import. Level/topic filters thems
 
 ## Reading — reading.json
 
-Fields: `id`, `title`, `level`, `topic`, `text`, `questions`. Separate paragraphs in `text` with `\n\n`. Each passage has 150–350 whitespace-separated words and exactly five questions, mixing choice, tfng and short answer. There are six original passages (30 questions). The dictionary tokenizes words and matches bundled/custom entries case-insensitively; it does not perform stemming. Missing terms open a manual entry form.
+Fields: `id`, `title`, `level`, `topic`, `text`, `questions`. Separate paragraphs in `text` with `\n\n`. Each passage has 150–350 whitespace-separated words and exactly five questions, mixing choice, tfng and short answer. There are six original passages (30 questions). The dictionary tokenizes words and matches bundled/custom entries case-insensitively; it does not perform stemming. A word the dictionary lacks is added by an admin, not from the lesson.
 
 ## Listening — listening.json and dictation.json
 
@@ -96,7 +96,7 @@ Fields: `id`, `title`, `level`, `topic`, `mode`, `text`, `cues`. `mode` is `read
 
 ## Writing — writing.json
 
-Fields: `id`, `title`, `level`, `topic`, `genre`, `prompt`, `minWords`, `maxWords`, `checklist`. Genre is `email`, `opinion`, `description` or `story`. The maximum word target must be at least the minimum; the checklist needs at least three items. Targets guide feedback and are not editor hard limits. There are ten original prompts covering all four genres.
+Fields: `id`, `title`, `level`, `topic`, `genre`, `prompt`, `minWords`, `maxWords`, `checklist`. Genre is `email`, `opinion`, `description` or `story`. The maximum word target must be at least the minimum; the checklist needs at least three items. Targets guide feedback and are not editor hard limits. There are 300 prompts, 50 per level from A1 to C2, covering all four genres. w1–w10 are the first hand-written set; `python scripts/create-writing-prompts.py` keeps them and writes w11–w300 from one compact line per prompt (title, topic code, genre code, prompt, checklist). Word targets grow with the level: A1 30–60, A2 60–100, B1 100–160, B2 160–250, C1 220–320, C2 280–400. Titles are unique, because a saved attempt marks a prompt done by its title.
 
 ## CSV vocabulary interchange
 
