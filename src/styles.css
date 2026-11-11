@@ -776,25 +776,6 @@ progress::-webkit-progress-value {
   justify-content: space-between;
   gap: 5px;
 }
-.language-picker label {
-  color: var(--muted);
-  font-size: 0.64rem;
-  font-weight: 600;
-}
-.language-picker-mark {
-  font-family: 'Yu Mincho', 'Microsoft YaHei', var(--font);
-  font-size: 1.1rem;
-  color: var(--green);
-}
-.picker-ja .language-picker-mark {
-  color: #a44d5d;
-}
-.language-picker select {
-  width: 100%;
-  min-width: 0;
-  font-size: 0.72rem;
-  padding: 0.65rem 0.4rem;
-}
 .sidebar nav a {
   transition:
     background 160ms ease,
@@ -1261,9 +1242,6 @@ html.dark .language-space .primary:hover {
   border-color: var(--language-accent);
   color: #262b22;
 }
-.dark .picker-ja .language-picker-mark {
-  color: #e8a9b4;
-}
 @media (max-width: 1100px) {
   .lexicon-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1277,12 +1255,6 @@ html.dark .language-space .primary:hover {
     grid-template-columns: 1fr minmax(150px, 1fr);
     align-items: center;
     gap: 10px;
-  }
-  .language-picker select {
-    margin: 0;
-  }
-  .language-picker-mark {
-    margin-right: 10px;
   }
   .language-picker p[role='alert'] {
     grid-column: 1 / -1;

@@ -296,18 +296,6 @@ progress::-moz-progress-bar {
   justify-content: space-between;
   align-items: center;
 }
-.language-picker label {
-  color: var(--muted);
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-.language-picker-mark {
-  display: none;
-}
-.language-picker select {
-  margin-top: 6px;
-  font-size: 0.875rem;
-}
 .sidebar nav {
   gap: 12px;
   margin: 0;
@@ -675,9 +663,6 @@ html.dark .lesson-card .primary:hover:not(:disabled) {
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 10px;
-  }
-  .language-picker select {
-    margin: 0;
   }
   .sidebar nav {
     flex-direction: row;
@@ -5317,4 +5302,194 @@ html .workspace .tabs button[aria-pressed='true'] {
 }
 .workspace .placement-question > .actions {
   justify-content: center;
+}
+
+/* ---------- Learning language picker: a flag pill that opens a rounded list with a check ---------- */
+.language-picker {
+  --picker-edge: color-mix(in srgb, var(--primary) 70%, var(--panel));
+  --picker-wash: color-mix(in srgb, var(--primary) 7%, var(--panel));
+  --picker-soft: color-mix(in srgb, var(--primary) 14%, var(--panel));
+}
+.language-picker-heading {
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+.language-picker-heading::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  border-radius: 1px;
+  background: linear-gradient(90deg, var(--picker-soft), transparent);
+}
+.language-globe {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--primary-ink);
+}
+.language-field {
+  position: relative;
+}
+.language-flag {
+  flex: none;
+  width: 24px;
+  height: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgb(19 36 58 / 12%),
+    0 1px 3px rgb(19 36 58 / 18%);
+}
+.language-text {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+  padding-left: 8px;
+  border-left: 2px solid var(--picker-soft);
+  line-height: 1.25;
+}
+.language-text strong {
+  overflow: hidden;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--ink);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.language-text span {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+.language-current {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 56px;
+  padding: 6px 6px 6px 14px;
+  border: 2px solid var(--picker-edge);
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--panel), var(--picker-wash));
+  cursor: pointer;
+  user-select: none;
+  transition:
+    border-color 0.15s ease-out,
+    box-shadow 0.15s ease-out;
+}
+.language-current:hover {
+  border-color: var(--primary);
+}
+.language-current[aria-expanded='true'] {
+  border-color: var(--primary);
+  box-shadow: 0 6px 16px color-mix(in srgb, var(--primary) 18%, transparent);
+}
+.language-current:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.language-current[aria-disabled='true'] {
+  cursor: progress;
+  opacity: 0.7;
+}
+.language-chevron {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--picker-soft);
+  color: var(--primary);
+}
+.language-chevron svg {
+  transform: rotate(90deg);
+  transition: transform 0.2s ease-out;
+}
+.language-current[aria-expanded='true'] .language-chevron svg {
+  transform: rotate(-90deg);
+}
+.language-list {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 12px);
+  left: 0;
+  right: 0;
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  border: 1px solid color-mix(in srgb, var(--primary) 14%, var(--border));
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: 0 14px 32px rgb(19 36 58 / 18%);
+  animation: language-list-in 0.16s ease-out;
+}
+/* The notch that points back at the pill. */
+.language-list::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: calc(50% - 6px);
+  width: 12px;
+  height: 12px;
+  border-top: 1px solid color-mix(in srgb, var(--primary) 14%, var(--border));
+  border-left: 1px solid color-mix(in srgb, var(--primary) 14%, var(--border));
+  background: var(--panel);
+  transform: rotate(45deg);
+}
+.language-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 52px;
+  padding: 6px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.language-list li.active {
+  background: var(--picker-wash);
+  box-shadow: inset 0 0 0 1px var(--picker-edge);
+}
+.language-list li[aria-selected='true'] {
+  background: var(--picker-soft);
+}
+.language-check {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--primary-ink);
+  box-shadow: 0 3px 8px color-mix(in srgb, var(--primary) 35%, transparent);
+}
+@keyframes language-list-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .language-list {
+    animation: none;
+  }
+  .language-chevron svg {
+    transition: none;
+  }
+}
+@media (max-width: 700px) {
+  .language-picker-heading {
+    margin: 0;
+  }
+  .language-picker-heading::after {
+    display: none;
+  }
 }

@@ -20,10 +20,27 @@ function show(element: React.ReactNode) {
 }
 test('picker persists target language independently of interface language and reloads it', async () => {
   show(<LanguagePicker />);
-  fireEvent.change(screen.getByLabelText('Learning'), { target: { value: 'zh' } });
+  fireEvent.click(screen.getByRole('combobox', { name: 'Learning' }));
+  fireEvent.click(screen.getByRole('option', { name: 'Chinese · 中文' }));
   await waitFor(async () => expect((await db.settings.get('main'))?.learningLanguage).toBe('zh'));
   await useApp.getState().load();
   expect(useApp.getState().settings).toMatchObject({ language: 'en', learningLanguage: 'zh' });
+});
+test('picker opens from the keyboard, marks the current language and closes with Escape', async () => {
+  show(<LanguagePicker />);
+  const box = screen.getByRole('combobox', { name: 'Learning' });
+  fireEvent.keyDown(box, { key: 'ArrowDown' });
+  expect(box).toHaveAttribute('aria-expanded', 'true');
+  const japanese = screen.getByRole('option', { name: 'Japanese · 日本語' });
+  expect(japanese).toHaveAttribute('aria-selected', 'true');
+  expect(box).toHaveAttribute('aria-activedescendant', japanese.id);
+  fireEvent.keyDown(box, { key: 'Escape' });
+  expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
+  fireEvent.keyDown(box, { key: 'Enter' });
+  fireEvent.keyDown(box, { key: 'End' });
+  fireEvent.keyDown(box, { key: 'Enter' });
+  expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
+  await waitFor(async () => expect((await db.settings.get('main'))?.learningLanguage).toBe('zh'));
 });
 for (const language of ['ja', 'zh'] as const) {
   for (const skill of skills.filter((item) => item !== 'vocabulary')) {
