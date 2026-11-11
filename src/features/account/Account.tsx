@@ -536,7 +536,7 @@ function PrivacySection() {
     },
     {
       icon: 'assistant',
-      title: bi('Trợ giảng AI', 'AI tutor'),
+      title: bi('Trợ giảng Tom', 'Tutor Tom'),
       text: bi(
         'Câu hỏi được gửi tới Google Gemini (gói miễn phí, Google có thể dùng để cải thiện dịch vụ). Đừng nhập thông tin cá nhân.',
         'Questions go to Google Gemini (free tier; Google may use them to improve its services). Do not enter personal information.',

@@ -152,6 +152,17 @@ public class ContentTests
         Assert.Equal(new SeedReport(0, 1, seed.Count - 1),
             await Content.SeedAsync(db, Content.SeedFolder, DateTimeOffset.UtcNow, overwrite: true));
         Assert.DoesNotContain("edited", (await db.ContentItems.AsNoTracking().SingleAsync(c => c.Id == seed[0].Id && c.Kind == "word")).Json);
+
+        // An overwrite limited to one kind leaves edits in other kinds alone.
+        var guide = await db.ContentItems.SingleAsync(c => c.Kind == "guide" && c.Id == "g-hello");
+        guide.Json = guide.Json.Insert(1, "\"note\":\"edited\",");
+        word = await db.ContentItems.SingleAsync(c => c.Kind == "word" && c.Id == seed[0].Id);
+        word.Json = word.Json.Insert(1, "\"note\":\"edited\",");
+        await db.SaveChangesAsync();
+        var guides = seed.Count(r => r.Kind == "guide");
+        Assert.Equal(new SeedReport(0, 1, guides - 1),
+            await Content.SeedAsync(db, Content.SeedFolder, DateTimeOffset.UtcNow, overwrite: true, kind: "guide"));
+        Assert.Contains("edited", (await db.ContentItems.AsNoTracking().SingleAsync(c => c.Id == seed[0].Id && c.Kind == "word")).Json);
     }
 
     [Fact]

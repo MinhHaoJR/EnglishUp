@@ -5493,3 +5493,313 @@ html .workspace .tabs button[aria-pressed='true'] {
     display: none;
   }
 }
+
+/* ---------- Tutor Tom: the corner chat window ----------
+   A soft blue frame around Tom: a curved header with round tool buttons, Tom on a light stage,
+   an intro card, the privacy note, pill suggestions, then a pill composer and a round send button. */
+.tutor-avatar {
+  border-radius: 50%;
+  background: #f6fafd;
+  object-fit: cover;
+}
+.chat-widget-panel {
+  width: min(400px, calc(100vw - 32px));
+  height: min(680px, calc(100vh - 110px));
+  border-radius: 24px;
+  box-shadow: 0 18px 44px rgb(19 36 58 / 24%);
+}
+.chat-widget-panel .chat-window {
+  --tom-soft: color-mix(in srgb, var(--primary) 9%, var(--panel));
+  --tom-mist: color-mix(in srgb, var(--primary) 4%, var(--panel));
+  --tom-edge: color-mix(in srgb, var(--primary) 18%, var(--border));
+  border-color: var(--tom-edge);
+  border-radius: 24px;
+  background: linear-gradient(180deg, var(--tom-mist), var(--panel) 45%);
+}
+.chat-widget-panel .chat-header {
+  gap: 12px;
+  padding: 14px 12px 22px 14px;
+  border-bottom: 0;
+  border-radius: 0 0 50% 50% / 0 0 20px 20px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--primary) 18%, var(--panel)),
+    var(--tom-soft)
+  );
+  box-shadow: none;
+}
+.chat-header-avatar {
+  position: relative;
+  display: inline-grid;
+  flex: none;
+  padding: 3px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+.chat-header-avatar .chat-presence {
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  width: 14px;
+  height: 14px;
+  border: 2.5px solid var(--panel);
+}
+.chat-widget-panel .chat-header-text strong {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+.chat-widget-panel .chat-header-text small {
+  font-size: 0.8125rem;
+}
+.chat-widget-panel .chat-header-actions {
+  gap: 6px;
+}
+.chat-widget-panel .chat-header .icon-button {
+  width: 36px;
+  height: 36px;
+  background: var(--panel);
+  color: var(--primary);
+  box-shadow: 0 2px 6px rgb(19 36 58 / 14%);
+}
+.chat-widget-panel .chat-header .icon-button:hover {
+  background: var(--tom-soft);
+}
+.chat-widget-panel .chat-scroll {
+  gap: 12px;
+  padding: 10px 16px 16px;
+}
+.chat-widget-panel .chat-intro {
+  justify-items: stretch;
+  gap: 12px;
+  padding: 0;
+}
+
+/* Tom stands on a fixed light stage in both themes, matching his artwork. */
+.tom-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 176px;
+  border-radius: 20px;
+  background: #f6fafd;
+  overflow: hidden;
+}
+.tom-stage img {
+  position: relative;
+  width: 252px;
+  height: auto;
+}
+.tom-star,
+.tom-paw {
+  position: absolute;
+}
+.tom-star {
+  fill: #8fb3f5;
+}
+.tom-star.one {
+  top: 34px;
+  left: 28px;
+  width: 18px;
+}
+.tom-star.two {
+  top: 92px;
+  right: 30px;
+  width: 12px;
+}
+.tom-paw {
+  top: 18px;
+  right: 22px;
+  width: 24px;
+  fill: #b9d0f8;
+}
+.chat-intro-card {
+  display: grid;
+  gap: 6px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: var(--tom-soft);
+  text-align: center;
+}
+.chat-intro-card strong {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+.chat-widget-panel .chat-intro-card p {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.chat-widget-panel .chat-intro .chat-privacy {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid var(--tom-edge);
+  border-radius: 16px;
+  background: var(--tom-mist);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  text-align: left;
+}
+.chat-privacy svg {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  fill: #ffd54a;
+  stroke: #9a6412;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.chat-widget-panel .chat-suggestions {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+.chat-widget-panel .chat-suggestions button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 50px;
+  padding: 10px 14px 10px 16px;
+  border: 1.5px solid var(--primary);
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: left;
+}
+.chat-widget-panel .chat-suggestions button span {
+  flex: 1;
+}
+.chat-widget-panel .chat-suggestions button svg {
+  flex: none;
+}
+.chat-widget-panel .chat-suggestions button:hover {
+  background: var(--tom-soft);
+}
+
+/* The message box is a pill with a sparkle; the send button sits beside it as a round button. */
+.chat-input {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  min-width: 0;
+}
+.chat-widget-panel .chat-composer {
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px 6px;
+  border-top: 0;
+}
+.chat-widget-panel .chat-input {
+  gap: 10px;
+  min-height: 52px;
+  padding: 4px 16px 4px 14px;
+  border: 1.5px solid var(--primary);
+  border-radius: 999px;
+  background: var(--panel);
+}
+.chat-widget-panel .chat-input:focus-within {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 24%, transparent);
+}
+.chat-input-icon {
+  flex: none;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+  border-right: 1.5px solid color-mix(in srgb, var(--primary) 30%, var(--panel));
+  fill: var(--primary);
+}
+.chat-widget-panel .chat-composer textarea {
+  min-height: 40px;
+  padding: 10px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: 0.9375rem;
+}
+/* The pill shows focus for the whole box. */
+.chat-widget-panel .chat-composer textarea:focus-visible {
+  /* craft-ignore: outline-none */
+  outline: none;
+}
+.chat-widget-panel .chat-composer .icon-button {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  background: var(--primary);
+  color: var(--primary-ink);
+  box-shadow: 0 6px 14px color-mix(in srgb, var(--primary) 35%, transparent);
+}
+.chat-widget-panel .chat-composer .icon-button:hover:not(:disabled) {
+  background: var(--primary-strong);
+}
+.chat-widget-panel .chat-composer .icon-button:disabled {
+  opacity: 0.55;
+  box-shadow: none;
+}
+.chat-widget-panel .chat-footnote {
+  padding: 4px 16px 12px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+.chat-footnote svg {
+  display: inline-block;
+  vertical-align: -2px;
+  color: var(--primary);
+}
+/* The full tutor page keeps its own boxed composer. */
+.tutor .chat-input {
+  display: contents;
+}
+.tutor .chat-input-icon {
+  display: none;
+}
+/* Phones: smaller buttons so the name and status stay on one line each. */
+@media (max-width: 420px) {
+  .chat-widget-panel .chat-header {
+    gap: 8px;
+    padding: 12px 10px 20px 12px;
+  }
+  .chat-header-avatar .tutor-avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .chat-widget-panel .chat-header-actions {
+    gap: 4px;
+  }
+  .chat-widget-panel .chat-header .icon-button {
+    width: 32px;
+    height: 32px;
+  }
+  .chat-widget-panel .chat-header-text :is(strong, small) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .chat-widget-panel .chat-header-text strong {
+    font-size: 1rem;
+  }
+  .chat-widget-panel .chat-composer {
+    gap: 8px;
+    padding-inline: 12px;
+  }
+  .chat-widget-panel .chat-input {
+    gap: 8px;
+    padding-inline: 12px;
+  }
+  .chat-widget-panel .chat-composer textarea {
+    font-size: 0.875rem;
+  }
+  .chat-widget-panel .chat-composer .icon-button {
+    width: 48px;
+    height: 48px;
+  }
+}

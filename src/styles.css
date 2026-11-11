@@ -1392,18 +1392,6 @@ html.dark .language-space .primary:hover {
 .tutor-avatar {
   flex: none;
 }
-.tutor-avatar-bg {
-  fill: var(--green);
-}
-.tutor-avatar-ink {
-  fill: var(--panel);
-}
-.tutor-avatar-line {
-  fill: none;
-  stroke: var(--panel);
-  stroke-width: 2;
-  stroke-linecap: round;
-}
 .chat-scroll {
   flex: 1;
   min-height: 0;

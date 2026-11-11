@@ -84,7 +84,7 @@ export default function Assistant() {
     return (
       <>
         <PageTitle
-          title={bi('Trợ giảng AI', 'AI tutor')}
+          title={bi('Trợ giảng Tom', 'Tutor Tom')}
           description={bi(
             'Trả lời từ bài học trong app, luôn kèm nguồn.',
             "Answers from the app's lessons, always with sources.",
@@ -118,7 +118,7 @@ export default function Assistant() {
     <div className="tutor">
       <nav className="tutor-rail" aria-label={bi('Lịch sử trò chuyện', 'Chat history')}>
         <div className="tutor-rail-head">
-          <h1>{bi('Trợ giảng AI', 'AI tutor')}</h1>
+          <h1>{bi('Trợ giảng Tom', 'Tutor Tom')}</h1>
           <button type="button" className="tutor-new" onClick={chat.startNew}>
             <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 5v14 M5 12h14" />

@@ -41,13 +41,15 @@ if (app.Environment.IsDevelopment())
     if (!db.ContentItems.Any()) await Content.SeedAsync(db, Content.SeedFolder, DateTimeOffset.UtcNow);
 }
 
-// `dotnet run --project EnglishUp.Api -- seed [--overwrite]` copies the src/data seed lessons into ContentItems,
-// then exits. Items already there (an admin's edits) are kept unless --overwrite puts the seed's version back.
+// `dotnet run --project EnglishUp.Api -- seed [--overwrite] [--kind <kind>]` copies the src/data seed lessons into
+// ContentItems, then exits. Items already there (an admin's edits) are kept unless --overwrite puts the seed's version
+// back; --kind limits the run to one kind, such as guide.
 if (args.Contains("seed"))
 {
+    var kind = args.SkipWhile(a => a != "--kind").Skip(1).FirstOrDefault();
     using var scope = app.Services.CreateScope();
     var report = await Content.SeedAsync(scope.ServiceProvider.GetRequiredService<AppDbContext>(), Content.SeedFolder,
-        DateTimeOffset.UtcNow, args.Contains("--overwrite"));
+        DateTimeOffset.UtcNow, args.Contains("--overwrite"), kind);
     Console.WriteLine($"Seed done: {report}");
     return;
 }

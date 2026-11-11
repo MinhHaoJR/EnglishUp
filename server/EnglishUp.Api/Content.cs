@@ -77,11 +77,13 @@ public static partial class Content
     /// Adds seed items the database lacks. Existing rows (an admin's edits) stay unless <paramref name="overwrite"/>,
     /// which puts the seed's text and order back on the items that are in the seed.
     /// </summary>
-    public static async Task<SeedReport> SeedAsync(AppDbContext db, string folder, DateTimeOffset now, bool overwrite = false)
+    public static async Task<SeedReport> SeedAsync(AppDbContext db, string folder, DateTimeOffset now, bool overwrite = false,
+        string? kind = null)
     {
         var existing = await db.ContentItems.ToDictionaryAsync(c => (c.Kind, c.Id));
         int added = 0, updated = 0, unchanged = 0;
-        foreach (var seed in ReadSeed(folder))
+        // A kind limits the run (and an overwrite) to that one kind, so admin edits elsewhere stay.
+        foreach (var seed in ReadSeed(folder).Where(s => kind is null || s.Kind == kind))
         {
             if (!existing.TryGetValue((seed.Kind, seed.Id), out var row))
             {

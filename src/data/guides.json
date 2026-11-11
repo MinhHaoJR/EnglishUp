@@ -7,8 +7,8 @@
       "en": "Hello"
     },
     "answer": {
-      "vi": "Chào bạn! Mình là trợ giảng AI của EnglishUp. Mình có thể giải thích từ vựng, ngữ pháp và các thì, gợi ý bài luyện phù hợp, và hướng dẫn bạn dùng app, như bài kiểm tra trình độ hay lộ trình học. Hôm nay bạn muốn học gì?",
-      "en": "Hi! I'm EnglishUp's AI tutor. I can explain words, grammar and tenses, suggest lessons that suit you and show you how to use the app, such as the level test and the learning paths. What would you like to learn today?"
+      "vi": "Chào bạn! Mình là Tom, trợ giảng AI của EnglishUp. Mình có thể giải thích từ vựng, ngữ pháp và các thì, gợi ý bài luyện phù hợp, và hướng dẫn bạn dùng app, như bài kiểm tra trình độ hay lộ trình học. Hôm nay bạn muốn học gì?",
+      "en": "Hi! I'm Tom, EnglishUp's AI tutor. I can explain words, grammar and tenses, suggest lessons that suit you and show you how to use the app, such as the level test and the learning paths. What would you like to learn today?"
     },
     "keywords": ["chào", "hi", "hey", "chào bạn", "good morning", "chào buổi sáng", "alo"]
   },
@@ -20,15 +20,17 @@
       "en": "Who are you?"
     },
     "answer": {
-      "vi": "Mình là trợ giảng AI của EnglishUp, không phải giáo viên thật. Mình trả lời dựa trên chính các bài học, từ vựng và hướng dẫn trong app, và ghi số nguồn như [1] để bạn mở lại bài gốc. Câu trả lời của AI có thể sai, nên hãy đối chiếu với bài học khi cần.",
-      "en": "I'm EnglishUp's AI tutor, not a human teacher. I answer from the app's own lessons, vocabulary and guide, and I mark sources like [1] so you can open the original lesson. AI answers can be wrong, so check them against the lesson when it matters."
+      "vi": "Mình là Tom, trợ giảng AI của EnglishUp, không phải giáo viên thật. Mình trả lời dựa trên chính các bài học, từ vựng và hướng dẫn trong app, và ghi số nguồn như [1] để bạn mở lại bài gốc. Câu trả lời của AI có thể sai, nên hãy đối chiếu với bài học khi cần.",
+      "en": "I'm Tom, EnglishUp's AI tutor, not a human teacher. I answer from the app's own lessons, vocabulary and guide, and I mark sources like [1] so you can open the original lesson. AI answers can be wrong, so check them against the lesson when it matters."
     },
     "keywords": [
       "bạn tên gì",
       "giới thiệu bản thân",
       "introduce yourself",
       "what are you",
-      "bạn là gì"
+      "bạn là gì",
+      "Tom là ai",
+      "what is your name"
     ]
   },
   {
@@ -159,8 +161,8 @@
       "en": "What sections does the app have?"
     },
     "answer": {
-      "vi": "Thanh bên trái có: Tổng quan, Lộ trình học, Kiểm tra trình độ; Từ vựng, Luyện nghe, Luyện nói, Luyện đọc, Luyện viết, Ngữ pháp; Trợ giảng AI, Trò chơi, Thành tích, Cài đặt. Trợ giảng còn mở được từ nút tròn ở góc dưới bên phải mọi trang.",
-      "en": "The left sidebar has: Dashboard, Learning paths, Level test; Vocabulary, Listening, Speaking, Reading, Writing, Grammar; AI tutor, Games, Achievements, Settings. The tutor also opens from the round button in the bottom-right corner of every page."
+      "vi": "Thanh bên trái có: Tổng quan, Lộ trình học, Kiểm tra trình độ; Từ vựng, Luyện nghe, Luyện nói, Luyện đọc, Luyện viết, Ngữ pháp; Trợ giảng Tom, Trò chơi, Thành tích, Cài đặt. Trợ giảng còn mở được từ nút tròn ở góc dưới bên phải mọi trang.",
+      "en": "The left sidebar has: Dashboard, Learning paths, Level test; Vocabulary, Listening, Speaking, Reading, Writing, Grammar; Tutor Tom, Games, Achievements, Settings. The tutor also opens from the round button in the bottom-right corner of every page."
     },
     "keywords": ["menu", "các mục trong app", "trang nào", "navigation", "sidebar"]
   },
@@ -173,7 +175,7 @@
     },
     "answer": {
       "vi": "Không bắt buộc. Không đăng nhập bạn vẫn luyện mọi bài và tiến độ lưu trên trình duyệt. Tài khoản thêm: đồng bộ giữa các thiết bị, điểm và huy hiệu, bảng xếp hạng, hai trò chơi đua 60 giây và trợ giảng AI.",
-      "en": "No. Without signing in you can practise every lesson, and progress stays in your browser. An account adds syncing across devices, points and badges, the leaderboard, the two 60-second races and the AI tutor."
+      "en": "No. Without signing in you can practise every lesson, and progress stays in your browser. An account adds syncing across devices, points and badges, the leaderboard, the two 60-second races and Tutor Tom, the AI tutor."
     },
     "keywords": ["đăng ký", "sign up", "tạo tài khoản", "có cần đăng nhập", "login"]
   },
@@ -438,8 +440,8 @@
       "en": "What kinds of tasks are in a path?"
     },
     "answer": {
-      "vi": "Nhiệm vụ có thể là: học một nhóm từ vựng, luyện dịch câu, từ đồng nghĩa và trái nghĩa, cấu trúc câu hoặc các thì, đọc, nghe, nói, viết, đua từ vựng hoặc ngữ pháp, hỏi trợ giảng AI hay làm lại bài kiểm tra trình độ. Mỗi nhiệm vụ ghi rõ việc cần làm, ví dụ nghe bài B1 rồi ghi lại 3 ý chính.",
-      "en": "Tasks can be: a vocabulary group, translation practice, synonyms and antonyms, sentence patterns or tenses, reading, listening, speaking, writing, a vocabulary or grammar race, asking the AI tutor, or retaking the level test. Each says exactly what to do, for example listening to a B1 dialogue and noting three main points."
+      "vi": "Nhiệm vụ có thể là: học một nhóm từ vựng, luyện dịch câu, từ đồng nghĩa và trái nghĩa, cấu trúc câu hoặc các thì, đọc, nghe, nói, viết, đua từ vựng hoặc ngữ pháp, hỏi trợ giảng Tom hay làm lại bài kiểm tra trình độ. Mỗi nhiệm vụ ghi rõ việc cần làm, ví dụ nghe bài B1 rồi ghi lại 3 ý chính.",
+      "en": "Tasks can be: a vocabulary group, translation practice, synonyms and antonyms, sentence patterns or tenses, reading, listening, speaking, writing, a vocabulary or grammar race, asking Tutor Tom, or retaking the level test. Each says exactly what to do, for example listening to a B1 dialogue and noting three main points."
     },
     "keywords": ["nhiệm vụ", "task", "làm gì trong lộ trình", "các bước học"]
   },
@@ -618,14 +620,21 @@
     "id": "g-tutor-chat",
     "category": "practice",
     "question": {
-      "vi": "Mở và dùng trợ giảng AI thế nào?",
-      "en": "How do I open and use the AI tutor?"
+      "vi": "Mở và dùng trợ giảng Tom thế nào?",
+      "en": "How do I open and use Tutor Tom?"
     },
     "answer": {
-      "vi": "Bấm nút tròn ở góc dưới bên phải bất kỳ trang nào để mở khung chat nhỏ; nó vẫn mở khi bạn chuyển trang. Trang Trợ giảng AI ở thanh bên có danh sách các cuộc trò chuyện. Enter để gửi, Shift + Enter để xuống dòng, Esc để đóng. Bấm số nguồn dưới câu trả lời để mở bài học liên quan.",
-      "en": "Press the round button in the bottom-right corner of any page to open the mini chat; it stays open as you move between pages. The AI tutor page in the sidebar lists your conversations. Enter sends, Shift + Enter adds a line and Escape closes. Click a source under an answer to open the related lesson."
+      "vi": "Bấm nút tròn ở góc dưới bên phải bất kỳ trang nào để mở khung chat nhỏ; nó vẫn mở khi bạn chuyển trang. Trang Trợ giảng Tom ở thanh bên có danh sách các cuộc trò chuyện. Enter để gửi, Shift + Enter để xuống dòng, Esc để đóng. Bấm số nguồn dưới câu trả lời để mở bài học liên quan.",
+      "en": "Press the round button in the bottom-right corner of any page to open the mini chat; it stays open as you move between pages. The Tutor Tom page in the sidebar lists your conversations. Enter sends, Shift + Enter adds a line and Escape closes. Click a source under an answer to open the related lesson."
     },
-    "keywords": ["mở trợ giảng", "khung chat", "chat", "how to use the tutor", "lịch sử trò chuyện"]
+    "keywords": [
+      "mở trợ giảng",
+      "trợ giảng AI",
+      "khung chat",
+      "chat",
+      "how to use the tutor",
+      "lịch sử trò chuyện"
+    ]
   },
   {
     "id": "g-sync",

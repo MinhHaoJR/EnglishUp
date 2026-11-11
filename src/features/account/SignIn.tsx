@@ -117,8 +117,8 @@ export default function SignIn() {
     {
       icon: 'assistant' as const,
       text: bi(
-        'Hỏi trợ giảng AI và chơi Đua 60 giây',
-        'Ask the AI tutor and play the 60-second race',
+        'Hỏi trợ giảng Tom và chơi Đua 60 giây',
+        'Ask Tutor Tom and play the 60-second race',
       ),
     },
   ];

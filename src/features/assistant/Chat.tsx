@@ -32,11 +32,16 @@ export const sourceSkill: Record<string, IconName> = {
   roadmap: 'roadmap',
 };
 
-const suggestions: [string, string][] = [
-  ['"routine" và "habit" khác nhau thế nào?', 'How are "routine" and "habit" different?'],
-  ['Mai muốn mua quà sinh nhật cho ai?', 'Who is Mai buying a birthday gift for?'],
-  ['Làm sao viết email mời bạn đi chơi?', 'How do I write an email inviting a friend out?'],
+const suggestions: [IconName, string, string][] = [
+  [
+    'reading',
+    '"routine" và "habit" khác nhau thế nào?',
+    'How are "routine" and "habit" different?',
+  ],
+  ['assistant', 'Mai muốn mua quà sinh nhật cho ai?', 'Who is Mai buying a birthday gift for?'],
+  ['mail', 'Làm sao viết email mời bạn đi chơi?', 'How do I write an email inviting a friend out?'],
 ];
+const asset = (name: string) => `/tutor/${name}`;
 
 /** One conversation with the tutor; shared by the full page and the floating mini chat. */
 export function useChat(onAsked?: () => void) {
@@ -117,15 +122,36 @@ export function useChat(onAsked?: () => void) {
   };
 }
 
-/** The tutor's face: an original drawing, not a photo of anyone. */
+/** Tom, the tutor: a cartoon kitten in a mortarboard, from the app owner's own artwork. */
 export function TutorAvatar({ size = 28 }: { size?: number }) {
   return (
-    <svg className="tutor-avatar" width={size} height={size} viewBox="0 0 32 32" aria-hidden="true">
-      <circle cx="16" cy="16" r="16" className="tutor-avatar-bg" />
-      <circle cx="11.5" cy="14" r="2" className="tutor-avatar-ink" />
-      <circle cx="20.5" cy="14" r="2" className="tutor-avatar-ink" />
-      <path d="M10.5 19.5c3 3.2 8 3.2 11 0" className="tutor-avatar-line" />
-      <path d="M23 6.5l1-2.5 1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1z" className="tutor-avatar-ink" />
+    <img
+      className="tutor-avatar"
+      src={asset('tom-avatar.webp')}
+      width={size}
+      height={size}
+      alt=""
+      draggable={false}
+    />
+  );
+}
+
+/** Small drawn decorations around Tom: a four-point sparkle and a paw print. */
+function Sparkle({ className }: { className: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z" />
+    </svg>
+  );
+}
+function Paw({ className }: { className: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
+      <ellipse cx="12" cy="16" rx="5" ry="4.2" />
+      <ellipse cx="5.5" cy="10.5" rx="2" ry="2.6" />
+      <ellipse cx="9.5" cy="6.5" rx="2" ry="2.7" />
+      <ellipse cx="14.5" cy="6.5" rx="2" ry="2.7" />
+      <ellipse cx="18.5" cy="10.5" rx="2" ry="2.6" />
     </svg>
   );
 }
@@ -184,9 +210,12 @@ export function ChatWindow({
   return (
     <div className="chat-window">
       <header className="chat-header">
-        <TutorAvatar size={36} />
+        <span className="chat-header-avatar">
+          <TutorAvatar size={48} />
+          <span className={busy ? 'chat-presence busy' : 'chat-presence'} aria-hidden="true" />
+        </span>
         <div className="chat-header-text">
-          <strong>{bi('Trợ giảng AI', 'AI tutor')}</strong>
+          <strong>{bi('Trợ giảng Tom', 'Tutor Tom')}</strong>
           <small>
             <span className={busy ? 'chat-presence busy' : 'chat-presence'} aria-hidden="true" />
             {busy
@@ -245,7 +274,9 @@ export function ChatPanel({
     if (autoFocus) input.current?.focus();
   }, [autoFocus]);
 
+  // Follow the newest message; an empty chat stays at the top, where Tom and the suggestions are.
   useEffect(() => {
+    if (!messages.length && !busy && error === null) return;
     scroller.current?.scrollTo?.({ top: scroller.current.scrollHeight });
   }, [messages.length, busy, error]);
 
@@ -280,15 +311,25 @@ export function ChatPanel({
           intro
         ) : (
           <div className="chat-intro">
-            <TutorAvatar size={56} />
-            <strong>{bi('Trợ giảng AI', 'AI tutor')}</strong>
-            <p>
-              {bi(
-                'Hỏi mình về từ vựng, bài đọc, bài nghe và đề viết trong EnglishUp. Mình chỉ trả lời từ bài học của app và ghi rõ nguồn.',
-                "Ask me about EnglishUp's vocabulary, readings, listening scripts and writing tasks. I answer only from the app's lessons and cite them.",
-              )}
-            </p>
+            <div className="tom-stage">
+              <Sparkle className="tom-star one" />
+              <Sparkle className="tom-star two" />
+              <Paw className="tom-paw" />
+              <img src={asset('tom-hero.webp')} width={248} height={167} alt="" draggable={false} />
+            </div>
+            <div className="chat-intro-card">
+              <strong>{bi('Trợ giảng Tom', 'Tutor Tom')}</strong>
+              <p>
+                {bi(
+                  'Hỏi mình về từ vựng, bài đọc, bài nghe và đề viết trong EnglishUp. Mình chỉ trả lời từ bài học của app và ghi rõ nguồn.',
+                  "Ask me about EnglishUp's vocabulary, readings, listening scripts and writing tasks. I answer only from the app's lessons and cite them.",
+                )}
+              </p>
+            </div>
             <p className="chat-privacy">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 18h6 M10 21h4 M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3z" />
+              </svg>
               {bi(
                 'Câu hỏi được gửi tới Google Gemini (gói miễn phí, Google có thể dùng để cải thiện dịch vụ). Đừng nhập thông tin cá nhân.',
                 'Questions are sent to Google Gemini (free tier; Google may use them to improve its services). Do not enter personal information.',
@@ -296,9 +337,11 @@ export function ChatPanel({
             </p>
             {messages.length === 0 && !busy && (
               <div className="chat-suggestions">
-                {suggestions.map(([vi, en]) => (
+                {suggestions.map(([icon, vi, en]) => (
                   <button key={en} type="button" onClick={() => void chat.submit(bi(vi, en))}>
-                    {bi(vi, en)}
+                    <SkillIcon skill={icon} size={20} />
+                    <span>{bi(vi, en)}</span>
+                    <SkillIcon skill="chevron" size={18} />
                   </button>
                 ))}
               </div>
@@ -362,22 +405,25 @@ export function ChatPanel({
           void chat.submit();
         }}
       >
-        <textarea
-          ref={input}
-          aria-label={bi('Câu hỏi của bạn', 'Your question')}
-          value={question}
-          maxLength={MAX_QUESTION_LENGTH}
-          rows={1}
-          onChange={(e) => chat.setQuestion(e.target.value)}
-          onKeyDown={(e) => {
-            // Enter sends, Shift+Enter starts a new line, as in most chat apps.
-            if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
-              e.preventDefault();
-              e.currentTarget.form?.requestSubmit();
-            }
-          }}
-          placeholder={bi('Nhắn cho trợ giảng…', 'Message the tutor…')}
-        />
+        <div className="chat-input">
+          <Sparkle className="chat-input-icon" />
+          <textarea
+            ref={input}
+            aria-label={bi('Câu hỏi của bạn', 'Your question')}
+            value={question}
+            maxLength={MAX_QUESTION_LENGTH}
+            rows={1}
+            onChange={(e) => chat.setQuestion(e.target.value)}
+            onKeyDown={(e) => {
+              // Enter sends, Shift+Enter starts a new line, as in most chat apps.
+              if (e.key === 'Enter' && !e.shiftKey && !e.nativeEvent.isComposing) {
+                e.preventDefault();
+                e.currentTarget.form?.requestSubmit();
+              }
+            }}
+            placeholder={bi('Nhắn cho trợ giảng Tom…', 'Message Tutor Tom…')}
+          />
+        </div>
         <IconButton
           icon="send"
           label={bi('Gửi', 'Send')}
@@ -394,6 +440,7 @@ export function ChatPanel({
                 ·{' '}
               </>
             )}
+            <SkillIcon skill="shield" size={14} />{' '}
             {bi(
               'Trợ giảng có thể sai, hãy kiểm tra nguồn.',
               'The tutor can be wrong; check the sources.',

@@ -44,7 +44,7 @@ const show = (path = '/') =>
       <ChatWidget />
     </MemoryRouter>,
   );
-const toggle = () => screen.getByRole('button', { name: 'Trợ giảng AI' });
+const toggle = () => screen.getByRole('button', { name: 'Trợ giảng Tom' });
 
 it('opens from the corner, sends with Enter and keeps the chat across pages', async () => {
   show();
@@ -52,7 +52,7 @@ it('opens from the corner, sends with Enter and keeps the chat across pages', as
   expect(toggle()).toHaveAttribute('aria-expanded', 'false');
 
   await userEvent.click(toggle());
-  expect(screen.getByRole('dialog', { name: 'Trợ giảng AI' })).toBeInTheDocument();
+  expect(screen.getByRole('dialog', { name: 'Trợ giảng Tom' })).toBeInTheDocument();
   const box = screen.getByRole('textbox', { name: 'Câu hỏi của bạn' });
   expect(box).toHaveFocus();
   await userEvent.type(box, 'routine là gì?{Enter}');
@@ -91,7 +91,7 @@ it('asks signed-out learners to sign in and hides on the full tutor page', async
   unmount();
 
   show('/assistant');
-  expect(screen.queryByRole('button', { name: 'Trợ giảng AI' })).not.toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: 'Trợ giảng Tom' })).not.toBeInTheDocument();
 });
 
 it('sends a suggested question and splits a long answer into bubbles', async () => {

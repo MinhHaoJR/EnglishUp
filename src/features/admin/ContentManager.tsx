@@ -370,8 +370,8 @@ export default function ContentManager() {
           <h2 id="content-title">{bi('Tài liệu học tập', 'Learning content')}</h2>
           <p className="muted">
             {bi(
-              'Toàn bộ bài học nằm trong cơ sở dữ liệu; người học nhận bản mới khi mở app và giữ một bản sao để học offline. Từ vựng vào cả Đua 60 giây; trợ giảng AI học bài mới ngay khi lưu (nếu hết hạn mức Gemini, bài được nạp ở lần chạy ingest sau).',
-              'Every lesson lives in the database; learners get the latest when they open the app and keep a copy for offline practice. Words also feed the 60-second race; the AI tutor learns an item as soon as it is saved (if the Gemini quota is used up, the next ingest run adds it).',
+              'Toàn bộ bài học nằm trong cơ sở dữ liệu; người học nhận bản mới khi mở app và giữ một bản sao để học offline. Từ vựng vào cả Đua 60 giây; trợ giảng Tom học bài mới ngay khi lưu (nếu hết hạn mức Gemini, bài được nạp ở lần chạy ingest sau).',
+              'Every lesson lives in the database; learners get the latest when they open the app and keep a copy for offline practice. Words also feed the 60-second race; Tutor Tom learns an item as soon as it is saved (if the Gemini quota is used up, the next ingest run adds it).',
             )}
           </p>
         </div>

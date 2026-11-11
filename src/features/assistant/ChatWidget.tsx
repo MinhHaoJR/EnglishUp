@@ -23,7 +23,7 @@ export default function ChatWidget() {
   }
 
   if (pathname === '/assistant') return null;
-  const label = bi('Trợ giảng AI', 'AI tutor');
+  const label = bi('Trợ giảng Tom', 'Tutor Tom');
 
   return (
     <div className="chat-widget">

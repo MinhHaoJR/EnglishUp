@@ -209,7 +209,7 @@ export const roadmapSkillLabels: Record<RoadmapSkill, [string, string]> = {
   wordgame: ['Đua từ vựng', 'Vocabulary race'],
   grammargame: ['Đua ngữ pháp', 'Grammar race'],
   tenses: ['Các thì', 'Tenses'],
-  assistant: ['Trợ giảng AI', 'AI tutor'],
+  assistant: ['Trợ giảng Tom', 'Tutor Tom'],
   placement: ['Kiểm tra trình độ', 'Level test'],
 };
 const bilingual = z.object({ vi: z.string().trim().min(1), en: z.string().trim().min(1) });
