@@ -2809,7 +2809,457 @@ Nevertheless, CSA farms have spread to many countries. Supporters see them as a 
 ? c | What is one disadvantage of the model? | *Members cannot choose exactly what they receive | The food is not fresh | The farms are far away | The fifth paragraph explains. | Members cannot choose exactly what they receive
 """
 
-# MORE B2
+PASSAGES["B2"] += """
+## The art of apologising | CO
+Everyone makes mistakes, but not everyone knows how to apologise. A poor apology can make a situation worse, while a good one can repair even a seriously damaged relationship.
+
+Researchers who study apologies have identified several key elements. The first is a clear acknowledgement of responsibility. Phrases like "I'm sorry if you were offended" are often seen as weak, because they suggest the problem lies with the other person's reaction rather than with the speaker's behaviour. A stronger apology says, "I'm sorry I did this."
+
+The second element is showing that you understand the harm caused. Explaining how your actions affected the other person shows empathy. However, long explanations of why you behaved badly can sound like excuses.
+
+Third, an effective apology often includes an offer to repair the damage, if this is possible. In one study, this element was rated as one of the most important by people receiving apologies. Finally, a promise to change behaviour in the future gives the apology credibility, but only if the promise is kept.
+
+Timing also matters. An apology that comes too quickly may seem automatic and insincere, while one that comes too late may seem forced. Some researchers suggest that people often feel more satisfied when they have had a chance to express their feelings first.
+
+Of course, apologising requires humility, which is why many people find it difficult. Yet the benefits are significant. A sincere apology can restore trust, reduce anger and, often, strengthen a relationship rather than weaken it.
+? c | Why is "I'm sorry if you were offended" seen as weak? | *It suggests the problem is the other person's reaction | It is too long | It is too formal | The second paragraph explains. | they suggest the problem lies with the other person's reaction rather than with the speaker's behaviour.
+? c | What can long explanations of bad behaviour sound like? | *Excuses | Empathy | Promises | The third paragraph says so. | long explanations of why you behaved badly can sound like excuses.
+? t | In one study, offering to repair the damage was rated as one of the most important elements. | T | The fourth paragraph says so. | this element was rated as one of the most important by people receiving apologies.
+? s | What gives an apology credibility, if it is kept? | a promise to change behaviour / a promise to change | The fourth paragraph says so. | a promise to change behaviour in the future gives the apology credibility
+? c | What can happen if an apology comes too quickly? | *It may seem automatic and insincere | It always works better | It seems forced | The fifth paragraph explains. | An apology that comes too quickly may seem automatic and insincere
+
+## Living with less | DL
+In recent years, a growing number of people have decided to own fewer things. This lifestyle, known as minimalism, has become popular through books, documentaries and social media, where people share photos of tidy, almost empty rooms.
+
+Minimalists argue that owning fewer things can make life simpler and happier. They say that possessions take up not only space but also time and energy: we have to clean them, repair them, organise them and worry about them. By removing items they do not use or truly value, many people report feeling calmer and more focused.
+
+Minimalism can also have financial and environmental benefits. People who buy less save money and produce less waste. Some use the money they save to work fewer hours, travel or pay off debts.
+
+However, the movement has its critics. Some point out that minimalism is easier for people who are already wealthy. If you can afford to replace something whenever you need it, it is easy to give things away. For families with less money, keeping items "just in case" may be a sensible strategy rather than a bad habit. Others note the irony of minimalist products being sold at high prices.
+
+Supporters respond that minimalism is not about owning a specific number of things or having a white, empty home. Rather, it is about being intentional, asking whether each purchase genuinely adds value to your life.
+
+Whether or not people adopt the lifestyle fully, many agree that the question it raises is useful: how much do we really need?
+? c | According to minimalists, what do possessions take up? | *Space, time and energy | Only space | Only money | The second paragraph explains. | possessions take up not only space but also time and energy
+? t | Some minimalists use the money they save to work fewer hours. | T | The third paragraph says so. | Some use the money they save to work fewer hours
+? c | What do critics point out? | *Minimalism is easier for people who are already wealthy | Minimalism is too cheap | Minimalism damages the environment | The fourth paragraph explains. | minimalism is easier for people who are already wealthy.
+? s | According to supporters, what is minimalism really about? | being intentional / being intentional about purchases | The fifth paragraph says so. | it is about being intentional
+? c | What irony do some critics note? | *Minimalist products are sold at high prices | Minimalists own many houses | Minimalism is popular on social media | The fourth paragraph explains. | the irony of minimalist products being sold at high prices.
+
+## An ageing society | PF
+Across the world, people are living longer and having fewer children. As a result, the proportion of older people in the population is growing rapidly. In some countries, more than a quarter of the population is already over sixty-five.
+
+Longer lives are a remarkable achievement, made possible by better healthcare, nutrition and living conditions. But an ageing population also creates challenges. With fewer young people entering the workforce, there are fewer workers paying taxes to support pensions and healthcare for a growing number of retirees.
+
+Healthcare systems face particular pressure. Older people are more likely to have long-term conditions such as diabetes, heart disease and dementia, which require ongoing care. Many countries already lack enough nurses and carers.
+
+Families are also affected. In many cultures, adult children traditionally care for their elderly parents. But as families become smaller and more young people move to cities or abroad for work, this is becoming harder.
+
+Governments are responding in different ways. Some are raising the retirement age so that people work longer. Others encourage immigration to fill labour shortages, or invest in technology, such as robots that help with care tasks.
+
+There are also positive perspectives. Many older people remain healthy and active for years after retirement. They volunteer, care for grandchildren and share their experience with younger generations. Some experts argue that societies should stop seeing older people mainly as a burden and instead create more opportunities for them to contribute.
+? c | Why is the proportion of older people growing? | *People live longer and have fewer children | More people move abroad | Healthcare is worse | The first paragraph explains. | people are living longer and having fewer children.
+? c | What problem does a smaller workforce cause? | *Fewer workers pay taxes to support pensions and healthcare | Too many jobs disappear | Wages fall | The second paragraph explains. | there are fewer workers paying taxes to support pensions and healthcare
+? t | Many countries already lack enough nurses and carers. | T | The third paragraph says so. | Many countries already lack enough nurses and carers.
+? s | What are some governments raising? | the retirement age / retirement age | The fifth paragraph says so. | Some are raising the retirement age so that people work longer.
+? c | What do some experts argue? | *Societies should create more opportunities for older people to contribute | Older people should stop working | Families should be larger | The last paragraph explains. | create more opportunities for them to contribute.
+
+## Losing the dark | NW
+For most of human history, people could look up at night and see thousands of stars. Today, about eighty percent of the world's population lives under skies affected by light pollution, and many children have never seen the Milky Way.
+
+Light pollution is caused by artificial light that shines where it is not needed: street lamps that light the sky as well as the road, bright advertising screens and buildings that stay lit all night. The glow from cities can be seen from hundreds of kilometres away.
+
+The loss of dark skies is not only a problem for astronomers. Many animals depend on natural patterns of light and darkness. Migrating birds can become confused by city lights and crash into buildings. Newly hatched sea turtles, which find the sea by moving towards the brightest horizon, may crawl towards roads instead. Insects are drawn to lights in huge numbers, which affects the animals that depend on them for food.
+
+Humans may be affected too. Our bodies produce a hormone called melatonin in darkness, which helps regulate sleep. Exposure to bright light at night may disrupt this process.
+
+Unlike many environmental problems, light pollution is relatively easy to reduce. Lights can be shielded so they point downwards, switched off when not needed or replaced with warmer, less intense colours. Some places have created "dark sky reserves", where lighting is carefully controlled. These areas have become popular with tourists who want to experience a truly dark night.
+? s | About what percentage of the world's population lives under light-polluted skies? | about eighty percent / eighty percent / 80% / 80 percent | The first paragraph says so. | about eighty percent of the world's population
+? c | What causes light pollution? | *Artificial light that shines where it is not needed | The moon | Fires | The second paragraph explains. | Light pollution is caused by artificial light that shines where it is not needed
+? c | Why may sea turtles crawl towards roads? | *They move towards the brightest horizon | They look for food | They are afraid of the sea | The third paragraph explains. | which find the sea by moving towards the brightest horizon
+? t | Melatonin is produced in bright light. | F | It is produced in darkness. | Our bodies produce a hormone called melatonin in darkness
+? t | Light pollution is relatively easy to reduce. | T | The last paragraph says so. | light pollution is relatively easy to reduce.
+
+## Esports goes mainstream | HS
+Twenty years ago, video games were seen by many as a hobby for teenagers in their bedrooms. Today, professional video gaming, known as esports, fills stadiums and attracts online audiences of millions.
+
+Major esports tournaments offer prize money worth millions of dollars, and top players are treated like celebrities. Professional teams have coaches, analysts and even psychologists. Players often train for eight hours or more a day, studying strategies and practising reactions.
+
+The industry's growth has been driven by streaming platforms, where fans can watch games live and interact with players. Sponsors, including major brands, have invested heavily, and some universities now offer scholarships for talented gamers.
+
+Despite its popularity, esports faces questions. Is it really a sport? Supporters argue that it requires skill, strategy, teamwork and extremely fast reactions, just like traditional sports. Critics reply that it lacks physical exercise, which they see as essential to the definition of sport.
+
+There are also concerns about players' wellbeing. Long training hours can lead to physical problems, such as wrist and back pain, as well as stress and burnout. Many professional careers are short, and some players retire before the age of twenty-five, often without qualifications for other jobs.
+
+As a result, some teams now include physical exercise in training schedules, limit practice hours and encourage players to continue their education. Whatever people think about its status, esports is clearly here to stay, and its audience continues to grow.
+? c | How were video games seen twenty years ago? | *As a hobby for teenagers in their bedrooms | As a professional sport | As an Olympic event | The first paragraph explains. | video games were seen by many as a hobby for teenagers in their bedrooms.
+? s | How long do players often train each day? | eight hours or more / eight hours / 8 hours | The second paragraph says so. | Players often train for eight hours or more a day
+? c | What has driven the industry's growth? | *Streaming platforms | Television news | Newspapers | The third paragraph explains. | The industry's growth has been driven by streaming platforms
+? t | Critics say esports is a sport because it requires skill. | F | Critics say it lacks physical exercise. | Critics reply that it lacks physical exercise
+? c | What have some teams done to protect players? | *Included exercise, limited practice and encouraged education | Increased training hours | Banned streaming | The last paragraph explains. | some teams now include physical exercise in training schedules, limit practice hours and encourage players to continue their education.
+
+## Towards a cashless society | MS
+In many cities, it is now possible to go for weeks without touching a coin or a banknote. People pay for coffee with their phones, transfer money to friends through apps and shop online with saved card details. Some countries are moving rapidly towards becoming cashless societies.
+
+Digital payments offer clear advantages. They are fast and convenient, and they make it easier to track spending. Businesses save time and money on handling cash, and the risk of robbery is lower. Governments also benefit, because digital payments are easier to trace, which can reduce tax evasion and crime.
+
+However, a cashless society also has disadvantages. Older people and those who are less comfortable with technology may find digital payments difficult. People without bank accounts, often those with the lowest incomes, risk being excluded from basic services.
+
+There are also concerns about privacy. Every digital payment leaves a record, revealing where people go, what they buy and who they pay. Some people worry about how this information might be used by companies or governments.
+
+Another issue is resilience. If payment systems fail because of technical problems, power cuts or cyberattacks, people may be unable to buy essential goods. Cash, by contrast, works without electricity or internet connections.
+
+Because of these concerns, some countries that were moving quickly away from cash have changed course. They now require banks and shops to continue accepting cash, at least for essential services, so that everyone can still take part in the economy.
+? c | Why do governments benefit from digital payments? | *They are easier to trace, reducing tax evasion and crime | They are free | They create jobs | The second paragraph explains. | digital payments are easier to trace, which can reduce tax evasion and crime.
+? c | Who risks being excluded in a cashless society? | *People without bank accounts | Young people | Shop owners | The third paragraph explains. | People without bank accounts, often those with the lowest incomes, risk being excluded
+? t | Every digital payment leaves a record. | T | The fourth paragraph says so. | Every digital payment leaves a record
+? s | What does cash work without? | electricity or internet connections / electricity / internet | The fifth paragraph says so. | Cash, by contrast, works without electricity or internet connections.
+? c | What have some countries done? | *Required banks and shops to keep accepting cash | Banned cash completely | Stopped digital payments | The last paragraph explains. | They now require banks and shops to continue accepting cash
+
+## The trouble with open-plan offices | WK
+In the past few decades, many companies have removed walls and private offices, replacing them with large open-plan spaces where employees sit together at long rows of desks. The idea was to encourage communication, teamwork and creativity, while also saving money on space.
+
+However, research has produced some surprising results. In one study, researchers measured how employees interacted before and after their company moved to an open-plan office. Instead of increasing, face-to-face conversations fell by around seventy percent. Employees sent more emails and messages instead.
+
+Why would this happen? One explanation is that people feel a lack of privacy when everyone can see and hear them. To protect their concentration and personal space, many put on headphones and avoid conversations. Noise is another problem. Phone calls and nearby discussions make it difficult to focus on complex tasks, and studies have linked noisy environments to lower productivity and higher stress.
+
+Open-plan offices may also spread illness more easily. Some research has found that employees in open offices take more sick days than those in private offices.
+
+This does not mean that all open offices are bad. They can work well for teams whose tasks require constant collaboration. The problem is that most jobs require both collaboration and quiet, focused work.
+
+As a result, many companies are now adopting more flexible designs. These offer a mix of spaces: open areas for teamwork, quiet rooms for concentration and small booths for phone calls, allowing employees to choose the environment that suits each task.
+? c | What was the idea behind open-plan offices? | *To encourage communication and save money on space | To reduce teamwork | To give everyone a private office | The first paragraph explains. | The idea was to encourage communication, teamwork and creativity, while also saving money on space.
+? s | By how much did face-to-face conversations fall in one study? | around seventy percent / seventy percent / 70% / 70 percent | The second paragraph says so. | face-to-face conversations fell by around seventy percent.
+? c | Why do many employees put on headphones? | *To protect their concentration and personal space | To listen to music for fun | Because managers require it | The third paragraph explains. | To protect their concentration and personal space, many put on headphones
+? t | Some research has found employees in open offices take fewer sick days. | F | They take more sick days. | employees in open offices take more sick days than those in private offices.
+? c | What do flexible office designs offer? | *A mix of spaces for different tasks | Only open areas | Only private offices | The last paragraph explains. | These offer a mix of spaces
+
+## Gardens on the roof | HF
+Look down on many modern cities from above, and you might be surprised to see green. On rooftops once covered with concrete or metal, gardens are growing: grass, flowers, vegetables and even small trees.
+
+Green roofs have a long history, but they have become increasingly popular as cities search for ways to deal with heat, flooding and pollution. A green roof is made of several layers, including a waterproof base, a drainage layer, soil and plants.
+
+The benefits are numerous. Plants absorb heat, so buildings with green roofs stay cooler in summer and need less air conditioning. In winter, the extra layers provide insulation. Green roofs also absorb rainwater, which reduces the pressure on city drains during heavy storms and lowers the risk of flooding.
+
+They also support nature. Bees, butterflies and birds find food and shelter on green roofs, creating small habitats in the middle of the city. Some green roofs are used to grow food for restaurants or local communities, and others provide pleasant spaces where office workers can relax.
+
+There are challenges, however. Green roofs are more expensive to build than ordinary roofs, and not every building is strong enough to support the extra weight of wet soil. They also require regular maintenance, such as watering and removing weeds.
+
+To encourage their use, some cities offer financial support or require green roofs on new large buildings. Supporters argue that, over time, the energy savings and environmental benefits more than justify the initial cost.
+? c | Why have green roofs become more popular? | *Cities are looking for ways to deal with heat, flooding and pollution | They are cheaper than normal roofs | They need no maintenance | The second paragraph explains. | as cities search for ways to deal with heat, flooding and pollution.
+? c | How do green roofs reduce flooding? | *They absorb rainwater | They make drains bigger | They stop rain falling | The third paragraph explains. | Green roofs also absorb rainwater, which reduces the pressure on city drains
+? t | Every building can support a green roof. | F | Not every building is strong enough. | not every building is strong enough to support the extra weight of wet soil.
+? s | What do some cities require on new large buildings? | green roofs | The last paragraph says so. | require green roofs on new large buildings.
+? c | What do supporters argue about the cost? | *Savings and benefits justify the initial cost over time | It is too high to justify | It is the same as ordinary roofs | The last paragraph explains. | the energy savings and environmental benefits more than justify the initial cost.
+
+## The placebo effect | HE
+In medical trials, researchers often compare a new drug with a placebo, a pill that looks the same but contains no active medicine. Surprisingly, many patients who receive the placebo report that they feel better. This is known as the placebo effect.
+
+The effect is particularly strong for conditions that involve subjective experiences, such as pain, nausea, tiredness and anxiety. In some studies, a significant proportion of patients receiving placebos experienced real improvements in their symptoms.
+
+How can a pill with no medicine work? Scientists believe expectation plays a major role. When patients believe they are receiving treatment, the brain may release natural chemicals that reduce pain. The ritual of treatment, such as a visit to a doctor or the experience of taking a pill, may also influence how people feel.
+
+Interestingly, details matter. Studies have found that two placebo pills can be more effective than one, that injections may work better than pills and that expensive placebos can work better than cheap ones. Even the colour of the pill can make a difference.
+
+The placebo effect has limits. It cannot cure infections, mend broken bones or shrink tumours. Its effects are mainly on symptoms, not on the underlying disease.
+
+The effect raises ethical questions. Is it acceptable for doctors to give placebos if patients believe they are real medicine? Recent research has found that placebos can sometimes help even when patients know they are taking them. This suggests that the experience of care itself may have healing power.
+? c | What is a placebo? | *A pill that looks real but contains no active medicine | A new drug | A strong painkiller | The first paragraph explains. | a pill that looks the same but contains no active medicine.
+? c | For which conditions is the placebo effect particularly strong? | *Pain, nausea, tiredness and anxiety | Broken bones | Infections | The second paragraph says so. | such as pain, nausea, tiredness and anxiety.
+? s | What do scientists believe plays a major role in the effect? | expectation | The third paragraph says so. | Scientists believe expectation plays a major role.
+? t | Placebos can shrink tumours. | F | They cannot. | It cannot cure infections, mend broken bones or shrink tumours.
+? t | Placebos can sometimes help even when patients know they are taking them. | T | The last paragraph says so. | placebos can sometimes help even when patients know they are taking them.
+
+## Citizen scientists | EN
+You don't need a laboratory or a university degree to contribute to science. Around the world, millions of ordinary people take part in "citizen science" projects, collecting data that helps researchers answer important questions.
+
+Citizen science projects cover a wide range of subjects. Volunteers count birds in their gardens, record when flowers bloom, photograph insects, measure rainfall or monitor water quality in local rivers. Others work online, classifying images of galaxies, transcribing old documents or identifying animals in thousands of photos taken by hidden cameras.
+
+For scientists, the benefits are enormous. Some projects require data from huge areas or over many years, which would be impossible for a small team of researchers to collect. Volunteers can provide observations from thousands of locations at the same time. Bird counts, for example, have helped scientists track how climate change is affecting migration patterns.
+
+Data quality is sometimes a concern, because volunteers may make mistakes. Researchers address this by training participants, using simple methods and checking unusual results. With large numbers of observations, individual errors often have little effect on overall patterns.
+
+Volunteers benefit too. Many say that taking part helps them learn about science and notice nature more carefully. For schools, citizen science offers a practical way for students to experience real research.
+
+Some projects have led to remarkable discoveries, including new planets and previously unknown species. Perhaps most importantly, citizen science helps people feel connected to the world around them and to the scientific process.
+? c | What is citizen science? | *Ordinary people collecting data for research | Scientists working in cities | A type of university degree | The first paragraph explains. | ordinary people take part in "citizen science" projects, collecting data that helps researchers answer important questions.
+? c | Why are volunteers valuable to scientists? | *They can provide observations from thousands of locations | They are cheaper than computers | They know more than scientists | The third paragraph explains. | Volunteers can provide observations from thousands of locations at the same time.
+? s | What have bird counts helped scientists track? | how climate change is affecting migration patterns / migration patterns | The third paragraph says so. | Bird counts, for example, have helped scientists track how climate change is affecting migration patterns.
+? t | Individual errors always ruin citizen science data. | F | With large numbers, they often have little effect. | individual errors often have little effect on overall patterns.
+? t | Citizen science projects have led to the discovery of new species. | T | The last paragraph says so. | including new planets and previously unknown species.
+
+## Ride-hailing and the city | TP
+Within a few years, ride-hailing apps have transformed transport in cities around the world. With a few taps on a smartphone, passengers can book a car or motorbike, see the price in advance and track the driver's arrival.
+
+For passengers, the advantages are clear. Ride-hailing is often cheaper and more convenient than traditional taxis, and the fixed price removes the worry of being overcharged. Ratings for drivers and passengers encourage good behaviour, and the record of every trip can increase safety.
+
+For drivers, the apps offer flexible work. Many people drive part-time to supplement other income. However, drivers often complain about falling earnings, as companies take a significant commission from each ride and competition between drivers increases.
+
+The impact on cities is complex. Early supporters predicted that ride-hailing would reduce car ownership and traffic. In some places, fewer young people now buy cars. However, several studies have found that ride-hailing has increased traffic in city centres, because cars often drive around empty while waiting for passengers, and some people use ride-hailing instead of buses or walking.
+
+Traditional taxi drivers have also been affected. In many cities, they have protested, arguing that ride-hailing companies do not follow the same rules and licences.
+
+Cities are responding with new regulations, such as limits on the number of vehicles, extra fees in busy areas and requirements for driver insurance. The challenge is to keep the convenience that passengers value while supporting public transport and reducing congestion.
+? c | What removes the worry of being overcharged? | *The fixed price | Driver ratings | Cash payments | The second paragraph explains. | the fixed price removes the worry of being overcharged.
+? c | What do drivers often complain about? | *Falling earnings | Too few passengers ever | Long training | The third paragraph explains. | drivers often complain about falling earnings
+? t | Several studies found ride-hailing has reduced traffic in all city centres. | F | It has increased traffic in city centres. | ride-hailing has increased traffic in city centres
+? s | Why do cars add to traffic while waiting? | they drive around empty / cars often drive around empty | The fourth paragraph explains. | cars often drive around empty while waiting for passengers
+? c | What have traditional taxi drivers argued? | *Ride-hailing companies do not follow the same rules | Ride-hailing is too slow | Passengers prefer taxis | The fifth paragraph explains. | arguing that ride-hailing companies do not follow the same rules and licences.
+
+## Waste on the plate | FD
+Every year, restaurants throw away enormous amounts of food. Some of it is food that customers leave on their plates, but much is wasted before it ever reaches a table: ingredients that go bad, dishes prepared but not sold and vegetables rejected because they do not look perfect.
+
+Food waste is not only a waste of money. Producing food requires land, water and energy, and when it ends up in landfill, it releases methane, a powerful greenhouse gas. Experts estimate that food waste is responsible for a significant share of global emissions.
+
+Some restaurants have found creative ways to reduce waste. They plan menus more carefully, using the same ingredients in several dishes. Vegetable peels and leftover bread may become soups, sauces or stocks. Some chefs design dishes specifically to use parts of vegetables or animals that are usually thrown away.
+
+Portion size is another factor. When portions are too large, customers often leave food behind. Several restaurants now offer smaller portions or allow customers to choose the size. Others encourage diners to take leftovers home.
+
+Technology is also helping. Apps connect restaurants and bakeries with customers who can buy surplus food at a discount at the end of the day. Some businesses use smart scales to measure what is thrown away, helping chefs identify where waste happens.
+
+Food that cannot be sold can often be donated to charities or composted. Reducing waste requires effort, but many restaurants find that it also reduces costs, making it good for both the environment and business.
+? c | Where is much restaurant food wasted? | *Before it reaches a table | Only on customers' plates | In delivery trucks | The first paragraph explains. | much is wasted before it ever reaches a table
+? s | What gas does food in landfill release? | methane | The second paragraph says so. | it releases methane, a powerful greenhouse gas.
+? c | What may vegetable peels and leftover bread become? | *Soups, sauces or stocks | Animal food only | Decorations | The third paragraph says so. | Vegetable peels and leftover bread may become soups, sauces or stocks.
+? t | Some apps let customers buy surplus food at a discount. | T | The fifth paragraph says so. | customers who can buy surplus food at a discount at the end of the day.
+? t | Reducing waste always increases a restaurant's costs. | F | Many find it reduces costs. | many restaurants find that it also reduces costs
+
+## The influencer economy | SH
+A decade ago, the word "influencer" was rarely used. Today, influencers, people with large followings on social media, are a major force in marketing. Brands pay them to promote products, from clothes and cosmetics to holidays and financial services.
+
+Companies value influencers because their followers often trust them more than traditional advertisements. Influencers share their daily lives, and followers may feel they know them personally. A recommendation from someone who seems like a friend can be very persuasive.
+
+Interestingly, influencers do not always need millions of followers. So-called micro-influencers, with smaller audiences of a few thousand people, often have closer relationships with their followers and higher levels of engagement. For brands, they may also be much cheaper.
+
+However, the industry faces criticism. In many cases, followers cannot tell whether a post is a genuine recommendation or a paid advertisement. Many countries now require influencers to label sponsored content clearly, but these rules are not always followed.
+
+There are also concerns about the effects on young people. Influencers often present carefully edited images of perfect lives, bodies and possessions. Some studies suggest that constantly comparing oneself with these images can lower self-esteem and encourage excessive spending.
+
+On the other hand, some influencers use their platforms positively, sharing educational content, promoting mental health awareness or supporting social causes. Experts encourage followers, especially young people, to think critically about what they see: Who benefits from this post? Is it an advertisement? Does it show reality?
+? c | Why do companies value influencers? | *Followers often trust them more than traditional advertisements | They are always cheap | They make the products | The second paragraph explains. | their followers often trust them more than traditional advertisements.
+? c | What is an advantage of micro-influencers? | *Closer relationships with followers and higher engagement | Millions of followers | Television shows | The third paragraph explains. | often have closer relationships with their followers and higher levels of engagement.
+? t | Rules on labelling sponsored content are always followed. | F | They are not always followed. | these rules are not always followed.
+? s | What can constant comparison with edited images lower? | self-esteem | The fifth paragraph says so. | can lower self-esteem and encourage excessive spending.
+? c | What do experts encourage followers to do? | *Think critically about what they see | Stop using social media | Become influencers | The last paragraph explains. | Experts encourage followers, especially young people, to think critically about what they see
+
+## Learning from failure | WK
+In many cultures, failure is seen as something shameful. Students fear bad grades, employees hide mistakes from their managers, and entrepreneurs whose businesses close may be seen as losers. Yet some of the most successful companies and individuals argue that failure is an essential part of success.
+
+Consider the world of start-ups. Most new businesses fail within a few years. However, research suggests that entrepreneurs who have failed before are often more successful in their next attempts. They have learned what does not work, built networks and developed resilience.
+
+Some organisations now actively encourage employees to share failures. A few companies even hold regular meetings where teams discuss projects that did not succeed and what they learned. The aim is to create an environment where people feel safe enough to take risks and admit mistakes early, before small problems become large ones.
+
+This idea is sometimes called psychological safety. Studies of teams have found that the most effective ones are not those that make the fewest mistakes, but those where members feel comfortable talking openly about errors. In hospitals, for example, teams that report mistakes more often may actually be safer, because problems are identified and corrected.
+
+Of course, learning from failure does not mean celebrating carelessness. The value of a failure depends on what we do afterwards: reflecting honestly, understanding the causes and changing our approach.
+
+Educators are also applying these ideas, encouraging students to see mistakes as opportunities to learn rather than signs of a lack of ability.
+? c | How is failure seen in many cultures? | *As something shameful | As a reason to celebrate | As unimportant | The first paragraph explains. | In many cultures, failure is seen as something shameful.
+? c | Why are entrepreneurs who have failed often more successful next time? | *They have learned what doesn't work and developed resilience | They have more money | They are older | The second paragraph explains. | They have learned what does not work, built networks and developed resilience.
+? s | What is the idea of feeling safe to admit mistakes called? | psychological safety | The fourth paragraph names it. | This idea is sometimes called psychological safety.
+? t | The most effective teams make the fewest mistakes. | F | They talk openly about errors. | the most effective ones are not those that make the fewest mistakes
+? t | Learning from failure means celebrating carelessness. | F | It does not. | learning from failure does not mean celebrating carelessness.
+
+## Connected but lonely? | TE
+Social media was designed to connect people. Today, billions of users share photos, send messages and follow the lives of friends and strangers. Yet many people, especially young adults, report feeling lonely. Could social media be part of the problem?
+
+The relationship is complex. Some studies have found that people who spend a lot of time on social media are more likely to feel lonely and anxious. However, this does not necessarily mean that social media causes loneliness. It is also possible that lonely people spend more time online looking for connection.
+
+Researchers have found that how people use social media matters more than how much. Active use, such as messaging friends, commenting thoughtfully and organising meetings, tends to be linked with positive feelings. Passive use, such as endlessly scrolling through other people's posts, is more often linked with negative feelings.
+
+One reason may be social comparison. Social media often shows the highlights of other people's lives: holidays, celebrations and achievements. Comparing our ordinary lives with these carefully selected moments can make us feel that we are missing out.
+
+Social media can also replace rather than support face-to-face interaction. Time spent online may reduce time spent with friends in person, which research suggests is particularly important for wellbeing.
+
+On the other hand, social media can be a lifeline for people who feel isolated, such as those with rare illnesses or those living far from family. Experts suggest a balanced approach: using social media to strengthen real relationships, not to replace them.
+? c | What do many people report despite social media? | *Feeling lonely | Feeling more connected than ever | Having more friends in person | The first paragraph explains. | many people, especially young adults, report feeling lonely.
+? t | Studies prove social media causes loneliness. | F | It does not necessarily mean that. | this does not necessarily mean that social media causes loneliness.
+? c | Which use of social media is linked with positive feelings? | *Active use, like messaging friends | Endless scrolling | Watching advertisements | The third paragraph explains. | Active use, such as messaging friends, commenting thoughtfully and organising meetings, tends to be linked with positive feelings.
+? s | What can comparing our lives with others' highlights make us feel? | that we are missing out / missing out | The fourth paragraph says so. | can make us feel that we are missing out.
+? c | For whom can social media be a lifeline? | *People who feel isolated | People with many friends | Professional influencers | The last paragraph explains. | social media can be a lifeline for people who feel isolated
+
+## Museums go digital | ED
+Not long ago, visiting a famous museum meant travelling to it. Today, many of the world's great collections can be explored from a laptop or phone. Museums have put millions of images online, created virtual tours and even developed apps that use augmented reality.
+
+Digitisation has clear benefits. People who cannot travel because of cost, distance or disability can now see artworks and historical objects in high detail. Students and researchers can study collections without visiting archives in person. Online images often allow viewers to zoom in on details that would be impossible to see in a crowded gallery.
+
+Museums also use technology to attract new audiences. Interactive exhibitions, online games and social media campaigns appeal to younger visitors who might otherwise find museums boring.
+
+Some people worried that putting collections online would reduce the number of visitors. In fact, many museums report the opposite. Seeing objects online often makes people want to experience them in person. A photograph, however detailed, cannot fully reproduce the scale, texture or atmosphere of an original artwork.
+
+Digitisation also raises questions. Creating and maintaining digital collections is expensive, and smaller museums may lack the resources. There are debates about copyright and about whether museums should charge for high-quality images.
+
+Despite these challenges, most experts see digital technology as an opportunity. Rather than replacing the museum experience, it extends it, allowing museums to reach people far beyond their walls and to preserve records of fragile objects for future generations.
+? c | Who benefits from digitisation? | *People who cannot travel, students and researchers | Only museum staff | Only tourists | The second paragraph explains. | People who cannot travel because of cost, distance or disability can now see artworks
+? c | Why do museums use interactive exhibitions and online games? | *To attract younger visitors | To reduce costs | To replace their buildings | The third paragraph explains. | appeal to younger visitors who might otherwise find museums boring.
+? t | Putting collections online has reduced visitor numbers at many museums. | F | Many report the opposite. | many museums report the opposite.
+? s | What can a photograph not fully reproduce? | the scale, texture or atmosphere / scale, texture and atmosphere | The fourth paragraph says so. | cannot fully reproduce the scale, texture or atmosphere of an original artwork.
+? c | What challenge do smaller museums face? | *They may lack the resources | They have too many visitors | They cannot use social media | The fifth paragraph explains. | smaller museums may lack the resources.
+
+## Living with heatwaves | NW
+Heatwaves, periods of unusually hot weather lasting several days, are becoming more frequent and more intense in many parts of the world. Scientists link this trend to climate change, and they warn that extreme heat is one of the deadliest weather hazards.
+
+Unlike storms or floods, heatwaves cause little visible damage, so their dangers are often underestimated. Yet extreme heat can be life-threatening. When the body cannot cool down, people may suffer heat exhaustion or heatstroke. Older people, young children, outdoor workers and people with health conditions are especially at risk.
+
+Cities are particularly vulnerable because of the urban heat island effect. Buildings and roads absorb heat during the day and release it at night, so temperatures stay high even after sunset, preventing people from recovering.
+
+Many cities have created heat action plans. These include early warning systems that alert residents before heatwaves, and cooling centres, air-conditioned public buildings where people can rest. Some cities send volunteers to check on older people living alone, because many heat-related deaths happen at home.
+
+Long-term solutions focus on design. Planting trees, creating parks, using reflective materials on roofs and roads and designing buildings with better ventilation can all reduce temperatures.
+
+Individuals can protect themselves too. Experts recommend drinking water regularly, avoiding strenuous activity during the hottest hours, wearing light clothing and keeping homes cool by closing curtains during the day. Checking on neighbours, especially elderly ones, is also a simple action that can save lives.
+? c | Why are the dangers of heatwaves often underestimated? | *They cause little visible damage | They are very short | They happen only in deserts | The second paragraph explains. | heatwaves cause little visible damage, so their dangers are often underestimated.
+? c | Why do temperatures in cities stay high after sunset? | *Buildings and roads release heat at night | There is no wind | People use more cars | The third paragraph explains. | Buildings and roads absorb heat during the day and release it at night
+? s | What are cooling centres? | air-conditioned public buildings / air-conditioned public buildings where people can rest | The fourth paragraph explains. | cooling centres, air-conditioned public buildings where people can rest.
+? t | Many heat-related deaths happen at home. | T | The fourth paragraph says so. | many heat-related deaths happen at home.
+? c | What do experts recommend? | *Closing curtains during the day | Exercising at noon | Wearing dark clothes | The last paragraph says so. | keeping homes cool by closing curtains during the day.
+
+## Pets and wellbeing | AN
+Many pet owners say their animals make them happier, and research increasingly supports this view. Studies have linked pet ownership with lower stress, reduced feelings of loneliness and even better physical health.
+
+Dogs, in particular, encourage physical activity. Owners who walk their dogs regularly are more likely to meet recommended levels of exercise. Walking a dog also creates social opportunities, as owners often stop to chat with neighbours and other dog walkers.
+
+Pets can also provide emotional support. Stroking an animal has been shown to lower heart rate and blood pressure in some studies. For people who live alone, a pet can offer companionship and a reason to keep a daily routine. Some hospitals and care homes now use therapy animals to comfort patients and residents.
+
+However, researchers caution against simple conclusions. Some studies have found no clear difference in wellbeing between pet owners and non-owners. It is also possible that people who are already healthier and happier are more likely to own pets.
+
+Pet ownership also brings responsibilities and costs. Animals require time, attention, food and veterinary care. When people underestimate these demands, pets may be neglected or given up. Animal shelters receive many animals from owners who could no longer care for them.
+
+Experts advise people considering a pet to think carefully about their lifestyle, budget and living space. The right pet, chosen thoughtfully, can bring great joy, but the decision should be made with the animal's wellbeing in mind as well as the owner's.
+? c | What do studies link pet ownership with? | *Lower stress and less loneliness | Higher stress | More illness | The first paragraph explains. | lower stress, reduced feelings of loneliness and even better physical health.
+? c | How do dogs create social opportunities? | *Owners chat with others on walks | Dogs make phone calls | Owners join clubs automatically | The second paragraph explains. | owners often stop to chat with neighbours and other dog walkers.
+? s | Where are therapy animals used? | hospitals and care homes / in hospitals and care homes | The third paragraph says so. | Some hospitals and care homes now use therapy animals
+? t | All studies show pet owners are happier than non-owners. | F | Some found no clear difference. | Some studies have found no clear difference in wellbeing between pet owners and non-owners.
+? c | What should people think about before getting a pet? | *Lifestyle, budget and living space | Only the pet's colour | The price of the pet only | The last paragraph says so. | think carefully about their lifestyle, budget and living space.
+
+## Schools that look different | ED
+Most people imagine a classroom as rows of desks facing a board at the front. This design has changed little in over a century. However, some architects and educators believe that the physical environment of a school has a significant effect on how students learn.
+
+Research supports some of these ideas. Studies have found that natural light, good air quality and comfortable temperatures can improve concentration and test results. In one study of classrooms, factors such as light, temperature and air quality were linked to noticeable differences in students' progress.
+
+New school designs often replace traditional classrooms with flexible spaces. Furniture can be moved easily, allowing students to work individually, in small groups or as a whole class. Some schools include quiet corners for reading, outdoor learning areas and large shared spaces where different classes can work together.
+
+Supporters argue that these designs encourage collaboration, creativity and independence, skills that are important in modern workplaces. Students can choose the environment that suits each task.
+
+Critics, however, warn that open, flexible spaces can be noisy and distracting, especially for students who need quiet to concentrate. Changing the building alone is not enough. Teachers need training and support to use new spaces effectively, otherwise they may simply teach in the traditional way in a new room.
+
+Most experts agree that the best school buildings combine good basic conditions, such as light, fresh air and quiet, with flexibility. The building, they say, should support good teaching rather than replace it.
+? c | How long has the traditional classroom design changed little? | *Over a century | About ten years | Since last year | The first paragraph says so. | This design has changed little in over a century.
+? c | Which factors were linked to students' progress? | *Light, temperature and air quality | Desk colours | The number of teachers | The second paragraph says so. | factors such as light, temperature and air quality were linked to noticeable differences in students' progress.
+? t | In flexible spaces, furniture can be moved easily. | T | The third paragraph says so. | Furniture can be moved easily
+? s | What do teachers need to use new spaces effectively? | training and support | The fifth paragraph says so. | Teachers need training and support to use new spaces effectively
+? c | What do most experts agree about school buildings? | *They should support good teaching, not replace it | They should all be open spaces | They are unimportant | The last paragraph explains. | The building, they say, should support good teaching rather than replace it.
+
+## The city after dark | PT
+When the offices close and the sun goes down, many cities do not sleep. Restaurants, bars, theatres, cinemas, night markets, delivery services and hospitals keep running. Together, these activities form what planners call the night-time economy.
+
+In many large cities, the night-time economy is worth billions of dollars and employs a significant number of people. It also contributes to a city's identity and attractiveness. Lively evening streets draw tourists and make cities more appealing places to live, especially for young people.
+
+However, managing the city at night presents challenges. Residents living near busy entertainment areas often complain about noise, litter and anti-social behaviour. Public transport may stop running late at night, leaving workers and visitors with limited options to get home safely. Night-shift workers, such as cleaners, nurses and security guards, may face long and expensive journeys.
+
+Some cities have appointed a "night mayor", an official responsible for night-time issues. This person works with businesses, residents, police and transport providers to find solutions. Measures may include night buses, better street lighting, rules on noise and opening hours, and programmes to make venues safer.
+
+Experts also encourage cities to diversify night-time activities. Instead of focusing only on bars and alcohol, they suggest late opening of museums, libraries, shops and sports facilities. This can attract a wider range of people, including families and older residents, and create a safer, more welcoming atmosphere.
+
+Planned well, the night-time economy can benefit the whole city, not only those who enjoy going out late.
+? c | What does the night-time economy include? | *Restaurants, theatres, delivery services and hospitals at night | Only bars | Only offices | The first paragraph lists it. | Restaurants, bars, theatres, cinemas, night markets, delivery services and hospitals keep running.
+? c | What do residents near busy entertainment areas complain about? | *Noise, litter and anti-social behaviour | Too few shops | High taxes | The third paragraph explains. | Residents living near busy entertainment areas often complain about noise, litter and anti-social behaviour.
+? s | What is the official responsible for night-time issues called? | a night mayor / night mayor | The fourth paragraph says so. | Some cities have appointed a "night mayor"
+? t | Experts suggest focusing only on bars at night. | F | They suggest diversifying activities. | Instead of focusing only on bars and alcohol
+? c | Which activity do experts suggest opening late? | *Museums and libraries | Schools | Banks | The fifth paragraph says so. | they suggest late opening of museums, libraries, shops and sports facilities.
+
+## A second career | WK
+In the past, many people expected to stay in the same profession for their whole working lives. Today, career changes are increasingly common. People retrain as nurses after years in banking, leave office jobs to become teachers or start businesses in completely new fields, sometimes in their forties or fifties.
+
+There are many reasons for these changes. Some people feel that their work lacks meaning. Others are affected by technology, as automation changes or eliminates certain jobs. Longer working lives also play a role. If people work until their late sixties or seventies, a career that began at twenty-two may not remain satisfying for over forty years.
+
+Changing careers can be challenging. It may involve returning to education, accepting a lower salary at first and starting at a junior level. Some people worry about competing with younger colleagues or about whether employers will value their age.
+
+However, career changers often bring valuable strengths. Skills developed in one field, such as communication, management and problem-solving, can be useful in another. Experience of life and work can also make people more patient and confident.
+
+Experts offer some advice. Before making a big change, it can help to try the new field through volunteering, short courses or conversations with people who already work in it. Financial planning is also important, especially if retraining will take time.
+
+Perhaps most importantly, career changers need to accept that the transition may take time. For many, however, the reward of doing work they genuinely enjoy makes the effort worthwhile.
+? c | What did people in the past expect? | *To stay in the same profession their whole lives | To change careers often | To retire at forty | The first paragraph explains. | many people expected to stay in the same profession for their whole working lives.
+? c | Which reason for career changes is mentioned? | *Technology changing or eliminating jobs | Shorter working lives | Higher salaries everywhere | The second paragraph explains. | Others are affected by technology, as automation changes or eliminates certain jobs.
+? t | Changing careers may involve accepting a lower salary at first. | T | The third paragraph says so. | accepting a lower salary at first
+? s | Name one way to try a new field before changing. | volunteering / short courses / conversations with people in the field | The fifth paragraph lists ways. | try the new field through volunteering, short courses or conversations with people who already work in it.
+? c | What do career changers need to accept? | *The transition may take time | They will earn more immediately | They must change again soon | The last paragraph explains. | career changers need to accept that the transition may take time.
+
+## Corridors for wildlife | AN
+As cities, roads and farms expand, natural habitats are increasingly divided into small, isolated pieces. For many animals, this is a serious problem. Populations trapped in small areas may struggle to find food, mates and new territory, and they become more vulnerable to disease and inbreeding.
+
+One solution is the wildlife corridor, a strip of habitat that connects separate natural areas. Corridors can take many forms: belts of forest between parks, hedges along fields, tunnels under roads or bridges covered with plants that allow animals to cross busy motorways safely.
+
+Research suggests that corridors can be effective. In some regions, wildlife bridges over highways have significantly reduced collisions between vehicles and large animals such as deer, which also makes roads safer for drivers. Cameras have recorded many species using these crossings, from bears to small mammals.
+
+Corridors also help species adapt to climate change. As temperatures rise, many plants and animals need to move to cooler areas. Without connected habitats, they may be unable to do so.
+
+Creating corridors is not always easy. It requires cooperation between governments, landowners and communities, and land for corridors can be expensive. Some critics question whether corridors work equally well for all species.
+
+Nevertheless, many conservation experts see connectivity as essential. Protecting individual parks is important, they argue, but nature also needs pathways between them. Even small actions, such as planting native trees along rivers or leaving gaps in fences, can help create a network that allows wildlife to move and survive.
+? c | What problem do animals in small, isolated areas face? | *Difficulty finding food, mates and territory | Too much food | Fewer predators | The first paragraph explains. | may struggle to find food, mates and new territory
+? s | What is a wildlife corridor? | a strip of habitat that connects separate natural areas / a strip of habitat connecting natural areas | The second paragraph explains. | a strip of habitat that connects separate natural areas.
+? t | Wildlife bridges have increased collisions with deer. | F | They have significantly reduced them. | wildlife bridges over highways have significantly reduced collisions
+? c | How do corridors help with climate change? | *They allow species to move to cooler areas | They lower temperatures | They stop rain | The fourth paragraph explains. | many plants and animals need to move to cooler areas.
+? c | Which small action can help, according to the text? | *Planting native trees along rivers | Building more fences | Removing all hedges | The last paragraph says so. | planting native trees along rivers or leaving gaps in fences
+
+## Small homes, big ideas | HF
+As house prices rise in many cities, some people are choosing to live in very small homes. The tiny house movement promotes homes of often less than thirty square metres, sometimes built on wheels so they can be moved.
+
+Supporters are attracted by several advantages. Tiny houses cost much less to build or buy than conventional homes, allowing owners to avoid large mortgages. They use less energy for heating and cooling, and their small size encourages owners to buy fewer possessions. Many tiny house owners say they value the freedom this lifestyle gives them, including more time and money for travel and hobbies.
+
+Design is crucial. Clever use of space allows tiny houses to include everything needed for daily life. Beds may be placed in lofts, tables may fold away and stairs may contain storage drawers.
+
+However, tiny living is not for everyone. Families with children may find the space too limited, and sharing such a small area can create tension. Finding land can also be difficult. In many places, planning rules do not allow people to live permanently in tiny houses, or require minimum home sizes.
+
+Critics also argue that tiny houses are not a real solution to housing shortages in cities, where land is the main cost. Some suggest that well-designed small apartments in dense buildings may be more practical.
+
+Nevertheless, the movement has encouraged a wider debate about how much space people really need. Its ideas, efficient design and less consumption, influence the design of homes of all sizes.
+? s | How big are tiny houses often? | less than thirty square metres / under thirty square metres / thirty square metres | The first paragraph says so. | homes of often less than thirty square metres
+? c | Why do tiny house owners avoid large mortgages? | *Tiny houses cost much less | Banks refuse loans | They rent instead | The second paragraph explains. | Tiny houses cost much less to build or buy than conventional homes, allowing owners to avoid large mortgages.
+? c | How do designers save space? | *Beds in lofts and folding tables | Bigger windows | Fewer doors | The third paragraph explains. | Beds may be placed in lofts, tables may fold away
+? t | Planning rules everywhere allow people to live permanently in tiny houses. | F | In many places they do not. | In many places, planning rules do not allow people to live permanently in tiny houses
+? c | What do critics argue? | *Tiny houses are not a real solution to city housing shortages | Tiny houses are too big | Tiny houses use too much energy | The fifth paragraph explains. | tiny houses are not a real solution to housing shortages in cities
+
+## The slow travel movement | TR
+Many holidays follow a familiar pattern: several cities in a few days, a long list of famous sights and many photos. The slow travel movement suggests a different approach: staying longer in fewer places and experiencing them more deeply.
+
+Slow travellers might spend weeks in a single town or region, renting an apartment rather than staying in hotels. They shop at local markets, learn a few words of the language and take time to get to know residents. Instead of rushing between attractions, they explore neighbourhoods on foot and visit places that are not in guidebooks.
+
+The movement often favours slower forms of transport, such as trains, buses, bicycles or walking. Supporters say the journey itself becomes part of the experience, offering views and encounters that flights cannot provide. Avoiding short flights also reduces travellers' carbon emissions.
+
+Slow travel can benefit local communities too. Travellers who stay longer tend to spend money in local shops, cafés and guesthouses rather than in large international chains. Spreading visitors throughout the year and across less famous areas can also reduce the pressure of overtourism in popular destinations.
+
+Of course, slow travel requires time, which many people do not have. Most workers have limited holidays, and long trips can be expensive. However, supporters argue that the principles can apply to shorter trips: visiting fewer places, avoiding over-planning and leaving space for unexpected experiences.
+
+As one slow traveller put it, "The goal is not to see everything, but to really see something."
+? c | What does slow travel suggest? | *Staying longer in fewer places | Visiting as many cities as possible | Travelling only by plane | The first paragraph explains. | staying longer in fewer places and experiencing them more deeply.
+? c | Which transport does the movement often favour? | *Trains, buses, bicycles or walking | Planes | Cruise ships | The third paragraph says so. | such as trains, buses, bicycles or walking.
+? t | Travellers who stay longer tend to spend money in local businesses. | T | The fourth paragraph says so. | Travellers who stay longer tend to spend money in local shops, cafés and guesthouses
+? s | What do many people not have for slow travel? | time | The fifth paragraph says so. | slow travel requires time, which many people do not have.
+? c | According to the last quote, what is the goal? | *To really see something | To see everything | To take many photos | The last paragraph quotes a traveller. | The goal is not to see everything, but to really see something.
+
+## Why teenagers sleep late | HE
+Parents often complain that teenagers stay up late at night and find it almost impossible to get up in the morning. It is easy to blame phones or laziness, but scientists say biology plays an important role.
+
+During adolescence, the body's internal clock shifts. The release of melatonin, the hormone that makes us feel sleepy, begins later in the evening than it does in children or adults. As a result, many teenagers genuinely find it difficult to fall asleep before eleven o'clock, even if they go to bed earlier.
+
+At the same time, teenagers need a lot of sleep, around eight to ten hours a night. When school starts early, many get far less. Sleep deprivation has been linked to poorer concentration, lower grades, mood problems and an increased risk of accidents.
+
+Technology can make the situation worse. The light from screens delays the release of melatonin further, and social media and games keep the brain active.
+
+Some schools have responded by starting the school day later. In several studies, a later start of even thirty to sixty minutes led to longer sleep, better attendance and improved mood. However, changing school times can be complicated, because it affects transport, parents' working schedules and after-school activities.
+
+Experts also suggest steps families can take: keeping regular sleep times, even at weekends; limiting screens in the hour before bed; and keeping phones out of the bedroom at night. Understanding that teenagers' sleep patterns are partly biological may also help reduce conflict at home.
+? c | What do scientists say plays an important role in teenagers' late sleeping? | *Biology | Laziness | Diet | The first paragraph explains. | scientists say biology plays an important role.
+? c | What happens to melatonin release during adolescence? | *It begins later in the evening | It stops completely | It begins earlier | The second paragraph explains. | begins later in the evening than it does in children or adults.
+? s | How much sleep do teenagers need? | around eight to ten hours / eight to ten hours / 8 to 10 hours | The third paragraph says so. | around eight to ten hours a night.
+? t | A later school start led to worse attendance in studies. | F | It led to better attendance. | led to longer sleep, better attendance and improved mood.
+? c | What do experts suggest families do? | *Keep phones out of the bedroom at night | Let teenagers sleep until noon on school days | Remove all screens from the house | The last paragraph says so. | keeping phones out of the bedroom at night.
+"""
+
+# MORE LEVELS
 
 
 def parse(level, block, first_id):
