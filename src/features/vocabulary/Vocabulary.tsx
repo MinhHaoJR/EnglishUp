@@ -1,7 +1,16 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useApp } from '../../app/store';
-import SkillIcon from '../../components/SkillIcon';
+import SkillIcon, { type IconName } from '../../components/SkillIcon';
+
+/** A sign for each group of topics in the directory. */
+const sectionIcons: Record<string, IconName> = {
+  everyday: 'streak',
+  work: 'briefcase',
+  specialist: 'cap',
+  exam: 'achievements',
+  writing: 'grammar',
+};
 import { vocabulary } from '../../data/content';
 import { topicSectionFor, topicSections, type TopicSectionId } from '../../data/topicSections';
 import { levelSchema, type Level, type Word } from '../../data/schema';
@@ -106,7 +115,10 @@ export default function Vocabulary() {
       aria-label={bi('Chọn chủ đề từ vựng', 'Choose a vocabulary topic')}
     >
       <div className="vocabulary-topic-heading">
-        <h2>{bi('Chọn chủ đề', 'Choose a topic')}</h2>
+        <h2>
+          <SkillIcon skill="bookmark" size={22} />
+          {bi('Chọn chủ đề', 'Choose a topic')}
+        </h2>
         <button
           className="topic-all"
           aria-pressed={topic === 'all'}
@@ -115,6 +127,7 @@ export default function Vocabulary() {
             setPicking(false);
           }}
         >
+          <SkillIcon skill="dashboard" size={18} />
           {t('allTopics')} · {all.filter((word) => level === 'all' || word.level === level).length}
         </button>
       </div>
@@ -130,6 +143,7 @@ export default function Vocabulary() {
                 filter(level, 'all');
               }}
             >
+              <SkillIcon skill={sectionIcons[entry.id] ?? 'vocabulary'} size={18} />
               {bi(entry.vi, entry.en)}
             </button>
           ))}
@@ -184,6 +198,9 @@ export default function Vocabulary() {
               <small>
                 {count} {t('words')}
               </small>
+              <span className="topic-tile-go" aria-hidden="true">
+                <SkillIcon skill="chevron" size={16} />
+              </span>
             </button>
           );
         })}
@@ -202,19 +219,59 @@ export default function Vocabulary() {
           'Học thẻ từ, ôn tập ngắt quãng và luyện dịch',
           'Word cards, spaced review and translation',
         )}
-      />
+      >
+        <div className="vocab-hero" aria-hidden="true">
+          <p className="vocab-slogan">
+            <span>{bi('Học mỗi ngày', 'Learn every day,')}</span>
+            <span>{bi('vững tương lai', 'build your future')}</span>
+            <svg viewBox="0 0 60 30">
+              <path className="plane" d="M58 2L30 13l9 3 3 9 5-8 11-15z" />
+              <path className="trail" d="M30 16c-8 6-18 9-28 9" />
+            </svg>
+          </p>
+          <img src="/art/vocab-books.webp" width={454} height={264} alt="" draggable={false} />
+        </div>
+      </PageTitle>
       {/* While a card is on screen, the totals step aside so the word has the page. */}
       {tab !== 'relations' && !(tab === 'practice' && practicing) && (
         <div className="stats">
-          {[
-            [t('new'), all.length - reviews.filter((r) => all.some((w) => w.id === r.id)).length],
-            [t('learning'), reviews.filter((r) => r.interval < 21).length],
-            [t('mastered'), reviews.filter((r) => r.interval >= 21).length],
-            [t('accuracy'), `${accuracy}%`],
-          ].map(([label, n]) => (
-            <div className="stat" key={label}>
-              <span>{label}</span>
+          {(
+            [
+              [
+                t('new'),
+                all.length - reviews.filter((r) => all.some((w) => w.id === r.id)).length,
+                'blue',
+                'calendar',
+              ],
+              [t('learning'), reviews.filter((r) => r.interval < 21).length, 'green', 'cap'],
+              [t('mastered'), reviews.filter((r) => r.interval >= 21).length, 'orange', 'clock'],
+              [t('accuracy'), `${accuracy}%`, 'purple', 'goal'],
+            ] as [string, number | string, string, IconName][]
+          ).map(([label, n, tone, icon]) => (
+            <div className="stat" key={label} data-tone={tone}>
+              <span>
+                <SkillIcon skill={icon} size={20} />
+                {label}
+              </span>
               <strong>{n}</strong>
+              {tone === 'purple' ? (
+                <svg className="stat-ring" viewBox="0 0 40 40" aria-hidden="true">
+                  <circle cx="20" cy="20" r="15" />
+                  <circle
+                    cx="20"
+                    cy="20"
+                    r="15"
+                    strokeDasharray={`${(accuracy / 100) * 94.2} 94.2`}
+                  />
+                </svg>
+              ) : (
+                <span className="stat-deco" aria-hidden="true">
+                  <SkillIcon
+                    skill={tone === 'blue' ? 'chart' : tone === 'green' ? 'cap' : 'achievements'}
+                    size={44}
+                  />
+                </span>
+              )}
             </div>
           ))}
         </div>
@@ -224,15 +281,19 @@ export default function Vocabulary() {
       )}
       <div className="tabs">
         <button aria-pressed={tab === 'practice'} onClick={() => setTab('practice')}>
+          <SkillIcon skill="bolt" size={18} />
           {t('practiceTab')}
         </button>
         <button aria-pressed={tab === 'library'} onClick={() => setTab('library')}>
+          <SkillIcon skill="reading" size={18} />
           {t('library')} · {all.length}
         </button>
         <button aria-pressed={tab === 'translation'} onClick={() => setTab('translation')}>
+          <SkillIcon skill="writing" size={18} />
           {bi('Luyện viết và dịch', 'Translation practice')}
         </button>
         <button aria-pressed={tab === 'relations'} onClick={() => setTab('relations')}>
+          <SkillIcon skill="swap" size={18} />
           {bi('Đồng nghĩa & trái nghĩa', 'Synonyms & antonyms')}
         </button>
       </div>
@@ -240,8 +301,19 @@ export default function Vocabulary() {
       {tab !== 'relations' && !(tab === 'practice' && practicing) && (
         <>
           <section className="panel topic-bar" aria-label={bi('Chủ đề đang học', 'Current topic')}>
+            <img
+              className="topic-bar-art"
+              src="/art/vocab-book.webp"
+              width={260}
+              height={152}
+              alt=""
+              draggable={false}
+            />
             <div className="topic-bar-name">
-              <h2>{topic === 'all' ? t('allTopics') : topicLabel(topic)}</h2>
+              <h2>
+                <SkillIcon skill="star" size={22} />
+                {topic === 'all' ? t('allTopics') : topicLabel(topic)}
+              </h2>
               <small>
                 {filtered.length} {t('words')}
               </small>
@@ -263,6 +335,14 @@ export default function Vocabulary() {
                 {picking ? bi('Đóng danh sách', 'Close list') : bi('Đổi chủ đề', 'Change topic')}
               </button>
             )}
+            <img
+              className="topic-bar-art chart"
+              src="/art/vocab-chart.webp"
+              width={244}
+              height={160}
+              alt=""
+              draggable={false}
+            />
           </section>
           {/* Practice starts from the directory; the word list and translation start from their content. */}
           {((topic === 'all' && tab === 'practice') || picking) && topicDirectory}
