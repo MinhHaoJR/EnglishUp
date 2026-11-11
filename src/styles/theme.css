@@ -5862,28 +5862,6 @@ html .workspace .tabs button[aria-pressed='true'] {
   line-height: 1.5;
   color: var(--ink);
 }
-.chat-widget-panel .chat-intro .chat-privacy {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 12px 14px;
-  border: 1px solid var(--tom-edge);
-  border-radius: 16px;
-  background: var(--tom-mist);
-  font-size: 0.8125rem;
-  line-height: 1.5;
-  text-align: left;
-}
-.chat-privacy svg {
-  flex: none;
-  width: 22px;
-  height: 22px;
-  fill: #ffd54a;
-  stroke: #9a6412;
-  stroke-width: 1.4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .chat-widget-panel .chat-suggestions {
   display: grid;
   gap: 10px;

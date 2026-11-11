@@ -327,15 +327,6 @@ export function ChatPanel({
                 )}
               </p>
             </div>
-            <p className="chat-privacy">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M9 18h6 M10 21h4 M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3z" />
-              </svg>
-              {bi(
-                'Câu hỏi được gửi tới Google Gemini (gói miễn phí, Google có thể dùng để cải thiện dịch vụ). Đừng nhập thông tin cá nhân.',
-                'Questions are sent to Google Gemini (free tier; Google may use them to improve its services). Do not enter personal information.',
-              )}
-            </p>
             <div className="chat-suggestions">
               {suggestions.map(([icon, vi, en]) => (
                 <button key={en} type="button" onClick={() => void chat.submit(bi(vi, en))}>

@@ -1413,9 +1413,6 @@ html.dark .language-space .primary:hover {
   color: var(--muted);
   font-size: 0.875rem;
 }
-.chat-intro .chat-privacy {
-  font-size: 0.75rem;
-}
 .chat-suggestions {
   display: flex;
   flex-wrap: wrap;
