@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, Navigate, useSearchParams } from 'react-router-dom';
 import { useBi, useT } from '../../i18n';
-import { Notice, PageTitle, useLive } from '../../components/shared';
+import { Notice, useLive } from '../../components/shared';
 import SkillIcon, { type IconName } from '../../components/SkillIcon';
 import { useApp } from '../../app/store';
 import { AuthError, changePassword, logout, useAuth } from '../../services/auth';
@@ -92,13 +92,7 @@ export default function Account() {
 
   return (
     <>
-      <PageTitle
-        title={bi('Tài khoản', 'Account')}
-        description={bi(
-          'Hồ sơ, điểm, huy hiệu và đồng bộ của bạn',
-          'Your profile, points, badges and sync',
-        )}
-      />
+      <h1 className="sr-only">{bi('Tài khoản', 'Account')}</h1>
       <div className="account">
         <aside className="account-side">
           <div className="account-card">

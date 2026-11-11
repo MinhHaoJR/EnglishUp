@@ -6701,3 +6701,34 @@ html.dark .profile-art {
     font-size: 1.375rem;
   }
 }
+/* Account without its title plate: the side and the pane run the same height in every section. */
+.workspace .account {
+  align-items: stretch;
+  margin-top: 8px;
+}
+.workspace .account-side {
+  grid-template-rows: auto minmax(0, 1fr);
+}
+.workspace .account-pane {
+  align-content: start;
+}
+@media (max-width: 860px) {
+  .workspace .account-side {
+    grid-template-rows: none;
+  }
+}
+/* Privacy rows: the sign tile shows again (the menu restyle made it white on white), text centred on it. */
+.workspace .account-privacy .account-menu-tile {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--primary) 10%, var(--panel));
+  color: var(--primary);
+}
+.workspace .account-privacy > div {
+  align-items: center;
+}
+.workspace .account-privacy dd {
+  padding-top: 0;
+}
