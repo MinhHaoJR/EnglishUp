@@ -213,25 +213,30 @@ export default function Vocabulary() {
   return (
     <>
       {/* Words are added only in the admin library; learners keep editing words they saved before. */}
-      <PageTitle
-        title={t('vocabulary')}
-        description={bi(
-          'Học thẻ từ, ôn tập ngắt quãng và luyện dịch',
-          'Word cards, spaced review and translation',
-        )}
-      >
-        <div className="vocab-hero" aria-hidden="true">
-          <p className="vocab-slogan">
-            <span>{bi('Học mỗi ngày', 'Learn every day,')}</span>
-            <span>{bi('vững tương lai', 'build your future')}</span>
-            <svg viewBox="0 0 60 30">
-              <path className="plane" d="M58 2L30 13l9 3 3 9 5-8 11-15z" />
-              <path className="trail" d="M30 16c-8 6-18 9-28 9" />
-            </svg>
-          </p>
-          <img src="/art/vocab-books.webp" width={454} height={264} alt="" draggable={false} />
-        </div>
-      </PageTitle>
+      {/* While a card is on screen, the title plate steps aside too; screen readers keep the heading. */}
+      {tab === 'practice' && practicing ? (
+        <h1 className="sr-only">{t('vocabulary')}</h1>
+      ) : (
+        <PageTitle
+          title={t('vocabulary')}
+          description={bi(
+            'Học thẻ từ, ôn tập ngắt quãng và luyện dịch',
+            'Word cards, spaced review and translation',
+          )}
+        >
+          <div className="vocab-hero" aria-hidden="true">
+            <p className="vocab-slogan">
+              <span>{bi('Học mỗi ngày', 'Learn every day,')}</span>
+              <span>{bi('vững tương lai', 'build your future')}</span>
+              <svg viewBox="0 0 60 30">
+                <path className="plane" d="M58 2L30 13l9 3 3 9 5-8 11-15z" />
+                <path className="trail" d="M30 16c-8 6-18 9-28 9" />
+              </svg>
+            </p>
+            <img src="/art/vocab-books.webp" width={454} height={264} alt="" draggable={false} />
+          </div>
+        </PageTitle>
+      )}
       {/* While a card is on screen, the totals step aside so the word has the page. */}
       {tab !== 'relations' && !(tab === 'practice' && practicing) && (
         <div className="stats">

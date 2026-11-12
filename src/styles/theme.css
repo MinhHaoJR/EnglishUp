@@ -7623,3 +7623,61 @@ html.dark :is(.home-calendar, .home-cheer img, .home-foot img) {
     font-size: 1rem;
   }
 }
+
+/* ---------- Study session: the card is the page ----------
+   With the title plate gone, the session keeps the full width under the tabs; the word sits on a
+   tall soft stage in the middle, the counters and progress above it, the skip row below. */
+.workspace .study-session {
+  display: grid;
+  gap: 16px;
+  padding: 22px 26px;
+  border-radius: 24px;
+}
+.workspace .study-session .pile-count {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9375rem;
+}
+.workspace .study-session > progress {
+  height: 10px;
+  border-radius: 999px;
+}
+.workspace .study-session > progress::-webkit-progress-value {
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2bb455, var(--primary));
+}
+.workspace .study-session > progress::-moz-progress-bar {
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2bb455, var(--primary));
+}
+.workspace .study-session .study-card {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 18px;
+  min-height: 340px;
+  margin: 0;
+  padding: 32px 24px;
+  border: 1px solid color-mix(in srgb, var(--primary) 14%, var(--border));
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--primary) 4%, var(--panel)),
+    color-mix(in srgb, var(--primary) 10%, var(--panel))
+  );
+}
+.workspace .study-session .study-card > h2 {
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+  font-weight: 800;
+}
+.workspace .study-session .study-card > :is(fieldset, form, .rating-row, .choice-grid) {
+  width: min(100%, 640px);
+}
+.workspace .study-session .study-card .primary {
+  min-height: 52px;
+  padding-inline: 32px;
+  border-radius: 999px;
+}
+.workspace .study-session .study-footer {
+  padding-top: 4px;
+}
