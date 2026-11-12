@@ -211,6 +211,16 @@ export default function VocabularyPractice({
             {bi('Kết thúc sớm (giữ tiến độ)', 'End early (keep progress)')}
           </button>
         </div>
+        <div className="study-footer">
+          <button disabled={busy} className="quiet" onClick={() => advance()}>
+            {bi('Bỏ qua / Tiếp tục →', 'Skip word →')}
+          </button>
+          <span className="muted keys-hint" aria-hidden="true">
+            {mode === 'flashcards'
+              ? bi('Phím cách: xem đáp án · 1–4: đánh giá', 'Space: reveal · 1–4: rate')
+              : bi('1–4: đánh giá', '1–4: rate')}
+          </span>
+        </div>
         <progress
           value={activeGroup?.words.filter((word) => visited.has(word.id)).length ?? index}
           max={activeGroup?.words.length ?? queue.length}
@@ -338,16 +348,6 @@ export default function VocabularyPractice({
               </button>
             ) : null}
           </fieldset>
-        </div>
-        <div className="study-footer">
-          <button disabled={busy} className="quiet" onClick={() => advance()}>
-            {bi('Bỏ qua / Tiếp tục →', 'Skip word →')}
-          </button>
-          <span className="muted keys-hint" aria-hidden="true">
-            {mode === 'flashcards'
-              ? bi('Phím cách: xem đáp án · 1–4: đánh giá', 'Space: reveal · 1–4: rate')
-              : bi('1–4: đánh giá', '1–4: rate')}
-          </span>
         </div>
       </section>
     );

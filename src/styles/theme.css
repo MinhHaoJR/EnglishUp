@@ -7681,3 +7681,12 @@ html.dark :is(.home-calendar, .home-cheer img, .home-foot img) {
 .workspace .study-session .study-footer {
   padding-top: 4px;
 }
+/* The skip row now sits on top, between the counters and the progress bar. */
+.workspace .study-session .study-footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.workspace .study-session .study-footer .quiet {
+  padding-left: 4px;
+}
