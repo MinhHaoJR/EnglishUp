@@ -168,8 +168,10 @@ export const guideCategories = {
   roadmap: ['Lộ trình học', 'Learning paths'],
   practice: ['Cách luyện tập', 'How to practise'],
   account: ['Tài khoản và học tập', 'Account and study'],
+  grammar: ['Ngữ pháp và lỗi thường gặp', 'Grammar and common mistakes'],
+  study: ['Mẹo học', 'Study tips'],
 } as const satisfies Record<string, readonly [string, string]>;
-/** One answer the AI tutor gives about EnglishUp itself: greetings, the app, the level test, the paths. */
+/** One answer the AI tutor gives: about EnglishUp itself, grammar mistakes Vietnamese learners make, and study tips. */
 export const guideSchema = z.object({
   id: z.string().regex(/^g-[a-z0-9-]+$/),
   category: z.enum(Object.keys(guideCategories) as [keyof typeof guideCategories]),
