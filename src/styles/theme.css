@@ -7130,3 +7130,251 @@ html.dark .topic-bar-art {
 .workspace[data-skill='vocabulary'] .stat .stat-deco {
   color: color-mix(in srgb, var(--tone) 60%, transparent);
 }
+
+/* ---------- Word group chooser, after the owner's reference ----------
+   A mortarboard heading with a yellow underline and a count pill; groups as station cards on a green
+   line; the to-learn pile as chips, the remembered pile on green with a reading robot; mode cards
+   with the chosen one filled; a green start pill; books in the corner. */
+.study-chooser {
+  position: relative;
+  overflow: hidden;
+}
+.study-chooser > .panel-head h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.625rem;
+  font-weight: 800;
+}
+.study-chooser > .panel-head h2 svg {
+  flex: none;
+  color: #13243a;
+  fill: color-mix(in srgb, var(--primary) 18%, transparent);
+}
+html.dark .study-chooser > .panel-head h2 svg {
+  color: var(--primary);
+}
+.study-chooser > .panel-head h2 span {
+  background: linear-gradient(transparent 82%, color-mix(in srgb, #ffc629 70%, transparent) 82%);
+}
+.study-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--primary) 10%, var(--panel));
+  color: var(--primary);
+  font-weight: 600;
+}
+/* Stations: cards on a green line; the chosen one raised with the yellow ring. */
+.study-chooser .station-line {
+  gap: 10px;
+  padding: 4px 2px 14px;
+}
+.study-chooser .station {
+  --line: #22a34a;
+  min-width: 112px;
+  min-height: 112px;
+  gap: 6px;
+  padding: 14px 10px 12px;
+  border-radius: 16px;
+}
+.study-chooser .station:not(:last-child)::after {
+  top: 26px;
+  left: calc(50% + 14px);
+  width: calc(100% - 18px);
+  background: color-mix(in srgb, #22a34a 55%, var(--border));
+}
+.study-chooser .station-dot {
+  width: 26px;
+  height: 26px;
+}
+.study-chooser .station-name {
+  font-size: 1rem;
+}
+.study-chooser .station small {
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--primary) 8%, var(--panel));
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.study-chooser .station[aria-checked='true'] {
+  border-color: color-mix(in srgb, var(--primary) 30%, var(--border));
+  background: color-mix(in srgb, var(--primary) 10%, var(--panel));
+  box-shadow: var(--panel-shadow);
+}
+/* Piles. */
+.study-chooser .pile {
+  position: relative;
+  min-height: 200px;
+  padding: 18px 20px;
+  border-radius: 20px;
+  box-shadow: var(--panel-shadow);
+}
+.study-chooser .pile h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.375rem;
+  font-weight: 800;
+}
+.study-chooser .pile h3 > svg {
+  color: var(--primary);
+}
+.study-chooser .pile h3 > span:last-child {
+  padding: 2px 12px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--primary) 12%, var(--panel));
+  color: var(--primary);
+  font-size: 1.125rem;
+}
+.study-chooser .pile ul {
+  gap: 8px;
+}
+.study-chooser .pile.todo li {
+  padding: 6px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--primary) 8%, var(--panel));
+  color: var(--ink);
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+.study-chooser .pile.done {
+  border-color: color-mix(in srgb, #22a34a 30%, var(--border));
+  background: linear-gradient(
+    150deg,
+    color-mix(in srgb, #22a34a 6%, var(--panel)),
+    color-mix(in srgb, #22a34a 20%, var(--panel))
+  );
+}
+.study-chooser .pile.done ul,
+.study-chooser .pile.done p {
+  position: relative;
+  z-index: 1;
+  max-width: calc(100% - 140px);
+}
+.pile-tick {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #22a34a;
+  color: #fff;
+}
+.study-chooser .pile.done h3 > span:last-child {
+  background: color-mix(in srgb, #22a34a 16%, var(--panel));
+  color: #157a37;
+}
+html.dark .study-chooser .pile.done h3 > span:last-child {
+  color: #6fd394;
+}
+.pile-art {
+  position: absolute;
+  right: 6px;
+  bottom: 0;
+  width: 150px;
+  height: auto;
+  pointer-events: none;
+}
+/* Practice modes: tall cards, the chosen one filled. */
+.study-chooser .mode-tiles button {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  min-height: 108px;
+  border-radius: 18px;
+  box-shadow: var(--panel-shadow);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.study-chooser .mode-tiles button svg {
+  width: 30px;
+  height: 30px;
+  color: var(--primary);
+}
+.study-chooser .mode-tiles button[aria-checked='true'] {
+  border-color: var(--primary);
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--primary) 70%, #6fb3ff),
+    var(--primary)
+  );
+  color: var(--primary-ink);
+  box-shadow: 0 10px 22px color-mix(in srgb, var(--primary) 32%, transparent);
+}
+.study-chooser .mode-tiles button[aria-checked='true'] svg {
+  color: var(--primary-ink);
+}
+/* Start and next: pills, the start one green. */
+.study-chooser .study-start {
+  position: relative;
+  z-index: 1;
+  gap: 14px;
+}
+.study-chooser .study-start button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: var(--panel-shadow);
+}
+.study-chooser .study-start button svg {
+  color: var(--primary);
+}
+.study-chooser .study-start .primary,
+.study-chooser .study-start .primary:hover:not(:disabled) {
+  border-color: #1f9a46;
+  background: linear-gradient(160deg, #2bb455, #1a8a3e);
+  color: #fff;
+  box-shadow: 0 10px 22px rgb(31 154 70 / 30%);
+}
+.study-chooser .study-start .primary svg {
+  color: #fff;
+}
+.study-books {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 260px;
+  height: auto;
+  pointer-events: none;
+}
+html.dark :is(.pile-art, .study-books) {
+  opacity: 0.85;
+}
+@media (max-width: 1100px) {
+  .study-books {
+    display: none;
+  }
+}
+@media (max-width: 860px) {
+  .pile-art {
+    display: none;
+  }
+  .study-chooser .pile.done ul,
+  .study-chooser .pile.done p {
+    max-width: none;
+  }
+  .study-chooser > .panel-head h2 {
+    font-size: 1.25rem;
+  }
+}
+.study-chooser .pile h3 > .pile-tick {
+  padding: 0;
+  background: #22a34a;
+  color: #fff;
+}
+.study-count {
+  white-space: nowrap;
+}
+.study-chooser > .panel-head {
+  flex-wrap: wrap;
+}

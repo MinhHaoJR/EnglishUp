@@ -360,10 +360,12 @@ export default function VocabularyPractice({
       <section className="panel study-chooser" aria-labelledby="study-title">
         <div className="panel-head">
           <h2 id="study-title" ref={chooser} tabIndex={-1}>
-            {finished ? t('result') : bi('Chọn cụm từ để học', 'Choose a word group')}
+            <SkillIcon skill="cap" size={28} />
+            <span>{finished ? t('result') : bi('Chọn cụm từ để học', 'Choose a word group')}</span>
           </h2>
           {selected && (
-            <span className="muted">
+            <span className="study-count">
+              <SkillIcon skill="chart" size={18} />
               {bi(
                 `${groups.length} cụm · tối đa 20 từ`,
                 `${groups.length} groups · up to 20 words`,
@@ -422,6 +424,7 @@ export default function VocabularyPractice({
             <div className="diptych">
               <section className="pile todo" aria-labelledby="pile-todo">
                 <h3 id="pile-todo">
+                  <SkillIcon skill="reading" size={22} />
                   {bi('Cần học', 'To learn')} <span>{selectedPiles.todo.length}</span>
                 </h3>
                 {selectedPiles.todo.length ? (
@@ -444,6 +447,9 @@ export default function VocabularyPractice({
               </section>
               <section className="pile done" aria-labelledby="pile-done">
                 <h3 id="pile-done">
+                  <span className="pile-tick" aria-hidden="true">
+                    <SkillIcon skill="check" size={16} />
+                  </span>
                   {bi('Đã nhớ', 'Remembered')} <span>{selectedPiles.done.length}</span>
                 </h3>
                 {selectedPiles.done.length ? (
@@ -462,6 +468,14 @@ export default function VocabularyPractice({
                     )}
                   </p>
                 )}
+                <img
+                  className="pile-art"
+                  src="/art/study-robot.webp"
+                  width={220}
+                  height={275}
+                  alt=""
+                  draggable={false}
+                />
               </section>
             </div>
 
@@ -490,6 +504,7 @@ export default function VocabularyPractice({
                 disabled={busy || !ready || !saved || !!readError}
                 onClick={() => start()}
               >
+                <SkillIcon skill="check" size={20} />
                 {remaining.length
                   ? bi(
                       `Bắt đầu luyện tập · còn ${remaining.length} từ →`,
@@ -502,10 +517,19 @@ export default function VocabularyPractice({
                   disabled={busy || !ready || !saved}
                   onClick={() => start(nextGroup.id, false)}
                 >
+                  <SkillIcon skill="cap" size={20} />
                   {bi('Học cụm tiếp theo →', 'Study next group →')}
                 </button>
               )}
             </div>
+            <img
+              className="study-books"
+              src="/art/study-books.webp"
+              width={386}
+              height={130}
+              alt=""
+              draggable={false}
+            />
           </>
         ) : (
           <p>
