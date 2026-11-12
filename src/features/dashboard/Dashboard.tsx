@@ -90,10 +90,22 @@ export default function Dashboard() {
   return (
     <div className="home">
       <header className="home-head">
+        <img
+          className="home-calendar"
+          src="/art/dash-calendar.webp"
+          width={192}
+          height={172}
+          alt=""
+          draggable={false}
+        />
         <div>
           <h1>{bi('Hôm nay', 'Today')}</h1>
           <p className="home-date">{date}</p>
         </div>
+        <svg className="home-plane" viewBox="0 0 120 40" aria-hidden="true">
+          <path className="trail" d="M2 36c20-2 40-10 62-16" />
+          <path className="plane" d="M118 2L74 18l14 4 4 14 8-12z" />
+        </svg>
         <div className="home-signs">
           <p className="sign-plate">
             <SkillIcon skill="streak" size={18} />
@@ -112,7 +124,14 @@ export default function Dashboard() {
       </header>
 
       <section className="panel route" aria-labelledby="route-title">
-        <h2 id="route-title">{t('dailyPlan')}</h2>
+        <h2 id="route-title">
+          <SkillIcon skill="chart" size={24} />
+          {t('dailyPlan')}
+        </h2>
+        <div className="home-cheer" aria-hidden="true">
+          <p>{bi('Cố lên bạn nhé!', 'You can do it!')}</p>
+          <img src="/art/dash-kid.webp" width={182} height={218} alt="" draggable={false} />
+        </div>
         <ol className="route-stops">
           {plan.map((step) => {
             const done = progress.todaySkills.has(step.skill);
@@ -137,6 +156,11 @@ export default function Dashboard() {
                       {step.minutes} {t('minutes')}
                     </small>
                   </span>
+                  {(done || current) && (
+                    <span className="route-mark" aria-hidden="true">
+                      <SkillIcon skill={done ? 'check' : 'arrow'} size={16} />
+                    </span>
+                  )}
                 </Link>
               </li>
             );
@@ -145,6 +169,7 @@ export default function Dashboard() {
         <div className="route-foot">
           {next ? (
             <Link className="button primary" to={`/${next.skill}`}>
+              <SkillIcon skill="play" size={18} />
               {bi('Bắt đầu', 'Start')}: {t(next.skill)}
               <SkillIcon skill="arrow" size={18} />
             </Link>
@@ -159,7 +184,10 @@ export default function Dashboard() {
 
       <div className="home-grid">
         <section className="panel" aria-labelledby="lines-title">
-          <h2 id="lines-title">{bi('Kỹ năng', 'Skills')}</h2>
+          <h2 id="lines-title">
+            <SkillIcon skill="achievements" size={24} />
+            {bi('Kỹ năng', 'Skills')}
+          </h2>
           <ul className="line-list">
             {skills.map((skill) => {
               const stats = progress.perSkill.find((p) => p.skill === skill)!;
@@ -172,6 +200,11 @@ export default function Dashboard() {
                     <span className="line-name">
                       <strong>{t(skill)}</strong>
                       <small>{lineFacts[skill]}</small>
+                      {stats.count > 0 && (
+                        <span className="line-meter" aria-hidden="true">
+                          <i style={{ width: `${stats.average}%` }} />
+                        </span>
+                      )}
                     </span>
                     <span className="line-score">
                       {stats.count ? (
@@ -183,13 +216,16 @@ export default function Dashboard() {
                         <small>{bi('Chưa luyện', 'Not started')}</small>
                       )}
                     </span>
-                    <SkillIcon skill="arrow" size={18} />
+                    <SkillIcon skill="chevron" size={18} />
                   </Link>
                 </li>
               );
             })}
           </ul>
           <p className="home-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 18h6 M10 21h4 M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3z" />
+            </svg>
             {bi(
               'Điểm là kết quả luyện tập, không phải đánh giá trình độ.',
               'Scores reflect practice, not proficiency.',
@@ -200,7 +236,10 @@ export default function Dashboard() {
         <div className="home-side">
           <section className="panel" aria-labelledby="week-title">
             <div className="panel-head">
-              <h2 id="week-title">{bi('Tuần này', 'This week')}</h2>
+              <h2 id="week-title">
+                <SkillIcon skill="calendar" size={22} />
+                {bi('Tuần này', 'This week')}
+              </h2>
               <span className="muted">
                 {weekMinutes} {t('minutes')}
               </span>
@@ -229,7 +268,10 @@ export default function Dashboard() {
           </section>
 
           <section className="panel" aria-labelledby="recent-title">
-            <h2 id="recent-title">{t('recent')}</h2>
+            <h2 id="recent-title">
+              <SkillIcon skill="star" size={22} />
+              {t('recent')}
+            </h2>
             {attempts.length ? (
               <ul className="recent-list">
                 {attempts.slice(0, 5).map((a) => (
@@ -256,6 +298,13 @@ export default function Dashboard() {
             {error && <Notice error>{error}</Notice>}
           </section>
         </div>
+      </div>
+      <div className="home-foot" aria-hidden="true">
+        <img src="/art/dash-books.webp" width={310} height={146} alt="" draggable={false} />
+        <p>
+          <span>{bi('Học mỗi ngày', 'Learn every day,')}</span>
+          <span>{bi('vững tương lai', 'build your future')}</span>
+        </p>
       </div>
     </div>
   );
