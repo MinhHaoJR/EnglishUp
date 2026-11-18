@@ -1,5 +1,6 @@
 """Writes src/data/guides.json: the AI tutor's guide, 110 entries: 50 about EnglishUp itself (2026-11-11),
-40 grammar mistakes Vietnamese learners often make and 20 study tips (2026-11-12, both original).
+40 grammar mistakes Vietnamese learners often make and 20 study tips (2026-11-12), 40 confusing word
+pairs and 20 everyday situations with phrases (2026-11-18), all original.
 
 Each entry answers one thing learners ask the tutor: greetings and who the tutor is, what the app offers,
 the level test, the learning paths, how each practice page works, accounts and study habits. The facts
@@ -10,7 +11,7 @@ to ask (help retrieval). Run: python scripts/create-guides.py
 import json
 import pathlib
 
-CATEGORIES = ["greeting", "about", "placement", "roadmap", "practice", "account", "grammar", "study"]
+CATEGORIES = ["greeting", "about", "placement", "roadmap", "practice", "account", "grammar", "study", "words", "phrases"]
 
 G = [
     # ---------- greeting: small talk and who the tutor is ----------
@@ -229,8 +230,9 @@ G = [
 
 
 from guide_grammar import GRAMMAR, STUDY  # noqa: E402
+from guide_words import WORDS, PHRASES  # noqa: E402
 
-G += GRAMMAR + STUDY
+G += GRAMMAR + STUDY + WORDS + PHRASES
 
 
 def main():
@@ -240,7 +242,7 @@ def main():
         assert len(avi.split()) <= 120 and len(aen.split()) <= 120, slug
         out.append({"id": f"g-{slug}", "category": category, "question": {"vi": qvi, "en": qen},
                     "answer": {"vi": avi, "en": aen}, "keywords": keywords})
-    assert len({g["id"] for g in out}) == len(out) == 110, len(out)
+    assert len({g["id"] for g in out}) == len(out) == 170, len(out)
     path = pathlib.Path(__file__).resolve().parent.parent / "src" / "data" / "guides.json"
     path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(len(out), "guide entries", {c: sum(1 for g in out if g["category"] == c) for c in CATEGORIES})
