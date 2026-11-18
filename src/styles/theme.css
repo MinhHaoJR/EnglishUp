@@ -16,23 +16,25 @@ so light is the default and dark is the night-lit sign.
 
 :root {
   --font: 'Be Vietnam Pro', 'Segoe UI', Roboto, Arial, sans-serif;
-  --bg: #f3f6f9;
-  --panel: #ffffff;
-  --ink: #13243a;
-  --muted: #55677b;
-  --border: #d8e0e9;
-  --soft: #eaf0f6;
-  --primary: #0b5cad;
-  --primary-strong: #084a8c;
+  --bg: #eef0f7;
+  --panel: #fbfbfe;
+  --ink: #1e2240;
+  --muted: #565b77;
+  --border: #dce0ee;
+  --soft: #e9ebf6;
+  /* Learning indigo with a lighter companion; measured: 6.1:1 on panels, white text on it 6.3:1. */
+  --primary: #4f46e5;
+  --primary-strong: #4338ca;
+  --primary-light: #818cf8;
   --primary-ink: #ffffff;
-  --primary-soft: #e3eefa;
+  --primary-soft: #ecedfd;
   --signal: #ffc629;
   --signal-ink: #13243a;
   --success: #136b40;
   --success-soft: #e4f4ea;
   --danger: #b42318;
   --danger-soft: #fdecea;
-  --focus: #0b5cad;
+  --focus: #4f46e5;
   /* Line colours: similar weight so no skill shouts; white pictograms stay above 4.5:1. */
   --line-vocabulary: #1a8754;
   --line-listening: #6b47c9;
@@ -40,11 +42,11 @@ so light is the default and dark is the night-lit sign.
   --line-reading: #0e7490;
   --line-writing: #be185d;
   --line-grammar: #a16207;
-  --line-service: #3d5a80;
+  --line-service: #4b5785;
   --tile-ink: #ffffff;
   --radius: 12px;
   --radius-sm: 8px;
-  --shadow-float: 0 10px 28px rgb(19 36 58 / 18%);
+  --shadow-float: 0 10px 28px rgb(30 34 64 / 16%);
   /* Legacy names other stylesheets still read. */
   --green: var(--primary);
   --accent: var(--primary-soft);
@@ -58,16 +60,17 @@ so light is the default and dark is the night-lit sign.
 }
 
 html.dark {
-  --bg: #0d1828;
-  --panel: #142338;
-  --ink: #e9eff6;
-  --muted: #a6b4c5;
-  --border: #283a54;
-  --soft: #1b2d47;
-  --primary: #62a8f2;
-  --primary-strong: #8cc0f6;
-  --primary-ink: #0b1726;
-  --primary-soft: #18324f;
+  --bg: #101326;
+  --panel: #181c34;
+  --ink: #e7e9f6;
+  --muted: #a4a9c6;
+  --border: #2b3052;
+  --soft: #20254a;
+  --primary: #8f95fa;
+  --primary-strong: #b4b8fc;
+  --primary-light: #a5aafc;
+  --primary-ink: #12152b;
+  --primary-soft: #262b55;
   --signal: #ffd44f;
   --signal-ink: #0b1726;
   --success: #4cc787;
@@ -81,8 +84,8 @@ html.dark {
   --line-reading: #3fbcd8;
   --line-writing: #ef6c9c;
   --line-grammar: #e2aa3f;
-  --line-service: #8aa6c8;
-  --tile-ink: #0b1726;
+  --line-service: #9aa3cf;
+  --tile-ink: #12152b;
   --shadow-float: 0 10px 28px rgb(0 0 0 / 45%);
   color: var(--ink);
   background: var(--bg);
@@ -6031,7 +6034,7 @@ html.dark {
 }
 .workspace::before {
   inset: 0 0 0 248px;
-  background: color-mix(in srgb, var(--primary) 50%, transparent);
+  background: color-mix(in srgb, var(--primary) 26%, transparent);
   -webkit-mask: url('/bg/waves.svg') center / 100% 100% no-repeat;
   mask: url('/bg/waves.svg') center / 100% 100% no-repeat;
 }
@@ -6042,7 +6045,7 @@ html.dark {
   width: 200px;
   height: 230px;
   background: radial-gradient(
-      color-mix(in srgb, var(--primary) 30%, transparent) 1.6px,
+      color-mix(in srgb, var(--primary) 20%, transparent) 1.6px,
       transparent 1.8px
     )
     0 0 / 20px 20px;
@@ -6368,13 +6371,13 @@ select {
   appearance: none;
   -webkit-appearance: none;
   padding-right: 40px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230b5cad' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234f46e5' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
   background-position: right 14px center;
   background-repeat: no-repeat;
   background-size: 16px;
 }
 html.dark select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2362a8f2' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238f95fa' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
 }
 input:not([type='checkbox'], [type='range'], [type='radio']):hover:not(:disabled),
 select:hover:not(:disabled),
@@ -6413,12 +6416,20 @@ input[type='radio'] {
   height: 96px;
   background:
     radial-gradient(120% 90% at 50% 120%, var(--panel) 48%, transparent 50%),
-    linear-gradient(160deg, color-mix(in srgb, var(--primary) 80%, #6fb3ff), var(--primary));
+    linear-gradient(
+      160deg,
+      color-mix(in srgb, var(--primary) 70%, var(--primary-light)),
+      var(--primary)
+    );
 }
 .dark .account-cover {
   background:
     radial-gradient(120% 90% at 50% 120%, var(--panel) 48%, transparent 50%),
-    linear-gradient(160deg, #1f4f86, var(--primary-soft));
+    linear-gradient(
+      160deg,
+      color-mix(in srgb, var(--primary) 35%, var(--panel)),
+      var(--primary-soft)
+    );
 }
 .account-laurel {
   position: absolute;
@@ -6844,7 +6855,7 @@ html.dark .profile-art {
   height: 30px;
 }
 .vocab-slogan .plane {
-  fill: color-mix(in srgb, var(--primary) 70%, #6fb3ff);
+  fill: color-mix(in srgb, var(--primary) 60%, var(--primary-light));
 }
 .vocab-slogan .trail {
   fill: none;
@@ -6878,8 +6889,8 @@ html .workspace[data-skill='vocabulary'] .stats > .stat:nth-child(n) {
   border-radius: 18px;
   background: linear-gradient(
     120deg,
-    color-mix(in srgb, var(--tone) 7%, var(--panel)),
-    color-mix(in srgb, var(--tone) 24%, var(--panel))
+    color-mix(in srgb, var(--tone) 5%, var(--panel)),
+    color-mix(in srgb, var(--tone) 15%, var(--panel))
   );
   box-shadow: var(--panel-shadow);
 }
@@ -7059,8 +7070,8 @@ html .workspace[data-skill='vocabulary'] .stats > .stat:nth-child(n) {
   border-radius: 16px;
   background: linear-gradient(
     120deg,
-    color-mix(in srgb, var(--tone) 6%, var(--panel)),
-    color-mix(in srgb, var(--tone) 16%, var(--panel))
+    color-mix(in srgb, var(--tone) 4%, var(--panel)),
+    color-mix(in srgb, var(--tone) 11%, var(--panel))
   );
   text-align: left;
 }
@@ -7300,7 +7311,7 @@ html.dark .study-chooser .pile.done h3 > span:last-child {
   border-color: var(--primary);
   background: linear-gradient(
     160deg,
-    color-mix(in srgb, var(--primary) 70%, #6fb3ff),
+    color-mix(in srgb, var(--primary) 60%, var(--primary-light)),
     var(--primary)
   );
   color: var(--primary-ink);
@@ -7412,7 +7423,7 @@ html.dark :is(.pile-art, .study-books) {
   stroke-dasharray: 5 5;
 }
 .home-plane .plane {
-  fill: color-mix(in srgb, var(--primary) 55%, #8cc0ff);
+  fill: color-mix(in srgb, var(--primary) 50%, var(--primary-light));
 }
 .workspace[data-skill='dashboard'] .home-signs .sign-plate {
   padding: 8px 18px;
@@ -7496,8 +7507,8 @@ html.dark :is(.pile-art, .study-books) {
   border-color: color-mix(in srgb, var(--line) 25%, var(--border));
   background: linear-gradient(
     120deg,
-    color-mix(in srgb, var(--line) 5%, var(--panel)),
-    color-mix(in srgb, var(--line) 14%, var(--panel))
+    color-mix(in srgb, var(--line) 4%, var(--panel)),
+    color-mix(in srgb, var(--line) 10%, var(--panel))
   );
   box-shadow: var(--panel-shadow);
 }

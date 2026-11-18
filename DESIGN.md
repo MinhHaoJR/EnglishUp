@@ -10,18 +10,18 @@ Chosen from seven candidates drawn from Vietnamese learners' world (guide signs,
 
 ## Color
 
-Strategy: full palette, one line per page (colour pass of 10/11/2026, design-craft colorize + layout). Each learning page owns its skill line at page scale: a 5% wash on the ground, a title plate with the page pictogram on a 17%→5% tint, line-tinted panel edges, primary buttons filled with the line, stat tiles, tabs, progress bars, checkboxes and choices. Signal yellow stays reserved for "you are here". CEFR levels have their own sequential spectrum (below), used for level chips and the faint wash of each lesson card. Vocabulary topic tiles walk the same spectrum with a coloured stop, so long lists read as varied but stay in one family. The Overview's title plate ends in a six-segment route map of the skill lines. Harmony comes from one recipe: tints are the line mixed into the panel at 4, 10, 17 and 24 percent, and text colours are the line mixed 78% with ink (`--line-wash`, `--line-tint`, `--line-edge`, `--line-text`). Earlier strategy, kept for the admin pages: neutrals plus sign blue, with line colours for skills only. Light is the default because learners mostly practise in daylit rooms. Dark is the night-lit sign, used on phones in the evening.
+Strategy: full palette, one line per page (colour pass of 10/11/2026, design-craft colorize + layout). Each learning page owns its skill line at page scale: a 5% wash on the ground, a title plate with the page pictogram on a 17%→5% tint, line-tinted panel edges, primary buttons filled with the line, stat tiles, tabs, progress bars, checkboxes and choices. Signal yellow stays reserved for "you are here". CEFR levels have their own sequential spectrum (below), used for level chips and the faint wash of each lesson card. Vocabulary topic tiles walk the same spectrum with a coloured stop, so long lists read as varied but stay in one family. The Overview's title plate ends in a six-segment route map of the skill lines. Harmony comes from one recipe: tints are the line mixed into the panel at 4, 10, 17 and 24 percent, and text colours are the line mixed 78% with ink (`--line-wash`, `--line-tint`, `--line-edge`, `--line-text`). Earlier strategy, kept for the admin pages: neutrals plus sign blue, with line colours for skills only. Calm pass of 18/11/2026 (ui-ux-pro-max, education): sign blue gave way to a learning indigo, the ground and panels lost their pure white, and the background waves, dot grid and tinted cards were turned down so long sessions do not tire the eyes. Light is the default because learners mostly practise in daylit rooms. Dark is the night-lit sign, used on phones in the evening.
 
 | Role                         | Light     | Dark      | Where it is used                                                                                   |
 | ---------------------------- | --------- | --------- | -------------------------------------------------------------------------------------------------- |
-| Ground `--bg`                | `#f3f6f9` | `#0d1828` | Page background                                                                                    |
-| Surface `--panel`            | `#ffffff` | `#142338` | Panels, plates, inputs                                                                             |
-| Text `--ink`                 | `#13243a` | `#e9eff6` | Body and headings: 15.7:1 on panel (light), 13.5:1 (dark)                                          |
-| Secondary text `--muted`     | `#55677b` | `#a6b4c5` | Meta, captions: 5.8:1 on panel and 5.3:1 on ground (light), 7.5:1 (dark)                           |
-| Border `--border`            | `#d8e0e9` | `#283a54` | 1px rules and plate edges                                                                          |
-| Tint `--soft`                | `#eaf0f6` | `#1b2d47` | Hover, segmented tab track, chips                                                                  |
-| Accent `--primary`           | `#0b5cad` | `#62a8f2` | Primary buttons, links, focus ring (light). White on it 6.7:1; dark text on the dark variant 6.8:1 |
-| Accent tint `--primary-soft` | `#e3eefa` | `#18324f` | Active nav item, notices                                                                           |
+| Ground `--bg`                | `#eef0f7` | `#101326` | Page background, a faint indigo tint rather than grey                                              |
+| Surface `--panel`            | `#fbfbfe` | `#181c34` | Panels, plates, inputs; just off white to cut glare                                                |
+| Text `--ink`                 | `#1e2240` | `#e7e9f6` | Body and headings: 15.0:1 on panel (light), 13.9:1 (dark)                                          |
+| Secondary text `--muted`     | `#565b77` | `#a4a9c6` | Meta, captions: 6.4:1 on panel and 5.8:1 on ground (light), 7.2:1 (dark)                           |
+| Border `--border`            | `#dce0ee` | `#2b3052` | 1px rules and plate edges                                                                          |
+| Tint `--soft`                | `#e9ebf6` | `#20254a` | Hover, segmented tab track, chips                                                                  |
+| Accent `--primary`           | `#4f46e5` | `#8f95fa` | Learning indigo: buttons, links, focus ring. 6.1:1 on panel; white on it 6.3:1; dark text 6.7:1    |
+| Accent tint `--primary-soft` | `#ecedfd` | `#262b55` | Active nav item, notices; `--primary-light` (`#818cf8` / `#a5aafc`) lights gradients              |
 | Signal `--signal`            | `#ffc629` | `#ffd44f` | "You are here" only: the active nav dot, the next route stop ring, today's week label. Never text  |
 | Success `--success`          | `#136b40` | `#4cc787` | Right answers, finished plan. About 5.8:1 on its tint                                              |
 | Danger `--danger`            | `#b42318` | `#ff8a7a` | Wrong answers, errors, destructive buttons. 5.75:1 (light) and 6.6:1 (dark) on its tint            |
@@ -36,7 +36,7 @@ The line colours were picked at similar weight so no skill shouts. White pictogr
 | Reading                             | `#0e7490` | `#3fbcd8` |
 | Writing                             | `#be185d` | `#ef6c9c` |
 | Grammar (sentence patterns)         | `#a16207` | `#e2aa3f` |
-| Overview (dashboard)                | `#0b5cad` | `#62a8f2` |
+| Overview (dashboard)                | `#4f46e5` | `#8f95fa` |
 | Learning paths and level test       | `#4338ca` | `#8b93f5` |
 | Games                               | `#a21caf` | `#e07ae6` |
 | Achievements                        | `#be123c` | `#f7718d` |
