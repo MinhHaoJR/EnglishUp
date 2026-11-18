@@ -287,6 +287,9 @@ export const topics = [
   'Writing: Globalisation',
   'Writing: Science and research',
   'Writing: Economy and development',
+  'Writing: Society',
+  'Writing: Food and agriculture',
+  'Writing: Tourism and travel',
 ];
 export const topicVi: Record<string, string> = {
   'Daily life': 'Đời sống',
@@ -354,4 +357,7 @@ export const topicVi: Record<string, string> = {
   'Writing: Globalisation': 'Collocation: Toàn cầu hóa',
   'Writing: Science and research': 'Collocation: Khoa học và nghiên cứu',
   'Writing: Economy and development': 'Collocation: Kinh tế và phát triển',
+  'Writing: Society': 'Collocation: Xã hội',
+  'Writing: Food and agriculture': 'Collocation: Thực phẩm và nông nghiệp',
+  'Writing: Tourism and travel': 'Collocation: Du lịch',
 };

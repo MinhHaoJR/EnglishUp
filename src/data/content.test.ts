@@ -10,7 +10,7 @@ import { wordSchema, questionSchema } from './schema';
 import { topics, topicVi } from '../i18n';
 import { topicSectionFor, topicSections } from './topicSections';
 test('expanded catalog has translated topics, complete IT entries and stable original IDs', () => {
-  expect(vocabulary).toHaveLength(2491);
+  expect(vocabulary).toHaveLength(3411);
   // The phrasal verbs (their own test below) are left out of the original catalog's counts.
   expect(
     vocabulary.filter(
@@ -21,7 +21,7 @@ test('expanded catalog has translated topics, complete IT entries and stable ori
         !word.id.startsWith('v-verb-'),
     ),
   ).toHaveLength(1860);
-  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(65);
+  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(68);
   for (const topic of topics) {
     expect(topicVi[topic]).toBeTruthy();
     expect(vocabulary.some((word) => word.topic === topic)).toBe(true);
@@ -208,20 +208,24 @@ test('the phrasal verbs are complete, in their own exam topic and shown in conte
   expect(order).toEqual([...order].sort((a, b) => a - b));
 });
 
-test('the IELTS Writing collocations fill 15 themed topics of ten in their own section', () => {
+test('the IELTS Writing collocations fill 18 themed topics in their own section, each headword once', () => {
   const writing = vocabulary.filter((word) => word.topic.startsWith('Writing: '));
-  expect(writing).toHaveLength(150);
-  const byTopic = new Map<string, number>();
-  for (const word of writing) byTopic.set(word.topic, (byTopic.get(word.topic) ?? 0) + 1);
-  expect([...byTopic.values()]).toEqual(Array(15).fill(10));
+  expect(writing).toHaveLength(1070);
+  expect(new Set(writing.map((word) => word.topic)).size).toBe(18);
   for (const word of writing) {
     expect(topicSectionFor(word.topic)).toBe('writing');
     expect(topicVi[word.topic]).toMatch(/^Collocation: /);
     expect(word.id).toMatch(/^v-col-[a-z-]+$/);
-    expect(word.pos).toBe('collocation');
-    expect(word.examples[0].toLowerCase()).toContain(word.word);
+    expect(word.pos).toBe(word.word.includes(' ') ? 'collocation' : 'noun');
+    expect(word.examples[0].toLowerCase()).toContain(word.word.toLowerCase());
     expect(word.ipa).toBe('');
   }
+  // No headword repeats another entry anywhere in the English vocabulary.
+  const bare = (w: string) => w.toLowerCase().replace(/^(a|an|the) /, '');
+  const counts = new Map<string, number>();
+  for (const word of vocabulary)
+    counts.set(bare(word.word), (counts.get(bare(word.word)) ?? 0) + 1);
+  expect(writing.filter((word) => counts.get(bare(word.word))! > 1)).toEqual([]);
 });
 
 test('the added common verbs join Everyday verbs with their IPA and repeat a headword only for a new verb sense', () => {

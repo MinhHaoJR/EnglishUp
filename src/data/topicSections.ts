@@ -97,6 +97,9 @@ export const topicSections = [
       'Writing: Globalisation',
       'Writing: Science and research',
       'Writing: Economy and development',
+      'Writing: Society',
+      'Writing: Food and agriculture',
+      'Writing: Tourism and travel',
     ],
   },
 ] as const;

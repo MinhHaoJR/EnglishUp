@@ -54,7 +54,7 @@ test('large library pages are bounded and search and topic changes return to pag
   fireEvent.click(screen.getByRole('button', { name: /Word library/ }));
   expect(screen.getAllByRole('article')).toHaveLength(30);
   fireEvent.click(screen.getByRole('button', { name: 'Next page' }));
-  expect(screen.getByText('Page 2/84 · 2491 matching words')).toBeInTheDocument();
+  expect(screen.getByText('Page 2/114 · 3411 matching words')).toBeInTheDocument();
   fireEvent.change(screen.getByRole('searchbox', { name: 'Search words' }), {
     target: { value: 'pineapple' },
   });
@@ -64,7 +64,7 @@ test('large library pages are bounded and search and topic changes return to pag
   fireEvent.change(screen.getByRole('searchbox', { name: 'Search words' }), {
     target: { value: '' },
   });
-  expect(screen.getByText('Page 1/84 · 2491 matching words')).toBeInTheDocument();
+  expect(screen.getByText('Page 1/114 · 3411 matching words')).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Change topic' }));
   fireEvent.click(screen.getByRole('button', { name: 'People and family 50 words' }));
   expect(screen.getByText('Page 1/2 · 50 matching words')).toBeInTheDocument();

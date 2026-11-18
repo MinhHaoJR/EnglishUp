@@ -1,0 +1,105 @@
+# headword|Vietnamese meaning|English definition|example (contains the headword)
+## Education A
+go to school|đi học|to attend lessons at a school regularly|Most children in Vietnam go to school at the age of six.
+attend classes|đến lớp, tham dự giờ học|to be present at lessons|You need to attend classes if you want to pass the course.
+do homework|làm bài tập về nhà|to finish school work at home|I always do homework right after dinner.
+take a test|làm bài kiểm tra|to answer questions that check what you know|We will take a test on the new words on Friday.
+pass an exam|thi đỗ, vượt qua kỳ thi|to get a high enough mark in an exam|She studied every night to pass an exam in chemistry.
+fail an exam|thi trượt|to not get a high enough mark in an exam|It is not the end of the world if you fail an exam once.
+get good grades|được điểm tốt|to receive high marks at school|He wants to get good grades so he can win a scholarship.
+learn new skills|học thêm kỹ năng mới|to gain abilities you did not have before|Summer camps help teenagers learn new skills.
+study hard|học chăm chỉ|to spend a lot of effort on learning|If you study hard now, the final exam will feel easier.
+read books|đọc sách|to look at and understand books|Children who read books often have a wider vocabulary.
+write an essay|viết một bài luận|to produce a piece of writing that discusses a topic|Our teacher asked us to write an essay about our hometown.
+ask questions|đặt câu hỏi|to say something in order to get information|Good learners are not afraid to ask questions in class.
+make progress|tiến bộ|to improve or move forward over time|You will make progress faster with a little practice every day.
+learn a language|học một ngoại ngữ|to study how to speak and understand another language|It takes patience to learn a language well.
+finish school|học xong phổ thông|to complete your time at school|Many students start working as soon as they finish school.
+## Education B
+acquire knowledge|tiếp thu kiến thức|to gain information and understanding|Reading widely is the easiest way to acquire knowledge.
+develop critical thinking|phát triển tư duy phản biện|to grow the habit of judging ideas carefully|Debates help students develop critical thinking.
+pursue higher education|học lên đại học, cao học|to continue studying at university level|More young people now pursue higher education abroad.
+gain practical experience|tích lũy kinh nghiệm thực tế|to learn by doing real tasks|Internships let students gain practical experience in a real company.
+meet academic requirements|đáp ứng yêu cầu học thuật|to reach the standards a course or school asks for|Applicants must meet academic requirements before they can enrol.
+achieve academic success|đạt kết quả học tập tốt|to do very well in your studies|Regular sleep helps teenagers achieve academic success.
+provide equal opportunities|tạo cơ hội ngang nhau|to give everyone the same chances|Schools should provide equal opportunities to boys and girls.
+enhance learning outcomes|nâng cao kết quả học tập|to improve what learners know and can do after a course|Smaller classes can enhance learning outcomes.
+adopt effective teaching methods|áp dụng phương pháp dạy hiệu quả|to start using ways of teaching that work well|Teachers who adopt effective teaching methods keep pupils interested.
+encourage independent learning|khuyến khích tự học|to help students study on their own|Online libraries encourage independent learning.
+develop problem-solving skills|rèn kỹ năng giải quyết vấn đề|to improve the ability to find answers to difficulties|Puzzles and coding games develop problem-solving skills.
+reduce academic pressure|giảm áp lực học hành|to make school less stressful|Some schools have cut homework to reduce academic pressure.
+broaden students' horizons|mở mang tầm nhìn cho học sinh|to show learners new ideas and experiences|School trips abroad broaden students' horizons.
+bridge the education gap|thu hẹp khoảng cách giáo dục|to reduce differences in learning between groups|Free online courses can bridge the education gap between cities and villages.
+promote lifelong learning|khuyến khích học tập suốt đời|to encourage people to keep learning at every age|Public libraries promote lifelong learning.
+improve literacy rates|tăng tỷ lệ người biết chữ|to raise the share of people who can read and write|Evening classes helped improve literacy rates in the region.
+receive vocational training|được đào tạo nghề|to learn the skills for a particular job|Young people who receive vocational training find work quickly.
+foster creativity|nuôi dưỡng óc sáng tạo|to encourage new and original ideas|Art and music lessons foster creativity in children.
+provide constructive feedback|góp ý mang tính xây dựng|to give helpful comments that show how to improve|Good teachers provide constructive feedback on every essay.
+## Education C
+foster intellectual curiosity|khơi dậy sự ham hiểu biết|to encourage a strong wish to learn and understand|Open questions foster intellectual curiosity better than memorising facts.
+cultivate analytical thinking|rèn luyện tư duy phân tích|to develop the habit of examining things in detail|Science projects cultivate analytical thinking.
+address educational disparities|giải quyết sự chênh lệch trong giáo dục|to deal with unfair differences in schooling|The ministry has a new plan to address educational disparities.
+facilitate knowledge acquisition|giúp việc tiếp thu kiến thức dễ dàng hơn|to make it easier for people to learn|Clear diagrams facilitate knowledge acquisition.
+implement curriculum reforms|tiến hành cải cách chương trình học|to put changes to what schools teach into action|It takes years to implement curriculum reforms across a country.
+nurture academic excellence|bồi dưỡng thành tích học tập xuất sắc|to support students to reach the highest standards|Specialist schools aim to nurture academic excellence.
+promote interdisciplinary learning|thúc đẩy học tập liên môn|to encourage study that connects different subjects|Projects on climate promote interdisciplinary learning.
+alleviate academic stress|làm dịu căng thẳng học tập|to make worry about studies less severe|Counselling services can alleviate academic stress before exams.
+enhance cognitive development|tăng cường sự phát triển nhận thức|to improve how the mind learns and thinks|Play and conversation enhance cognitive development in young children.
+equip learners with transferable skills|trang bị cho người học kỹ năng dùng được ở nhiều lĩnh vực|to give students abilities useful in many jobs|Group work helps equip learners with transferable skills such as communication.
+integrate experiential learning|lồng ghép học qua trải nghiệm|to include learning by doing in a course|Many universities integrate experiential learning through field trips.
+address systemic inequalities in education|giải quyết bất bình đẳng mang tính hệ thống trong giáo dục|to deal with unfairness built into the school system|Funding rules must change to address systemic inequalities in education.
+foster a culture of academic integrity|xây dựng văn hóa trung thực trong học thuật|to make honesty in study the normal expectation|Clear rules on copying foster a culture of academic integrity.
+bridge the gap between theory and practice|gắn lý thuyết với thực hành|to connect what is learned in class with real work|Hospital placements bridge the gap between theory and practice for nurses.
+ensure equitable access to education|bảo đảm mọi người được tiếp cận giáo dục công bằng|to make sure everyone has a fair chance to study|Free buses to school help ensure equitable access to education.
+## Technology A
+use a computer|sử dụng máy tính|to work with a computer|Most office jobs require you to use a computer every day.
+surf the internet|lướt mạng|to look at different websites for a while|My brother can surf the internet for hours.
+send an email|gửi thư điện tử|to write and deliver a message by email|Please send an email to confirm the meeting.
+make a phone call|gọi điện thoại|to call someone on the telephone|I need to make a phone call before we leave.
+download an app|tải một ứng dụng|to copy a program onto your phone or computer|You can download an app to check the bus times.
+watch online videos|xem video trên mạng|to view videos on the internet|Many learners watch online videos to practise listening.
+play video games|chơi trò chơi điện tử|to play games on a computer, phone or console|Teenagers often play video games with friends at weekends.
+use social media|dùng mạng xã hội|to use websites and apps for sharing posts and messages|Many small shops use social media to find customers.
+search for information|tìm kiếm thông tin|to look for facts, usually online|Students search for information before they write a report.
+share photos|chia sẻ ảnh|to let other people see your pictures|We share photos from our holiday in a family group.
+save a file|lưu tệp|to store work on a computer so it is not lost|Remember to save a file before you close the program.
+check messages|xem tin nhắn|to look at new messages you have received|I check messages during my lunch break.
+buy things online|mua hàng trên mạng|to order goods on the internet|It is cheaper to buy things online during sales.
+use a smartphone|sử dụng điện thoại thông minh|to operate a mobile phone with apps|Even my grandmother can use a smartphone now.
+connect to the internet|kết nối mạng|to get access to the internet|The hotel lets guests connect to the internet for free.
+## Technology B
+access digital resources|tiếp cận tài nguyên số|to be able to use online books, videos and data|Students in rural areas need devices to access digital resources.
+improve digital literacy|nâng cao kỹ năng sử dụng công nghệ số|to help people use digital tools well and safely|Short courses for older adults improve digital literacy.
+protect personal information|bảo vệ thông tin cá nhân|to keep private details safe|Never share your password if you want to protect personal information.
+enhance online security|tăng cường an ninh mạng cá nhân|to make internet use safer|Two-step login can enhance online security.
+develop technological skills|phát triển kỹ năng công nghệ|to get better at using technology|Coding clubs help children develop technological skills.
+reduce human error|giảm sai sót do con người|to make fewer mistakes caused by people|Scanners at the checkout reduce human error.
+automate repetitive tasks|tự động hóa các việc lặp lại|to let machines do the same job again and again|Spreadsheets automate repetitive tasks such as adding totals.
+increase productivity|tăng năng suất|to produce more in the same amount of time|New software can increase productivity in small offices.
+facilitate remote working|tạo điều kiện làm việc từ xa|to make it easier to work away from the office|Video calls facilitate remote working.
+encourage technological innovation|khuyến khích đổi mới công nghệ|to support the creation of new technology|Tax breaks encourage technological innovation in start-ups.
+rely heavily on technology|phụ thuộc nhiều vào công nghệ|to need technology for most things|Modern hospitals rely heavily on technology.
+improve communication efficiency|nâng cao hiệu quả giao tiếp|to make sharing information faster and clearer|Shared calendars improve communication efficiency in a team.
+address privacy concerns|giải quyết lo ngại về quyền riêng tư|to deal with worries about personal data|App makers must address privacy concerns before launch.
+adopt emerging technologies|ứng dụng công nghệ mới nổi|to start using technology that is new and growing|Farms adopt emerging technologies such as drones.
+transform traditional industries|làm thay đổi các ngành truyền thống|to change old industries completely|Online shopping continues to transform traditional industries.
+streamline business operations|tinh gọn hoạt động kinh doanh|to make the way a company works simpler and faster|Cloud software can streamline business operations.
+enhance user experience|cải thiện trải nghiệm người dùng|to make a product easier and more pleasant to use|Larger buttons enhance user experience on small screens.
+prevent cyber attacks|ngăn chặn tấn công mạng|to stop criminals breaking into computer systems|Banks update their systems daily to prevent cyber attacks.
+develop artificial intelligence|phát triển trí tuệ nhân tạo|to build computer systems that can learn|Universities and companies work together to develop artificial intelligence.
+## Technology C
+harness technological advancements|tận dụng các tiến bộ công nghệ|to use new technology for a useful purpose|Doctors harness technological advancements to diagnose disease earlier.
+safeguard sensitive data|bảo vệ dữ liệu nhạy cảm|to protect information that must stay private|Hospitals must safeguard sensitive data about patients.
+mitigate cybersecurity risks|giảm thiểu rủi ro an ninh mạng|to reduce the chance of harm from online attacks|Staff training can mitigate cybersecurity risks.
+facilitate digital transformation|thúc đẩy chuyển đổi số|to help an organisation move its work to digital tools|Government grants facilitate digital transformation in small firms.
+address algorithmic bias|xử lý sự thiên lệch của thuật toán|to correct unfair results produced by computer rules|Developers test their models to address algorithmic bias.
+foster technological self-reliance|thúc đẩy khả năng tự chủ công nghệ|to help a country make its own technology|Local chip factories foster technological self-reliance.
+enhance computational efficiency|nâng cao hiệu suất tính toán|to make computers do more work with less time or power|Better code can enhance computational efficiency.
+integrate cutting-edge technologies|tích hợp công nghệ tiên tiến nhất|to combine the newest technology into a system|The airport plans to integrate cutting-edge technologies at the gates.
+navigate the complexities of automation|xử lý những vấn đề phức tạp của tự động hóa|to deal carefully with the difficult sides of using machines|Managers must navigate the complexities of automation without losing staff trust.
+establish robust cybersecurity frameworks|thiết lập hệ thống an ninh mạng vững chắc|to set up strong rules and tools against online attacks|Every ministry should establish robust cybersecurity frameworks.
+promote responsible AI development|thúc đẩy phát triển AI có trách nhiệm|to encourage building AI that is safe and fair|International rules can promote responsible AI development.
+minimise technological dependency|giảm thiểu sự lệ thuộc vào công nghệ|to reduce how much people need technology|Screen-free days help families minimise technological dependency.
+accelerate technological innovation|đẩy nhanh đổi mới công nghệ|to make new technology appear faster|Competition can accelerate technological innovation.
+ensure algorithmic transparency|bảo đảm thuật toán minh bạch|to make it clear how computer decisions are made|Banks should ensure algorithmic transparency when they refuse a loan.
+address the ethical implications of AI|giải quyết các vấn đề đạo đức của AI|to deal with the moral questions raised by artificial intelligence|Schools must address the ethical implications of AI in their rules.

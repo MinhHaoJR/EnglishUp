@@ -4,6 +4,12 @@ The headwords and themes follow a common IELTS Writing study list that the user 
 The Vietnamese meanings, English definitions, example sentences and levels are written for EnglishUp;
 no wording is copied from that list. Every example contains the headword exactly, so the app can
 highlight it. IPA stays empty until reviewed. Run: python scripts/create-collocations.py
+
+A second batch (18/11/2026) adds the collocations of a 20-topic IELTS Writing list the user shared,
+read from scripts/content/ielts-collocations-*.txt. Its headwords follow that list without any phrase
+already in a vocabulary file or repeated across topics; a few were corrected ("a data" -> data,
+"a climate change" -> climate change). The meanings, definitions and examples are again written for
+EnglishUp. The list's bands map to one level each: A1-A2 -> A2, B1-B2 -> B2, C1-C2 -> C1.
 """
 import json
 import pathlib
@@ -201,7 +207,52 @@ VI = {
     "Transport": "Giao thông", "Urban life and housing": "Đô thị và nhà ở", "Family and society": "Gia đình và xã hội",
     "Culture and traditions": "Văn hóa và truyền thống", "Globalisation": "Toàn cầu hóa",
     "Science and research": "Khoa học và nghiên cứu", "Economy and development": "Kinh tế và phát triển",
+    "Society": "Xã hội", "Food and agriculture": "Thực phẩm và nông nghiệp", "Tourism and travel": "Du lịch",
 }
+BAND_LEVEL = {"A": "A2", "B": "B2", "C": "C1"}
+OTHER_FILES = ["vocabulary.json", "vocabulary-it.json", "vocabulary-phrasal.json", "vocabulary-verbs.json"]
+
+
+def norm(word):
+    return re.sub(r"^(a|an|the) ", "", word.lower().strip())
+
+
+def slug(word):
+    return "v-col-" + re.sub(r"[^a-z]+", "-", word.lower()).strip("-")
+
+
+def second_batch(root, taken):
+    """Reads the 20-topic list: '## <topic> <band>' headers, then 'word|meaning|definition|example' lines."""
+    other = set()
+    for name in OTHER_FILES:
+        other |= {norm(w["word"]) for w in json.loads((root / "src" / "data" / name).read_text(encoding="utf-8"))}
+    out, topic, band = [], None, None
+    for path in sorted((root / "scripts" / "content").glob("ielts-collocations-*.txt")):
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if not line.strip() or line.startswith("# "):
+                continue
+            if line.startswith("## "):
+                topic, band = line[3:].rsplit(" ", 1)
+                assert topic in VI and band in BAND_LEVEL, line
+                continue
+            word, meaning, definition, example = line.split("|")
+            key = norm(word)
+            assert key not in taken and key not in other, f"already in the project: {word}"
+            taken.add(key)
+            assert word.lower() in example.lower(), f"example misses the headword: {word}"
+            assert len(example.split()) >= 4 and len(definition.split()) >= 2, word
+            out.append({
+                "id": slug(word),
+                "word": word,
+                "ipa": "",
+                "pos": "collocation" if " " in word else "noun",
+                "meaning": meaning,
+                "definition": definition,
+                "examples": [example],
+                "level": BAND_LEVEL[band],
+                "topic": f"Writing: {topic}",
+            })
+    return out
 
 
 def main():
@@ -225,11 +276,17 @@ def main():
                 "topic": f"Writing: {theme}",
             })
     assert len(out) == 150 and len({w["id"] for w in out}) == 150
-    path = pathlib.Path(__file__).resolve().parent.parent / "src" / "data" / "vocabulary-collocations.json"
+    root = pathlib.Path(__file__).resolve().parent.parent
+    out += second_batch(root, {norm(w["word"]) for w in out})
+    assert len({w["id"] for w in out}) == len(out)
+    path = root / "src" / "data" / "vocabulary-collocations.json"
     path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    levels = {lv: sum(1 for x in out if x["level"] == lv) for lv in ["B1", "B2", "C1"]}
-    print(f"{len(out)} collocations in {len(THEMES)} topics: {levels}")
-    print("topics:", json.dumps({f"Writing: {t}": f"Collocation: {VI[t]}" for t in THEMES}, ensure_ascii=False))
+    levels = {lv: sum(1 for x in out if x["level"] == lv) for lv in ["A2", "B1", "B2", "C1"]}
+    topics = {}
+    for x in out:
+        topics[x["topic"]] = topics.get(x["topic"], 0) + 1
+    print(f"{len(out)} entries in {len(topics)} topics: {levels}")
+    print(json.dumps(topics, ensure_ascii=False))
 
 
 if __name__ == "__main__":
