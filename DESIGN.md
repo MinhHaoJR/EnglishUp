@@ -182,3 +182,23 @@ Behind every page sit soft waves (lower left, right side, a faint arc at the top
 - `src/styles/vibrant-languages.css` still hard-codes colours for the Japanese/Chinese practice screens and their dark variants; those screens have not been reviewed against the theme.
 - Some Japanese/Chinese topic marks in the data are arrows or symbols (`↗`, `⌂`) rather than drawn icons.
 - There is no authored motion moment yet. The route filling in as stops are completed is the obvious candidate.
+
+## Learning sky (system pass, 2026-11-18)
+
+Inspired by the owner's level-test reference: a deep blue-violet sky with soft light and a few
+sparkles, white glass cards, a large title, numbered steps, an info card and one bright action.
+
+- Tokens (light / dark, in `src/styles/theme.css`): `--secondary` violet, `--cyan` and
+  `--cyan-glow`, `--warning` and `--warning-soft`, `--grad-brand` (indigo to violet),
+  `--hero-sky`, `--hero-ink`, `--hero-muted`, `--glass`, `--glass-edge`, `--edge-light`, `--glow`.
+  Dark mode has its own deeper, less saturated sky and gradient, not an inversion.
+- The sky is kept for the places that should pull the eye: the overview header, the level test
+  intro, the estimated level in the result and earned badges. Lesson pages stay calm.
+- Cards: near-white glass, a bright top edge and a soft shadow; no glow.
+- Primary actions: brand gradient on service pages (overview, path, level test, account, sign-in,
+  settings, tutor, games, achievements) and the skill colour on skill pages; both lift 1px and
+  glow on hover. `aria-busy="true"` adds a small spinner. Fields gain an indigo border and ring.
+- Level test: hero with eyebrow, heading, lead, four numbered steps, the robot tutor
+  (`/art/study-robot.webp`) above a white info card with the length, the last result and the start
+  button. On phones the info card follows the heading and the steps come after it.
+- Motion: 160ms colour/shadow/lift; all of it is dropped under `prefers-reduced-motion`.
