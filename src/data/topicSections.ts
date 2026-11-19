@@ -102,6 +102,24 @@ export const topicSections = [
       'Writing: Tourism and travel',
     ],
   },
+  {
+    id: 'synonyms',
+    vi: 'Từ đồng nghĩa nâng cao',
+    en: 'Advanced synonyms',
+    topics: [
+      'Synonyms: Size, quality and importance',
+      'Synonyms: Feelings',
+      'Synonyms: Age, looks and wealth',
+      'Synonyms: Mind and speed',
+      'Synonyms: Speaking and the senses',
+      'Synonyms: Everyday actions',
+      'Synonyms: Likes and needs',
+      'Synonyms: Describing things',
+      'Synonyms: Character',
+      'Synonyms: Amount and frequency',
+      'Synonyms: Common nouns',
+    ],
+  },
 ] as const;
 
 export type TopicSectionId = (typeof topicSections)[number]['id'] | 'custom';

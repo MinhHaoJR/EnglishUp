@@ -1,0 +1,107 @@
+## Amount and frequency
+### a lot
+a lot|pronoun|A1|nhiều|a large amount or number|We learned a lot on the trip.
+much|determiner|A1|nhiều (danh từ không đếm được)|a large amount of|There isn't much milk left.
+many|determiner|A1|nhiều (danh từ đếm được)|a large number of|Many students walk to school.
+copious|adjective|C2|dồi dào, rất nhiều|in large amounts|She took copious notes in the lecture.
+profuse|adjective|C2|tràn trề, rất nhiều|produced in large amounts|He offered profuse apologies.
+### a little
+few|determiner|A2|ít (danh từ đếm được)|a small number of|Few people came to the meeting.
+scarce|adjective|C1|khan hiếm|not enough for what is needed|Water is scarce in the dry season.
+meager|adjective|C2|ít ỏi, đạm bạc|too small in amount|They lived on a meager salary.
+limited|adjective|B1|có hạn|small in amount or number|Seats are limited, so book early.
+paltry|adjective|C2|nhỏ nhoi, chẳng đáng là bao|too small to be useful or important|The workers were offered a paltry raise.
+### all
+all|determiner|A1|tất cả|every one or the whole amount of|All the students passed the test.
+entire|adjective|B1|toàn bộ|whole or complete|We spent the entire day at the beach.
+whole|adjective|A2|toàn bộ, nguyên|complete; all of something|She ate the whole cake.
+total|adjective|B1|tổng, hoàn toàn|complete or including everything|The total cost is two million dong.
+comprehensive|adjective|C1|toàn diện|including all or nearly all parts|The guide gives a comprehensive list of hotels.
+universal|adjective|C1|phổ quát, chung|done by or affecting everyone|Education should be universal.
+### some
+some|determiner|A1|một vài, một ít|an amount or number of, not stated exactly|Can I have some water?
+several|determiner|A2|vài, một số|more than two but not many|I have read several of her books.
+various|adjective|B1|nhiều loại khác nhau|of several different kinds|The shop sells various kinds of tea.
+assorted|adjective|C1|đủ loại, pha trộn|of different types mixed together|She bought a box of assorted chocolates.
+diverse|adjective|B2|đa dạng|very different from each other|The city has a diverse population.
+### every
+every|determiner|A1|mỗi, mọi|all the members of a group, one by one|I visit my grandparents every weekend.
+each|determiner|A1|mỗi|every one of two or more, considered separately|Each student has a locker.
+individual|adjective|B2|riêng lẻ, cá nhân|single and separate|The teacher gives individual feedback.
+### more
+more|determiner|A1|thêm, nhiều hơn|a larger amount or number|We need more chairs.
+further|adjective|B2|thêm, xa hơn|more or additional|For further information, call this number.
+additional|adjective|B2|bổ sung|extra; added|There is an additional fee for luggage.
+supplementary|adjective|C1|bổ trợ|added to something to complete it|The course has supplementary reading.
+increased|adjective|B2|gia tăng|larger in amount or number|Increased demand pushed prices up.
+enhanced|adjective|C1|được nâng cao|improved in quality or value|The phone has an enhanced camera.
+### less
+less|determiner|A2|ít hơn|a smaller amount of|I drink less coffee now.
+fewer|determiner|B1|ít hơn (danh từ đếm được)|a smaller number of|Fewer people smoke today.
+reduced|adjective|B2|đã giảm|made smaller or lower|The shoes are on sale at a reduced price.
+diminished|adjective|C2|suy giảm|made smaller or weaker|He has a diminished role in the company.
+### enough
+enough|determiner|A1|đủ|as much as is needed|Do we have enough time?
+sufficient|adjective|B2|đầy đủ|enough for a purpose|Is there sufficient evidence to arrest him?
+adequate|adjective|B2|tương xứng, đủ|good or enough for a need|The room has adequate light for reading.
+ample|adjective|C1|dư dả|more than enough|There is ample parking behind the hotel.
+### very
+extremely|adverb|B1|cực kỳ|to a very great degree|The test was extremely difficult.
+exceedingly|adverb|C2|vô cùng|to a very great degree (formal)|The hotel staff were exceedingly polite.
+exceptionally|adverb|C1|đặc biệt, khác thường|unusually; to an unusual degree|She is an exceptionally gifted pianist.
+remarkably|adverb|C1|đáng kể, đáng chú ý|in a way that is surprising or worth noticing|The town has remarkably clean streets.
+notably|adverb|C1|đáng chú ý là|especially; in a way that is noticeable|Prices rose, notably for rice.
+### always
+constantly|adverb|B2|liên tục|all the time; again and again|The baby cries constantly at night.
+perpetually|adverb|C2|mãi mãi, liên miên|in a way that never ends or changes|He is perpetually late.
+invariably|adverb|C2|luôn luôn, không thay đổi|always, without exception|The train is invariably full at eight.
+eternally|adverb|C2|vĩnh viễn|forever|I will be eternally grateful for your help.
+ceaselessly|adverb|C2|không ngừng|without stopping|The waves beat ceaselessly against the rocks.
+## Common nouns
+### plan
+scheme|noun|C1|kế hoạch, đề án|an official plan or system|A new scheme helps young farmers buy land.
+blueprint|noun|C2|bản thiết kế, kế hoạch chi tiết|a detailed plan for achieving something|The report is a blueprint for reform.
+### problem
+issue|noun|B1|vấn đề|a subject or problem people discuss|Pollution is a serious issue in the capital.
+dilemma|noun|C1|tình thế khó xử|a situation where you must make a hard choice|She faced a dilemma: stay or move abroad.
+predicament|noun|C2|cảnh khó khăn|an unpleasant situation that is hard to escape|He found himself in a difficult predicament.
+quandary|noun|C2|tình trạng bối rối|a state of not knowing what to do|I am in a quandary about which job to take.
+conundrum|noun|C2|câu hỏi hóc búa|a confusing and difficult problem|How to cut costs without losing staff is a conundrum.
+### answer
+rejoinder|noun|C2|lời đáp lại|a quick, clever reply|She had a sharp rejoinder ready.
+retort|noun|C2|lời vặn lại|a quick and angry or funny reply|His retort made everyone laugh.
+### reason
+rationale|noun|C2|cơ sở lý luận|the reasons behind a decision|The minister explained the rationale for the tax.
+justification|noun|C1|sự biện minh|a good reason for doing something|There is no justification for violence.
+explanation|noun|B1|lời giải thích|a statement that makes something clear|The teacher gave a clear explanation.
+grounds|noun|C1|căn cứ, lý do|reasons for saying or doing something|He was refused a visa on security grounds.
+pretext|noun|C2|cái cớ|a false reason that hides the real one|He left early on the pretext of a headache.
+### result
+consequence|noun|B2|hệ quả|a result, especially a bad one|Pollution has serious consequences for health.
+outcome|noun|B2|kết cục, kết quả|the final result of something|Nobody could predict the outcome of the match.
+ramification|noun|C2|hệ lụy|a possible effect of an action|Think about every ramification before you sign.
+aftermath|noun|C2|hậu quả, giai đoạn sau|the period after something bad happens|Many families lost their homes in the aftermath of the flood.
+### idea
+notion|noun|C1|khái niệm, ý niệm|an idea or belief|The notion that girls are bad at maths is wrong.
+concept|noun|B2|khái niệm|a general idea about something|The concept of zero changed mathematics.
+perception|noun|C1|nhận thức, cách nhìn|the way you think about something|Social media can change our perception of beauty.
+conception|noun|C2|quan niệm|an understanding or idea of something|Children have a different conception of time.
+### place
+location|noun|B1|vị trí|a particular place|The hotel is in a quiet location.
+spot|noun|B1|chỗ, điểm|a particular small place|We found a nice spot for a picnic.
+venue|noun|B2|địa điểm (tổ chức sự kiện)|a place where an event happens|The venue for the concert has changed.
+site|noun|B2|khu vực, địa điểm|a place where something is or will be built|This is the site of the new hospital.
+locale|noun|C2|bối cảnh, địa điểm|a place where something happens|The film changes its locale from Hanoi to Paris.
+### thing
+thing|noun|A1|vật, đồ vật, điều|an object, idea or event that is not named|Put your things in the box.
+entity|noun|C2|thực thể|something that exists separately|The two companies are now one legal entity.
+element|noun|B2|yếu tố, thành phần|a part of something|Trust is an important element of friendship.
+commodity|noun|C1|hàng hóa|a product that can be bought and sold|Coffee is Vietnam's key export commodity.
+### people
+population|noun|B1|dân số|all the people living in an area|The population of the city is growing.
+denizens|noun|C2|cư dân|people or animals that live in a place|The denizens of the forest are mostly birds.
+### time
+duration|noun|C1|khoảng thời gian|the length of time something lasts|Please stay seated for the duration of the flight.
+epoch|noun|C2|kỷ nguyên|a long period in history|The invention began a new epoch.
+era|noun|B2|thời đại|a period of time in history|We live in the digital era.
+interval|noun|C1|khoảng cách (thời gian), giờ nghỉ|a period between two events|The buses run at ten-minute intervals.

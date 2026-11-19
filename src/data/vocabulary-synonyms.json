@@ -1,0 +1,5423 @@
+[
+  {
+    "id": "v-syn-huge",
+    "word": "huge",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "khổng lồ, rất to",
+    "definition": "extremely large; a synonym of big",
+    "examples": [
+      "They live in a huge house near the lake."
+    ],
+    "level": "A2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-immense",
+    "word": "immense",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bao la, mênh mông",
+    "definition": "extremely large in size or amount; a synonym of big",
+    "examples": [
+      "The project needs an immense amount of work."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-colossal",
+    "word": "colossal",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đồ sộ, khổng lồ",
+    "definition": "unusually and impressively large; a synonym of big",
+    "examples": [
+      "A colossal statue stands at the harbour entrance."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-tiny",
+    "word": "tiny",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tí hon, rất nhỏ",
+    "definition": "extremely small; a synonym of small",
+    "examples": [
+      "The kitten was so tiny that it fitted in my hand."
+    ],
+    "level": "A2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-petite",
+    "word": "petite",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nhỏ nhắn (dáng người)",
+    "definition": "small and slim, used for women; a synonym of small",
+    "examples": [
+      "The shop sells clothes for petite women."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-diminutive",
+    "word": "diminutive",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nhỏ bé",
+    "definition": "unusually small; a synonym of small",
+    "examples": [
+      "The diminutive singer has a huge voice."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-insignificant",
+    "word": "insignificant",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "không đáng kể",
+    "definition": "too small or unimportant to matter; a synonym of small",
+    "examples": [
+      "The difference in price is insignificant."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-superb",
+    "word": "superb",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tuyệt hảo",
+    "definition": "of the highest quality; a synonym of good",
+    "examples": [
+      "The hotel serves a superb breakfast."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-outstanding",
+    "word": "outstanding",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "xuất sắc, nổi bật",
+    "definition": "much better than others; a synonym of good",
+    "examples": [
+      "She received an award for outstanding work."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-remarkable",
+    "word": "remarkable",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đáng chú ý, phi thường",
+    "definition": "unusual and worth noticing; a synonym of good",
+    "examples": [
+      "He made remarkable progress in one year."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-dreadful",
+    "word": "dreadful",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tồi tệ, kinh khủng",
+    "definition": "very bad or unpleasant; a synonym of bad",
+    "examples": [
+      "The traffic this morning was dreadful."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-atrocious",
+    "word": "atrocious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "cực kỳ tồi tệ",
+    "definition": "shockingly bad; a synonym of bad",
+    "examples": [
+      "The service at that restaurant was atrocious."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-abysmal",
+    "word": "abysmal",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tệ hại",
+    "definition": "extremely bad in quality; a synonym of bad",
+    "examples": [
+      "The team's results this season are abysmal."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-significant",
+    "word": "significant",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "quan trọng, đáng kể",
+    "definition": "large or important enough to have an effect; a synonym of important",
+    "examples": [
+      "There has been a significant rise in prices."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-crucial",
+    "word": "crucial",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "then chốt",
+    "definition": "extremely important because other things depend on it; a synonym of important",
+    "examples": [
+      "Sleep is crucial for memory."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-vital",
+    "word": "vital",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thiết yếu, sống còn",
+    "definition": "necessary for success or survival; a synonym of important",
+    "examples": [
+      "Clean water is vital to good health."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-essential",
+    "word": "essential",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "cần thiết, cốt yếu",
+    "definition": "completely necessary; a synonym of important",
+    "examples": [
+      "A passport is essential for travel abroad."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-paramount",
+    "word": "paramount",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tối quan trọng",
+    "definition": "more important than anything else; a synonym of important",
+    "examples": [
+      "Passenger safety is paramount."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-effortless",
+    "word": "effortless",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nhẹ nhàng, không tốn sức",
+    "definition": "needing no effort; a synonym of easy",
+    "examples": [
+      "She made the dance look effortless."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-undemanding",
+    "word": "undemanding",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "không đòi hỏi nhiều",
+    "definition": "not needing much effort or skill; a synonym of easy",
+    "examples": [
+      "He wanted an undemanding job after retiring."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-facile",
+    "word": "facile",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "dễ dãi, hời hợt",
+    "definition": "too simple and not carefully thought out; a synonym of easy",
+    "examples": [
+      "The article offers a facile answer to a complex problem."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-challenging",
+    "word": "challenging",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đầy thử thách",
+    "definition": "difficult in a way that tests your ability; a synonym of difficult",
+    "examples": [
+      "Learning a new language is challenging but fun."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-arduous",
+    "word": "arduous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "gian khổ",
+    "definition": "needing much effort and hard work; a synonym of difficult",
+    "examples": [
+      "The climb to the summit was arduous."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-formidable",
+    "word": "formidable",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ghê gớm, đáng gờm",
+    "definition": "difficult to deal with or very powerful; a synonym of difficult",
+    "examples": [
+      "The team faces a formidable opponent tonight."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-onerous",
+    "word": "onerous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nặng nề",
+    "definition": "needing a lot of effort and causing worry; a synonym of difficult",
+    "examples": [
+      "Paperwork can be an onerous task for doctors."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Size, quality and importance"
+  },
+  {
+    "id": "v-syn-joyful",
+    "word": "joyful",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "vui sướng",
+    "definition": "full of happiness; a synonym of happy",
+    "examples": [
+      "The wedding was a joyful occasion."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-delighted",
+    "word": "delighted",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "rất vui mừng",
+    "definition": "very pleased; a synonym of happy",
+    "examples": [
+      "I was delighted to hear your news."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-ecstatic",
+    "word": "ecstatic",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "vui sướng tột độ",
+    "definition": "extremely happy and excited; a synonym of happy",
+    "examples": [
+      "The fans were ecstatic after the win."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-elated",
+    "word": "elated",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "phấn khởi",
+    "definition": "very happy and excited; a synonym of happy",
+    "examples": [
+      "She felt elated when she passed the exam."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-jubilant",
+    "word": "jubilant",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hân hoan",
+    "definition": "extremely happy because of a success; a synonym of happy",
+    "examples": [
+      "Jubilant crowds filled the streets."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-unhappy",
+    "word": "unhappy",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "không vui",
+    "definition": "not happy; a synonym of sad",
+    "examples": [
+      "He was unhappy with his test result."
+    ],
+    "level": "A2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-depressed",
+    "word": "depressed",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "chán nản, trầm cảm",
+    "definition": "very unhappy for a long time; a synonym of sad",
+    "examples": [
+      "She felt depressed after losing her job."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-melancholy",
+    "word": "melancholy",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "u sầu",
+    "definition": "sad in a quiet, thoughtful way; a synonym of sad",
+    "examples": [
+      "The song has a melancholy tune."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-dejected",
+    "word": "dejected",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thất vọng, rầu rĩ",
+    "definition": "sad and disappointed; a synonym of sad",
+    "examples": [
+      "The players looked dejected after the defeat."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-morose",
+    "word": "morose",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ủ rũ, cáu kỉnh",
+    "definition": "unhappy and not wanting to talk; a synonym of sad",
+    "examples": [
+      "He has been morose since the argument."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-furious",
+    "word": "furious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "giận dữ",
+    "definition": "extremely angry; a synonym of angry",
+    "examples": [
+      "My father was furious about the broken window."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-irate",
+    "word": "irate",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nổi giận",
+    "definition": "very angry; a synonym of angry",
+    "examples": [
+      "An irate customer shouted at the cashier."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-incensed",
+    "word": "incensed",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tức điên",
+    "definition": "extremely angry because of something unfair; a synonym of angry",
+    "examples": [
+      "Residents were incensed by the new tax."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-enraged",
+    "word": "enraged",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nổi cơn thịnh nộ",
+    "definition": "extremely angry; a synonym of angry",
+    "examples": [
+      "The enraged bull charged at the fence."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-scared",
+    "word": "scared",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "sợ",
+    "definition": "frightened; a synonym of afraid",
+    "examples": [
+      "My little brother is scared of the dark."
+    ],
+    "level": "A2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-fearful",
+    "word": "fearful",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "lo sợ",
+    "definition": "afraid of what might happen; a synonym of afraid",
+    "examples": [
+      "Fearful parents kept their children at home."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-apprehensive",
+    "word": "apprehensive",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "e ngại, lo lắng",
+    "definition": "worried that something bad may happen; a synonym of afraid",
+    "examples": [
+      "She was apprehensive about her first day at work."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-timid",
+    "word": "timid",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "rụt rè, nhút nhát",
+    "definition": "easily frightened and not confident; a synonym of afraid",
+    "examples": [
+      "The timid deer ran into the forest."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-trepidatious",
+    "word": "trepidatious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "run sợ, lo âu",
+    "definition": "nervous and afraid; a synonym of afraid",
+    "examples": [
+      "He felt trepidatious before the operation."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-uninterested",
+    "word": "uninterested",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "không quan tâm",
+    "definition": "not wanting to know about something; a synonym of bored",
+    "examples": [
+      "The students seemed uninterested in the film."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-apathetic",
+    "word": "apathetic",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thờ ơ",
+    "definition": "showing no interest or energy; a synonym of bored",
+    "examples": [
+      "Many young voters are apathetic about politics."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-listless",
+    "word": "listless",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "uể oải",
+    "definition": "having no energy or interest; a synonym of bored",
+    "examples": [
+      "The heat made everyone listless."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-ennui",
+    "word": "ennui",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "sự buồn chán",
+    "definition": "a feeling of tired boredom; a synonym of bored",
+    "examples": [
+      "Long winters filled him with ennui."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-jaded",
+    "word": "jaded",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "chán ngấy",
+    "definition": "bored after having too much of something; a synonym of bored",
+    "examples": [
+      "Even jaded travellers love this beach."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-exhausted",
+    "word": "exhausted",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "kiệt sức",
+    "definition": "extremely tired; a synonym of tired",
+    "examples": [
+      "I was exhausted after the long journey."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-weary",
+    "word": "weary",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "mệt mỏi, rã rời",
+    "definition": "very tired, often after a long effort; a synonym of tired",
+    "examples": [
+      "The weary hikers sat down by the road."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-fatigued",
+    "word": "fatigued",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "mệt nhọc",
+    "definition": "very tired from work or illness; a synonym of tired",
+    "examples": [
+      "Drivers who feel fatigued should stop and rest."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-drained",
+    "word": "drained",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "cạn kiệt sức lực",
+    "definition": "having no energy left; a synonym of tired",
+    "examples": [
+      "After the exam I felt completely drained."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-enervated",
+    "word": "enervated",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "suy nhược",
+    "definition": "without energy or strength; a synonym of tired",
+    "examples": [
+      "The fever left her enervated for days."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-astonished",
+    "word": "astonished",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "kinh ngạc",
+    "definition": "very surprised; a synonym of surprised",
+    "examples": [
+      "We were astonished by the size of the cave."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-amazed",
+    "word": "amazed",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ngạc nhiên, sửng sốt",
+    "definition": "very surprised and impressed; a synonym of surprised",
+    "examples": [
+      "I was amazed at how quickly she learned."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-startled",
+    "word": "startled",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "giật mình",
+    "definition": "suddenly surprised or frightened; a synonym of surprised",
+    "examples": [
+      "The startled cat jumped off the table."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-flabbergasted",
+    "word": "flabbergasted",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "sững sờ",
+    "definition": "extremely surprised; a synonym of surprised",
+    "examples": [
+      "He was flabbergasted to win the prize."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-dumbfounded",
+    "word": "dumbfounded",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "chết lặng vì ngạc nhiên",
+    "definition": "so surprised that you cannot speak; a synonym of surprised",
+    "examples": [
+      "The audience sat dumbfounded at the ending."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-confused",
+    "word": "confused",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bối rối",
+    "definition": "unable to understand or think clearly",
+    "examples": [
+      "I was confused by the instructions."
+    ],
+    "level": "A2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-perplexed",
+    "word": "perplexed",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "lúng túng",
+    "definition": "confused because something is hard to understand; a synonym of confused",
+    "examples": [
+      "The doctors were perplexed by her symptoms."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-baffled",
+    "word": "baffled",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bối rối, khó hiểu",
+    "definition": "completely unable to understand; a synonym of confused",
+    "examples": [
+      "Police are baffled by the mystery."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-bewildered",
+    "word": "bewildered",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hoang mang",
+    "definition": "very confused and unsure what to do; a synonym of confused",
+    "examples": [
+      "Bewildered tourists looked at the map."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-disoriented",
+    "word": "disoriented",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "mất phương hướng",
+    "definition": "unsure where you are or what is happening; a synonym of confused",
+    "examples": [
+      "He felt disoriented after the long flight."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-mystified",
+    "word": "mystified",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "khó hiểu, ngơ ngác",
+    "definition": "completely confused by something strange; a synonym of confused",
+    "examples": [
+      "I am mystified by his decision."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Feelings"
+  },
+  {
+    "id": "v-syn-recent",
+    "word": "recent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "gần đây",
+    "definition": "having happened a short time ago; a synonym of new",
+    "examples": [
+      "Recent studies show the benefits of walking."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-innovative",
+    "word": "innovative",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đổi mới, sáng tạo",
+    "definition": "using new ideas or methods; a synonym of new",
+    "examples": [
+      "The company is known for its innovative designs."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-contemporary",
+    "word": "contemporary",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đương đại",
+    "definition": "belonging to the present time; a synonym of new",
+    "examples": [
+      "The gallery shows contemporary art."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-aged",
+    "word": "aged",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "già, cao tuổi",
+    "definition": "old; a synonym of old",
+    "examples": [
+      "She looks after her aged parents."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-vintage",
+    "word": "vintage",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "cổ điển (đồ có giá trị)",
+    "definition": "old and of high quality; a synonym of old",
+    "examples": [
+      "He collects vintage cars."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-obsolete",
+    "word": "obsolete",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "lỗi thời",
+    "definition": "no longer used because something newer exists; a synonym of old",
+    "examples": [
+      "Floppy disks are obsolete."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-antiquated",
+    "word": "antiquated",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "cổ lỗ, lạc hậu",
+    "definition": "old-fashioned and no longer suitable; a synonym of old",
+    "examples": [
+      "The office still uses antiquated software."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-gorgeous",
+    "word": "gorgeous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "lộng lẫy",
+    "definition": "very beautiful or attractive; a synonym of beautiful",
+    "examples": [
+      "The view from the hill is gorgeous."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-stunning",
+    "word": "stunning",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đẹp choáng ngợp",
+    "definition": "extremely beautiful or impressive; a synonym of beautiful",
+    "examples": [
+      "She wore a stunning red dress."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-exquisite",
+    "word": "exquisite",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tinh xảo",
+    "definition": "very beautiful and delicate; a synonym of beautiful",
+    "examples": [
+      "The vase has exquisite patterns."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-radiant",
+    "word": "radiant",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "rạng rỡ",
+    "definition": "showing great happiness or beauty; a synonym of beautiful",
+    "examples": [
+      "The bride gave a radiant smile."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-unattractive",
+    "word": "unattractive",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "kém hấp dẫn",
+    "definition": "not pleasant to look at; a synonym of ugly",
+    "examples": [
+      "The building has an unattractive grey front."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-hideous",
+    "word": "hideous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "gớm ghiếc",
+    "definition": "extremely ugly; a synonym of ugly",
+    "examples": [
+      "They painted the wall a hideous green."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-grotesque",
+    "word": "grotesque",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "kỳ quái, quái dị",
+    "definition": "strange and ugly in a frightening way; a synonym of ugly",
+    "examples": [
+      "The mask had a grotesque face."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-repulsive",
+    "word": "repulsive",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ghê tởm",
+    "definition": "extremely unpleasant; a synonym of ugly",
+    "examples": [
+      "The smell from the bin was repulsive."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-unseemly",
+    "word": "unseemly",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "không đứng đắn",
+    "definition": "not suitable for a situation; a synonym of ugly",
+    "examples": [
+      "Shouting at a funeral is unseemly."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-affluent",
+    "word": "affluent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "sung túc",
+    "definition": "having a lot of money; a synonym of rich",
+    "examples": [
+      "They live in an affluent suburb."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-prosperous",
+    "word": "prosperous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thịnh vượng",
+    "definition": "rich and successful; a synonym of rich",
+    "examples": [
+      "The town became prosperous through trade."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-opulent",
+    "word": "opulent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "xa hoa",
+    "definition": "showing great wealth; a synonym of rich",
+    "examples": [
+      "The hotel has an opulent lobby."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-loaded",
+    "word": "loaded",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "giàu nứt đố đổ vách (thân mật)",
+    "definition": "very rich (informal); a synonym of rich",
+    "examples": [
+      "His uncle is loaded and owns three houses."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-needy",
+    "word": "needy",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "túng thiếu",
+    "definition": "not having enough money or food; a synonym of poor",
+    "examples": [
+      "The charity helps needy families."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-impoverished",
+    "word": "impoverished",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bần cùng",
+    "definition": "very poor; a synonym of poor",
+    "examples": [
+      "Impoverished villages need clean water."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-destitute",
+    "word": "destitute",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "cơ cực, không một xu dính túi",
+    "definition": "without money, food or a home; a synonym of poor",
+    "examples": [
+      "The war left many people destitute."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-penurious",
+    "word": "penurious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nghèo túng",
+    "definition": "extremely poor; a synonym of poor",
+    "examples": [
+      "He lived a penurious life as a young artist."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-indigent",
+    "word": "indigent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nghèo khổ",
+    "definition": "poor and needing help; a synonym of poor",
+    "examples": [
+      "The clinic treats indigent patients for free."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-slim",
+    "word": "slim",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thon thả",
+    "definition": "thin in an attractive way; a synonym of thin",
+    "examples": [
+      "She is tall and slim."
+    ],
+    "level": "A2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-slender",
+    "word": "slender",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "mảnh mai",
+    "definition": "thin and graceful; a synonym of thin",
+    "examples": [
+      "The vase has a slender neck."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-lean",
+    "word": "lean",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "gầy rắn chắc",
+    "definition": "thin and healthy, with little fat; a synonym of thin",
+    "examples": [
+      "Runners usually have lean bodies."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-gaunt",
+    "word": "gaunt",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hốc hác",
+    "definition": "very thin, often from illness or hunger; a synonym of thin",
+    "examples": [
+      "He looked gaunt after weeks in hospital."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-emaciated",
+    "word": "emaciated",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "gầy trơ xương",
+    "definition": "extremely thin from illness or lack of food; a synonym of thin",
+    "examples": [
+      "Rescuers found an emaciated dog."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-fat",
+    "word": "fat",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "béo, mập",
+    "definition": "having too much flesh on the body",
+    "examples": [
+      "The cat got fat from eating too much."
+    ],
+    "level": "A1",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-overweight",
+    "word": "overweight",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thừa cân",
+    "definition": "heavier than is healthy; a synonym of fat",
+    "examples": [
+      "Being overweight can cause heart problems."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-plump",
+    "word": "plump",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "mũm mĩm",
+    "definition": "slightly fat in a pleasant way; a synonym of fat",
+    "examples": [
+      "The baby has plump cheeks."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-stout",
+    "word": "stout",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "béo chắc",
+    "definition": "rather fat and heavy; a synonym of fat",
+    "examples": [
+      "A stout man opened the door."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-corpulent",
+    "word": "corpulent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "béo phì (trang trọng)",
+    "definition": "fat (formal); a synonym of fat",
+    "examples": [
+      "The corpulent king could hardly climb the stairs."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-obese",
+    "word": "obese",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "béo phì",
+    "definition": "very fat in a way that is unhealthy; a synonym of fat",
+    "examples": [
+      "Doctors warn that obese children face health risks."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Age, looks and wealth"
+  },
+  {
+    "id": "v-syn-rapid",
+    "word": "rapid",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nhanh chóng",
+    "definition": "happening very quickly; a synonym of fast",
+    "examples": [
+      "The city has seen rapid growth."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-swift",
+    "word": "swift",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "mau lẹ",
+    "definition": "happening quickly or immediately; a synonym of fast",
+    "examples": [
+      "The police made a swift response."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-hasty",
+    "word": "hasty",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "vội vàng",
+    "definition": "done too quickly without care; a synonym of fast",
+    "examples": [
+      "Don't make a hasty decision."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-expeditious",
+    "word": "expeditious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nhanh gọn",
+    "definition": "quick and efficient; a synonym of fast",
+    "examples": [
+      "The bank promised an expeditious refund."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-sluggish",
+    "word": "sluggish",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "chậm chạp, ì ạch",
+    "definition": "moving or working more slowly than usual; a synonym of slow",
+    "examples": [
+      "The economy remains sluggish."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-leisurely",
+    "word": "leisurely",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thong thả",
+    "definition": "unhurried and relaxed; a synonym of slow",
+    "examples": [
+      "We took a leisurely walk by the river."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-plodding",
+    "word": "plodding",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "lề mề",
+    "definition": "slow and dull; a synonym of slow",
+    "examples": [
+      "The film has a plodding story."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-laggard",
+    "word": "laggard",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tụt hậu, chậm trễ",
+    "definition": "slower than others; a synonym of slow",
+    "examples": [
+      "The laggard region has fallen behind its neighbours."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-intelligent",
+    "word": "intelligent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thông minh",
+    "definition": "able to learn and understand quickly; a synonym of smart",
+    "examples": [
+      "Dolphins are intelligent animals."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-brilliant",
+    "word": "brilliant",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "xuất chúng",
+    "definition": "extremely clever or skilled; a synonym of smart",
+    "examples": [
+      "She is a brilliant scientist."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-astute",
+    "word": "astute",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "sắc sảo",
+    "definition": "clever at understanding situations; a synonym of smart",
+    "examples": [
+      "An astute investor saw the risk early."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-sagacious",
+    "word": "sagacious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "minh mẫn, sáng suốt",
+    "definition": "wise and good at judging; a synonym of smart",
+    "examples": [
+      "The sagacious old judge was respected by all."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-foolish",
+    "word": "foolish",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "dại dột",
+    "definition": "not showing good judgement; a synonym of stupid",
+    "examples": [
+      "It would be foolish to swim in the storm."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-silly",
+    "word": "silly",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ngớ ngẩn",
+    "definition": "not sensible or serious; a synonym of stupid",
+    "examples": [
+      "Stop making silly faces in class."
+    ],
+    "level": "A2",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-idiotic",
+    "word": "idiotic",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ngu xuẩn",
+    "definition": "very stupid; a synonym of stupid",
+    "examples": [
+      "That was an idiotic thing to say."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-asinine",
+    "word": "asinine",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ngớ ngẩn hết sức",
+    "definition": "extremely stupid; a synonym of stupid",
+    "examples": [
+      "The comment was asinine and rude."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-imbecilic",
+    "word": "imbecilic",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đần độn",
+    "definition": "extremely stupid; a synonym of stupid",
+    "examples": [
+      "Critics called the plan imbecilic."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Mind and speed"
+  },
+  {
+    "id": "v-syn-declare",
+    "word": "declare",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "tuyên bố",
+    "definition": "to say something officially or firmly; a synonym of say",
+    "examples": [
+      "The judge will declare the result tomorrow."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-assert",
+    "word": "assert",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "khẳng định",
+    "definition": "to state something firmly; a synonym of say",
+    "examples": [
+      "She continued to assert that she was innocent."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-proclaim",
+    "word": "proclaim",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "công bố, tuyên bố",
+    "definition": "to announce something publicly; a synonym of say",
+    "examples": [
+      "The king will proclaim a national holiday."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-enquire",
+    "word": "enquire",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "hỏi thăm, hỏi thông tin",
+    "definition": "to ask for information; a synonym of ask",
+    "examples": [
+      "I am writing to enquire about the course fees."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-interrogate",
+    "word": "interrogate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "thẩm vấn",
+    "definition": "to ask someone many questions, often officially; a synonym of ask",
+    "examples": [
+      "Police will interrogate the suspect tonight."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-probe",
+    "word": "probe",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "thăm dò, điều tra kỹ",
+    "definition": "to try to find out the truth by asking questions; a synonym of ask",
+    "examples": [
+      "Reporters began to probe the minister's past."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-solicit",
+    "word": "solicit",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "xin, gạ gẫm",
+    "definition": "to ask someone for money, help or information; a synonym of ask",
+    "examples": [
+      "Charities solicit donations at Christmas."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-observe",
+    "word": "observe",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "quan sát",
+    "definition": "to watch carefully; a synonym of look",
+    "examples": [
+      "Students observe the plants every day."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-gaze",
+    "word": "gaze",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "nhìn chăm chú",
+    "definition": "to look at something for a long time; a synonym of look",
+    "examples": [
+      "We like to gaze at the stars at night."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-stare",
+    "word": "stare",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "nhìn chằm chằm",
+    "definition": "to look at something without moving your eyes; a synonym of look",
+    "examples": [
+      "It is rude to stare at strangers."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-peer",
+    "word": "peer",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "nhìn kỹ, ngó",
+    "definition": "to look carefully because something is hard to see; a synonym of look",
+    "examples": [
+      "He had to peer through the foggy window."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-behold",
+    "word": "behold",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "ngắm nhìn (văn chương)",
+    "definition": "to see or look at (literary); a synonym of look",
+    "examples": [
+      "The sunrise was a sight to behold."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-perceive",
+    "word": "perceive",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "nhận thấy",
+    "definition": "to notice or become aware of something; a synonym of see",
+    "examples": [
+      "Dogs can perceive sounds we cannot hear."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-detect",
+    "word": "detect",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "phát hiện",
+    "definition": "to discover something that is hard to see; a synonym of see",
+    "examples": [
+      "The machine can detect tiny cracks."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-discern",
+    "word": "discern",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "nhận ra, phân biệt",
+    "definition": "to notice something with difficulty; a synonym of see",
+    "examples": [
+      "It was hard to discern the path in the dark."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-witness",
+    "word": "witness",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "chứng kiến",
+    "definition": "to see something happen; a synonym of see",
+    "examples": [
+      "Did anyone witness the accident?"
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-overhear",
+    "word": "overhear",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "nghe lỏm, tình cờ nghe",
+    "definition": "to hear what others say without them knowing; a synonym of hear",
+    "examples": [
+      "I didn't mean to overhear your call."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-contemplate",
+    "word": "contemplate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "suy ngẫm, cân nhắc",
+    "definition": "to think about something carefully for a long time; a synonym of think",
+    "examples": [
+      "She began to contemplate a move abroad."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-ponder",
+    "word": "ponder",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "trầm ngâm suy nghĩ",
+    "definition": "to think carefully before deciding; a synonym of think",
+    "examples": [
+      "Take time to ponder the question."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-ruminate",
+    "word": "ruminate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "nghiền ngẫm",
+    "definition": "to think deeply about something for a long time; a synonym of think",
+    "examples": [
+      "He would ruminate on his mistakes for days."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-sense",
+    "word": "sense",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "cảm nhận",
+    "definition": "to feel something without being told; a synonym of feel",
+    "examples": [
+      "Children sense when their parents are worried."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-endure",
+    "word": "endure",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "chịu đựng",
+    "definition": "to suffer something difficult for a long time; a synonym of feel",
+    "examples": [
+      "The villagers had to endure a long drought."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-undergo",
+    "word": "undergo",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "trải qua",
+    "definition": "to experience something, often unpleasant; a synonym of feel",
+    "examples": [
+      "He will undergo surgery next week."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Speaking and the senses"
+  },
+  {
+    "id": "v-syn-obtain",
+    "word": "obtain",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "đạt được, thu được",
+    "definition": "to get something, often with effort; a synonym of get",
+    "examples": [
+      "You must obtain a visa before you travel."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-acquire",
+    "word": "acquire",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "giành được, tiếp thu",
+    "definition": "to get or gain something; a synonym of get",
+    "examples": [
+      "Children acquire language very quickly."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-procure",
+    "word": "procure",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "thu mua, kiếm được",
+    "definition": "to get something, often with difficulty; a synonym of get",
+    "examples": [
+      "The hospital struggled to procure enough masks."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-derive",
+    "word": "derive",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "bắt nguồn, có được từ",
+    "definition": "to get something from a source; a synonym of get",
+    "examples": [
+      "Many English words derive from Latin."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-bestow",
+    "word": "bestow",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "ban tặng",
+    "definition": "to give an honour or gift; a synonym of give",
+    "examples": [
+      "The university will bestow an award on her."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-grant",
+    "word": "grant",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "cấp, ban cho",
+    "definition": "to officially give or allow something; a synonym of give",
+    "examples": [
+      "The bank agreed to grant him a loan."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-impart",
+    "word": "impart",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "truyền đạt",
+    "definition": "to pass on knowledge or a quality; a synonym of give",
+    "examples": [
+      "Good teachers impart a love of learning."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-seize",
+    "word": "seize",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "chộp lấy, tịch thu",
+    "definition": "to take something quickly and firmly; a synonym of take",
+    "examples": [
+      "Police seize fake goods at the border."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-grasp",
+    "word": "grasp",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "nắm chặt, nắm bắt",
+    "definition": "to hold firmly; to understand; a synonym of take",
+    "examples": [
+      "Try to grasp the main idea first."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-snatch",
+    "word": "snatch",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "giật lấy",
+    "definition": "to take something quickly and roughly; a synonym of take",
+    "examples": [
+      "A thief tried to snatch her bag."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-extract",
+    "word": "extract",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "rút ra, chiết xuất",
+    "definition": "to remove or take something out; a synonym of take",
+    "examples": [
+      "The dentist had to extract two teeth."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-appropriate",
+    "word": "appropriate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "chiếm đoạt",
+    "definition": "to take something for yourself without permission; a synonym of take",
+    "examples": [
+      "He was accused of trying to appropriate public funds."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-proceed",
+    "word": "proceed",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "tiến hành, đi tiếp",
+    "definition": "to continue or move forward; a synonym of go",
+    "examples": [
+      "Passengers should proceed to gate five."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-advance",
+    "word": "advance",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "tiến lên",
+    "definition": "to move forward; a synonym of go",
+    "examples": [
+      "The army began to advance at dawn."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-traverse",
+    "word": "traverse",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "băng qua",
+    "definition": "to travel across an area; a synonym of go",
+    "examples": [
+      "It took a week to traverse the desert."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-approach",
+    "word": "approach",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "tiến lại gần",
+    "definition": "to move closer; a synonym of come",
+    "examples": [
+      "Don't approach the dog while it eats."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-emerge",
+    "word": "emerge",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "xuất hiện, lộ ra",
+    "definition": "to come out from somewhere; a synonym of come",
+    "examples": [
+      "The sun began to emerge from the clouds."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-converge",
+    "word": "converge",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "hội tụ",
+    "definition": "to come together at one point; a synonym of come",
+    "examples": [
+      "Thousands of fans converge on the stadium."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-commence",
+    "word": "commence",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "bắt đầu (trang trọng)",
+    "definition": "to begin (formal); a synonym of start",
+    "examples": [
+      "The ceremony will commence at ten."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-initiate",
+    "word": "initiate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "khởi xướng",
+    "definition": "to make something begin; a synonym of start",
+    "examples": [
+      "The school will initiate a reading programme."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-launch",
+    "word": "launch",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "ra mắt, khởi động",
+    "definition": "to start something new; a synonym of start",
+    "examples": [
+      "The company will launch a new phone in May."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-inaugurate",
+    "word": "inaugurate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "khánh thành",
+    "definition": "to open or begin something with a ceremony; a synonym of start",
+    "examples": [
+      "The president will inaugurate the bridge."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-cease",
+    "word": "cease",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "chấm dứt",
+    "definition": "to stop happening; a synonym of stop",
+    "examples": [
+      "The factory will cease production next year."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-halt",
+    "word": "halt",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "dừng lại",
+    "definition": "to stop moving or happening; a synonym of stop",
+    "examples": [
+      "The train had to halt at the border."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-terminate",
+    "word": "terminate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "chấm dứt, kết thúc",
+    "definition": "to end something officially; a synonym of stop",
+    "examples": [
+      "The company may terminate the contract."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-discontinue",
+    "word": "discontinue",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "ngừng (sản xuất, cung cấp)",
+    "definition": "to stop making or providing something; a synonym of stop",
+    "examples": [
+      "They will discontinue this model next year."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-suspend",
+    "word": "suspend",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "tạm ngừng, đình chỉ",
+    "definition": "to stop something for a period; a synonym of stop",
+    "examples": [
+      "The airline had to suspend flights during the storm."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-utilize",
+    "word": "utilize",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "tận dụng",
+    "definition": "to use something effectively; a synonym of use",
+    "examples": [
+      "We must utilize every classroom."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-employ",
+    "word": "employ",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "sử dụng; thuê",
+    "definition": "to use a method or skill; to give work to; a synonym of use",
+    "examples": [
+      "Writers employ many tricks to keep readers interested."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-exploit",
+    "word": "exploit",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "khai thác; lợi dụng",
+    "definition": "to use fully, sometimes unfairly; a synonym of use",
+    "examples": [
+      "Some companies exploit cheap labour."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-assist",
+    "word": "assist",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "hỗ trợ",
+    "definition": "to help someone; a synonym of help",
+    "examples": [
+      "Volunteers assist the nurses at night."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-aid",
+    "word": "aid",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "giúp đỡ, trợ giúp",
+    "definition": "to help or make something easier; a synonym of help",
+    "examples": [
+      "Good sleep can aid memory."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-facilitate",
+    "word": "facilitate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "tạo điều kiện",
+    "definition": "to make something easier; a synonym of help",
+    "examples": [
+      "Maps facilitate travel in a new city."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-demonstrate",
+    "word": "demonstrate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "chứng minh, trình bày",
+    "definition": "to show clearly how something works; a synonym of show",
+    "examples": [
+      "The teacher will demonstrate the experiment."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-illustrate",
+    "word": "illustrate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "minh họa",
+    "definition": "to explain with examples or pictures; a synonym of show",
+    "examples": [
+      "These figures illustrate the problem."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-exhibit",
+    "word": "exhibit",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "trưng bày; biểu lộ",
+    "definition": "to show publicly or show a quality; a synonym of show",
+    "examples": [
+      "The museum will exhibit her paintings."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-manifest",
+    "word": "manifest",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "biểu hiện",
+    "definition": "to show something clearly; a synonym of show",
+    "examples": [
+      "Stress can manifest itself as headaches."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-unearth",
+    "word": "unearth",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "khai quật, phát hiện",
+    "definition": "to dig up or discover something hidden; a synonym of find",
+    "examples": [
+      "Archaeologists hope to unearth more coins."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-ascertain",
+    "word": "ascertain",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "xác minh",
+    "definition": "to find out for certain; a synonym of find",
+    "examples": [
+      "Police are trying to ascertain the cause of the fire."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-locate",
+    "word": "locate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "định vị, tìm ra vị trí",
+    "definition": "to find the exact position of something; a synonym of find",
+    "examples": [
+      "The app helps you locate your phone."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-retain",
+    "word": "retain",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "giữ lại",
+    "definition": "to continue to have something; a synonym of keep",
+    "examples": [
+      "The town has managed to retain its old charm."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-maintain",
+    "word": "maintain",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "duy trì",
+    "definition": "to keep something in good condition or at the same level; a synonym of keep",
+    "examples": [
+      "It is hard to maintain a steady speed uphill."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-alter",
+    "word": "alter",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "thay đổi, sửa",
+    "definition": "to change something slightly; a synonym of change",
+    "examples": [
+      "The tailor can alter the dress."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-modify",
+    "word": "modify",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "điều chỉnh",
+    "definition": "to change something to improve it; a synonym of change",
+    "examples": [
+      "Engineers had to modify the design."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-transform",
+    "word": "transform",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "biến đổi hoàn toàn",
+    "definition": "to change completely; a synonym of change",
+    "examples": [
+      "Paint can transform an old room."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-convert",
+    "word": "convert",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "chuyển đổi",
+    "definition": "to change from one form or use to another; a synonym of change",
+    "examples": [
+      "They plan to convert the factory into flats."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-evolve",
+    "word": "evolve",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "tiến hóa, phát triển dần",
+    "definition": "to develop gradually; a synonym of change",
+    "examples": [
+      "Languages evolve over centuries."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Everyday actions"
+  },
+  {
+    "id": "v-syn-cherish",
+    "word": "cherish",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "trân trọng, nâng niu",
+    "definition": "to love and care for something deeply; a synonym of love",
+    "examples": [
+      "I cherish the letters my grandmother wrote."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-revere",
+    "word": "revere",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "tôn kính",
+    "definition": "to respect and admire deeply; a synonym of love",
+    "examples": [
+      "Many people revere their teachers."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-idolize",
+    "word": "idolize",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "thần tượng",
+    "definition": "to admire someone too much; a synonym of love",
+    "examples": [
+      "Teenagers often idolize pop stars."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-venerate",
+    "word": "venerate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "sùng kính",
+    "definition": "to honour with great respect; a synonym of love",
+    "examples": [
+      "Villagers venerate their ancestors."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-detest",
+    "word": "detest",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "ghét cay ghét đắng",
+    "definition": "to hate very much; a synonym of hate",
+    "examples": [
+      "I detest waiting in long queues."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-abhor",
+    "word": "abhor",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "ghê tởm, căm ghét",
+    "definition": "to hate something for moral reasons; a synonym of hate",
+    "examples": [
+      "Most people abhor violence."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-loathe",
+    "word": "loathe",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "ghét cay đắng",
+    "definition": "to hate very much; a synonym of hate",
+    "examples": [
+      "Cats loathe getting wet."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-despise",
+    "word": "despise",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "khinh miệt",
+    "definition": "to dislike and have no respect for; a synonym of hate",
+    "examples": [
+      "They despise people who cheat."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-execrate",
+    "word": "execrate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "nguyền rủa",
+    "definition": "to feel or express great hatred for (formal); a synonym of hate",
+    "examples": [
+      "Critics execrate the decision as cruel."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-appreciate",
+    "word": "appreciate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "trân trọng, đánh giá cao",
+    "definition": "to value something; a synonym of like",
+    "examples": [
+      "I really appreciate your help."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-admire",
+    "word": "admire",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "ngưỡng mộ",
+    "definition": "to respect and approve of someone; a synonym of like",
+    "examples": [
+      "Students admire teachers who are fair."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-relish",
+    "word": "relish",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "thích thú, tận hưởng",
+    "definition": "to enjoy something very much; a synonym of like",
+    "examples": [
+      "Some people relish a challenge."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-savour",
+    "word": "savour",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "thưởng thức",
+    "definition": "to enjoy something slowly; a synonym of like",
+    "examples": [
+      "Take a moment to savour the coffee."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-desire",
+    "word": "desire",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "khao khát",
+    "definition": "to want something strongly; a synonym of want",
+    "examples": [
+      "Few people desire a life without friends."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-crave",
+    "word": "crave",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "thèm muốn",
+    "definition": "to want something very strongly; a synonym of want",
+    "examples": [
+      "Pregnant women often crave certain foods."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-yearn",
+    "word": "yearn",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "mong mỏi",
+    "definition": "to want something very much, often sadly; a synonym of want",
+    "examples": [
+      "Migrants yearn for home at Tet."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-aspire",
+    "word": "aspire",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "khao khát vươn tới",
+    "definition": "to hope to achieve something great; a synonym of want",
+    "examples": [
+      "Many students aspire to become doctors."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-covet",
+    "word": "covet",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "thèm thuồng (thứ của người khác)",
+    "definition": "to want something that belongs to someone else; a synonym of want",
+    "examples": [
+      "It is wrong to covet your neighbour's car."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-necessitate",
+    "word": "necessitate",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "đòi hỏi, cần phải có",
+    "definition": "to make something necessary; a synonym of need",
+    "examples": [
+      "The new rules necessitate extra staff."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-entail",
+    "word": "entail",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "kéo theo",
+    "definition": "to involve something as a necessary part; a synonym of need",
+    "examples": [
+      "The job will entail some travel."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-oblige",
+    "word": "oblige",
+    "ipa": "",
+    "pos": "verb",
+    "meaning": "bắt buộc",
+    "definition": "to force someone to do something by law or duty; a synonym of need",
+    "examples": [
+      "The law can oblige companies to publish their accounts."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Likes and needs"
+  },
+  {
+    "id": "v-syn-hushed",
+    "word": "hushed",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "im phăng phắc",
+    "definition": "very quiet, with people speaking softly; a synonym of quiet",
+    "examples": [
+      "The library was hushed during the exam."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-muted",
+    "word": "muted",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nhỏ, dịu (âm thanh, màu)",
+    "definition": "quieter or softer than usual; a synonym of quiet",
+    "examples": [
+      "We heard muted voices behind the door."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-tranquil",
+    "word": "tranquil",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thanh bình",
+    "definition": "calm and peaceful; a synonym of quiet",
+    "examples": [
+      "The village is tranquil in the early morning."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-subdued",
+    "word": "subdued",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "trầm lặng, dịu đi",
+    "definition": "quieter and less lively than usual; a synonym of quiet",
+    "examples": [
+      "The party was subdued after the bad news."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-boisterous",
+    "word": "boisterous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ồn ào, náo nhiệt",
+    "definition": "noisy and full of energy; a synonym of loud",
+    "examples": [
+      "A group of boisterous children ran past."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-vociferous",
+    "word": "vociferous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "om sòm, kịch liệt",
+    "definition": "expressing opinions loudly and forcefully; a synonym of loud",
+    "examples": [
+      "Residents made vociferous complaints."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-raucous",
+    "word": "raucous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ầm ĩ, khàn khàn",
+    "definition": "loud and unpleasant; a synonym of loud",
+    "examples": [
+      "We could hear raucous laughter from the bar."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-deafening",
+    "word": "deafening",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "điếc tai",
+    "definition": "so loud that you cannot hear anything else; a synonym of loud",
+    "examples": [
+      "The music at the concert was deafening."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-luminous",
+    "word": "luminous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "phát sáng",
+    "definition": "shining in the dark; a synonym of bright",
+    "examples": [
+      "The watch has luminous hands."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-gleaming",
+    "word": "gleaming",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "sáng bóng",
+    "definition": "shining because it is clean and polished; a synonym of bright",
+    "examples": [
+      "He showed us his gleaming new car."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-resplendent",
+    "word": "resplendent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "lộng lẫy, rực rỡ",
+    "definition": "very bright and beautiful; a synonym of bright",
+    "examples": [
+      "The hall was resplendent with lanterns."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-effulgent",
+    "word": "effulgent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "chói lọi (văn chương)",
+    "definition": "shining brightly (literary); a synonym of bright",
+    "examples": [
+      "The poem describes an effulgent dawn."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-dim",
+    "word": "dim",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "lờ mờ",
+    "definition": "not bright; a synonym of dark",
+    "examples": [
+      "The room was too dim to read in."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-gloomy",
+    "word": "gloomy",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "u ám",
+    "definition": "dark in a sad or unpleasant way; a synonym of dark",
+    "examples": [
+      "It was a gloomy winter afternoon."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-murky",
+    "word": "murky",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đục ngầu, tối tăm",
+    "definition": "dark and dirty, hard to see through; a synonym of dark",
+    "examples": [
+      "We could not see fish in the murky water."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-opaque",
+    "word": "opaque",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "mờ đục",
+    "definition": "not letting light through; a synonym of dark",
+    "examples": [
+      "The bathroom has opaque glass."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-immaculate",
+    "word": "immaculate",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tinh tươm",
+    "definition": "perfectly clean and tidy; a synonym of clean",
+    "examples": [
+      "Her kitchen is always immaculate."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-pristine",
+    "word": "pristine",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nguyên sơ, như mới",
+    "definition": "in perfect condition; not spoiled; a synonym of clean",
+    "examples": [
+      "The island has pristine beaches."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-sanitary",
+    "word": "sanitary",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hợp vệ sinh",
+    "definition": "clean and not likely to cause disease; a synonym of clean",
+    "examples": [
+      "Hospitals must keep sanitary conditions."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-unblemished",
+    "word": "unblemished",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "không tì vết",
+    "definition": "without any marks or faults; a synonym of clean",
+    "examples": [
+      "She has an unblemished driving record."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-filthy",
+    "word": "filthy",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bẩn thỉu",
+    "definition": "extremely dirty; a synonym of dirty",
+    "examples": [
+      "His boots were filthy after the hike."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-grimy",
+    "word": "grimy",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "cáu bẩn",
+    "definition": "covered with dirt; a synonym of dirty",
+    "examples": [
+      "The grimy windows let in little light."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-sordid",
+    "word": "sordid",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nhơ nhớp, bẩn thỉu (đạo đức)",
+    "definition": "dirty or immoral; a synonym of dirty",
+    "examples": [
+      "The film tells a sordid story of greed."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-foul",
+    "word": "foul",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hôi thối, kinh tởm",
+    "definition": "very dirty or smelling bad; a synonym of dirty",
+    "examples": [
+      "A foul smell came from the drain."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-unkempt",
+    "word": "unkempt",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "lôi thôi, bù xù",
+    "definition": "untidy and not cared for; a synonym of dirty",
+    "examples": [
+      "He arrived with unkempt hair."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-vacant",
+    "word": "vacant",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bỏ trống",
+    "definition": "not occupied or used; a synonym of empty",
+    "examples": [
+      "There is a vacant seat by the window."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-void",
+    "word": "void",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "vô hiệu; trống rỗng",
+    "definition": "empty; having no legal force; a synonym of empty",
+    "examples": [
+      "The contract was declared void."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-devoid",
+    "word": "devoid",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hoàn toàn không có",
+    "definition": "completely without something; a synonym of empty",
+    "examples": [
+      "The speech was devoid of new ideas."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-barren",
+    "word": "barren",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "cằn cỗi",
+    "definition": "unable to produce plants or fruit; a synonym of empty",
+    "examples": [
+      "Nothing grows on the barren hills."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-desolate",
+    "word": "desolate",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hoang vắng",
+    "definition": "empty and without people; a synonym of empty",
+    "examples": [
+      "The streets were desolate at midnight."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-saturated",
+    "word": "saturated",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bão hòa, ướt sũng",
+    "definition": "completely full of something; a synonym of full",
+    "examples": [
+      "The ground is saturated after days of rain."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-replete",
+    "word": "replete",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đầy ắp",
+    "definition": "full of something (formal); a synonym of full",
+    "examples": [
+      "The book is replete with useful examples."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-overflowing",
+    "word": "overflowing",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tràn đầy",
+    "definition": "so full that it spills over; a synonym of full",
+    "examples": [
+      "The bins were overflowing after the festival."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-abundant",
+    "word": "abundant",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "dồi dào",
+    "definition": "existing in large amounts; a synonym of full",
+    "examples": [
+      "Fish are abundant in this river."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-genuine",
+    "word": "genuine",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thật, chân thật",
+    "definition": "real and not fake; a synonym of real",
+    "examples": [
+      "Is this bag made of genuine leather?"
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-authentic",
+    "word": "authentic",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đích thực, chính gốc",
+    "definition": "real and true to its origin; a synonym of real",
+    "examples": [
+      "The restaurant serves authentic Hue dishes."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-legitimate",
+    "word": "legitimate",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hợp pháp, chính đáng",
+    "definition": "allowed by law or reasonable; a synonym of real",
+    "examples": [
+      "He had a legitimate reason to be late."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-bona-fide",
+    "word": "bona fide",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thật sự, chính danh",
+    "definition": "real and not pretending; a synonym of real",
+    "examples": [
+      "Only bona fide students can get the discount."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-fake",
+    "word": "fake",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "giả",
+    "definition": "not real but made to look real",
+    "examples": [
+      "Police found thousands of fake watches."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-artificial",
+    "word": "artificial",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nhân tạo",
+    "definition": "made by people, not natural; a synonym of fake",
+    "examples": [
+      "The cake has no artificial colours."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-counterfeit",
+    "word": "counterfeit",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "làm giả (tiền, hàng)",
+    "definition": "made to look real in order to cheat; a synonym of fake",
+    "examples": [
+      "He was arrested for selling counterfeit money."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-spurious",
+    "word": "spurious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "giả mạo, không có căn cứ",
+    "definition": "false or based on wrong reasoning; a synonym of fake",
+    "examples": [
+      "The article makes spurious claims."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-sham",
+    "word": "sham",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "giả tạo",
+    "definition": "not real but pretending to be; a synonym of fake",
+    "examples": [
+      "Critics called it a sham election."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-obvious",
+    "word": "obvious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hiển nhiên",
+    "definition": "easy to see or understand; a synonym of clear",
+    "examples": [
+      "The answer seemed obvious to everyone."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-evident",
+    "word": "evident",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "rõ ràng",
+    "definition": "clearly seen or understood; a synonym of clear",
+    "examples": [
+      "It was evident that she was tired."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-apparent",
+    "word": "apparent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "rõ rệt; có vẻ",
+    "definition": "easy to see; seeming true; a synonym of clear",
+    "examples": [
+      "For no apparent reason, the lights went out."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-transparent",
+    "word": "transparent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "trong suốt; minh bạch",
+    "definition": "easy to see through; open and honest; a synonym of clear",
+    "examples": [
+      "The process should be transparent to voters."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-lucid",
+    "word": "lucid",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "minh mẫn, dễ hiểu",
+    "definition": "clear and easy to understand; a synonym of clear",
+    "examples": [
+      "She gave a lucid explanation of the theory."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-incorrect",
+    "word": "incorrect",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "không đúng",
+    "definition": "not correct; a synonym of wrong",
+    "examples": [
+      "Two of your answers are incorrect."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-erroneous",
+    "word": "erroneous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "sai lầm",
+    "definition": "wrong or mistaken; a synonym of wrong",
+    "examples": [
+      "The report was based on erroneous data."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-fallacious",
+    "word": "fallacious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ngụy biện, sai lệch",
+    "definition": "based on a false idea; a synonym of wrong",
+    "examples": [
+      "That argument is fallacious."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-untenable",
+    "word": "untenable",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "không đứng vững được",
+    "definition": "impossible to defend; a synonym of wrong",
+    "examples": [
+      "His position became untenable after the scandal."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-valid",
+    "word": "valid",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hợp lệ, có căn cứ",
+    "definition": "reasonable and acceptable; legally usable; a synonym of right",
+    "examples": [
+      "Your ticket is valid for one week."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-veritable",
+    "word": "veritable",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đích thực",
+    "definition": "used to stress that a description is true; a synonym of right",
+    "examples": [
+      "The garden is a veritable paradise."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-occupied",
+    "word": "occupied",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bận, có người",
+    "definition": "busy; being used; a synonym of busy",
+    "examples": [
+      "The bathroom is occupied right now."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-engaged",
+    "word": "engaged",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bận (máy, người)",
+    "definition": "busy or in use; a synonym of busy",
+    "examples": [
+      "The line is engaged, so try again later."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-swamped",
+    "word": "swamped",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ngập đầu (việc)",
+    "definition": "having too much to deal with; a synonym of busy",
+    "examples": [
+      "I am swamped with work this week."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-preoccupied",
+    "word": "preoccupied",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bận tâm",
+    "definition": "thinking so much about one thing that you notice little else; a synonym of busy",
+    "examples": [
+      "She seemed preoccupied during dinner."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-hectic",
+    "word": "hectic",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bận rộn hối hả",
+    "definition": "full of activity and rush; a synonym of busy",
+    "examples": [
+      "December is a hectic month for shops."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Describing things"
+  },
+  {
+    "id": "v-syn-humorous",
+    "word": "humorous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hài hước",
+    "definition": "funny and amusing; a synonym of funny",
+    "examples": [
+      "He gave a humorous speech at the wedding."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-hilarious",
+    "word": "hilarious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "cực kỳ buồn cười",
+    "definition": "extremely funny; a synonym of funny",
+    "examples": [
+      "The film is hilarious from start to finish."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-comical",
+    "word": "comical",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "khôi hài",
+    "definition": "funny in a silly way; a synonym of funny",
+    "examples": [
+      "The dog looked comical in its tiny hat."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-witty",
+    "word": "witty",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "dí dỏm",
+    "definition": "clever and funny with words; a synonym of funny",
+    "examples": [
+      "She is famous for her witty replies."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-droll",
+    "word": "droll",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hóm hỉnh",
+    "definition": "funny in an odd or dry way; a synonym of funny",
+    "examples": [
+      "He has a droll sense of humour."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-serious",
+    "word": "serious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nghiêm túc, nghiêm trọng",
+    "definition": "thoughtful and not joking; bad or dangerous",
+    "examples": [
+      "This is a serious problem for the city."
+    ],
+    "level": "A2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-grave",
+    "word": "grave",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nghiêm trọng",
+    "definition": "very serious and worrying; a synonym of serious",
+    "examples": [
+      "The injured climber is in grave danger."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-solemn",
+    "word": "solemn",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "trang nghiêm",
+    "definition": "serious and formal; a synonym of serious",
+    "examples": [
+      "It was a solemn ceremony."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-earnest",
+    "word": "earnest",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nghiêm chỉnh, tha thiết",
+    "definition": "serious and sincere; a synonym of serious",
+    "examples": [
+      "He made an earnest promise to change."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-somber",
+    "word": "somber",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "u buồn, trầm mặc",
+    "definition": "serious and sad; a synonym of serious",
+    "examples": [
+      "The mood at the meeting was somber."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-austere",
+    "word": "austere",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "khắc khổ, giản dị nghiêm ngặt",
+    "definition": "plain and strict; a synonym of serious",
+    "examples": [
+      "The monks live an austere life."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-feeble",
+    "word": "feeble",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "yếu ớt",
+    "definition": "very weak; a synonym of weak",
+    "examples": [
+      "The old man's voice was feeble."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-frail",
+    "word": "frail",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ốm yếu, mỏng manh",
+    "definition": "weak and easily hurt; a synonym of weak",
+    "examples": [
+      "My grandmother is frail but cheerful."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-debilitated",
+    "word": "debilitated",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "suy kiệt",
+    "definition": "made weak by illness; a synonym of weak",
+    "examples": [
+      "She was debilitated by the long fever."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-infirm",
+    "word": "infirm",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "yếu ớt (do tuổi già, bệnh)",
+    "definition": "weak, especially from old age; a synonym of weak",
+    "examples": [
+      "The home cares for infirm residents."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-languid",
+    "word": "languid",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "uể oải, lừ đừ",
+    "definition": "slow and without energy; a synonym of weak",
+    "examples": [
+      "He gave a languid wave."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-robust",
+    "word": "robust",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "khỏe mạnh, vững chắc",
+    "definition": "strong and unlikely to break or fail; a synonym of strong",
+    "examples": [
+      "The bridge has a robust design."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-vigorous",
+    "word": "vigorous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "mạnh mẽ, đầy sinh lực",
+    "definition": "strong, active and full of energy; a synonym of strong",
+    "examples": [
+      "Do thirty minutes of vigorous exercise."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-resilient",
+    "word": "resilient",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "kiên cường",
+    "definition": "able to recover quickly from difficulties; a synonym of strong",
+    "examples": [
+      "Children are often resilient after a move."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-compassionate",
+    "word": "compassionate",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "giàu lòng trắc ẩn",
+    "definition": "showing sympathy for others' suffering; a synonym of kind",
+    "examples": [
+      "A compassionate nurse sat with the patient."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-benevolent",
+    "word": "benevolent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nhân từ",
+    "definition": "kind and wanting to help; a synonym of kind",
+    "examples": [
+      "A benevolent donor paid for the school."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-altruistic",
+    "word": "altruistic",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "vị tha",
+    "definition": "caring about others more than yourself; a synonym of kind",
+    "examples": [
+      "Volunteering is an altruistic act."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-philanthropic",
+    "word": "philanthropic",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "từ thiện, nhân ái",
+    "definition": "helping people by giving money; a synonym of kind",
+    "examples": [
+      "The philanthropic foundation builds libraries."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-cruel",
+    "word": "cruel",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "độc ác, tàn nhẫn",
+    "definition": "causing pain to others on purpose",
+    "examples": [
+      "It is cruel to keep a dog in a tiny cage."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-vicious",
+    "word": "vicious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hung dữ, ác độc",
+    "definition": "violent and cruel; a synonym of cruel",
+    "examples": [
+      "A vicious dog bit the postman."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-brutal",
+    "word": "brutal",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tàn bạo",
+    "definition": "extremely violent and cruel; a synonym of cruel",
+    "examples": [
+      "The war was long and brutal."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-callous",
+    "word": "callous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nhẫn tâm",
+    "definition": "not caring about other people's feelings; a synonym of cruel",
+    "examples": [
+      "His callous remarks upset everyone."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-ruthless",
+    "word": "ruthless",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tàn nhẫn, không khoan nhượng",
+    "definition": "willing to hurt others to get what you want; a synonym of cruel",
+    "examples": [
+      "The ruthless boss fired half the staff."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-malevolent",
+    "word": "malevolent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hiểm độc",
+    "definition": "wanting to harm others; a synonym of cruel",
+    "examples": [
+      "The villain gave a malevolent smile."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-valiant",
+    "word": "valiant",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "anh dũng",
+    "definition": "very brave; a synonym of brave",
+    "examples": [
+      "The firefighters made a valiant effort."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-intrepid",
+    "word": "intrepid",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "gan dạ",
+    "definition": "brave and willing to face danger; a synonym of brave",
+    "examples": [
+      "Intrepid explorers crossed the ice."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-daring",
+    "word": "daring",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "táo bạo",
+    "definition": "brave and willing to take risks; a synonym of brave",
+    "examples": [
+      "It was a daring rescue at sea."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-audacious",
+    "word": "audacious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "liều lĩnh, táo bạo",
+    "definition": "bold and willing to take risks; a synonym of brave",
+    "examples": [
+      "The team made an audacious plan to win."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-bashful",
+    "word": "bashful",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "e thẹn",
+    "definition": "shy and easily embarrassed; a synonym of shy",
+    "examples": [
+      "The bashful boy hid behind his mother."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-reticent",
+    "word": "reticent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "kín đáo, ít nói",
+    "definition": "unwilling to talk about yourself; a synonym of shy",
+    "examples": [
+      "She is reticent about her private life."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-introverted",
+    "word": "introverted",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hướng nội",
+    "definition": "quiet and preferring to be alone; a synonym of shy",
+    "examples": [
+      "Introverted people often need time alone."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-demure",
+    "word": "demure",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "e lệ, nhu mì",
+    "definition": "quiet, shy and modest; a synonym of shy",
+    "examples": [
+      "She gave a demure smile."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-civil",
+    "word": "civil",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "lịch sự (tối thiểu)",
+    "definition": "polite but not friendly; a synonym of polite",
+    "examples": [
+      "Try to be civil even when you disagree."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-gracious",
+    "word": "gracious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nhã nhặn, hòa nhã",
+    "definition": "polite, kind and pleasant; a synonym of polite",
+    "examples": [
+      "The host was gracious to every guest."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-refined",
+    "word": "refined",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tao nhã",
+    "definition": "polite and well educated; a synonym of polite",
+    "examples": [
+      "She has refined manners."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-urbane",
+    "word": "urbane",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "lịch thiệp",
+    "definition": "polite and confident in social situations; a synonym of polite",
+    "examples": [
+      "The urbane diplomat charmed the room."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-impolite",
+    "word": "impolite",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bất lịch sự",
+    "definition": "not polite; a synonym of rude",
+    "examples": [
+      "It is impolite to interrupt."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-discourteous",
+    "word": "discourteous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "khiếm nhã",
+    "definition": "rude and lacking respect; a synonym of rude",
+    "examples": [
+      "The discourteous driver did not say thank you."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-inconsiderate",
+    "word": "inconsiderate",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thiếu chu đáo",
+    "definition": "not thinking about other people; a synonym of rude",
+    "examples": [
+      "Playing loud music at night is inconsiderate."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-vulgar",
+    "word": "vulgar",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thô tục",
+    "definition": "rude and offensive; a synonym of rude",
+    "examples": [
+      "He used vulgar language on TV."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-boorish",
+    "word": "boorish",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "cục cằn, thô lỗ",
+    "definition": "rough and badly behaved; a synonym of rude",
+    "examples": [
+      "His boorish behaviour embarrassed his friends."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-talkative",
+    "word": "talkative",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nói nhiều",
+    "definition": "liking to talk a lot",
+    "examples": [
+      "My talkative neighbour tells me all the news."
+    ],
+    "level": "A2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-loquacious",
+    "word": "loquacious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ba hoa",
+    "definition": "talking a lot (formal); a synonym of talkative",
+    "examples": [
+      "The loquacious guide never stopped speaking."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-garrulous",
+    "word": "garrulous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "lắm mồm",
+    "definition": "talking too much about unimportant things; a synonym of talkative",
+    "examples": [
+      "A garrulous passenger sat next to me."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-voluble",
+    "word": "voluble",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "liến thoắng",
+    "definition": "talking a lot with energy; a synonym of talkative",
+    "examples": [
+      "She became voluble when she was excited."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-chatty",
+    "word": "chatty",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hay chuyện",
+    "definition": "friendly and liking to chat; a synonym of talkative",
+    "examples": [
+      "The chatty barber knows everyone in town."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-effusive",
+    "word": "effusive",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bộc lộ dạt dào",
+    "definition": "showing feelings in a very enthusiastic way; a synonym of talkative",
+    "examples": [
+      "He gave an effusive thank-you speech."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-reserved",
+    "word": "reserved",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "dè dặt, kín đáo",
+    "definition": "not showing your feelings or thoughts easily; a synonym of quiet (of a person)",
+    "examples": [
+      "He is reserved at first but friendly later."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-taciturn",
+    "word": "taciturn",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "lầm lì, ít nói",
+    "definition": "saying very little; a synonym of quiet (of a person)",
+    "examples": [
+      "The taciturn farmer answered with a nod."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-unassuming",
+    "word": "unassuming",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "khiêm tốn, không phô trương",
+    "definition": "modest and not wanting attention; a synonym of quiet (of a person)",
+    "examples": [
+      "The unassuming man turned out to be a famous writer."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-sincere",
+    "word": "sincere",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "chân thành",
+    "definition": "honest and meaning what you say; a synonym of honest",
+    "examples": [
+      "Please accept my sincere apologies."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-candid",
+    "word": "candid",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thẳng thắn",
+    "definition": "honest and direct; a synonym of honest",
+    "examples": [
+      "She gave a candid interview about her illness."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-forthright",
+    "word": "forthright",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bộc trực",
+    "definition": "saying what you think directly; a synonym of honest",
+    "examples": [
+      "He is forthright about the risks."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-veracious",
+    "word": "veracious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "trung thực (trang trọng)",
+    "definition": "telling the truth (formal); a synonym of honest",
+    "examples": [
+      "The court relied on a veracious witness."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-deceitful",
+    "word": "deceitful",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "lừa lọc",
+    "definition": "trying to make people believe false things; a synonym of dishonest",
+    "examples": [
+      "The deceitful seller hid the car's faults."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-fraudulent",
+    "word": "fraudulent",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "gian lận",
+    "definition": "done to cheat people, often illegally; a synonym of dishonest",
+    "examples": [
+      "Police are checking fraudulent bank transfers."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-duplicitous",
+    "word": "duplicitous",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "hai mặt",
+    "definition": "dishonest by acting differently with different people; a synonym of dishonest",
+    "examples": [
+      "The duplicitous agent worked for both sides."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-mendacious",
+    "word": "mendacious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "dối trá",
+    "definition": "not telling the truth; a synonym of dishonest",
+    "examples": [
+      "The report was full of mendacious claims."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-perfidious",
+    "word": "perfidious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "phản trắc",
+    "definition": "disloyal and not able to be trusted; a synonym of dishonest",
+    "examples": [
+      "The novel tells of a perfidious friend."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Character"
+  },
+  {
+    "id": "v-syn-a-lot",
+    "word": "a lot",
+    "ipa": "",
+    "pos": "pronoun",
+    "meaning": "nhiều",
+    "definition": "a large amount or number",
+    "examples": [
+      "We learned a lot on the trip."
+    ],
+    "level": "A1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-much",
+    "word": "much",
+    "ipa": "",
+    "pos": "determiner",
+    "meaning": "nhiều (danh từ không đếm được)",
+    "definition": "a large amount of; a synonym of a lot",
+    "examples": [
+      "There isn't much milk left."
+    ],
+    "level": "A1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-many",
+    "word": "many",
+    "ipa": "",
+    "pos": "determiner",
+    "meaning": "nhiều (danh từ đếm được)",
+    "definition": "a large number of; a synonym of a lot",
+    "examples": [
+      "Many students walk to school."
+    ],
+    "level": "A1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-copious",
+    "word": "copious",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "dồi dào, rất nhiều",
+    "definition": "in large amounts; a synonym of a lot",
+    "examples": [
+      "She took copious notes in the lecture."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-profuse",
+    "word": "profuse",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tràn trề, rất nhiều",
+    "definition": "produced in large amounts; a synonym of a lot",
+    "examples": [
+      "He offered profuse apologies."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-few",
+    "word": "few",
+    "ipa": "",
+    "pos": "determiner",
+    "meaning": "ít (danh từ đếm được)",
+    "definition": "a small number of; a synonym of a little",
+    "examples": [
+      "Few people came to the meeting."
+    ],
+    "level": "A2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-scarce",
+    "word": "scarce",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "khan hiếm",
+    "definition": "not enough for what is needed; a synonym of a little",
+    "examples": [
+      "Water is scarce in the dry season."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-meager",
+    "word": "meager",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "ít ỏi, đạm bạc",
+    "definition": "too small in amount; a synonym of a little",
+    "examples": [
+      "They lived on a meager salary."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-limited",
+    "word": "limited",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "có hạn",
+    "definition": "small in amount or number; a synonym of a little",
+    "examples": [
+      "Seats are limited, so book early."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-paltry",
+    "word": "paltry",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nhỏ nhoi, chẳng đáng là bao",
+    "definition": "too small to be useful or important; a synonym of a little",
+    "examples": [
+      "The workers were offered a paltry raise."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-all",
+    "word": "all",
+    "ipa": "",
+    "pos": "determiner",
+    "meaning": "tất cả",
+    "definition": "every one or the whole amount of",
+    "examples": [
+      "All the students passed the test."
+    ],
+    "level": "A1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-entire",
+    "word": "entire",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "toàn bộ",
+    "definition": "whole or complete; a synonym of all",
+    "examples": [
+      "We spent the entire day at the beach."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-whole",
+    "word": "whole",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "toàn bộ, nguyên",
+    "definition": "complete; all of something; a synonym of all",
+    "examples": [
+      "She ate the whole cake."
+    ],
+    "level": "A2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-total",
+    "word": "total",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tổng, hoàn toàn",
+    "definition": "complete or including everything; a synonym of all",
+    "examples": [
+      "The total cost is two million dong."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-comprehensive",
+    "word": "comprehensive",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "toàn diện",
+    "definition": "including all or nearly all parts; a synonym of all",
+    "examples": [
+      "The guide gives a comprehensive list of hotels."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-universal",
+    "word": "universal",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "phổ quát, chung",
+    "definition": "done by or affecting everyone; a synonym of all",
+    "examples": [
+      "Education should be universal."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-some",
+    "word": "some",
+    "ipa": "",
+    "pos": "determiner",
+    "meaning": "một vài, một ít",
+    "definition": "an amount or number of, not stated exactly",
+    "examples": [
+      "Can I have some water?"
+    ],
+    "level": "A1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-several",
+    "word": "several",
+    "ipa": "",
+    "pos": "determiner",
+    "meaning": "vài, một số",
+    "definition": "more than two but not many; a synonym of some",
+    "examples": [
+      "I have read several of her books."
+    ],
+    "level": "A2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-various",
+    "word": "various",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "nhiều loại khác nhau",
+    "definition": "of several different kinds; a synonym of some",
+    "examples": [
+      "The shop sells various kinds of tea."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-assorted",
+    "word": "assorted",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đủ loại, pha trộn",
+    "definition": "of different types mixed together; a synonym of some",
+    "examples": [
+      "She bought a box of assorted chocolates."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-diverse",
+    "word": "diverse",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đa dạng",
+    "definition": "very different from each other; a synonym of some",
+    "examples": [
+      "The city has a diverse population."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-every",
+    "word": "every",
+    "ipa": "",
+    "pos": "determiner",
+    "meaning": "mỗi, mọi",
+    "definition": "all the members of a group, one by one",
+    "examples": [
+      "I visit my grandparents every weekend."
+    ],
+    "level": "A1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-each",
+    "word": "each",
+    "ipa": "",
+    "pos": "determiner",
+    "meaning": "mỗi",
+    "definition": "every one of two or more, considered separately; a synonym of every",
+    "examples": [
+      "Each student has a locker."
+    ],
+    "level": "A1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-individual",
+    "word": "individual",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "riêng lẻ, cá nhân",
+    "definition": "single and separate; a synonym of every",
+    "examples": [
+      "The teacher gives individual feedback."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-more",
+    "word": "more",
+    "ipa": "",
+    "pos": "determiner",
+    "meaning": "thêm, nhiều hơn",
+    "definition": "a larger amount or number",
+    "examples": [
+      "We need more chairs."
+    ],
+    "level": "A1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-further",
+    "word": "further",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "thêm, xa hơn",
+    "definition": "more or additional; a synonym of more",
+    "examples": [
+      "For further information, call this number."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-additional",
+    "word": "additional",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bổ sung",
+    "definition": "extra; added; a synonym of more",
+    "examples": [
+      "There is an additional fee for luggage."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-supplementary",
+    "word": "supplementary",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "bổ trợ",
+    "definition": "added to something to complete it; a synonym of more",
+    "examples": [
+      "The course has supplementary reading."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-increased",
+    "word": "increased",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "gia tăng",
+    "definition": "larger in amount or number; a synonym of more",
+    "examples": [
+      "Increased demand pushed prices up."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-enhanced",
+    "word": "enhanced",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "được nâng cao",
+    "definition": "improved in quality or value; a synonym of more",
+    "examples": [
+      "The phone has an enhanced camera."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-less",
+    "word": "less",
+    "ipa": "",
+    "pos": "determiner",
+    "meaning": "ít hơn",
+    "definition": "a smaller amount of",
+    "examples": [
+      "I drink less coffee now."
+    ],
+    "level": "A2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-fewer",
+    "word": "fewer",
+    "ipa": "",
+    "pos": "determiner",
+    "meaning": "ít hơn (danh từ đếm được)",
+    "definition": "a smaller number of; a synonym of less",
+    "examples": [
+      "Fewer people smoke today."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-reduced",
+    "word": "reduced",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đã giảm",
+    "definition": "made smaller or lower; a synonym of less",
+    "examples": [
+      "The shoes are on sale at a reduced price."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-diminished",
+    "word": "diminished",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "suy giảm",
+    "definition": "made smaller or weaker; a synonym of less",
+    "examples": [
+      "He has a diminished role in the company."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-enough",
+    "word": "enough",
+    "ipa": "",
+    "pos": "determiner",
+    "meaning": "đủ",
+    "definition": "as much as is needed",
+    "examples": [
+      "Do we have enough time?"
+    ],
+    "level": "A1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-sufficient",
+    "word": "sufficient",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "đầy đủ",
+    "definition": "enough for a purpose; a synonym of enough",
+    "examples": [
+      "Is there sufficient evidence to arrest him?"
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-adequate",
+    "word": "adequate",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "tương xứng, đủ",
+    "definition": "good or enough for a need; a synonym of enough",
+    "examples": [
+      "The room has adequate light for reading."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-ample",
+    "word": "ample",
+    "ipa": "",
+    "pos": "adjective",
+    "meaning": "dư dả",
+    "definition": "more than enough; a synonym of enough",
+    "examples": [
+      "There is ample parking behind the hotel."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-extremely",
+    "word": "extremely",
+    "ipa": "",
+    "pos": "adverb",
+    "meaning": "cực kỳ",
+    "definition": "to a very great degree; a synonym of very",
+    "examples": [
+      "The test was extremely difficult."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-exceedingly",
+    "word": "exceedingly",
+    "ipa": "",
+    "pos": "adverb",
+    "meaning": "vô cùng",
+    "definition": "to a very great degree (formal); a synonym of very",
+    "examples": [
+      "The hotel staff were exceedingly polite."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-exceptionally",
+    "word": "exceptionally",
+    "ipa": "",
+    "pos": "adverb",
+    "meaning": "đặc biệt, khác thường",
+    "definition": "unusually; to an unusual degree; a synonym of very",
+    "examples": [
+      "She is an exceptionally gifted pianist."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-remarkably",
+    "word": "remarkably",
+    "ipa": "",
+    "pos": "adverb",
+    "meaning": "đáng kể, đáng chú ý",
+    "definition": "in a way that is surprising or worth noticing; a synonym of very",
+    "examples": [
+      "The town has remarkably clean streets."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-notably",
+    "word": "notably",
+    "ipa": "",
+    "pos": "adverb",
+    "meaning": "đáng chú ý là",
+    "definition": "especially; in a way that is noticeable; a synonym of very",
+    "examples": [
+      "Prices rose, notably for rice."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-constantly",
+    "word": "constantly",
+    "ipa": "",
+    "pos": "adverb",
+    "meaning": "liên tục",
+    "definition": "all the time; again and again; a synonym of always",
+    "examples": [
+      "The baby cries constantly at night."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-perpetually",
+    "word": "perpetually",
+    "ipa": "",
+    "pos": "adverb",
+    "meaning": "mãi mãi, liên miên",
+    "definition": "in a way that never ends or changes; a synonym of always",
+    "examples": [
+      "He is perpetually late."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-invariably",
+    "word": "invariably",
+    "ipa": "",
+    "pos": "adverb",
+    "meaning": "luôn luôn, không thay đổi",
+    "definition": "always, without exception; a synonym of always",
+    "examples": [
+      "The train is invariably full at eight."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-eternally",
+    "word": "eternally",
+    "ipa": "",
+    "pos": "adverb",
+    "meaning": "vĩnh viễn",
+    "definition": "forever; a synonym of always",
+    "examples": [
+      "I will be eternally grateful for your help."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-ceaselessly",
+    "word": "ceaselessly",
+    "ipa": "",
+    "pos": "adverb",
+    "meaning": "không ngừng",
+    "definition": "without stopping; a synonym of always",
+    "examples": [
+      "The waves beat ceaselessly against the rocks."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Amount and frequency"
+  },
+  {
+    "id": "v-syn-scheme",
+    "word": "scheme",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "kế hoạch, đề án",
+    "definition": "an official plan or system; a synonym of plan",
+    "examples": [
+      "A new scheme helps young farmers buy land."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-blueprint",
+    "word": "blueprint",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "bản thiết kế, kế hoạch chi tiết",
+    "definition": "a detailed plan for achieving something; a synonym of plan",
+    "examples": [
+      "The report is a blueprint for reform."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-issue",
+    "word": "issue",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "vấn đề",
+    "definition": "a subject or problem people discuss; a synonym of problem",
+    "examples": [
+      "Pollution is a serious issue in the capital."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-dilemma",
+    "word": "dilemma",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "tình thế khó xử",
+    "definition": "a situation where you must make a hard choice; a synonym of problem",
+    "examples": [
+      "She faced a dilemma: stay or move abroad."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-predicament",
+    "word": "predicament",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "cảnh khó khăn",
+    "definition": "an unpleasant situation that is hard to escape; a synonym of problem",
+    "examples": [
+      "He found himself in a difficult predicament."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-quandary",
+    "word": "quandary",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "tình trạng bối rối",
+    "definition": "a state of not knowing what to do; a synonym of problem",
+    "examples": [
+      "I am in a quandary about which job to take."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-conundrum",
+    "word": "conundrum",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "câu hỏi hóc búa",
+    "definition": "a confusing and difficult problem; a synonym of problem",
+    "examples": [
+      "How to cut costs without losing staff is a conundrum."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-rejoinder",
+    "word": "rejoinder",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "lời đáp lại",
+    "definition": "a quick, clever reply; a synonym of answer",
+    "examples": [
+      "She had a sharp rejoinder ready."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-retort",
+    "word": "retort",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "lời vặn lại",
+    "definition": "a quick and angry or funny reply; a synonym of answer",
+    "examples": [
+      "His retort made everyone laugh."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-rationale",
+    "word": "rationale",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "cơ sở lý luận",
+    "definition": "the reasons behind a decision; a synonym of reason",
+    "examples": [
+      "The minister explained the rationale for the tax."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-justification",
+    "word": "justification",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "sự biện minh",
+    "definition": "a good reason for doing something; a synonym of reason",
+    "examples": [
+      "There is no justification for violence."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-explanation",
+    "word": "explanation",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "lời giải thích",
+    "definition": "a statement that makes something clear; a synonym of reason",
+    "examples": [
+      "The teacher gave a clear explanation."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-grounds",
+    "word": "grounds",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "căn cứ, lý do",
+    "definition": "reasons for saying or doing something; a synonym of reason",
+    "examples": [
+      "He was refused a visa on security grounds."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-pretext",
+    "word": "pretext",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "cái cớ",
+    "definition": "a false reason that hides the real one; a synonym of reason",
+    "examples": [
+      "He left early on the pretext of a headache."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-consequence",
+    "word": "consequence",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "hệ quả",
+    "definition": "a result, especially a bad one; a synonym of result",
+    "examples": [
+      "Pollution has serious consequences for health."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-outcome",
+    "word": "outcome",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "kết cục, kết quả",
+    "definition": "the final result of something; a synonym of result",
+    "examples": [
+      "Nobody could predict the outcome of the match."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-ramification",
+    "word": "ramification",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "hệ lụy",
+    "definition": "a possible effect of an action; a synonym of result",
+    "examples": [
+      "Think about every ramification before you sign."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-aftermath",
+    "word": "aftermath",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "hậu quả, giai đoạn sau",
+    "definition": "the period after something bad happens; a synonym of result",
+    "examples": [
+      "Many families lost their homes in the aftermath of the flood."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-notion",
+    "word": "notion",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "khái niệm, ý niệm",
+    "definition": "an idea or belief; a synonym of idea",
+    "examples": [
+      "The notion that girls are bad at maths is wrong."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-concept",
+    "word": "concept",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "khái niệm",
+    "definition": "a general idea about something; a synonym of idea",
+    "examples": [
+      "The concept of zero changed mathematics."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-perception",
+    "word": "perception",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "nhận thức, cách nhìn",
+    "definition": "the way you think about something; a synonym of idea",
+    "examples": [
+      "Social media can change our perception of beauty."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-conception",
+    "word": "conception",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "quan niệm",
+    "definition": "an understanding or idea of something; a synonym of idea",
+    "examples": [
+      "Children have a different conception of time."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-location",
+    "word": "location",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "vị trí",
+    "definition": "a particular place; a synonym of place",
+    "examples": [
+      "The hotel is in a quiet location."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-spot",
+    "word": "spot",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "chỗ, điểm",
+    "definition": "a particular small place; a synonym of place",
+    "examples": [
+      "We found a nice spot for a picnic."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-venue",
+    "word": "venue",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "địa điểm (tổ chức sự kiện)",
+    "definition": "a place where an event happens; a synonym of place",
+    "examples": [
+      "The venue for the concert has changed."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-site",
+    "word": "site",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "khu vực, địa điểm",
+    "definition": "a place where something is or will be built; a synonym of place",
+    "examples": [
+      "This is the site of the new hospital."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-locale",
+    "word": "locale",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "bối cảnh, địa điểm",
+    "definition": "a place where something happens; a synonym of place",
+    "examples": [
+      "The film changes its locale from Hanoi to Paris."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-thing",
+    "word": "thing",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "vật, đồ vật, điều",
+    "definition": "an object, idea or event that is not named",
+    "examples": [
+      "Put your things in the box."
+    ],
+    "level": "A1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-entity",
+    "word": "entity",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "thực thể",
+    "definition": "something that exists separately; a synonym of thing",
+    "examples": [
+      "The two companies are now one legal entity."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-element",
+    "word": "element",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "yếu tố, thành phần",
+    "definition": "a part of something; a synonym of thing",
+    "examples": [
+      "Trust is an important element of friendship."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-commodity",
+    "word": "commodity",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "hàng hóa",
+    "definition": "a product that can be bought and sold; a synonym of thing",
+    "examples": [
+      "Coffee is Vietnam's key export commodity."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-population",
+    "word": "population",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "dân số",
+    "definition": "all the people living in an area; a synonym of people",
+    "examples": [
+      "The population of the city is growing."
+    ],
+    "level": "B1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-denizens",
+    "word": "denizens",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "cư dân",
+    "definition": "people or animals that live in a place; a synonym of people",
+    "examples": [
+      "The denizens of the forest are mostly birds."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-duration",
+    "word": "duration",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "khoảng thời gian",
+    "definition": "the length of time something lasts; a synonym of time",
+    "examples": [
+      "Please stay seated for the duration of the flight."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-epoch",
+    "word": "epoch",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "kỷ nguyên",
+    "definition": "a long period in history; a synonym of time",
+    "examples": [
+      "The invention began a new epoch."
+    ],
+    "level": "C2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-era",
+    "word": "era",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "thời đại",
+    "definition": "a period of time in history; a synonym of time",
+    "examples": [
+      "We live in the digital era."
+    ],
+    "level": "B2",
+    "topic": "Synonyms: Common nouns"
+  },
+  {
+    "id": "v-syn-interval",
+    "word": "interval",
+    "ipa": "",
+    "pos": "noun",
+    "meaning": "khoảng cách (thời gian), giờ nghỉ",
+    "definition": "a period between two events; a synonym of time",
+    "examples": [
+      "The buses run at ten-minute intervals."
+    ],
+    "level": "C1",
+    "topic": "Synonyms: Common nouns"
+  }
+]

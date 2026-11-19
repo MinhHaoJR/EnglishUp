@@ -10,7 +10,7 @@ import { wordSchema, questionSchema } from './schema';
 import { topics, topicVi } from '../i18n';
 import { topicSectionFor, topicSections } from './topicSections';
 test('expanded catalog has translated topics, complete IT entries and stable original IDs', () => {
-  expect(vocabulary).toHaveLength(3411);
+  expect(vocabulary).toHaveLength(3828);
   // The phrasal verbs (their own test below) are left out of the original catalog's counts.
   expect(
     vocabulary.filter(
@@ -18,10 +18,11 @@ test('expanded catalog has translated topics, complete IT entries and stable ori
         !word.topic.startsWith('IT:') &&
         word.topic !== 'Exam: Phrasal verbs' &&
         !word.topic.startsWith('Writing: ') &&
+        !word.topic.startsWith('Synonyms: ') &&
         !word.id.startsWith('v-verb-'),
     ),
   ).toHaveLength(1860);
-  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(68);
+  expect(new Set(vocabulary.map((word) => word.topic)).size).toBe(79);
   for (const topic of topics) {
     expect(topicVi[topic]).toBeTruthy();
     expect(vocabulary.some((word) => word.topic === topic)).toBe(true);
@@ -119,6 +120,7 @@ test('advanced vocabulary covers B2 and C1 across six learning topics', () => {
     (word) =>
       word.topic !== 'Exam: Phrasal verbs' &&
       !word.topic.startsWith('Writing: ') &&
+      !word.topic.startsWith('Synonyms: ') &&
       !word.id.startsWith('v-verb-'),
   );
   expect(catalog.filter((word) => word.level === 'B1')).toHaveLength(174);
@@ -248,4 +250,22 @@ test('the added common verbs join Everyday verbs with their IPA and repeat a hea
         .filter((w) => w.word.toLowerCase() === verb.word && w.id !== verb.id)
         .every((w) => !w.pos.includes('verb')),
     ).toBe(true);
+});
+
+test('the advanced synonyms fill 11 topics in their own section, each word new to the project', () => {
+  const synonyms = vocabulary.filter((word) => word.topic.startsWith('Synonyms: '));
+  expect(synonyms).toHaveLength(417);
+  expect(new Set(synonyms.map((word) => word.topic)).size).toBe(11);
+  const bare = (w: string) => w.toLowerCase().replace(/^(a|an|the) /, '');
+  const counts = new Map<string, number>();
+  for (const word of vocabulary)
+    counts.set(bare(word.word), (counts.get(bare(word.word)) ?? 0) + 1);
+  for (const word of synonyms) {
+    expect(topicSectionFor(word.topic)).toBe('synonyms');
+    expect(topicVi[word.topic]).toMatch(/^Đồng nghĩa: /);
+    expect(word.id).toMatch(/^v-syn-[a-z-]+$/);
+    expect(word.examples[0].toLowerCase()).toContain(word.word.toLowerCase());
+    expect(counts.get(bare(word.word))).toBe(1);
+  }
+  expect(synonyms.find((word) => word.word === 'huge')?.definition).toMatch(/a synonym of big$/);
 });

@@ -1,0 +1,151 @@
+# Advanced synonyms. "## <topic>" starts a topic, "### <basic word>" the words that can replace it.
+# word|pos|level|Vietnamese meaning|English definition|example (contains the word)
+## Size, quality and importance
+### big
+huge|adjective|A2|khổng lồ, rất to|extremely large|They live in a huge house near the lake.
+immense|adjective|B2|bao la, mênh mông|extremely large in size or amount|The project needs an immense amount of work.
+colossal|adjective|C1|đồ sộ, khổng lồ|unusually and impressively large|A colossal statue stands at the harbour entrance.
+### small
+tiny|adjective|A2|tí hon, rất nhỏ|extremely small|The kitten was so tiny that it fitted in my hand.
+petite|adjective|B2|nhỏ nhắn (dáng người)|small and slim, used for women|The shop sells clothes for petite women.
+diminutive|adjective|C2|nhỏ bé|unusually small|The diminutive singer has a huge voice.
+insignificant|adjective|B2|không đáng kể|too small or unimportant to matter|The difference in price is insignificant.
+### good
+superb|adjective|B2|tuyệt hảo|of the highest quality|The hotel serves a superb breakfast.
+outstanding|adjective|B2|xuất sắc, nổi bật|much better than others|She received an award for outstanding work.
+remarkable|adjective|B2|đáng chú ý, phi thường|unusual and worth noticing|He made remarkable progress in one year.
+### bad
+dreadful|adjective|B2|tồi tệ, kinh khủng|very bad or unpleasant|The traffic this morning was dreadful.
+atrocious|adjective|C2|cực kỳ tồi tệ|shockingly bad|The service at that restaurant was atrocious.
+abysmal|adjective|C2|tệ hại|extremely bad in quality|The team's results this season are abysmal.
+### important
+significant|adjective|B2|quan trọng, đáng kể|large or important enough to have an effect|There has been a significant rise in prices.
+crucial|adjective|B2|then chốt|extremely important because other things depend on it|Sleep is crucial for memory.
+vital|adjective|B2|thiết yếu, sống còn|necessary for success or survival|Clean water is vital to good health.
+essential|adjective|B1|cần thiết, cốt yếu|completely necessary|A passport is essential for travel abroad.
+paramount|adjective|C2|tối quan trọng|more important than anything else|Passenger safety is paramount.
+### easy
+effortless|adjective|C1|nhẹ nhàng, không tốn sức|needing no effort|She made the dance look effortless.
+undemanding|adjective|C1|không đòi hỏi nhiều|not needing much effort or skill|He wanted an undemanding job after retiring.
+facile|adjective|C2|dễ dãi, hời hợt|too simple and not carefully thought out|The article offers a facile answer to a complex problem.
+### difficult
+challenging|adjective|B2|đầy thử thách|difficult in a way that tests your ability|Learning a new language is challenging but fun.
+arduous|adjective|C2|gian khổ|needing much effort and hard work|The climb to the summit was arduous.
+formidable|adjective|C2|ghê gớm, đáng gờm|difficult to deal with or very powerful|The team faces a formidable opponent tonight.
+onerous|adjective|C2|nặng nề|needing a lot of effort and causing worry|Paperwork can be an onerous task for doctors.
+## Feelings
+### happy
+joyful|adjective|B2|vui sướng|full of happiness|The wedding was a joyful occasion.
+delighted|adjective|B1|rất vui mừng|very pleased|I was delighted to hear your news.
+ecstatic|adjective|C1|vui sướng tột độ|extremely happy and excited|The fans were ecstatic after the win.
+elated|adjective|C1|phấn khởi|very happy and excited|She felt elated when she passed the exam.
+jubilant|adjective|C2|hân hoan|extremely happy because of a success|Jubilant crowds filled the streets.
+### sad
+unhappy|adjective|A2|không vui|not happy|He was unhappy with his test result.
+depressed|adjective|B2|chán nản, trầm cảm|very unhappy for a long time|She felt depressed after losing her job.
+melancholy|adjective|C2|u sầu|sad in a quiet, thoughtful way|The song has a melancholy tune.
+dejected|adjective|C2|thất vọng, rầu rĩ|sad and disappointed|The players looked dejected after the defeat.
+morose|adjective|C2|ủ rũ, cáu kỉnh|unhappy and not wanting to talk|He has been morose since the argument.
+### angry
+furious|adjective|B2|giận dữ|extremely angry|My father was furious about the broken window.
+irate|adjective|C2|nổi giận|very angry|An irate customer shouted at the cashier.
+incensed|adjective|C2|tức điên|extremely angry because of something unfair|Residents were incensed by the new tax.
+enraged|adjective|C2|nổi cơn thịnh nộ|extremely angry|The enraged bull charged at the fence.
+### afraid
+scared|adjective|A2|sợ|frightened|My little brother is scared of the dark.
+fearful|adjective|B2|lo sợ|afraid of what might happen|Fearful parents kept their children at home.
+apprehensive|adjective|C1|e ngại, lo lắng|worried that something bad may happen|She was apprehensive about her first day at work.
+timid|adjective|B2|rụt rè, nhút nhát|easily frightened and not confident|The timid deer ran into the forest.
+trepidatious|adjective|C2|run sợ, lo âu|nervous and afraid|He felt trepidatious before the operation.
+### bored
+uninterested|adjective|B2|không quan tâm|not wanting to know about something|The students seemed uninterested in the film.
+apathetic|adjective|C2|thờ ơ|showing no interest or energy|Many young voters are apathetic about politics.
+listless|adjective|C2|uể oải|having no energy or interest|The heat made everyone listless.
+ennui|noun|C2|sự buồn chán|a feeling of tired boredom|Long winters filled him with ennui.
+jaded|adjective|C2|chán ngấy|bored after having too much of something|Even jaded travellers love this beach.
+### tired
+exhausted|adjective|B1|kiệt sức|extremely tired|I was exhausted after the long journey.
+weary|adjective|C1|mệt mỏi, rã rời|very tired, often after a long effort|The weary hikers sat down by the road.
+fatigued|adjective|C1|mệt nhọc|very tired from work or illness|Drivers who feel fatigued should stop and rest.
+drained|adjective|B2|cạn kiệt sức lực|having no energy left|After the exam I felt completely drained.
+enervated|adjective|C2|suy nhược|without energy or strength|The fever left her enervated for days.
+### surprised
+astonished|adjective|B2|kinh ngạc|very surprised|We were astonished by the size of the cave.
+amazed|adjective|B1|ngạc nhiên, sửng sốt|very surprised and impressed|I was amazed at how quickly she learned.
+startled|adjective|C1|giật mình|suddenly surprised or frightened|The startled cat jumped off the table.
+flabbergasted|adjective|C2|sững sờ|extremely surprised|He was flabbergasted to win the prize.
+dumbfounded|adjective|C2|chết lặng vì ngạc nhiên|so surprised that you cannot speak|The audience sat dumbfounded at the ending.
+### confused
+confused|adjective|A2|bối rối|unable to understand or think clearly|I was confused by the instructions.
+perplexed|adjective|C1|lúng túng|confused because something is hard to understand|The doctors were perplexed by her symptoms.
+baffled|adjective|C1|bối rối, khó hiểu|completely unable to understand|Police are baffled by the mystery.
+bewildered|adjective|C1|hoang mang|very confused and unsure what to do|Bewildered tourists looked at the map.
+disoriented|adjective|C1|mất phương hướng|unsure where you are or what is happening|He felt disoriented after the long flight.
+mystified|adjective|C2|khó hiểu, ngơ ngác|completely confused by something strange|I am mystified by his decision.
+## Age, looks and wealth
+### new
+recent|adjective|B1|gần đây|having happened a short time ago|Recent studies show the benefits of walking.
+innovative|adjective|B2|đổi mới, sáng tạo|using new ideas or methods|The company is known for its innovative designs.
+contemporary|adjective|B2|đương đại|belonging to the present time|The gallery shows contemporary art.
+### old
+aged|adjective|B2|già, cao tuổi|old|She looks after her aged parents.
+vintage|adjective|B2|cổ điển (đồ có giá trị)|old and of high quality|He collects vintage cars.
+obsolete|adjective|C1|lỗi thời|no longer used because something newer exists|Floppy disks are obsolete.
+antiquated|adjective|C2|cổ lỗ, lạc hậu|old-fashioned and no longer suitable|The office still uses antiquated software.
+### beautiful
+gorgeous|adjective|B1|lộng lẫy|very beautiful or attractive|The view from the hill is gorgeous.
+stunning|adjective|B2|đẹp choáng ngợp|extremely beautiful or impressive|She wore a stunning red dress.
+exquisite|adjective|C1|tinh xảo|very beautiful and delicate|The vase has exquisite patterns.
+radiant|adjective|C1|rạng rỡ|showing great happiness or beauty|The bride gave a radiant smile.
+### ugly
+unattractive|adjective|B2|kém hấp dẫn|not pleasant to look at|The building has an unattractive grey front.
+hideous|adjective|C1|gớm ghiếc|extremely ugly|They painted the wall a hideous green.
+grotesque|adjective|C2|kỳ quái, quái dị|strange and ugly in a frightening way|The mask had a grotesque face.
+repulsive|adjective|C2|ghê tởm|extremely unpleasant|The smell from the bin was repulsive.
+unseemly|adjective|C2|không đứng đắn|not suitable for a situation|Shouting at a funeral is unseemly.
+### rich
+affluent|adjective|C1|sung túc|having a lot of money|They live in an affluent suburb.
+prosperous|adjective|C1|thịnh vượng|rich and successful|The town became prosperous through trade.
+opulent|adjective|C2|xa hoa|showing great wealth|The hotel has an opulent lobby.
+loaded|adjective|C1|giàu nứt đố đổ vách (thân mật)|very rich (informal)|His uncle is loaded and owns three houses.
+### poor
+needy|adjective|B2|túng thiếu|not having enough money or food|The charity helps needy families.
+impoverished|adjective|C1|bần cùng|very poor|Impoverished villages need clean water.
+destitute|adjective|C2|cơ cực, không một xu dính túi|without money, food or a home|The war left many people destitute.
+penurious|adjective|C2|nghèo túng|extremely poor|He lived a penurious life as a young artist.
+indigent|adjective|C2|nghèo khổ|poor and needing help|The clinic treats indigent patients for free.
+### thin
+slim|adjective|A2|thon thả|thin in an attractive way|She is tall and slim.
+slender|adjective|B2|mảnh mai|thin and graceful|The vase has a slender neck.
+lean|adjective|B2|gầy rắn chắc|thin and healthy, with little fat|Runners usually have lean bodies.
+gaunt|adjective|C2|hốc hác|very thin, often from illness or hunger|He looked gaunt after weeks in hospital.
+emaciated|adjective|C2|gầy trơ xương|extremely thin from illness or lack of food|Rescuers found an emaciated dog.
+### fat
+fat|adjective|A1|béo, mập|having too much flesh on the body|The cat got fat from eating too much.
+overweight|adjective|B1|thừa cân|heavier than is healthy|Being overweight can cause heart problems.
+plump|adjective|B2|mũm mĩm|slightly fat in a pleasant way|The baby has plump cheeks.
+stout|adjective|C1|béo chắc|rather fat and heavy|A stout man opened the door.
+corpulent|adjective|C2|béo phì (trang trọng)|fat (formal)|The corpulent king could hardly climb the stairs.
+obese|adjective|B2|béo phì|very fat in a way that is unhealthy|Doctors warn that obese children face health risks.
+## Mind and speed
+### fast
+rapid|adjective|B2|nhanh chóng|happening very quickly|The city has seen rapid growth.
+swift|adjective|C1|mau lẹ|happening quickly or immediately|The police made a swift response.
+hasty|adjective|C1|vội vàng|done too quickly without care|Don't make a hasty decision.
+expeditious|adjective|C2|nhanh gọn|quick and efficient|The bank promised an expeditious refund.
+### slow
+sluggish|adjective|C1|chậm chạp, ì ạch|moving or working more slowly than usual|The economy remains sluggish.
+leisurely|adjective|C1|thong thả|unhurried and relaxed|We took a leisurely walk by the river.
+plodding|adjective|C2|lề mề|slow and dull|The film has a plodding story.
+laggard|adjective|C2|tụt hậu, chậm trễ|slower than others|The laggard region has fallen behind its neighbours.
+### smart
+intelligent|adjective|B1|thông minh|able to learn and understand quickly|Dolphins are intelligent animals.
+brilliant|adjective|B1|xuất chúng|extremely clever or skilled|She is a brilliant scientist.
+astute|adjective|C2|sắc sảo|clever at understanding situations|An astute investor saw the risk early.
+sagacious|adjective|C2|minh mẫn, sáng suốt|wise and good at judging|The sagacious old judge was respected by all.
+### stupid
+foolish|adjective|B2|dại dột|not showing good judgement|It would be foolish to swim in the storm.
+silly|adjective|A2|ngớ ngẩn|not sensible or serious|Stop making silly faces in class.
+idiotic|adjective|C1|ngu xuẩn|very stupid|That was an idiotic thing to say.
+asinine|adjective|C2|ngớ ngẩn hết sức|extremely stupid|The comment was asinine and rude.
+imbecilic|adjective|C2|đần độn|extremely stupid|Critics called the plan imbecilic.

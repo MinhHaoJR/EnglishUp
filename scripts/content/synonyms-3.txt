@@ -1,0 +1,153 @@
+## Describing things
+### quiet
+hushed|adjective|C1|im phăng phắc|very quiet, with people speaking softly|The library was hushed during the exam.
+muted|adjective|C1|nhỏ, dịu (âm thanh, màu)|quieter or softer than usual|We heard muted voices behind the door.
+tranquil|adjective|C1|thanh bình|calm and peaceful|The village is tranquil in the early morning.
+subdued|adjective|C2|trầm lặng, dịu đi|quieter and less lively than usual|The party was subdued after the bad news.
+### loud
+boisterous|adjective|C2|ồn ào, náo nhiệt|noisy and full of energy|A group of boisterous children ran past.
+vociferous|adjective|C2|om sòm, kịch liệt|expressing opinions loudly and forcefully|Residents made vociferous complaints.
+raucous|adjective|C2|ầm ĩ, khàn khàn|loud and unpleasant|We could hear raucous laughter from the bar.
+deafening|adjective|C1|điếc tai|so loud that you cannot hear anything else|The music at the concert was deafening.
+### bright
+luminous|adjective|C2|phát sáng|shining in the dark|The watch has luminous hands.
+gleaming|adjective|C1|sáng bóng|shining because it is clean and polished|He showed us his gleaming new car.
+resplendent|adjective|C2|lộng lẫy, rực rỡ|very bright and beautiful|The hall was resplendent with lanterns.
+effulgent|adjective|C2|chói lọi (văn chương)|shining brightly (literary)|The poem describes an effulgent dawn.
+### dark
+dim|adjective|B2|lờ mờ|not bright|The room was too dim to read in.
+gloomy|adjective|B2|u ám|dark in a sad or unpleasant way|It was a gloomy winter afternoon.
+murky|adjective|C2|đục ngầu, tối tăm|dark and dirty, hard to see through|We could not see fish in the murky water.
+opaque|adjective|C2|mờ đục|not letting light through|The bathroom has opaque glass.
+### clean
+immaculate|adjective|C1|tinh tươm|perfectly clean and tidy|Her kitchen is always immaculate.
+pristine|adjective|C2|nguyên sơ, như mới|in perfect condition; not spoiled|The island has pristine beaches.
+sanitary|adjective|C2|hợp vệ sinh|clean and not likely to cause disease|Hospitals must keep sanitary conditions.
+unblemished|adjective|C2|không tì vết|without any marks or faults|She has an unblemished driving record.
+### dirty
+filthy|adjective|B2|bẩn thỉu|extremely dirty|His boots were filthy after the hike.
+grimy|adjective|C2|cáu bẩn|covered with dirt|The grimy windows let in little light.
+sordid|adjective|C2|nhơ nhớp, bẩn thỉu (đạo đức)|dirty or immoral|The film tells a sordid story of greed.
+foul|adjective|C1|hôi thối, kinh tởm|very dirty or smelling bad|A foul smell came from the drain.
+unkempt|adjective|C2|lôi thôi, bù xù|untidy and not cared for|He arrived with unkempt hair.
+### empty
+vacant|adjective|C1|bỏ trống|not occupied or used|There is a vacant seat by the window.
+void|adjective|C2|vô hiệu; trống rỗng|empty; having no legal force|The contract was declared void.
+devoid|adjective|C2|hoàn toàn không có|completely without something|The speech was devoid of new ideas.
+barren|adjective|C2|cằn cỗi|unable to produce plants or fruit|Nothing grows on the barren hills.
+desolate|adjective|C2|hoang vắng|empty and without people|The streets were desolate at midnight.
+### full
+saturated|adjective|C2|bão hòa, ướt sũng|completely full of something|The ground is saturated after days of rain.
+replete|adjective|C2|đầy ắp|full of something (formal)|The book is replete with useful examples.
+overflowing|adjective|C1|tràn đầy|so full that it spills over|The bins were overflowing after the festival.
+abundant|adjective|C1|dồi dào|existing in large amounts|Fish are abundant in this river.
+### real
+genuine|adjective|B2|thật, chân thật|real and not fake|Is this bag made of genuine leather?
+authentic|adjective|B2|đích thực, chính gốc|real and true to its origin|The restaurant serves authentic Hue dishes.
+legitimate|adjective|C1|hợp pháp, chính đáng|allowed by law or reasonable|He had a legitimate reason to be late.
+bona fide|adjective|C2|thật sự, chính danh|real and not pretending|Only bona fide students can get the discount.
+### fake
+fake|adjective|B1|giả|not real but made to look real|Police found thousands of fake watches.
+artificial|adjective|B2|nhân tạo|made by people, not natural|The cake has no artificial colours.
+counterfeit|adjective|C1|làm giả (tiền, hàng)|made to look real in order to cheat|He was arrested for selling counterfeit money.
+spurious|adjective|C2|giả mạo, không có căn cứ|false or based on wrong reasoning|The article makes spurious claims.
+sham|adjective|C2|giả tạo|not real but pretending to be|Critics called it a sham election.
+### clear
+obvious|adjective|B1|hiển nhiên|easy to see or understand|The answer seemed obvious to everyone.
+evident|adjective|C1|rõ ràng|clearly seen or understood|It was evident that she was tired.
+apparent|adjective|C1|rõ rệt; có vẻ|easy to see; seeming true|For no apparent reason, the lights went out.
+transparent|adjective|B2|trong suốt; minh bạch|easy to see through; open and honest|The process should be transparent to voters.
+lucid|adjective|C2|minh mẫn, dễ hiểu|clear and easy to understand|She gave a lucid explanation of the theory.
+### wrong
+incorrect|adjective|B1|không đúng|not correct|Two of your answers are incorrect.
+erroneous|adjective|C2|sai lầm|wrong or mistaken|The report was based on erroneous data.
+fallacious|adjective|C2|ngụy biện, sai lệch|based on a false idea|That argument is fallacious.
+untenable|adjective|C2|không đứng vững được|impossible to defend|His position became untenable after the scandal.
+### right
+valid|adjective|B2|hợp lệ, có căn cứ|reasonable and acceptable; legally usable|Your ticket is valid for one week.
+veritable|adjective|C2|đích thực|used to stress that a description is true|The garden is a veritable paradise.
+### busy
+occupied|adjective|B2|bận, có người|busy; being used|The bathroom is occupied right now.
+engaged|adjective|C1|bận (máy, người)|busy or in use|The line is engaged, so try again later.
+swamped|adjective|C1|ngập đầu (việc)|having too much to deal with|I am swamped with work this week.
+preoccupied|adjective|C1|bận tâm|thinking so much about one thing that you notice little else|She seemed preoccupied during dinner.
+hectic|adjective|B2|bận rộn hối hả|full of activity and rush|December is a hectic month for shops.
+## Character
+### funny
+humorous|adjective|B2|hài hước|funny and amusing|He gave a humorous speech at the wedding.
+hilarious|adjective|B2|cực kỳ buồn cười|extremely funny|The film is hilarious from start to finish.
+comical|adjective|C1|khôi hài|funny in a silly way|The dog looked comical in its tiny hat.
+witty|adjective|C1|dí dỏm|clever and funny with words|She is famous for her witty replies.
+droll|adjective|C2|hóm hỉnh|funny in an odd or dry way|He has a droll sense of humour.
+### serious
+serious|adjective|A2|nghiêm túc, nghiêm trọng|thoughtful and not joking; bad or dangerous|This is a serious problem for the city.
+grave|adjective|C1|nghiêm trọng|very serious and worrying|The injured climber is in grave danger.
+solemn|adjective|C1|trang nghiêm|serious and formal|It was a solemn ceremony.
+earnest|adjective|C2|nghiêm chỉnh, tha thiết|serious and sincere|He made an earnest promise to change.
+somber|adjective|C2|u buồn, trầm mặc|serious and sad|The mood at the meeting was somber.
+austere|adjective|C2|khắc khổ, giản dị nghiêm ngặt|plain and strict|The monks live an austere life.
+### weak
+feeble|adjective|C1|yếu ớt|very weak|The old man's voice was feeble.
+frail|adjective|C1|ốm yếu, mỏng manh|weak and easily hurt|My grandmother is frail but cheerful.
+debilitated|adjective|C2|suy kiệt|made weak by illness|She was debilitated by the long fever.
+infirm|adjective|C2|yếu ớt (do tuổi già, bệnh)|weak, especially from old age|The home cares for infirm residents.
+languid|adjective|C2|uể oải, lừ đừ|slow and without energy|He gave a languid wave.
+### strong
+robust|adjective|C1|khỏe mạnh, vững chắc|strong and unlikely to break or fail|The bridge has a robust design.
+vigorous|adjective|C1|mạnh mẽ, đầy sinh lực|strong, active and full of energy|Do thirty minutes of vigorous exercise.
+resilient|adjective|C1|kiên cường|able to recover quickly from difficulties|Children are often resilient after a move.
+### kind
+compassionate|adjective|C1|giàu lòng trắc ẩn|showing sympathy for others' suffering|A compassionate nurse sat with the patient.
+benevolent|adjective|C2|nhân từ|kind and wanting to help|A benevolent donor paid for the school.
+altruistic|adjective|C2|vị tha|caring about others more than yourself|Volunteering is an altruistic act.
+philanthropic|adjective|C2|từ thiện, nhân ái|helping people by giving money|The philanthropic foundation builds libraries.
+### cruel
+cruel|adjective|B1|độc ác, tàn nhẫn|causing pain to others on purpose|It is cruel to keep a dog in a tiny cage.
+vicious|adjective|C1|hung dữ, ác độc|violent and cruel|A vicious dog bit the postman.
+brutal|adjective|C1|tàn bạo|extremely violent and cruel|The war was long and brutal.
+callous|adjective|C2|nhẫn tâm|not caring about other people's feelings|His callous remarks upset everyone.
+ruthless|adjective|C1|tàn nhẫn, không khoan nhượng|willing to hurt others to get what you want|The ruthless boss fired half the staff.
+malevolent|adjective|C2|hiểm độc|wanting to harm others|The villain gave a malevolent smile.
+### brave
+valiant|adjective|C2|anh dũng|very brave|The firefighters made a valiant effort.
+intrepid|adjective|C2|gan dạ|brave and willing to face danger|Intrepid explorers crossed the ice.
+daring|adjective|C1|táo bạo|brave and willing to take risks|It was a daring rescue at sea.
+audacious|adjective|C2|liều lĩnh, táo bạo|bold and willing to take risks|The team made an audacious plan to win.
+### shy
+bashful|adjective|C2|e thẹn|shy and easily embarrassed|The bashful boy hid behind his mother.
+reticent|adjective|C2|kín đáo, ít nói|unwilling to talk about yourself|She is reticent about her private life.
+introverted|adjective|C1|hướng nội|quiet and preferring to be alone|Introverted people often need time alone.
+demure|adjective|C2|e lệ, nhu mì|quiet, shy and modest|She gave a demure smile.
+### polite
+civil|adjective|C1|lịch sự (tối thiểu)|polite but not friendly|Try to be civil even when you disagree.
+gracious|adjective|C1|nhã nhặn, hòa nhã|polite, kind and pleasant|The host was gracious to every guest.
+refined|adjective|C1|tao nhã|polite and well educated|She has refined manners.
+urbane|adjective|C2|lịch thiệp|polite and confident in social situations|The urbane diplomat charmed the room.
+### rude
+impolite|adjective|B1|bất lịch sự|not polite|It is impolite to interrupt.
+discourteous|adjective|C2|khiếm nhã|rude and lacking respect|The discourteous driver did not say thank you.
+inconsiderate|adjective|C1|thiếu chu đáo|not thinking about other people|Playing loud music at night is inconsiderate.
+vulgar|adjective|C1|thô tục|rude and offensive|He used vulgar language on TV.
+boorish|adjective|C2|cục cằn, thô lỗ|rough and badly behaved|His boorish behaviour embarrassed his friends.
+### talkative
+talkative|adjective|A2|nói nhiều|liking to talk a lot|My talkative neighbour tells me all the news.
+loquacious|adjective|C2|ba hoa|talking a lot (formal)|The loquacious guide never stopped speaking.
+garrulous|adjective|C2|lắm mồm|talking too much about unimportant things|A garrulous passenger sat next to me.
+voluble|adjective|C2|liến thoắng|talking a lot with energy|She became voluble when she was excited.
+chatty|adjective|B2|hay chuyện|friendly and liking to chat|The chatty barber knows everyone in town.
+effusive|adjective|C2|bộc lộ dạt dào|showing feelings in a very enthusiastic way|He gave an effusive thank-you speech.
+### quiet (person)
+reserved|adjective|B2|dè dặt, kín đáo|not showing your feelings or thoughts easily|He is reserved at first but friendly later.
+taciturn|adjective|C2|lầm lì, ít nói|saying very little|The taciturn farmer answered with a nod.
+unassuming|adjective|C2|khiêm tốn, không phô trương|modest and not wanting attention|The unassuming man turned out to be a famous writer.
+### honest
+sincere|adjective|B2|chân thành|honest and meaning what you say|Please accept my sincere apologies.
+candid|adjective|C1|thẳng thắn|honest and direct|She gave a candid interview about her illness.
+forthright|adjective|C2|bộc trực|saying what you think directly|He is forthright about the risks.
+veracious|adjective|C2|trung thực (trang trọng)|telling the truth (formal)|The court relied on a veracious witness.
+### dishonest
+deceitful|adjective|C2|lừa lọc|trying to make people believe false things|The deceitful seller hid the car's faults.
+fraudulent|adjective|C1|gian lận|done to cheat people, often illegally|Police are checking fraudulent bank transfers.
+duplicitous|adjective|C2|hai mặt|dishonest by acting differently with different people|The duplicitous agent worked for both sides.
+mendacious|adjective|C2|dối trá|not telling the truth|The report was full of mendacious claims.
+perfidious|adjective|C2|phản trắc|disloyal and not able to be trusted|The novel tells of a perfidious friend.

@@ -10,6 +10,7 @@ const sectionIcons: Record<string, IconName> = {
   specialist: 'cap',
   exam: 'achievements',
   writing: 'grammar',
+  synonyms: 'swap',
 };
 import { vocabulary } from '../../data/content';
 import { topicSectionFor, topicSections, type TopicSectionId } from '../../data/topicSections';
