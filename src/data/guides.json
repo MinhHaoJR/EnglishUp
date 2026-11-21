@@ -10,7 +10,15 @@
       "vi": "Chào bạn! Mình là Tom, trợ giảng AI của EnglishUp. Mình có thể giải thích từ vựng, ngữ pháp và các thì, gợi ý bài luyện phù hợp, và hướng dẫn bạn dùng app, như bài kiểm tra trình độ hay lộ trình học. Hôm nay bạn muốn học gì?",
       "en": "Hi! I'm Tom, EnglishUp's AI tutor. I can explain words, grammar and tenses, suggest lessons that suit you and show you how to use the app, such as the level test and the learning paths. What would you like to learn today?"
     },
-    "keywords": ["chào", "hi", "hey", "chào bạn", "good morning", "chào buổi sáng", "alo"]
+    "keywords": [
+      "chào",
+      "hi",
+      "hey",
+      "chào bạn",
+      "good morning",
+      "chào buổi sáng",
+      "alo"
+    ]
   },
   {
     "id": "g-who-are-you",
@@ -62,7 +70,12 @@
       "vi": "Không có gì! Chúc bạn học tốt. Khi nào cần giải thích thêm một từ, một thì hay muốn tìm bài luyện mới, cứ hỏi mình nhé.",
       "en": "You're welcome! Enjoy your practice. Whenever you need another word, tense or lesson explained, just ask."
     },
-    "keywords": ["thanks", "cám ơn", "thank you so much", "cảm ơn nhiều"]
+    "keywords": [
+      "thanks",
+      "cám ơn",
+      "thank you so much",
+      "cảm ơn nhiều"
+    ]
   },
   {
     "id": "g-goodbye",
@@ -75,7 +88,12 @@
       "vi": "Tạm biệt bạn! Trước khi nghỉ, bạn có thể ôn nhanh các thẻ từ vựng đến hạn ở trang Từ vựng. Hẹn gặp lại!",
       "en": "Goodbye! Before you go, you could review the vocabulary cards that are due on the Vocabulary page. See you soon!"
     },
-    "keywords": ["bye", "hẹn gặp lại", "see you", "chào nhé"]
+    "keywords": [
+      "bye",
+      "hẹn gặp lại",
+      "see you",
+      "chào nhé"
+    ]
   },
   {
     "id": "g-human",
@@ -88,7 +106,12 @@
       "vi": "Không, mình là AI. Mình dùng mô hình Gemini của Google để viết câu trả lời từ các bài học tìm được trong EnglishUp. Mình có thể nhầm, vì vậy mỗi câu trả lời đều kèm nguồn để bạn kiểm tra.",
       "en": "No, I'm an AI. I use Google's Gemini model to write answers from the lessons I find in EnglishUp. I can make mistakes, so every answer comes with sources you can check."
     },
-    "keywords": ["bạn là robot à", "are you human", "có phải AI không", "bạn là chatbot"]
+    "keywords": [
+      "bạn là robot à",
+      "are you human",
+      "có phải AI không",
+      "bạn là chatbot"
+    ]
   },
   {
     "id": "g-language",
@@ -119,7 +142,12 @@
       "vi": "Mỗi tài khoản được hỏi 20 câu mỗi ngày, tính lại từ nửa đêm giờ Việt Nam. Xoá một cuộc trò chuyện không làm tăng số câu còn lại. Câu hỏi được gửi tới dịch vụ miễn phí của Google, nên đừng nhập thông tin cá nhân.",
       "en": "Each account can ask 20 questions a day, reset at midnight Vietnam time. Deleting a conversation does not give questions back. Questions go to Google's free service, so do not type personal information."
     },
-    "keywords": ["giới hạn câu hỏi", "hết lượt hỏi", "daily limit", "tại sao không hỏi được nữa"]
+    "keywords": [
+      "giới hạn câu hỏi",
+      "hết lượt hỏi",
+      "daily limit",
+      "tại sao không hỏi được nữa"
+    ]
   },
   {
     "id": "g-start",
@@ -129,10 +157,17 @@
       "en": "I don't know where to start"
     },
     "answer": {
-      "vi": "Bạn hãy làm Kiểm tra trình độ trước: 30 câu, khoảng 10 phút. Kết quả cho biết trình độ ước tính và mở lộ trình học phù hợp. Sau đó mỗi ngày làm theo Kế hoạch hôm nay ở trang Tổng quan, vì nó ưu tiên thẻ từ đến hạn và kỹ năng bạn ít luyện.",
-      "en": "Start with the Level test: 30 questions, about ten minutes. The result estimates your level and opens the matching learning path. After that, follow Your plan for today on the Dashboard each day, which puts due word cards and your least-practised skills first."
+      "vi": "Lần đầu mở app, bạn sẽ được đưa thẳng tới bài Kiểm tra trình độ: 30 câu, khoảng 10 phút. Làm xong, app tự chọn lộ trình hợp với trình độ của bạn và mở mọi trang. Từ đó, mỗi ngày bấm Làm ngay ở thẻ Lộ trình của bạn trên trang Tổng quan, rồi theo Kế hoạch hôm nay để ôn thẻ từ đến hạn và kỹ năng bạn ít luyện.",
+      "en": "The first time you open the app, it takes you straight to the Level test: 30 questions, about ten minutes. When you finish, the app picks the path for your level and opens every page. From then on, press Start now on the Your path card on the Dashboard each day, then follow Your plan for today for due word cards and the skills you practise least."
     },
-    "keywords": ["mới bắt đầu", "beginner", "học từ đâu", "người mới", "where should I begin"]
+    "keywords": [
+      "mới bắt đầu",
+      "beginner",
+      "học từ đâu",
+      "người mới",
+      "where should I begin",
+      "lần đầu dùng app"
+    ]
   },
   {
     "id": "g-what-is",
@@ -142,8 +177,8 @@
       "en": "What is EnglishUp?"
     },
     "answer": {
-      "vi": "EnglishUp là ứng dụng học tiếng Anh dành cho người Việt. App có: Từ vựng 2.491 từ với ôn tập ngắt quãng; Luyện nghe, Luyện nói, Luyện đọc, Luyện viết mỗi phần 300 bài từ A1 đến C2; Ngữ pháp với 100 cấu trúc câu và 13 thì; trò chơi đua 60 giây; Kiểm tra trình độ; Lộ trình học; điểm, huy hiệu và trợ giảng AI.",
-      "en": "EnglishUp is an English learning app for Vietnamese speakers. It has Vocabulary with 2,491 words and spaced review; Listening, Speaking, Reading and Writing with 300 lessons each from A1 to C2; Grammar with 100 sentence patterns and 13 tenses; 60-second races; a Level test; Learning paths; points, badges and the AI tutor."
+      "vi": "EnglishUp là ứng dụng học tiếng Anh dành cho người Việt. App có: Từ vựng 3.828 từ với ôn tập ngắt quãng, gồm 1.070 collocation IELTS Writing và 417 từ đồng nghĩa nâng cao; Luyện nghe, Luyện nói, Luyện đọc, Luyện viết mỗi phần 300 bài từ A1 đến C2; Ngữ pháp với 100 cấu trúc câu và 13 thì; trò chơi đua 60 giây; Kiểm tra trình độ bắt buộc lúc mới vào; lộ trình học riêng theo trình độ; điểm, huy hiệu và trợ giảng AI.",
+      "en": "EnglishUp is an English learning app for Vietnamese speakers. It has Vocabulary with 3,828 words and spaced review, including 1,070 IELTS Writing collocations and 417 advanced synonyms; Listening, Speaking, Reading and Writing with 300 lessons each from A1 to C2; Grammar with 100 sentence patterns and 13 tenses; 60-second races; a Level test you take on your first visit; a learning path chosen for your level; points, badges and the AI tutor."
     },
     "keywords": [
       "giới thiệu app",
@@ -161,10 +196,16 @@
       "en": "What sections does the app have?"
     },
     "answer": {
-      "vi": "Thanh bên trái có: Tổng quan, Lộ trình học, Kiểm tra trình độ; Từ vựng, Luyện nghe, Luyện nói, Luyện đọc, Luyện viết, Ngữ pháp; Trợ giảng Tom, Trò chơi, Thành tích, Cài đặt. Trợ giảng còn mở được từ nút tròn ở góc dưới bên phải mọi trang.",
-      "en": "The left sidebar has: Dashboard, Learning paths, Level test; Vocabulary, Listening, Speaking, Reading, Writing, Grammar; Tutor Tom, Games, Achievements, Settings. The tutor also opens from the round button in the bottom-right corner of every page."
+      "vi": "Thanh bên trái có: Tổng quan, Lộ trình học, Kiểm tra trình độ; Từ vựng, Luyện nghe, Luyện nói, Luyện đọc, Luyện viết, Ngữ pháp; Trợ giảng Tom, Trò chơi, Thành tích, Cài đặt. Các mục này mở ra sau khi bạn làm xong bài Kiểm tra trình độ lần đầu. Trợ giảng còn mở được từ nút tròn ở góc dưới bên phải mọi trang.",
+      "en": "The left sidebar has: Dashboard, Learning paths, Level test; Vocabulary, Listening, Speaking, Reading, Writing, Grammar; Tutor Tom, Games, Achievements, Settings. They open once you have finished your first Level test. The tutor also opens from the round button in the bottom-right corner of every page."
     },
-    "keywords": ["menu", "các mục trong app", "trang nào", "navigation", "sidebar"]
+    "keywords": [
+      "menu",
+      "các mục trong app",
+      "trang nào",
+      "navigation",
+      "sidebar"
+    ]
   },
   {
     "id": "g-account-needed",
@@ -174,10 +215,16 @@
       "en": "Do I need an account?"
     },
     "answer": {
-      "vi": "Không bắt buộc. Không đăng nhập bạn vẫn luyện mọi bài và tiến độ lưu trên trình duyệt. Tài khoản thêm: đồng bộ giữa các thiết bị, điểm và huy hiệu, bảng xếp hạng, hai trò chơi đua 60 giây và trợ giảng AI.",
-      "en": "No. Without signing in you can practise every lesson, and progress stays in your browser. An account adds syncing across devices, points and badges, the leaderboard, the two 60-second races and Tutor Tom, the AI tutor."
+      "vi": "Không bắt buộc. Không đăng nhập, bạn vẫn làm bài Kiểm tra trình độ, theo lộ trình và luyện mọi bài; tiến độ lưu trên trình duyệt. Tài khoản thêm: đồng bộ giữa các thiết bị (kể cả kết quả kiểm tra trình độ), điểm và huy hiệu, bảng xếp hạng, hai trò chơi đua 60 giây và trợ giảng AI.",
+      "en": "No. Without signing in you can take the Level test, follow your path and practise every lesson, and progress stays in your browser. An account adds syncing across devices (including your level test result), points and badges, the leaderboard, the two 60-second races and Tutor Tom, the AI tutor."
     },
-    "keywords": ["đăng ký", "sign up", "tạo tài khoản", "có cần đăng nhập", "login"]
+    "keywords": [
+      "đăng ký",
+      "sign up",
+      "tạo tài khoản",
+      "có cần đăng nhập",
+      "login"
+    ]
   },
   {
     "id": "g-offline",
@@ -190,7 +237,13 @@
       "vi": "Được. EnglishUp cài được như một ứng dụng. Sau lần mở đầu có mạng, bài học được lưu trên máy nên bạn luyện từ vựng, nghe, nói, đọc, viết và ngữ pháp khi mất mạng. Trò chơi, trợ giảng AI và đồng bộ tài khoản thì cần mạng.",
       "en": "Yes. EnglishUp can be installed like an app. After the first visit online, lessons are kept on your device, so vocabulary, listening, speaking, reading, writing and grammar work without a connection. Games, the AI tutor and account sync need the internet."
     },
-    "keywords": ["mất mạng", "không có internet", "offline", "cài app", "install"]
+    "keywords": [
+      "mất mạng",
+      "không có internet",
+      "offline",
+      "cài app",
+      "install"
+    ]
   },
   {
     "id": "g-progress-data",
@@ -203,7 +256,12 @@
       "vi": "Tiến độ, thẻ ôn tập, bài viết và cài đặt được lưu trong trình duyệt của bạn. Nếu đăng nhập, app tự đồng bộ chúng với máy chủ. Dữ liệu trình duyệt có thể bị xoá, nên hãy thường xuyên xuất bản sao lưu ở Cài đặt.",
       "en": "Your progress, review cards, writing and settings are stored in your browser. If you sign in, the app syncs them with the server. Browser data can be cleared, so export a backup from Settings regularly."
     },
-    "keywords": ["mất dữ liệu", "lưu tiến độ", "data", "tiến độ có mất không"]
+    "keywords": [
+      "mất dữ liệu",
+      "lưu tiến độ",
+      "data",
+      "tiến độ có mất không"
+    ]
   },
   {
     "id": "g-interface-language",
@@ -216,7 +274,12 @@
       "vi": "Vào Cài đặt và chọn ngôn ngữ giao diện tiếng Việt hoặc tiếng Anh. Nội dung bài học tiếng Anh vẫn giữ nguyên tiếng Anh, còn nghĩa và giải thích tiếng Việt vẫn hiện để hỗ trợ bạn.",
       "en": "Open Settings and choose Vietnamese or English for the interface. English lesson content stays in English, and the Vietnamese meanings and explanations still appear to help you."
     },
-    "keywords": ["đổi ngôn ngữ", "change language", "giao diện tiếng Anh", "English interface"]
+    "keywords": [
+      "đổi ngôn ngữ",
+      "change language",
+      "giao diện tiếng Anh",
+      "English interface"
+    ]
   },
   {
     "id": "g-content-origin",
@@ -229,7 +292,12 @@
       "vi": "Bài học được viết riêng cho EnglishUp, không sao chép từ sách hay trang web khác. Quản trị viên có thể thêm, sửa hoặc ẩn bài trong trang Quản trị, và mọi thay đổi đến với bạn ở lần mở app tiếp theo.",
       "en": "The lessons are written for EnglishUp, not copied from books or other websites. Admins can add, edit or hide lessons on the admin page, and changes reach you the next time you open the app."
     },
-    "keywords": ["nguồn bài học", "nội dung có bản quyền không", "ai viết bài", "lesson source"]
+    "keywords": [
+      "nguồn bài học",
+      "nội dung có bản quyền không",
+      "ai viết bài",
+      "lesson source"
+    ]
   },
   {
     "id": "g-dashboard",
@@ -239,10 +307,17 @@
       "en": "What does the Dashboard show?"
     },
     "answer": {
-      "vi": "Tổng quan hiện chuỗi ngày học, số phút luyện so với mục tiêu ngày, điểm trung bình từng kỹ năng, lịch sử luyện tập và Kế hoạch hôm nay. Kế hoạch ưu tiên thẻ từ đến hạn ôn, rồi kỹ năng bạn chưa thử, rồi kỹ năng có điểm gần đây thấp hoặc lâu chưa luyện.",
-      "en": "The Dashboard shows your streak, practice minutes against your daily goal, each skill's average, your history and Your plan for today. The plan puts due word cards first, then skills you have not tried, then skills with low recent scores or long gaps."
+      "vi": "Tổng quan mở đầu bằng thẻ Lộ trình của bạn: trình độ, tiến độ lộ trình và nhiệm vụ tiếp theo. Bên dưới là chuỗi ngày học, số phút luyện so với mục tiêu ngày, Kế hoạch hôm nay, điểm từng kỹ năng, tuần này và hoạt động gần đây. Kế hoạch ưu tiên thẻ từ đến hạn ôn, rồi kỹ năng bạn chưa thử, rồi kỹ năng có điểm gần đây thấp hoặc lâu chưa luyện.",
+      "en": "The Dashboard opens with the Your path card: your level, your path's progress and the next task. Below are your streak, practice minutes against your daily goal, Your plan for today, each skill's score, this week and recent activity. The plan puts due word cards first, then skills you have not tried, then skills with low recent scores or long gaps."
     },
-    "keywords": ["kế hoạch hôm nay", "daily plan", "streak", "chuỗi ngày học", "mục tiêu hằng ngày"]
+    "keywords": [
+      "kế hoạch hôm nay",
+      "daily plan",
+      "streak",
+      "chuỗi ngày học",
+      "mục tiêu hằng ngày",
+      "trang chủ"
+    ]
   },
   {
     "id": "g-placement-what",
@@ -252,8 +327,8 @@
       "en": "What is the level test?"
     },
     "answer": {
-      "vi": "Kiểm tra trình độ có 30 câu trắc nghiệm, 5 câu cho mỗi cấp từ A1 đến C2: 3 câu ngữ pháp điền chỗ trống và 2 câu chọn nghĩa của từ. Câu hỏi đi từ dễ đến khó và được rút ngẫu nhiên từ kho bài của app.",
-      "en": "The level test has 30 multiple-choice questions, 5 for each level from A1 to C2: 3 grammar blanks and 2 word meanings. They go from easy to hard and are drawn at random from the app's library."
+      "vi": "Kiểm tra trình độ là bước đầu tiên khi vào EnglishUp: chưa làm thì mọi trang đều đưa bạn về bài này. Bài có 30 câu trắc nghiệm, 5 câu cho mỗi cấp từ A1 đến C2: 3 câu ngữ pháp điền chỗ trống và 2 câu chọn nghĩa của từ. Câu hỏi đi từ dễ đến khó, rút ngẫu nhiên từ kho bài, và không giới hạn thời gian.",
+      "en": "The level test is your first step in EnglishUp: until you take it, every page leads you back to it. It has 30 multiple-choice questions, 5 for each level from A1 to C2: 3 grammar blanks and 2 word meanings. They go from easy to hard, are drawn at random from the library, and have no time limit."
     },
     "keywords": [
       "kiểm tra trình độ",
@@ -261,6 +336,62 @@
       "level test",
       "test đầu vào",
       "đánh giá trình độ"
+    ]
+  },
+  {
+    "id": "g-placement-required",
+    "category": "placement",
+    "question": {
+      "vi": "Vì sao tôi phải làm bài kiểm tra trước khi vào app?",
+      "en": "Why must I take the level test before using the app?"
+    },
+    "answer": {
+      "vi": "Vì EnglishUp xếp mọi thứ theo trình độ của bạn. Kết quả bài kiểm tra chọn lộ trình học riêng, và nhiệm vụ trong lộ trình mở đúng bài ở đúng cấp. Nếu bỏ qua bước này, bạn dễ học bài quá dễ hoặc quá khó. Chỉ cần làm một lần; sau đó mọi trang đều mở và bạn làm lại lúc nào cũng được.",
+      "en": "Because EnglishUp arranges everything around your level. The test result picks your own learning path, and its tasks open the right lessons at the right level. Without it, lessons can easily be too easy or too hard. You only need to take it once; after that every page opens, and you can retake it any time."
+    },
+    "keywords": [
+      "bắt buộc",
+      "tại sao phải kiểm tra",
+      "không vào được app",
+      "bị chuyển về bài kiểm tra",
+      "required test"
+    ]
+  },
+  {
+    "id": "g-placement-skip",
+    "category": "placement",
+    "question": {
+      "vi": "Tôi có bỏ qua bài kiểm tra trình độ được không?",
+      "en": "Can I skip the level test?"
+    },
+    "answer": {
+      "vi": "Không bỏ qua được cả bài, nhưng bạn bỏ qua từng câu được: câu nào không biết thì bấm Bỏ qua câu này, đừng đoán. Người mới học hoàn toàn cứ bỏ qua các câu khó; kết quả sẽ là chưa đạt A1 và bạn bắt đầu từ lộ trình A1 → A2. Bài không giới hạn thời gian.",
+      "en": "You cannot skip the whole test, but you can skip single questions: press Skip this question when you do not know, rather than guessing. Complete beginners can skip the hard ones; the result will be below A1 and you start on the A1 → A2 path. There is no time limit."
+    },
+    "keywords": [
+      "bỏ qua bài kiểm tra",
+      "skip the test",
+      "không muốn làm bài kiểm tra",
+      "mới học không biết gì"
+    ]
+  },
+  {
+    "id": "g-placement-other-device",
+    "category": "placement",
+    "question": {
+      "vi": "Tôi đã làm bài kiểm tra trên máy khác rồi",
+      "en": "I already took the level test on another device"
+    },
+    "answer": {
+      "vi": "Nếu lần trước bạn đã đăng nhập, hãy bấm Đã có tài khoản? Đăng nhập ở góc trên màn hình kiểm tra. Sau khi đồng bộ, kết quả cũ được tải về và app mở luôn, không phải làm lại. Nếu lần trước không đăng nhập, kết quả chỉ nằm trên máy cũ nên bạn cần làm lại bài.",
+      "en": "If you were signed in last time, press Have an account? Sign in at the top of the test screen. After syncing, your earlier result comes back and the app opens without a retake. If you were not signed in, the result stayed on the old device, so take the test again."
+    },
+    "keywords": [
+      "máy khác",
+      "điện thoại khác",
+      "đã làm rồi",
+      "another device",
+      "phải làm lại"
     ]
   },
   {
@@ -294,7 +425,13 @@
       "vi": "Nếu bạn đúng dưới 3/5 câu ở cấp A1, kết quả sẽ là chưa đạt A1. Bạn vẫn được gợi ý lộ trình A1 → A2, bắt đầu từ từ vựng đời sống và các câu giao tiếp cơ bản. Đó là điểm xuất phát bình thường, không có gì phải lo.",
       "en": "If you get fewer than 3 of 5 right at A1, the result is below A1. You are still pointed to the A1 → A2 path, which starts with everyday vocabulary and basic communication. That is a normal starting point, nothing to worry about."
     },
-    "keywords": ["dưới A1", "chưa đạt", "điểm thấp", "below A1", "mất gốc"]
+    "keywords": [
+      "dưới A1",
+      "chưa đạt",
+      "điểm thấp",
+      "below A1",
+      "mất gốc"
+    ]
   },
   {
     "id": "g-placement-retake",
@@ -304,10 +441,15 @@
       "en": "Can I retake the level test?"
     },
     "answer": {
-      "vi": "Được, bạn làm lại bao nhiêu lần cũng được. Mỗi lần câu hỏi được rút ngẫu nhiên nên sẽ khác lần trước. App lưu kết quả mới nhất để gợi ý lộ trình. Nên làm lại sau khi xong một lộ trình để xem tiến bộ.",
-      "en": "Yes, as often as you like. Questions are drawn at random each time, so they differ from the last attempt. The app keeps your latest result to suggest a path. Retake it after finishing a path to see your progress."
+      "vi": "Được, bạn làm lại bao nhiêu lần cũng được, từ mục Kiểm tra trình độ ở thanh bên. Mỗi lần câu hỏi được rút ngẫu nhiên nên sẽ khác lần trước. Kết quả mới nhất sẽ chọn lại lộ trình theo trình độ mới; các nhiệm vụ bạn đã đánh dấu ở lộ trình cũ vẫn được giữ. Nên làm lại sau khi xong một lộ trình để xem tiến bộ.",
+      "en": "Yes, as often as you like, from Level test in the sidebar. Questions are drawn at random each time, so they differ from the last attempt. Your latest result picks the path for your new level again, and the tasks you ticked on the old path are kept. Retake it after finishing a path to see your progress."
     },
-    "keywords": ["làm lại", "retake", "kiểm tra lại", "thi lại"]
+    "keywords": [
+      "làm lại",
+      "retake",
+      "kiểm tra lại",
+      "thi lại"
+    ]
   },
   {
     "id": "g-placement-saved",
@@ -317,10 +459,15 @@
       "en": "Where is my level test result saved?"
     },
     "answer": {
-      "vi": "Kết quả được lưu như một lượt luyện ngữ pháp trong lịch sử của bạn và trong cài đặt. Nếu có tài khoản, kết quả được đồng bộ. Trang Kiểm tra trình độ hiển thị điểm, trình độ ước tính, thanh kết quả từng cấp và nút mở lộ trình phù hợp.",
-      "en": "The result is saved as a grammar attempt in your history and in your settings, and synced if you have an account. The Level test page shows your score, estimated level, a bar for each level and a button to the matching path."
+      "vi": "Kết quả được lưu như một lượt luyện ngữ pháp trong lịch sử và trong cài đặt của bạn, và được đồng bộ nếu có tài khoản. Màn kết quả cho thấy điểm, trình độ ước tính, thanh kết quả từng cấp và báo lộ trình đã được chọn cho bạn, kèm nút Xem lộ trình và Vào trang Tổng quan.",
+      "en": "The result is saved as a grammar attempt in your history and in your settings, and synced if you have an account. The result screen shows your score, estimated level, a bar for each level and the path chosen for you, with buttons to open the path or go to the Dashboard."
     },
-    "keywords": ["xem lại kết quả", "lịch sử kiểm tra", "test result", "kết quả lưu"]
+    "keywords": [
+      "xem lại kết quả",
+      "lịch sử kiểm tra",
+      "test result",
+      "kết quả lưu"
+    ]
   },
   {
     "id": "g-cefr",
@@ -333,7 +480,13 @@
       "vi": "Đó là sáu cấp của Khung tham chiếu châu Âu (CEFR). A1–A2 là sơ cấp: giao tiếp đơn giản về bản thân và đời sống. B1–B2 là trung cấp: xử lý tình huống quen thuộc, nêu ý kiến rõ ràng. C1–C2 là cao cấp: dùng tiếng Anh linh hoạt, chính xác, hiểu sắc thái. Mỗi bài trong app được gắn một cấp.",
       "en": "They are the six levels of the Common European Framework (CEFR). A1–A2 are basic: simple communication about yourself and daily life. B1–B2 are intermediate: handling familiar situations and giving clear opinions. C1–C2 are advanced: flexible, precise English with nuance. Every lesson in the app has a level."
     },
-    "keywords": ["CEFR", "cấp độ", "trình độ là gì", "level meaning", "B1 là gì"]
+    "keywords": [
+      "CEFR",
+      "cấp độ",
+      "trình độ là gì",
+      "level meaning",
+      "B1 là gì"
+    ]
   },
   {
     "id": "g-placement-ielts",
@@ -343,10 +496,16 @@
       "en": "Does the result convert to an IELTS score?"
     },
     "answer": {
-      "vi": "Không. Kết quả là ước tính để định hướng học trong EnglishUp, không phải chứng chỉ và không quy đổi chính xác sang IELTS hay TOEIC. Nếu bạn ôn IELTS, app có 150 cụm từ IELTS Writing, từ vựng thi và bài đọc, nghe C1–C2.",
-      "en": "No. The result is an estimate to guide your study in EnglishUp, not a certificate, and it does not convert exactly to IELTS or TOEIC. If you are preparing for IELTS, the app has 150 IELTS Writing collocations, exam vocabulary and C1–C2 readings and listening."
+      "vi": "Không. Kết quả là ước tính để định hướng học trong EnglishUp, không phải chứng chỉ và không quy đổi chính xác sang IELTS hay TOEIC. Nếu bạn ôn IELTS, app có 1.070 collocation IELTS Writing trong 18 chủ đề, 417 từ đồng nghĩa nâng cao để diễn đạt lại ý, từ vựng thi và bài đọc, nghe C1–C2.",
+      "en": "No. The result is an estimate to guide your study in EnglishUp, not a certificate, and it does not convert exactly to IELTS or TOEIC. If you are preparing for IELTS, the app has 1,070 IELTS Writing collocations in 18 topics, 417 advanced synonyms for paraphrasing, exam vocabulary and C1–C2 readings and listening."
     },
-    "keywords": ["IELTS", "TOEIC", "chứng chỉ", "quy đổi", "band"]
+    "keywords": [
+      "IELTS",
+      "TOEIC",
+      "chứng chỉ",
+      "quy đổi",
+      "band"
+    ]
   },
   {
     "id": "g-placement-wrong",
@@ -359,7 +518,13 @@
       "vi": "Bài kiểm tra chỉ có 30 câu nên có thể lệch một cấp. Bạn có thể làm lại, hoặc chọn lộ trình mình thấy hợp hơn: chọn lộ trình thấp hơn nếu thấy bài quá khó, cao hơn nếu thấy quá dễ. Sau vài tuần luyện, hãy làm lại để kiểm tra.",
       "en": "The test has only 30 questions, so it can be one level off. Retake it, or choose the path that feels right: a lower one if lessons are too hard, a higher one if they are too easy. After a few weeks, take the test again."
     },
-    "keywords": ["sai trình độ", "kết quả không chính xác", "too easy", "too hard", "không đúng"]
+    "keywords": [
+      "sai trình độ",
+      "kết quả không chính xác",
+      "too easy",
+      "too hard",
+      "không đúng"
+    ]
   },
   {
     "id": "g-roadmap-what",
@@ -372,7 +537,32 @@
       "vi": "Có 5 lộ trình: A1 → A2, A2 → B1, B1 → B2, B2 → C1 và C1 → C2. Mỗi lộ trình có 4 chặng, mỗi chặng 3 nhiệm vụ, tổng 12 nhiệm vụ. Bấm một nhiệm vụ để mở đúng trang luyện ở đúng cấp, ví dụ bài đọc B1 hay cuộc đua ngữ pháp về các thì.",
       "en": "There are 5 paths: A1 → A2, A2 → B1, B1 → B2, B2 → C1 and C1 → C2. Each has 4 stages of 3 tasks, 12 tasks in all. A task opens the right practice page at the right level, such as a B1 reading or a grammar race on tenses."
     },
-    "keywords": ["lộ trình", "roadmap", "learning path", "lộ trình học tập", "kế hoạch học"]
+    "keywords": [
+      "lộ trình",
+      "roadmap",
+      "learning path",
+      "lộ trình học tập",
+      "kế hoạch học"
+    ]
+  },
+  {
+    "id": "g-roadmap-mine",
+    "category": "roadmap",
+    "question": {
+      "vi": "Thẻ Lộ trình của bạn trên trang Tổng quan là gì?",
+      "en": "What is the Your path card on the Dashboard?"
+    },
+    "answer": {
+      "vi": "Đó là lộ trình app chọn theo kết quả kiểm tra trình độ. Thẻ cho thấy trình độ của bạn, tên lộ trình, số nhiệm vụ đã xong trên 12 và nhiệm vụ tiếp theo. Bấm Làm ngay để mở đúng bài luyện ở đúng cấp của nhiệm vụ đó, và Xem cả lộ trình để xem mọi chặng. Đánh dấu xong nhiệm vụ ở trang Lộ trình học.",
+      "en": "It is the path the app picked from your level test result. The card shows your level, the path's name, how many of its 12 tasks are done and the next task. Start now opens the right practice at that task's level, and See the whole path shows every stage. Tick tasks as done on the Learning paths page."
+    },
+    "keywords": [
+      "lộ trình của tôi",
+      "your path",
+      "nhiệm vụ tiếp theo",
+      "làm ngay",
+      "next task"
+    ]
   },
   {
     "id": "g-roadmap-choose",
@@ -382,8 +572,8 @@
       "en": "Which path should I choose?"
     },
     "answer": {
-      "vi": "Hãy chọn lộ trình bắt đầu từ trình độ của bạn. Làm Kiểm tra trình độ để app tự gợi ý: kết quả B1 sẽ gợi ý lộ trình B1 → B2, chưa đạt A1 sẽ gợi ý A1 → A2, còn đạt C2 thì giữ lộ trình C1 → C2 để duy trì.",
-      "en": "Choose the path that starts at your level. Take the Level test and the app suggests one: a B1 result suggests B1 → B2, below A1 suggests A1 → A2, and a C2 result keeps the C1 → C2 path for maintenance."
+      "vi": "Bạn không cần tự chọn: làm xong bài Kiểm tra trình độ, app chọn lộ trình bắt đầu từ trình độ của bạn. Kết quả B1 cho lộ trình B1 → B2, chưa đạt A1 cho A1 → A2, còn đạt C2 thì giữ C1 → C2 để duy trì. Nếu thấy chưa hợp, bạn vẫn đổi được ở trang Lộ trình học bằng nút Theo lộ trình này.",
+      "en": "You do not have to choose: when you finish the Level test, the app picks the path that starts at your level. A B1 result gives B1 → B2, below A1 gives A1 → A2, and a C2 result keeps C1 → C2 for maintenance. If it does not feel right, switch on the Learning paths page with Follow this path."
     },
     "keywords": [
       "chọn lộ trình",
@@ -404,7 +594,13 @@
       "vi": "Thời lượng gợi ý: A1 → A2 khoảng 8 tuần, A2 → B1 10 tuần, B1 → B2 12 tuần, B2 → C1 16 tuần, C1 → C2 16 tuần, nếu học đều mỗi ngày. Bạn có thể đi nhanh hay chậm hơn, vì app không khoá nhiệm vụ theo ngày.",
       "en": "Suggested lengths with daily study: A1 → A2 about 8 weeks, A2 → B1 10 weeks, B1 → B2 12 weeks, B2 → C1 16 weeks and C1 → C2 16 weeks. You can go faster or slower, since tasks are not locked by date."
     },
-    "keywords": ["bao lâu", "mấy tuần", "how long", "thời gian học", "bao nhiêu tuần"]
+    "keywords": [
+      "bao lâu",
+      "mấy tuần",
+      "how long",
+      "thời gian học",
+      "bao nhiêu tuần"
+    ]
   },
   {
     "id": "g-roadmap-progress",
@@ -417,7 +613,13 @@
       "vi": "Bấm ô đánh dấu cạnh nhiệm vụ. Chặng nào xong đủ 3 nhiệm vụ sẽ chuyển sang màu xanh, và ô tiến độ cho biết bạn đã làm bao nhiêu trên 12. Tiến độ của từng lộ trình được lưu riêng trong cài đặt và đồng bộ nếu bạn đăng nhập.",
       "en": "Tick the box next to a task. A stage turns green when its 3 tasks are done, and the progress tile shows how many of the 12 you have finished. Each path's progress is saved separately in your settings and synced if you sign in."
     },
-    "keywords": ["đánh dấu", "tick", "hoàn thành nhiệm vụ", "tiến độ lộ trình", "mark done"]
+    "keywords": [
+      "đánh dấu",
+      "tick",
+      "hoàn thành nhiệm vụ",
+      "tiến độ lộ trình",
+      "mark done"
+    ]
   },
   {
     "id": "g-roadmap-switch",
@@ -430,7 +632,12 @@
       "vi": "Được. Chọn lộ trình khác trên bậc thang 5 cấp ở đầu trang Lộ trình học. Tiến độ của lộ trình cũ vẫn được giữ, nên bạn quay lại lúc nào cũng tiếp tục được.",
       "en": "Yes. Pick another path on the five-step ladder at the top of the Learning paths page. Your progress on the old path is kept, so you can return to it any time."
     },
-    "keywords": ["đổi lộ trình", "chuyển lộ trình", "switch path", "học lộ trình khác"]
+    "keywords": [
+      "đổi lộ trình",
+      "chuyển lộ trình",
+      "switch path",
+      "học lộ trình khác"
+    ]
   },
   {
     "id": "g-roadmap-tasks",
@@ -443,7 +650,12 @@
       "vi": "Nhiệm vụ có thể là: học một nhóm từ vựng, luyện dịch câu, từ đồng nghĩa và trái nghĩa, cấu trúc câu hoặc các thì, đọc, nghe, nói, viết, đua từ vựng hoặc ngữ pháp, hỏi trợ giảng Tom hay làm lại bài kiểm tra trình độ. Mỗi nhiệm vụ ghi rõ việc cần làm, ví dụ nghe bài B1 rồi ghi lại 3 ý chính.",
       "en": "Tasks can be: a vocabulary group, translation practice, synonyms and antonyms, sentence patterns or tenses, reading, listening, speaking, writing, a vocabulary or grammar race, asking Tutor Tom, or retaking the level test. Each says exactly what to do, for example listening to a B1 dialogue and noting three main points."
     },
-    "keywords": ["nhiệm vụ", "task", "làm gì trong lộ trình", "các bước học"]
+    "keywords": [
+      "nhiệm vụ",
+      "task",
+      "làm gì trong lộ trình",
+      "các bước học"
+    ]
   },
   {
     "id": "g-roadmap-translation",
@@ -456,7 +668,12 @@
       "vi": "Câu luyện dịch hiện chỉ có ở cấp A2 đến B2, nên lộ trình B2 → C1 và C1 → C2 dùng câu B2 cho nhiệm vụ dịch và ghi rõ điều này. Các kỹ năng nghe, nói, đọc, viết đều đã có 50 bài cho mỗi cấp, kể cả C1 và C2.",
       "en": "Translation sentences currently exist only from A2 to B2, so the B2 → C1 and C1 → C2 paths use B2 sentences for translation and say so. Listening, speaking, reading and writing already have 50 lessons at every level, including C1 and C2."
     },
-    "keywords": ["dịch câu", "translation", "câu B2", "C1 C2 dùng bài nào"]
+    "keywords": [
+      "dịch câu",
+      "translation",
+      "câu B2",
+      "C1 C2 dùng bài nào"
+    ]
   },
   {
     "id": "g-roadmap-daily",
@@ -469,7 +686,13 @@
       "vi": "Đều đặn quan trọng hơn học dồn: khoảng 20 đến 30 phút mỗi ngày là tốt. Bạn đặt mục tiêu số phút ở Cài đặt, và Tổng quan sẽ theo dõi. Mỗi ngày nên ôn thẻ từ đến hạn trước, rồi làm 1 hoặc 2 nhiệm vụ của lộ trình.",
       "en": "Consistency matters more than long sessions: about 20 to 30 minutes a day works well. Set a daily minute goal in Settings and the Dashboard tracks it. Each day, review due word cards first, then do one or two path tasks."
     },
-    "keywords": ["học bao lâu", "mỗi ngày", "daily goal", "mục tiêu phút", "bao nhiêu phút"]
+    "keywords": [
+      "học bao lâu",
+      "mỗi ngày",
+      "daily goal",
+      "mục tiêu phút",
+      "bao nhiêu phút"
+    ]
   },
   {
     "id": "g-roadmap-finish",
@@ -482,7 +705,12 @@
       "vi": "Hãy làm lại Kiểm tra trình độ để xem bạn đã lên cấp chưa. Nếu đã đạt cấp mới, chuyển sang lộ trình tiếp theo, ví dụ từ B1 → B2 sang B2 → C1. Nếu chưa, ôn lại các nhiệm vụ còn yếu và luyện thêm bài cùng cấp.",
       "en": "Retake the Level test to see whether you have moved up. If you reached the new level, move to the next path, for example from B1 → B2 to B2 → C1. If not, revisit weaker tasks and practise more lessons at the same level."
     },
-    "keywords": ["hoàn thành lộ trình", "xong lộ trình", "next path", "lên cấp"]
+    "keywords": [
+      "hoàn thành lộ trình",
+      "xong lộ trình",
+      "next path",
+      "lên cấp"
+    ]
   },
   {
     "id": "g-vocabulary",
@@ -492,10 +720,37 @@
       "en": "How does vocabulary practice work?"
     },
     "answer": {
-      "vi": "Từ vựng được chia theo chủ đề và nhóm 20 từ, với 4 chế độ luyện. Sau mỗi thẻ bạn tự chấm Again, Hard, Good hoặc Easy, và app hẹn ngày ôn lại theo thuật toán ôn tập ngắt quãng SM-2. Thẻ ôn đúng hạn đạt từ 21 ngày trở lên được tính là Thành thạo.",
-      "en": "Words are grouped by topic into sets of 20, with four practice modes. After each card you rate it Again, Hard, Good or Easy, and the app schedules the next review with the SM-2 spaced repetition method. A card reaches Mastered at an interval of 21 days or more."
+      "vi": "Từ vựng chia thành các nhóm chủ đề: Hằng ngày, Công việc, Chuyên ngành, Ôn thi nâng cao, Collocation IELTS Writing và Từ đồng nghĩa nâng cao. Mỗi chủ đề chia thành nhóm 20 từ với 4 chế độ luyện. Sau mỗi thẻ bạn tự chấm Again, Hard, Good hoặc Easy, và app hẹn ngày ôn lại theo thuật toán SM-2. Thẻ có khoảng ôn từ 21 ngày trở lên được tính là Thành thạo.",
+      "en": "Words are grouped into sections: Everyday, Work, Specialist, Advanced exam, IELTS Writing collocations and Advanced synonyms. Each topic splits into sets of 20 with four practice modes. After each card you rate it Again, Hard, Good or Easy, and the app schedules the next review with SM-2. A card reaches Mastered at an interval of 21 days or more."
     },
-    "keywords": ["học từ", "flashcard", "ôn tập", "SRS", "spaced repetition", "thẻ từ"]
+    "keywords": [
+      "học từ",
+      "flashcard",
+      "ôn tập",
+      "SRS",
+      "spaced repetition",
+      "thẻ từ"
+    ]
+  },
+  {
+    "id": "g-vocab-sections",
+    "category": "practice",
+    "question": {
+      "vi": "Collocation IELTS và Từ đồng nghĩa nâng cao học ở đâu?",
+      "en": "Where are the IELTS collocations and advanced synonyms?"
+    },
+    "answer": {
+      "vi": "Trong trang Từ vựng, chọn nhóm Collocation IELTS Writing (1.070 cụm từ trong 18 chủ đề như Giáo dục, Môi trường, Du lịch) hoặc Từ đồng nghĩa nâng cao (417 từ trong 11 chủ đề). Định nghĩa của mỗi từ đồng nghĩa ghi nó thay cho từ cơ bản nào, ví dụ huge thay cho big, giúp bạn diễn đạt lại ý khi viết.",
+      "en": "On the Vocabulary page, choose IELTS Writing collocations (1,070 phrases in 18 topics such as Education, Environment and Tourism) or Advanced synonyms (417 words in 11 topics). Each synonym's definition names the basic word it replaces, such as huge for big, which helps you paraphrase in writing."
+    },
+    "keywords": [
+      "collocation",
+      "từ đồng nghĩa",
+      "synonyms",
+      "IELTS vocabulary",
+      "paraphrase",
+      "nhóm từ vựng"
+    ]
   },
   {
     "id": "g-listening",
@@ -528,7 +783,14 @@
       "vi": "Luyện nói có hai phần: Đọc và nhại mẫu, Nói theo chủ đề trong 60 đến 120 giây. Bạn ghi âm và nghe lại; nếu bật nhận dạng giọng nói (mặc định tắt, chủ yếu chạy trên Chrome và Edge), app so khớp lời bạn nói với câu mẫu. Đây là điểm so khớp chữ, không phải chấm phát âm chuyên sâu. Âm thanh không được lưu lại.",
       "en": "Speaking has two parts: Read and shadow, and Topic talk for 60 to 120 seconds. You record and listen back; if you turn on speech recognition (off by default, mainly in Chrome and Edge), the app matches what you said to the model text. It is a word-match score, not a detailed pronunciation rating. Audio is never saved."
     },
-    "keywords": ["luyện nói", "phát âm", "speaking", "ghi âm", "micro", "microphone"]
+    "keywords": [
+      "luyện nói",
+      "phát âm",
+      "speaking",
+      "ghi âm",
+      "micro",
+      "microphone"
+    ]
   },
   {
     "id": "g-reading",
@@ -541,7 +803,13 @@
       "vi": "Có 300 bài đọc từ A1 đến C2, mỗi bài 5 câu hỏi: trắc nghiệm, Đúng/Sai/Không có thông tin và trả lời ngắn. Sau khi bấm Kiểm tra, bạn xem giải thích và câu trong bài làm bằng chứng. Bấm vào một từ trong bài để tra nghĩa.",
       "en": "There are 300 readings from A1 to C2 with 5 questions each: multiple choice, True/False/Not Given and short answers. After Check answer you see explanations and the sentence that proves each answer. Tap a word in the text to look it up."
     },
-    "keywords": ["luyện đọc", "reading", "true false not given", "tra từ", "bài đọc"]
+    "keywords": [
+      "luyện đọc",
+      "reading",
+      "true false not given",
+      "tra từ",
+      "bài đọc"
+    ]
   },
   {
     "id": "g-writing",
@@ -554,7 +822,14 @@
       "vi": "Có 300 đề viết từ A1 đến C2: thư, nghị luận, miêu tả và kể chuyện. Bản nháp tự lưu khi bạn gõ. Khi nộp, app đưa nhận xét tự động ngay trên máy theo số từ, danh sách yêu cầu và một số lỗi thường gặp. Đây là gợi ý để sửa bài, không phải điểm chứng chỉ.",
       "en": "There are 300 writing tasks from A1 to C2: emails, opinions, descriptions and stories. Drafts save as you type. When you submit, the app gives automatic feedback on your device about length, the checklist and some common mistakes. It is guidance for revising, not an exam score."
     },
-    "keywords": ["luyện viết", "writing", "chấm bài viết", "nhận xét", "feedback", "bản nháp"]
+    "keywords": [
+      "luyện viết",
+      "writing",
+      "chấm bài viết",
+      "nhận xét",
+      "feedback",
+      "bản nháp"
+    ]
   },
   {
     "id": "g-grammar",
@@ -567,7 +842,14 @@
       "vi": "Ngữ pháp có hai phần: Cấu trúc câu với 100 mẫu câu kèm bài điền chỗ trống, và Các thì với 13 thì xếp trên trục quá khứ, hiện tại, tương lai. Mỗi thì có công thức khẳng định, phủ định, nghi vấn, cách dùng kèm ví dụ, dấu hiệu nhận biết, lưu ý và 3 câu luyện nhanh.",
       "en": "Grammar has two parts: Sentence patterns, with 100 patterns and gap-fill practice, and Tenses, with 13 tenses on a past, present and future timeline. Each tense shows affirmative, negative and question forms, uses with examples, signal words, a tip and 3 quick checks."
     },
-    "keywords": ["ngữ pháp", "grammar", "các thì", "tenses", "cấu trúc câu", "12 thì"]
+    "keywords": [
+      "ngữ pháp",
+      "grammar",
+      "các thì",
+      "tenses",
+      "cấu trúc câu",
+      "12 thì"
+    ]
   },
   {
     "id": "g-games",
@@ -580,7 +862,13 @@
       "vi": "Có hai cuộc đua 60 giây: Đua từ vựng (chọn nghĩa tiếng Việt) và Đua ngữ pháp (chọn từ đúng cho chỗ trống, 133 câu về 15 chủ điểm). Điểm = 10 × số câu đúng + 5 × chuỗi đúng dài nhất. Trò chơi cần tài khoản và mạng, và mỗi cuộc đua có bảng xếp hạng tuần (từ thứ Hai, giờ Việt Nam) và mọi thời điểm.",
       "en": "There are two 60-second races: the vocabulary race (choose the Vietnamese meaning) and the grammar race (choose the right word for the blank, 133 questions on 15 grammar points). Score = 10 × correct + 5 × best combo. Games need an account and the internet, and each race has a weekly leaderboard (from Monday, Vietnam time) and an all-time one."
     },
-    "keywords": ["trò chơi", "game", "đua", "race", "bảng xếp hạng trò chơi"]
+    "keywords": [
+      "trò chơi",
+      "game",
+      "đua",
+      "race",
+      "bảng xếp hạng trò chơi"
+    ]
   },
   {
     "id": "g-lesson-list",
@@ -593,7 +881,13 @@
       "vi": "Ở các trang Đọc, Nghe, Nói, Viết: chọn cấp trên dải trình độ (mỗi ô hiện số bài đã làm trên 50), lọc chủ đề, tìm theo tên bài hoặc bật Chỉ bài chưa làm. Nút Bài tiếp theo mở ngay bài chưa làm đầu tiên.",
       "en": "On Reading, Listening, Speaking and Writing: pick a level on the level band (each step shows done out of 50), filter by topic, search by title or switch on Not done yet. The Next lesson button opens the first lesson you have not done."
     },
-    "keywords": ["tìm bài", "lọc bài", "bài tiếp theo", "find lesson", "chưa làm"]
+    "keywords": [
+      "tìm bài",
+      "lọc bài",
+      "bài tiếp theo",
+      "find lesson",
+      "chưa làm"
+    ]
   },
   {
     "id": "g-points",
@@ -647,7 +941,13 @@
       "vi": "Đăng nhập cùng một tài khoản trên các thiết bị. App tự đồng bộ khi mở, ngay sau mỗi lượt luyện mới và khi bạn bấm đồng bộ. Lưu ý: khi đăng nhập, tiến độ đang có trên trình duyệt đó sẽ được gộp vào tài khoản.",
       "en": "Sign in with the same account on each device. The app syncs when it opens, shortly after each new attempt and when you ask it to. Note that signing in merges the progress already in that browser into your account."
     },
-    "keywords": ["đồng bộ", "sync", "điện thoại và máy tính", "nhiều máy", "devices"]
+    "keywords": [
+      "đồng bộ",
+      "sync",
+      "điện thoại và máy tính",
+      "nhiều máy",
+      "devices"
+    ]
   },
   {
     "id": "g-backup",
@@ -660,7 +960,13 @@
       "vi": "Vào Cài đặt, chọn xuất bản sao lưu để tải về một tệp JSON chứa cài đặt, lịch sử luyện, thẻ ôn tập, bản nháp và bài viết. Khi cần, nhập lại tệp đó để khôi phục. Bản sao lưu không chứa mật khẩu hay mã đăng nhập.",
       "en": "In Settings, export a backup to download a JSON file with your settings, practice history, review cards, drafts and writing. Import that file later to restore. Backups never contain passwords or sign-in tokens."
     },
-    "keywords": ["sao lưu", "backup", "khôi phục", "restore", "xuất dữ liệu"]
+    "keywords": [
+      "sao lưu",
+      "backup",
+      "khôi phục",
+      "restore",
+      "xuất dữ liệu"
+    ]
   },
   {
     "id": "g-privacy",
@@ -673,7 +979,13 @@
       "vi": "Câu hỏi của bạn được gửi tới bản miễn phí của Google Gemini để tạo câu trả lời, và Google có thể dùng chúng để cải thiện sản phẩm. Vì vậy đừng nhập họ tên, số điện thoại, địa chỉ hay thông tin cá nhân khác. Cuộc trò chuyện được lưu trên máy chủ của EnglishUp và bạn có thể xoá.",
       "en": "Your questions go to the free tier of Google Gemini to produce answers, and Google may use them to improve its products. So do not type your name, phone number, address or other personal details. Conversations are kept on EnglishUp's server and you can delete them."
     },
-    "keywords": ["bảo mật", "privacy", "thông tin cá nhân", "xoá cuộc trò chuyện", "an toàn"]
+    "keywords": [
+      "bảo mật",
+      "privacy",
+      "thông tin cá nhân",
+      "xoá cuộc trò chuyện",
+      "an toàn"
+    ]
   },
   {
     "id": "g-study-tips",
@@ -686,7 +998,13 @@
       "vi": "Ôn đúng hẹn: thẻ đến hạn ở trang Từ vựng được xếp lịch để bạn ôn ngay trước khi quên. Học từ trong câu ví dụ, nghe phát âm, tự đặt câu mới và gặp lại từ trong bài đọc, bài nghe. Mỗi ngày một nhóm nhỏ hiệu quả hơn học dồn nhiều từ một lúc.",
       "en": "Review on time: due cards on the Vocabulary page are scheduled just before you would forget them. Learn words in example sentences, listen to them, make your own sentences and meet them again in readings and listening. A small group each day works better than many words at once."
     },
-    "keywords": ["nhớ từ", "quên từ", "remember words", "mẹo học từ", "học từ vựng hiệu quả"]
+    "keywords": [
+      "nhớ từ",
+      "quên từ",
+      "remember words",
+      "mẹo học từ",
+      "học từ vựng hiệu quả"
+    ]
   },
   {
     "id": "g-speaking-fear",
@@ -699,7 +1017,13 @@
       "vi": "Sai là một phần bình thường của việc học. Hãy bắt đầu với Đọc và nhại mẫu: nghe câu mẫu, ghi âm, nghe lại và so sánh. Khi đã quen, chuyển sang Nói theo chủ đề, bám theo 3 gợi ý của đề. Ghi âm chỉ ở trên máy bạn và không được lưu lại.",
       "en": "Mistakes are a normal part of learning. Start with Read and shadow: listen to the model, record yourself, listen back and compare. When you feel ready, move to Topic talk and follow the task's three cues. Recordings stay on your device and are never saved."
     },
-    "keywords": ["sợ nói", "ngại nói", "tự tin", "nói tiếng Anh", "confidence"]
+    "keywords": [
+      "sợ nói",
+      "ngại nói",
+      "tự tin",
+      "nói tiếng Anh",
+      "confidence"
+    ]
   },
   {
     "id": "g-which-skill",
@@ -712,7 +1036,13 @@
       "vi": "Nếu mới bắt đầu, hãy ưu tiên từ vựng và nghe, vì chúng là nền cho nói, đọc và viết. Cách dễ nhất là làm theo lộ trình học hợp với trình độ: mỗi chặng đã cân bằng sẵn các kỹ năng. Kế hoạch hôm nay ở Tổng quan cũng nhắc kỹ năng bạn đang bỏ quên.",
       "en": "If you are starting out, put vocabulary and listening first, because they support speaking, reading and writing. The easiest way is to follow the learning path for your level, where each stage already balances the skills. Your plan for today on the Dashboard also points out skills you are neglecting."
     },
-    "keywords": ["kỹ năng nào", "học gì trước", "which skill", "ưu tiên", "thứ tự học"]
+    "keywords": [
+      "kỹ năng nào",
+      "học gì trước",
+      "which skill",
+      "ưu tiên",
+      "thứ tự học"
+    ]
   },
   {
     "id": "g-gr-third-person-s",
@@ -764,7 +1094,12 @@
       "vi": "Không. Am, is, are không đi thẳng với động từ nguyên mẫu. Sai: I am go to work. Đúng: I go to work (thói quen) hoặc I am going to work (đang làm lúc này). Lỗi này đến từ việc dịch chữ là hoặc đang của tiếng Việt. Mẹo: be chỉ đi với danh từ, tính từ, nơi chốn (I am a student, I am tired) hoặc với động từ thêm ing hay dạng bị động.",
       "en": "No. Am, is and are do not go straight before a base verb. Wrong: I am go to work. Right: I go to work (a habit) or I am going to work (happening now). The mistake often comes from translating là or đang word by word. Tip: be goes with a noun, an adjective or a place (I am a student, I am tired), or with an ing verb or a passive."
     },
-    "keywords": ["I am go", "is like", "dùng be với động từ", "thừa am is are"]
+    "keywords": [
+      "I am go",
+      "is like",
+      "dùng be với động từ",
+      "thừa am is are"
+    ]
   },
   {
     "id": "g-gr-articles",
@@ -777,7 +1112,13 @@
       "vi": "Danh từ đếm được số ít luôn cần một từ đứng trước như a, an, the, my. Sai: I have car. Đúng: I have a car. Dùng a/an khi nhắc đến lần đầu hoặc nói chung một cái bất kỳ; dùng the khi người nghe đã biết bạn nói cái nào: I bought a book. The book is about history. Không dùng the với danh từ số nhiều hay không đếm được khi nói chung: Dogs are friendly. I like music.",
       "en": "A singular countable noun always needs a word in front, such as a, an, the or my. Wrong: I have car. Right: I have a car. Use a or an for something mentioned for the first time or any one of a kind; use the when the listener knows which one you mean: I bought a book. The book is about history. Leave out the with plural or uncountable nouns used in general: Dogs are friendly. I like music."
     },
-    "keywords": ["mạo từ", "a an the", "articles", "thiếu a", "dùng the khi nào"]
+    "keywords": [
+      "mạo từ",
+      "a an the",
+      "articles",
+      "thiếu a",
+      "dùng the khi nào"
+    ]
   },
   {
     "id": "g-gr-a-or-an",
@@ -790,7 +1131,12 @@
       "vi": "Theo âm đầu khi đọc, không theo chữ cái. Trước nguyên âm dùng an: an apple, an hour (h câm). Trước phụ âm dùng a: a book, a university, a one-way ticket (vì đọc là /juː/ và /w/). Sai: an university, a hour. Đúng: a university, an hour. Mẹo: đọc to từ đó lên, nghe âm đầu tiên rồi mới chọn.",
       "en": "By the first sound, not the letter. Use an before a vowel sound: an apple, an hour (the h is silent). Use a before a consonant sound: a book, a university, a one-way ticket (they start with /juː/ and /w/). Wrong: an university, a hour. Right: a university, an hour. Tip: say the word aloud and listen to its first sound."
     },
-    "keywords": ["a hay an", "an hour", "a university", "a or an"]
+    "keywords": [
+      "a hay an",
+      "an hour",
+      "a university",
+      "a or an"
+    ]
   },
   {
     "id": "g-gr-uncountable",
@@ -822,7 +1168,12 @@
       "vi": "People là số nhiều nên đi với are và động từ không thêm s. Sai: People is friendly here. Đúng: People are friendly here. Một người là a person; nhiều người là people (persons chỉ dùng trong văn bản trang trọng). Tương tự, police và children cũng là số nhiều: The children are playing.",
       "en": "People is plural, so it takes are and a verb without s. Wrong: People is friendly here. Right: People are friendly here. One is a person; more than one is people (persons appears only in formal writing). Police and children are plural too: The children are playing."
     },
-    "keywords": ["people is", "people are", "person persons", "children"]
+    "keywords": [
+      "people is",
+      "people are",
+      "person persons",
+      "children"
+    ]
   },
   {
     "id": "g-gr-adjective-order",
@@ -835,7 +1186,12 @@
       "vi": "Tiếng Anh đặt tính từ trước danh từ, ngược với tiếng Việt. Sai: a car red. Đúng: a red car (một chiếc xe màu đỏ). Khi có nhiều tính từ, thứ tự thường là: ý kiến – kích thước – tuổi – màu – chất liệu – mục đích: a beautiful small old red wooden box. Thực tế chỉ nên dùng hai ba tính từ cho tự nhiên.",
       "en": "English puts adjectives before the noun, the opposite of Vietnamese. Wrong: a car red. Right: a red car. With several adjectives the usual order is opinion – size – age – colour – material – purpose: a beautiful small old red wooden box. In practice two or three adjectives sound most natural."
     },
-    "keywords": ["vị trí tính từ", "trật tự tính từ", "adjective order", "car red"]
+    "keywords": [
+      "vị trí tính từ",
+      "trật tự tính từ",
+      "adjective order",
+      "car red"
+    ]
   },
   {
     "id": "g-gr-ed-ing-adjectives",
@@ -848,7 +1204,12 @@
       "vi": "Tính từ đuôi ed nói cảm giác của người: I am bored (tôi thấy chán). Tính từ đuôi ing nói tính chất của sự vật gây ra cảm giác đó: The film is boring (bộ phim chán). Sai: I am boring khi muốn nói mình đang chán, vì câu đó nghĩa là tôi là người nhàm chán. Cặp tương tự: interested/interesting, tired/tiring, excited/exciting, confused/confusing.",
       "en": "Adjectives ending in ed describe how a person feels: I am bored. Adjectives ending in ing describe what causes that feeling: The film is boring. Wrong: I am boring when you mean you feel bored, because that says you are a dull person. Similar pairs: interested/interesting, tired/tiring, excited/exciting, confused/confusing."
     },
-    "keywords": ["bored boring", "interested interesting", "ed và ing", "tính từ cảm xúc"]
+    "keywords": [
+      "bored boring",
+      "interested interesting",
+      "ed và ing",
+      "tính từ cảm xúc"
+    ]
   },
   {
     "id": "g-gr-since-for",
@@ -861,7 +1222,12 @@
       "vi": "For đi với một khoảng thời gian: for three years, for two hours. Since đi với mốc bắt đầu: since 2020, since Monday, since I was a child. Cả hai thường dùng với hiện tại hoàn thành: I have lived here for five years / since 2020. Sai: I have studied English since three years. Đúng: for three years.",
       "en": "For goes with a length of time: for three years, for two hours. Since goes with the starting point: since 2020, since Monday, since I was a child. Both often go with the present perfect: I have lived here for five years / since 2020. Wrong: I have studied English since three years. Right: for three years."
     },
-    "keywords": ["since for", "since three years", "khoảng thời gian", "mốc thời gian"]
+    "keywords": [
+      "since for",
+      "since three years",
+      "khoảng thời gian",
+      "mốc thời gian"
+    ]
   },
   {
     "id": "g-gr-perfect-vs-past",
@@ -893,7 +1259,13 @@
       "vi": "Tiếng Việt chỉ thêm không ở cuối câu, còn tiếng Anh cần trợ động từ đứng đầu. Sai: You like coffee? (chỉ dùng khi nói chuyện thân mật, lên giọng). Đúng: Do you like coffee? Does she work here? Did they come? Với be và động từ khiếm khuyết thì đảo lên trước chủ ngữ: Are you ready? Can you swim? Sau do/does/did, động từ trở về nguyên mẫu: Does she work (không phải works).",
       "en": "Vietnamese just adds không at the end, but English needs a helping verb first. Wrong: You like coffee? (only in casual speech with rising tone). Right: Do you like coffee? Does she work here? Did they come? With be and modal verbs, move them before the subject: Are you ready? Can you swim? After do, does or did the main verb goes back to its base form: Does she work (not works)."
     },
-    "keywords": ["câu hỏi yes no", "trợ động từ", "do does did", "đặt câu hỏi", "question form"]
+    "keywords": [
+      "câu hỏi yes no",
+      "trợ động từ",
+      "do does did",
+      "đặt câu hỏi",
+      "question form"
+    ]
   },
   {
     "id": "g-gr-indirect-question",
@@ -924,7 +1296,12 @@
       "vi": "Không. Câu điều kiện loại 1 nói về điều có thể xảy ra ở tương lai: mệnh đề if dùng hiện tại đơn, mệnh đề chính dùng will. Sai: If it will rain, we will stay home. Đúng: If it rains, we will stay home. Có thể đảo vế: We will stay home if it rains (không cần dấu phẩy). Mẹo: sau if, when, before, after, as soon as khi nói về tương lai thì dùng thì hiện tại.",
       "en": "No. The first conditional talks about a possible future: the if clause uses the present simple and the main clause uses will. Wrong: If it will rain, we will stay home. Right: If it rains, we will stay home. You can swap the parts: We will stay home if it rains (no comma). Tip: after if, when, before, after and as soon as, use a present tense for the future."
     },
-    "keywords": ["câu điều kiện loại 1", "first conditional", "if it will rain", "if will"]
+    "keywords": [
+      "câu điều kiện loại 1",
+      "first conditional",
+      "if it will rain",
+      "if will"
+    ]
   },
   {
     "id": "g-gr-conditional-2",
@@ -937,7 +1314,12 @@
       "vi": "Loại 2 nói về điều không có thật hoặc khó xảy ra ở hiện tại: If + quá khứ đơn, would + động từ nguyên mẫu. If I had more time, I would learn Japanese (thực tế tôi không có thời gian). Với be, dùng were cho mọi ngôi trong văn viết: If I were you, I would apologise. Sai: If I would have money, I would buy it. Đúng: If I had money, I would buy it.",
       "en": "The second conditional talks about something unreal or unlikely now: if plus the past simple, then would plus the base verb. If I had more time, I would learn Japanese (in fact I don't). With be, use were for every person in writing: If I were you, I would apologise. Wrong: If I would have money, I would buy it. Right: If I had money, I would buy it."
     },
-    "keywords": ["câu điều kiện loại 2", "second conditional", "if I were you", "would"]
+    "keywords": [
+      "câu điều kiện loại 2",
+      "second conditional",
+      "if I were you",
+      "would"
+    ]
   },
   {
     "id": "g-gr-too-enough",
@@ -950,7 +1332,12 @@
       "vi": "Too đứng trước tính từ và mang nghĩa quá mức, không làm được: The bag is too heavy to carry. Enough đứng sau tính từ nhưng trước danh từ: He is old enough to drive. We have enough money. Sai: He is enough old. Lưu ý too không có nghĩa là rất: This film is very good (không phải too good, trừ khi muốn nói tốt quá mức).",
       "en": "Too goes before an adjective and means more than is possible or wanted: The bag is too heavy to carry. Enough goes after an adjective but before a noun: He is old enough to drive. We have enough money. Wrong: He is enough old. Note that too does not mean very: say This film is very good (not too good, unless you mean excessively good)."
     },
-    "keywords": ["too enough", "too heavy", "old enough", "quá và đủ"]
+    "keywords": [
+      "too enough",
+      "too heavy",
+      "old enough",
+      "quá và đủ"
+    ]
   },
   {
     "id": "g-gr-make-do",
@@ -963,7 +1350,12 @@
       "vi": "Do thường dùng cho công việc, nhiệm vụ, hoạt động chung: do homework, do the housework, do exercise, do a job, do your best. Make dùng cho việc tạo ra một thứ hoặc một số cụm cố định: make a cake, make a mistake, make a decision, make a phone call, make money, make friends. Sai: do a mistake. Đúng: make a mistake. Cách tốt nhất là học theo cụm, như trong sổ từ vựng của app.",
       "en": "Do is usually for work, tasks and general activities: do homework, do the housework, do exercise, do a job, do your best. Make is for creating something and for fixed phrases: make a cake, make a mistake, make a decision, make a phone call, make money, make friends. Wrong: do a mistake. Right: make a mistake. The best way is to learn them as phrases, as in the app's word lists."
     },
-    "keywords": ["make do", "do a mistake", "make a decision", "collocation make do"]
+    "keywords": [
+      "make do",
+      "do a mistake",
+      "make a decision",
+      "collocation make do"
+    ]
   },
   {
     "id": "g-gr-say-tell",
@@ -976,7 +1368,12 @@
       "vi": "Tell cần người nghe ngay sau nó: She told me the news. Say không đi trực tiếp với người nghe; nếu có thì dùng to: She said (to me) that she was busy. Sai: She said me that... Đúng: She told me that... hoặc She said that... Một số cụm cố định với tell: tell the truth, tell a lie, tell a story, tell the time.",
       "en": "Tell needs the listener straight after it: She told me the news. Say does not take the listener directly; if you add one, use to: She said (to me) that she was busy. Wrong: She said me that... Right: She told me that... or She said that... Fixed phrases with tell: tell the truth, tell a lie, tell a story, tell the time."
     },
-    "keywords": ["say tell", "said me", "told me", "nói kể"]
+    "keywords": [
+      "say tell",
+      "said me",
+      "told me",
+      "nói kể"
+    ]
   },
   {
     "id": "g-gr-look-see-watch",
@@ -989,7 +1386,12 @@
       "vi": "See và hear là nhận biết tự nhiên, không cần cố ý: I saw a bird. I heard a noise. Look (at) và listen (to) là chủ động hướng mắt, tai vào: Look at this photo. Listen to me. Watch là nhìn theo dõi một thứ chuyển động trong thời gian: watch TV, watch a football match. Sai: I listened a noise outside. Đúng: I heard a noise outside.",
       "en": "See and hear happen naturally, without effort: I saw a bird. I heard a noise. Look (at) and listen (to) mean directing your eyes or ears on purpose: Look at this photo. Listen to me. Watch means following something that moves over time: watch TV, watch a football match. Wrong: I listened a noise outside. Right: I heard a noise outside."
     },
-    "keywords": ["look see watch", "listen hear", "nhìn xem nghe", "watch TV"]
+    "keywords": [
+      "look see watch",
+      "listen hear",
+      "nhìn xem nghe",
+      "watch TV"
+    ]
   },
   {
     "id": "g-gr-borrow-lend",
@@ -1002,7 +1404,11 @@
       "vi": "Borrow là mượn (nhận về mình): Can I borrow your pen? Lend là cho mượn (đưa đi): Can you lend me your pen? Cấu trúc: borrow something from someone; lend someone something hoặc lend something to someone. Sai: Can you borrow me some money? Đúng: Can you lend me some money?",
       "en": "Borrow means to take something for a while: Can I borrow your pen? Lend means to give it for a while: Can you lend me your pen? Patterns: borrow something from someone; lend someone something or lend something to someone. Wrong: Can you borrow me some money? Right: Can you lend me some money?"
     },
-    "keywords": ["borrow lend", "mượn cho mượn", "borrow me"]
+    "keywords": [
+      "borrow lend",
+      "mượn cho mượn",
+      "borrow me"
+    ]
   },
   {
     "id": "g-gr-prep-time",
@@ -1053,7 +1459,12 @@
       "vi": "Arrive không đi với to. Dùng arrive in cho thành phố, quốc gia: arrive in Da Nang. Dùng arrive at cho địa điểm nhỏ hơn: arrive at the airport, arrive at school. Sai: We arrived to the hotel late. Đúng: We arrived at the hotel late. Với home thì không dùng giới từ: arrive home. Ngược lại, go và come đi với to: go to school.",
       "en": "Arrive never takes to. Use arrive in for cities and countries: arrive in Da Nang. Use arrive at for smaller places: arrive at the airport, arrive at school. Wrong: We arrived to the hotel late. Right: We arrived at the hotel late. Home needs no preposition: arrive home. Go and come, by contrast, take to: go to school."
     },
-    "keywords": ["arrive in at", "arrive to", "đến nơi", "arrive home"]
+    "keywords": [
+      "arrive in at",
+      "arrive to",
+      "đến nơi",
+      "arrive home"
+    ]
   },
   {
     "id": "g-gr-no-preposition-verbs",
@@ -1066,7 +1477,12 @@
       "vi": "Một số động từ đi thẳng với tân ngữ: discuss something (không discuss about), marry someone (không marry with), enter a room (không enter into), contact someone (không contact to), answer a question, reach a place, attend a class. Sai: We discussed about the plan. Đúng: We discussed the plan. Khi học từ mới, hãy để ý câu ví dụ để biết có giới từ đi kèm hay không.",
       "en": "Some verbs take their object directly: discuss something (not discuss about), marry someone (not marry with), enter a room (not enter into), contact someone (not contact to), answer a question, reach a place, attend a class. Wrong: We discussed about the plan. Right: We discussed the plan. When learning a new verb, check its example sentence to see whether a preposition follows."
     },
-    "keywords": ["discuss about", "marry with", "contact to", "động từ không giới từ"]
+    "keywords": [
+      "discuss about",
+      "marry with",
+      "contact to",
+      "động từ không giới từ"
+    ]
   },
   {
     "id": "g-gr-adjective-prepositions",
@@ -1098,7 +1514,13 @@
       "vi": "Một số động từ theo sau bởi V-ing: enjoy, finish, avoid, mind, suggest, keep, practise. Một số theo sau bởi to V: want, need, decide, plan, hope, agree, learn, promise. Sai: I enjoy to read. Đúng: I enjoy reading. Sai: I want learning English. Đúng: I want to learn English. Sau giới từ luôn là V-ing: Thank you for helping me.",
       "en": "Some verbs are followed by -ing: enjoy, finish, avoid, mind, suggest, keep, practise. Others take to plus a verb: want, need, decide, plan, hope, agree, learn, promise. Wrong: I enjoy to read. Right: I enjoy reading. Wrong: I want learning English. Right: I want to learn English. After a preposition always use -ing: Thank you for helping me."
     },
-    "keywords": ["V-ing to V", "gerund infinitive", "enjoy to", "want to", "danh động từ"]
+    "keywords": [
+      "V-ing to V",
+      "gerund infinitive",
+      "enjoy to",
+      "want to",
+      "danh động từ"
+    ]
   },
   {
     "id": "g-gr-stop-remember",
@@ -1111,7 +1533,12 @@
       "vi": "Stop doing là ngừng hẳn việc đó: He stopped smoking (anh ấy bỏ thuốc). Stop to do là dừng lại để làm việc khác: He stopped to smoke (anh ấy dừng lại để hút thuốc). Tương tự, remember doing là nhớ đã làm (việc trong quá khứ): I remember locking the door. Remember to do là nhớ phải làm: Remember to lock the door. Forget và try cũng đổi nghĩa như vậy.",
       "en": "Stop doing means to quit the activity: He stopped smoking. Stop to do means to pause in order to do something else: He stopped to smoke. Likewise, remember doing means remembering something done before: I remember locking the door. Remember to do means not forgetting a task: Remember to lock the door. Forget and try change meaning the same way."
     },
-    "keywords": ["stop doing stop to do", "remember to", "remember doing", "forget try"]
+    "keywords": [
+      "stop doing stop to do",
+      "remember to",
+      "remember doing",
+      "forget try"
+    ]
   },
   {
     "id": "g-gr-used-to",
@@ -1124,7 +1551,13 @@
       "vi": "Used to + động từ nguyên mẫu nói về thói quen trong quá khứ, nay không còn: I used to live in Hue. Be used to + V-ing hoặc danh từ nghĩa là đã quen với: I am used to getting up early. Get used to là dần quen: You will get used to the weather. Sai: I am used to get up early. Đúng: I am used to getting up early.",
       "en": "Used to plus a base verb describes a past habit that has stopped: I used to live in Hue. Be used to plus -ing or a noun means being accustomed to something: I am used to getting up early. Get used to means becoming accustomed: You will get used to the weather. Wrong: I am used to get up early. Right: I am used to getting up early."
     },
-    "keywords": ["used to", "be used to", "get used to", "thói quen quá khứ", "đã quen với"]
+    "keywords": [
+      "used to",
+      "be used to",
+      "get used to",
+      "thói quen quá khứ",
+      "đã quen với"
+    ]
   },
   {
     "id": "g-gr-passive",
@@ -1137,7 +1570,12 @@
       "vi": "Bị động gồm be (chia theo thì) + phân từ hai (V3/ed): The house was built in 1990. English is spoken here. The letter will be sent tomorrow. Dùng khi không biết, không cần nói ai làm, hoặc muốn nhấn vào đối tượng. Sai: The house was build in 1990. Đúng: was built. Nếu cần nói người làm thì thêm by: The book was written by a teacher.",
       "en": "The passive is be (in the right tense) plus the past participle: The house was built in 1990. English is spoken here. The letter will be sent tomorrow. Use it when the doer is unknown or unimportant, or to focus on the thing affected. Wrong: The house was build in 1990. Right: was built. To name the doer, add by: The book was written by a teacher."
     },
-    "keywords": ["bị động", "passive voice", "was built", "be + V3"]
+    "keywords": [
+      "bị động",
+      "passive voice",
+      "was built",
+      "be + V3"
+    ]
   },
   {
     "id": "g-gr-relative-clause",
@@ -1150,7 +1588,12 @@
       "vi": "Who thay cho người, which thay cho vật, that dùng được cho cả hai trong mệnh đề xác định. Sau đại từ quan hệ không lặp lại chủ ngữ hay tân ngữ. Sai: The man who he lives next door is a doctor. Đúng: The man who lives next door is a doctor. Sai: The book which I bought it is good. Đúng: The book which I bought is good. Mệnh đề không xác định (có dấu phẩy) không dùng that.",
       "en": "Who refers to people, which to things, and that to either in defining clauses. Do not repeat the subject or object after the relative pronoun. Wrong: The man who he lives next door is a doctor. Right: The man who lives next door is a doctor. Wrong: The book which I bought it is good. Right: The book which I bought is good. Non-defining clauses (with commas) never use that."
     },
-    "keywords": ["mệnh đề quan hệ", "relative clause", "who which that", "the man who he"]
+    "keywords": [
+      "mệnh đề quan hệ",
+      "relative clause",
+      "who which that",
+      "the man who he"
+    ]
   },
   {
     "id": "g-gr-comparatives",
@@ -1163,7 +1606,13 @@
       "vi": "Tính từ ngắn thêm er (taller, cheaper), tính từ dài dùng more (more expensive, more interesting); không dùng cả hai. Một số dạng bất quy tắc: good – better – best, bad – worse – worst, far – farther/further. Sai: This phone is more better. Đúng: This phone is better. So sánh hơn đi với than: She is taller than me. So sánh nhất đi với the: the best student.",
       "en": "Short adjectives add er (taller, cheaper) and long ones use more (more expensive, more interesting); never both. Some are irregular: good – better – best, bad – worse – worst, far – farther/further. Wrong: This phone is more better. Right: This phone is better. Comparatives take than: She is taller than me. Superlatives take the: the best student."
     },
-    "keywords": ["more better", "so sánh hơn", "comparative", "so sánh nhất", "than"]
+    "keywords": [
+      "more better",
+      "so sánh hơn",
+      "comparative",
+      "so sánh nhất",
+      "than"
+    ]
   },
   {
     "id": "g-gr-much-many",
@@ -1176,7 +1625,12 @@
       "vi": "Many đi với danh từ đếm được số nhiều: many books. Much đi với danh từ không đếm được: much time, much water. Trong câu khẳng định, a lot of hoặc lots of tự nhiên hơn và dùng được cho cả hai: a lot of books, a lot of time. Much và many thường dùng trong câu phủ định và câu hỏi: I don't have much time. How many people came? Sai: much people. Đúng: many people.",
       "en": "Many goes with plural countable nouns: many books. Much goes with uncountable nouns: much time, much water. In positive sentences a lot of or lots of sounds more natural and works for both: a lot of books, a lot of time. Much and many are common in negatives and questions: I don't have much time. How many people came? Wrong: much people. Right: many people."
     },
-    "keywords": ["much many", "a lot of", "how much how many", "much people"]
+    "keywords": [
+      "much many",
+      "a lot of",
+      "how much how many",
+      "much people"
+    ]
   },
   {
     "id": "g-gr-few-little",
@@ -1189,7 +1643,12 @@
       "vi": "A few (đếm được) và a little (không đếm được) mang nghĩa tích cực: có một ít, đủ dùng. I have a few friends here, so I'm not lonely. Few và little mang nghĩa tiêu cực: rất ít, gần như không có. Few people came, so the party was quiet. There is little hope. Sai: a few water. Đúng: a little water.",
       "en": "A few (countable) and a little (uncountable) are positive: some, enough. I have a few friends here, so I'm not lonely. Few and little are negative: hardly any. Few people came, so the party was quiet. There is little hope. Wrong: a few water. Right: a little water."
     },
-    "keywords": ["few a few", "little a little", "một ít", "rất ít"]
+    "keywords": [
+      "few a few",
+      "little a little",
+      "một ít",
+      "rất ít"
+    ]
   },
   {
     "id": "g-gr-each-every",
@@ -1202,7 +1661,12 @@
       "vi": "Each và every đi với danh từ số ít và động từ số ít: Every student has a book. Each room is clean. Sai: Every students have a book. Đúng: Every student has a book. Nếu muốn dùng số nhiều, đổi thành all: All students have a book. Each of + danh từ số nhiều vẫn đi với động từ số ít trong văn trang trọng: Each of the students has a book.",
       "en": "Each and every take a singular noun and a singular verb: Every student has a book. Each room is clean. Wrong: Every students have a book. Right: Every student has a book. For a plural, switch to all: All students have a book. Each of plus a plural noun still takes a singular verb in careful writing: Each of the students has a book."
     },
-    "keywords": ["each every", "every students", "số ít số nhiều", "all"]
+    "keywords": [
+      "each every",
+      "every students",
+      "số ít số nhiều",
+      "all"
+    ]
   },
   {
     "id": "g-gr-there-is",
@@ -1215,7 +1679,12 @@
       "vi": "Chữ có trong tiếng Việt dịch thành hai cách. Khi ai đó sở hữu thì dùng have: I have two sisters. Khi nói một thứ tồn tại ở đâu thì dùng there is / there are: There are three rooms in my house. Sai: In my house have three rooms. Đúng: There are three rooms in my house. Chọn is hay are theo danh từ đầu tiên phía sau: There is a bank and two shops.",
       "en": "Vietnamese có covers two English patterns. For possession use have: I have two sisters. To say something exists somewhere use there is or there are: There are three rooms in my house. Wrong: In my house have three rooms. Right: There are three rooms in my house. Choose is or are by the first noun after it: There is a bank and two shops."
     },
-    "keywords": ["there is there are", "in my house have", "có dịch thế nào", "have hay there is"]
+    "keywords": [
+      "there is there are",
+      "in my house have",
+      "có dịch thế nào",
+      "have hay there is"
+    ]
   },
   {
     "id": "g-gr-subject-it",
@@ -1228,7 +1697,12 @@
       "vi": "Tiếng Việt có thể bỏ chủ ngữ (Nóng quá! Đang mưa.), nhưng câu tiếng Anh gần như luôn cần chủ ngữ. Khi không có chủ ngữ thật, dùng it: It is very hot. It is raining. It is 7 o'clock. It is easy to learn. Sai: Is very hot today. Đúng: It is very hot today. Với câu mệnh lệnh thì được bỏ chủ ngữ: Open the door.",
       "en": "Vietnamese can drop the subject (Nóng quá! Đang mưa.), but English sentences almost always need one. When there is no real subject, use it: It is very hot. It is raining. It is 7 o'clock. It is easy to learn. Wrong: Is very hot today. Right: It is very hot today. Commands are the exception: Open the door."
     },
-    "keywords": ["thiếu chủ ngữ", "it is raining", "is very hot", "chủ ngữ giả it"]
+    "keywords": [
+      "thiếu chủ ngữ",
+      "it is raining",
+      "is very hot",
+      "chủ ngữ giả it"
+    ]
   },
   {
     "id": "g-gr-although-but",
@@ -1241,7 +1715,12 @@
       "vi": "Không. Tiếng Việt nói Mặc dù... nhưng..., còn tiếng Anh chỉ chọn một từ nối. Sai: Although it rained, but we went out. Đúng: Although it rained, we went out. Hoặc: It rained, but we went out. Tương tự, because và so không đi cùng nhau: Because I was tired, I went to bed / I was tired, so I went to bed.",
       "en": "No. Vietnamese says Mặc dù... nhưng..., but English uses only one linking word. Wrong: Although it rained, but we went out. Right: Although it rained, we went out. Or: It rained, but we went out. Likewise because and so do not go together: Because I was tired, I went to bed / I was tired, so I went to bed."
     },
-    "keywords": ["although but", "mặc dù nhưng", "because so", "từ nối"]
+    "keywords": [
+      "although but",
+      "mặc dù nhưng",
+      "because so",
+      "từ nối"
+    ]
   },
   {
     "id": "g-gr-because-of",
@@ -1254,7 +1733,12 @@
       "vi": "Because đi với một mệnh đề có chủ ngữ và động từ: We stayed home because it was raining. Because of đi với danh từ hoặc cụm danh từ: We stayed home because of the rain. Sai: because of it was raining. Đúng: because it was raining. Cặp tương tự: although + mệnh đề / despite + danh từ: despite the rain.",
       "en": "Because is followed by a clause with a subject and verb: We stayed home because it was raining. Because of is followed by a noun or noun phrase: We stayed home because of the rain. Wrong: because of it was raining. Right: because it was raining. A similar pair: although plus a clause / despite plus a noun: despite the rain."
     },
-    "keywords": ["because of", "because", "despite although", "vì do"]
+    "keywords": [
+      "because of",
+      "because",
+      "despite although",
+      "vì do"
+    ]
   },
   {
     "id": "g-gr-will-going-to",
@@ -1267,7 +1751,12 @@
       "vi": "Be going to dùng cho dự định đã có từ trước hoặc dự đoán dựa trên dấu hiệu đang thấy: I'm going to visit my grandparents this weekend. Look at those clouds – it's going to rain. Will dùng cho quyết định ngay lúc nói, lời hứa, đề nghị và dự đoán chung: The phone is ringing – I'll answer it. I will help you. Lịch cố định đã sắp xếp thường dùng hiện tại tiếp diễn: I'm meeting Lan at 6.",
       "en": "Be going to is for plans made earlier and predictions from what you can see: I'm going to visit my grandparents this weekend. Look at those clouds – it's going to rain. Will is for decisions made while speaking, promises, offers and general predictions: The phone is ringing – I'll answer it. I will help you. Fixed arrangements often use the present continuous: I'm meeting Lan at 6."
     },
-    "keywords": ["will going to", "tương lai", "future", "dự định"]
+    "keywords": [
+      "will going to",
+      "tương lai",
+      "future",
+      "dự định"
+    ]
   },
   {
     "id": "g-gr-stative-verbs",
@@ -1280,7 +1769,12 @@
       "vi": "Một số động từ chỉ trạng thái, suy nghĩ, cảm xúc, sở hữu thường không dùng ở thể tiếp diễn: know, understand, believe, like, love, want, need, own, belong, seem. Sai: I am knowing the answer. I am wanting a coffee. Đúng: I know the answer. I want a coffee. Một số từ đổi nghĩa thì dùng được: I'm having lunch (đang ăn trưa), nhưng I have a car (sở hữu).",
       "en": "Verbs for states, thoughts, feelings and possession are usually not used in continuous forms: know, understand, believe, like, love, want, need, own, belong, seem. Wrong: I am knowing the answer. I am wanting a coffee. Right: I know the answer. I want a coffee. Some change meaning and can be continuous: I'm having lunch (eating), but I have a car (owning)."
     },
-    "keywords": ["động từ trạng thái", "stative verbs", "I am knowing", "I am wanting"]
+    "keywords": [
+      "động từ trạng thái",
+      "stative verbs",
+      "I am knowing",
+      "I am wanting"
+    ]
   },
   {
     "id": "g-tip-collocations",
@@ -1293,7 +1787,12 @@
       "vi": "Người bản xứ dùng từ theo những cụm quen thuộc (collocations), như make a decision, heavy rain, take a photo. Nếu chỉ học từ lẻ, bạn dễ ghép sai thành do a decision hay strong rain. Mỗi khi học một từ, hãy chép kèm cụm trong câu ví dụ. Mục Collocation IELTS Writing trong Từ vựng gom sẵn các cụm hay dùng cho bài viết.",
       "en": "Native speakers use words in familiar pairs called collocations, such as make a decision, heavy rain and take a photo. Learning single words leads to mistakes like do a decision or strong rain. Whenever you learn a word, note the phrase from its example sentence. The IELTS Writing collocations group in Vocabulary collects useful phrases for essays."
     },
-    "keywords": ["collocation", "học từ theo cụm", "cụm từ", "học từ vựng"]
+    "keywords": [
+      "collocation",
+      "học từ theo cụm",
+      "cụm từ",
+      "học từ vựng"
+    ]
   },
   {
     "id": "g-tip-spaced-review",
@@ -1306,7 +1805,13 @@
       "vi": "Ôn tập ngắt quãng là ôn lại từ ngay trước lúc bạn sắp quên, với khoảng cách tăng dần: sau 1 ngày, vài ngày, rồi vài tuần. Trong app, mỗi lần bạn chấm một thẻ là Học lại, Khó, Nhớ được hay Dễ, hệ thống tự hẹn ngày ôn tiếp. Hãy ôn hết thẻ đến hạn mỗi ngày trước khi học từ mới, và chấm thật lòng để lịch ôn chính xác.",
       "en": "Spaced review means going over a word just before you would forget it, at growing intervals: after a day, then a few days, then weeks. In the app, each time you rate a card Again, Hard, Good or Easy, the next review date is set for you. Clear your due cards each day before learning new words, and rate honestly so the schedule stays accurate."
     },
-    "keywords": ["ôn tập ngắt quãng", "spaced repetition", "thẻ đến hạn", "ôn thẻ", "lịch ôn"]
+    "keywords": [
+      "ôn tập ngắt quãng",
+      "spaced repetition",
+      "thẻ đến hạn",
+      "ôn thẻ",
+      "lịch ôn"
+    ]
   },
   {
     "id": "g-tip-small-groups",
@@ -1319,7 +1824,12 @@
       "vi": "Chất lượng quan trọng hơn số lượng. Một cụm khoảng 20 từ như trong app là vừa cho một buổi; nhiều người học tốt với 5 đến 15 từ mới mỗi ngày cộng với ôn thẻ đến hạn. Nếu số thẻ ôn mỗi ngày tăng quá nhiều, hãy tạm giảm từ mới. Đều đặn 15 phút mỗi ngày hiệu quả hơn học dồn hai tiếng một lần.",
       "en": "Quality matters more than quantity. A group of about 20 words, as in the app, suits one session; many learners do well with 5 to 15 new words a day plus their due reviews. If your daily reviews grow too large, add fewer new words for a while. Fifteen minutes every day works better than two hours once a week."
     },
-    "keywords": ["bao nhiêu từ", "mỗi ngày học bao nhiêu", "how many words", "học từ mới"]
+    "keywords": [
+      "bao nhiêu từ",
+      "mỗi ngày học bao nhiêu",
+      "how many words",
+      "học từ mới"
+    ]
   },
   {
     "id": "g-tip-dictation",
@@ -1332,7 +1842,13 @@
       "vi": "Nghe một bài ba lượt: lượt đầu nắm ý chính, lượt hai trả lời câu hỏi, lượt ba nghe từng câu và chép lại (chép chính tả). Chép chính tả giúp bạn nhận ra những âm bị nuốt hoặc nối vào nhau. Đừng mở bản chép lời quá sớm; chỉ xem sau khi đã cố gắng. Trong Luyện nghe có nút nghe lại từng câu và chỉnh tốc độ 0.75×.",
       "en": "Listen to a lesson three times: first for the main idea, then to answer the questions, then sentence by sentence while you write it down (dictation). Dictation shows you sounds that are swallowed or linked together. Don't open the transcript too early; check it only after trying. Listening has buttons to replay each sentence and slow down to 0.75×."
     },
-    "keywords": ["luyện nghe", "chép chính tả", "dictation", "nghe không hiểu", "listening tips"]
+    "keywords": [
+      "luyện nghe",
+      "chép chính tả",
+      "dictation",
+      "nghe không hiểu",
+      "listening tips"
+    ]
   },
   {
     "id": "g-tip-shadowing",
@@ -1345,7 +1861,12 @@
       "vi": "Shadowing là nghe một câu mẫu rồi nói theo gần như cùng lúc, bắt chước cả âm, trọng âm và ngữ điệu. Cách này giúp nói trôi chảy và tự nhiên hơn. Bắt đầu với câu ngắn, nghe vài lần, nói theo chậm rồi tăng dần. Mục Đọc và nhại mẫu trong Luyện nói có sẵn câu mẫu để nghe, ghi âm và nghe lại so sánh.",
       "en": "Shadowing means listening to a model sentence and repeating it almost at the same time, copying its sounds, stress and intonation. It makes your speech smoother and more natural. Start with short sentences, listen a few times, repeat slowly, then speed up. Read and shadow in Speaking has model sentences to listen to, record and compare."
     },
-    "keywords": ["shadowing", "nhại giọng", "nói theo", "luyện nói trôi chảy"]
+    "keywords": [
+      "shadowing",
+      "nhại giọng",
+      "nói theo",
+      "luyện nói trôi chảy"
+    ]
   },
   {
     "id": "g-tip-reading",
@@ -1358,7 +1879,13 @@
       "vi": "Đọc lướt toàn bài trước để biết ý chính của từng đoạn. Sau đó đọc câu hỏi, gạch từ khoá, rồi quay lại tìm đoạn chứa thông tin và đọc kỹ chỗ đó. Với câu True/False/Not Given, chỉ chọn True khi bài nói rõ đúng như vậy; nếu bài không nhắc đến thì là Not Given. Sau khi nộp, app hiện câu trích làm bằng chứng để bạn đối chiếu.",
       "en": "Skim the whole text first to get the main idea of each paragraph. Then read a question, mark its key words, find the part of the text with that information and read it closely. For True/False/Not Given, choose True only when the text clearly says so; if the text never mentions it, the answer is Not Given. After you check, the app shows the quote that proves each answer."
     },
-    "keywords": ["đọc hiểu", "reading tips", "true false not given", "đọc lướt", "skimming"]
+    "keywords": [
+      "đọc hiểu",
+      "reading tips",
+      "true false not given",
+      "đọc lướt",
+      "skimming"
+    ]
   },
   {
     "id": "g-tip-writing-plan",
@@ -1371,7 +1898,13 @@
       "vi": "Dành vài phút lập dàn ý: một câu chủ đề nêu ý chính, hai ba ý hỗ trợ có ví dụ, và một câu kết. Dùng từ nối để các ý liền mạch: firstly, for example, however, as a result. Viết xong, đọc lại để kiểm tra chia động từ, mạo từ và dấu câu. Trong Luyện viết, danh sách Trước khi nộp bài và thanh đếm từ giúp bạn bám đúng đề.",
       "en": "Spend a few minutes on a plan: a topic sentence with the main idea, two or three supporting points with examples, and a closing sentence. Use linking words so ideas flow: firstly, for example, however, as a result. When you finish, reread to check verb forms, articles and punctuation. In Writing, the Before you submit list and the word meter keep you on task."
     },
-    "keywords": ["luyện viết", "dàn ý", "writing tips", "viết đoạn văn", "từ nối"]
+    "keywords": [
+      "luyện viết",
+      "dàn ý",
+      "writing tips",
+      "viết đoạn văn",
+      "từ nối"
+    ]
   },
   {
     "id": "g-tip-record-yourself",
@@ -1384,7 +1917,12 @@
       "vi": "Khi nói, bạn khó nghe ra lỗi của chính mình. Ghi âm rồi nghe lại giúp bạn phát hiện âm cuối bị bỏ, trọng âm sai hay câu ngập ngừng. So sánh với bản mẫu và ghi lại lần nữa để thấy tiến bộ. Trong Luyện nói, bản ghi chỉ nằm trên máy bạn trong lúc luyện và không được lưu hay gửi đi.",
       "en": "While speaking it is hard to hear your own mistakes. Recording and listening back helps you notice dropped final sounds, wrong stress or hesitations. Compare with the model and record again to hear your progress. In Speaking, recordings stay on your device during practice and are never saved or sent."
     },
-    "keywords": ["ghi âm", "record yourself", "nghe lại giọng", "luyện phát âm"]
+    "keywords": [
+      "ghi âm",
+      "record yourself",
+      "nghe lại giọng",
+      "luyện phát âm"
+    ]
   },
   {
     "id": "g-tip-grammar-examples",
@@ -1397,7 +1935,12 @@
       "vi": "Đừng chỉ học thuộc công thức. Hãy đọc ví dụ, hiểu khi nào dùng, rồi tự đặt ba câu về chính cuộc sống của bạn. Sau đó luyện điền chỗ trống để kiểm tra. Mục Ngữ pháp có 100 cấu trúc câu và các thì, mỗi mục có ví dụ và bài luyện; trò Đua ngữ pháp giúp ôn nhanh. Gặp lại cấu trúc trong bài đọc và bài nghe giúp bạn nhớ tự nhiên.",
       "en": "Don't just memorise formulas. Read examples, understand when the form is used, then write three sentences about your own life. Then test yourself with gap-fill practice. Grammar has 100 sentence patterns and the tenses, each with examples and practice, and the grammar race is a quick review. Meeting the forms again in readings and listening helps them stick."
     },
-    "keywords": ["học ngữ pháp", "grammar tips", "nhớ ngữ pháp", "cấu trúc câu"]
+    "keywords": [
+      "học ngữ pháp",
+      "grammar tips",
+      "nhớ ngữ pháp",
+      "cấu trúc câu"
+    ]
   },
   {
     "id": "g-tip-daily-habit",
@@ -1410,7 +1953,13 @@
       "vi": "Đặt mục tiêu nhỏ và cụ thể, ví dụ 10 phút mỗi ngày, ở Cài đặt. Gắn việc học với một thói quen sẵn có, như sau bữa tối hoặc trên xe buýt. Làm theo Kế hoạch hôm nay ở Tổng quan để khỏi phải nghĩ học gì. Chuỗi ngày liên tiếp và huy hiệu ghi nhận sự đều đặn; nếu lỡ một ngày, hãy quay lại ngay hôm sau thay vì bỏ cuộc.",
       "en": "Set a small, specific goal, such as 10 minutes a day, in Settings. Tie study to an existing habit, like after dinner or on the bus. Follow Today's plan on the Dashboard so you don't have to decide what to do. Your day streak and badges reward consistency; if you miss a day, come back the next day instead of giving up."
     },
-    "keywords": ["thói quen học", "học đều đặn", "daily habit", "chuỗi ngày", "streak"]
+    "keywords": [
+      "thói quen học",
+      "học đều đặn",
+      "daily habit",
+      "chuỗi ngày",
+      "streak"
+    ]
   },
   {
     "id": "g-tip-final-sounds",
@@ -1423,7 +1972,13 @@
       "vi": "Tiếng Việt không có các cụm phụ âm cuối như /ts/, /ks/, /st/ và ít bật hơi ở cuối từ, nên người Việt dễ đọc cats thành cat hay asked thành ask. Âm cuối lại mang nghĩa ngữ pháp (số nhiều, quá khứ). Hãy luyện chậm: đọc rõ từng âm cuối, nối với từ sau (cats_and dogs), ghi âm rồi nghe lại. Chú ý đuôi s và ed trong mọi bài nói.",
       "en": "Vietnamese has no final consonant clusters like /ts/, /ks/ or /st/ and releases final sounds lightly, so learners often say cat for cats or ask for asked. Yet final sounds carry grammar (plurals, past tense). Practise slowly: say each final sound clearly, link it to the next word (cats_and dogs), record yourself and listen back. Watch your s and ed endings whenever you speak."
     },
-    "keywords": ["âm cuối", "ending sounds", "phát âm", "bỏ âm cuối", "final consonants"]
+    "keywords": [
+      "âm cuối",
+      "ending sounds",
+      "phát âm",
+      "bỏ âm cuối",
+      "final consonants"
+    ]
   },
   {
     "id": "g-tip-word-stress",
@@ -1436,7 +1991,12 @@
       "vi": "Rất quan trọng: đặt sai trọng âm có thể khiến người nghe không hiểu, dù từng âm đều đúng. Ví dụ PHOtograph, phoTOgrapher, photoGRAPHic. Một số từ đổi trọng âm theo từ loại: a REcord (danh từ), to reCORD (động từ). Khi học từ mới, nghe phát âm mẫu trong app và chú ý âm tiết được nhấn mạnh, dài và cao hơn.",
       "en": "Very: wrong stress can make a word hard to understand even when every sound is right. For example PHOtograph, phoTOgrapher, photoGRAPHic. Some words move their stress with their part of speech: a REcord (noun), to reCORD (verb). When learning a word, play its pronunciation in the app and notice the syllable that is louder, longer and higher."
     },
-    "keywords": ["trọng âm", "word stress", "nhấn âm", "phát âm từ"]
+    "keywords": [
+      "trọng âm",
+      "word stress",
+      "nhấn âm",
+      "phát âm từ"
+    ]
   },
   {
     "id": "g-tip-think-in-english",
@@ -1449,7 +2009,12 @@
       "vi": "Không nên. Hai ngôn ngữ khác nhau về trật tự từ, mạo từ và cách chia động từ, nên dịch từng chữ dễ ra câu sai hoặc thiếu tự nhiên. Hãy học sẵn các mẫu câu cho từng tình huống (Could you..., I'd like to..., It's worth...) và dùng lại chúng. Luyện dịch câu hai chiều trong Từ vựng giúp bạn thấy cách diễn đạt tự nhiên thay vì dịch sát chữ.",
       "en": "It's better not to. The languages differ in word order, articles and verb forms, so word-for-word translation often gives wrong or unnatural sentences. Learn ready-made patterns for each situation (Could you..., I'd like to..., It's worth...) and reuse them. Two-way sentence translation in Vocabulary shows natural ways to say things instead of literal ones."
     },
-    "keywords": ["dịch từng chữ", "suy nghĩ bằng tiếng Anh", "think in English", "dịch sát nghĩa"]
+    "keywords": [
+      "dịch từng chữ",
+      "suy nghĩ bằng tiếng Anh",
+      "think in English",
+      "dịch sát nghĩa"
+    ]
   },
   {
     "id": "g-tip-guess-meaning",
@@ -1462,7 +2027,13 @@
       "vi": "Không cần tra mọi từ. Trước hết hãy đoán nghĩa từ ngữ cảnh: từ loại, câu trước và sau, tiền tố hay hậu tố (un-, re-, -ful, -less). Chỉ tra những từ lặp lại nhiều hoặc cần để hiểu ý chính. Trong Luyện đọc, bạn có thể bấm vào một từ để xem nghĩa và lưu vào sổ để ôn sau.",
       "en": "You don't need to look up every word. First guess the meaning from context: the word's part of speech, the sentences around it and its prefixes or suffixes (un-, re-, -ful, -less). Look up only words that keep appearing or that you need for the main idea. In Reading you can tap a word to see its meaning and save it for review."
     },
-    "keywords": ["đoán nghĩa từ", "từ mới khi đọc", "guess meaning", "tra từ", "context"]
+    "keywords": [
+      "đoán nghĩa từ",
+      "từ mới khi đọc",
+      "guess meaning",
+      "tra từ",
+      "context"
+    ]
   },
   {
     "id": "g-tip-mistake-notebook",
@@ -1475,7 +2046,12 @@
       "vi": "Có. Một cuốn sổ lỗi sai cá nhân rất hiệu quả: ghi câu sai, câu đúng và lý do, ví dụ She go → She goes (ngôi thứ ba thêm s). Đọc lại sổ mỗi tuần và cố tình dùng đúng trong bài viết, bài nói tiếp theo. Phản hồi ở Luyện viết và phần so khớp ở Luyện nói là nguồn tốt để tìm lỗi lặp lại của bạn.",
       "en": "Yes. A personal mistake notebook works well: write the wrong sentence, the right one and the reason, for example She go → She goes (third person adds s). Reread it every week and use the correct form on purpose in your next writing and speaking. Writing feedback and the text alignment in Speaking are good places to spot your repeated mistakes."
     },
-    "keywords": ["sổ lỗi sai", "mistake notebook", "ghi lỗi", "sửa lỗi lặp lại"]
+    "keywords": [
+      "sổ lỗi sai",
+      "mistake notebook",
+      "ghi lỗi",
+      "sửa lỗi lặp lại"
+    ]
   },
   {
     "id": "g-tip-ielts-task2",
@@ -1488,7 +2064,13 @@
       "vi": "Bố cục phổ biến gồm bốn đoạn, khoảng 250 đến 290 từ: mở bài nêu lại đề và quan điểm; hai đoạn thân bài, mỗi đoạn một ý chính có giải thích và ví dụ; kết bài tóm tắt quan điểm. Đọc kỹ đề để trả lời đủ mọi phần được hỏi. Dùng từ nối và collocation học thuật một cách tự nhiên, và để vài phút cuối kiểm tra lỗi. Đề viết C1–C2 trong app phù hợp để luyện dạng bài này.",
       "en": "A common structure has four paragraphs and about 250 to 290 words: an introduction that restates the question and gives your position; two body paragraphs, each with one main idea, explanation and example; and a conclusion that sums up your view. Read the question carefully and answer every part. Use linking words and academic collocations naturally, and save a few minutes to check errors. The app's C1–C2 writing tasks suit this kind of practice."
     },
-    "keywords": ["IELTS writing", "task 2", "bài luận", "essay structure", "bố cục bài viết"]
+    "keywords": [
+      "IELTS writing",
+      "task 2",
+      "bài luận",
+      "essay structure",
+      "bố cục bài viết"
+    ]
   },
   {
     "id": "g-tip-busy-days",
@@ -1501,7 +2083,13 @@
       "vi": "Ngày bận, chỉ cần làm việc nhỏ nhưng giữ được nhịp: ôn hết thẻ đến hạn (vài phút), hoặc chơi một lượt Đua 60 giây, hoặc nghe lại một bài nghe ngắn. Mười phút mỗi ngày tốt hơn bỏ trống rồi học bù. Các bài học vẫn dùng được khi không có mạng sau lần mở đầu, nên bạn có thể học trên xe hay lúc chờ.",
       "en": "On busy days do something small that keeps the rhythm: clear your due cards (a few minutes), play one 60-second race, or replay a short listening lesson. Ten minutes every day beats skipping and catching up later. Lessons work offline after the first visit, so you can study on the bus or while waiting."
     },
-    "keywords": ["bận rộn", "ít thời gian", "busy", "học nhanh", "10 phút"]
+    "keywords": [
+      "bận rộn",
+      "ít thời gian",
+      "busy",
+      "học nhanh",
+      "10 phút"
+    ]
   },
   {
     "id": "g-tip-forgetting",
@@ -1514,7 +2102,13 @@
       "vi": "Quên là bình thường; trí nhớ mạnh lên mỗi lần bạn cố nhớ lại. Hãy để lịch ôn của app hẹn ngày ôn, và khi ôn, tự nhớ nghĩa trước khi lật thẻ. Dùng từ mới trong câu của chính mình, nói to lên, và tìm gặp lại chúng trong bài đọc, bài nghe. Những từ chấm Học lại sẽ quay lại sớm hơn để bạn luyện thêm.",
       "en": "Forgetting is normal; memory gets stronger each time you try to recall. Let the app's schedule set your review days, and when reviewing, recall the meaning before you flip the card. Use new words in your own sentences, say them aloud and look for them again in readings and listening. Cards you rate Again come back sooner for extra practice."
     },
-    "keywords": ["hay quên", "quên từ", "forget", "nhớ lâu", "ghi nhớ"]
+    "keywords": [
+      "hay quên",
+      "quên từ",
+      "forget",
+      "nhớ lâu",
+      "ghi nhớ"
+    ]
   },
   {
     "id": "g-tip-motivation",
@@ -1527,7 +2121,13 @@
       "vi": "Nhắc lại lý do bạn học: công việc, du lịch, kỳ thi hay sở thích. Chia mục tiêu lớn thành bước nhỏ và nhìn lại tiến bộ: biểu đồ tuần, chuỗi ngày, huy hiệu và kết quả kiểm tra trình độ. Đổi cách học cho đỡ chán, như chơi trò Đua 60 giây hay đọc một chủ đề bạn thích. Học cùng bạn bè trên bảng xếp hạng cũng tạo thêm động lực.",
       "en": "Remind yourself why you are learning: work, travel, an exam or a hobby. Break a big goal into small steps and look back at your progress: the weekly chart, your streak, badges and level test results. Change activities to keep things fresh, such as a 60-second race or a reading on a topic you like. Learning alongside friends on the leaderboard can help too."
     },
-    "keywords": ["mất động lực", "chán học", "motivation", "lười học", "động lực"]
+    "keywords": [
+      "mất động lực",
+      "chán học",
+      "motivation",
+      "lười học",
+      "động lực"
+    ]
   },
   {
     "id": "g-tip-ask-tom",
@@ -1540,7 +2140,12 @@
       "vi": "Hỏi cụ thể và có ngữ cảnh: thay vì Giải thích ngữ pháp, hãy hỏi Khi nào dùng since và for? hoặc Sửa câu này giúp mình: She go to school. Bạn có thể nhờ Tom so sánh hai từ, cho thêm ví dụ, hoặc gợi ý bài luyện phù hợp. Tom trả lời từ bài học trong app và ghi số nguồn; bấm vào nguồn để mở bài gốc. Nếu câu trả lời chưa rõ, hãy hỏi tiếp trong cùng cuộc trò chuyện.",
       "en": "Ask specific questions with context: instead of Explain grammar, ask When do I use since and for? or Please correct this sentence: She go to school. You can ask Tom to compare two words, give more examples or suggest a lesson. Tom answers from the app's lessons and numbers its sources; click a source to open the original lesson. If an answer is unclear, ask a follow-up in the same conversation."
     },
-    "keywords": ["hỏi Tom", "cách hỏi trợ giảng", "ask the tutor", "dùng trợ giảng hiệu quả"]
+    "keywords": [
+      "hỏi Tom",
+      "cách hỏi trợ giảng",
+      "ask the tutor",
+      "dùng trợ giảng hiệu quả"
+    ]
   },
   {
     "id": "g-w-affect-effect",
@@ -1553,7 +2158,13 @@
       "vi": "Affect thường là động từ: ảnh hưởng đến. The weather affects my mood. Effect thường là danh từ: tác động, kết quả. The new rule had a good effect. Mẹo: Affect là Action (động từ), Effect là End result (kết quả). Cụm hay gặp: have an effect on something.",
       "en": "Affect is usually a verb: to influence. The weather affects my mood. Effect is usually a noun: a result or change. The new rule had a good effect. Tip: Affect is the Action (verb), Effect is the End result. A common phrase: have an effect on something."
     },
-    "keywords": ["affect effect", "affect hay effect", "affect or effect", "ảnh hưởng", "tác động"]
+    "keywords": [
+      "affect effect",
+      "affect hay effect",
+      "affect or effect",
+      "ảnh hưởng",
+      "tác động"
+    ]
   },
   {
     "id": "g-w-fun-funny",
@@ -1566,7 +2177,12 @@
       "vi": "Fun nghĩa là vui, thú vị, khiến mình thích thú: The trip was fun. Funny nghĩa là buồn cười, gây cười: The film was so funny that we laughed a lot. Sai: The party was very funny khi muốn nói bữa tiệc vui. Đúng: The party was a lot of fun.",
       "en": "Fun means enjoyable: The trip was fun. Funny means making you laugh: The film was so funny that we laughed a lot. Wrong: The party was very funny when you mean you enjoyed it. Right: The party was a lot of fun."
     },
-    "keywords": ["fun funny", "fun hay funny", "fun or funny", "vui buồn cười"]
+    "keywords": [
+      "fun funny",
+      "fun hay funny",
+      "fun or funny",
+      "vui buồn cười"
+    ]
   },
   {
     "id": "g-w-lose-loose",
@@ -1579,7 +2195,12 @@
       "vi": "Lose /luːz/ là động từ: làm mất, thua. Don't lose your key. We lost the match. Loose /luːs/ là tính từ: lỏng, rộng. These trousers are too loose. Mẹo: loose có hai chữ o như chiếc quần rộng thùng thình.",
       "en": "Lose /luːz/ is a verb: to stop having something, or to be beaten. Don't lose your key. We lost the match. Loose /luːs/ is an adjective: not tight. These trousers are too loose. Tip: loose has two o's, like baggy trousers."
     },
-    "keywords": ["lose loose", "lose hay loose", "lose or loose", "mất lỏng"]
+    "keywords": [
+      "lose loose",
+      "lose hay loose",
+      "lose or loose",
+      "mất lỏng"
+    ]
   },
   {
     "id": "g-w-bring-take",
@@ -1592,7 +2213,12 @@
       "vi": "Bring là mang đến chỗ người nói hoặc người nghe: Bring your book to class tomorrow. Take là mang đi chỗ khác: Take an umbrella when you go out. Mẹo: bring = mang lại đây, take = mang đi đó.",
       "en": "Bring means carrying something towards the speaker or listener: Bring your book to class tomorrow. Take means carrying it away to another place: Take an umbrella when you go out. Tip: bring = here, take = there."
     },
-    "keywords": ["bring take", "bring hay take", "bring or take", "mang đến mang đi"]
+    "keywords": [
+      "bring take",
+      "bring hay take",
+      "bring or take",
+      "mang đến mang đi"
+    ]
   },
   {
     "id": "g-w-remember-remind",
@@ -1605,7 +2231,12 @@
       "vi": "Remember là tự nhớ: I remember his name. Remind là nhắc ai đó nhớ: Please remind me to call Mai. Sai: Remember me to call Mai. Cấu trúc: remind someone to do something, remind someone of something (gợi nhớ): This song reminds me of my school days.",
       "en": "Remember means you recall it yourself: I remember his name. Remind means making someone else remember: Please remind me to call Mai. Wrong: Remember me to call Mai. Patterns: remind someone to do something, remind someone of something: This song reminds me of my school days."
     },
-    "keywords": ["remember remind", "remember hay remind", "remember or remind", "nhớ nhắc"]
+    "keywords": [
+      "remember remind",
+      "remember hay remind",
+      "remember or remind",
+      "nhớ nhắc"
+    ]
   },
   {
     "id": "g-w-hear-listen",
@@ -1618,7 +2249,12 @@
       "vi": "Hear là nghe thấy tự nhiên, không cần cố ý: I heard a dog barking. Listen (to) là chú ý lắng nghe: Listen to the teacher. Sai: I am hearing music. Đúng: I am listening to music. Listen luôn cần to trước tân ngữ.",
       "en": "Hear means sound reaches you without effort: I heard a dog barking. Listen (to) means paying attention: Listen to the teacher. Wrong: I am hearing music. Right: I am listening to music. Listen always takes to before its object."
     },
-    "keywords": ["hear listen", "hear hay listen", "hear or listen", "nghe thấy lắng nghe"]
+    "keywords": [
+      "hear listen",
+      "hear hay listen",
+      "hear or listen",
+      "nghe thấy lắng nghe"
+    ]
   },
   {
     "id": "g-w-speak-talk",
@@ -1631,7 +2267,12 @@
       "vi": "Speak trang trọng hơn và dùng cho ngôn ngữ: She speaks three languages. Can I speak to the manager? Talk thân mật hơn, nói chuyện qua lại: We talked for hours. Talk about something. Sai: I can talk English. Đúng: I can speak English.",
       "en": "Speak is more formal and is used for languages: She speaks three languages. Can I speak to the manager? Talk is more casual, for conversation: We talked for hours. Talk about something. Wrong: I can talk English. Right: I can speak English."
     },
-    "keywords": ["speak talk", "speak hay talk", "speak or talk", "nói nói chuyện"]
+    "keywords": [
+      "speak talk",
+      "speak hay talk",
+      "speak or talk",
+      "nói nói chuyện"
+    ]
   },
   {
     "id": "g-w-job-work",
@@ -1644,7 +2285,12 @@
       "vi": "Job là danh từ đếm được, một công việc cụ thể: She has a new job. Work là danh từ không đếm được, việc làm nói chung, hoặc là động từ: I have a lot of work today. I work in a bank. Sai: I'm looking for a work. Đúng: I'm looking for a job.",
       "en": "Job is a countable noun, one particular position: She has a new job. Work is uncountable, for the activity or effort in general, and is also a verb: I have a lot of work today. I work in a bank. Wrong: I'm looking for a work. Right: I'm looking for a job."
     },
-    "keywords": ["job work", "job hay work", "job or work", "công việc việc làm"]
+    "keywords": [
+      "job work",
+      "job hay work",
+      "job or work",
+      "công việc việc làm"
+    ]
   },
   {
     "id": "g-w-travel-trip",
@@ -1657,7 +2303,13 @@
       "vi": "Travel thường là động từ hoặc danh từ không đếm được chỉ việc đi lại nói chung: I love to travel. Air travel is fast. Trip là một chuyến đi cụ thể, đếm được: We had a great trip to Da Lat. Sai: How was your travel? Đúng: How was your trip? Journey nhấn vào quãng đường di chuyển.",
       "en": "Travel is usually a verb, or an uncountable noun for travelling in general: I love to travel. Air travel is fast. Trip is one particular outing and is countable: We had a great trip to Da Lat. Wrong: How was your travel? Right: How was your trip? Journey stresses the distance covered."
     },
-    "keywords": ["travel trip", "travel hay trip", "travel or trip", "chuyến đi du lịch", "journey"]
+    "keywords": [
+      "travel trip",
+      "travel hay trip",
+      "travel or trip",
+      "chuyến đi du lịch",
+      "journey"
+    ]
   },
   {
     "id": "g-w-borrow-rent",
@@ -1670,7 +2322,12 @@
       "vi": "Borrow là mượn không mất tiền: Can I borrow your pen? Rent là thuê có trả tiền: We rented a flat near the university. Rent out (hoặc let) là cho thuê: They rent out rooms to students.",
       "en": "Borrow means using something for free and giving it back: Can I borrow your pen? Rent means paying to use it: We rented a flat near the university. Rent out (or let) means letting others pay to use yours: They rent out rooms to students."
     },
-    "keywords": ["borrow rent", "borrow hay rent", "borrow or rent", "mượn thuê"]
+    "keywords": [
+      "borrow rent",
+      "borrow hay rent",
+      "borrow or rent",
+      "mượn thuê"
+    ]
   },
   {
     "id": "g-w-check-control",
@@ -1683,7 +2340,12 @@
       "vi": "Check là kiểm tra xem có đúng hay không: Please check your answers. Control là điều khiển, kiểm soát: She controls the budget. Người Việt hay dùng control khi muốn nói kiểm tra; khi đó hãy dùng check hoặc inspect.",
       "en": "Check means looking to see whether something is right: Please check your answers. Control means directing or having power over something: She controls the budget. Vietnamese speakers sometimes say control when they mean check; use check or inspect instead."
     },
-    "keywords": ["check control", "check hay control", "check or control", "kiểm tra kiểm soát"]
+    "keywords": [
+      "check control",
+      "check hay control",
+      "check or control",
+      "kiểm tra kiểm soát"
+    ]
   },
   {
     "id": "g-w-advice-advise",
@@ -1696,7 +2358,12 @@
       "vi": "Advice /ədˈvaɪs/ là danh từ không đếm được: lời khuyên. She gave me some good advice. Advise /ədˈvaɪz/ là động từ: khuyên. I advise you to rest. Mẹo: danh từ đuôi -ice (âm s), động từ đuôi -ise (âm z). Tương tự: practice / practise (Anh Anh).",
       "en": "Advice /ədˈvaɪs/ is an uncountable noun. She gave me some good advice. Advise /ədˈvaɪz/ is the verb. I advise you to rest. Tip: the noun ends in -ice (an s sound), the verb in -ise (a z sound). Similar: practice / practise in British English."
     },
-    "keywords": ["advice advise", "advice hay advise", "advice or advise", "lời khuyên khuyên"]
+    "keywords": [
+      "advice advise",
+      "advice hay advise",
+      "advice or advise",
+      "lời khuyên khuyên"
+    ]
   },
   {
     "id": "g-w-economic-economical",
@@ -1764,7 +2431,12 @@
       "vi": "Tired là mệt (cảm giác của người): I'm tired after work. Tiring là gây mệt (tính chất của việc): The journey was tiring. Cùng quy tắc với bored/boring: đuôi ed cho cảm giác, đuôi ing cho thứ gây ra cảm giác.",
       "en": "Tired is how a person feels: I'm tired after work. Tiring describes what makes you feel that way: The journey was tiring. Same rule as bored/boring: ed for the feeling, ing for its cause."
     },
-    "keywords": ["tired tiring", "tired hay tiring", "tired or tiring", "mệt"]
+    "keywords": [
+      "tired tiring",
+      "tired hay tiring",
+      "tired or tiring",
+      "mệt"
+    ]
   },
   {
     "id": "g-w-its-it-s",
@@ -1777,7 +2449,13 @@
       "vi": "Its là tính từ sở hữu: của nó. The cat licked its paw. It's là dạng rút gọn của it is hoặc it has: It's raining. It's been a long day. Mẹo: nếu thay bằng it is mà câu vẫn đúng thì dùng it's.",
       "en": "Its shows possession: The cat licked its paw. It's is short for it is or it has: It's raining. It's been a long day. Tip: if it is fits in the sentence, write it's."
     },
-    "keywords": ["its it's", "its hay it's", "its or it's", "its it is", "dấu nháy"]
+    "keywords": [
+      "its it's",
+      "its hay it's",
+      "its or it's",
+      "its it is",
+      "dấu nháy"
+    ]
   },
   {
     "id": "g-w-then-than",
@@ -1790,7 +2468,12 @@
       "vi": "Then là sau đó, lúc đó: We had dinner, then we watched a film. Than dùng trong so sánh: She is taller than me. Sai: better then before. Đúng: better than before.",
       "en": "Then means after that or at that time: We had dinner, then we watched a film. Than is used in comparisons: She is taller than me. Wrong: better then before. Right: better than before."
     },
-    "keywords": ["then than", "then hay than", "then or than", "so sánh than"]
+    "keywords": [
+      "then than",
+      "then hay than",
+      "then or than",
+      "so sánh than"
+    ]
   },
   {
     "id": "g-w-there-their",
@@ -1803,7 +2486,13 @@
       "vi": "There chỉ nơi chốn hoặc dùng trong there is/are: Put it over there. There are two cats. Their là của họ: Their house is big. They're là they are: They're late. Ba từ phát âm giống nhau nên rất dễ viết sai.",
       "en": "There is about place or starts there is/are: Put it over there. There are two cats. Their means belonging to them: Their house is big. They're is they are: They're late. All three sound the same, so they are easy to misspell."
     },
-    "keywords": ["there their", "there hay their", "there or their", "they're", "của họ"]
+    "keywords": [
+      "there their",
+      "there hay their",
+      "there or their",
+      "they're",
+      "của họ"
+    ]
   },
   {
     "id": "g-w-all-whole",
@@ -1816,7 +2505,12 @@
       "vi": "All đi với danh từ số nhiều hoặc không đếm được: all the students, all day. Whole nghĩa là toàn bộ một thứ, đi với danh từ số ít và đứng sau the/my: the whole class, my whole life. Sai: the all day. Đúng: all day hoặc the whole day.",
       "en": "All goes with plural or uncountable nouns: all the students, all day. Whole means the entire thing and goes with a singular noun after the or my: the whole class, my whole life. Wrong: the all day. Right: all day or the whole day."
     },
-    "keywords": ["all whole", "all hay whole", "all or whole", "tất cả toàn bộ"]
+    "keywords": [
+      "all whole",
+      "all hay whole",
+      "all or whole",
+      "tất cả toàn bộ"
+    ]
   },
   {
     "id": "g-w-already-yet",
@@ -1829,7 +2523,13 @@
       "vi": "Already dùng trong câu khẳng định, nghĩa là đã rồi (sớm hơn dự kiến): I have already finished. Yet dùng trong câu phủ định và câu hỏi, đặt cuối câu: I haven't finished yet. Have you finished yet? Still nghĩa là vẫn còn: I am still working.",
       "en": "Already is for positive sentences, meaning sooner than expected: I have already finished. Yet is for negatives and questions, at the end: I haven't finished yet. Have you finished yet? Still means continuing: I am still working."
     },
-    "keywords": ["already yet", "already hay yet", "already or yet", "rồi chưa", "still"]
+    "keywords": [
+      "already yet",
+      "already hay yet",
+      "already or yet",
+      "rồi chưa",
+      "still"
+    ]
   },
   {
     "id": "g-w-during-while",
@@ -1842,7 +2542,12 @@
       "vi": "During đi với danh từ: during the meeting, during the summer. While đi với mệnh đề có chủ ngữ và động từ: while I was cooking. Sai: during I was sleeping. Đúng: while I was sleeping hoặc during my sleep.",
       "en": "During is followed by a noun: during the meeting, during the summer. While is followed by a clause with a subject and verb: while I was cooking. Wrong: during I was sleeping. Right: while I was sleeping or during my sleep."
     },
-    "keywords": ["during while", "during hay while", "during or while", "trong khi"]
+    "keywords": [
+      "during while",
+      "during hay while",
+      "during or while",
+      "trong khi"
+    ]
   },
   {
     "id": "g-w-raise-rise",
@@ -1855,7 +2560,12 @@
       "vi": "Raise cần tân ngữ: nâng, tăng một thứ gì đó. Raise your hand. They raised prices. Rise không có tân ngữ: tự tăng lên, mọc lên. The sun rises in the east. Prices rose last year. Quá khứ: raised / rose, phân từ: raised / risen.",
       "en": "Raise needs an object: to lift or increase something. Raise your hand. They raised prices. Rise has no object: to go up by itself. The sun rises in the east. Prices rose last year. Past forms: raised / rose, participles: raised / risen."
     },
-    "keywords": ["raise rise", "raise hay rise", "raise or rise", "nâng tăng"]
+    "keywords": [
+      "raise rise",
+      "raise hay rise",
+      "raise or rise",
+      "nâng tăng"
+    ]
   },
   {
     "id": "g-w-expect-wait",
@@ -1906,7 +2616,13 @@
       "vi": "Near là gần (về khoảng cách): I live near the park. Nearly là gần như, suýt: I nearly missed the bus. It's nearly 8 o'clock. Almost có nghĩa giống nearly.",
       "en": "Near is about distance: I live near the park. Nearly means almost: I nearly missed the bus. It's nearly 8 o'clock. Almost means the same as nearly."
     },
-    "keywords": ["near nearly", "near hay nearly", "near or nearly", "gần gần như", "almost"]
+    "keywords": [
+      "near nearly",
+      "near hay nearly",
+      "near or nearly",
+      "gần gần như",
+      "almost"
+    ]
   },
   {
     "id": "g-w-lie-lay",
@@ -1919,7 +2635,12 @@
       "vi": "Lie (lay, lain) là nằm, không có tân ngữ: I lie on the bed. Lay (laid, laid) là đặt, để một thứ gì đó xuống: Lay the book on the table. Lie còn có nghĩa nói dối (lied, lied). Mẹo: lay luôn đi kèm một vật được đặt xuống.",
       "en": "Lie (lay, lain) means to rest flat and takes no object: I lie on the bed. Lay (laid, laid) means to put something down: Lay the book on the table. Lie also means to say something false (lied, lied). Tip: lay always has a thing being put down."
     },
-    "keywords": ["lie lay", "lie hay lay", "lie or lay", "nằm đặt"]
+    "keywords": [
+      "lie lay",
+      "lie hay lay",
+      "lie or lay",
+      "nằm đặt"
+    ]
   },
   {
     "id": "g-w-word-vocabulary",
@@ -1951,7 +2672,12 @@
       "vi": "Person là một người (số ít): She is a kind person. People là nhiều người (số nhiều): Many people came. Peoples (có s) chỉ dùng khi nói về các dân tộc. Sai: two person. Đúng: two people.",
       "en": "Person means one human: She is a kind person. People is the plural: Many people came. Peoples with s only means nations or ethnic groups. Wrong: two person. Right: two people."
     },
-    "keywords": ["person people", "person hay people", "person or people", "một người nhiều người"]
+    "keywords": [
+      "person people",
+      "person hay people",
+      "person or people",
+      "một người nhiều người"
+    ]
   },
   {
     "id": "g-w-house-home",
@@ -1964,7 +2690,13 @@
       "vi": "House là ngôi nhà, công trình xây dựng: They built a new house. Home là nơi mình sống, tổ ấm, mang tính cảm xúc: I want to go home. Không dùng to trước home: go home (không phải go to home).",
       "en": "House is the building: They built a new house. Home is where you live and belong: I want to go home. No to before home: go home (not go to home)."
     },
-    "keywords": ["house home", "house hay home", "house or home", "nhà tổ ấm", "go home"]
+    "keywords": [
+      "house home",
+      "house hay home",
+      "house or home",
+      "nhà tổ ấm",
+      "go home"
+    ]
   },
   {
     "id": "g-w-cook-cooker",
@@ -1977,7 +2709,12 @@
       "vi": "Cook là động từ (nấu) và cũng là danh từ chỉ người nấu ăn: My father is a good cook. Cooker là cái bếp, thiết bị nấu (Anh Anh). Sai: My mother is a good cooker. Đúng: My mother is a good cook.",
       "en": "Cook is the verb and also the noun for a person who cooks: My father is a good cook. Cooker is the appliance, the stove (British English). Wrong: My mother is a good cooker. Right: My mother is a good cook."
     },
-    "keywords": ["cook cooker", "cook hay cooker", "cook or cooker", "đầu bếp bếp"]
+    "keywords": [
+      "cook cooker",
+      "cook hay cooker",
+      "cook or cooker",
+      "đầu bếp bếp"
+    ]
   },
   {
     "id": "g-w-sympathetic-nice",
@@ -2009,7 +2746,12 @@
       "vi": "Attend là tham dự, có mặt ở một sự kiện: attend a meeting, attend a class. Join là tham gia, trở thành thành viên hoặc nhập vào nhóm: join a club, Can I join you? Attend không cần to: attend the meeting (không phải attend to the meeting).",
       "en": "Attend means being present at an event: attend a meeting, attend a class. Join means becoming a member or coming along with others: join a club, Can I join you? Attend takes no to: attend the meeting (not attend to the meeting)."
     },
-    "keywords": ["attend join", "attend hay join", "attend or join", "tham dự tham gia"]
+    "keywords": [
+      "attend join",
+      "attend hay join",
+      "attend or join",
+      "tham dự tham gia"
+    ]
   },
   {
     "id": "g-w-win-earn",
@@ -2022,7 +2764,13 @@
       "vi": "Win là thắng, giành được giải thưởng: win a match, win a prize. Earn là kiếm được nhờ làm việc: earn money, earn a living. Beat là đánh bại người khác: We beat their team. Sai: He wins a lot of money every month at his job. Đúng: He earns a lot of money.",
       "en": "Win means coming first or getting a prize: win a match, win a prize. Earn means getting money through work: earn money, earn a living. Beat means defeating someone: We beat their team. Wrong: He wins a lot of money every month at his job. Right: He earns a lot of money."
     },
-    "keywords": ["win earn", "win hay earn", "win or earn", "thắng kiếm tiền", "beat"]
+    "keywords": [
+      "win earn",
+      "win hay earn",
+      "win or earn",
+      "thắng kiếm tiền",
+      "beat"
+    ]
   },
   {
     "id": "g-w-teach-learn",
@@ -2035,7 +2783,13 @@
       "vi": "Teach là dạy người khác: She teaches English. Learn là học, tự tiếp thu: I am learning English. Sai: She learned me English. Đúng: She taught me English. Study nhấn vào việc học có hệ thống, ôn bài: I study every evening.",
       "en": "Teach means giving knowledge to others: She teaches English. Learn means getting knowledge yourself: I am learning English. Wrong: She learned me English. Right: She taught me English. Study stresses organised effort: I study every evening."
     },
-    "keywords": ["teach learn", "teach hay learn", "teach or learn", "dạy học", "study"]
+    "keywords": [
+      "teach learn",
+      "teach hay learn",
+      "teach or learn",
+      "dạy học",
+      "study"
+    ]
   },
   {
     "id": "g-w-since-as",
@@ -2048,7 +2802,13 @@
       "vi": "Since và as đều có thể mang nghĩa vì, tương đương because, thường đứng đầu câu: As it was late, we went home. Since you are here, let's start. Since còn có nghĩa kể từ khi, nên hãy để ý ngữ cảnh. Because dùng khi lý do là thông tin mới, quan trọng.",
       "en": "Since and as can both mean because and often start the sentence: As it was late, we went home. Since you are here, let's start. Since also means from a time onwards, so read the context. Use because when the reason is new or important."
     },
-    "keywords": ["since as", "since hay as", "since or as", "vì bởi vì", "because"]
+    "keywords": [
+      "since as",
+      "since hay as",
+      "since or as",
+      "vì bởi vì",
+      "because"
+    ]
   },
   {
     "id": "g-w-fewer-less",
@@ -2061,7 +2821,12 @@
       "vi": "Fewer đi với danh từ đếm được số nhiều: fewer people, fewer mistakes. Less đi với danh từ không đếm được: less time, less sugar. Trong văn nói, less đôi khi dùng cho cả hai, nhưng trong bài viết hãy phân biệt rõ.",
       "en": "Fewer goes with plural countable nouns: fewer people, fewer mistakes. Less goes with uncountable nouns: less time, less sugar. In speech less is sometimes used for both, but keep them apart in writing."
     },
-    "keywords": ["fewer less", "fewer hay less", "fewer or less", "ít hơn"]
+    "keywords": [
+      "fewer less",
+      "fewer hay less",
+      "fewer or less",
+      "ít hơn"
+    ]
   },
   {
     "id": "g-w-accept-except",
@@ -2074,7 +2839,12 @@
       "vi": "Accept là động từ: chấp nhận, nhận. She accepted the job offer. Except là giới từ: ngoại trừ. Everyone came except Nam. Hai từ phát âm gần giống nhau nên dễ viết nhầm.",
       "en": "Accept is a verb: to agree to or receive. She accepted the job offer. Except is a preposition: not including. Everyone came except Nam. They sound alike, so they are easy to confuse in writing."
     },
-    "keywords": ["accept except", "accept hay except", "accept or except", "chấp nhận ngoại trừ"]
+    "keywords": [
+      "accept except",
+      "accept hay except",
+      "accept or except",
+      "chấp nhận ngoại trừ"
+    ]
   },
   {
     "id": "g-w-principal-principle",
@@ -2105,7 +2875,12 @@
       "vi": "Quite /kwaɪt/ là khá, tương đối: The test was quite easy. Quiet /ˈkwaɪət/ là yên tĩnh: Please be quiet. Mẹo: quiet có hai âm tiết, đọc chậm sẽ phân biệt được.",
       "en": "Quite /kwaɪt/ means fairly: The test was quite easy. Quiet /ˈkwaɪət/ means making little noise: Please be quiet. Tip: quiet has two syllables; saying it slowly helps you tell them apart."
     },
-    "keywords": ["quite quiet", "quite hay quiet", "quite or quiet", "khá yên tĩnh"]
+    "keywords": [
+      "quite quiet",
+      "quite hay quiet",
+      "quite or quiet",
+      "khá yên tĩnh"
+    ]
   },
   {
     "id": "g-p-introduce",
@@ -2118,7 +2893,11 @@
       "vi": "Mẫu câu: Hi, I'm Lan. Nice to meet you. I'm from Da Nang. I'm a student at... / I work as a nurse. In my free time, I like reading and playing badminton. Khi người khác giới thiệu, đáp lại: Nice to meet you too. Hỏi lại: What about you? What do you do?",
       "en": "Useful lines: Hi, I'm Lan. Nice to meet you. I'm from Da Nang. I'm a student at... / I work as a nurse. In my free time, I like reading and playing badminton. When someone introduces themselves: Nice to meet you too. To ask back: What about you? What do you do?"
     },
-    "keywords": ["giới thiệu bản thân", "introduce yourself", "tự giới thiệu"]
+    "keywords": [
+      "giới thiệu bản thân",
+      "introduce yourself",
+      "tự giới thiệu"
+    ]
   },
   {
     "id": "g-p-restaurant",
@@ -2131,7 +2910,12 @@
       "vi": "Mẫu câu: Could I see the menu, please? I'd like the chicken soup, please. Could I have a glass of water? What do you recommend? Is this dish spicy? Khi xong: Could we have the bill, please? (Anh Anh) / Could we get the check? (Anh Mỹ). Dùng I'd like hoặc Could I have lịch sự hơn I want.",
       "en": "Useful lines: Could I see the menu, please? I'd like the chicken soup, please. Could I have a glass of water? What do you recommend? Is this dish spicy? When you finish: Could we have the bill, please? (British) / Could we get the check? (American). I'd like and Could I have sound politer than I want."
     },
-    "keywords": ["gọi món", "nhà hàng", "ordering food", "restaurant"]
+    "keywords": [
+      "gọi món",
+      "nhà hàng",
+      "ordering food",
+      "restaurant"
+    ]
   },
   {
     "id": "g-p-directions",
@@ -2144,7 +2928,11 @@
       "vi": "Hỏi: Excuse me, how do I get to the station? Is there a pharmacy near here? Is it far? Chỉ đường: Go straight on. Turn left at the traffic lights. Take the second right. It's on your left, next to the bank. It's about five minutes on foot. Khi không biết: Sorry, I'm not from around here.",
       "en": "Asking: Excuse me, how do I get to the station? Is there a pharmacy near here? Is it far? Giving: Go straight on. Turn left at the traffic lights. Take the second right. It's on your left, next to the bank. It's about five minutes on foot. If you don't know: Sorry, I'm not from around here."
     },
-    "keywords": ["hỏi đường", "chỉ đường", "directions"]
+    "keywords": [
+      "hỏi đường",
+      "chỉ đường",
+      "directions"
+    ]
   },
   {
     "id": "g-p-shopping",
@@ -2157,7 +2945,12 @@
       "vi": "Mẫu câu: How much is this? Do you have this in a smaller size? Can I try it on? Where are the fitting rooms? Do you have it in blue? I'll take it. Can I pay by card? Khi chỉ xem: I'm just looking, thanks. Đổi trả: I'd like to return this, please. Here's the receipt.",
       "en": "Useful lines: How much is this? Do you have this in a smaller size? Can I try it on? Where are the fitting rooms? Do you have it in blue? I'll take it. Can I pay by card? Just browsing: I'm just looking, thanks. Returns: I'd like to return this, please. Here's the receipt."
     },
-    "keywords": ["mua sắm", "shopping", "hỏi giá", "trả hàng"]
+    "keywords": [
+      "mua sắm",
+      "shopping",
+      "hỏi giá",
+      "trả hàng"
+    ]
   },
   {
     "id": "g-p-phone",
@@ -2170,7 +2963,11 @@
       "vi": "Mẫu câu: Hello, this is Minh speaking. Could I speak to Ms Hoa, please? Is this a good time to talk? Sorry, could you speak a little more slowly? Could you repeat that, please? Can I leave a message? I'll call you back later. Thanks for calling. Lưu ý dùng this is (không phải I am) khi xưng tên qua điện thoại.",
       "en": "Useful lines: Hello, this is Minh speaking. Could I speak to Ms Hoa, please? Is this a good time to talk? Sorry, could you speak a little more slowly? Could you repeat that, please? Can I leave a message? I'll call you back later. Thanks for calling. Note: on the phone say this is (not I am) with your name."
     },
-    "keywords": ["gọi điện thoại", "phone call", "telephone"]
+    "keywords": [
+      "gọi điện thoại",
+      "phone call",
+      "telephone"
+    ]
   },
   {
     "id": "g-p-doctor",
@@ -2183,7 +2980,12 @@
       "vi": "Mẫu câu: I'd like to make an appointment. I don't feel well. I have a headache / a sore throat / a fever / a stomach ache. I've had a cough for three days. It hurts here. I'm allergic to penicillin. How often should I take this medicine? Bác sĩ có thể hỏi: What seems to be the problem? How long have you felt like this?",
       "en": "Useful lines: I'd like to make an appointment. I don't feel well. I have a headache / a sore throat / a fever / a stomach ache. I've had a cough for three days. It hurts here. I'm allergic to penicillin. How often should I take this medicine? A doctor may ask: What seems to be the problem? How long have you felt like this?"
     },
-    "keywords": ["khám bệnh", "triệu chứng", "doctor", "đau ốm"]
+    "keywords": [
+      "khám bệnh",
+      "triệu chứng",
+      "doctor",
+      "đau ốm"
+    ]
   },
   {
     "id": "g-p-hotel",
@@ -2196,7 +2998,12 @@
       "vi": "Mẫu câu: I'd like to book a double room for two nights. Is breakfast included? I have a reservation under the name Nguyen. What time is check-out? Could I have a late check-out? The air conditioner isn't working. Could you call a taxi for me? Khi trả phòng: I'd like to check out, please.",
       "en": "Useful lines: I'd like to book a double room for two nights. Is breakfast included? I have a reservation under the name Nguyen. What time is check-out? Could I have a late check-out? The air conditioner isn't working. Could you call a taxi for me? Leaving: I'd like to check out, please."
     },
-    "keywords": ["khách sạn", "đặt phòng", "hotel", "check in"]
+    "keywords": [
+      "khách sạn",
+      "đặt phòng",
+      "hotel",
+      "check in"
+    ]
   },
   {
     "id": "g-p-airport",
@@ -2209,7 +3016,12 @@
       "vi": "Mẫu câu: I'd like to check in for the flight to Singapore. Can I have a window seat / an aisle seat? How many bags can I check in? Where is gate 12? Is the flight on time? My luggage hasn't arrived. Hải quan có thể hỏi: What's the purpose of your visit? How long are you staying? Đáp: I'm here on holiday / for business, for one week.",
       "en": "Useful lines: I'd like to check in for the flight to Singapore. Can I have a window seat / an aisle seat? How many bags can I check in? Where is gate 12? Is the flight on time? My luggage hasn't arrived. Immigration may ask: What's the purpose of your visit? How long are you staying? Answer: I'm here on holiday / for business, for one week."
     },
-    "keywords": ["sân bay", "airport", "hải quan", "check in flight"]
+    "keywords": [
+      "sân bay",
+      "airport",
+      "hải quan",
+      "check in flight"
+    ]
   },
   {
     "id": "g-p-invite",
@@ -2222,7 +3034,12 @@
       "vi": "Mời: Would you like to have coffee this weekend? Are you free on Saturday? How about going to the cinema? Nhận lời: That sounds great! I'd love to. Từ chối lịch sự: I'd love to, but I'm busy that day. Maybe another time? Hẹn giờ: What time suits you? Let's meet at 7 outside the cinema.",
       "en": "Inviting: Would you like to have coffee this weekend? Are you free on Saturday? How about going to the cinema? Accepting: That sounds great! I'd love to. Declining politely: I'd love to, but I'm busy that day. Maybe another time? Arranging: What time suits you? Let's meet at 7 outside the cinema."
     },
-    "keywords": ["mời đi chơi", "nhận lời", "từ chối", "invitation"]
+    "keywords": [
+      "mời đi chơi",
+      "nhận lời",
+      "từ chối",
+      "invitation"
+    ]
   },
   {
     "id": "g-p-apologise",
@@ -2235,7 +3052,11 @@
       "vi": "Xin lỗi: I'm sorry I'm late. I'm really sorry about that. I apologise for the mistake (trang trọng). It won't happen again. Đáp lại: That's OK. No problem. Don't worry about it. Never mind. Excuse me dùng để gây chú ý hoặc xin đi qua, còn sorry dùng khi đã làm sai.",
       "en": "Apologising: I'm sorry I'm late. I'm really sorry about that. I apologise for the mistake (formal). It won't happen again. Replying: That's OK. No problem. Don't worry about it. Never mind. Use excuse me to get attention or pass someone, and sorry when you have done something wrong."
     },
-    "keywords": ["xin lỗi", "apologise", "excuse me sorry"]
+    "keywords": [
+      "xin lỗi",
+      "apologise",
+      "excuse me sorry"
+    ]
   },
   {
     "id": "g-p-thanks",
@@ -2248,7 +3069,11 @@
       "vi": "Cảm ơn: Thanks a lot. Thank you so much for your help. I really appreciate it. That's very kind of you. Đáp lại: You're welcome. No problem. My pleasure. Anytime. Don't mention it. Trong văn viết trang trọng: Thank you for your time and consideration.",
       "en": "Thanking: Thanks a lot. Thank you so much for your help. I really appreciate it. That's very kind of you. Replying: You're welcome. No problem. My pleasure. Anytime. Don't mention it. In formal writing: Thank you for your time and consideration."
     },
-    "keywords": ["cảm ơn", "thank you", "you're welcome"]
+    "keywords": [
+      "cảm ơn",
+      "thank you",
+      "you're welcome"
+    ]
   },
   {
     "id": "g-p-opinion",
@@ -2261,7 +3086,12 @@
       "vi": "Nêu ý kiến: I think... In my opinion,... From my point of view,... I believe that... Đồng ý: I agree. That's a good point. Exactly! Không đồng ý nhẹ nhàng: I see what you mean, but... I'm not sure about that. Hỏi ý kiến: What do you think? How do you feel about...?",
       "en": "Giving opinions: I think... In my opinion,... From my point of view,... I believe that... Agreeing: I agree. That's a good point. Exactly! Disagreeing politely: I see what you mean, but... I'm not sure about that. Asking: What do you think? How do you feel about...?"
     },
-    "keywords": ["ý kiến", "opinion", "đồng ý không đồng ý", "agree disagree"]
+    "keywords": [
+      "ý kiến",
+      "opinion",
+      "đồng ý không đồng ý",
+      "agree disagree"
+    ]
   },
   {
     "id": "g-p-not-understand",
@@ -2274,7 +3104,12 @@
       "vi": "Mẫu câu: Sorry, could you say that again? Could you speak more slowly, please? Sorry, I didn't catch that. What does ... mean? How do you spell that? Do you mean...? Dùng các câu này giúp cuộc trò chuyện tiếp tục, tốt hơn là im lặng hoặc gật đầu khi chưa hiểu.",
       "en": "Useful lines: Sorry, could you say that again? Could you speak more slowly, please? Sorry, I didn't catch that. What does ... mean? How do you spell that? Do you mean...? These keep a conversation going, which is better than staying silent or nodding when you don't understand."
     },
-    "keywords": ["không hiểu", "nhắc lại", "repeat please", "didn't catch"]
+    "keywords": [
+      "không hiểu",
+      "nhắc lại",
+      "repeat please",
+      "didn't catch"
+    ]
   },
   {
     "id": "g-p-job-interview",
@@ -2287,7 +3122,11 @@
       "vi": "Câu hỏi hay gặp: Tell me about yourself. Why do you want this job? What are your strengths and weaknesses? Where do you see yourself in five years? Mẫu trả lời: I have two years of experience in... One of my strengths is that I'm organised. I'm working on improving my public speaking. Cuối buổi hãy hỏi lại: What does a typical day look like in this role?",
       "en": "Common questions: Tell me about yourself. Why do you want this job? What are your strengths and weaknesses? Where do you see yourself in five years? Sample answers: I have two years of experience in... One of my strengths is that I'm organised. I'm working on improving my public speaking. At the end, ask: What does a typical day look like in this role?"
     },
-    "keywords": ["phỏng vấn", "job interview", "xin việc"]
+    "keywords": [
+      "phỏng vấn",
+      "job interview",
+      "xin việc"
+    ]
   },
   {
     "id": "g-p-email-formal",
@@ -2300,7 +3139,11 @@
       "vi": "Mở đầu: Dear Mr Tran, / Dear Sir or Madam, I am writing to ask about... / I am writing regarding... Nội dung: Could you please let me know...? I would be grateful if you could... Kết: I look forward to hearing from you. Thank you for your time. Kind regards, / Best regards, + tên. Tránh viết tắt (I'm, don't) trong email trang trọng.",
       "en": "Opening: Dear Mr Tran, / Dear Sir or Madam, I am writing to ask about... / I am writing regarding... Body: Could you please let me know...? I would be grateful if you could... Closing: I look forward to hearing from you. Thank you for your time. Kind regards, / Best regards, plus your name. Avoid contractions (I'm, don't) in formal emails."
     },
-    "keywords": ["email trang trọng", "formal email", "viết thư"]
+    "keywords": [
+      "email trang trọng",
+      "formal email",
+      "viết thư"
+    ]
   },
   {
     "id": "g-p-work-meeting",
@@ -2313,7 +3156,12 @@
       "vi": "Mẫu câu: Shall we get started? The main point today is... Could I add something? Sorry to interrupt, but... Let me check I understand: you mean...? Let's move on to the next item. To sum up,... Who will take care of this? Let's follow up by email.",
       "en": "Useful lines: Shall we get started? The main point today is... Could I add something? Sorry to interrupt, but... Let me check I understand: you mean...? Let's move on to the next item. To sum up,... Who will take care of this? Let's follow up by email."
     },
-    "keywords": ["cuộc họp", "meeting", "công sở", "work english"]
+    "keywords": [
+      "cuộc họp",
+      "meeting",
+      "công sở",
+      "work english"
+    ]
   },
   {
     "id": "g-p-ask-help",
@@ -2326,7 +3174,12 @@
       "vi": "Mẫu câu từ thân mật đến lịch sự: Can you help me? Could you help me with this? Would you mind helping me carry this? Do you think you could...? I was wondering if you could... Đáp lại khi giúp được: Sure! Of course. No problem. Khi không giúp được: Sorry, I can't right now.",
       "en": "From casual to polite: Can you help me? Could you help me with this? Would you mind helping me carry this? Do you think you could...? I was wondering if you could... Agreeing: Sure! Of course. No problem. Declining: Sorry, I can't right now."
     },
-    "keywords": ["nhờ giúp", "ask for help", "lịch sự", "would you mind"]
+    "keywords": [
+      "nhờ giúp",
+      "ask for help",
+      "lịch sự",
+      "would you mind"
+    ]
   },
   {
     "id": "g-p-small-talk",
@@ -2339,7 +3192,12 @@
       "vi": "Chủ đề an toàn: thời tiết, cuối tuần, công việc, du lịch, đồ ăn. Mẫu câu: Lovely weather today, isn't it? How was your weekend? Have you been busy lately? Have you tried the new café nearby? Tránh hỏi lương, tuổi, cân nặng hay tôn giáo với người mới quen. Hãy hỏi lại để cuộc trò chuyện tiếp tục: And you?",
       "en": "Safe topics: the weather, the weekend, work, travel, food. Lines: Lovely weather today, isn't it? How was your weekend? Have you been busy lately? Have you tried the new café nearby? Avoid asking new acquaintances about salary, age, weight or religion. Ask back to keep it going: And you?"
     },
-    "keywords": ["small talk", "xã giao", "bắt chuyện", "trò chuyện"]
+    "keywords": [
+      "small talk",
+      "xã giao",
+      "bắt chuyện",
+      "trò chuyện"
+    ]
   },
   {
     "id": "g-p-complain",
@@ -2352,7 +3210,11 @@
       "vi": "Mẫu câu: Excuse me, I'm afraid there's a problem with my order. This isn't what I ordered. The room is quite noisy; could I change it? I'd like to speak to the manager, please. Could you sort this out, please? Bắt đầu bằng I'm afraid... hoặc Sorry to bother you, but... giúp lời phàn nàn nhẹ nhàng hơn.",
       "en": "Useful lines: Excuse me, I'm afraid there's a problem with my order. This isn't what I ordered. The room is quite noisy; could I change it? I'd like to speak to the manager, please. Could you sort this out, please? Starting with I'm afraid... or Sorry to bother you, but... softens a complaint."
     },
-    "keywords": ["phàn nàn", "complain", "khiếu nại"]
+    "keywords": [
+      "phàn nàn",
+      "complain",
+      "khiếu nại"
+    ]
   },
   {
     "id": "g-p-class",
@@ -2365,6 +3227,1036 @@
       "vi": "Mẫu câu: Could you explain that again, please? What's the difference between ... and ...? How do you pronounce this word? Can I say ... instead? Is this sentence correct? Sorry, I'm not sure. Could you give me an example? Dùng những câu này với giáo viên, với bạn học, và cả khi hỏi Tom.",
       "en": "Useful lines: Could you explain that again, please? What's the difference between ... and ...? How do you pronounce this word? Can I say ... instead? Is this sentence correct? Sorry, I'm not sure. Could you give me an example? Use them with teachers, classmates and when you ask Tom."
     },
-    "keywords": ["lớp học", "classroom english", "hỏi giáo viên"]
+    "keywords": [
+      "lớp học",
+      "classroom english",
+      "hỏi giáo viên"
+    ]
+  },
+  {
+    "id": "g-pr-th-voiceless",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Phát âm âm /θ/ như trong think thế nào?",
+      "en": "How do I say the /θ/ sound in think?"
+    },
+    "answer": {
+      "vi": "Đặt đầu lưỡi nhẹ giữa hai hàm răng rồi thổi hơi ra, không rung cổ họng: think, three, mouth, birthday. Người Việt hay đọc thành /t/ (think thành tink) hoặc như chữ th tiếng Việt có bật hơi mạnh. Luyện cặp từ: tree / three, tank / thank, mat / math.",
+      "en": "Put the tip of your tongue lightly between your teeth and push air out without using your voice: think, three, mouth, birthday. Vietnamese learners often say /t/ (tink) or the aspirated Vietnamese th. Practise pairs: tree / three, tank / thank, mat / math."
+    },
+    "keywords": [
+      "âm th",
+      "th sound",
+      "think",
+      "three",
+      "lưỡi giữa răng"
+    ]
+  },
+  {
+    "id": "g-pr-th-voiced",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Âm /ð/ trong this, mother đọc thế nào?",
+      "en": "How do I say the /ð/ sound in this and mother?"
+    },
+    "answer": {
+      "vi": "Vị trí lưỡi giống /θ/: đầu lưỡi giữa hai hàm răng, nhưng có rung dây thanh. Chạm tay vào cổ sẽ thấy rung. Từ thường gặp: this, that, the, they, mother, weather. Đừng đọc thành /d/ (this thành dis) hay /z/ (the thành ze). Luyện: day / they, dare / there, breeze / breathe.",
+      "en": "The tongue is in the same place as /θ/, between the teeth, but your voice is on: put a hand on your throat and feel it buzz. Common words: this, that, the, they, mother, weather. Avoid /d/ (dis) or /z/ (ze). Practise: day / they, dare / there, breeze / breathe."
+    },
+    "keywords": [
+      "this",
+      "the",
+      "mother",
+      "âm đờ",
+      "voiced th"
+    ]
+  },
+  {
+    "id": "g-pr-ending-s",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Đuôi -s, -es đọc là /s/, /z/ hay /ɪz/?",
+      "en": "Is the -s ending /s/, /z/ or /ɪz/?"
+    },
+    "answer": {
+      "vi": "Đọc /ɪz/ sau các âm /s, z, ʃ, ʒ, tʃ, dʒ/: buses, watches, oranges. Đọc /s/ sau âm vô thanh /p, t, k, f, θ/: cups, cats, books, laughs. Còn lại đọc /z/: dogs, plays, pens, cars. Quy tắc dùng cho danh từ số nhiều, động từ ngôi thứ ba và sở hữu cách ('s). Đừng bỏ đuôi này, vì nó mang nghĩa ngữ pháp.",
+      "en": "Say /ɪz/ after /s, z, ʃ, ʒ, tʃ, dʒ/: buses, watches, oranges. Say /s/ after voiceless /p, t, k, f, θ/: cups, cats, books, laughs. Otherwise say /z/: dogs, plays, pens, cars. The rule covers plurals, third-person verbs and possessive 's. Do not drop the ending, because it carries grammar."
+    },
+    "keywords": [
+      "đuôi s",
+      "es",
+      "số nhiều",
+      "plural pronunciation",
+      "third person s"
+    ]
+  },
+  {
+    "id": "g-pr-ending-ed",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Đuôi -ed đọc thế nào cho đúng?",
+      "en": "How do I pronounce the -ed ending?"
+    },
+    "answer": {
+      "vi": "Đọc /ɪd/ sau âm /t/ và /d/: wanted, needed, decided. Đọc /t/ sau âm vô thanh /p, k, s, ʃ, tʃ, f, θ/: stopped, looked, missed, washed, watched. Còn lại đọc /d/: played, opened, lived, called. Lỗi thường gặp là đọc mọi đuôi -ed thành /ɪd/, ví dụ looked thành look-ed.",
+      "en": "Say /ɪd/ after /t/ and /d/: wanted, needed, decided. Say /t/ after voiceless /p, k, s, ʃ, tʃ, f, θ/: stopped, looked, missed, washed, watched. Otherwise say /d/: played, opened, lived, called. A common mistake is saying every -ed as /ɪd/, like look-ed."
+    },
+    "keywords": [
+      "đuôi ed",
+      "quá khứ",
+      "past tense pronunciation",
+      "ed ending"
+    ]
+  },
+  {
+    "id": "g-pr-s-sh",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Phân biệt /s/ và /ʃ/ như see và she thế nào?",
+      "en": "How do I tell /s/ from /ʃ/, as in see and she?"
+    },
+    "answer": {
+      "vi": "Với /s/, môi dẹt, đầu lưỡi gần lợi trên, hơi đi qua khe hẹp: see, sip, sort. Với /ʃ/, môi tròn và đẩy ra trước, lưỡi lùi lại một chút: she, ship, short. Âm /ʃ/ nghe giống tiếng suỵt. Luyện cặp: sea / she, sock / shock, save / shave, mass / mash.",
+      "en": "For /s/, the lips are spread and the tongue tip is near the ridge behind the top teeth: see, sip, sort. For /ʃ/, round the lips and push them forward with the tongue a little further back: she, ship, short; it sounds like hushing someone. Practise: sea / she, sock / shock, save / shave, mass / mash."
+    },
+    "keywords": [
+      "s và sh",
+      "she",
+      "ship",
+      "âm sh",
+      "shh"
+    ]
+  },
+  {
+    "id": "g-pr-aspiration",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Bật hơi ở âm /p/, /t/, /k/ đầu từ là gì?",
+      "en": "What is aspiration on /p/, /t/ and /k/?"
+    },
+    "answer": {
+      "vi": "Khi /p/, /t/, /k/ đứng đầu âm tiết được nhấn, người bản xứ bật ra một luồng hơi: pen, ten, key, police. Đặt tờ giấy mỏng trước miệng, tờ giấy phải lay động. Âm t tiếng Việt không bật hơi, nên nếu thiếu luồng hơi này người nghe dễ nghe thành /b/, /d/, /g/: pin thành bin, ten thành den, coat thành goat. Sau âm s (spin, stop, sky) thì không bật hơi.",
+      "en": "When /p/, /t/ or /k/ starts a stressed syllable, native speakers release a puff of air: pen, ten, key, police. Hold a thin tissue in front of your mouth; it should move. The Vietnamese t has no puff, so without it listeners may hear /b/, /d/ or /g/: pin as bin, ten as den, coat as goat. After s (spin, stop, sky) there is no puff."
+    },
+    "keywords": [
+      "bật hơi",
+      "aspiration",
+      "p t k",
+      "pen ten",
+      "luồng hơi"
+    ]
+  },
+  {
+    "id": "g-pr-long-short-i",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Sheep và ship phát âm khác nhau thế nào?",
+      "en": "How are sheep and ship different?"
+    },
+    "answer": {
+      "vi": "Sheep có nguyên âm dài /iː/: môi kéo căng như đang cười, giữ âm lâu hơn. Ship có nguyên âm ngắn /ɪ/: miệng thả lỏng hơn, âm ngắn, nằm giữa i và ê. Cặp từ cần luyện: leave / live, seat / sit, feel / fill, eat / it. Đọc sai độ dài nguyên âm có thể làm đổi nghĩa cả câu.",
+      "en": "Sheep has the long /iː/: spread your lips as if smiling and hold the sound longer. Ship has the short /ɪ/: a more relaxed mouth and a quick sound, between the Vietnamese i and ê. Practise: leave / live, seat / sit, feel / fill, eat / it. The wrong vowel length can change the meaning of a sentence."
+    },
+    "keywords": [
+      "i dài i ngắn",
+      "long i",
+      "sheep ship",
+      "nguyên âm dài"
+    ]
+  },
+  {
+    "id": "g-pr-long-short-u",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Pool và pull khác nhau ở đâu?",
+      "en": "What is the difference between pool and pull?"
+    },
+    "answer": {
+      "vi": "Pool có /uː/ dài: môi tròn, chu ra và giữ âm lâu: food, moon, two. Pull có /ʊ/ ngắn: môi tròn nhẹ, thả lỏng và âm ngắn: book, good, foot, could. Luyện cặp: fool / full, Luke / look, suit / soot. Nghe kỹ độ dài nguyên âm khi luyện nghe sẽ giúp bạn nói đúng hơn.",
+      "en": "Pool has the long /uː/: round and push out your lips and hold it: food, moon, two. Pull has the short /ʊ/: lightly rounded, relaxed lips and a short sound: book, good, foot, could. Practise: fool / full, Luke / look, suit / soot. Listening for vowel length will improve your speaking too."
+    },
+    "keywords": [
+      "u dài u ngắn",
+      "food foot",
+      "book",
+      "long u"
+    ]
+  },
+  {
+    "id": "g-pr-ae-e",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Bad và bed đọc khác nhau thế nào?",
+      "en": "How are bad and bed different?"
+    },
+    "answer": {
+      "vi": "Bad có /æ/: mở miệng rộng, hạ hàm xuống, âm nằm giữa a và e: cat, man, hat, apple. Bed có /e/: miệng mở vừa, giống ê tiếng Việt: pen, men, said. Luyện cặp: man / men, sat / set, had / head, bag / beg. Mẹo: soi gương, khi đọc /æ/ hàm dưới phải hạ thấp rõ.",
+      "en": "Bad has /æ/: open your mouth wide and drop your jaw, a sound between a and e: cat, man, hat, apple. Bed has /e/: a medium opening, like the Vietnamese ê: pen, men, said. Practise: man / men, sat / set, had / head, bag / beg. Tip: watch in a mirror; your jaw should drop clearly for /æ/."
+    },
+    "keywords": [
+      "æ",
+      "bad bed",
+      "man men",
+      "âm a bẹt"
+    ]
+  },
+  {
+    "id": "g-pr-schwa",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Âm schwa /ə/ là gì?",
+      "en": "What is the schwa /ə/?"
+    },
+    "answer": {
+      "vi": "Schwa là nguyên âm yếu, ngắn và nhẹ, giống ơ đọc lướt. Đây là âm phổ biến nhất trong tiếng Anh vì hầu hết âm tiết không nhấn đều đọc thành /ə/: about, banana, today, teacher (Anh Anh), problem. Người Việt hay đọc rõ từng chữ như a-bao, ba-na-na, làm câu nghe cứng. Hãy nhấn âm tiết chính và đọc lướt phần còn lại.",
+      "en": "The schwa is a weak, short, relaxed vowel, like a quick Vietnamese ơ. It is the most common sound in English, because most unstressed syllables become /ə/: about, banana, today, teacher (British), problem. Vietnamese learners often say every vowel fully, which sounds stiff. Stress the main syllable and let the others shrink."
+    },
+    "keywords": [
+      "schwa",
+      "ə",
+      "âm yếu",
+      "unstressed vowel"
+    ]
+  },
+  {
+    "id": "g-pr-diphthongs",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Nguyên âm đôi như trong late, go đọc thế nào?",
+      "en": "How do I say diphthongs like in late and go?"
+    },
+    "answer": {
+      "vi": "Nguyên âm đôi trượt từ âm này sang âm khác trong một âm tiết: /eɪ/ day, late; /aɪ/ five, my; /ɔɪ/ boy; /aʊ/ now, house; /əʊ/ (Anh Anh) hay /oʊ/ (Anh Mỹ) go, coat. Lỗi thường gặp là đọc thành nguyên âm đơn, khiến late nghe như let, coat nghe như cot. Hãy trượt hết cả hai phần của âm.",
+      "en": "A diphthong glides from one vowel to another inside one syllable: /eɪ/ day, late; /aɪ/ five, my; /ɔɪ/ boy; /aʊ/ now, house; /əʊ/ (British) or /oʊ/ (American) go, coat. A common mistake is a single flat vowel, so late sounds like let and coat like cot. Glide all the way through."
+    },
+    "keywords": [
+      "nguyên âm đôi",
+      "diphthong",
+      "late let",
+      "coat cot"
+    ]
+  },
+  {
+    "id": "g-pr-stress-suffixes",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Có quy tắc nào giúp đoán trọng âm không?",
+      "en": "Are there rules for guessing word stress?"
+    },
+    "answer": {
+      "vi": "Có vài quy tắc hay đúng. Danh từ và tính từ hai âm tiết thường nhấn âm đầu (TAble, HAPpy), động từ hai âm tiết thường nhấn âm sau (beGIN, deCIDE). Với -tion, -sion, -ic, -ity, -ian, trọng âm rơi vào âm tiết ngay trước đuôi: eduCAtion, ecoNOmic, uniVERsity. Với -ee, -eer, -ese, -ique, trọng âm rơi vào chính đuôi: employEE, engiNEER, VietnaMESE. Các đuôi -ness, -ment, -ful thường giữ trọng âm của từ gốc.",
+      "en": "A few rules usually work. Two-syllable nouns and adjectives tend to stress the first syllable (TAble, HAPpy) and two-syllable verbs the second (beGIN, deCIDE). With -tion, -sion, -ic, -ity and -ian, stress falls just before the ending: eduCAtion, ecoNOmic, uniVERsity. With -ee, -eer, -ese and -ique, the ending itself is stressed: employEE, engiNEER, VietnaMESE. Endings like -ness, -ment and -ful usually keep the root's stress."
+    },
+    "keywords": [
+      "quy tắc trọng âm",
+      "stress rules",
+      "đoán trọng âm",
+      "suffix stress",
+      "tion"
+    ]
+  },
+  {
+    "id": "g-pr-sentence-stress",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Câu tiếng Anh nhấn vào đâu?",
+      "en": "Which words are stressed in an English sentence?"
+    },
+    "answer": {
+      "vi": "Tiếng Anh nhấn các từ mang nội dung: danh từ, động từ chính, tính từ, trạng từ và từ phủ định, còn từ chức năng như mạo từ, giới từ, đại từ, trợ động từ được đọc lướt. Ví dụ: I WANT to BUY a NEW PHONE. Tiếng Việt đọc đều từng tiếng, nên người Việt cần tập nói có nhịp mạnh nhẹ như vậy để nghe tự nhiên.",
+      "en": "English stresses content words: nouns, main verbs, adjectives, adverbs and negatives, while function words such as articles, prepositions, pronouns and auxiliaries are said quickly. Example: I WANT to BUY a NEW PHONE. Vietnamese gives each syllable equal weight, so practise this strong-weak rhythm to sound natural."
+    },
+    "keywords": [
+      "nhịp điệu",
+      "sentence stress",
+      "rhythm",
+      "nhấn câu",
+      "content words"
+    ]
+  },
+  {
+    "id": "g-pr-weak-forms",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Dạng yếu của từ như can, to, and là gì?",
+      "en": "What are weak forms like can, to and and?"
+    },
+    "answer": {
+      "vi": "Khi không được nhấn, nhiều từ chức năng đọc nhẹ với âm /ə/: can /kən/, to /tə/, and /ən/, for /fə/, of /əv/, was /wəz/, them /ðəm/. Ví dụ: I can swim nghe như I kən SWIM. Khi đứng cuối câu hoặc được nhấn, chúng trở lại dạng mạnh: Yes, I can /kæn/. Biết dạng yếu giúp bạn nghe hiểu người bản xứ dễ hơn nhiều.",
+      "en": "When unstressed, many function words shrink to /ə/: can /kən/, to /tə/, and /ən/, for /fə/, of /əv/, was /wəz/, them /ðəm/. I can swim sounds like I kən SWIM. At the end of a sentence or when stressed, they return to the strong form: Yes, I can /kæn/. Knowing weak forms makes native speech much easier to follow."
+    },
+    "keywords": [
+      "dạng yếu",
+      "weak form",
+      "đọc lướt",
+      "can to and",
+      "nghe không kịp"
+    ]
+  },
+  {
+    "id": "g-pr-linking",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Nối âm trong tiếng Anh là gì?",
+      "en": "What is linking in English?"
+    },
+    "answer": {
+      "vi": "Người bản xứ nối âm cuối của từ trước với âm đầu của từ sau. Phụ âm cuối nối vào nguyên âm đầu: turn off nghe như tur-noff, an apple như a-napple, pick it up như pi-ki-tup. Hai nguyên âm gặp nhau thì chèn âm /w/ hoặc /j/ nhẹ: go out nghe như go-wout, I am như I-yam. Luyện nối âm giúp nói trôi chảy và nghe hiểu nhanh hơn.",
+      "en": "Native speakers join the end of one word to the start of the next. A final consonant links to a vowel: turn off sounds like tur-noff, an apple like a-napple, pick it up like pi-ki-tup. Between two vowels, add a light /w/ or /j/: go out like go-wout, I am like I-yam. Linking makes you sound smoother and helps you understand fast speech."
+    },
+    "keywords": [
+      "nối âm",
+      "linking",
+      "connected speech",
+      "nói trôi chảy"
+    ]
+  },
+  {
+    "id": "g-pr-intonation",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Ngữ điệu câu hỏi lên hay xuống giọng?",
+      "en": "Does my voice go up or down in questions?"
+    },
+    "answer": {
+      "vi": "Câu hỏi Yes/No thường lên giọng ở cuối: Are you ready? Câu hỏi có từ để hỏi (what, where, why, how) thường xuống giọng: Where do you live? Câu kể cũng xuống giọng ở cuối. Khi liệt kê, lên giọng ở từng mục và xuống ở mục cuối: apples, bananas and oranges. Đọc câu đều đều một giọng dễ khiến bạn nghe như thiếu hứng thú.",
+      "en": "Yes/No questions usually rise at the end: Are you ready? Questions with what, where, why or how usually fall: Where do you live? Statements fall at the end too. In a list, rise on each item and fall on the last: apples, bananas and oranges. A flat voice can make you sound uninterested."
+    },
+    "keywords": [
+      "ngữ điệu",
+      "intonation",
+      "lên giọng",
+      "xuống giọng",
+      "question tone"
+    ]
+  },
+  {
+    "id": "g-pr-r-sound",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Âm /r/ tiếng Anh có rung lưỡi không?",
+      "en": "Is the English /r/ rolled?"
+    },
+    "answer": {
+      "vi": "Không. Âm /r/ tiếng Anh không rung lưỡi. Hãy cong đầu lưỡi lùi về phía sau, không chạm vào vòm miệng, môi hơi tròn: red, right, very, sorry. Trong Anh Mỹ, r sau nguyên âm vẫn được đọc (car, hard); trong Anh Anh, r đó thường không đọc. Luyện: light / right, glass / grass.",
+      "en": "No. The English /r/ is not rolled or trilled. Curl the tongue tip back without touching the roof of your mouth and round your lips a little: red, right, very, sorry. In American English, r after a vowel is pronounced (car, hard); in British English it usually is not. Practise: light / right, glass / grass."
+    },
+    "keywords": [
+      "âm r",
+      "r sound",
+      "rung lưỡi",
+      "red right"
+    ]
+  },
+  {
+    "id": "g-pr-l-n",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Tôi hay nhầm âm /l/ và /n/ thì sửa thế nào?",
+      "en": "I mix up /l/ and /n/; how do I fix it?"
+    },
+    "answer": {
+      "vi": "Với /n/, hơi đi ra qua mũi: bịt mũi lại sẽ không nói được n. Với /l/, đầu lưỡi chạm lợi trên và hơi đi hai bên lưỡi, không qua mũi. Thử nói light rồi night trong khi bịt mũi để cảm nhận. Luyện cặp: light / night, low / no, lice / nice. Ở cuối từ, /l/ như trong school, feel phải được đọc, đừng bỏ đi.",
+      "en": "For /n/, air goes out through the nose: pinch your nose and you cannot say it. For /l/, the tongue tip touches the ridge behind the top teeth and air flows around the sides, not through the nose. Try light and night with your nose pinched. Practise: light / night, low / no, lice / nice. Do not drop final /l/ in school or feel."
+    },
+    "keywords": [
+      "l và n",
+      "light night",
+      "nhầm l n",
+      "âm mũi"
+    ]
+  },
+  {
+    "id": "g-pr-final-v-f",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Leave và leaf đọc khác nhau thế nào?",
+      "en": "How are leave and leaf different?"
+    },
+    "answer": {
+      "vi": "Âm cuối /v/ có rung dây thanh, còn /f/ thì không; răng trên chạm nhẹ môi dưới với cả hai. Ngoài ra, nguyên âm đứng trước phụ âm hữu thanh được kéo dài hơn: leave dài hơn leaf. Cặp tương tự: have / half, prove / proof, save / safe. Người Việt hay bỏ hẳn âm /v/ cuối, nên five và fine nghe giống nhau.",
+      "en": "Final /v/ uses your voice and /f/ does not; for both, the top teeth touch the lower lip. Also, a vowel before a voiced consonant is longer, so leave is longer than leaf. Similar pairs: have / half, prove / proof, save / safe. Vietnamese learners often drop final /v/ entirely, so five and fine sound alike."
+    },
+    "keywords": [
+      "âm v cuối",
+      "leave leaf",
+      "five",
+      "voiced ending"
+    ]
+  },
+  {
+    "id": "g-pr-z-sound",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Âm /z/ cuối từ như is, his đọc thế nào?",
+      "en": "How do I say a final /z/, as in is and his?"
+    },
+    "answer": {
+      "vi": "Âm /z/ giống /s/ nhưng có rung dây thanh, như tiếng ong vo ve: zoo, easy, music, is, his, was. Người Việt thường bỏ /z/ ở cuối hoặc đọc thành /s/, nên his nghe như hit hoặc hiss. Hãy kéo dài một chút âm vo ve ở cuối từ. Luyện: rice / rise, peace / peas, bus / buzz.",
+      "en": "/z/ is like /s/ with your voice on, like a buzzing bee: zoo, easy, music, is, his, was. Vietnamese learners often drop a final /z/ or say /s/, so his sounds like hit or hiss. Let the buzz continue briefly at the end of the word. Practise: rice / rise, peace / peas, bus / buzz."
+    },
+    "keywords": [
+      "âm z",
+      "is his",
+      "buzz",
+      "z cuối"
+    ]
+  },
+  {
+    "id": "g-pr-clusters",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Đọc cụm phụ âm như street, texts thế nào?",
+      "en": "How do I say consonant clusters like street and texts?"
+    },
+    "answer": {
+      "vi": "Tiếng Anh có nhiều phụ âm đứng liền nhau trong một âm tiết. Street chỉ có một âm tiết /striːt/, không đọc là sờ-tờ-rít. Đừng chèn thêm nguyên âm giữa các phụ âm. Với cụm cuối như texts, months, asked, hãy tập chậm từng phần rồi ghép lại: tek-s-t-s rồi texts. Một số cụm khó được người bản xứ đọc rút gọn khi nói nhanh.",
+      "en": "English packs several consonants into one syllable. Street is one syllable, /striːt/, not su-tu-reet. Do not add vowels between the consonants. For final clusters such as texts, months and asked, practise slowly piece by piece and then join them. In fast speech, native speakers also simplify some difficult clusters."
+    },
+    "keywords": [
+      "cụm phụ âm",
+      "consonant cluster",
+      "street",
+      "texts",
+      "thêm âm"
+    ]
+  },
+  {
+    "id": "g-pr-j-ch",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Âm /dʒ/ và /tʃ/ như job, chair đọc thế nào?",
+      "en": "How do I say /dʒ/ and /tʃ/ as in job and chair?"
+    },
+    "answer": {
+      "vi": "Cả hai đều bắt đầu bằng lưỡi chạm lợi trên rồi bật ra thành âm xát, môi hơi tròn và đẩy ra trước. /tʃ/ không rung: chair, watch, kitchen. /dʒ/ có rung: job, age, bridge. Chúng không giống ch hay tr tiếng Việt. Ở cuối từ như age, watch, người Việt hay bỏ âm; hãy giữ âm xát nghe rõ. Luyện: cheap / jeep, rich / ridge.",
+      "en": "Both start with the tongue on the ridge behind the top teeth and release into a hiss, with lips rounded and pushed forward. /tʃ/ is voiceless: chair, watch, kitchen. /dʒ/ is voiced: job, age, bridge. Neither matches the Vietnamese ch or tr. Learners often drop them at the end of age or watch; keep the hiss audible. Practise: cheap / jeep, rich / ridge."
+    },
+    "keywords": [
+      "dʒ",
+      "tʃ",
+      "job chair",
+      "âm ch",
+      "âm j"
+    ]
+  },
+  {
+    "id": "g-pr-silent-letters",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Những chữ câm thường gặp trong tiếng Anh là gì?",
+      "en": "What are common silent letters in English?"
+    },
+    "answer": {
+      "vi": "Một số chữ viết nhưng không đọc: k trong know, knife; w trong write, wrong; b trong comb, climb, doubt; h trong hour, honest; s trong island; l trong walk, talk, should; t trong listen, castle. Vì thế cách viết không luôn cho biết cách đọc; hãy nghe phát âm từng từ thay vì đọc theo mặt chữ.",
+      "en": "Some letters are written but not said: k in know and knife; w in write and wrong; b in comb, climb and doubt; h in hour and honest; s in island; l in walk, talk and should; t in listen and castle. Spelling does not always show pronunciation, so listen to each word instead of reading it letter by letter."
+    },
+    "keywords": [
+      "chữ câm",
+      "silent letter",
+      "know",
+      "hour",
+      "island"
+    ]
+  },
+  {
+    "id": "g-pr-teen-ty",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Phân biệt thirteen và thirty khi nghe nói thế nào?",
+      "en": "How do I tell thirteen from thirty?"
+    },
+    "answer": {
+      "vi": "Các số -teen nhấn âm sau và kéo dài /tiːn/: thirTEEN, fourTEEN, fifTEEN. Các số -ty nhấn âm đầu, âm sau ngắn: THIRty, FORty, FIFty; trong Anh Mỹ, t giữa hai nguyên âm còn đọc lướt gần như d. Khi nói giá tiền hay số phòng, hãy nhấn đúng chỗ, và nếu cần thì nói thêm: thirteen, one-three.",
+      "en": "-teen numbers stress the second syllable and lengthen it, /tiːn/: thirTEEN, fourTEEN, fifTEEN. -ty numbers stress the first syllable, with a short ending: THIRty, FORty, FIFty; in American English the t between vowels is often a quick d-like sound. For prices or room numbers, stress correctly, and if needed add: thirteen, one-three."
+    },
+    "keywords": [
+      "thirteen thirty",
+      "số đếm",
+      "teen ty",
+      "numbers pronunciation"
+    ]
+  },
+  {
+    "id": "g-pr-can-cant",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Làm sao nghe phân biệt can và can't?",
+      "en": "How do I hear the difference between can and can't?"
+    },
+    "answer": {
+      "vi": "Trong câu, can thường đọc yếu /kən/ và động từ phía sau được nhấn: I kən SWIM. Còn can't được nhấn rõ, nguyên âm đầy đủ: Anh Mỹ /kænt/, Anh Anh /kɑːnt/, và âm t cuối có thể rất nhẹ: I CAN'T swim. Vì vậy hãy dựa vào trọng âm và độ dài nguyên âm, không chỉ chờ âm t.",
+      "en": "In a sentence, can is usually weak, /kən/, and the verb after it carries the stress: I kən SWIM. Can't is stressed with a full vowel, /kænt/ in American and /kɑːnt/ in British English, and its final t can be very light: I CAN'T swim. So listen for stress and vowel length, not only the t."
+    },
+    "keywords": [
+      "can can't",
+      "cannot",
+      "phân biệt can",
+      "nghe can't"
+    ]
+  },
+  {
+    "id": "g-pr-wont-want",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Won't và want đọc khác nhau thế nào?",
+      "en": "How are won't and want different?"
+    },
+    "answer": {
+      "vi": "Won't là will not, có nguyên âm đôi: /wəʊnt/ (Anh Anh) hay /woʊnt/ (Anh Mỹ), vần với don't. Want có nguyên âm đơn: /wɒnt/ (Anh Anh) hay /wɑːnt/ (Anh Mỹ). Nhầm hai từ làm đổi hẳn nghĩa: I won't go là tôi sẽ không đi, còn I want to go là tôi muốn đi. Mẹo: nếu nói được don't thì thay d bằng w là ra won't.",
+      "en": "Won't means will not and has a diphthong: /wəʊnt/ (British) or /woʊnt/ (American), rhyming with don't. Want has a single vowel: /wɒnt/ (British) or /wɑːnt/ (American). Mixing them up reverses the meaning: I won't go means I will not go, while I want to go means I would like to. Tip: say don't, then swap d for w to get won't."
+    },
+    "keywords": [
+      "won't want",
+      "will not",
+      "don't",
+      "phân biệt won't"
+    ]
+  },
+  {
+    "id": "g-pr-uk-us",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Giọng Anh Anh và Anh Mỹ khác nhau thế nào?",
+      "en": "How do British and American pronunciation differ?"
+    },
+    "answer": {
+      "vi": "Vài khác biệt chính: Anh Mỹ đọc r sau nguyên âm (car, water), Anh Anh thường không; Anh Anh đọc /ɑː/ trong bath, dance, can't, Anh Mỹ đọc /æ/; Anh Mỹ đọc t giữa hai nguyên âm gần như d (water, city); hot là /ɒ/ ở Anh và /ɑː/ ở Mỹ. Cả hai đều đúng. Trong Cài đặt, bạn chọn được giọng đọc Anh Mỹ hoặc Anh Anh cho app.",
+      "en": "Some main differences: American English pronounces r after vowels (car, water) and British usually does not; British has /ɑː/ in bath, dance and can't where American has /æ/; American turns t between vowels into a quick d-like sound (water, city); hot has /ɒ/ in Britain and /ɑː/ in America. Both are correct. In Settings you can choose an American or British voice for the app."
+    },
+    "keywords": [
+      "Anh Anh Anh Mỹ",
+      "British American",
+      "accent",
+      "giọng Mỹ",
+      "giọng Anh"
+    ]
+  },
+  {
+    "id": "g-pr-ipa",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Đọc phiên âm IPA thế nào?",
+      "en": "How do I read IPA transcription?"
+    },
+    "answer": {
+      "vi": "IPA ghi mỗi âm bằng một ký hiệu, nên đọc được IPA là đọc đúng từ mới mà không cần đoán. Dấu ˈ đặt trước âm tiết nhấn chính, dấu ˌ trước âm tiết nhấn phụ, dấu ː chỉ nguyên âm dài: /ˈwɔːtə/. Ký hiệu cần học trước: /θ ð ʃ ʒ tʃ dʒ ŋ/ và các nguyên âm /iː ɪ æ e ə uː ʊ/. Nhiều thẻ từ trong app có IPA và nút nghe phát âm.",
+      "en": "IPA gives each sound its own symbol, so reading it means saying new words correctly without guessing. ˈ comes before the main stressed syllable, ˌ before a secondary one, and ː marks a long vowel: /ˈwɔːtə/. Learn these first: /θ ð ʃ ʒ tʃ dʒ ŋ/ and the vowels /iː ɪ æ e ə uː ʊ/. Many word cards in the app show IPA and have a listen button."
+    },
+    "keywords": [
+      "IPA",
+      "phiên âm",
+      "ký hiệu phát âm",
+      "transcription",
+      "đọc phiên âm"
+    ]
+  },
+  {
+    "id": "g-pr-homophones",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Từ đồng âm khác nghĩa là gì?",
+      "en": "What are homophones?"
+    },
+    "answer": {
+      "vi": "Đó là những từ đọc giống nhau nhưng viết và nghĩa khác: there / their / they're, right / write, hear / here, two / to / too, know / no, whole / hole, weather / whether. Khi nghe, bạn dựa vào ngữ cảnh để hiểu; khi viết, phải chọn đúng chữ. Đây cũng là lỗi chính tả hay gặp trong bài viết.",
+      "en": "They are words that sound the same but have different spellings and meanings: there / their / they're, right / write, hear / here, two / to / too, know / no, whole / hole, weather / whether. When listening, context tells you which one is meant; when writing, choose the right spelling. They are a frequent spelling mistake in essays."
+    },
+    "keywords": [
+      "đồng âm",
+      "homophone",
+      "their there",
+      "to too two"
+    ]
+  },
+  {
+    "id": "g-pr-practice",
+    "category": "pronunciation",
+    "question": {
+      "vi": "Luyện phát âm trong EnglishUp thế nào?",
+      "en": "How do I practise pronunciation in EnglishUp?"
+    },
+    "answer": {
+      "vi": "Vào Luyện nói, chọn Đọc và nhại mẫu: nghe câu mẫu, ghi âm, nghe lại và so sánh. Nếu bật nhận dạng giọng nói (chủ yếu trên Chrome và Edge), app so khớp lời bạn với câu mẫu. Trên thẻ từ vựng, bấm nút loa để nghe từ. Trong Cài đặt, giảm tốc độ đọc để nghe rõ hơn. Mỗi ngày luyện 5 phút với các cặp âm dễ nhầm sẽ hiệu quả hơn luyện dồn.",
+      "en": "Open Speaking and choose Read and shadow: listen to the model, record yourself, listen back and compare. If you turn on speech recognition (mainly in Chrome and Edge), the app matches your words to the model. On word cards, press the speaker button to hear the word. In Settings, slow the reading speed to hear more clearly. Five minutes a day on confusing sound pairs beats one long session."
+    },
+    "keywords": [
+      "luyện phát âm",
+      "shadowing",
+      "nhại",
+      "practise pronunciation",
+      "ghi âm"
+    ]
+  },
+  {
+    "id": "g-wr-task2-types",
+    "category": "writing",
+    "question": {
+      "vi": "IELTS Writing Task 2 có những dạng đề nào?",
+      "en": "What types of IELTS Task 2 questions are there?"
+    },
+    "answer": {
+      "vi": "Các dạng thường gặp: Opinion (Agree or disagree, nêu quan điểm của bạn), Discussion (Discuss both views, bàn cả hai phía rồi nêu ý mình), Advantages and disadvantages, Problem and solution (hoặc Cause and solution), và Two-part question (hai câu hỏi riêng). Đọc kỹ đề để trả lời đủ mọi phần, vì bỏ sót một phần sẽ bị trừ điểm Task Response.",
+      "en": "Common types: Opinion (agree or disagree), Discussion (discuss both views and give your own), Advantages and disadvantages, Problem and solution (or cause and solution), and Two-part questions. Read the question carefully and answer every part, because missing one costs Task Response marks."
+    },
+    "keywords": [
+      "dạng đề",
+      "question types",
+      "opinion essay",
+      "discussion essay",
+      "advantages disadvantages"
+    ]
+  },
+  {
+    "id": "g-wr-introduction",
+    "category": "writing",
+    "question": {
+      "vi": "Viết mở bài Task 2 thế nào?",
+      "en": "How do I write a Task 2 introduction?"
+    },
+    "answer": {
+      "vi": "Mở bài chỉ cần 2 câu: câu đầu diễn đạt lại đề bằng từ của bạn, câu sau nêu rõ quan điểm hoặc hướng triển khai (thesis). Ví dụ đề Many people think children should start school earlier: Some argue that children benefit from starting formal education at a younger age. I partly agree, as early schooling helps literacy but may limit play. Đừng chép nguyên câu đề.",
+      "en": "Two sentences are enough: first paraphrase the question in your own words, then state your position or plan (the thesis). For a question on starting school earlier: Some argue that children benefit from starting formal education at a younger age. I partly agree, as early schooling helps literacy but may limit play. Never copy the question word for word."
+    },
+    "keywords": [
+      "mở bài",
+      "introduction",
+      "thesis statement",
+      "câu quan điểm"
+    ]
+  },
+  {
+    "id": "g-wr-body",
+    "category": "writing",
+    "question": {
+      "vi": "Viết đoạn thân bài thế nào cho chặt chẽ?",
+      "en": "How do I write a strong body paragraph?"
+    },
+    "answer": {
+      "vi": "Dùng khung PEEL: Point (câu chủ đề nêu một ý chính), Explain (giải thích vì sao), Example (ví dụ cụ thể, số liệu hay tình huống) và Link (câu nối lại với quan điểm). Mỗi đoạn chỉ phát triển một ý cho thật sâu, tốt hơn liệt kê nhiều ý hời hợt. Một đoạn thân bài Task 2 thường dài 4–6 câu.",
+      "en": "Use PEEL: Point (a topic sentence with one main idea), Explain (why it is true), Example (a concrete case, figure or situation) and Link (tie it back to your position). Develop one idea deeply rather than listing many shallow ones. A Task 2 body paragraph is usually 4–6 sentences."
+    },
+    "keywords": [
+      "thân bài",
+      "body paragraph",
+      "PEEL",
+      "topic sentence",
+      "câu chủ đề"
+    ]
+  },
+  {
+    "id": "g-wr-conclusion",
+    "category": "writing",
+    "question": {
+      "vi": "Kết luận bài luận viết thế nào?",
+      "en": "How do I write a conclusion?"
+    },
+    "answer": {
+      "vi": "Kết luận nhắc lại quan điểm bằng cách diễn đạt khác và tóm tắt hai ý chính, trong 2–3 câu. Mở đầu bằng In conclusion hoặc To conclude. Không đưa ý mới hay ví dụ mới vào kết luận. Nếu sắp hết giờ, một kết luận ngắn vẫn tốt hơn là không có, vì thiếu kết luận làm bài thiếu mạch lạc.",
+      "en": "A conclusion restates your position in new words and sums up the two main ideas in 2–3 sentences. Begin with In conclusion or To conclude. Do not add new ideas or examples. If time is short, a brief conclusion is still better than none, because a missing conclusion weakens coherence."
+    },
+    "keywords": [
+      "kết luận",
+      "conclusion",
+      "in conclusion",
+      "kết bài"
+    ]
+  },
+  {
+    "id": "g-wr-task1-academic",
+    "category": "writing",
+    "question": {
+      "vi": "Bài Task 1 Academic (biểu đồ) viết thế nào?",
+      "en": "How do I write Academic Task 1 (charts)?"
+    },
+    "answer": {
+      "vi": "Task 1 Academic cần ít nhất 150 từ trong khoảng 20 phút, mô tả biểu đồ, bảng, bản đồ hoặc quy trình. Bố cục: một câu mở bài diễn đạt lại đề, một đoạn tổng quan (overview) nêu 2 đặc điểm nổi bật nhất, rồi hai đoạn chi tiết so sánh số liệu. Chỉ mô tả và so sánh, không đưa ý kiến cá nhân hay giải thích nguyên nhân.",
+      "en": "Academic Task 1 needs at least 150 words in about 20 minutes, describing a chart, table, map or process. Structure: one sentence paraphrasing the task, an overview giving the two most striking features, then two detail paragraphs comparing figures. Only describe and compare; give no personal opinion and do not explain causes."
+    },
+    "keywords": [
+      "task 1",
+      "biểu đồ",
+      "chart",
+      "graph",
+      "academic writing",
+      "line graph"
+    ]
+  },
+  {
+    "id": "g-wr-overview",
+    "category": "writing",
+    "question": {
+      "vi": "Overview trong Task 1 là gì?",
+      "en": "What is the overview in Task 1?"
+    },
+    "answer": {
+      "vi": "Overview là đoạn tóm tắt những xu hướng hoặc điểm khác biệt nổi bật nhất, không kèm số liệu chi tiết. Ví dụ: Overall, the number of cars rose steadily, while bicycle use fell, and cars remained the most popular option. Thiếu overview là lỗi phổ biến và khó đạt điểm cao ở tiêu chí Task Achievement.",
+      "en": "The overview sums up the most important trends or differences without detailed figures. For example: Overall, the number of cars rose steadily, while bicycle use fell, and cars remained the most popular option. Leaving it out is a common mistake and makes a high Task Achievement score unlikely."
+    },
+    "keywords": [
+      "overview",
+      "tổng quan",
+      "overall",
+      "task achievement"
+    ]
+  },
+  {
+    "id": "g-wr-trends",
+    "category": "writing",
+    "question": {
+      "vi": "Từ vựng mô tả xu hướng trong biểu đồ là gì?",
+      "en": "What words describe trends in a chart?"
+    },
+    "answer": {
+      "vi": "Tăng: rise, increase, grow, climb; giảm: fall, decrease, decline, drop; dao động: fluctuate; giữ nguyên: remain stable, level off; đạt đỉnh: peak at, reach a high of; chạm đáy: hit a low of. Mức độ: sharply, dramatically (mạnh), steadily, gradually (đều, từ từ), slightly (nhẹ). Có thể dùng danh từ: a sharp rise in sales, a gradual decline.",
+      "en": "Up: rise, increase, grow, climb; down: fall, decrease, decline, drop; up and down: fluctuate; no change: remain stable, level off; highest: peak at, reach a high of; lowest: hit a low of. Degree: sharply, dramatically (strong), steadily, gradually (even), slightly (small). Nouns work too: a sharp rise in sales, a gradual decline."
+    },
+    "keywords": [
+      "xu hướng",
+      "trend vocabulary",
+      "tăng giảm",
+      "rise fall",
+      "biểu đồ đường"
+    ]
+  },
+  {
+    "id": "g-wr-task1-process",
+    "category": "writing",
+    "question": {
+      "vi": "Mô tả quy trình (process) trong Task 1 thế nào?",
+      "en": "How do I describe a process in Task 1?"
+    },
+    "answer": {
+      "vi": "Dùng thì hiện tại đơn bị động vì người đọc quan tâm việc gì xảy ra, không phải ai làm: The leaves are picked, then they are dried. Nối các bước bằng first, next, after that, once, finally. Phần tổng quan nêu quy trình có bao nhiêu bước, bắt đầu và kết thúc ở đâu. Mô tả đủ mọi bước theo đúng thứ tự, không thêm ý kiến.",
+      "en": "Use the present simple passive, since the reader cares what happens rather than who does it: The leaves are picked, then they are dried. Join the stages with first, next, after that, once and finally. The overview says how many stages there are and where the process starts and ends. Cover every stage in order and add no opinions."
+    },
+    "keywords": [
+      "process",
+      "quy trình",
+      "sơ đồ",
+      "passive",
+      "task 1 process"
+    ]
+  },
+  {
+    "id": "g-wr-task1-compare",
+    "category": "writing",
+    "question": {
+      "vi": "So sánh số liệu trong Task 1 thế nào?",
+      "en": "How do I compare figures in Task 1?"
+    },
+    "answer": {
+      "vi": "Dùng so sánh hơn và nhất (higher than, the largest share), số lần (twice as many as, three times as much as), sự giống nhau (the same as, similar to) và tương phản trong một câu (whereas, while). Ước lượng khi cần: just over, nearly, roughly. Dùng tỉ lệ: a quarter, a third, the majority, a small minority. Chọn số liệu nổi bật để so sánh thay vì liệt kê mọi con số.",
+      "en": "Use comparatives and superlatives (higher than, the largest share), multiples (twice as many as, three times as much as), similarity (the same as, similar to) and contrast in one sentence (whereas, while). Approximate when useful: just over, nearly, roughly. Use proportions: a quarter, a third, the majority, a small minority. Compare the key figures rather than listing every number."
+    },
+    "keywords": [
+      "so sánh số liệu",
+      "compare data",
+      "twice as many",
+      "the majority",
+      "bảng số liệu"
+    ]
+  },
+  {
+    "id": "g-wr-letter",
+    "category": "writing",
+    "question": {
+      "vi": "Viết thư trong General Training Task 1 thế nào?",
+      "en": "How do I write a General Training Task 1 letter?"
+    },
+    "answer": {
+      "vi": "Thư cần ít nhất 150 từ, trả lời đủ 3 gạch đầu dòng của đề. Xác định giọng văn: trang trọng (gửi công ty, người lạ: Dear Sir or Madam, kết bằng Yours faithfully; biết tên: Dear Mr Lam, kết bằng Yours sincerely), hoặc thân mật (gửi bạn: Dear Nam, kết bằng Best wishes). Câu đầu nêu ngay mục đích viết thư.",
+      "en": "The letter needs at least 150 words and must cover all three bullet points. Choose the tone: formal for a company or stranger (Dear Sir or Madam ... Yours faithfully; with a name, Dear Mr Lam ... Yours sincerely) or informal for a friend (Dear Nam ... Best wishes). State your purpose in the first sentence."
+    },
+    "keywords": [
+      "viết thư",
+      "letter",
+      "general training",
+      "Yours faithfully",
+      "Yours sincerely"
+    ]
+  },
+  {
+    "id": "g-wr-paraphrase",
+    "category": "writing",
+    "question": {
+      "vi": "Paraphrase (diễn đạt lại) thế nào?",
+      "en": "How do I paraphrase?"
+    },
+    "answer": {
+      "vi": "Ba cách chính: đổi từ đồng nghĩa (important thành crucial), đổi loại từ (people are worried about pollution thành pollution is a growing concern) và đổi cấu trúc câu (chủ động sang bị động, mệnh đề sang cụm danh từ). Giữ đúng nghĩa gốc, đừng thay từ máy móc. Nhóm Từ đồng nghĩa nâng cao trong trang Từ vựng giúp bạn có thêm lựa chọn.",
+      "en": "Three main ways: use synonyms (important becomes crucial), change word forms (people are worried about pollution becomes pollution is a growing concern) and change the structure (active to passive, a clause to a noun phrase). Keep the original meaning and avoid mechanical swaps. The Advanced synonyms section on the Vocabulary page gives you more options."
+    },
+    "keywords": [
+      "paraphrase",
+      "diễn đạt lại",
+      "viết lại câu",
+      "synonyms",
+      "đồng nghĩa"
+    ]
+  },
+  {
+    "id": "g-wr-link-addition",
+    "category": "writing",
+    "question": {
+      "vi": "Từ nối để thêm ý là gì?",
+      "en": "Which linking words add an idea?"
+    },
+    "answer": {
+      "vi": "Đầu câu: Furthermore, Moreover, In addition, Additionally, theo sau là dấu phẩy: In addition, public transport reduces traffic. Giữa câu: and, as well as, not only ... but also. Also thường đứng trước động từ thường: It also saves money. Dùng vừa phải, vì đoạn văn mạch lạc nhờ ý nối tiếp, không phải nhờ nhiều từ nối.",
+      "en": "At the start of a sentence: Furthermore, Moreover, In addition, Additionally, followed by a comma: In addition, public transport reduces traffic. Inside a sentence: and, as well as, not only ... but also. Also usually goes before the main verb: It also saves money. Use them sparingly; flow comes from connected ideas, not from many linkers."
+    },
+    "keywords": [
+      "từ nối",
+      "linking words",
+      "furthermore",
+      "moreover",
+      "in addition"
+    ]
+  },
+  {
+    "id": "g-wr-link-contrast",
+    "category": "writing",
+    "question": {
+      "vi": "Từ nối chỉ sự tương phản dùng thế nào?",
+      "en": "How do I use contrast linkers?"
+    },
+    "answer": {
+      "vi": "However và Nevertheless đứng đầu câu mới, theo sau là dấu phẩy: Cars are convenient. However, they pollute the air. Although và Even though nối hai mệnh đề trong một câu: Although cars are convenient, they pollute the air. Whereas và while so sánh hai đối tượng. Despite và In spite of đi với danh từ hoặc V-ing: Despite the rain, we went out. Không dùng although cùng but trong một câu.",
+      "en": "However and Nevertheless start a new sentence with a comma: Cars are convenient. However, they pollute the air. Although and Even though join two clauses in one sentence: Although cars are convenient, they pollute the air. Whereas and while compare two things. Despite and In spite of take a noun or -ing: Despite the rain, we went out. Never use although and but together."
+    },
+    "keywords": [
+      "however",
+      "although",
+      "tương phản",
+      "contrast",
+      "despite"
+    ]
+  },
+  {
+    "id": "g-wr-link-cause",
+    "category": "writing",
+    "question": {
+      "vi": "Diễn đạt nguyên nhân và kết quả trong bài viết thế nào?",
+      "en": "How do I express cause and effect in writing?"
+    },
+    "answer": {
+      "vi": "Nguyên nhân: because + mệnh đề (because prices rose), because of / due to + danh từ (due to rising prices). Kết quả: so, therefore, as a result, consequently: Prices rose; as a result, sales fell. Động từ hữu ích: lead to, result in, cause, contribute to. Đừng bắt đầu câu bằng Because rồi bỏ lửng, vì đó là câu chưa hoàn chỉnh.",
+      "en": "Cause: because + clause (because prices rose), because of / due to + noun (due to rising prices). Effect: so, therefore, as a result, consequently: Prices rose; as a result, sales fell. Useful verbs: lead to, result in, cause, contribute to. Do not start a sentence with Because and leave it unfinished; that is a fragment."
+    },
+    "keywords": [
+      "nguyên nhân kết quả",
+      "cause effect",
+      "therefore",
+      "as a result",
+      "due to"
+    ]
+  },
+  {
+    "id": "g-wr-examples",
+    "category": "writing",
+    "question": {
+      "vi": "Đưa ví dụ trong bài viết thế nào?",
+      "en": "How do I give examples in writing?"
+    },
+    "answer": {
+      "vi": "For example và For instance thường đứng đầu câu, theo sau là mệnh đề đầy đủ: For example, many students study abroad. Such as đứng giữa câu, theo sau là danh từ: subjects such as maths and science. Ví dụ tốt phải cụ thể: một tình huống, một nhóm người, một con số giả định hợp lý, thay vì chỉ nhắc lại ý chính.",
+      "en": "For example and For instance usually start a sentence followed by a full clause: For example, many students study abroad. Such as sits inside a sentence and is followed by nouns: subjects such as maths and science. A good example is specific: a situation, a group of people or a plausible figure, not just the main idea repeated."
+    },
+    "keywords": [
+      "ví dụ",
+      "for example",
+      "such as",
+      "for instance",
+      "giving examples"
+    ]
+  },
+  {
+    "id": "g-wr-overuse-linkers",
+    "category": "writing",
+    "question": {
+      "vi": "Dùng nhiều từ nối có giúp tăng điểm không?",
+      "en": "Do more linking words raise my score?"
+    },
+    "answer": {
+      "vi": "Không. Dùng từ nối máy móc ở đầu mọi câu (Firstly, Secondly, Moreover, Furthermore...) làm bài nặng nề và giám khảo đánh giá thấp tiêu chí Coherence and Cohesion. Hãy nối ý bằng nhiều cách: đại từ (this, these), từ thay thế (this problem, such measures) và trình tự ý hợp lý. Chọn từ nối đúng nghĩa quan trọng hơn dùng từ nối hiếm.",
+      "en": "No. Putting a linker at the start of every sentence (Firstly, Secondly, Moreover, Furthermore...) feels mechanical and lowers Coherence and Cohesion. Connect ideas in several ways: pronouns (this, these), referring phrases (this problem, such measures) and a logical order. Choosing the right linker matters more than using a rare one."
+    },
+    "keywords": [
+      "lạm dụng từ nối",
+      "too many linkers",
+      "cohesion",
+      "coherence"
+    ]
+  },
+  {
+    "id": "g-wr-collocations",
+    "category": "writing",
+    "question": {
+      "vi": "Dùng collocation thế nào để tăng điểm từ vựng?",
+      "en": "How do collocations help my vocabulary score?"
+    },
+    "answer": {
+      "vi": "Collocation là các từ hay đi cùng nhau tự nhiên, như reduce carbon emissions, pursue higher education. Dùng đúng collocation giúp bài nghe tự nhiên và tăng điểm Lexical Resource. Học theo cụm, kèm câu ví dụ, và chỉ dùng cụm bạn hiểu chắc. Nhóm Collocation IELTS Writing trong trang Từ vựng có 1.070 cụm theo 18 chủ đề và ba mức A2, B2, C1.",
+      "en": "Collocations are words that naturally go together, such as reduce carbon emissions or pursue higher education. Using them correctly makes writing sound natural and raises Lexical Resource. Learn whole phrases with example sentences and use only those you are sure of. The IELTS Writing collocations section on the Vocabulary page has 1,070 phrases in 18 topics at A2, B2 and C1."
+    },
+    "keywords": [
+      "collocation",
+      "lexical resource",
+      "từ vựng IELTS",
+      "cụm từ",
+      "điểm từ vựng"
+    ]
+  },
+  {
+    "id": "g-wr-criteria",
+    "category": "writing",
+    "question": {
+      "vi": "IELTS Writing được chấm theo những tiêu chí nào?",
+      "en": "What are the IELTS Writing marking criteria?"
+    },
+    "answer": {
+      "vi": "Có 4 tiêu chí ngang nhau: Task Achievement (Task 1) hoặc Task Response (Task 2), tức trả lời đúng và đủ đề; Coherence and Cohesion, tức bố cục mạch lạc, chia đoạn và liên kết ý; Lexical Resource, tức vốn từ đa dạng và chính xác; Grammatical Range and Accuracy, tức cấu trúc câu đa dạng và ít lỗi. Kết quả của EnglishUp chỉ là gợi ý, không phải điểm IELTS chính thức.",
+      "en": "There are four equal criteria: Task Achievement (Task 1) or Task Response (Task 2), answering the task fully; Coherence and Cohesion, clear organisation, paragraphs and linked ideas; Lexical Resource, a varied and accurate vocabulary; and Grammatical Range and Accuracy, varied sentences with few errors. EnglishUp's feedback is guidance only, not an official IELTS score."
+    },
+    "keywords": [
+      "tiêu chí chấm",
+      "band descriptors",
+      "marking criteria",
+      "chấm điểm IELTS",
+      "task response"
+    ]
+  },
+  {
+    "id": "g-wr-word-count",
+    "category": "writing",
+    "question": {
+      "vi": "Viết thiếu hoặc thừa số từ có sao không?",
+      "en": "Does writing too few or too many words matter?"
+    },
+    "answer": {
+      "vi": "Viết dưới 150 từ (Task 1) hoặc 250 từ (Task 2) có thể bị trừ điểm. Viết quá dài cũng không được cộng điểm, mà dễ thêm lỗi và tốn thời gian của Task còn lại. Mức hợp lý là khoảng 170–190 từ cho Task 1 và 260–300 từ cho Task 2. Hãy tập viết đủ trong thời gian thật: 20 phút cho Task 1, 40 phút cho Task 2.",
+      "en": "Fewer than 150 words (Task 1) or 250 words (Task 2) can lose marks. Writing far more earns nothing extra, adds chances for errors and steals time from the other task. Aim for about 170–190 words in Task 1 and 260–300 in Task 2, and practise under real timing: 20 minutes for Task 1 and 40 for Task 2."
+    },
+    "keywords": [
+      "số từ",
+      "word count",
+      "150 từ",
+      "250 từ",
+      "thời gian làm bài"
+    ]
+  },
+  {
+    "id": "g-wr-formal-style",
+    "category": "writing",
+    "question": {
+      "vi": "Văn phong học thuật cần tránh những gì?",
+      "en": "What should I avoid in academic style?"
+    },
+    "answer": {
+      "vi": "Tránh dạng rút gọn (don't, can't, viết đầy đủ do not, cannot), tiếng lóng và từ quá thân mật (kids, stuff, a lot of có thể thay bằng children, things, many), câu hỏi tu từ và dấu chấm than. Hạn chế gọi người đọc là you; dùng people, individuals hoặc one. Trong bài nêu quan điểm, I believe hay In my view vẫn được dùng, chỉ cần đừng lặp lại quá nhiều.",
+      "en": "Avoid contractions (write do not, cannot), slang and very informal words (replace kids, stuff and a lot of with children, things and many), rhetorical questions and exclamation marks. Limit addressing the reader as you; use people, individuals or one. In opinion essays, I believe or In my view is fine, just do not repeat it too often."
+    },
+    "keywords": [
+      "văn phong học thuật",
+      "formal writing",
+      "academic style",
+      "contractions",
+      "tránh"
+    ]
+  },
+  {
+    "id": "g-wr-complex-sentences",
+    "category": "writing",
+    "question": {
+      "vi": "Làm sao dùng câu phức để tăng điểm ngữ pháp?",
+      "en": "How can complex sentences raise my grammar score?"
+    },
+    "answer": {
+      "vi": "Kết hợp câu đơn với câu phức: mệnh đề quan hệ (Students who study abroad...), câu điều kiện (If governments invested more, ...), mệnh đề nhượng bộ (Although ..., ...), câu bị động (Laws should be introduced...) và cụm phân từ (Having finished school, many...). Độ chính xác quan trọng hơn độ dài: một câu phức sai làm mất điểm nhiều hơn hai câu đơn đúng.",
+      "en": "Mix simple sentences with complex ones: relative clauses (Students who study abroad...), conditionals (If governments invested more, ...), concession (Although ..., ...), the passive (Laws should be introduced...) and participle phrases (Having finished school, many...). Accuracy beats length: one faulty complex sentence costs more than two correct simple ones."
+    },
+    "keywords": [
+      "câu phức",
+      "complex sentences",
+      "grammatical range",
+      "mệnh đề quan hệ",
+      "điểm ngữ pháp"
+    ]
+  },
+  {
+    "id": "g-wr-hedging",
+    "category": "writing",
+    "question": {
+      "vi": "Hedging (nói giảm, thận trọng) trong bài viết là gì?",
+      "en": "What is hedging in writing?"
+    },
+    "answer": {
+      "vi": "Hedging là cách nói thận trọng để tránh khẳng định tuyệt đối, giúp lập luận đáng tin hơn. Dùng may, might, could; tend to; it is likely that; to some extent; many / some thay cho all. Ví dụ: thay All young people are addicted to phones bằng Many young people tend to spend too much time on their phones.",
+      "en": "Hedging means careful wording that avoids absolute claims, which makes your argument more credible. Use may, might, could; tend to; it is likely that; to some extent; many or some instead of all. For example, replace All young people are addicted to phones with Many young people tend to spend too much time on their phones."
+    },
+    "keywords": [
+      "hedging",
+      "nói giảm",
+      "thận trọng",
+      "tend to",
+      "khẳng định tuyệt đối"
+    ]
+  },
+  {
+    "id": "g-wr-proofreading",
+    "category": "writing",
+    "question": {
+      "vi": "Đọc soát bài viết nên kiểm tra những lỗi gì?",
+      "en": "What should I check when proofreading?"
+    },
+    "answer": {
+      "vi": "Kiểm tra theo danh sách: chia động từ theo chủ ngữ (he goes); đuôi -s số nhiều; mạo từ a, an, the; thì của động từ thống nhất; danh từ không đếm được (information, advice không thêm s); dấu câu sau từ nối; chính tả các từ đồng âm (their / there). Đọc chậm từng câu, tốt nhất là đọc thầm như đang nói.",
+      "en": "Use a checklist: subject-verb agreement (he goes); plural -s; articles a, an and the; consistent tenses; uncountable nouns (no s on information or advice); commas after linkers; and spelling of homophones (their / there). Read slowly sentence by sentence, ideally mouthing the words as if speaking."
+    },
+    "keywords": [
+      "soát lỗi",
+      "proofreading",
+      "kiểm tra bài",
+      "lỗi thường gặp",
+      "checklist"
+    ]
+  },
+  {
+    "id": "g-wr-paragraphing",
+    "category": "writing",
+    "question": {
+      "vi": "Chia đoạn trong bài viết thế nào cho đúng?",
+      "en": "How should I divide my writing into paragraphs?"
+    },
+    "answer": {
+      "vi": "Mỗi đoạn trình bày một ý chính và bắt đầu bằng câu chủ đề. Để dòng trống hoặc thụt đầu dòng giữa các đoạn cho rõ. Bài Task 2 thường có 4–5 đoạn; Task 1 có 3–4 đoạn. Tránh viết cả bài thành một khối, cũng tránh đoạn chỉ có một câu, vì cả hai đều làm giảm điểm Coherence and Cohesion.",
+      "en": "Each paragraph presents one main idea and opens with a topic sentence. Leave a blank line or indent between paragraphs so they are clear. A Task 2 essay usually has 4–5 paragraphs and Task 1 has 3–4. Avoid one big block of text and one-sentence paragraphs, since both lower Coherence and Cohesion."
+    },
+    "keywords": [
+      "chia đoạn",
+      "paragraphing",
+      "đoạn văn",
+      "paragraph"
+    ]
+  },
+  {
+    "id": "g-wr-in-app",
+    "category": "writing",
+    "question": {
+      "vi": "Luyện viết IELTS trong EnglishUp thế nào?",
+      "en": "How do I practise IELTS writing in EnglishUp?"
+    },
+    "answer": {
+      "vi": "Trang Luyện viết có 300 đề từ A1 đến C2, gồm thư, nghị luận, miêu tả và kể chuyện; bản nháp tự lưu và khi nộp có nhận xét tự động về số từ, danh sách yêu cầu và một số lỗi thường gặp. Kết hợp với nhóm Collocation IELTS Writing và Từ đồng nghĩa nâng cao ở trang Từ vựng. Bạn có thể hỏi Tom về bố cục, từ nối hay cách diễn đạt; nhận xét chỉ là gợi ý, không phải điểm IELTS.",
+      "en": "The Writing page has 300 tasks from A1 to C2, including emails, opinions, descriptions and stories; drafts save as you type and submitting gives automatic feedback on length, the checklist and some common mistakes. Combine it with the IELTS Writing collocations and Advanced synonyms on the Vocabulary page. Ask Tom about structure, linkers or phrasing; feedback is guidance, not an IELTS score."
+    },
+    "keywords": [
+      "luyện viết",
+      "IELTS writing practice",
+      "viết trong app",
+      "chấm bài",
+      "writing page"
+    ]
   }
 ]

@@ -172,6 +172,8 @@ export const guideCategories = {
   study: ['Mẹo học', 'Study tips'],
   words: ['Từ dễ nhầm', 'Confusing words'],
   phrases: ['Mẫu câu giao tiếp', 'Everyday phrases'],
+  pronunciation: ['Phát âm', 'Pronunciation'],
+  writing: ['Kỹ năng viết và IELTS Writing', 'Writing skills and IELTS Writing'],
 } as const satisfies Record<string, readonly [string, string]>;
 /** One answer the AI tutor gives: about EnglishUp itself, grammar mistakes Vietnamese learners make, and study tips. */
 export const guideSchema = z.object({

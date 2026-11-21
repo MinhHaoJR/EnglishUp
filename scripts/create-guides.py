@@ -1,6 +1,8 @@
-"""Writes src/data/guides.json: the AI tutor's guide, 110 entries: 50 about EnglishUp itself (2026-11-11),
-40 grammar mistakes Vietnamese learners often make and 20 study tips (2026-11-12), 40 confusing word
-pairs and 20 everyday situations with phrases (2026-11-18), all original.
+"""Writes src/data/guides.json: the AI tutor's guide, 230 entries: 55 about EnglishUp itself (2026-11-11,
+updated 2026-11-21 when the level test became the way in), 40 grammar mistakes Vietnamese learners often
+make and 20 study tips (2026-11-12), 40 confusing word pairs and 20 everyday situations with phrases
+(2026-11-18), 30 pronunciation entries and 25 on writing skills and IELTS Writing (2026-11-21, in
+guide_skills.py), all original.
 
 Each entry answers one thing learners ask the tutor: greetings and who the tutor is, what the app offers,
 the level test, the learning paths, how each practice page works, accounts and study habits. The facts
@@ -11,7 +13,8 @@ to ask (help retrieval). Run: python scripts/create-guides.py
 import json
 import pathlib
 
-CATEGORIES = ["greeting", "about", "placement", "roadmap", "practice", "account", "grammar", "study", "words", "phrases"]
+CATEGORIES = ["greeting", "about", "placement", "roadmap", "practice", "account", "grammar", "study", "words", "phrases",
+              "pronunciation", "writing"]
 
 G = [
     # ---------- greeting: small talk and who the tutor is ----------
@@ -48,22 +51,22 @@ G = [
      "Each account can ask 20 questions a day, reset at midnight Vietnam time. Deleting a conversation does not give questions back. Questions go to Google's free service, so do not type personal information.",
      ["giới hạn câu hỏi", "hết lượt hỏi", "daily limit", "tại sao không hỏi được nữa"]),
     ("start", "greeting", "Tôi không biết bắt đầu học từ đâu", "I don't know where to start",
-     "Bạn hãy làm Kiểm tra trình độ trước: 30 câu, khoảng 10 phút. Kết quả cho biết trình độ ước tính và mở lộ trình học phù hợp. Sau đó mỗi ngày làm theo Kế hoạch hôm nay ở trang Tổng quan, vì nó ưu tiên thẻ từ đến hạn và kỹ năng bạn ít luyện.",
-     "Start with the Level test: 30 questions, about ten minutes. The result estimates your level and opens the matching learning path. After that, follow Your plan for today on the Dashboard each day, which puts due word cards and your least-practised skills first.",
-     ["mới bắt đầu", "beginner", "học từ đâu", "người mới", "where should I begin"]),
+     "Lần đầu mở app, bạn sẽ được đưa thẳng tới bài Kiểm tra trình độ: 30 câu, khoảng 10 phút. Làm xong, app tự chọn lộ trình hợp với trình độ của bạn và mở mọi trang. Từ đó, mỗi ngày bấm Làm ngay ở thẻ Lộ trình của bạn trên trang Tổng quan, rồi theo Kế hoạch hôm nay để ôn thẻ từ đến hạn và kỹ năng bạn ít luyện.",
+     "The first time you open the app, it takes you straight to the Level test: 30 questions, about ten minutes. When you finish, the app picks the path for your level and opens every page. From then on, press Start now on the Your path card on the Dashboard each day, then follow Your plan for today for due word cards and the skills you practise least.",
+     ["mới bắt đầu", "beginner", "học từ đâu", "người mới", "where should I begin", "lần đầu dùng app"]),
 
     # ---------- about EnglishUp ----------
     ("what-is", "about", "EnglishUp là gì?", "What is EnglishUp?",
-     "EnglishUp là ứng dụng học tiếng Anh dành cho người Việt. App có: Từ vựng 2.491 từ với ôn tập ngắt quãng; Luyện nghe, Luyện nói, Luyện đọc, Luyện viết mỗi phần 300 bài từ A1 đến C2; Ngữ pháp với 100 cấu trúc câu và 13 thì; trò chơi đua 60 giây; Kiểm tra trình độ; Lộ trình học; điểm, huy hiệu và trợ giảng AI.",
-     "EnglishUp is an English learning app for Vietnamese speakers. It has Vocabulary with 2,491 words and spaced review; Listening, Speaking, Reading and Writing with 300 lessons each from A1 to C2; Grammar with 100 sentence patterns and 13 tenses; 60-second races; a Level test; Learning paths; points, badges and the AI tutor.",
+     "EnglishUp là ứng dụng học tiếng Anh dành cho người Việt. App có: Từ vựng 3.828 từ với ôn tập ngắt quãng, gồm 1.070 collocation IELTS Writing và 417 từ đồng nghĩa nâng cao; Luyện nghe, Luyện nói, Luyện đọc, Luyện viết mỗi phần 300 bài từ A1 đến C2; Ngữ pháp với 100 cấu trúc câu và 13 thì; trò chơi đua 60 giây; Kiểm tra trình độ bắt buộc lúc mới vào; lộ trình học riêng theo trình độ; điểm, huy hiệu và trợ giảng AI.",
+     "EnglishUp is an English learning app for Vietnamese speakers. It has Vocabulary with 3,828 words and spaced review, including 1,070 IELTS Writing collocations and 417 advanced synonyms; Listening, Speaking, Reading and Writing with 300 lessons each from A1 to C2; Grammar with 100 sentence patterns and 13 tenses; 60-second races; a Level test you take on your first visit; a learning path chosen for your level; points, badges and the AI tutor.",
      ["giới thiệu app", "about the app", "trang web này là gì", "app này dùng để làm gì", "website"]),
     ("sections", "about", "App có những phần nào?", "What sections does the app have?",
-     "Thanh bên trái có: Tổng quan, Lộ trình học, Kiểm tra trình độ; Từ vựng, Luyện nghe, Luyện nói, Luyện đọc, Luyện viết, Ngữ pháp; Trợ giảng Tom, Trò chơi, Thành tích, Cài đặt. Trợ giảng còn mở được từ nút tròn ở góc dưới bên phải mọi trang.",
-     "The left sidebar has: Dashboard, Learning paths, Level test; Vocabulary, Listening, Speaking, Reading, Writing, Grammar; Tutor Tom, Games, Achievements, Settings. The tutor also opens from the round button in the bottom-right corner of every page.",
+     "Thanh bên trái có: Tổng quan, Lộ trình học, Kiểm tra trình độ; Từ vựng, Luyện nghe, Luyện nói, Luyện đọc, Luyện viết, Ngữ pháp; Trợ giảng Tom, Trò chơi, Thành tích, Cài đặt. Các mục này mở ra sau khi bạn làm xong bài Kiểm tra trình độ lần đầu. Trợ giảng còn mở được từ nút tròn ở góc dưới bên phải mọi trang.",
+     "The left sidebar has: Dashboard, Learning paths, Level test; Vocabulary, Listening, Speaking, Reading, Writing, Grammar; Tutor Tom, Games, Achievements, Settings. They open once you have finished your first Level test. The tutor also opens from the round button in the bottom-right corner of every page.",
      ["menu", "các mục trong app", "trang nào", "navigation", "sidebar"]),
     ("account-needed", "about", "Có cần tạo tài khoản không?", "Do I need an account?",
-     "Không bắt buộc. Không đăng nhập bạn vẫn luyện mọi bài và tiến độ lưu trên trình duyệt. Tài khoản thêm: đồng bộ giữa các thiết bị, điểm và huy hiệu, bảng xếp hạng, hai trò chơi đua 60 giây và trợ giảng AI.",
-     "No. Without signing in you can practise every lesson, and progress stays in your browser. An account adds syncing across devices, points and badges, the leaderboard, the two 60-second races and Tutor Tom, the AI tutor.",
+     "Không bắt buộc. Không đăng nhập, bạn vẫn làm bài Kiểm tra trình độ, theo lộ trình và luyện mọi bài; tiến độ lưu trên trình duyệt. Tài khoản thêm: đồng bộ giữa các thiết bị (kể cả kết quả kiểm tra trình độ), điểm và huy hiệu, bảng xếp hạng, hai trò chơi đua 60 giây và trợ giảng AI.",
+     "No. Without signing in you can take the Level test, follow your path and practise every lesson, and progress stays in your browser. An account adds syncing across devices (including your level test result), points and badges, the leaderboard, the two 60-second races and Tutor Tom, the AI tutor.",
      ["đăng ký", "sign up", "tạo tài khoản", "có cần đăng nhập", "login"]),
     ("offline", "about", "Có học được khi không có mạng không?", "Can I study offline?",
      "Được. EnglishUp cài được như một ứng dụng. Sau lần mở đầu có mạng, bài học được lưu trên máy nên bạn luyện từ vựng, nghe, nói, đọc, viết và ngữ pháp khi mất mạng. Trò chơi, trợ giảng AI và đồng bộ tài khoản thì cần mạng.",
@@ -82,15 +85,27 @@ G = [
      "The lessons are written for EnglishUp, not copied from books or other websites. Admins can add, edit or hide lessons on the admin page, and changes reach you the next time you open the app.",
      ["nguồn bài học", "nội dung có bản quyền không", "ai viết bài", "lesson source"]),
     ("dashboard", "about", "Trang Tổng quan cho tôi biết gì?", "What does the Dashboard show?",
-     "Tổng quan hiện chuỗi ngày học, số phút luyện so với mục tiêu ngày, điểm trung bình từng kỹ năng, lịch sử luyện tập và Kế hoạch hôm nay. Kế hoạch ưu tiên thẻ từ đến hạn ôn, rồi kỹ năng bạn chưa thử, rồi kỹ năng có điểm gần đây thấp hoặc lâu chưa luyện.",
-     "The Dashboard shows your streak, practice minutes against your daily goal, each skill's average, your history and Your plan for today. The plan puts due word cards first, then skills you have not tried, then skills with low recent scores or long gaps.",
-     ["kế hoạch hôm nay", "daily plan", "streak", "chuỗi ngày học", "mục tiêu hằng ngày"]),
+     "Tổng quan mở đầu bằng thẻ Lộ trình của bạn: trình độ, tiến độ lộ trình và nhiệm vụ tiếp theo. Bên dưới là chuỗi ngày học, số phút luyện so với mục tiêu ngày, Kế hoạch hôm nay, điểm từng kỹ năng, tuần này và hoạt động gần đây. Kế hoạch ưu tiên thẻ từ đến hạn ôn, rồi kỹ năng bạn chưa thử, rồi kỹ năng có điểm gần đây thấp hoặc lâu chưa luyện.",
+     "The Dashboard opens with the Your path card: your level, your path's progress and the next task. Below are your streak, practice minutes against your daily goal, Your plan for today, each skill's score, this week and recent activity. The plan puts due word cards first, then skills you have not tried, then skills with low recent scores or long gaps.",
+     ["kế hoạch hôm nay", "daily plan", "streak", "chuỗi ngày học", "mục tiêu hằng ngày", "trang chủ"]),
 
     # ---------- placement: the level test ----------
     ("placement-what", "placement", "Bài kiểm tra trình độ là gì?", "What is the level test?",
-     "Kiểm tra trình độ có 30 câu trắc nghiệm, 5 câu cho mỗi cấp từ A1 đến C2: 3 câu ngữ pháp điền chỗ trống và 2 câu chọn nghĩa của từ. Câu hỏi đi từ dễ đến khó và được rút ngẫu nhiên từ kho bài của app.",
-     "The level test has 30 multiple-choice questions, 5 for each level from A1 to C2: 3 grammar blanks and 2 word meanings. They go from easy to hard and are drawn at random from the app's library.",
+     "Kiểm tra trình độ là bước đầu tiên khi vào EnglishUp: chưa làm thì mọi trang đều đưa bạn về bài này. Bài có 30 câu trắc nghiệm, 5 câu cho mỗi cấp từ A1 đến C2: 3 câu ngữ pháp điền chỗ trống và 2 câu chọn nghĩa của từ. Câu hỏi đi từ dễ đến khó, rút ngẫu nhiên từ kho bài, và không giới hạn thời gian.",
+     "The level test is your first step in EnglishUp: until you take it, every page leads you back to it. It has 30 multiple-choice questions, 5 for each level from A1 to C2: 3 grammar blanks and 2 word meanings. They go from easy to hard, are drawn at random from the library, and have no time limit.",
      ["kiểm tra trình độ", "placement test", "level test", "test đầu vào", "đánh giá trình độ"]),
+    ("placement-required", "placement", "Vì sao tôi phải làm bài kiểm tra trước khi vào app?", "Why must I take the level test before using the app?",
+     "Vì EnglishUp xếp mọi thứ theo trình độ của bạn. Kết quả bài kiểm tra chọn lộ trình học riêng, và nhiệm vụ trong lộ trình mở đúng bài ở đúng cấp. Nếu bỏ qua bước này, bạn dễ học bài quá dễ hoặc quá khó. Chỉ cần làm một lần; sau đó mọi trang đều mở và bạn làm lại lúc nào cũng được.",
+     "Because EnglishUp arranges everything around your level. The test result picks your own learning path, and its tasks open the right lessons at the right level. Without it, lessons can easily be too easy or too hard. You only need to take it once; after that every page opens, and you can retake it any time.",
+     ["bắt buộc", "tại sao phải kiểm tra", "không vào được app", "bị chuyển về bài kiểm tra", "required test"]),
+    ("placement-skip", "placement", "Tôi có bỏ qua bài kiểm tra trình độ được không?", "Can I skip the level test?",
+     "Không bỏ qua được cả bài, nhưng bạn bỏ qua từng câu được: câu nào không biết thì bấm Bỏ qua câu này, đừng đoán. Người mới học hoàn toàn cứ bỏ qua các câu khó; kết quả sẽ là chưa đạt A1 và bạn bắt đầu từ lộ trình A1 → A2. Bài không giới hạn thời gian.",
+     "You cannot skip the whole test, but you can skip single questions: press Skip this question when you do not know, rather than guessing. Complete beginners can skip the hard ones; the result will be below A1 and you start on the A1 → A2 path. There is no time limit.",
+     ["bỏ qua bài kiểm tra", "skip the test", "không muốn làm bài kiểm tra", "mới học không biết gì"]),
+    ("placement-other-device", "placement", "Tôi đã làm bài kiểm tra trên máy khác rồi", "I already took the level test on another device",
+     "Nếu lần trước bạn đã đăng nhập, hãy bấm Đã có tài khoản? Đăng nhập ở góc trên màn hình kiểm tra. Sau khi đồng bộ, kết quả cũ được tải về và app mở luôn, không phải làm lại. Nếu lần trước không đăng nhập, kết quả chỉ nằm trên máy cũ nên bạn cần làm lại bài.",
+     "If you were signed in last time, press Have an account? Sign in at the top of the test screen. After syncing, your earlier result comes back and the app opens without a retake. If you were not signed in, the result stayed on the old device, so take the test again.",
+     ["máy khác", "điện thoại khác", "đã làm rồi", "another device", "phải làm lại"]),
     ("placement-score", "placement", "Điểm và trình độ được tính thế nào?", "How are the score and level worked out?",
      "Điểm = số câu đúng / 30 × 100. Trình độ ước tính là cấp cao nhất mà bạn đúng ít nhất 3/5 câu ở chính cấp đó và ở mọi cấp thấp hơn. Vì vậy đoán trúng vài câu ở cấp cao sẽ không được tính nếu cấp thấp hơn chưa đạt.",
      "Score = right answers / 30 × 100. Your estimated level is the highest level where you got at least 3 of 5 right on it and on every level below it. So a few lucky guesses at a high level do not count if a lower level was not passed.",
@@ -100,20 +115,20 @@ G = [
      "If you get fewer than 3 of 5 right at A1, the result is below A1. You are still pointed to the A1 → A2 path, which starts with everyday vocabulary and basic communication. That is a normal starting point, nothing to worry about.",
      ["dưới A1", "chưa đạt", "điểm thấp", "below A1", "mất gốc"]),
     ("placement-retake", "placement", "Tôi có làm lại bài kiểm tra được không?", "Can I retake the level test?",
-     "Được, bạn làm lại bao nhiêu lần cũng được. Mỗi lần câu hỏi được rút ngẫu nhiên nên sẽ khác lần trước. App lưu kết quả mới nhất để gợi ý lộ trình. Nên làm lại sau khi xong một lộ trình để xem tiến bộ.",
-     "Yes, as often as you like. Questions are drawn at random each time, so they differ from the last attempt. The app keeps your latest result to suggest a path. Retake it after finishing a path to see your progress.",
+     "Được, bạn làm lại bao nhiêu lần cũng được, từ mục Kiểm tra trình độ ở thanh bên. Mỗi lần câu hỏi được rút ngẫu nhiên nên sẽ khác lần trước. Kết quả mới nhất sẽ chọn lại lộ trình theo trình độ mới; các nhiệm vụ bạn đã đánh dấu ở lộ trình cũ vẫn được giữ. Nên làm lại sau khi xong một lộ trình để xem tiến bộ.",
+     "Yes, as often as you like, from Level test in the sidebar. Questions are drawn at random each time, so they differ from the last attempt. Your latest result picks the path for your new level again, and the tasks you ticked on the old path are kept. Retake it after finishing a path to see your progress.",
      ["làm lại", "retake", "kiểm tra lại", "thi lại"]),
     ("placement-saved", "placement", "Kết quả kiểm tra trình độ được lưu ở đâu?", "Where is my level test result saved?",
-     "Kết quả được lưu như một lượt luyện ngữ pháp trong lịch sử của bạn và trong cài đặt. Nếu có tài khoản, kết quả được đồng bộ. Trang Kiểm tra trình độ hiển thị điểm, trình độ ước tính, thanh kết quả từng cấp và nút mở lộ trình phù hợp.",
-     "The result is saved as a grammar attempt in your history and in your settings, and synced if you have an account. The Level test page shows your score, estimated level, a bar for each level and a button to the matching path.",
+     "Kết quả được lưu như một lượt luyện ngữ pháp trong lịch sử và trong cài đặt của bạn, và được đồng bộ nếu có tài khoản. Màn kết quả cho thấy điểm, trình độ ước tính, thanh kết quả từng cấp và báo lộ trình đã được chọn cho bạn, kèm nút Xem lộ trình và Vào trang Tổng quan.",
+     "The result is saved as a grammar attempt in your history and in your settings, and synced if you have an account. The result screen shows your score, estimated level, a bar for each level and the path chosen for you, with buttons to open the path or go to the Dashboard.",
      ["xem lại kết quả", "lịch sử kiểm tra", "test result", "kết quả lưu"]),
     ("cefr", "placement", "A1, A2, B1, B2, C1, C2 là gì?", "What do A1 to C2 mean?",
      "Đó là sáu cấp của Khung tham chiếu châu Âu (CEFR). A1–A2 là sơ cấp: giao tiếp đơn giản về bản thân và đời sống. B1–B2 là trung cấp: xử lý tình huống quen thuộc, nêu ý kiến rõ ràng. C1–C2 là cao cấp: dùng tiếng Anh linh hoạt, chính xác, hiểu sắc thái. Mỗi bài trong app được gắn một cấp.",
      "They are the six levels of the Common European Framework (CEFR). A1–A2 are basic: simple communication about yourself and daily life. B1–B2 are intermediate: handling familiar situations and giving clear opinions. C1–C2 are advanced: flexible, precise English with nuance. Every lesson in the app has a level.",
      ["CEFR", "cấp độ", "trình độ là gì", "level meaning", "B1 là gì"]),
     ("placement-ielts", "placement", "Kết quả có quy đổi ra điểm IELTS không?", "Does the result convert to an IELTS score?",
-     "Không. Kết quả là ước tính để định hướng học trong EnglishUp, không phải chứng chỉ và không quy đổi chính xác sang IELTS hay TOEIC. Nếu bạn ôn IELTS, app có 150 cụm từ IELTS Writing, từ vựng thi và bài đọc, nghe C1–C2.",
-     "No. The result is an estimate to guide your study in EnglishUp, not a certificate, and it does not convert exactly to IELTS or TOEIC. If you are preparing for IELTS, the app has 150 IELTS Writing collocations, exam vocabulary and C1–C2 readings and listening.",
+     "Không. Kết quả là ước tính để định hướng học trong EnglishUp, không phải chứng chỉ và không quy đổi chính xác sang IELTS hay TOEIC. Nếu bạn ôn IELTS, app có 1.070 collocation IELTS Writing trong 18 chủ đề, 417 từ đồng nghĩa nâng cao để diễn đạt lại ý, từ vựng thi và bài đọc, nghe C1–C2.",
+     "No. The result is an estimate to guide your study in EnglishUp, not a certificate, and it does not convert exactly to IELTS or TOEIC. If you are preparing for IELTS, the app has 1,070 IELTS Writing collocations in 18 topics, 417 advanced synonyms for paraphrasing, exam vocabulary and C1–C2 readings and listening.",
      ["IELTS", "TOEIC", "chứng chỉ", "quy đổi", "band"]),
     ("placement-wrong", "placement", "Tôi thấy kết quả không đúng với trình độ của mình", "My result doesn't feel right",
      "Bài kiểm tra chỉ có 30 câu nên có thể lệch một cấp. Bạn có thể làm lại, hoặc chọn lộ trình mình thấy hợp hơn: chọn lộ trình thấp hơn nếu thấy bài quá khó, cao hơn nếu thấy quá dễ. Sau vài tuần luyện, hãy làm lại để kiểm tra.",
@@ -125,9 +140,13 @@ G = [
      "Có 5 lộ trình: A1 → A2, A2 → B1, B1 → B2, B2 → C1 và C1 → C2. Mỗi lộ trình có 4 chặng, mỗi chặng 3 nhiệm vụ, tổng 12 nhiệm vụ. Bấm một nhiệm vụ để mở đúng trang luyện ở đúng cấp, ví dụ bài đọc B1 hay cuộc đua ngữ pháp về các thì.",
      "There are 5 paths: A1 → A2, A2 → B1, B1 → B2, B2 → C1 and C1 → C2. Each has 4 stages of 3 tasks, 12 tasks in all. A task opens the right practice page at the right level, such as a B1 reading or a grammar race on tenses.",
      ["lộ trình", "roadmap", "learning path", "lộ trình học tập", "kế hoạch học"]),
+    ("roadmap-mine", "roadmap", "Thẻ Lộ trình của bạn trên trang Tổng quan là gì?", "What is the Your path card on the Dashboard?",
+     "Đó là lộ trình app chọn theo kết quả kiểm tra trình độ. Thẻ cho thấy trình độ của bạn, tên lộ trình, số nhiệm vụ đã xong trên 12 và nhiệm vụ tiếp theo. Bấm Làm ngay để mở đúng bài luyện ở đúng cấp của nhiệm vụ đó, và Xem cả lộ trình để xem mọi chặng. Đánh dấu xong nhiệm vụ ở trang Lộ trình học.",
+     "It is the path the app picked from your level test result. The card shows your level, the path's name, how many of its 12 tasks are done and the next task. Start now opens the right practice at that task's level, and See the whole path shows every stage. Tick tasks as done on the Learning paths page.",
+     ["lộ trình của tôi", "your path", "nhiệm vụ tiếp theo", "làm ngay", "next task"]),
     ("roadmap-choose", "roadmap", "Tôi nên chọn lộ trình nào?", "Which path should I choose?",
-     "Hãy chọn lộ trình bắt đầu từ trình độ của bạn. Làm Kiểm tra trình độ để app tự gợi ý: kết quả B1 sẽ gợi ý lộ trình B1 → B2, chưa đạt A1 sẽ gợi ý A1 → A2, còn đạt C2 thì giữ lộ trình C1 → C2 để duy trì.",
-     "Choose the path that starts at your level. Take the Level test and the app suggests one: a B1 result suggests B1 → B2, below A1 suggests A1 → A2, and a C2 result keeps the C1 → C2 path for maintenance.",
+     "Bạn không cần tự chọn: làm xong bài Kiểm tra trình độ, app chọn lộ trình bắt đầu từ trình độ của bạn. Kết quả B1 cho lộ trình B1 → B2, chưa đạt A1 cho A1 → A2, còn đạt C2 thì giữ C1 → C2 để duy trì. Nếu thấy chưa hợp, bạn vẫn đổi được ở trang Lộ trình học bằng nút Theo lộ trình này.",
+     "You do not have to choose: when you finish the Level test, the app picks the path that starts at your level. A B1 result gives B1 → B2, below A1 gives A1 → A2, and a C2 result keeps C1 → C2 for maintenance. If it does not feel right, switch on the Learning paths page with Follow this path.",
      ["chọn lộ trình", "lộ trình phù hợp", "which roadmap", "b1 lên b2", "nên học lộ trình nào"]),
     ("roadmap-duration", "roadmap", "Mỗi lộ trình học trong bao lâu?", "How long does each path take?",
      "Thời lượng gợi ý: A1 → A2 khoảng 8 tuần, A2 → B1 10 tuần, B1 → B2 12 tuần, B2 → C1 16 tuần, C1 → C2 16 tuần, nếu học đều mỗi ngày. Bạn có thể đi nhanh hay chậm hơn, vì app không khoá nhiệm vụ theo ngày.",
@@ -160,9 +179,13 @@ G = [
 
     # ---------- practice: how each page works ----------
     ("vocabulary", "practice", "Học từ vựng trong app như thế nào?", "How does vocabulary practice work?",
-     "Từ vựng được chia theo chủ đề và nhóm 20 từ, với 4 chế độ luyện. Sau mỗi thẻ bạn tự chấm Again, Hard, Good hoặc Easy, và app hẹn ngày ôn lại theo thuật toán ôn tập ngắt quãng SM-2. Thẻ ôn đúng hạn đạt từ 21 ngày trở lên được tính là Thành thạo.",
-     "Words are grouped by topic into sets of 20, with four practice modes. After each card you rate it Again, Hard, Good or Easy, and the app schedules the next review with the SM-2 spaced repetition method. A card reaches Mastered at an interval of 21 days or more.",
+     "Từ vựng chia thành các nhóm chủ đề: Hằng ngày, Công việc, Chuyên ngành, Ôn thi nâng cao, Collocation IELTS Writing và Từ đồng nghĩa nâng cao. Mỗi chủ đề chia thành nhóm 20 từ với 4 chế độ luyện. Sau mỗi thẻ bạn tự chấm Again, Hard, Good hoặc Easy, và app hẹn ngày ôn lại theo thuật toán SM-2. Thẻ có khoảng ôn từ 21 ngày trở lên được tính là Thành thạo.",
+     "Words are grouped into sections: Everyday, Work, Specialist, Advanced exam, IELTS Writing collocations and Advanced synonyms. Each topic splits into sets of 20 with four practice modes. After each card you rate it Again, Hard, Good or Easy, and the app schedules the next review with SM-2. A card reaches Mastered at an interval of 21 days or more.",
      ["học từ", "flashcard", "ôn tập", "SRS", "spaced repetition", "thẻ từ"]),
+    ("vocab-sections", "practice", "Collocation IELTS và Từ đồng nghĩa nâng cao học ở đâu?", "Where are the IELTS collocations and advanced synonyms?",
+     "Trong trang Từ vựng, chọn nhóm Collocation IELTS Writing (1.070 cụm từ trong 18 chủ đề như Giáo dục, Môi trường, Du lịch) hoặc Từ đồng nghĩa nâng cao (417 từ trong 11 chủ đề). Định nghĩa của mỗi từ đồng nghĩa ghi nó thay cho từ cơ bản nào, ví dụ huge thay cho big, giúp bạn diễn đạt lại ý khi viết.",
+     "On the Vocabulary page, choose IELTS Writing collocations (1,070 phrases in 18 topics such as Education, Environment and Tourism) or Advanced synonyms (417 words in 11 topics). Each synonym's definition names the basic word it replaces, such as huge for big, which helps you paraphrase in writing.",
+     ["collocation", "từ đồng nghĩa", "synonyms", "IELTS vocabulary", "paraphrase", "nhóm từ vựng"]),
     ("listening", "practice", "Trang Luyện nghe hoạt động thế nào?", "How does the Listening page work?",
      "Có 300 bài hội thoại và bài nói từ A1 đến C2, cùng phần Chép chính tả. Bài được đọc bằng giọng máy của trình duyệt; bạn chỉnh được tốc độ và nghe lại từng câu. Trả lời câu hỏi xong thì bản chép lời, giải thích và câu làm bằng chứng mới hiện ra.",
      "There are 300 dialogues and talks from A1 to C2, plus Dictation. Lessons are read by your browser's voice; you can change the speed and replay each sentence. The transcript, explanations and evidence appear after you answer.",
@@ -231,8 +254,9 @@ G = [
 
 from guide_grammar import GRAMMAR, STUDY  # noqa: E402
 from guide_words import WORDS, PHRASES  # noqa: E402
+from guide_skills import PRONUNCIATION, WRITING  # noqa: E402
 
-G += GRAMMAR + STUDY + WORDS + PHRASES
+G += GRAMMAR + STUDY + WORDS + PHRASES + PRONUNCIATION + WRITING
 
 
 def main():
@@ -242,7 +266,7 @@ def main():
         assert len(avi.split()) <= 120 and len(aen.split()) <= 120, slug
         out.append({"id": f"g-{slug}", "category": category, "question": {"vi": qvi, "en": qen},
                     "answer": {"vi": avi, "en": aen}, "keywords": keywords})
-    assert len({g["id"] for g in out}) == len(out) == 170, len(out)
+    assert len({g["id"] for g in out}) == len(out) == 230, len(out)
     path = pathlib.Path(__file__).resolve().parent.parent / "src" / "data" / "guides.json"
     path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(len(out), "guide entries", {c: sum(1 for g in out if g["category"] == c) for c in CATEGORIES})
