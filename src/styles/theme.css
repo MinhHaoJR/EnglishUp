@@ -8351,3 +8351,38 @@ html .workspace .my-path h2 {
     height: 72px;
   }
 }
+
+/* ---------- Tutor Tom moves: the chat head can be dragged anywhere in the window ----------
+   The shell places the head and the window with left/top (see chatHead.ts); the wrapper is only a
+   fixed layer. While dragging, the head lifts a little and the cursor closes. */
+html .chat-widget {
+  position: fixed;
+  inset: 0 auto auto 0;
+  display: block;
+  width: 0;
+  height: 0;
+  z-index: 50;
+}
+html .chat-widget .chat-head,
+html .chat-widget .chat-widget-panel {
+  position: fixed;
+}
+html .chat-widget .chat-head {
+  cursor: grab;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+html .chat-widget .chat-head img {
+  pointer-events: none;
+}
+html .chat-widget .chat-head.dragging {
+  cursor: grabbing;
+  transform: scale(1.06);
+  box-shadow: 0 14px 30px rgb(19 36 58 / 32%);
+}
+@media (prefers-reduced-motion: reduce) {
+  html .chat-widget .chat-head.dragging {
+    transform: none;
+  }
+}

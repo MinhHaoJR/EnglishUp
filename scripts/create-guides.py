@@ -61,8 +61,8 @@ G = [
      "EnglishUp is an English learning app for Vietnamese speakers. It has Vocabulary with 3,828 words and spaced review, including 1,070 IELTS Writing collocations and 417 advanced synonyms; Listening, Speaking, Reading and Writing with 300 lessons each from A1 to C2; Grammar with 100 sentence patterns and 13 tenses; 60-second races; a Level test you take on your first visit; a learning path chosen for your level; points, badges and the AI tutor.",
      ["giới thiệu app", "about the app", "trang web này là gì", "app này dùng để làm gì", "website"]),
     ("sections", "about", "App có những phần nào?", "What sections does the app have?",
-     "Thanh bên trái có: Tổng quan, Lộ trình học, Kiểm tra trình độ; Từ vựng, Luyện nghe, Luyện nói, Luyện đọc, Luyện viết, Ngữ pháp; Trợ giảng Tom, Trò chơi, Thành tích, Cài đặt. Các mục này mở ra sau khi bạn làm xong bài Kiểm tra trình độ lần đầu. Trợ giảng còn mở được từ nút tròn ở góc dưới bên phải mọi trang.",
-     "The left sidebar has: Dashboard, Learning paths, Level test; Vocabulary, Listening, Speaking, Reading, Writing, Grammar; Tutor Tom, Games, Achievements, Settings. They open once you have finished your first Level test. The tutor also opens from the round button in the bottom-right corner of every page.",
+     "Thanh bên trái có: Tổng quan, Lộ trình học, Kiểm tra trình độ; Từ vựng, Luyện nghe, Luyện nói, Luyện đọc, Luyện viết, Ngữ pháp; Trợ giảng Tom, Trò chơi, Thành tích, Cài đặt. Các mục này mở ra sau khi bạn làm xong bài Kiểm tra trình độ lần đầu. Trợ giảng còn mở được từ nút tròn có hình Tom, lúc đầu nằm ở góc dưới bên phải mọi trang; bạn kéo được nút này đến chỗ khác.",
+     "The left sidebar has: Dashboard, Learning paths, Level test; Vocabulary, Listening, Speaking, Reading, Writing, Grammar; Tutor Tom, Games, Achievements, Settings. They open once you have finished your first Level test. The tutor also opens from the round Tom button, which starts in the bottom-right corner of every page; you can drag it elsewhere.",
      ["menu", "các mục trong app", "trang nào", "navigation", "sidebar"]),
     ("account-needed", "about", "Có cần tạo tài khoản không?", "Do I need an account?",
      "Không bắt buộc. Không đăng nhập, bạn vẫn làm bài Kiểm tra trình độ, theo lộ trình và luyện mọi bài; tiến độ lưu trên trình duyệt. Tài khoản thêm: đồng bộ giữa các thiết bị (kể cả kết quả kiểm tra trình độ), điểm và huy hiệu, bảng xếp hạng, hai trò chơi đua 60 giây và trợ giảng AI.",
@@ -220,9 +220,9 @@ G = [
      ["điểm", "points", "huy hiệu", "badge", "thành tích", "bảng xếp hạng", "leaderboard"]),
 
     ("tutor-chat", "practice", "Mở và dùng trợ giảng Tom thế nào?", "How do I open and use Tutor Tom?",
-     "Bấm nút tròn ở góc dưới bên phải bất kỳ trang nào để mở khung chat nhỏ; nó vẫn mở khi bạn chuyển trang. Trang Trợ giảng Tom ở thanh bên có danh sách các cuộc trò chuyện. Enter để gửi, Shift + Enter để xuống dòng, Esc để đóng. Bấm số nguồn dưới câu trả lời để mở bài học liên quan.",
-     "Press the round button in the bottom-right corner of any page to open the mini chat; it stays open as you move between pages. The Tutor Tom page in the sidebar lists your conversations. Enter sends, Shift + Enter adds a line and Escape closes. Click a source under an answer to open the related lesson.",
-     ["mở trợ giảng", "trợ giảng AI", "khung chat", "chat", "how to use the tutor", "lịch sử trò chuyện"]),
+     "Bấm nút tròn có hình Tom (lúc đầu ở góc dưới bên phải mọi trang) để mở khung chat nhỏ; khung mở ngay cạnh nút và vẫn mở khi bạn chuyển trang. Muốn Tom ở chỗ khác, hãy kéo nút đi, hoặc chọn nút rồi dùng phím mũi tên; phím Home đưa Tom về góc. Trang Trợ giảng Tom ở thanh bên có danh sách các cuộc trò chuyện. Enter để gửi, Shift + Enter để xuống dòng, Esc để đóng. Bấm số nguồn dưới câu trả lời để mở bài học liên quan.",
+     "Press the round Tom button (at first in the bottom-right corner of every page) to open the mini chat; it opens beside the button and stays open as you move between pages. To put Tom elsewhere, drag the button, or select it and use the arrow keys; Home puts Tom back in the corner. The Tutor Tom page in the sidebar lists your conversations. Enter sends, Shift + Enter adds a line and Escape closes. Click a source under an answer to open the related lesson.",
+     ["mở trợ giảng", "trợ giảng AI", "khung chat", "chat", "how to use the tutor", "lịch sử trò chuyện", "di chuyển trợ giảng", "kéo nút Tom", "move the tutor"]),
 
     # ---------- account and study habits ----------
     ("sync", "account", "Học trên nhiều thiết bị thì làm sao?", "How do I study on several devices?",

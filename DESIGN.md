@@ -173,7 +173,7 @@ Behind every page sit soft waves (lower left, right side, a faint arc at the top
 
 - `.study-card > h2:focus { outline: none }`: the word heading is focused by code so screen readers announce each new card (`craft-ignore`).
 - `main:focus { outline: none }`: `main` receives focus from code on every route change, for screen readers. It is not a control, and every control keeps the focus ring (`craft-ignore` in `theme.css`).
-- The floating tutor (chat head and window) uses `--shadow-float`, because it really sits above scrolling content.
+- The floating tutor (chat head and window) uses `--shadow-float`, because it really sits above scrolling content. The head can be dragged anywhere (grab cursor, lifts slightly while dragged) and the window opens beside it, towards the middle of the screen.
 - The selected segmented tab has a 1px shadow to lift it out of its track.
 - Sentence-pattern cards keep their number (#1–#100), because it refers to the reference list.
 
