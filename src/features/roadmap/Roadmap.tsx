@@ -1,43 +1,12 @@
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useBi } from '../../i18n';
 import { Notice, PageTitle } from '../../components/shared';
-import SkillIcon, { type IconName } from '../../components/SkillIcon';
+import SkillIcon from '../../components/SkillIcon';
 import { useApp } from '../../app/store';
 import { roadmaps } from '../../data/content';
-import {
-  quizCategories,
-  roadmapSkillLabels,
-  type QuizCategory,
-  type Roadmap as Path,
-} from '../../data/schema';
+import { quizCategories, roadmapSkillLabels, type QuizCategory } from '../../data/schema';
 import { roadmapFor } from '../../services/placement';
-
-type Task = Path['stages'][number]['tasks'][number];
-
-/** Where each kind of task opens, its pictogram and the skill line that colours it. */
-const targets: Record<
-  Task['skill'],
-  { icon: IconName; skill: string; path: (task: Task) => string }
-> = {
-  vocabulary: { icon: 'vocabulary', skill: 'vocabulary', path: () => '/vocabulary' },
-  translation: { icon: 'choice', skill: 'vocabulary', path: () => '/vocabulary?tab=translation' },
-  relations: { icon: 'cards', skill: 'vocabulary', path: () => '/vocabulary?tab=relations' },
-  grammar: { icon: 'grammar', skill: 'grammar', path: () => '/grammar' },
-  reading: { icon: 'reading', skill: 'reading', path: () => '/reading' },
-  listening: { icon: 'listening', skill: 'listening', path: () => '/listening' },
-  speaking: { icon: 'speaking', skill: 'speaking', path: () => '/speaking' },
-  writing: { icon: 'writing', skill: 'writing', path: () => '/writing' },
-  wordgame: { icon: 'game', skill: 'vocabulary', path: (t) => `/game?level=${t.level}` },
-  grammargame: {
-    icon: 'game',
-    skill: 'grammar',
-    path: (t) =>
-      `/game?mode=grammar&level=${t.level}${t.category ? `&category=${t.category}` : ''}`,
-  },
-  tenses: { icon: 'grammar', skill: 'grammar', path: () => '/grammar?part=tenses' },
-  assistant: { icon: 'assistant', skill: 'service', path: () => '/assistant' },
-  placement: { icon: 'placement', skill: 'service', path: () => '/placement' },
-};
+import { targets, type Task } from './targets';
 
 /** Learning paths from A1 to C2: pick the step you are on, then work through its stages and tasks. */
 export default function Roadmap() {

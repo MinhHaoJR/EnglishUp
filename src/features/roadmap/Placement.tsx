@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { useBi } from '../../i18n';
 import { PageTitle } from '../../components/shared';
 import SkillIcon from '../../components/SkillIcon';
@@ -25,6 +25,14 @@ export default function Placement() {
   const [test, setTest] = useState<Test | null>(null);
   const [result, setResult] = useState<PlacementResult | null>(null);
   const [saving, setSaving] = useState(false);
+  const navigate = useNavigate();
+  // The first test is the way into the app. If a result arrives from another device while the
+  // learner is still on the intro, there is nothing left to do here.
+  const firstTime = useRef(!settings.placement);
+  useEffect(() => {
+    if (firstTime.current && settings.placement && !result && !test)
+      navigate('/', { replace: true });
+  }, [settings.placement, result, test, navigate]);
 
   const title = (
     <PageTitle
@@ -54,7 +62,11 @@ export default function Placement() {
         test.started,
         `Kiểm tra trình độ / Level test: ${scored.level ?? '< A1'}`,
       );
-      await update({ placement: { level: scored.level, score: scored.score, at: Date.now() } });
+      // The result also picks the learner's path, keeping what they ticked on any path before.
+      await update({
+        placement: { level: scored.level, score: scored.score, at: Date.now() },
+        roadmap: { id: roadmapFor(scored.level), done: settings.roadmap?.done ?? {} },
+      });
     } finally {
       setSaving(false);
     }
@@ -170,10 +182,15 @@ export default function Placement() {
           </Heading>
           {!result && (
             <p className="hero-lead">
-              {bi(
-                'Chưa biết mình đang ở đâu? Làm bài để biết trình độ và lộ trình nên học.',
-                'Not sure where you stand? Take the test to find your level and the path to follow.',
-              )}
+              {firstTime.current
+                ? bi(
+                    'Chào mừng bạn! Trước khi bắt đầu, hãy làm bài kiểm tra này. Kết quả sẽ xếp cho bạn một lộ trình học riêng, đúng trình độ.',
+                    'Welcome! Before you start, take this test. Your result sets a learning path made for your level.',
+                  )
+                : bi(
+                    'Chưa biết mình đang ở đâu? Làm bài để biết trình độ và lộ trình nên học.',
+                    'Not sure where you stand? Take the test to find your level and the path to follow.',
+                  )}
             </p>
           )}
           <ol className="placement-steps">
@@ -278,8 +295,8 @@ function Report({ result, saving }: { result: PlacementResult; saving: boolean }
         {saving
           ? bi('Đang lưu kết quả…', 'Saving the result…')
           : bi(
-              'Đã lưu vào nhật ký luyện tập (kỹ năng Cấu trúc câu) và hồ sơ học của bạn.',
-              'Saved to your practice log (sentence patterns) and your learning profile.',
+              `Đã lưu vào nhật ký luyện tập và hồ sơ học. Lộ trình ${path.slice(3, 5).toUpperCase()} → ${path.slice(6).toUpperCase()} đã được chọn cho bạn.`,
+              `Saved to your practice log and learning profile. The ${path.slice(3, 5).toUpperCase()} → ${path.slice(6).toUpperCase()} path is now yours.`,
             )}
       </p>
       <div className="actions">
@@ -289,6 +306,10 @@ function Report({ result, saving }: { result: PlacementResult; saving: boolean }
             `Xem lộ trình ${path.slice(3, 5).toUpperCase()} → ${path.slice(6).toUpperCase()}`,
             `Open the ${path.slice(3, 5).toUpperCase()} → ${path.slice(6).toUpperCase()} path`,
           )}
+        </Link>
+        <Link className="button" to="/">
+          <SkillIcon skill="home" size={18} />
+          {bi('Vào trang Tổng quan', 'Go to the overview')}
         </Link>
       </div>
     </section>

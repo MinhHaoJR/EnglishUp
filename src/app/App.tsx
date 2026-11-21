@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import {
   NavLink,
   Outlet,
@@ -6,7 +6,9 @@ import {
   RouterProvider,
   useLocation,
   Link,
+  Navigate,
 } from 'react-router-dom';
+import { gateTarget, needsLevelTest } from './gate';
 import { useApp } from './store';
 import { useContent } from '../services/content';
 import { useT } from '../i18n';
@@ -67,6 +69,15 @@ export function Layout() {
   const selectedSkill = skillSchema.exclude(['grammar']).safeParse(pathname.split('/')[1]);
   const email = useAuth((state) => state.email);
   const isAdmin = useAdmin((state) => state.isAdmin);
+  // The entrance stays up on the level test page after the result arrives, so the learner sees
+  // their result there; the full app opens once they leave the page.
+  const [entering, setEntering] = useState(false);
+  useEffect(() => {
+    if (ready && needsLevelTest(settings)) setEntering(true);
+  }, [ready, settings]);
+  useEffect(() => {
+    if (pathname !== '/placement') setEntering(false);
+  }, [pathname]);
   useEffect(() => {
     void (async () => {
       await restoreSession();
@@ -116,6 +127,59 @@ export function Layout() {
           <p>{t('loading')}</p>
         )}
       </main>
+    );
+  const body = !ready ? (
+    <p>{t('loading')}</p>
+  ) : error ? (
+    <p role="alert">{error}</p>
+  ) : lessons === 'missing' ? (
+    <div className="notice error" role="alert">
+      <p>
+        {settings.language === 'vi'
+          ? 'Chưa tải được bài học. Lần đầu mở app cần có mạng; sau đó bạn học offline được.'
+          : 'The lessons could not be loaded. The first visit needs the network; after that you can practise offline.'}
+      </p>
+      <button type="button" onClick={() => location.reload()}>
+        {settings.language === 'vi' ? 'Thử lại' : 'Try again'}
+      </button>
+    </div>
+  ) : (
+    <Suspense fallback={<p role="status">{t('loading')}</p>}>
+      {settings.learningLanguage !== 'en' && (pathname === '/' || selectedSkill.success) ? (
+        <LanguageWorkspace
+          key={`${settings.learningLanguage}-${pathname}`}
+          skill={selectedSkill.success ? selectedSkill.data : undefined}
+        />
+      ) : (
+        <Outlet key={settings.learningLanguage} />
+      )}
+    </Suspense>
+  );
+  // Until the learner has a level, the level test is the only way in; its result picks their path.
+  const gate = ready ? gateTarget(settings, pathname) : null;
+  if (gate) return <Navigate to={gate} replace />;
+  if (ready && (needsLevelTest(settings) || (entering && pathname === '/placement')))
+    return (
+      <div className="workspace gate" data-skill="placement">
+        <header className="gate-head">
+          <span className="brand">
+            <span className="brand-mark" aria-hidden="true">
+              e<span>↗</span>
+            </span>
+            {APP_NAME}
+          </span>
+          {needsLevelTest(settings) && (
+            <Link className="button" to="/login?next=/">
+              {settings.language === 'vi'
+                ? 'Đã có tài khoản? Đăng nhập'
+                : 'Have an account? Sign in'}
+            </Link>
+          )}
+        </header>
+        <main id="main" tabIndex={-1}>
+          {body}
+        </main>
+      </div>
     );
   return (
     <>
@@ -171,33 +235,7 @@ export function Layout() {
           </Link>
         </div>
         <main id="main" tabIndex={-1}>
-          {!ready ? (
-            <p>{t('loading')}</p>
-          ) : error ? (
-            <p role="alert">{error}</p>
-          ) : lessons === 'missing' ? (
-            <div className="notice error" role="alert">
-              <p>
-                {settings.language === 'vi'
-                  ? 'Chưa tải được bài học. Lần đầu mở app cần có mạng; sau đó bạn học offline được.'
-                  : 'The lessons could not be loaded. The first visit needs the network; after that you can practise offline.'}
-              </p>
-              <button type="button" onClick={() => location.reload()}>
-                {settings.language === 'vi' ? 'Thử lại' : 'Try again'}
-              </button>
-            </div>
-          ) : (
-            <Suspense fallback={<p role="status">{t('loading')}</p>}>
-              {settings.learningLanguage !== 'en' && (pathname === '/' || selectedSkill.success) ? (
-                <LanguageWorkspace
-                  key={`${settings.learningLanguage}-${pathname}`}
-                  skill={selectedSkill.success ? selectedSkill.data : undefined}
-                />
-              ) : (
-                <Outlet key={settings.learningLanguage} />
-              )}
-            </Suspense>
-          )}
+          {body}
         </main>
       </div>
       {ready && <ChatWidget />}

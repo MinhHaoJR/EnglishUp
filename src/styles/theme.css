@@ -8237,3 +8237,117 @@ html .workspace[data-skill='achievements'] .lesson-card.locked h3 {
     animation: none;
   }
 }
+
+/* ---------- Level test gate: the first screen until a learner has a level ----------
+   No sidebar, tutor or top bar: the brand, a sign-in link for learners with an account, and the
+   test centred on the softly lit ground. */
+html .workspace.gate {
+  margin-left: 0;
+  min-height: 100vh;
+}
+html .workspace.gate::before {
+  left: 0;
+}
+.gate-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 20px 24px 0;
+}
+.gate-head .brand {
+  display: inline-flex;
+  align-items: center;
+}
+html .workspace.gate main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 20px 24px 48px;
+}
+
+/* ---------- Your path on the overview: level, progress and the next task ---------- */
+html .workspace .my-path {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) minmax(220px, 0.8fr);
+  align-items: center;
+  gap: 20px;
+}
+.my-path-level {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  width: 96px;
+  height: 96px;
+  border: 1px solid var(--glass-edge);
+  border-radius: 20px;
+  background: var(--hero-sky);
+  color: var(--hero-ink);
+  box-shadow: var(--glow);
+}
+.my-path-level span {
+  color: var(--hero-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.my-path-level strong {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  text-align: center;
+}
+html .workspace .my-path h2 {
+  margin: 0 0 4px;
+}
+.my-path-text .muted {
+  margin: 0 0 10px;
+}
+.my-path-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.my-path-bar progress {
+  flex: 1;
+  height: 8px;
+}
+.my-path-next {
+  display: grid;
+  gap: 8px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--primary-soft);
+}
+.my-path-next small {
+  color: var(--muted);
+  font-weight: 600;
+}
+.my-path-next span {
+  font-weight: 600;
+}
+.my-path-next .primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.my-path-next a {
+  font-size: 0.875rem;
+  font-weight: 600;
+  justify-self: start;
+}
+@media (max-width: 860px) {
+  html .workspace .my-path {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+  .my-path-next {
+    grid-column: 1 / -1;
+  }
+  .my-path-level {
+    width: 72px;
+    height: 72px;
+  }
+}

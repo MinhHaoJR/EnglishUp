@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useApp } from '../../app/store';
 import { useT, useBi } from '../../i18n';
 import { Notice, useLive } from '../../components/shared';
@@ -16,7 +16,10 @@ import {
   speakingPrompts,
   writingPrompts,
   structures,
+  roadmaps,
 } from '../../data/content';
+import { nextTask, targets, type Task } from '../roadmap/targets';
+import { roadmapFor } from '../../services/placement';
 
 /** Home as a route map: today's stops first, then every skill line, then the week. */
 export default function Dashboard() {
@@ -122,6 +125,8 @@ export default function Dashboard() {
           </p>
         </div>
       </header>
+
+      <MyPath />
 
       <section className="panel route" aria-labelledby="route-title">
         <h2 id="route-title">
@@ -307,5 +312,63 @@ export default function Dashboard() {
         </p>
       </div>
     </div>
+  );
+}
+
+/** The learner's own path, set by the level test: their level, progress and the next task. */
+function MyPath() {
+  const bi = useBi();
+  const navigate = useNavigate();
+  const { settings, filter } = useApp();
+  if (!settings.placement) return null;
+  // Results from before the test picked a path fall back to the path the level suggests.
+  const id = settings.roadmap?.id ?? roadmapFor(settings.placement.level);
+  const path = roadmaps.find((r) => r.id === id);
+  if (!path) return null;
+  const done = settings.roadmap?.done[path.id] ?? [];
+  const total = path.stages.reduce((sum, stage) => sum + stage.tasks.length, 0);
+  const finished = path.stages.flatMap((s) => s.tasks).filter((t) => done.includes(t.id)).length;
+  const next = nextTask(path, done);
+  const open = (task: Task) => {
+    // Practice pages share the level filter, so the lesson list opens at the task's level.
+    filter(task.level, 'all');
+    navigate(targets[task.skill].path(task));
+  };
+  return (
+    <section className="panel my-path" aria-labelledby="my-path-title">
+      <div className="my-path-level">
+        <span>{bi('Trình độ', 'Level')}</span>
+        <strong>{settings.placement.level ?? bi('Dưới A1', 'Below A1')}</strong>
+      </div>
+      <div className="my-path-text">
+        <h2 id="my-path-title">
+          {bi('Lộ trình của bạn', 'Your path')}: {path.from} → {path.to}
+        </h2>
+        <p className="muted">{bi(path.title.vi, path.title.en)}</p>
+        <div className="my-path-bar">
+          <progress
+            value={finished}
+            max={total}
+            aria-label={bi('Tiến độ lộ trình', 'Path progress')}
+          />
+          <span>{bi(`${finished}/${total} nhiệm vụ`, `${finished} of ${total} tasks`)}</span>
+        </div>
+      </div>
+      <div className="my-path-next">
+        {next ? (
+          <>
+            <small>{bi('Nhiệm vụ tiếp theo', 'Next task')}</small>
+            <span>{bi(next.vi, next.en)}</span>
+            <button type="button" className="primary" onClick={() => open(next)}>
+              {bi('Làm ngay', 'Start now')}
+              <SkillIcon skill="arrow" size={16} />
+            </button>
+          </>
+        ) : (
+          <span>{bi('Bạn đã xong lộ trình này!', 'You have finished this path!')}</span>
+        )}
+        <Link to={`/roadmap?path=${path.id}`}>{bi('Xem cả lộ trình', 'See the whole path')}</Link>
+      </div>
+    </section>
   );
 }

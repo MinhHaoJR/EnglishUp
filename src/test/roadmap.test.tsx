@@ -14,6 +14,8 @@ import {
 } from '../services/placement';
 import Placement from '../features/roadmap/Placement';
 import Roadmap from '../features/roadmap/Roadmap';
+import Dashboard from '../features/dashboard/Dashboard';
+import { gateTarget } from '../app/gate';
 
 beforeEach(async () => {
   await resetData();
@@ -117,6 +119,9 @@ test('taking the level test saves the result and points to the matching learning
   await waitFor(() =>
     expect(useApp.getState().settings.placement).toMatchObject({ level: null, score: 0 }),
   );
+  // The result picks the learner's own path.
+  expect(useApp.getState().settings.roadmap?.id).toBe('rm-a1-a2');
+  expect(screen.getByRole('link', { name: /Vào trang Tổng quan/ })).toHaveAttribute('href', '/');
   expect((await db.attempts.toArray()).map((a) => a.skill)).toEqual(['grammar']);
   await userEvent.click(screen.getByRole('link', { name: /Xem lộ trình A1 → A2/ }));
   expect(screen.getByTestId('where')).toHaveTextContent('/roadmap?path=rm-a1-a2');
@@ -161,4 +166,53 @@ test('a learning path suggests itself from the level test, tracks ticked tasks a
     '/game?mode=grammar&level=B1&category=conditional',
   );
   expect(useApp.getState().level).toBe('B1');
+});
+
+test('until a learner has a level, every page but the test, sign-in and admin leads to the level test', () => {
+  const before = { placement: undefined };
+  for (const path of ['/', '/vocabulary', '/roadmap', '/settings', '/account'])
+    expect(gateTarget(before, path)).toBe('/placement');
+  for (const path of ['/placement', '/login', '/admin'])
+    expect(gateTarget(before, path)).toBeNull();
+  const after = { placement: { level: 'A2' as const, score: 30, at: 1 } };
+  expect(gateTarget(after, '/vocabulary')).toBeNull();
+});
+
+test('a first-time learner sees the welcome, and a result synced from another device opens the app', async () => {
+  show(<Placement />, '/placement');
+  expect(screen.getByText(/Chào mừng bạn! Trước khi bắt đầu/)).toBeInTheDocument();
+  useApp.setState({
+    settings: { ...useApp.getState().settings, placement: { level: 'B1', score: 50, at: 1 } },
+  });
+  await waitFor(() => expect(screen.getByTestId('where')).toHaveTextContent(/^\/$/));
+});
+
+test('the overview shows the path the level test chose and opens its next task at the right level', async () => {
+  useApp.setState({
+    settings: {
+      ...defaults,
+      language: 'vi',
+      placement: { level: 'B1', score: 55, at: Date.now() },
+      roadmap: { id: 'rm-b1-b2', done: {} },
+    },
+  });
+  show(<Dashboard />, '/');
+  const card = await screen.findByRole('region', { name: /Lộ trình của bạn: B1 → B2/ });
+  expect(within(card).getByText('B1')).toBeInTheDocument();
+  const path = roadmaps.find((r) => r.id === 'rm-b1-b2')!;
+  const first = path.stages[0].tasks[0];
+  expect(within(card).getByText(first.vi)).toBeInTheDocument();
+  await userEvent.click(within(card).getByRole('button', { name: /Làm ngay/ }));
+  expect(useApp.getState().level).toBe(first.level);
+  expect(screen.getByTestId('where')).not.toHaveTextContent(/^\/$/);
+});
+
+test('a result from before paths were chosen still shows the suggested path', async () => {
+  useApp.setState({
+    settings: { ...defaults, language: 'vi', placement: { level: null, score: 0, at: 1 } },
+  });
+  show(<Dashboard />, '/');
+  expect(
+    await screen.findByRole('region', { name: /Lộ trình của bạn: A1 → A2/ }),
+  ).toBeInTheDocument();
 });
